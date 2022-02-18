@@ -1,0 +1,35 @@
+from django.db import models
+
+# Create your models here.
+class Annotations (models.Model):
+	author = models.CharField(max_length = 100, default = "default_val")
+	permalink = models.CharField(max_length = 100, default = "default_val")
+	u_id = models.CharField(max_length = 100, default = "default_val")
+	subreddit = models.CharField(max_length = 100, default = "default_val")
+	text = models.CharField(max_length = 2000, default = "default_val")
+	submission_text	= models.CharField(max_length =	2000, default = "default_val")
+	parent_text	= models. CharField(max_length = 2000, default = "default_val")
+	banned	= models.IntegerField(default = 0)
+	offensive	= models.IntegerField (default = 0)
+	hate_speech	= models.IntegerField (default = 0)
+	gender	= models.IntegerField(default = 0)
+	race	= models.IntegerField(default = 0)
+	orientation = models.IntegerField(default = 0)
+	religion	= models.IntegerField(default =	0)
+	other	=	models.CharField(max_length = 100, default = "default_val")
+	subrules	= models.CharField(max_length = 3000, default = "default_val")
+	redrules =  models.CharField(max_length = 2000, default = "default_val")
+	p1	= models.CharField(max_length = 2000, default = "default_val")
+	p2	= models.CharField(max_length = 2000, default = "default_val")
+	p3	= models.CharField(max_length = 2000, default = "default_val")
+	p4	= models.CharField(max_length = 2000, default = "default_val")
+	p5	= models.CharField(max_length = 2000, default = "default_val")
+	selection	= models.CharField(max_length = 10000, default = "default_val")
+	custom_p	= models.CharField(max_length = 2000, default = "default_val")
+	annotated = models.BooleanField(default = False)
+	context_helpful = models.IntegerField(default = 0)
+	skip = models.BooleanField(default = False)
+
+class Subreddit (models.Model):
+	name = models.CharField(max_length = 100, default = "default_val")
+	subrules = models.CharField(max_length = 3000, default = "default_val")
