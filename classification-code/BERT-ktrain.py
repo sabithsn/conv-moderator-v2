@@ -2,6 +2,8 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.metrics import accuracy_score, f1_score, recall_score, precision_score
+from sklearn.metrics import roc_auc_score
+
 from collections import Counter
 import random
 from sklearn.model_selection import train_test_split
@@ -26,10 +28,9 @@ def print_evaluation(gold_labels, predicted_labels):
     precision = precision_score(gold_labels, predicted_labels, average = "macro") * 100
   
 
-    a = [accuracy, precision, recall, f1]
+    a = [("accuracy",accuracy), ("precision",precision), ("recall", recall), ("f1-macro", f1)]
     for i in range (4):
-        a[i] = round(a[i],2)
-
+        a[i] = (a[i][0], round(a[i][1],2))
     return a
 
 
@@ -37,13 +38,15 @@ def print_evaluation(gold_labels, predicted_labels):
 #  "offmychest", "askscience", "AskHistorians", "explainlikeimfive", "politics", "PoliticalHumor", "conspiracy", "socialism", "Anarcho_Capitalism"
 # ]
 
-subreddits = [ "AskReddit", "AskHistorians", "askscience", "explainlikeimfive"]
+# subreddits = [ "AskReddit", "AskHistorians", "askscience", "explainlikeimfive"]
 
-# subreddits = ["Conservative"]
+subreddits = ["Conservative"]
+
+# subreddits = ["antifeminists"]
 
 X = []
 Y = []
-existing_limit = 2000
+# existing_limit = 15500
 existing_X = []
 existing_Y = []
 print ("reading files")
@@ -73,14 +76,16 @@ for subname in subreddits:
                 i = 0
 
                 for line in existing_f:
-                    if i == 0:
-                        i += 1
+                    i += 1
+                    if i == 1:
                         continue
+                    if (i == 5000):
+                        break
                     comment = line.split("\t")[1]
                     existing_X.append(comment)
                     existing_Y.append("existing")
 
-
+existing_limit = len(X)
 # choose subset of existing and add to data
 inds = [x for x in range (len(existing_X))]
 random.shuffle(inds)
@@ -127,9 +132,23 @@ learner.fit_onecycle(8e-5, 3)
 print ("getting predictor")
 predictor = ktrain.get_predictor(learner.model, preproc=t)
 test_preds = predictor.predict(X_test)
+test_scores = predictor.predict_proba(X_test)
 
 # get results
-print ("test results", print_evaluation(test_preds, Y_test))
+print ("test results", print_evaluation(Y_test, test_preds))
+print ("auc_under_roc:", roc_auc_score(Y_test, test_scores[:, 1]))
+
+# for i in range (10):
+#     print (Y_test[i], test_scores[i])
+# print (test_scores[:10])
+# print(predictor.classes_)
+
+
+with open ("predictions/preds-conservative.tsv", "w", encoding = "utf-8") as f:
+    f.write("text\ttruth\tpred\tscore\n")
+    for i in range (X_test.shape[0]):
+        f.write (X_test[i] + "\t" + Y_test[i] + "\t" + test_preds[i] + "\t" + str(test_scores[i]) + "\n")
+# print ("AUC under ROC:", roc_auc_score(y, test_scores[:, 1]))
 
 print (Counter(test_preds))
 
