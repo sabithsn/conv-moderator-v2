@@ -64,7 +64,8 @@ def main():
                         help='directory to write stream data to')
     args = parser.parse_args()
 
-    subreddits = ["AskReddit", "MensRights", "antifeminists", "unpopularopinion", "ChangeMyView", "AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
+    #subreddits = ["AskReddit", "MensRights", "antifeminists", "unpopularopinion", "ChangeMyView", "AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
+    subreddits = ["AmITheAsshole", "AskHistorians", "AskReddit", "AskScience", "ChangeMyView", "Conspiracy"]#, "ExplainLikeImFive", "OffMyChest", "PoliticalHumor", "UnpopularOpinion"]
     threads = []
     writefiles = []
 
@@ -91,7 +92,7 @@ def main():
         #     for comment in tqdm(api.search_comments(ids=comment_ids)):
         #         print(comment)
 
-        comments = api.search_comments(subreddit=subreddit, limit=100000)
+        comments = api.search_comments(subreddit=subreddit, limit=1000000)
         comments_df = pd.DataFrame(comments)
         comments_df.to_csv(args.out_dir + subreddit + ".tsv", header=True, index=False, columns=list(comments_df.axes[1]), sep="\t")
 
