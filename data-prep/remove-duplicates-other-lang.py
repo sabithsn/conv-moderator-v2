@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
 
     for subname in subreddits:
-
+        print (subname)
         existing_lines = []
         deleted_lines = []
         removed_lines = []

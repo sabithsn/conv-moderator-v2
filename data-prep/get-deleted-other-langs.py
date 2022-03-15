@@ -4,11 +4,10 @@ import timeit
 
 # auth
 reddit = praw.Reddit(
-    client_id="nIPvIISM35QMMygjPVhPzw",
-    client_secret="vLPYCQMVskhu9zTDT0xn6-j86uf5Hw",
-    user_agent="SH4",
-    username = "paper_scraper",
-    password = "Darpa2021"
+    client_id="oYQthMoMvL2ERdGzAYPIlQ",
+    client_secret="V0Gub34VCxchLp6ZxujTd38hReEPew",
+    user_agent="SH8",
+    username = "paper_band",
 )
 
 

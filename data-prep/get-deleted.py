@@ -14,10 +14,12 @@ reddit = praw.Reddit(
 
 if __name__ == '__main__':
 
-    # subreddits = ["antifeminists", "AskReddit", "MensRights", "unpopularopinion", "ChangeMyView", "AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
+    subreddits = ["antifeminists", "AskReddit", "MensRights", "unpopularopinion", "ChangeMyView", "AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
+    # subreddits = subreddits + ["offmychest", "askscience", "AskHistorians", "explainlikeimfive", "politics", "PoliticalHumor", "conspiracy", "socialism", "Anarcho_Capitalism"]
+
     # subreddits = ["PoliticalCompassMemes"]
     # subreddits = ["AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
-    subreddits = ["Conservative", "ChangeMyView"]
+    # subreddits = ["Conservative", "ChangeMyView"]
     with open ("../scraping/data/reddit/info.tsv", "a") as g:
         for subname in subreddits:
             start = timeit.default_timer()
@@ -44,9 +46,9 @@ if __name__ == '__main__':
             deleted_count = 0
             removed_count = 0
             all_count = 0
-            with open ("../scraping/data/reddit/deleted_comments/" + subname + ".tsv", "a", encoding = "utf-8") as del_f:
-                with open ("../scraping/data/reddit/removed_comments/" + subname + ".tsv", "a", encoding = "utf-8") as rem_f:
-                    with open ("../scraping/data/reddit/existing_comments/" + subname + ".tsv", "a", encoding = "utf-8") as existing_f:
+            with open ("../scraping/data/reddit/deleted_comments/" + subname + ".tsv", "w", encoding = "utf-8") as del_f:
+                with open ("../scraping/data/reddit/removed_comments/" + subname + ".tsv", "w", encoding = "utf-8") as rem_f:
+                    with open ("../scraping/data/reddit/existing_comments/" + subname + ".tsv", "w", encoding = "utf-8") as existing_f:
 
                         # write headers
                         g.write("subname\tall\tdeleted\tremoved\n")

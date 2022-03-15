@@ -4,19 +4,18 @@ import timeit
 
 # auth
 reddit = praw.Reddit(
-    client_id="nIPvIISM35QMMygjPVhPzw",
-    client_secret="vLPYCQMVskhu9zTDT0xn6-j86uf5Hw",
-    user_agent="SH4",
-    username = "paper_scraper",
-    password = "Darpa2021"
+    client_id="3k9BarswvGXgHmru21--Rg",
+    client_secret="XLWXFLK3CCgvJxnqHVxlRtx4eh4B1g",
+    user_agent="SH9",
+    username = "paper_frodo",
 )
+
 
 
 if __name__ == '__main__':
 
     # subreddits = ["offmychest", "askscience", "AskHistorians", "explainlikeimfive", "politics", "PoliticalHumor", "conspiracy", "socialism", "Anarcho_Capitalism"]
-    # subreddits = ["AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
-    subreddits = ["Conservative", "ChangeMyView"]
+    subreddits = ["explainlikeimfive", "politics", "PoliticalHumor", "conspiracy", "socialism", "Anarcho_Capitalism"]
 
     with open ("../scraping/data/reddit/info.tsv", "a") as g:
         for subname in subreddits:
@@ -35,7 +34,11 @@ if __name__ == '__main__':
                 for line in f:
                     all_lines.append(line)
                     row = line.strip().split("\t")
-                    c_id = "t1_" + row[3]
+                    try:
+                        c_id = "t1_" + row[3]
+                    except:
+                        print (row)
+                        continue
                     c_dict[row[3]] = line
                     c_ids.append(c_id)
 
@@ -44,9 +47,9 @@ if __name__ == '__main__':
             deleted_count = 0
             removed_count = 0
             all_count = 0
-            with open ("../scraping/data/reddit/deleted_comments/" + subname + ".tsv", "a", encoding = "utf-8") as del_f:
-                with open ("../scraping/data/reddit/removed_comments/" + subname + ".tsv", "a", encoding = "utf-8") as rem_f:
-                    with open ("../scraping/data/reddit/existing_comments/" + subname + ".tsv", "a", encoding = "utf-8") as existing_f:
+            with open ("../scraping/data/reddit/deleted_comments/" + subname + ".tsv", "w", encoding = "utf-8") as del_f:
+                with open ("../scraping/data/reddit/removed_comments/" + subname + ".tsv", "w", encoding = "utf-8") as rem_f:
+                    with open ("../scraping/data/reddit/existing_comments/" + subname + ".tsv", "w", encoding = "utf-8") as existing_f:
 
                         # write headers
                         g.write("subname\tall\tdeleted\tremoved\n")
