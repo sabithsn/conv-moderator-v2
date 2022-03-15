@@ -9,9 +9,12 @@ import sys
 import threading
 import time
 
+from knockknock import slack_sender
 from pmaw import PushshiftAPI
 from tqdm import tqdm
 
+
+webhook_url = "https://hooks.slack.com/services/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"
 
 def get_comments_from_top_n_submissions(threadID, subreddit, api, writefile):
     submission_ids = list(api.search_submissions(
@@ -52,6 +55,7 @@ class myThread (threading.Thread):
       print ("Exiting " + str(self.threadID) + " - " + self.subreddit)
 
 
+@slack_sender(webhook_url=webhook_url, channel="#conversational-moderator")
 def main():
     parser = argparse.ArgumentParser(description='Credentials and output info')
     parser.add_argument('--client_id', type=str,
@@ -64,7 +68,8 @@ def main():
                         help='directory to write stream data to')
     args = parser.parse_args()
 
-    subreddits = ["AskReddit", "MensRights", "antifeminists", "unpopularopinion", "ChangeMyView", "AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
+    #subreddits = ["AskReddit", "MensRights", "antifeminists", "unpopularopinion", "ChangeMyView", "AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes"]
+    subreddits = ["AskReddit", "AskScience", "ChangeMyView", "Conspiracy"] #"ChangeMyView", "Conspiracy"
     threads = []
     writefiles = []
 
@@ -89,9 +94,9 @@ def main():
         # for submission_id in tqdm(submission_ids):  
         #     comment_ids = api.search_submission_comment_ids(ids=submission_id)
         #     for comment in tqdm(api.search_comments(ids=comment_ids)):
-        #         print(comment)
+        #         print(comment) 
 
-        comments = api.search_comments(subreddit=subreddit, limit=100000)
+        comments = api.search_comments(subreddit=subreddit, limit=1000000)
         comments_df = pd.DataFrame(comments)
         comments_df.to_csv(args.out_dir + subreddit + ".tsv", header=True, index=False, columns=list(comments_df.axes[1]), sep="\t")
 
