@@ -1,0 +1,66 @@
+Document: ID=4D27CB74.text (2 sentences, 13 tokens)
+
+Sentence #1 (6 tokens):
+Brigading post shut it down .
+
+Tokens:
+[Text=Brigading CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=VBG Lemma=brigade NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=shut CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=shut NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (VBG Brigading) (NN post))
+    (VP (VBD shut)
+      (NP (PRP it))
+      (PRT (RP down)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shut-3)
+amod(post-2, Brigading-1)
+nsubj(shut-3, post-2)
+obj(shut-3, it-4)
+compound:prt(shut-3, down-5)
+punct(shut-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+don't bite ignore this shit.
+
+Tokens:
+[Text=do CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=bite CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=bite NamedEntityTag=O]
+[Text=ignore CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=ignore NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB do) (RB n't)
+      (VP (VB bite)
+        (S
+          (VP (VB ignore)
+            (NP (DT this) (NN shit))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bite-3)
+aux(bite-3, do-1)
+advmod(bite-3, n't-2)
+ccomp(bite-3, ignore-4)
+det(shit-6, this-5)
+obj(ignore-4, shit-6)
+punct(bite-3, .-7)
+
+Extracted the following NER entity mentions:

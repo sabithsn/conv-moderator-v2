@@ -1,0 +1,42 @@
+Document: ID=59A3D990.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Based Perfect Philippines 🇵🇭  Duterte for Emperor 👑
+
+Tokens:
+[Text=Based CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=Perfect CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=perfect NamedEntityTag=O]
+[Text=Philippines CharacterOffsetBegin=14 CharacterOffsetEnd=25 PartOfSpeech=NNPS Lemma=Philippines NamedEntityTag=COUNTRY]
+[Text=🇵🇭 CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NFP Lemma=🇵🇭 NamedEntityTag=O]
+[Text=Duterte CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Duterte NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Emperor CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Emperor NamedEntityTag=TITLE]
+[Text=👑 CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=NFP Lemma=👑 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Based)))
+    (S
+      (NP (JJ Perfect) (NNPS Philippines))
+      (VP (NFP 🇵🇭)
+        (NP (NNP Duterte))
+        (PP (IN for)
+          (NP (NNP Emperor))))
+      (NFP 👑))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Based-1)
+amod(Philippines-3, Perfect-2)
+nsubj(Duterte-5, Philippines-3)
+punct(Duterte-5, 🇵🇭-4)
+parataxis(Based-1, Duterte-5)
+case(Emperor-7, for-6)
+obl:for(Duterte-5, Emperor-7)
+punct(Duterte-5, 👑-8)
+
+Extracted the following NER entity mentions:
+Philippines	COUNTRY	LOCATION:0.6675012683412018
+Emperor	TITLE	-

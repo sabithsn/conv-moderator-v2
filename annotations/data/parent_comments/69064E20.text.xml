@@ -1,0 +1,75 @@
+Document: ID=69064E20.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Michigan candidate says he tells daughters to ‘lie back and enjoy’ if rape is inevitable
+
+Tokens:
+[Text=Michigan CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Michigan NamedEntityTag=STATE_OR_PROVINCE]
+[Text=candidate CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=candidate NamedEntityTag=TITLE]
+[Text=says CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=tells CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=daughters CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=daughter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=lie CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=lie NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=enjoy CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=enjoy NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=rape CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=rape NamedEntityTag=CRIMINAL_CHARGE]
+[Text=is CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=inevitable CharacterOffsetBegin=78 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=inevitable NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Michigan) (NN candidate))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (VBZ tells)
+            (NP (NNS daughters))
+            (S
+              (VP (TO to) (`` ‘)
+                (VP
+                  (VP (VB lie)
+                    (ADVP (RB back)))
+                  (CC and)
+                  (VP (VB enjoy) ('' ’)
+                    (SBAR (IN if)
+                      (S
+                        (NP (NN rape))
+                        (VP (VBZ is)
+                          (ADJP (JJ inevitable)))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-3)
+compound(candidate-2, Michigan-1)
+nsubj(says-3, candidate-2)
+nsubj(tells-5, he-4)
+ccomp(says-3, tells-5)
+obj(tells-5, daughters-6)
+nsubj:xsubj(lie-9, daughters-6)
+nsubj:xsubj(enjoy-12, daughters-6)
+mark(lie-9, to-7)
+punct(lie-9, ‘-8)
+xcomp(tells-5, lie-9)
+advmod(lie-9, back-10)
+cc(enjoy-12, and-11)
+xcomp(tells-5, enjoy-12)
+conj:and(lie-9, enjoy-12)
+punct(enjoy-12, ’-13)
+mark(inevitable-17, if-14)
+nsubj(inevitable-17, rape-15)
+cop(inevitable-17, is-16)
+advcl:if(enjoy-12, inevitable-17)
+
+Extracted the following NER entity mentions:
+Michigan	STATE_OR_PROVINCE	LOCATION:0.9440385235749567
+candidate	TITLE	-
+rape	CRIMINAL_CHARGE	-
+he	PERSON	-

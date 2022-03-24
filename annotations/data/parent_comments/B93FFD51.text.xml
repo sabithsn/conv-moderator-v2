@@ -1,0 +1,38 @@
+Document: ID=B93FFD51.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+I dont give a shit about Ukraine
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=nt CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=nt NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB nt)
+      (VP (VB give)
+        (NP (DT a) (NN shit))
+        (PP (IN about)
+          (NP (NNP Ukraine)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-4)
+nsubj(give-4, I-1)
+aux(give-4, do-2)
+advmod(give-4, nt-3)
+det(shit-6, a-5)
+obj(give-4, shit-6)
+case(Ukraine-8, about-7)
+obl:about(give-4, Ukraine-8)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9944016831295145

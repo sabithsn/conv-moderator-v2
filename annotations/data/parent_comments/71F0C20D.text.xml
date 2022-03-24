@@ -1,0 +1,138 @@
+Document: ID=71F0C20D.text (3 sentences, 30 tokens)
+
+Sentence #1 (18 tokens):
+Yeah, to understand health mandates, you actually have to understand how to empathize with others.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=health CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=health NamedEntityTag=O]
+[Text=mandates CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=mandate NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=58 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=empathize CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=empathize NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (, ,)
+    (S
+      (VP (TO to)
+        (VP (VB understand)
+          (NP (NN health) (NNS mandates)))))
+    (, ,)
+    (NP (PRP you))
+    (ADVP (RB actually))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB understand)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (VP (TO to)
+                  (VP (VB empathize)
+                    (PP (IN with)
+                      (NP (NNS others)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-10)
+discourse(have-10, Yeah-1)
+punct(have-10, ,-2)
+mark(understand-4, to-3)
+advcl:to(have-10, understand-4)
+compound(mandates-6, health-5)
+obj(understand-4, mandates-6)
+punct(have-10, ,-7)
+nsubj(have-10, you-8)
+nsubj:xsubj(understand-12, you-8)
+advmod(have-10, actually-9)
+mark(understand-12, to-11)
+xcomp(have-10, understand-12)
+advmod(empathize-15, how-13)
+mark(empathize-15, to-14)
+ccomp(understand-12, empathize-15)
+case(others-17, with-16)
+obl:with(empathize-15, others-17)
+punct(have-10, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+I know that's really hard for Republicans.
+
+Tokens:
+[Text=I CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=113 CharacterOffsetEnd=119 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=129 CharacterOffsetEnd=140 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP know)
+      (SBAR
+        (S
+          (NP (DT that))
+          (VP (VBZ 's)
+            (ADJP (RB really) (JJ hard)
+              (PP (IN for)
+                (NP (NNPS Republicans))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, I-1)
+nsubj(hard-6, that-3)
+cop(hard-6, 's-4)
+advmod(hard-6, really-5)
+ccomp(know-2, hard-6)
+case(Republicans-8, for-7)
+obl:for(hard-6, Republicans-8)
+punct(know-2, .-9)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.9999800319827296
+
+Sentence #3 (3 tokens):
+But try.
+
+Tokens:
+[Text=But CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (VP (VB try))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, try-2)
+cc(try-2, But-1)
+punct(try-2, .-3)
+
+Extracted the following NER entity mentions:

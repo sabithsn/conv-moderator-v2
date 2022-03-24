@@ -1,0 +1,59 @@
+Document: ID=845411F9.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+If only it were George Soros or another one of his running buddies.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text=Soros CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Soros NamedEntityTag=PERSON]
+[Text=or CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=running NamedEntityTag=O]
+[Text=buddies CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=buddy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (FRAG
+        (ADVP (RB only))))
+    (NP (PRP it))
+    (VP (VBD were)
+      (NP
+        (NP (NNP George) (NNP Soros))
+        (CC or)
+        (NP
+          (NP (DT another) (NN one))
+          (PP (IN of)
+            (NP (PRP$ his) (NN running) (NNS buddies))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Soros-6)
+mark(only-2, If-1)
+advcl:if(Soros-6, only-2)
+nsubj(Soros-6, it-3)
+cop(Soros-6, were-4)
+compound(Soros-6, George-5)
+cc(one-9, or-7)
+det(one-9, another-8)
+conj:or(Soros-6, one-9)
+case(buddies-13, of-10)
+nmod:poss(buddies-13, his-11)
+compound(buddies-13, running-12)
+nmod:of(one-9, buddies-13)
+punct(Soros-6, .-14)
+
+Extracted the following NER entity mentions:
+George Soros	PERSON	PERSON:0.9988728634397818
+one	NUMBER	NUMBER:-1.0
+his	PERSON	-

@@ -1,0 +1,53 @@
+Document: ID=B2A4FB78.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Shaquille O’Neal Said COVID-19 Vaccines Should Not Be Forced Live on Air
+
+Tokens:
+[Text=Shaquille CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Shaquille NamedEntityTag=PERSON]
+[Text=O’Neal CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=O’Neal NamedEntityTag=PERSON]
+[Text=Said CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Said NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=19 CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=19 NamedEntityTag=O]
+[Text=Vaccines CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NNPS Lemma=Vaccines NamedEntityTag=O]
+[Text=Should CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Be CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=Forced CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBN Lemma=force NamedEntityTag=O]
+[Text=Live CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=live NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Air CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=air NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Shaquille) (NNP O’Neal) (NNP Said))
+    (S
+      (NP (NNP COVID) (HYPH -) (NNP 19) (NNPS Vaccines))
+      (VP (MD Should) (RB Not)
+        (VP (VB Be)
+          (VP (VBN Forced)
+            (ADVP (RB Live))
+            (PP (IN on)
+              (NP (NN Air)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Said-3)
+compound(Said-3, Shaquille-1)
+compound(Said-3, O’Neal-2)
+compound(Vaccines-7, COVID-4)
+punct(Vaccines-7, --5)
+compound(Vaccines-7, 19-6)
+nsubj:pass(Forced-11, Vaccines-7)
+aux(Forced-11, Should-8)
+advmod(Forced-11, Not-9)
+aux:pass(Forced-11, Be-10)
+dep(Said-3, Forced-11)
+advmod(Forced-11, Live-12)
+case(Air-14, on-13)
+obl:on(Forced-11, Air-14)
+
+Extracted the following NER entity mentions:
+Shaquille O’Neal	PERSON	PERSON:0.7023332688069034

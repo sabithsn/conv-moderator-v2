@@ -1,0 +1,38 @@
+Document: ID=D79577E7.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Why did he shoot that guy?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=shoot CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=shoot NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB shoot)
+        (SBAR (IN that)
+          (FRAG
+            (NP (NN guy))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shoot-4)
+advmod(shoot-4, Why-1)
+aux(shoot-4, did-2)
+nsubj(shoot-4, he-3)
+mark(guy-6, that-5)
+dep(shoot-4, guy-6)
+punct(shoot-4, ?-7)
+
+Extracted the following NER entity mentions:
+he	PERSON	-

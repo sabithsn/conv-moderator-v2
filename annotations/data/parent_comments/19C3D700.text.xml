@@ -1,0 +1,91 @@
+Document: ID=19C3D700.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+Imagine welcoming a newborn male baby into this world by cutting off a part of his genitals with millions of nerve endings, WITHOUT anaesthesia.
+
+Tokens:
+[Text=Imagine CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=welcoming CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=welcome NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=newborn CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=newborn NamedEntityTag=O]
+[Text=male CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=male NamedEntityTag=O]
+[Text=baby CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=cutting CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=VBG Lemma=cut NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=genitals CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=NNS Lemma=genitals NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=millions CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=million NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=nerve CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=nerve NamedEntityTag=O]
+[Text=endings CharacterOffsetBegin=115 CharacterOffsetEnd=122 PartOfSpeech=NNS Lemma=ending NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=WITHOUT CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=anaesthesia CharacterOffsetBegin=132 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=anaesthesia NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Imagine)
+      (S
+        (VP (VBG welcoming)
+          (NP (DT a) (JJ newborn) (JJ male) (NN baby))
+          (PP (IN into)
+            (NP (DT this) (NN world)))
+          (PP (IN by)
+            (S
+              (VP (VBG cutting)
+                (PRT (RP off))
+                (NP
+                  (NP (DT a) (NN part))
+                  (PP (IN of)
+                    (NP (PRP$ his) (NNS genitals))))
+                (PP (IN with)
+                  (NP
+                    (NP (NNS millions))
+                    (PP (IN of)
+                      (NP (NN nerve) (NNS endings)))))
+                (, ,)
+                (PP (IN WITHOUT)
+                  (NP (NN anaesthesia)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Imagine-1)
+xcomp(Imagine-1, welcoming-2)
+det(baby-6, a-3)
+amod(baby-6, newborn-4)
+amod(baby-6, male-5)
+obj(welcoming-2, baby-6)
+case(world-9, into-7)
+det(world-9, this-8)
+obl:into(welcoming-2, world-9)
+mark(cutting-11, by-10)
+advcl:by(welcoming-2, cutting-11)
+compound:prt(cutting-11, off-12)
+det(part-14, a-13)
+obj(cutting-11, part-14)
+case(genitals-17, of-15)
+nmod:poss(genitals-17, his-16)
+nmod:of(part-14, genitals-17)
+case(millions-19, with-18)
+det:qmod(endings-22, millions-19)
+fixed(millions-19, of-20)
+compound(endings-22, nerve-21)
+obl(cutting-11, endings-22)
+punct(cutting-11, ,-23)
+case(anaesthesia-25, WITHOUT-24)
+obl:without(cutting-11, anaesthesia-25)
+punct(Imagine-1, .-26)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

@@ -1,0 +1,83 @@
+Document: ID=52832554.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Trump Says He 'May Have To' Run in 2024 During Rambling, Lie-Filled South Carolina Rally Speech
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=Says CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05">May</TIMEX3>]
+[Text=Have CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Run CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=2024 CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t2" type="DATE" value="2024">2024</TIMEX3>]
+[Text=During CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=Rambling CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Rambling NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Lie CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=lie NamedEntityTag=ORGANIZATION]
+[Text=- CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=HYPH Lemma=- NamedEntityTag=ORGANIZATION]
+[Text=Filled CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=VBN Lemma=fill NamedEntityTag=ORGANIZATION]
+[Text=South CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=South NamedEntityTag=ORGANIZATION]
+[Text=Carolina CharacterOffsetBegin=74 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Carolina NamedEntityTag=ORGANIZATION]
+[Text=Rally CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Rally NamedEntityTag=ORGANIZATION]
+[Text=Speech CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Speech NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Trump))
+        (VP (VBZ Says)
+          (NP (PRP He))
+          (`` ')
+          (S
+            (NP (NNP May))
+            (VP (VBP Have)
+              (S
+                (VP (TO To) (`` ')
+                  (VP (VB Run)
+                    (PP (IN in)
+                      (NP (CD 2024)))))))))))
+    (PP (IN During)
+      (NP
+        (ADJP
+          (NP (NNP Rambling) (, ,) (NN Lie))
+          (HYPH -) (VBN Filled))
+        (NNP South) (NNP Carolina) (NNP Rally) (NNP Speech)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Speech-21)
+nsubj(Says-2, Trump-1)
+dep(Speech-21, Says-2)
+obj(Says-2, He-3)
+punct(Says-2, '-4)
+nsubj(Have-6, May-5)
+nsubj:xsubj(Run-9, May-5)
+ccomp(Says-2, Have-6)
+mark(Run-9, To-7)
+punct(Run-9, '-8)
+xcomp(Have-6, Run-9)
+case(2024-11, in-10)
+obl:in(Run-9, 2024-11)
+case(Speech-21, During-12)
+compound(Lie-15, Rambling-13)
+punct(Lie-15, ,-14)
+obl(Filled-17, Lie-15)
+punct(Filled-17, --16)
+amod(Speech-21, Filled-17)
+compound(Speech-21, South-18)
+compound(Speech-21, Carolina-19)
+compound(Speech-21, Rally-20)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9038182141114323
+May	DATE	DATE:-1.0
+2024	DATE	DATE:0.9277054473822283
+Lie-Filled South Carolina Rally Speech	ORGANIZATION	ORGANIZATION:0.6453417902768338
+He	PERSON	-

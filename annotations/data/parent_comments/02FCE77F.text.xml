@@ -1,0 +1,58 @@
+Document: ID=02FCE77F.text (2 sentences, 10 tokens)
+
+Sentence #1 (6 tokens):
+Hey look, hate speech.
+
+Tokens:
+[Text=Hey CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=hey NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=hate NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Hey))
+    (VP
+      (VP (VB look))
+      (, ,)
+      (VP (VB hate)
+        (NP (NN speech))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, look-2)
+discourse(look-2, Hey-1)
+punct(look-2, ,-3)
+dep(look-2, hate-4)
+obj(hate-4, speech-5)
+punct(look-2, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Enjoy your ban dickhead
+
+Tokens:
+[Text=Enjoy CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=enjoy NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=ban NamedEntityTag=O]
+[Text=dickhead CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=dickhead NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Enjoy)
+      (NP (PRP$ your) (NN ban) (NN dickhead)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Enjoy-1)
+nmod:poss(dickhead-4, your-2)
+compound(dickhead-4, ban-3)
+obj(Enjoy-1, dickhead-4)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,62 @@
+Document: ID=778A5E42.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+You mean to tell me my party is rooting for a former KGB agent?!
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=rooting CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=root NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=former CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=KGB CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=KGB NamedEntityTag=ORGANIZATION]
+[Text=agent CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=agent NamedEntityTag=O]
+[Text=?! CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=?! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP mean)
+      (S
+        (VP (TO to)
+          (VP (VB tell)
+            (NP (PRP me))
+            (NP
+              (NP (PRP$ my) (NN party))
+              (SBAR
+                (S
+                  (VP (VBZ is)
+                    (VP (VBG rooting)
+                      (PP (IN for)
+                        (NP (DT a) (JJ former) (NNP KGB) (NN agent))))))))))))
+    (. ?!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-2)
+nsubj(mean-2, You-1)
+nsubj:xsubj(tell-4, You-1)
+mark(tell-4, to-3)
+xcomp(mean-2, tell-4)
+iobj(tell-4, me-5)
+nmod:poss(party-7, my-6)
+obj(tell-4, party-7)
+aux(rooting-9, is-8)
+acl:relcl(party-7, rooting-9)
+case(agent-14, for-10)
+det(agent-14, a-11)
+amod(agent-14, former-12)
+compound(agent-14, KGB-13)
+obl:for(rooting-9, agent-14)
+punct(mean-2, ?!-15)
+
+Extracted the following NER entity mentions:
+KGB	ORGANIZATION	ORGANIZATION:0.9900616497104401

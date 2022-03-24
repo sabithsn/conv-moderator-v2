@@ -1,0 +1,44 @@
+Document: ID=FF38174B.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+r/antiwork in shambles after the Fox News interview
+
+Tokens:
+[Text=r CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NN Lemma=r NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=antiwork CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=antiwork NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=shambles CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=shambles NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=ORGANIZATION]
+[Text=News CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=News NamedEntityTag=ORGANIZATION]
+[Text=interview CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN r) (HYPH /) (NN antiwork))
+    (PP (IN in)
+      (NP
+        (NP (NNS shambles))
+        (PP (IN after)
+          (NP (DT the)
+            (NML (NNP Fox) (NNP News))
+            (NN interview)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, antiwork-3)
+compound(antiwork-3, r-1)
+punct(antiwork-3, /-2)
+case(shambles-5, in-4)
+nmod:in(antiwork-3, shambles-5)
+case(interview-10, after-6)
+det(interview-10, the-7)
+compound(News-9, Fox-8)
+compound(interview-10, News-9)
+nmod:after(shambles-5, interview-10)
+
+Extracted the following NER entity mentions:
+Fox News	ORGANIZATION	ORGANIZATION:0.9739863194626981

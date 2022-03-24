@@ -1,0 +1,47 @@
+Document: ID=A6D44156.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Leaked Fauci Financials Expose How Millionaire Doctor Profited From Pandemic
+
+Tokens:
+[Text=Leaked CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=leak NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=O]
+[Text=Financials CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Financials NamedEntityTag=O]
+[Text=Expose CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=expose NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=Millionaire CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=millionaire NamedEntityTag=O]
+[Text=Doctor CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=doctor NamedEntityTag=TITLE]
+[Text=Profited CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=profit NamedEntityTag=O]
+[Text=From CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Pandemic CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=pandemic NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBN Leaked)
+      (S
+        (NP (NNP Fauci) (NNP Financials))
+        (VP (VB Expose)
+          (SBAR
+            (WHADVP (WRB How))
+            (S
+              (NP (NN Millionaire) (NN Doctor))
+              (VP (VBD Profited)
+                (PP (IN From)
+                  (NP (NN Pandemic)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Leaked-1)
+compound(Financials-3, Fauci-2)
+nsubj(Expose-4, Financials-3)
+ccomp(Leaked-1, Expose-4)
+advmod(Profited-8, How-5)
+compound(Doctor-7, Millionaire-6)
+nsubj(Profited-8, Doctor-7)
+ccomp(Expose-4, Profited-8)
+case(Pandemic-10, From-9)
+obl:from(Profited-8, Pandemic-10)
+
+Extracted the following NER entity mentions:
+Doctor	TITLE	-

@@ -1,0 +1,79 @@
+Document: ID=91B3DDD9.text (2 sentences, 18 tokens)
+
+Sentence #1 (11 tokens):
+You live under the same rock your homeschooled kids do.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=live NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=rock CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=rock NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=homeschooled CharacterOffsetBegin=34 CharacterOffsetEnd=46 PartOfSpeech=VBN Lemma=homeschool NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP live)
+      (PP (IN under)
+        (NP
+          (NP (DT the) (JJ same) (NN rock))
+          (SBAR
+            (S
+              (NP (PRP$ your) (VBN homeschooled) (NNS kids))
+              (VP (VBP do)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, live-2)
+nsubj(live-2, You-1)
+case(rock-6, under-3)
+det(rock-6, the-4)
+amod(rock-6, same-5)
+obl:under(live-2, rock-6)
+nmod:poss(kids-9, your-7)
+amod(kids-9, homeschooled-8)
+nsubj(do-10, kids-9)
+acl:relcl(rock-6, do-10)
+punct(live-2, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+And that’s not my fault.
+
+Tokens:
+[Text=And CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=fault CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=fault NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (DT that))
+    (VP (VBZ ’s) (RB not)
+      (NP (PRP$ my) (NN fault)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fault-6)
+cc(fault-6, And-1)
+nsubj(fault-6, that-2)
+cop(fault-6, ’s-3)
+advmod(fault-6, not-4)
+nmod:poss(fault-6, my-5)
+punct(fault-6, .-7)
+
+Extracted the following NER entity mentions:

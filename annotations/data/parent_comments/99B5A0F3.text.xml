@@ -1,0 +1,67 @@
+Document: ID=99B5A0F3.text (2 sentences, 12 tokens)
+
+Sentence #1 (6 tokens):
+Missing you comes in waves.
+
+Tokens:
+[Text=Missing CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=miss NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=comes CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=waves CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=wave NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Missing)
+        (NP (PRP you))))
+    (VP (VBZ comes)
+      (PP (IN in)
+        (NP (NNS waves))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, comes-3)
+csubj(comes-3, Missing-1)
+obj(Missing-1, you-2)
+case(waves-5, in-4)
+obl:in(comes-3, waves-5)
+punct(comes-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Tonight, I'm drowning.
+
+Tokens:
+[Text=Tonight CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=tonight NamedEntityTag=DATE NormalizedNamedEntityTag=THIS NI Timex=<TIMEX3 alt_value="THIS NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Tonight</TIMEX3>]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=drowning CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=drown NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (NN Tonight))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG drowning)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, drowning-5)
+obl:tmod(drowning-5, Tonight-1)
+punct(drowning-5, ,-2)
+nsubj(drowning-5, I-3)
+aux(drowning-5, 'm-4)
+punct(drowning-5, .-6)
+
+Extracted the following NER entity mentions:
+Tonight	DATE	DATE:-1.0

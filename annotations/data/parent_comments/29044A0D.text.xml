@@ -1,0 +1,82 @@
+Document: ID=29044A0D.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+Is the idea here that Fox News supports Russia since the "Real News" will still supports places invading Ukraine?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=ORGANIZATION]
+[Text=News CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=News NamedEntityTag=ORGANIZATION]
+[Text=supports CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=support NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=since CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Real CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Real NamedEntityTag=MISC]
+[Text=News CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=News NamedEntityTag=MISC]
+[Text=" CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=supports CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=VBZ Lemma=support NamedEntityTag=O]
+[Text=places CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=place NamedEntityTag=O]
+[Text=invading CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=VBG Lemma=invade NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=? CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT the) (NN idea))
+    (SBAR
+      (ADVP (RB here))
+      (IN that)
+      (S
+        (NP (NNP Fox) (NNP News))
+        (VP (VBZ supports)
+          (NP (NNP Russia))
+          (SBAR (IN since)
+            (S
+              (NP (DT the) (`` ") (NNP Real) (NNP News) ('' "))
+              (VP (MD will)
+                (ADVP (RB still))
+                (VP (VBZ supports)
+                  (NP (NNS places))
+                  (S
+                    (VP (VBG invading)
+                      (NP (NNP Ukraine)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Is-1)
+det(idea-3, the-2)
+nsubj(Is-1, idea-3)
+advmod(supports-8, here-4)
+mark(supports-8, that-5)
+compound(News-7, Fox-6)
+nsubj(supports-8, News-7)
+dep(Is-1, supports-8)
+obj(supports-8, Russia-9)
+mark(supports-18, since-10)
+det(News-14, the-11)
+punct(News-14, "-12)
+compound(News-14, Real-13)
+nsubj(supports-18, News-14)
+punct(News-14, "-15)
+aux(supports-18, will-16)
+advmod(supports-18, still-17)
+advcl:since(supports-8, supports-18)
+obj(supports-18, places-19)
+xcomp(supports-18, invading-20)
+obj(invading-20, Ukraine-21)
+punct(Is-1, ?-22)
+
+Extracted the following NER entity mentions:
+Fox News	ORGANIZATION	ORGANIZATION:0.8731843176757436
+Russia	COUNTRY	LOCATION:0.9978134987184483
+Real News	MISC	MISC:0.7186351817913937
+Ukraine	COUNTRY	LOCATION:0.9995502718203512

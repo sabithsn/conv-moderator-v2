@@ -1,0 +1,77 @@
+Document: ID=A8E7040A.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+I've done the research, which is how i know the whole hunter biden conspiracy is bullshit.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=research CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=research NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=i CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=i NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=hunter CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=hunter NamedEntityTag=TITLE]
+[Text=biden CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=biden NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=67 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=is CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=bullshit CharacterOffsetBegin=81 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=bullshit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN done)
+        (NP
+          (NP (DT the) (NN research))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (PRP i))
+                    (VP (VBP know)
+                      (SBAR
+                        (S
+                          (NP (DT the) (JJ whole) (NN hunter) (NN biden) (NN conspiracy))
+                          (VP (VBZ is)
+                            (NP (NN bullshit))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, done-3)
+nsubj(done-3, I-1)
+aux(done-3, 've-2)
+det(research-5, the-4)
+obj(done-3, research-5)
+nsubj(is-8, research-5)
+punct(research-5, ,-6)
+ref(research-5, which-7)
+acl:relcl(research-5, is-8)
+advmod(know-11, how-9)
+nsubj(know-11, i-10)
+ccomp(is-8, know-11)
+det(conspiracy-16, the-12)
+amod(conspiracy-16, whole-13)
+compound(conspiracy-16, hunter-14)
+compound(conspiracy-16, biden-15)
+nsubj(bullshit-18, conspiracy-16)
+cop(bullshit-18, is-17)
+ccomp(know-11, bullshit-18)
+punct(done-3, .-19)
+
+Extracted the following NER entity mentions:
+hunter	TITLE	-
+conspiracy	CRIMINAL_CHARGE	-

@@ -1,0 +1,43 @@
+Document: ID=F260E5BD.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+What an idiotic comment but that the MO of liberals
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=idiotic CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=idiotic NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=comment NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M Timex=<TIMEX3 alt_value="THIS P1M" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the MO</TIMEX3>]
+[Text=MO CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=mo NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M Timex=<TIMEX3 alt_value="THIS P1M" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the MO</TIMEX3>]
+[Text=of CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=liberals CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=liberal NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (WDT What) (DT an) (JJ idiotic) (NN comment))
+    (PP (CC but)
+      (IN that)
+      (NP
+        (NP (DT the) (NN MO))
+        (PP (IN of)
+          (NP (NNS liberals)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, comment-4)
+det(comment-4, What-1)
+det(comment-4, an-2)
+amod(comment-4, idiotic-3)
+cc(MO-8, but-5)
+case(MO-8, that-6)
+det(MO-8, the-7)
+obl:that(comment-4, MO-8)
+case(liberals-10, of-9)
+nmod:of(MO-8, liberals-10)
+
+Extracted the following NER entity mentions:
+the MO	DATE	DATE:-1.0

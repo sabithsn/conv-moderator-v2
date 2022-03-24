@@ -1,0 +1,130 @@
+Document: ID=5C901D3C.text (3 sentences, 29 tokens)
+
+Sentence #1 (17 tokens):
+Imagine the reverse of this, the pride flag is the new everything I hate flag.
+
+Tokens:
+[Text=Imagine CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reverse CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=reverse NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pride CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=pride NamedEntityTag=O]
+[Text=flag CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=flag NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=55 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VBP Lemma=hate NamedEntityTag=O]
+[Text=flag CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=flag NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Imagine)
+        (NP
+          (NP (DT the) (NN reverse))
+          (PP (IN of)
+            (NP (DT this))))))
+    (, ,)
+    (NP (DT the) (NN pride) (NN flag))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ new) (NN everything))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP hate)
+              (NP (NN flag)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, everything-13)
+ccomp(everything-13, Imagine-1)
+det(reverse-3, the-2)
+obj(Imagine-1, reverse-3)
+case(this-5, of-4)
+nmod:of(reverse-3, this-5)
+punct(everything-13, ,-6)
+det(flag-9, the-7)
+compound(flag-9, pride-8)
+nsubj(everything-13, flag-9)
+cop(everything-13, is-10)
+det(everything-13, the-11)
+amod(everything-13, new-12)
+nsubj(hate-15, I-14)
+acl:relcl(everything-13, hate-15)
+obj(hate-15, flag-16)
+punct(everything-13, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Everybody needs to knock this shit off.
+
+Tokens:
+[Text=Everybody CharacterOffsetBegin=80 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=everybody NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=knock CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=VB Lemma=knock NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Everybody))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB knock)
+            (NP (DT this) (NN shit))
+            (PRT (RP off))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needs-2)
+nsubj(needs-2, Everybody-1)
+nsubj:xsubj(knock-4, Everybody-1)
+mark(knock-4, to-3)
+xcomp(needs-2, knock-4)
+det(shit-6, this-5)
+obj(knock-4, shit-6)
+compound:prt(knock-4, off-7)
+punct(needs-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (4 tokens):
+Going nowhere fast.
+
+Tokens:
+[Text=Going CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=nowhere CharacterOffsetBegin=127 CharacterOffsetEnd=134 PartOfSpeech=RB Lemma=nowhere NamedEntityTag=O]
+[Text=fast CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=fast NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBG Going)
+      (ADVP (RB nowhere) (RB fast)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Going-1)
+advmod(fast-3, nowhere-2)
+advmod(Going-1, fast-3)
+punct(Going-1, .-4)
+
+Extracted the following NER entity mentions:

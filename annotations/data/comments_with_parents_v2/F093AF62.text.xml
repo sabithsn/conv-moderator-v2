@@ -1,0 +1,71 @@
+Document: ID=F093AF62.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+My dad is becoming a grandad from his new family and I can’t help but hate the baby
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=dad CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=dad NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=becoming CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=become NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=grandad CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=grandad NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=hate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=baby CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ My) (NN dad))
+      (VP (VBZ is)
+        (VP (VBG becoming)
+          (NP (DT a) (NN grandad))
+          (PP (IN from)
+            (NP (PRP$ his) (JJ new) (NN family))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD ca) (RB n’t)
+        (VP (VB help)
+          (CC but)
+          (VB hate)
+          (NP (DT the) (NN baby)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, becoming-4)
+nmod:poss(dad-2, My-1)
+nsubj(becoming-4, dad-2)
+aux(becoming-4, is-3)
+det(grandad-6, a-5)
+xcomp(becoming-4, grandad-6)
+case(family-10, from-7)
+nmod:poss(family-10, his-8)
+amod(family-10, new-9)
+obl:from(becoming-4, family-10)
+cc(help-15, and-11)
+nsubj(help-15, I-12)
+nsubj(hate-17, I-12)
+aux(help-15, ca-13)
+advmod(help-15, n’t-14)
+conj:and(becoming-4, help-15)
+cc(hate-17, but-16)
+conj:and(becoming-4, hate-17)
+conj:but(help-15, hate-17)
+det(baby-19, the-18)
+obj(help-15, baby-19)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

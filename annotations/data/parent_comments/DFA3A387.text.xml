@@ -1,0 +1,98 @@
+Document: ID=DFA3A387.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+AITA for telling my friend “and this is why people like you never become successful” after she called my grandpa a wage slave?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=telling CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=tell NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=become CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=VBP Lemma=become NamedEntityTag=O]
+[Text=successful CharacterOffsetBegin=73 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=successful NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=grandpa CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=grandpa NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wage CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=wage NamedEntityTag=O]
+[Text=slave CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=slave NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP
+      (NP (NNP AITA))
+      (IN for))
+    (S
+      (VP (VBG telling)
+        (NP (PRP$ my) (NN friend))))
+    (`` “)
+    (S (CC and)
+      (S
+        (NP (DT this))
+        (VP (VBZ is)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP
+                (NP (NNS people))
+                (PP (IN like)
+                  (NP (PRP you))))
+              (ADVP (RB never))
+              (VP (VBP become)
+                (ADJP (JJ successful)))))
+          ('' ”)
+          (SBAR (IN after)
+            (S
+              (NP (PRP she))
+              (VP (VBD called)
+                (NP (PRP$ my) (NN grandpa))
+                (NP (DT a) (NN wage) (NN slave))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, telling-3)
+obl:for(telling-3, AITA-1)
+case(AITA-1, for-2)
+nmod:poss(friend-5, my-4)
+obj(telling-3, friend-5)
+punct(telling-3, “-6)
+cc(is-9, and-7)
+nsubj(is-9, this-8)
+parataxis(telling-3, is-9)
+advmod(become-15, why-10)
+nsubj(become-15, people-11)
+case(you-13, like-12)
+nmod:like(people-11, you-13)
+advmod(become-15, never-14)
+advcl(is-9, become-15)
+xcomp(become-15, successful-16)
+punct(is-9, ”-17)
+mark(called-20, after-18)
+nsubj(called-20, she-19)
+advcl:after(is-9, called-20)
+nmod:poss(grandpa-22, my-21)
+dep(called-20, grandpa-22)
+det(slave-25, a-23)
+compound(slave-25, wage-24)
+obj(called-20, slave-25)
+punct(telling-3, ?-26)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.5716337293118172
+she	PERSON	-

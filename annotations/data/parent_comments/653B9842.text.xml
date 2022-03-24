@@ -1,0 +1,39 @@
+Document: ID=653B9842.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Jews oughtta have a place to live.
+
+Tokens:
+[Text=Jews CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNPS Lemma=Jews NamedEntityTag=MISC]
+[Text=oughtta CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=oughtta NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=live NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNPS Jews) (NNS oughtta))
+    (VP (VBP have)
+      (NP (DT a) (NN place)
+        (S
+          (VP (TO to)
+            (VP (VB live))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-3)
+compound(oughtta-2, Jews-1)
+nsubj(have-3, oughtta-2)
+det(place-5, a-4)
+obj(have-3, place-5)
+mark(live-7, to-6)
+acl:to(place-5, live-7)
+punct(have-3, .-8)
+
+Extracted the following NER entity mentions:
+Jews	MISC	MISC:0.99703522608632

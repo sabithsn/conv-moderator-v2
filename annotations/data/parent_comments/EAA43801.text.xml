@@ -1,0 +1,69 @@
+Document: ID=EAA43801.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Pelosi Says Boebert Needs to Just 'Shut Up' About 13 Dead Service Members - Boebert Responds
+
+Tokens:
+[Text=Pelosi CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Pelosi NamedEntityTag=PERSON]
+[Text=Says CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Boebert CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Boebert NamedEntityTag=O]
+[Text=Needs CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Just CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Just NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=Shut CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=shut NamedEntityTag=O]
+[Text=Up CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=13 CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=CD Lemma=13 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~13.0]
+[Text=Dead CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Dead NamedEntityTag=O]
+[Text=Service CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Service NamedEntityTag=O]
+[Text=Members CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Members NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Boebert CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Boebert NamedEntityTag=O]
+[Text=Responds CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=VBZ Lemma=respond NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Pelosi))
+        (VP (VBZ Says)
+          (SBAR
+            (S
+              (NP (NNP Boebert))
+              (VP (VBZ Needs)
+                (PP (IN to)
+                  (NP
+                    (NP (NNP Just) (POS '))
+                    (NN Shut)))))))))
+    (PP (IN Up) (`` ')
+      (NP (RB About) (CD 13)))
+    (NP (NNP Dead) (NNP Service) (NNP Members) (HYPH -) (NNP Boebert))
+    (VP (VBZ Responds))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Responds-18)
+nsubj(Says-2, Pelosi-1)
+parataxis(Responds-18, Says-2)
+nsubj(Needs-4, Boebert-3)
+ccomp(Says-2, Needs-4)
+case(Shut-8, to-5)
+nmod:poss(Shut-8, Just-6)
+case(Just-6, '-7)
+obl:to(Needs-4, Shut-8)
+case(13-12, Up-9)
+punct(13-12, '-10)
+advmod(13-12, About-11)
+obl:up(Responds-18, 13-12)
+compound(Boebert-17, Dead-13)
+compound(Boebert-17, Service-14)
+compound(Boebert-17, Members-15)
+punct(Boebert-17, --16)
+nsubj(Responds-18, Boebert-17)
+
+Extracted the following NER entity mentions:
+Pelosi	PERSON	PERSON:0.9601275122842241
+13	NUMBER	NUMBER:-1.0

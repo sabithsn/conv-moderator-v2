@@ -1,0 +1,46 @@
+Document: ID=113DFF3B.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+What sound instantly transports you back to the 1990s?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=instantly CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=instantly NamedEntityTag=O]
+[Text=transports CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=transport NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=199X Timex=<TIMEX3 tid="t1" type="DATE" value="199X">the 1990s</TIMEX3>]
+[Text=1990s CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=1990 NamedEntityTag=DATE NormalizedNamedEntityTag=199X Timex=<TIMEX3 tid="t1" type="DATE" value="199X">the 1990s</TIMEX3>]
+[Text=? CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN sound))
+    (SQ
+      (VP
+        (ADVP (RB instantly))
+        (VBZ transports)
+        (NP (PRP you))
+        (ADVP (RB back))
+        (PP (IN to)
+          (NP (DT the) (NNS 1990s)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, transports-4)
+det(sound-2, What-1)
+nsubj(transports-4, sound-2)
+advmod(transports-4, instantly-3)
+obj(transports-4, you-5)
+advmod(transports-4, back-6)
+case(1990s-9, to-7)
+det(1990s-9, the-8)
+obl:to(transports-4, 1990s-9)
+punct(transports-4, ?-10)
+
+Extracted the following NER entity mentions:
+the 1990s	DATE	DATE:-1.0

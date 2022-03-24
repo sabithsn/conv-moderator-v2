@@ -1,0 +1,90 @@
+Document: ID=EED9A493.text (2 sentences, 20 tokens)
+
+Sentence #1 (9 tokens):
+Sounds like you're being taken advantage of.
+
+Tokens:
+[Text=Sounds CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=advantage CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=advantage NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Sounds)
+      (SBAR (IN like)
+        (S
+          (NP (PRP you))
+          (VP (VBP 're)
+            (VP (VBG being)
+              (VP (VBN taken)
+                (PP
+                  (NP (NN advantage))
+                  (IN of))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sounds-1)
+mark(taken-6, like-2)
+nsubj:pass(taken-6, you-3)
+aux(taken-6, 're-4)
+aux:pass(taken-6, being-5)
+advcl:like(Sounds-1, taken-6)
+obl:of(taken-6, advantage-7)
+case(advantage-7, of-8)
+punct(Sounds-1, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Get away from these men you'll be better off.
+
+Tokens:
+[Text=Get CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Get)
+        (ADVP (RB away))
+        (PP (IN from)
+          (NP (DT these) (NNS men)))))
+    (NP (PRP you))
+    (VP (MD 'll)
+      (VP (VB be)
+        (ADJP (JJR better) (RP off))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, better-9)
+dep(better-9, Get-1)
+advmod(Get-1, away-2)
+case(men-5, from-3)
+det(men-5, these-4)
+obl:from(Get-1, men-5)
+nsubj(better-9, you-6)
+aux(better-9, 'll-7)
+cop(better-9, be-8)
+dep(better-9, off-10)
+punct(better-9, .-11)
+
+Extracted the following NER entity mentions:

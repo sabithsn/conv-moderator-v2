@@ -1,0 +1,50 @@
+Document: ID=CE93B0F4.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Lies about the size of the convoy are going to backfire
+
+Tokens:
+[Text=Lies CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=lie NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=size CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=size NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=convoy CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=convoy NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=backfire CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=backfire NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Lies)
+      (SBAR (IN about)
+        (S
+          (NP
+            (NP (DT the) (NN size))
+            (PP (IN of)
+              (NP (DT the) (NN convoy))))
+          (VP (VBP are)
+            (VP (VBG going)
+              (S
+                (VP (TO to)
+                  (VP (VB backfire)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lies-1)
+mark(going-9, about-2)
+det(size-4, the-3)
+nsubj(going-9, size-4)
+nsubj:xsubj(backfire-11, size-4)
+case(convoy-7, of-5)
+det(convoy-7, the-6)
+nmod:of(size-4, convoy-7)
+aux(going-9, are-8)
+advcl:about(Lies-1, going-9)
+mark(backfire-11, to-10)
+xcomp(going-9, backfire-11)
+
+Extracted the following NER entity mentions:

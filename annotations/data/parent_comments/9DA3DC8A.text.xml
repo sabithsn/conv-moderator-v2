@@ -1,0 +1,68 @@
+Document: ID=9DA3DC8A.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Can't you just beat all the others on by one while running away from the fat guy?
+
+Tokens:
+[Text=Ca CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=beat CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=beat NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=while CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=fat NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Ca) (RB n't)
+    (NP (PRP you))
+    (ADVP (RB just))
+    (VP (VBD beat)
+      (NP (PDT all) (DT the) (NNS others))
+      (PP (IN on)
+        (PP (IN by)
+          (NP (CD one))))
+      (PP (IN while)
+        (S
+          (VP (VBG running)
+            (ADVP (RB away))
+            (PP (IN from)
+              (NP (DT the) (NN fat) (NN guy)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beat-5)
+aux(beat-5, Ca-1)
+advmod(beat-5, n't-2)
+nsubj(beat-5, you-3)
+advmod(beat-5, just-4)
+det:predet(others-8, all-6)
+det(others-8, the-7)
+obj(beat-5, others-8)
+case(one-11, on-9)
+case(one-11, by-10)
+obl:on(beat-5, one-11)
+mark(running-13, while-12)
+advcl:while(beat-5, running-13)
+advmod(running-13, away-14)
+case(guy-18, from-15)
+det(guy-18, the-16)
+compound(guy-18, fat-17)
+obl:from(running-13, guy-18)
+punct(beat-5, ?-19)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

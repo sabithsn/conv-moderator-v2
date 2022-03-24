@@ -1,0 +1,86 @@
+Document: ID=84CD0A01.text (2 sentences, 18 tokens)
+
+Sentence #1 (17 tokens):
+Advocating for people to get something is a lot different than forcing them to get it.
+
+Tokens:
+[Text=Advocating CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=VBG Lemma=advocate NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=48 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=forcing CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=force NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Advocating)
+        (PP (IN for)
+          (NP (NNS people)))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (NN something)))))))
+    (VP (VBZ is)
+      (ADJP
+        (NP (DT a) (NN lot))
+        (JJ different)
+        (PP (IN than)
+          (S
+            (VP (VBG forcing)
+              (NP (PRP them))
+              (S
+                (VP (TO to)
+                  (VP (VB get)
+                    (NP (PRP it))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, different-10)
+csubj(different-10, Advocating-1)
+case(people-3, for-2)
+obl:for(Advocating-1, people-3)
+mark(get-5, to-4)
+xcomp(Advocating-1, get-5)
+obj(get-5, something-6)
+cop(different-10, is-7)
+det(lot-9, a-8)
+obl:npmod(different-10, lot-9)
+mark(forcing-12, than-11)
+advcl:than(different-10, forcing-12)
+obj(forcing-12, them-13)
+nsubj:xsubj(get-15, them-13)
+mark(get-15, to-14)
+xcomp(forcing-12, get-15)
+obj(get-15, it-16)
+punct(different-10, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:

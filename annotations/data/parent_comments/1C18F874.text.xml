@@ -1,0 +1,96 @@
+Document: ID=1C18F874.text (2 sentences, 21 tokens)
+
+Sentence #1 (7 tokens):
+And which country are you from?
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ (CC And)
+    (WHNP (WDT which) (NN country))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (PP (IN from)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-4)
+cc(are-4, And-1)
+det(country-3, which-2)
+obj(are-4, country-3)
+nsubj(are-4, you-5)
+dep(are-4, from-6)
+punct(are-4, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+Edit: please please be American 😂 this is going to be so easy
+
+Tokens:
+[Text=Edit CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=😂 CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=NFP Lemma=😂 NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=easy CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=easy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Edit))
+      (: :)
+      (PRN
+        (S
+          (INTJ (UH please) (UH please))
+          (VP (VB be)
+            (ADJP (JJ American))))))
+    (NFP 😂)
+    (NP (DT this))
+    (VP (VBZ is)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB be))))))
+    (FRAG
+      (ADJP (RB so) (JJ easy)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, going-10)
+nsubj(going-10, Edit-1)
+nsubj:xsubj(be-12, Edit-1)
+punct(Edit-1, :-2)
+discourse(American-6, please-3)
+dep(please-3, please-4)
+cop(American-6, be-5)
+dep(Edit-1, American-6)
+punct(going-10, 😂-7)
+nsubj(going-10, this-8)
+nsubj:xsubj(be-12, this-8)
+aux(going-10, is-9)
+mark(be-12, to-11)
+xcomp(going-10, be-12)
+advmod(easy-14, so-13)
+dep(going-10, easy-14)
+
+Extracted the following NER entity mentions:
+American	NATIONALITY	MISC:0.9996279552474332

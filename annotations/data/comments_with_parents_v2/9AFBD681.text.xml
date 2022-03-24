@@ -1,0 +1,110 @@
+Document: ID=9AFBD681.text (2 sentences, 26 tokens)
+
+Sentence #1 (10 tokens):
+Ex GF cheated with my friend and my dad.
+
+Tokens:
+[Text=Ex CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=Ex NamedEntityTag=O]
+[Text=GF CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=GF NamedEntityTag=O]
+[Text=cheated CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=cheat NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=dad CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=dad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ex) (NNP GF))
+    (VP (VBD cheated)
+      (PP (IN with)
+        (NP
+          (NP (PRP$ my) (NN friend))
+          (CC and)
+          (NP (PRP$ my) (NN dad)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cheated-3)
+compound(GF-2, Ex-1)
+nsubj(cheated-3, GF-2)
+case(friend-6, with-4)
+nmod:poss(friend-6, my-5)
+obl:with(cheated-3, friend-6)
+cc(dad-9, and-7)
+nmod:poss(dad-9, my-8)
+obl:with(cheated-3, dad-9)
+conj:and(friend-6, dad-9)
+punct(cheated-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+When I confronted my friend, he told me he slept with my mom too.
+
+Tokens:
+[Text=When CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=confronted CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=confront NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=slept CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=VBD Lemma=sleep NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mom CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=mom NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP I))
+        (VP (VBD confronted)
+          (NP (PRP$ my) (NN friend)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD told)
+      (NP (PRP me))
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (VBD slept)
+            (PP (IN with)
+              (NP (PRP$ my) (NN mom)))
+            (ADVP (RB too))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-8)
+advmod(confronted-3, When-1)
+nsubj(confronted-3, I-2)
+advcl(told-8, confronted-3)
+nmod:poss(friend-5, my-4)
+obj(confronted-3, friend-5)
+punct(told-8, ,-6)
+nsubj(told-8, he-7)
+obj(told-8, me-9)
+nsubj(slept-11, he-10)
+ccomp(told-8, slept-11)
+case(mom-14, with-12)
+nmod:poss(mom-14, my-13)
+obl:with(slept-11, mom-14)
+advmod(slept-11, too-15)
+punct(told-8, .-16)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+he	PERSON	-

@@ -1,0 +1,78 @@
+Document: ID=73966348.text (2 sentences, 18 tokens)
+
+Sentence #1 (5 tokens):
+Good luck at college.
+
+Tokens:
+[Text=Good CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=luck CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=luck NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=college CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=college NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (JJ Good) (NN luck))
+    (PP (IN at)
+      (NP (NN college)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, luck-2)
+amod(luck-2, Good-1)
+case(college-4, at-3)
+obl:at(luck-2, college-4)
+punct(luck-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+The real world will be waiting for you on the other side.
+
+Tokens:
+[Text=The CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=waiting CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=wait NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ real) (NN world))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBG waiting)
+          (PP (IN for)
+            (NP (PRP you)))
+          (PP (IN on)
+            (NP (DT the) (JJ other) (NN side))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, waiting-6)
+det(world-3, The-1)
+amod(world-3, real-2)
+nsubj(waiting-6, world-3)
+aux(waiting-6, will-4)
+aux(waiting-6, be-5)
+case(you-8, for-7)
+obl:for(waiting-6, you-8)
+case(side-12, on-9)
+det(side-12, the-10)
+amod(side-12, other-11)
+obl:on(waiting-6, side-12)
+punct(waiting-6, .-13)
+
+Extracted the following NER entity mentions:

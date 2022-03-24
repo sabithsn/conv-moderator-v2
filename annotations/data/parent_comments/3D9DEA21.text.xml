@@ -1,0 +1,69 @@
+Document: ID=3D9DEA21.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Tell me you don’t know Texas politics without saying you don’t know Texas politics.
+
+Tokens:
+[Text=Tell CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=politics CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=politics CharacterOffsetBegin=74 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Tell)
+      (NP (PRP me))
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP do) (RB n’t)
+            (VP (VB know)
+              (NP (NNP Texas) (NNS politics))
+              (PP (IN without)
+                (S
+                  (VP (VBG saying)
+                    (SBAR
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP do) (RB n’t)
+                          (VP (VB know)
+                            (NP (NNP Texas) (NNS politics))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tell-1)
+obj(Tell-1, me-2)
+nsubj(know-6, you-3)
+aux(know-6, do-4)
+advmod(know-6, n’t-5)
+ccomp(Tell-1, know-6)
+compound(politics-8, Texas-7)
+obj(know-6, politics-8)
+mark(saying-10, without-9)
+advcl:without(know-6, saying-10)
+nsubj(know-14, you-11)
+aux(know-14, do-12)
+advmod(know-14, n’t-13)
+ccomp(saying-10, know-14)
+compound(politics-16, Texas-15)
+obj(know-14, politics-16)
+punct(Tell-1, .-17)
+
+Extracted the following NER entity mentions:
+Texas	STATE_OR_PROVINCE	LOCATION:0.9855376236999075
+Texas	STATE_OR_PROVINCE	LOCATION:0.9815843030624288

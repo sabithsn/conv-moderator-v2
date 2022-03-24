@@ -1,0 +1,58 @@
+Document: ID=1FDB3899.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Guatemala: bans same-sex marriage and triples jail time for abortion
+
+Tokens:
+[Text=Guatemala CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Guatemala NamedEntityTag=COUNTRY]
+[Text=: CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=bans CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=ban NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=marriage CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=marriage NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=triples CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=triple NamedEntityTag=O]
+[Text=jail CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=jail NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=abortion CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Guatemala))
+    (: :)
+    (NP
+      (NP
+        (NP (NNS bans))
+        (NP
+          (NML (JJ same) (HYPH -) (NN sex))
+          (NN marriage)))
+      (CC and)
+      (NP
+        (NP (NNS triples))
+        (NP
+          (NP (NN jail) (NN time))
+          (PP (IN for)
+            (NP (NN abortion))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Guatemala-1)
+punct(Guatemala-1, :-2)
+dep(Guatemala-1, bans-3)
+amod(sex-6, same-4)
+punct(sex-6, --5)
+compound(marriage-7, sex-6)
+dep(bans-3, marriage-7)
+cc(triples-9, and-8)
+dep(Guatemala-1, triples-9)
+conj:and(bans-3, triples-9)
+compound(time-11, jail-10)
+dep(triples-9, time-11)
+case(abortion-13, for-12)
+nmod:for(time-11, abortion-13)
+
+Extracted the following NER entity mentions:
+Guatemala	COUNTRY	LOCATION:0.995180022354474

@@ -1,0 +1,82 @@
+Document: ID=8AF6102B.text (2 sentences, 17 tokens)
+
+Sentence #1 (4 tokens):
+Reported by Ukraine.
+
+Tokens:
+[Text=Reported CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=report NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBN Reported)
+      (PP (IN by)
+        (NP (NNP Ukraine))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Reported-1)
+case(Ukraine-3, by-2)
+obl:by(Reported-1, Ukraine-3)
+punct(Reported-1, .-4)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9987630630202389
+
+Sentence #2 (13 tokens):
+We know for a fact some of their reports are complete bullshit.
+
+Tokens:
+[Text=We CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=reports CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=complete CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=complete NamedEntityTag=O]
+[Text=bullshit CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=bullshit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP know)
+      (PP (IN for)
+        (NP
+          (NP (DT a) (NN fact))
+          (SBAR
+            (S
+              (NP
+                (NP (DT some))
+                (PP (IN of)
+                  (NP (PRP$ their) (NNS reports))))
+              (VP (VBP are)
+                (NP (JJ complete) (NN bullshit))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, We-1)
+case(fact-5, for-3)
+det(fact-5, a-4)
+obl:for(know-2, fact-5)
+nsubj(bullshit-12, some-6)
+case(reports-9, of-7)
+nmod:poss(reports-9, their-8)
+nmod:of(some-6, reports-9)
+cop(bullshit-12, are-10)
+amod(bullshit-12, complete-11)
+acl:relcl(fact-5, bullshit-12)
+punct(know-2, .-13)
+
+Extracted the following NER entity mentions:

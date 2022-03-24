@@ -1,0 +1,116 @@
+Document: ID=9CC0925F.text (2 sentences, 28 tokens)
+
+Sentence #1 (11 tokens):
+Reddit apparently has created a LARP sub for wannabe soldiers.
+
+Tokens:
+[Text=Reddit CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=reddit NamedEntityTag=LOCATION]
+[Text=apparently CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=apparently NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=created CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBN Lemma=create NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=LARP CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=larp NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=wannabe CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=wannabe NamedEntityTag=O]
+[Text=soldiers CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=soldier NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Reddit))
+    (ADVP (RB apparently))
+    (VP (VBZ has)
+      (VP (VBN created)
+        (NP (DT a) (NN LARP) (NN sub))
+        (PP (IN for)
+          (NP (JJ wannabe) (NNS soldiers)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, created-4)
+nsubj(created-4, Reddit-1)
+advmod(created-4, apparently-2)
+aux(created-4, has-3)
+det(sub-7, a-5)
+compound(sub-7, LARP-6)
+obj(created-4, sub-7)
+case(soldiers-10, for-8)
+amod(soldiers-10, wannabe-9)
+obl:for(created-4, soldiers-10)
+punct(created-4, .-11)
+
+Extracted the following NER entity mentions:
+Reddit	LOCATION	LOCATION:0.9633983122299025
+
+Sentence #2 (17 tokens):
+Of concern for one user thinking about joining a war: the vaccination status of Ukrainians.
+
+Tokens:
+[Text=Of CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=concern CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=concern NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=user CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=user NamedEntityTag=O]
+[Text=thinking CharacterOffsetBegin=87 CharacterOffsetEnd=95 PartOfSpeech=VBG Lemma=think NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=joining CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=VBG Lemma=join NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=: CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vaccination CharacterOffsetBegin=121 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=vaccination NamedEntityTag=O]
+[Text=status CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=status NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ukrainians CharacterOffsetBegin=143 CharacterOffsetEnd=153 PartOfSpeech=NNPS Lemma=Ukrainians NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP
+        (NP (NN concern))
+        (PP (IN for)
+          (NP (CD one)))))
+    (NP
+      (NP (NN user))
+      (VP (VBG thinking)
+        (PP (IN about)
+          (S
+            (VP (VBG joining)
+              (NP
+                (NP (DT a) (NN war))
+                (: :)
+                (NP
+                  (NP (DT the) (NN vaccination) (NN status))
+                  (PP (IN of)
+                    (NP (NNPS Ukrainians))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, user-5)
+case(concern-2, Of-1)
+dep(user-5, concern-2)
+case(one-4, for-3)
+nmod:for(concern-2, one-4)
+acl(user-5, thinking-6)
+mark(joining-8, about-7)
+advcl:about(thinking-6, joining-8)
+det(war-10, a-9)
+obj(joining-8, war-10)
+punct(war-10, :-11)
+det(status-14, the-12)
+compound(status-14, vaccination-13)
+dep(war-10, status-14)
+case(Ukrainians-16, of-15)
+nmod:of(status-14, Ukrainians-16)
+punct(user-5, .-17)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+war	CAUSE_OF_DEATH	-
+Ukrainians	MISC	MISC:0.9983918679959419

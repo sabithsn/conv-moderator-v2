@@ -1,0 +1,52 @@
+Document: ID=6060F8B7.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Pennsylvania Democrat Commissioner Charged with Raping 15-Year-Old Boy
+
+Tokens:
+[Text=Pennsylvania CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Pennsylvania NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Democrat CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=MISC]
+[Text=Commissioner CharacterOffsetBegin=22 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Commissioner NamedEntityTag=O]
+[Text=Charged CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=VBN Lemma=charge NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Raping CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=rape NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=15 NamedEntityTag=DURATION NormalizedNamedEntityTag=P15Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P15Y">15-Year-Old</TIMEX3>]
+[Text=- CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P15Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P15Y">15-Year-Old</TIMEX3>]
+[Text=Year CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P15Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P15Y">15-Year-Old</TIMEX3>]
+[Text=- CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P15Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P15Y">15-Year-Old</TIMEX3>]
+[Text=Old CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P15Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P15Y">15-Year-Old</TIMEX3>]
+[Text=Boy CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=boy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Pennsylvania) (NNP Democrat) (NNP Commissioner))
+    (VP (VBN Charged)
+      (PP (IN with)
+        (S
+          (VP (VBG Raping)
+            (NP
+              (ADJP
+                (NML (CD 15) (HYPH -) (NN Year))
+                (HYPH -) (JJ Old))
+              (NN Boy))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Commissioner-3)
+compound(Commissioner-3, Pennsylvania-1)
+compound(Commissioner-3, Democrat-2)
+dep(Commissioner-3, Charged-4)
+mark(Raping-6, with-5)
+advcl:with(Charged-4, Raping-6)
+nummod(Year-9, 15-7)
+punct(Year-9, --8)
+dep(Old-11, Year-9)
+punct(Old-11, --10)
+amod(Boy-12, Old-11)
+obj(Raping-6, Boy-12)
+
+Extracted the following NER entity mentions:
+Pennsylvania	STATE_OR_PROVINCE	LOCATION:0.9972672857862537
+Democrat	MISC	MISC:0.855380698458162
+15-Year-Old	DURATION	DURATION:-1.0

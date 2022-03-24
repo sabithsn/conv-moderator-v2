@@ -1,0 +1,103 @@
+Document: ID=6910C9BD.text (2 sentences, 23 tokens)
+
+Sentence #1 (10 tokens):
+okay you clearly have very little knowledge about psychology.
+
+Tokens:
+[Text=okay CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=okay NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=clearly CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=RB Lemma=clearly NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=knowledge CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=knowledge NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=psychology CharacterOffsetBegin=50 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=psychology NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH okay))
+    (NP (PRP you))
+    (ADVP (RB clearly))
+    (VP (VBP have)
+      (NP
+        (NP
+          (ADJP (RB very) (JJ little))
+          (NN knowledge))
+        (PP (IN about)
+          (NP (NN psychology)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+discourse(have-4, okay-1)
+nsubj(have-4, you-2)
+advmod(have-4, clearly-3)
+advmod(little-6, very-5)
+amod(knowledge-7, little-6)
+obj(have-4, knowledge-7)
+case(psychology-9, about-8)
+nmod:about(knowledge-7, psychology-9)
+punct(have-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+why dont you read up a bit and educate yourself :)
+
+Tokens:
+[Text=why CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=nt CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=nt NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=educate CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=educate NamedEntityTag=O]
+[Text=yourself CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=yourself NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PRN
+    (S
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (VP (VBP do) (RB nt))))
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VB read)
+            (PRT (RP up))
+            (NP (DT a) (NN bit)))
+          (CC and)
+          (VP (VB educate)
+            (NP (PRP yourself))
+            (: :)))))
+    (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, read-5)
+advmod(do-2, why-1)
+advcl(read-5, do-2)
+advmod(do-2, nt-3)
+nsubj(read-5, you-4)
+nsubj(educate-10, you-4)
+compound:prt(read-5, up-6)
+det(bit-8, a-7)
+obj(read-5, bit-8)
+cc(educate-10, and-9)
+conj:and(read-5, educate-10)
+obj(educate-10, yourself-11)
+punct(educate-10, :-12)
+punct(read-5, )-13)
+
+Extracted the following NER entity mentions:

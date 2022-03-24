@@ -1,0 +1,41 @@
+Document: ID=234B0145.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Why are so many liberals pessimistic about America?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=liberals CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=liberal NamedEntityTag=O]
+[Text=pessimistic CharacterOffsetBegin=25 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=pessimistic NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=? CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP (RB so) (JJ many) (NNS liberals))
+      (ADJP (JJ pessimistic)
+        (PP (IN about)
+          (NP (NNP America)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pessimistic-6)
+advmod(pessimistic-6, Why-1)
+cop(pessimistic-6, are-2)
+advmod(liberals-5, so-3)
+amod(liberals-5, many-4)
+nsubj(pessimistic-6, liberals-5)
+case(America-8, about-7)
+obl:about(pessimistic-6, America-8)
+punct(pessimistic-6, ?-9)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.97101031170178

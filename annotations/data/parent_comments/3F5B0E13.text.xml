@@ -1,0 +1,75 @@
+Document: ID=3F5B0E13.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Missouri seeks to ban abortion for ectopic pregnancies, with a penalty of up to 30 years in prison
+
+Tokens:
+[Text=Missouri CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Missouri NamedEntityTag=STATE_OR_PROVINCE]
+[Text=seeks CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=seek NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=ban NamedEntityTag=O]
+[Text=abortion CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ectopic CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=ectopic NamedEntityTag=O]
+[Text=pregnancies CharacterOffsetBegin=43 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=pregnancy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=penalty CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=penalty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=up NamedEntityTag=DURATION NormalizedNamedEntityTag=P30Y Timex=<TIMEX3 mod="EQUAL_OR_LESS" tid="t1" type="DURATION" value="P30Y">up to 30 years</TIMEX3>]
+[Text=to CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=to NamedEntityTag=DURATION NormalizedNamedEntityTag=P30Y Timex=<TIMEX3 mod="EQUAL_OR_LESS" tid="t1" type="DURATION" value="P30Y">up to 30 years</TIMEX3>]
+[Text=30 CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=CD Lemma=30 NamedEntityTag=DURATION NormalizedNamedEntityTag=P30Y Timex=<TIMEX3 mod="EQUAL_OR_LESS" tid="t1" type="DURATION" value="P30Y">up to 30 years</TIMEX3>]
+[Text=years CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P30Y Timex=<TIMEX3 mod="EQUAL_OR_LESS" tid="t1" type="DURATION" value="P30Y">up to 30 years</TIMEX3>]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=prison CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=prison NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Missouri))
+    (VP (VBZ seeks)
+      (S
+        (VP (TO to)
+          (VP (VB ban)
+            (NP (NN abortion))
+            (PP (IN for)
+              (NP (JJ ectopic) (NNS pregnancies)))
+            (, ,)
+            (PP (IN with)
+              (NP
+                (NP (DT a) (NN penalty))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (QP (RB up) (IN to) (CD 30))
+                      (NNS years))
+                    (PP (IN in)
+                      (NP (NN prison)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seeks-2)
+nsubj(seeks-2, Missouri-1)
+nsubj:xsubj(ban-4, Missouri-1)
+mark(ban-4, to-3)
+xcomp(seeks-2, ban-4)
+obj(ban-4, abortion-5)
+case(pregnancies-8, for-6)
+amod(pregnancies-8, ectopic-7)
+obl:for(ban-4, pregnancies-8)
+punct(ban-4, ,-9)
+case(penalty-12, with-10)
+det(penalty-12, a-11)
+obl:with(ban-4, penalty-12)
+case(years-17, of-13)
+advmod(30-16, up-14)
+advmod(30-16, to-15)
+nummod(years-17, 30-16)
+nmod:of(penalty-12, years-17)
+case(prison-19, in-18)
+nmod:in(years-17, prison-19)
+
+Extracted the following NER entity mentions:
+Missouri	STATE_OR_PROVINCE	LOCATION:0.8958585507217498
+up to 30 years	DURATION	DURATION:-1.0

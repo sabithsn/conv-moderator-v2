@@ -1,0 +1,57 @@
+Document: ID=4434D821.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+U.S. Army Begins Immediate Discharge Of Soldiers Who Refuse COVID-19 Vaccine
+
+Tokens:
+[Text=U.S. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=ORGANIZATION]
+[Text=Army CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Army NamedEntityTag=ORGANIZATION]
+[Text=Begins CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=begin NamedEntityTag=O]
+[Text=Immediate CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Immediate NamedEntityTag=O]
+[Text=Discharge CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Discharge NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Soldiers CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NNPS Lemma=Soldiers NamedEntityTag=O]
+[Text=Who CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Refuse CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=refuse NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=19 CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=CD Lemma=19 NamedEntityTag=O]
+[Text=Vaccine CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP U.S.) (NNP Army))
+    (VP (VBZ Begins)
+      (NP
+        (NP
+          (NP (NNP Immediate) (NNP Discharge))
+          (PP (IN Of)
+            (NP (NNPS Soldiers))))
+        (SBAR
+          (WHNP (WP Who))
+          (S
+            (VP (VB Refuse)
+              (NP
+                (NML (NN COVID) (HYPH -) (CD 19))
+                (NN Vaccine)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Begins-3)
+compound(Army-2, U.S.-1)
+nsubj(Begins-3, Army-2)
+compound(Discharge-5, Immediate-4)
+obj(Begins-3, Discharge-5)
+nsubj(Refuse-9, Discharge-5)
+case(Soldiers-7, Of-6)
+nmod:of(Discharge-5, Soldiers-7)
+ref(Discharge-5, Who-8)
+acl:relcl(Discharge-5, Refuse-9)
+compound(Vaccine-13, COVID-10)
+punct(COVID-10, --11)
+nummod(COVID-10, 19-12)
+obj(Refuse-9, Vaccine-13)
+
+Extracted the following NER entity mentions:
+U.S. Army	ORGANIZATION	ORGANIZATION:0.9564772274774651

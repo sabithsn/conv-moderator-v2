@@ -1,0 +1,78 @@
+Document: ID=078E8370.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+16-Year-Old Rapper Charged With Shooting New York City Police Officer Gets Out On $250,000 Bail
+
+Tokens:
+[Text=16 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=16 NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16-Year-Old</TIMEX3>]
+[Text=- CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16-Year-Old</TIMEX3>]
+[Text=Year CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16-Year-Old</TIMEX3>]
+[Text=- CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16-Year-Old</TIMEX3>]
+[Text=Old CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16-Year-Old</TIMEX3>]
+[Text=Rapper CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=rapper NamedEntityTag=TITLE]
+[Text=Charged CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=VBN Lemma=charge NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Shooting CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=shooting NamedEntityTag=CAUSE_OF_DEATH]
+[Text=New CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=New NamedEntityTag=CITY]
+[Text=York CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=York NamedEntityTag=CITY]
+[Text=City CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=City NamedEntityTag=CITY]
+[Text=Police CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Police NamedEntityTag=TITLE]
+[Text=Officer CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Officer NamedEntityTag=TITLE]
+[Text=Gets CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$250000.0]
+[Text=250,000 CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=CD Lemma=250,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$250000.0]
+[Text=Bail CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=bail NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (CD 16))
+    (: -)
+    (S
+      (NP
+        (NP
+          (ADJP (NN Year) (HYPH -) (JJ Old))
+          (NN Rapper))
+        (VP (VBN Charged)
+          (PP (IN With)
+            (NP (NN Shooting)
+              (NML (NNP New) (NNP York) (NNP City) (NNP Police) (NNP Officer))))))
+      (VP (VBZ Gets)
+        (PRT (RB Out))
+        (PP (IN On)
+          (NP
+            (NML ($ $) (CD 250,000))
+            (NN Bail)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 16-1)
+punct(16-1, --2)
+obl:npmod(Old-5, Year-3)
+punct(Old-5, --4)
+amod(Rapper-6, Old-5)
+nsubj(Gets-15, Rapper-6)
+acl(Rapper-6, Charged-7)
+case(Officer-14, With-8)
+dep(Officer-14, Shooting-9)
+compound(Officer-14, New-10)
+compound(Officer-14, York-11)
+compound(Officer-14, City-12)
+compound(Officer-14, Police-13)
+obl:with(Charged-7, Officer-14)
+parataxis(16-1, Gets-15)
+compound:prt(Gets-15, Out-16)
+case(Bail-20, On-17)
+compound(Bail-20, $-18)
+nummod($-18, 250,000-19)
+obl:on(Gets-15, Bail-20)
+
+Extracted the following NER entity mentions:
+16-Year-Old	DURATION	DURATION:-1.0
+Rapper	TITLE	-
+Shooting	CAUSE_OF_DEATH	-
+New York City	CITY	LOCATION:0.9645303597610059
+Police Officer	TITLE	-
+$250,000	MONEY	MONEY:0.998100288272874

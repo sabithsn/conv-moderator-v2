@@ -1,0 +1,64 @@
+Document: ID=C5D8EF57.text (2 sentences, 12 tokens)
+
+Sentence #1 (10 tokens):
+Who the fuck talks about their wife like that?
+
+Tokens:
+[Text=Who CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=talks CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (NP (DT the))
+      (VP (VB fuck)
+        (NP (NNS talks))
+        (PP (IN about)
+          (NP
+            (NP (PRP$ their) (NN wife))
+            (PP (IN like)
+              (NP (DT that)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fuck-3)
+dep(fuck-3, Who-1)
+nsubj(fuck-3, the-2)
+obj(fuck-3, talks-4)
+case(wife-7, about-5)
+nmod:poss(wife-7, their-6)
+obl:about(fuck-3, wife-7)
+case(that-9, like-8)
+nmod:like(wife-7, that-9)
+punct(fuck-3, ?-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+Disgusting.
+
+Tokens:
+[Text=Disgusting CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=disgusting NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Disgusting) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Disgusting-1)
+punct(Disgusting-1, .-2)
+
+Extracted the following NER entity mentions:

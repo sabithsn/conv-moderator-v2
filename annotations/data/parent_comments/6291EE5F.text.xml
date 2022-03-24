@@ -1,0 +1,92 @@
+Document: ID=6291EE5F.text (2 sentences, 19 tokens)
+
+Sentence #1 (10 tokens):
+It's not anti republican it's anti lies.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=anti CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=AFX Lemma=anti NamedEntityTag=O]
+[Text=republican CharacterOffsetBegin=14 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=it CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=anti CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=AFX Lemma=anti NamedEntityTag=O]
+[Text=lies CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=lie NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (NP
+        (NP
+          (ADJP (AFX anti) (JJ republican)))
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP
+              (VP (VBZ 's))
+              (AFX anti)
+              (VP (VBZ lies)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, republican-5)
+nsubj(republican-5, It-1)
+cop(republican-5, 's-2)
+advmod(republican-5, not-3)
+dep(republican-5, anti-4)
+nsubj('s-7, it-6)
+acl:relcl(republican-5, 's-7)
+dep('s-7, anti-8)
+dep('s-7, lies-9)
+punct(republican-5, .-10)
+
+Extracted the following NER entity mentions:
+republican	IDEOLOGY	-
+
+Sentence #2 (9 tokens):
+She was banned for lying about covid shut up
+
+Tokens:
+[Text=She CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=lying CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VBG Lemma=lie NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=shut CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VBN Lemma=shut NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (VP (VBN banned)
+        (PP (IN for)
+          (S
+            (VP (VBG lying)
+              (NP
+                (NP (RB about) (JJ covid))
+                (VP (VBN shut)
+                  (PRT (RP up)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, banned-3)
+nsubj:pass(banned-3, She-1)
+aux:pass(banned-3, was-2)
+mark(lying-5, for-4)
+advcl:for(banned-3, lying-5)
+advmod(covid-7, about-6)
+obj(lying-5, covid-7)
+acl(covid-7, shut-8)
+compound:prt(shut-8, up-9)
+
+Extracted the following NER entity mentions:
+She	PERSON	-

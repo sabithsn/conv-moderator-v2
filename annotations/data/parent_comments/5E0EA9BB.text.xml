@@ -1,0 +1,34 @@
+Document: ID=5E0EA9BB.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+What happens in 2 weeks?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=happens CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=happen NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=2 NamedEntityTag=DURATION NormalizedNamedEntityTag=P2W Timex=<TIMEX3 tid="t1" type="DURATION" value="P2W">2 weeks</TIMEX3>]
+[Text=weeks CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=P2W Timex=<TIMEX3 tid="t1" type="DURATION" value="P2W">2 weeks</TIMEX3>]
+[Text=? CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ happens)
+        (PP (IN in)
+          (NP (CD 2) (NNS weeks)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happens-2)
+nsubj(happens-2, What-1)
+case(weeks-5, in-3)
+nummod(weeks-5, 2-4)
+obl:in(happens-2, weeks-5)
+punct(happens-2, ?-6)
+
+Extracted the following NER entity mentions:
+2 weeks	DURATION	DURATION:-1.0

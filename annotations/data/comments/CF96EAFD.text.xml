@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>CF96EAFD.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fuck</word>
+            <lemma>fuck</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>both</word>
+            <lemma>both</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>them</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Fuck) (NP (NP (DT both)) (PP (IN of) (NP (PRP them))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="2">both</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">them</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="2">both</governor>
+            <dependent idx="4">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="2">both</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">them</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="2">both</governor>
+            <dependent idx="4">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="2">both</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">them</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="2">both</governor>
+            <dependent idx="4">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="2">both</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">them</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="2">both</governor>
+            <dependent idx="4">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="det:qmod">
+            <governor idx="4">them</governor>
+            <dependent idx="2">both</dependent>
+          </dep>
+          <dep type="fixed">
+            <governor idx="2">both</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="4">them</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

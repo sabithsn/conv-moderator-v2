@@ -1,0 +1,67 @@
+Document: ID=67AD5C9B.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+ELI5: Why exactly is “Jewish” classified as both a race and a religion?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Jewish CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=jewish NamedEntityTag=RELIGION]
+[Text=” CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=classified CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=VBN Lemma=classify NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=race CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=race NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=religion CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=religion NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why) (RB exactly))
+      (SQ (VBZ is)
+        (NP
+          (NP (`` “)
+            (NP (JJ Jewish))
+            ('' ”)
+            (VP (VBN classified)))
+          (PP (IN as)
+            (NP (DT both)
+              (NP (DT a) (NN race))
+              (CC and)
+              (NP (DT a) (NN religion)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(exactly-4, Why-3)
+advmod(is-5, exactly-4)
+parataxis(ELI5-1, is-5)
+punct(Jewish-7, “-6)
+nsubj(is-5, Jewish-7)
+punct(Jewish-7, ”-8)
+acl(Jewish-7, classified-9)
+case(race-13, as-10)
+cc:preconj(race-13, both-11)
+det(race-13, a-12)
+nmod:as(Jewish-7, race-13)
+cc(religion-16, and-14)
+det(religion-16, a-15)
+nmod:as(Jewish-7, religion-16)
+conj:and(race-13, religion-16)
+punct(ELI5-1, ?-17)
+
+Extracted the following NER entity mentions:
+Jewish	RELIGION	MISC:0.9993617844511796

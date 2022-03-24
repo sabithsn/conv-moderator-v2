@@ -1,0 +1,50 @@
+Document: ID=093FEE69.text (2 sentences, 7 tokens)
+
+Sentence #1 (2 tokens):
+Good!
+
+Tokens:
+[Text=Good CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (JJ Good) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Good-1)
+punct(Good-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Hopefully she stays in China
+
+Tokens:
+[Text=Hopefully CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=hopefully NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=stays CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=stay NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Hopefully))
+    (NP (PRP she))
+    (VP (VBZ stays)
+      (PP (IN in)
+        (NP (NNP China))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stays-3)
+advmod(stays-3, Hopefully-1)
+nsubj(stays-3, she-2)
+case(China-5, in-4)
+obl:in(stays-3, China-5)
+
+Extracted the following NER entity mentions:
+China	COUNTRY	LOCATION:0.9734090936603265
+she	PERSON	-

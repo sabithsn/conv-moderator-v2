@@ -1,0 +1,109 @@
+Document: ID=9DB1096F.text (2 sentences, 27 tokens)
+
+Sentence #1 (4 tokens):
+>Based French?!?!
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Based CharacterOffsetBegin=1 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=french NamedEntityTag=NATIONALITY]
+[Text=?!?! CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=?!?! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (ADJP (VBN Based))
+        (JJ French) (NN ?!?!)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ?!?!-4)
+dep(?!?!-4, >-1)
+amod(?!?!-4, Based-2)
+amod(?!?!-4, French-3)
+
+Extracted the following NER entity mentions:
+French	NATIONALITY	MISC:0.9995733432353835
+
+Sentence #2 (23 tokens):
+ox·y·mo·ron    /ˌäksəˈmôrˌän/    noun    a figure of speech in which apparently contradictory terms appear in conjunction
+
+Tokens:
+[Text=ox CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=ox NamedEntityTag=O]
+[Text=· CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=SYM Lemma=· NamedEntityTag=O]
+[Text=y CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=y NamedEntityTag=O]
+[Text=· CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=SYM Lemma=· NamedEntityTag=O]
+[Text=mo CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=mo NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t1" type="DURATION" value="P1M">mo</TIMEX3>]
+[Text=· CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=SYM Lemma=· NamedEntityTag=O]
+[Text=ron CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=ron NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=ˌäksəˈmôrˌän CharacterOffsetBegin=35 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=ˌäksəˈmôrˌän NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=noun CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=noun NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=figure CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=apparently CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=apparently NamedEntityTag=O]
+[Text=contradictory CharacterOffsetBegin=99 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=contradictory NamedEntityTag=O]
+[Text=terms CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=NNS Lemma=term NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=VBP Lemma=appear NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=conjunction CharacterOffsetBegin=129 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=conjunction NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NN ox) (SYM ·) (NN y) (SYM ·) (NN mo))
+      (SYM ·)
+      (NP (NN ron) (HYPH /) (NN ˌäksəˈmôrˌän) (HYPH /) (NN noun)))
+    (NP
+      (NP
+        (NP (DT a) (NN figure))
+        (PP (IN of)
+          (NP (NN speech))))
+      (SBAR
+        (WHPP (IN in)
+          (WHNP (WDT which)))
+        (S
+          (NP
+            (ADJP (RB apparently) (JJ contradictory))
+            (NNS terms))
+          (VP (VBP appear)
+            (PP (IN in)
+              (NP (NN conjunction)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mo-5)
+compound(mo-5, ox-1)
+dep(mo-5, ·-2)
+compound(mo-5, y-3)
+dep(mo-5, ·-4)
+dep(mo-5, ·-6)
+compound(noun-11, ron-7)
+punct(noun-11, /-8)
+compound(noun-11, ˌäksəˈmôrˌän-9)
+punct(noun-11, /-10)
+dep(mo-5, noun-11)
+det(figure-13, a-12)
+dep(mo-5, figure-13)
+obl:in(appear-21, figure-13)
+case(speech-15, of-14)
+nmod:of(figure-13, speech-15)
+case(which-17, in-16)
+ref(figure-13, which-17)
+advmod(contradictory-19, apparently-18)
+amod(terms-20, contradictory-19)
+nsubj(appear-21, terms-20)
+acl:relcl(figure-13, appear-21)
+case(conjunction-23, in-22)
+obl:in(appear-21, conjunction-23)
+
+Extracted the following NER entity mentions:
+mo	DURATION	DURATION:-1.0

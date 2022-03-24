@@ -1,0 +1,41 @@
+Document: ID=B8532FBD.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Providing Fuel for Truckers in Ottawa is Illegal
+
+Tokens:
+[Text=Providing CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=VBG Lemma=provide NamedEntityTag=O]
+[Text=Fuel CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Truckers CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=trucker NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ottawa CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Ottawa NamedEntityTag=CITY]
+[Text=is CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Illegal CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=illegal NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (VBG Providing) (NN Fuel))
+      (PP (IN for)
+        (NP
+          (NP (NNS Truckers))
+          (PP (IN in)
+            (NP (NNP Ottawa))))))
+    (VP (VBZ is)
+      (ADJP (JJ Illegal)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Illegal-8)
+amod(Fuel-2, Providing-1)
+nsubj(Illegal-8, Fuel-2)
+case(Truckers-4, for-3)
+nmod:for(Fuel-2, Truckers-4)
+case(Ottawa-6, in-5)
+nmod:in(Truckers-4, Ottawa-6)
+cop(Illegal-8, is-7)
+
+Extracted the following NER entity mentions:
+Ottawa	CITY	LOCATION:0.9944788946641522

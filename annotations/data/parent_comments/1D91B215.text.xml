@@ -1,0 +1,62 @@
+Document: ID=1D91B215.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Tulsi Gabbard Warns US-Russia War Will End ‘Life As We Know It’
+
+Tokens:
+[Text=Tulsi CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Tulsi NamedEntityTag=PERSON]
+[Text=Gabbard CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Gabbard NamedEntityTag=PERSON]
+[Text=Warns CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=warn NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=US NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=O]
+[Text=War CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=War NamedEntityTag=CAUSE_OF_DEATH]
+[Text=Will CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Will NamedEntityTag=O]
+[Text=End CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=End NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Life CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Life NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=Know CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tulsi) (NNP Gabbard))
+    (VP (VBZ Warns)
+      (NP
+        (NP (NNP US) (HYPH -) (NNP Russia) (NNP War) (NNP Will) (NNP End))
+        (S (`` ‘)
+          (NP (NNP Life))
+          (S
+            (SBAR (IN As)
+              (S
+                (NP (PRP We))
+                (VP (VBP Know)
+                  (NP (PRP It))))))
+          ('' ’))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Warns-3)
+compound(Gabbard-2, Tulsi-1)
+nsubj(Warns-3, Gabbard-2)
+compound(End-9, US-4)
+punct(End-9, --5)
+compound(End-9, Russia-6)
+compound(End-9, War-7)
+compound(End-9, Will-8)
+obj(Warns-3, End-9)
+punct(Know-14, ‘-10)
+dep(Know-14, Life-11)
+mark(Know-14, As-12)
+nsubj(Know-14, We-13)
+dep(End-9, Know-14)
+obj(Know-14, It-15)
+punct(Know-14, ’-16)
+
+Extracted the following NER entity mentions:
+Tulsi Gabbard	PERSON	PERSON:0.9835944440634582
+War	CAUSE_OF_DEATH	-

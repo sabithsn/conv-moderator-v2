@@ -1,0 +1,96 @@
+Document: ID=C743B949.text (4 sentences, 16 tokens)
+
+Sentence #1 (2 tokens):
+Absolutely!
+
+Tokens:
+[Text=Absolutely CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=absolutely NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADVP (RB Absolutely) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Absolutely-1)
+punct(Absolutely-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Some os us "anti-vaxxers".
+
+Tokens:
+[Text=Some CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=os CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=os NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=anti-vaxxers CharacterOffsetBegin=24 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=anti-vaxxer NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (DT Some) (NN os))
+    (NP (PRP us))
+    (NP (`` ") (NNS anti-vaxxers) ('' "))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, os-2)
+det(os-2, Some-1)
+dep(os-2, us-3)
+punct(anti-vaxxers-5, "-4)
+dep(os-2, anti-vaxxers-5)
+punct(anti-vaxxers-5, "-6)
+punct(os-2, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (6 tokens):
+etc have multiple graduate degrees.
+
+Tokens:
+[Text=etc CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=FW Lemma=etc NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=multiple CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=multiple NamedEntityTag=O]
+[Text=graduate CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=graduate NamedEntityTag=O]
+[Text=degrees CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=degree NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (FW etc))
+    (VP (VBP have)
+      (NP (JJ multiple) (NN graduate) (NNS degrees)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, etc-1)
+amod(degrees-5, multiple-3)
+compound(degrees-5, graduate-4)
+obj(have-2, degrees-5)
+punct(have-2, .-6)
+
+Extracted the following NER entity mentions:

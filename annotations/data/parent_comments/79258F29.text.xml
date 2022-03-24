@@ -1,0 +1,65 @@
+Document: ID=79258F29.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Americans Notice a Very Problematic Part About Those 'Free' Covid Tests the Government Is Sending Out
+
+Tokens:
+[Text=Americans CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=Notice CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=notice NamedEntityTag=MISC]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=MISC]
+[Text=Very CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=very NamedEntityTag=MISC]
+[Text=Problematic CharacterOffsetBegin=24 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=problematic NamedEntityTag=MISC]
+[Text=Part CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=part NamedEntityTag=MISC]
+[Text=About CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=about NamedEntityTag=MISC]
+[Text=Those CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=those NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=`` Lemma=' NamedEntityTag=MISC]
+[Text=Free CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=free NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Covid CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=Tests CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=test NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Government CharacterOffsetBegin=76 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Sending CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=VBG Lemma=send NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNPS Americans))
+        (VP (VBP Notice)
+          (NP (DT a)
+            (ADJP (RB Very) (JJ Problematic))
+            (NN Part)))))
+    (PP (IN About)
+      (NP (DT Those) (`` ') (JJ Free) ('' ') (NN Covid) (NNS Tests)))
+    (NP (DT the) (NN Government))
+    (VP (VBZ Is)
+      (VP (VBG Sending)
+        (PRT (RP Out))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sending-17)
+nsubj(Notice-2, Americans-1)
+parataxis(Sending-17, Notice-2)
+det(Part-6, a-3)
+advmod(Problematic-5, Very-4)
+amod(Part-6, Problematic-5)
+obj(Notice-2, Part-6)
+case(Tests-13, About-7)
+det(Tests-13, Those-8)
+punct(Tests-13, '-9)
+amod(Tests-13, Free-10)
+punct(Tests-13, '-11)
+compound(Tests-13, Covid-12)
+obl:about(Sending-17, Tests-13)
+det(Government-15, the-14)
+nsubj(Sending-17, Government-15)
+aux(Sending-17, Is-16)
+compound:prt(Sending-17, Out-18)
+
+Extracted the following NER entity mentions:
+Americans Notice a Very Problematic Part About Those 'Free	MISC	MISC:0.9714769900155137

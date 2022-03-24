@@ -1,0 +1,46 @@
+Document: ID=F18D512C.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Airstrike hits Ukraine maternity hospital, 17 reported hurt
+
+Tokens:
+[Text=Airstrike CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=airstrike NamedEntityTag=O]
+[Text=hits CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=hit NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=maternity CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=maternity NamedEntityTag=O]
+[Text=hospital CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=hospital NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=17 CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=17 NamedEntityTag=NUMBER NormalizedNamedEntityTag=17.0]
+[Text=reported CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=report NamedEntityTag=O]
+[Text=hurt CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=hurt NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Airstrike))
+    (VP (VBZ hits)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Ukraine)
+              (NML (NN maternity) (NN hospital)))
+            (, ,)
+            (NP (CD 17)))
+          (VP (VBD reported)
+            (NP (NN hurt))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hits-2)
+nsubj(hits-2, Airstrike-1)
+dep(hospital-5, Ukraine-3)
+compound(hospital-5, maternity-4)
+nsubj(reported-8, hospital-5)
+punct(hospital-5, ,-6)
+amod(hospital-5, 17-7)
+ccomp(hits-2, reported-8)
+obj(reported-8, hurt-9)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9906094910193871
+17	NUMBER	NUMBER:-1.0

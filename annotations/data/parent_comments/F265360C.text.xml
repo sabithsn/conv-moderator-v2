@@ -1,0 +1,66 @@
+Document: ID=F265360C.text (2 sentences, 12 tokens)
+
+Sentence #1 (10 tokens):
+Now you gonna pretend you don't know.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=pretend CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=pretend NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP (PRP you))
+    (VP (VBG gon)
+      (S
+        (VP (TO na)
+          (VP (VB pretend)
+            (S
+              (NP (PRP you))
+              (VP (VB do) (RB n't)
+                (VP (VB know))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gon-3)
+advmod(gon-3, Now-1)
+nsubj(gon-3, you-2)
+nsubj:xsubj(pretend-5, you-2)
+mark(pretend-5, na-4)
+xcomp(gon-3, pretend-5)
+nsubj(know-9, you-6)
+aux(know-9, do-7)
+advmod(know-9, n't-8)
+ccomp(pretend-5, know-9)
+punct(gon-3, .-10)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+
+Sentence #2 (2 tokens):
+Lol!
+
+Tokens:
+[Text=Lol CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Lol) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lol-1)
+punct(Lol-1, !-2)
+
+Extracted the following NER entity mentions:

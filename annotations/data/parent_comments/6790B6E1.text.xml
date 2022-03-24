@@ -1,0 +1,109 @@
+Document: ID=6790B6E1.text (1 sentences, 27 tokens)
+
+Sentence #1 (27 tokens):
+DC mayor on carjacker who stole car from doctor, then killed him by running him over: 'Probably didn't mean to kill anybody'
+
+Tokens:
+[Text=DC CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=DC NamedEntityTag=STATE_OR_PROVINCE]
+[Text=mayor CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=mayor NamedEntityTag=TITLE]
+[Text=on CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=carjacker CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=carjacker NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=stole CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VBD Lemma=steal NamedEntityTag=O]
+[Text=car CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=car NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=doctor CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=doctor NamedEntityTag=TITLE]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=kill NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Probably CharacterOffsetBegin=87 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=kill CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=anybody CharacterOffsetBegin=116 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=anybody NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP DC) (NN mayor))
+        (PP (IN on)
+          (NP
+            (NP (NN carjacker))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD stole)
+                  (NP (NN car))
+                  (PP (IN from)
+                    (NP (NN doctor)))
+                  (, ,)
+                  (ADVP (RB then))))))))
+      (VP (VBD killed)
+        (NP (PRP him))
+        (PP (IN by)
+          (S
+            (VP (VBG running)
+              (NP (PRP him))
+              (PP (IN over)))))))
+    (: :)
+    (S
+      (NP ('' '))
+      (ADVP (RB Probably))
+      (VP (VBD did) (RB n't)
+        (VP (VB mean)
+          (S
+            (VP (TO to)
+              (VP (VB kill)
+                (NP (NN anybody))))))))
+    ('' ')))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, killed-12)
+compound(mayor-2, DC-1)
+nsubj(killed-12, mayor-2)
+case(carjacker-4, on-3)
+nmod:on(mayor-2, carjacker-4)
+nsubj(stole-6, carjacker-4)
+ref(carjacker-4, who-5)
+acl:relcl(carjacker-4, stole-6)
+obj(stole-6, car-7)
+case(doctor-9, from-8)
+obl:from(stole-6, doctor-9)
+punct(stole-6, ,-10)
+advmod(stole-6, then-11)
+obj(killed-12, him-13)
+mark(running-15, by-14)
+advcl:by(killed-12, running-15)
+obj(running-15, him-16)
+obl(running-15, over-17)
+punct(killed-12, :-18)
+nsubj(mean-23, '-19)
+nsubj:xsubj(kill-25, '-19)
+advmod(mean-23, Probably-20)
+aux(mean-23, did-21)
+advmod(mean-23, n't-22)
+parataxis(killed-12, mean-23)
+mark(kill-25, to-24)
+xcomp(mean-23, kill-25)
+obj(kill-25, anybody-26)
+punct(killed-12, '-27)
+
+Extracted the following NER entity mentions:
+DC	STATE_OR_PROVINCE	LOCATION:0.6879523131524353
+mayor	TITLE	-
+doctor	TITLE	-
+him	PERSON	-
+him	PERSON	-

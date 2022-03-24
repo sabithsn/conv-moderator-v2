@@ -1,0 +1,57 @@
+Document: ID=B509A617.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+The Right 'Loves Putin' And Other Lies The Media Tell About Russia
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Right CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Loves CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=love NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Other CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=Lies CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=lie NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Media CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=media NamedEntityTag=O]
+[Text=Tell CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ Right))
+      (`` ')
+      (VP (VBZ Loves)
+        (NP (NNP Putin) (POS '))))
+    (S (CC And)
+      (NP (JJ Other))
+      (VP (VBZ Lies)
+        (S
+          (NP (DT The) (NN Media))
+          (VP (VB Tell)
+            (NP (RB About) (NNP Russia))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Loves-4)
+det(Right-2, The-1)
+nsubj(Loves-4, Right-2)
+punct(Loves-4, '-3)
+obj(Loves-4, Putin-5)
+case(Putin-5, '-6)
+cc(Lies-9, And-7)
+nsubj(Lies-9, Other-8)
+parataxis(Loves-4, Lies-9)
+det(Media-11, The-10)
+nsubj(Tell-12, Media-11)
+ccomp(Lies-9, Tell-12)
+advmod(Russia-14, About-13)
+obj(Tell-12, Russia-14)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9964321630789674
+Russia	COUNTRY	LOCATION:0.8479578739668869

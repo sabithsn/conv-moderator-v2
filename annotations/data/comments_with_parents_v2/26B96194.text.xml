@@ -1,0 +1,46 @@
+Document: ID=26B96194.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Trump's statement on Biden's weakness on Russia
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=weakness CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=weakness NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Trump) (POS 's))
+      (NN statement))
+    (PP (IN on)
+      (NP
+        (NP
+          (NP (NNP Biden) (POS 's))
+          (NN weakness))
+        (PP (IN on)
+          (NP (NNP Russia)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, statement-3)
+nmod:poss(statement-3, Trump-1)
+case(Trump-1, 's-2)
+case(weakness-7, on-4)
+nmod:poss(weakness-7, Biden-5)
+case(Biden-5, 's-6)
+nmod:on(statement-3, weakness-7)
+case(Russia-9, on-8)
+nmod:on(weakness-7, Russia-9)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.7820979604033113
+Biden	PERSON	PERSON:0.9983775228433341
+Russia	COUNTRY	LOCATION:0.9920527331990234

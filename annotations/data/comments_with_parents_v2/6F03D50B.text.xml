@@ -1,0 +1,46 @@
+Document: ID=6F03D50B.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Nearly Half Of Democrats Support Putting Unvaxxed Americans In Camps
+
+Tokens:
+[Text=Nearly CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=nearly NamedEntityTag=O]
+[Text=Half CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=half NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=Support CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=support NamedEntityTag=O]
+[Text=Putting CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=put NamedEntityTag=O]
+[Text=Unvaxxed CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Unvaxxed NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Camps CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NNPS Lemma=Camps NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (RB Nearly) (NN Half))
+      (PP (IN Of)
+        (NP (NNPS Democrats))))
+    (VP (VBP Support)
+      (S
+        (VP (VBG Putting)
+          (NP (NNP Unvaxxed) (NNPS Americans)))))
+    (PP (IN In)
+      (NP (NNPS Camps)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Support-5)
+advmod(Half-2, Nearly-1)
+nsubj(Support-5, Half-2)
+case(Democrats-4, Of-3)
+nmod:of(Half-2, Democrats-4)
+xcomp(Support-5, Putting-6)
+compound(Americans-8, Unvaxxed-7)
+obj(Putting-6, Americans-8)
+case(Camps-10, In-9)
+obl:in(Support-5, Camps-10)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	-

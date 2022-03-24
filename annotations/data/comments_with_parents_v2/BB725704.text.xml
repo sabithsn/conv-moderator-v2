@@ -1,0 +1,58 @@
+Document: ID=BB725704.text (2 sentences, 11 tokens)
+
+Sentence #1 (8 tokens):
+Putin afraid of an ugly yapping mutt?
+
+Tokens:
+[Text=Putin CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=afraid CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=afraid NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ugly CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=ugly NamedEntityTag=O]
+[Text=yapping CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=yap NamedEntityTag=O]
+[Text=mutt CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=mutt NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Putin))
+      (ADJP (NNP afraid)))
+    (PP (IN of)
+      (NP (DT an) (JJ ugly) (VBG yapping) (NN mutt)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Putin-1)
+amod(Putin-1, afraid-2)
+case(mutt-7, of-3)
+det(mutt-7, an-4)
+amod(mutt-7, ugly-5)
+amod(mutt-7, yapping-6)
+nmod:of(Putin-1, mutt-7)
+punct(Putin-1, ?-8)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9932926968761688
+
+Sentence #2 (3 tokens):
+Highly doubtful.
+
+Tokens:
+[Text=Highly CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=highly NamedEntityTag=O]
+[Text=doubtful CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=doubtful NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADJP (RB Highly) (JJ doubtful) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, doubtful-2)
+advmod(doubtful-2, Highly-1)
+punct(doubtful-2, .-3)
+
+Extracted the following NER entity mentions:

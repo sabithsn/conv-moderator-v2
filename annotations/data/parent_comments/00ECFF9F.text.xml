@@ -1,0 +1,121 @@
+Document: ID=00ECFF9F.text (3 sentences, 25 tokens)
+
+Sentence #1 (7 tokens):
+Nyet comrade - we owns Trump!
+
+Tokens:
+[Text=Nyet CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=nyet NamedEntityTag=O]
+[Text=comrade CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=comrade NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=owns CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBZ Lemma=own NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=! CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Nyet) (NN comrade))
+      (PP (HYPH -)
+        (NP (PRP we))))
+    (VP (VBZ owns)
+      (NP (NNP Trump)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, owns-5)
+compound(comrade-2, Nyet-1)
+nsubj(owns-5, comrade-2)
+punct(we-4, --3)
+nmod(comrade-2, we-4)
+obj(owns-5, Trump-6)
+punct(owns-5, !-7)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.7809176477703252
+
+Sentence #2 (7 tokens):
+Glory to our Leader Vladimir Putin!
+
+Tokens:
+[Text=Glory CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=glory NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=Leader CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Leader NamedEntityTag=TITLE]
+[Text=Vladimir CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Vladimir NamedEntityTag=PERSON]
+[Text=Putin CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=! CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Glory))
+    (PP (IN to)
+      (NP (PRP$ our) (NNP Leader) (NNP Vladimir) (NNP Putin)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Glory-1)
+case(Putin-6, to-2)
+nmod:poss(Putin-6, our-3)
+compound(Putin-6, Leader-4)
+compound(Putin-6, Vladimir-5)
+obl:to(Glory-1, Putin-6)
+punct(Glory-1, !-7)
+
+Extracted the following NER entity mentions:
+Leader	TITLE	-
+Vladimir Putin	PERSON	PERSON:0.9998932701121556
+
+Sentence #3 (11 tokens):
+Now go send monies to our puppet and learn English.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=go CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=monies CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=money NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=puppet CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=puppet NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=learn CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=learn NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=NNP Lemma=English NamedEntityTag=NATIONALITY]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (VP
+      (VP (VB go)
+        (S
+          (VP (VB send)
+            (NP (NNS monies))
+            (PP (IN to)
+              (NP (PRP$ our) (NN puppet))))))
+      (CC and)
+      (VP (VB learn)
+        (NP (NNP English))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-2)
+advmod(go-2, Now-1)
+ccomp(go-2, send-3)
+obj(send-3, monies-4)
+case(puppet-7, to-5)
+nmod:poss(puppet-7, our-6)
+obl:to(send-3, puppet-7)
+cc(learn-9, and-8)
+conj:and(go-2, learn-9)
+obj(learn-9, English-10)
+punct(go-2, .-11)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+English	NATIONALITY	MISC:0.9999903934475617

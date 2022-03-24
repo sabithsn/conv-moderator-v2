@@ -1,0 +1,90 @@
+Document: ID=3A4BE0A1.text (2 sentences, 20 tokens)
+
+Sentence #1 (5 tokens):
+No they don't.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH No))
+    (NP (PRP they))
+    (VP (VBP do) (RB n't))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-3)
+discourse(do-3, No-1)
+nsubj(do-3, they-2)
+advmod(do-3, n't-4)
+punct(do-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+Unless it would aid in me achieving a goal and then they do :D
+
+Tokens:
+[Text=Unless CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=aid CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=aid NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=achieving CharacterOffsetBegin=41 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=achieve NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=goal CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=goal NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=d NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (SBAR (IN Unless)
+      (S
+        (S
+          (NP (PRP it))
+          (VP (MD would)
+            (VP (VB aid)
+              (PP (IN in)
+                (S
+                  (NP (PRP me))
+                  (VP (VBG achieving)
+                    (NP (DT a) (NN goal))))))))
+        (CC and)
+        (S
+          (ADVP (RB then))
+          (NP (PRP they))
+          (VP (VBP do) (: :)
+            (NP (NN D))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, aid-4)
+mark(aid-4, Unless-1)
+nsubj(aid-4, it-2)
+aux(aid-4, would-3)
+mark(achieving-7, in-5)
+nsubj(achieving-7, me-6)
+advcl:in(aid-4, achieving-7)
+det(goal-9, a-8)
+obj(achieving-7, goal-9)
+cc(do-13, and-10)
+advmod(do-13, then-11)
+nsubj(do-13, they-12)
+conj:and(aid-4, do-13)
+punct(do-13, :-14)
+obj(do-13, D-15)
+
+Extracted the following NER entity mentions:

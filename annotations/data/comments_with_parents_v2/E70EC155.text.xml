@@ -1,0 +1,87 @@
+Document: ID=E70EC155.text (2 sentences, 19 tokens)
+
+Sentence #1 (12 tokens):
+>This also happened under Trump  Train robberies have always happened.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NFP Lemma=> NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=happened CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=VBN Lemma=happen NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=O]
+[Text=Train CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Train NamedEntityTag=CRIMINAL_CHARGE]
+[Text=robberies CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=robbery NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=happened CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=VBN Lemma=happen NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP >)
+    (NP (DT This))
+    (S
+      (VP
+        (ADVP (RB also))
+        (VBN happened)
+        (PP (IN under)
+          (NP (NNP Trump) (NNP Train) (NNS robberies)))))
+    (VP (VBP have)
+      (ADVP (RB always))
+      (VP (VBN happened)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happened-11)
+punct(happened-11, >-1)
+nsubj(happened-11, This-2)
+advmod(happened-4, also-3)
+dep(happened-11, happened-4)
+case(robberies-8, under-5)
+compound(robberies-8, Trump-6)
+compound(robberies-8, Train-7)
+obl:under(happened-4, robberies-8)
+aux(happened-11, have-9)
+advmod(happened-11, always-10)
+punct(happened-11, .-12)
+
+Extracted the following NER entity mentions:
+Train	CRIMINAL_CHARGE	-
+
+Sentence #2 (7 tokens):
+You seem to miss the context.
+
+Tokens:
+[Text=You CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=miss CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VB Lemma=miss NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=context CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=context NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP seem)
+      (S
+        (VP (TO to)
+          (VP (VB miss)
+            (NP (DT the) (NN context))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seem-2)
+nsubj(seem-2, You-1)
+nsubj:xsubj(miss-4, You-1)
+mark(miss-4, to-3)
+xcomp(seem-2, miss-4)
+det(context-6, the-5)
+obj(miss-4, context-6)
+punct(seem-2, .-7)
+
+Extracted the following NER entity mentions:

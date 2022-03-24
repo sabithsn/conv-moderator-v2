@@ -1,0 +1,38 @@
+Document: ID=7757C8DC.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+All these memes about Lana Rodes suck.
+
+Tokens:
+[Text=All CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=memes CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=meme NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=Lana CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Lana NamedEntityTag=PERSON]
+[Text=Rodes CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Rodes NamedEntityTag=PERSON]
+[Text=suck CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=suck NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PDT All) (DT these) (NNS memes))
+      (PP (IN about)
+        (NP (NNP Lana) (NNP Rodes))))
+    (VP (VBP suck))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suck-7)
+det:predet(memes-3, All-1)
+det(memes-3, these-2)
+nsubj(suck-7, memes-3)
+case(Rodes-6, about-4)
+compound(Rodes-6, Lana-5)
+nmod:about(memes-3, Rodes-6)
+punct(suck-7, .-8)
+
+Extracted the following NER entity mentions:
+Lana Rodes	PERSON	PERSON:0.9995019961741637

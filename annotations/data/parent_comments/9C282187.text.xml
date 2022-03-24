@@ -1,0 +1,90 @@
+Document: ID=9C282187.text (2 sentences, 21 tokens)
+
+Sentence #1 (17 tokens):
+Finland, EU has also gotten on board and have similar Convoys starting up there too!
+
+Tokens:
+[Text=Finland CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Finland NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=EU CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=EU NamedEntityTag=ORGANIZATION]
+[Text=has CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=gotten CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=board CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=board NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=similar CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=similar NamedEntityTag=O]
+[Text=Convoys CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=convoy NamedEntityTag=O]
+[Text=starting CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=start NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Finland) (, ,) (NNP EU))
+    (VP
+      (VP (VBZ has)
+        (ADVP (RB also))
+        (VP (VBN gotten)
+          (PP (IN on)
+            (NP (NN board)))))
+      (CC and)
+      (VP (VBP have)
+        (NP
+          (NP (JJ similar) (NNS Convoys))
+          (VP (VBG starting)
+            (ADVP (RB up) (RB there) (RB too))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gotten-6)
+compound(EU-3, Finland-1)
+punct(EU-3, ,-2)
+nsubj(gotten-6, EU-3)
+nsubj(have-10, EU-3)
+aux(gotten-6, has-4)
+advmod(gotten-6, also-5)
+case(board-8, on-7)
+obl:on(gotten-6, board-8)
+cc(have-10, and-9)
+conj:and(gotten-6, have-10)
+amod(Convoys-12, similar-11)
+obj(have-10, Convoys-12)
+acl(Convoys-12, starting-13)
+advmod(too-16, up-14)
+advmod(too-16, there-15)
+advmod(starting-13, too-16)
+punct(gotten-6, !-17)
+
+Extracted the following NER entity mentions:
+Finland	COUNTRY	LOCATION:0.9877864769056579
+EU	ORGANIZATION	ORGANIZATION:0.8124269528930248
+
+Sentence #2 (4 tokens):
+🤓🌍🇨🇦🙌🏼
+
+Tokens:
+[Text=🤓 CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=NFP Lemma=🤓 NamedEntityTag=O]
+[Text=🌍 CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=SYM Lemma=🌍 NamedEntityTag=O]
+[Text=🇨🇦 CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=SYM Lemma=🇨🇦 NamedEntityTag=O]
+[Text=🙌🏼 CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=SYM Lemma=🙌🏼 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP 🤓)
+    (VP (SYM 🌍))
+    (SYM 🇨🇦) (SYM 🙌🏼)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 🌍-2)
+punct(🌍-2, 🤓-1)
+dep(🌍-2, 🇨🇦-3)
+dep(🌍-2, 🙌🏼-4)
+
+Extracted the following NER entity mentions:

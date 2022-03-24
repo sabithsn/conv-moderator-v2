@@ -1,0 +1,78 @@
+Document: ID=E5E6DC4A.text (2 sentences, 17 tokens)
+
+Sentence #1 (10 tokens):
+Let words here are “in high school”.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Let)
+        (NP (NNS words))
+        (ADVP (RB here))))
+    (VP (VBP are)
+      (PP (`` “) (IN in)
+        (NP (JJ high) (NN school))
+        ('' ”)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, school-8)
+csubj(school-8, Let-1)
+obj(Let-1, words-2)
+advmod(Let-1, here-3)
+cop(school-8, are-4)
+punct(school-8, “-5)
+case(school-8, in-6)
+amod(school-8, high-7)
+punct(school-8, ”-9)
+punct(school-8, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Exactly the way it was intended.
+
+Tokens:
+[Text=Exactly CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=intended CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=VBN Lemma=intend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (RB Exactly) (DT the) (NN way)
+    (SBAR
+      (S
+        (NP (PRP it))
+        (VP (VBD was)
+          (VP (VBN intended)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, way-3)
+advmod(way-3, Exactly-1)
+det(way-3, the-2)
+nsubj:pass(intended-6, it-4)
+aux:pass(intended-6, was-5)
+ccomp(way-3, intended-6)
+punct(way-3, .-7)
+
+Extracted the following NER entity mentions:

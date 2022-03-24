@@ -1,0 +1,55 @@
+Document: ID=11320BFF.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+When you make the “CUTIES” - “James Alefantis” connection…
+
+Tokens:
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=CUTIES CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=cuty NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=James CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=James NamedEntityTag=PERSON]
+[Text=Alefantis CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Alefantis NamedEntityTag=PERSON]
+[Text=” CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=connection CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=connection NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHADVP (WRB When))
+    (S
+      (NP (PRP you))
+      (VP (VBP make)
+        (NP
+          (NP (DT the) (`` “) (NNS CUTIES) ('' ”))
+          (: -)
+          (NP (`` “)
+            (NML (NNP James) (NNP Alefantis))
+            ('' ”) (NN connection))
+          (: …))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-3)
+advmod(make-3, When-1)
+nsubj(make-3, you-2)
+det(CUTIES-6, the-4)
+punct(CUTIES-6, “-5)
+obj(make-3, CUTIES-6)
+punct(CUTIES-6, ”-7)
+punct(CUTIES-6, --8)
+punct(connection-13, “-9)
+compound(Alefantis-11, James-10)
+compound(connection-13, Alefantis-11)
+punct(connection-13, ”-12)
+dep(CUTIES-6, connection-13)
+punct(CUTIES-6, …-14)
+
+Extracted the following NER entity mentions:
+James Alefantis	PERSON	PERSON:0.497712418873248

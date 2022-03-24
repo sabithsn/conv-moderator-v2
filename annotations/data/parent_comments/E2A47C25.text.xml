@@ -1,0 +1,68 @@
+Document: ID=E2A47C25.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Elon Musk slams GoFundMe for ‘double standard’ after platform seizes $10 million from Freedom Convoy
+
+Tokens:
+[Text=Elon CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Elon NamedEntityTag=PERSON]
+[Text=Musk CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=musk NamedEntityTag=PERSON]
+[Text=slams CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=slam NamedEntityTag=O]
+[Text=GoFundMe CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=GoFundMe NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=double CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=double NamedEntityTag=O]
+[Text=standard CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=standard NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=platform CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=platform NamedEntityTag=O]
+[Text=seizes CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=VBZ Lemma=seize NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0E7]
+[Text=10 CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=CD Lemma=10 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0E7]
+[Text=million CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.0E7]
+[Text=from CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Freedom CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Freedom NamedEntityTag=O]
+[Text=Convoy CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Convoy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Elon) (NN Musk))
+    (VP (VBZ slams)
+      (NP (NNP GoFundMe))
+      (PP (IN for) (`` ‘)
+        (NP (JJ double) (JJ standard))
+        ('' ’))
+      (SBAR (IN after)
+        (S
+          (NP (NN platform))
+          (VP (VBZ seizes)
+            (NP
+              (NP
+                (QP ($ $) (CD 10) (CD million)))
+              (PP (IN from)
+                (NP (NNP Freedom) (NNP Convoy))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, slams-3)
+compound(Musk-2, Elon-1)
+nsubj(slams-3, Musk-2)
+obj(slams-3, GoFundMe-4)
+case(standard-8, for-5)
+punct(standard-8, ‘-6)
+amod(standard-8, double-7)
+obl:for(slams-3, standard-8)
+punct(standard-8, ’-9)
+mark(seizes-12, after-10)
+nsubj(seizes-12, platform-11)
+advcl:after(slams-3, seizes-12)
+obj(seizes-12, $-13)
+compound(million-15, 10-14)
+nummod($-13, million-15)
+case(Convoy-18, from-16)
+compound(Convoy-18, Freedom-17)
+nmod:from($-13, Convoy-18)
+
+Extracted the following NER entity mentions:
+Elon Musk	PERSON	PERSON:0.7533664101297379
+$10 million	MONEY	MONEY:0.9988994849493245

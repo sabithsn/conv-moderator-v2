@@ -1,0 +1,70 @@
+Document: ID=CF196D42.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+CMV: White New-Zealanders are risking a lot by tolerating the Maori as a legitimate second culture
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=White CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=White NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Zealanders CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=NNPS Lemma=Zealanders NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=risking CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=risk NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=tolerating CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=VBG Lemma=tolerate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Maori CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Maori NamedEntityTag=MISC]
+[Text=as CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=legitimate CharacterOffsetBegin=73 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=legitimate NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=culture CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=culture NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP
+        (NP (NNP White))
+        (NP (NNP New) (HYPH -) (NNPS Zealanders)))
+      (VP (VBP are)
+        (VP (VBG risking)
+          (NP (DT a) (NN lot))
+          (PP (IN by)
+            (S
+              (VP (VBG tolerating)
+                (NP (DT the) (NNP Maori))
+                (PP (IN as)
+                  (NP (DT a) (JJ legitimate) (JJ second) (NN culture)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(risking-8, White-3)
+compound(Zealanders-6, New-4)
+punct(Zealanders-6, --5)
+dep(White-3, Zealanders-6)
+aux(risking-8, are-7)
+appos(CMV-1, risking-8)
+det(lot-10, a-9)
+obj(risking-8, lot-10)
+mark(tolerating-12, by-11)
+advcl:by(risking-8, tolerating-12)
+det(Maori-14, the-13)
+obj(tolerating-12, Maori-14)
+case(culture-19, as-15)
+det(culture-19, a-16)
+amod(culture-19, legitimate-17)
+amod(culture-19, second-18)
+obl:as(tolerating-12, culture-19)
+
+Extracted the following NER entity mentions:
+Maori	MISC	MISC:0.9923679238607971
+second	ORDINAL	ORDINAL:-1.0

@@ -1,0 +1,62 @@
+Document: ID=0603CF64.text (2 sentences, 11 tokens)
+
+Sentence #1 (6 tokens):
+No rights, no games.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=games CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=game NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT No) (NNS rights))
+    (, ,)
+    (NP (DT no) (NNS games))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rights-2)
+det(rights-2, No-1)
+punct(rights-2, ,-3)
+det(games-5, no-4)
+appos(rights-2, games-5)
+punct(rights-2, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Boycott Beijing 2022 Olympics.
+
+Tokens:
+[Text=Boycott CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=boycott NamedEntityTag=O]
+[Text=Beijing CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Beijing NamedEntityTag=CITY]
+[Text=2022 CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=2022 NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 tid="t1" type="DATE" value="2022">2022</TIMEX3>]
+[Text=Olympics CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NNPS Lemma=Olympics NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Boycott))
+    (NP (NNP Beijing))
+    (NP (CD 2022) (NNPS Olympics))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Boycott-1)
+dep(Boycott-1, Beijing-2)
+nummod(Olympics-4, 2022-3)
+dep(Boycott-1, Olympics-4)
+punct(Boycott-1, .-5)
+
+Extracted the following NER entity mentions:
+Beijing	CITY	LOCATION:0.785995880167519
+2022	DATE	DATE:-1.0
+Olympics	MISC	MISC:0.9999568838556981

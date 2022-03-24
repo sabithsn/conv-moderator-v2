@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>599DDE17.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Ill</word>
+            <lemma>Ill</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>STATE_OR_PROVINCE</NER>
+          </token>
+          <token id="2">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>happy</word>
+            <lemma>happy</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>kill</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>russians</word>
+            <lemma>russian</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Ill)) (VP (VB be) (ADJP (JJ happy) (S (VP (TO to) (VP (VB kill) (NP (NNS russians))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">happy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">happy</governor>
+            <dependent idx="1">Ill</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">happy</governor>
+            <dependent idx="2">be</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">kill</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">happy</governor>
+            <dependent idx="5">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">kill</governor>
+            <dependent idx="6">russians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">happy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">happy</governor>
+            <dependent idx="1">Ill</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">happy</governor>
+            <dependent idx="2">be</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">kill</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">happy</governor>
+            <dependent idx="5">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">kill</governor>
+            <dependent idx="6">russians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">happy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">happy</governor>
+            <dependent idx="1">Ill</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">happy</governor>
+            <dependent idx="2">be</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">kill</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">happy</governor>
+            <dependent idx="5">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">kill</governor>
+            <dependent idx="6">russians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">happy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">happy</governor>
+            <dependent idx="1">Ill</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="5">kill</governor>
+            <dependent idx="1">Ill</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">happy</governor>
+            <dependent idx="2">be</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">kill</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">happy</governor>
+            <dependent idx="5">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">kill</governor>
+            <dependent idx="6">russians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">happy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">happy</governor>
+            <dependent idx="1">Ill</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="5">kill</governor>
+            <dependent idx="1">Ill</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">happy</governor>
+            <dependent idx="2">be</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">kill</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">happy</governor>
+            <dependent idx="5">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">kill</governor>
+            <dependent idx="6">russians</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

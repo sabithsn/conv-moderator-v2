@@ -1,0 +1,43 @@
+Document: ID=623A8454.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Meatloaf went from rock to a underground solo artist.
+
+Tokens:
+[Text=Meatloaf CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Meatloaf NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=rock CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=rock NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=underground CharacterOffsetBegin=29 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=underground NamedEntityTag=O]
+[Text=solo CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=solo NamedEntityTag=O]
+[Text=artist CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=artist NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Meatloaf))
+    (VP (VBD went)
+      (PP (IN from)
+        (NP (NN rock)))
+      (PP (IN to)
+        (NP (DT a) (JJ underground) (NN solo) (NN artist))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, went-2)
+nsubj(went-2, Meatloaf-1)
+case(rock-4, from-3)
+obl:from(went-2, rock-4)
+case(artist-9, to-5)
+det(artist-9, a-6)
+amod(artist-9, underground-7)
+compound(artist-9, solo-8)
+obl:to(went-2, artist-9)
+punct(went-2, .-10)
+
+Extracted the following NER entity mentions:
+artist	TITLE	-

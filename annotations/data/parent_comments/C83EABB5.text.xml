@@ -1,0 +1,83 @@
+Document: ID=C83EABB5.text (2 sentences, 17 tokens)
+
+Sentence #1 (11 tokens):
+Have a feeling the Jannies might not like this one.
+
+Tokens:
+[Text=Have CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=feeling CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VBG Lemma=feel NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Jannies CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Jannies NamedEntityTag=MISC]
+[Text=might CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Have)
+      (NP (DT a)
+        (NML
+          (S
+            (VP (VBG feeling)
+              (SBAR
+                (S
+                  (NP (DT the) (NNP Jannies))
+                  (VP (MD might) (RB not)
+                    (VP (VB like)
+                      (NP (DT this)))))))))
+        (NN one)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Have-1)
+det(one-10, a-2)
+compound(one-10, feeling-3)
+det(Jannies-5, the-4)
+nsubj(like-8, Jannies-5)
+aux(like-8, might-6)
+advmod(like-8, not-7)
+ccomp(feeling-3, like-8)
+obj(like-8, this-9)
+obj(Have-1, one-10)
+punct(Have-1, .-11)
+
+Extracted the following NER entity mentions:
+Jannies	MISC	MISC:0.32490202767028653
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (6 tokens):
+But I'm risking it.
+
+Tokens:
+[Text=But CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=risking CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=risk NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG risking)
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, risking-4)
+cc(risking-4, But-1)
+nsubj(risking-4, I-2)
+aux(risking-4, 'm-3)
+obj(risking-4, it-5)
+punct(risking-4, .-6)
+
+Extracted the following NER entity mentions:

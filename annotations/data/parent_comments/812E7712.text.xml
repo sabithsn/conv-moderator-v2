@@ -1,0 +1,53 @@
+Document: ID=812E7712.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Reddit needs to allow users to make their history private.
+
+Tokens:
+[Text=Reddit CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=reddit NamedEntityTag=LOCATION]
+[Text=needs CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=users CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=user NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=private CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=private NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Reddit))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB allow)
+            (NP (NNS users))
+            (S
+              (VP (TO to)
+                (VP (VB make)
+                  (NP (PRP$ their) (NN history))
+                  (S
+                    (ADJP (JJ private))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needs-2)
+nsubj(needs-2, Reddit-1)
+nsubj:xsubj(allow-4, Reddit-1)
+mark(allow-4, to-3)
+xcomp(needs-2, allow-4)
+obj(allow-4, users-5)
+nsubj:xsubj(make-7, users-5)
+mark(make-7, to-6)
+xcomp(allow-4, make-7)
+nmod:poss(history-9, their-8)
+obj(make-7, history-9)
+xcomp(make-7, private-10)
+punct(needs-2, .-11)
+
+Extracted the following NER entity mentions:
+Reddit	LOCATION	LOCATION:0.9725541448455877

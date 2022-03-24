@@ -1,0 +1,128 @@
+Document: ID=8A2632CF.text (3 sentences, 28 tokens)
+
+Sentence #1 (11 tokens):
+They are the one who are swooning for a president.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=who CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=swooning CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=VBG Lemma=swoon NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NN one))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (VP (VBG swooning)
+                (PP (IN for)
+                  (NP (DT a) (NN president)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, one-4)
+nsubj(one-4, They-1)
+cop(one-4, are-2)
+det(one-4, the-3)
+nsubj(swooning-7, one-4)
+ref(one-4, who-5)
+aux(swooning-7, are-6)
+acl:relcl(one-4, swooning-7)
+case(president-10, for-8)
+det(president-10, a-9)
+obl:for(swooning-7, president-10)
+punct(one-4, .-11)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+president	TITLE	-
+
+Sentence #2 (14 tokens):
+So, I gave the answer you and they obviously did not want.
+
+Tokens:
+[Text=So CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=answer NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=obviously CharacterOffsetBegin=87 CharacterOffsetEnd=96 PartOfSpeech=RB Lemma=obviously NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (VBD gave)
+        (NP (DT the) (NN answer))
+        (NP (PRP you))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (ADVP (RB obviously))
+      (VP (VBD did) (RB not)
+        (VP (VB want))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gave-4)
+advmod(gave-4, So-1)
+punct(gave-4, ,-2)
+nsubj(gave-4, I-3)
+det(answer-6, the-5)
+iobj(gave-4, answer-6)
+obj(gave-4, you-7)
+cc(want-13, and-8)
+nsubj(want-13, they-9)
+advmod(want-13, obviously-10)
+aux(want-13, did-11)
+advmod(want-13, not-12)
+conj:and(gave-4, want-13)
+punct(gave-4, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+So sad.
+
+Tokens:
+[Text=So CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=sad CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=sad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADJP (RB So) (JJ sad) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sad-2)
+advmod(sad-2, So-1)
+punct(sad-2, .-3)
+
+Extracted the following NER entity mentions:

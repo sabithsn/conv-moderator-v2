@@ -1,0 +1,148 @@
+Document: ID=E02FE19F.text (3 sentences, 35 tokens)
+
+Sentence #1 (14 tokens):
+My budget doesn’t afford me the ability to buy American made goods.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=budget CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=budget NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=afford CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=afford NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ability CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=ability NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=buy CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=buy NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=American NamedEntityTag=NATIONALITY]
+[Text=made CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=goods CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=goods NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN budget))
+    (VP (VBZ does) (RB n’t)
+      (VP (VB afford)
+        (S
+          (NP (PRP me))
+          (NP (DT the) (NN ability)
+            (S
+              (VP (TO to)
+                (VP (VB buy)
+                  (NP
+                    (ADJP (NNP American) (VBN made))
+                    (NNS goods)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, afford-5)
+nmod:poss(budget-2, My-1)
+nsubj(afford-5, budget-2)
+aux(afford-5, does-3)
+advmod(afford-5, n’t-4)
+nsubj(ability-8, me-6)
+det(ability-8, the-7)
+xcomp(afford-5, ability-8)
+mark(buy-10, to-9)
+acl:to(ability-8, buy-10)
+dep(made-12, American-11)
+amod(goods-13, made-12)
+obj(buy-10, goods-13)
+punct(afford-5, .-14)
+
+Extracted the following NER entity mentions:
+American	NATIONALITY	MISC:0.9998360543734585
+
+Sentence #2 (11 tokens):
+That puts Chinese made goods in my price point range.
+
+Tokens:
+[Text=That CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=puts CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBZ Lemma=put NamedEntityTag=O]
+[Text=Chinese CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=chinese NamedEntityTag=NATIONALITY]
+[Text=made CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=goods CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NNS Lemma=goods NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=range CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=range NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ puts)
+      (NP
+        (NP (JJ Chinese) (VBN made) (NNS goods))
+        (PP (IN in)
+          (NP (PRP$ my)
+            (NML (NN price) (NN point))
+            (NN range)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, puts-2)
+nsubj(puts-2, That-1)
+amod(goods-5, Chinese-3)
+amod(goods-5, made-4)
+obj(puts-2, goods-5)
+case(range-10, in-6)
+nmod:poss(range-10, my-7)
+compound(point-9, price-8)
+compound(range-10, point-9)
+nmod:in(goods-5, range-10)
+punct(puts-2, .-11)
+
+Extracted the following NER entity mentions:
+Chinese	NATIONALITY	MISC:0.9999993493578486
+
+Sentence #3 (10 tokens):
+I don’t necessarily have the options I want.
+
+Tokens:
+[Text=I CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=necessarily CharacterOffsetBegin=130 CharacterOffsetEnd=141 PartOfSpeech=RB Lemma=necessarily NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=options CharacterOffsetBegin=151 CharacterOffsetEnd=158 PartOfSpeech=NNS Lemma=option NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n’t)
+      (ADVP (RB necessarily))
+      (VP (VB have)
+        (NP
+          (NP (DT the) (NNS options))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBP want)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-5)
+nsubj(have-5, I-1)
+aux(have-5, do-2)
+advmod(have-5, n’t-3)
+advmod(have-5, necessarily-4)
+det(options-7, the-6)
+obj(have-5, options-7)
+nsubj(want-9, I-8)
+acl:relcl(options-7, want-9)
+punct(have-5, .-10)
+
+Extracted the following NER entity mentions:

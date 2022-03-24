@@ -1,0 +1,116 @@
+Document: ID=53033BC6.text (2 sentences, 28 tokens)
+
+Sentence #1 (20 tokens):
+Next time incorrectly use the homonym "you're" and then you have a little more wiggle room.
+
+Tokens:
+[Text=Next CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=incorrectly CharacterOffsetBegin=10 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=incorrectly NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBP Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=homonym CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=homonym NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=wiggle CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=wiggle NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (JJ Next) (NN time))
+      (ADVP (RB incorrectly))
+      (VP (VBP use)
+        (NP (DT the) (NN homonym))
+        (`` ")
+        (SQ
+          (NP (PRP you))
+          (VP (VBP 're)))
+        ('' ")))
+    (CC and)
+    (S
+      (ADVP (RB then))
+      (NP (PRP you))
+      (VP (VBP have)
+        (NP
+          (ADJP
+            (NP (DT a) (JJ little))
+            (JJR more))
+          (NN wiggle) (NN room))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, use-4)
+amod(time-2, Next-1)
+nsubj(use-4, time-2)
+advmod(use-4, incorrectly-3)
+det(homonym-6, the-5)
+obj(use-4, homonym-6)
+punct(use-4, "-7)
+nsubj('re-9, you-8)
+dep(use-4, 're-9)
+punct(use-4, "-10)
+cc(have-14, and-11)
+advmod(have-14, then-12)
+nsubj(have-14, you-13)
+conj:and(use-4, have-14)
+det(little-16, a-15)
+obl:npmod(more-17, little-16)
+amod(room-19, more-17)
+compound(room-19, wiggle-18)
+obj(have-14, room-19)
+punct(use-4, .-20)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Sorry that's the best I got lol
+
+Tokens:
+[Text=Sorry CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=UH Lemma=sorry NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=lol CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Sorry))
+    (NP (DT that))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (JJS best))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD got)
+              (INTJ (UH lol)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, best-5)
+discourse(best-5, Sorry-1)
+nsubj(best-5, that-2)
+cop(best-5, 's-3)
+det(best-5, the-4)
+nsubj(got-7, I-6)
+acl:relcl(best-5, got-7)
+discourse(got-7, lol-8)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,71 @@
+Document: ID=CB9BC71A.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+FDA begins court-mandated release of thousands of pages on Pfizer's Covid-19 vaccine review
+
+Tokens:
+[Text=FDA CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=FDA NamedEntityTag=ORGANIZATION]
+[Text=begins CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=begin NamedEntityTag=O]
+[Text=court CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=court NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=mandated CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=mandate NamedEntityTag=O]
+[Text=release CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=release NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=thousands CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=thousand NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=pages CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=page NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Pfizer CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Pfizer NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Covid CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Covid NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=19 CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=19 NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=review CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=review NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP FDA))
+      (VP (VBZ begins)
+        (NP
+          (NP
+            (ADJP (NN court) (HYPH -) (VBN mandated))
+            (NN release))
+          (PP (IN of)
+            (NP
+              (NP (NNS thousands))
+              (PP (IN of)
+                (NP
+                  (NP (NNS pages))
+                  (PP (IN on)
+                    (NP
+                      (NP (NNP Pfizer) (POS 's))
+                      (NNP Covid) (HYPH -) (NNP 19))))))))))
+    (NP (NN vaccine) (NN review))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, review-18)
+nsubj(begins-2, FDA-1)
+dep(review-18, begins-2)
+obl(mandated-5, court-3)
+punct(mandated-5, --4)
+amod(release-6, mandated-5)
+obj(begins-2, release-6)
+case(thousands-8, of-7)
+det:qmod(pages-10, thousands-8)
+fixed(thousands-8, of-9)
+nmod(release-6, pages-10)
+case(19-16, on-11)
+nmod:poss(19-16, Pfizer-12)
+case(Pfizer-12, 's-13)
+compound(19-16, Covid-14)
+punct(19-16, --15)
+nmod:on(pages-10, 19-16)
+compound(review-18, vaccine-17)
+
+Extracted the following NER entity mentions:
+FDA	ORGANIZATION	ORGANIZATION:0.9337928423215415
+Pfizer	ORGANIZATION	ORGANIZATION:0.950262996091517

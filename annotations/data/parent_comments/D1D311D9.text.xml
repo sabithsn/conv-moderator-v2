@@ -1,0 +1,85 @@
+Document: ID=D1D311D9.text (2 sentences, 18 tokens)
+
+Sentence #1 (8 tokens):
+But that’s not what he said.
+
+Tokens:
+[Text=But CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (DT that))
+    (VP (VBZ ’s) (RB not)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP he))
+          (VP (VBD said)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-3)
+cc(’s-3, But-1)
+nsubj(’s-3, that-2)
+advmod(’s-3, not-4)
+obj(said-7, what-5)
+nsubj(said-7, he-6)
+ccomp(’s-3, said-7)
+punct(’s-3, .-8)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #2 (10 tokens):
+I’m guessing you didn’t  watch the video?
+
+Tokens:
+[Text=I CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=guessing CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=guess NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=watch CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=watch NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=video CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=video NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (S
+        (VP (VBG guessing)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBD did) (RB n’t)
+                (VP (VB watch)
+                  (NP (DT the) (NN video)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’m-2)
+nsubj(’m-2, I-1)
+xcomp(’m-2, guessing-3)
+nsubj(watch-7, you-4)
+aux(watch-7, did-5)
+advmod(watch-7, n’t-6)
+ccomp(guessing-3, watch-7)
+det(video-9, the-8)
+obj(watch-7, video-9)
+punct(’m-2, ?-10)
+
+Extracted the following NER entity mentions:

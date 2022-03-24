@@ -1,0 +1,99 @@
+Document: ID=A62ED216.text (1 sentences, 28 tokens)
+
+Sentence #1 (28 tokens):
+At a protest in Austin, Texas against Governor Abbott's anti-trans youth legislation, a student activist was targeted & body-slammed by state troopers.
+
+Tokens:
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=protest CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=protest NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Austin CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Austin NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=against CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Governor CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Governor NamedEntityTag=TITLE]
+[Text=Abbott CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Abbott NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=anti-trans CharacterOffsetBegin=56 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=anti-trans NamedEntityTag=O]
+[Text=youth CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=youth NamedEntityTag=O]
+[Text=legislation CharacterOffsetBegin=73 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=legislation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=student CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=student NamedEntityTag=TITLE]
+[Text=activist CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=activist NamedEntityTag=TITLE]
+[Text=was CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=targeted CharacterOffsetBegin=109 CharacterOffsetEnd=117 PartOfSpeech=VBN Lemma=target NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=slammed CharacterOffsetBegin=125 CharacterOffsetEnd=132 PartOfSpeech=VBN Lemma=slam NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=troopers CharacterOffsetBegin=142 CharacterOffsetEnd=150 PartOfSpeech=NNS Lemma=trooper NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT a) (NN protest))
+        (PP (IN in)
+          (NP
+            (NP (NNP Austin) (, ,) (NNP Texas))
+            (PP (IN against)
+              (NP
+                (NP (NNP Governor) (NNP Abbott) (POS 's))
+                (JJ anti-trans) (NN youth) (NN legislation)))))))
+    (, ,)
+    (NP (DT a) (NN student) (NN activist))
+    (VP (VBD was)
+      (NP
+        (ADJP
+          (ADJP (VBN targeted))
+          (CC &)
+          (ADJP (NN body) (HYPH -) (VBN slammed)
+            (PP (IN by)
+              (NP (NN state)))))
+        (NNS troopers)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, troopers-27)
+case(protest-3, At-1)
+det(protest-3, a-2)
+obl:at(troopers-27, protest-3)
+case(Texas-7, in-4)
+compound(Texas-7, Austin-5)
+punct(Texas-7, ,-6)
+nmod:in(protest-3, Texas-7)
+case(legislation-14, against-8)
+compound(Abbott-10, Governor-9)
+nmod:poss(legislation-14, Abbott-10)
+case(Abbott-10, 's-11)
+amod(legislation-14, anti-trans-12)
+compound(legislation-14, youth-13)
+nmod:against(Texas-7, legislation-14)
+punct(troopers-27, ,-15)
+det(activist-18, a-16)
+compound(activist-18, student-17)
+nsubj(troopers-27, activist-18)
+cop(troopers-27, was-19)
+amod(troopers-27, targeted-20)
+cc(slammed-24, &-21)
+dep(slammed-24, body-22)
+punct(slammed-24, --23)
+conj:&(targeted-20, slammed-24)
+amod(troopers-27, slammed-24)
+case(state-26, by-25)
+obl:by(slammed-24, state-26)
+punct(troopers-27, .-28)
+
+Extracted the following NER entity mentions:
+Austin	CITY	LOCATION:0.9991686838826637
+Texas	STATE_OR_PROVINCE	LOCATION:0.9941763871219881
+Governor	TITLE	-
+Abbott	PERSON	PERSON:0.9960400720092405
+student activist	TITLE	-

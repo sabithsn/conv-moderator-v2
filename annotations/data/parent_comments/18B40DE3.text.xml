@@ -1,0 +1,108 @@
+Document: ID=18B40DE3.text (2 sentences, 25 tokens)
+
+Sentence #1 (3 tokens):
+Well deserved!!
+
+Tokens:
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=deserved CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=deserved NamedEntityTag=O]
+[Text=!! CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Well))
+    (NP (JJ deserved))
+    (. !!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deserved-2)
+discourse(deserved-2, Well-1)
+punct(deserved-2, !!-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+Tho my favorite was still when Obama received the Nobel Peace Prize and proceeded to drop 26,000 bombs on 7 different countries
+
+Tokens:
+[Text=Tho CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Tho NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=favorite CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=favorite NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Obama CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text=received CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Nobel CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Nobel NamedEntityTag=MISC]
+[Text=Peace CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Peace NamedEntityTag=MISC]
+[Text=Prize CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Prize NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=proceeded CharacterOffsetBegin=89 CharacterOffsetEnd=98 PartOfSpeech=VBD Lemma=proceed NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=drop CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=VB Lemma=drop NamedEntityTag=O]
+[Text=26,000 CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=CD Lemma=26,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=26000.0]
+[Text=bombs CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=bomb NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=CD Lemma=7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=different CharacterOffsetBegin=125 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=countries CharacterOffsetBegin=135 CharacterOffsetEnd=144 PartOfSpeech=NNS Lemma=country NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tho))
+    (NP (PRP$ my) (NN favorite))
+    (VP (VBD was)
+      (ADVP (RB still))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP Obama))
+          (VP
+            (VP (VBD received)
+              (NP (DT the) (NNP Nobel) (NNP Peace) (NNP Prize)))
+            (CC and)
+            (VP (VBD proceeded)
+              (S
+                (VP (TO to)
+                  (VP (VB drop)
+                    (NP (CD 26,000) (NNS bombs))
+                    (PP (IN on)
+                      (NP (CD 7) (JJ different) (NNS countries)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-4)
+nsubj(was-4, Tho-1)
+nmod:poss(favorite-3, my-2)
+nsubj(was-4, favorite-3)
+advmod(was-4, still-5)
+advmod(received-8, when-6)
+nsubj(received-8, Obama-7)
+nsubj(proceeded-14, Obama-7)
+nsubj:xsubj(drop-16, Obama-7)
+advcl(was-4, received-8)
+det(Prize-12, the-9)
+compound(Prize-12, Nobel-10)
+compound(Prize-12, Peace-11)
+obj(received-8, Prize-12)
+cc(proceeded-14, and-13)
+advcl(was-4, proceeded-14)
+conj:and(received-8, proceeded-14)
+mark(drop-16, to-15)
+xcomp(proceeded-14, drop-16)
+nummod(bombs-18, 26,000-17)
+obj(drop-16, bombs-18)
+case(countries-22, on-19)
+nummod(countries-22, 7-20)
+amod(countries-22, different-21)
+obl:on(drop-16, countries-22)
+
+Extracted the following NER entity mentions:
+Obama	PERSON	PERSON:0.9993181437116538
+Nobel Peace Prize	MISC	MISC:0.9997788948527542
+26,000	NUMBER	NUMBER:-1.0
+7	NUMBER	NUMBER:-1.0

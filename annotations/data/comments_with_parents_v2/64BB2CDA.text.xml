@@ -1,0 +1,103 @@
+Document: ID=64BB2CDA.text (2 sentences, 25 tokens)
+
+Sentence #1 (11 tokens):
+This was required reading for our class in 7th grade.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=required CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=required NamedEntityTag=O]
+[Text=reading CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=reading NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=class CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=class NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=7th CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=7th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0]
+[Text=grade CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=grade NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (NP
+        (NP (JJ required) (NN reading))
+        (PP (IN for)
+          (NP
+            (NP (PRP$ our) (NN class))
+            (PP (IN in)
+              (NP (JJ 7th) (NN grade)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reading-4)
+nsubj(reading-4, This-1)
+cop(reading-4, was-2)
+amod(reading-4, required-3)
+case(class-7, for-5)
+nmod:poss(class-7, our-6)
+nmod:for(reading-4, class-7)
+case(grade-10, in-8)
+amod(grade-10, 7th-9)
+nmod:in(class-7, grade-10)
+punct(reading-4, .-11)
+
+Extracted the following NER entity mentions:
+7th	ORDINAL	ORDINAL:-1.0
+
+Sentence #2 (14 tokens):
+It’s an amazing graphic novel and I’d recommend it to everyone.
+
+Tokens:
+[Text=It CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=amazing CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=amazing NamedEntityTag=O]
+[Text=graphic CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=graphic NamedEntityTag=O]
+[Text=novel CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=novel NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’d CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=MD Lemma=’d NamedEntityTag=O]
+[Text=recommend CharacterOffsetBegin=92 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=recommend NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=108 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ ’s)
+        (NP (DT an) (JJ amazing) (JJ graphic) (NN novel))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD ’d)
+        (VP (VB recommend)
+          (NP (PRP it))
+          (PP (IN to)
+            (NP (NN everyone))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, novel-6)
+nsubj(novel-6, It-1)
+cop(novel-6, ’s-2)
+det(novel-6, an-3)
+amod(novel-6, amazing-4)
+amod(novel-6, graphic-5)
+cc(recommend-10, and-7)
+nsubj(recommend-10, I-8)
+aux(recommend-10, ’d-9)
+conj:and(novel-6, recommend-10)
+obj(recommend-10, it-11)
+case(everyone-13, to-12)
+obl:to(recommend-10, everyone-13)
+punct(novel-6, .-14)
+
+Extracted the following NER entity mentions:

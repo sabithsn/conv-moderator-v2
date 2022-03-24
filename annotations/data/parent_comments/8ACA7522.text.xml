@@ -1,0 +1,31 @@
+Document: ID=8ACA7522.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Elon Musk going full based
+
+Tokens:
+[Text=Elon CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Elon NamedEntityTag=PERSON]
+[Text=Musk CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=musk NamedEntityTag=PERSON]
+[Text=going CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Elon) (NN Musk))
+      (VP (VBG going)
+        (ADJP (JJ full))))
+    (VP (VBN based))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, based-5)
+compound(Musk-2, Elon-1)
+nsubj(based-5, Musk-2)
+acl(Musk-2, going-3)
+xcomp(going-3, full-4)
+
+Extracted the following NER entity mentions:
+Elon Musk	PERSON	PERSON:0.47562321322185896

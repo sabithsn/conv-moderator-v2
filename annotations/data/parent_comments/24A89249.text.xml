@@ -1,0 +1,57 @@
+Document: ID=24A89249.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+And been slapped by the Logan Act…Trump is a private citizen bro.
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=slapped CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=slap NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Logan CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Logan NamedEntityTag=O]
+[Text=Act CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Act NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=private CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=private NamedEntityTag=O]
+[Text=citizen CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=citizen NamedEntityTag=O]
+[Text=bro CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=bro NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (S
+      (VP (VBN been)
+        (VP (VBN slapped)
+          (PP (IN by)
+            (NP (DT the) (NNP Logan) (NNP Act))))))
+    (: …)
+    (S
+      (NP (NNP Trump))
+      (VP (VBZ is)
+        (NP (DT a) (JJ private) (NN citizen) (NN bro))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, slapped-3)
+cc(slapped-3, And-1)
+aux:pass(slapped-3, been-2)
+case(Act-7, by-4)
+det(Act-7, the-5)
+compound(Act-7, Logan-6)
+obl:agent(slapped-3, Act-7)
+punct(slapped-3, …-8)
+nsubj(bro-14, Trump-9)
+cop(bro-14, is-10)
+det(bro-14, a-11)
+amod(bro-14, private-12)
+compound(bro-14, citizen-13)
+parataxis(slapped-3, bro-14)
+punct(slapped-3, .-15)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.5438288727009076

@@ -1,0 +1,42 @@
+Document: ID=695CA6A0.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+77% Baltimore High Schoolers test at Elementary Level
+
+Tokens:
+[Text=77 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=77 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%77.0]
+[Text=% CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%77.0]
+[Text=Baltimore CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Baltimore NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=High NamedEntityTag=O]
+[Text=Schoolers CharacterOffsetBegin=19 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Schoolers NamedEntityTag=O]
+[Text=test CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=test NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Elementary CharacterOffsetBegin=37 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Elementary NamedEntityTag=LOCATION]
+[Text=Level CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Level NamedEntityTag=LOCATION]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (CD 77) (NN %))
+    (NP
+      (NP
+        (NML (NNP Baltimore) (NNP High) (NNP Schoolers))
+        (NN test))
+      (PP (IN at)
+        (NP (NNP Elementary) (NNP Level))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, %-2)
+nummod(%-2, 77-1)
+compound(Schoolers-5, Baltimore-3)
+compound(Schoolers-5, High-4)
+compound(test-6, Schoolers-5)
+dep(%-2, test-6)
+case(Level-9, at-7)
+compound(Level-9, Elementary-8)
+nmod:at(test-6, Level-9)
+
+Extracted the following NER entity mentions:
+77%	PERCENT	PERCENT:0.9612045946442764
+Elementary Level	LOCATION	LOCATION:0.8560622919940062

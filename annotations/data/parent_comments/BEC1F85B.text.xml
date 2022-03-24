@@ -1,0 +1,66 @@
+Document: ID=BEC1F85B.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Trump Responds To Jan. 6 Committee Saying Democrats, Media "Rigged The Election"
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=Responds CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=respond NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Jan. CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=Committee CharacterOffsetBegin=25 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Committee NamedEntityTag=O]
+[Text=Saying CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Media CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Media NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Rigged CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=VBD Lemma=rig NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Election CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Trump))
+      (VP (VBZ Responds)
+        (S
+          (VP (TO To)))
+        (NP-TMP (NNP Jan.) (CD 6))))
+    (S
+      (S
+        (NP (NNP Committee))
+        (VP (VBG Saying)
+          (NP (NNPS Democrats))))
+      (, ,)
+      (S
+        (NP (NNP Media))
+        (VP (`` ") (VBD Rigged)
+          (NP (DT The) (NN Election))
+          ('' "))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Responds-2)
+nsubj(Responds-2, Trump-1)
+nsubj:xsubj(To-3, Trump-1)
+xcomp(Responds-2, To-3)
+obl:tmod(Responds-2, Jan.-4)
+nummod(Jan.-4, 6-5)
+nsubj(Saying-7, Committee-6)
+parataxis(Responds-2, Saying-7)
+obj(Saying-7, Democrats-8)
+punct(Saying-7, ,-9)
+nsubj(Rigged-12, Media-10)
+punct(Rigged-12, "-11)
+parataxis(Saying-7, Rigged-12)
+det(Election-14, The-13)
+obj(Rigged-12, Election-14)
+punct(Rigged-12, "-15)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.37749082623606134
+Jan. 6	DATE	DATE:0.6560950721496587
+Democrats	IDEOLOGY	MISC:0.7844360647976781

@@ -1,0 +1,95 @@
+Document: ID=A69EAB5D.text (2 sentences, 23 tokens)
+
+Sentence #1 (22 tokens):
+Not enough losing the house, the senate and the presidency all in one term because of supporting the orange loser?
+
+Tokens:
+[Text=Not CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=losing CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=lose NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=senate CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=senate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=presidency CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=presidency NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=term CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=75 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=supporting CharacterOffsetBegin=86 CharacterOffsetEnd=96 PartOfSpeech=VBG Lemma=support NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orange CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=orange NamedEntityTag=O]
+[Text=loser CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=loser NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADJP (RB Not) (JJ enough))
+    (S
+      (VP (VBG losing)
+        (NP
+          (NP (DT the) (NN house))
+          (, ,)
+          (NP (DT the) (NN senate))
+          (CC and)
+          (NP (DT the) (NN presidency)))
+        (PP (RB all) (IN in)
+          (NP (CD one) (NN term)))
+        (PP (IN because)
+          (PP (IN of)
+            (S
+              (VP (VBG supporting)
+                (NP (DT the) (JJ orange) (NN loser))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enough-2)
+advmod(enough-2, Not-1)
+dep(enough-2, losing-3)
+det(house-5, the-4)
+obj(losing-3, house-5)
+punct(house-5, ,-6)
+det(senate-8, the-7)
+obj(losing-3, senate-8)
+conj:and(house-5, senate-8)
+cc(presidency-11, and-9)
+det(presidency-11, the-10)
+obj(losing-3, presidency-11)
+conj:and(house-5, presidency-11)
+advmod(term-15, all-12)
+case(term-15, in-13)
+nummod(term-15, one-14)
+obl:in(losing-3, term-15)
+case(supporting-18, because-16)
+mark(supporting-18, of-17)
+dep(losing-3, supporting-18)
+det(loser-21, the-19)
+amod(loser-21, orange-20)
+obj(supporting-18, loser-21)
+punct(enough-2, ?-22)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (1 tokens):
+🤣
+
+Tokens:
+[Text=🤣 CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=NFP Lemma=🤣 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (NFP 🤣)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 🤣-1)
+
+Extracted the following NER entity mentions:

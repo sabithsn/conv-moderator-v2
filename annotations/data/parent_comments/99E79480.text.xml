@@ -1,0 +1,33 @@
+Document: ID=99E79480.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+I think Putina is.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=Putina CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Putina NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (NNP Putina))
+          (VP (VBZ is)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(is-4, Putina-3)
+ccomp(think-2, is-4)
+punct(think-2, .-5)
+
+Extracted the following NER entity mentions:
+Putina	PERSON	PERSON:0.6194331864932828

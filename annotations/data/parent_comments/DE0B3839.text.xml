@@ -1,0 +1,39 @@
+Document: ID=DE0B3839.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+It is how Trump ran his businesses
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=ran CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=run NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=businesses CharacterOffsetBegin=24 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=business NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNP Trump))
+          (VP (VBD ran)
+            (NP (PRP$ his) (NNS businesses))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, It-1)
+advmod(ran-5, how-3)
+nsubj(ran-5, Trump-4)
+ccomp(is-2, ran-5)
+nmod:poss(businesses-7, his-6)
+obj(ran-5, businesses-7)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9699487441627102
+his	PERSON	-

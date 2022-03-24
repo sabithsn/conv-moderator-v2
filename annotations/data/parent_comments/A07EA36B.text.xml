@@ -1,0 +1,97 @@
+Document: ID=A07EA36B.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+CMV: America's "inherent whitewashed" or "inherent conservative" bias is vastly overexaggerated, at least in modern, metropolis America.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text='s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=inherent CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=inherent NamedEntityTag=O]
+[Text=whitewashed CharacterOffsetBegin=25 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=whitewashed NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=inherent CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=inherent NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=51 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=" CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=bias CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=bias NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=vastly CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=vastly NamedEntityTag=O]
+[Text=overexaggerated CharacterOffsetBegin=80 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=overexaggerated NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=RBS Lemma=least NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=modern CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=modern NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=metropolis CharacterOffsetBegin=117 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=metropolis NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (NN CMV))
+      (: :)
+      (S
+        (NP
+          (NP (NNP America) (POS 's))
+          (`` ")
+          (ADJP
+            (ADJP (JJ inherent) (JJ whitewashed))
+            ('' ")
+            (CC or)
+            (`` ")
+            (ADJP (JJ inherent) (JJ conservative)))
+          (`` ") (NN bias))
+        (VP (VBZ is)
+          (ADJP (RB vastly) (JJ overexaggerated)))))
+    (, ,)
+    (FRAG
+      (ADVP (IN at) (RBS least))
+      (PP (IN in)
+        (ADJP (JJ modern))))
+    (, ,)
+    (FRAG
+      (NP (NN metropolis))
+      (NP (NNP America)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nmod:poss(bias-14, America-3)
+case(America-3, 's-4)
+punct(bias-14, "-5)
+advmod(whitewashed-7, inherent-6)
+amod(bias-14, whitewashed-7)
+punct(whitewashed-7, "-8)
+cc(conservative-12, or-9)
+punct(whitewashed-7, "-10)
+advmod(conservative-12, inherent-11)
+conj:or(whitewashed-7, conservative-12)
+amod(bias-14, conservative-12)
+punct(bias-14, "-13)
+nsubj(overexaggerated-17, bias-14)
+cop(overexaggerated-17, is-15)
+advmod(overexaggerated-17, vastly-16)
+appos(CMV-1, overexaggerated-17)
+punct(CMV-1, ,-18)
+case(least-20, at-19)
+parataxis(CMV-1, least-20)
+case(modern-22, in-21)
+dep(least-20, modern-22)
+punct(CMV-1, ,-23)
+parataxis(CMV-1, metropolis-24)
+dep(metropolis-24, America-25)
+punct(CMV-1, .-26)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.9299100777861982
+conservative	IDEOLOGY	-
+America	COUNTRY	LOCATION:0.9570838359993702

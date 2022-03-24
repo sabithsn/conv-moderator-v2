@@ -1,0 +1,55 @@
+Document: ID=1EABDD8F.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Thank you Tucker Carlson, united we stand against the liberal agenda!
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBP Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=united CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=unite NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=stand NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=liberal CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=IDEOLOGY]
+[Text=agenda CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=agenda NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBP Thank)
+        (NP (PRP you))
+        (NP (NNP Tucker) (NNP Carlson))))
+    (, ,)
+    (VP (VBD united)
+      (S
+        (NP (PRP we))
+        (VP (VB stand)
+          (PP (IN against)
+            (NP (DT the) (JJ liberal) (NN agenda))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, united-6)
+ccomp(united-6, Thank-1)
+iobj(Thank-1, you-2)
+compound(Carlson-4, Tucker-3)
+obj(Thank-1, Carlson-4)
+punct(united-6, ,-5)
+nsubj(stand-8, we-7)
+ccomp(united-6, stand-8)
+case(agenda-12, against-9)
+det(agenda-12, the-10)
+amod(agenda-12, liberal-11)
+obl:against(stand-8, agenda-12)
+punct(united-6, !-13)
+
+Extracted the following NER entity mentions:
+Tucker Carlson	PERSON	PERSON:0.9986023974588808
+liberal	IDEOLOGY	-

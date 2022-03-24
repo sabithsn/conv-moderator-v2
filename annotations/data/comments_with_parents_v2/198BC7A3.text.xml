@@ -1,0 +1,51 @@
+Document: ID=198BC7A3.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+AITA for insisting my boyfriend eat respectfully at a nice restaurant?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=insisting CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=insist NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=boyfriend CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=boyfriend NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=eat NamedEntityTag=O]
+[Text=respectfully CharacterOffsetBegin=36 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=respectfully NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=restaurant CharacterOffsetBegin=59 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=restaurant NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG insisting)
+          (S
+            (NP (PRP$ my) (NN boyfriend))
+            (VP (VB eat)
+              (ADVP (RB respectfully))
+              (PP (IN at)
+                (NP (DT a) (JJ nice) (NN restaurant))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(insisting-3, for-2)
+dep(AITA-1, insisting-3)
+nmod:poss(boyfriend-5, my-4)
+nsubj(eat-6, boyfriend-5)
+ccomp(insisting-3, eat-6)
+advmod(eat-6, respectfully-7)
+case(restaurant-11, at-8)
+det(restaurant-11, a-9)
+amod(restaurant-11, nice-10)
+obl:at(eat-6, restaurant-11)
+punct(AITA-1, ?-12)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.5421348188285995

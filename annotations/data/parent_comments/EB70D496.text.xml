@@ -1,0 +1,77 @@
+Document: ID=EB70D496.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+I'm surprised Carlson managed to stop whining about a less sexy animated candy to spout this dumbassery.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=surprised CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=surprised NamedEntityTag=O]
+[Text=Carlson CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+[Text=managed CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=manage NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=whining CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=whine NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=JJR Lemma=less NamedEntityTag=O]
+[Text=sexy CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=sexy NamedEntityTag=O]
+[Text=animated CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=VBN Lemma=animate NamedEntityTag=O]
+[Text=candy CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=candy NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=spout CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=spout NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=dumbassery CharacterOffsetBegin=93 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=dumbassery NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ surprised)
+        (SBAR
+          (S
+            (NP (NNP Carlson))
+            (VP (VBD managed)
+              (S
+                (VP (TO to)
+                  (VP (VB stop)
+                    (S
+                      (VP (VBG whining)
+                        (PP (IN about)
+                          (NP
+                            (NP (DT a)
+                              (ADJP (JJR less) (JJ sexy))
+                              (VBN animated) (NN candy))
+                            (PP (IN to)
+                              (S
+                                (VP (VB spout)
+                                  (NP (DT this) (NN dumbassery)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, surprised-3)
+nsubj(surprised-3, I-1)
+cop(surprised-3, 'm-2)
+nsubj(managed-5, Carlson-4)
+nsubj:xsubj(stop-7, Carlson-4)
+ccomp(surprised-3, managed-5)
+mark(stop-7, to-6)
+xcomp(managed-5, stop-7)
+xcomp(stop-7, whining-8)
+case(candy-14, about-9)
+det(candy-14, a-10)
+advmod(sexy-12, less-11)
+amod(candy-14, sexy-12)
+amod(candy-14, animated-13)
+obl:about(whining-8, candy-14)
+mark(spout-16, to-15)
+acl:to(candy-14, spout-16)
+det(dumbassery-18, this-17)
+obj(spout-16, dumbassery-18)
+punct(surprised-3, .-19)
+
+Extracted the following NER entity mentions:
+Carlson	PERSON	PERSON:0.9979653358947213

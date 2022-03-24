@@ -1,0 +1,93 @@
+Document: ID=A9F96784.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+US-born figure skater who renounced her citizenship to compete for China slammed after last-place finish: 'Such a disgrace'
+
+Tokens:
+[Text=US CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=- CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=born CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBN Lemma=bear NamedEntityTag=O]
+[Text=figure CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=skater CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=skater NamedEntityTag=TITLE]
+[Text=who CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=renounced CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=VBD Lemma=renounce NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=citizenship CharacterOffsetBegin=40 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=citizenship NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=compete CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=compete NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=slammed CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=VBD Lemma=slam NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=finish CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=finish NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Such CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=disgrace CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=disgrace NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (ADJP (NNP US) (HYPH -) (VBN born))
+        (NN figure) (NN skater))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD renounced)
+            (NP (PRP$ her) (NN citizenship))
+            (S
+              (VP (TO to)
+                (VP (VB compete)
+                  (PP (IN for)
+                    (NP (NNP China))))))))))
+    (VP (VBD slammed)
+      (PP (IN after)
+        (NP
+          (NML (JJ last) (HYPH -) (NN place))
+          (NN finish)))
+      (: :)
+      (S (`` ')
+        (NP (JJ Such) (DT a) (NN disgrace))
+        ('' ')))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, slammed-14)
+obl(born-3, US-1)
+punct(born-3, --2)
+amod(skater-5, born-3)
+compound(skater-5, figure-4)
+nsubj(renounced-7, skater-5)
+nsubj(slammed-14, skater-5)
+ref(skater-5, who-6)
+acl:relcl(skater-5, renounced-7)
+nmod:poss(citizenship-9, her-8)
+obj(renounced-7, citizenship-9)
+mark(compete-11, to-10)
+advcl:to(renounced-7, compete-11)
+case(China-13, for-12)
+obl:for(compete-11, China-13)
+case(finish-19, after-15)
+amod(place-18, last-16)
+punct(place-18, --17)
+compound(finish-19, place-18)
+obl:after(slammed-14, finish-19)
+punct(slammed-14, :-20)
+punct(disgrace-24, '-21)
+amod(disgrace-24, Such-22)
+det(disgrace-24, a-23)
+parataxis(slammed-14, disgrace-24)
+punct(disgrace-24, '-25)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9436276070309707
+skater	TITLE	-
+China	COUNTRY	LOCATION:0.9953808952513339
+her	PERSON	-

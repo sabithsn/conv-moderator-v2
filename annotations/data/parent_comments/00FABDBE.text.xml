@@ -1,0 +1,161 @@
+Document: ID=00FABDBE.text (4 sentences, 33 tokens)
+
+Sentence #1 (2 tokens):
+Pandemic.
+
+Tokens:
+[Text=Pandemic CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=pandemic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN Pandemic) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pandemic-1)
+punct(Pandemic-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+Then pandemic mostly ended and people traveled again.
+
+Tokens:
+[Text=Then CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=pandemic CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=pandemic NamedEntityTag=O]
+[Text=mostly CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=mostly NamedEntityTag=O]
+[Text=ended CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=end NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=traveled CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=travel NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB Then))
+      (NP (NN pandemic))
+      (ADVP (RB mostly))
+      (VP (VBD ended)))
+    (CC and)
+    (S
+      (NP (NNS people))
+      (VP (VBD traveled)
+        (ADVP (RB again))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ended-4)
+advmod(ended-4, Then-1)
+nsubj(ended-4, pandemic-2)
+advmod(ended-4, mostly-3)
+cc(traveled-7, and-5)
+nsubj(traveled-7, people-6)
+conj:and(ended-4, traveled-7)
+advmod(traveled-7, again-8)
+punct(ended-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (11 tokens):
+You are describing how shitty Trump was during the pandemic.
+
+Tokens:
+[Text=You CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=describing CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=VBG Lemma=describe NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=shitty CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=shitty NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pandemic CharacterOffsetBegin=115 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=pandemic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (VP (VBG describing)
+        (SBAR
+          (WHADJP (WRB how)
+            (ADJP (JJ shitty)))
+          (S
+            (NP (NNP Trump))
+            (VP (VBD was)
+              (PP (IN during)
+                (NP (DT the) (NN pandemic))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, describing-3)
+nsubj(describing-3, You-1)
+aux(describing-3, are-2)
+advmod(shitty-5, how-4)
+dep(pandemic-10, shitty-5)
+nsubj(pandemic-10, Trump-6)
+cop(pandemic-10, was-7)
+case(pandemic-10, during-8)
+det(pandemic-10, the-9)
+ccomp(describing-3, pandemic-10)
+punct(describing-3, .-11)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.53739492037432
+
+Sentence #4 (11 tokens):
+Biden has done zero to change the price of gas.
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=zero CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=CD Lemma=zero NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=to CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=148 CharacterOffsetEnd=154 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (VP (VBZ has)
+      (VP (VBN done)
+        (NP (CD zero))
+        (S
+          (VP (TO to)
+            (VP (VB change)
+              (NP
+                (NP (DT the) (NN price))
+                (PP (IN of)
+                  (NP (NN gas)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, done-3)
+nsubj(done-3, Biden-1)
+aux(done-3, has-2)
+obj(done-3, zero-4)
+mark(change-6, to-5)
+advcl:to(done-3, change-6)
+det(price-8, the-7)
+obj(change-6, price-8)
+case(gas-10, of-9)
+nmod:of(price-8, gas-10)
+punct(done-3, .-11)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9982791199510557
+zero	NUMBER	NUMBER:-1.0

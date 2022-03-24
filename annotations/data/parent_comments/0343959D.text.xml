@@ -1,0 +1,58 @@
+Document: ID=0343959D.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Rogan is like 5’4 he ain’t fighting any chimps lol
+
+Tokens:
+[Text=Rogan CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Rogan NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=’ CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=4 CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=he CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=ai CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=fighting CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=fight NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=chimps CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=chimp NamedEntityTag=O]
+[Text=lol CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Rogan))
+    (VP (VBZ is)
+      (PP (IN like)
+        (NP (CD 5) (POS ’)))
+      (NP
+        (NP (CD 4))
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBZ ai) (RB n’t)
+              (VP (VBG fighting)
+                (NP (DT any) (NNS chimps))))))))
+    (INTJ (UH lol))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 4-6)
+nsubj(4-6, Rogan-1)
+cop(4-6, is-2)
+case(5-4, like-3)
+obl:’(4-6, 5-4)
+case(5-4, ’-5)
+nsubj(fighting-10, he-7)
+aux(fighting-10, ai-8)
+advmod(fighting-10, n’t-9)
+acl:relcl(4-6, fighting-10)
+det(chimps-12, any-11)
+obj(fighting-10, chimps-12)
+discourse(4-6, lol-13)
+
+Extracted the following NER entity mentions:
+Rogan	PERSON	PERSON:0.9669478029068548
+5	NUMBER	NUMBER:-1.0
+4	NUMBER	NUMBER:-1.0
+he	PERSON	-

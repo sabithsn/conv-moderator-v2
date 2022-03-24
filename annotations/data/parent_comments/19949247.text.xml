@@ -1,0 +1,80 @@
+Document: ID=19949247.text (2 sentences, 19 tokens)
+
+Sentence #1 (6 tokens):
+All that shit is dumb.
+
+Tokens:
+[Text=All CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=dumb CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=dumb NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PDT All) (DT that) (NN shit))
+    (VP (VBZ is)
+      (ADJP (JJ dumb)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dumb-5)
+det:predet(shit-3, All-1)
+det(shit-3, that-2)
+nsubj(dumb-5, shit-3)
+cop(dumb-5, is-4)
+punct(dumb-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+Same with "boi" and all the doggo/pupper shit.
+
+Tokens:
+[Text=Same CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=boi CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=boi NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=doggo CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=doggo NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=pupper CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=pupper NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADJP (JJ Same)
+    (PP (IN with)
+      (NP
+        (NP (`` ") (NN boi) ('' "))
+        (CC and)
+        (NP (PDT all) (DT the)
+          (NML (NN doggo) (HYPH /) (NN pupper))
+          (NN shit))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Same-1)
+case(boi-4, with-2)
+punct(boi-4, "-3)
+obl:with(Same-1, boi-4)
+punct(boi-4, "-5)
+cc(shit-12, and-6)
+det:predet(shit-12, all-7)
+det(shit-12, the-8)
+compound(pupper-11, doggo-9)
+punct(pupper-11, /-10)
+compound(shit-12, pupper-11)
+obl:with(Same-1, shit-12)
+conj:and(boi-4, shit-12)
+punct(Same-1, .-13)
+
+Extracted the following NER entity mentions:

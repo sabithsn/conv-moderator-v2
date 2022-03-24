@@ -1,0 +1,104 @@
+Document: ID=0A112C67.text (1 sentences, 27 tokens)
+
+Sentence #1 (27 tokens):
+They should be in therapy  Note: this is for individuals with thoughts only* and not pertaining to those who’ve acted on their desires.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=therapy CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=therapy NamedEntityTag=O]
+[Text=Note CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=individuals CharacterOffsetBegin=45 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=individual NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=thoughts CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=thought NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=pertaining CharacterOffsetBegin=85 CharacterOffsetEnd=95 PartOfSpeech=VBG Lemma=pertain NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=acted CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=VBN Lemma=act NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=desires CharacterOffsetBegin=127 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=desire NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (MD should)
+        (VP (VB be)
+          (PP (IN in)
+            (NP (NN therapy) (NN Note))))))
+    (: :)
+    (S
+      (S
+        (NP (DT this))
+        (VP (VBZ is)
+          (PP (IN for)
+            (NP
+              (NP (NNS individuals))
+              (PP (IN with)
+                (NP (NNS thoughts)))))
+          (ADVP (RB only)))
+        (NFP *))
+      (CC and)
+      (S (RB not)
+        (VP (VBG pertaining)
+          (PP (IN to)
+            (NP
+              (NP (DT those))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP ’ve)
+                    (VP (VBN acted)
+                      (PP (IN on)
+                        (NP (PRP$ their) (NNS desires))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Note-6)
+nsubj(Note-6, They-1)
+aux(Note-6, should-2)
+cop(Note-6, be-3)
+case(Note-6, in-4)
+compound(Note-6, therapy-5)
+punct(Note-6, :-7)
+nsubj(individuals-11, this-8)
+nsubj(pertaining-18, this-8)
+cop(individuals-11, is-9)
+case(individuals-11, for-10)
+parataxis(Note-6, individuals-11)
+case(thoughts-13, with-12)
+nmod:with(individuals-11, thoughts-13)
+advmod(individuals-11, only-14)
+punct(individuals-11, *-15)
+cc(pertaining-18, and-16)
+advmod(pertaining-18, not-17)
+parataxis(Note-6, pertaining-18)
+conj:and(individuals-11, pertaining-18)
+case(those-20, to-19)
+obl:to(pertaining-18, those-20)
+nsubj(’ve-22, those-20)
+ref(those-20, who-21)
+acl:relcl(those-20, ’ve-22)
+dep(’ve-22, acted-23)
+case(desires-26, on-24)
+nmod:poss(desires-26, their-25)
+obl:on(acted-23, desires-26)
+punct(Note-6, .-27)
+
+Extracted the following NER entity mentions:

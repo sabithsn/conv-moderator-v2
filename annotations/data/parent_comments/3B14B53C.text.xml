@@ -1,0 +1,49 @@
+Document: ID=3B14B53C.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Can’t wait to find several thousand votes out of nowhere
+
+Tokens:
+[Text=Ca CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=wait CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=wait NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=thousand CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=CD Lemma=thousand NamedEntityTag=NUMBER NormalizedNamedEntityTag=1000.0]
+[Text=votes CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=vote NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=nowhere CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=nowhere NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Ca) (RB n’t)
+      (VP (VB wait)
+        (S
+          (VP (TO to)
+            (VP (VB find)
+              (NP
+                (QP (JJ several) (CD thousand))
+                (NNS votes))
+              (ADVP (IN out)
+                (PP (IN of)
+                  (ADVP (RB nowhere)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wait-3)
+aux(wait-3, Ca-1)
+advmod(wait-3, n’t-2)
+mark(find-5, to-4)
+xcomp(wait-3, find-5)
+advmod(thousand-7, several-6)
+nummod(votes-8, thousand-7)
+obj(find-5, votes-8)
+advmod(find-5, out-9)
+case(nowhere-11, of-10)
+advcl:of(out-9, nowhere-11)
+
+Extracted the following NER entity mentions:
+thousand	NUMBER	NUMBER:-1.0

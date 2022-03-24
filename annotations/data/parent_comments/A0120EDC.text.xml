@@ -1,0 +1,141 @@
+Document: ID=A0120EDC.text (3 sentences, 34 tokens)
+
+Sentence #1 (4 tokens):
+FUCK OFF BOT!
+
+Tokens:
+[Text=FUCK CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=fuck NamedEntityTag=O]
+[Text=OFF CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=BOT CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=bot NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP FUCK)
+      (PRT (RP OFF))
+      (NP (NN BOT)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FUCK-1)
+compound:prt(FUCK-1, OFF-2)
+obj(FUCK-1, BOT-3)
+punct(FUCK-1, !-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+My friends were all healthy fucking individuals and now they might be suffering long term ailments.
+
+Tokens:
+[Text=My CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=healthy CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=healthy NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=fucking NamedEntityTag=O]
+[Text=individuals CharacterOffsetBegin=50 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=individual NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=they CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=suffering CharacterOffsetBegin=84 CharacterOffsetEnd=93 PartOfSpeech=VBG Lemma=suffer NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=ailments CharacterOffsetBegin=104 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=ailment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NNS friends))
+    (VP (VBD were) (RB all)
+      (ADJP (JJ healthy) (RB fucking)
+        (SBAR
+          (UCP
+            (NP (NNS individuals))
+            (CC and)
+            (ADVP (RB now)))
+          (S
+            (NP (PRP they))
+            (VP (MD might)
+              (VP (VB be)
+                (VP (VBG suffering)
+                  (NP
+                    (NML (JJ long) (NN term))
+                    (NNS ailments)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, healthy-5)
+nmod:poss(friends-2, My-1)
+nsubj(healthy-5, friends-2)
+cop(healthy-5, were-3)
+advmod(healthy-5, all-4)
+advmod(healthy-5, fucking-6)
+dep(suffering-13, individuals-7)
+cc(individuals-7, and-8)
+advmod(individuals-7, now-9)
+nsubj(suffering-13, they-10)
+aux(suffering-13, might-11)
+aux(suffering-13, be-12)
+ccomp(healthy-5, suffering-13)
+amod(term-15, long-14)
+compound(ailments-16, term-15)
+obj(suffering-13, ailments-16)
+punct(healthy-5, .-17)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+
+Sentence #3 (13 tokens):
+I never knew this many sick young adults prior to the jab.
+
+Tokens:
+[Text=I CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=sick CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=JJ Lemma=sick NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=142 CharacterOffsetEnd=147 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=adults CharacterOffsetBegin=148 CharacterOffsetEnd=154 PartOfSpeech=NNS Lemma=adult NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=jab CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=jab NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD knew)
+      (NP (DT this) (JJ many) (JJ sick) (JJ young) (NNS adults))
+      (PP (JJ prior)
+        (PP (IN to)
+          (NP (DT the) (NN jab)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, knew-3)
+nsubj(knew-3, I-1)
+advmod(knew-3, never-2)
+det(adults-8, this-4)
+amod(adults-8, many-5)
+amod(adults-8, sick-6)
+amod(adults-8, young-7)
+obj(knew-3, adults-8)
+case(jab-12, prior-9)
+case(jab-12, to-10)
+det(jab-12, the-11)
+advcl:prior(knew-3, jab-12)
+punct(knew-3, .-13)
+
+Extracted the following NER entity mentions:

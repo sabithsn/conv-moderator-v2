@@ -1,0 +1,51 @@
+Document: ID=6D2F5F40.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Ss: Vaccines and syphilis... is there a connection?
+
+Tokens:
+[Text=Ss CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNS Lemma=ss NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Vaccines CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=vaccine NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=syphilis CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=syphilis NamedEntityTag=CAUSE_OF_DEATH]
+[Text=... CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=connection CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=connection NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNS Ss))
+      (: :)
+      (NP
+        (NP (NNS Vaccines))
+        (CC and)
+        (NP (NN syphilis))))
+    (, ...)
+    (SQ (VBZ is)
+      (NP (EX there))
+      (NP (DT a) (NN connection)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ss-1)
+punct(Ss-1, :-2)
+dep(Ss-1, Vaccines-3)
+cc(syphilis-5, and-4)
+dep(Ss-1, syphilis-5)
+conj:and(Vaccines-3, syphilis-5)
+punct(Ss-1, ...-6)
+dep(Ss-1, is-7)
+expl(is-7, there-8)
+det(connection-10, a-9)
+nsubj(is-7, connection-10)
+punct(Ss-1, ?-11)
+
+Extracted the following NER entity mentions:
+syphilis	CAUSE_OF_DEATH	-

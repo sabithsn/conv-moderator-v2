@@ -1,0 +1,36 @@
+Document: ID=3A6DB05D.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Howard Stern Facing Cancellation After Racism Accusations
+
+Tokens:
+[Text=Howard CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Howard NamedEntityTag=PERSON]
+[Text=Stern CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Stern NamedEntityTag=PERSON]
+[Text=Facing CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=face NamedEntityTag=O]
+[Text=Cancellation CharacterOffsetBegin=20 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Cancellation NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Racism CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Racism NamedEntityTag=O]
+[Text=Accusations CharacterOffsetBegin=46 CharacterOffsetEnd=57 PartOfSpeech=NNPS Lemma=Accusations NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (NP (NNP Howard) (NNP Stern))
+    (VP (VBG Facing)
+      (S
+        (NP (NNP Cancellation))
+        (PP (IN After)
+          (NP (NNP Racism) (NNPS Accusations)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Facing-3)
+compound(Stern-2, Howard-1)
+nsubj(Facing-3, Stern-2)
+xcomp(Facing-3, Cancellation-4)
+case(Accusations-7, After-5)
+compound(Accusations-7, Racism-6)
+dep(Cancellation-4, Accusations-7)
+
+Extracted the following NER entity mentions:
+Howard Stern	PERSON	PERSON:0.7788414240003733

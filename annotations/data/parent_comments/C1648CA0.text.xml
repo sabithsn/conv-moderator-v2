@@ -1,0 +1,47 @@
+Document: ID=C1648CA0.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Some truth about the Russia/Ukraine situation right here
+
+Tokens:
+[Text=Some CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=truth CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=truth NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=/ CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=/ NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=situation CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=situation NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (NP
+        (NP (DT Some) (NN truth))
+        (PP (IN about)
+          (NP (DT the) (NNP Russia))))
+      (, /)
+      (NP (NNP Ukraine) (NN situation)))
+    (FRAG
+      (ADVP (RB right))
+      (ADVP (RB here)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, truth-2)
+det(truth-2, Some-1)
+case(Russia-5, about-3)
+det(Russia-5, the-4)
+nmod:about(truth-2, Russia-5)
+punct(truth-2, /-6)
+compound(situation-8, Ukraine-7)
+appos(truth-2, situation-8)
+parataxis(truth-2, right-9)
+dep(right-9, here-10)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9998266565670988
+Ukraine	COUNTRY	LOCATION:0.9976459981005653

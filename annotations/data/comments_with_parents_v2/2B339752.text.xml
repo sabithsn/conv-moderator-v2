@@ -1,0 +1,44 @@
+Document: ID=2B339752.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Biden is failing because he made America miserable
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=failing CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=fail NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=miserable CharacterOffsetBegin=41 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=miserable NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (VP (VBZ is)
+      (VP (VBG failing)
+        (SBAR (IN because)
+          (S
+            (NP (PRP he))
+            (VP (VBD made)
+              (S
+                (NP (NNP America))
+                (ADJP (JJ miserable))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, failing-3)
+nsubj(failing-3, Biden-1)
+aux(failing-3, is-2)
+mark(made-6, because-4)
+nsubj(made-6, he-5)
+advcl:because(failing-3, made-6)
+nsubj(miserable-8, America-7)
+xcomp(made-6, miserable-8)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9909786008023931
+America	COUNTRY	LOCATION:0.9240733973915528
+he	PERSON	-

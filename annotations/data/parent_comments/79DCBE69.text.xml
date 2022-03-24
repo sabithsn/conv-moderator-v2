@@ -1,0 +1,38 @@
+Document: ID=79DCBE69.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+We’ve all seen this before…
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP ’ve)
+      (S
+        (NP (DT all))
+        (VP (VBN seen)
+          (PP
+            (NP (DT this))
+            (IN before)))))
+    (: …)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-2)
+nsubj(’ve-2, We-1)
+nsubj(seen-4, all-3)
+ccomp(’ve-2, seen-4)
+obl:before(seen-4, this-5)
+case(this-5, before-6)
+punct(’ve-2, …-7)
+
+Extracted the following NER entity mentions:

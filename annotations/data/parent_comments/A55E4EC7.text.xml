@@ -1,0 +1,102 @@
+Document: ID=A55E4EC7.text (3 sentences, 19 tokens)
+
+Sentence #1 (7 tokens):
+This is Lone Tooth of Kiyv.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Lone CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Lone NamedEntityTag=PERSON]
+[Text=Tooth CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=tooth NamedEntityTag=PERSON]
+[Text=of CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=of NamedEntityTag=PERSON]
+[Text=Kiyv CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Kiyv NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Lone) (NN Tooth))
+        (PP (IN of)
+          (NP (NNP Kiyv)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tooth-4)
+nsubj(Tooth-4, This-1)
+cop(Tooth-4, is-2)
+compound(Tooth-4, Lone-3)
+case(Kiyv-6, of-5)
+nmod:of(Tooth-4, Kiyv-6)
+punct(Tooth-4, .-7)
+
+Extracted the following NER entity mentions:
+Lone Tooth of Kiyv	PERSON	PERSON:0.4555035210427339
+
+Sentence #2 (8 tokens):
+Took out 12,350 Russians in single night.
+
+Tokens:
+[Text=Took CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=12,350 CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=CD Lemma=12,350 NamedEntityTag=NUMBER NormalizedNamedEntityTag=12350.0]
+[Text=Russians CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NNPS Lemma=Russians NamedEntityTag=MISC]
+[Text=in CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=single CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=single NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">night</TIMEX3>]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Took)
+      (PRT (RP out))
+      (NP (CD 12,350) (NNPS Russians))
+      (PP (IN in)
+        (NP (JJ single) (NN night))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Took-1)
+compound:prt(Took-1, out-2)
+nummod(Russians-4, 12,350-3)
+obj(Took-1, Russians-4)
+case(night-7, in-5)
+amod(night-7, single-6)
+obl:in(Took-1, night-7)
+punct(Took-1, .-8)
+
+Extracted the following NER entity mentions:
+12,350	NUMBER	NUMBER:-1.0
+Russians	MISC	MISC:0.9999864027675487
+night	TIME	TIME:-1.0
+
+Sentence #3 (4 tokens):
+Russia in deep trouble
+
+Tokens:
+[Text=Russia CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=in CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=deep CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=deep NamedEntityTag=O]
+[Text=trouble CharacterOffsetBegin=85 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=trouble NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Russia))
+    (PP (IN in)
+      (NP (JJ deep) (NN trouble)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Russia-1)
+case(trouble-4, in-2)
+amod(trouble-4, deep-3)
+nmod:in(Russia-1, trouble-4)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9948566669525946

@@ -1,0 +1,32 @@
+Document: ID=E7E5E677.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Stop pushing Fauci poison.
+
+Tokens:
+[Text=Stop CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=pushing CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=VBG Lemma=push NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=poison CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=poison NamedEntityTag=CAUSE_OF_DEATH]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Stop)
+      (S
+        (VP (VBG pushing)
+          (NP (NNP Fauci) (NN poison)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-1)
+xcomp(Stop-1, pushing-2)
+compound(poison-4, Fauci-3)
+obj(pushing-2, poison-4)
+punct(Stop-1, .-5)
+
+Extracted the following NER entity mentions:
+Fauci	PERSON	PERSON:0.9777015904734284
+poison	CAUSE_OF_DEATH	-

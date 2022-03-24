@@ -1,0 +1,57 @@
+Document: ID=E3544720.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Palestinians didn’t do a thing, they’re civilians opposed to apartheid
+
+Tokens:
+[Text=Palestinians CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=NNPS Lemma=Palestinians NamedEntityTag=MISC]
+[Text=did CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=civilians CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=civilian NamedEntityTag=O]
+[Text=opposed CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=VBN Lemma=oppose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=apartheid CharacterOffsetBegin=61 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=apartheid NamedEntityTag=IDEOLOGY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNPS Palestinians))
+        (VP (VBD did) (RB n’t)
+          (VP (VB do)
+            (NP (DT a) (NN thing))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP ’re)
+      (NP
+        (NP (NNS civilians))
+        (VP (VBN opposed)
+          (PP (IN to)
+            (NP (NN apartheid))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, civilians-10)
+nsubj(do-4, Palestinians-1)
+aux(do-4, did-2)
+advmod(do-4, n’t-3)
+parataxis(civilians-10, do-4)
+det(thing-6, a-5)
+obj(do-4, thing-6)
+punct(civilians-10, ,-7)
+nsubj(civilians-10, they-8)
+cop(civilians-10, ’re-9)
+acl(civilians-10, opposed-11)
+case(apartheid-13, to-12)
+obl:to(opposed-11, apartheid-13)
+
+Extracted the following NER entity mentions:
+Palestinians	MISC	MISC:0.9999925975323548
+apartheid	IDEOLOGY	-

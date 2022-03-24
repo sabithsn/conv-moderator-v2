@@ -1,0 +1,73 @@
+Document: ID=466B5AFC.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Prosecutors resigned after NY DA said he wasn't prepared to move forward with indictment of Trump
+
+Tokens:
+[Text=Prosecutors CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=prosecutor NamedEntityTag=O]
+[Text=resigned CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=resign NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=NY NamedEntityTag=ORGANIZATION]
+[Text=DA CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=DA NamedEntityTag=ORGANIZATION]
+[Text=said CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=prepared CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=VBN Lemma=prepare NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=move NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=indictment CharacterOffsetBegin=78 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=indictment NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Prosecutors))
+    (VP (VBD resigned)
+      (SBAR (IN after)
+        (S
+          (NP (NNP NY) (NNP DA))
+          (VP (VBD said)
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD was) (RB n't)
+                  (VP (VBN prepared)
+                    (S
+                      (VP (TO to)
+                        (VP (VB move)
+                          (ADVP (RB forward))
+                          (PP (IN with)
+                            (NP
+                              (NP (NN indictment))
+                              (PP (IN of)
+                                (NP (NNP Trump))))))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, resigned-2)
+nsubj(resigned-2, Prosecutors-1)
+mark(said-6, after-3)
+compound(DA-5, NY-4)
+nsubj(said-6, DA-5)
+advcl:after(resigned-2, said-6)
+nsubj:pass(prepared-10, he-7)
+nsubj:xsubj(move-12, he-7)
+aux:pass(prepared-10, was-8)
+advmod(prepared-10, n't-9)
+ccomp(said-6, prepared-10)
+mark(move-12, to-11)
+xcomp(prepared-10, move-12)
+advmod(move-12, forward-13)
+case(indictment-15, with-14)
+obl:with(move-12, indictment-15)
+case(Trump-17, of-16)
+nmod:of(indictment-15, Trump-17)
+
+Extracted the following NER entity mentions:
+NY DA	ORGANIZATION	ORGANIZATION:0.39618185286436736
+Trump	PERSON	PERSON:0.8942931798566652
+he	PERSON	-

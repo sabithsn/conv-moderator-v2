@@ -1,0 +1,69 @@
+Document: ID=57FFE069.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+I'll be interested to see how they tie in George Soros and the Clintons.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=interested CharacterOffsetBegin=8 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=interested NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=tie CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=tie NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text=Soros CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Soros NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Clintons CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NNPS Lemma=Clintons NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB be)
+        (ADJP (JJ interested)
+          (S
+            (VP (TO to)
+              (VP (VB see)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP tie)
+                      (PP (IN in)
+                        (NP
+                          (NP (NNP George) (NNP Soros))
+                          (CC and)
+                          (NP (DT the) (NNPS Clintons)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, interested-4)
+nsubj(interested-4, I-1)
+nsubj:xsubj(see-6, I-1)
+aux(interested-4, 'll-2)
+cop(interested-4, be-3)
+mark(see-6, to-5)
+xcomp(interested-4, see-6)
+advmod(tie-9, how-7)
+nsubj(tie-9, they-8)
+ccomp(see-6, tie-9)
+case(Soros-12, in-10)
+compound(Soros-12, George-11)
+obl:in(tie-9, Soros-12)
+cc(Clintons-15, and-13)
+det(Clintons-15, the-14)
+obl:in(tie-9, Clintons-15)
+conj:and(Soros-12, Clintons-15)
+punct(interested-4, .-16)
+
+Extracted the following NER entity mentions:
+George Soros	PERSON	PERSON:0.9814639806185063
+Clintons	PERSON	PERSON:0.7471629461743428

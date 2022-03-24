@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>F24F42DD.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>hate</word>
+            <lemma>hate</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Lebron</word>
+            <lemma>Lebron</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="4">
+            <word>James</word>
+            <lemma>James</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="5">
+            <word>Haha</word>
+            <lemma>Haha</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>’re</word>
+            <lemma>’re</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>stupid</word>
+            <lemma>stupid</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (PRP I)) (VP (VBP hate) (NP (NNP Lebron) (NNP James) (NNP Haha)))) (, ,) (NP (PRP you)) (VP (VBP ’re) (ADJP (JJ stupid))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hate</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">stupid</governor>
+            <dependent idx="2">hate</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="3">Lebron</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="4">James</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">hate</governor>
+            <dependent idx="5">Haha</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">stupid</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">stupid</governor>
+            <dependent idx="8">’re</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hate</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">stupid</governor>
+            <dependent idx="2">hate</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="3">Lebron</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="4">James</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">hate</governor>
+            <dependent idx="5">Haha</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">stupid</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">stupid</governor>
+            <dependent idx="8">’re</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hate</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">stupid</governor>
+            <dependent idx="2">hate</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="3">Lebron</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="4">James</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">hate</governor>
+            <dependent idx="5">Haha</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">stupid</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">stupid</governor>
+            <dependent idx="8">’re</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hate</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">stupid</governor>
+            <dependent idx="2">hate</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="3">Lebron</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="4">James</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">hate</governor>
+            <dependent idx="5">Haha</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">stupid</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">stupid</governor>
+            <dependent idx="8">’re</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hate</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="9">stupid</governor>
+            <dependent idx="2">hate</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="3">Lebron</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Haha</governor>
+            <dependent idx="4">James</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">hate</governor>
+            <dependent idx="5">Haha</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">stupid</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">stupid</governor>
+            <dependent idx="8">’re</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">stupid</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,82 @@
+Document: ID=2BC3D7A8.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Farmer to Tucker Carlson: Your Grocery Bill Is About To Go Up $1,000 A Month Due To Fertilizer Prices
+
+Tokens:
+[Text=Farmer CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Farmer NamedEntityTag=TITLE]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Your CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=Grocery CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=grocery NamedEntityTag=O]
+[Text=Bill CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Go CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=Up CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1000.0]
+[Text=1,000 CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=CD Lemma=1,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1000.0]
+[Text=A CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t1" type="DURATION" value="P1M">A Month</TIMEX3>]
+[Text=Month CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Month NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t1" type="DURATION" value="P1M">A Month</TIMEX3>]
+[Text=Due CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=due NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Fertilizer CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=fertilizer NamedEntityTag=O]
+[Text=Prices CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Farmer))
+      (PP (IN to)
+        (NP
+          (NP (NNP Tucker) (NNP Carlson))
+          (: :)
+          (NP (PRP$ Your)
+            (NML
+              (NML (NN Grocery))
+              (NNP Bill))))))
+    (VP (VBZ Is)
+      (NP
+        (NP (RB About)
+          (S
+            (VP (TO To)
+              (VP (VB Go)
+                (PRT (RP Up))
+                (NP ($ $) (CD 1,000))))))
+        (NP (DT A) (NNP Month))))
+    (PP (IN Due) (IN To)
+      (NP (NN Fertilizer) (NNS Prices)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, About-10)
+nsubj(About-10, Farmer-1)
+case(Carlson-4, to-2)
+compound(Carlson-4, Tucker-3)
+nmod:to(Farmer-1, Carlson-4)
+punct(Carlson-4, :-5)
+nmod:poss(Bill-8, Your-6)
+compound(Bill-8, Grocery-7)
+dep(Carlson-4, Bill-8)
+cop(About-10, Is-9)
+mark(Go-12, To-11)
+dep(About-10, Go-12)
+compound:prt(Go-12, Up-13)
+obj(Go-12, $-14)
+nummod($-14, 1,000-15)
+det(Month-17, A-16)
+dep(About-10, Month-17)
+case(Prices-21, Due-18)
+fixed(Due-18, To-19)
+compound(Prices-21, Fertilizer-20)
+obl:due_to(About-10, Prices-21)
+
+Extracted the following NER entity mentions:
+Farmer	TITLE	-
+Tucker Carlson	PERSON	PERSON:0.9952370464031272
+$1,000	MONEY	MONEY:0.9962978984042555
+A Month	DURATION	DURATION:-1.0

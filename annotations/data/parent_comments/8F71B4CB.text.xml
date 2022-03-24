@@ -1,0 +1,75 @@
+Document: ID=8F71B4CB.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+James Carville: I want to punch 'piece of s--t' unvaccinated people in the face
+
+Tokens:
+[Text=James CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=James NamedEntityTag=PERSON]
+[Text=Carville CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Carville NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=punch CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=punch NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=s NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=t CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=t NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=unvaccinated CharacterOffsetBegin=48 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=unvaccinated NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=face NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP James) (NNP Carville))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB punch) (`` ')
+              (NP
+                (NP
+                  (NP (NN piece))
+                  (PP (IN of)
+                    (NP (NN s))))
+                (: --)
+                (NP (NN t)))
+              ('' ')
+              (NP
+                (NP (JJ unvaccinated) (NNS people))
+                (PP (IN in)
+                  (NP (DT the) (NN face)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Carville-2)
+compound(Carville-2, James-1)
+punct(Carville-2, :-3)
+nsubj(want-5, I-4)
+nsubj:xsubj(punch-7, I-4)
+parataxis(Carville-2, want-5)
+mark(punch-7, to-6)
+xcomp(want-5, punch-7)
+punct(punch-7, '-8)
+obj(punch-7, piece-9)
+case(s-11, of-10)
+nmod:of(piece-9, s-11)
+punct(piece-9, ---12)
+dep(piece-9, t-13)
+punct(punch-7, '-14)
+amod(people-16, unvaccinated-15)
+obj(punch-7, people-16)
+case(face-19, in-17)
+det(face-19, the-18)
+nmod:in(people-16, face-19)
+
+Extracted the following NER entity mentions:
+James Carville	PERSON	PERSON:0.9996239793541902

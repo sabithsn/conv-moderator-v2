@@ -1,0 +1,36 @@
+Document: ID=114FD1AF.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+LR helping their daughter make some money
+
+Tokens:
+[Text=LR CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NN Lemma=lr NamedEntityTag=ORGANIZATION]
+[Text=helping CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=VBG Lemma=help NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=daughter CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=daughter NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (NP (NN LR))
+    (VP (VBG helping)
+      (NP (PRP$ their) (NN daughter))
+      (S
+        (VP (VB make)
+          (NP (DT some) (NN money)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, helping-2)
+nsubj(helping-2, LR-1)
+nmod:poss(daughter-4, their-3)
+obj(helping-2, daughter-4)
+dep(helping-2, make-5)
+det(money-7, some-6)
+obj(make-5, money-7)
+
+Extracted the following NER entity mentions:
+LR	ORGANIZATION	ORGANIZATION:0.8833021508938579

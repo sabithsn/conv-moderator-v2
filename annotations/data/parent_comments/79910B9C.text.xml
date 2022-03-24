@@ -1,0 +1,57 @@
+Document: ID=79910B9C.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+College educated Rromani here, care to say that to my face?
+
+Tokens:
+[Text=College CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=College NamedEntityTag=O]
+[Text=educated CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=educate NamedEntityTag=O]
+[Text=Rromani CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Rromani NamedEntityTag=PERSON]
+[Text=here CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=care NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=face NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP College))
+      (VP (VBN educated)
+        (NP (NNP Rromani))
+        (ADVP (RB here))))
+    (, ,)
+    (NP (NN care)
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (SBAR (IN that)
+              (FRAG
+                (PP (IN to)
+                  (NP (PRP$ my) (NN face)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, College-1)
+acl(College-1, educated-2)
+obj(educated-2, Rromani-3)
+advmod(educated-2, here-4)
+punct(College-1, ,-5)
+appos(College-1, care-6)
+mark(say-8, to-7)
+acl:to(care-6, say-8)
+mark(face-12, that-9)
+case(face-12, to-10)
+nmod:poss(face-12, my-11)
+dep(say-8, face-12)
+punct(College-1, ?-13)
+
+Extracted the following NER entity mentions:
+Rromani	PERSON	PERSON:0.5042488633340745

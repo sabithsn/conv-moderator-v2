@@ -1,0 +1,49 @@
+Document: ID=DE8FB773.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+So glad for the extension that brings back the Dislike Bar
+
+Tokens:
+[Text=So CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=glad CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=glad NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=extension CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=extension NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=brings CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=bring NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=RP Lemma=back NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Dislike CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Dislike NamedEntityTag=MISC]
+[Text=Bar CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Bar NamedEntityTag=MISC]
+
+Constituency parse: 
+(ROOT
+  (FRAG (RB So)
+    (ADJP (JJ glad)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN extension))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ brings)
+                (PRT (RP back))
+                (NP (DT the) (NNP Dislike) (NNP Bar))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, So-1)
+dep(So-1, glad-2)
+case(extension-5, for-3)
+det(extension-5, the-4)
+obl:for(glad-2, extension-5)
+nsubj(brings-7, extension-5)
+ref(extension-5, that-6)
+acl:relcl(extension-5, brings-7)
+compound:prt(brings-7, back-8)
+det(Bar-11, the-9)
+compound(Bar-11, Dislike-10)
+obj(brings-7, Bar-11)
+
+Extracted the following NER entity mentions:
+Dislike Bar	MISC	MISC:0.3648294024916951

@@ -1,0 +1,99 @@
+Document: ID=9EC06497.text (2 sentences, 22 tokens)
+
+Sentence #1 (12 tokens):
+I was raped twenty years later I still haven’t recovered.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=raped CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBN Lemma=rape NamedEntityTag=O]
+[Text=twenty CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=CD Lemma=twenty NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P20Y Timex=<TIMEX3 alt_value="OFFSET P20Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">twenty years later</TIMEX3>]
+[Text=years CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P20Y Timex=<TIMEX3 alt_value="OFFSET P20Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">twenty years later</TIMEX3>]
+[Text=later CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P20Y Timex=<TIMEX3 alt_value="OFFSET P20Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">twenty years later</TIMEX3>]
+[Text=I CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=recovered CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=VBN Lemma=recover NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN raped)
+        (ADVP
+          (NP (CD twenty) (NNS years))
+          (RB later))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (ADVP (RB still))
+            (VP (VBP have) (RB n’t)
+              (VP (VBN recovered)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, raped-3)
+nsubj:pass(raped-3, I-1)
+aux:pass(raped-3, was-2)
+nummod(years-5, twenty-4)
+obl:npmod(later-6, years-5)
+advmod(raped-3, later-6)
+nsubj(recovered-11, I-7)
+advmod(recovered-11, still-8)
+aux(recovered-11, have-9)
+advmod(recovered-11, n’t-10)
+ccomp(raped-3, recovered-11)
+punct(raped-3, .-12)
+
+Extracted the following NER entity mentions:
+twenty years later	DATE	DATE:0.958201267010359
+
+Sentence #2 (10 tokens):
+You clearly don’t know how rape affects people.
+
+Tokens:
+[Text=You CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=clearly CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=clearly NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=rape CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=rape NamedEntityTag=CRIMINAL_CHARGE]
+[Text=affects CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=VBZ Lemma=affect NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB clearly))
+    (VP (VBP do) (RB n’t)
+      (VP (VB know)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NN rape))
+            (VP (VBZ affects)
+              (NP (NNS people)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-5)
+nsubj(know-5, You-1)
+advmod(know-5, clearly-2)
+aux(know-5, do-3)
+advmod(know-5, n’t-4)
+advmod(affects-8, how-6)
+nsubj(affects-8, rape-7)
+ccomp(know-5, affects-8)
+obj(affects-8, people-9)
+punct(know-5, .-10)
+
+Extracted the following NER entity mentions:
+rape	CRIMINAL_CHARGE	-

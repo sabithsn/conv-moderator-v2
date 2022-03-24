@@ -1,0 +1,60 @@
+Document: ID=06E4BD23.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Two Democrat Senators Join Republicans In Calling For U.S. To Increase Domestic Oil Production
+
+Tokens:
+[Text=Two CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=Democrat CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=MISC]
+[Text=Senators CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NNPS Lemma=Senators NamedEntityTag=MISC]
+[Text=Join CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=join NamedEntityTag=MISC]
+[Text=Republicans CharacterOffsetBegin=27 CharacterOffsetEnd=38 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=In CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Calling CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=To CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Increase CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=increase NamedEntityTag=O]
+[Text=Domestic CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=domestic NamedEntityTag=O]
+[Text=Oil CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=Production CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (CD Two) (NNP Democrat) (NNPS Senators))
+        (VP (VB Join)
+          (NP (NNPS Republicans)))))
+    (PP (IN In)
+      (S
+        (VP (VBG Calling)
+          (PP (IN For)
+            (NP (NNP U.S.)))
+          (S
+            (VP (TO To)
+              (VP (VB Increase)
+                (NP (JJ Domestic) (NN Oil) (NN Production))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Calling-7)
+nummod(Senators-3, Two-1)
+compound(Senators-3, Democrat-2)
+nsubj(Join-4, Senators-3)
+dep(Calling-7, Join-4)
+obj(Join-4, Republicans-5)
+mark(Calling-7, In-6)
+case(U.S.-9, For-8)
+obl:for(Calling-7, U.S.-9)
+mark(Increase-11, To-10)
+xcomp(Calling-7, Increase-11)
+amod(Production-14, Domestic-12)
+compound(Production-14, Oil-13)
+obj(Increase-11, Production-14)
+
+Extracted the following NER entity mentions:
+Two	NUMBER	NUMBER:-1.0
+Democrat Senators Join Republicans	MISC	MISC:0.9596550511905663
+U.S.	COUNTRY	LOCATION:0.906082405547143

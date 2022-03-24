@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>260D5E3A.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>cmv</word>
+            <lemma>cmv</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>“</word>
+            <lemma>“</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Cracker</word>
+            <lemma>Cracker</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>”</word>
+            <lemma>”</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>racial</word>
+            <lemma>racial</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>slur</word>
+            <lemma>slur</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>It</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>racist</word>
+            <lemma>racist</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP cmv)) (: :) (`` “) (NP (NNP Cracker)) ('' ”) (VP (VBZ is) (NP (NP (DT a) (JJ racial) (NN slur)) (SBAR (S (NP (PRP It)) (VP (VBZ 's) (ADJP (JJ racist))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">slur</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="1">cmv</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="4">Cracker</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="5">”</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">slur</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">slur</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">slur</governor>
+            <dependent idx="8">racial</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">racist</governor>
+            <dependent idx="10">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">racist</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="9">slur</governor>
+            <dependent idx="12">racist</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">slur</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="1">cmv</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="4">Cracker</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="5">”</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">slur</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">slur</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">slur</governor>
+            <dependent idx="8">racial</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">racist</governor>
+            <dependent idx="10">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">racist</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="9">slur</governor>
+            <dependent idx="12">racist</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">slur</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="1">cmv</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="4">Cracker</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="5">”</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">slur</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">slur</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">slur</governor>
+            <dependent idx="8">racial</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">racist</governor>
+            <dependent idx="10">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">racist</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="9">slur</governor>
+            <dependent idx="12">racist</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">slur</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="1">cmv</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="4">Cracker</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="5">”</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">slur</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">slur</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">slur</governor>
+            <dependent idx="8">racial</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">racist</governor>
+            <dependent idx="10">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">racist</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="9">slur</governor>
+            <dependent idx="12">racist</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">slur</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="1">cmv</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">slur</governor>
+            <dependent idx="4">Cracker</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="5">”</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">slur</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">slur</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">slur</governor>
+            <dependent idx="8">racial</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">racist</governor>
+            <dependent idx="10">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">racist</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="9">slur</governor>
+            <dependent idx="12">racist</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">slur</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Anyone</word>
+            <lemma>anyone</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>suggesting</word>
+            <lemma>suggest</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>otherwise</word>
+            <lemma>otherwise</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>racist</word>
+            <lemma>racist</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>dickhead</word>
+            <lemma>dickhead</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN Anyone)) (VP (VBG suggesting) (ADVP (RB otherwise)))) (VP (VBZ is) (NP (DT a) (JJ racist) (NN dickhead))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">dickhead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="1">Anyone</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Anyone</governor>
+            <dependent idx="2">suggesting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">suggesting</governor>
+            <dependent idx="3">otherwise</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="6">racist</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">dickhead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="1">Anyone</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Anyone</governor>
+            <dependent idx="2">suggesting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">suggesting</governor>
+            <dependent idx="3">otherwise</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="6">racist</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">dickhead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="1">Anyone</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Anyone</governor>
+            <dependent idx="2">suggesting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">suggesting</governor>
+            <dependent idx="3">otherwise</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="6">racist</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">dickhead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="1">Anyone</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Anyone</governor>
+            <dependent idx="2">suggesting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">suggesting</governor>
+            <dependent idx="3">otherwise</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="6">racist</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">dickhead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="1">Anyone</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Anyone</governor>
+            <dependent idx="2">suggesting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">suggesting</governor>
+            <dependent idx="3">otherwise</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dickhead</governor>
+            <dependent idx="6">racist</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

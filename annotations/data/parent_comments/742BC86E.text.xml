@@ -1,0 +1,70 @@
+Document: ID=742BC86E.text (2 sentences, 14 tokens)
+
+Sentence #1 (2 tokens):
+Wow!
+
+Tokens:
+[Text=Wow CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=wow NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Wow) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wow-1)
+punct(Wow-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+England To End ALL Mask Mandates And Vaccine Passports This Month!
+
+Tokens:
+[Text=England CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=England NamedEntityTag=COUNTRY]
+[Text=To CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=End CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=end NamedEntityTag=O]
+[Text=ALL CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=Mask CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=Mandates CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=mandate NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Vaccine CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=Passports CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=passport NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M Timex=<TIMEX3 alt_value="THIS P1M" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">This Month</TIMEX3>]
+[Text=Month CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Month NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M Timex=<TIMEX3 alt_value="THIS P1M" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">This Month</TIMEX3>]
+[Text=! CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP England))
+    (S
+      (VP (TO To)
+        (VP (VB End)
+          (NP
+            (NP (DT ALL) (NN Mask) (NNS Mandates))
+            (CC And)
+            (NP (NN Vaccine) (NNS Passports))))))
+    (NP (DT This) (NNP Month))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, England-1)
+mark(End-3, To-2)
+dep(England-1, End-3)
+det(Mandates-6, ALL-4)
+compound(Mandates-6, Mask-5)
+obj(End-3, Mandates-6)
+cc(Passports-9, And-7)
+compound(Passports-9, Vaccine-8)
+obj(End-3, Passports-9)
+conj:and(Mandates-6, Passports-9)
+det(Month-11, This-10)
+dep(England-1, Month-11)
+punct(England-1, !-12)
+
+Extracted the following NER entity mentions:
+England	COUNTRY	LOCATION:0.9410123026261834
+This Month	DATE	DATE:-1.0

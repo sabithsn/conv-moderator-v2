@@ -1,0 +1,62 @@
+Document: ID=2D1CB511.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Let's be realistic, most Trumpers only bike if they have a DUI
+
+Tokens:
+[Text=Let CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma='s NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=realistic CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=realistic NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=Trumpers CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NNPS Lemma=Trumpers NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=bike CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=bike NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=DUI CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=dui NamedEntityTag=CRIMINAL_CHARGE]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PRN
+      (S
+        (VP (VB Let)
+          (S
+            (NP (PRP 's))
+            (VP
+              (VP (VB be)
+                (ADJP (JJ realistic)))
+              (, ,)
+              (ADVP (RBS most))
+              (VP
+                (NP (NNPS Trumpers))))))))
+    (NP (RB only) (NN bike))
+    (SBAR (IN if)
+      (S
+        (NP (PRP they))
+        (VP (VBP have)
+          (NP (DT a) (NN DUI)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bike-9)
+dep(bike-9, Let-1)
+nsubj(realistic-4, 's-2)
+cop(realistic-4, be-3)
+ccomp(Let-1, realistic-4)
+punct(realistic-4, ,-5)
+advmod(realistic-4, most-6)
+dep(realistic-4, Trumpers-7)
+advmod(bike-9, only-8)
+mark(have-12, if-10)
+nsubj(have-12, they-11)
+dep(bike-9, have-12)
+det(DUI-14, a-13)
+obj(have-12, DUI-14)
+
+Extracted the following NER entity mentions:
+DUI	CRIMINAL_CHARGE	-

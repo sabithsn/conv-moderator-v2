@@ -1,0 +1,133 @@
+Document: ID=C97544C2.text (3 sentences, 29 tokens)
+
+Sentence #1 (8 tokens):
+If Satan exists then so does Jesus.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Satan CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Satan NamedEntityTag=O]
+[Text=exists CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=exist NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=Jesus CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Jesus NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (SBAR (IN If)
+      (S
+        (NP (NNP Satan))
+        (VP (VBZ exists)
+          (ADVP (RB then))
+          (ADVP (RB so)))))
+    (VBZ does)
+    (NP (NNP Jesus))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, does-6)
+mark(exists-3, If-1)
+nsubj(exists-3, Satan-2)
+advcl:if(does-6, exists-3)
+advmod(exists-3, then-4)
+advmod(exists-3, so-5)
+nsubj(does-6, Jesus-7)
+punct(does-6, .-8)
+
+Extracted the following NER entity mentions:
+Jesus	PERSON	PERSON:0.979955662972544
+
+Sentence #2 (9 tokens):
+I never understood Satan worship for that reason.
+
+Tokens:
+[Text=I CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=understood CharacterOffsetBegin=44 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=understand NamedEntityTag=O]
+[Text=Satan CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Satan NamedEntityTag=O]
+[Text=worship CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=worship NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD understood)
+      (S
+        (NP (NNP Satan))
+        (VP (VB worship)
+          (PP (IN for)
+            (NP (DT that) (NN reason))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understood-3)
+nsubj(understood-3, I-1)
+advmod(understood-3, never-2)
+nsubj(worship-5, Satan-4)
+ccomp(understood-3, worship-5)
+case(reason-8, for-6)
+det(reason-8, that-7)
+obl:for(worship-5, reason-8)
+punct(understood-3, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (12 tokens):
+If you believe in both, then why be a baddie?
+
+Tokens:
+[Text=If CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=baddie CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=baddie NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP believe)
+          (PP (IN in)
+            (NP (CC both))))))
+    (, ,)
+    (ADVP (RB then))
+    (WHADVP (WRB why))
+    (S
+      (VP (VB be)
+        (NP (DT a) (NN baddie))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, baddie-11)
+mark(believe-3, If-1)
+nsubj(believe-3, you-2)
+advcl:if(baddie-11, believe-3)
+case(both-5, in-4)
+obl:in(believe-3, both-5)
+punct(baddie-11, ,-6)
+advmod(baddie-11, then-7)
+advmod(baddie-11, why-8)
+cop(baddie-11, be-9)
+det(baddie-11, a-10)
+punct(baddie-11, ?-12)
+
+Extracted the following NER entity mentions:

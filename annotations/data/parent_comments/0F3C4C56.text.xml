@@ -1,0 +1,61 @@
+Document: ID=0F3C4C56.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Elizabeth Warren Says the Solution to High Gas Prices Is Higher Taxes on Oil Companies
+
+Tokens:
+[Text=Elizabeth CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Elizabeth NamedEntityTag=PERSON]
+[Text=Warren CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Warren NamedEntityTag=PERSON]
+[Text=Says CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Solution CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=solution NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=High NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Prices CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Higher CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=JJR Lemma=higher NamedEntityTag=O]
+[Text=Taxes CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=tax NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Oil CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=Companies CharacterOffsetBegin=77 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Elizabeth) (NNP Warren))
+    (VP (VBZ Says)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN Solution))
+            (PP (IN to)
+              (NP
+                (NML (NNP High) (NNP Gas))
+                (NNS Prices))))
+          (VP (VBZ Is)
+            (NP
+              (NP (JJR Higher) (NNS Taxes))
+              (PP (IN on)
+                (NP (NN Oil) (NNS Companies))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Says-3)
+compound(Warren-2, Elizabeth-1)
+nsubj(Says-3, Warren-2)
+det(Solution-5, the-4)
+nsubj(Taxes-12, Solution-5)
+case(Prices-9, to-6)
+compound(Gas-8, High-7)
+compound(Prices-9, Gas-8)
+nmod:to(Solution-5, Prices-9)
+cop(Taxes-12, Is-10)
+amod(Taxes-12, Higher-11)
+ccomp(Says-3, Taxes-12)
+case(Companies-15, on-13)
+compound(Companies-15, Oil-14)
+nmod:on(Taxes-12, Companies-15)
+
+Extracted the following NER entity mentions:
+Elizabeth Warren	PERSON	PERSON:0.8220870674939372

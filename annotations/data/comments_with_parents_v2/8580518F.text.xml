@@ -1,0 +1,48 @@
+Document: ID=8580518F.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Pfizer Vaccine Almost Completely Ineffective in 5-11 Year-Olds
+
+Tokens:
+[Text=Pfizer CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Pfizer NamedEntityTag=O]
+[Text=Vaccine CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Vaccine NamedEntityTag=O]
+[Text=Almost CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=Completely CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=completely NamedEntityTag=O]
+[Text=Ineffective CharacterOffsetBegin=33 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=ineffective NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0 - 11.0]
+[Text=- CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=HYPH Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0 - 11.0]
+[Text=11 CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=CD Lemma=11 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0 - 11.0]
+[Text=Year CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Year NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Olds CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Olds NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Pfizer) (NNP Vaccine))
+    (ADJP
+      (ADJP
+        (ADVP (RB Almost) (RB Completely))
+        (JJ Ineffective))
+      (PP (IN in)
+        (NP (CD 5) (HYPH -) (CD 11))))
+    (NP (NNP Year) (HYPH -) (NNP Olds))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Vaccine-2)
+compound(Vaccine-2, Pfizer-1)
+advmod(Completely-4, Almost-3)
+advmod(Ineffective-5, Completely-4)
+dep(Vaccine-2, Ineffective-5)
+case(11-9, in-6)
+nummod(11-9, 5-7)
+punct(11-9, --8)
+obl:in(Ineffective-5, 11-9)
+compound(Olds-12, Year-10)
+punct(Olds-12, --11)
+dep(Vaccine-2, Olds-12)
+
+Extracted the following NER entity mentions:
+5-11	NUMBER	NUMBER:-1.0

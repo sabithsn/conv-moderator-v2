@@ -1,0 +1,56 @@
+Document: ID=E673FF3F.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+He lost his ass on titan and then lobbied for protective regulations.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=lost CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=lose NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=ass CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=ass NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=titan CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=titan NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=lobbied CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=lobby NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=protective CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=protective NamedEntityTag=O]
+[Text=regulations CharacterOffsetBegin=57 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=regulation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD lost)
+        (NP (PRP$ his) (NN ass))
+        (PP (IN on)
+          (NP (NN titan))))
+      (CC and)
+      (ADVP (RB then))
+      (VP (VBD lobbied)
+        (PP (IN for)
+          (NP (JJ protective) (NNS regulations)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lost-2)
+nsubj(lost-2, He-1)
+nsubj(lobbied-9, He-1)
+nmod:poss(ass-4, his-3)
+obj(lost-2, ass-4)
+case(titan-6, on-5)
+obl:on(lost-2, titan-6)
+cc(lobbied-9, and-7)
+advmod(lobbied-9, then-8)
+conj:and(lost-2, lobbied-9)
+case(regulations-12, for-10)
+amod(regulations-12, protective-11)
+obl:for(lobbied-9, regulations-12)
+punct(lost-2, .-13)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+his	PERSON	-

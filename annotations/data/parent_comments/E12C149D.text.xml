@@ -1,0 +1,63 @@
+Document: ID=E12C149D.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+2 Years House Arrest for Killing a 77 Year Old Man Who Used Racial Insult
+
+Tokens:
+[Text=2 CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=CD Lemma=2 NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P2Y">2 Years</TIMEX3>]
+[Text=Years CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P2Y">2 Years</TIMEX3>]
+[Text=House CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=House NamedEntityTag=O]
+[Text=Arrest CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=arrest NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Killing CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=VBG Lemma=kill NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=77 CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=CD Lemma=77 NamedEntityTag=DURATION NormalizedNamedEntityTag=P77Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P77Y">77 Year Old</TIMEX3>]
+[Text=Year CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Year NamedEntityTag=DURATION NormalizedNamedEntityTag=P77Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P77Y">77 Year Old</TIMEX3>]
+[Text=Old CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Old NamedEntityTag=DURATION NormalizedNamedEntityTag=P77Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P77Y">77 Year Old</TIMEX3>]
+[Text=Man CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Man NamedEntityTag=MISC]
+[Text=Who CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=WP Lemma=who NamedEntityTag=MISC]
+[Text=Used CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=use NamedEntityTag=MISC]
+[Text=Racial CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=racial NamedEntityTag=MISC]
+[Text=Insult CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=insult NamedEntityTag=MISC]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 2) (NNS Years))
+    (VP
+      (FRAG
+        (NP (NNP House) (NN Arrest))
+        (PP (IN for)
+          (S
+            (VP (VBG Killing)
+              (NP
+                (NP (DT a) (CD 77) (NNP Year) (NNP Old) (NNP Man))
+                (SBAR
+                  (WHNP (WP Who))
+                  (S
+                    (VP (VBD Used)
+                      (NP (JJ Racial) (NN Insult)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Arrest-4)
+nummod(Years-2, 2-1)
+nsubj(Arrest-4, Years-2)
+compound(Arrest-4, House-3)
+mark(Killing-6, for-5)
+dep(Arrest-4, Killing-6)
+det(Man-11, a-7)
+nummod(Man-11, 77-8)
+compound(Man-11, Year-9)
+compound(Man-11, Old-10)
+obj(Killing-6, Man-11)
+nsubj(Used-13, Man-11)
+ref(Man-11, Who-12)
+acl:relcl(Man-11, Used-13)
+amod(Insult-15, Racial-14)
+obj(Used-13, Insult-15)
+
+Extracted the following NER entity mentions:
+2 Years	DURATION	DURATION:-1.0
+77 Year Old	DURATION	DURATION:-1.0
+Man Who Used Racial Insult	MISC	MISC:0.6714472922602205

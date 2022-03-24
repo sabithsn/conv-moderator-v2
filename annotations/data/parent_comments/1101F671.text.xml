@@ -1,0 +1,80 @@
+Document: ID=1101F671.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+ELI5: how does a sunburn when you're young develop into cancer when you're so much older?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sunburn CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=sunburn NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=develop CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=develop NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=cancer CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=cancer NamedEntityTag=CAUSE_OF_DEATH]
+[Text=when CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=older CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=JJR Lemma=older NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (VBZ does)
+        (S
+          (NP
+            (NP (DT a) (NN sunburn))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBP 're)
+                  (ADJP (JJ young))))))
+          (VP (VBP develop)
+            (PP (IN into)
+              (NP (NN cancer)))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBP 're)
+                  (ADJP (RB so) (RB much) (JJR older)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(does-4, how-3)
+parataxis(ELI5-1, does-4)
+det(sunburn-6, a-5)
+nsubj(develop-11, sunburn-6)
+advmod(young-10, when-7)
+nsubj(young-10, you-8)
+cop(young-10, 're-9)
+acl:relcl(sunburn-6, young-10)
+dep(does-4, develop-11)
+case(cancer-13, into-12)
+obl:into(develop-11, cancer-13)
+advmod(older-19, when-14)
+nsubj(older-19, you-15)
+cop(older-19, 're-16)
+advmod(older-19, so-17)
+advmod(older-19, much-18)
+advcl(develop-11, older-19)
+punct(ELI5-1, ?-20)
+
+Extracted the following NER entity mentions:
+cancer	CAUSE_OF_DEATH	-

@@ -1,0 +1,857 @@
+Document: ID=77D6EA17.text (10 sentences, 232 tokens)
+
+Sentence #1 (10 tokens):
+Well you don’t understand the pro-freedom position here.
+
+Tokens:
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pro-freedom CharacterOffsetBegin=30 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=pro-freedom NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (NP (PRP you))
+    (VP (VBP do) (RB n’t)
+      (VP (VB understand)
+        (NP (DT the) (JJ pro-freedom) (NN position))
+        (ADVP (RB here))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understand-5)
+discourse(understand-5, Well-1)
+nsubj(understand-5, you-2)
+aux(understand-5, do-3)
+advmod(understand-5, n’t-4)
+det(position-8, the-6)
+amod(position-8, pro-freedom-7)
+obj(understand-5, position-8)
+advmod(understand-5, here-9)
+punct(understand-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+First baseline: A person has autonomy over their physical body.
+
+Tokens:
+[Text=First CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=baseline CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=baseline NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=autonomy CharacterOffsetBegin=89 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=autonomy NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=109 CharacterOffsetEnd=117 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (LST (JJ First))
+    (NP (NN baseline))
+    (: :)
+    (S
+      (NP (DT A) (NN person))
+      (VP (VBZ has)
+        (NP
+          (NP (NN autonomy))
+          (PP (IN over)
+            (NP (PRP$ their) (JJ physical) (NN body))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, baseline-2)
+dep(baseline-2, First-1)
+punct(baseline-2, :-3)
+det(person-5, A-4)
+nsubj(has-6, person-5)
+appos(baseline-2, has-6)
+obj(has-6, autonomy-7)
+case(body-11, over-8)
+nmod:poss(body-11, their-9)
+amod(body-11, physical-10)
+nmod:over(autonomy-7, body-11)
+punct(baseline-2, .-12)
+
+Extracted the following NER entity mentions:
+First	ORDINAL	ORDINAL:-1.0
+
+Sentence #3 (24 tokens):
+Second baseline: What is entitled to rights isn’t “a life,” whatever that means, but the *person.
+
+Tokens:
+[Text=Second CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=baseline CharacterOffsetBegin=134 CharacterOffsetEnd=142 PartOfSpeech=NN Lemma=baseline NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=entitled CharacterOffsetBegin=152 CharacterOffsetEnd=160 PartOfSpeech=VBN Lemma=entitle NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=whatever CharacterOffsetBegin=187 CharacterOffsetEnd=195 PartOfSpeech=WDT Lemma=whatever NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=means CharacterOffsetBegin=201 CharacterOffsetEnd=206 PartOfSpeech=VBZ Lemma=mean NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Second) (NN baseline))
+      (: :)
+      (SBAR
+        (WHNP (WP What))
+        (S
+          (VP (VBZ is)
+            (VP (VBN entitled)
+              (PP (IN to)
+                (NP (NNS rights))))))))
+    (VP (VBZ is) (RB n’t)
+      (NP (`` “)
+        (NP (DT a) (NN life))
+        (, ,) ('' ”)
+        (SBAR
+          (WHNP (WDT whatever))
+          (S
+            (NP (DT that))
+            (VP (VBZ means) (, ,)
+              (NAC (CC but)
+                (NP
+                  (NP (DT the))
+                  (PP (SYM *)
+                    (NP (NN person))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, life-13)
+amod(baseline-2, Second-1)
+nsubj:pass(entitled-6, baseline-2)
+nsubj(life-13, baseline-2)
+punct(baseline-2, :-3)
+ref(baseline-2, What-4)
+aux:pass(entitled-6, is-5)
+acl:relcl(baseline-2, entitled-6)
+case(rights-8, to-7)
+obl:to(entitled-6, rights-8)
+cop(life-13, is-9)
+advmod(life-13, n’t-10)
+punct(life-13, “-11)
+det(life-13, a-12)
+nsubj(means-18, life-13)
+punct(life-13, ,-14)
+punct(life-13, ”-15)
+obj(means-18, whatever-16)
+ref(life-13, that-17)
+acl:relcl(life-13, means-18)
+punct(means-18, ,-19)
+cc(the-21, but-20)
+dep(means-18, the-21)
+dep(person-23, *-22)
+nmod(the-21, person-23)
+punct(life-13, .-24)
+
+Extracted the following NER entity mentions:
+Second	ORDINAL	ORDINAL:-1.0
+
+Sentence #4 (30 tokens):
+*  The *person* doesn’t arise until the biological matter of a fetus becomes organized in such a way that a consciousness develops capable of feeling harm.
+
+Tokens:
+[Text=* CharacterOffsetBegin=224 CharacterOffsetEnd=225 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=227 CharacterOffsetEnd=230 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=232 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=arise CharacterOffsetBegin=248 CharacterOffsetEnd=253 PartOfSpeech=VB Lemma=arise NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=254 CharacterOffsetEnd=259 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=biological CharacterOffsetBegin=264 CharacterOffsetEnd=274 PartOfSpeech=JJ Lemma=biological NamedEntityTag=O]
+[Text=matter CharacterOffsetBegin=275 CharacterOffsetEnd=281 PartOfSpeech=NN Lemma=matter NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fetus CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=fetus NamedEntityTag=O]
+[Text=becomes CharacterOffsetBegin=293 CharacterOffsetEnd=300 PartOfSpeech=VBZ Lemma=become NamedEntityTag=O]
+[Text=organized CharacterOffsetBegin=301 CharacterOffsetEnd=310 PartOfSpeech=VBN Lemma=organize NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=325 CharacterOffsetEnd=329 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=consciousness CharacterOffsetBegin=332 CharacterOffsetEnd=345 PartOfSpeech=NN Lemma=consciousness NamedEntityTag=O]
+[Text=develops CharacterOffsetBegin=346 CharacterOffsetEnd=354 PartOfSpeech=VBZ Lemma=develop NamedEntityTag=O]
+[Text=capable CharacterOffsetBegin=355 CharacterOffsetEnd=362 PartOfSpeech=JJ Lemma=capable NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=feeling CharacterOffsetBegin=366 CharacterOffsetEnd=373 PartOfSpeech=VBG Lemma=feel NamedEntityTag=O]
+[Text=harm CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=harm NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP *)
+    (S
+      (NP (DT The)
+        (NP
+          (NP (NFP *) (NN person) (NFP *))
+          (SBAR
+            (S
+              (VP (VBZ does) (RB n’t)
+                (VP (VB arise)
+                  (SBAR (IN until)
+                    (S
+                      (NP
+                        (NP (DT the) (JJ biological) (NN matter))
+                        (PP (IN of)
+                          (NP (DT a) (NN fetus))))
+                      (VP (VBZ becomes)))))))))))
+    (S
+      (VP (VBN organized)
+        (PP (IN in)
+          (NP (PDT such) (DT a) (NN way)))
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN consciousness))
+            (VP (VBZ develops)
+              (ADJP (JJ capable)
+                (PP (IN of)
+                  (S
+                    (VP (VBG feeling)
+                      (NP (NN harm)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, person-4)
+punct(person-4, *-1)
+det(person-4, The-2)
+punct(person-4, *-3)
+punct(person-4, *-5)
+aux(arise-8, does-6)
+advmod(arise-8, n’t-7)
+acl:relcl(person-4, arise-8)
+mark(becomes-16, until-9)
+det(matter-12, the-10)
+amod(matter-12, biological-11)
+nsubj(becomes-16, matter-12)
+case(fetus-15, of-13)
+det(fetus-15, a-14)
+nmod:of(matter-12, fetus-15)
+advcl:until(arise-8, becomes-16)
+parataxis(person-4, organized-17)
+case(way-21, in-18)
+det:predet(way-21, such-19)
+det(way-21, a-20)
+obl:in(organized-17, way-21)
+mark(develops-25, that-22)
+det(consciousness-24, a-23)
+nsubj(develops-25, consciousness-24)
+ccomp(organized-17, develops-25)
+xcomp(develops-25, capable-26)
+mark(feeling-28, of-27)
+advcl:of(capable-26, feeling-28)
+obj(feeling-28, harm-29)
+punct(person-4, .-30)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (19 tokens):
+We’re not sure when exactly that happens, and it probably varies person-to-person.
+
+Tokens:
+[Text=We CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=396 CharacterOffsetEnd=400 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=401 CharacterOffsetEnd=408 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=409 CharacterOffsetEnd=413 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=happens CharacterOffsetBegin=414 CharacterOffsetEnd=421 PartOfSpeech=VBZ Lemma=happen NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=421 CharacterOffsetEnd=422 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=427 CharacterOffsetEnd=429 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=430 CharacterOffsetEnd=438 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=varies CharacterOffsetBegin=439 CharacterOffsetEnd=445 PartOfSpeech=VBZ Lemma=vary NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=446 CharacterOffsetEnd=452 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=455 CharacterOffsetEnd=456 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=456 CharacterOffsetEnd=462 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=462 CharacterOffsetEnd=463 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP ’re)
+        (ADJP (RB not) (JJ sure))
+        (SBAR
+          (WHADVP (WRB when) (RB exactly))
+          (S
+            (NP (DT that))
+            (VP (VBZ happens))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB probably))
+      (VP (VBZ varies)
+        (NP
+          (NP (NN person))
+          (HYPH -)
+          (PP (IN to) (HYPH -)
+            (NP (NN person))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sure-4)
+nsubj(sure-4, We-1)
+cop(sure-4, ’re-2)
+advmod(sure-4, not-3)
+advmod(exactly-6, when-5)
+advmod(happens-8, exactly-6)
+nsubj(happens-8, that-7)
+advcl(sure-4, happens-8)
+punct(sure-4, ,-9)
+cc(varies-13, and-10)
+nsubj(varies-13, it-11)
+advmod(varies-13, probably-12)
+conj:and(sure-4, varies-13)
+obj(varies-13, person-14)
+punct(person-14, --15)
+case(person-18, to-16)
+punct(person-18, --17)
+nmod:to(person-14, person-18)
+punct(sure-4, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (32 tokens):
+We know it *isn’t* there at conception, and for a while after; we know it *is* there at birth, and a while before.
+
+Tokens:
+[Text=We CharacterOffsetBegin=465 CharacterOffsetEnd=467 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=468 CharacterOffsetEnd=472 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=473 CharacterOffsetEnd=475 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=476 CharacterOffsetEnd=477 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=477 CharacterOffsetEnd=479 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=479 CharacterOffsetEnd=482 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=490 CharacterOffsetEnd=492 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=conception CharacterOffsetBegin=493 CharacterOffsetEnd=503 PartOfSpeech=NN Lemma=conception NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=503 CharacterOffsetEnd=504 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=509 CharacterOffsetEnd=512 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=513 CharacterOffsetEnd=514 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=515 CharacterOffsetEnd=520 PartOfSpeech=NN Lemma=while NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=521 CharacterOffsetEnd=526 PartOfSpeech=RB Lemma=after NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=526 CharacterOffsetEnd=527 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=528 CharacterOffsetEnd=530 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=531 CharacterOffsetEnd=535 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=536 CharacterOffsetEnd=538 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=540 CharacterOffsetEnd=542 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=542 CharacterOffsetEnd=543 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=544 CharacterOffsetEnd=549 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=550 CharacterOffsetEnd=552 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=birth CharacterOffsetBegin=553 CharacterOffsetEnd=558 PartOfSpeech=NN Lemma=birth NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=558 CharacterOffsetEnd=559 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=560 CharacterOffsetEnd=563 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=564 CharacterOffsetEnd=565 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=566 CharacterOffsetEnd=571 PartOfSpeech=NN Lemma=while NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=572 CharacterOffsetEnd=578 PartOfSpeech=RB Lemma=before NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=578 CharacterOffsetEnd=579 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP know)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (NFP *)
+            (VP (VBZ is) (RB n’t))))))
+    (NFP *)
+    (S
+      (ADVP (RB there))
+      (PP
+        (PP (IN at)
+          (NP (NN conception)))
+        (, ,)
+        (CC and)
+        (PP (IN for)
+          (ADVP
+            (NP (DT a) (NN while))
+            (RB after))))
+      (: ;)
+      (NP (PRP we))
+      (VP (VBP know)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (NFP *)
+            (VP (VBZ is) (NFP *)
+              (PP
+                (ADVP (RB there))
+                (IN at)
+                (NP (NN birth))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT a) (NN while))
+      (ADVP (RB before)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, We-1)
+nsubj(is-5, it-3)
+punct(is-5, *-4)
+ccomp(know-2, is-5)
+advmod(is-5, n’t-6)
+punct(know-2, *-7)
+advmod(know-19, there-8)
+case(conception-10, at-9)
+obl:at(know-19, conception-10)
+punct(conception-10, ,-11)
+cc(know-19', and-12)
+case(after-16, for-13)
+det(while-15, a-14)
+obl:npmod(after-16, while-15)
+obl:for(know-19', after-16)
+punct(know-19, ;-17)
+nsubj(know-19, we-18)
+nsubj(know-19', we-18)
+ccomp(know-2, know-19)
+ccomp(know-2, know-19')
+conj:and(know-19, know-19')
+nsubj(birth-26, it-20)
+punct(birth-26, *-21)
+cop(birth-26, is-22)
+punct(birth-26, *-23)
+advmod(birth-26, there-24)
+case(birth-26, at-25)
+ccomp(know-19, birth-26)
+punct(know-2, ,-27)
+cc(while-30, and-28)
+det(while-30, a-29)
+conj:and(know-2, while-30)
+advmod(while-30, before-31)
+punct(know-2, .-32)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (18 tokens):
+You try to pick a cutoff that’s safely in the “isn’t there” range.
+
+Tokens:
+[Text=You CharacterOffsetBegin=581 CharacterOffsetEnd=584 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=VBP Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=589 CharacterOffsetEnd=591 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pick CharacterOffsetBegin=592 CharacterOffsetEnd=596 PartOfSpeech=VB Lemma=pick NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=597 CharacterOffsetEnd=598 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cutoff CharacterOffsetBegin=599 CharacterOffsetEnd=605 PartOfSpeech=NN Lemma=cutoff NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=606 CharacterOffsetEnd=610 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=610 CharacterOffsetEnd=612 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=safely CharacterOffsetBegin=613 CharacterOffsetEnd=619 PartOfSpeech=RB Lemma=safely NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=620 CharacterOffsetEnd=622 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=623 CharacterOffsetEnd=626 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=627 CharacterOffsetEnd=628 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=628 CharacterOffsetEnd=630 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=630 CharacterOffsetEnd=633 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=634 CharacterOffsetEnd=639 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=639 CharacterOffsetEnd=640 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=range CharacterOffsetBegin=641 CharacterOffsetEnd=646 PartOfSpeech=NN Lemma=range NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=646 CharacterOffsetEnd=647 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP try)
+      (S
+        (VP (TO to)
+          (VP (VB pick)
+            (NP
+              (NP (DT a) (NN cutoff))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ ’s)
+                    (ADVP (RB safely))
+                    (PP (IN in)
+                      (NP (DT the) (`` “)
+                        (NML
+                          (S
+                            (VP (VBZ is) (RB n’t)
+                              (ADVP (RB there)))))
+                        ('' ”) (NN range)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, try-2)
+nsubj(try-2, You-1)
+nsubj:xsubj(pick-4, You-1)
+mark(pick-4, to-3)
+xcomp(try-2, pick-4)
+det(cutoff-6, a-5)
+obj(pick-4, cutoff-6)
+nsubj(range-17, cutoff-6)
+ref(cutoff-6, that-7)
+cop(range-17, ’s-8)
+advmod(range-17, safely-9)
+case(range-17, in-10)
+det(range-17, the-11)
+punct(range-17, “-12)
+compound(range-17, is-13)
+advmod(is-13, n’t-14)
+advmod(is-13, there-15)
+punct(range-17, ”-16)
+acl:relcl(cutoff-6, range-17)
+punct(try-2, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (52 tokens):
+Edit: personally, I think this is the key difference in philosophy: whether you believe that the thing deserving of consideration is the “life,” and that this comes in the form of an everlasting soul with some sort of transcendental character that outlasts the physical body.
+
+Tokens:
+[Text=Edit CharacterOffsetBegin=649 CharacterOffsetEnd=653 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=653 CharacterOffsetEnd=654 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=personally CharacterOffsetBegin=655 CharacterOffsetEnd=665 PartOfSpeech=RB Lemma=personally NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=665 CharacterOffsetEnd=666 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=667 CharacterOffsetEnd=668 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=669 CharacterOffsetEnd=674 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=675 CharacterOffsetEnd=679 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=683 CharacterOffsetEnd=686 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=key CharacterOffsetBegin=687 CharacterOffsetEnd=690 PartOfSpeech=JJ Lemma=key NamedEntityTag=O]
+[Text=difference CharacterOffsetBegin=691 CharacterOffsetEnd=701 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=702 CharacterOffsetEnd=704 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=philosophy CharacterOffsetBegin=705 CharacterOffsetEnd=715 PartOfSpeech=NN Lemma=philosophy NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=715 CharacterOffsetEnd=716 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=717 CharacterOffsetEnd=724 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=725 CharacterOffsetEnd=728 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=729 CharacterOffsetEnd=736 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=737 CharacterOffsetEnd=741 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=742 CharacterOffsetEnd=745 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=746 CharacterOffsetEnd=751 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=deserving CharacterOffsetBegin=752 CharacterOffsetEnd=761 PartOfSpeech=JJ Lemma=deserving NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=762 CharacterOffsetEnd=764 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=consideration CharacterOffsetBegin=765 CharacterOffsetEnd=778 PartOfSpeech=NN Lemma=consideration NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=779 CharacterOffsetEnd=781 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=782 CharacterOffsetEnd=785 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=786 CharacterOffsetEnd=787 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=787 CharacterOffsetEnd=791 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=791 CharacterOffsetEnd=792 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=792 CharacterOffsetEnd=793 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=794 CharacterOffsetEnd=797 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=798 CharacterOffsetEnd=802 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=803 CharacterOffsetEnd=807 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=comes CharacterOffsetBegin=808 CharacterOffsetEnd=813 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=814 CharacterOffsetEnd=816 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=817 CharacterOffsetEnd=820 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=form CharacterOffsetBegin=821 CharacterOffsetEnd=825 PartOfSpeech=NN Lemma=form NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=826 CharacterOffsetEnd=828 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=829 CharacterOffsetEnd=831 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=everlasting CharacterOffsetBegin=832 CharacterOffsetEnd=843 PartOfSpeech=JJ Lemma=everlasting NamedEntityTag=O]
+[Text=soul CharacterOffsetBegin=844 CharacterOffsetEnd=848 PartOfSpeech=NN Lemma=soul NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=849 CharacterOffsetEnd=853 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=854 CharacterOffsetEnd=858 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=sort CharacterOffsetBegin=859 CharacterOffsetEnd=863 PartOfSpeech=NN Lemma=sort NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=864 CharacterOffsetEnd=866 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=transcendental CharacterOffsetBegin=867 CharacterOffsetEnd=881 PartOfSpeech=JJ Lemma=transcendental NamedEntityTag=O]
+[Text=character CharacterOffsetBegin=882 CharacterOffsetEnd=891 PartOfSpeech=NN Lemma=character NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=892 CharacterOffsetEnd=896 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=outlasts CharacterOffsetBegin=897 CharacterOffsetEnd=905 PartOfSpeech=VBZ Lemma=outlast NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=906 CharacterOffsetEnd=909 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=910 CharacterOffsetEnd=918 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=919 CharacterOffsetEnd=923 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=923 CharacterOffsetEnd=924 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Edit))
+    (: :)
+    (S
+      (ADVP (RB personally))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (JJ key) (NN difference))
+                (PP (IN in)
+                  (NP (NN philosophy))))
+              (: :)
+              (SBAR (IN whether)
+                (S
+                  (NP (PRP you))
+                  (VP (VBP believe)
+                    (SBAR
+                      (SBAR (IN that)
+                        (S
+                          (NP
+                            (NP (DT the) (NN thing))
+                            (ADJP (JJ deserving)
+                              (PP (IN of)
+                                (NP (NN consideration)))))
+                          (VP (VBZ is)
+                            (NP (DT the) (`` “) (NN life) (, ,) ('' ”)))))
+                      (CC and)
+                      (SBAR (IN that)
+                        (S
+                          (NP (DT this))
+                          (VP (VBZ comes)
+                            (PP (IN in)
+                              (NP
+                                (NP (DT the) (NN form))
+                                (PP (IN of)
+                                  (NP (DT an) (JJ everlasting) (NN soul)))))
+                            (PP (IN with)
+                              (NP
+                                (NP (DT some) (NN sort))
+                                (PP (IN of)
+                                  (NP
+                                    (NP (JJ transcendental) (NN character))
+                                    (SBAR
+                                      (WHNP (WDT that))
+                                      (S
+                                        (VP (VBZ outlasts)
+                                          (NP (DT the) (JJ physical) (NN body)))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Edit-1)
+punct(Edit-1, :-2)
+advmod(think-6, personally-3)
+punct(think-6, ,-4)
+nsubj(think-6, I-5)
+appos(Edit-1, think-6)
+nsubj(difference-11, this-7)
+cop(difference-11, is-8)
+det(difference-11, the-9)
+amod(difference-11, key-10)
+ccomp(think-6, difference-11)
+case(philosophy-13, in-12)
+nmod:in(difference-11, philosophy-13)
+punct(difference-11, :-14)
+mark(believe-17, whether-15)
+nsubj(believe-17, you-16)
+ccomp(difference-11, believe-17)
+mark(life-27, that-18)
+det(thing-20, the-19)
+nsubj(life-27, thing-20)
+amod(thing-20, deserving-21)
+case(consideration-23, of-22)
+obl:of(deserving-21, consideration-23)
+cop(life-27, is-24)
+det(life-27, the-25)
+punct(life-27, “-26)
+ccomp(believe-17, life-27)
+punct(life-27, ,-28)
+punct(life-27, ”-29)
+cc(comes-33, and-30)
+mark(comes-33, that-31)
+nsubj(comes-33, this-32)
+ccomp(believe-17, comes-33)
+conj:and(life-27, comes-33)
+case(form-36, in-34)
+det(form-36, the-35)
+obl:in(comes-33, form-36)
+case(soul-40, of-37)
+det(soul-40, an-38)
+amod(soul-40, everlasting-39)
+nmod:of(form-36, soul-40)
+case(sort-43, with-41)
+det(sort-43, some-42)
+obl:with(comes-33, sort-43)
+case(character-46, of-44)
+amod(character-46, transcendental-45)
+nmod:of(sort-43, character-46)
+nsubj(outlasts-48, character-46)
+ref(character-46, that-47)
+acl:relcl(character-46, outlasts-48)
+det(body-51, the-49)
+amod(body-51, physical-50)
+obj(outlasts-48, body-51)
+punct(Edit-1, .-52)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (24 tokens):
+Then it’s not the timing of biology that matters, but when the “soul” comes and attaches to the vessel.
+
+Tokens:
+[Text=Then CharacterOffsetBegin=926 CharacterOffsetEnd=930 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=931 CharacterOffsetEnd=933 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=933 CharacterOffsetEnd=935 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=936 CharacterOffsetEnd=939 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=940 CharacterOffsetEnd=943 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=timing CharacterOffsetBegin=944 CharacterOffsetEnd=950 PartOfSpeech=NN Lemma=timing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=951 CharacterOffsetEnd=953 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=biology CharacterOffsetBegin=954 CharacterOffsetEnd=961 PartOfSpeech=NN Lemma=biology NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=962 CharacterOffsetEnd=966 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=matters CharacterOffsetBegin=967 CharacterOffsetEnd=974 PartOfSpeech=VBZ Lemma=matter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=974 CharacterOffsetEnd=975 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=976 CharacterOffsetEnd=979 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=980 CharacterOffsetEnd=984 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=985 CharacterOffsetEnd=988 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=989 CharacterOffsetEnd=990 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=soul CharacterOffsetBegin=990 CharacterOffsetEnd=994 PartOfSpeech=NN Lemma=soul NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=994 CharacterOffsetEnd=995 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=comes CharacterOffsetBegin=996 CharacterOffsetEnd=1001 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1002 CharacterOffsetEnd=1005 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=attaches CharacterOffsetBegin=1006 CharacterOffsetEnd=1014 PartOfSpeech=VBZ Lemma=attach NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1015 CharacterOffsetEnd=1017 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1018 CharacterOffsetEnd=1021 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vessel CharacterOffsetBegin=1022 CharacterOffsetEnd=1028 PartOfSpeech=NN Lemma=vessel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1028 CharacterOffsetEnd=1029 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (NP (PRP it))
+    (VP (VBZ ’s) (RB not)
+      (NP
+        (NP (DT the) (NN timing))
+        (PP (IN of)
+          (NP (NN biology))))
+      (SBAR
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ matters))))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT the) (`` “) (NN soul) ('' ”))
+            (VP (VBZ comes)
+              (CC and)
+              (VBZ attaches)
+              (PP (IN to)
+                (NP (DT the) (NN vessel))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, timing-6)
+advmod(timing-6, Then-1)
+nsubj(timing-6, it-2)
+cop(timing-6, ’s-3)
+advmod(timing-6, not-4)
+det(timing-6, the-5)
+case(biology-8, of-7)
+nmod:of(timing-6, biology-8)
+nsubj(matters-10, that-9)
+dep(timing-6, matters-10)
+punct(matters-10, ,-11)
+cc(comes-18, but-12)
+advmod(comes-18, when-13)
+det(soul-16, the-14)
+punct(soul-16, “-15)
+nsubj(comes-18, soul-16)
+nsubj(attaches-20, soul-16)
+punct(soul-16, ”-17)
+dep(timing-6, comes-18)
+conj:but(matters-10, comes-18)
+cc(attaches-20, and-19)
+conj:but(matters-10, attaches-20)
+conj:and(comes-18, attaches-20)
+case(vessel-23, to-21)
+det(vessel-23, the-22)
+obl:to(comes-18, vessel-23)
+punct(timing-6, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #10 (11 tokens):
+Conception is a natural point to see this as occurring.
+
+Tokens:
+[Text=Conception CharacterOffsetBegin=1031 CharacterOffsetEnd=1041 PartOfSpeech=NN Lemma=conception NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1042 CharacterOffsetEnd=1044 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1045 CharacterOffsetEnd=1046 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=1047 CharacterOffsetEnd=1054 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=1055 CharacterOffsetEnd=1060 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1061 CharacterOffsetEnd=1063 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=1064 CharacterOffsetEnd=1067 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1068 CharacterOffsetEnd=1072 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1073 CharacterOffsetEnd=1075 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=occurring CharacterOffsetBegin=1076 CharacterOffsetEnd=1085 PartOfSpeech=VBG Lemma=occur NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1085 CharacterOffsetEnd=1086 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Conception))
+    (VP (VBZ is)
+      (NP (DT a) (JJ natural) (NN point)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (NP (DT this))
+              (PP (IN as)
+                (S
+                  (VP (VBG occurring)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, point-5)
+nsubj(point-5, Conception-1)
+cop(point-5, is-2)
+det(point-5, a-3)
+amod(point-5, natural-4)
+mark(see-7, to-6)
+acl:to(point-5, see-7)
+obj(see-7, this-8)
+mark(occurring-10, as-9)
+advcl:as(see-7, occurring-10)
+punct(point-5, .-11)
+
+Extracted the following NER entity mentions:

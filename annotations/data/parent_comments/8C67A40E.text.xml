@@ -1,0 +1,48 @@
+Document: ID=8C67A40E.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Six million is, objectively speaking, a large number
+
+Tokens:
+[Text=Six CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=six NamedEntityTag=NUMBER NormalizedNamedEntityTag=6000000.0]
+[Text=million CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=6000000.0]
+[Text=is CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=objectively CharacterOffsetBegin=16 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=objectively NamedEntityTag=O]
+[Text=speaking CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=VBG Lemma=speak NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP
+          (QP (CD Six) (CD million)))
+        (SBAR
+          (S
+            (VP (VBZ is) (, ,)
+              (S
+                (ADVP (RB objectively))
+                (VP (VBG speaking)))))))
+      (, ,)
+      (NP (DT a) (JJ large) (NN number)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, million-2)
+compound(million-2, Six-1)
+acl:relcl(million-2, is-3)
+punct(is-3, ,-4)
+advmod(speaking-6, objectively-5)
+xcomp(is-3, speaking-6)
+punct(million-2, ,-7)
+det(number-10, a-8)
+amod(number-10, large-9)
+appos(million-2, number-10)
+
+Extracted the following NER entity mentions:
+Six million	NUMBER	NUMBER:-1.0

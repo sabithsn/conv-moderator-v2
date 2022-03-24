@@ -1,0 +1,28 @@
+Document: ID=8EA519B3.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Saturday Morning Political Cartoon Thread
+
+Tokens:
+[Text=Saturday CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t1" type="TIME" value="XXXX-WXX-6TMO">Saturday Morning</TIMEX3>]
+[Text=Morning CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Morning NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t1" type="TIME" value="XXXX-WXX-6TMO">Saturday Morning</TIMEX3>]
+[Text=Political CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Political NamedEntityTag=O]
+[Text=Cartoon CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Cartoon NamedEntityTag=O]
+[Text=Thread CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Thread NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Saturday)
+    (NML (NNP Morning) (NNP Political))
+    (NNP Cartoon) (NNP Thread)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thread-5)
+compound(Thread-5, Saturday-1)
+compound(Political-3, Morning-2)
+compound(Thread-5, Political-3)
+compound(Thread-5, Cartoon-4)
+
+Extracted the following NER entity mentions:
+Saturday Morning	TIME	TIME:-1.0

@@ -1,0 +1,56 @@
+Document: ID=72FABCED.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Dem Senator Heitkamp: Trump Administration ‘Overspent and Drove Up Inflation’
+
+Tokens:
+[Text=Dem CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=JJ Lemma=dem NamedEntityTag=IDEOLOGY]
+[Text=Senator CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Heitkamp CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Heitkamp NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=ORGANIZATION]
+[Text=Administration CharacterOffsetBegin=28 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Administration NamedEntityTag=ORGANIZATION]
+[Text=‘ CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Overspent CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=overspent NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Drove CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=drive NamedEntityTag=O]
+[Text=Up CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=Inflation CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=inflation NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Dem) (NNP Senator) (NNP Heitkamp))
+    (: :)
+    (NP
+      (NP (NNP Trump) (NNP Administration))
+      (NP (`` ‘)
+        (ADJP (JJ Overspent)
+          (PRN
+            (S (CC and)
+              (VP (VB Drove)
+                (PRT (RP Up))))))
+        (NN Inflation) ('' ’)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Heitkamp-3)
+amod(Heitkamp-3, Dem-1)
+compound(Heitkamp-3, Senator-2)
+punct(Heitkamp-3, :-4)
+compound(Administration-6, Trump-5)
+dep(Heitkamp-3, Administration-6)
+punct(Inflation-12, ‘-7)
+amod(Inflation-12, Overspent-8)
+cc(Drove-10, and-9)
+dep(Overspent-8, Drove-10)
+compound:prt(Drove-10, Up-11)
+dep(Administration-6, Inflation-12)
+punct(Inflation-12, ’-13)
+
+Extracted the following NER entity mentions:
+Dem	IDEOLOGY	-
+Senator	TITLE	-
+Heitkamp	PERSON	PERSON:0.9924669065313426
+Trump Administration	ORGANIZATION	ORGANIZATION:0.6323644037715949

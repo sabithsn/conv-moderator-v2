@@ -1,0 +1,69 @@
+Document: ID=3E5A4D1D.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+>2022  >Comparing 1776 revolutionaries to cosplayers who wanted to overturn an election
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=2022 CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=CD Lemma=2022 NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 tid="t1" type="DATE" value="2022">2022</TIMEX3>]
+[Text=> CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Comparing CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=compare NamedEntityTag=O]
+[Text=1776 CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=1776 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1776.0]
+[Text=revolutionaries CharacterOffsetBegin=23 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=revolutionary NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=cosplayers CharacterOffsetBegin=42 CharacterOffsetEnd=52 PartOfSpeech=NNS Lemma=cosplayer NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=overturn CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=overturn NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=election CharacterOffsetBegin=79 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NP
+          (QP (CD 2022) (SYM >)))
+        (SBAR
+          (S
+            (VP (VBG Comparing)
+              (NP (CD 1776) (NNS revolutionaries))
+              (PP (IN to)
+                (NP
+                  (NP (NNS cosplayers))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBD wanted)
+                        (S
+                          (VP (TO to)
+                            (VP (VB overturn)
+                              (NP (DT an) (NN election)))))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2022-2)
+dep(2022-2, >-1)
+nsubj(wanted-10, 2022-2)
+nsubj:xsubj(overturn-12, 2022-2)
+dep(2022-2, >-3)
+acl:relcl(2022-2, Comparing-4)
+nummod(revolutionaries-6, 1776-5)
+obj(Comparing-4, revolutionaries-6)
+case(cosplayers-8, to-7)
+obl:to(Comparing-4, cosplayers-8)
+nsubj(wanted-10, cosplayers-8)
+nsubj:xsubj(overturn-12, cosplayers-8)
+ref(2022-2, who-9)
+ref(cosplayers-8, who-9)
+acl:relcl(cosplayers-8, wanted-10)
+mark(overturn-12, to-11)
+xcomp(wanted-10, overturn-12)
+det(election-14, an-13)
+obj(overturn-12, election-14)
+
+Extracted the following NER entity mentions:
+2022	DATE	DATE:0.7093229780007673
+1776	NUMBER	NUMBER:-1.0

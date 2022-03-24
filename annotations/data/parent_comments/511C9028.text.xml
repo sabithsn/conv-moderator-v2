@@ -1,0 +1,72 @@
+Document: ID=511C9028.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+In Vienna, the Biden Administration Is Giving Away the Store to Iran, and Russia Is Helping
+
+Tokens:
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Vienna CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Vienna NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Administration CharacterOffsetBegin=21 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Administration NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Giving CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=give NamedEntityTag=O]
+[Text=Away CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Store CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=store NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Iran CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Iran NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=74 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=Is CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Helping CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=helping NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Vienna)))
+    (, ,)
+    (S
+      (NP (DT the) (NNP Biden) (NNP Administration))
+      (VP (VBZ Is)
+        (VP (VBG Giving)
+          (ADVP (RB Away)
+            (NP (DT the) (NN Store)))
+          (PP (IN to)
+            (NP (NNP Iran))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Russia))
+      (VP (VBZ Is)
+        (NP (NN Helping))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Giving-8)
+case(Vienna-2, In-1)
+obl:in(Giving-8, Vienna-2)
+punct(Giving-8, ,-3)
+det(Administration-6, the-4)
+compound(Administration-6, Biden-5)
+nsubj(Giving-8, Administration-6)
+aux(Giving-8, Is-7)
+advmod(Giving-8, Away-9)
+det(Store-11, the-10)
+obl:npmod(Away-9, Store-11)
+case(Iran-13, to-12)
+obl:to(Giving-8, Iran-13)
+punct(Giving-8, ,-14)
+cc(Helping-18, and-15)
+nsubj(Helping-18, Russia-16)
+cop(Helping-18, Is-17)
+conj:and(Giving-8, Helping-18)
+
+Extracted the following NER entity mentions:
+Vienna	CITY	LOCATION:0.9967316577882781
+Biden	PERSON	PERSON:0.7049093179349951
+Iran	COUNTRY	LOCATION:0.9949408304688552
+Russia	COUNTRY	LOCATION:0.976638378235475

@@ -1,0 +1,103 @@
+Document: ID=20F5A3DA.text (2 sentences, 23 tokens)
+
+Sentence #1 (17 tokens):
+There might be something more to the WEF and 'Global Elite' moving against Russia.
+
+Tokens:
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=WEF CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=wef NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Global CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=global NamedEntityTag=ORGANIZATION]
+[Text=Elite CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Elite NamedEntityTag=ORGANIZATION]
+[Text=' CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=moving NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB There))
+    (VP (MD might)
+      (VP (VB be)
+        (ADJP
+          (ADJP
+            (NP (NN something))
+            (JJR more))
+          (PP (IN to)
+            (NP
+              (NP (DT the) (NN WEF))
+              (CC and)
+              (`` ')
+              (NP
+                (NP (JJ Global) (NNP Elite) (POS '))
+                (NN moving))
+              (PP (IN against)
+                (NP (NNP Russia))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, more-5)
+nsubj(more-5, There-1)
+aux(more-5, might-2)
+cop(more-5, be-3)
+obl:npmod(more-5, something-4)
+case(WEF-8, to-6)
+det(WEF-8, the-7)
+obl:to(more-5, WEF-8)
+cc(moving-14, and-9)
+punct(WEF-8, '-10)
+amod(Elite-12, Global-11)
+nmod:poss(moving-14, Elite-12)
+case(Elite-12, '-13)
+obl:to(more-5, moving-14)
+conj:and(WEF-8, moving-14)
+case(Russia-16, against-15)
+nmod:against(WEF-8, Russia-16)
+punct(more-5, .-17)
+
+Extracted the following NER entity mentions:
+WEF	ORGANIZATION	ORGANIZATION:0.8213449776381353
+Global Elite	ORGANIZATION	ORGANIZATION:0.5588407919982491
+Russia	COUNTRY	LOCATION:0.7179746401493491
+
+Sentence #2 (6 tokens):
+Why would they do this?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD would)
+      (NP (PRP they))
+      (VP (VB do)
+        (NP (DT this))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-4)
+advmod(do-4, Why-1)
+aux(do-4, would-2)
+nsubj(do-4, they-3)
+obj(do-4, this-5)
+punct(do-4, ?-6)
+
+Extracted the following NER entity mentions:

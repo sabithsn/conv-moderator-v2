@@ -1,0 +1,91 @@
+Document: ID=F06388C5.text (2 sentences, 19 tokens)
+
+Sentence #1 (5 tokens):
+And now this….
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=this CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (CC And)
+    (NP (RB now))
+    (NP (DT this))
+    (: …) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, now-2)
+cc(now-2, And-1)
+dep(now-2, this-3)
+punct(now-2, …-4)
+punct(now-2, .-5)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+
+Sentence #2 (14 tokens):
+Congress claims sovereign immunity prevents Capitol Police from sharing January 6 emails and videos
+
+Tokens:
+[Text=Congress CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=ORGANIZATION]
+[Text=claims CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=claim NamedEntityTag=O]
+[Text=sovereign CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=sovereign NamedEntityTag=O]
+[Text=immunity CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=immunity NamedEntityTag=O]
+[Text=prevents CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=prevent NamedEntityTag=O]
+[Text=Capitol CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Capitol NamedEntityTag=ORGANIZATION]
+[Text=Police CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Police NamedEntityTag=ORGANIZATION]
+[Text=from CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=sharing CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=VBG Lemma=share NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-01-06">January 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-01-06">January 6</TIMEX3>]
+[Text=emails CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=email NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=videos CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=NNS Lemma=video NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Congress))
+    (VP (VBZ claims)
+      (SBAR
+        (S
+          (NP (JJ sovereign) (NN immunity))
+          (VP (VBZ prevents)
+            (NP
+              (NP (NNP Capitol) (NNP Police))
+              (PP (IN from)
+                (S
+                  (VP (VBG sharing)
+                    (NP
+                      (NML (NNP January) (CD 6))
+                      (NNS emails)
+                      (CC and)
+                      (NNS videos))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, claims-2)
+nsubj(claims-2, Congress-1)
+amod(immunity-4, sovereign-3)
+nsubj(prevents-5, immunity-4)
+ccomp(claims-2, prevents-5)
+compound(Police-7, Capitol-6)
+obj(prevents-5, Police-7)
+mark(sharing-9, from-8)
+acl:from(Police-7, sharing-9)
+compound(emails-12, January-10)
+nummod(January-10, 6-11)
+obj(sharing-9, emails-12)
+cc(videos-14, and-13)
+obj(sharing-9, videos-14)
+conj:and(emails-12, videos-14)
+
+Extracted the following NER entity mentions:
+Congress	ORGANIZATION	ORGANIZATION:0.9449852278004223
+Capitol Police	ORGANIZATION	ORGANIZATION:0.7896029216766675
+January 6	DATE	DATE:0.8092574224344017

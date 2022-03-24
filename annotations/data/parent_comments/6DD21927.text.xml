@@ -1,0 +1,61 @@
+Document: ID=6DD21927.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+What color were the people who fought tooth and nail to keep slavery?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=color CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=color NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=fought CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBD Lemma=fight NamedEntityTag=O]
+[Text=tooth CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=tooth NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=nail CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=nail NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=slavery CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=slavery NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN color))
+    (SQ (VBD were)
+      (NP
+        (NP (DT the) (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD fought)
+              (NP (NN tooth)
+                (CC and)
+                (NN nail))
+              (S
+                (VP (TO to)
+                  (VP (VB keep)
+                    (NP (NN slavery))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, were-3)
+det(color-2, What-1)
+obj(were-3, color-2)
+det(people-5, the-4)
+nsubj(were-3, people-5)
+nsubj(fought-7, people-5)
+ref(people-5, who-6)
+acl:relcl(people-5, fought-7)
+obj(fought-7, tooth-8)
+cc(nail-10, and-9)
+obj(fought-7, nail-10)
+conj:and(tooth-8, nail-10)
+mark(keep-12, to-11)
+advcl:to(fought-7, keep-12)
+obj(keep-12, slavery-13)
+punct(were-3, ?-14)
+
+Extracted the following NER entity mentions:

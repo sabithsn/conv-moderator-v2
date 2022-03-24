@@ -1,0 +1,47 @@
+Document: ID=DB6063B1.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+One of them might want to fuck you.
+
+Tokens:
+[Text=One CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN of)
+        (NP (PRP them))))
+    (VP (MD might)
+      (VP (VB want)
+        (S
+          (VP (TO to)
+            (VP (VB fuck)
+              (NP (PRP you)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-5)
+det:qmod(them-3, One-1)
+nsubj:xsubj(fuck-7, One-1)
+fixed(One-1, of-2)
+nsubj(want-5, them-3)
+nsubj:xsubj(fuck-7, them-3)
+aux(want-5, might-4)
+mark(fuck-7, to-6)
+xcomp(want-5, fuck-7)
+obj(fuck-7, you-8)
+punct(want-5, .-9)
+
+Extracted the following NER entity mentions:
+One	NUMBER	NUMBER:-1.0

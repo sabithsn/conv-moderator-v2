@@ -1,0 +1,79 @@
+Document: ID=E5B39DEE.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Ottawa Police's New Measures Against Protesting Truckers Are Those Used by 'Oppressive Regimes,' Says Organizers' Lawyer
+
+Tokens:
+[Text=Ottawa CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Ottawa NamedEntityTag=ORGANIZATION]
+[Text=Police CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Police NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=Measures CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=NNPS Lemma=Measures NamedEntityTag=O]
+[Text=Against CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Protesting CharacterOffsetBegin=37 CharacterOffsetEnd=47 PartOfSpeech=VBG Lemma=protest NamedEntityTag=O]
+[Text=Truckers CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=trucker NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Those CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=Used CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Oppressive CharacterOffsetBegin=76 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=oppressive NamedEntityTag=O]
+[Text=Regimes CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=regime NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Says CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Organizers CharacterOffsetBegin=102 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=organizer NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=Lawyer CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Lawyer NamedEntityTag=TITLE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Ottawa) (NNP Police) (POS 's))
+        (NNP New) (NNPS Measures))
+      (PP (IN Against)
+        (NP (VBG Protesting) (NNS Truckers))))
+    (SQ (VBP Are)
+      (NP (DT Those))
+      (VP (VBN Used)
+        (PP (IN by)
+          (NP
+            (NP (`` ')
+              (NP (JJ Oppressive) (NNS Regimes))
+              (, ,) ('' '))
+            (SBAR
+              (S
+                (VP (VBZ Says)
+                  (NP
+                    (NP (NNS Organizers) (POS '))
+                    (NNP Lawyer)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Measures-5)
+compound(Police-2, Ottawa-1)
+nmod:poss(Measures-5, Police-2)
+case(Police-2, 's-3)
+compound(Measures-5, New-4)
+case(Truckers-8, Against-6)
+amod(Truckers-8, Protesting-7)
+dep(Measures-5, Truckers-8)
+aux:pass(Used-11, Are-9)
+nsubj:pass(Used-11, Those-10)
+parataxis(Measures-5, Used-11)
+case(Regimes-15, by-12)
+punct(Regimes-15, '-13)
+amod(Regimes-15, Oppressive-14)
+obl:agent(Used-11, Regimes-15)
+punct(Regimes-15, ,-16)
+punct(Regimes-15, '-17)
+acl:relcl(Regimes-15, Says-18)
+nmod:poss(Lawyer-21, Organizers-19)
+case(Organizers-19, '-20)
+obj(Says-18, Lawyer-21)
+
+Extracted the following NER entity mentions:
+Ottawa Police	ORGANIZATION	ORGANIZATION:0.9888745214780248
+Lawyer	TITLE	-

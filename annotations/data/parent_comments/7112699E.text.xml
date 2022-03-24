@@ -1,0 +1,79 @@
+Document: ID=7112699E.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+As long as in the states that love abortions, men have the right NOT to pay child support.
+
+Tokens:
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=COUNTRY]
+[Text=states CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=state NamedEntityTag=COUNTRY]
+[Text=that CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=abortions CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=abortion NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP
+      (ADVP (RB As) (RB long))
+      (SBAR (IN as)
+        (FRAG
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNS states))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP love)
+                    (NP (NNS abortions))))))))))
+    (, ,)
+    (NP (NNS men))
+    (VP (VBP have)
+      (NP (DT the)
+        (ADJP (JJ right)
+          (S
+            (VP (RB NOT) (TO to)
+              (VP (VB pay)))))
+        (NN child) (NN support)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-12)
+advmod(long-2, As-1)
+advmod(have-12, long-2)
+mark(states-6, as-3)
+case(states-6, in-4)
+det(states-6, the-5)
+advcl:as(long-2, states-6)
+nsubj(love-8, states-6)
+ref(states-6, that-7)
+acl:relcl(states-6, love-8)
+obj(love-8, abortions-9)
+punct(have-12, ,-10)
+nsubj(have-12, men-11)
+det(support-19, the-13)
+amod(support-19, right-14)
+advmod(pay-17, NOT-15)
+mark(pay-17, to-16)
+dep(right-14, pay-17)
+compound(support-19, child-18)
+obj(have-12, support-19)
+punct(have-12, .-20)
+
+Extracted the following NER entity mentions:
+the states	COUNTRY	-

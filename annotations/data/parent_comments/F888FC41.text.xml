@@ -1,0 +1,73 @@
+Document: ID=F888FC41.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Kathy Griffin Whining She's Not Been Canceled, but 'Erased' -- In Splashy NY Times Story
+
+Tokens:
+[Text=Kathy CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Kathy NamedEntityTag=PERSON]
+[Text=Griffin CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Griffin NamedEntityTag=PERSON]
+[Text=Whining CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Whining NamedEntityTag=O]
+[Text=She CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=not NamedEntityTag=MISC]
+[Text=Been CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=be NamedEntityTag=MISC]
+[Text=Canceled CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=cancel NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Erased CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VBN Lemma=erase NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Splashy CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=splashy NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=NY NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Times CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Times NamedEntityTag=O]
+[Text=Story CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Story NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Kathy) (NNP Griffin) (NNP Whining))
+    (S
+      (NP (PRP She))
+      (VP (VBZ 's) (RB Not)
+        (VP (VBN Been)
+          (VP
+            (VP (VBN Canceled))
+            (, ,)
+            (CC but)
+            (VP (`` ') (VBN Erased) ('' '))
+            (: --)
+            (PP (IN In)
+              (NP (JJ Splashy) (NNP NY) (NNP Times) (NNP Story)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Whining-3)
+compound(Whining-3, Kathy-1)
+compound(Whining-3, Griffin-2)
+nsubj:pass(Canceled-8, She-4)
+nsubj:pass(Erased-12, She-4)
+aux:pass(Canceled-8, 's-5)
+advmod(Canceled-8, Not-6)
+aux:pass(Canceled-8, Been-7)
+dep(Whining-3, Canceled-8)
+punct(Canceled-8, ,-9)
+cc(Erased-12, but-10)
+punct(Erased-12, '-11)
+dep(Whining-3, Erased-12)
+conj:but(Canceled-8, Erased-12)
+punct(Erased-12, '-13)
+punct(Canceled-8, ---14)
+case(Story-19, In-15)
+amod(Story-19, Splashy-16)
+compound(Story-19, NY-17)
+compound(Story-19, Times-18)
+dep(Whining-3, Story-19)
+conj:but(Canceled-8, Story-19)
+
+Extracted the following NER entity mentions:
+Kathy Griffin	PERSON	PERSON:0.9859760690107044
+Not Been Canceled	MISC	MISC:0.6726665920414289
+NY	STATE_OR_PROVINCE	-
+She	PERSON	-

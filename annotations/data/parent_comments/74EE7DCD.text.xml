@@ -1,0 +1,113 @@
+Document: ID=74EE7DCD.text (3 sentences, 24 tokens)
+
+Sentence #1 (15 tokens):
+I mean, if we’re being honest, there was some forced entry.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=honest CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=honest NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=forced CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=VBN Lemma=force NamedEntityTag=O]
+[Text=entry CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=entry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP mean)))
+    (, ,)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP we))
+          (VP (VBP ’re)
+            (S
+              (VP (VBG being)
+                (ADJP (JJ honest)))))))
+      (, ,)
+      (NP (EX there))
+      (VP (VBD was)
+        (NP (DT some) (VBN forced) (NN entry))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-2)
+nsubj(mean-2, I-1)
+punct(mean-2, ,-3)
+mark(’re-6, if-4)
+nsubj(’re-6, we-5)
+advcl:if(was-11, ’re-6)
+cop(honest-8, being-7)
+xcomp(’re-6, honest-8)
+punct(was-11, ,-9)
+expl(was-11, there-10)
+parataxis(mean-2, was-11)
+det(entry-14, some-12)
+amod(entry-14, forced-13)
+nsubj(was-11, entry-14)
+punct(mean-2, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Was it a siege?
+
+Tokens:
+[Text=Was CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=siege CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=siege NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Was)
+    (NP (PRP it))
+    (NP (DT a) (NN siege))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, siege-4)
+cop(siege-4, Was-1)
+nsubj(siege-4, it-2)
+det(siege-4, a-3)
+punct(siege-4, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (4 tokens):
+Of course not.
+
+Tokens:
+[Text=Of CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=course NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Of) (RB course))
+    (RB not) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, not-3)
+dep(not-3, Of-1)
+fixed(Of-1, course-2)
+punct(not-3, .-4)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,67 @@
+Document: ID=9E79963A.text (2 sentences, 12 tokens)
+
+Sentence #1 (9 tokens):
+She and Hillary are responsible for erectile disfunction.
+
+Tokens:
+[Text=She CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Hillary CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Hillary NamedEntityTag=PERSON]
+[Text=are CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=20 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=erectile CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=erectile NamedEntityTag=O]
+[Text=disfunction CharacterOffsetBegin=45 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=disfunction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She)
+      (CC and)
+      (NNP Hillary))
+    (VP (VBP are)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (NP (JJ erectile) (NN disfunction)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, responsible-5)
+nsubj(responsible-5, She-1)
+cc(Hillary-3, and-2)
+conj:and(She-1, Hillary-3)
+nsubj(responsible-5, Hillary-3)
+cop(responsible-5, are-4)
+case(disfunction-8, for-6)
+amod(disfunction-8, erectile-7)
+obl:for(responsible-5, disfunction-8)
+punct(responsible-5, .-9)
+
+Extracted the following NER entity mentions:
+Hillary	PERSON	PERSON:0.9955712101036953
+She	PERSON	-
+
+Sentence #2 (3 tokens):
+Go away.
+
+Tokens:
+[Text=Go CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Go)
+      (ADVP (RB away)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Go-1)
+advmod(Go-1, away-2)
+punct(Go-1, .-3)
+
+Extracted the following NER entity mentions:

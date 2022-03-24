@@ -1,0 +1,92 @@
+Document: ID=E385DE17.text (2 sentences, 21 tokens)
+
+Sentence #1 (10 tokens):
+Tucker: Our democracy is no longer functioning properly.
+
+Tokens:
+[Text=Tucker CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Our CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=democracy CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=democracy NamedEntityTag=IDEOLOGY]
+[Text=is CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=RBR Lemma=longer NamedEntityTag=O]
+[Text=functioning CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=function NamedEntityTag=O]
+[Text=properly CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=properly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Tucker))
+    (: :)
+    (S
+      (NP (PRP$ Our) (NN democracy))
+      (VP (VBZ is)
+        (ADVP (RB no) (RBR longer))
+        (VP (VBG functioning)
+          (ADVP (RB properly)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tucker-1)
+punct(Tucker-1, :-2)
+nmod:poss(democracy-4, Our-3)
+nsubj(functioning-8, democracy-4)
+aux(functioning-8, is-5)
+advmod(longer-7, no-6)
+advmod(functioning-8, longer-7)
+parataxis(Tucker-1, functioning-8)
+advmod(functioning-8, properly-9)
+punct(Tucker-1, .-10)
+
+Extracted the following NER entity mentions:
+Tucker	PERSON	PERSON:0.912657444392937
+democracy	IDEOLOGY	-
+
+Sentence #2 (11 tokens):
+Our leader's priorities look nothing like the country's priorities
+
+Tokens:
+[Text=Our CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=leader CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=leader NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=priorities CharacterOffsetBegin=70 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=priority NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=VBP Lemma=look NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=priorities CharacterOffsetBegin=113 CharacterOffsetEnd=123 PartOfSpeech=NNS Lemma=priority NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Our) (NN leader) (POS 's))
+      (NNS priorities))
+    (VP (VBP look)
+      (NP (NN nothing))
+      (PP (IN like)
+        (NP
+          (NP (DT the) (NN country) (POS 's))
+          (NNS priorities))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, look-5)
+nmod:poss(leader-2, Our-1)
+nmod:poss(priorities-4, leader-2)
+case(leader-2, 's-3)
+nsubj(look-5, priorities-4)
+obj(look-5, nothing-6)
+case(priorities-11, like-7)
+det(country-9, the-8)
+nmod:poss(priorities-11, country-9)
+case(country-9, 's-10)
+obl:like(look-5, priorities-11)
+
+Extracted the following NER entity mentions:
+leader	TITLE	-

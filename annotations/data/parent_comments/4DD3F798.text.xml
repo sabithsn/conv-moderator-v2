@@ -1,0 +1,190 @@
+Document: ID=4DD3F798.text (4 sentences, 43 tokens)
+
+Sentence #1 (8 tokens):
+All those body shots with those batons.
+
+Tokens:
+[Text=All CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=shots CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=shot NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=batons CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=baton NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (PDT All) (DT those) (NN body) (NNS shots))
+    (PP (IN with)
+      (NP (DT those) (NNS batons)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shots-4)
+det:predet(shots-4, All-1)
+det(shots-4, those-2)
+compound(shots-4, body-3)
+case(batons-7, with-5)
+det(batons-7, those-6)
+nmod:with(shots-4, batons-7)
+punct(shots-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+She is going to be covered in black and blues if not broken ribs...a child.
+
+Tokens:
+[Text=She CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=covered CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=VBN Lemma=cover NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=blues CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=blues NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=broken CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=VBN Lemma=break NamedEntityTag=O]
+[Text=ribs CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=rib NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ is)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN covered)
+                (PP (IN in)
+                  (NP
+                    (NP
+                      (NP (JJ black))
+                      (CC and)
+                      (NP (NNS blues)))
+                    (CONJP (IN if) (RB not))
+                    (NP (VBN broken) (NNS ribs))))
+                (: ...)
+                (NP (DT a) (NN child))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, going-3)
+nsubj(going-3, She-1)
+nsubj:pass:xsubj(covered-6, She-1)
+aux(going-3, is-2)
+mark(covered-6, to-4)
+aux:pass(covered-6, be-5)
+xcomp(going-3, covered-6)
+case(black-8, in-7)
+obl:in(covered-6, black-8)
+cc(blues-10, and-9)
+obl:in(covered-6, blues-10)
+conj:and(black-8, blues-10)
+dep(not-12, if-11)
+cc(ribs-14, not-12)
+amod(ribs-14, broken-13)
+obl:in(covered-6, ribs-14)
+conj:and(black-8, ribs-14)
+punct(covered-6, ...-15)
+det(child-17, a-16)
+obj(covered-6, child-17)
+punct(going-3, .-18)
+
+Extracted the following NER entity mentions:
+She	PERSON	-
+
+Sentence #3 (14 tokens):
+Four or five men... on a child...just beating her up.
+
+Tokens:
+[Text=Four CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=or CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=five CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=CD Lemma=five NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=men CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=NFP Lemma=... NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=beating CharacterOffsetBegin=154 CharacterOffsetEnd=161 PartOfSpeech=VBG Lemma=beat NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (CD Four))
+      (CC or)
+      (NP
+        (NP (CD five) (NNS men))
+        (NFP ...)
+        (PP (IN on)
+          (NP (DT a) (NN child)))))
+    (, ...)
+    (ADVP (RB just))
+    (VP (VBG beating)
+      (NP (PRP$ her))
+      (PRT (RP up)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beating-11)
+nsubj(beating-11, Four-1)
+cc(men-4, or-2)
+nummod(men-4, five-3)
+conj:or(Four-1, men-4)
+nsubj(beating-11, men-4)
+punct(men-4, ...-5)
+case(child-8, on-6)
+det(child-8, a-7)
+nmod:on(men-4, child-8)
+punct(beating-11, ...-9)
+advmod(beating-11, just-10)
+obj(beating-11, her-12)
+compound:prt(beating-11, up-13)
+punct(beating-11, .-14)
+
+Extracted the following NER entity mentions:
+Four	NUMBER	NUMBER:-1.0
+five	NUMBER	NUMBER:-1.0
+her	PERSON	-
+
+Sentence #4 (3 tokens):
+Civilisation huh.
+
+Tokens:
+[Text=Civilisation CharacterOffsetBegin=170 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=civilisation NamedEntityTag=O]
+[Text=huh CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=UH Lemma=huh NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Civilisation))
+    (INTJ (UH huh))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Civilisation-1)
+discourse(Civilisation-1, huh-2)
+punct(Civilisation-1, .-3)
+
+Extracted the following NER entity mentions:

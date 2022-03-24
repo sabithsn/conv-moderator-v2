@@ -1,0 +1,50 @@
+Document: ID=CE5B7DB4.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Florida Just Passed The "Don't Say Gay" Bill
+
+Tokens:
+[Text=Florida CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Just CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=Passed CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=pass NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Say CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=Gay CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Gay NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Bill CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Florida))
+    (ADVP (RB Just))
+    (VP (VBD Passed)
+      (NP
+        (NP (DT The) (`` "))
+        (S
+          (VP (VB Do) (RB n't)
+            (VP (VB Say)
+              (NP (NNP Gay))
+              (S (`` ")
+                (NP (NNP Bill))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Passed-3)
+nsubj(Passed-3, Florida-1)
+advmod(Passed-3, Just-2)
+obj(Passed-3, The-4)
+punct(The-4, "-5)
+aux(Say-8, Do-6)
+advmod(Say-8, n't-7)
+dep(The-4, Say-8)
+obj(Say-8, Gay-9)
+punct(Bill-11, "-10)
+xcomp(Say-8, Bill-11)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.7495372323731269
+Bill	PERSON	PERSON:0.7729322307083154

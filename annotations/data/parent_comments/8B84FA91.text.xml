@@ -1,0 +1,75 @@
+Document: ID=8B84FA91.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Pat Robertson Insists Putin ‘Compelled by God’ to Invade Ukraine and Kick Off ‘End Times’
+
+Tokens:
+[Text=Pat CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Pat NamedEntityTag=PERSON]
+[Text=Robertson CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Robertson NamedEntityTag=PERSON]
+[Text=Insists CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=insist NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=‘ CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Compelled CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=compel NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=God CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=God NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Invade CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=invade NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Kick CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Kick NamedEntityTag=O]
+[Text=Off CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=End CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=End NamedEntityTag=O]
+[Text=Times CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Times NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pat) (NNP Robertson))
+    (VP (VBZ Insists)
+      (NP
+        (NP (NNP Putin))
+        (`` ‘)
+        (VP (VBN Compelled)
+          (PP (IN by)
+            (NP (NNP God) (POS ’)))
+          (S
+            (VP (TO to)
+              (VP (VB Invade)
+                (NP (NNP Ukraine)
+                  (CC and)
+                  (NNP Kick))
+                (PP (IN Off) (`` ‘)
+                  (NP
+                    (NP (NNP End))
+                    (NP (NNP Times) (POS ’))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Insists-3)
+compound(Robertson-2, Pat-1)
+nsubj(Insists-3, Robertson-2)
+obj(Insists-3, Putin-4)
+punct(Putin-4, ‘-5)
+acl(Putin-4, Compelled-6)
+case(God-8, by-7)
+obl:’(Compelled-6, God-8)
+case(God-8, ’-9)
+mark(Invade-11, to-10)
+xcomp(Compelled-6, Invade-11)
+obj(Invade-11, Ukraine-12)
+cc(Kick-14, and-13)
+obj(Invade-11, Kick-14)
+conj:and(Ukraine-12, Kick-14)
+case(End-17, Off-15)
+punct(End-17, ‘-16)
+obl:off(Invade-11, End-17)
+nmod:poss(End-17, Times-18)
+case(Times-18, ’-19)
+
+Extracted the following NER entity mentions:
+Pat Robertson	PERSON	PERSON:0.9942986715959159
+Putin	PERSON	PERSON:0.9627451870331737
+Ukraine	COUNTRY	LOCATION:0.9695918660008419

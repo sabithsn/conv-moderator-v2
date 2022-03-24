@@ -1,0 +1,55 @@
+Document: ID=6D78233F.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Teaching any child under 10 years old about sex is sexual grooming.
+
+Tokens:
+[Text=Teaching CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=teaching NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=CD Lemma=10 NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10 years old</TIMEX3>]
+[Text=years CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10 years old</TIMEX3>]
+[Text=old CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10 years old</TIMEX3>]
+[Text=about CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sexual CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=grooming CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=grooming NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Teaching))
+      (NP
+        (NP (DT any) (NN child))
+        (PP (IN under)
+          (NP
+            (NP (CD 10) (NNS years))
+            (ADJP (JJ old)
+              (PP (IN about)
+                (NP (NN sex))))))))
+    (VP (VBZ is)
+      (NP (JJ sexual) (NN grooming)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, grooming-12)
+nsubj(grooming-12, Teaching-1)
+det(child-3, any-2)
+dep(Teaching-1, child-3)
+case(years-6, under-4)
+nummod(years-6, 10-5)
+nmod:under(child-3, years-6)
+amod(years-6, old-7)
+case(sex-9, about-8)
+obl:about(old-7, sex-9)
+cop(grooming-12, is-10)
+amod(grooming-12, sexual-11)
+punct(grooming-12, .-13)
+
+Extracted the following NER entity mentions:
+10 years old	DURATION	DURATION:-1.0

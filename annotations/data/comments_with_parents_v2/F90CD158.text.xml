@@ -1,0 +1,110 @@
+Document: ID=F90CD158.text (2 sentences, 27 tokens)
+
+Sentence #1 (16 tokens):
+It's time for the sheep to start putting 🇾🇪 flags on their social media.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sheep CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=sheep NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=start CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=start NamedEntityTag=O]
+[Text=putting CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=put NamedEntityTag=O]
+[Text=🇾🇪 CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NFP Lemma=🇾🇪 NamedEntityTag=O]
+[Text=flags CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=flag NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=social CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=social NamedEntityTag=O]
+[Text=media CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (NP
+          (NP (NN time))
+          (PP (IN for)
+            (NP (DT the) (NN sheep)
+              (S
+                (VP (TO to)
+                  (VP (VB start)
+                    (S
+                      (VP (VBG putting)))))))))))
+    (NFP 🇾🇪)
+    (FRAG
+      (NP (NNS flags))
+      (PP (IN on)
+        (NP (PRP$ their) (JJ social) (NNS media))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, time-3)
+nsubj(time-3, It-1)
+cop(time-3, 's-2)
+case(sheep-6, for-4)
+det(sheep-6, the-5)
+nmod:for(time-3, sheep-6)
+mark(start-8, to-7)
+acl:to(sheep-6, start-8)
+xcomp(start-8, putting-9)
+punct(time-3, 🇾🇪-10)
+parataxis(time-3, flags-11)
+case(media-15, on-12)
+nmod:poss(media-15, their-13)
+amod(media-15, social-14)
+obl:on(flags-11, media-15)
+punct(time-3, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Ukraine ain't the only country going through some shit.
+
+Tokens:
+[Text=Ukraine CharacterOffsetBegin=75 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=ai CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ukraine))
+    (VP (VBZ ai) (RB n't)
+      (NP
+        (NP (DT the) (JJ only) (NN country))
+        (VP (VBG going)
+          (PP (IN through)
+            (NP (DT some) (NN shit))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, country-6)
+nsubj(country-6, Ukraine-1)
+cop(country-6, ai-2)
+advmod(country-6, n't-3)
+det(country-6, the-4)
+amod(country-6, only-5)
+acl(country-6, going-7)
+case(shit-10, through-8)
+det(shit-10, some-9)
+obl:through(going-7, shit-10)
+punct(country-6, .-11)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9955843713664142

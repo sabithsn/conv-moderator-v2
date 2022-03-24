@@ -1,0 +1,42 @@
+Document: ID=FDCF25EB.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Did Putin Accidentally Reboot Biden’s Presidency?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=Accidentally CharacterOffsetBegin=10 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=accidentally NamedEntityTag=O]
+[Text=Reboot CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Reboot NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Presidency CharacterOffsetBegin=38 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Presidency NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (VP (VBD Did)
+        (NP (NNP Putin))))
+    (FRAG
+      (ADVP (RB Accidentally))
+      (NP
+        (NP (NNP Reboot) (NNP Biden) (POS ’s))
+        (NNP Presidency)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Presidency-7)
+dep(Presidency-7, Did-1)
+obj(Did-1, Putin-2)
+dep(Presidency-7, Accidentally-3)
+compound(Biden-5, Reboot-4)
+nmod:poss(Presidency-7, Biden-5)
+case(Biden-5, ’s-6)
+punct(Presidency-7, ?-8)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9676702567352239
+Biden	PERSON	PERSON:0.9982903188752724

@@ -1,0 +1,78 @@
+Document: ID=3636EC02.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Shh, the Official Government is sleeping, what is one thing you do in the next 8 hours?
+
+Tokens:
+[Text=Shh CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=shh NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Official CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Official NamedEntityTag=O]
+[Text=Government CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Government NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sleeping CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=sleep NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=thing CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=the NamedEntityTag=DURATION NormalizedNamedEntityTag=PT8H Timex=<TIMEX3 beginPoint="t0" endPoint="t1" tid="t2" type="DURATION" value="PT8H">the next 8 hours</TIMEX3>]
+[Text=next CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=next NamedEntityTag=DURATION NormalizedNamedEntityTag=PT8H Timex=<TIMEX3 beginPoint="t0" endPoint="t1" tid="t2" type="DURATION" value="PT8H">the next 8 hours</TIMEX3>]
+[Text=8 CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=CD Lemma=8 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT8H Timex=<TIMEX3 beginPoint="t0" endPoint="t1" tid="t2" type="DURATION" value="PT8H">the next 8 hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT8H Timex=<TIMEX3 beginPoint="t0" endPoint="t1" tid="t2" type="DURATION" value="PT8H">the next 8 hours</TIMEX3>]
+[Text=? CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Shh))
+    (PRN (, ,)
+      (S
+        (NP (DT the) (NNP Official) (NNP Government))
+        (VP (VBZ is)
+          (VP (VBG sleeping))))
+      (, ,))
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (VP (VBZ is)
+          (NP
+            (NP (CD one) (NN thing))
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP do)
+                  (PP (IN in)
+                    (NP (DT the) (JJ next) (CD 8) (NNS hours))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Shh-1)
+nsubj(thing-12, Shh-1)
+punct(sleeping-7, ,-2)
+det(Government-5, the-3)
+compound(Government-5, Official-4)
+nsubj(sleeping-7, Government-5)
+aux(sleeping-7, is-6)
+dep(Shh-1, sleeping-7)
+punct(sleeping-7, ,-8)
+ref(Shh-1, what-9)
+cop(thing-12, is-10)
+nummod(thing-12, one-11)
+acl:relcl(Shh-1, thing-12)
+nsubj(do-14, you-13)
+acl:relcl(thing-12, do-14)
+case(hours-19, in-15)
+det(hours-19, the-16)
+amod(hours-19, next-17)
+nummod(hours-19, 8-18)
+obl:in(do-14, hours-19)
+punct(Shh-1, ?-20)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+the next 8 hours	DURATION	DURATION:-1.0

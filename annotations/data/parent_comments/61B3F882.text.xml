@@ -1,0 +1,111 @@
+Document: ID=61B3F882.text (2 sentences, 27 tokens)
+
+Sentence #1 (13 tokens):
+> If you look at OPs history  Straight to attacking the OP.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=look NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=OPs CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=op NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=Straight CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=straight NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=attacking CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=VBG Lemma=attack NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=OP CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NML
+          (SBAR (IN If)
+            (S
+              (NP (PRP you))
+              (VP (VBP look)
+                (PP (IN at)
+                  (NP (NNS OPs) (NN history)))
+                (ADVP (RB Straight)
+                  (PP (IN to)
+                    (S
+                      (VP (VBG attacking)
+                        (NP (DT the))))))))))
+        (NN OP)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, OP-12)
+dep(OP-12, >-1)
+mark(look-4, If-2)
+nsubj(look-4, you-3)
+compound(OP-12, look-4)
+case(history-7, at-5)
+compound(history-7, OPs-6)
+obl:at(look-4, history-7)
+advmod(look-4, Straight-8)
+mark(attacking-10, to-9)
+advcl:to(Straight-8, attacking-10)
+obj(attacking-10, the-11)
+punct(OP-12, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+Totally on-brand for a Joe Rogan fan, isn’t it?
+
+Tokens:
+[Text=Totally CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=RB Lemma=totally NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=brand CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=brand NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Joe CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Rogan CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Rogan NamedEntityTag=PERSON]
+[Text=fan CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=fan NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (ADJP (RB Totally)
+        (PP (IN on) (HYPH -)
+          (ADJP (NN brand)
+            (PP (IN for)
+              (NP (DT a) (NNP Joe) (NNP Rogan))))))
+      (NN fan))
+    (, ,)
+    (VP (VBZ is) (RB n’t)
+      (NP (PRP it)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, it-13)
+amod(fan-9, Totally-1)
+case(brand-4, on-2)
+punct(brand-4, --3)
+advcl:on(Totally-1, brand-4)
+case(Rogan-8, for-5)
+det(Rogan-8, a-6)
+compound(Rogan-8, Joe-7)
+obl:for(brand-4, Rogan-8)
+nsubj(it-13, fan-9)
+punct(it-13, ,-10)
+cop(it-13, is-11)
+advmod(it-13, n’t-12)
+punct(it-13, ?-14)
+
+Extracted the following NER entity mentions:
+Joe Rogan	PERSON	PERSON:0.992633316935683

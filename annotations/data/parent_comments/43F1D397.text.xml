@@ -1,0 +1,52 @@
+Document: ID=43F1D397.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+CBBC (Childrens BBC) , for 6 to early teens.
+
+Tokens:
+[Text=CBBC CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=CBBC NamedEntityTag=ORGANIZATION]
+[Text=( CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=Childrens CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Childrens NamedEntityTag=O]
+[Text=BBC CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=BBC NamedEntityTag=ORGANIZATION]
+[Text=) CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=to CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=teens CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=teens NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP CBBC))
+    (-LRB- -LRB-)
+    (NP (NNP Childrens) (NNP BBC))
+    (-RRB- -RRB-) (, ,)
+    (PP (IN for)
+      (NP
+        (NP (CD 6))
+        (PP (IN to)
+          (NP (JJ early) (NNS teens)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CBBC-1)
+punct(CBBC-1, (-2)
+compound(BBC-4, Childrens-3)
+dep(CBBC-1, BBC-4)
+punct(CBBC-1, )-5)
+punct(CBBC-1, ,-6)
+case(6-8, for-7)
+nmod:for(CBBC-1, 6-8)
+case(teens-11, to-9)
+amod(teens-11, early-10)
+nmod:to(6-8, teens-11)
+punct(CBBC-1, .-12)
+
+Extracted the following NER entity mentions:
+CBBC	ORGANIZATION	ORGANIZATION:0.8625546123839462
+BBC	ORGANIZATION	ORGANIZATION:0.9427123587269419
+6	NUMBER	NUMBER:-1.0

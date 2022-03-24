@@ -1,0 +1,117 @@
+Document: ID=B219F7B6.text (3 sentences, 23 tokens)
+
+Sentence #1 (4 tokens):
+Fun* fact!
+
+Tokens:
+[Text=Fun CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Fun NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Fun))
+    (NFP *)
+    (NP (NN fact))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fun-1)
+punct(Fun-1, *-2)
+dep(Fun-1, fact-3)
+punct(Fun-1, !-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+LGBT acceptance is *dropping* in younger generations.
+
+Tokens:
+[Text=LGBT CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=lgbt NamedEntityTag=MISC]
+[Text=acceptance CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=acceptance NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=dropping CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=drop NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=younger CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=JJR Lemma=younger NamedEntityTag=O]
+[Text=generations CharacterOffsetBegin=52 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=generation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (JJ LGBT) (NN acceptance))
+      (VP (VBZ is)))
+    (NFP *)
+    (S
+      (VP (VBG dropping)
+        (PP
+          (X (NFP *))
+          (IN in)
+          (NP
+            (NP (JJR younger))
+            (NP (NNS generations))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+amod(acceptance-2, LGBT-1)
+nsubj(is-3, acceptance-2)
+punct(is-3, *-4)
+parataxis(is-3, dropping-5)
+dep(younger-8, *-6)
+case(younger-8, in-7)
+obl:in(dropping-5, younger-8)
+dep(younger-8, generations-9)
+punct(is-3, .-10)
+
+Extracted the following NER entity mentions:
+LGBT	MISC	MISC:0.7330782110926095
+
+Sentence #3 (9 tokens):
+https://www.usatoday.com/story/news/nation/2019/06/24/lgbtq-acceptance-millennials-decline-glaad-survey/1503758001/  *Fact may not actually be fun.
+
+Tokens:
+[Text=https://www.usatoday.com/story/news/nation/2019/06/24/lgbtq-acceptance-millennials-decline-glaad-survey/1503758001/ CharacterOffsetBegin=65 CharacterOffsetEnd=180 PartOfSpeech=ADD Lemma=https://www.usatoday.com/story/news/nation/2019/06/24/lgbtq-acceptance-millennials-decline-glaad-survey/1503758001/ NamedEntityTag=DATE NormalizedNamedEntityTag=2019-06-24 Timex=<TIMEX3 tid="t1" type="DATE" value="2019-06-24">2019/06/24</TIMEX3>]
+[Text=* CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=Fact CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=196 CharacterOffsetEnd=204 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=JJ Lemma=fun NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (ADD https://www.usatoday.com/story/news/nation/2019/06/24/lgbtq-acceptance-millennials-decline-glaad-survey/1503758001/))
+    (NFP *)
+    (S
+      (NP (NN Fact))
+      (VP (MD may) (RB not)
+        (ADVP (RB actually))
+        (VP (VB be)
+          (ADJP (JJ fun)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fun-8)
+dep(fun-8, https://www.usatoday.com/story/news/nation/2019/06/24/lgbtq-acceptance-millennials-decline-glaad-survey/1503758001/-1)
+punct(fun-8, *-2)
+nsubj(fun-8, Fact-3)
+aux(fun-8, may-4)
+advmod(fun-8, not-5)
+advmod(fun-8, actually-6)
+cop(fun-8, be-7)
+punct(fun-8, .-9)
+
+Extracted the following NER entity mentions:
+https://www.usatoday.com/story/news/nation/2019/06/24/lgbtq-acceptance-millennials-decline-glaad-survey/1503758001/	DATE	DATE:-1.0

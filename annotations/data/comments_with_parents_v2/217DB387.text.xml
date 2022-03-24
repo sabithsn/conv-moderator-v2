@@ -1,0 +1,78 @@
+Document: ID=217DB387.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+A Russian poker players perspective after Pokerstars bans operations in Russia, regarding everything that's going on.
+
+Tokens:
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=2 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=poker CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=poker NamedEntityTag=O]
+[Text=players CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=perspective CharacterOffsetBegin=24 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=perspective NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Pokerstars CharacterOffsetBegin=42 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Pokerstars NamedEntityTag=O]
+[Text=bans CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBZ Lemma=ban NamedEntityTag=O]
+[Text=operations CharacterOffsetBegin=58 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=operation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=regarding CharacterOffsetBegin=80 CharacterOffsetEnd=89 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=90 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ Russian) (NN poker) (NNS players))
+      (NP
+        (NP (NN perspective))
+        (PP (IN after)
+          (NP (NNP Pokerstars)))))
+    (VP (VBZ bans)
+      (NP
+        (NP (NNS operations))
+        (PP (IN in)
+          (NP (NNP Russia)))
+        (, ,)
+        (PP (VBG regarding)
+          (NP
+            (NP (NN everything))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ 's)
+                  (VP (VBG going)
+                    (PRT (RP on))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bans-8)
+det(players-4, A-1)
+amod(players-4, Russian-2)
+compound(players-4, poker-3)
+nsubj(bans-8, players-4)
+dep(players-4, perspective-5)
+case(Pokerstars-7, after-6)
+nmod:after(perspective-5, Pokerstars-7)
+obj(bans-8, operations-9)
+case(Russia-11, in-10)
+nmod:in(operations-9, Russia-11)
+punct(operations-9, ,-12)
+case(everything-14, regarding-13)
+nmod:regarding(operations-9, everything-14)
+nsubj(going-17, everything-14)
+ref(everything-14, that-15)
+aux(going-17, 's-16)
+acl:relcl(everything-14, going-17)
+compound:prt(going-17, on-18)
+punct(bans-8, .-19)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999986709486016
+Russia	COUNTRY	LOCATION:0.9998497010338787

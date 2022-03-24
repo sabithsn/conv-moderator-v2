@@ -1,0 +1,156 @@
+Document: ID=D4DD28DA.text (3 sentences, 36 tokens)
+
+Sentence #1 (7 tokens):
+What are you even talking about?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (ADVP (RB even))
+      (VP (VBG talking)
+        (PP (IN about))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, talking-5)
+obl:about(talking-5, What-1)
+aux(talking-5, are-2)
+nsubj(talking-5, you-3)
+advmod(talking-5, even-4)
+case(What-1, about-6)
+punct(talking-5, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+Almost all of the money we send there isn’t cash, it’s military equipment.
+
+Tokens:
+[Text=Almost CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=send NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=cash CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=cash NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=military CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=military NamedEntityTag=O]
+[Text=equipment CharacterOffsetBegin=97 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=equipment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP
+      (NP
+        (NP
+          (QP (RB Almost) (DT all)))
+        (PP (IN of)
+          (NP (DT the) (NN money))))
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP send)
+            (SBAR
+              (S
+                (NP (EX there))
+                (VP (VBZ is) (RB n’t)
+                  (NP (NN cash)))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ ’s)
+      (NP (JJ military) (NN equipment)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-14)
+advmod(all-2, Almost-1)
+det:qmod(money-5, all-2)
+fixed(all-2, of-3)
+det(money-5, the-4)
+obl:tmod(’s-14, money-5)
+nsubj(send-7, we-6)
+acl:relcl(all-2, send-7)
+expl(is-9, there-8)
+ccomp(send-7, is-9)
+advmod(is-9, n’t-10)
+nsubj(is-9, cash-11)
+punct(’s-14, ,-12)
+nsubj(’s-14, it-13)
+amod(equipment-16, military-15)
+dep(’s-14, equipment-16)
+punct(’s-14, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (12 tokens):
+I think we all know who the real idiot is here.
+
+Tokens:
+[Text=I CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=idiot CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=idiot NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (NP (PRP we))
+      (SBAR
+        (S
+          (NP (DT all))
+          (VP (VBP know)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (NP (DT the) (JJ real) (NN idiot))
+                (VP (VBZ is)
+                  (ADVP (RB here)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+obj(think-2, we-3)
+nsubj(know-5, all-4)
+dep(think-2, know-5)
+obj(is-10, who-6)
+det(idiot-9, the-7)
+amod(idiot-9, real-8)
+nsubj(is-10, idiot-9)
+ccomp(know-5, is-10)
+advmod(is-10, here-11)
+punct(think-2, .-12)
+
+Extracted the following NER entity mentions:

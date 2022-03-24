@@ -1,0 +1,48 @@
+Document: ID=1505FB75.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Eli5 why would Ukraine want to be in nato?
+
+Tokens:
+[Text=Eli5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=want CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=nato CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=nato NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (NP (NN Eli5))
+    (WHADVP (WRB why))
+    (SQ (MD would)
+      (NP (NNP Ukraine))
+      (VP (VB want)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (PP (IN in)
+                (NP (NN nato))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-5)
+dep(want-5, Eli5-1)
+advmod(want-5, why-2)
+aux(want-5, would-3)
+nsubj(want-5, Ukraine-4)
+nsubj:xsubj(nato-9, Ukraine-4)
+mark(nato-9, to-6)
+cop(nato-9, be-7)
+case(nato-9, in-8)
+xcomp(want-5, nato-9)
+punct(want-5, ?-10)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9894180714132812

@@ -1,0 +1,74 @@
+Document: ID=809CA30C.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Proposed New York redistricting map brought to you by the party that has condemned republicans for gerrymandering.
+
+Tokens:
+[Text=Proposed CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=York CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=York NamedEntityTag=STATE_OR_PROVINCE]
+[Text=redistricting CharacterOffsetBegin=18 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=redistricting NamedEntityTag=O]
+[Text=map CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=map NamedEntityTag=O]
+[Text=brought CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=bring NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=condemned CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=VBN Lemma=condemn NamedEntityTag=O]
+[Text=republicans CharacterOffsetBegin=83 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=republican NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=gerrymandering CharacterOffsetBegin=99 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=gerrymandering NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (VBN Proposed)
+        (NML (NNP New) (NNP York))
+        (NN redistricting))
+      (NP (NN map)))
+    (VP (VBD brought)
+      (PP (IN to)
+        (NP (PRP you)))
+      (PP (IN by)
+        (NP
+          (NP (DT the) (NN party))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ has)
+                (VP (VBN condemned)
+                  (NP
+                    (NP (NNS republicans))
+                    (PP (IN for)
+                      (NP (NN gerrymandering)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, brought-6)
+amod(redistricting-4, Proposed-1)
+compound(York-3, New-2)
+compound(redistricting-4, York-3)
+nsubj(brought-6, redistricting-4)
+dep(redistricting-4, map-5)
+case(you-8, to-7)
+obl:to(brought-6, you-8)
+case(party-11, by-9)
+det(party-11, the-10)
+obl:by(brought-6, party-11)
+nsubj(condemned-14, party-11)
+ref(party-11, that-12)
+aux(condemned-14, has-13)
+acl:relcl(party-11, condemned-14)
+obj(condemned-14, republicans-15)
+case(gerrymandering-17, for-16)
+nmod:for(republicans-15, gerrymandering-17)
+punct(brought-6, .-18)
+
+Extracted the following NER entity mentions:
+New York	STATE_OR_PROVINCE	LOCATION:0.6361953298442052

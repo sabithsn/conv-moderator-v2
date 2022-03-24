@@ -1,0 +1,61 @@
+Document: ID=7A812C7D.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+I've heard Vladimir is no longer poopin, his putin is constipated.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=Vladimir CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Vladimir NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=RBR Lemma=longer NamedEntityTag=O]
+[Text=poopin CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=poopin NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=putin CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=putin NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=constipated CharacterOffsetBegin=54 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=constipated NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBN heard)
+          (SBAR
+            (S
+              (NP (NNP Vladimir))
+              (VP (VBZ is)
+                (ADJP
+                  (ADVP (RB no) (RBR longer))
+                  (JJ poopin))))))))
+    (, ,)
+    (NP (PRP$ his) (NN putin))
+    (VP (VBZ is)
+      (ADJP (JJ constipated)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, constipated-13)
+nsubj(heard-3, I-1)
+aux(heard-3, 've-2)
+ccomp(constipated-13, heard-3)
+nsubj(poopin-8, Vladimir-4)
+cop(poopin-8, is-5)
+advmod(longer-7, no-6)
+advmod(poopin-8, longer-7)
+ccomp(heard-3, poopin-8)
+punct(constipated-13, ,-9)
+nmod:poss(putin-11, his-10)
+nsubj(constipated-13, putin-11)
+cop(constipated-13, is-12)
+punct(constipated-13, .-14)
+
+Extracted the following NER entity mentions:
+Vladimir	PERSON	PERSON:0.9989499046844442
+his	PERSON	-

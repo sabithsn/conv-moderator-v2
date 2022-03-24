@@ -1,0 +1,64 @@
+Document: ID=856BD802.text (2 sentences, 12 tokens)
+
+Sentence #1 (2 tokens):
+Solution.
+
+Tokens:
+[Text=Solution CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=solution NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN Solution) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Solution-1)
+punct(Solution-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+We all gather in some remote location and become Amish
+
+Tokens:
+[Text=We CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=gather CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=gather NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=remote CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=remote NamedEntityTag=O]
+[Text=location CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=location NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=become CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=become NamedEntityTag=O]
+[Text=Amish CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=amish NamedEntityTag=RELIGION]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (NP (DT all))
+    (VP
+      (VP (VBP gather)
+        (PP (IN in)
+          (NP (DT some) (JJ remote) (NN location))))
+      (CC and)
+      (VP (VB become)
+        (NP (JJ Amish))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gather-3)
+nsubj(gather-3, We-1)
+nsubj(become-9, We-1)
+nsubj(gather-3, all-2)
+case(location-7, in-4)
+det(location-7, some-5)
+amod(location-7, remote-6)
+obl:in(gather-3, location-7)
+cc(become-9, and-8)
+conj:and(gather-3, become-9)
+xcomp(become-9, Amish-10)
+
+Extracted the following NER entity mentions:
+Amish	RELIGION	MISC:0.8076368822405923

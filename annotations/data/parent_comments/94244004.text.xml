@@ -1,0 +1,69 @@
+Document: ID=94244004.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Huh, I'm surprised that I am surprised to see South Korea on the list.
+
+Tokens:
+[Text=Huh CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=huh NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=surprised CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=surprised NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=surprised CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=surprised NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=South CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=South NamedEntityTag=COUNTRY]
+[Text=Korea CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Korea NamedEntityTag=COUNTRY]
+[Text=on CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Huh))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ surprised)
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBP am)
+              (ADJP (JJ surprised)
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (NP
+                        (NP (NNP South) (NNP Korea))
+                        (PP (IN on)
+                          (NP (DT the) (NN list)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, surprised-5)
+discourse(surprised-5, Huh-1)
+punct(surprised-5, ,-2)
+nsubj(surprised-5, I-3)
+cop(surprised-5, 'm-4)
+mark(surprised-9, that-6)
+nsubj(surprised-9, I-7)
+nsubj:xsubj(see-11, I-7)
+cop(surprised-9, am-8)
+ccomp(surprised-5, surprised-9)
+mark(see-11, to-10)
+xcomp(surprised-9, see-11)
+compound(Korea-13, South-12)
+obj(see-11, Korea-13)
+case(list-16, on-14)
+det(list-16, the-15)
+nmod:on(Korea-13, list-16)
+punct(surprised-5, .-17)
+
+Extracted the following NER entity mentions:
+South Korea	COUNTRY	LOCATION:0.9987452247462039

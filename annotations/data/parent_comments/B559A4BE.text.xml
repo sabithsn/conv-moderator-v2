@@ -1,0 +1,73 @@
+Document: ID=B559A4BE.text (2 sentences, 15 tokens)
+
+Sentence #1 (4 tokens):
+Just turned 18.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=VBN Lemma=turn NamedEntityTag=O]
+[Text=18 CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=CD Lemma=18 NamedEntityTag=NUMBER NormalizedNamedEntityTag=18.0]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Just))
+    (VP (VBN turned)
+      (NP (CD 18)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, turned-2)
+advmod(turned-2, Just-1)
+obj(turned-2, 18-3)
+punct(turned-2, .-4)
+
+Extracted the following NER entity mentions:
+18	NUMBER	NUMBER:-1.0
+
+Sentence #2 (11 tokens):
+Give me the best life advice from your quadrant :)
+
+Tokens:
+[Text=Give CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=advice CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=advice NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=quadrant CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=quadrant NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (S
+        (NP
+          (NP (DT the) (JJS best) (NN life) (NN advice))
+          (PP (IN from)
+            (NP (PRP$ your) (NN quadrant))
+            (: :))
+          (-RRB- -RRB-))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Give-1)
+obj(Give-1, me-2)
+det(advice-6, the-3)
+amod(advice-6, best-4)
+compound(advice-6, life-5)
+xcomp(Give-1, advice-6)
+case(quadrant-9, from-7)
+nmod:poss(quadrant-9, your-8)
+nmod:from(advice-6, quadrant-9)
+punct(quadrant-9, :-10)
+punct(advice-6, )-11)
+
+Extracted the following NER entity mentions:

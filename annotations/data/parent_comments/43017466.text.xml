@@ -1,0 +1,79 @@
+Document: ID=43017466.text (2 sentences, 18 tokens)
+
+Sentence #1 (8 tokens):
+Hun, it's not that deep.
+
+Tokens:
+[Text=Hun CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Hun NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=deep CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=deep NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Hun))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's) (RB not)
+      (NP (DT that) (JJ deep)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deep-7)
+nsubj(deep-7, Hun-1)
+punct(deep-7, ,-2)
+nsubj(deep-7, it-3)
+cop(deep-7, 's-4)
+advmod(deep-7, not-5)
+det(deep-7, that-6)
+punct(deep-7, .-8)
+
+Extracted the following NER entity mentions:
+Hun	PERSON	PERSON:0.39995056441864785
+
+Sentence #2 (10 tokens):
+I can see a good balance for both sides.
+
+Tokens:
+[Text=I CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=balance CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=balance NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=sides CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=side NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB see)
+        (NP (DT a) (JJ good) (NN balance))
+        (PP (IN for)
+          (NP (DT both) (NNS sides)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, see-3)
+nsubj(see-3, I-1)
+aux(see-3, can-2)
+det(balance-6, a-4)
+amod(balance-6, good-5)
+obj(see-3, balance-6)
+case(sides-9, for-7)
+det(sides-9, both-8)
+obl:for(see-3, sides-9)
+punct(see-3, .-10)
+
+Extracted the following NER entity mentions:

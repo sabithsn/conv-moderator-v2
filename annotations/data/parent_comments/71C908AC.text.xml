@@ -1,0 +1,102 @@
+Document: ID=71C908AC.text (2 sentences, 25 tokens)
+
+Sentence #1 (19 tokens):
+The demographics of people in the real world, not on pcm that hold these "ideologies".
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=demographics CharacterOffsetBegin=4 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=demographic NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=pcm CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=pcm NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=hold NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=ideologies CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=ideology NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT The) (NNS demographics))
+    (PP (IN of)
+      (NP
+        (NP (NNS people))
+        (PP
+          (PP (IN in)
+            (NP (DT the) (JJ real) (NN world)))
+          (, ,) (RB not)
+          (PP (IN on)
+            (NP
+              (NP (NN pcm))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP hold)
+                    (NP (DT these) (`` ") (NNS ideologies) ('' "))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, demographics-2)
+det(demographics-2, The-1)
+case(people-4, of-3)
+nmod:of(demographics-2, people-4)
+case(world-8, in-5)
+det(world-8, the-6)
+amod(world-8, real-7)
+nmod:in(people-4, world-8)
+punct(world-8, ,-9)
+advmod(pcm-12, not-10)
+case(pcm-12, on-11)
+obl:on(world-8, pcm-12)
+nsubj(hold-14, pcm-12)
+ref(pcm-12, that-13)
+acl:relcl(pcm-12, hold-14)
+det(ideologies-17, these-15)
+punct(ideologies-17, "-16)
+obj(hold-14, ideologies-17)
+punct(ideologies-17, "-18)
+punct(demographics-2, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Everyone here is a facist.
+
+Tokens:
+[Text=Everyone CharacterOffsetBegin=87 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=facist CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=facist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (ADVP (RB here))
+    (VP (VBZ is)
+      (NP (DT a) (NN facist)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, facist-5)
+nsubj(facist-5, Everyone-1)
+advmod(facist-5, here-2)
+cop(facist-5, is-3)
+det(facist-5, a-4)
+punct(facist-5, .-6)
+
+Extracted the following NER entity mentions:

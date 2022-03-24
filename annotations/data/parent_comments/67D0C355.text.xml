@@ -1,0 +1,73 @@
+Document: ID=67D0C355.text (2 sentences, 16 tokens)
+
+Sentence #1 (3 tokens):
+climate change!
+
+Tokens:
+[Text=climate CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=climate NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN climate) (NN change) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, change-2)
+compound(change-2, climate-1)
+punct(change-2, !-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+was a russian-funded lie meant to weaken western countries gas independence
+
+Tokens:
+[Text=was CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=russian CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=russian NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=funded CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=funded NamedEntityTag=O]
+[Text=lie CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=lie NamedEntityTag=O]
+[Text=meant CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=VBN Lemma=mean NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=weaken CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=weaken NamedEntityTag=O]
+[Text=western CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=western NamedEntityTag=O]
+[Text=countries CharacterOffsetBegin=65 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=country NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=independence CharacterOffsetBegin=79 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=independence NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (VP (VBD was)
+        (NP
+          (NP (DT a)
+            (ADJP (JJ russian) (HYPH -) (JJ funded))
+            (NN lie))
+          (VP (VBN meant)
+            (S
+              (VP (TO to)
+                (VP (VB weaken)
+                  (NP (JJ western) (NNS countries)))))))))
+    (NP (NN gas) (NN independence))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, independence-13)
+cop(lie-6, was-1)
+det(lie-6, a-2)
+amod(funded-5, russian-3)
+punct(funded-5, --4)
+amod(lie-6, funded-5)
+dep(independence-13, lie-6)
+acl(lie-6, meant-7)
+mark(weaken-9, to-8)
+xcomp(meant-7, weaken-9)
+amod(countries-11, western-10)
+obj(weaken-9, countries-11)
+compound(independence-13, gas-12)
+
+Extracted the following NER entity mentions:

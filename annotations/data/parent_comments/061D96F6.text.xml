@@ -1,0 +1,106 @@
+Document: ID=061D96F6.text (2 sentences, 25 tokens)
+
+Sentence #1 (8 tokens):
+Lmao those are some seriously bitter tears.
+
+Tokens:
+[Text=Lmao CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Lmao NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=seriously CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=bitter CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=bitter NamedEntityTag=O]
+[Text=tears CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=tear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Lmao))
+      (NP (DT those)))
+    (VP (VBP are)
+      (NP (DT some)
+        (ADJP (RB seriously) (JJ bitter))
+        (NNS tears)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tears-7)
+nsubj(tears-7, Lmao-1)
+dep(Lmao-1, those-2)
+cop(tears-7, are-3)
+det(tears-7, some-4)
+advmod(bitter-6, seriously-5)
+amod(tears-7, bitter-6)
+punct(tears-7, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+Nobody meant to upset you this badly by not thinking your joke was funny at all.
+
+Tokens:
+[Text=Nobody CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=nobody NamedEntityTag=O]
+[Text=meant CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=mean NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=upset CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=upset NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=badly CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=badly NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=thinking CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=VBG Lemma=think NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=joke CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=joke NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=funny CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Nobody))
+    (VP (VBD meant)
+      (S
+        (VP (TO to)
+          (VP (VB upset)
+            (NP (PRP you))
+            (NP (DT this))
+            (ADVP (RB badly)
+              (PP (IN by)
+                (S (RB not)
+                  (VP (VBG thinking)
+                    (SBAR
+                      (S
+                        (NP (PRP$ your) (NN joke))
+                        (VP (VBD was)
+                          (ADJP (JJ funny))
+                          (ADVP (IN at) (RB all)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, meant-2)
+nsubj(meant-2, Nobody-1)
+nsubj:xsubj(upset-4, Nobody-1)
+mark(upset-4, to-3)
+xcomp(meant-2, upset-4)
+iobj(upset-4, you-5)
+obj(upset-4, this-6)
+advmod(upset-4, badly-7)
+mark(thinking-10, by-8)
+advmod(thinking-10, not-9)
+advcl:by(badly-7, thinking-10)
+nmod:poss(joke-12, your-11)
+nsubj(funny-14, joke-12)
+cop(funny-14, was-13)
+ccomp(thinking-10, funny-14)
+case(all-16, at-15)
+obl:at(funny-14, all-16)
+punct(meant-2, .-17)
+
+Extracted the following NER entity mentions:

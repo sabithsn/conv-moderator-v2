@@ -1,0 +1,48 @@
+Document: ID=8691E424.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Tesla vehicles are poorly engineered vehicles wrapped in fancy trim.
+
+Tokens:
+[Text=Tesla CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Tesla NamedEntityTag=PERSON]
+[Text=vehicles CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=vehicle NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=poorly CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=poorly NamedEntityTag=O]
+[Text=engineered CharacterOffsetBegin=26 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=engineer NamedEntityTag=O]
+[Text=vehicles CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=vehicle NamedEntityTag=O]
+[Text=wrapped CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=wrap NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=fancy CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=fancy NamedEntityTag=O]
+[Text=trim CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=trim NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tesla) (NNS vehicles))
+    (VP (VBP are)
+      (NP
+        (NP
+          (ADJP (RB poorly) (VBN engineered))
+          (NNS vehicles))
+        (VP (VBN wrapped)
+          (PP (IN in)
+            (NP (JJ fancy) (NN trim))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, vehicles-6)
+compound(vehicles-2, Tesla-1)
+nsubj(vehicles-6, vehicles-2)
+cop(vehicles-6, are-3)
+advmod(engineered-5, poorly-4)
+amod(vehicles-6, engineered-5)
+acl(vehicles-6, wrapped-7)
+case(trim-10, in-8)
+amod(trim-10, fancy-9)
+obl:in(wrapped-7, trim-10)
+punct(vehicles-6, .-11)
+
+Extracted the following NER entity mentions:
+Tesla	PERSON	PERSON:0.6331023571559097

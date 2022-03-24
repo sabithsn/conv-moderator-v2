@@ -1,0 +1,44 @@
+Document: ID=5D602D72.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+I threw up in front of roughly 40 people
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=threw CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=throw NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=front CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=front NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=roughly CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=roughly NamedEntityTag=O]
+[Text=40 CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=CD Lemma=40 NamedEntityTag=NUMBER NormalizedNamedEntityTag=40.0]
+[Text=people CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD threw)
+      (PRT (RP up))
+      (PP (IN in)
+        (NP
+          (NP (NN front))
+          (PP (IN of)
+            (NP
+              (QP (RB roughly) (CD 40))
+              (NNS people))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, threw-2)
+nsubj(threw-2, I-1)
+compound:prt(threw-2, up-3)
+case(people-9, in-4)
+fixed(in-4, front-5)
+fixed(in-4, of-6)
+advmod(40-8, roughly-7)
+nummod(people-9, 40-8)
+obl:in_front_of(threw-2, people-9)
+
+Extracted the following NER entity mentions:
+40	NUMBER	NUMBER:-1.0

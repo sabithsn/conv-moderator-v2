@@ -1,0 +1,43 @@
+Document: ID=B773A819.text (2 sentences, 5 tokens)
+
+Sentence #1 (3 tokens):
+Better Ingredients.
+
+Tokens:
+[Text=Better CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=RBR Lemma=better NamedEntityTag=ORGANIZATION]
+[Text=Ingredients CharacterOffsetBegin=7 CharacterOffsetEnd=18 PartOfSpeech=NNPS Lemma=Ingredients NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RBR Better))
+    (NP (NNPS Ingredients))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ingredients-2)
+dep(Ingredients-2, Better-1)
+punct(Ingredients-2, .-3)
+
+Extracted the following NER entity mentions:
+Better Ingredients	ORGANIZATION	ORGANIZATION:0.613750271446661
+
+Sentence #2 (2 tokens):
+Better Pizza
+
+Tokens:
+[Text=Better CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Better NamedEntityTag=O]
+[Text=Pizza CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Pizza NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Better) (NNP Pizza)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pizza-2)
+compound(Pizza-2, Better-1)
+
+Extracted the following NER entity mentions:

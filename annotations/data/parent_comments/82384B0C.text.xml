@@ -1,0 +1,133 @@
+Document: ID=82384B0C.text (2 sentences, 32 tokens)
+
+Sentence #1 (22 tokens):
+Ukraine isn’t a democracy, and Ukraine has been waging war on it’s ethnic Russian citizens for 8 years.
+
+Tokens:
+[Text=Ukraine CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=democracy CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=democracy NamedEntityTag=IDEOLOGY]
+[Text=, CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=has CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=waging CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=wage NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=on CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=ethnic CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=ethnic NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=citizens CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=citizen NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=8 CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=CD Lemma=8 NamedEntityTag=DURATION NormalizedNamedEntityTag=P8Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P8Y">8 years</TIMEX3>]
+[Text=years CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P8Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P8Y">8 years</TIMEX3>]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Ukraine))
+      (VP (VBZ is) (RB n’t)
+        (NP (DT a) (NN democracy))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Ukraine))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBG waging)
+            (NP (NN war))
+            (SBAR (IN on)
+              (S
+                (NP (PRP it))
+                (VP (VBZ ’s)
+                  (NP
+                    (NP (JJ ethnic) (JJ Russian) (NNS citizens))
+                    (PP (IN for)
+                      (NP (CD 8) (NNS years)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, democracy-5)
+nsubj(democracy-5, Ukraine-1)
+cop(democracy-5, is-2)
+advmod(democracy-5, n’t-3)
+det(democracy-5, a-4)
+punct(democracy-5, ,-6)
+cc(waging-11, and-7)
+nsubj(waging-11, Ukraine-8)
+aux(waging-11, has-9)
+aux(waging-11, been-10)
+conj:and(democracy-5, waging-11)
+obj(waging-11, war-12)
+mark(citizens-18, on-13)
+nsubj(citizens-18, it-14)
+cop(citizens-18, ’s-15)
+amod(citizens-18, ethnic-16)
+amod(citizens-18, Russian-17)
+advcl:on(waging-11, citizens-18)
+case(years-21, for-19)
+nummod(years-21, 8-20)
+nmod:for(citizens-18, years-21)
+punct(democracy-5, .-22)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9982981364663308
+democracy	IDEOLOGY	-
+Ukraine	COUNTRY	LOCATION:0.9996421540603925
+war	CAUSE_OF_DEATH	-
+Russian	NATIONALITY	MISC:0.9999991754473274
+8 years	DURATION	DURATION:-1.0
+
+Sentence #2 (10 tokens):
+Zelinskyy jails his opposition and shuts down opposition media.
+
+Tokens:
+[Text=Zelinskyy CharacterOffsetBegin=106 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=zelinskyy NamedEntityTag=PERSON]
+[Text=jails CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NNS Lemma=jail NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=opposition CharacterOffsetBegin=126 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=opposition NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=shuts CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=VBZ Lemma=shut NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=opposition CharacterOffsetBegin=152 CharacterOffsetEnd=162 PartOfSpeech=NN Lemma=opposition NamedEntityTag=O]
+[Text=media CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Zelinskyy) (NNS jails))
+    (NP (PRP$ his) (NN opposition))
+    (CC and)
+    (NP
+      (NML
+        (S
+          (VP (VBZ shuts)
+            (PRT (RP down))
+            (NP (NN opposition)))))
+      (NNS media))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, jails-2)
+amod(jails-2, Zelinskyy-1)
+nmod:poss(opposition-4, his-3)
+dep(jails-2, opposition-4)
+cc(media-9, and-5)
+compound(media-9, shuts-6)
+compound:prt(shuts-6, down-7)
+obj(shuts-6, opposition-8)
+conj:and(jails-2, media-9)
+punct(jails-2, .-10)
+
+Extracted the following NER entity mentions:
+Zelinskyy	PERSON	PERSON:0.5334473262662492
+his	PERSON	-

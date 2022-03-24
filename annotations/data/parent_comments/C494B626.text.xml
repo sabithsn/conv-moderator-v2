@@ -1,0 +1,40 @@
+Document: ID=C494B626.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+AuthRight’s love for ex-Muslims has its limits
+
+Tokens:
+[Text=AuthRight CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=AuthRight NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=love NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ex-Muslims CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=NNS Lemma=ex-muslim NamedEntityTag=MISC]
+[Text=has CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=limits CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=limit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP AuthRight) (POS ’s))
+        (NN love))
+      (PP (IN for)
+        (NP (NNS ex-Muslims))))
+    (VP (VBZ has)
+      (NP (PRP$ its) (NNS limits)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-6)
+nmod:poss(love-3, AuthRight-1)
+case(AuthRight-1, ’s-2)
+nsubj(has-6, love-3)
+case(ex-Muslims-5, for-4)
+nmod:for(love-3, ex-Muslims-5)
+nmod:poss(limits-8, its-7)
+obj(has-6, limits-8)
+
+Extracted the following NER entity mentions:
+ex-Muslims	MISC	MISC:0.5088048539222142

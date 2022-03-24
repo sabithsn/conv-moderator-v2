@@ -1,0 +1,85 @@
+Document: ID=F92BA394.text (2 sentences, 18 tokens)
+
+Sentence #1 (17 tokens):
+Translation: The next pandemic will be from Ukraine and Russia will be blamed for it.
+
+Tokens:
+[Text=Translation CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=translation NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=pandemic CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=pandemic NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=will CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=blamed CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=VBN Lemma=blame NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Translation))
+    (: :)
+    (S
+      (S
+        (NP (DT The) (JJ next) (NN pandemic))
+        (VP (MD will)
+          (VP (VB be)
+            (PP (IN from)
+              (NP (NNP Ukraine))))))
+      (CC and)
+      (S
+        (NP (NNP Russia))
+        (VP (MD will)
+          (VP (VB be)
+            (VP (VBN blamed)
+              (PP (IN for)
+                (NP (PRP it))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Translation-1)
+punct(Translation-1, :-2)
+det(pandemic-5, The-3)
+amod(pandemic-5, next-4)
+nsubj(Ukraine-9, pandemic-5)
+aux(Ukraine-9, will-6)
+cop(Ukraine-9, be-7)
+case(Ukraine-9, from-8)
+appos(Translation-1, Ukraine-9)
+cc(blamed-14, and-10)
+nsubj:pass(blamed-14, Russia-11)
+aux(blamed-14, will-12)
+aux:pass(blamed-14, be-13)
+appos(Translation-1, blamed-14)
+conj:and(Ukraine-9, blamed-14)
+case(it-16, for-15)
+obl:for(blamed-14, it-16)
+punct(Translation-1, .-17)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9996001816309934
+Russia	COUNTRY	LOCATION:0.9997995387388275
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:

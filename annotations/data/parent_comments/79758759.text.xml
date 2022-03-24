@@ -1,0 +1,83 @@
+Document: ID=79758759.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+I think I was about 15 when I realized I was too old to be calling people retards.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~15.0]
+[Text=when CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=realized CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=realize NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=calling CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=retards CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=VBZ Lemma=retard NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (NP
+              (NP
+                (QP (RB about) (CD 15)))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP I))
+                  (VP (VBD realized)
+                    (SBAR
+                      (S
+                        (NP (PRP I))
+                        (VP (VBD was)
+                          (ADJP (RB too) (JJ old)
+                            (S
+                              (VP (TO to)
+                                (VP (VB be)
+                                  (VP (VBG calling)
+                                    (SBAR
+                                      (S
+                                        (NP (NNS people))
+                                        (VP (VBZ retards))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(15-6, I-3)
+cop(15-6, was-4)
+advmod(15-6, about-5)
+ccomp(think-2, 15-6)
+advmod(realized-9, when-7)
+nsubj(realized-9, I-8)
+acl:relcl(15-6, realized-9)
+nsubj(old-13, I-10)
+nsubj:xsubj(calling-16, I-10)
+cop(old-13, was-11)
+advmod(old-13, too-12)
+ccomp(realized-9, old-13)
+mark(calling-16, to-14)
+aux(calling-16, be-15)
+xcomp(old-13, calling-16)
+nsubj(retards-18, people-17)
+ccomp(calling-16, retards-18)
+punct(think-2, .-19)
+
+Extracted the following NER entity mentions:
+15	NUMBER	NUMBER:-1.0

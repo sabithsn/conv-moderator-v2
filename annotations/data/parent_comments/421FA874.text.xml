@@ -1,0 +1,83 @@
+Document: ID=421FA874.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+Alright my quick u/ investigation summary is this person is either a prime time emily and/or one those ethnic romanis.
+
+Tokens:
+[Text=Alright CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=UH Lemma=alright NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=quick CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=quick NamedEntityTag=O]
+[Text=u CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=u NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=investigation CharacterOffsetBegin=20 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=investigation NamedEntityTag=O]
+[Text=summary CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=summary NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=either CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prime CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=prime NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=emily CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=emily NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=those CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=ethnic CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=ethnic NamedEntityTag=O]
+[Text=romanis CharacterOffsetBegin=110 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=romani NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Alright))
+    (NP (PRP$ my) (JJ quick) (NN u) (HYPH /) (NN investigation) (NN summary))
+    (VP (VBZ is)
+      (NP
+        (NP (DT this) (NN person))
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (CC either)
+              (NP
+                (NP (DT a) (JJ prime) (NN time) (NN emily))
+                (CONJP (CC and)
+                  (HYPH /)
+                  (CC or))
+                (NP (CD one)
+                  (NP (DT those))
+                  (JJ ethnic) (NNS romanis))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, person-10)
+discourse(person-10, Alright-1)
+nmod:poss(summary-7, my-2)
+amod(summary-7, quick-3)
+compound(summary-7, u-4)
+punct(summary-7, /-5)
+compound(summary-7, investigation-6)
+nsubj(person-10, summary-7)
+cop(person-10, is-8)
+det(person-10, this-9)
+acl:relcl(person-10, is-11)
+dep(is-11, either-12)
+det(emily-16, a-13)
+amod(emily-16, prime-14)
+compound(emily-16, time-15)
+conj(is-11, emily-16)
+cc(romanis-23, and-17)
+punct(and-17, /-18)
+cc(and-17, or-19)
+nummod(romanis-23, one-20)
+compound(romanis-23, those-21)
+amod(romanis-23, ethnic-22)
+conj(is-11, romanis-23)
+conj:and(emily-16, romanis-23)
+punct(person-10, .-24)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

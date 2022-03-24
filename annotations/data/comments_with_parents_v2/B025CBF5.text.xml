@@ -1,0 +1,117 @@
+Document: ID=B025CBF5.text (2 sentences, 29 tokens)
+
+Sentence #1 (17 tokens):
+That does say that use of ivermectin does reduce death compared to no treatment at all.
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=use NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=ivermectin CharacterOffsetBegin=26 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=ivermectin NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=reduce CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=reduce NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=compared CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=compare NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=treatment CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=treatment NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ does)
+      (VP (VB say)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NN use))
+              (PP (IN of)
+                (NP (NN ivermectin))))
+            (VP (VBZ does)
+              (VP (VB reduce)
+                (NP (NN death))
+                (PP (VBN compared)
+                  (PP (IN to)
+                    (NP
+                      (NP (DT no) (NN treatment))
+                      (ADVP (IN at) (RB all)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-3)
+nsubj(say-3, That-1)
+aux(say-3, does-2)
+mark(reduce-9, that-4)
+nsubj(reduce-9, use-5)
+case(ivermectin-7, of-6)
+nmod:of(use-5, ivermectin-7)
+aux(reduce-9, does-8)
+ccomp(say-3, reduce-9)
+obj(reduce-9, death-10)
+case(treatment-14, compared-11)
+fixed(compared-11, to-12)
+det(treatment-14, no-13)
+advcl:compared_to(reduce-9, treatment-14)
+case(all-16, at-15)
+nmod:at(treatment-14, all-16)
+punct(say-3, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+Doesn’t say anything about how it compares to other treatments.
+
+Tokens:
+[Text=Does CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=100 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=compares CharacterOffsetBegin=122 CharacterOffsetEnd=130 PartOfSpeech=VBZ Lemma=compare NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=134 CharacterOffsetEnd=139 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=treatments CharacterOffsetBegin=140 CharacterOffsetEnd=150 PartOfSpeech=NNS Lemma=treatment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Does) (RB n’t)
+      (VP (VB say)
+        (NP (NN anything))
+        (PP (IN about)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP it))
+              (VP (VBZ compares)
+                (PP (IN to)
+                  (NP (JJ other) (NNS treatments)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-3)
+aux(say-3, Does-1)
+advmod(say-3, n’t-2)
+obj(say-3, anything-4)
+mark(compares-8, about-5)
+advmod(compares-8, how-6)
+nsubj(compares-8, it-7)
+advcl:about(say-3, compares-8)
+case(treatments-11, to-9)
+amod(treatments-11, other-10)
+obl:to(compares-8, treatments-11)
+punct(say-3, .-12)
+
+Extracted the following NER entity mentions:

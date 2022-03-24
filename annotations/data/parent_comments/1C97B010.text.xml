@@ -1,0 +1,52 @@
+Document: ID=1C97B010.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Ten bucks says anyone he picks will be obese.
+
+Tokens:
+[Text=Ten CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=ten NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=bucks CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNS Lemma=buck NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=picks CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=pick NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=obese CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=obese NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (CD Ten) (NNS bucks))
+      (SBAR
+        (S
+          (VP (VBZ says)
+            (NP
+              (NP (NN anyone))
+              (SBAR
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ picks)))))))))
+    (VP (MD will)
+      (VP (VB be)
+        (ADJP (JJ obese))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, obese-9)
+nummod(bucks-2, Ten-1)
+nsubj(obese-9, bucks-2)
+acl:relcl(bucks-2, says-3)
+obj(says-3, anyone-4)
+nsubj(picks-6, he-5)
+acl:relcl(anyone-4, picks-6)
+aux(obese-9, will-7)
+cop(obese-9, be-8)
+punct(obese-9, .-10)
+
+Extracted the following NER entity mentions:
+Ten	NUMBER	NUMBER:-1.0
+he	PERSON	-

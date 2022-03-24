@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>FF0E3DDB.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Trans</word>
+            <lemma>Trans</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="2">
+            <word>affirming</word>
+            <lemma>affirm</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>healthcare</word>
+            <lemma>healthcare</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>child</word>
+            <lemma>child</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>mutilation</word>
+            <lemma>mutilation</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>child</word>
+            <lemma>child</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CRIMINAL_CHARGE</NER>
+          </token>
+          <token id="9">
+            <word>abuse</word>
+            <lemma>abuse</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CRIMINAL_CHARGE</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Trans)) (VP (VBG affirming) (NP (NN healthcare)))) (VP (VBZ is) (NP (NML (NN child) (NN mutilation) (CC and) (NN child)) (NN abuse))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">abuse</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">abuse</governor>
+            <dependent idx="1">Trans</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Trans</governor>
+            <dependent idx="2">affirming</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">affirming</governor>
+            <dependent idx="3">healthcare</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">abuse</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="5">child</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="9">abuse</governor>
+            <dependent idx="6">mutilation</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">child</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">abuse</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">abuse</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">abuse</governor>
+            <dependent idx="1">Trans</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Trans</governor>
+            <dependent idx="2">affirming</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">affirming</governor>
+            <dependent idx="3">healthcare</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">abuse</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="5">child</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="9">abuse</governor>
+            <dependent idx="6">mutilation</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">child</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">abuse</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">abuse</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">abuse</governor>
+            <dependent idx="1">Trans</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Trans</governor>
+            <dependent idx="2">affirming</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">affirming</governor>
+            <dependent idx="3">healthcare</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">abuse</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="5">child</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="9">abuse</governor>
+            <dependent idx="6">mutilation</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">child</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="compound" extra="true">
+            <governor idx="9">abuse</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">abuse</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">abuse</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">abuse</governor>
+            <dependent idx="1">Trans</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Trans</governor>
+            <dependent idx="2">affirming</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">affirming</governor>
+            <dependent idx="3">healthcare</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">abuse</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="5">child</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="9">abuse</governor>
+            <dependent idx="6">mutilation</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">child</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="compound" extra="true">
+            <governor idx="9">abuse</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">abuse</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">abuse</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">abuse</governor>
+            <dependent idx="1">Trans</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Trans</governor>
+            <dependent idx="2">affirming</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">affirming</governor>
+            <dependent idx="3">healthcare</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">abuse</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="5">child</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="9">abuse</governor>
+            <dependent idx="6">mutilation</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">child</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">mutilation</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="compound" extra="true">
+            <governor idx="9">abuse</governor>
+            <dependent idx="8">child</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">abuse</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Definitely</word>
+            <lemma>definitely</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>deserves</word>
+            <lemma>deserve</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>life</word>
+            <lemma>life</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sentence</word>
+            <lemma>sentence</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (ADVP (RB Definitely)) (VP (VBZ deserves)) (NP (DT a) (NN life) (NN sentence)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">deserves</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">deserves</governor>
+            <dependent idx="1">Definitely</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sentence</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">sentence</governor>
+            <dependent idx="4">life</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">deserves</governor>
+            <dependent idx="5">sentence</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">deserves</governor>
+            <dependent idx="6">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">deserves</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">deserves</governor>
+            <dependent idx="1">Definitely</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sentence</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">sentence</governor>
+            <dependent idx="4">life</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">deserves</governor>
+            <dependent idx="5">sentence</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">deserves</governor>
+            <dependent idx="6">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">deserves</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">deserves</governor>
+            <dependent idx="1">Definitely</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sentence</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">sentence</governor>
+            <dependent idx="4">life</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">deserves</governor>
+            <dependent idx="5">sentence</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">deserves</governor>
+            <dependent idx="6">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">deserves</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">deserves</governor>
+            <dependent idx="1">Definitely</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sentence</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">sentence</governor>
+            <dependent idx="4">life</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">deserves</governor>
+            <dependent idx="5">sentence</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">deserves</governor>
+            <dependent idx="6">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">deserves</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">deserves</governor>
+            <dependent idx="1">Definitely</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sentence</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">sentence</governor>
+            <dependent idx="4">life</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">deserves</governor>
+            <dependent idx="5">sentence</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">deserves</governor>
+            <dependent idx="6">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

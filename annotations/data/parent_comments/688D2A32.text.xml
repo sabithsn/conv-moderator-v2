@@ -1,0 +1,86 @@
+Document: ID=688D2A32.text (2 sentences, 19 tokens)
+
+Sentence #1 (14 tokens):
+Courtney Love was on Epstein Island and she was in the FRAZZLED.rip video.
+
+Tokens:
+[Text=Courtney CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Courtney NamedEntityTag=PERSON]
+[Text=Love CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Love NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Epstein CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Epstein NamedEntityTag=LOCATION]
+[Text=Island CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Island NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=FRAZZLED.rip CharacterOffsetBegin=55 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=FRAZZLED.rip NamedEntityTag=O]
+[Text=video CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=video NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Courtney) (NNP Love))
+      (VP (VBD was)
+        (PP (IN on)
+          (NP (NNP Epstein) (NNP Island)))))
+    (CC and)
+    (S
+      (NP (PRP she))
+      (VP (VBD was)
+        (PP (IN in)
+          (NP (DT the) (NNP FRAZZLED.rip) (NN video)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Island-6)
+compound(Love-2, Courtney-1)
+nsubj(Island-6, Love-2)
+cop(Island-6, was-3)
+case(Island-6, on-4)
+compound(Island-6, Epstein-5)
+cc(video-13, and-7)
+nsubj(video-13, she-8)
+cop(video-13, was-9)
+case(video-13, in-10)
+det(video-13, the-11)
+compound(video-13, FRAZZLED.rip-12)
+conj:and(Island-6, video-13)
+punct(Island-6, .-14)
+
+Extracted the following NER entity mentions:
+Courtney Love	PERSON	PERSON:0.9963767804992079
+Epstein Island	LOCATION	LOCATION:0.4451184465464287
+she	PERSON	-
+
+Sentence #2 (5 tokens):
+Kurt Covains Ex is KEY
+
+Tokens:
+[Text=Kurt CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Kurt NamedEntityTag=PERSON]
+[Text=Covains CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Covains NamedEntityTag=PERSON]
+[Text=Ex CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Ex NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=KEY CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=key NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Kurt) (NNP Covains) (NNP Ex))
+    (VP (VBZ is)
+      (NP (NN KEY)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, KEY-5)
+compound(Ex-3, Kurt-1)
+compound(Ex-3, Covains-2)
+nsubj(KEY-5, Ex-3)
+cop(KEY-5, is-4)
+
+Extracted the following NER entity mentions:
+Kurt Covains	PERSON	PERSON:0.7828165885363061

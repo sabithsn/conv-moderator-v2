@@ -1,0 +1,72 @@
+Document: ID=8245CA5B.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+AITA for not sharing my dinner with my diabetic roommate and causing him to have a hypoglycemic episode?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sharing CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=share NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=diabetic CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=diabetic NamedEntityTag=O]
+[Text=roommate CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=roommate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=causing CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VBG Lemma=cause NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hypoglycemic CharacterOffsetBegin=83 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=hypoglycemic NamedEntityTag=O]
+[Text=episode CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=episode NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S (RB not)
+        (VP
+          (VP (VBG sharing)
+            (NP (PRP$ my) (NN dinner))
+            (PP (IN with)
+              (NP (PRP$ my) (JJ diabetic) (NN roommate))))
+          (CC and)
+          (VP (VBG causing)
+            (NP (PRP him))
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP (DT a) (JJ hypoglycemic) (NN episode)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(sharing-4, for-2)
+advmod(sharing-4, not-3)
+dep(AITA-1, sharing-4)
+nmod:poss(dinner-6, my-5)
+obj(sharing-4, dinner-6)
+case(roommate-10, with-7)
+nmod:poss(roommate-10, my-8)
+amod(roommate-10, diabetic-9)
+obl:with(sharing-4, roommate-10)
+cc(causing-12, and-11)
+dep(AITA-1, causing-12)
+conj:and(sharing-4, causing-12)
+obj(causing-12, him-13)
+mark(have-15, to-14)
+advcl:to(causing-12, have-15)
+det(episode-18, a-16)
+amod(episode-18, hypoglycemic-17)
+obj(have-15, episode-18)
+punct(AITA-1, ?-19)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.4613645290513834
+him	PERSON	-

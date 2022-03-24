@@ -1,0 +1,49 @@
+Document: ID=63A665B8.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+And yet curiously she supports BDS against liberal democratic Israel...
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=curiously CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=curiously NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=supports CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=support NamedEntityTag=O]
+[Text=BDS CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=bds NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=liberal CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=IDEOLOGY]
+[Text=democratic CharacterOffsetBegin=51 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=democratic NamedEntityTag=IDEOLOGY]
+[Text=Israel CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Israel NamedEntityTag=COUNTRY]
+[Text=... CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (ADVP (RB yet))
+    (ADVP (RB curiously))
+    (NP (PRP she))
+    (VP (VBZ supports)
+      (NP
+        (NP (NN BDS))
+        (PP (IN against)
+          (NP (JJ liberal) (JJ democratic) (NNP Israel)))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, supports-5)
+cc(supports-5, And-1)
+advmod(supports-5, yet-2)
+advmod(supports-5, curiously-3)
+nsubj(supports-5, she-4)
+obj(supports-5, BDS-6)
+case(Israel-10, against-7)
+amod(Israel-10, liberal-8)
+amod(Israel-10, democratic-9)
+nmod:against(BDS-6, Israel-10)
+punct(supports-5, ...-11)
+
+Extracted the following NER entity mentions:
+liberal democratic	IDEOLOGY	-
+Israel	COUNTRY	LOCATION:0.991600658721021
+she	PERSON	-

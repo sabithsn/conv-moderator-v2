@@ -1,0 +1,59 @@
+Document: ID=2C71A03F.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Watch: Newt Gingrich Says Jan. 6 Committee May Face Criminal Prosecution After Midterms
+
+Tokens:
+[Text=Watch CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=watch NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Newt CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Newt NamedEntityTag=PERSON]
+[Text=Gingrich CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Gingrich NamedEntityTag=PERSON]
+[Text=Says CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Jan. CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=Committee CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Committee NamedEntityTag=ORGANIZATION]
+[Text=May CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-05">May</TIMEX3>]
+[Text=Face CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=face NamedEntityTag=O]
+[Text=Criminal CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=criminal NamedEntityTag=O]
+[Text=Prosecution CharacterOffsetBegin=61 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=prosecution NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Midterms CharacterOffsetBegin=79 CharacterOffsetEnd=87 PartOfSpeech=NNS Lemma=midterm NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Watch) (: :)
+      (S
+        (NP (NNP Newt) (NNP Gingrich))
+        (VP (VBZ Says)
+          (NP-TMP (NNP Jan.) (CD 6))
+          (SBAR
+            (S
+              (NP (NNP Committee) (NNP May))
+              (VP (VBP Face)
+                (NP (JJ Criminal) (NN Prosecution))
+                (PP (IN After)
+                  (NP (NNS Midterms)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Watch-1)
+punct(Watch-1, :-2)
+compound(Gingrich-4, Newt-3)
+nsubj(Says-5, Gingrich-4)
+ccomp(Watch-1, Says-5)
+obl:tmod(Says-5, Jan.-6)
+nummod(Jan.-6, 6-7)
+compound(May-9, Committee-8)
+nsubj(Face-10, May-9)
+ccomp(Says-5, Face-10)
+amod(Prosecution-12, Criminal-11)
+obj(Face-10, Prosecution-12)
+case(Midterms-14, After-13)
+obl:after(Face-10, Midterms-14)
+
+Extracted the following NER entity mentions:
+Newt Gingrich	PERSON	PERSON:0.9480710922182924
+Jan. 6	DATE	DATE:0.7829657899690746
+Committee	ORGANIZATION	ORGANIZATION:0.7672120094733785
+May	DATE	DATE:-1.0

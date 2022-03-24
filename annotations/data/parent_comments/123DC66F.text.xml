@@ -1,0 +1,50 @@
+Document: ID=123DC66F.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Awkwafina Quits Twitter over Constant Woke Vitriol About 'Blaccent' Controversy
+
+Tokens:
+[Text=Awkwafina CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Awkwafina NamedEntityTag=ORGANIZATION]
+[Text=Quits CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=quit NamedEntityTag=ORGANIZATION]
+[Text=Twitter CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Twitter NamedEntityTag=ORGANIZATION]
+[Text=over CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Constant CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=constant NamedEntityTag=O]
+[Text=Woke CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=woke NamedEntityTag=O]
+[Text=Vitriol CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=vitriol NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Blaccent CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=blaccent NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Controversy CharacterOffsetBegin=68 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=controversy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Awkwafina))
+    (VP (VBZ Quits)
+      (NP
+        (NP (NNP Twitter))
+        (PP (IN over)
+          (NP
+            (NML (JJ Constant) (NN Woke))
+            (NN Vitriol))))
+      (PP (IN About)
+        (NP (`` ') (JJ Blaccent) ('' ') (NN Controversy))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Quits-2)
+nsubj(Quits-2, Awkwafina-1)
+obj(Quits-2, Twitter-3)
+case(Vitriol-7, over-4)
+amod(Woke-6, Constant-5)
+compound(Vitriol-7, Woke-6)
+nmod:over(Twitter-3, Vitriol-7)
+case(Controversy-12, About-8)
+punct(Controversy-12, '-9)
+amod(Controversy-12, Blaccent-10)
+punct(Controversy-12, '-11)
+obl:about(Quits-2, Controversy-12)
+
+Extracted the following NER entity mentions:
+Awkwafina Quits Twitter	ORGANIZATION	ORGANIZATION:0.8219917904367534

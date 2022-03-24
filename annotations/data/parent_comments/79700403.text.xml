@@ -1,0 +1,72 @@
+Document: ID=79700403.text (2 sentences, 14 tokens)
+
+Sentence #1 (10 tokens):
+If you are feeling alone, you are not.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=feeling CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=feel NamedEntityTag=O]
+[Text=alone CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=alone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (VP (VBG feeling)
+            (ADVP (RB alone))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP are) (RB not))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-8)
+mark(feeling-4, If-1)
+nsubj(feeling-4, you-2)
+aux(feeling-4, are-3)
+advcl:if(are-8, feeling-4)
+advmod(feeling-4, alone-5)
+punct(are-8, ,-6)
+nsubj(are-8, you-7)
+advmod(are-8, not-9)
+punct(are-8, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+I love you all
+
+Tokens:
+[Text=I CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP love)
+      (S
+        (NP (PRP you))
+        (NP (DT all))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, love-2)
+nsubj(love-2, I-1)
+nsubj(all-4, you-3)
+xcomp(love-2, all-4)
+
+Extracted the following NER entity mentions:

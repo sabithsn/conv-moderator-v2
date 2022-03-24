@@ -1,0 +1,356 @@
+Document: ID=18F2166A.text (7 sentences, 86 tokens)
+
+Sentence #1 (18 tokens):
+CNN, MSNBC, CBS, FOX, Reuters, they’re all state run news organizations.
+
+Tokens:
+[Text=CNN CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=CNN NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=MSNBC CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=MSNBC NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=CBS CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=CBS NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=FOX CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=FOX NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Reuters CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Reuters NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBN Lemma=run NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=organizations CharacterOffsetBegin=58 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=organization NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP CNN) (, ,) (NNP MSNBC) (, ,) (NNP CBS) (, ,) (NNP FOX) (, ,) (NNP Reuters))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP ’re)
+      (NP (DT all)
+        (ADJP (NN state) (VBN run))
+        (NN news) (NNS organizations)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, organizations-17)
+compound(Reuters-9, CNN-1)
+punct(Reuters-9, ,-2)
+appos(Reuters-9, MSNBC-3)
+punct(Reuters-9, ,-4)
+appos(Reuters-9, CBS-5)
+punct(Reuters-9, ,-6)
+appos(Reuters-9, FOX-7)
+punct(Reuters-9, ,-8)
+nsubj(organizations-17, Reuters-9)
+punct(organizations-17, ,-10)
+nsubj(organizations-17, they-11)
+cop(organizations-17, ’re-12)
+det(organizations-17, all-13)
+dep(run-15, state-14)
+amod(organizations-17, run-15)
+compound(organizations-17, news-16)
+punct(organizations-17, .-18)
+
+Extracted the following NER entity mentions:
+CNN	ORGANIZATION	ORGANIZATION:0.9591029030193816
+MSNBC	ORGANIZATION	ORGANIZATION:0.8810244886500486
+CBS	ORGANIZATION	ORGANIZATION:0.9959020068757823
+FOX	ORGANIZATION	ORGANIZATION:0.6290999780026907
+Reuters	ORGANIZATION	ORGANIZATION:0.9826611626738225
+
+Sentence #2 (9 tokens):
+Operation Mockingbird is real and never went away.
+
+Tokens:
+[Text=Operation CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Operation NamedEntityTag=MISC]
+[Text=Mockingbird CharacterOffsetBegin=83 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Mockingbird NamedEntityTag=MISC]
+[Text=is CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Operation) (NNP Mockingbird))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ real)))
+      (CC and)
+      (ADVP (RB never))
+      (VP (VBD went)
+        (ADVP (RB away))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, real-4)
+compound(Mockingbird-2, Operation-1)
+nsubj(real-4, Mockingbird-2)
+nsubj(went-7, Mockingbird-2)
+cop(real-4, is-3)
+cc(went-7, and-5)
+advmod(went-7, never-6)
+conj:and(real-4, went-7)
+advmod(went-7, away-8)
+punct(real-4, .-9)
+
+Extracted the following NER entity mentions:
+Operation Mockingbird	MISC	MISC:0.9020864756777014
+
+Sentence #3 (15 tokens):
+You might argue that they are private corporations, but who owns the corporations?
+
+Tokens:
+[Text=You CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=argue CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=VB Lemma=argue NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=private CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=JJ Lemma=private NamedEntityTag=O]
+[Text=corporations CharacterOffsetBegin=164 CharacterOffsetEnd=176 PartOfSpeech=NNS Lemma=corporation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=owns CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=VBZ Lemma=own NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=corporations CharacterOffsetBegin=195 CharacterOffsetEnd=207 PartOfSpeech=NNS Lemma=corporation NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD might)
+      (VP (VB argue)
+        (SBAR
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP are)
+                (NP (JJ private) (NNS corporations)))))
+          (, ,)
+          (CC but)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ owns)
+                (NP (DT the) (NNS corporations))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, argue-3)
+nsubj(argue-3, You-1)
+aux(argue-3, might-2)
+mark(corporations-8, that-4)
+nsubj(corporations-8, they-5)
+cop(corporations-8, are-6)
+amod(corporations-8, private-7)
+ccomp(argue-3, corporations-8)
+punct(corporations-8, ,-9)
+cc(owns-12, but-10)
+nsubj(owns-12, who-11)
+ccomp(argue-3, owns-12)
+conj:but(corporations-8, owns-12)
+det(corporations-14, the-13)
+obj(owns-12, corporations-14)
+punct(argue-3, ?-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (16 tokens):
+Who owns the hedge funds that are the majority owners of shares in these corporations?
+
+Tokens:
+[Text=Who CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=owns CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=VBZ Lemma=own NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hedge CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=hedge NamedEntityTag=O]
+[Text=funds CharacterOffsetBegin=228 CharacterOffsetEnd=233 PartOfSpeech=NNS Lemma=fund NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=majority CharacterOffsetBegin=247 CharacterOffsetEnd=255 PartOfSpeech=NN Lemma=majority NamedEntityTag=O]
+[Text=owners CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=NNS Lemma=owner NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=shares CharacterOffsetBegin=266 CharacterOffsetEnd=272 PartOfSpeech=NNS Lemma=share NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=276 CharacterOffsetEnd=281 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=corporations CharacterOffsetBegin=282 CharacterOffsetEnd=294 PartOfSpeech=NNS Lemma=corporation NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ owns)
+        (NP
+          (NP (DT the) (NN hedge) (NNS funds))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (NP
+                  (NP (DT the) (NN majority) (NNS owners))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS shares))
+                      (PP (IN in)
+                        (NP (DT these) (NNS corporations))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, owns-2)
+nsubj(owns-2, Who-1)
+det(funds-5, the-3)
+compound(funds-5, hedge-4)
+obj(owns-2, funds-5)
+nsubj(owners-10, funds-5)
+ref(funds-5, that-6)
+cop(owners-10, are-7)
+det(owners-10, the-8)
+compound(owners-10, majority-9)
+acl:relcl(funds-5, owners-10)
+case(shares-12, of-11)
+nmod:of(owners-10, shares-12)
+case(corporations-15, in-13)
+det(corporations-15, these-14)
+nmod:in(shares-12, corporations-15)
+punct(owns-2, ?-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (10 tokens):
+What banking organization funds and controls these hedge funds?
+
+Tokens:
+[Text=What CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=banking CharacterOffsetBegin=301 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=banking NamedEntityTag=O]
+[Text=organization CharacterOffsetBegin=309 CharacterOffsetEnd=321 PartOfSpeech=NN Lemma=organization NamedEntityTag=O]
+[Text=funds CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=NNS Lemma=fund NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=controls CharacterOffsetBegin=332 CharacterOffsetEnd=340 PartOfSpeech=VBZ Lemma=control NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=341 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=hedge CharacterOffsetBegin=347 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=hedge NamedEntityTag=O]
+[Text=funds CharacterOffsetBegin=353 CharacterOffsetEnd=358 PartOfSpeech=NNS Lemma=fund NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What)
+      (NML (NN banking))
+      (NN organization))
+    (SQ
+      (NP
+        (NP (NNS funds))
+        (CC and))
+      (VP (VBZ controls)
+        (NP (DT these) (NN hedge) (NNS funds))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, controls-6)
+det(organization-3, What-1)
+compound(organization-3, banking-2)
+dep(controls-6, organization-3)
+nsubj(controls-6, funds-4)
+cc(funds-4, and-5)
+det(funds-9, these-7)
+compound(funds-9, hedge-8)
+obj(controls-6, funds-9)
+punct(controls-6, ?-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (7 tokens):
+What government manages this banking organization?
+
+Tokens:
+[Text=What CharacterOffsetBegin=360 CharacterOffsetEnd=364 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=365 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=manages CharacterOffsetBegin=376 CharacterOffsetEnd=383 PartOfSpeech=VBZ Lemma=manage NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=banking CharacterOffsetBegin=389 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=banking NamedEntityTag=O]
+[Text=organization CharacterOffsetBegin=397 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=organization NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN government))
+    (SQ
+      (VP (VBZ manages)
+        (NP (DT this) (NN banking) (NN organization))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, manages-3)
+det(government-2, What-1)
+nsubj(manages-3, government-2)
+det(organization-6, this-4)
+compound(organization-6, banking-5)
+obj(manages-3, organization-6)
+punct(manages-3, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (11 tokens):
+It’s all state run, but with more steps.
+
+Tokens:
+[Text=It CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=422 CharacterOffsetEnd=427 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=run NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=431 CharacterOffsetEnd=432 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=433 CharacterOffsetEnd=436 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=437 CharacterOffsetEnd=441 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=442 CharacterOffsetEnd=446 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=447 CharacterOffsetEnd=452 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ ’s)
+        (NP (DT all) (NN state) (NN run)))
+      (, ,)
+      (CC but)
+      (VP
+        (PP (IN with)
+          (NP (JJR more) (NNS steps)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, run-5)
+nsubj(run-5, It-1)
+cop(run-5, ’s-2)
+det(run-5, all-3)
+compound(run-5, state-4)
+punct(run-5, ,-6)
+cc(steps-10, but-7)
+case(steps-10, with-8)
+amod(steps-10, more-9)
+conj:but(run-5, steps-10)
+punct(run-5, .-11)
+
+Extracted the following NER entity mentions:

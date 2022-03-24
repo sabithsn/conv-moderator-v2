@@ -1,0 +1,141 @@
+Document: ID=E9F63581.text (2 sentences, 35 tokens)
+
+Sentence #1 (27 tokens):
+Donald Trump’s interview calling Vladimir Putin a “genius” and boasting of how well he knew and liked him during his time in office.
+
+Tokens:
+[Text=Donald CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=Trump CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=interview CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+[Text=calling CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=Vladimir CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Vladimir NamedEntityTag=PERSON]
+[Text=Putin CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=genius CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=boasting CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=boasting NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=liked CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=VBD Lemma=like NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Donald) (NNP Trump) (POS ’s))
+      (NN interview))
+    (VP (VBG calling)
+      (NP
+        (NP
+          (NP (NNP Vladimir) (NNP Putin))
+          (NP (DT a) (`` “) (NN genius) ('' ”)))
+        (CC and)
+        (NP
+          (NP (NN boasting))
+          (PP (IN of)
+            (SBAR
+              (WHADVP (WRB how) (RB well))
+              (S
+                (NP (PRP he))
+                (VP
+                  (VP (VBD knew))
+                  (CC and)
+                  (VP (VBD liked)
+                    (NP (PRP him))
+                    (PP (IN during)
+                      (NP
+                        (NP (PRP$ his) (NN time))
+                        (PP (IN in)
+                          (NP (NN office)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, interview-4)
+compound(Trump-2, Donald-1)
+nmod:poss(interview-4, Trump-2)
+case(Trump-2, ’s-3)
+acl(interview-4, calling-5)
+compound(Putin-7, Vladimir-6)
+obj(calling-5, Putin-7)
+det(genius-10, a-8)
+punct(genius-10, “-9)
+dep(Putin-7, genius-10)
+punct(genius-10, ”-11)
+cc(boasting-13, and-12)
+obj(calling-5, boasting-13)
+conj:and(Putin-7, boasting-13)
+mark(knew-18, of-14)
+advmod(well-16, how-15)
+advmod(knew-18, well-16)
+nsubj(knew-18, he-17)
+nsubj(liked-20, he-17)
+acl:of(boasting-13, knew-18)
+cc(liked-20, and-19)
+acl:of(boasting-13, liked-20)
+conj:and(knew-18, liked-20)
+obj(liked-20, him-21)
+case(time-24, during-22)
+nmod:poss(time-24, his-23)
+obl:during(liked-20, time-24)
+case(office-26, in-25)
+nmod:in(time-24, office-26)
+punct(interview-4, .-27)
+
+Extracted the following NER entity mentions:
+Donald Trump	PERSON	PERSON:0.9997500104423421
+Vladimir Putin	PERSON	PERSON:0.9991409361552913
+he	PERSON	-
+him	PERSON	-
+his	PERSON	-
+
+Sentence #2 (8 tokens):
+Still a pussy suckup to this day.
+
+Tokens:
+[Text=Still CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pussy CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=pussy NamedEntityTag=O]
+[Text=suckup CharacterOffsetBegin=147 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=suckup NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=day CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Still))
+    (NP (DT a)
+      (NML (NN pussy) (NN suckup)))
+    (PP (IN to)
+      (NP (DT this) (NN day)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suckup-4)
+dep(suckup-4, Still-1)
+det(suckup-4, a-2)
+compound(suckup-4, pussy-3)
+case(day-7, to-5)
+det(day-7, this-6)
+obl:to(suckup-4, day-7)
+punct(suckup-4, .-8)
+
+Extracted the following NER entity mentions:
+this day	DATE	DATE:-1.0

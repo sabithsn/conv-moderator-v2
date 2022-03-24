@@ -1,0 +1,69 @@
+Document: ID=5EDA37E9.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+The people that seem to hate cancel culture the most...are burning books now.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=hate NamedEntityTag=O]
+[Text=cancel CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=cancel NamedEntityTag=O]
+[Text=culture CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=culture NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=burning CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=VBG Lemma=burn NamedEntityTag=O]
+[Text=books CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=book NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS people))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP seem)
+            (S
+              (VP (TO to)
+                (VP (VB hate)
+                  (S
+                    (VP (VB cancel)
+                      (NP (NN culture))
+                      (ADVP (DT the) (RBS most)))))))))))
+    (: ...)
+    (VP (VBP are)
+      (VP (VBG burning)
+        (NP (NNS books))
+        (ADVP (RB now))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, burning-13)
+det(people-2, The-1)
+nsubj(seem-4, people-2)
+nsubj:xsubj(hate-6, people-2)
+nsubj(burning-13, people-2)
+ref(people-2, that-3)
+acl:relcl(people-2, seem-4)
+mark(hate-6, to-5)
+xcomp(seem-4, hate-6)
+ccomp(hate-6, cancel-7)
+obj(cancel-7, culture-8)
+det(most-10, the-9)
+advmod(cancel-7, most-10)
+punct(burning-13, ...-11)
+aux(burning-13, are-12)
+obj(burning-13, books-14)
+advmod(burning-13, now-15)
+punct(burning-13, .-16)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

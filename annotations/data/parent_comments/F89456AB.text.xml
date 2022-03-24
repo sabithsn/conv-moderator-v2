@@ -1,0 +1,41 @@
+Document: ID=F89456AB.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+And still have his cult worship him.
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=cult CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=cult NamedEntityTag=RELIGION]
+[Text=worship CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=worship NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (ADVP (RB still))
+    (VP (VB have)
+      (S
+        (NP (PRP$ his) (NN cult))
+        (VP (VB worship)
+          (NP (PRP him)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-3)
+cc(have-3, And-1)
+advmod(have-3, still-2)
+nmod:poss(cult-5, his-4)
+nsubj(worship-6, cult-5)
+ccomp(have-3, worship-6)
+obj(worship-6, him-7)
+punct(have-3, .-8)
+
+Extracted the following NER entity mentions:
+cult	RELIGION	-
+his	PERSON	-
+him	PERSON	-

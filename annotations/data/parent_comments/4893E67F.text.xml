@@ -1,0 +1,54 @@
+Document: ID=4893E67F.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+AOC Says She’s ‘Boycotting Salami’ To Punish Russia
+
+Tokens:
+[Text=AOC CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=AOC NamedEntityTag=ORGANIZATION]
+[Text=Says CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=She CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Boycotting CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=boycott NamedEntityTag=O]
+[Text=Salami CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=salami NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Punish CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=punish NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP AOC))
+    (VP (VBZ Says)
+      (SBAR
+        (S
+          (NP (PRP She))
+          (VP (VBZ ’s) (`` ‘)
+            (S
+              (VP (VBG Boycotting)
+                (NP (NN Salami))
+                ('' ’)
+                (S
+                  (VP (TO To)
+                    (VP (VB Punish)
+                      (NP (NNP Russia)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Says-2)
+nsubj(Says-2, AOC-1)
+nsubj(’s-4, She-3)
+ccomp(Says-2, ’s-4)
+punct(’s-4, ‘-5)
+xcomp(’s-4, Boycotting-6)
+obj(Boycotting-6, Salami-7)
+punct(Boycotting-6, ’-8)
+mark(Punish-10, To-9)
+advcl:to(Boycotting-6, Punish-10)
+obj(Punish-10, Russia-11)
+
+Extracted the following NER entity mentions:
+AOC	ORGANIZATION	ORGANIZATION:0.7567946536286178
+Russia	COUNTRY	LOCATION:0.8514634625768636
+She	PERSON	-

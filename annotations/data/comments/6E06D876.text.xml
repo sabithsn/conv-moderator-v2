@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>6E06D876.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>CRT</word>
+            <lemma>CRT</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>=</word>
+            <lemma>=</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>SYM</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>anti</word>
+            <lemma>anti</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>AFX</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>white</word>
+            <lemma>white</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>hatred</word>
+            <lemma>hatred</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>&amp;</word>
+            <lemma>&amp;</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>#x200B</word>
+            <lemma>#x200b</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>;</word>
+            <lemma>;</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>fixed</word>
+            <lemma>fix</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>ya</word>
+            <lemma>ya</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PRN (S (S (NP (NNP CRT)) (VP (SYM =) (NP (NP (ADJP (AFX anti) (JJ white)) (NN hatred)) (CC &amp;) (NP (NN #x200B))))) (: ;) (S (VP (VBN fixed) (NP (PRP it)) (PP (IN for) (NP (PRP ya))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">hatred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">hatred</governor>
+            <dependent idx="1">CRT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">hatred</governor>
+            <dependent idx="2">=</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">white</governor>
+            <dependent idx="3">anti</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">hatred</governor>
+            <dependent idx="4">white</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">#x200B</governor>
+            <dependent idx="6">&amp;</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">hatred</governor>
+            <dependent idx="7">#x200B</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">hatred</governor>
+            <dependent idx="8">;</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="5">hatred</governor>
+            <dependent idx="9">fixed</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">fixed</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">ya</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="9">fixed</governor>
+            <dependent idx="12">ya</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">hatred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">hatred</governor>
+            <dependent idx="1">CRT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">hatred</governor>
+            <dependent idx="2">=</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">white</governor>
+            <dependent idx="3">anti</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">hatred</governor>
+            <dependent idx="4">white</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">#x200B</governor>
+            <dependent idx="6">&amp;</dependent>
+          </dep>
+          <dep type="conj:&amp;">
+            <governor idx="5">hatred</governor>
+            <dependent idx="7">#x200B</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">hatred</governor>
+            <dependent idx="8">;</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="5">hatred</governor>
+            <dependent idx="9">fixed</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">fixed</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">ya</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="9">fixed</governor>
+            <dependent idx="12">ya</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">hatred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">hatred</governor>
+            <dependent idx="1">CRT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">hatred</governor>
+            <dependent idx="2">=</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">white</governor>
+            <dependent idx="3">anti</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">hatred</governor>
+            <dependent idx="4">white</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">#x200B</governor>
+            <dependent idx="6">&amp;</dependent>
+          </dep>
+          <dep type="conj:&amp;">
+            <governor idx="5">hatred</governor>
+            <dependent idx="7">#x200B</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">hatred</governor>
+            <dependent idx="8">;</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="5">hatred</governor>
+            <dependent idx="9">fixed</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">fixed</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">ya</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="9">fixed</governor>
+            <dependent idx="12">ya</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">hatred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">hatred</governor>
+            <dependent idx="1">CRT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">hatred</governor>
+            <dependent idx="2">=</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">white</governor>
+            <dependent idx="3">anti</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">hatred</governor>
+            <dependent idx="4">white</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">#x200B</governor>
+            <dependent idx="6">&amp;</dependent>
+          </dep>
+          <dep type="conj:&amp;">
+            <governor idx="5">hatred</governor>
+            <dependent idx="7">#x200B</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">hatred</governor>
+            <dependent idx="8">;</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="5">hatred</governor>
+            <dependent idx="9">fixed</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">fixed</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">ya</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="9">fixed</governor>
+            <dependent idx="12">ya</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">hatred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">hatred</governor>
+            <dependent idx="1">CRT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">hatred</governor>
+            <dependent idx="2">=</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">white</governor>
+            <dependent idx="3">anti</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">hatred</governor>
+            <dependent idx="4">white</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">#x200B</governor>
+            <dependent idx="6">&amp;</dependent>
+          </dep>
+          <dep type="conj:&amp;">
+            <governor idx="5">hatred</governor>
+            <dependent idx="7">#x200B</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">hatred</governor>
+            <dependent idx="8">;</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="5">hatred</governor>
+            <dependent idx="9">fixed</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">fixed</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">ya</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="9">fixed</governor>
+            <dependent idx="12">ya</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

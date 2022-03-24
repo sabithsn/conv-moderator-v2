@@ -1,0 +1,113 @@
+Document: ID=A6D2B120.text (2 sentences, 26 tokens)
+
+Sentence #1 (22 tokens):
+The amount of salt in saltwater far exceeds the amount that's palatable in food and draws water from your body.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=salt CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=salt NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=saltwater CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=saltwater NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=exceeds CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=VBZ Lemma=exceed NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=palatable CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=palatable NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=draws CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=VBZ Lemma=draw NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN amount))
+      (PP (IN of)
+        (NP
+          (NP (NN salt))
+          (PP (IN in)
+            (NP (NN saltwater))))))
+    (VP
+      (VP
+        (ADVP (RB far))
+        (VBZ exceeds)
+        (NP
+          (NP (DT the) (NN amount))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ 's)
+                (ADJP (JJ palatable)
+                  (PP (IN in)
+                    (NP (NN food)))))))))
+      (CC and)
+      (VP (VBZ draws)
+        (NP (NN water))
+        (PP (IN from)
+          (NP (PRP$ your) (NN body)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, exceeds-8)
+det(amount-2, The-1)
+nsubj(exceeds-8, amount-2)
+nsubj(draws-17, amount-2)
+case(salt-4, of-3)
+nmod:of(amount-2, salt-4)
+case(saltwater-6, in-5)
+nmod:in(salt-4, saltwater-6)
+advmod(exceeds-8, far-7)
+det(amount-10, the-9)
+obj(exceeds-8, amount-10)
+nsubj(palatable-13, amount-10)
+ref(amount-10, that-11)
+cop(palatable-13, 's-12)
+acl:relcl(amount-10, palatable-13)
+case(food-15, in-14)
+obl:in(palatable-13, food-15)
+cc(draws-17, and-16)
+conj:and(exceeds-8, draws-17)
+obj(draws-17, water-18)
+case(body-21, from-19)
+nmod:poss(body-21, your-20)
+obl:from(draws-17, body-21)
+punct(exceeds-8, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Edit: spelling.
+
+Tokens:
+[Text=Edit CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=spelling CharacterOffsetBegin=119 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=spelling NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Edit))
+    (: :)
+    (NP (NN spelling))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Edit-1)
+punct(Edit-1, :-2)
+dep(Edit-1, spelling-3)
+punct(Edit-1, .-4)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,65 @@
+Document: ID=8E53A50C.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+When only people of color are arrested by this armed KKKlan better spark some intense protests.
+
+Tokens:
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=color CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=color NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=arrested CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=arrest NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=armed CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=armed NamedEntityTag=O]
+[Text=KKKlan CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=KKKlan NamedEntityTag=ORGANIZATION]
+[Text=better CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=RBR Lemma=better NamedEntityTag=O]
+[Text=spark CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=spark NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=intense CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=intense NamedEntityTag=O]
+[Text=protests CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=protest NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP
+          (NP (RB only) (NNS people))
+          (PP (IN of)
+            (NP (NN color))))
+        (VP (VBP are)
+          (VP (VBN arrested)
+            (PP (IN by)
+              (NP (DT this) (JJ armed) (NNP KKKlan)))))))
+    (ADVP (RBR better))
+    (VP (VB spark)
+      (NP (DT some) (JJ intense) (NNS protests)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spark-13)
+advmod(arrested-7, When-1)
+advmod(people-3, only-2)
+nsubj:pass(arrested-7, people-3)
+case(color-5, of-4)
+nmod:of(people-3, color-5)
+aux:pass(arrested-7, are-6)
+advcl(spark-13, arrested-7)
+case(KKKlan-11, by-8)
+det(KKKlan-11, this-9)
+amod(KKKlan-11, armed-10)
+obl:agent(arrested-7, KKKlan-11)
+advmod(spark-13, better-12)
+det(protests-16, some-14)
+amod(protests-16, intense-15)
+obj(spark-13, protests-16)
+punct(spark-13, .-17)
+
+Extracted the following NER entity mentions:
+KKKlan	ORGANIZATION	ORGANIZATION:0.5925327809820109

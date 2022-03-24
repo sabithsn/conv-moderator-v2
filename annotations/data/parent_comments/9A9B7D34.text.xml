@@ -1,0 +1,105 @@
+Document: ID=9A9B7D34.text (2 sentences, 24 tokens)
+
+Sentence #1 (20 tokens):
+Google “President of the US” and tell me if an Orange conman shows up on your screen.
+
+Tokens:
+[Text=Google CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Google NamedEntityTag=ORGANIZATION]
+[Text=“ CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=President CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=” CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Orange CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Orange NamedEntityTag=ORGANIZATION]
+[Text=conman CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=conman NamedEntityTag=O]
+[Text=shows CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=show NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=screen CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=screen NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Google)
+      (NML (`` “)
+        (NML
+          (NML (NNP President))
+          (PP (IN of)
+            (NP (DT the) (NNP US))))
+        ('' ”)
+        (CC and)
+        (NML
+          (S
+            (VP (VB tell)
+              (NP (PRP me))
+              (PP (IN if)
+                (NP (DT an) (NNP Orange) (NN conman))))))))
+    (VP (VBZ shows)
+      (PRT (RP up))
+      (PP (IN on)
+        (NP (PRP$ your) (NN screen))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shows-15)
+dep(President-3, Google-1)
+punct(President-3, “-2)
+nsubj(shows-15, President-3)
+case(US-6, of-4)
+det(US-6, the-5)
+nmod:of(President-3, US-6)
+punct(President-3, ”-7)
+cc(tell-9, and-8)
+conj:and(President-3, tell-9)
+nsubj(shows-15, tell-9)
+obj(tell-9, me-10)
+case(conman-14, if-11)
+det(conman-14, an-12)
+compound(conman-14, Orange-13)
+obl:if(tell-9, conman-14)
+compound:prt(shows-15, up-16)
+case(screen-19, on-17)
+nmod:poss(screen-19, your-18)
+obl:on(shows-15, screen-19)
+punct(shows-15, .-20)
+
+Extracted the following NER entity mentions:
+Google	ORGANIZATION	ORGANIZATION:0.5876105977778727
+President	TITLE	-
+US	COUNTRY	LOCATION:0.828376381698783
+Orange	ORGANIZATION	ORGANIZATION:0.6009309358908043
+
+Sentence #2 (4 tokens):
+I’ll wait.
+
+Tokens:
+[Text=I CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’ll CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=MD Lemma=’ll NamedEntityTag=O]
+[Text=wait CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=wait NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD ’ll)
+      (VP (VB wait)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wait-3)
+nsubj(wait-3, I-1)
+aux(wait-3, ’ll-2)
+punct(wait-3, .-4)
+
+Extracted the following NER entity mentions:

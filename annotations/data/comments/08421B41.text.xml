@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>08421B41.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PRESENT_REF</NormalizedNER>
+            <Timex tid="t1" type="DATE">PRESENT_REF</Timex>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>local</word>
+            <lemma>local</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>mullah</word>
+            <lemma>mullah</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>TITLE</NER>
+          </token>
+          <token id="5">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>post</word>
+            <lemma>post</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Islamophobic</word>
+            <lemma>islamophobic</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>antisemitic</word>
+            <lemma>antisemitic</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>!!</word>
+            <lemma>!!</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Now)) (NP (DT the) (JJ local) (NN mullah)) (VP (MD will) (VP (VB call) (NP (NP (DT this) (NN post)) (ADJP (JJ Islamophobic) (CC and) (JJ antisemitic))))) (. !!))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">call</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">call</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">mullah</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">mullah</governor>
+            <dependent idx="3">local</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">call</governor>
+            <dependent idx="4">mullah</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">call</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">post</governor>
+            <dependent idx="7">this</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">call</governor>
+            <dependent idx="8">post</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">post</governor>
+            <dependent idx="9">Islamophobic</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">antisemitic</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">Islamophobic</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">call</governor>
+            <dependent idx="12">!!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">call</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">call</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">mullah</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">mullah</governor>
+            <dependent idx="3">local</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">call</governor>
+            <dependent idx="4">mullah</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">call</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">post</governor>
+            <dependent idx="7">this</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">call</governor>
+            <dependent idx="8">post</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">post</governor>
+            <dependent idx="9">Islamophobic</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">antisemitic</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="9">Islamophobic</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">call</governor>
+            <dependent idx="12">!!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">call</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">call</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">mullah</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">mullah</governor>
+            <dependent idx="3">local</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">call</governor>
+            <dependent idx="4">mullah</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">call</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">post</governor>
+            <dependent idx="7">this</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">call</governor>
+            <dependent idx="8">post</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">post</governor>
+            <dependent idx="9">Islamophobic</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">antisemitic</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="amod" extra="true">
+            <governor idx="8">post</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="9">Islamophobic</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">call</governor>
+            <dependent idx="12">!!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">call</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">call</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">mullah</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">mullah</governor>
+            <dependent idx="3">local</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">call</governor>
+            <dependent idx="4">mullah</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">call</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">post</governor>
+            <dependent idx="7">this</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">call</governor>
+            <dependent idx="8">post</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">post</governor>
+            <dependent idx="9">Islamophobic</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">antisemitic</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="amod" extra="true">
+            <governor idx="8">post</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="9">Islamophobic</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">call</governor>
+            <dependent idx="12">!!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">call</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">call</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">mullah</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">mullah</governor>
+            <dependent idx="3">local</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">call</governor>
+            <dependent idx="4">mullah</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">call</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">post</governor>
+            <dependent idx="7">this</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">call</governor>
+            <dependent idx="8">post</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">post</governor>
+            <dependent idx="9">Islamophobic</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">antisemitic</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="amod" extra="true">
+            <governor idx="8">post</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="9">Islamophobic</governor>
+            <dependent idx="11">antisemitic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">call</governor>
+            <dependent idx="12">!!</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

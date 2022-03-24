@@ -1,0 +1,41 @@
+Document: ID=F32F3C14.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+I’m secretly hoping the world ends soon
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=secretly CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=secretly NamedEntityTag=O]
+[Text=hoping CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=hope NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=ends CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=end NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (S
+        (ADVP (RB secretly))
+        (VP (VBG hoping)
+          (SBAR
+            (S
+              (NP (DT the) (NN world))
+              (VP (VBZ ends)
+                (ADVP (RB soon))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’m-2)
+nsubj(’m-2, I-1)
+advmod(hoping-4, secretly-3)
+xcomp(’m-2, hoping-4)
+det(world-6, the-5)
+nsubj(ends-7, world-6)
+ccomp(hoping-4, ends-7)
+advmod(ends-7, soon-8)
+
+Extracted the following NER entity mentions:

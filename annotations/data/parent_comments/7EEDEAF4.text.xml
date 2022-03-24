@@ -1,0 +1,55 @@
+Document: ID=7EEDEAF4.text (2 sentences, 9 tokens)
+
+Sentence #1 (8 tokens):
+Use your brain and see the parallel.
+
+Tokens:
+[Text=Use CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=brain CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=brain NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=parallel CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=parallel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Use)
+        (NP (PRP$ your) (NN brain)))
+      (CC and)
+      (VP (VB see)
+        (NP (DT the) (NN parallel))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Use-1)
+nmod:poss(brain-3, your-2)
+obj(Use-1, brain-3)
+cc(see-5, and-4)
+conj:and(Use-1, see-5)
+det(parallel-7, the-6)
+obj(see-5, parallel-7)
+punct(Use-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (1 tokens):
+Ffs
+
+Tokens:
+[Text=Ffs CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=ff NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Ffs)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ffs-1)
+
+Extracted the following NER entity mentions:
+Ffs	PERSON	PERSON:0.5401973211209748

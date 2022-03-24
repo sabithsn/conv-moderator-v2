@@ -1,0 +1,64 @@
+Document: ID=9AE738B6.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+She deserves to have any charges dropped  Pedos deserve to burn to death.
+
+Tokens:
+[Text=She CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=deserves CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=deserve NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=charges CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=charge NamedEntityTag=O]
+[Text=dropped CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=drop NamedEntityTag=O]
+[Text=Pedos CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Pedos NamedEntityTag=PERSON]
+[Text=deserve CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=deserve NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=burn CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=burn NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ deserves)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (S
+              (NP (DT any) (NNS charges))
+              (VP (VBD dropped)
+                (S
+                  (NP (NNP Pedos))
+                  (VP (VB deserve)
+                    (S
+                      (VP (TO to)
+                        (VP (VB burn)
+                          (PP (IN to)
+                            (NP (NN death))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deserves-2)
+nsubj(deserves-2, She-1)
+nsubj:xsubj(have-4, She-1)
+mark(have-4, to-3)
+xcomp(deserves-2, have-4)
+det(charges-6, any-5)
+nsubj(dropped-7, charges-6)
+ccomp(have-4, dropped-7)
+nsubj(deserve-9, Pedos-8)
+nsubj:xsubj(burn-11, Pedos-8)
+ccomp(dropped-7, deserve-9)
+mark(burn-11, to-10)
+xcomp(deserve-9, burn-11)
+case(death-13, to-12)
+obl:to(burn-11, death-13)
+punct(deserves-2, .-14)
+
+Extracted the following NER entity mentions:
+Pedos	PERSON	PERSON:0.47415013815061285
+She	PERSON	-

@@ -1,0 +1,105 @@
+Document: ID=ABF36971.text (3 sentences, 21 tokens)
+
+Sentence #1 (5 tokens):
+Him, not them.
+
+Tokens:
+[Text=Him CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (PRP Him))
+    (, ,) (RB not)
+    (NP (PRP them))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, not-3)
+dep(not-3, Him-1)
+punct(not-3, ,-2)
+dep(not-3, them-4)
+punct(not-3, .-5)
+
+Extracted the following NER entity mentions:
+Him	PERSON	-
+
+Sentence #2 (5 tokens):
+His brother was killed.
+
+Tokens:
+[Text=His CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=brother CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=brother NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBN Lemma=kill NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ His) (NN brother))
+    (VP (VBD was)
+      (VP (VBN killed)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, killed-4)
+nmod:poss(brother-2, His-1)
+nsubj:pass(killed-4, brother-2)
+aux:pass(killed-4, was-3)
+punct(killed-4, .-5)
+
+Extracted the following NER entity mentions:
+His	PERSON	-
+
+Sentence #3 (11 tokens):
+And no, he should go straight to the chair.
+
+Tokens:
+[Text=And CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=straight CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=straight NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chair CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=chair NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (DT no))
+    (, ,)
+    (NP (PRP he))
+    (VP (MD should)
+      (VP (VB go)
+        (ADVP (RB straight))
+        (PP (IN to)
+          (NP (DT the) (NN chair)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-6)
+cc(go-6, And-1)
+nsubj(go-6, no-2)
+punct(go-6, ,-3)
+nsubj(go-6, he-4)
+aux(go-6, should-5)
+advmod(go-6, straight-7)
+case(chair-10, to-8)
+det(chair-10, the-9)
+obl:to(go-6, chair-10)
+punct(go-6, .-11)
+
+Extracted the following NER entity mentions:
+he	PERSON	-

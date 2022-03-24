@@ -1,0 +1,68 @@
+Document: ID=AE35E9EF.text (2 sentences, 14 tokens)
+
+Sentence #1 (9 tokens):
+Can’t see the forest for the trees.
+
+Tokens:
+[Text=Ca CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=forest CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=forest NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=trees CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=tree NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Ca) (RB n’t)
+      (VP (VB see)
+        (NP
+          (NP (DT the) (NN forest))
+          (PP (IN for)
+            (NP (DT the) (NNS trees))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, see-3)
+aux(see-3, Ca-1)
+advmod(see-3, n’t-2)
+det(forest-5, the-4)
+obj(see-3, forest-5)
+case(trees-8, for-6)
+det(trees-8, the-7)
+nmod:for(forest-5, trees-8)
+punct(see-3, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Good luck with that.
+
+Tokens:
+[Text=Good CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=luck CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=luck NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (JJ Good) (NN luck))
+    (PP (IN with)
+      (NP (DT that)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, luck-2)
+amod(luck-2, Good-1)
+case(that-4, with-3)
+obl:with(luck-2, that-4)
+punct(luck-2, .-5)
+
+Extracted the following NER entity mentions:

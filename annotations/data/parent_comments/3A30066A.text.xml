@@ -1,0 +1,321 @@
+Document: ID=3A30066A.text (6 sentences, 78 tokens)
+
+Sentence #1 (4 tokens):
+Yeah, murder.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=murder CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=murder NamedEntityTag=CRIMINAL_CHARGE]
+[Text=. CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Yeah))
+    (, ,)
+    (NP (NN murder))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, murder-3)
+discourse(murder-3, Yeah-1)
+punct(murder-3, ,-2)
+punct(murder-3, .-4)
+
+Extracted the following NER entity mentions:
+murder	CRIMINAL_CHARGE	-
+
+Sentence #2 (22 tokens):
+You know, that thing that violates the first of our three basic rights (life, liberty, property)?
+
+Tokens:
+[Text=You CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=violates CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=VBZ Lemma=violate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=basic CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=basic NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=liberty CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=liberty NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=property CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=property NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (VP (VBP know))
+      (, ,)
+      (NP
+        (NP (DT that) (NN thing))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ violates)
+              (NP
+                (NP (DT the) (JJ first))
+                (PP (IN of)
+                  (NP (PRP$ our) (CD three) (JJ basic) (NNS rights))))
+              (PRN (-LRB- -LRB-)
+                (NP (NN life) (, ,) (NN liberty) (, ,) (NN property))
+                (-RRB- -RRB-)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, You-1)
+punct(know-2, ,-3)
+det(thing-5, that-4)
+obj(know-2, thing-5)
+nsubj(violates-7, thing-5)
+ref(thing-5, that-6)
+acl:relcl(thing-5, violates-7)
+det(first-9, the-8)
+obj(violates-7, first-9)
+case(rights-14, of-10)
+nmod:poss(rights-14, our-11)
+nummod(rights-14, three-12)
+amod(rights-14, basic-13)
+nmod:of(first-9, rights-14)
+punct(property-20, (-15)
+compound(property-20, life-16)
+punct(property-20, ,-17)
+dep(property-20, liberty-18)
+punct(property-20, ,-19)
+dep(violates-7, property-20)
+punct(property-20, )-21)
+punct(know-2, ?-22)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0
+three	NUMBER	NUMBER:-1.0
+
+Sentence #3 (10 tokens):
+The function of government is to safeguard those rights.
+
+Tokens:
+[Text=The CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=function CharacterOffsetBegin=116 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=function NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=128 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=safeguard CharacterOffsetBegin=145 CharacterOffsetEnd=154 PartOfSpeech=VB Lemma=safeguard NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN function))
+      (PP (IN of)
+        (NP (NN government))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB safeguard)
+            (NP (DT those) (NNS rights))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-5)
+det(function-2, The-1)
+nsubj(is-5, function-2)
+nsubj:xsubj(safeguard-7, function-2)
+case(government-4, of-3)
+nmod:of(function-2, government-4)
+mark(safeguard-7, to-6)
+xcomp(is-5, safeguard-7)
+det(rights-9, those-8)
+obj(safeguard-7, rights-9)
+punct(is-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (14 tokens):
+We are not talking about the government banning light bulbs or unlicenced commerce.
+
+Tokens:
+[Text=We CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=180 CharacterOffsetEnd=187 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=198 CharacterOffsetEnd=208 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=banning CharacterOffsetBegin=209 CharacterOffsetEnd=216 PartOfSpeech=VBG Lemma=ban NamedEntityTag=O]
+[Text=light CharacterOffsetBegin=217 CharacterOffsetEnd=222 PartOfSpeech=NN Lemma=light NamedEntityTag=O]
+[Text=bulbs CharacterOffsetBegin=223 CharacterOffsetEnd=228 PartOfSpeech=NNS Lemma=bulb NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=unlicenced CharacterOffsetBegin=232 CharacterOffsetEnd=242 PartOfSpeech=JJ Lemma=unlicenced NamedEntityTag=O]
+[Text=commerce CharacterOffsetBegin=243 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=commerce NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are) (RB not)
+      (VP (VBG talking)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN government))
+            (VP (VBG banning)
+              (NP
+                (NP (NN light) (NNS bulbs))
+                (CC or)
+                (NP (JJ unlicenced) (NN commerce))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, talking-4)
+nsubj(talking-4, We-1)
+aux(talking-4, are-2)
+advmod(talking-4, not-3)
+case(government-7, about-5)
+det(government-7, the-6)
+obl:about(talking-4, government-7)
+acl(government-7, banning-8)
+compound(bulbs-10, light-9)
+obj(banning-8, bulbs-10)
+cc(commerce-13, or-11)
+amod(commerce-13, unlicenced-12)
+obj(banning-8, commerce-13)
+conj:or(bulbs-10, commerce-13)
+punct(talking-4, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (5 tokens):
+That's big government.
+
+Tokens:
+[Text=That CharacterOffsetBegin=253 CharacterOffsetEnd=257 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=264 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP (JJ big) (NN government)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, government-4)
+nsubj(government-4, That-1)
+cop(government-4, 's-2)
+amod(government-4, big-3)
+punct(government-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (23 tokens):
+We are talking about the government doing the job it's supposed to do by ending an egregious violation of human rights.
+
+Tokens:
+[Text=We CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=283 CharacterOffsetEnd=290 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=291 CharacterOffsetEnd=296 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=301 CharacterOffsetEnd=311 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=supposed CharacterOffsetBegin=331 CharacterOffsetEnd=339 PartOfSpeech=VBN Lemma=suppose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=340 CharacterOffsetEnd=342 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=ending CharacterOffsetBegin=349 CharacterOffsetEnd=355 PartOfSpeech=VBG Lemma=end NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=356 CharacterOffsetEnd=358 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=egregious CharacterOffsetBegin=359 CharacterOffsetEnd=368 PartOfSpeech=JJ Lemma=egregious NamedEntityTag=O]
+[Text=violation CharacterOffsetBegin=369 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=violation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=379 CharacterOffsetEnd=381 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=human CharacterOffsetBegin=382 CharacterOffsetEnd=387 PartOfSpeech=JJ Lemma=human NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=388 CharacterOffsetEnd=394 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (VP (VBG talking)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN government))
+            (VP (VBG doing)
+              (NP
+                (NP (DT the) (NN job))
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ 's)
+                      (VP (VBN supposed)
+                        (S
+                          (VP (TO to)
+                            (VP (VB do)
+                              (PP (IN by)
+                                (S
+                                  (VP (VBG ending)
+                                    (NP
+                                      (NP (DT an) (JJ egregious) (NN violation))
+                                      (PP (IN of)
+                                        (NP (JJ human) (NNS rights))))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, talking-3)
+nsubj(talking-3, We-1)
+aux(talking-3, are-2)
+case(government-6, about-4)
+det(government-6, the-5)
+obl:about(talking-3, government-6)
+acl(government-6, doing-7)
+det(job-9, the-8)
+obj(doing-7, job-9)
+nsubj:pass(supposed-12, it-10)
+nsubj:xsubj(do-14, it-10)
+aux:pass(supposed-12, 's-11)
+acl:relcl(job-9, supposed-12)
+mark(do-14, to-13)
+xcomp(supposed-12, do-14)
+mark(ending-16, by-15)
+advcl:by(do-14, ending-16)
+det(violation-19, an-17)
+amod(violation-19, egregious-18)
+obj(ending-16, violation-19)
+case(rights-22, of-20)
+amod(rights-22, human-21)
+nmod:of(violation-19, rights-22)
+punct(talking-3, .-23)
+
+Extracted the following NER entity mentions:

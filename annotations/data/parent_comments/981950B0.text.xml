@@ -1,0 +1,62 @@
+Document: ID=981950B0.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Trump “Admired” Putin’s Ability to Kill Whomever He Wanted: Ex-Staffer
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Admired CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=admire NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Ability CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=ability NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Kill CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=Whomever CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Whomever NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=Wanted CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Ex-Staffer CharacterOffsetBegin=60 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Ex-Staffer NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Trump))
+      (VP (`` “) (VBD Admired) ('' ”)
+        (NP
+          (NP (NNP Putin) (POS ’s))
+          (NN Ability)
+          (S
+            (VP (TO to)
+              (VP (VB Kill)
+                (NP
+                  (NP (NNP Whomever))
+                  (SBAR
+                    (S
+                      (NP (PRP He))
+                      (VP (VBD Wanted)))))))))))
+    (: :)
+    (NP (NNP Ex-Staffer))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ex-Staffer-14)
+nsubj(Admired-3, Trump-1)
+punct(Admired-3, “-2)
+dep(Ex-Staffer-14, Admired-3)
+punct(Admired-3, ”-4)
+nmod:poss(Ability-7, Putin-5)
+case(Putin-5, ’s-6)
+obj(Admired-3, Ability-7)
+mark(Kill-9, to-8)
+acl:to(Ability-7, Kill-9)
+obj(Kill-9, Whomever-10)
+nsubj(Wanted-12, He-11)
+acl:relcl(Whomever-10, Wanted-12)
+punct(Ex-Staffer-14, :-13)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9816325793431768
+He	PERSON	-

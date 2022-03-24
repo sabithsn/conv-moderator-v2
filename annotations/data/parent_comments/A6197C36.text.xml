@@ -1,0 +1,54 @@
+Document: ID=A6197C36.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+At least the sacrifices of the last two years weren't in vain...
+
+Tokens:
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sacrifices CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=sacrifice NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last two years</TIMEX3>]
+[Text=last CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last two years</TIMEX3>]
+[Text=two CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=two NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last two years</TIMEX3>]
+[Text=years CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last two years</TIMEX3>]
+[Text=were CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=vain CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=vain NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (IN At) (JJS least))
+    (NP
+      (NP (DT the) (NNS sacrifices))
+      (PP (IN of)
+        (NP (DT the) (JJ last) (CD two) (NNS years))))
+    (VP (VBD were) (RB n't)
+      (PP (IN in)
+        (ADJP (JJ vain))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, vain-13)
+advmod(vain-13, At-1)
+fixed(At-1, least-2)
+det(sacrifices-4, the-3)
+nsubj(vain-13, sacrifices-4)
+case(years-9, of-5)
+det(years-9, the-6)
+amod(years-9, last-7)
+nummod(years-9, two-8)
+nmod:of(sacrifices-4, years-9)
+cop(vain-13, were-10)
+advmod(vain-13, n't-11)
+case(vain-13, in-12)
+punct(vain-13, ...-14)
+
+Extracted the following NER entity mentions:
+the	DURATION	DURATION:-1.0
+last two years	DATE	DATE:0.5319630601918341

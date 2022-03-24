@@ -1,0 +1,58 @@
+Document: ID=7C7CB35A.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+New Jersey approves law to abort up to the moment the baby is born
+
+Tokens:
+[Text=New CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Jersey CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Jersey NamedEntityTag=STATE_OR_PROVINCE]
+[Text=approves CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=approve NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=abort CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=abort NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=moment CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=moment NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=baby CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=born CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VBN Lemma=bear NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP New) (NNP Jersey))
+        (VP (VBZ approves)
+          (NP (NN law))
+          (S
+            (VP (TO to)
+              (VP (VB abort)
+                (PRT (RP up))
+                (PP (IN to)
+                  (NP (DT the) (NN moment)))))))))
+    (NP (DT the) (NN baby))
+    (VP (VBZ is)
+      (VP (VBN born)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, born-14)
+compound(Jersey-2, New-1)
+nsubj(approves-3, Jersey-2)
+parataxis(born-14, approves-3)
+obj(approves-3, law-4)
+mark(abort-6, to-5)
+advcl:to(approves-3, abort-6)
+compound:prt(abort-6, up-7)
+case(moment-10, to-8)
+det(moment-10, the-9)
+obl:to(abort-6, moment-10)
+det(baby-12, the-11)
+nsubj:pass(born-14, baby-12)
+aux:pass(born-14, is-13)
+
+Extracted the following NER entity mentions:
+New Jersey	STATE_OR_PROVINCE	LOCATION:0.9445544981799837

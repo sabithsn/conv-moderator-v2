@@ -1,0 +1,112 @@
+Document: ID=376D7206.text (2 sentences, 28 tokens)
+
+Sentence #1 (2 tokens):
+WARNING!
+
+Tokens:
+[Text=WARNING CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=warning NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN WARNING) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, WARNING-1)
+punct(WARNING-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (26 tokens):
+My friend works at an OBGYN clinic and they have been dealing with an absolutely shocking influx of patients with dysfunctional bleeding and infertility issues!
+
+Tokens:
+[Text=My CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=OBGYN CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=OBGYN NamedEntityTag=O]
+[Text=clinic CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=clinic NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=dealing CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=deal NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=absolutely CharacterOffsetBegin=79 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=absolutely NamedEntityTag=O]
+[Text=shocking CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=shocking NamedEntityTag=O]
+[Text=influx CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=influx NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=patients CharacterOffsetBegin=109 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=patient NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=dysfunctional CharacterOffsetBegin=123 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=dysfunctional NamedEntityTag=O]
+[Text=bleeding CharacterOffsetBegin=137 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=bleeding NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=infertility CharacterOffsetBegin=150 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=infertility NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=162 CharacterOffsetEnd=168 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ My) (NN friend))
+      (VP (VBZ works)
+        (PP (IN at)
+          (NP (DT an) (NNP OBGYN) (NN clinic)))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBG dealing)
+            (PP (IN with)
+              (NP
+                (NP (DT an)
+                  (ADJP (RB absolutely) (JJ shocking))
+                  (NN influx))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS patients))
+                    (PP (IN with)
+                      (NP (JJ dysfunctional)
+                        (NML (NN bleeding)
+                          (CC and)
+                          (NN infertility))
+                        (NNS issues)))))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, works-3)
+nmod:poss(friend-2, My-1)
+nsubj(works-3, friend-2)
+case(clinic-7, at-4)
+det(clinic-7, an-5)
+compound(clinic-7, OBGYN-6)
+obl:at(works-3, clinic-7)
+cc(dealing-12, and-8)
+nsubj(dealing-12, they-9)
+aux(dealing-12, have-10)
+aux(dealing-12, been-11)
+conj:and(works-3, dealing-12)
+case(influx-17, with-13)
+det(influx-17, an-14)
+advmod(shocking-16, absolutely-15)
+amod(influx-17, shocking-16)
+obl:with(dealing-12, influx-17)
+case(patients-19, of-18)
+nmod:of(influx-17, patients-19)
+case(issues-25, with-20)
+amod(issues-25, dysfunctional-21)
+compound(issues-25, bleeding-22)
+cc(infertility-24, and-23)
+conj:and(bleeding-22, infertility-24)
+compound(issues-25, infertility-24)
+nmod:with(patients-19, issues-25)
+punct(works-3, !-26)
+
+Extracted the following NER entity mentions:

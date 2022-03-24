@@ -1,0 +1,141 @@
+Document: ID=8F38FF6D.text (3 sentences, 30 tokens)
+
+Sentence #1 (14 tokens):
+Yeah he kept calling for unity and peace and got banned for it.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=kept CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=keep NamedEntityTag=O]
+[Text=calling CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=unity CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=unity NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=peace CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=peace NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (NP (PRP he))
+    (VP
+      (VP (VBD kept)
+        (S
+          (VP (VBG calling)
+            (PP (IN for)
+              (NP (NN unity)
+                (CC and)
+                (NN peace))))))
+      (CC and)
+      (VP (VBD got)
+        (VP (VBN banned)
+          (PP (IN for)
+            (NP (PRP it))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, kept-3)
+discourse(kept-3, Yeah-1)
+nsubj(kept-3, he-2)
+nsubj:pass(banned-11, he-2)
+xcomp(kept-3, calling-4)
+case(unity-6, for-5)
+obl:for(calling-4, unity-6)
+cc(peace-8, and-7)
+obl:for(calling-4, peace-8)
+conj:and(unity-6, peace-8)
+cc(banned-11, and-9)
+aux:pass(banned-11, got-10)
+conj:and(kept-3, banned-11)
+case(it-13, for-12)
+obl:for(banned-11, it-13)
+punct(kept-3, .-14)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #2 (11 tokens):
+Meanwhile libs like Cori Bush are openly calling for violence.
+
+Tokens:
+[Text=Meanwhile CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=meanwhile NamedEntityTag=O]
+[Text=libs CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=lib NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Cori CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Cori NamedEntityTag=PERSON]
+[Text=Bush CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Bush NamedEntityTag=PERSON]
+[Text=are CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=openly CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=openly NamedEntityTag=O]
+[Text=calling CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=violence CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=violence NamedEntityTag=CAUSE_OF_DEATH]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Meanwhile))
+    (NP
+      (NP (NNS libs))
+      (PP (IN like)
+        (NP (NNP Cori) (NNP Bush))))
+    (VP (VBP are)
+      (ADVP (RB openly))
+      (VP (VBG calling)
+        (PP (IN for)
+          (NP (NN violence)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, calling-8)
+advmod(calling-8, Meanwhile-1)
+nsubj(calling-8, libs-2)
+case(Bush-5, like-3)
+compound(Bush-5, Cori-4)
+nmod:like(libs-2, Bush-5)
+aux(calling-8, are-6)
+advmod(calling-8, openly-7)
+case(violence-10, for-9)
+obl:for(calling-8, violence-10)
+punct(calling-8, .-11)
+
+Extracted the following NER entity mentions:
+Cori Bush	PERSON	PERSON:0.9997005096764338
+violence	CAUSE_OF_DEATH	-
+
+Sentence #3 (5 tokens):
+Oh so did Biden.
+
+Tokens:
+[Text=Oh CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=UH Lemma=oh NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (INTJ (UH Oh))
+    (ADVP (RB so))
+    (VP (VBD did))
+    (NP (NNP Biden))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-3)
+discourse(did-3, Oh-1)
+advmod(did-3, so-2)
+nsubj(did-3, Biden-4)
+punct(did-3, .-5)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.994126192174009

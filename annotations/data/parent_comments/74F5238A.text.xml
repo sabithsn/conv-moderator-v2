@@ -1,0 +1,96 @@
+Document: ID=74F5238A.text (2 sentences, 21 tokens)
+
+Sentence #1 (13 tokens):
+>all you are doing is misunderstanding where they are coming from.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=misunderstanding CharacterOffsetBegin=22 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=misunderstanding NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (PP (SYM >)
+        (NP (PDT all)))
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (VP (VBG doing)))))
+    (VP (VBZ is)
+      (NP
+        (NP (NN misunderstanding))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (VP (VBG coming)
+                (PP (IN from))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, misunderstanding-7)
+dep(all-2, >-1)
+obl(doing-5, all-2)
+nsubj(doing-5, you-3)
+aux(doing-5, are-4)
+csubj(misunderstanding-7, doing-5)
+cop(misunderstanding-7, is-6)
+advmod(coming-11, where-8)
+nsubj(coming-11, they-9)
+aux(coming-11, are-10)
+acl:relcl(misunderstanding-7, coming-11)
+obl(coming-11, from-12)
+punct(misunderstanding-7, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+do better   maybe take your own advice?
+
+Tokens:
+[Text=do CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=maybe CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=advice CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=advice NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB do)
+      (S
+        (ADJP (JJR better)))
+      (ADVP (RB maybe))
+      (VP (VB take)
+        (NP (PRP$ your) (JJ own) (NN advice))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, take-4)
+aux(take-4, do-1)
+xcomp(take-4, better-2)
+advmod(take-4, maybe-3)
+nmod:poss(advice-7, your-5)
+amod(advice-7, own-6)
+obj(take-4, advice-7)
+punct(take-4, ?-8)
+
+Extracted the following NER entity mentions:

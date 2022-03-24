@@ -1,0 +1,94 @@
+Document: ID=58583BFC.text (2 sentences, 22 tokens)
+
+Sentence #1 (5 tokens):
+Well that's good.
+
+Tokens:
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (NP (DT that))
+    (VP (VBZ 's)
+      (ADJP (JJ good)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, good-4)
+discourse(good-4, Well-1)
+nsubj(good-4, that-2)
+cop(good-4, 's-3)
+punct(good-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+Transgender care for children is not child abuse so you should be against this stance then.
+
+Tokens:
+[Text=Transgender CharacterOffsetBegin=18 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=transgender NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=care NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=child NamedEntityTag=CRIMINAL_CHARGE]
+[Text=abuse CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=abuse NamedEntityTag=CRIMINAL_CHARGE]
+[Text=so CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=74 CharacterOffsetEnd=80 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=stance CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=stance NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Transgender) (NN care))
+      (PP (IN for)
+        (NP (NNS children))))
+    (VP (VBZ is) (RB not)
+      (NP (NN child) (NN abuse))
+      (SBAR (IN so)
+        (S
+          (NP (PRP you))
+          (VP (MD should)
+            (VP (VB be)
+              (PP (IN against)
+                (NP (DT this) (NN stance)))
+              (ADVP (RB then)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, abuse-8)
+amod(care-2, Transgender-1)
+nsubj(abuse-8, care-2)
+case(children-4, for-3)
+nmod:for(care-2, children-4)
+cop(abuse-8, is-5)
+advmod(abuse-8, not-6)
+compound(abuse-8, child-7)
+mark(stance-15, so-9)
+nsubj(stance-15, you-10)
+aux(stance-15, should-11)
+cop(stance-15, be-12)
+case(stance-15, against-13)
+det(stance-15, this-14)
+advcl:so(abuse-8, stance-15)
+advmod(stance-15, then-16)
+punct(abuse-8, .-17)
+
+Extracted the following NER entity mentions:
+child abuse	CRIMINAL_CHARGE	-

@@ -1,0 +1,59 @@
+Document: ID=9955FD01.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Man Who Rammed Car into Winnipeg Freedom Convoy Protesters is Antifa Activist David Zegarac
+
+Tokens:
+[Text=Man CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Man NamedEntityTag=O]
+[Text=Who CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Rammed CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=ram NamedEntityTag=O]
+[Text=Car CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=car NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=Winnipeg CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Winnipeg NamedEntityTag=ORGANIZATION]
+[Text=Freedom CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Freedom NamedEntityTag=ORGANIZATION]
+[Text=Convoy CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Convoy NamedEntityTag=ORGANIZATION]
+[Text=Protesters CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=protester NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Antifa CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Antifa NamedEntityTag=O]
+[Text=Activist CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Activist NamedEntityTag=TITLE]
+[Text=David CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=Zegarac CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Zegarac NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP
+      (NP (NNP Man))
+      (SBAR
+        (WHNP (WP Who))
+        (S
+          (VP (VBD Rammed)
+            (NP (NN Car))
+            (PP (IN into)
+              (NP (NNP Winnipeg) (NNP Freedom) (NNP Convoy)))))))
+    (NP (NNS Protesters))
+    (VP (VBZ is)
+      (NP (NNP Antifa) (NNP Activist) (NNP David) (NNP Zegarac)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Zegarac-14)
+nsubj(Rammed-3, Man-1)
+obl:tmod(Zegarac-14, Man-1)
+ref(Man-1, Who-2)
+acl:relcl(Man-1, Rammed-3)
+obj(Rammed-3, Car-4)
+case(Convoy-8, into-5)
+compound(Convoy-8, Winnipeg-6)
+compound(Convoy-8, Freedom-7)
+obl:into(Rammed-3, Convoy-8)
+nsubj(Zegarac-14, Protesters-9)
+cop(Zegarac-14, is-10)
+compound(Zegarac-14, Antifa-11)
+compound(Zegarac-14, Activist-12)
+compound(Zegarac-14, David-13)
+
+Extracted the following NER entity mentions:
+Winnipeg Freedom Convoy Protesters	ORGANIZATION	ORGANIZATION:0.4203797242692057
+Activist	TITLE	-
+David Zegarac	PERSON	PERSON:0.9999478317270218

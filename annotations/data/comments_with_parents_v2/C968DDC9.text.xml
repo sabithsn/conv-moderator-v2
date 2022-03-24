@@ -1,0 +1,70 @@
+Document: ID=C968DDC9.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+ELI5 why we keep things like Santa Claus and the tooth fairy being fake from kids?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=keep NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Santa CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Santa NamedEntityTag=CITY]
+[Text=Claus CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Claus NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tooth CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=tooth NamedEntityTag=O]
+[Text=fairy CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=fairy NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=fake CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=fake NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NN ELI5))
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP we))
+          (VP (VBP keep)
+            (NP (NNS things))
+            (PP (IN like)
+              (NP
+                (NP (NNP Santa) (NNP Claus))
+                (CC and)
+                (NP (DT the) (NN tooth) (NN fairy))))))))
+    (VP (VBG being)
+      (VP (JJ fake)
+        (PP (IN from)
+          (NP (NNS kids)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+advmod(keep-4, why-2)
+nsubj(keep-4, we-3)
+acl:relcl(ELI5-1, keep-4)
+obj(keep-4, things-5)
+case(Claus-8, like-6)
+compound(Claus-8, Santa-7)
+obl:like(keep-4, Claus-8)
+cc(fairy-12, and-9)
+det(fairy-12, the-10)
+compound(fairy-12, tooth-11)
+obl:like(keep-4, fairy-12)
+conj:and(Claus-8, fairy-12)
+aux(fake-14, being-13)
+acl(ELI5-1, fake-14)
+case(kids-16, from-15)
+obl:from(fake-14, kids-16)
+punct(ELI5-1, ?-17)
+
+Extracted the following NER entity mentions:
+Santa	CITY	LOCATION:0.5086153028502056
+Claus	LOCATION	LOCATION:0.4911359902945948

@@ -1,0 +1,255 @@
+Document: ID=79A91967.text (6 sentences, 55 tokens)
+
+Sentence #1 (4 tokens):
+like that matters.
+
+Tokens:
+[Text=like CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=matters CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=matter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN like)
+    (NP (DT that) (NNS matters))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, matters-3)
+case(matters-3, like-1)
+det(matters-3, that-2)
+punct(matters-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+She's a Democrat.
+
+Tokens:
+[Text=She CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Democrat CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ 's)
+      (NP (DT a) (NNP Democrat)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Democrat-4)
+nsubj(Democrat-4, She-1)
+cop(Democrat-4, 's-2)
+det(Democrat-4, a-3)
+punct(Democrat-4, .-5)
+
+Extracted the following NER entity mentions:
+Democrat	MISC	MISC:0.9990833114407733
+She	PERSON	-
+
+Sentence #3 (11 tokens):
+Democrats have more Jewish voters and politicians in their party.
+
+Tokens:
+[Text=Democrats CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=have CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=Jewish CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=jewish NamedEntityTag=RELIGION]
+[Text=voters CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=voter NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=politicians CharacterOffsetBegin=77 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=politician NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNPS Democrats))
+    (VP (VBP have)
+      (NP
+        (NP (JJR more) (JJ Jewish) (NNS voters))
+        (CC and)
+        (NP
+          (NP (NNS politicians))
+          (PP (IN in)
+            (NP (PRP$ their) (NN party))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, Democrats-1)
+amod(voters-5, more-3)
+amod(voters-5, Jewish-4)
+obj(have-2, voters-5)
+cc(politicians-7, and-6)
+obj(have-2, politicians-7)
+conj:and(voters-5, politicians-7)
+case(party-10, in-8)
+nmod:poss(party-10, their-9)
+nmod:in(politicians-7, party-10)
+punct(have-2, .-11)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.999796195691226
+Jewish	RELIGION	MISC:0.9999776382224492
+
+Sentence #4 (14 tokens):
+She's in the party of Chuck Schumer, Bernie Sanders, etc.
+
+Tokens:
+[Text=She CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Chuck CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=NNP Lemma=Chuck NamedEntityTag=PERSON]
+[Text=Schumer CharacterOffsetBegin=134 CharacterOffsetEnd=141 PartOfSpeech=NNP Lemma=Schumer NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Bernie CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=NNP Lemma=Bernie NamedEntityTag=PERSON]
+[Text=Sanders CharacterOffsetBegin=150 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Sanders NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ 's)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN party))
+          (PP (IN of)
+            (NP
+              (NP (NNP Chuck) (NNP Schumer))
+              (, ,)
+              (NP (NNP Bernie) (NNP Sanders))
+              (, ,)
+              (ADVP (FW etc.)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, party-5)
+nsubj(party-5, She-1)
+cop(party-5, 's-2)
+case(party-5, in-3)
+det(party-5, the-4)
+case(Schumer-8, of-6)
+compound(Schumer-8, Chuck-7)
+nmod:of(party-5, Schumer-8)
+punct(Schumer-8, ,-9)
+compound(Sanders-11, Bernie-10)
+appos(Schumer-8, Sanders-11)
+punct(Schumer-8, ,-12)
+advmod(Schumer-8, etc.-13)
+punct(party-5, .-14)
+
+Extracted the following NER entity mentions:
+Chuck Schumer	PERSON	PERSON:0.8358411204449326
+Bernie Sanders	PERSON	PERSON:0.9980974906143095
+She	PERSON	-
+
+Sentence #5 (11 tokens):
+Isn't Zelensky "progressive" for someone in Ukraine?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Zelensky CharacterOffsetBegin=171 CharacterOffsetEnd=179 PartOfSpeech=NNP Lemma=Zelensky NamedEntityTag=PERSON]
+[Text=" CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=progressive CharacterOffsetBegin=181 CharacterOffsetEnd=192 PartOfSpeech=JJ Lemma=progressive NamedEntityTag=IDEOLOGY]
+[Text=" CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=198 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=209 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=? CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is) (RB n't)
+    (NP (NNP Zelensky))
+    (ADJP (`` ") (JJ progressive) ('' "))
+    (PP (IN for)
+      (NP
+        (NP (NN someone))
+        (PP (IN in)
+          (NP (NNP Ukraine)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, progressive-5)
+cop(progressive-5, Is-1)
+advmod(progressive-5, n't-2)
+nsubj(progressive-5, Zelensky-3)
+punct(progressive-5, "-4)
+punct(progressive-5, "-6)
+case(someone-8, for-7)
+obl:for(progressive-5, someone-8)
+case(Ukraine-10, in-9)
+nmod:in(someone-8, Ukraine-10)
+punct(progressive-5, ?-11)
+
+Extracted the following NER entity mentions:
+Zelensky	PERSON	PERSON:0.9634910269943282
+progressive	IDEOLOGY	-
+Ukraine	COUNTRY	LOCATION:0.9989549013190934
+
+Sentence #6 (10 tokens):
+He's an actor, actors are usually lefties.
+
+Tokens:
+[Text=He CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=actor CharacterOffsetBegin=227 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=actor NamedEntityTag=TITLE]
+[Text=, CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=actors CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NNS Lemma=actor NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=usually CharacterOffsetBegin=245 CharacterOffsetEnd=252 PartOfSpeech=RB Lemma=usually NamedEntityTag=O]
+[Text=lefties CharacterOffsetBegin=253 CharacterOffsetEnd=260 PartOfSpeech=NNS Lemma=lefty NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ 's)
+        (NP (DT an) (NN actor))))
+    (, ,)
+    (NP (NNS actors))
+    (VP (VBP are)
+      (ADVP (RB usually))
+      (NP (NNS lefties)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lefties-9)
+nsubj(actor-4, He-1)
+cop(actor-4, 's-2)
+det(actor-4, an-3)
+ccomp(lefties-9, actor-4)
+punct(lefties-9, ,-5)
+nsubj(lefties-9, actors-6)
+cop(lefties-9, are-7)
+advmod(lefties-9, usually-8)
+punct(lefties-9, .-10)
+
+Extracted the following NER entity mentions:
+actor	TITLE	-
+He	PERSON	-

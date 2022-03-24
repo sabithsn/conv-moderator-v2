@@ -1,0 +1,83 @@
+Document: ID=678C900A.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Man SLAMMED after saying it's 'unfair' men have to fight war in Ukraine while children women leave
+
+Tokens:
+[Text=Man CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Man NamedEntityTag=O]
+[Text=SLAMMED CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=slam NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=unfair CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=unfair NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=fight NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=while CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=VBP Lemma=leave NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Man))
+        (VP (VBD SLAMMED)
+          (PP (IN after)
+            (S
+              (VP (VBG saying)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ 's) (`` ')
+                      (ADJP (JJ unfair))
+                      ('' '))))))))))
+    (NP (NNS men))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB fight)
+            (NP (NN war))
+            (PP (IN in)
+              (NP (NNP Ukraine)))
+            (SBAR (IN while)
+              (S
+                (NP (NNS children) (NNS women))
+                (VP (VBP leave))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-11)
+nsubj(SLAMMED-2, Man-1)
+parataxis(have-11, SLAMMED-2)
+mark(saying-4, after-3)
+advcl:after(SLAMMED-2, saying-4)
+nsubj(unfair-8, it-5)
+cop(unfair-8, 's-6)
+punct(unfair-8, '-7)
+ccomp(saying-4, unfair-8)
+punct(unfair-8, '-9)
+nsubj(have-11, men-10)
+nsubj:xsubj(fight-13, men-10)
+mark(fight-13, to-12)
+xcomp(have-11, fight-13)
+obj(fight-13, war-14)
+case(Ukraine-16, in-15)
+obl:in(fight-13, Ukraine-16)
+mark(leave-20, while-17)
+compound(women-19, children-18)
+nsubj(leave-20, women-19)
+advcl:while(fight-13, leave-20)
+
+Extracted the following NER entity mentions:
+war	CAUSE_OF_DEATH	-
+Ukraine	COUNTRY	LOCATION:0.9984657880932551

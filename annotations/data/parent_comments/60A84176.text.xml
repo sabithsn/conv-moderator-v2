@@ -1,0 +1,91 @@
+Document: ID=60A84176.text (2 sentences, 20 tokens)
+
+Sentence #1 (10 tokens):
+You want to say it *sooooo* bad.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=sooooo CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=sooooo NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (S
+              (NP (PRP it))
+              (NP
+                (NP (NFP *) (RB sooooo) (NFP *))
+                (ADJP (JJ bad))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-2)
+nsubj(want-2, You-1)
+nsubj:xsubj(say-4, You-1)
+mark(say-4, to-3)
+xcomp(want-2, say-4)
+nsubj(sooooo-7, it-5)
+punct(sooooo-7, *-6)
+xcomp(say-4, sooooo-7)
+punct(sooooo-7, *-8)
+amod(sooooo-7, bad-9)
+punct(want-2, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Those blue balls must be killing you, Chad.
+
+Tokens:
+[Text=Those CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=blue CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=blue NamedEntityTag=O]
+[Text=balls CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=ball NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=killing CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=VBG Lemma=kill NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Chad CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Chad NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (DT Those) (JJ blue) (NNS balls))
+      (VP (MD must)
+        (VP (VB be)
+          (VP (VBG killing)
+            (NP (PRP you))))))
+    (, ,)
+    (NP (NNP Chad))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Chad-9)
+det(balls-3, Those-1)
+amod(balls-3, blue-2)
+nsubj(killing-6, balls-3)
+aux(killing-6, must-4)
+aux(killing-6, be-5)
+dep(Chad-9, killing-6)
+obj(killing-6, you-7)
+punct(Chad-9, ,-8)
+punct(Chad-9, .-10)
+
+Extracted the following NER entity mentions:
+Chad	PERSON	PERSON:0.5368208563718421

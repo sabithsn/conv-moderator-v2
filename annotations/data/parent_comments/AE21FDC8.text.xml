@@ -1,0 +1,68 @@
+Document: ID=AE21FDC8.text (2 sentences, 12 tokens)
+
+Sentence #1 (4 tokens):
+It sorta does.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=sorta CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=sorta NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB sorta))
+    (VP (VBZ does))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, does-3)
+nsubj(does-3, It-1)
+advmod(does-3, sorta-2)
+punct(does-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+She’s being forced to be tested?
+
+Tokens:
+[Text=She CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=forced CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=VBN Lemma=force NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=tested CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=VBN Lemma=test NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ ’s)
+      (S
+        (VP (VBG being)
+          (VP (VBN forced)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN tested)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-2)
+nsubj(’s-2, She-1)
+aux:pass(forced-4, being-3)
+xcomp(’s-2, forced-4)
+mark(tested-7, to-5)
+aux:pass(tested-7, be-6)
+xcomp(forced-4, tested-7)
+punct(’s-2, ?-8)
+
+Extracted the following NER entity mentions:
+She	PERSON	-

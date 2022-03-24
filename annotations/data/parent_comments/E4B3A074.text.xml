@@ -1,0 +1,83 @@
+Document: ID=E4B3A074.text (3 sentences, 15 tokens)
+
+Sentence #1 (6 tokens):
+I have those nails….
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=nails CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=nail NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP (DT those) (NNS nails)))
+    (: …) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, I-1)
+det(nails-4, those-3)
+obj(have-2, nails-4)
+punct(have-2, …-5)
+punct(have-2, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+An inch off my finger stiletto nails.
+
+Tokens:
+[Text=An CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=inch CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=inch NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=finger CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=finger NamedEntityTag=O]
+[Text=stiletto CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=stiletto NamedEntityTag=O]
+[Text=nails CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=nail NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT An) (NN inch))
+    (PP (IN off)
+      (NP (PRP$ my)
+        (ADJP (NN finger) (NN stiletto))
+        (NNS nails)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, inch-2)
+det(inch-2, An-1)
+case(nails-7, off-3)
+nmod:poss(nails-7, my-4)
+dep(stiletto-6, finger-5)
+amod(nails-7, stiletto-6)
+nmod:off(inch-2, nails-7)
+punct(inch-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (1 tokens):
+😂
+
+Tokens:
+[Text=😂 CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=NFP Lemma=😂 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (NFP 😂)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 😂-1)
+
+Extracted the following NER entity mentions:

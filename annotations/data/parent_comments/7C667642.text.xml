@@ -1,0 +1,117 @@
+Document: ID=7C667642.text (3 sentences, 25 tokens)
+
+Sentence #1 (14 tokens):
+It's a civil war between Ukrainian nationalists and pro Russian s̶i̶m̶p̶s̶ separatists.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=civil CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=civil NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=between CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=Ukrainian CharacterOffsetBegin=25 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=ukrainian NamedEntityTag=NATIONALITY]
+[Text=nationalists CharacterOffsetBegin=35 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=nationalist NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pro CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=pro NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=s̶i̶m̶p̶s̶ CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=s̶i̶m̶p̶s̶ NamedEntityTag=O]
+[Text=separatists CharacterOffsetBegin=75 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=separatist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (JJ civil) (NN war))
+        (PP (IN between)
+          (NP
+            (NP (JJ Ukrainian) (NNS nationalists))
+            (CC and)
+            (NP (JJ pro) (JJ Russian) (NN s̶i̶m̶p̶s̶) (NNS separatists))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, war-5)
+nsubj(war-5, It-1)
+cop(war-5, 's-2)
+det(war-5, a-3)
+amod(war-5, civil-4)
+case(nationalists-8, between-6)
+amod(nationalists-8, Ukrainian-7)
+nmod:between(war-5, nationalists-8)
+cc(separatists-13, and-9)
+amod(separatists-13, pro-10)
+amod(separatists-13, Russian-11)
+compound(separatists-13, s̶i̶m̶p̶s̶-12)
+nmod:between(war-5, separatists-13)
+conj:and(nationalists-8, separatists-13)
+punct(war-5, .-14)
+
+Extracted the following NER entity mentions:
+war	CAUSE_OF_DEATH	-
+Ukrainian	NATIONALITY	MISC:0.9999430914812949
+Russian	NATIONALITY	MISC:0.999998436337052
+
+Sentence #2 (7 tokens):
+The citizens are murdering each other.
+
+Tokens:
+[Text=The CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=citizens CharacterOffsetBegin=92 CharacterOffsetEnd=100 PartOfSpeech=NNS Lemma=citizen NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=murdering CharacterOffsetBegin=105 CharacterOffsetEnd=114 PartOfSpeech=VBG Lemma=murder NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNS citizens))
+    (VP (VBP are)
+      (VP (VBG murdering)
+        (NP (DT each) (JJ other))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, murdering-4)
+det(citizens-2, The-1)
+nsubj(murdering-4, citizens-2)
+aux(murdering-4, are-3)
+det(other-6, each-5)
+obj(murdering-4, other-6)
+punct(murdering-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (4 tokens):
+Reee more though.
+
+Tokens:
+[Text=Reee CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=VB Lemma=reee NamedEntityTag=PERSON]
+[Text=more CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=137 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=though NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Reee)
+      (ADVP (RBR more))
+      (ADVP (RB though)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Reee-1)
+advmod(Reee-1, more-2)
+advmod(Reee-1, though-3)
+punct(Reee-1, .-4)
+
+Extracted the following NER entity mentions:
+Reee	PERSON	PERSON:0.7456559932981098

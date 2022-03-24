@@ -1,0 +1,72 @@
+Document: ID=5DBE43AA.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Marjorie Taylor Greene’s personal Twitter account permanently banned over ‘repeated violations’ of COVID-19 misinformation policy
+
+Tokens:
+[Text=Marjorie CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Marjorie NamedEntityTag=PERSON]
+[Text=Taylor CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Taylor NamedEntityTag=PERSON]
+[Text=Greene CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=personal CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=personal NamedEntityTag=O]
+[Text=Twitter CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Twitter NamedEntityTag=ORGANIZATION]
+[Text=account CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=account NamedEntityTag=O]
+[Text=permanently CharacterOffsetBegin=50 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=permanently NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=repeated CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=VBN Lemma=repeat NamedEntityTag=O]
+[Text=violations CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=violation NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=19 CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=CD Lemma=19 NamedEntityTag=O]
+[Text=misinformation CharacterOffsetBegin=108 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=misinformation NamedEntityTag=O]
+[Text=policy CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=policy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Marjorie) (NNP Taylor) (NNP Greene) (POS ’s))
+      (JJ personal) (NNP Twitter) (NN account))
+    (ADJP
+      (ADJP (RB permanently) (VBN banned))
+      (PP (IN over) (`` ‘)
+        (NP
+          (NP (VBN repeated) (NNS violations) (POS ’))
+          (NML
+            (NML
+              (PP (IN of)
+                (NP
+                  (NML (NNP COVID) (HYPH -) (CD 19))
+                  (NN misinformation))))
+            (NN policy)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, banned-9)
+compound(Greene-3, Marjorie-1)
+compound(Greene-3, Taylor-2)
+nmod:poss(account-7, Greene-3)
+case(Greene-3, ’s-4)
+amod(account-7, personal-5)
+compound(account-7, Twitter-6)
+dep(banned-9, account-7)
+advmod(banned-9, permanently-8)
+case(policy-20, over-10)
+punct(policy-20, ‘-11)
+amod(violations-13, repeated-12)
+nmod:poss(policy-20, violations-13)
+case(violations-13, ’-14)
+case(misinformation-19, of-15)
+compound(misinformation-19, COVID-16)
+punct(COVID-16, --17)
+nummod(COVID-16, 19-18)
+compound(policy-20, misinformation-19)
+obl:over(banned-9, policy-20)
+
+Extracted the following NER entity mentions:
+Marjorie Taylor Greene	PERSON	PERSON:0.9971981912936029
+Twitter	ORGANIZATION	ORGANIZATION:0.8138959238713525

@@ -1,0 +1,66 @@
+Document: ID=DA4B890D.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Teen brothers beat stepfather to death after he allegedly molested their 9-year-old sister
+
+Tokens:
+[Text=Teen CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=teen NamedEntityTag=O]
+[Text=brothers CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=brother NamedEntityTag=O]
+[Text=beat CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=beat NamedEntityTag=O]
+[Text=stepfather CharacterOffsetBegin=19 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=stepfather NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=allegedly CharacterOffsetBegin=48 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=allegedly NamedEntityTag=O]
+[Text=molested CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=VBD Lemma=molest NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=9 CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=CD Lemma=9 NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9-year-old</TIMEX3>]
+[Text=- CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9-year-old</TIMEX3>]
+[Text=year CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9-year-old</TIMEX3>]
+[Text=- CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9-year-old</TIMEX3>]
+[Text=old CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9-year-old</TIMEX3>]
+[Text=sister CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=sister NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Teen) (NNS brothers))
+    (VP (VBD beat)
+      (NP (NN stepfather))
+      (PP (IN to)
+        (NP (NN death)))
+      (SBAR (IN after)
+        (S
+          (NP (PRP he))
+          (ADVP (RB allegedly))
+          (VP (VBD molested)
+            (NP (PRP$ their)
+              (ADJP
+                (NP (CD 9) (HYPH -) (NN year))
+                (HYPH -) (JJ old))
+              (NN sister))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beat-3)
+compound(brothers-2, Teen-1)
+nsubj(beat-3, brothers-2)
+obj(beat-3, stepfather-4)
+case(death-6, to-5)
+obl:to(beat-3, death-6)
+mark(molested-10, after-7)
+nsubj(molested-10, he-8)
+advmod(molested-10, allegedly-9)
+advcl:after(beat-3, molested-10)
+nmod:poss(sister-17, their-11)
+nummod(year-14, 9-12)
+punct(year-14, --13)
+obl:tmod(old-16, year-14)
+punct(old-16, --15)
+amod(sister-17, old-16)
+obj(molested-10, sister-17)
+
+Extracted the following NER entity mentions:
+9-year-old	DURATION	DURATION:-1.0
+he	PERSON	-

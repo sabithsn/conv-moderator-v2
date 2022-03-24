@@ -1,0 +1,53 @@
+Document: ID=40F354B0.text (2 sentences, 8 tokens)
+
+Sentence #1 (2 tokens):
+Society.
+
+Tokens:
+[Text=Society CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Society NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Society) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Society-1)
+punct(Society-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+I used to be LibLeft.
+
+Tokens:
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=LibLeft CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=LibLeft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD used)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP (NNP LibLeft))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, used-2)
+nsubj(used-2, I-1)
+nsubj:xsubj(LibLeft-5, I-1)
+mark(LibLeft-5, to-3)
+cop(LibLeft-5, be-4)
+xcomp(used-2, LibLeft-5)
+punct(used-2, .-6)
+
+Extracted the following NER entity mentions:

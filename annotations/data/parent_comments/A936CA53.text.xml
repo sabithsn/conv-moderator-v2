@@ -1,0 +1,79 @@
+Document: ID=A936CA53.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+People who immigrate to a different country for socioeconomic reasons often have higher priorities than trying to fit in.
+
+Tokens:
+[Text=People CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=immigrate CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=immigrate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=socioeconomic CharacterOffsetBegin=48 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=socioeconomic NamedEntityTag=O]
+[Text=reasons CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=reason NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=higher CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=JJR Lemma=higher NamedEntityTag=O]
+[Text=priorities CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=priority NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fit CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=fit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=RP Lemma=in NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP immigrate)
+            (PP (IN to)
+              (NP
+                (NP (DT a) (JJ different) (NN country))
+                (PP (IN for)
+                  (NP (JJ socioeconomic) (NNS reasons)))))))))
+    (ADVP (RB often))
+    (VP (VBP have)
+      (NP
+        (NP (JJR higher) (NNS priorities))
+        (PP (IN than)
+          (S
+            (VP (VBG trying)
+              (S
+                (VP (TO to)
+                  (VP (VB fit)
+                    (PRT (RP in))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-12)
+nsubj(immigrate-3, People-1)
+nsubj(have-12, People-1)
+ref(People-1, who-2)
+acl:relcl(People-1, immigrate-3)
+case(country-7, to-4)
+det(country-7, a-5)
+amod(country-7, different-6)
+obl:to(immigrate-3, country-7)
+case(reasons-10, for-8)
+amod(reasons-10, socioeconomic-9)
+nmod:for(country-7, reasons-10)
+advmod(have-12, often-11)
+amod(priorities-14, higher-13)
+obj(have-12, priorities-14)
+mark(trying-16, than-15)
+acl:than(priorities-14, trying-16)
+mark(fit-18, to-17)
+xcomp(trying-16, fit-18)
+compound:prt(fit-18, in-19)
+punct(have-12, .-20)
+
+Extracted the following NER entity mentions:

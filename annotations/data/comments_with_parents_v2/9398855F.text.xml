@@ -1,0 +1,47 @@
+Document: ID=9398855F.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+BREAKING: Starbucks Cancels Vaccine Mandate After Supreme Court Ruling
+
+Tokens:
+[Text=BREAKING CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBG Lemma=break NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Starbucks CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Starbucks NamedEntityTag=ORGANIZATION]
+[Text=Cancels CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=cancel NamedEntityTag=ORGANIZATION]
+[Text=Vaccine CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Vaccine NamedEntityTag=ORGANIZATION]
+[Text=Mandate CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Mandate NamedEntityTag=ORGANIZATION]
+[Text=After CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=after NamedEntityTag=ORGANIZATION]
+[Text=Supreme CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Supreme NamedEntityTag=ORGANIZATION]
+[Text=Court CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+[Text=Ruling CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=rule NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (VP (VBG BREAKING))
+    (: :)
+    (S
+      (NP (NNP Starbucks))
+      (VP (VBZ Cancels)
+        (S
+          (NP (NNP Vaccine) (NNP Mandate))
+          (PP (IN After)
+            (NP
+              (NML (NNP Supreme) (NNP Court))
+              (VBG Ruling))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cancels-4)
+dep(Cancels-4, BREAKING-1)
+punct(Cancels-4, :-2)
+nsubj(Cancels-4, Starbucks-3)
+compound(Mandate-6, Vaccine-5)
+xcomp(Cancels-4, Mandate-6)
+case(Court-9, After-7)
+compound(Court-9, Supreme-8)
+dep(Mandate-6, Court-9)
+amod(Court-9, Ruling-10)
+
+Extracted the following NER entity mentions:
+Starbucks Cancels Vaccine Mandate After Supreme Court	ORGANIZATION	ORGANIZATION:0.8292532396431523

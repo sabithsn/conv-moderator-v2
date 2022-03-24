@@ -1,0 +1,71 @@
+Document: ID=30770902.text (2 sentences, 16 tokens)
+
+Sentence #1 (8 tokens):
+Is the NFL Run Like a Plantation?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NFL CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=NFL NamedEntityTag=ORGANIZATION]
+[Text=Run CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Run NamedEntityTag=O]
+[Text=Like CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Plantation CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Plantation NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT the) (NNP NFL) (NNP Run))
+    (PP (IN Like)
+      (NP (DT a) (NNP Plantation)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Is-1)
+det(Run-4, the-2)
+compound(Run-4, NFL-3)
+nsubj(Is-1, Run-4)
+case(Plantation-7, Like-5)
+det(Plantation-7, a-6)
+obl:like(Is-1, Plantation-7)
+punct(Is-1, ?-8)
+
+Extracted the following NER entity mentions:
+NFL	ORGANIZATION	ORGANIZATION:0.9640279328118814
+
+Sentence #2 (8 tokens):
+Ex-Player Donté Stallworth Responds to Bombshell Racism Lawsuit
+
+Tokens:
+[Text=Ex-Player CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=ex-player NamedEntityTag=O]
+[Text=Donté CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Donté NamedEntityTag=PERSON]
+[Text=Stallworth CharacterOffsetBegin=50 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Stallworth NamedEntityTag=PERSON]
+[Text=Responds CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=VBZ Lemma=respond NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Bombshell CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=bombshell NamedEntityTag=O]
+[Text=Racism CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=racism NamedEntityTag=O]
+[Text=Lawsuit CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=lawsuit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Ex-Player) (NNP Donté) (NNP Stallworth))
+    (VP (VBZ Responds)
+      (PP (IN to)
+        (NP (NN Bombshell) (NN Racism) (NN Lawsuit))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Responds-4)
+compound(Stallworth-3, Ex-Player-1)
+compound(Stallworth-3, Donté-2)
+nsubj(Responds-4, Stallworth-3)
+case(Lawsuit-8, to-5)
+compound(Lawsuit-8, Bombshell-6)
+compound(Lawsuit-8, Racism-7)
+obl:to(Responds-4, Lawsuit-8)
+
+Extracted the following NER entity mentions:
+Donté Stallworth	PERSON	PERSON:0.9014273047949392

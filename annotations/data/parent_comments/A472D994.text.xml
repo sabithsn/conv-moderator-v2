@@ -1,0 +1,216 @@
+Document: ID=A472D994.text (4 sentences, 49 tokens)
+
+Sentence #1 (7 tokens):
+Depends on your definition of bum.
+
+Tokens:
+[Text=Depends CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=depend NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=definition CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=definition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=bum CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=bum NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Depends)
+      (PP (IN on)
+        (NP
+          (NP (PRP$ your) (NN definition))
+          (PP (IN of)
+            (NP (NN bum))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Depends-1)
+case(definition-4, on-2)
+nmod:poss(definition-4, your-3)
+obl:on(Depends-1, definition-4)
+case(bum-6, of-5)
+nmod:of(definition-4, bum-6)
+punct(Depends-1, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (20 tokens):
+I think of a bum as someone who is lazy, so they steal from what other people produce.
+
+Tokens:
+[Text=I CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bum CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=bum NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=lazy CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=lazy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=steal CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=VBP Lemma=steal NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=produce CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=VBP Lemma=produce NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (PP (IN of)
+        (NP
+          (NP (DT a) (NN bum))
+          (PP (IN as)
+            (NP
+              (NP (NN someone))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ lazy))
+                    (, ,)
+                    (SBAR (IN so)
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP steal)
+                          (PP (IN from)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (NP (JJ other) (NNS people))
+                                (VP (VBP produce))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+case(bum-5, of-3)
+det(bum-5, a-4)
+obl:of(think-2, bum-5)
+case(someone-7, as-6)
+nmod:as(bum-5, someone-7)
+nsubj(lazy-10, someone-7)
+ref(someone-7, who-8)
+cop(lazy-10, is-9)
+acl:relcl(someone-7, lazy-10)
+punct(lazy-10, ,-11)
+mark(steal-14, so-12)
+nsubj(steal-14, they-13)
+advcl:so(lazy-10, steal-14)
+mark(produce-19, from-15)
+obj(produce-19, what-16)
+amod(people-18, other-17)
+nsubj(produce-19, people-18)
+advcl:from(steal-14, produce-19)
+punct(think-2, .-20)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (17 tokens):
+That would make Bill Gates, Warren Buffet, Elon Musk, and Jeff Bezos bums.
+
+Tokens:
+[Text=That CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=Bill CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Gates CharacterOffsetBegin=145 CharacterOffsetEnd=150 PartOfSpeech=NNP Lemma=Gates NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Warren CharacterOffsetBegin=152 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=Warren NamedEntityTag=PERSON]
+[Text=Buffet CharacterOffsetBegin=159 CharacterOffsetEnd=165 PartOfSpeech=NNP Lemma=Buffet NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Elon CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=NNP Lemma=Elon NamedEntityTag=PERSON]
+[Text=Musk CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=NN Lemma=musk NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Jeff CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=NNP Lemma=Jeff NamedEntityTag=PERSON]
+[Text=Bezos CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=Bezos NamedEntityTag=PERSON]
+[Text=bums CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=NNS Lemma=bum NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD would)
+      (VP (VB make)
+        (NP
+          (NP (NNP Bill) (NNP Gates))
+          (, ,)
+          (NP (NNP Warren) (NNP Buffet))
+          (, ,)
+          (NP (NNP Elon) (NN Musk))
+          (, ,)
+          (CC and)
+          (NP
+            (NML (NNP Jeff) (NNP Bezos))
+            (NNS bums)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-3)
+nsubj(make-3, That-1)
+aux(make-3, would-2)
+compound(Gates-5, Bill-4)
+obj(make-3, Gates-5)
+punct(Gates-5, ,-6)
+compound(Buffet-8, Warren-7)
+obj(make-3, Buffet-8)
+conj:and(Gates-5, Buffet-8)
+punct(Gates-5, ,-9)
+compound(Musk-11, Elon-10)
+obj(make-3, Musk-11)
+conj:and(Gates-5, Musk-11)
+punct(Gates-5, ,-12)
+cc(bums-16, and-13)
+compound(Bezos-15, Jeff-14)
+compound(bums-16, Bezos-15)
+obj(make-3, bums-16)
+conj:and(Gates-5, bums-16)
+punct(make-3, .-17)
+
+Extracted the following NER entity mentions:
+Bill Gates	PERSON	PERSON:0.9915709426007357
+Warren Buffet	PERSON	PERSON:0.9216035126953783
+Elon Musk	PERSON	PERSON:0.6915053290907214
+Jeff Bezos	PERSON	PERSON:0.9928447483526114
+
+Sentence #4 (5 tokens):
+Marx was a writer.
+
+Tokens:
+[Text=Marx CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=NNP Lemma=Marx NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=writer CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=writer NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Marx))
+    (VP (VBD was)
+      (NP (DT a) (NN writer)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, writer-4)
+nsubj(writer-4, Marx-1)
+cop(writer-4, was-2)
+det(writer-4, a-3)
+punct(writer-4, .-5)
+
+Extracted the following NER entity mentions:
+Marx	PERSON	PERSON:0.9944444044438233
+writer	TITLE	-

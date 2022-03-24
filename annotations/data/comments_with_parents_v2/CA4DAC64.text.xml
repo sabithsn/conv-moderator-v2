@@ -1,0 +1,40 @@
+Document: ID=CA4DAC64.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Biden Admin Issues Domestic Terrorism Warning About 'Misinformation'
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Admin CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Admin NamedEntityTag=O]
+[Text=Issues CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Issues NamedEntityTag=O]
+[Text=Domestic CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Domestic NamedEntityTag=O]
+[Text=Terrorism CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Terrorism NamedEntityTag=CRIMINAL_CHARGE]
+[Text=Warning CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=warning NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Misinformation CharacterOffsetBegin=53 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=misinformation NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Biden) (NNP Admin) (NNP Issues) (NNP Domestic) (NNP Terrorism) (NN Warning))
+    (PP (IN About)
+      (NP (`` ') (NN Misinformation) ('' ')))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Warning-6)
+compound(Warning-6, Biden-1)
+compound(Warning-6, Admin-2)
+compound(Warning-6, Issues-3)
+compound(Warning-6, Domestic-4)
+compound(Warning-6, Terrorism-5)
+case(Misinformation-9, About-7)
+punct(Misinformation-9, '-8)
+obl:about(Warning-6, Misinformation-9)
+punct(Misinformation-9, '-10)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.7485484794791726
+Terrorism	CRIMINAL_CHARGE	-

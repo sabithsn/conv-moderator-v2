@@ -1,0 +1,70 @@
+Document: ID=9F37873B.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Michigan Republican tells daughters to ‘lie back and enjoy it’ if rape is inevitable
+
+Tokens:
+[Text=Michigan CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Michigan NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Republican CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Republican NamedEntityTag=IDEOLOGY]
+[Text=tells CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=daughters CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=daughter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=lie CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=lie NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=enjoy CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=enjoy NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=rape CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=rape NamedEntityTag=CRIMINAL_CHARGE]
+[Text=is CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=inevitable CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=inevitable NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Michigan) (NNP Republican))
+    (VP (VBZ tells)
+      (NP (NNS daughters))
+      (S
+        (VP (TO to) (`` ‘)
+          (VP
+            (VP (VB lie)
+              (ADVP (RB back)))
+            (CC and)
+            (VP (VB enjoy)
+              (NP (PRP it))))
+          ('' ’)))
+      (SBAR (IN if)
+        (S
+          (NP (NN rape))
+          (VP (VBZ is)
+            (ADJP (JJ inevitable))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tells-3)
+compound(Republican-2, Michigan-1)
+nsubj(tells-3, Republican-2)
+obj(tells-3, daughters-4)
+nsubj:xsubj(lie-7, daughters-4)
+nsubj:xsubj(enjoy-10, daughters-4)
+mark(lie-7, to-5)
+punct(lie-7, ‘-6)
+xcomp(tells-3, lie-7)
+advmod(lie-7, back-8)
+cc(enjoy-10, and-9)
+xcomp(tells-3, enjoy-10)
+conj:and(lie-7, enjoy-10)
+obj(enjoy-10, it-11)
+punct(lie-7, ’-12)
+mark(inevitable-16, if-13)
+nsubj(inevitable-16, rape-14)
+cop(inevitable-16, is-15)
+advcl:if(tells-3, inevitable-16)
+
+Extracted the following NER entity mentions:
+Michigan	STATE_OR_PROVINCE	LOCATION:0.9235918037215595
+Republican	IDEOLOGY	MISC:0.9995072991016479
+rape	CRIMINAL_CHARGE	-

@@ -1,0 +1,46 @@
+Document: ID=FA33860B.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+I Think Everyone Owes Alex Jones a Huge Apology...
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=Think CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=Everyone CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=Owes CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=owe NamedEntityTag=O]
+[Text=Alex CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Alex NamedEntityTag=PERSON]
+[Text=Jones CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Jones NamedEntityTag=PERSON]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Huge CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=huge NamedEntityTag=O]
+[Text=Apology CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=apology NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP Think)
+      (SBAR
+        (S
+          (NP (NN Everyone))
+          (VP (VBZ Owes)
+            (NP
+              (NP (NNP Alex) (NNP Jones))
+              (NP (DT a) (JJ Huge) (NN Apology)))))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Think-2)
+nsubj(Think-2, I-1)
+nsubj(Owes-4, Everyone-3)
+ccomp(Think-2, Owes-4)
+compound(Jones-6, Alex-5)
+iobj(Owes-4, Jones-6)
+det(Apology-9, a-7)
+amod(Apology-9, Huge-8)
+dep(Jones-6, Apology-9)
+punct(Think-2, ...-10)
+
+Extracted the following NER entity mentions:
+Alex Jones	PERSON	PERSON:0.9991599073772638

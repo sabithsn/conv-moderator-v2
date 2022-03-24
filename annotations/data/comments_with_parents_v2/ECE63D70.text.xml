@@ -1,0 +1,30 @@
+Document: ID=ECE63D70.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Elon Musk on Board!
+
+Tokens:
+[Text=Elon CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Elon NamedEntityTag=PERSON]
+[Text=Musk CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=musk NamedEntityTag=PERSON]
+[Text=on CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Board CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Board NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Elon) (NN Musk))
+    (PP (IN on)
+      (NP (NNP Board)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Musk-2)
+compound(Musk-2, Elon-1)
+case(Board-4, on-3)
+obl:on(Musk-2, Board-4)
+punct(Musk-2, !-5)
+
+Extracted the following NER entity mentions:
+Elon Musk	PERSON	PERSON:0.4773197249971327

@@ -1,0 +1,91 @@
+Document: ID=2D03A95B.text (2 sentences, 21 tokens)
+
+Sentence #1 (6 tokens):
+You are an ignorant fool.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ignorant CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=ignorant NamedEntityTag=O]
+[Text=fool CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=fool NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (NP (DT an) (JJ ignorant) (NN fool)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fool-5)
+nsubj(fool-5, You-1)
+cop(fool-5, are-2)
+det(fool-5, an-3)
+amod(fool-5, ignorant-4)
+punct(fool-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+Sex does not factor in when debating if murdering an infant is morally just.
+
+Tokens:
+[Text=Sex CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=factor CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=factor NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=RP Lemma=in NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=debating CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=VBG Lemma=debate NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=murdering CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=VBG Lemma=murder NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=infant CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=infant NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=morally CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=RB Lemma=morally NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Sex))
+    (VP (VBZ does)
+      (NP (RB not) (NN factor))
+      (PRT (RP in))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (VP (VBG debating)
+            (SBAR (IN if)
+              (S
+                (S
+                  (VP (VBG murdering)
+                    (NP (DT an) (NN infant))))
+                (VP (VBZ is)
+                  (ADVP (RB morally) (RB just)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, does-2)
+nsubj(does-2, Sex-1)
+advmod(factor-4, not-3)
+obj(does-2, factor-4)
+compound:prt(does-2, in-5)
+advmod(debating-7, when-6)
+advcl(does-2, debating-7)
+mark(is-12, if-8)
+csubj(is-12, murdering-9)
+det(infant-11, an-10)
+obj(murdering-9, infant-11)
+advcl:if(debating-7, is-12)
+advmod(just-14, morally-13)
+advmod(is-12, just-14)
+punct(does-2, .-15)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,61 @@
+Document: ID=1D74B0B2.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+I can keep going for days on this one become educated please loli
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=on CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=become CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=become NamedEntityTag=O]
+[Text=educated CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=educate NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=loli CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=loli NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB keep)
+          (S
+            (VP (VBG going)
+              (PP (IN for)
+                (NP
+                  (NP (NNS days))
+                  (PP (IN on)
+                    (NP
+                      (NP (DT this) (CD one))
+                      (VP (VBN become)
+                        (S
+                          (ADJP (VBN educated)))))))))))))
+    (S
+      (INTJ (UH please))
+      (VP (VB loli)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-3)
+nsubj(keep-3, I-1)
+aux(keep-3, can-2)
+xcomp(keep-3, going-4)
+case(days-6, for-5)
+obl:for(going-4, days-6)
+case(one-9, on-7)
+det(one-9, this-8)
+nmod:on(days-6, one-9)
+acl(one-9, become-10)
+xcomp(become-10, educated-11)
+discourse(loli-13, please-12)
+parataxis(keep-3, loli-13)
+
+Extracted the following NER entity mentions:
+days	DURATION	DURATION:-1.0
+one	NUMBER	NUMBER:-1.0

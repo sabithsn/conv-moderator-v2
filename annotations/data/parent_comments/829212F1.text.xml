@@ -1,0 +1,38 @@
+Document: ID=829212F1.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Truly the greatest conspiracy of all time.
+
+Tokens:
+[Text=Truly CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=truly NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=greatest CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=JJS Lemma=greatest NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=19 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Truly))
+    (NP
+      (NP (DT the) (JJS greatest) (NN conspiracy))
+      (PP (IN of)
+        (NP (DT all) (NN time))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, conspiracy-4)
+dep(conspiracy-4, Truly-1)
+det(conspiracy-4, the-2)
+amod(conspiracy-4, greatest-3)
+case(time-7, of-5)
+det(time-7, all-6)
+nmod:of(conspiracy-4, time-7)
+punct(conspiracy-4, .-8)
+
+Extracted the following NER entity mentions:
+conspiracy	CRIMINAL_CHARGE	-

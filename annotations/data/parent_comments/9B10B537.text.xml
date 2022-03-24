@@ -1,0 +1,34 @@
+Document: ID=9B10B537.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+There are two kinds of people
+
+Tokens:
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=kinds CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (CD two) (NNS kinds))
+        (PP (IN of)
+          (NP (NNS people)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-2)
+expl(are-2, There-1)
+nummod(kinds-4, two-3)
+nsubj(are-2, kinds-4)
+case(people-6, of-5)
+nmod:of(kinds-4, people-6)
+
+Extracted the following NER entity mentions:
+two	NUMBER	NUMBER:-1.0

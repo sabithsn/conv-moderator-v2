@@ -1,0 +1,43 @@
+Document: ID=0D106588.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+BREAKING: Pittsburgh bridge collapses ahead of Biden visit
+
+Tokens:
+[Text=BREAKING CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBG Lemma=break NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Pittsburgh CharacterOffsetBegin=10 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Pittsburgh NamedEntityTag=CITY]
+[Text=bridge CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=bridge NamedEntityTag=O]
+[Text=collapses CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=collapse NamedEntityTag=O]
+[Text=ahead CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=ahead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=visit CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=visit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (VP (VBG BREAKING))
+    (: :)
+    (S
+      (NP (NNP Pittsburgh) (NN bridge))
+      (VP (VBZ collapses)
+        (ADVP (RB ahead))
+        (PP (IN of)
+          (NP (NNP Biden) (NN visit)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, collapses-5)
+dep(collapses-5, BREAKING-1)
+punct(collapses-5, :-2)
+compound(bridge-4, Pittsburgh-3)
+nsubj(collapses-5, bridge-4)
+advmod(collapses-5, ahead-6)
+case(visit-9, of-7)
+compound(visit-9, Biden-8)
+obl:of(collapses-5, visit-9)
+
+Extracted the following NER entity mentions:
+Pittsburgh	CITY	LOCATION:0.963603513114039
+Biden	PERSON	PERSON:0.9788031891500808

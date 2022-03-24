@@ -1,0 +1,60 @@
+Document: ID=D9007219.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Clinton says Republicans are supporting Putin because he’s anti-gay & anti-freedom
+
+Tokens:
+[Text=Clinton CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Clinton NamedEntityTag=PERSON]
+[Text=says CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=13 CharacterOffsetEnd=24 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=supporting CharacterOffsetBegin=29 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=support NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=because CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=anti-gay CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=anti-gay NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=anti-freedom CharacterOffsetBegin=70 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=anti-freedom NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Clinton))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (NNPS Republicans))
+          (VP (VBP are)
+            (VP (VBG supporting)
+              (NP (NNP Putin))
+              (SBAR (IN because)
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ ’s)
+                    (ADJP (JJ anti-gay)
+                      (CC &)
+                      (JJ anti-freedom))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-2)
+nsubj(says-2, Clinton-1)
+nsubj(supporting-5, Republicans-3)
+aux(supporting-5, are-4)
+ccomp(says-2, supporting-5)
+obj(supporting-5, Putin-6)
+mark(anti-gay-10, because-7)
+nsubj(anti-gay-10, he-8)
+nsubj(anti-freedom-12, he-8)
+cop(anti-gay-10, ’s-9)
+advcl:because(supporting-5, anti-gay-10)
+cc(anti-freedom-12, &-11)
+advcl:because(supporting-5, anti-freedom-12)
+conj:&(anti-gay-10, anti-freedom-12)
+
+Extracted the following NER entity mentions:
+Clinton	PERSON	PERSON:0.997322007255852
+Republicans	MISC	MISC:0.9999937096518777
+Putin	PERSON	PERSON:0.9891867201574034
+he	PERSON	-

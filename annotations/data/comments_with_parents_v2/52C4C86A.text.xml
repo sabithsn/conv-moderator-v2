@@ -1,0 +1,42 @@
+Document: ID=52C4C86A.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Biden in 'worst president ever' territory
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=worst CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=JJS Lemma=worst NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=ever CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=territory CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=territory NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Biden))
+    (PP (IN in)
+      (NP
+        (NML (`` ')
+          (FRAG
+            (NP (JJS worst) (NN president))
+            (ADVP (RB ever)))
+          ('' '))
+        (NN territory)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Biden-1)
+case(territory-8, in-2)
+punct(president-5, '-3)
+amod(president-5, worst-4)
+compound(territory-8, president-5)
+dep(president-5, ever-6)
+punct(president-5, '-7)
+nmod:in(Biden-1, territory-8)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9915630115548104
+president	TITLE	-

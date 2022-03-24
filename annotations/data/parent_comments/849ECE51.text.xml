@@ -1,0 +1,98 @@
+Document: ID=849ECE51.text (3 sentences, 20 tokens)
+
+Sentence #1 (3 tokens):
+Congratulations Feminists.
+
+Tokens:
+[Text=Congratulations CharacterOffsetBegin=0 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=congratulation NamedEntityTag=O]
+[Text=Feminists CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=feminist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Congratulations))
+    (NP (NNS Feminists))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Congratulations-1)
+dep(Congratulations-1, Feminists-2)
+punct(Congratulations-1, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+You have helped women by erasing the meaning of the word women.
+
+Tokens:
+[Text=You CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=helped CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=VBN Lemma=help NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=erasing CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=VBG Lemma=erase NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meaning CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=meaning NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=word CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=word NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (VP (VBN helped)
+        (NP (NNS women))
+        (PP (IN by)
+          (S
+            (VP (VBG erasing)
+              (NP
+                (NP (DT the) (NN meaning))
+                (PP (IN of)
+                  (NP (DT the) (NN word) (NNS women)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, helped-3)
+nsubj(helped-3, You-1)
+aux(helped-3, have-2)
+obj(helped-3, women-4)
+mark(erasing-6, by-5)
+advcl:by(helped-3, erasing-6)
+det(meaning-8, the-7)
+obj(erasing-6, meaning-8)
+case(women-12, of-9)
+det(women-12, the-10)
+compound(women-12, word-11)
+nmod:of(meaning-8, women-12)
+punct(helped-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (4 tokens):
+*Slow clap*
+
+Tokens:
+[Text=* CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=Slow CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+[Text=clap CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=clap NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NFP *) (JJ Slow) (NN clap) (NFP *)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, clap-3)
+punct(clap-3, *-1)
+amod(clap-3, Slow-2)
+punct(clap-3, *-4)
+
+Extracted the following NER entity mentions:

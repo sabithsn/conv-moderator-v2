@@ -1,0 +1,76 @@
+Document: ID=8EEBAD59.text (2 sentences, 16 tokens)
+
+Sentence #1 (9 tokens):
+Did you remove the link you just shared?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=remove CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=remove NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=link CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=link NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=shared CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=VBN Lemma=share NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Did)
+    (NP (PRP you))
+    (VP (VB remove)
+      (NP
+        (NP (DT the) (NN link))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (ADVP (RB just))
+            (VP (VBN shared))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, remove-3)
+aux(remove-3, Did-1)
+nsubj(remove-3, you-2)
+det(link-5, the-4)
+obj(remove-3, link-5)
+nsubj(shared-8, you-6)
+advmod(shared-8, just-7)
+acl:relcl(link-5, shared-8)
+punct(remove-3, ?-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+You know, the Florida.edu link?
+
+Tokens:
+[Text=You CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Florida.edu CharacterOffsetBegin=55 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Florida.edu NamedEntityTag=URL]
+[Text=link CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=link NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP know) (, ,)
+      (NP (DT the) (NNP Florida.edu) (NN link)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, You-1)
+punct(know-2, ,-3)
+det(link-6, the-4)
+compound(link-6, Florida.edu-5)
+obj(know-2, link-6)
+punct(know-2, ?-7)
+
+Extracted the following NER entity mentions:
+Florida.edu	URL	-

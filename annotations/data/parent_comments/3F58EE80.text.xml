@@ -1,0 +1,82 @@
+Document: ID=3F58EE80.text (2 sentences, 18 tokens)
+
+Sentence #1 (9 tokens):
+Russia is currently shelling a nuclear power station.
+
+Tokens:
+[Text=Russia CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=currently CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=currently NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">currently</TIMEX3>]
+[Text=shelling CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=VBG Lemma=shell NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nuclear CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=nuclear NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=station CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=station NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Russia))
+    (VP (VBZ is)
+      (ADVP (RB currently))
+      (VP (VBG shelling)
+        (NP (DT a) (JJ nuclear) (NN power) (NN station))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shelling-4)
+nsubj(shelling-4, Russia-1)
+aux(shelling-4, is-2)
+advmod(shelling-4, currently-3)
+det(station-8, a-5)
+amod(station-8, nuclear-6)
+compound(station-8, power-7)
+obj(shelling-4, station-8)
+punct(shelling-4, .-9)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9973834536864983
+currently	DATE	DATE:-1.0
+
+Sentence #2 (9 tokens):
+You may want to care a teensy bit.
+
+Tokens:
+[Text=You CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=teensy CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=teensy NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD may)
+      (VP (VB want)
+        (S
+          (VP (TO to)
+            (VP (VB care)
+              (NP (DT a) (JJ teensy) (NN bit)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-3)
+nsubj(want-3, You-1)
+nsubj:xsubj(care-5, You-1)
+aux(want-3, may-2)
+mark(care-5, to-4)
+xcomp(want-3, care-5)
+det(bit-8, a-6)
+amod(bit-8, teensy-7)
+obj(care-5, bit-8)
+punct(want-3, .-9)
+
+Extracted the following NER entity mentions:

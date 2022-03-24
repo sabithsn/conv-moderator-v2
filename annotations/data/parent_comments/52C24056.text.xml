@@ -1,0 +1,91 @@
+Document: ID=52C24056.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+The virgin “kill half the Jews” vs the Chad “Kill none of the Jews but also don’t institute communism”
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=virgin CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=virgin NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=kill CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=PDT Lemma=half NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Jews CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNPS Lemma=Jews NamedEntityTag=MISC]
+[Text=” CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=vs CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=vs NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chad CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Chad NamedEntityTag=COUNTRY]
+[Text=“ CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Kill CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Jews CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NNPS Lemma=Jews NamedEntityTag=MISC]
+[Text=but CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=institute CharacterOffsetBegin=82 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=institute NamedEntityTag=O]
+[Text=communism CharacterOffsetBegin=92 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=communism NamedEntityTag=IDEOLOGY]
+[Text=” CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT The) (NN virgin) (`` “)
+      (NML
+        (S
+          (VP (VB kill)
+            (NP (PDT half) (DT the) (NNPS Jews)))))
+      ('' ”))
+    (PP (IN vs)
+      (NP
+        (NP (DT the) (NNP Chad))
+        (S (`` “)
+          (VP
+            (VP (VB Kill)
+              (NP
+                (NP (NN none))
+                (PP (IN of)
+                  (NP (DT the) (NNPS Jews)))))
+            (CC but)
+            (VP
+              (ADVP (RB also))
+              (VBP do) (RB n’t)
+              (VP (VB institute)
+                (NP (NN communism)))))
+          ('' ”))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, kill-4)
+det(kill-4, The-1)
+dep(kill-4, virgin-2)
+punct(kill-4, “-3)
+det:predet(Jews-7, half-5)
+det(Jews-7, the-6)
+obj(kill-4, Jews-7)
+punct(kill-4, ”-8)
+case(Chad-11, vs-9)
+det(Chad-11, the-10)
+nmod:vs(kill-4, Chad-11)
+punct(Kill-13, “-12)
+dep(Chad-11, Kill-13)
+obj(Kill-13, none-14)
+case(Jews-17, of-15)
+det(Jews-17, the-16)
+nmod:of(none-14, Jews-17)
+cc(institute-22, but-18)
+advmod(institute-22, also-19)
+aux(institute-22, do-20)
+advmod(institute-22, n’t-21)
+dep(Chad-11, institute-22)
+conj:and(Kill-13, institute-22)
+obj(institute-22, communism-23)
+punct(Kill-13, ”-24)
+
+Extracted the following NER entity mentions:
+Jews	MISC	MISC:0.9996016384740517
+Chad	COUNTRY	LOCATION:0.5430135202786031
+Jews	MISC	MISC:0.9998447205999608
+communism	IDEOLOGY	-

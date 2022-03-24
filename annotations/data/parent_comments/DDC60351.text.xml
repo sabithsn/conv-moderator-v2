@@ -1,0 +1,44 @@
+Document: ID=DDC60351.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Maybe hold off posting those Ukrainian flags on social media
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=Ukrainian CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=ukrainian NamedEntityTag=NATIONALITY]
+[Text=flags CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=flag NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=social CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=social NamedEntityTag=O]
+[Text=media CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (VP (VB hold)
+      (PRT (RP off))
+      (S
+        (VP (VBG posting)
+          (NP (DT those) (JJ Ukrainian) (NNS flags))
+          (PP (IN on)
+            (NP (JJ social) (NNS media))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hold-2)
+advmod(hold-2, Maybe-1)
+compound:prt(hold-2, off-3)
+xcomp(hold-2, posting-4)
+det(flags-7, those-5)
+amod(flags-7, Ukrainian-6)
+obj(posting-4, flags-7)
+case(media-10, on-8)
+amod(media-10, social-9)
+obl:on(posting-4, media-10)
+
+Extracted the following NER entity mentions:
+Ukrainian	NATIONALITY	MISC:0.9999338673378397

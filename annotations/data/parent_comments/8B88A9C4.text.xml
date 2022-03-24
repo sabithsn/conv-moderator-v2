@@ -1,0 +1,81 @@
+Document: ID=8B88A9C4.text (2 sentences, 18 tokens)
+
+Sentence #1 (15 tokens):
+eli5 Why do Potassium supplements only have 2% of the recommended daily value?
+
+Tokens:
+[Text=eli5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=Potassium CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=potassium NamedEntityTag=O]
+[Text=supplements CharacterOffsetBegin=22 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=supplement NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=2 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%2.0]
+[Text=% CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%2.0]
+[Text=of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=recommended CharacterOffsetBegin=54 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=recommend NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=daily NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t1" type="SET" value="P1D">daily</TIMEX3>]
+[Text=value CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=value NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (NP (NN eli5))
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (NN Potassium) (NNS supplements))
+      (VP
+        (ADVP (RB only))
+        (VBP have)
+        (NP
+          (NP (CD 2) (NN %))
+          (PP (IN of)
+            (NP (DT the) (VBN recommended) (JJ daily) (NN value))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-7)
+dep(have-7, eli5-1)
+advmod(have-7, Why-2)
+aux(have-7, do-3)
+compound(supplements-5, Potassium-4)
+nsubj(have-7, supplements-5)
+advmod(have-7, only-6)
+nummod(%-9, 2-8)
+obj(have-7, %-9)
+case(value-14, of-10)
+det(value-14, the-11)
+amod(value-14, recommended-12)
+amod(value-14, daily-13)
+nmod:of(%-9, value-14)
+punct(have-7, ?-15)
+
+Extracted the following NER entity mentions:
+2%	PERCENT	PERCENT:0.9983715102605522
+daily	SET	SET:-1.0
+
+Sentence #2 (3 tokens):
+(US)
+
+Tokens:
+[Text=( CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=) CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (-LRB- -LRB-) (NNP US) (-RRB- -RRB-))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, US-2)
+punct(US-2, (-1)
+punct(US-2, )-3)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9902689504932798

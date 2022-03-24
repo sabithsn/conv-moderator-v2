@@ -1,0 +1,63 @@
+Document: ID=72811FC3.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Suspect’s family says Stockton firefighter’s shooting death was ‘not an intentional callous act’
+
+Tokens:
+[Text=Suspect CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=suspect NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Stockton CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Stockton NamedEntityTag=PERSON]
+[Text=firefighter CharacterOffsetBegin=31 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=firefighter NamedEntityTag=TITLE]
+[Text=’s CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=shooting CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=shooting NamedEntityTag=CAUSE_OF_DEATH]
+[Text=death CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=intentional CharacterOffsetBegin=72 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=intentional NamedEntityTag=O]
+[Text=callous CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=callous NamedEntityTag=O]
+[Text=act CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=act NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Suspect) (POS ’s))
+      (NN family))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Stockton) (NN firefighter) (POS ’s))
+            (NN shooting) (NN death))
+          (VP (VBD was) (`` ‘)
+            (NP (RB not) (DT an) (JJ intentional) (JJ callous) (NN act) ('' ’))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-4)
+nmod:poss(family-3, Suspect-1)
+case(Suspect-1, ’s-2)
+nsubj(says-4, family-3)
+compound(firefighter-6, Stockton-5)
+nmod:poss(death-9, firefighter-6)
+case(firefighter-6, ’s-7)
+compound(death-9, shooting-8)
+nsubj(act-16, death-9)
+cop(act-16, was-10)
+punct(act-16, ‘-11)
+advmod(act-16, not-12)
+det(act-16, an-13)
+amod(act-16, intentional-14)
+amod(act-16, callous-15)
+ccomp(says-4, act-16)
+punct(act-16, ’-17)
+
+Extracted the following NER entity mentions:
+Stockton	PERSON	PERSON:0.9831278040071163
+firefighter	TITLE	-
+shooting	CAUSE_OF_DEATH	-

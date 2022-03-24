@@ -1,0 +1,107 @@
+Document: ID=27111D10.text (2 sentences, 26 tokens)
+
+Sentence #1 (17 tokens):
+Either that or the faked, faked, faked faking it and didn’t get it.
+
+Tokens:
+[Text=Either CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=faked CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=VBN Lemma=fake NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=faked CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=fake NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=faked CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=fake NamedEntityTag=O]
+[Text=faking CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=fake NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (CC Either)
+    (NP (DT that)
+      (CC or)
+      (DT the))
+    (VP
+      (VP (VBN faked))
+      (, ,)
+      (VP (VBN faked))
+      (, ,)
+      (VP (VBN faked)
+        (S
+          (VP (VBG faking)
+            (NP (PRP it)))))
+      (CC and)
+      (VP (VBD did) (RB n’t)
+        (VP (VB get)
+          (NP (PRP it)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, that-2)
+cc:preconj(that-2, Either-1)
+cc(the-4, or-3)
+conj:or(that-2, the-4)
+dep(that-2, faked-5)
+punct(faked-5, ,-6)
+dep(that-2, faked-7)
+conj:and(faked-5, faked-7)
+punct(faked-5, ,-8)
+dep(that-2, faked-9)
+conj:and(faked-5, faked-9)
+xcomp(faked-9, faking-10)
+obj(faking-10, it-11)
+cc(get-15, and-12)
+aux(get-15, did-13)
+advmod(get-15, n’t-14)
+dep(that-2, get-15)
+conj:and(faked-5, get-15)
+obj(get-15, it-16)
+punct(that-2, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+I don’t know the real truth anymore.
+
+Tokens:
+[Text=I CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=truth CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=truth NamedEntityTag=O]
+[Text=anymore CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=anymore NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n’t)
+      (VP (VB know)
+        (NP (DT the) (JJ real) (NN truth))
+        (ADVP (RB anymore))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-4)
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+advmod(know-4, n’t-3)
+det(truth-7, the-5)
+amod(truth-7, real-6)
+obj(know-4, truth-7)
+advmod(know-4, anymore-8)
+punct(know-4, .-9)
+
+Extracted the following NER entity mentions:

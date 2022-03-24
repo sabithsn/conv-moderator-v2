@@ -1,0 +1,93 @@
+Document: ID=F6B5BABE.text (1 sentences, 27 tokens)
+
+Sentence #1 (27 tokens):
+Biden Admin To Fund Crack Pipe Distribution To Advance 'Racial Equity' - $30 million program will provide 'smoking kits' to vulnerable communities
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Admin CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Admin NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Fund CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Fund NamedEntityTag=O]
+[Text=Crack CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Crack NamedEntityTag=O]
+[Text=Pipe CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Pipe NamedEntityTag=O]
+[Text=Distribution CharacterOffsetBegin=31 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=distribution NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Advance CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=advance NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Racial CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=racial NamedEntityTag=O]
+[Text=Equity CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=equity NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0E7]
+[Text=30 CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=CD Lemma=30 NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0E7]
+[Text=million CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=$3.0E7]
+[Text=program CharacterOffsetBegin=85 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=program NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=smoking CharacterOffsetBegin=107 CharacterOffsetEnd=114 PartOfSpeech=VBG Lemma=smoke NamedEntityTag=O]
+[Text=kits CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=kit NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=vulnerable CharacterOffsetBegin=124 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=vulnerable NamedEntityTag=O]
+[Text=communities CharacterOffsetBegin=135 CharacterOffsetEnd=146 PartOfSpeech=NNS Lemma=community NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP (NNP Biden) (NNP Admin))
+        (TO To)
+        (NP (NNP Fund) (NNP Crack) (NNP Pipe)))
+      (NP
+        (ADVP (NN Distribution)
+          (PP (IN To)
+            (NP (NN Advance) ('' '))))
+        (JJ Racial) (NN Equity) ('' ')))
+    (: -)
+    (S
+      (NP
+        (QP ($ $) (CD 30) (CD million))
+        (NN program))
+      (VP (MD will)
+        (VP (VB provide) (`` ')
+          (S
+            (VP (VBG smoking)
+              (NP (NNS kits) (POS '))
+              (PP (TO to)
+                (NP (JJ vulnerable) (NNS communities))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Admin-2)
+compound(Admin-2, Biden-1)
+dep(Admin-2, To-3)
+compound(Pipe-6, Fund-4)
+compound(Pipe-6, Crack-5)
+dep(Admin-2, Pipe-6)
+advmod(Equity-12, Distribution-7)
+case(Advance-9, To-8)
+obl:to(Distribution-7, Advance-9)
+punct(Advance-9, '-10)
+amod(Equity-12, Racial-11)
+dep(Admin-2, Equity-12)
+punct(Equity-12, '-13)
+punct(Admin-2, --14)
+nummod(program-18, $-15)
+compound(million-17, 30-16)
+nummod($-15, million-17)
+nsubj(provide-20, program-18)
+aux(provide-20, will-19)
+parataxis(Admin-2, provide-20)
+punct(provide-20, '-21)
+xcomp(provide-20, smoking-22)
+obj(smoking-22, kits-23)
+case(kits-23, '-24)
+case(communities-27, to-25)
+amod(communities-27, vulnerable-26)
+obl:to(smoking-22, communities-27)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.8927157067042834
+$30 million	MONEY	MONEY:0.9704889858224176

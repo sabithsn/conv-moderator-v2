@@ -1,0 +1,36 @@
+Document: ID=FDA9C707.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Joy Reid is leading you astray.
+
+Tokens:
+[Text=Joy CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Joy NamedEntityTag=PERSON]
+[Text=Reid CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Reid NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=leading CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=lead NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=astray CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=astray NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Joy) (NNP Reid))
+    (VP (VBZ is)
+      (VP (VBG leading)
+        (NP (PRP you))
+        (ADVP (RB astray))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, leading-4)
+compound(Reid-2, Joy-1)
+nsubj(leading-4, Reid-2)
+aux(leading-4, is-3)
+obj(leading-4, you-5)
+advmod(leading-4, astray-6)
+punct(leading-4, .-7)
+
+Extracted the following NER entity mentions:
+Joy Reid	PERSON	PERSON:0.9733838584476064

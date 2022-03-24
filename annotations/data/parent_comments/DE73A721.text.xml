@@ -1,0 +1,59 @@
+Document: ID=DE73A721.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Yea I jack of 50 times a day and that’s totally normal
+
+Tokens:
+[Text=Yea CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=yea NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=jack CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=jack NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=50 CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=CD Lemma=50 NamedEntityTag=NUMBER NormalizedNamedEntityTag=50.0]
+[Text=times CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=day CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=and CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=totally CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=totally NamedEntityTag=O]
+[Text=normal CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=normal NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yea))
+    (S
+      (S
+        (NP (PRP I))
+        (NP
+          (NP (NN jack))
+          (PP (IN of)
+            (NP
+              (NP
+                (QP (CD 50) (NNS times)))
+              (NP (DT a) (NN day))))))
+      (CC and)
+      (S
+        (NP (DT that))
+        (VP (VBZ ’s)
+          (ADJP (RB totally) (JJ normal)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, jack-3)
+discourse(jack-3, Yea-1)
+dep(jack-3, I-2)
+case(times-6, of-4)
+compound(times-6, 50-5)
+nmod:of(jack-3, times-6)
+det(day-8, a-7)
+dep(times-6, day-8)
+cc(normal-13, and-9)
+nsubj(normal-13, that-10)
+cop(normal-13, ’s-11)
+advmod(normal-13, totally-12)
+conj:and(jack-3, normal-13)
+
+Extracted the following NER entity mentions:
+50	NUMBER	NUMBER:-1.0
+a day	DURATION	DURATION:-1.0

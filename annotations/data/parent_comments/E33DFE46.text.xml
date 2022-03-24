@@ -1,0 +1,51 @@
+Document: ID=E33DFE46.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+I hope that a domestic terrorist destroys Stone Mountain in Georgia.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hope CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=hope NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=domestic CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=domestic NamedEntityTag=O]
+[Text=terrorist CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=terrorist NamedEntityTag=O]
+[Text=destroys CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=destroy NamedEntityTag=O]
+[Text=Stone CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Stone NamedEntityTag=O]
+[Text=Mountain CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Mountain NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Georgia CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Georgia NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hope)
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (JJ domestic) (NN terrorist))
+          (VP (VBZ destroys)
+            (NP
+              (NP (NNP Stone) (NNP Mountain))
+              (PP (IN in)
+                (NP (NNP Georgia))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hope-2)
+nsubj(hope-2, I-1)
+mark(destroys-7, that-3)
+det(terrorist-6, a-4)
+amod(terrorist-6, domestic-5)
+nsubj(destroys-7, terrorist-6)
+ccomp(hope-2, destroys-7)
+compound(Mountain-9, Stone-8)
+obj(destroys-7, Mountain-9)
+case(Georgia-11, in-10)
+nmod:in(Mountain-9, Georgia-11)
+punct(hope-2, .-12)
+
+Extracted the following NER entity mentions:
+Georgia	STATE_OR_PROVINCE	LOCATION:0.9992636820093053

@@ -1,0 +1,51 @@
+Document: ID=61802C37.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Heron created Kanyes fashion line and is now banging Marc Jacobs
+
+Tokens:
+[Text=Heron CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Heron NamedEntityTag=PERSON]
+[Text=created CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=create NamedEntityTag=O]
+[Text=Kanyes CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Kanyes NamedEntityTag=MISC]
+[Text=fashion CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=fashion NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=banging CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=bang NamedEntityTag=O]
+[Text=Marc CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Marc NamedEntityTag=PERSON]
+[Text=Jacobs CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Jacobs NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Heron))
+    (VP
+      (VP (VBD created)
+        (NP (NNP Kanyes) (NN fashion) (NN line)))
+      (CC and)
+      (VP (VBZ is)
+        (ADVP (RB now))
+        (VP (VBG banging)
+          (NP (NNP Marc) (NNP Jacobs)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, created-2)
+nsubj(created-2, Heron-1)
+nsubj(banging-9, Heron-1)
+compound(line-5, Kanyes-3)
+compound(line-5, fashion-4)
+obj(created-2, line-5)
+cc(banging-9, and-6)
+aux(banging-9, is-7)
+advmod(banging-9, now-8)
+conj:and(created-2, banging-9)
+compound(Jacobs-11, Marc-10)
+obj(banging-9, Jacobs-11)
+
+Extracted the following NER entity mentions:
+Heron	PERSON	PERSON:0.7233055730904162
+Kanyes	MISC	MISC:0.5806476214439599
+now	DATE	DATE:-1.0
+Marc Jacobs	PERSON	PERSON:0.9998020657767445

@@ -1,0 +1,78 @@
+Document: ID=6889F8BC.text (2 sentences, 16 tokens)
+
+Sentence #1 (9 tokens):
+Being an asshole isn't justification for murder.
+
+Tokens:
+[Text=Being CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=asshole CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=asshole NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=justification CharacterOffsetBegin=23 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=justification NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=murder CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=murder NamedEntityTag=CRIMINAL_CHARGE]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Being)
+        (NP (DT an) (NN asshole))))
+    (VP (VBZ is) (RB n't)
+      (NP
+        (NP (NN justification))
+        (PP (IN for)
+          (NP (NN murder)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, justification-6)
+cop(asshole-3, Being-1)
+det(asshole-3, an-2)
+csubj(justification-6, asshole-3)
+cop(justification-6, is-4)
+advmod(justification-6, n't-5)
+case(murder-8, for-7)
+nmod:for(justification-6, murder-8)
+punct(justification-6, .-9)
+
+Extracted the following NER entity mentions:
+murder	CRIMINAL_CHARGE	-
+
+Sentence #2 (7 tokens):
+Two years house arrest is bullshit.
+
+Tokens:
+[Text=Two CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=CD Lemma=two NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P2Y">Two years</TIMEX3>]
+[Text=years CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P2Y">Two years</TIMEX3>]
+[Text=house CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=arrest CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=arrest NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=bullshit CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=bullshit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (CD Two) (NNS years))
+      (NP (NN house) (NN arrest)))
+    (VP (VBZ is)
+      (NP (NN bullshit)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bullshit-6)
+nummod(years-2, Two-1)
+nsubj(bullshit-6, years-2)
+compound(arrest-4, house-3)
+dep(years-2, arrest-4)
+cop(bullshit-6, is-5)
+punct(bullshit-6, .-7)
+
+Extracted the following NER entity mentions:
+Two years	DURATION	DURATION:-1.0

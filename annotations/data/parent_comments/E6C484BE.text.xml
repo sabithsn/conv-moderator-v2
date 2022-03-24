@@ -1,0 +1,71 @@
+Document: ID=E6C484BE.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+I propose Vladimir Putin For the Nobel Prize in Medicine, for solving COVID globally in 48 hours
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=propose CharacterOffsetBegin=2 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=propose NamedEntityTag=O]
+[Text=Vladimir CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Vladimir NamedEntityTag=PERSON]
+[Text=Putin CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=For CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Nobel CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Nobel NamedEntityTag=MISC]
+[Text=Prize CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Prize NamedEntityTag=MISC]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=in NamedEntityTag=MISC]
+[Text=Medicine CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Medicine NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=solving CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=VBG Lemma=solve NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=globally CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=globally NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=48 CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=CD Lemma=48 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT48H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT48H">48 hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT48H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT48H">48 hours</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP propose)
+      (S
+        (NP (NNP Vladimir) (NNP Putin))
+        (PP (IN For)
+          (NP
+            (NP (DT the) (NNP Nobel) (NNP Prize))
+            (PP (IN in)
+              (NP (NNP Medicine))))))
+      (, ,)
+      (PP (IN for)
+        (S
+          (VP (VBG solving)
+            (NP (NNP COVID))
+            (ADVP (RB globally))
+            (PP (IN in)
+              (NP (CD 48) (NNS hours)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, propose-2)
+nsubj(propose-2, I-1)
+compound(Putin-4, Vladimir-3)
+xcomp(propose-2, Putin-4)
+case(Prize-8, For-5)
+det(Prize-8, the-6)
+compound(Prize-8, Nobel-7)
+dep(Putin-4, Prize-8)
+case(Medicine-10, in-9)
+nmod:in(Prize-8, Medicine-10)
+punct(propose-2, ,-11)
+mark(solving-13, for-12)
+advcl:for(propose-2, solving-13)
+obj(solving-13, COVID-14)
+advmod(solving-13, globally-15)
+case(hours-18, in-16)
+nummod(hours-18, 48-17)
+obl:in(solving-13, hours-18)
+
+Extracted the following NER entity mentions:
+Vladimir Putin	PERSON	PERSON:0.9999138987117521
+Nobel Prize in Medicine	MISC	MISC:0.954839470461083
+48 hours	DURATION	DURATION:-1.0

@@ -1,0 +1,36 @@
+Document: ID=DDE608A6.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Arby's is top tier fast food
+
+Tokens:
+[Text=Arby CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Arby NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=top CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=top NamedEntityTag=O]
+[Text=tier CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=tier NamedEntityTag=TITLE]
+[Text=fast CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=fast NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Arby) (POS 's))
+    (VP (VBZ is)
+      (NP
+        (NML (JJ top) (NN tier))
+        (NML (JJ fast) (NN food))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, food-7)
+nsubj(food-7, Arby-1)
+case(Arby-1, 's-2)
+cop(food-7, is-3)
+amod(tier-5, top-4)
+dep(food-7, tier-5)
+amod(food-7, fast-6)
+
+Extracted the following NER entity mentions:
+Arby	PERSON	PERSON:0.5795315956895613
+tier	TITLE	-

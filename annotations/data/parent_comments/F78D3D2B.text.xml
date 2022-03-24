@@ -1,0 +1,82 @@
+Document: ID=F78D3D2B.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+I can think of few things less interesting than a podcast where Obama sucks himself off for 30+ minutes.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RBR Lemma=less NamedEntityTag=O]
+[Text=interesting CharacterOffsetBegin=31 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=interesting NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=podcast CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=podcast NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=Obama CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text=sucks CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=suck NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=30 CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=CD Lemma=30 NamedEntityTag=NUMBER NormalizedNamedEntityTag=30.0]
+[Text=+ CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=SYM Lemma=+ NamedEntityTag=O]
+[Text=minutes CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=minute NamedEntityTag=DURATION NormalizedNamedEntityTag=PTXM Timex=<TIMEX3 tid="t1" type="DURATION" value="PTXM">minutes</TIMEX3>]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB think)
+        (PP (IN of)
+          (NP (JJ few) (NNS things)))
+        (S
+          (ADJP (RBR less) (JJ interesting)
+            (PP (IN than)
+              (NP
+                (NP (DT a) (NN podcast))
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (NNP Obama))
+                    (VP (VBZ sucks)
+                      (NP (PRP himself))
+                      (PRT (RP off))
+                      (PP (IN for)
+                        (NP
+                          (NML (CD 30) (SYM +))
+                          (NNS minutes))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-3)
+nsubj(think-3, I-1)
+aux(think-3, can-2)
+case(things-6, of-4)
+amod(things-6, few-5)
+obl:of(think-3, things-6)
+advmod(interesting-8, less-7)
+xcomp(think-3, interesting-8)
+case(podcast-11, than-9)
+det(podcast-11, a-10)
+obl:than(interesting-8, podcast-11)
+advmod(sucks-14, where-12)
+nsubj(sucks-14, Obama-13)
+acl:relcl(podcast-11, sucks-14)
+obj(sucks-14, himself-15)
+compound:prt(sucks-14, off-16)
+case(minutes-20, for-17)
+compound(minutes-20, 30-18)
+dep(30-18, +-19)
+obl:for(sucks-14, minutes-20)
+punct(think-3, .-21)
+
+Extracted the following NER entity mentions:
+Obama	PERSON	PERSON:0.9917452736849208
+30	NUMBER	NUMBER:-1.0
+minutes	DURATION	DURATION:-1.0

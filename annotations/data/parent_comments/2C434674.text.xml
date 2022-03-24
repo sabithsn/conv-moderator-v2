@@ -1,0 +1,51 @@
+Document: ID=2C434674.text (2 sentences, 9 tokens)
+
+Sentence #1 (4 tokens):
+Nice user name.
+
+Tokens:
+[Text=Nice CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=user CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=user NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Nice) (NN user) (NN name) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, name-3)
+amod(name-3, Nice-1)
+compound(name-3, user-2)
+punct(name-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Probably a Chinese shill.
+
+Tokens:
+[Text=Probably CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Chinese CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=chinese NamedEntityTag=NATIONALITY]
+[Text=shill CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=shill NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Probably))
+    (NP (DT a) (JJ Chinese) (NN shill))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shill-4)
+dep(shill-4, Probably-1)
+det(shill-4, a-2)
+amod(shill-4, Chinese-3)
+punct(shill-4, .-5)
+
+Extracted the following NER entity mentions:
+Chinese	NATIONALITY	MISC:0.9999991717298988

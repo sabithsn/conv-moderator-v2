@@ -1,0 +1,260 @@
+Document: ID=FF454E42.text (7 sentences, 52 tokens)
+
+Sentence #1 (10 tokens):
+Hahaha I’m not policing anyone’s body lmao.
+
+Tokens:
+[Text=Hahaha CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Hahaha NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=policing CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=police NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=lmao CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=lmao NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Hahaha))
+    (NP (PRP I))
+    (VP (VBP ’m) (RB not)
+      (VP (VBG policing)
+        (NP
+          (NP (NN anyone) (POS ’s))
+          (NN body) (NN lmao))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, policing-5)
+nsubj(policing-5, Hahaha-1)
+nsubj(policing-5, I-2)
+aux(policing-5, ’m-3)
+advmod(policing-5, not-4)
+nmod:poss(lmao-9, anyone-6)
+case(anyone-6, ’s-7)
+compound(lmao-9, body-8)
+obj(policing-5, lmao-9)
+punct(policing-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Diabetes is doing that.
+
+Tokens:
+[Text=Diabetes CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=diabetes NamedEntityTag=CAUSE_OF_DEATH]
+[Text=is CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Diabetes))
+    (VP (VBZ is)
+      (VP (VBG doing)
+        (NP (DT that))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, doing-3)
+nsubj(doing-3, Diabetes-1)
+aux(doing-3, is-2)
+obj(doing-3, that-4)
+punct(doing-3, .-5)
+
+Extracted the following NER entity mentions:
+Diabetes	CAUSE_OF_DEATH	MISC:0.6111960222826671
+
+Sentence #3 (6 tokens):
+Know how you get diabetes?
+
+Tokens:
+[Text=Know CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=diabetes CharacterOffsetBegin=85 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=diabetes NamedEntityTag=CAUSE_OF_DEATH]
+[Text=? CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Know)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP you))
+          (VP (VBP get)
+            (NP (NN diabetes))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Know-1)
+advmod(get-4, how-2)
+nsubj(get-4, you-3)
+ccomp(Know-1, get-4)
+obj(get-4, diabetes-5)
+punct(Know-1, ?-6)
+
+Extracted the following NER entity mentions:
+diabetes	CAUSE_OF_DEATH	-
+
+Sentence #4 (5 tokens):
+Too much fucking sugar.
+
+Tokens:
+[Text=Too CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=fucking NamedEntityTag=O]
+[Text=sugar CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=sugar NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Too) (JJ much))
+    (NP (JJ fucking) (NN sugar))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sugar-4)
+advmod(much-2, Too-1)
+dep(sugar-4, much-2)
+amod(sugar-4, fucking-3)
+punct(sugar-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (9 tokens):
+Most people with diabetes did it to themselves.
+
+Tokens:
+[Text=Most CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=diabetes CharacterOffsetBegin=136 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=diabetes NamedEntityTag=CAUSE_OF_DEATH]
+[Text=did CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=themselves CharacterOffsetBegin=155 CharacterOffsetEnd=165 PartOfSpeech=PRP Lemma=themselves NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most) (NNS people))
+      (PP (IN with)
+        (NP (NN diabetes))))
+    (VP (VBD did)
+      (NP (PRP it))
+      (PP (IN to)
+        (NP (PRP themselves))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-5)
+amod(people-2, Most-1)
+nsubj(did-5, people-2)
+case(diabetes-4, with-3)
+nmod:with(people-2, diabetes-4)
+obj(did-5, it-6)
+case(themselves-8, to-7)
+obl:to(did-5, themselves-8)
+punct(did-5, .-9)
+
+Extracted the following NER entity mentions:
+diabetes	CAUSE_OF_DEATH	-
+
+Sentence #6 (13 tokens):
+And there are plenty of programs that help pay for that shit.
+
+Tokens:
+[Text=And CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=173 CharacterOffsetEnd=178 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=plenty CharacterOffsetBegin=183 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=plenty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=190 CharacterOffsetEnd=192 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=programs CharacterOffsetBegin=193 CharacterOffsetEnd=201 PartOfSpeech=NNS Lemma=program NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=VBP Lemma=help NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (NN plenty))
+        (PP (IN of)
+          (NP
+            (NP (NNS programs))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP help)
+                  (VP (VB pay)
+                    (PP (IN for)
+                      (NP (DT that) (NN shit)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-3)
+cc(are-3, And-1)
+expl(are-3, there-2)
+det:qmod(programs-6, plenty-4)
+fixed(plenty-4, of-5)
+nsubj(are-3, programs-6)
+nsubj(help-8, programs-6)
+ref(programs-6, that-7)
+acl:relcl(programs-6, help-8)
+xcomp(help-8, pay-9)
+case(shit-12, for-10)
+det(shit-12, that-11)
+obl:for(pay-9, shit-12)
+punct(are-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (4 tokens):
+Stop being silly.
+
+Tokens:
+[Text=Stop CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=silly CharacterOffsetBegin=242 CharacterOffsetEnd=247 PartOfSpeech=JJ Lemma=silly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Stop)
+      (S
+        (VP (VBG being)
+          (ADJP (JJ silly)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-1)
+cop(silly-3, being-2)
+xcomp(Stop-1, silly-3)
+punct(Stop-1, .-4)
+
+Extracted the following NER entity mentions:

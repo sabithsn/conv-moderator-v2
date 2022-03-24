@@ -1,0 +1,128 @@
+Document: ID=7F3D4449.text (2 sentences, 29 tokens)
+
+Sentence #1 (11 tokens):
+who the fuck would want to normalize getting an std?
+
+Tokens:
+[Text=who CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=normalize CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=normalize NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=std CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=std NamedEntityTag=CAUSE_OF_DEATH]
+[Text=? CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHNP (WP who))
+    (S
+      (NP (DT the)
+        (NML
+          (S
+            (VP (VB fuck)))))
+      (VP (MD would)
+        (VP (VB want)
+          (S
+            (VP (TO to)
+              (VP (VB normalize)
+                (S
+                  (VP (VBG getting)
+                    (NP (DT an) (NN std))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-5)
+obj(normalize-7, who-1)
+det(fuck-3, the-2)
+nsubj(want-5, fuck-3)
+nsubj:xsubj(normalize-7, fuck-3)
+aux(want-5, would-4)
+mark(normalize-7, to-6)
+xcomp(want-5, normalize-7)
+xcomp(normalize-7, getting-8)
+det(std-10, an-9)
+obj(getting-8, std-10)
+punct(want-5, ?-11)
+
+Extracted the following NER entity mentions:
+std	CAUSE_OF_DEATH	-
+
+Sentence #2 (18 tokens):
+normalize testing and safe sex, yes  stds, nooo  i need to stay off of the internet
+
+Tokens:
+[Text=normalize CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=normalize NamedEntityTag=O]
+[Text=testing CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=testing NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=safe CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=safe NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=stds CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=std NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=nooo CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=nooo NamedEntityTag=O]
+[Text=i CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=PRP Lemma=i NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stay CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=stay NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=internet CharacterOffsetBegin=129 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=internet NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB normalize)
+      (S
+        (NP
+          (NP (NN testing))
+          (CC and)
+          (NP (JJ safe) (NN sex)))
+        (, ,)
+        (INTJ (UH yes)
+          (FRAG
+            (NP (NNS stds))
+            (, ,)
+            (NP (NN nooo))))
+        (NP (PRP i))
+        (VP (VBP need)
+          (S
+            (VP (TO to)
+              (VP (VB stay)
+                (PRT (IN off))
+                (PP (IN of)
+                  (NP (DT the) (NN internet)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, normalize-1)
+nsubj(need-12, testing-2)
+nsubj:xsubj(stay-14, testing-2)
+cc(sex-5, and-3)
+amod(sex-5, safe-4)
+conj:and(testing-2, sex-5)
+nsubj(need-12, sex-5)
+nsubj:xsubj(stay-14, sex-5)
+punct(need-12, ,-6)
+discourse(need-12, yes-7)
+dep(yes-7, stds-8)
+punct(stds-8, ,-9)
+appos(stds-8, nooo-10)
+nsubj(need-12, i-11)
+nsubj:xsubj(stay-14, i-11)
+ccomp(normalize-1, need-12)
+mark(stay-14, to-13)
+xcomp(need-12, stay-14)
+compound:prt(stay-14, off-15)
+case(internet-18, of-16)
+det(internet-18, the-17)
+obl:of(stay-14, internet-18)
+
+Extracted the following NER entity mentions:

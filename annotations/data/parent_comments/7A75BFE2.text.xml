@@ -1,0 +1,50 @@
+Document: ID=7A75BFE2.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+There's a reason so many Republicans deify the man...
+
+Tokens:
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=25 CharacterOffsetEnd=36 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=deify CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=VBP Lemma=deify NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN reason))
+        (SBAR
+          (S
+            (NP
+              (ADJP (RB so) (JJ many))
+              (NNPS Republicans))
+            (VP (VBP deify)
+              (NP (DT the) (NN man)))))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+expl('s-2, There-1)
+det(reason-4, a-3)
+nsubj('s-2, reason-4)
+advmod(many-6, so-5)
+amod(Republicans-7, many-6)
+nsubj(deify-8, Republicans-7)
+acl:relcl(reason-4, deify-8)
+det(man-10, the-9)
+obj(deify-8, man-10)
+punct('s-2, ...-11)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.9999957896489167

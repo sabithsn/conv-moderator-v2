@@ -1,0 +1,61 @@
+Document: ID=85EFB944.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+They tryna make it look like Suicide, maybe we know too much...
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=tryna CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=tryna NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Suicide CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=suicide NamedEntityTag=CAUSE_OF_DEATH]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=maybe CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP tryna)
+        (S
+          (VP (VB make)
+            (S
+              (NP (PRP it))
+              (VP (VB look)
+                (PP (IN like)
+                  (NP (NN Suicide)))))))))
+    (, ,)
+    (S
+      (ADVP (RB maybe))
+      (NP (PRP we))
+      (VP (VBP know)
+        (ADJP (RB too) (JJ much))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tryna-2)
+nsubj(tryna-2, They-1)
+ccomp(tryna-2, make-3)
+nsubj(look-5, it-4)
+ccomp(make-3, look-5)
+case(Suicide-7, like-6)
+obl:like(look-5, Suicide-7)
+punct(tryna-2, ,-8)
+advmod(know-11, maybe-9)
+nsubj(know-11, we-10)
+parataxis(tryna-2, know-11)
+advmod(much-13, too-12)
+xcomp(know-11, much-13)
+punct(tryna-2, ...-14)
+
+Extracted the following NER entity mentions:
+Suicide	CAUSE_OF_DEATH	-

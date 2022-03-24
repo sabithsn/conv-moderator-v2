@@ -1,0 +1,89 @@
+Document: ID=F9425DDD.text (2 sentences, 20 tokens)
+
+Sentence #1 (10 tokens):
+You guys know that the PCM is next right?
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=PCM CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=pcm NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You) (NNS guys))
+    (VP (VBP know)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN PCM))
+          (VP (VBZ is)
+            (NP (JJ next) (NN right))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-3)
+dep(guys-2, You-1)
+nsubj(know-3, guys-2)
+mark(right-9, that-4)
+det(PCM-6, the-5)
+nsubj(right-9, PCM-6)
+cop(right-9, is-7)
+amod(right-9, next-8)
+ccomp(know-3, right-9)
+punct(know-3, ?-10)
+
+Extracted the following NER entity mentions:
+PCM	ORGANIZATION	ORGANIZATION:0.6304836650861717
+
+Sentence #2 (10 tokens):
+fucking jannies make me want to go full monke libcenter
+
+Tokens:
+[Text=fucking CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=fucking NamedEntityTag=O]
+[Text=jannies CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=janny NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=monke CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=monke NamedEntityTag=O]
+[Text=libcenter CharacterOffsetBegin=88 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=libcenter NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB fucking))
+    (NP (NNS jannies))
+    (VP (VBP make)
+      (S
+        (NP (PRP me))
+        (VP (VB want)
+          (S
+            (VP (TO to)
+              (VP (VB go)
+                (NP (JJ full) (NN monke) (NN libcenter))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-3)
+advmod(make-3, fucking-1)
+nsubj(make-3, jannies-2)
+nsubj(want-5, me-4)
+nsubj:xsubj(go-7, me-4)
+ccomp(make-3, want-5)
+mark(go-7, to-6)
+xcomp(want-5, go-7)
+amod(libcenter-10, full-8)
+compound(libcenter-10, monke-9)
+obj(go-7, libcenter-10)
+
+Extracted the following NER entity mentions:

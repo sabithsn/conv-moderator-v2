@@ -1,0 +1,130 @@
+Document: ID=4A75F3FD.text (5 sentences, 20 tokens)
+
+Sentence #1 (4 tokens):
+As an ND.
+
+Tokens:
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ND CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=nd NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT an) (NN ND)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ND-3)
+case(ND-3, As-1)
+det(ND-3, an-2)
+punct(ND-3, .-4)
+
+Extracted the following NER entity mentions:
+ND	STATE_OR_PROVINCE	-
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (5 tokens):
+I beg to differ.
+
+Tokens:
+[Text=I CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=beg CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=beg NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=differ CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=differ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP beg)
+      (S
+        (VP (TO to)
+          (VP (VB differ)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beg-2)
+nsubj(beg-2, I-1)
+nsubj:xsubj(differ-4, I-1)
+mark(differ-4, to-3)
+xcomp(beg-2, differ-4)
+punct(beg-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (6 tokens):
+But what do I know?
+
+Tokens:
+[Text=But CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ (CC But)
+    (WHNP (WP what))
+    (SQ (VBP do)
+      (NP (PRP I))
+      (VP (VB know)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-5)
+cc(know-5, But-1)
+obj(know-5, what-2)
+aux(know-5, do-3)
+nsubj(know-5, I-4)
+punct(know-5, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (4 tokens):
+I'm nobody.
+
+Tokens:
+[Text=I CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=nobody CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=nobody NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (NP (NN nobody)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, nobody-3)
+nsubj(nobody-3, I-1)
+cop(nobody-3, 'm-2)
+punct(nobody-3, .-4)
+
+Extracted the following NER entity mentions:

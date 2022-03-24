@@ -1,0 +1,75 @@
+Document: ID=43E4E2FE.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+I love how most of England is LibLeft but then a chunk in the south in LibRight.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=England CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=England NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=LibLeft CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=LibLeft NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=chunk CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=chunk NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=south CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=south NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=LibRight CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=LibRight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP love)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP
+            (NP (JJS most))
+            (PP (IN of)
+              (NP (NNP England))))
+          (VP (VBZ is)
+            (NP
+              (NP (NNP LibLeft))
+              (CONJP (CC but)
+                (RB then))
+              (NP
+                (NP (DT a) (NN chunk))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NN south))
+                    (PP (IN in)
+                      (NP (NNP LibRight)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, love-2)
+nsubj(love-2, I-1)
+advmod(LibLeft-8, how-3)
+nsubj(LibLeft-8, most-4)
+case(England-6, of-5)
+nmod:of(most-4, England-6)
+cop(LibLeft-8, is-7)
+ccomp(love-2, LibLeft-8)
+cc(then-10, but-9)
+cc(chunk-12, then-10)
+det(chunk-12, a-11)
+ccomp(love-2, chunk-12)
+conj:then(LibLeft-8, chunk-12)
+case(south-15, in-13)
+det(south-15, the-14)
+nmod:in(chunk-12, south-15)
+case(LibRight-17, in-16)
+nmod:in(south-15, LibRight-17)
+punct(love-2, .-18)
+
+Extracted the following NER entity mentions:
+England	COUNTRY	LOCATION:0.999696006623798

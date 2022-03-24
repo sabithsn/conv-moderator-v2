@@ -1,0 +1,47 @@
+Document: ID=2227CFC6.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Basketball Player Royce W. Runs for Congress, Challenging Ilhan Omar
+
+Tokens:
+[Text=Basketball CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=basketball NamedEntityTag=TITLE]
+[Text=Player CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=player NamedEntityTag=TITLE]
+[Text=Royce CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Royce NamedEntityTag=PERSON]
+[Text=W. CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=W. NamedEntityTag=PERSON]
+[Text=Runs CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=run NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Congress CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Challenging CharacterOffsetBegin=46 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Challenging NamedEntityTag=O]
+[Text=Ilhan CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Ilhan NamedEntityTag=PERSON]
+[Text=Omar CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Omar NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML (NN Basketball) (NN Player))
+      (NNP Royce) (NNP W.))
+    (VP (VBZ Runs)
+      (PP (IN for)
+        (NP (NNP Congress) (, ,) (NNP Challenging) (NNP Ilhan) (NNP Omar))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Runs-5)
+compound(Player-2, Basketball-1)
+compound(W.-4, Player-2)
+compound(W.-4, Royce-3)
+nsubj(Runs-5, W.-4)
+case(Omar-11, for-6)
+compound(Omar-11, Congress-7)
+punct(Omar-11, ,-8)
+appos(Omar-11, Challenging-9)
+compound(Omar-11, Ilhan-10)
+obl:for(Runs-5, Omar-11)
+
+Extracted the following NER entity mentions:
+Basketball Player	TITLE	-
+Royce W. Runs	PERSON	PERSON:0.7885362730337144
+Congress	ORGANIZATION	ORGANIZATION:0.9635335402672126
+Ilhan Omar	PERSON	PERSON:0.9874833739570946

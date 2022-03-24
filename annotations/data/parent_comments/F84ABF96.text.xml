@@ -1,0 +1,82 @@
+Document: ID=F84ABF96.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+CMV: Women and children should not be fleeing their country during war time while only the men stand and fight.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Women CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=fleeing CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=flee NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=time CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=VBP Lemma=stand NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=VBP Lemma=fight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (NNS Women)
+        (CC and)
+        (NNS children))
+      (VP (MD should) (RB not)
+        (VP (VB be)
+          (VP (VBG fleeing)
+            (NP (PRP$ their) (NN country))
+            (PP (IN during)
+              (NP (NN war) (NN time)))
+            (SBAR (IN while)
+              (S
+                (NP (RB only) (DT the) (NNS men))
+                (VP (VBP stand)
+                  (CC and)
+                  (VBP fight))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(fleeing-9, Women-3)
+cc(children-5, and-4)
+conj:and(Women-3, children-5)
+nsubj(fleeing-9, children-5)
+aux(fleeing-9, should-6)
+advmod(fleeing-9, not-7)
+aux(fleeing-9, be-8)
+appos(CMV-1, fleeing-9)
+nmod:poss(country-11, their-10)
+obj(fleeing-9, country-11)
+case(time-14, during-12)
+compound(time-14, war-13)
+obl:during(fleeing-9, time-14)
+mark(stand-19, while-15)
+advmod(men-18, only-16)
+det(men-18, the-17)
+nsubj(stand-19, men-18)
+nsubj(fight-21, men-18)
+advcl:while(fleeing-9, stand-19)
+cc(fight-21, and-20)
+advcl:while(fleeing-9, fight-21)
+conj:and(stand-19, fight-21)
+punct(CMV-1, .-22)
+
+Extracted the following NER entity mentions:
+war	CAUSE_OF_DEATH	-

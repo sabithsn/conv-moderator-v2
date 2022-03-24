@@ -1,0 +1,129 @@
+Document: ID=A0E17567.text (3 sentences, 29 tokens)
+
+Sentence #1 (12 tokens):
+yea…I never said anything about not treating anti-vaxxers….
+
+Tokens:
+[Text=yea CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=yea NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=treating CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=treat NamedEntityTag=O]
+[Text=anti-vaxxers CharacterOffsetBegin=45 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=anti-vaxxer NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH yea))
+    (: …)
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD said)
+      (NP (NN anything))
+      (PP (IN about)
+        (S (RB not)
+          (VP (VBG treating)
+            (NP (NNS anti-vaxxers))))))
+    (: …) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-5)
+discourse(said-5, yea-1)
+punct(said-5, …-2)
+nsubj(said-5, I-3)
+advmod(said-5, never-4)
+obj(said-5, anything-6)
+mark(treating-9, about-7)
+advmod(treating-9, not-8)
+advcl:about(said-5, treating-9)
+obj(treating-9, anti-vaxxers-10)
+punct(said-5, …-11)
+punct(said-5, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+some of you guys don’t know how to read a post and it shows.
+
+Tokens:
+[Text=some CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=shows CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=VBZ Lemma=show NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT some))
+        (PP (IN of)
+          (NP (PRP you) (NNS guys))))
+      (VP (VBP do) (RB n’t)
+        (VP (VB know)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (VP (TO to)
+                (VP (VB read)
+                  (NP (DT a) (NN post)))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ shows)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-7)
+nsubj(know-7, some-1)
+case(guys-4, of-2)
+dep(guys-4, you-3)
+nmod:of(some-1, guys-4)
+aux(know-7, do-5)
+advmod(know-7, n’t-6)
+advmod(read-10, how-8)
+mark(read-10, to-9)
+ccomp(know-7, read-10)
+det(post-12, a-11)
+obj(read-10, post-12)
+cc(shows-15, and-13)
+nsubj(shows-15, it-14)
+conj:and(know-7, shows-15)
+punct(know-7, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:

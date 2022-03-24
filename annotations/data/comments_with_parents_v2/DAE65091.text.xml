@@ -1,0 +1,71 @@
+Document: ID=DAE65091.text (2 sentences, 14 tokens)
+
+Sentence #1 (6 tokens):
+Sorry you got brainwashed fella.
+
+Tokens:
+[Text=Sorry CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=UH Lemma=sorry NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=brainwashed CharacterOffsetBegin=14 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=brainwash NamedEntityTag=O]
+[Text=fella CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=fella NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Sorry))
+    (NP (PRP you))
+    (VP (VBD got)
+      (VP (VBN brainwashed)
+        (NP (NN fella))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, brainwashed-4)
+discourse(brainwashed-4, Sorry-1)
+nsubj:pass(brainwashed-4, you-2)
+aux:pass(brainwashed-4, got-3)
+obj(brainwashed-4, fella-5)
+punct(brainwashed-4, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Best of luck getting your head straight.
+
+Tokens:
+[Text=Best CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=luck CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=luck NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=head CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=head NamedEntityTag=O]
+[Text=straight CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=straight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (JJS Best))
+      (PP (IN of)
+        (NP (NN luck))))
+    (VP (VBG getting)
+      (NP (PRP$ your) (NN head))
+      (ADVP (RB straight)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Best-1)
+case(luck-3, of-2)
+nmod:of(Best-1, luck-3)
+dep(Best-1, getting-4)
+nmod:poss(head-6, your-5)
+obj(getting-4, head-6)
+advmod(getting-4, straight-7)
+punct(Best-1, .-8)
+
+Extracted the following NER entity mentions:

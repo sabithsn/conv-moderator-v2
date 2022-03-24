@@ -1,0 +1,104 @@
+Document: ID=4C686A36.text (2 sentences, 25 tokens)
+
+Sentence #1 (7 tokens):
+Dollars, not rubles, right?
+
+Tokens:
+[Text=Dollars CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=rubles CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=ruble NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNS Dollars))
+    (, ,)
+    (NP (RB not) (NNS rubles))
+    (, ,)
+    (ADJP (JJ right))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Dollars-1)
+punct(Dollars-1, ,-2)
+advmod(rubles-4, not-3)
+appos(Dollars-1, rubles-4)
+punct(Dollars-1, ,-5)
+dep(Dollars-1, right-6)
+punct(Dollars-1, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+Because if it's the latter that's like saying you'd do it for tree fiddy.
+
+Tokens:
+[Text=Because CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=latter CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=latter NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=tree CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=tree NamedEntityTag=O]
+[Text=fiddy CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=fiddy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (SBAR (IN if)
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (NP (DT the) (JJ latter)))))
+        (NP (DT that))
+        (VP (VBZ 's)
+          (PP (IN like)
+            (S
+              (VP (VBG saying)
+                (NP (PRP you))))))))
+    (VP (MD 'd)
+      (VP (VB do)
+        (NP (PRP it))
+        (PP (IN for)
+          (NP (NN tree) (NN fiddy)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-13)
+mark(saying-10, Because-1)
+mark(latter-6, if-2)
+nsubj(latter-6, it-3)
+cop(latter-6, 's-4)
+det(latter-6, the-5)
+advcl:if(saying-10, latter-6)
+nsubj(saying-10, that-7)
+cop(saying-10, 's-8)
+mark(saying-10, like-9)
+csubj(do-13, saying-10)
+obj(saying-10, you-11)
+aux(do-13, 'd-12)
+obj(do-13, it-14)
+case(fiddy-17, for-15)
+compound(fiddy-17, tree-16)
+obl:for(do-13, fiddy-17)
+punct(do-13, .-18)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,119 @@
+Document: ID=1665C1D0.text (2 sentences, 28 tokens)
+
+Sentence #1 (14 tokens):
+Answering my question with another question tells me everything I need to know.
+
+Tokens:
+[Text=Answering CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=VBG Lemma=answer NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=tells CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=53 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Answering)
+        (NP (PRP$ my) (NN question))
+        (PP (IN with)
+          (NP (DT another) (NN question)))))
+    (VP (VBZ tells)
+      (NP (PRP me))
+      (NP
+        (NP (NN everything))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP need)
+              (S
+                (VP (TO to)
+                  (VP (VB know)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tells-7)
+csubj(tells-7, Answering-1)
+nmod:poss(question-3, my-2)
+obj(Answering-1, question-3)
+case(question-6, with-4)
+det(question-6, another-5)
+obl:with(Answering-1, question-6)
+iobj(tells-7, me-8)
+obj(tells-7, everything-9)
+nsubj(need-11, I-10)
+nsubj:xsubj(know-13, I-10)
+acl:relcl(everything-9, need-11)
+mark(know-13, to-12)
+xcomp(need-11, know-13)
+punct(tells-7, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+There's a reason you don't want to answer my question directly.
+
+Tokens:
+[Text=There CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=VB Lemma=answer NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=126 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=directly CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=directly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN reason))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBP do) (RB n't)
+              (VP (VB want)
+                (S
+                  (VP (TO to)
+                    (VP (VB answer)
+                      (NP (PRP$ my) (NN question))
+                      (ADVP (RB directly)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+expl('s-2, There-1)
+det(reason-4, a-3)
+nsubj('s-2, reason-4)
+nsubj(want-8, you-5)
+nsubj:xsubj(answer-10, you-5)
+aux(want-8, do-6)
+advmod(want-8, n't-7)
+acl:relcl(reason-4, want-8)
+mark(answer-10, to-9)
+xcomp(want-8, answer-10)
+nmod:poss(question-12, my-11)
+obj(answer-10, question-12)
+advmod(answer-10, directly-13)
+punct('s-2, .-14)
+
+Extracted the following NER entity mentions:

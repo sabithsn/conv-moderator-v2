@@ -1,0 +1,59 @@
+Document: ID=CDEB6284.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Breaking: Acts of EXTREME violence getting perpetrating right now in Ottawa.
+
+Tokens:
+[Text=Breaking CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBG Lemma=break NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Acts CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNPS Lemma=Acts NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=EXTREME CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=extreme NamedEntityTag=O]
+[Text=violence CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=violence NamedEntityTag=CAUSE_OF_DEATH]
+[Text=getting CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=perpetrating CharacterOffsetBegin=43 CharacterOffsetEnd=55 PartOfSpeech=VBG Lemma=perpetrate NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=right NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=now CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=in CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ottawa CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Ottawa NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (VP (VBG Breaking)))
+    (: :)
+    (NP
+      (NP (NNPS Acts))
+      (PP (IN of)
+        (NP
+          (NP (JJ EXTREME) (NN violence))
+          (VP (VBG getting)
+            (S
+              (VP (VBG perpetrating)
+                (ADVP (RB right) (RB now))
+                (PP (IN in)
+                  (NP (NNP Ottawa)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Acts-3)
+dep(Acts-3, Breaking-1)
+punct(Acts-3, :-2)
+case(violence-6, of-4)
+amod(violence-6, EXTREME-5)
+nmod:of(Acts-3, violence-6)
+acl(violence-6, getting-7)
+advcl(getting-7, perpetrating-8)
+advmod(now-10, right-9)
+advmod(perpetrating-8, now-10)
+case(Ottawa-12, in-11)
+obl:in(perpetrating-8, Ottawa-12)
+punct(Acts-3, .-13)
+
+Extracted the following NER entity mentions:
+violence	CAUSE_OF_DEATH	-
+right now	DATE	DATE:-1.0
+Ottawa	CITY	LOCATION:0.9970720538335477

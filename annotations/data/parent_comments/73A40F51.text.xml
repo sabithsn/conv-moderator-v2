@@ -1,0 +1,66 @@
+Document: ID=73A40F51.text (2 sentences, 13 tokens)
+
+Sentence #1 (6 tokens):
+I’m a sugar baby.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sugar CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=sugar NamedEntityTag=O]
+[Text=baby CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (NP (DT a) (NN sugar) (NN baby)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, baby-5)
+nsubj(baby-5, I-1)
+cop(baby-5, ’m-2)
+det(baby-5, a-3)
+compound(baby-5, sugar-4)
+punct(baby-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+I plan on redistributing their wealth.
+
+Tokens:
+[Text=I CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=plan NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=redistributing CharacterOffsetBegin=28 CharacterOffsetEnd=42 PartOfSpeech=VBG Lemma=redistribute NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=wealth CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=wealth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP plan)
+      (PP (IN on)
+        (S
+          (VP (VBG redistributing)
+            (NP (PRP$ their) (NN wealth))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, plan-2)
+nsubj(plan-2, I-1)
+mark(redistributing-4, on-3)
+advcl:on(plan-2, redistributing-4)
+nmod:poss(wealth-6, their-5)
+obj(redistributing-4, wealth-6)
+punct(plan-2, .-7)
+
+Extracted the following NER entity mentions:

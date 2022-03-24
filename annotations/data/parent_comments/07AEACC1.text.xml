@@ -1,0 +1,60 @@
+Document: ID=07AEACC1.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Powerful drawing that is still, inexplicably, taking place in the USA.
+
+Tokens:
+[Text=Powerful CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=powerful NamedEntityTag=O]
+[Text=drawing CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=drawing NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=inexplicably CharacterOffsetBegin=32 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=inexplicably NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=USA CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=USA NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Powerful) (NN drawing))
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP (VBZ is)
+          (ADVP
+            (ADVP (RB still))
+            (, ,)
+            (ADVP (RB inexplicably))
+            (, ,))
+          (VP (VBG taking)
+            (NP (NN place))
+            (PP (IN in)
+              (NP (DT the) (NNP USA)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, drawing-2)
+amod(drawing-2, Powerful-1)
+nsubj(taking-9, drawing-2)
+ref(drawing-2, that-3)
+aux(taking-9, is-4)
+advmod(taking-9, still-5)
+punct(still-5, ,-6)
+advmod(still-5, inexplicably-7)
+punct(still-5, ,-8)
+acl:relcl(drawing-2, taking-9)
+obj(taking-9, place-10)
+case(USA-13, in-11)
+det(USA-13, the-12)
+obl:in(taking-9, USA-13)
+punct(drawing-2, .-14)
+
+Extracted the following NER entity mentions:
+USA	COUNTRY	LOCATION:0.9655665883026242

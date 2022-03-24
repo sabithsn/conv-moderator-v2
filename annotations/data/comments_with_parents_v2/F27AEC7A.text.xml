@@ -1,0 +1,71 @@
+Document: ID=F27AEC7A.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Biden Admin Rips Florida, Suggests Feds Will Crack Down For Barring Sexual Orientation Discussions In Grades K-3
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=ORGANIZATION]
+[Text=Admin CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Admin NamedEntityTag=ORGANIZATION]
+[Text=Rips CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Rips NamedEntityTag=ORGANIZATION]
+[Text=Florida CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Suggests CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=suggest NamedEntityTag=O]
+[Text=Feds CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNPS Lemma=Feds NamedEntityTag=O]
+[Text=Will CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Will NamedEntityTag=O]
+[Text=Crack CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Crack NamedEntityTag=O]
+[Text=Down CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Down NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Barring CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=bar NamedEntityTag=O]
+[Text=Sexual CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=Orientation CharacterOffsetBegin=75 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=orientation NamedEntityTag=O]
+[Text=Discussions CharacterOffsetBegin=87 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=discussion NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Grades CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=grade NamedEntityTag=O]
+[Text=K CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=CD Lemma=k NamedEntityTag=NUMBER NormalizedNamedEntityTag=-3.0]
+[Text=- CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=SYM Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=-3.0]
+[Text=3 CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=-3.0]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP
+        (NP (NNP Biden) (NNP Admin))
+        (NP (NNP Rips) (NNP Florida)))
+      (, ,)
+      (VP (VBZ Suggests)
+        (NP (NNPS Feds) (NNP Will) (NNP Crack) (NNP Down))
+        (PP (IN For)
+          (S
+            (VP (VBG Barring)
+              (NP (JJ Sexual) (NN Orientation) (NNS Discussions))
+              (PP (IN In)
+                (NP (NNS Grades))))))))
+    (NP (CD K) (SYM -) (CD 3))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 3-20)
+compound(Admin-2, Biden-1)
+nsubj(Suggests-6, Admin-2)
+compound(Florida-4, Rips-3)
+dep(Admin-2, Florida-4)
+punct(Suggests-6, ,-5)
+dep(3-20, Suggests-6)
+compound(Down-10, Feds-7)
+compound(Down-10, Will-8)
+compound(Down-10, Crack-9)
+obj(Suggests-6, Down-10)
+mark(Barring-12, For-11)
+advcl:for(Suggests-6, Barring-12)
+amod(Discussions-15, Sexual-13)
+compound(Discussions-15, Orientation-14)
+obj(Barring-12, Discussions-15)
+case(Grades-17, In-16)
+obl:in(Barring-12, Grades-17)
+nummod(3-20, K-18)
+dep(3-20, --19)
+
+Extracted the following NER entity mentions:
+Biden Admin Rips Florida	ORGANIZATION	ORGANIZATION:0.39535164087577956
+K-3	NUMBER	NUMBER:-1.0

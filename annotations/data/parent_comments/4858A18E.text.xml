@@ -1,0 +1,82 @@
+Document: ID=4858A18E.text (2 sentences, 18 tokens)
+
+Sentence #1 (14 tokens):
+Spoilers: [Republicans will always act in bad faith... Always.]
+
+Tokens:
+[Text=Spoilers CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=spoiler NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=[ CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=-LRB- Lemma=[ NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=11 CharacterOffsetEnd=22 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=will CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=act CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=act NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=faith CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=faith NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=Always CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=] CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=-RRB- Lemma=] NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNS Spoilers))
+    (: :)
+    (S (-LRB- [)
+      (NP (NNPS Republicans))
+      (VP (MD will)
+        (ADVP (RB always))
+        (VP (VB act)
+          (PP (IN in)
+            (NP (JJ bad) (NN faith)))
+          (, ...)
+          (ADVP (RB Always))))
+      (. .))
+    (-RRB- ])))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Spoilers-1)
+punct(Spoilers-1, :-2)
+punct(act-7, [-3)
+nsubj(act-7, Republicans-4)
+aux(act-7, will-5)
+advmod(act-7, always-6)
+appos(Spoilers-1, act-7)
+case(faith-10, in-8)
+amod(faith-10, bad-9)
+obl:in(act-7, faith-10)
+punct(act-7, ...-11)
+advmod(act-7, Always-12)
+punct(act-7, .-13)
+punct(Spoilers-1, ]-14)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.9999268556943366
+
+Sentence #2 (4 tokens):
+(/spoilers)
+
+Tokens:
+[Text=( CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=SYM Lemma=/ NamedEntityTag=O]
+[Text=spoilers CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=spoiler NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (-LRB- -LRB-)
+    (PP (SYM /)
+      (NP (NNS spoilers)))
+    (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoilers-3)
+punct(spoilers-3, (-1)
+dep(spoilers-3, /-2)
+punct(spoilers-3, )-4)
+
+Extracted the following NER entity mentions:

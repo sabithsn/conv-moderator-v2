@@ -1,0 +1,75 @@
+Document: ID=CC746127.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Pelosi spent over $500K on private jets despite claiming ‘we have a moral obligation’ to reduce emissions
+
+Tokens:
+[Text=Pelosi CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Pelosi NamedEntityTag=PERSON]
+[Text=spent CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=spend NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=>$500.0]
+[Text=500K CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=500k NamedEntityTag=MONEY NormalizedNamedEntityTag=>$500.0]
+[Text=on CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=private CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=private NamedEntityTag=O]
+[Text=jets CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNS Lemma=jet NamedEntityTag=O]
+[Text=despite CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=despite NamedEntityTag=O]
+[Text=claiming CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=claim NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=moral CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=moral NamedEntityTag=O]
+[Text=obligation CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=obligation NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=reduce CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=reduce NamedEntityTag=O]
+[Text=emissions CharacterOffsetBegin=96 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=emission NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pelosi))
+    (VP (VBD spent)
+      (NP
+        (QP (IN over) ($ $) (CD 500K)))
+      (PP (IN on)
+        (NP (JJ private) (NNS jets)))
+      (PP (IN despite)
+        (S
+          (VP (VBG claiming) (`` ‘)
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP have)
+                  (NP (DT a) (JJ moral) (NN obligation) ('' ’)
+                    (S
+                      (VP (TO to)
+                        (VP (VB reduce)
+                          (NP (NNS emissions)))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spent-2)
+nsubj(spent-2, Pelosi-1)
+advmod($-4, over-3)
+obj(spent-2, $-4)
+nummod($-4, 500K-5)
+case(jets-8, on-6)
+amod(jets-8, private-7)
+obl:on(spent-2, jets-8)
+mark(claiming-10, despite-9)
+advcl:despite(spent-2, claiming-10)
+punct(claiming-10, ‘-11)
+nsubj(have-13, we-12)
+ccomp(claiming-10, have-13)
+det(obligation-16, a-14)
+amod(obligation-16, moral-15)
+obj(have-13, obligation-16)
+punct(obligation-16, ’-17)
+mark(reduce-19, to-18)
+acl:to(obligation-16, reduce-19)
+obj(reduce-19, emissions-20)
+
+Extracted the following NER entity mentions:
+Pelosi	PERSON	PERSON:0.9974446158508693
+$500K	MONEY	MONEY:0.9846829241350975

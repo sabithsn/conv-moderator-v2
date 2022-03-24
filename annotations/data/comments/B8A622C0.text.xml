@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>B8A622C0.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Plenty</word>
+            <lemma>plenty</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>virus</word>
+            <lemma>virus</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>films</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>nuke</word>
+            <lemma>nuke</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>town</word>
+            <lemma>town</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>origin</word>
+            <lemma>origin</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>...</word>
+            <lemma>...</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>💁‍♂️</word>
+            <lemma>💁‍♂️</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NFP</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP-TMP (NP (NN Plenty)) (PP (IN of) (NP (NN virus) (NNS films)))) (, ,) (NP (PRP they)) (VP (VBP nuke) (NP (NP (DT the) (NN town)) (PP (IN of) (NP (NN origin)) (: ...)))) (NFP 💁‍♂️))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">nuke</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="7">nuke</governor>
+            <dependent idx="1">Plenty</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">films</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">films</governor>
+            <dependent idx="3">virus</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="1">Plenty</governor>
+            <dependent idx="4">films</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="5">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="6">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">town</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="9">town</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">origin</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="9">town</governor>
+            <dependent idx="11">origin</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="11">origin</governor>
+            <dependent idx="12">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="13">💁‍♂️</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">nuke</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="7">nuke</governor>
+            <dependent idx="1">Plenty</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">films</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">films</governor>
+            <dependent idx="3">virus</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="1">Plenty</governor>
+            <dependent idx="4">films</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="5">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="6">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">town</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="9">town</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">origin</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="9">town</governor>
+            <dependent idx="11">origin</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="11">origin</governor>
+            <dependent idx="12">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="13">💁‍♂️</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">nuke</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="7">nuke</governor>
+            <dependent idx="1">Plenty</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">films</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">films</governor>
+            <dependent idx="3">virus</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="1">Plenty</governor>
+            <dependent idx="4">films</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="5">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="6">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">town</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="9">town</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">origin</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="9">town</governor>
+            <dependent idx="11">origin</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="11">origin</governor>
+            <dependent idx="12">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="13">💁‍♂️</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">nuke</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="7">nuke</governor>
+            <dependent idx="1">Plenty</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">films</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">films</governor>
+            <dependent idx="3">virus</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="1">Plenty</governor>
+            <dependent idx="4">films</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="5">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="6">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">town</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="9">town</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">origin</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="9">town</governor>
+            <dependent idx="11">origin</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="11">origin</governor>
+            <dependent idx="12">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="13">💁‍♂️</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">nuke</dependent>
+          </dep>
+          <dep type="det:qmod">
+            <governor idx="4">films</governor>
+            <dependent idx="1">Plenty</dependent>
+          </dep>
+          <dep type="fixed">
+            <governor idx="1">Plenty</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">films</governor>
+            <dependent idx="3">virus</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="7">nuke</governor>
+            <dependent idx="4">films</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="5">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="6">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">town</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">nuke</governor>
+            <dependent idx="9">town</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">origin</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="9">town</governor>
+            <dependent idx="11">origin</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="11">origin</governor>
+            <dependent idx="12">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">nuke</governor>
+            <dependent idx="13">💁‍♂️</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,31 @@
+Document: ID=9ABDA2F4.text (1 sentences, 4 tokens)
+
+Sentence #1 (4 tokens):
+Ottawans on Suicide Watch
+
+Tokens:
+[Text=Ottawans CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=ottawan NamedEntityTag=MISC]
+[Text=on CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Suicide CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=suicide NamedEntityTag=CAUSE_OF_DEATH]
+[Text=Watch CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=watch NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNS Ottawans))
+      (PP (IN on)
+        (NP (NN Suicide))))
+    (S
+      (VP (VB Watch)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ottawans-1)
+case(Suicide-3, on-2)
+nmod:on(Ottawans-1, Suicide-3)
+dep(Ottawans-1, Watch-4)
+
+Extracted the following NER entity mentions:
+Ottawans	MISC	MISC:0.8510987036616218
+Suicide	CAUSE_OF_DEATH	-

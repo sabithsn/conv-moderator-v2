@@ -1,0 +1,51 @@
+Document: ID=175BC90C.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+When Deuce Bigalo has more credibility than the head of the CDC
+
+Tokens:
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Deuce CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Deuce NamedEntityTag=PERSON]
+[Text=Bigalo CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Bigalo NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=credibility CharacterOffsetBegin=27 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=credibility NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=head CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=head NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CDC CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=CDC NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHADVP (WRB When))
+    (S
+      (NP (NNP Deuce) (NNP Bigalo))
+      (VP (VBZ has)
+        (NP (JJR more) (NN credibility))
+        (PP (IN than)
+          (NP
+            (NP (DT the) (NN head))
+            (PP (IN of)
+              (NP (DT the) (NNP CDC)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-4)
+advmod(has-4, When-1)
+compound(Bigalo-3, Deuce-2)
+nsubj(has-4, Bigalo-3)
+amod(credibility-6, more-5)
+obj(has-4, credibility-6)
+case(head-9, than-7)
+det(head-9, the-8)
+obl:than(has-4, head-9)
+case(CDC-12, of-10)
+det(CDC-12, the-11)
+nmod:of(head-9, CDC-12)
+
+Extracted the following NER entity mentions:
+Deuce Bigalo	PERSON	PERSON:0.9383937129050288
+CDC	ORGANIZATION	ORGANIZATION:0.9645981035519133

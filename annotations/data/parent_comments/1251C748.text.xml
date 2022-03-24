@@ -1,0 +1,49 @@
+Document: ID=1251C748.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Jen Psaki to TikTok Influencers: Russians Hacked the 2016 Election
+
+Tokens:
+[Text=Jen CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Jen NamedEntityTag=PERSON]
+[Text=Psaki CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Psaki NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=TikTok CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=TikTok NamedEntityTag=O]
+[Text=Influencers CharacterOffsetBegin=20 CharacterOffsetEnd=31 PartOfSpeech=NNPS Lemma=Influencers NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Russians CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NNPS Lemma=Russians NamedEntityTag=MISC]
+[Text=Hacked CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=hack NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=2016 CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=2016 NamedEntityTag=DATE NormalizedNamedEntityTag=2016 Timex=<TIMEX3 tid="t1" type="DATE" value="2016">2016</TIMEX3>]
+[Text=Election CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Jen) (NNP Psaki))
+      (PP (IN to)
+        (NP (NNP TikTok) (NNPS Influencers))))
+    (: :)
+    (S
+      (NP (NNPS Russians))
+      (VP (VBD Hacked)
+        (NP (DT the) (CD 2016) (NN Election))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Psaki-2)
+compound(Psaki-2, Jen-1)
+case(Influencers-5, to-3)
+compound(Influencers-5, TikTok-4)
+nmod:to(Psaki-2, Influencers-5)
+punct(Psaki-2, :-6)
+nsubj(Hacked-8, Russians-7)
+parataxis(Psaki-2, Hacked-8)
+det(Election-11, the-9)
+nummod(Election-11, 2016-10)
+obj(Hacked-8, Election-11)
+
+Extracted the following NER entity mentions:
+Jen Psaki	PERSON	PERSON:0.9995568343868049
+Russians	MISC	MISC:0.9536990123457693
+2016	DATE	DATE:0.9336193516768738

@@ -1,0 +1,35 @@
+Document: ID=1868E299.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Who let Authright on Google?
+
+Tokens:
+[Text=Who CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=let NamedEntityTag=O]
+[Text=Authright CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Authright NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Google CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Google NamedEntityTag=ORGANIZATION]
+[Text=? CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD let)
+        (NP (NNP Authright))
+        (PP (IN on)
+          (NP (NNP Google)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-2)
+nsubj(let-2, Who-1)
+obj(let-2, Authright-3)
+case(Google-5, on-4)
+obl:on(let-2, Google-5)
+punct(let-2, ?-6)
+
+Extracted the following NER entity mentions:
+Google	ORGANIZATION	ORGANIZATION:0.9623058894108717

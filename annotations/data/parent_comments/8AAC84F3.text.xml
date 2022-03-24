@@ -1,0 +1,53 @@
+Document: ID=8AAC84F3.text (2 sentences, 8 tokens)
+
+Sentence #1 (2 tokens):
+Where?
+
+Tokens:
+[Text=Where CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Where-1)
+punct(Where-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+In rural Bumblefuck, Kentucky?
+
+Tokens:
+[Text=In CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=rural CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=rural NamedEntityTag=O]
+[Text=Bumblefuck CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Bumblefuck NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Kentucky CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Kentucky NamedEntityTag=STATE_OR_PROVINCE]
+[Text=? CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ rural) (NNP Bumblefuck)))
+    (, ,)
+    (NP (NNP Kentucky))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Kentucky-5)
+case(Bumblefuck-3, In-1)
+amod(Bumblefuck-3, rural-2)
+dep(Kentucky-5, Bumblefuck-3)
+punct(Kentucky-5, ,-4)
+punct(Kentucky-5, ?-6)
+
+Extracted the following NER entity mentions:
+Kentucky	STATE_OR_PROVINCE	LOCATION:0.9664019885112131

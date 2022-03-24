@@ -1,0 +1,69 @@
+Document: ID=DF33B279.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+I said I'm into snakes and my cousin started asking why I hate cats.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=snakes CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=snake NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=cousin CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=cousin NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=asking CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=hate NamedEntityTag=O]
+[Text=cats CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=cat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD said)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP 'm)
+              (PP (IN into)
+                (NP (NNS snakes))))))))
+    (CC and)
+    (S
+      (NP (PRP$ my) (NN cousin))
+      (VP (VBD started)
+        (S
+          (VP (VBG asking)
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (NP (PRP I))
+                (VP (VBP hate)
+                  (NP (NNS cats)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-2)
+nsubj(said-2, I-1)
+nsubj(snakes-6, I-3)
+cop(snakes-6, 'm-4)
+case(snakes-6, into-5)
+ccomp(said-2, snakes-6)
+cc(started-10, and-7)
+nmod:poss(cousin-9, my-8)
+nsubj(started-10, cousin-9)
+conj:and(said-2, started-10)
+xcomp(started-10, asking-11)
+advmod(hate-14, why-12)
+nsubj(hate-14, I-13)
+ccomp(asking-11, hate-14)
+obj(hate-14, cats-15)
+punct(said-2, .-16)
+
+Extracted the following NER entity mentions:

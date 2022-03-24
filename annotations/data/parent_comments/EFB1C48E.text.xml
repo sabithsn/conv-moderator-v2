@@ -1,0 +1,77 @@
+Document: ID=EFB1C48E.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Fuck god, thank me and the rest of the 81 million that voted out that lunatic.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=fuck NamedEntityTag=O]
+[Text=god CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=UH Lemma=god NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=thank CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=thank NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=81 CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=81 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.1E7]
+[Text=million CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.1E7]
+[Text=that CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=voted CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=lunatic CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=lunatic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Fuck))
+    (INTJ (UH god))
+    (, ,)
+    (VP (VBP thank)
+      (NP
+        (NP
+          (NP (PRP me))
+          (CC and)
+          (NP
+            (NP (DT the) (NN rest))
+            (PP (IN of)
+              (NP
+                (NP (DT the)
+                  (QP (CD 81) (CD million)))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD voted)
+                      (PRT (RP out)))))))))
+        (SBAR (IN that)
+          (FRAG
+            (ADJP (JJ lunatic))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thank-4)
+discourse(thank-4, Fuck-1)
+discourse(thank-4, god-2)
+punct(thank-4, ,-3)
+obj(thank-4, me-5)
+cc(rest-8, and-6)
+det(rest-8, the-7)
+obj(thank-4, rest-8)
+conj:and(me-5, rest-8)
+case(million-12, of-9)
+det(million-12, the-10)
+compound(million-12, 81-11)
+nmod:of(rest-8, million-12)
+nsubj(voted-14, million-12)
+ref(million-12, that-13)
+acl:relcl(million-12, voted-14)
+compound:prt(voted-14, out-15)
+mark(lunatic-17, that-16)
+dep(me-5, lunatic-17)
+punct(thank-4, .-18)
+
+Extracted the following NER entity mentions:
+81 million	NUMBER	NUMBER:-1.0

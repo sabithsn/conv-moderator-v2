@@ -1,0 +1,90 @@
+Document: ID=E6FE0703.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+Spoiler alert; it's because domestic US oil producers were scared Canadian oil was going to cut into their price per barrel.
+
+Tokens:
+[Text=Spoiler CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=spoiler NamedEntityTag=O]
+[Text=alert CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=alert NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=domestic CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=domestic NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=oil CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=producers CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=producer NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=scared CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=scared NamedEntityTag=O]
+[Text=Canadian CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=canadian NamedEntityTag=NATIONALITY]
+[Text=oil CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cut CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=cut NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=barrel CharacterOffsetBegin=117 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=barrel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Spoiler) (NN alert))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (SBAR (IN because)
+          (S
+            (NP (JJ domestic) (NNP US) (NN oil) (NNS producers))
+            (VP (VBD were)
+              (ADJP (JJ scared)
+                (SBAR
+                  (S
+                    (NP (JJ Canadian) (NN oil))
+                    (VP (VBD was)
+                      (VP (VBG going)
+                        (S
+                          (VP (TO to)
+                            (VP (VB cut)
+                              (PP (IN into)
+                                (NP
+                                  (NP (PRP$ their) (NN price))
+                                  (PP (IN per)
+                                    (NP (NN barrel))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, alert-2)
+compound(alert-2, Spoiler-1)
+punct(alert-2, ;-3)
+nsubj('s-5, it-4)
+dep(alert-2, 's-5)
+mark(scared-12, because-6)
+amod(producers-10, domestic-7)
+compound(producers-10, US-8)
+compound(producers-10, oil-9)
+nsubj(scared-12, producers-10)
+cop(scared-12, were-11)
+advcl:because('s-5, scared-12)
+amod(oil-14, Canadian-13)
+nsubj(going-16, oil-14)
+nsubj:xsubj(cut-18, oil-14)
+aux(going-16, was-15)
+ccomp(scared-12, going-16)
+mark(cut-18, to-17)
+xcomp(going-16, cut-18)
+case(price-21, into-19)
+nmod:poss(price-21, their-20)
+obl:into(cut-18, price-21)
+case(barrel-23, per-22)
+nmod:per(price-21, barrel-23)
+punct(alert-2, .-24)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9457759585659696
+Canadian	NATIONALITY	MISC:0.9999976370043052

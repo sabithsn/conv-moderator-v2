@@ -1,0 +1,55 @@
+Document: ID=501CCF2E.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Romney Slams Gabbard for 'Parroting Russian Propaganda,' 'Treasonous Lies'
+
+Tokens:
+[Text=Romney CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Romney NamedEntityTag=PERSON]
+[Text=Slams CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Slams NamedEntityTag=O]
+[Text=Gabbard CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Gabbard NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Parroting CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=parrot NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=Propaganda CharacterOffsetBegin=44 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Propaganda NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Treasonous CharacterOffsetBegin=58 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=treasonous NamedEntityTag=O]
+[Text=Lies CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=lie NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Romney) (NNP Slams) (NNP Gabbard))
+    (PP (IN for)
+      (NP (`` ')
+        (NP (VBG Parroting)
+          (NML (JJ Russian) (NNP Propaganda)))
+        (, ,) ('' ') (`` ')
+        (NP
+          (NP (JJ Treasonous))
+          (NP (NNS Lies) (POS ')))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Gabbard-3)
+compound(Gabbard-3, Romney-1)
+compound(Gabbard-3, Slams-2)
+case(Propaganda-8, for-4)
+punct(Propaganda-8, '-5)
+amod(Propaganda-8, Parroting-6)
+amod(Propaganda-8, Russian-7)
+nmod:for(Gabbard-3, Propaganda-8)
+punct(Propaganda-8, ,-9)
+punct(Propaganda-8, '-10)
+punct(Propaganda-8, '-11)
+dep(Propaganda-8, Treasonous-12)
+nmod:poss(Treasonous-12, Lies-13)
+case(Lies-13, '-14)
+
+Extracted the following NER entity mentions:
+Romney	PERSON	PERSON:0.7349519839973141
+Gabbard	PERSON	PERSON:0.9911156353286645
+Russian	NATIONALITY	MISC:0.9503172608617851

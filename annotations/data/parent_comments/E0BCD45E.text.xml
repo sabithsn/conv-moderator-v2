@@ -1,0 +1,225 @@
+Document: ID=E0BCD45E.text (3 sentences, 60 tokens)
+
+Sentence #1 (7 tokens):
+Do you really have to ask?
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=ask NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP
+      (ADVP (RB really))
+      (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB ask)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+aux(have-4, Do-1)
+nsubj(have-4, you-2)
+nsubj:xsubj(ask-6, you-2)
+advmod(have-4, really-3)
+mark(ask-6, to-5)
+xcomp(have-4, ask-6)
+punct(have-4, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+Do you know anything about crime in the US, or are you operating in some imaginary world instead of reality?
+
+Tokens:
+[Text=Do CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=crime CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=crime NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=operating CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=VBG Lemma=operate NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=imaginary CharacterOffsetBegin=101 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=imaginary NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=instead CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=reality CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=reality NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (SQ (VBP Do)
+      (NP (PRP you))
+      (VP (VB know)
+        (NP (NN anything))
+        (PP (IN about)
+          (NP
+            (NP (NN crime))
+            (PP (IN in)
+              (NP (DT the) (NNP US)))))))
+    (, ,)
+    (CC or)
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG operating)
+        (PP (IN in)
+          (NP
+            (NP (DT some) (JJ imaginary) (NN world))
+            (PP (RB instead) (IN of)
+              (NP (NN reality)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-3)
+aux(know-3, Do-1)
+nsubj(know-3, you-2)
+obj(know-3, anything-4)
+case(crime-6, about-5)
+obl:about(know-3, crime-6)
+case(US-9, in-7)
+det(US-9, the-8)
+nmod:in(crime-6, US-9)
+punct(know-3, ,-10)
+cc(operating-14, or-11)
+aux(operating-14, are-12)
+nsubj(operating-14, you-13)
+conj:or(know-3, operating-14)
+case(world-18, in-15)
+det(world-18, some-16)
+amod(world-18, imaginary-17)
+obl:in(operating-14, world-18)
+case(reality-21, instead-19)
+fixed(instead-19, of-20)
+nmod:instead_of(world-18, reality-21)
+punct(know-3, ?-22)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9762680604360476
+
+Sentence #3 (31 tokens):
+Polls have been done about this, by the way, black people overwhelmingly want the police to be funded at the same or higher levels than they are now.
+
+Tokens:
+[Text=Polls CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=NNS Lemma=poll NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=189 CharacterOffsetEnd=195 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=overwhelmingly CharacterOffsetBegin=196 CharacterOffsetEnd=210 PartOfSpeech=RB Lemma=overwhelmingly NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=police CharacterOffsetBegin=220 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=police NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=227 CharacterOffsetEnd=229 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=funded CharacterOffsetBegin=233 CharacterOffsetEnd=239 PartOfSpeech=VBN Lemma=fund NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=higher CharacterOffsetBegin=255 CharacterOffsetEnd=261 PartOfSpeech=JJR Lemma=higher NamedEntityTag=O]
+[Text=levels CharacterOffsetBegin=262 CharacterOffsetEnd=268 PartOfSpeech=NNS Lemma=level NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNS Polls))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN done)
+            (PP (IN about)
+              (NP (DT this)))
+            (, ,)
+            (PP (IN by)
+              (NP (DT the) (NN way)))))))
+    (, ,)
+    (NP (JJ black) (NNS people))
+    (ADVP (RB overwhelmingly))
+    (VP (VBP want)
+      (NP (DT the) (NN police))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN funded)
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (JJ same))
+                  (CC or)
+                  (NP (JJR higher) (NNS levels))))))))
+      (SBAR (IN than)
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (ADVP (RB now))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-15)
+nsubj:pass(done-4, Polls-1)
+aux(done-4, have-2)
+aux:pass(done-4, been-3)
+ccomp(want-15, done-4)
+case(this-6, about-5)
+obl:about(done-4, this-6)
+punct(done-4, ,-7)
+case(way-10, by-8)
+det(way-10, the-9)
+obl:agent(done-4, way-10)
+punct(want-15, ,-11)
+amod(people-13, black-12)
+nsubj(want-15, people-13)
+advmod(want-15, overwhelmingly-14)
+det(police-17, the-16)
+obj(want-15, police-17)
+mark(funded-20, to-18)
+aux:pass(funded-20, be-19)
+advcl:to(want-15, funded-20)
+case(same-23, at-21)
+det(same-23, the-22)
+obl:at(funded-20, same-23)
+cc(levels-26, or-24)
+amod(levels-26, higher-25)
+obl:at(funded-20, levels-26)
+conj:or(same-23, levels-26)
+mark(are-29, than-27)
+nsubj(are-29, they-28)
+advcl:than(want-15, are-29)
+advmod(are-29, now-30)
+punct(want-15, .-31)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

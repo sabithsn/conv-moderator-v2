@@ -1,0 +1,92 @@
+Document: ID=0E4728DB.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+Yes because they think our pro life position is completely held in bad faith and we just want a patriarchy that oppresses women
+
+Tokens:
+[Text=Yes CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=pro CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=pro NamedEntityTag=IDEOLOGY]
+[Text=life CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=life NamedEntityTag=IDEOLOGY]
+[Text=position CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=completely CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=completely NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=faith CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=faith NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=patriarchy CharacterOffsetBegin=96 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=patriarchy NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=oppresses CharacterOffsetBegin=112 CharacterOffsetEnd=121 PartOfSpeech=VBZ Lemma=oppress NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (SBAR (IN because)
+      (S
+        (NP (PRP they))
+        (VP (VBP think)
+          (SBAR
+            (S
+              (S
+                (NP (PRP$ our)
+                  (NML (JJ pro) (NN life))
+                  (NN position))
+                (VP (VBZ is)
+                  (ADVP (RB completely))
+                  (VP (VBN held)
+                    (PP (IN in)
+                      (NP (JJ bad) (NN faith))))))
+              (CC and)
+              (S
+                (NP (PRP we))
+                (ADVP (RB just))
+                (VP (VBP want)
+                  (NP
+                    (NP (DT a) (NN patriarchy))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ oppresses)
+                          (NP (NNS women)))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-4)
+discourse(think-4, Yes-1)
+mark(think-4, because-2)
+nsubj(think-4, they-3)
+nmod:poss(position-8, our-5)
+amod(life-7, pro-6)
+compound(position-8, life-7)
+nsubj:pass(held-11, position-8)
+aux:pass(held-11, is-9)
+advmod(held-11, completely-10)
+dep(think-4, held-11)
+case(faith-14, in-12)
+amod(faith-14, bad-13)
+obl:in(held-11, faith-14)
+cc(want-18, and-15)
+nsubj(want-18, we-16)
+advmod(want-18, just-17)
+dep(think-4, want-18)
+conj:and(held-11, want-18)
+det(patriarchy-20, a-19)
+obj(want-18, patriarchy-20)
+nsubj(oppresses-22, patriarchy-20)
+ref(patriarchy-20, that-21)
+acl:relcl(patriarchy-20, oppresses-22)
+obj(oppresses-22, women-23)
+
+Extracted the following NER entity mentions:
+pro life	IDEOLOGY	-

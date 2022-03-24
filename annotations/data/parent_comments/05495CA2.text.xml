@@ -1,0 +1,59 @@
+Document: ID=05495CA2.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Biden moves to block Texas from restricting transgender procedures for kids - LifeSite
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=moves CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=move NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=block CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=block NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=from CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=restricting CharacterOffsetBegin=32 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=restrict NamedEntityTag=O]
+[Text=transgender CharacterOffsetBegin=44 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=transgender NamedEntityTag=O]
+[Text=procedures CharacterOffsetBegin=56 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=procedure NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=LifeSite CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=LifeSite NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (VP (VBZ moves)
+      (S
+        (VP (TO to)
+          (VP (VB block)
+            (NP (NNP Texas))
+            (PP (IN from)
+              (S
+                (VP (VBG restricting)
+                  (NP (NN transgender) (NNS procedures))
+                  (PP (IN for)
+                    (NP
+                      (NP (NNS kids))
+                      (HYPH -)
+                      (NP (NNP LifeSite)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, moves-2)
+nsubj(moves-2, Biden-1)
+nsubj:xsubj(block-4, Biden-1)
+mark(block-4, to-3)
+xcomp(moves-2, block-4)
+obj(block-4, Texas-5)
+mark(restricting-7, from-6)
+advcl:from(block-4, restricting-7)
+compound(procedures-9, transgender-8)
+obj(restricting-7, procedures-9)
+case(kids-11, for-10)
+obl:for(restricting-7, kids-11)
+punct(kids-11, --12)
+dep(kids-11, LifeSite-13)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9973101285182498
+Texas	STATE_OR_PROVINCE	LOCATION:0.9924682767076688

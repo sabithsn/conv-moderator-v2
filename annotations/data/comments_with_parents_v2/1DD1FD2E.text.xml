@@ -1,0 +1,73 @@
+Document: ID=1DD1FD2E.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+so true, funny how things get turned around, its going to be a tough 3 years
+
+Tokens:
+[Text=so CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=true CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=true NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=funny CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=turn NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=around NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tough CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=tough NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=CD Lemma=3 NamedEntityTag=DURATION NormalizedNamedEntityTag=P3Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P3Y">3 years</TIMEX3>]
+[Text=years CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P3Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P3Y">3 years</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (ADJP
+        (ADJP (RB so) (JJ true))
+        (, ,)
+        (ADJP (JJ funny)))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNS things))
+          (VP (VBP get)
+            (VP (VBN turned)
+              (ADVP (RB around)))))))
+    (, ,)
+    (S
+      (NP (PRP$ its))
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP (DT a) (JJ tough) (CD 3) (NNS years)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, true-2)
+advmod(true-2, so-1)
+punct(true-2, ,-3)
+dep(true-2, funny-4)
+advmod(turned-8, how-5)
+nsubj:pass(turned-8, things-6)
+aux:pass(turned-8, get-7)
+dep(true-2, turned-8)
+advmod(turned-8, around-9)
+punct(true-2, ,-10)
+nsubj(going-12, its-11)
+nsubj:xsubj(years-18, its-11)
+parataxis(true-2, going-12)
+mark(years-18, to-13)
+cop(years-18, be-14)
+det(years-18, a-15)
+amod(years-18, tough-16)
+nummod(years-18, 3-17)
+xcomp(going-12, years-18)
+
+Extracted the following NER entity mentions:
+3 years	DURATION	DURATION:-1.0

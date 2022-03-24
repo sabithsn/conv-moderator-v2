@@ -1,0 +1,98 @@
+Document: ID=4015E5BF.text (2 sentences, 21 tokens)
+
+Sentence #1 (13 tokens):
+How about we give Japan their military back and turn em loose?
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=give NamedEntityTag=O]
+[Text=Japan CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Japan NamedEntityTag=COUNTRY]
+[Text=their CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=military CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=military NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=back NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=VB Lemma=turn NamedEntityTag=O]
+[Text=em CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=em NamedEntityTag=O]
+[Text=loose CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=loose NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WRB How))
+    (IN about)
+    (S
+      (NP (PRP we))
+      (VP
+        (VP (VBP give)
+          (NP (NNP Japan))
+          (NP (PRP$ their) (JJ military) (NN back)))
+        (CC and)
+        (VP (VB turn)
+          (S
+            (NP (PRP em))
+            (ADJP (JJ loose))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-4)
+dep(give-4, How-1)
+dep(give-4, about-2)
+nsubj(give-4, we-3)
+nsubj(turn-10, we-3)
+iobj(give-4, Japan-5)
+nmod:poss(back-8, their-6)
+amod(back-8, military-7)
+obj(give-4, back-8)
+cc(turn-10, and-9)
+conj:and(give-4, turn-10)
+nsubj(loose-12, em-11)
+xcomp(turn-10, loose-12)
+punct(give-4, ?-13)
+
+Extracted the following NER entity mentions:
+Japan	COUNTRY	LOCATION:0.9939173023167496
+
+Sentence #2 (8 tokens):
+Russia owes them an island or two.
+
+Tokens:
+[Text=Russia CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=owes CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VBZ Lemma=owe NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=island CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=island NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Russia))
+    (VP (VBZ owes)
+      (NP (PRP them))
+      (NP
+        (NP (DT an) (NN island))
+        (CC or)
+        (NP (CD two))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, owes-2)
+nsubj(owes-2, Russia-1)
+iobj(owes-2, them-3)
+det(island-5, an-4)
+obj(owes-2, island-5)
+cc(two-7, or-6)
+obj(owes-2, two-7)
+conj:or(island-5, two-7)
+punct(owes-2, .-8)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9977124199273577
+two	NUMBER	NUMBER:-1.0

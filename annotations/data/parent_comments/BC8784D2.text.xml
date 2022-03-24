@@ -1,0 +1,60 @@
+Document: ID=BC8784D2.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Rep. Gallagher: Situation In Ukraine ‘About To Get Much Worse’
+
+Tokens:
+[Text=Rep. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Gallagher CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Gallagher NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Situation CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Situation NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=‘ CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Get CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=Much CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=Worse CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Rep.) (NNP Gallagher))
+      (VP (: :)
+        (NP
+          (NP (NNP Situation))
+          (PP (IN In)
+            (NP (NNP Ukraine)))
+          (`` ‘)
+          (NP (RB About)
+            (S
+              (VP (TO To)
+                (VP (VB Get))))))))
+    (S
+      (NP (JJ Much))
+      (ADJP (JJR Worse))
+      ('' ’))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Situation-4)
+compound(Gallagher-2, Rep.-1)
+nsubj(Situation-4, Gallagher-2)
+punct(Situation-4, :-3)
+case(Ukraine-6, In-5)
+nmod:in(Situation-4, Ukraine-6)
+punct(Situation-4, ‘-7)
+dep(Situation-4, About-8)
+mark(Get-10, To-9)
+dep(About-8, Get-10)
+dep(Worse-12, Much-11)
+parataxis(Situation-4, Worse-12)
+punct(Worse-12, ’-13)
+
+Extracted the following NER entity mentions:
+Rep.	TITLE	-
+Gallagher	PERSON	PERSON:0.9989632065477335
+Ukraine	COUNTRY	LOCATION:0.9933678225798659

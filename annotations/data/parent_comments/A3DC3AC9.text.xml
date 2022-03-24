@@ -1,0 +1,89 @@
+Document: ID=A3DC3AC9.text (3 sentences, 18 tokens)
+
+Sentence #1 (2 tokens):
+No.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH No) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, No-1)
+punct(No-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+Why would we be discussing an NPR article about the debunked insurrection?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=discussing CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=discuss NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=NPR CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=NPR NamedEntityTag=ORGANIZATION]
+[Text=article CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=article NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=debunked CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=VBN Lemma=debunk NamedEntityTag=O]
+[Text=insurrection CharacterOffsetBegin=65 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=insurrection NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD would)
+      (NP (PRP we))
+      (VP (VB be)
+        (VP (VBG discussing)
+          (NP (DT an) (NNP NPR) (NN article))
+          (PP (IN about)
+            (NP (DT the) (VBN debunked) (NN insurrection))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, discussing-5)
+advmod(discussing-5, Why-1)
+aux(discussing-5, would-2)
+nsubj(discussing-5, we-3)
+aux(discussing-5, be-4)
+det(article-8, an-6)
+compound(article-8, NPR-7)
+obj(discussing-5, article-8)
+case(insurrection-12, about-9)
+det(insurrection-12, the-10)
+amod(insurrection-12, debunked-11)
+obl:about(discussing-5, insurrection-12)
+punct(discussing-5, ?-13)
+
+Extracted the following NER entity mentions:
+NPR	ORGANIZATION	ORGANIZATION:0.9233980083946309
+
+Sentence #3 (3 tokens):
+edit: grammar
+
+Tokens:
+[Text=edit CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=grammar CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=grammar NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN edit) (: :) (NN grammar)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, grammar-3)
+compound(grammar-3, edit-1)
+punct(grammar-3, :-2)
+
+Extracted the following NER entity mentions:

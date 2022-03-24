@@ -1,0 +1,39 @@
+Document: ID=6636AF28.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+The United States clearly has the upper hand!
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=United CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=United NamedEntityTag=COUNTRY]
+[Text=States CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=States NamedEntityTag=COUNTRY]
+[Text=clearly CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=clearly NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=upper CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=upper NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP United) (NNP States))
+    (ADVP (RB clearly))
+    (VP (VBZ has)
+      (NP (DT the) (JJ upper) (NN hand)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-5)
+det(States-3, The-1)
+compound(States-3, United-2)
+nsubj(has-5, States-3)
+advmod(has-5, clearly-4)
+det(hand-8, the-6)
+amod(hand-8, upper-7)
+obj(has-5, hand-8)
+punct(has-5, !-9)
+
+Extracted the following NER entity mentions:
+United States	COUNTRY	LOCATION:0.997513543692409

@@ -1,0 +1,84 @@
+Document: ID=BCD1ACA7.text (2 sentences, 18 tokens)
+
+Sentence #1 (8 tokens):
+Superdelegates weren't a factor in 2020.
+
+Tokens:
+[Text=Superdelegates CharacterOffsetBegin=0 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=superdelegate NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=factor CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=factor NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t1" type="DATE" value="2020">2020</TIMEX3>]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Superdelegates))
+    (VP (VBD were) (RB n't)
+      (NP
+        (NP (DT a) (NN factor))
+        (PP (IN in)
+          (NP (CD 2020)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, factor-5)
+nsubj(factor-5, Superdelegates-1)
+cop(factor-5, were-2)
+advmod(factor-5, n't-3)
+det(factor-5, a-4)
+case(2020-7, in-6)
+nmod:in(factor-5, 2020-7)
+punct(factor-5, .-8)
+
+Extracted the following NER entity mentions:
+2020	DATE	DATE:0.9770312566951034
+
+Sentence #2 (10 tokens):
+So naturally Bernie won by a landslide, right?
+
+Tokens:
+[Text=So CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=naturally CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=naturally NamedEntityTag=O]
+[Text=Bernie CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Bernie NamedEntityTag=PERSON]
+[Text=won CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VBD Lemma=win NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=landslide CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=landslide NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (ADVP (RB naturally))
+    (NP (NNP Bernie))
+    (VP (VBD won)
+      (PP (IN by)
+        (NP
+          (NP (DT a) (NN landslide))
+          (, ,)
+          (NP (NN right)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, won-4)
+advmod(won-4, So-1)
+advmod(won-4, naturally-2)
+nsubj(won-4, Bernie-3)
+case(landslide-7, by-5)
+det(landslide-7, a-6)
+obl:by(won-4, landslide-7)
+punct(landslide-7, ,-8)
+appos(landslide-7, right-9)
+punct(won-4, ?-10)
+
+Extracted the following NER entity mentions:
+Bernie	PERSON	PERSON:0.9992964194139269

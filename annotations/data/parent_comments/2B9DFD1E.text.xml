@@ -1,0 +1,83 @@
+Document: ID=2B9DFD1E.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+Trevor Noah rips Biden over Saudi, UAE phone-snub report: ‘Would have never happened to Donald Trump’
+
+Tokens:
+[Text=Trevor CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Trevor NamedEntityTag=PERSON]
+[Text=Noah CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Noah NamedEntityTag=PERSON]
+[Text=rips CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=rip NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=over CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Saudi CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Saudi NamedEntityTag=NATIONALITY]
+[Text=, CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=UAE CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=UAE NamedEntityTag=COUNTRY]
+[Text=phone CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=snub CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=snub NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Would CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=happened CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=happen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Donald CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=Trump CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=’ CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trevor) (NNP Noah))
+    (VP
+      (VP (VBZ rips)
+        (NP
+          (NP (NNP Biden))
+          (PP (IN over)
+            (NP
+              (NP (NNP Saudi))
+              (, ,)
+              (NP (NNP UAE)
+                (NML (NN phone) (HYPH -) (NN snub))
+                (NN report))))))
+      (: :) (`` ‘)
+      (VP (MD Would)
+        (VP (VB have)
+          (ADVP (RB never))
+          (VP (VBN happened)
+            (PP (IN to)
+              (NP (NNP Donald) (NNP Trump) (POS ’)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rips-3)
+compound(Noah-2, Trevor-1)
+nsubj(rips-3, Noah-2)
+obj(rips-3, Biden-4)
+case(Saudi-6, over-5)
+nmod:over(Biden-4, Saudi-6)
+punct(Saudi-6, ,-7)
+compound(report-12, UAE-8)
+compound(snub-11, phone-9)
+punct(snub-11, --10)
+compound(report-12, snub-11)
+appos(Saudi-6, report-12)
+punct(rips-3, :-13)
+punct(rips-3, ‘-14)
+aux(happened-18, Would-15)
+aux(happened-18, have-16)
+advmod(happened-18, never-17)
+dep(rips-3, happened-18)
+case(Trump-21, to-19)
+compound(Trump-21, Donald-20)
+obl:to(happened-18, Trump-21)
+case(Trump-21, ’-22)
+
+Extracted the following NER entity mentions:
+Trevor Noah	PERSON	PERSON:0.989295737658348
+Biden	PERSON	PERSON:0.9959394327444342
+Saudi	NATIONALITY	MISC:0.992530206653368
+UAE	COUNTRY	LOCATION:0.8809902913703235
+Donald Trump	PERSON	PERSON:0.9994239726000271

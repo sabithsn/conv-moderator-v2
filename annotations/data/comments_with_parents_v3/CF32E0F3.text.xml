@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>CF32E0F3.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Truck</word>
+            <lemma>Truck</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>delivering</word>
+            <lemma>deliver</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>100</word>
+            <lemma>100</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>100.0</NormalizedNER>
+          </token>
+          <token id="4">
+            <word>monkeys</word>
+            <lemma>monkey</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>lab</word>
+            <lemma>lab</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>crashes</word>
+            <lemma>crash</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>CAUSE_OF_DEATH</NER>
+          </token>
+          <token id="9">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PRESENT_REF</NormalizedNER>
+            <Timex tid="t1" type="DATE">PRESENT_REF</Timex>
+          </token>
+          <token id="11">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>missing</word>
+            <lemma>miss</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (NNP Truck)) (VP (VBG delivering) (NP (CD 100) (NNS monkeys)) (PP (IN to) (NP (DT a) (NN lab) (NNS crashes))))) (CC and) (S (ADVP (RB now)) (NP (DT some)) (VP (VBP are) (VP (VBG missing)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delivering</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="1">Truck</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="4">monkeys</governor>
+            <dependent idx="3">100</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="4">monkeys</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">crashes</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">crashes</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">crashes</governor>
+            <dependent idx="7">lab</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="2">delivering</governor>
+            <dependent idx="8">crashes</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="13">missing</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">missing</governor>
+            <dependent idx="10">now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">missing</governor>
+            <dependent idx="11">some</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">missing</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="13">missing</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">delivering</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delivering</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="1">Truck</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="4">monkeys</governor>
+            <dependent idx="3">100</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="4">monkeys</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">crashes</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">crashes</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">crashes</governor>
+            <dependent idx="7">lab</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="2">delivering</governor>
+            <dependent idx="8">crashes</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="13">missing</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">missing</governor>
+            <dependent idx="10">now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">missing</governor>
+            <dependent idx="11">some</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">missing</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">delivering</governor>
+            <dependent idx="13">missing</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">delivering</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delivering</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="1">Truck</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="4">monkeys</governor>
+            <dependent idx="3">100</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="4">monkeys</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">crashes</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">crashes</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">crashes</governor>
+            <dependent idx="7">lab</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="2">delivering</governor>
+            <dependent idx="8">crashes</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="13">missing</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">missing</governor>
+            <dependent idx="10">now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">missing</governor>
+            <dependent idx="11">some</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">missing</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">delivering</governor>
+            <dependent idx="13">missing</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">delivering</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delivering</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="1">Truck</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="4">monkeys</governor>
+            <dependent idx="3">100</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="4">monkeys</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">crashes</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">crashes</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">crashes</governor>
+            <dependent idx="7">lab</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="2">delivering</governor>
+            <dependent idx="8">crashes</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="13">missing</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">missing</governor>
+            <dependent idx="10">now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">missing</governor>
+            <dependent idx="11">some</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">missing</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">delivering</governor>
+            <dependent idx="13">missing</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">delivering</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delivering</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="1">Truck</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="4">monkeys</governor>
+            <dependent idx="3">100</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">delivering</governor>
+            <dependent idx="4">monkeys</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">crashes</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">crashes</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">crashes</governor>
+            <dependent idx="7">lab</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="2">delivering</governor>
+            <dependent idx="8">crashes</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="13">missing</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">missing</governor>
+            <dependent idx="10">now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">missing</governor>
+            <dependent idx="11">some</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">missing</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">delivering</governor>
+            <dependent idx="13">missing</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">delivering</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Those</word>
+            <lemma>those</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>monkeys</word>
+            <lemma>monkey</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>WILL</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>PLAN</word>
+            <lemma>plan</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>THEIR</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>REVENGE</word>
+            <lemma>revenge</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PRN (S (NP (DT Those) (NNS monkeys)) (VP (MD WILL)))) (NP-TMP (NP (NN PLAN)) (NP (PRP$ THEIR) (NN REVENGE))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">PLAN</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">monkeys</governor>
+            <dependent idx="1">Those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">WILL</governor>
+            <dependent idx="2">monkeys</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="3">WILL</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">REVENGE</governor>
+            <dependent idx="5">THEIR</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="6">REVENGE</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">PLAN</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">monkeys</governor>
+            <dependent idx="1">Those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">WILL</governor>
+            <dependent idx="2">monkeys</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="3">WILL</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">REVENGE</governor>
+            <dependent idx="5">THEIR</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="6">REVENGE</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">PLAN</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">monkeys</governor>
+            <dependent idx="1">Those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">WILL</governor>
+            <dependent idx="2">monkeys</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="3">WILL</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">REVENGE</governor>
+            <dependent idx="5">THEIR</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="6">REVENGE</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">PLAN</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">monkeys</governor>
+            <dependent idx="1">Those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">WILL</governor>
+            <dependent idx="2">monkeys</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="3">WILL</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">REVENGE</governor>
+            <dependent idx="5">THEIR</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="6">REVENGE</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">PLAN</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">monkeys</governor>
+            <dependent idx="1">Those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">WILL</governor>
+            <dependent idx="2">monkeys</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="3">WILL</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">REVENGE</governor>
+            <dependent idx="5">THEIR</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">PLAN</governor>
+            <dependent idx="6">REVENGE</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

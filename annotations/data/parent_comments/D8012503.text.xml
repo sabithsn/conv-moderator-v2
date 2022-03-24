@@ -1,0 +1,44 @@
+Document: ID=D8012503.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Baltimore safe streets social worker killed in quadruple shooting
+
+Tokens:
+[Text=Baltimore CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Baltimore NamedEntityTag=CITY]
+[Text=safe CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=safe NamedEntityTag=O]
+[Text=streets CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=street NamedEntityTag=O]
+[Text=social CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=social NamedEntityTag=TITLE]
+[Text=worker CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=worker NamedEntityTag=TITLE]
+[Text=killed CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=VBN Lemma=kill NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=quadruple CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=quadruple NamedEntityTag=O]
+[Text=shooting CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=shooting NamedEntityTag=CAUSE_OF_DEATH]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Baltimore))
+      (NP (JJ safe) (NNS streets)))
+    (NP
+      (NP (JJ social) (NN worker))
+      (VP (VBN killed)
+        (PP (IN in)
+          (NP (JJ quadruple) (NN shooting)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Baltimore-1)
+amod(streets-3, safe-2)
+dep(Baltimore-1, streets-3)
+amod(worker-5, social-4)
+dep(Baltimore-1, worker-5)
+acl(worker-5, killed-6)
+case(shooting-9, in-7)
+amod(shooting-9, quadruple-8)
+obl:in(killed-6, shooting-9)
+
+Extracted the following NER entity mentions:
+Baltimore	CITY	LOCATION:0.6143321466879643
+social worker	TITLE	-
+shooting	CAUSE_OF_DEATH	-

@@ -1,0 +1,61 @@
+Document: ID=652AC724.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Jan. 6 committee believes Trump committed ‘criminal’ acts as he fought U.S. election
+
+Tokens:
+[Text=Jan. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=committee CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=committee NamedEntityTag=O]
+[Text=believes CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=believe NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=committed CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=VBN Lemma=commit NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=criminal CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=criminal NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=acts CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=act NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=fought CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=VBD Lemma=fight NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=election CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (NNP Jan.))
+    (NP (CD 6) (NN committee))
+    (VP (VBZ believes)
+      (NP
+        (NP (NNP Trump))
+        (VP (VBN committed)
+          (NP (`` ‘) (JJ criminal) ('' ’) (NNS acts))
+          (SBAR (IN as)
+            (S
+              (NP (PRP he))
+              (VP (VBD fought)
+                (NP (NNP U.S.) (NN election))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, believes-4)
+obl:tmod(believes-4, Jan.-1)
+nummod(committee-3, 6-2)
+nsubj(believes-4, committee-3)
+obj(believes-4, Trump-5)
+acl(Trump-5, committed-6)
+punct(acts-10, ‘-7)
+amod(acts-10, criminal-8)
+punct(acts-10, ’-9)
+obj(committed-6, acts-10)
+mark(fought-13, as-11)
+nsubj(fought-13, he-12)
+advcl:as(committed-6, fought-13)
+compound(election-15, U.S.-14)
+obj(fought-13, election-15)
+
+Extracted the following NER entity mentions:
+Jan. 6	DATE	DATE:0.8684177682742088
+Trump	PERSON	PERSON:0.8339300134712285
+U.S.	COUNTRY	LOCATION:0.9992182798836604
+he	PERSON	-

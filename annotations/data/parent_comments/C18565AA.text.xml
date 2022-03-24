@@ -1,0 +1,54 @@
+Document: ID=C18565AA.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+CMV: Women who lie about rape should be prosecuted.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Women CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=lie CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=lie NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=rape CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=rape NamedEntityTag=CRIMINAL_CHARGE]
+[Text=should CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=prosecuted CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=VBN Lemma=prosecute NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN CMV))
+    (: :)
+    (NP
+      (NP (NNS Women))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP lie)
+            (SBAR
+              (S
+                (NP (RB about) (NN rape))
+                (VP (MD should)
+                  (VP (VB be)
+                    (VP (VBN prosecuted))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+dep(CMV-1, Women-3)
+nsubj(lie-5, Women-3)
+ref(Women-3, who-4)
+acl:relcl(Women-3, lie-5)
+advmod(rape-7, about-6)
+nsubj:pass(prosecuted-10, rape-7)
+aux(prosecuted-10, should-8)
+aux:pass(prosecuted-10, be-9)
+ccomp(lie-5, prosecuted-10)
+punct(CMV-1, .-11)
+
+Extracted the following NER entity mentions:
+rape	CRIMINAL_CHARGE	-

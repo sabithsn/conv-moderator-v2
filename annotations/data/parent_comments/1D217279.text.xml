@@ -1,0 +1,43 @@
+Document: ID=1D217279.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Nancy Pelosi, 81, announces reelection bid.
+
+Tokens:
+[Text=Nancy CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Nancy NamedEntityTag=PERSON]
+[Text=Pelosi CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Pelosi NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=81 CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=CD Lemma=81 NamedEntityTag=NUMBER NormalizedNamedEntityTag=81.0]
+[Text=, CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=announces CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=announce NamedEntityTag=O]
+[Text=reelection CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=reelection NamedEntityTag=O]
+[Text=bid CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=bid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Nancy) (NNP Pelosi))
+      (, ,)
+      (NP (CD 81))
+      (, ,))
+    (VP (VBZ announces)
+      (NP (NN reelection) (NN bid)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, announces-6)
+compound(Pelosi-2, Nancy-1)
+nsubj(announces-6, Pelosi-2)
+punct(Pelosi-2, ,-3)
+amod(Pelosi-2, 81-4)
+punct(Pelosi-2, ,-5)
+compound(bid-8, reelection-7)
+obj(announces-6, bid-8)
+punct(announces-6, .-9)
+
+Extracted the following NER entity mentions:
+Nancy Pelosi	PERSON	PERSON:0.998938432363709
+81	NUMBER	NUMBER:-1.0

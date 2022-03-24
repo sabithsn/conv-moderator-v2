@@ -1,0 +1,81 @@
+Document: ID=B21F7AAC.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+If you could give your enemy one mildly annoying thing for the rest of thier lifes, what would it be?
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=enemy CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=mildly CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=mildly NamedEntityTag=O]
+[Text=annoying CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=annoying NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=thier CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=PRP$ Lemma=thier NamedEntityTag=O]
+[Text=lifes CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=life NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (MD could)
+          (VP (VB give)
+            (NP (PRP$ your) (NN enemy))
+            (NP
+              (NP (CD one)
+                (ADJP (RB mildly) (JJ annoying))
+                (NN thing))
+              (PP (IN for)
+                (NP
+                  (NP (DT the) (NN rest))
+                  (PP (IN of)
+                    (NP (PRP$ thier) (NNS lifes))))))))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (MD would)
+      (NP (PRP it))
+      (VP (VB be)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, be-21)
+mark(give-4, If-1)
+nsubj(give-4, you-2)
+aux(give-4, could-3)
+advcl:if(be-21, give-4)
+nmod:poss(enemy-6, your-5)
+dep(give-4, enemy-6)
+nummod(thing-10, one-7)
+advmod(annoying-9, mildly-8)
+amod(thing-10, annoying-9)
+obj(give-4, thing-10)
+case(rest-13, for-11)
+det(rest-13, the-12)
+nmod:for(thing-10, rest-13)
+case(lifes-16, of-14)
+nmod:poss(lifes-16, thier-15)
+nmod:of(rest-13, lifes-16)
+punct(be-21, ,-17)
+obj(be-21, what-18)
+aux(be-21, would-19)
+nsubj(be-21, it-20)
+punct(be-21, ?-22)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

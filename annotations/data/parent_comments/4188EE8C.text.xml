@@ -1,0 +1,59 @@
+Document: ID=4188EE8C.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Ivy League parents fearful to speak out publicly as Lia Thomas dominates their daughters
+
+Tokens:
+[Text=Ivy CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Ivy NamedEntityTag=MISC]
+[Text=League CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=League NamedEntityTag=MISC]
+[Text=parents CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=fearful CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=fearful NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=speak CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=speak NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=publicly CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=publicly NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Lia CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Lia NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=dominates CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=VBZ Lemma=dominate NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=daughters CharacterOffsetBegin=79 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=daughter NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML (NNP Ivy) (NNP League))
+      (NNS parents))
+    (ADJP (JJ fearful)
+      (S
+        (VP (TO to)
+          (VP (VB speak)
+            (PRT (RP out))
+            (ADVP (RB publicly))
+            (SBAR (IN as)
+              (S
+                (NP (NNP Lia) (NNP Thomas))
+                (VP (VBZ dominates)
+                  (NP (PRP$ their) (NNS daughters)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fearful-4)
+compound(League-2, Ivy-1)
+compound(parents-3, League-2)
+dep(fearful-4, parents-3)
+mark(speak-6, to-5)
+xcomp(fearful-4, speak-6)
+compound:prt(speak-6, out-7)
+advmod(speak-6, publicly-8)
+mark(dominates-12, as-9)
+compound(Thomas-11, Lia-10)
+nsubj(dominates-12, Thomas-11)
+advcl:as(speak-6, dominates-12)
+nmod:poss(daughters-14, their-13)
+obj(dominates-12, daughters-14)
+
+Extracted the following NER entity mentions:
+Ivy League	MISC	MISC:0.9990675898025042
+Lia Thomas	PERSON	PERSON:0.9985910351371581

@@ -1,0 +1,64 @@
+Document: ID=58BA4862.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Disney CEO Bob Chapek Apologizes to LGBTQ Employees, Announces Pause for Political Donations in Florida
+
+Tokens:
+[Text=Disney CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Disney NamedEntityTag=ORGANIZATION]
+[Text=CEO CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=CEO NamedEntityTag=TITLE]
+[Text=Bob CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Bob NamedEntityTag=PERSON]
+[Text=Chapek CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Chapek NamedEntityTag=PERSON]
+[Text=Apologizes CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=apologize NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=LGBTQ CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=LGBTQ NamedEntityTag=O]
+[Text=Employees CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=NNPS Lemma=Employees NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Announces CharacterOffsetBegin=53 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=announce NamedEntityTag=O]
+[Text=Pause CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=pause NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Political CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=Donations CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=donation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Florida CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Disney) (NNP CEO) (NNP Bob) (NNP Chapek))
+    (VP
+      (VP (VBZ Apologizes)
+        (PP (IN to)
+          (NP (NNP LGBTQ) (NNPS Employees))))
+      (, ,)
+      (VP (VBZ Announces)
+        (NP (NN Pause))
+        (PP (IN for)
+          (NP
+            (NP (JJ Political) (NNS Donations))
+            (PP (IN in)
+              (NP (NNP Florida)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Apologizes-5)
+compound(Chapek-4, Disney-1)
+compound(Chapek-4, CEO-2)
+compound(Chapek-4, Bob-3)
+nsubj(Apologizes-5, Chapek-4)
+case(Employees-8, to-6)
+compound(Employees-8, LGBTQ-7)
+obl:to(Apologizes-5, Employees-8)
+punct(Apologizes-5, ,-9)
+dep(Apologizes-5, Announces-10)
+obj(Announces-10, Pause-11)
+case(Donations-14, for-12)
+amod(Donations-14, Political-13)
+obl:for(Announces-10, Donations-14)
+case(Florida-16, in-15)
+nmod:in(Donations-14, Florida-16)
+
+Extracted the following NER entity mentions:
+Disney	ORGANIZATION	ORGANIZATION:0.7253804178676413
+CEO	TITLE	-
+Bob Chapek	PERSON	PERSON:0.9958584620549825
+Florida	STATE_OR_PROVINCE	LOCATION:0.99717513964506

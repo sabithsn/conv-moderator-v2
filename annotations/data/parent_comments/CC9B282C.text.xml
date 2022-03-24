@@ -1,0 +1,102 @@
+Document: ID=CC9B282C.text (2 sentences, 25 tokens)
+
+Sentence #1 (19 tokens):
+Shit, im not a LOTR guy, just did a quick google to try for a delta.
+
+Tokens:
+[Text=Shit CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=im CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=im NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=LOTR CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=LOTR NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quick CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=quick NamedEntityTag=O]
+[Text=google CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=google NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=delta CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=delta NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Shit))
+      (, ,)
+      (NP
+        (NP (NNP im))
+        (PP (RB not)
+          (NP (DT a) (NNP LOTR) (NN guy))))
+      (, ,))
+    (ADVP (RB just))
+    (VP (VBD did)
+      (NP (DT a) (JJ quick) (NN google))
+      (S
+        (VP (TO to)
+          (VP (VB try)
+            (PP (IN for)
+              (NP (DT a) (NN delta)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-10)
+nsubj(did-10, Shit-1)
+punct(Shit-1, ,-2)
+appos(Shit-1, im-3)
+advmod(guy-7, not-4)
+det(guy-7, a-5)
+compound(guy-7, LOTR-6)
+nmod(im-3, guy-7)
+punct(Shit-1, ,-8)
+advmod(did-10, just-9)
+det(google-13, a-11)
+amod(google-13, quick-12)
+obj(did-10, google-13)
+mark(try-15, to-14)
+advcl:to(did-10, try-15)
+case(delta-18, for-16)
+det(delta-18, a-17)
+obl:for(try-15, delta-18)
+punct(did-10, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Guess I misunderstood a bit.
+
+Tokens:
+[Text=Guess CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=guess NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=misunderstood CharacterOffsetBegin=77 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=misunderstand NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Guess)
+      (S
+        (NP (PRP I))
+        (VP (VBD misunderstood)
+          (NP (DT a) (NN bit)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Guess-1)
+nsubj(misunderstood-3, I-2)
+ccomp(Guess-1, misunderstood-3)
+det(bit-5, a-4)
+obj(misunderstood-3, bit-5)
+punct(Guess-1, .-6)
+
+Extracted the following NER entity mentions:

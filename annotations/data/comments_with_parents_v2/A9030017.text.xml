@@ -1,0 +1,67 @@
+Document: ID=A9030017.text (2 sentences, 13 tokens)
+
+Sentence #1 (6 tokens):
+Put up or shut up.
+
+Tokens:
+[Text=Put CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=shut CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=shut NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Put)
+        (PRT (RP up)))
+      (CC or)
+      (VP (VB shut)
+        (PRT (RP up))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Put-1)
+compound:prt(Put-1, up-2)
+cc(shut-4, or-3)
+conj:or(Put-1, shut-4)
+compound:prt(shut-4, up-5)
+punct(Put-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Would do us all a favor.
+
+Tokens:
+[Text=Would CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=favor CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=favor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Would)
+      (VP (VB do)
+        (NP (PRP us))
+        (NP (PDT all) (DT a) (NN favor))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-2)
+aux(do-2, Would-1)
+iobj(do-2, us-3)
+det:predet(favor-6, all-4)
+det(favor-6, a-5)
+obj(do-2, favor-6)
+punct(do-2, .-7)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,217 @@
+Document: ID=B1C401AF.text (4 sentences, 51 tokens)
+
+Sentence #1 (3 tokens):
+Pure insanity.
+
+Tokens:
+[Text=Pure CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=pure NamedEntityTag=O]
+[Text=insanity CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=insanity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Pure) (NN insanity) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, insanity-2)
+amod(insanity-2, Pure-1)
+punct(insanity-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (21 tokens):
+Banning opposition over different views of the virus, while allowing CNN and MSNBC to spew propaganda all day long.
+
+Tokens:
+[Text=Banning CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VBG Lemma=ban NamedEntityTag=O]
+[Text=opposition CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=opposition NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=views CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=view NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=virus CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=allowing CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=VBG Lemma=allow NamedEntityTag=O]
+[Text=CNN CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=CNN NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=MSNBC CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=MSNBC NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=spew CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=spew NamedEntityTag=O]
+[Text=propaganda CharacterOffsetBegin=106 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=propaganda NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=long CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (VBG Banning) (NN opposition))
+    (PP (IN over)
+      (NP (JJ different) (NNS views)))
+    (PP (IN of)
+      (NP
+        (NP (DT the) (NN virus))
+        (, ,)
+        (SBAR (IN while)
+          (S
+            (VP (VBG allowing)
+              (NP (NNP CNN)
+                (CC and)
+                (NNP MSNBC))
+              (S
+                (VP (TO to)
+                  (VP (VB spew)
+                    (ADVP
+                      (NP
+                        (NP (NN propaganda))
+                        (NP (DT all) (NN day)))
+                      (RB long))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, opposition-2)
+amod(opposition-2, Banning-1)
+case(views-5, over-3)
+amod(views-5, different-4)
+nmod:over(opposition-2, views-5)
+case(virus-8, of-6)
+det(virus-8, the-7)
+nmod:of(opposition-2, virus-8)
+punct(virus-8, ,-9)
+mark(allowing-11, while-10)
+dep(virus-8, allowing-11)
+obj(allowing-11, CNN-12)
+nsubj:xsubj(spew-16, CNN-12)
+cc(MSNBC-14, and-13)
+obj(allowing-11, MSNBC-14)
+conj:and(CNN-12, MSNBC-14)
+nsubj:xsubj(spew-16, MSNBC-14)
+mark(spew-16, to-15)
+xcomp(allowing-11, spew-16)
+obl:npmod(long-20, propaganda-17)
+det(day-19, all-18)
+dep(propaganda-17, day-19)
+advmod(spew-16, long-20)
+punct(opposition-2, .-21)
+
+Extracted the following NER entity mentions:
+CNN	ORGANIZATION	ORGANIZATION:0.8724516240363747
+MSNBC	ORGANIZATION	ORGANIZATION:0.9255130912164781
+day	DURATION	DURATION:-1.0
+
+Sentence #3 (11 tokens):
+It’s a truly frightening time we are living in.
+
+Tokens:
+[Text=It CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=truly CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=truly NamedEntityTag=O]
+[Text=frightening CharacterOffsetBegin=144 CharacterOffsetEnd=155 PartOfSpeech=JJ Lemma=frightening NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=living CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=VBG Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP
+        (NP (DT a)
+          (ADJP (RB truly) (JJ frightening))
+          (NN time))
+        (SBAR
+          (S
+            (NP (PRP we))
+            (VP (VBP are)
+              (VP (VBG living)
+                (PP (IN in))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, time-6)
+nsubj(time-6, It-1)
+cop(time-6, ’s-2)
+det(time-6, a-3)
+advmod(frightening-5, truly-4)
+amod(time-6, frightening-5)
+nsubj(living-9, we-7)
+aux(living-9, are-8)
+acl:relcl(time-6, living-9)
+obl(living-9, in-10)
+punct(time-6, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (16 tokens):
+And to be honest, I feel like libs never want the virus to disappear.
+
+Tokens:
+[Text=And CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=honest CharacterOffsetBegin=191 CharacterOffsetEnd=197 PartOfSpeech=JJ Lemma=honest NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=VBP Lemma=feel NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=libs CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=NNS Lemma=lib NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=227 CharacterOffsetEnd=230 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=virus CharacterOffsetBegin=231 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=237 CharacterOffsetEnd=239 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=disappear CharacterOffsetBegin=240 CharacterOffsetEnd=249 PartOfSpeech=VB Lemma=disappear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (S
+      (VP (TO to)
+        (VP (VB be)
+          (ADJP (JJ honest)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP feel)
+      (SBAR (IN like)
+        (S
+          (NP (NNS libs))
+          (ADVP (RB never))
+          (VP (VBP want)
+            (NP (DT the) (NN virus))
+            (S
+              (VP (TO to)
+                (VP (VB disappear))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, feel-7)
+cc(feel-7, And-1)
+mark(honest-4, to-2)
+cop(honest-4, be-3)
+advcl:to(feel-7, honest-4)
+punct(feel-7, ,-5)
+nsubj(feel-7, I-6)
+mark(want-11, like-8)
+nsubj(want-11, libs-9)
+advmod(want-11, never-10)
+advcl:like(feel-7, want-11)
+det(virus-13, the-12)
+obj(want-11, virus-13)
+mark(disappear-15, to-14)
+advcl:to(want-11, disappear-15)
+punct(feel-7, .-16)
+
+Extracted the following NER entity mentions:

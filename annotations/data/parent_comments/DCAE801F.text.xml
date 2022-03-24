@@ -1,0 +1,71 @@
+Document: ID=DCAE801F.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Marjorie Taylor Greene Claims She's Working 'For Free' With All Her Pay Going To Mask Fines
+
+Tokens:
+[Text=Marjorie CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Marjorie NamedEntityTag=PERSON]
+[Text=Taylor CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Taylor NamedEntityTag=PERSON]
+[Text=Greene CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=Claims CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Claims NamedEntityTag=O]
+[Text=She CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Working CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Working NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Free CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Free NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=All CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=Her CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Pay CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=pay NamedEntityTag=O]
+[Text=Going CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Mask CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Mask NamedEntityTag=O]
+[Text=Fines CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NNS Lemma=fine NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Marjorie) (NNP Taylor) (NNP Greene) (NNP Claims))
+    (NP (PRP She))
+    (VP (VBZ 's)
+      (NP
+        (NP (NNP Working) (POS '))
+        (PP (IN For)
+          (NP
+            (NP (NNP Free) (POS '))
+            (UCP
+              (PP (IN With)
+                (NP (DT All) (PRP$ Her) (NN Pay)))
+              (VP (VBG Going)
+                (PP (IN To)
+                  (NP (NNP Mask)))))
+            (NNS Fines)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Working-7)
+compound(Claims-4, Marjorie-1)
+compound(Claims-4, Taylor-2)
+compound(Claims-4, Greene-3)
+nsubj(Working-7, Claims-4)
+nsubj(Working-7, She-5)
+cop(Working-7, 's-6)
+case(Working-7, '-8)
+case(Fines-19, For-9)
+nmod:poss(Fines-19, Free-10)
+case(Free-10, '-11)
+case(Pay-15, With-12)
+det:predet(Pay-15, All-13)
+nmod:poss(Pay-15, Her-14)
+nmod:with(Fines-19, Pay-15)
+dep(Pay-15, Going-16)
+case(Mask-18, To-17)
+obl:to(Going-16, Mask-18)
+nmod:for(Working-7, Fines-19)
+
+Extracted the following NER entity mentions:
+Marjorie Taylor Greene	PERSON	PERSON:0.9982157143917084
+She	PERSON	-
+Her	PERSON	-

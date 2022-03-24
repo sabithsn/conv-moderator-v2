@@ -1,0 +1,45 @@
+Document: ID=4EB98E23.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Supreme Court Reinstates Death Sentence for Boston Marathon Bomber Dzhokhar Tsarnaev
+
+Tokens:
+[Text=Supreme CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Supreme NamedEntityTag=ORGANIZATION]
+[Text=Court CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+[Text=Reinstates CharacterOffsetBegin=14 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=reinstate NamedEntityTag=ORGANIZATION]
+[Text=Death CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=death NamedEntityTag=ORGANIZATION]
+[Text=Sentence CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=sentence NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=for NamedEntityTag=ORGANIZATION]
+[Text=Boston CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Boston NamedEntityTag=ORGANIZATION]
+[Text=Marathon CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Marathon NamedEntityTag=ORGANIZATION]
+[Text=Bomber CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Bomber NamedEntityTag=O]
+[Text=Dzhokhar CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Dzhokhar NamedEntityTag=PERSON]
+[Text=Tsarnaev CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Tsarnaev NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Supreme) (NNP Court))
+    (VP (VBZ Reinstates)
+      (NP
+        (NP (NN Death) (NN Sentence))
+        (PP (IN for)
+          (NP (NNP Boston) (NNP Marathon) (NNP Bomber) (NNP Dzhokhar) (NNP Tsarnaev)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Reinstates-3)
+compound(Court-2, Supreme-1)
+nsubj(Reinstates-3, Court-2)
+compound(Sentence-5, Death-4)
+obj(Reinstates-3, Sentence-5)
+case(Tsarnaev-11, for-6)
+compound(Tsarnaev-11, Boston-7)
+compound(Tsarnaev-11, Marathon-8)
+compound(Tsarnaev-11, Bomber-9)
+compound(Tsarnaev-11, Dzhokhar-10)
+nmod:for(Sentence-5, Tsarnaev-11)
+
+Extracted the following NER entity mentions:
+Supreme Court Reinstates Death Sentence for Boston Marathon	ORGANIZATION	ORGANIZATION:0.8754845057998626
+Dzhokhar Tsarnaev	PERSON	PERSON:0.9645987070886446

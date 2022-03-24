@@ -1,0 +1,67 @@
+Document: ID=8403DECD.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Discussion: President Biden Announces Actions to Continue to Hold Russia Accountable | 10:45AM ET
+
+Tokens:
+[Text=Discussion CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=discussion NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=President CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=Biden CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Announces CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=announce NamedEntityTag=O]
+[Text=Actions CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=action NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Continue CharacterOffsetBegin=49 CharacterOffsetEnd=57 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Hold CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=Accountable CharacterOffsetBegin=73 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Accountable NamedEntityTag=O]
+[Text=| CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=NFP Lemma=| NamedEntityTag=O]
+[Text=10:45 CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=CD Lemma=10:45 NamedEntityTag=TIME NormalizedNamedEntityTag=T10:45 Timex=<TIMEX3 tid="t1" type="TIME" value="T10:45">10:45AM</TIMEX3>]
+[Text=AM CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=am NamedEntityTag=TIME NormalizedNamedEntityTag=T10:45 Timex=<TIMEX3 tid="t1" type="TIME" value="T10:45">10:45AM</TIMEX3>]
+[Text=ET CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=ET NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Discussion))
+    (: :)
+    (S
+      (NP (NNP President) (NNP Biden))
+      (VP (VBZ Announces)
+        (NP (NNS Actions))
+        (S
+          (VP (TO to)
+            (VP (VB Continue)
+              (PP (IN to)
+                (VP (VB Hold)
+                  (NP
+                    (NP (NNP Russia) (NNP Accountable))
+                    (NFP |)
+                    (NP (CD 10:45) (NN AM))
+                    (NP (NNP ET))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Discussion-1)
+punct(Discussion-1, :-2)
+compound(Biden-4, President-3)
+nsubj(Announces-5, Biden-4)
+appos(Discussion-1, Announces-5)
+obj(Announces-5, Actions-6)
+mark(Continue-8, to-7)
+advcl:to(Announces-5, Continue-8)
+case(Hold-10, to-9)
+advcl:to(Continue-8, Hold-10)
+compound(Accountable-12, Russia-11)
+iobj(Hold-10, Accountable-12)
+punct(Accountable-12, |-13)
+nummod(AM-15, 10:45-14)
+dep(Accountable-12, AM-15)
+appos(Accountable-12, ET-16)
+
+Extracted the following NER entity mentions:
+President	TITLE	-
+Biden	PERSON	PERSON:0.983634510376022
+Russia	COUNTRY	-
+10:45AM	TIME	TIME:-1.0

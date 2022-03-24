@@ -1,0 +1,83 @@
+Document: ID=92F4A9C7.text (2 sentences, 16 tokens)
+
+Sentence #1 (11 tokens):
+13% are racists and gaslighting the rest of America.
+
+Tokens:
+[Text=13 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=13 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%13.0]
+[Text=% CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%13.0]
+[Text=are CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=racists CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=racist NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=gaslighting CharacterOffsetBegin=20 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=gaslight NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 13) (NN %))
+    (VP (VBP are)
+      (UCP
+        (NP (NNS racists))
+        (CC and)
+        (S
+          (VP (VBG gaslighting)
+            (NP
+              (NP (DT the) (NN rest))
+              (PP (IN of)
+                (NP (NNP America))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, racists-4)
+nummod(%-2, 13-1)
+nsubj(racists-4, %-2)
+nsubj(gaslighting-6, %-2)
+cop(racists-4, are-3)
+cc(gaslighting-6, and-5)
+conj:and(racists-4, gaslighting-6)
+det(rest-8, the-7)
+obj(gaslighting-6, rest-8)
+case(America-10, of-9)
+nmod:of(rest-8, America-10)
+punct(racists-4, .-11)
+
+Extracted the following NER entity mentions:
+13%	PERCENT	PERCENT:0.9967019651006475
+America	COUNTRY	LOCATION:0.9685880050828125
+
+Sentence #2 (5 tokens):
+They want to fight.
+
+Tokens:
+[Text=They CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=fight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB fight)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-2)
+nsubj(want-2, They-1)
+nsubj:xsubj(fight-4, They-1)
+mark(fight-4, to-3)
+xcomp(want-2, fight-4)
+punct(want-2, .-5)
+
+Extracted the following NER entity mentions:

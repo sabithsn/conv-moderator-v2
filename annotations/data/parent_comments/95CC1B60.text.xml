@@ -1,0 +1,44 @@
+Document: ID=95CC1B60.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Obama Receives Nobel Prize In Medicine For Getting COVID
+
+Tokens:
+[Text=Obama CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text=Receives CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=receive NamedEntityTag=O]
+[Text=Nobel CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Nobel NamedEntityTag=O]
+[Text=Prize CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Prize NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Medicine CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Medicine NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Getting CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Obama))
+    (VP (VBZ Receives)
+      (S
+        (NP (NNP Nobel) (NNP Prize))
+        (PP (IN In)
+          (NP (NNP Medicine)))
+        (PP (IN For)
+          (S
+            (VP (VBG Getting)
+              (NP (NNP COVID)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Receives-2)
+nsubj(Receives-2, Obama-1)
+compound(Prize-4, Nobel-3)
+xcomp(Receives-2, Prize-4)
+case(Medicine-6, In-5)
+dep(Prize-4, Medicine-6)
+mark(Getting-8, For-7)
+advcl:for(Prize-4, Getting-8)
+obj(Getting-8, COVID-9)
+
+Extracted the following NER entity mentions:
+Obama	PERSON	PERSON:0.9211115207311863

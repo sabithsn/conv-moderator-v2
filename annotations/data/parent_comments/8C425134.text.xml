@@ -1,0 +1,115 @@
+Document: ID=8C425134.text (3 sentences, 23 tokens)
+
+Sentence #1 (2 tokens):
+Lol.
+
+Tokens:
+[Text=Lol CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Lol) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lol-1)
+punct(Lol-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+“Ableism.”
+
+Tokens:
+[Text=“ CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Ableism CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=ableism NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` “)
+    (VP (NN Ableism))
+    (. .) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ableism-2)
+punct(Ableism-2, “-1)
+punct(Ableism-2, .-3)
+punct(Ableism-2, ”-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (17 tokens):
+I’m obese and have ADD, so I can say whatever it is I said.
+
+Tokens:
+[Text=I CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=obese CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=obese NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=ADD CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=add NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=whatever CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=WDT Lemma=whatever NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP
+        (VP (VBP ’m)
+          (ADJP (JJ obese)))
+        (CC and)
+        (VP (VBP have)
+          (NP (NN ADD)))))
+    (, ,) (RB so)
+    (S
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB say)
+          (SBAR
+            (WHNP (WDT whatever))
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (SBAR
+                  (S
+                    (NP (PRP I))
+                    (VP (VBD said))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, obese-3)
+nsubj(obese-3, I-1)
+nsubj(have-5, I-1)
+cop(obese-3, ’m-2)
+cc(have-5, and-4)
+conj:and(obese-3, have-5)
+obj(have-5, ADD-6)
+punct(obese-3, ,-7)
+advmod(obese-3, so-8)
+nsubj(say-11, I-9)
+aux(say-11, can-10)
+parataxis(obese-3, say-11)
+obj(is-14, whatever-12)
+nsubj(is-14, it-13)
+ccomp(say-11, is-14)
+nsubj(said-16, I-15)
+ccomp(is-14, said-16)
+punct(obese-3, .-17)
+
+Extracted the following NER entity mentions:

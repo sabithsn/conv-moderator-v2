@@ -1,0 +1,62 @@
+Document: ID=10788A32.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Amid 'Slow-Motion Coup,' Manchin and Sinema Help GOP Sink Voting Rights
+
+Tokens:
+[Text=Amid CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=amid NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Slow CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=slow NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=HYPH Lemma=- NamedEntityTag=MISC]
+[Text=Motion CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=motion NamedEntityTag=MISC]
+[Text=Coup CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=coup NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Manchin CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Manchin NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Sinema CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Sinema NamedEntityTag=ORGANIZATION]
+[Text=Help CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Help NamedEntityTag=ORGANIZATION]
+[Text=GOP CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Sink CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Sink NamedEntityTag=O]
+[Text=Voting CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Voting NamedEntityTag=O]
+[Text=Rights CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNPS Lemma=Rights NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Amid)
+      (NP (`` ')
+        (VP
+          (NP (JJ Slow) (HYPH -) (NN Motion))
+          (S
+            (NP (NN Coup))))
+        (, ,) ('' ')
+        (NP
+          (NP (NNP Manchin))
+          (CC and)
+          (NP (NNP Sinema) (NNP Help) (NNP GOP) (NNP Sink))
+          (NML (NNP Voting) (NNPS Rights)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Rights-16)
+case(Rights-16, Amid-1)
+punct(Rights-16, '-2)
+amod(Motion-5, Slow-3)
+punct(Motion-5, --4)
+dep(Rights-16, Motion-5)
+xcomp(Motion-5, Coup-6)
+punct(Rights-16, ,-7)
+punct(Rights-16, '-8)
+dep(Rights-16, Manchin-9)
+cc(Rights-16, and-10)
+compound(Sink-14, Sinema-11)
+compound(Sink-14, Help-12)
+compound(Sink-14, GOP-13)
+conj(Rights-16, Sink-14)
+compound(Rights-16, Voting-15)
+
+Extracted the following NER entity mentions:
+Slow-Motion Coup	MISC	MISC:0.9523364217072752
+Manchin	PERSON	PERSON:0.8626149649722944
+Sinema Help GOP	ORGANIZATION	ORGANIZATION:0.50665613798082

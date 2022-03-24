@@ -1,0 +1,100 @@
+Document: ID=A6CD4A5F.text (2 sentences, 24 tokens)
+
+Sentence #1 (19 tokens):
+If he does take a knee, it’ll be for all the people killed by the vaccine.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=knee CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=knee NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’ll CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=MD Lemma=’ll NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VBN Lemma=kill NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP he))
+        (VP (VBZ does)
+          (VP (VB take)
+            (NP (DT a) (NN knee))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD ’ll)
+      (VP (VB be)
+        (PP (IN for)
+          (NP
+            (NP (PDT all) (DT the) (NNS people))
+            (VP (VBN killed)
+              (PP (IN by)
+                (NP (DT the) (NN vaccine))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, people-14)
+mark(take-4, If-1)
+nsubj(take-4, he-2)
+aux(take-4, does-3)
+advcl:if(people-14, take-4)
+det(knee-6, a-5)
+obj(take-4, knee-6)
+punct(people-14, ,-7)
+nsubj(people-14, it-8)
+aux(people-14, ’ll-9)
+cop(people-14, be-10)
+case(people-14, for-11)
+det:predet(people-14, all-12)
+det(people-14, the-13)
+acl(people-14, killed-15)
+case(vaccine-18, by-16)
+det(vaccine-18, the-17)
+obl:by(killed-15, vaccine-18)
+punct(people-14, .-19)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #2 (5 tokens):
+All 2 of them.
+
+Tokens:
+[Text=All CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=of CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT All) (CD 2))
+    (PP (IN of)
+      (NP (PRP them)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, them-4)
+det(2-2, All-1)
+det:qmod(them-4, 2-2)
+fixed(2-2, of-3)
+punct(2-2, .-5)
+
+Extracted the following NER entity mentions:
+2	NUMBER	NUMBER:-1.0

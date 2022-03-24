@@ -1,0 +1,42 @@
+Document: ID=A2EA75B1.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+This could work in San Francisco, too.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=San CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=San NamedEntityTag=CITY]
+[Text=Francisco CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Francisco NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD could)
+      (VP (VB work)
+        (PP (IN in)
+          (NP (NNP San) (NNP Francisco)))
+        (, ,)
+        (ADVP (RB too))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, work-3)
+nsubj(work-3, This-1)
+aux(work-3, could-2)
+case(Francisco-6, in-4)
+compound(Francisco-6, San-5)
+obl:in(work-3, Francisco-6)
+punct(work-3, ,-7)
+advmod(work-3, too-8)
+punct(work-3, .-9)
+
+Extracted the following NER entity mentions:
+San Francisco	CITY	LOCATION:0.9998387493620591

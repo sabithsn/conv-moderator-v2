@@ -1,0 +1,88 @@
+Document: ID=927125A8.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+If this document is authenticated, Ukraine destroyed samples of the Bubonic Plague, Anthrax the day Russia began their invasion.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=document CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=document NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=authenticated CharacterOffsetBegin=20 CharacterOffsetEnd=33 PartOfSpeech=VBN Lemma=authenticate NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=destroyed CharacterOffsetBegin=43 CharacterOffsetEnd=52 PartOfSpeech=VBD Lemma=destroy NamedEntityTag=O]
+[Text=samples CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=sample NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bubonic CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Bubonic NamedEntityTag=MISC]
+[Text=Plague CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Plague NamedEntityTag=CAUSE_OF_DEATH]
+[Text=, CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Anthrax CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Anthrax NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the day</TIMEX3>]
+[Text=day CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the day</TIMEX3>]
+[Text=Russia CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=began CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=invasion CharacterOffsetBegin=119 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT this) (NN document))
+        (VP (VBZ is)
+          (VP (VBN authenticated)))))
+    (, ,)
+    (NP (NNP Ukraine))
+    (VP (VBD destroyed)
+      (NP
+        (NP
+          (NP (NNS samples))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Bubonic) (NNP Plague))
+              (, ,)
+              (NP
+                (NP (NNP Anthrax))
+                (NP (DT the) (NN day))))))
+        (SBAR
+          (S
+            (NP (NNP Russia))
+            (VP (VBD began)
+              (NP (PRP$ their) (NN invasion)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, destroyed-8)
+mark(authenticated-5, If-1)
+det(document-3, this-2)
+nsubj:pass(authenticated-5, document-3)
+aux:pass(authenticated-5, is-4)
+advcl:if(destroyed-8, authenticated-5)
+punct(destroyed-8, ,-6)
+nsubj(destroyed-8, Ukraine-7)
+obj(destroyed-8, samples-9)
+case(Plague-13, of-10)
+det(Plague-13, the-11)
+compound(Plague-13, Bubonic-12)
+nmod:of(samples-9, Plague-13)
+punct(Plague-13, ,-14)
+appos(Plague-13, Anthrax-15)
+det(day-17, the-16)
+dep(Anthrax-15, day-17)
+nsubj(began-19, Russia-18)
+acl:relcl(samples-9, began-19)
+nmod:poss(invasion-21, their-20)
+obj(began-19, invasion-21)
+punct(destroyed-8, .-22)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9967295707400142
+Bubonic	MISC	MISC:0.5391881514439676
+Plague	CAUSE_OF_DEATH	MISC:0.5391881514439676
+the day	DATE	DATE:-1.0
+Russia	COUNTRY	LOCATION:0.9767996806357856

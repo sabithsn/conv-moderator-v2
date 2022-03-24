@@ -1,0 +1,33 @@
+Document: ID=752B3BDB.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Chen goes hard in the paint
+
+Tokens:
+[Text=Chen CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Chen NamedEntityTag=PERSON]
+[Text=goes CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=hard NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=paint CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=paint NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Chen))
+    (VP (VBZ goes)
+      (ADVP (RB hard))
+      (PP (IN in)
+        (NP (DT the) (NN paint))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, goes-2)
+nsubj(goes-2, Chen-1)
+advmod(goes-2, hard-3)
+case(paint-6, in-4)
+det(paint-6, the-5)
+obl:in(goes-2, paint-6)
+
+Extracted the following NER entity mentions:
+Chen	PERSON	PERSON:0.9745963044899134

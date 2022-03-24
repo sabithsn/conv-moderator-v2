@@ -1,0 +1,32 @@
+Document: ID=4CEA8DAE.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+I assume you mean Trump
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=assume CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=assume NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP assume)
+      (S
+        (NP (PRP you))
+        (VP (VB mean)
+          (NP (NNP Trump)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, assume-2)
+nsubj(assume-2, I-1)
+nsubj(mean-4, you-3)
+ccomp(assume-2, mean-4)
+obj(mean-4, Trump-5)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9777023244519089

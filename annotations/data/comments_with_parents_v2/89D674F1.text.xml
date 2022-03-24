@@ -1,0 +1,47 @@
+Document: ID=89D674F1.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Canadian PM Justin Trudeau: ‘Unvaccinated Are Racist’
+
+Tokens:
+[Text=Canadian CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=canadian NamedEntityTag=NATIONALITY]
+[Text=PM CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=Justin CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Justin NamedEntityTag=PERSON]
+[Text=Trudeau CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Trudeau NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Unvaccinated CharacterOffsetBegin=29 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=unvaccinated NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Racist CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NML (JJ Canadian) (NN PM))
+        (NNP Justin) (NNP Trudeau))
+      (: :)
+      (S (`` ‘)
+        (NP (JJ Unvaccinated))
+        (VP (VBP Are)
+          (ADJP (JJ Racist)))
+        ('' ’)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Trudeau-4)
+amod(PM-2, Canadian-1)
+compound(Trudeau-4, PM-2)
+compound(Trudeau-4, Justin-3)
+punct(Trudeau-4, :-5)
+punct(Racist-9, ‘-6)
+nsubj(Racist-9, Unvaccinated-7)
+cop(Racist-9, Are-8)
+parataxis(Trudeau-4, Racist-9)
+punct(Racist-9, ’-10)
+
+Extracted the following NER entity mentions:
+Canadian	NATIONALITY	MISC:0.999997392994688
+Justin Trudeau	PERSON	PERSON:0.9995262239598897

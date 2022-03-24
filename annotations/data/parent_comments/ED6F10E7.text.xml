@@ -1,0 +1,46 @@
+Document: ID=ED6F10E7.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+CMV: Gas prices going higher are good for society
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=higher CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=RBR Lemma=higher NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP
+        (NP (NN Gas) (NNS prices))
+        (VP (VBG going)
+          (ADVP (RBR higher))))
+      (VP (VBP are)
+        (ADJP (JJ good)
+          (PP (IN for)
+            (NP (NN society))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+compound(prices-4, Gas-3)
+nsubj(good-8, prices-4)
+acl(prices-4, going-5)
+advmod(going-5, higher-6)
+cop(good-8, are-7)
+appos(CMV-1, good-8)
+case(society-10, for-9)
+obl:for(good-8, society-10)
+
+Extracted the following NER entity mentions:

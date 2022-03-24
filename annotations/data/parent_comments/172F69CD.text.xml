@@ -1,0 +1,64 @@
+Document: ID=172F69CD.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Now hold on, what’s the point you’re trying to make?
+
+Tokens:
+[Text=Now CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=hold CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (VP (VB hold)
+      (PRT (RP on))
+      (, ,)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ ’s)
+            (NP
+              (NP (DT the) (NN point))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP ’re)
+                    (VP (VBG trying)
+                      (S
+                        (VP (TO to)
+                          (VP (VB make)))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hold-2)
+advmod(hold-2, Now-1)
+compound:prt(hold-2, on-3)
+punct(hold-2, ,-4)
+nsubj(point-8, what-5)
+cop(point-8, ’s-6)
+det(point-8, the-7)
+ccomp(hold-2, point-8)
+nsubj(trying-11, you-9)
+nsubj:xsubj(make-13, you-9)
+aux(trying-11, ’re-10)
+acl:relcl(point-8, trying-11)
+mark(make-13, to-12)
+xcomp(trying-11, make-13)
+punct(hold-2, ?-14)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0

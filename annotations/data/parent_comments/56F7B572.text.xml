@@ -1,0 +1,134 @@
+Document: ID=56F7B572.text (3 sentences, 29 tokens)
+
+Sentence #1 (10 tokens):
+This brave Canadian police officer says enough is enough.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=brave CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=brave NamedEntityTag=O]
+[Text=Canadian CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=canadian NamedEntityTag=NATIONALITY]
+[Text=police CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=police NamedEntityTag=TITLE]
+[Text=officer CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=officer NamedEntityTag=TITLE]
+[Text=says CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=enough NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=is NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (JJ brave)
+      (NML (JJ Canadian) (NNS police))
+      (NN officer))
+    (VP (VBZ says)
+      (ADJP
+        (ADVP (RB enough) (RB is))
+        (JJ enough)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-6)
+det(officer-5, This-1)
+amod(officer-5, brave-2)
+amod(police-4, Canadian-3)
+compound(officer-5, police-4)
+nsubj(says-6, officer-5)
+advmod(is-8, enough-7)
+advmod(enough-9, is-8)
+xcomp(says-6, enough-9)
+punct(says-6, .-10)
+
+Extracted the following NER entity mentions:
+Canadian	NATIONALITY	MISC:0.9999931310349851
+police officer	TITLE	-
+
+Sentence #2 (11 tokens):
+She says the police support the resistance in Canada now.
+
+Tokens:
+[Text=She CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=police CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=police NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=resistance CharacterOffsetBegin=90 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=resistance NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Canada CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Canada NamedEntityTag=COUNTRY]
+[Text=now CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ says)
+      (S
+        (NP (DT the) (NN police) (NN support))
+        (NP
+          (NP (DT the) (NN resistance))
+          (PP (IN in)
+            (NP (NNP Canada))))
+        (ADVP (RB now))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-2)
+nsubj(says-2, She-1)
+det(support-5, the-3)
+compound(support-5, police-4)
+nsubj(resistance-7, support-5)
+det(resistance-7, the-6)
+xcomp(says-2, resistance-7)
+case(Canada-9, in-8)
+nmod:in(resistance-7, Canada-9)
+advmod(resistance-7, now-10)
+punct(says-2, .-11)
+
+Extracted the following NER entity mentions:
+Canada	COUNTRY	LOCATION:0.9982618121513122
+now	DATE	DATE:-1.0
+She	PERSON	-
+
+Sentence #3 (8 tokens):
+Canada is about to have a revolution!
+
+Tokens:
+[Text=Canada CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Canada NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=revolution CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=revolution NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Canada))
+    (VP (VBZ is)
+      (ADJP (RB about)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (DT a) (NN revolution)))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, about-3)
+nsubj(about-3, Canada-1)
+nsubj:xsubj(have-5, Canada-1)
+cop(about-3, is-2)
+mark(have-5, to-4)
+xcomp(about-3, have-5)
+det(revolution-7, a-6)
+obj(have-5, revolution-7)
+punct(about-3, !-8)
+
+Extracted the following NER entity mentions:
+Canada	COUNTRY	LOCATION:0.9954676817853629

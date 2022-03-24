@@ -1,0 +1,88 @@
+Document: ID=ED673F90.text (2 sentences, 20 tokens)
+
+Sentence #1 (11 tokens):
+How in the fuck is the vaccine related to abortion?
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=relate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=abortion CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHADVP (WRB How))
+    (S
+      (PP (IN in)
+        (NP (DT the) (VB fuck)))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN vaccine))
+          (VP (VBN related)
+            (PP (IN to)
+              (NP (NN abortion)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, vaccine-7)
+advmod(vaccine-7, How-1)
+case(the-3, in-2)
+obl:in(vaccine-7, the-3)
+dep(the-3, fuck-4)
+cop(vaccine-7, is-5)
+det(vaccine-7, the-6)
+acl(vaccine-7, related-8)
+case(abortion-10, to-9)
+obl:to(related-8, abortion-10)
+punct(vaccine-7, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+Seriously op, fucking elaborate on this retarded crap
+
+Tokens:
+[Text=Seriously CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=op CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=fucking NamedEntityTag=O]
+[Text=elaborate CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=elaborate NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=retarded CharacterOffsetBegin=94 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=retarded NamedEntityTag=O]
+[Text=crap CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=crap NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Seriously))
+    (S
+      (ADVP (NN op))
+      (, ,)
+      (ADVP (RB fucking))
+      (VP (VB elaborate)
+        (PP (IN on)
+          (NP (DT this) (JJ retarded) (NN crap)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, elaborate-5)
+advmod(elaborate-5, Seriously-1)
+advmod(elaborate-5, op-2)
+punct(elaborate-5, ,-3)
+advmod(elaborate-5, fucking-4)
+case(crap-9, on-6)
+det(crap-9, this-7)
+amod(crap-9, retarded-8)
+obl:on(elaborate-5, crap-9)
+
+Extracted the following NER entity mentions:

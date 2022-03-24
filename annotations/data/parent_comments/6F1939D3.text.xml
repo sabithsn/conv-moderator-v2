@@ -1,0 +1,104 @@
+Document: ID=6F1939D3.text (3 sentences, 21 tokens)
+
+Sentence #1 (5 tokens):
+Clean up the trash?
+
+Tokens:
+[Text=Clean CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=clean NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=trash CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=trash NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Clean))
+    (ADVP (IN up)
+      (NP (DT the) (NN trash)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Clean-1)
+case(trash-4, up-2)
+det(trash-4, the-3)
+advmod(Clean-1, trash-4)
+punct(Clean-1, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Are the peaceful protestors littering?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=peaceful CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=peaceful NamedEntityTag=O]
+[Text=protestors CharacterOffsetBegin=38 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=protestor NamedEntityTag=O]
+[Text=littering CharacterOffsetBegin=49 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=litter NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (DT the) (JJ peaceful) (NNS protestors))
+    (VP (VBG littering))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, littering-5)
+aux(littering-5, Are-1)
+det(protestors-4, the-2)
+amod(protestors-4, peaceful-3)
+nsubj(littering-5, protestors-4)
+punct(littering-5, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (10 tokens):
+Peacefully protesting is totally fine but littering is unacceptable.
+
+Tokens:
+[Text=Peacefully CharacterOffsetBegin=61 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=peacefully NamedEntityTag=O]
+[Text=protesting CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=VBG Lemma=protest NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=totally CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=totally NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=littering CharacterOffsetBegin=103 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=littering NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=unacceptable CharacterOffsetBegin=116 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=unacceptable NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB Peacefully))
+      (S
+        (VP (VBG protesting)))
+      (VP (VBZ is)
+        (ADJP (RB totally) (JJ fine))))
+    (CC but)
+    (S
+      (NP (NN littering))
+      (VP (VBZ is)
+        (ADJP (JJ unacceptable))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fine-5)
+advmod(fine-5, Peacefully-1)
+csubj(fine-5, protesting-2)
+cop(fine-5, is-3)
+advmod(fine-5, totally-4)
+cc(unacceptable-9, but-6)
+nsubj(unacceptable-9, littering-7)
+cop(unacceptable-9, is-8)
+conj:but(fine-5, unacceptable-9)
+punct(fine-5, .-10)
+
+Extracted the following NER entity mentions:

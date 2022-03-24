@@ -1,0 +1,96 @@
+Document: ID=94190654.text (3 sentences, 19 tokens)
+
+Sentence #1 (4 tokens):
+This is stupid.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=stupid CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=stupid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (JJ stupid)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stupid-3)
+nsubj(stupid-3, This-1)
+cop(stupid-3, is-2)
+punct(stupid-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+I get a flu shot every year.
+
+Tokens:
+[Text=I CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=flu CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=flu NamedEntityTag=CAUSE_OF_DEATH]
+[Text=shot CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=shot NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1Y" quant="every" tid="t1" type="SET" value="P1Y">every year</TIMEX3>]
+[Text=year CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=year NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1Y" quant="every" tid="t1" type="SET" value="P1Y">every year</TIMEX3>]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP get)
+      (NP (DT a) (NN flu) (NN shot))
+      (NP-TMP (DT every) (NN year)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, get-2)
+nsubj(get-2, I-1)
+det(shot-5, a-3)
+compound(shot-5, flu-4)
+obj(get-2, shot-5)
+det(year-7, every-6)
+obl:tmod(get-2, year-7)
+punct(get-2, .-8)
+
+Extracted the following NER entity mentions:
+flu	CAUSE_OF_DEATH	-
+every year	SET	SET:-1.0
+
+Sentence #3 (7 tokens):
+It’s essentially the same thing.
+
+Tokens:
+[Text=It CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=essentially CharacterOffsetBegin=50 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=essentially NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP (RB essentially) (DT the) (JJ same) (NN thing)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thing-6)
+nsubj(thing-6, It-1)
+cop(thing-6, ’s-2)
+advmod(thing-6, essentially-3)
+det(thing-6, the-4)
+amod(thing-6, same-5)
+punct(thing-6, .-7)
+
+Extracted the following NER entity mentions:

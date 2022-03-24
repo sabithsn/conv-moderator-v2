@@ -1,0 +1,84 @@
+Document: ID=8B26D93B.text (2 sentences, 18 tokens)
+
+Sentence #1 (13 tokens):
+yes, you are oppressed, but it doesn't matter much.
+
+Tokens:
+[Text=yes CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=oppressed CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=oppress NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=matter CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=matter NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (UH yes))
+      (, ,)
+      (NP (PRP you))
+      (VP (VBP are)
+        (VP (VBN oppressed))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB n't)
+        (VP (VB matter)
+          (ADJP (JJ much)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, oppressed-5)
+discourse(oppressed-5, yes-1)
+punct(oppressed-5, ,-2)
+nsubj:pass(oppressed-5, you-3)
+aux:pass(oppressed-5, are-4)
+punct(oppressed-5, ,-6)
+cc(matter-11, but-7)
+nsubj(matter-11, it-8)
+aux(matter-11, does-9)
+advmod(matter-11, n't-10)
+conj:but(oppressed-5, matter-11)
+xcomp(matter-11, much-12)
+punct(oppressed-5, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+just get over it.
+
+Tokens:
+[Text=just CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB just))
+    (VP (VB get)
+      (PP (IN over)
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, get-2)
+advmod(get-2, just-1)
+case(it-4, over-3)
+obl:over(get-2, it-4)
+punct(get-2, .-5)
+
+Extracted the following NER entity mentions:

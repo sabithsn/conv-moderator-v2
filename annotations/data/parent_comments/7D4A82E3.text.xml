@@ -1,0 +1,59 @@
+Document: ID=7D4A82E3.text (2 sentences, 10 tokens)
+
+Sentence #1 (6 tokens):
+Don’t forget this one!
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=forget CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=forget NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=! CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Do) (RB n’t)
+      (VP (VB forget)
+        (NP (DT this) (NN one))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forget-3)
+aux(forget-3, Do-1)
+advmod(forget-3, n’t-2)
+det(one-5, this-4)
+obj(forget-3, one-5)
+punct(forget-3, !-6)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (4 tokens):
+Time to delete.
+
+Tokens:
+[Text=Time CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Time NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=delete CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=delete NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Time))
+    (S
+      (VP (TO to)
+        (VP (VB delete))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Time-1)
+mark(delete-3, to-2)
+dep(Time-1, delete-3)
+punct(Time-1, .-4)
+
+Extracted the following NER entity mentions:

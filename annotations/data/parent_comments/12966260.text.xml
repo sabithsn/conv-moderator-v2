@@ -1,0 +1,74 @@
+Document: ID=12966260.text (2 sentences, 16 tokens)
+
+Sentence #1 (5 tokens):
+More pleasant to suck.
+
+Tokens:
+[Text=More CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=pleasant CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=pleasant NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=suck CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=suck NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADJP (JJR More) (JJ pleasant))
+    (S
+      (VP (TO to)
+        (VP (VB suck))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pleasant-2)
+dep(pleasant-2, More-1)
+mark(suck-4, to-3)
+dep(pleasant-2, suck-4)
+punct(pleasant-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Most women don't want to gag on your dick.
+
+Tokens:
+[Text=Most CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=gag CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=gag NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=dick CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=dick NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJS Most) (NNS women))
+    (VP (VBP do) (RB n't)
+      (VP (VB want)
+        (PP (IN to)
+          (NP (NN gag)))
+        (PP (IN on)
+          (NP (PRP$ your) (NN dick)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-5)
+amod(women-2, Most-1)
+nsubj(want-5, women-2)
+aux(want-5, do-3)
+advmod(want-5, n't-4)
+case(gag-7, to-6)
+obl:to(want-5, gag-7)
+case(dick-10, on-8)
+nmod:poss(dick-10, your-9)
+obl:on(want-5, dick-10)
+punct(want-5, .-11)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,55 @@
+Document: ID=090D14A4.text (2 sentences, 10 tokens)
+
+Sentence #1 (8 tokens):
+Give yer balls a tug tit fucker.
+
+Tokens:
+[Text=Give CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=yer CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP$ Lemma=yer NamedEntityTag=O]
+[Text=balls CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=ball NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tug CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=tug NamedEntityTag=O]
+[Text=tit CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=tit NamedEntityTag=O]
+[Text=fucker CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=fucker NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP$ yer) (NNS balls))
+      (NP (DT a) (NN tug) (NN tit) (NN fucker)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Give-1)
+nmod:poss(balls-3, yer-2)
+dep(Give-1, balls-3)
+det(fucker-7, a-4)
+compound(fucker-7, tug-5)
+compound(fucker-7, tit-6)
+obj(Give-1, fucker-7)
+punct(Give-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+- Shoresy
+
+Tokens:
+[Text=- CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=HYPH Lemma=- NamedEntityTag=PERSON]
+[Text=Shoresy CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Shoresy NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (QP (HYPH -) (NNP Shoresy))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Shoresy-2)
+punct(Shoresy-2, --1)
+
+Extracted the following NER entity mentions:
+- Shoresy	PERSON	PERSON:0.6835609320421309

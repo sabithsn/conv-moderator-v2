@@ -1,0 +1,93 @@
+Document: ID=84F0258D.text (2 sentences, 22 tokens)
+
+Sentence #1 (13 tokens):
+He's rich, racist, white, straight, and angry.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=rich CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=rich NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=straight CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=straight NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=angry CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=angry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ 's)
+        (ADJP (JJ rich) (, ,) (JJ racist) (, ,) (JJ white))))
+    (, ,)
+    (ADVP (RB straight))
+    (, ,)
+    (CC and)
+    (FRAG
+      (ADJP (JJ angry)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, white-7)
+nsubj(white-7, He-1)
+nsubj(angry-12, He-1)
+cop(white-7, 's-2)
+amod(white-7, rich-3)
+punct(white-7, ,-4)
+amod(white-7, racist-5)
+punct(white-7, ,-6)
+punct(white-7, ,-8)
+advmod(white-7, straight-9)
+punct(white-7, ,-10)
+cc(angry-12, and-11)
+conj:and(white-7, angry-12)
+punct(white-7, .-13)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #2 (9 tokens):
+No way they don't take his side.
+
+Tokens:
+[Text=No CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No) (NN way))
+    (NP (PRP they))
+    (VP (VBP do) (RB n't)
+      (VP (VB take)
+        (NP (PRP$ his) (NN side))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, take-6)
+det(way-2, No-1)
+nsubj(take-6, way-2)
+nsubj(take-6, they-3)
+aux(take-6, do-4)
+advmod(take-6, n't-5)
+nmod:poss(side-8, his-7)
+obj(take-6, side-8)
+punct(take-6, .-9)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

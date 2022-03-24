@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>3DEC3A94.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>She</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>’s</word>
+            <lemma>’s</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>still</word>
+            <lemma>still</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>married</word>
+            <lemma>marry</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>cancer</word>
+            <lemma>cancer</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CAUSE_OF_DEATH</NER>
+          </token>
+          <token id="8">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>society</word>
+            <lemma>society</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>…</word>
+            <lemma>…</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP She)) (VP (VBZ ’s) (ADVP (RB still)) (VP (VBN married) (PP (IN to) (NP (NP (DT a) (NN cancer)) (PP (IN on) (NP (NN society))))))) (: …))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">married</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">married</governor>
+            <dependent idx="3">still</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">cancer</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cancer</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="4">married</governor>
+            <dependent idx="7">cancer</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">society</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="7">cancer</governor>
+            <dependent idx="9">society</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">married</governor>
+            <dependent idx="10">…</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">married</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">married</governor>
+            <dependent idx="3">still</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">cancer</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cancer</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="4">married</governor>
+            <dependent idx="7">cancer</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">society</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="nmod:on">
+            <governor idx="7">cancer</governor>
+            <dependent idx="9">society</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">married</governor>
+            <dependent idx="10">…</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">married</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">married</governor>
+            <dependent idx="3">still</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">cancer</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cancer</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="4">married</governor>
+            <dependent idx="7">cancer</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">society</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="nmod:on">
+            <governor idx="7">cancer</governor>
+            <dependent idx="9">society</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">married</governor>
+            <dependent idx="10">…</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">married</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">married</governor>
+            <dependent idx="3">still</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">cancer</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cancer</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="4">married</governor>
+            <dependent idx="7">cancer</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">society</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="nmod:on">
+            <governor idx="7">cancer</governor>
+            <dependent idx="9">society</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">married</governor>
+            <dependent idx="10">…</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">married</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">married</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">married</governor>
+            <dependent idx="3">still</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">cancer</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cancer</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="4">married</governor>
+            <dependent idx="7">cancer</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">society</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="nmod:on">
+            <governor idx="7">cancer</governor>
+            <dependent idx="9">society</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">married</governor>
+            <dependent idx="10">…</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

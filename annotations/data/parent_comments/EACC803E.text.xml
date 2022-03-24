@@ -1,0 +1,80 @@
+Document: ID=EACC803E.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+ELI5: Why does the US need to import oil if we have enough to be exporting, as well
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=need CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=import CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=import NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=enough NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=exporting CharacterOffsetBegin=65 CharacterOffsetEnd=74 PartOfSpeech=VBG Lemma=export NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ does)
+        (NP (DT the) (NNP US))
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB import)
+                (NP (NN oil))
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP have)
+                      (ADVP (RB enough))
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (ADJP (VBG exporting))
+                            (, ,)
+                            (ADVP (RB as) (RB well))))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(need-7, Why-3)
+aux(need-7, does-4)
+det(US-6, the-5)
+nsubj(need-7, US-6)
+nsubj:xsubj(import-9, US-6)
+parataxis(ELI5-1, need-7)
+mark(import-9, to-8)
+xcomp(need-7, import-9)
+obj(import-9, oil-10)
+mark(have-13, if-11)
+nsubj(have-13, we-12)
+nsubj:xsubj(exporting-17, we-12)
+advcl:if(import-9, have-13)
+advmod(have-13, enough-14)
+mark(exporting-17, to-15)
+cop(exporting-17, be-16)
+xcomp(have-13, exporting-17)
+punct(exporting-17, ,-18)
+advmod(exporting-17, as-19)
+fixed(as-19, well-20)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9840221207641655

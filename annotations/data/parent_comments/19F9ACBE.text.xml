@@ -1,0 +1,63 @@
+Document: ID=19F9ACBE.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Ilhan Omar hammers Biden over reports WH may ask Saudis to pump more oil
+
+Tokens:
+[Text=Ilhan CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Ilhan NamedEntityTag=PERSON]
+[Text=Omar CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Omar NamedEntityTag=PERSON]
+[Text=hammers CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=hammer NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=over CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=reports CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=report NamedEntityTag=O]
+[Text=WH CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=WH NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=ask NamedEntityTag=O]
+[Text=Saudis CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NNPS Lemma=Saudis NamedEntityTag=MISC]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pump CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=pump NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Ilhan) (NNP Omar))
+        (VP (VBZ hammers)
+          (NP
+            (NP (NNP Biden))
+            (PP (IN over)
+              (NP (NNS reports)))))))
+    (NP (NNP WH))
+    (VP (MD may)
+      (VP (VB ask)
+        (NP (NNPS Saudis))
+        (S
+          (VP (TO to)
+            (VP (VB pump)
+              (NP (JJR more) (NN oil)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ask-9)
+compound(Omar-2, Ilhan-1)
+nsubj(hammers-3, Omar-2)
+parataxis(ask-9, hammers-3)
+obj(hammers-3, Biden-4)
+case(reports-6, over-5)
+nmod:over(Biden-4, reports-6)
+nsubj(ask-9, WH-7)
+aux(ask-9, may-8)
+obj(ask-9, Saudis-10)
+nsubj:xsubj(pump-12, Saudis-10)
+mark(pump-12, to-11)
+xcomp(ask-9, pump-12)
+amod(oil-14, more-13)
+obj(pump-12, oil-14)
+
+Extracted the following NER entity mentions:
+Ilhan Omar	PERSON	PERSON:0.9929757164595296
+Biden	PERSON	PERSON:0.997919594327649
+Saudis	MISC	MISC:0.9990641987640657

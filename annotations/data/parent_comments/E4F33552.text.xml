@@ -1,0 +1,81 @@
+Document: ID=E4F33552.text (2 sentences, 19 tokens)
+
+Sentence #1 (11 tokens):
+Did your girlfriend cheat on you with guys with accents?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=girlfriend CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=girlfriend NamedEntityTag=O]
+[Text=cheat CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=cheat NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=accents CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=accent NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Did)
+      (NP (PRP$ your) (NN girlfriend) (NN cheat))
+      (PP (IN on)
+        (NP (PRP you)))
+      (PP (IN with)
+        (NP
+          (NP (NNS guys))
+          (PP (IN with)
+            (NP (NNS accents))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Did-1)
+nmod:poss(cheat-4, your-2)
+compound(cheat-4, girlfriend-3)
+obj(Did-1, cheat-4)
+case(you-6, on-5)
+obl:on(Did-1, you-6)
+case(guys-8, with-7)
+obl:with(Did-1, guys-8)
+case(accents-10, with-9)
+nmod:with(guys-8, accents-10)
+punct(Did-1, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Are you just a bitter little man?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bitter CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=bitter NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (ADVP (RB just))
+    (NP (DT a) (JJ bitter) (JJ little) (NN man))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, man-7)
+cop(man-7, Are-1)
+nsubj(man-7, you-2)
+advmod(man-7, just-3)
+det(man-7, a-4)
+amod(man-7, bitter-5)
+amod(man-7, little-6)
+punct(man-7, ?-8)
+
+Extracted the following NER entity mentions:

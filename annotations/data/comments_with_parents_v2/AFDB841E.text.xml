@@ -1,0 +1,79 @@
+Document: ID=AFDB841E.text (2 sentences, 17 tokens)
+
+Sentence #1 (14 tokens):
+While r/Conspiracy Kicks Rocks - I'm in the Space Force!
+
+Tokens:
+[Text=While CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=r CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=r NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=Conspiracy CharacterOffsetBegin=8 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=ORGANIZATION]
+[Text=Kicks CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=kick NamedEntityTag=ORGANIZATION]
+[Text=Rocks CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Rocks NamedEntityTag=ORGANIZATION]
+[Text=- CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Space CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Space NamedEntityTag=O]
+[Text=Force CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Force NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (NN r) (HYPH /) (NN Conspiracy))
+        (VP (VBZ Kicks)
+          (NP (NNP Rocks)))))
+    (: -)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (PP (IN in)
+        (NP (DT the)
+          (NML (NNP Space) (NNP Force)))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Force-13)
+mark(Kicks-5, While-1)
+compound(Conspiracy-4, r-2)
+punct(Conspiracy-4, /-3)
+nsubj(Kicks-5, Conspiracy-4)
+advcl:while(Force-13, Kicks-5)
+obj(Kicks-5, Rocks-6)
+punct(Force-13, --7)
+nsubj(Force-13, I-8)
+cop(Force-13, 'm-9)
+case(Force-13, in-10)
+det(Force-13, the-11)
+compound(Force-13, Space-12)
+punct(Force-13, !-14)
+
+Extracted the following NER entity mentions:
+Conspiracy Kicks Rocks	ORGANIZATION	ORGANIZATION:0.9550566189241955
+
+Sentence #2 (3 tokens):
+How Crazy!?!?!?!?
+
+Tokens:
+[Text=How CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=Crazy CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Crazy NamedEntityTag=O]
+[Text=!?!?!?!? CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NFP Lemma=!?!?!?!? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (WHADVP (WRB How))
+    (NP (NNP Crazy))
+    (NFP !?!?!?!?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Crazy-2)
+dep(Crazy-2, How-1)
+punct(Crazy-2, !?!?!?!?-3)
+
+Extracted the following NER entity mentions:

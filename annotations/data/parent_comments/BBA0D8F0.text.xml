@@ -1,0 +1,32 @@
+Document: ID=BBA0D8F0.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Between a rock and Russian place
+
+Tokens:
+[Text=Between CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rock CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=rock NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=place CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN Between)
+    (NP
+      (NP (DT a) (NN rock))
+      (CC and)
+      (NP (JJ Russian) (NN place)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rock-3)
+case(rock-3, Between-1)
+det(rock-3, a-2)
+cc(place-6, and-4)
+amod(place-6, Russian-5)
+conj:and(rock-3, place-6)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999862083533125

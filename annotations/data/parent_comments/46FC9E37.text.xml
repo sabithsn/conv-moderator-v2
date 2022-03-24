@@ -1,0 +1,66 @@
+Document: ID=46FC9E37.text (2 sentences, 12 tokens)
+
+Sentence #1 (2 tokens):
+SUCCESS!
+
+Tokens:
+[Text=SUCCESS CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=success NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN SUCCESS) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SUCCESS-1)
+punct(SUCCESS-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+mississippi bans the teaching of anti-white racism in schools!
+
+Tokens:
+[Text=mississippi CharacterOffsetBegin=9 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=mississippus NamedEntityTag=STATE_OR_PROVINCE]
+[Text=bans CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=ban NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=teaching CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=teaching NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=anti-white CharacterOffsetBegin=42 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=anti-white NamedEntityTag=O]
+[Text=racism CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=racism NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=schools CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=school NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS mississippi))
+    (VP (VBZ bans)
+      (NP
+        (NP (DT the) (NN teaching))
+        (PP (IN of)
+          (NP
+            (NP
+              (ADJP (JJ anti-white))
+              (NN racism))
+            (PP (IN in)
+              (NP (NNS schools)))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bans-2)
+nsubj(bans-2, mississippi-1)
+det(teaching-4, the-3)
+obj(bans-2, teaching-4)
+case(racism-7, of-5)
+amod(racism-7, anti-white-6)
+nmod:of(teaching-4, racism-7)
+case(schools-9, in-8)
+nmod:in(racism-7, schools-9)
+punct(bans-2, !-10)
+
+Extracted the following NER entity mentions:
+mississippi	STATE_OR_PROVINCE	-

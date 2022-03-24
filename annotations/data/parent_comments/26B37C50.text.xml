@@ -1,0 +1,64 @@
+Document: ID=26B37C50.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Wisconsin Teacher Training: ‘Parents Are Not Entitled To Know Their Kids’ Identities’
+
+Tokens:
+[Text=Wisconsin CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Wisconsin NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Teacher CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Teacher NamedEntityTag=TITLE]
+[Text=Training CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Training NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Parents CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Entitled CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=entitle NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Know CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=Their CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=Kids CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=Identities CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=identity NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Wisconsin) (NNP Teacher) (NNP Training))
+    (: :)
+    (S (`` ‘)
+      (NP (NNS Parents))
+      (VP (VBP Are) (RB Not)
+        (VP (VBN Entitled)
+          (S
+            (VP (TO To)
+              (VP (VB Know)
+                (NP
+                  (NP (PRP$ Their) (NNS Kids) (POS ’))
+                  (NNS Identities))
+                (S
+                  (NP (POS ’)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Training-3)
+compound(Training-3, Wisconsin-1)
+compound(Training-3, Teacher-2)
+punct(Training-3, :-4)
+punct(Entitled-9, ‘-5)
+nsubj:pass(Entitled-9, Parents-6)
+nsubj:xsubj(Know-11, Parents-6)
+aux:pass(Entitled-9, Are-7)
+advmod(Entitled-9, Not-8)
+parataxis(Training-3, Entitled-9)
+mark(Know-11, To-10)
+xcomp(Entitled-9, Know-11)
+nmod:poss(Kids-13, Their-12)
+nmod:poss(Identities-15, Kids-13)
+case(Kids-13, ’-14)
+obj(Know-11, Identities-15)
+xcomp(Know-11, ’-16)
+
+Extracted the following NER entity mentions:
+Wisconsin	STATE_OR_PROVINCE	LOCATION:0.9575378389588699
+Teacher	TITLE	-

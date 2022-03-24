@@ -1,0 +1,79 @@
+Document: ID=F79B57BD.text (2 sentences, 17 tokens)
+
+Sentence #1 (11 tokens):
+ELI5: Why do some potato chips have green edges?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=potato CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=potato NamedEntityTag=O]
+[Text=chips CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=chip NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=green CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=green NamedEntityTag=O]
+[Text=edges CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=edge NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP do)
+        (NP (DT some) (NN potato) (NNS chips))
+        (VP (VBP have)
+          (NP (JJ green) (NNS edges)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(have-8, Why-3)
+aux(have-8, do-4)
+det(chips-7, some-5)
+compound(chips-7, potato-6)
+nsubj(have-8, chips-7)
+parataxis(ELI5-1, have-8)
+amod(edges-10, green-9)
+obj(have-8, edges-10)
+punct(ELI5-1, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Are they safe to eat?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=safe CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=safe NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=eat NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP they))
+    (ADJP (JJ safe)
+      (S
+        (VP (TO to)
+          (VP (VB eat)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, safe-3)
+cop(safe-3, Are-1)
+nsubj(safe-3, they-2)
+nsubj:xsubj(eat-5, they-2)
+mark(eat-5, to-4)
+xcomp(safe-3, eat-5)
+punct(safe-3, ?-6)
+
+Extracted the following NER entity mentions:

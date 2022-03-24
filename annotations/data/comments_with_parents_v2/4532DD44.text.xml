@@ -1,0 +1,41 @@
+Document: ID=4532DD44.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Democratic congresswoman refuses to meet with unvaccinated constituents
+
+Tokens:
+[Text=Democratic CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=democratic NamedEntityTag=IDEOLOGY]
+[Text=congresswoman CharacterOffsetBegin=11 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=congresswoman NamedEntityTag=TITLE]
+[Text=refuses CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=refuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=unvaccinated CharacterOffsetBegin=46 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=unvaccinated NamedEntityTag=O]
+[Text=constituents CharacterOffsetBegin=59 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=constituent NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Democratic) (NN congresswoman))
+    (VP (VBZ refuses)
+      (S
+        (VP (TO to)
+          (VP (VB meet)
+            (PP (IN with)
+              (NP (JJ unvaccinated) (NNS constituents)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, refuses-3)
+amod(congresswoman-2, Democratic-1)
+nsubj(refuses-3, congresswoman-2)
+nsubj:xsubj(meet-5, congresswoman-2)
+mark(meet-5, to-4)
+xcomp(refuses-3, meet-5)
+case(constituents-8, with-6)
+amod(constituents-8, unvaccinated-7)
+obl:with(meet-5, constituents-8)
+
+Extracted the following NER entity mentions:
+Democratic	IDEOLOGY	MISC:0.9978451802512581
+congresswoman	TITLE	-

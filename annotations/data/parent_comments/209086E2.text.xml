@@ -1,0 +1,87 @@
+Document: ID=209086E2.text (2 sentences, 18 tokens)
+
+Sentence #1 (11 tokens):
+Our government hating us is a conspiracy worth talking about.
+
+Tokens:
+[Text=Our CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=4 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=hating CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=VBG Lemma=hate NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=worth CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Our) (NN government))
+      (VP (VBG hating)
+        (NP (PRP us))))
+    (VP (VBZ is)
+      (ADJP
+        (NP (DT a) (NN conspiracy))
+        (JJ worth))
+      (S
+        (VP (VBG talking)
+          (PP (IN about)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, worth-8)
+nmod:poss(government-2, Our-1)
+nsubj(worth-8, government-2)
+acl(government-2, hating-3)
+obj(hating-3, us-4)
+cop(worth-8, is-5)
+det(conspiracy-7, a-6)
+obl:npmod(worth-8, conspiracy-7)
+xcomp(worth-8, talking-9)
+obl(talking-9, about-10)
+punct(worth-8, .-11)
+
+Extracted the following NER entity mentions:
+conspiracy	CRIMINAL_CHARGE	-
+
+Sentence #2 (7 tokens):
+No one wants to admit it.
+
+Tokens:
+[Text=No CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=wants CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=admit CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=admit NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (VBZ wants)
+      (S
+        (VP (TO to)
+          (VP (VB admit)
+            (NP (PRP it))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wants-3)
+det(one-2, No-1)
+nsubj(wants-3, one-2)
+nsubj:xsubj(admit-5, one-2)
+mark(admit-5, to-4)
+xcomp(wants-3, admit-5)
+obj(admit-5, it-6)
+punct(wants-3, .-7)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

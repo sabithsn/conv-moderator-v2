@@ -1,0 +1,45 @@
+Document: ID=0CEF65BB.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Yeah go fuck yourself you muslim piece of shit
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=yourself CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=yourself NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=muslim CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=muslim NamedEntityTag=RELIGION]
+[Text=piece CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (VP (VB go)
+      (S
+        (VP (VB fuck)
+          (NP (PRP yourself))
+          (S
+            (NP (PRP you)))))
+      (NP
+        (NP (JJ muslim) (NN piece))
+        (PP (IN of)
+          (NP (NN shit)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-2)
+discourse(go-2, Yeah-1)
+ccomp(go-2, fuck-3)
+obj(fuck-3, yourself-4)
+xcomp(fuck-3, you-5)
+amod(piece-7, muslim-6)
+obj(go-2, piece-7)
+case(shit-9, of-8)
+nmod:of(piece-7, shit-9)
+
+Extracted the following NER entity mentions:
+muslim	RELIGION	-

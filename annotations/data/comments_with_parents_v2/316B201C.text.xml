@@ -1,0 +1,41 @@
+Document: ID=316B201C.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Fuck Republicans, and Fuck Joe Manchin.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=fuck NamedEntityTag=MISC]
+[Text=Republicans CharacterOffsetBegin=5 CharacterOffsetEnd=16 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Fuck CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=fuck NamedEntityTag=PERSON]
+[Text=Joe CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Manchin CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Manchin NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Fuck)
+        (NP (NNPS Republicans)))
+      (, ,)
+      (CC and)
+      (VP (VB Fuck)
+        (NP (NNP Joe) (NNP Manchin))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+obj(Fuck-1, Republicans-2)
+punct(Fuck-1, ,-3)
+cc(Fuck-5, and-4)
+conj:and(Fuck-1, Fuck-5)
+compound(Manchin-7, Joe-6)
+obj(Fuck-5, Manchin-7)
+punct(Fuck-1, .-8)
+
+Extracted the following NER entity mentions:
+Fuck Republicans	MISC	MISC:0.9997019005580243
+Fuck Joe Manchin	PERSON	PERSON:0.5895074855974644

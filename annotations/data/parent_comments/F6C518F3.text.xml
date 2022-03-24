@@ -1,0 +1,158 @@
+Document: ID=F6C518F3.text (3 sentences, 36 tokens)
+
+Sentence #1 (11 tokens):
+I mean President Biden didn’t give them those leases.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=President CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=Biden CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=did CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=leases CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNS Lemma=lease NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (SBAR
+        (S
+          (NP (NNP President) (NNP Biden))
+          (VP (VBD did) (RB n’t)
+            (VP (VB give)
+              (NP (PRP them))
+              (NP (DT those) (NNS leases)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-2)
+nsubj(mean-2, I-1)
+compound(Biden-4, President-3)
+nsubj(give-7, Biden-4)
+aux(give-7, did-5)
+advmod(give-7, n’t-6)
+ccomp(mean-2, give-7)
+iobj(give-7, them-8)
+det(leases-10, those-9)
+obj(give-7, leases-10)
+punct(mean-2, .-11)
+
+Extracted the following NER entity mentions:
+President	TITLE	-
+Biden	PERSON	PERSON:0.999811038746628
+
+Sentence #2 (7 tokens):
+They’ve been available for years.
+
+Tokens:
+[Text=They CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=available CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=available NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=years CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">years</TIMEX3>]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP ’ve)
+      (VP (VBN been)
+        (ADJP (JJ available))
+        (PP (IN for)
+          (NP (NNS years)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-2)
+nsubj(’ve-2, They-1)
+cop(available-4, been-3)
+dep(’ve-2, available-4)
+case(years-6, for-5)
+obl:for(available-4, years-6)
+punct(’ve-2, .-7)
+
+Extracted the following NER entity mentions:
+years	DURATION	DURATION:-1.0
+
+Sentence #3 (18 tokens):
+You think they close their eyes and just randomly stick pins a map to determine the locations?
+
+Tokens:
+[Text=You CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=close CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=close NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=randomly CharacterOffsetBegin=129 CharacterOffsetEnd=137 PartOfSpeech=RB Lemma=randomly NamedEntityTag=O]
+[Text=stick CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=VB Lemma=stick NamedEntityTag=O]
+[Text=pins CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=pin NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=map CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=map NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=158 CharacterOffsetEnd=167 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=locations CharacterOffsetBegin=172 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=location NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP think)
+      (S
+        (NP (PRP they))
+        (VP
+          (VP (VB close)
+            (NP (PRP$ their) (NNS eyes)))
+          (CC and)
+          (ADVP (RB just))
+          (VP
+            (ADVP (RB randomly))
+            (VB stick)
+            (NP
+              (NP (NNS pins))
+              (SBAR
+                (S
+                  (NP (DT a) (NN map))
+                  (VP (TO to)
+                    (VP (VB determine)
+                      (NP (DT the) (NNS locations)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, You-1)
+nsubj(close-4, they-3)
+nsubj(stick-10, they-3)
+ccomp(think-2, close-4)
+nmod:poss(eyes-6, their-5)
+obj(close-4, eyes-6)
+cc(stick-10, and-7)
+advmod(stick-10, just-8)
+advmod(stick-10, randomly-9)
+ccomp(think-2, stick-10)
+conj:and(close-4, stick-10)
+obj(stick-10, pins-11)
+det(map-13, a-12)
+nsubj(determine-15, map-13)
+mark(determine-15, to-14)
+acl:to(pins-11, determine-15)
+det(locations-17, the-16)
+obj(determine-15, locations-17)
+punct(think-2, ?-18)
+
+Extracted the following NER entity mentions:

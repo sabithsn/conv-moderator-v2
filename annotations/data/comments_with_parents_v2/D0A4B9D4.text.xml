@@ -1,0 +1,74 @@
+Document: ID=D0A4B9D4.text (2 sentences, 14 tokens)
+
+Sentence #1 (9 tokens):
+Hey Zelensky - Fuck Russia and the GOP.
+
+Tokens:
+[Text=Hey CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=hey NamedEntityTag=O]
+[Text=Zelensky CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Zelensky NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=- NamedEntityTag=O]
+[Text=Fuck CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=GOP CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Hey))
+    (NP (NNP Zelensky))
+    (, -)
+    (VP (VB Fuck)
+      (NP
+        (NP (NNP Russia))
+        (CC and)
+        (NP (DT the) (NNP GOP))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-4)
+discourse(Fuck-4, Hey-1)
+nsubj(Fuck-4, Zelensky-2)
+punct(Fuck-4, --3)
+obj(Fuck-4, Russia-5)
+cc(GOP-8, and-6)
+det(GOP-8, the-7)
+obj(Fuck-4, GOP-8)
+conj:and(Russia-5, GOP-8)
+punct(Fuck-4, .-9)
+
+Extracted the following NER entity mentions:
+Zelensky	PERSON	PERSON:0.9369529636542203
+Russia	COUNTRY	LOCATION:0.9502571337925056
+GOP	ORGANIZATION	ORGANIZATION:0.9205099891787762
+
+Sentence #2 (5 tokens):
+Keep fighting the good fight
+
+Tokens:
+[Text=Keep CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=fighting CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=VBG Lemma=fight NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=fight NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Keep)
+      (S
+        (VP (VBG fighting)
+          (NP (DT the) (JJ good) (NN fight)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Keep-1)
+xcomp(Keep-1, fighting-2)
+det(fight-5, the-3)
+amod(fight-5, good-4)
+obj(fighting-2, fight-5)
+
+Extracted the following NER entity mentions:

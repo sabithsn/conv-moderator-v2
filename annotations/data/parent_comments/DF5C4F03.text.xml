@@ -1,0 +1,70 @@
+Document: ID=DF5C4F03.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Kentucky Women Exposed For Running ‘Sexy Summer Camp’ For Kids, Encouraging Toddlers To Masturbate
+
+Tokens:
+[Text=Kentucky CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Kentucky NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Women CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Women NamedEntityTag=O]
+[Text=Exposed CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=expose NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Running CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Sexy CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=sexy NamedEntityTag=O]
+[Text=Summer CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=summer NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SU Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SU">Summer</TIMEX3>]
+[Text=Camp CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Camp NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Kids CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Encouraging CharacterOffsetBegin=64 CharacterOffsetEnd=75 PartOfSpeech=VBG Lemma=encourage NamedEntityTag=O]
+[Text=Toddlers CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=toddler NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Masturbate CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=masturbate NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Kentucky) (NNP Women))
+    (VP (VBN Exposed)
+      (PP (IN For)
+        (S
+          (VP (VBG Running) (`` ‘)
+            (NP
+              (NP
+                (NP (JJ Sexy) (NN Summer))
+                (NP (NNP Camp) (POS ’)))
+              (S
+                (PP (IN For)
+                  (NP (NNS Kids)))
+                (, ,)
+                (VP (VBG Encouraging)
+                  (NP (NNS Toddlers))
+                  (S
+                    (VP (TO To)
+                      (VP (VB Masturbate)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Exposed-3)
+compound(Women-2, Kentucky-1)
+nsubj(Exposed-3, Women-2)
+mark(Running-5, For-4)
+advcl:for(Exposed-3, Running-5)
+punct(Running-5, ‘-6)
+amod(Summer-8, Sexy-7)
+obj(Running-5, Summer-8)
+nmod:poss(Summer-8, Camp-9)
+case(Camp-9, ’-10)
+case(Kids-12, For-11)
+obl:for(Encouraging-14, Kids-12)
+punct(Encouraging-14, ,-13)
+dep(Summer-8, Encouraging-14)
+obj(Encouraging-14, Toddlers-15)
+nsubj:xsubj(Masturbate-17, Toddlers-15)
+mark(Masturbate-17, To-16)
+xcomp(Encouraging-14, Masturbate-17)
+
+Extracted the following NER entity mentions:
+Kentucky	STATE_OR_PROVINCE	LOCATION:0.808286644888201
+Summer	DATE	DATE:-1.0

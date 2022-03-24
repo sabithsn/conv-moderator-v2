@@ -1,0 +1,51 @@
+Document: ID=99AF8CE0.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Trump: People 'will be happy' about 2024 decision
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=People CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=about NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">about 2024</TIMEX3>]
+[Text=2024 CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">about 2024</TIMEX3>]
+[Text=decision CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=decision NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Trump))
+    (: :)
+    (NP
+      (NP (NNS People) (POS '))
+      (NML
+        (S
+          (VP (MD will)
+            (VP (VB be)
+              (ADJP (JJ happy) ('' ')
+                (PP (IN about)
+                  (NP (CD 2024))))))))
+      (NN decision))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Trump-1)
+punct(Trump-1, :-2)
+nmod:poss(decision-11, People-3)
+case(People-3, '-4)
+aux(happy-7, will-5)
+cop(happy-7, be-6)
+compound(decision-11, happy-7)
+punct(happy-7, '-8)
+case(2024-10, about-9)
+obl:about(happy-7, 2024-10)
+dep(Trump-1, decision-11)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.5196837366082737
+about 2024	DATE	DATE:-1.0

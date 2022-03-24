@@ -1,0 +1,88 @@
+Document: ID=5C471319.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+ELI5: Why is smiling (showing teeth) considered friendly and reassuring in humans, but threatening in most other mammals?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=smiling CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=smile NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=showing CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=show NamedEntityTag=O]
+[Text=teeth CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=tooth NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=considered CharacterOffsetBegin=37 CharacterOffsetEnd=47 PartOfSpeech=VBN Lemma=consider NamedEntityTag=O]
+[Text=friendly CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=friendly NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=reassuring CharacterOffsetBegin=61 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=reassuring NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=humans CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=human NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=threatening CharacterOffsetBegin=87 CharacterOffsetEnd=98 PartOfSpeech=VBG Lemma=threaten NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=mammals CharacterOffsetBegin=113 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=mammal NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ is)
+        (NP
+          (NP (VBG smiling))
+          (VP (-LRB- -LRB-) (VBG showing)
+            (NP (NNS teeth))
+            (-RRB- -RRB-)))
+        (VP (VBN considered)
+          (S
+            (ADJP (JJ friendly)
+              (CC and)
+              (JJ reassuring)))
+          (UCP
+            (PP (IN in)
+              (NP (NNS humans)))
+            (, ,)
+            (CC but)
+            (S
+              (VP (VBG threatening)
+                (PP (IN in)
+                  (NP (JJS most) (JJ other) (NNS mammals)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(considered-10, Why-3)
+aux:pass(considered-10, is-4)
+nsubj:pass(considered-10, smiling-5)
+punct(showing-7, (-6)
+acl(smiling-5, showing-7)
+obj(showing-7, teeth-8)
+punct(showing-7, )-9)
+parataxis(ELI5-1, considered-10)
+xcomp(considered-10, friendly-11)
+cc(reassuring-13, and-12)
+xcomp(considered-10, reassuring-13)
+conj:and(friendly-11, reassuring-13)
+case(humans-15, in-14)
+dep(considered-10, humans-15)
+punct(humans-15, ,-16)
+cc(threatening-18, but-17)
+dep(considered-10, threatening-18)
+conj:but(humans-15, threatening-18)
+case(mammals-22, in-19)
+amod(mammals-22, most-20)
+amod(mammals-22, other-21)
+obl:in(threatening-18, mammals-22)
+punct(ELI5-1, ?-23)
+
+Extracted the following NER entity mentions:

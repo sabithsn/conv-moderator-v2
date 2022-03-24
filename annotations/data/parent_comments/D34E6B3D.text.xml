@@ -1,0 +1,92 @@
+Document: ID=D34E6B3D.text (2 sentences, 20 tokens)
+
+Sentence #1 (14 tokens):
+Because making fun of people is easier to do than have legitimate conversations.
+
+Tokens:
+[Text=Because CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=fun NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=easier CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=JJR Lemma=easier NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=legitimate CharacterOffsetBegin=55 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=legitimate NamedEntityTag=O]
+[Text=conversations CharacterOffsetBegin=66 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=conversation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Because)
+      (S
+        (VP (VBG making))))
+    (NP
+      (NP (NN fun))
+      (PP (IN of)
+        (NP (NNS people))))
+    (VP (VBZ is)
+      (ADJP (JJR easier))
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (SBAR (IN than)
+              (S
+                (VP (VBP have)
+                  (NP (JJ legitimate) (NNS conversations)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, easier-7)
+mark(making-2, Because-1)
+advcl:because(easier-7, making-2)
+nsubj(easier-7, fun-3)
+nsubj:xsubj(do-9, fun-3)
+case(people-5, of-4)
+nmod:of(fun-3, people-5)
+cop(easier-7, is-6)
+mark(do-9, to-8)
+xcomp(easier-7, do-9)
+mark(have-11, than-10)
+advcl:than(do-9, have-11)
+amod(conversations-13, legitimate-12)
+obj(have-11, conversations-13)
+punct(easier-7, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+It’s the conservative way.
+
+Tokens:
+[Text=It CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=92 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=way CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP (DT the) (JJ conservative) (NN way)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, way-5)
+nsubj(way-5, It-1)
+cop(way-5, ’s-2)
+det(way-5, the-3)
+amod(way-5, conservative-4)
+punct(way-5, .-6)
+
+Extracted the following NER entity mentions:
+conservative	IDEOLOGY	-

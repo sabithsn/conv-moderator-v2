@@ -1,0 +1,78 @@
+Document: ID=72F08F04.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Everything had to be child friendly from when she woke up to when she went to bed.
+
+Tokens:
+[Text=Everything CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=friendly CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=friendly NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=woke CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=wake NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=bed CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=bed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Everything))
+    (VP (VBD had)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (NN child))
+              (ADJP (JJ friendly)
+                (PP (IN from)
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (PRP she))
+                      (VP (VBD woke)
+                        (PRT (RP up))
+                        (PP (IN to)
+                          (SBAR
+                            (WHADVP (WRB when))
+                            (S
+                              (NP (PRP she))
+                              (VP (VBD went)
+                                (PP (IN to)
+                                  (NP (NN bed)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-2)
+nsubj(had-2, Everything-1)
+nsubj:xsubj(child-5, Everything-1)
+mark(child-5, to-3)
+cop(child-5, be-4)
+xcomp(had-2, child-5)
+amod(child-5, friendly-6)
+mark(woke-10, from-7)
+advmod(woke-10, when-8)
+nsubj(woke-10, she-9)
+advcl:from(friendly-6, woke-10)
+compound:prt(woke-10, up-11)
+mark(went-15, to-12)
+advmod(went-15, when-13)
+nsubj(went-15, she-14)
+advcl:to(woke-10, went-15)
+case(bed-17, to-16)
+obl:to(went-15, bed-17)
+punct(had-2, .-18)
+
+Extracted the following NER entity mentions:
+she	PERSON	-
+she	PERSON	-

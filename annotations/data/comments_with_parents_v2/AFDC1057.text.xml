@@ -1,0 +1,416 @@
+Document: ID=AFDC1057.text (7 sentences, 103 tokens)
+
+Sentence #1 (26 tokens):
+>Keeping track of allergies/sugar/salt intake make it easier to market to individual kids later…  That is what you said.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Keeping CharacterOffsetBegin=1 CharacterOffsetEnd=8 PartOfSpeech=VBG Lemma=keep NamedEntityTag=O]
+[Text=track CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=track NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=allergies CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=allergy NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=/ NamedEntityTag=O]
+[Text=sugar CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=sugar NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=salt CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=salt NamedEntityTag=O]
+[Text=intake CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=intake NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=easier CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=JJR Lemma=easier NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=market NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=individual CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=individual NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=That CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NML
+          (S
+            (VP (VBG Keeping))))
+        (NN track)))
+    (PP (IN of)
+      (NP (NNS allergies)))
+    (, /)
+    (S
+      (S
+        (NP
+          (NML (NN sugar) (HYPH /) (NN salt))
+          (NN intake))
+        (VP (VBP make)
+          (S
+            (NP (PRP it))
+            (ADJP (JJR easier))
+            (S
+              (VP (TO to)
+                (VP (VB market)
+                  (PP (IN to)
+                    (NP (JJ individual) (NNS kids)))
+                  (ADVP (RB later))))))))
+      (: …)
+      (S
+        (NP (DT That))
+        (VP (VBZ is)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP you))
+              (VP (VBD said)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-11)
+dep(track-3, >-1)
+compound(track-3, Keeping-2)
+obl(make-11, track-3)
+case(allergies-5, of-4)
+obl:of(make-11, allergies-5)
+punct(make-11, /-6)
+compound(salt-9, sugar-7)
+punct(salt-9, /-8)
+compound(intake-10, salt-9)
+nsubj(make-11, intake-10)
+nsubj(market-15, it-12)
+dep(market-15, easier-13)
+mark(market-15, to-14)
+xcomp(make-11, market-15)
+case(kids-18, to-16)
+amod(kids-18, individual-17)
+obl:to(market-15, kids-18)
+advmod(market-15, later-19)
+punct(make-11, …-20)
+nsubj(is-22, That-21)
+parataxis(make-11, is-22)
+obj(said-25, what-23)
+nsubj(said-25, you-24)
+ccomp(is-22, said-25)
+punct(make-11, .-26)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+You should read what you said.
+
+Tokens:
+[Text=You CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should)
+      (VP (VB read)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBD said))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, read-3)
+nsubj(read-3, You-1)
+aux(read-3, should-2)
+obj(said-6, what-4)
+nsubj(said-6, you-5)
+ccomp(read-3, said-6)
+punct(read-3, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (12 tokens):
+The companies are not responsible for the food for the district.
+
+Tokens:
+[Text=The CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=companies CharacterOffsetBegin=158 CharacterOffsetEnd=167 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=176 CharacterOffsetEnd=187 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=district CharacterOffsetBegin=209 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=district NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNS companies))
+    (VP (VBP are) (RB not)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN food))
+            (PP (IN for)
+              (NP (DT the) (NN district)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, responsible-5)
+det(companies-2, The-1)
+nsubj(responsible-5, companies-2)
+cop(responsible-5, are-3)
+advmod(responsible-5, not-4)
+case(food-8, for-6)
+det(food-8, the-7)
+obl:for(responsible-5, food-8)
+case(district-11, for-9)
+det(district-11, the-10)
+nmod:for(food-8, district-11)
+punct(responsible-5, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (7 tokens):
+The head of Food Service is.
+
+Tokens:
+[Text=The CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=head CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=head NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Food CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=NNP Lemma=Food NamedEntityTag=ORGANIZATION]
+[Text=Service CharacterOffsetBegin=236 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=Service NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=246 CharacterOffsetEnd=247 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN head))
+      (PP (IN of)
+        (NP (NNP Food) (NNP Service))))
+    (VP (VBZ is))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-6)
+det(head-2, The-1)
+nsubj(is-6, head-2)
+case(Service-5, of-3)
+compound(Service-5, Food-4)
+nmod:of(head-2, Service-5)
+punct(is-6, .-7)
+
+Extracted the following NER entity mentions:
+Food Service	ORGANIZATION	ORGANIZATION:0.9924090611768106
+
+Sentence #5 (5 tokens):
+He makes the menus .
+
+Tokens:
+[Text=He CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=menus CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NNS Lemma=menu NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ makes)
+      (NP (DT the) (NNS menus)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-2)
+nsubj(makes-2, He-1)
+det(menus-4, the-3)
+obj(makes-2, menus-4)
+punct(makes-2, .-5)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #6 (29 tokens):
+Then it is up to each individual school to give the kids what they can eat depending on each file when the child gives in their pin code.
+
+Tokens:
+[Text=Then CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=individual CharacterOffsetBegin=291 CharacterOffsetEnd=301 PartOfSpeech=JJ Lemma=individual NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=302 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=321 CharacterOffsetEnd=325 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=326 CharacterOffsetEnd=330 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=eat NamedEntityTag=O]
+[Text=depending CharacterOffsetBegin=344 CharacterOffsetEnd=353 PartOfSpeech=VBG Lemma=depend NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=357 CharacterOffsetEnd=361 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=file CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=NN Lemma=file NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=gives CharacterOffsetBegin=382 CharacterOffsetEnd=387 PartOfSpeech=VBZ Lemma=give NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=391 CharacterOffsetEnd=396 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=pin CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=NN Lemma=pin NamedEntityTag=O]
+[Text=code CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=NN Lemma=code NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADVP (RB up)
+        (PP (IN to)
+          (NP (DT each) (JJ individual) (NN school))))
+      (S
+        (VP (TO to)
+          (VP (VB give)
+            (NP
+              (NP (DT the) (NNS kids))
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP they))
+                  (VP (MD can)
+                    (VP (VB eat)
+                      (PP (VBG depending)
+                        (PP (IN on)
+                          (NP (DT each) (NN file))))))))))))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NN child))
+          (VP (VBZ gives)
+            (PP (IN in)
+              (NP (PRP$ their) (NN pin) (NN code)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+advmod(is-3, Then-1)
+nsubj(is-3, it-2)
+nsubj:xsubj(give-10, it-2)
+advmod(is-3, up-4)
+case(school-8, to-5)
+det(school-8, each-6)
+amod(school-8, individual-7)
+obl:to(up-4, school-8)
+mark(give-10, to-9)
+xcomp(is-3, give-10)
+det(kids-12, the-11)
+obj(give-10, kids-12)
+obj(eat-16, kids-12)
+ref(kids-12, what-13)
+nsubj(eat-16, they-14)
+aux(eat-16, can-15)
+acl:relcl(kids-12, eat-16)
+case(file-20, depending-17)
+case(file-20, on-18)
+det(file-20, each-19)
+advcl:on(eat-16, file-20)
+advmod(gives-24, when-21)
+det(child-23, the-22)
+nsubj(gives-24, child-23)
+advcl(is-3, gives-24)
+case(code-28, in-25)
+nmod:poss(code-28, their-26)
+compound(code-28, pin-27)
+obl:in(gives-24, code-28)
+punct(is-3, .-29)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (17 tokens):
+That info is not given to companies being that its against the law to do so.
+
+Tokens:
+[Text=That CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=info CharacterOffsetBegin=413 CharacterOffsetEnd=417 PartOfSpeech=NN Lemma=info NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=given CharacterOffsetBegin=425 CharacterOffsetEnd=430 PartOfSpeech=VBN Lemma=give NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=companies CharacterOffsetBegin=434 CharacterOffsetEnd=443 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=444 CharacterOffsetEnd=449 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=450 CharacterOffsetEnd=454 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=459 CharacterOffsetEnd=466 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=471 CharacterOffsetEnd=474 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=475 CharacterOffsetEnd=477 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=478 CharacterOffsetEnd=480 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=481 CharacterOffsetEnd=483 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=483 CharacterOffsetEnd=484 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That) (NN info))
+    (VP (VBZ is) (RB not)
+      (VP (VBN given)
+        (PP (IN to)
+          (NP (NNS companies)))
+        (S
+          (VP (VBG being)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (PRP$ its))
+                  (PP (IN against)
+                    (NP (DT the) (NN law))))
+                (VP (TO to)
+                  (VP (VB do)
+                    (ADVP (RB so))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, given-5)
+det(info-2, That-1)
+nsubj:pass(given-5, info-2)
+aux:pass(given-5, is-3)
+advmod(given-5, not-4)
+case(companies-7, to-6)
+obl:to(given-5, companies-7)
+xcomp(given-5, being-8)
+mark(do-15, that-9)
+nsubj(do-15, its-10)
+case(law-13, against-11)
+det(law-13, the-12)
+nmod:against(its-10, law-13)
+mark(do-15, to-14)
+ccomp(being-8, do-15)
+advmod(do-15, so-16)
+punct(given-5, .-17)
+
+Extracted the following NER entity mentions:

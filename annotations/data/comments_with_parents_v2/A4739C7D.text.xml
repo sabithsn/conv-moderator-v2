@@ -1,0 +1,84 @@
+Document: ID=A4739C7D.text (2 sentences, 19 tokens)
+
+Sentence #1 (15 tokens):
+Rupa Subramanya: Trudeau tells other world leaders to 'dialogue' with protesters.
+
+Tokens:
+[Text=Rupa CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Rupa NamedEntityTag=PERSON]
+[Text=Subramanya CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Subramanya NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Trudeau CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Trudeau NamedEntityTag=PERSON]
+[Text=tells CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=leaders CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=leader NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=dialogue CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=dialogue NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=protesters CharacterOffsetBegin=70 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=protester NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Rupa) (NNP Subramanya))
+    (: :)
+    (S
+      (NP (NNP Trudeau))
+      (VP (VBZ tells)
+        (NP (JJ other) (NN world) (NNS leaders))
+        (PP (IN to)
+          (NP
+            (NP (`` ') (NN dialogue) ('' '))
+            (PP (IN with)
+              (NP (NNS protesters)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Subramanya-2)
+compound(Subramanya-2, Rupa-1)
+punct(Subramanya-2, :-3)
+nsubj(tells-5, Trudeau-4)
+parataxis(Subramanya-2, tells-5)
+amod(leaders-8, other-6)
+compound(leaders-8, world-7)
+obj(tells-5, leaders-8)
+case(dialogue-11, to-9)
+punct(dialogue-11, '-10)
+obl:to(tells-5, dialogue-11)
+punct(dialogue-11, '-12)
+case(protesters-14, with-13)
+nmod:with(dialogue-11, protesters-14)
+punct(Subramanya-2, .-15)
+
+Extracted the following NER entity mentions:
+Rupa Subramanya	PERSON	PERSON:0.9992620140311793
+Trudeau	PERSON	PERSON:0.9915954023459442
+
+Sentence #2 (4 tokens):
+But he won't
+
+Tokens:
+[Text=But CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=wo CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (PRP he))
+    (VP (MD wo) (RB n't))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wo-3)
+cc(wo-3, But-1)
+nsubj(wo-3, he-2)
+advmod(wo-3, n't-4)
+
+Extracted the following NER entity mentions:
+he	PERSON	-

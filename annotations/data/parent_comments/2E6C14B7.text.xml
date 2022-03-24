@@ -1,0 +1,123 @@
+Document: ID=2E6C14B7.text (3 sentences, 27 tokens)
+
+Sentence #1 (10 tokens):
+You don’t have to say “this”.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB n’t)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB say) (`` “)
+              (NP (DT this))
+              ('' ”))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+nsubj(have-4, You-1)
+nsubj:xsubj(say-6, You-1)
+aux(have-4, do-2)
+advmod(have-4, n’t-3)
+mark(say-6, to-5)
+xcomp(have-4, say-6)
+punct(say-6, “-7)
+obj(say-6, this-8)
+punct(say-6, ”-9)
+punct(have-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Just add your statements and move on.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=add CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=add NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=statements CharacterOffsetBegin=44 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=statement NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=move NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=on NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Just))
+    (VP
+      (VP (VB add)
+        (NP (PRP$ your) (NNS statements)))
+      (CC and)
+      (VP (VB move)
+        (ADVP (RB on))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, add-2)
+advmod(add-2, Just-1)
+nmod:poss(statements-4, your-3)
+obj(add-2, statements-4)
+cc(move-6, and-5)
+conj:and(add-2, move-6)
+advmod(move-6, on-7)
+punct(add-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+It makes you sound like a teenage girl.
+
+Tokens:
+[Text=It CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=teenage CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=teenage NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ makes)
+      (S
+        (NP (PRP you))
+        (VP (VB sound)
+          (PP (IN like)
+            (NP (DT a) (JJ teenage) (NN girl))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-2)
+nsubj(makes-2, It-1)
+nsubj(sound-4, you-3)
+ccomp(makes-2, sound-4)
+case(girl-8, like-5)
+det(girl-8, a-6)
+amod(girl-8, teenage-7)
+obl:like(sound-4, girl-8)
+punct(makes-2, .-9)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,64 @@
+Document: ID=486F35CB.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Trump 'TRUTH Social' developing content moderation practices to ensure 'family-friendly' community
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=TRUTH CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=truth NamedEntityTag=O]
+[Text=Social CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Social NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=developing CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=develop NamedEntityTag=O]
+[Text=content CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=content NamedEntityTag=O]
+[Text=moderation CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=moderation NamedEntityTag=O]
+[Text=practices CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=practice NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ensure CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=ensure NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=friendly CharacterOffsetBegin=79 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=friendly NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=community CharacterOffsetBegin=89 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=community NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NNP Trump) (POS '))
+        (NN TRUTH))
+      (NP
+        (NP (NNP Social) (POS '))
+        (VBG developing) (NN content)))
+    (NP (NN moderation) (NNS practices)
+      (S
+        (VP (TO to)
+          (VP (VB ensure)
+            (NP (`` ')
+              (ADJP (NN family) (HYPH -) (JJ friendly))
+              ('' ') (NN community))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, TRUTH-3)
+nmod:poss(TRUTH-3, Trump-1)
+case(Trump-1, '-2)
+nmod:poss(content-7, Social-4)
+case(Social-4, '-5)
+amod(content-7, developing-6)
+dep(TRUTH-3, content-7)
+compound(practices-9, moderation-8)
+dep(TRUTH-3, practices-9)
+mark(ensure-11, to-10)
+acl:to(practices-9, ensure-11)
+punct(community-17, '-12)
+obl:npmod(friendly-15, family-13)
+punct(friendly-15, --14)
+amod(community-17, friendly-15)
+punct(community-17, '-16)
+obj(ensure-11, community-17)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.72439736405746

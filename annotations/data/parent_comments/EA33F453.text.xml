@@ -1,0 +1,104 @@
+Document: ID=EA33F453.text (3 sentences, 21 tokens)
+
+Sentence #1 (3 tokens):
+Climate Morality.
+
+Tokens:
+[Text=Climate CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Climate NamedEntityTag=O]
+[Text=Morality CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Morality NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Climate) (NNP Morality) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Morality-2)
+compound(Morality-2, Climate-1)
+punct(Morality-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+“Every decent man is ashamed of the government he lives under.”
+
+Tokens:
+[Text=“ CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Every CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=decent CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=decent NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=ashamed CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=ashamed NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=54 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=lives CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=VBZ Lemma=live NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` “)
+    (NP (DT Every) (JJ decent) (NN man))
+    (VP (VBZ is)
+      (ADJP (JJ ashamed)
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN government))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBZ lives)
+                  (PP (IN under)))))))))
+    (. .) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ashamed-6)
+punct(ashamed-6, “-1)
+det(man-4, Every-2)
+amod(man-4, decent-3)
+nsubj(ashamed-6, man-4)
+cop(ashamed-6, is-5)
+case(government-9, of-7)
+det(government-9, the-8)
+obl:of(ashamed-6, government-9)
+nsubj(lives-11, he-10)
+acl:relcl(government-9, lives-11)
+obl(lives-11, under-12)
+punct(ashamed-6, .-13)
+punct(ashamed-6, ”-14)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #3 (4 tokens):
+- H. L. Mencken
+
+Tokens:
+[Text=- CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=H. CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=H. NamedEntityTag=PERSON]
+[Text=L. CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=L. NamedEntityTag=PERSON]
+[Text=Mencken CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=Mencken NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (PP (HYPH -)
+        (NP (NNP H.)))
+      (NNP L.))
+    (NP (NNP Mencken))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, L.-3)
+punct(H.-2, --1)
+nmod(L.-3, H.-2)
+appos(L.-3, Mencken-4)
+
+Extracted the following NER entity mentions:
+H. L. Mencken	PERSON	PERSON:0.9932233333380746

@@ -1,0 +1,209 @@
+Document: ID=0746DDB5.text (4 sentences, 49 tokens)
+
+Sentence #1 (24 tokens):
+RelevantWords=0  RandInt; InsultChart2  RandInt=7  Disp; InsultChart2-Int7  >"So not only do you sound stupid.
+
+Tokens:
+[Text=RelevantWords CharacterOffsetBegin=0 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=relevantword NamedEntityTag=O]
+[Text== CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=SYM Lemma== NamedEntityTag=O]
+[Text=0 CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=CD Lemma=0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=RandInt CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=randint NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=InsultChart2 CharacterOffsetBegin=26 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=insultchart2 NamedEntityTag=O]
+[Text=RandInt CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=randint NamedEntityTag=O]
+[Text== CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=SYM Lemma== NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=Disp CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=disp NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=InsultChart2 CharacterOffsetBegin=57 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=insultchart2 NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Int7 CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=int7 NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=So CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=VB Lemma=sound NamedEntityTag=O]
+[Text=stupid CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=stupid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS RelevantWords))
+    (VP (SYM =)
+      (NP
+        (NP (CD 0) (NN RandInt))
+        (: ;)
+        (S
+          (NP (NN InsultChart2) (NN RandInt))
+          (VP (SYM =)
+            (NP
+              (NP (CD 7) (NN Disp))
+              (: ;)
+              (S
+                (NP (NN InsultChart2) (HYPH -) (NN Int7))
+                (VP (SYM >)
+                  (NP
+                    (SBAR
+                      (S
+                        (VP
+                          (ADVP ('' ") (RB So) (RB not))))
+                      (VP
+                        (ADVP (RB only))
+                        (VBP do)))
+                    (NP
+                      (NP (PRP you))
+                      (SBAR
+                        (S
+                          (VP (VB sound)
+                            (ADJP (JJ stupid))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, RandInt-4)
+nsubj(RandInt-4, RelevantWords-1)
+dep(RandInt-4, =-2)
+nummod(RandInt-4, 0-3)
+punct(RandInt-4, ;-5)
+compound(RandInt-7, InsultChart2-6)
+nsubj(Disp-10, RandInt-7)
+dep(Disp-10, =-8)
+nummod(Disp-10, 7-9)
+dep(RandInt-4, Disp-10)
+punct(Disp-10, ;-11)
+compound(Int7-14, InsultChart2-12)
+punct(Int7-14, --13)
+nsubj(you-21, Int7-14)
+dep(you-21, >-15)
+punct(not-18, "-16)
+advmod(not-18, So-17)
+dep(you-21, not-18)
+advmod(do-20, only-19)
+dep(not-18, do-20)
+dep(Disp-10, you-21)
+acl:relcl(you-21, sound-22)
+xcomp(sound-22, stupid-23)
+punct(RandInt-4, .-24)
+
+Extracted the following NER entity mentions:
+0	NUMBER	NUMBER:-1.0
+7	NUMBER	NUMBER:-1.0
+
+Sentence #2 (14 tokens):
+But you double it down with your inability to conjure up a thought.
+
+Tokens:
+[Text=But CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=double CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=VBP Lemma=double NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=inability CharacterOffsetBegin=144 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=inability NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=conjure CharacterOffsetBegin=157 CharacterOffsetEnd=164 PartOfSpeech=VB Lemma=conjure NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=170 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=thought NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (PRP you))
+    (VP (VBP double)
+      (NP (PRP it))
+      (PRT (RP down))
+      (PP (IN with)
+        (NP (PRP$ your) (NN inability)))
+      (S
+        (VP (TO to)
+          (VP (VB conjure)
+            (PRT (RP up))
+            (NP (DT a) (NN thought))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, double-3)
+cc(double-3, But-1)
+nsubj(double-3, you-2)
+obj(double-3, it-4)
+compound:prt(double-3, down-5)
+case(inability-8, with-6)
+nmod:poss(inability-8, your-7)
+obl:with(double-3, inability-8)
+mark(conjure-10, to-9)
+advcl:to(double-3, conjure-10)
+compound:prt(conjure-10, up-11)
+det(thought-13, a-12)
+obj(conjure-10, thought-13)
+punct(double-3, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+Pathetic"  Beep-boop.
+
+Tokens:
+[Text=Pathetic CharacterOffsetBegin=179 CharacterOffsetEnd=187 PartOfSpeech=JJ Lemma=pathetic NamedEntityTag=MISC]
+[Text=" CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Beep CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=beep NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=194 CharacterOffsetEnd=195 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=boop CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=boop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Pathetic))
+    (NP
+      (NP (`` ") (NN Beep))
+      (HYPH -)
+      (NP (NN boop)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pathetic-1)
+punct(Beep-3, "-2)
+dep(Pathetic-1, Beep-3)
+punct(Beep-3, --4)
+dep(Beep-3, boop-5)
+punct(Pathetic-1, .-6)
+
+Extracted the following NER entity mentions:
+Pathetic	MISC	MISC:0.7221244311437167
+
+Sentence #4 (5 tokens):
+You are a human.
+
+Tokens:
+[Text=You CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=human CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=JJ Lemma=human NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (NP (DT a) (JJ human)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, human-4)
+nsubj(human-4, You-1)
+cop(human-4, are-2)
+det(human-4, a-3)
+punct(human-4, .-5)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,327 @@
+Document: ID=E9B40BFD.text (7 sentences, 73 tokens)
+
+Sentence #1 (13 tokens):
+My topic is the 100,000 dying from illegal fentanyl crossing the border.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=topic CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=topic NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=100,000 CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=100,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=100000.0]
+[Text=dying CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=die NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=illegal CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=illegal NamedEntityTag=O]
+[Text=fentanyl CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=fentanyl NamedEntityTag=O]
+[Text=crossing CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=cross NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=border CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=border NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN topic))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (CD 100,000))
+        (VP (VBG dying)
+          (PP (IN from)
+            (NP (JJ illegal) (NN fentanyl)))
+          (S
+            (VP (VBG crossing)
+              (NP (DT the) (NN border)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 100,000-5)
+nmod:poss(topic-2, My-1)
+nsubj(100,000-5, topic-2)
+cop(100,000-5, is-3)
+det(100,000-5, the-4)
+acl(100,000-5, dying-6)
+case(fentanyl-9, from-7)
+amod(fentanyl-9, illegal-8)
+obl:from(dying-6, fentanyl-9)
+advcl(dying-6, crossing-10)
+det(border-12, the-11)
+obj(crossing-10, border-12)
+punct(100,000-5, .-13)
+
+Extracted the following NER entity mentions:
+100,000	NUMBER	NUMBER:-1.0
+
+Sentence #2 (9 tokens):
+Lots of other drugs are classified as opiods.
+
+Tokens:
+[Text=Lots CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=NNS Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=drugs CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=drug NamedEntityTag=CRIMINAL_CHARGE]
+[Text=are CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=classified CharacterOffsetBegin=97 CharacterOffsetEnd=107 PartOfSpeech=VBN Lemma=classify NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=opiods CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=opiod NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Lots))
+      (PP (IN of)
+        (NP (JJ other) (NNS drugs))))
+    (VP (VBP are)
+      (VP (VBN classified)
+        (PP (IN as)
+          (NP (NNS opiods)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, classified-6)
+det:qmod(drugs-4, Lots-1)
+fixed(Lots-1, of-2)
+amod(drugs-4, other-3)
+nsubj:pass(classified-6, drugs-4)
+aux:pass(classified-6, are-5)
+case(opiods-8, as-7)
+obl:as(classified-6, opiods-8)
+punct(classified-6, .-9)
+
+Extracted the following NER entity mentions:
+drugs	CRIMINAL_CHARGE	-
+
+Sentence #3 (19 tokens):
+I am speaking about the Chinese manufactured Fentanyl crossing the border that killed over 100,000 Americans last year.
+
+Tokens:
+[Text=I CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=speaking CharacterOffsetBegin=124 CharacterOffsetEnd=132 PartOfSpeech=VBG Lemma=speak NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chinese CharacterOffsetBegin=143 CharacterOffsetEnd=150 PartOfSpeech=JJ Lemma=chinese NamedEntityTag=NATIONALITY]
+[Text=manufactured CharacterOffsetBegin=151 CharacterOffsetEnd=163 PartOfSpeech=JJ Lemma=manufactured NamedEntityTag=O]
+[Text=Fentanyl CharacterOffsetBegin=164 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=fentanyl NamedEntityTag=MISC]
+[Text=crossing CharacterOffsetBegin=173 CharacterOffsetEnd=181 PartOfSpeech=VBG Lemma=cross NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=border CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=border NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=VBD Lemma=kill NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=100,000 CharacterOffsetBegin=210 CharacterOffsetEnd=217 PartOfSpeech=CD Lemma=100,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=>100000.0]
+[Text=Americans CharacterOffsetBegin=218 CharacterOffsetEnd=227 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=last CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y OFFSET P-1Y Timex=<TIMEX3 alt_value="THIS P1Y OFFSET P-1Y" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last year</TIMEX3>]
+[Text=year CharacterOffsetBegin=233 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y OFFSET P-1Y Timex=<TIMEX3 alt_value="THIS P1Y OFFSET P-1Y" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last year</TIMEX3>]
+[Text=. CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBG speaking)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (JJ Chinese) (JJ manufactured) (NN Fentanyl))
+            (VP (VBG crossing)
+              (NP
+                (NP (DT the) (NN border))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD killed)
+                      (PP (IN over)
+                        (NP (CD 100,000) (NNPS Americans)))
+                      (NP-TMP (JJ last) (NN year)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, speaking-3)
+nsubj(speaking-3, I-1)
+aux(speaking-3, am-2)
+case(Fentanyl-8, about-4)
+det(Fentanyl-8, the-5)
+amod(Fentanyl-8, Chinese-6)
+amod(Fentanyl-8, manufactured-7)
+obl:about(speaking-3, Fentanyl-8)
+acl(Fentanyl-8, crossing-9)
+det(border-11, the-10)
+obj(crossing-9, border-11)
+nsubj(killed-13, border-11)
+ref(border-11, that-12)
+acl:relcl(border-11, killed-13)
+case(Americans-16, over-14)
+nummod(Americans-16, 100,000-15)
+obl:over(killed-13, Americans-16)
+amod(year-18, last-17)
+obl:tmod(killed-13, year-18)
+punct(speaking-3, .-19)
+
+Extracted the following NER entity mentions:
+Chinese	NATIONALITY	MISC:0.9999988866682032
+Fentanyl	MISC	MISC:0.8848899381794975
+100,000	NUMBER	NUMBER:-1.0
+Americans	MISC	MISC:0.9999750969813066
+last year	DATE	DATE:-1.0
+
+Sentence #4 (11 tokens):
+I think it’s 2nd grade we learn reading comprehension.
+
+Tokens:
+[Text=I CharacterOffsetBegin=241 CharacterOffsetEnd=242 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=2nd CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=JJ Lemma=2nd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=grade CharacterOffsetBegin=258 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=grade NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=learn CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=VBP Lemma=learn NamedEntityTag=O]
+[Text=reading CharacterOffsetBegin=273 CharacterOffsetEnd=280 PartOfSpeech=NN Lemma=reading NamedEntityTag=O]
+[Text=comprehension CharacterOffsetBegin=281 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=comprehension NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ ’s)
+            (NP
+              (NP (JJ 2nd) (NN grade))
+              (SBAR
+                (S
+                  (NP (PRP we))
+                  (VP (VBP learn)
+                    (NP (NN reading) (NN comprehension))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(grade-6, it-3)
+cop(grade-6, ’s-4)
+amod(grade-6, 2nd-5)
+ccomp(think-2, grade-6)
+nsubj(learn-8, we-7)
+acl:relcl(grade-6, learn-8)
+compound(comprehension-10, reading-9)
+obj(learn-8, comprehension-10)
+punct(think-2, .-11)
+
+Extracted the following NER entity mentions:
+2nd	ORDINAL	ORDINAL:-1.0
+
+Sentence #5 (6 tokens):
+You need to go back?
+
+Tokens:
+[Text=You CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=305 CharacterOffsetEnd=307 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB go)
+            (ADVP (RB back))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-2)
+nsubj(need-2, You-1)
+nsubj:xsubj(go-4, You-1)
+mark(go-4, to-3)
+xcomp(need-2, go-4)
+advmod(go-4, back-5)
+punct(need-2, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (8 tokens):
+I never brought up the pharmaceutical industry.
+
+Tokens:
+[Text=I CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=brought CharacterOffsetBegin=326 CharacterOffsetEnd=333 PartOfSpeech=VBD Lemma=bring NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pharmaceutical CharacterOffsetBegin=341 CharacterOffsetEnd=355 PartOfSpeech=NN Lemma=pharmaceutical NamedEntityTag=O]
+[Text=industry CharacterOffsetBegin=356 CharacterOffsetEnd=364 PartOfSpeech=NN Lemma=industry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=364 CharacterOffsetEnd=365 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD brought)
+      (PRT (RP up))
+      (NP (DT the) (NN pharmaceutical) (NN industry)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, brought-3)
+nsubj(brought-3, I-1)
+advmod(brought-3, never-2)
+compound:prt(brought-3, up-4)
+det(industry-7, the-5)
+compound(industry-7, pharmaceutical-6)
+obj(brought-3, industry-7)
+punct(brought-3, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (7 tokens):
+Stay on topic or get lost.
+
+Tokens:
+[Text=Stay CharacterOffsetBegin=366 CharacterOffsetEnd=370 PartOfSpeech=VB Lemma=stay NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=371 CharacterOffsetEnd=373 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=topic CharacterOffsetBegin=374 CharacterOffsetEnd=379 PartOfSpeech=NN Lemma=topic NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=380 CharacterOffsetEnd=382 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=lost CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=VBN Lemma=lose NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Stay)
+        (PP (IN on)
+          (NP (NN topic))))
+      (CC or)
+      (VP (VB get)
+        (VP (VBN lost))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stay-1)
+case(topic-3, on-2)
+obl:on(Stay-1, topic-3)
+cc(lost-6, or-4)
+aux:pass(lost-6, get-5)
+conj:or(Stay-1, lost-6)
+punct(Stay-1, .-7)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,85 @@
+Document: ID=39F2A9D7.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+Psaki: There Is A ‘Distinct Difference’ Between Blue State Governors Defying CDC Guidelines And DeSantis ‘Standing In The Way’
+
+Tokens:
+[Text=Psaki CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Psaki NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=There CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Distinct CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=distinct NamedEntityTag=O]
+[Text=Difference CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=Between CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=Blue CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Blue NamedEntityTag=O]
+[Text=State CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=State NamedEntityTag=O]
+[Text=Governors CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Governors NamedEntityTag=O]
+[Text=Defying CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=defy NamedEntityTag=O]
+[Text=CDC CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=CDC NamedEntityTag=O]
+[Text=Guidelines CharacterOffsetBegin=81 CharacterOffsetEnd=91 PartOfSpeech=NNPS Lemma=Guidelines NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=DeSantis CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=NNPS Lemma=DeSantis NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Standing CharacterOffsetBegin=106 CharacterOffsetEnd=114 PartOfSpeech=VBG Lemma=stand NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Way CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Psaki))
+    (: :)
+    (S
+      (NP (EX There))
+      (VP (VBZ Is)
+        (NP
+          (NP (DT A) (`` ‘) (JJ Distinct) (NN Difference) ('' ’))
+          (PP (IN Between)
+            (NP
+              (NP (NNP Blue) (NNP State) (NNP Governors))
+              (VP (VBG Defying)
+                (NP
+                  (NP (NNP CDC) (NNPS Guidelines)
+                    (CC And)
+                    (NNPS DeSantis))
+                  (FRAG (`` ‘)
+                    (VP (VBG Standing)
+                      (PP (IN In)
+                        (NP (DT The) (NN Way))))
+                    ('' ’)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Psaki-1)
+punct(Psaki-1, :-2)
+expl(Is-4, There-3)
+parataxis(Psaki-1, Is-4)
+det(Difference-8, A-5)
+punct(Difference-8, ‘-6)
+amod(Difference-8, Distinct-7)
+nsubj(Is-4, Difference-8)
+punct(Difference-8, ’-9)
+case(Governors-13, Between-10)
+compound(Governors-13, Blue-11)
+compound(Governors-13, State-12)
+nmod:between(Difference-8, Governors-13)
+acl(Governors-13, Defying-14)
+compound(Guidelines-16, CDC-15)
+obj(Defying-14, Guidelines-16)
+cc(DeSantis-18, And-17)
+obj(Defying-14, DeSantis-18)
+conj:and(Guidelines-16, DeSantis-18)
+punct(Standing-20, ‘-19)
+dep(Guidelines-16, Standing-20)
+case(Way-23, In-21)
+det(Way-23, The-22)
+obl:in(Standing-20, Way-23)
+punct(Standing-20, ’-24)
+
+Extracted the following NER entity mentions:
+Psaki	PERSON	PERSON:0.9263761542189777

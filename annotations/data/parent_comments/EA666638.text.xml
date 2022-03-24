@@ -1,0 +1,79 @@
+Document: ID=EA666638.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Kanye West is cringy and overhyped and he really doesn't deserve the amount of attention he gets.
+
+Tokens:
+[Text=Kanye CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Kanye NamedEntityTag=PERSON]
+[Text=West CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=West NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=cringy CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=cringy NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=overhyped CharacterOffsetBegin=25 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=overhyped NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=deserve CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=deserve NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=attention CharacterOffsetBegin=79 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=attention NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=gets CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Kanye) (NNP West))
+      (VP (VBZ is)
+        (ADJP (JJ cringy)
+          (CC and)
+          (JJ overhyped))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (ADVP (RB really))
+      (VP (VBZ does) (RB n't)
+        (VP (VB deserve)
+          (NP
+            (NP (DT the) (NN amount))
+            (PP (IN of)
+              (NP
+                (NP (NN attention))
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP (VBZ gets))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cringy-4)
+compound(West-2, Kanye-1)
+nsubj(cringy-4, West-2)
+nsubj(overhyped-6, West-2)
+cop(cringy-4, is-3)
+cc(overhyped-6, and-5)
+conj:and(cringy-4, overhyped-6)
+cc(deserve-12, and-7)
+nsubj(deserve-12, he-8)
+advmod(deserve-12, really-9)
+aux(deserve-12, does-10)
+advmod(deserve-12, n't-11)
+conj:and(cringy-4, deserve-12)
+det(amount-14, the-13)
+obj(deserve-12, amount-14)
+case(attention-16, of-15)
+nmod:of(amount-14, attention-16)
+nsubj(gets-18, he-17)
+acl:relcl(attention-16, gets-18)
+punct(cringy-4, .-19)
+
+Extracted the following NER entity mentions:
+Kanye West	PERSON	PERSON:0.8693230010293421
+he	PERSON	-
+he	PERSON	-

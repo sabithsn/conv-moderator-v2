@@ -1,0 +1,78 @@
+Document: ID=3057B196.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+A 16yr old has more money than you, lmao don’t flex try n flex your 9-5
+
+Tokens:
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=16 CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=CD Lemma=16 NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16yr old</TIMEX3>]
+[Text=yr CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=yr NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16yr old</TIMEX3>]
+[Text=old CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16yr old</TIMEX3>]
+[Text=has CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=lmao CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=FW Lemma=lmao NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=flex CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=flex NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=n CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=n NamedEntityTag=O]
+[Text=flex CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=flex NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=9 CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=CD Lemma=9 NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.0 - 5.0]
+[Text=- CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=HYPH Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.0 - 5.0]
+[Text=5 CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.0 - 5.0]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A)
+      (ADJP
+        (NML (CD 16) (NN yr))
+        (JJ old)))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (JJR more) (NN money))
+          (PP (IN than)
+            (NP (PRP you))))
+        (, ,)
+        (PRN
+          (S
+            (NP (FW lmao))
+            (VP (VBP do) (RB n’t)
+              (VP (JJ flex) (VB try)
+                (NP (NN n) (JJ flex))))))
+        (NP (PRP$ your)
+          (NML (CD 9) (HYPH -) (CD 5)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-5)
+det(old-4, A-1)
+nummod(yr-3, 16-2)
+dep(old-4, yr-3)
+nsubj(has-5, old-4)
+amod(money-7, more-6)
+obj(has-5, money-7)
+case(you-9, than-8)
+nmod:than(money-7, you-9)
+punct(money-7, ,-10)
+nsubj(try-15, lmao-11)
+aux(try-15, do-12)
+advmod(try-15, n’t-13)
+dep(try-15, flex-14)
+dep(money-7, try-15)
+obj(try-15, n-16)
+amod(n-16, flex-17)
+nmod:poss(5-21, your-18)
+nummod(5-21, 9-19)
+punct(5-21, --20)
+dep(money-7, 5-21)
+
+Extracted the following NER entity mentions:
+16yr old	DURATION	DURATION:-1.0
+9-5	NUMBER	NUMBER:-1.0

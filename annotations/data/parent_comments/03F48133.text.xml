@@ -1,0 +1,90 @@
+Document: ID=03F48133.text (2 sentences, 21 tokens)
+
+Sentence #1 (16 tokens):
+I could say the same thing about your grammar, but that's beneath me.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=grammar CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=grammar NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=beneath CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=beneath NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD could)
+        (VP (VB say)
+          (NP (DT the) (JJ same) (NN thing))
+          (PP (IN about)
+            (NP (PRP$ your) (NN grammar))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (VBZ 's)
+        (PP (IN beneath)
+          (NP (PRP me)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-3)
+nsubj(say-3, I-1)
+aux(say-3, could-2)
+det(thing-6, the-4)
+amod(thing-6, same-5)
+obj(say-3, thing-6)
+case(grammar-9, about-7)
+nmod:poss(grammar-9, your-8)
+obl:about(say-3, grammar-9)
+punct(say-3, ,-10)
+cc(me-15, but-11)
+nsubj(me-15, that-12)
+cop(me-15, 's-13)
+case(me-15, beneath-14)
+conj:but(say-3, me-15)
+punct(say-3, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Also, nice homophobia.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=homophobia CharacterOffsetBegin=81 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=homophobia NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Also))
+    (, ,)
+    (NP (JJ nice) (NN homophobia))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, homophobia-4)
+dep(homophobia-4, Also-1)
+punct(homophobia-4, ,-2)
+amod(homophobia-4, nice-3)
+punct(homophobia-4, .-5)
+
+Extracted the following NER entity mentions:

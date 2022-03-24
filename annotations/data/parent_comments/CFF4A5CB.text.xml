@@ -1,0 +1,70 @@
+Document: ID=CFF4A5CB.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+My university sent me to “diversity and tolerance training” for expressing a conservative opinion in a debate
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=university CharacterOffsetBegin=3 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=university NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=send NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=diversity CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=diversity NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tolerance CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=tolerance NamedEntityTag=O]
+[Text=training CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=training NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=expressing CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=VBG Lemma=express NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=77 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=opinion CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=opinion NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=debate CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=debate NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN university))
+    (VP (VBD sent)
+      (NP (PRP me))
+      (PP (IN to)
+        (NP (`` “)
+          (NML (NN diversity)
+            (CC and)
+            (NN tolerance))
+          (NN training) ('' ”)))
+      (PP (IN for)
+        (S
+          (VP (VBG expressing)
+            (NP (DT a) (JJ conservative) (NN opinion))
+            (PP (IN in)
+              (NP (DT a) (NN debate)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sent-3)
+nmod:poss(university-2, My-1)
+nsubj(sent-3, university-2)
+obj(sent-3, me-4)
+case(training-10, to-5)
+punct(training-10, “-6)
+compound(training-10, diversity-7)
+cc(tolerance-9, and-8)
+conj:and(diversity-7, tolerance-9)
+compound(training-10, tolerance-9)
+obl:to(sent-3, training-10)
+punct(training-10, ”-11)
+mark(expressing-13, for-12)
+advcl:for(sent-3, expressing-13)
+det(opinion-16, a-14)
+amod(opinion-16, conservative-15)
+obj(expressing-13, opinion-16)
+case(debate-19, in-17)
+det(debate-19, a-18)
+obl:in(expressing-13, debate-19)
+
+Extracted the following NER entity mentions:
+conservative	IDEOLOGY	-

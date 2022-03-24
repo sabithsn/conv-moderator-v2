@@ -1,0 +1,71 @@
+Document: ID=69F4CC4C.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Michigan GOP Candidate Tells Daughters 'If Rape Is Inevitable, Lie Back And Enjoy It'
+
+Tokens:
+[Text=Michigan CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Michigan NamedEntityTag=STATE_OR_PROVINCE]
+[Text=GOP CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Candidate CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=candidate NamedEntityTag=ORGANIZATION]
+[Text=Tells CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=ORGANIZATION]
+[Text=Daughters CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=daughter NamedEntityTag=ORGANIZATION]
+[Text=' CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=if NamedEntityTag=O]
+[Text=Rape CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=rape NamedEntityTag=MISC]
+[Text=Is CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=MISC]
+[Text=Inevitable CharacterOffsetBegin=51 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Inevitable NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Lie CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Lie NamedEntityTag=O]
+[Text=Back CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Back NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Enjoy CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=enjoy NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP
+        (NML (NNP Michigan) (NNP GOP))
+        (NN Candidate))
+      (VP (VBZ Tells)
+        (NP (NNS Daughters) (POS '))))
+    (S
+      (S
+        (NP (PRP If))
+        (VP (VBP Rape)
+          (SQ (VBZ Is)
+            (NP (NNP Inevitable) (, ,) (NNP Lie))
+            (NP (NNP Back)))))
+      (CC And)
+      (S
+        (VP (VB Enjoy)
+          (NP (PRP It) ('' ')))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tells-4)
+compound(GOP-2, Michigan-1)
+compound(Candidate-3, GOP-2)
+nsubj(Tells-4, Candidate-3)
+obj(Tells-4, Daughters-5)
+case(Daughters-5, '-6)
+nsubj(Rape-8, If-7)
+nsubj(Enjoy-15, If-7)
+parataxis(Tells-4, Rape-8)
+cop(Back-13, Is-9)
+compound(Lie-12, Inevitable-10)
+punct(Lie-12, ,-11)
+nsubj(Back-13, Lie-12)
+dep(Rape-8, Back-13)
+cc(Enjoy-15, And-14)
+parataxis(Tells-4, Enjoy-15)
+conj:and(Rape-8, Enjoy-15)
+obj(Enjoy-15, It-16)
+punct(It-16, '-17)
+
+Extracted the following NER entity mentions:
+Michigan	STATE_OR_PROVINCE	LOCATION:0.8893681630652982
+GOP Candidate Tells Daughters	ORGANIZATION	ORGANIZATION:0.8147418260312445
+Rape Is Inevitable	MISC	MISC:0.7648546306732508

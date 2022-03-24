@@ -1,0 +1,115 @@
+Document: ID=1B924BDC.text (2 sentences, 28 tokens)
+
+Sentence #1 (11 tokens):
+I wonder how these people get along in real life.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wonder CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=wonder NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=along CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=along NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP wonder)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (DT these) (NNS people))
+          (VP (VBP get)
+            (PP (IN along)
+              (PP (IN in)
+                (NP (JJ real) (NN life))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wonder-2)
+nsubj(wonder-2, I-1)
+advmod(get-6, how-3)
+det(people-5, these-4)
+nsubj(get-6, people-5)
+ccomp(wonder-2, get-6)
+case(life-10, along-7)
+case(life-10, in-8)
+amod(life-10, real-9)
+obl:in(get-6, life-10)
+punct(wonder-2, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+Hah well honestly I'd be surprised if they even know what the outside looks like.
+
+Tokens:
+[Text=Hah CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=UH Lemma=hah NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=honestly CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=RB Lemma=honestly NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=surprised CharacterOffsetBegin=75 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=surprised NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=outside CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=JJ Lemma=outside NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Hah))
+    (INTJ (UH well))
+    (ADVP (RB honestly))
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB be)
+        (ADJP (JJ surprised))
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (ADVP (RB even))
+            (VP (VBP know)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT the) (JJ outside))
+                  (VP (VBZ looks)
+                    (PP (IN like))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, surprised-7)
+discourse(surprised-7, Hah-1)
+discourse(surprised-7, well-2)
+advmod(surprised-7, honestly-3)
+nsubj(surprised-7, I-4)
+aux(surprised-7, 'd-5)
+cop(surprised-7, be-6)
+mark(know-11, if-8)
+nsubj(know-11, they-9)
+advmod(know-11, even-10)
+advcl:if(surprised-7, know-11)
+obl:like(looks-15, what-12)
+det(outside-14, the-13)
+nsubj(looks-15, outside-14)
+ccomp(know-11, looks-15)
+case(what-12, like-16)
+punct(surprised-7, .-17)
+
+Extracted the following NER entity mentions:

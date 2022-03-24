@@ -1,0 +1,46 @@
+Document: ID=1DCE7A81.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+I'm dreading my birthday because my bf expects birthday seggs
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=dreading CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=VBG Lemma=dread NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=birthday CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=birthday NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=bf CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=bf NamedEntityTag=O]
+[Text=expects CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=VBZ Lemma=expect NamedEntityTag=O]
+[Text=birthday CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=birthday NamedEntityTag=O]
+[Text=seggs CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=segg NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG dreading)
+        (NP (PRP$ my) (NN birthday))
+        (SBAR (IN because)
+          (S
+            (NP (PRP$ my) (NN bf))
+            (VP (VBZ expects)
+              (NP (NN birthday) (NNS seggs)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dreading-3)
+nsubj(dreading-3, I-1)
+aux(dreading-3, 'm-2)
+nmod:poss(birthday-5, my-4)
+obj(dreading-3, birthday-5)
+mark(expects-9, because-6)
+nmod:poss(bf-8, my-7)
+nsubj(expects-9, bf-8)
+advcl:because(dreading-3, expects-9)
+compound(seggs-11, birthday-10)
+obj(expects-9, seggs-11)
+
+Extracted the following NER entity mentions:

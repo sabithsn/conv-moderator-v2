@@ -1,0 +1,95 @@
+Document: ID=FC988B50.text (2 sentences, 21 tokens)
+
+Sentence #1 (11 tokens):
+I actually cackled aloud... Yes, it was wonderful.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=cackled CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=cackle NamedEntityTag=O]
+[Text=aloud CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=aloud NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Yes CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB actually))
+      (VP (VBD cackled)
+        (ADVP (RB aloud))))
+    (: ...)
+    (S
+      (INTJ (UH Yes))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBD was)
+        (ADJP (JJ wonderful))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cackled-3)
+nsubj(cackled-3, I-1)
+advmod(cackled-3, actually-2)
+advmod(cackled-3, aloud-4)
+punct(cackled-3, ...-5)
+discourse(wonderful-10, Yes-6)
+punct(wonderful-10, ,-7)
+nsubj(wonderful-10, it-8)
+cop(wonderful-10, was-9)
+parataxis(cackled-3, wonderful-10)
+punct(cackled-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Everytime they showed his face, I shouted dumbass.
+
+Tokens:
+[Text=Everytime CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=everytime NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=showed CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=VBD Lemma=show NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=face NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=shouted CharacterOffsetBegin=85 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=shout NamedEntityTag=O]
+[Text=dumbass CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=dumbass NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB Everytime))
+      (NP (PRP they))
+      (VP (VBD showed)
+        (NP (PRP$ his) (NN face))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD shouted)
+      (NP (NN dumbass)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shouted-8)
+advmod(showed-3, Everytime-1)
+nsubj(showed-3, they-2)
+ccomp(shouted-8, showed-3)
+nmod:poss(face-5, his-4)
+obj(showed-3, face-5)
+punct(shouted-8, ,-6)
+nsubj(shouted-8, I-7)
+obj(shouted-8, dumbass-9)
+punct(shouted-8, .-10)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

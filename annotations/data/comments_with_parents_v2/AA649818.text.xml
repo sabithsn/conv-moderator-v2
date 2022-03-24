@@ -1,0 +1,63 @@
+Document: ID=AA649818.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+She shouldn't have lashed out, but he can at least acknowledge her.
+
+Tokens:
+[Text=She CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=lashed CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=lash NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=RBS Lemma=least NamedEntityTag=O]
+[Text=acknowledge CharacterOffsetBegin=51 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=acknowledge NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (MD should) (RB n't)
+        (VP (VB have)
+          (VP (VBN lashed)
+            (ADVP (RB out))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP he))
+      (VP (MD can)
+        (ADVP (RB at) (RBS least))
+        (VP (VB acknowledge)
+          (NP (PRP her)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lashed-5)
+nsubj(lashed-5, She-1)
+aux(lashed-5, should-2)
+advmod(lashed-5, n't-3)
+aux(lashed-5, have-4)
+advmod(lashed-5, out-6)
+punct(lashed-5, ,-7)
+cc(acknowledge-13, but-8)
+nsubj(acknowledge-13, he-9)
+aux(acknowledge-13, can-10)
+advmod(acknowledge-13, at-11)
+fixed(at-11, least-12)
+conj:but(lashed-5, acknowledge-13)
+obj(acknowledge-13, her-14)
+punct(lashed-5, .-15)
+
+Extracted the following NER entity mentions:
+She	PERSON	-
+he	PERSON	-
+her	PERSON	-

@@ -1,0 +1,45 @@
+Document: ID=F103CC44.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+LAPD identifies UCLA student Brianna Kupfer's murder suspect
+
+Tokens:
+[Text=LAPD CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=LAPD NamedEntityTag=ORGANIZATION]
+[Text=identifies CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=identify NamedEntityTag=O]
+[Text=UCLA CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=UCLA NamedEntityTag=ORGANIZATION]
+[Text=student CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=student NamedEntityTag=TITLE]
+[Text=Brianna CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Brianna NamedEntityTag=PERSON]
+[Text=Kupfer CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Kupfer NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=murder CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=murder NamedEntityTag=CRIMINAL_CHARGE]
+[Text=suspect CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=suspect NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP LAPD))
+    (VP (VBZ identifies)
+      (NP
+        (NP
+          (NML (NNP UCLA) (NN student))
+          (NNP Brianna) (NNP Kupfer) (POS 's))
+        (NN murder) (NN suspect)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, identifies-2)
+nsubj(identifies-2, LAPD-1)
+compound(student-4, UCLA-3)
+compound(Kupfer-6, student-4)
+compound(Kupfer-6, Brianna-5)
+nmod:poss(suspect-9, Kupfer-6)
+case(Kupfer-6, 's-7)
+compound(suspect-9, murder-8)
+obj(identifies-2, suspect-9)
+
+Extracted the following NER entity mentions:
+LAPD	ORGANIZATION	ORGANIZATION:0.99610294099807
+UCLA	ORGANIZATION	ORGANIZATION:0.9984590573975971
+student	TITLE	-
+Brianna Kupfer	PERSON	PERSON:0.999912401734484
+murder	CRIMINAL_CHARGE	-

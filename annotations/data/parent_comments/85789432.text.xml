@@ -1,0 +1,61 @@
+Document: ID=85789432.text (2 sentences, 11 tokens)
+
+Sentence #1 (8 tokens):
+You seem really weirdly obsessed with this.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=weirdly CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=weirdly NamedEntityTag=O]
+[Text=obsessed CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=VBN Lemma=obsess NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP seem)
+      (ADJP (RB really)
+        (ADJP (RB weirdly) (VBN obsessed))
+        (PP (IN with)
+          (NP (DT this)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seem-2)
+nsubj(seem-2, You-1)
+advmod(obsessed-5, really-3)
+advmod(obsessed-5, weirdly-4)
+xcomp(seem-2, obsessed-5)
+case(this-7, with-6)
+obl:with(obsessed-5, this-7)
+punct(seem-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+You ok?
+
+Tokens:
+[Text=You CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ok CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=ok NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADJP (RB ok))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ok-2)
+dep(ok-2, You-1)
+punct(ok-2, ?-3)
+
+Extracted the following NER entity mentions:

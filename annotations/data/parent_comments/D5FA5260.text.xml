@@ -1,0 +1,65 @@
+Document: ID=D5FA5260.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Liberal Media Excuses Biden For Assault on Reporter That Trump Could Never Get Away With
+
+Tokens:
+[Text=Liberal CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=ORGANIZATION]
+[Text=Media CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Media NamedEntityTag=ORGANIZATION]
+[Text=Excuses CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNPS Lemma=Excuses NamedEntityTag=ORGANIZATION]
+[Text=Biden CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=ORGANIZATION]
+[Text=For CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=for NamedEntityTag=ORGANIZATION]
+[Text=Assault CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=assault NamedEntityTag=ORGANIZATION]
+[Text=on CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Reporter CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=reporter NamedEntityTag=TITLE]
+[Text=That CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=O]
+[Text=Could CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=Never CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=Get CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=Away CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP (JJ Liberal)
+          (NML (NNP Media) (NNPS Excuses))
+          (NNP Biden))
+        (PP (IN For)
+          (NP
+            (NP (NN Assault))
+            (PP (IN on)
+              (NP (NN Reporter))))))
+      (SBAR (IN That)
+        (S
+          (NP (NNP Trump))
+          (VP (MD Could)
+            (ADVP (RB Never))
+            (VP (VB Get)
+              (ADVP (RB Away)
+                (PP (IN With))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Biden-4)
+amod(Biden-4, Liberal-1)
+compound(Excuses-3, Media-2)
+compound(Biden-4, Excuses-3)
+case(Assault-6, For-5)
+nmod:for(Biden-4, Assault-6)
+case(Reporter-8, on-7)
+nmod:on(Assault-6, Reporter-8)
+mark(Get-13, That-9)
+nsubj(Get-13, Trump-10)
+aux(Get-13, Could-11)
+advmod(Get-13, Never-12)
+dep(Biden-4, Get-13)
+advmod(Get-13, Away-14)
+dep(Away-14, With-15)
+
+Extracted the following NER entity mentions:
+Liberal Media Excuses Biden For Assault	ORGANIZATION	ORGANIZATION:0.545161247540071
+Reporter	TITLE	-

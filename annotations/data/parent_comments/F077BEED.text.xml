@@ -1,0 +1,88 @@
+Document: ID=F077BEED.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+That's a bold claim for 2024 when the democrats cheated with fraud in 2020 and will definitely try it again...
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bold CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=bold NamedEntityTag=O]
+[Text=claim CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=claim NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=2024 CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">2024</TIMEX3>]
+[Text=when CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=democrats CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=NNPS Lemma=democrats NamedEntityTag=IDEOLOGY]
+[Text=cheated CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=VBD Lemma=cheat NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=fraud CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=fraud NamedEntityTag=CRIMINAL_CHARGE]
+[Text=in CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t2" type="DATE" value="2020">2020</TIMEX3>]
+[Text=and CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=definitely CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (JJ bold) (NN claim))
+        (PP (IN for)
+          (NP (CD 2024))))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NNPS democrats))
+          (VP
+            (VP (VBD cheated)
+              (PP (IN with)
+                (NP (NN fraud)))
+              (PP (IN in)
+                (NP (CD 2020))))
+            (CC and)
+            (VP (MD will)
+              (ADVP (RB definitely))
+              (VP (VB try)
+                (NP (PRP it))
+                (ADVP (RB again))))))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, claim-5)
+nsubj(claim-5, That-1)
+cop(claim-5, 's-2)
+det(claim-5, a-3)
+amod(claim-5, bold-4)
+case(2024-7, for-6)
+nmod:for(claim-5, 2024-7)
+advmod(cheated-11, when-8)
+det(democrats-10, the-9)
+nsubj(cheated-11, democrats-10)
+nsubj(try-19, democrats-10)
+advcl(claim-5, cheated-11)
+case(fraud-13, with-12)
+obl:with(cheated-11, fraud-13)
+case(2020-15, in-14)
+obl:in(cheated-11, 2020-15)
+cc(try-19, and-16)
+aux(try-19, will-17)
+advmod(try-19, definitely-18)
+advcl(claim-5, try-19)
+conj:and(cheated-11, try-19)
+obj(try-19, it-20)
+advmod(try-19, again-21)
+punct(claim-5, ...-22)
+
+Extracted the following NER entity mentions:
+2024	DATE	DATE:0.9815551149027033
+democrats	IDEOLOGY	-
+fraud	CRIMINAL_CHARGE	-
+2020	DATE	DATE:0.9893763157390237

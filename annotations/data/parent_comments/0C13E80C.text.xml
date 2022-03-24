@@ -1,0 +1,47 @@
+Document: ID=0C13E80C.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Elizabeth Warren Calls for Court-Packing After Breyer Retires
+
+Tokens:
+[Text=Elizabeth CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Elizabeth NamedEntityTag=PERSON]
+[Text=Warren CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Warren NamedEntityTag=PERSON]
+[Text=Calls CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Court CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Court NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Packing CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Packing NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Breyer CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Breyer NamedEntityTag=PERSON]
+[Text=Retires CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=VBZ Lemma=retire NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (UCP
+    (FRAG
+      (NP (NNP Elizabeth) (NNP Warren))
+      (NP
+        (NP (NNS Calls))
+        (PP (IN for)
+          (NP (NNP Court) (HYPH -) (NNP Packing)))))
+    (S
+      (PP (IN After)
+        (NP (NNP Breyer)))
+      (VP (VBZ Retires)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Warren-2)
+compound(Warren-2, Elizabeth-1)
+dep(Warren-2, Calls-3)
+case(Packing-7, for-4)
+compound(Packing-7, Court-5)
+punct(Packing-7, --6)
+nmod:for(Calls-3, Packing-7)
+case(Breyer-9, After-8)
+obl:after(Retires-10, Breyer-9)
+dep(Warren-2, Retires-10)
+
+Extracted the following NER entity mentions:
+Elizabeth Warren	PERSON	PERSON:0.8890614839550143
+Breyer	PERSON	PERSON:0.9608057235644272

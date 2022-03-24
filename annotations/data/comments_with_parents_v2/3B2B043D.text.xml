@@ -1,0 +1,118 @@
+Document: ID=3B2B043D.text (3 sentences, 25 tokens)
+
+Sentence #1 (2 tokens):
+Sure.
+
+Tokens:
+[Text=Sure CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=sure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Sure) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sure-1)
+punct(Sure-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+But it will ultimately be up to a judge and jury.
+
+Tokens:
+[Text=But CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=ultimately CharacterOffsetBegin=19 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=ultimately NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=judge CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=judge NamedEntityTag=TITLE]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=jury CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=jury NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (VP (MD will)
+      (ADVP (RB ultimately))
+      (VP (VB be)
+        (ADVP (RB up)
+          (PP (IN to)
+            (NP (DT a) (NN judge)
+              (CC and)
+              (NN jury))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, be-5)
+cc(be-5, But-1)
+nsubj(be-5, it-2)
+aux(be-5, will-3)
+advmod(be-5, ultimately-4)
+advmod(be-5, up-6)
+case(judge-9, to-7)
+det(judge-9, a-8)
+obl:to(up-6, judge-9)
+cc(jury-11, and-10)
+obl:to(up-6, jury-11)
+conj:and(judge-9, jury-11)
+punct(be-5, .-12)
+
+Extracted the following NER entity mentions:
+judge	TITLE	-
+
+Sentence #3 (11 tokens):
+Context and what led up to the shooting will matter.
+
+Tokens:
+[Text=Context CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=context NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=led CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=lead NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=shooting CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=shooting NamedEntityTag=CAUSE_OF_DEATH]
+[Text=will CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=matter CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=matter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Context))
+    (PRN (CC and)
+      (SBAR
+        (WHNP (WDT what))
+        (S
+          (VP (VBD led)
+            (PRT (RP up))
+            (PP (IN to)
+              (NP (DT the) (NN shooting)))))))
+    (VP (MD will)
+      (VP (VB matter)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, matter-10)
+nsubj(matter-10, Context-1)
+cc(led-4, and-2)
+nsubj(led-4, what-3)
+parataxis(matter-10, led-4)
+compound:prt(led-4, up-5)
+case(shooting-8, to-6)
+det(shooting-8, the-7)
+obl:to(led-4, shooting-8)
+aux(matter-10, will-9)
+punct(matter-10, .-11)
+
+Extracted the following NER entity mentions:
+shooting	CAUSE_OF_DEATH	-

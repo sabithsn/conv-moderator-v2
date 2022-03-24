@@ -1,0 +1,53 @@
+Document: ID=7990F978.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+CMV: NATO Should Stand Up to Putin NOW Rather than Later
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=Should CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Stand CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=stand NamedEntityTag=O]
+[Text=Up CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=NOW CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=NOW NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">NOW</TIMEX3>]
+[Text=Rather CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=Later CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=RBR Lemma=later NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (NNP NATO))
+      (VP (MD Should)
+        (VP (VB Stand)
+          (PRT (RP Up))
+          (PP (IN to)
+            (NP (NNP Putin) (NNP NOW)))
+          (PP (RB Rather) (IN than)
+            (ADVP (RBR Later))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(Stand-5, NATO-3)
+aux(Stand-5, Should-4)
+appos(CMV-1, Stand-5)
+compound:prt(Stand-5, Up-6)
+case(NOW-9, to-7)
+compound(NOW-9, Putin-8)
+obl:to(Stand-5, NOW-9)
+case(Later-12, Rather-10)
+fixed(Rather-10, than-11)
+advcl:rather_than(Stand-5, Later-12)
+
+Extracted the following NER entity mentions:
+NATO	ORGANIZATION	ORGANIZATION:0.9671715872582632
+Putin	PERSON	PERSON:0.6501409126145705
+NOW	DATE	DATE:-1.0

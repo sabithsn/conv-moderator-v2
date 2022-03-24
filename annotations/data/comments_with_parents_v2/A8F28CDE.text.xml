@@ -1,0 +1,74 @@
+Document: ID=A8F28CDE.text (2 sentences, 16 tokens)
+
+Sentence #1 (9 tokens):
+Why you so worked up over this bro.
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=worked CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=work NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=bro CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=bro NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (WRB Why))
+    (NP (PRP you))
+    (ADVP (RB so))
+    (VP (VBD worked)
+      (PRT (RP up))
+      (PP (IN over)
+        (NP (DT this) (NN bro))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, worked-4)
+discourse(worked-4, Why-1)
+nsubj(worked-4, you-2)
+advmod(worked-4, so-3)
+compound:prt(worked-4, up-5)
+case(bro-8, over-6)
+det(bro-8, this-7)
+obl:over(worked-4, bro-8)
+punct(worked-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Gonna burst a blood vessel.
+
+Tokens:
+[Text=Gon CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=burst CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=burst NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=blood CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=blood NamedEntityTag=O]
+[Text=vessel CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=vessel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN Gon)
+    (S
+      (VP (TO na)
+        (VP (VB burst)
+          (NP (DT a) (NN blood) (NN vessel)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Gon-1)
+mark(burst-3, na-2)
+acl:na(Gon-1, burst-3)
+det(vessel-6, a-4)
+compound(vessel-6, blood-5)
+obj(burst-3, vessel-6)
+punct(Gon-1, .-7)
+
+Extracted the following NER entity mentions:

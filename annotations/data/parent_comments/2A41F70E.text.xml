@@ -1,0 +1,75 @@
+Document: ID=2A41F70E.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Why has Russia never told the world that America didn't really go to the moon in the 60's?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=never CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=did CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=moon CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=moon NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=60's CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=60' NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ has)
+      (NP (NNP Russia))
+      (ADVP (RB never))
+      (VP (VBD told)
+        (NP (DT the) (NN world))
+        (SBAR (IN that)
+          (S
+            (NP (NNP America))
+            (VP (VBD did) (RB n't)
+              (ADVP (RB really))
+              (VP (VB go)
+                (PP (IN to)
+                  (NP
+                    (NP (DT the) (NN moon))
+                    (PP (IN in)
+                      (NP (DT the) (NNS 60's)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-5)
+advmod(told-5, Why-1)
+aux(told-5, has-2)
+nsubj(told-5, Russia-3)
+advmod(told-5, never-4)
+det(world-7, the-6)
+obj(told-5, world-7)
+mark(go-13, that-8)
+nsubj(go-13, America-9)
+aux(go-13, did-10)
+advmod(go-13, n't-11)
+advmod(go-13, really-12)
+ccomp(told-5, go-13)
+case(moon-16, to-14)
+det(moon-16, the-15)
+obl:to(go-13, moon-16)
+case(60's-19, in-17)
+det(60's-19, the-18)
+nmod:in(moon-16, 60's-19)
+punct(told-5, ?-20)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.995694742193722
+America	COUNTRY	LOCATION:0.8758110499669358

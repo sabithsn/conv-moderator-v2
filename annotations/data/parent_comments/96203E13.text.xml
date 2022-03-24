@@ -1,0 +1,65 @@
+Document: ID=96203E13.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+You know there are many well armed and well trained  neo-nazis in Russia right?
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=armed CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=armed NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=trained CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=train NamedEntityTag=O]
+[Text=neo-nazis CharacterOffsetBegin=53 CharacterOffsetEnd=62 PartOfSpeech=NNPS Lemma=neo-nazis NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=right CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP know)
+      (PRN
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (ADJP (JJ many)))))
+      (INTJ (UH well))
+      (NP
+        (NP
+          (ADJP
+            (ADJP (JJ armed))
+            (CC and)
+            (ADJP (RB well) (VBN trained)))
+          (NNPS neo-nazis))
+        (PP (IN in)
+          (NP (NNP Russia) (NN right)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, You-1)
+expl(are-4, there-3)
+parataxis(know-2, are-4)
+xcomp(are-4, many-5)
+discourse(know-2, well-6)
+amod(neo-nazis-11, armed-7)
+cc(trained-10, and-8)
+advmod(trained-10, well-9)
+conj:and(armed-7, trained-10)
+amod(neo-nazis-11, trained-10)
+obj(know-2, neo-nazis-11)
+case(right-14, in-12)
+compound(right-14, Russia-13)
+nmod:in(neo-nazis-11, right-14)
+punct(know-2, ?-15)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9994173083785228

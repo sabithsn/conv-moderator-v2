@@ -1,0 +1,57 @@
+Document: ID=97068DA9.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+He died from Covid, which being fat really hurts your chances.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Covid CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Covid NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=fat NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=hurts CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=VBZ Lemma=hurt NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=chances CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=chance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD died)
+      (PP (IN from)
+        (NP (NNP Covid)))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (S
+            (VP (VBG being)
+              (ADJP (JJ fat))))
+          (ADVP (RB really))
+          (VP (VBZ hurts)
+            (NP (PRP$ your) (NNS chances))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, died-2)
+nsubj(died-2, He-1)
+case(Covid-4, from-3)
+obl:from(died-2, Covid-4)
+punct(died-2, ,-5)
+nsubj(hurts-10, which-6)
+cop(fat-8, being-7)
+csubj(hurts-10, fat-8)
+advmod(hurts-10, really-9)
+ccomp(died-2, hurts-10)
+nmod:poss(chances-12, your-11)
+obj(hurts-10, chances-12)
+punct(died-2, .-13)
+
+Extracted the following NER entity mentions:
+He	PERSON	-

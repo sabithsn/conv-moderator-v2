@@ -1,0 +1,65 @@
+Document: ID=0DD62F37.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Throwback to when Democrats used the big evil filibuster to block sanctions on Russian oil pipeline
+
+Tokens:
+[Text=Throwback CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=throwback NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=used CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=evil CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=evil NamedEntityTag=O]
+[Text=filibuster CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=filibuster NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=block CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=block NamedEntityTag=O]
+[Text=sanctions CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=sanction NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=oil CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=pipeline CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=pipeline NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Throwback))
+    (PP (IN to)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNPS Democrats))
+          (VP (VBD used)
+            (NP (DT the) (JJ big) (JJ evil) (NN filibuster))
+            (S
+              (VP (TO to)
+                (VP (VB block)
+                  (NP (NNS sanctions))
+                  (PP (IN on)
+                    (NP
+                      (NML (JJ Russian) (NN oil))
+                      (NN pipeline))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Throwback-1)
+mark(used-5, to-2)
+advmod(used-5, when-3)
+nsubj(used-5, Democrats-4)
+acl:to(Throwback-1, used-5)
+det(filibuster-9, the-6)
+amod(filibuster-9, big-7)
+amod(filibuster-9, evil-8)
+obj(used-5, filibuster-9)
+mark(block-11, to-10)
+advcl:to(used-5, block-11)
+obj(block-11, sanctions-12)
+case(pipeline-16, on-13)
+amod(oil-15, Russian-14)
+compound(pipeline-16, oil-15)
+obl:on(block-11, pipeline-16)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.9999031399818006
+Russian	NATIONALITY	MISC:0.9999750216575836

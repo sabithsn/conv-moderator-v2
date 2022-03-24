@@ -1,0 +1,70 @@
+Document: ID=49B3E94A.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+GOP Rep. Madison Cawthorn launches campaign to impose term limits on Congress: 'Drain the swamp'
+
+Tokens:
+[Text=GOP CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Rep. CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Madison CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Madison NamedEntityTag=PERSON]
+[Text=Cawthorn CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Cawthorn NamedEntityTag=PERSON]
+[Text=launches CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=launch NamedEntityTag=O]
+[Text=campaign CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=campaign NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=impose CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=impose NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=limits CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=limit NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Congress CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=ORGANIZATION]
+[Text=: CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Drain CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=drain NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=swamp CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=swamp NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP GOP) (NNP Rep.) (NNP Madison) (NNP Cawthorn))
+    (VP (VBZ launches)
+      (NP (NN campaign))
+      (S
+        (VP (TO to)
+          (VP (VB impose)
+            (NP (NN term) (NNS limits))
+            (PP (IN on)
+              (NP (NNP Congress)))
+            (: :) (`` ') (VB Drain)
+            (NP (DT the)
+              (NML
+                (S
+                  (VP (VB swamp)))
+                ('' ')))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, launches-5)
+compound(Cawthorn-4, GOP-1)
+compound(Cawthorn-4, Rep.-2)
+compound(Cawthorn-4, Madison-3)
+nsubj(launches-5, Cawthorn-4)
+obj(launches-5, campaign-6)
+mark(impose-8, to-7)
+advcl:to(launches-5, impose-8)
+compound(limits-10, term-9)
+obj(impose-8, limits-10)
+case(Congress-12, on-11)
+obl:on(impose-8, Congress-12)
+punct(impose-8, :-13)
+punct(impose-8, '-14)
+dep(impose-8, Drain-15)
+det(swamp-17, the-16)
+dep(impose-8, swamp-17)
+punct(swamp-17, '-18)
+
+Extracted the following NER entity mentions:
+GOP	ORGANIZATION	ORGANIZATION:0.9478460137180701
+Rep.	TITLE	-
+Madison Cawthorn	PERSON	PERSON:0.9971900027369038
+Congress	ORGANIZATION	ORGANIZATION:0.7735467930721501

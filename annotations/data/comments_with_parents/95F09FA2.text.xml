@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>95F09FA2.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>ELI5</word>
+            <lemma>ELI5</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>What</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>US</word>
+            <lemma>US</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="7">
+            <word>dollar</word>
+            <lemma>dollar</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>backed</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NNP ELI5)) (: :) (SBARQ (WHNP (WP What)) (SQ (VBZ is) (NP (DT the) (NNP US) (NN dollar)) (VP (VBN backed) (PP (IN by))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ELI5</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="8">backed</governor>
+            <dependent idx="3">What</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dollar</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dollar</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="7">dollar</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="8">backed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">What</governor>
+            <dependent idx="9">by</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ELI5</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="8">backed</governor>
+            <dependent idx="3">What</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dollar</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dollar</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="7">dollar</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="8">backed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">What</governor>
+            <dependent idx="9">by</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ELI5</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="8">backed</governor>
+            <dependent idx="3">What</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dollar</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dollar</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="7">dollar</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="8">backed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">What</governor>
+            <dependent idx="9">by</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ELI5</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="8">backed</governor>
+            <dependent idx="3">What</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dollar</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dollar</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="7">dollar</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="8">backed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">What</governor>
+            <dependent idx="9">by</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ELI5</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="8">backed</governor>
+            <dependent idx="3">What</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dollar</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dollar</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="8">backed</governor>
+            <dependent idx="7">dollar</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="8">backed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">What</governor>
+            <dependent idx="9">by</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">ELI5</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>massive</word>
+            <lemma>massive</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>bad</word>
+            <lemma>bad</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>ass</word>
+            <lemma>ass</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>military</word>
+            <lemma>military</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>WDT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>powerful</word>
+            <lemma>powerful</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>enough</word>
+            <lemma>enough</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>destroy</word>
+            <lemma>destroy</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>life</word>
+            <lemma>life</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>planet</word>
+            <lemma>planet</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>earth</word>
+            <lemma>earth</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>single</word>
+            <lemma>single</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>day</word>
+            <lemma>day</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>P1D</NormalizedNER>
+            <Timex tid="t1" type="DURATION">P1D</Timex>
+          </token>
+          <token id="21">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT A) (JJ massive) (JJ bad) (NN ass) (NN military)) (SBAR (WHNP (WDT that)) (S (VP (VBZ is) (ADJP (JJ powerful) (RB enough) (S (VP (TO to) (VP (VB destroy) (NP (DT all) (NN life)) (PP (IN on) (NP (NP (NN planet) (NN earth)) (PP (IN in) (NP (DT a) (JJ single) (NN day)))))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">military</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="2">massive</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="3">bad</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">military</governor>
+            <dependent idx="4">ass</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">powerful</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">powerful</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">military</governor>
+            <dependent idx="8">powerful</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">powerful</governor>
+            <dependent idx="9">enough</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">destroy</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">powerful</governor>
+            <dependent idx="11">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">life</governor>
+            <dependent idx="12">all</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="11">destroy</governor>
+            <dependent idx="13">life</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="16">earth</governor>
+            <dependent idx="14">on</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="16">earth</governor>
+            <dependent idx="15">planet</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="11">destroy</governor>
+            <dependent idx="16">earth</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="20">day</governor>
+            <dependent idx="17">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">day</governor>
+            <dependent idx="18">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">day</governor>
+            <dependent idx="19">single</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="16">earth</governor>
+            <dependent idx="20">day</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">military</governor>
+            <dependent idx="21">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">military</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="2">massive</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="3">bad</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">military</governor>
+            <dependent idx="4">ass</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">powerful</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">powerful</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">military</governor>
+            <dependent idx="8">powerful</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">powerful</governor>
+            <dependent idx="9">enough</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">destroy</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">powerful</governor>
+            <dependent idx="11">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">life</governor>
+            <dependent idx="12">all</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="11">destroy</governor>
+            <dependent idx="13">life</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="16">earth</governor>
+            <dependent idx="14">on</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="16">earth</governor>
+            <dependent idx="15">planet</dependent>
+          </dep>
+          <dep type="obl:on">
+            <governor idx="11">destroy</governor>
+            <dependent idx="16">earth</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="20">day</governor>
+            <dependent idx="17">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">day</governor>
+            <dependent idx="18">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">day</governor>
+            <dependent idx="19">single</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="16">earth</governor>
+            <dependent idx="20">day</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">military</governor>
+            <dependent idx="21">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">military</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="2">massive</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="3">bad</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">military</governor>
+            <dependent idx="4">ass</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">powerful</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">powerful</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">military</governor>
+            <dependent idx="8">powerful</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">powerful</governor>
+            <dependent idx="9">enough</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">destroy</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">powerful</governor>
+            <dependent idx="11">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">life</governor>
+            <dependent idx="12">all</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="11">destroy</governor>
+            <dependent idx="13">life</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="16">earth</governor>
+            <dependent idx="14">on</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="16">earth</governor>
+            <dependent idx="15">planet</dependent>
+          </dep>
+          <dep type="obl:on">
+            <governor idx="11">destroy</governor>
+            <dependent idx="16">earth</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="20">day</governor>
+            <dependent idx="17">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">day</governor>
+            <dependent idx="18">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">day</governor>
+            <dependent idx="19">single</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="16">earth</governor>
+            <dependent idx="20">day</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">military</governor>
+            <dependent idx="21">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">military</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="2">massive</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="3">bad</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">military</governor>
+            <dependent idx="4">ass</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="8">powerful</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="11">destroy</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="5">military</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">powerful</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">military</governor>
+            <dependent idx="8">powerful</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">powerful</governor>
+            <dependent idx="9">enough</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">destroy</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">powerful</governor>
+            <dependent idx="11">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">life</governor>
+            <dependent idx="12">all</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="11">destroy</governor>
+            <dependent idx="13">life</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="16">earth</governor>
+            <dependent idx="14">on</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="16">earth</governor>
+            <dependent idx="15">planet</dependent>
+          </dep>
+          <dep type="obl:on">
+            <governor idx="11">destroy</governor>
+            <dependent idx="16">earth</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="20">day</governor>
+            <dependent idx="17">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">day</governor>
+            <dependent idx="18">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">day</governor>
+            <dependent idx="19">single</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="16">earth</governor>
+            <dependent idx="20">day</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">military</governor>
+            <dependent idx="21">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">military</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="2">massive</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">military</governor>
+            <dependent idx="3">bad</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">military</governor>
+            <dependent idx="4">ass</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="8">powerful</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="11">destroy</governor>
+            <dependent idx="5">military</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="5">military</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">powerful</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">military</governor>
+            <dependent idx="8">powerful</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">powerful</governor>
+            <dependent idx="9">enough</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">destroy</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">powerful</governor>
+            <dependent idx="11">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">life</governor>
+            <dependent idx="12">all</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="11">destroy</governor>
+            <dependent idx="13">life</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="16">earth</governor>
+            <dependent idx="14">on</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="16">earth</governor>
+            <dependent idx="15">planet</dependent>
+          </dep>
+          <dep type="obl:on">
+            <governor idx="11">destroy</governor>
+            <dependent idx="16">earth</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="20">day</governor>
+            <dependent idx="17">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="20">day</governor>
+            <dependent idx="18">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="20">day</governor>
+            <dependent idx="19">single</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="16">earth</governor>
+            <dependent idx="20">day</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">military</governor>
+            <dependent idx="21">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

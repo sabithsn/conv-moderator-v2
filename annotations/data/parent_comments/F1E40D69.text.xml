@@ -1,0 +1,87 @@
+Document: ID=F1E40D69.text (2 sentences, 19 tokens)
+
+Sentence #1 (15 tokens):
+> forcibly dismembering   Out of curiosity, have you ever had an early miscarriage?
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=forcibly CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=forcibly NamedEntityTag=O]
+[Text=dismembering CharacterOffsetBegin=11 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=dismember NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=curiosity CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=curiosity NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=miscarriage CharacterOffsetBegin=71 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=miscarriage NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (QP (SYM >) (RB forcibly)))
+    (VP (VBG dismembering)
+      (SBAR
+        (S
+          (S
+            (PP (IN Out)
+              (PP (IN of)
+                (NP (NN curiosity))))
+            (, ,)
+            (VP (VBP have)
+              (NP (PRP you))
+              (ADVP (RB ever))))
+          (VP (VBD had)
+            (NP (DT an) (JJ early) (NN miscarriage))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forcibly-2)
+dep(forcibly-2, >-1)
+dep(forcibly-2, dismembering-3)
+case(curiosity-6, Out-4)
+fixed(Out-4, of-5)
+obl:out_of(have-8, curiosity-6)
+punct(have-8, ,-7)
+csubj(had-11, have-8)
+obj(have-8, you-9)
+advmod(have-8, ever-10)
+ccomp(dismembering-3, had-11)
+det(miscarriage-14, an-12)
+amod(miscarriage-14, early-13)
+obj(had-11, miscarriage-14)
+punct(forcibly-2, ?-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Anything 1st trimester?
+
+Tokens:
+[Text=Anything CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=1st CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=1st NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=trimester CharacterOffsetBegin=97 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=trimester NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP-TMP (NN Anything) (NN 1st))
+    (NP (NN trimester))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 1st-2)
+compound(1st-2, Anything-1)
+dep(1st-2, trimester-3)
+punct(1st-2, ?-4)
+
+Extracted the following NER entity mentions:
+1st	ORDINAL	ORDINAL:-1.0

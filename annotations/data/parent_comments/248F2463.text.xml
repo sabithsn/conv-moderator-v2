@@ -1,0 +1,63 @@
+Document: ID=248F2463.text (2 sentences, 11 tokens)
+
+Sentence #1 (2 tokens):
+Lmfao.
+
+Tokens:
+[Text=Lmfao CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Lmfao NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Lmfao) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lmfao-1)
+punct(Lmfao-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+Imagine someone saying you can trust Fox News 😂
+
+Tokens:
+[Text=Imagine CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=trust CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=trust NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=ORGANIZATION]
+[Text=News CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=News NamedEntityTag=ORGANIZATION]
+[Text=😂 CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=NFP Lemma=😂 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Imagine)
+      (NP (NN someone))
+      (S
+        (VP (VBG saying)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (MD can)
+                (VP (VB trust)
+                  (NP (NNP Fox) (NNP News)))))))))
+    (NFP 😂)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Imagine-1)
+obj(Imagine-1, someone-2)
+xcomp(Imagine-1, saying-3)
+nsubj(trust-6, you-4)
+aux(trust-6, can-5)
+ccomp(saying-3, trust-6)
+compound(News-8, Fox-7)
+obj(trust-6, News-8)
+punct(Imagine-1, 😂-9)
+
+Extracted the following NER entity mentions:
+Fox News	ORGANIZATION	ORGANIZATION:0.8203702147938522

@@ -1,0 +1,57 @@
+Document: ID=854625E8.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Video of Kyrsten Sinema Shaking Hands With GOP Senators After Vote Goes Viral
+
+Tokens:
+[Text=Video CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=video NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Kyrsten CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Kyrsten NamedEntityTag=PERSON]
+[Text=Sinema CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Sinema NamedEntityTag=PERSON]
+[Text=Shaking CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=shake NamedEntityTag=O]
+[Text=Hands CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=hand NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=GOP CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Senators CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNPS Lemma=Senators NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Vote CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Vote NamedEntityTag=O]
+[Text=Goes CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=Viral CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=viral NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Video))
+    (PP (IN of)
+      (NP
+        (NP (NNP Kyrsten) (NNP Sinema))
+        (VP (VBG Shaking)
+          (S
+            (NP (NNS Hands))
+            (PP (IN With)
+              (NP (NNP GOP) (NNPS Senators)))
+            (SBAR (IN After)
+              (S
+                (NP (NNP Vote))
+                (VP (VBZ Goes)
+                  (NP (JJ Viral)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Video-1)
+case(Sinema-4, of-2)
+compound(Sinema-4, Kyrsten-3)
+nmod:of(Video-1, Sinema-4)
+acl(Sinema-4, Shaking-5)
+dep(Goes-12, Hands-6)
+case(Senators-9, With-7)
+compound(Senators-9, GOP-8)
+dep(Goes-12, Senators-9)
+mark(Goes-12, After-10)
+nsubj(Goes-12, Vote-11)
+xcomp(Shaking-5, Goes-12)
+obj(Goes-12, Viral-13)
+
+Extracted the following NER entity mentions:
+Kyrsten Sinema	PERSON	PERSON:0.9088478299597131
+GOP	ORGANIZATION	ORGANIZATION:0.7215065738672509

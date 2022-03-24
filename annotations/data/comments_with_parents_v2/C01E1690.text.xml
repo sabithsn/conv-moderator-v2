@@ -1,0 +1,102 @@
+Document: ID=C01E1690.text (2 sentences, 23 tokens)
+
+Sentence #1 (15 tokens):
+Clueless fucks, unraveling all the great things the generation that fought WW2 started.
+
+Tokens:
+[Text=Clueless CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=clueless NamedEntityTag=O]
+[Text=fucks CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=fuck NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unraveling CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=unravel NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=52 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=fought CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=fight NamedEntityTag=O]
+[Text=WW2 CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=ww2 NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Clueless) (NNS fucks))
+    (, ,)
+    (S
+      (VP (VBG unraveling)
+        (NP
+          (NP
+            (NP (PDT all) (DT the) (JJ great) (NNS things))
+            (NP (DT the) (NN generation)))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD fought)
+                (NP (NN WW2))))))))
+    (VP (VBD started))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, started-14)
+amod(fucks-2, Clueless-1)
+nsubj(started-14, fucks-2)
+punct(started-14, ,-3)
+advcl(started-14, unraveling-4)
+det:predet(things-8, all-5)
+det(things-8, the-6)
+amod(things-8, great-7)
+obj(unraveling-4, things-8)
+nsubj(fought-12, things-8)
+det(generation-10, the-9)
+dep(things-8, generation-10)
+ref(things-8, that-11)
+acl:relcl(things-8, fought-12)
+obj(fought-12, WW2-13)
+punct(started-14, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+From fighting Nazi’s to becoming nazis.
+
+Tokens:
+[Text=From CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=fighting CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=VBG Lemma=fight NamedEntityTag=O]
+[Text=Nazi CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=NNP Lemma=Nazi NamedEntityTag=IDEOLOGY]
+[Text=’s CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=becoming CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=VBG Lemma=become NamedEntityTag=O]
+[Text=nazis CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NNS Lemma=nazi NamedEntityTag=CAUSE_OF_DEATH]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN From)
+    (S
+      (VP (VBG fighting)
+        (SBAR
+          (S
+            (NP (NNP Nazi) (POS ’s))
+            (VP (TO to)
+              (VP (VBG becoming)
+                (NP (NNS nazis))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fighting-2)
+mark(fighting-2, From-1)
+nsubj(becoming-6, Nazi-3)
+case(Nazi-3, ’s-4)
+mark(becoming-6, to-5)
+ccomp(fighting-2, becoming-6)
+xcomp(becoming-6, nazis-7)
+punct(fighting-2, .-8)
+
+Extracted the following NER entity mentions:
+Nazi	IDEOLOGY	MISC:0.999961553129801
+nazis	CAUSE_OF_DEATH	-

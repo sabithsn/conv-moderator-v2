@@ -1,0 +1,48 @@
+Document: ID=53E7678E.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Remind your friends that Jan 6th was a republican riot.
+
+Tokens:
+[Text=Remind CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=remind NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Jan CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Jan NamedEntityTag=PERSON Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6th</TIMEX3>]
+[Text=6th CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=6th NamedEntityTag=PERSON Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6th</TIMEX3>]
+[Text=was CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=republican CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=riot CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=riot NamedEntityTag=CRIMINAL_CHARGE]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Remind)
+      (NP (PRP$ your) (NNS friends))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Jan) (NN 6th))
+          (VP (VBD was)
+            (NP (DT a) (JJ republican) (NN riot))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Remind-1)
+nmod:poss(friends-3, your-2)
+obj(Remind-1, friends-3)
+mark(riot-10, that-4)
+compound(6th-6, Jan-5)
+nsubj(riot-10, 6th-6)
+cop(riot-10, was-7)
+det(riot-10, a-8)
+amod(riot-10, republican-9)
+ccomp(Remind-1, riot-10)
+punct(Remind-1, .-11)
+
+Extracted the following NER entity mentions:
+Jan 6th	PERSON	PERSON:0.3555745383903637
+republican	IDEOLOGY	-
+riot	CRIMINAL_CHARGE	-

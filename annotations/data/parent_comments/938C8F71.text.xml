@@ -1,0 +1,87 @@
+Document: ID=938C8F71.text (2 sentences, 19 tokens)
+
+Sentence #1 (13 tokens):
+Okay I love the conspiracy vibe but what did I contract then?
+
+Tokens:
+[Text=Okay CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=okay NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=vibe CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=vibe NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=contract CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=contract NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (UCP
+    (S
+      (INTJ (UH Okay))
+      (NP (PRP I))
+      (VP (VBP love)
+        (NP (DT the) (NN conspiracy) (NN vibe))))
+    (CC but)
+    (FRAG
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBD did)
+            (NP (PRP I))
+            (NP (NN contract))
+            (ADVP (RB then))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, love-3)
+discourse(love-3, Okay-1)
+nsubj(love-3, I-2)
+det(vibe-6, the-4)
+compound(vibe-6, conspiracy-5)
+obj(love-3, vibe-6)
+cc(did-9, but-7)
+nsubj(did-9, what-8)
+conj:but(love-3, did-9)
+iobj(did-9, I-10)
+obj(did-9, contract-11)
+advmod(did-9, then-12)
+punct(love-3, ?-13)
+
+Extracted the following NER entity mentions:
+conspiracy	CRIMINAL_CHARGE	-
+
+Sentence #2 (6 tokens):
+Never had such bizarre symptoms.
+
+Tokens:
+[Text=Never CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=bizarre CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=bizarre NamedEntityTag=O]
+[Text=symptoms CharacterOffsetBegin=85 CharacterOffsetEnd=93 PartOfSpeech=NNS Lemma=symptom NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Never))
+    (VP (VBD had)
+      (NP (JJ such) (JJ bizarre) (NNS symptoms)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-2)
+advmod(had-2, Never-1)
+amod(symptoms-5, such-3)
+amod(symptoms-5, bizarre-4)
+obj(had-2, symptoms-5)
+punct(had-2, .-6)
+
+Extracted the following NER entity mentions:

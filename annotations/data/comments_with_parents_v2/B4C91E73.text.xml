@@ -1,0 +1,47 @@
+Document: ID=B4C91E73.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+It looks like someone doesn't care about winning 2024
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=winning CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=win NamedEntityTag=O]
+[Text=2024 CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">2024</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ looks)
+      (SBAR (IN like)
+        (S
+          (NP (NN someone))
+          (VP (VBZ does) (RB n't)
+            (VP (VB care)
+              (PP (IN about)
+                (S
+                  (VP (VBG winning)
+                    (NP (CD 2024))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looks-2)
+nsubj(looks-2, It-1)
+mark(care-7, like-3)
+nsubj(care-7, someone-4)
+aux(care-7, does-5)
+advmod(care-7, n't-6)
+advcl:like(looks-2, care-7)
+mark(winning-9, about-8)
+advcl:about(care-7, winning-9)
+obj(winning-9, 2024-10)
+
+Extracted the following NER entity mentions:
+2024	DATE	DATE:0.7480867374083912

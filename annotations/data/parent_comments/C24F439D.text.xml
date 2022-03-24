@@ -1,0 +1,90 @@
+Document: ID=C24F439D.text (2 sentences, 20 tokens)
+
+Sentence #1 (15 tokens):
+Full Send Donald Trump Podcast removed after receiving 5 million views in 24 hours.
+
+Tokens:
+[Text=Full CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=Send CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=Donald CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=Trump CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=Podcast CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Podcast NamedEntityTag=O]
+[Text=removed CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=remove NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=receiving CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=receive NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5000000.0]
+[Text=million CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=5000000.0]
+[Text=views CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=view NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=24 CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=CD Lemma=24 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT24H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT24H">24 hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT24H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT24H">24 hours</TIMEX3>]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Full))
+    (VP (VB Send)
+      (S
+        (NP (NNP Donald) (NNP Trump) (NNP Podcast))
+        (VP (VBD removed)
+          (PP (IN after)
+            (S
+              (VP (VBG receiving)
+                (NP
+                  (QP (CD 5) (CD million))
+                  (NNS views))
+                (PP (IN in)
+                  (NP (CD 24) (NNS hours)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Send-2)
+nsubj(Send-2, Full-1)
+compound(Podcast-5, Donald-3)
+compound(Podcast-5, Trump-4)
+nsubj(removed-6, Podcast-5)
+ccomp(Send-2, removed-6)
+mark(receiving-8, after-7)
+advcl:after(removed-6, receiving-8)
+compound(million-10, 5-9)
+nummod(views-11, million-10)
+obj(receiving-8, views-11)
+case(hours-14, in-12)
+nummod(hours-14, 24-13)
+obl:in(receiving-8, hours-14)
+punct(Send-2, .-15)
+
+Extracted the following NER entity mentions:
+Donald Trump	PERSON	PERSON:0.8660464748042627
+5 million	NUMBER	NUMBER:-1.0
+24 hours	DURATION	DURATION:-1.0
+
+Sentence #2 (5 tokens):
+Removed for ‘misinformation’
+
+Tokens:
+[Text=Removed CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=VBN Lemma=remove NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=misinformation CharacterOffsetBegin=97 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=misinformation NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (VP (VBN Removed)
+      (PP (IN for) (`` ‘)
+        (NP (NN misinformation))
+        ('' ’)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Removed-1)
+case(misinformation-4, for-2)
+punct(misinformation-4, ‘-3)
+obl:for(Removed-1, misinformation-4)
+punct(misinformation-4, ’-5)
+
+Extracted the following NER entity mentions:

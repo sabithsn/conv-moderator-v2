@@ -1,0 +1,34 @@
+Document: ID=89461871.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Megathread on recent events in Ukraine
+
+Tokens:
+[Text=Megathread CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=megathread NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=recent CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=recent NamedEntityTag=O]
+[Text=events CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=event NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Megathread))
+    (PP (IN on)
+      (NP
+        (NP (JJ recent) (NNS events))
+        (PP (IN in)
+          (NP (NNP Ukraine)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Megathread-1)
+case(events-4, on-2)
+amod(events-4, recent-3)
+nmod:on(Megathread-1, events-4)
+case(Ukraine-6, in-5)
+nmod:in(events-4, Ukraine-6)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9979580015803131

@@ -1,0 +1,52 @@
+Document: ID=1B68B69F.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+On this day in 2006 Evo Morales become president of Bolivia
+
+Tokens:
+[Text=On CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 2006 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 2006" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day in 2006</TIMEX3>]
+[Text=day CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 2006 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 2006" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day in 2006</TIMEX3>]
+[Text=in CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=in NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 2006 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 2006" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day in 2006</TIMEX3>]
+[Text=2006 CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=CD Lemma=2006 NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 2006 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 2006" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day in 2006</TIMEX3>]
+[Text=Evo CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Evo NamedEntityTag=PERSON]
+[Text=Morales CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Morales NamedEntityTag=PERSON]
+[Text=become CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=become NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Bolivia CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Bolivia NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (DT this) (NN day))
+        (PP (IN in)
+          (NP (CD 2006)))))
+    (NP (NNP Evo) (NNP Morales))
+    (VP (VBP become)
+      (NP
+        (NP (NN president))
+        (PP (IN of)
+          (NP (NNP Bolivia)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, become-8)
+case(day-3, On-1)
+det(day-3, this-2)
+obl:on(become-8, day-3)
+case(2006-5, in-4)
+nmod:in(day-3, 2006-5)
+compound(Morales-7, Evo-6)
+nsubj(become-8, Morales-7)
+xcomp(become-8, president-9)
+case(Bolivia-11, of-10)
+nmod:of(president-9, Bolivia-11)
+
+Extracted the following NER entity mentions:
+this day in 2006	DATE	DATE:-1.0
+Evo Morales	PERSON	PERSON:0.7383159966677092
+president	TITLE	-
+Bolivia	COUNTRY	LOCATION:0.9636379955590985

@@ -1,0 +1,108 @@
+Document: ID=CFA6CC19.text (2 sentences, 28 tokens)
+
+Sentence #1 (20 tokens):
+Seizures are a symptom of alcohol withdrawal just as nausea / vomiting / diarrhoea are symptoms of opioid withdrawal.
+
+Tokens:
+[Text=Seizures CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=seizure NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=symptom CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=symptom NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=alcohol CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=alcohol NamedEntityTag=O]
+[Text=withdrawal CharacterOffsetBegin=34 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=withdrawal NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=nausea CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=nausea NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=vomiting CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=vomiting NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=diarrhoea CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=diarrhoea NamedEntityTag=CAUSE_OF_DEATH]
+[Text=are CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=symptoms CharacterOffsetBegin=87 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=symptom NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=opioid CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=opioid NamedEntityTag=O]
+[Text=withdrawal CharacterOffsetBegin=106 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=withdrawal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Seizures))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (NN symptom))
+        (PP (IN of)
+          (NP (NN alcohol) (NN withdrawal))))
+      (SBAR (RB just) (IN as)
+        (S
+          (NP (NN nausea) (HYPH /) (NN vomiting) (HYPH /) (NN diarrhoea))
+          (VP (VBP are)
+            (NP
+              (NP (NNS symptoms))
+              (PP (IN of)
+                (NP (JJ opioid) (NN withdrawal))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, symptom-4)
+nsubj(symptom-4, Seizures-1)
+cop(symptom-4, are-2)
+det(symptom-4, a-3)
+case(withdrawal-7, of-5)
+compound(withdrawal-7, alcohol-6)
+nmod:of(symptom-4, withdrawal-7)
+advmod(symptoms-16, just-8)
+mark(symptoms-16, as-9)
+compound(diarrhoea-14, nausea-10)
+punct(diarrhoea-14, /-11)
+compound(diarrhoea-14, vomiting-12)
+punct(diarrhoea-14, /-13)
+nsubj(symptoms-16, diarrhoea-14)
+cop(symptoms-16, are-15)
+advcl:as(symptom-4, symptoms-16)
+case(withdrawal-19, of-17)
+amod(withdrawal-19, opioid-18)
+nmod:of(symptoms-16, withdrawal-19)
+punct(symptom-4, .-20)
+
+Extracted the following NER entity mentions:
+diarrhoea	CAUSE_OF_DEATH	-
+
+Sentence #2 (8 tokens):
+They can be fatal in different ways.
+
+Tokens:
+[Text=They CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=fatal CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=fatal NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=139 CharacterOffsetEnd=148 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=ways CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=NNS Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD can)
+      (VP (VB be)
+        (ADJP (JJ fatal)
+          (PP (IN in)
+            (NP (JJ different) (NNS ways))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fatal-4)
+nsubj(fatal-4, They-1)
+aux(fatal-4, can-2)
+cop(fatal-4, be-3)
+case(ways-7, in-5)
+amod(ways-7, different-6)
+obl:in(fatal-4, ways-7)
+punct(fatal-4, .-8)
+
+Extracted the following NER entity mentions:

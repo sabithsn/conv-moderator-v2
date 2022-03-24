@@ -1,0 +1,75 @@
+Document: ID=E4036C30.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Now imagine this kid was of Muslim or Jewish faith - there would be people freaking out.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=imagine CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Muslim CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Muslim NamedEntityTag=RELIGION]
+[Text=or CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Jewish CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=jewish NamedEntityTag=RELIGION]
+[Text=faith CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=faith NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=freaking CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=VBG Lemma=freak NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (ADVP (RB Now))
+        (VP (VB imagine)
+          (NP (DT this) (NN kid))))
+      (VP (VBD was)
+        (PP (IN of)
+          (NP
+            (NP (NNP Muslim))
+            (CC or)
+            (NP (JJ Jewish) (NN faith))))))
+    (HYPH -)
+    (S
+      (NP (EX there))
+      (VP (MD would)
+        (VP (VB be)
+          (NP
+            (NP (NNS people))
+            (VP (VBG freaking)
+              (PRT (RP out)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Muslim-7)
+advmod(imagine-2, Now-1)
+csubj(Muslim-7, imagine-2)
+det(kid-4, this-3)
+obj(imagine-2, kid-4)
+cop(Muslim-7, was-5)
+case(Muslim-7, of-6)
+cc(faith-10, or-8)
+amod(faith-10, Jewish-9)
+conj:or(Muslim-7, faith-10)
+punct(Muslim-7, --11)
+expl(people-15, there-12)
+aux(people-15, would-13)
+cop(people-15, be-14)
+parataxis(Muslim-7, people-15)
+acl(people-15, freaking-16)
+compound:prt(freaking-16, out-17)
+punct(Muslim-7, .-18)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+Muslim	RELIGION	MISC:0.9761343595107739
+Jewish	RELIGION	MISC:0.9999053879497334

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>46FAB110.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Austrian</word>
+            <lemma>austrian</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>NATIONALITY</NER>
+          </token>
+          <token id="2">
+            <word>government</word>
+            <lemma>government</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>just</word>
+            <lemma>just</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>made</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>covid</word>
+            <lemma>covid</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>vaccine</word>
+            <lemma>vaccine</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>mandatory</word>
+            <lemma>mandatory</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Nazi</word>
+            <lemma>nazi</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>IDEOLOGY</NER>
+          </token>
+          <token id="10">
+            <word>blood</word>
+            <lemma>blood</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>runs</word>
+            <lemma>run</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>deep</word>
+            <lemma>deep</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (JJ Austrian) (NN government)) (ADVP (RB just)) (VP (VBD made) (SBAR (S (NP (NP (DT the) (JJ covid) (NN vaccine)) (NP (JJ mandatory) (JJ Nazi) (NN blood))) (VP (VBZ runs) (ADJP (JJ deep)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">Austrian</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">made</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">made</governor>
+            <dependent idx="3">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="6">covid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">runs</governor>
+            <dependent idx="7">vaccine</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="8">mandatory</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="9">Nazi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="10">blood</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">made</governor>
+            <dependent idx="11">runs</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">runs</governor>
+            <dependent idx="12">deep</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">Austrian</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">made</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">made</governor>
+            <dependent idx="3">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="6">covid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">runs</governor>
+            <dependent idx="7">vaccine</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="8">mandatory</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="9">Nazi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="10">blood</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">made</governor>
+            <dependent idx="11">runs</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">runs</governor>
+            <dependent idx="12">deep</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">Austrian</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">made</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">made</governor>
+            <dependent idx="3">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="6">covid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">runs</governor>
+            <dependent idx="7">vaccine</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="8">mandatory</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="9">Nazi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="10">blood</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">made</governor>
+            <dependent idx="11">runs</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">runs</governor>
+            <dependent idx="12">deep</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">Austrian</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">made</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">made</governor>
+            <dependent idx="3">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="6">covid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">runs</governor>
+            <dependent idx="7">vaccine</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="8">mandatory</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="9">Nazi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="10">blood</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">made</governor>
+            <dependent idx="11">runs</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">runs</governor>
+            <dependent idx="12">deep</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">Austrian</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">made</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">made</governor>
+            <dependent idx="3">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="6">covid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">runs</governor>
+            <dependent idx="7">vaccine</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="8">mandatory</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">blood</governor>
+            <dependent idx="9">Nazi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">vaccine</governor>
+            <dependent idx="10">blood</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">made</governor>
+            <dependent idx="11">runs</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">runs</governor>
+            <dependent idx="12">deep</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

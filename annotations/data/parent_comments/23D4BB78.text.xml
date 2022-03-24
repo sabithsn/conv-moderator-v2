@@ -1,0 +1,74 @@
+Document: ID=23D4BB78.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Over Two-Thirds Of Americans Think The US Is On The Wrong Track In Bidens First Year
+
+Tokens:
+[Text=Over CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Two CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=>2.0]
+[Text=- CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=HYPH Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=>2.0]
+[Text=Thirds CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=third NamedEntityTag=NUMBER NormalizedNamedEntityTag=>2.0]
+[Text=Of CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=19 CharacterOffsetEnd=28 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=Think CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=Is CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Wrong CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=Track CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=track NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Bidens CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNPS Lemma=Bidens NamedEntityTag=O]
+[Text=First CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=First NamedEntityTag=DATE NormalizedNamedEntityTag=P1Y-#1 Timex=<TIMEX3 alt_value="P1Y-#1" tid="t1" type="DATE">First Year</TIMEX3>]
+[Text=Year CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Year NamedEntityTag=DATE NormalizedNamedEntityTag=P1Y-#1 Timex=<TIMEX3 alt_value="P1Y-#1" tid="t1" type="DATE">First Year</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (PP (IN Over)
+          (NP
+            (NP (CD Two) (HYPH -) (NNS Thirds))
+            (PP (IN Of)
+              (NP (NNPS Americans)))))
+        (VP (VBP Think)
+          (SBAR
+            (S
+              (NP (DT The) (NNP US))
+              (VP (VBZ Is)))))))
+    (S
+      (PP (IN On)
+        (NP (DT The)
+          (ADJP (JJ Wrong))
+          (NN Track)))
+      (PP (IN In)
+        (NP (NNPS Bidens) (NNP First) (NNP Year))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Year-18)
+case(Thirds-4, Over-1)
+nummod(Thirds-4, Two-2)
+punct(Thirds-4, --3)
+obl:over(Think-7, Thirds-4)
+case(Americans-6, Of-5)
+nmod:of(Thirds-4, Americans-6)
+dep(Year-18, Think-7)
+det(US-9, The-8)
+nsubj(Is-10, US-9)
+ccomp(Think-7, Is-10)
+case(Track-14, On-11)
+det(Track-14, The-12)
+amod(Track-14, Wrong-13)
+dep(Year-18, Track-14)
+case(Year-18, In-15)
+compound(Year-18, Bidens-16)
+compound(Year-18, First-17)
+
+Extracted the following NER entity mentions:
+Two-Thirds	NUMBER	NUMBER:-1.0
+Americans	MISC	MISC:0.9994746846738705
+US	COUNTRY	LOCATION:0.9678089792449369
+First Year	DATE	DATE:-1.0

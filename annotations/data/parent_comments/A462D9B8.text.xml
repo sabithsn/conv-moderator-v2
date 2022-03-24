@@ -1,0 +1,96 @@
+Document: ID=A462D9B8.text (2 sentences, 22 tokens)
+
+Sentence #1 (16 tokens):
+Every single conservative who hasn’t already, should read “Rules for Radicals”.
+
+Tokens:
+[Text=Every CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=single CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=single NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=13 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=who CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Rules CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Radicals CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NNPS Lemma=Radicals NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Every) (JJ single) (NN conservative))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ has) (RB n’t)
+            (VP
+              (ADVP (RB already)))))))
+    (, ,)
+    (VP (MD should)
+      (VP (VB read)
+        (NP (`` “)
+          (NP (NNS Rules))
+          (PP (IN for)
+            (NP (NNPS Radicals)))
+          ('' ”))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, read-10)
+det(conservative-3, Every-1)
+amod(conservative-3, single-2)
+nsubj(already-7, conservative-3)
+nsubj(read-10, conservative-3)
+ref(conservative-3, who-4)
+aux(already-7, has-5)
+advmod(already-7, n’t-6)
+acl:relcl(conservative-3, already-7)
+punct(read-10, ,-8)
+aux(read-10, should-9)
+punct(Rules-12, “-11)
+obj(read-10, Rules-12)
+case(Radicals-14, for-13)
+nmod:for(Rules-12, Radicals-14)
+punct(Rules-12, ”-15)
+punct(read-10, .-16)
+
+Extracted the following NER entity mentions:
+conservative	IDEOLOGY	-
+
+Sentence #2 (6 tokens):
+It is the democrat playbook.
+
+Tokens:
+[Text=It CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=democrat CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=democrat NamedEntityTag=O]
+[Text=playbook CharacterOffsetBegin=99 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=playbook NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT the) (NNP democrat) (NN playbook)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, playbook-5)
+nsubj(playbook-5, It-1)
+cop(playbook-5, is-2)
+det(playbook-5, the-3)
+compound(playbook-5, democrat-4)
+punct(playbook-5, .-6)
+
+Extracted the following NER entity mentions:

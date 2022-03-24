@@ -1,0 +1,58 @@
+Document: ID=A3EC76FC.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Will historically be known as one of the best pres in American history.
+
+Tokens:
+[Text=Will CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=historically CharacterOffsetBegin=5 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=historically NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=known CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=VBN Lemma=know NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=pres CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=pre NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=history CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Will)
+      (ADVP (RB historically))
+      (VP (VB be)
+        (VP (VBN known)
+          (PP (IN as)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (JJS best) (NNS pres))
+                  (PP (IN in)
+                    (NP (JJ American) (NN history))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, known-4)
+aux(known-4, Will-1)
+advmod(known-4, historically-2)
+aux:pass(known-4, be-3)
+case(one-6, as-5)
+det:qmod(pres-10, one-6)
+fixed(one-6, of-7)
+det(pres-10, the-8)
+amod(pres-10, best-9)
+obl(known-4, pres-10)
+case(history-13, in-11)
+amod(history-13, American-12)
+nmod:in(pres-10, history-13)
+punct(known-4, .-14)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+American	NATIONALITY	MISC:0.999982140218193

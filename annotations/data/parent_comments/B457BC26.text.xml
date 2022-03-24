@@ -1,0 +1,90 @@
+Document: ID=B457BC26.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+‘I Have Rejected This Request’: Ron DeSantis Refuses Biden’s Call For Nat’l Guard At State Of The Union
+
+Tokens:
+[Text=‘ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=Have CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=Rejected CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=reject NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Request CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Ron CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Ron NamedEntityTag=PERSON]
+[Text=DeSantis CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=PERSON]
+[Text=Refuses CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=VBZ Lemma=refuse NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Call CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Nat CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=nat NamedEntityTag=PERSON]
+[Text=’ CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=l CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=l NamedEntityTag=O]
+[Text=Guard CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Guard NamedEntityTag=TITLE]
+[Text=At CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=State CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=State NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Union CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Union NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S (`` ‘)
+      (NP (PRP I))
+      (VP (VBP Have)
+        (VP (VBN Rejected)
+          (NP (DT This) (NN Request))))
+      ('' ’))
+    (: :)
+    (S
+      (NP (NNP Ron) (NNP DeSantis))
+      (VP (VBZ Refuses)
+        (S
+          (NP
+            (NP
+              (NP (NNP Biden) (POS ’s))
+              (NN Call))
+            (RRC
+              (PP (IN For)
+                (NP (JJ Nat) ('' ’) (NN l)))
+              (NP (NNP Guard))))
+          (PP (IN At)
+            (NP (NNP State)))
+          (PP (IN Of)
+            (NP (DT The) (NNP Union))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Rejected-4)
+punct(Rejected-4, ‘-1)
+nsubj(Rejected-4, I-2)
+aux(Rejected-4, Have-3)
+det(Request-6, This-5)
+obj(Rejected-4, Request-6)
+punct(Rejected-4, ’-7)
+punct(Rejected-4, :-8)
+compound(DeSantis-10, Ron-9)
+nsubj(Refuses-11, DeSantis-10)
+parataxis(Rejected-4, Refuses-11)
+nmod:poss(Call-14, Biden-12)
+case(Biden-12, ’s-13)
+xcomp(Refuses-11, Call-14)
+case(l-18, For-15)
+amod(l-18, Nat-16)
+punct(l-18, ’-17)
+obl:for(Guard-19, l-18)
+acl:relcl(Call-14, Guard-19)
+case(State-21, At-20)
+dep(Call-14, State-21)
+case(Union-24, Of-22)
+det(Union-24, The-23)
+dep(Call-14, Union-24)
+
+Extracted the following NER entity mentions:
+Ron DeSantis	PERSON	PERSON:0.994165256427849
+Biden	PERSON	PERSON:0.9852353055140368
+Nat	PERSON	PERSON:0.6221877373484822
+Guard	TITLE	-

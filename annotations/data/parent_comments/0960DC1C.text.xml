@@ -1,0 +1,71 @@
+Document: ID=0960DC1C.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+AITA for bringing up my brother's four kids to his fiance and potentially ruining an engagement?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=bringing CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=bring NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=brother CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=brother NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=kids CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=fiance CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=fiance NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=potentially CharacterOffsetBegin=62 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=potentially NamedEntityTag=O]
+[Text=ruining CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=VBG Lemma=ruin NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=engagement CharacterOffsetBegin=85 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=engagement NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP
+          (VP (VBG bringing)
+            (PRT (RP up))
+            (NP
+              (NP (PRP$ my) (NN brother) (POS 's))
+              (CD four) (NNS kids))
+            (PP (IN to)
+              (NP (PRP$ his) (NN fiance))))
+          (CC and)
+          (ADVP (RB potentially))
+          (VP (VBG ruining)
+            (NP (DT an) (NN engagement))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(bringing-3, for-2)
+dep(AITA-1, bringing-3)
+compound:prt(bringing-3, up-4)
+nmod:poss(brother-6, my-5)
+nmod:poss(kids-9, brother-6)
+case(brother-6, 's-7)
+nummod(kids-9, four-8)
+obj(bringing-3, kids-9)
+case(fiance-12, to-10)
+nmod:poss(fiance-12, his-11)
+obl:to(bringing-3, fiance-12)
+cc(ruining-15, and-13)
+advmod(ruining-15, potentially-14)
+dep(AITA-1, ruining-15)
+conj:and(bringing-3, ruining-15)
+det(engagement-17, an-16)
+obj(ruining-15, engagement-17)
+punct(AITA-1, ?-18)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.6536582301433285
+four	NUMBER	NUMBER:-1.0
+his	PERSON	-

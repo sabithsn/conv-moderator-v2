@@ -1,0 +1,62 @@
+Document: ID=110BBB9C.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Like accounts you cant reply to but can comment to you are fake AF.
+
+Tokens:
+[Text=Like CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=accounts CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=account NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=cant CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=cant NamedEntityTag=O]
+[Text=reply CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=reply NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=comment NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=fake CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=fake NamedEntityTag=O]
+[Text=AF CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=AF NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (SBAR
+      (S
+        (PP (IN Like)
+          (NP (NNS accounts)))
+        (NP (PRP you))
+        (NP
+          (NP (NN cant) (NN reply))
+          (PP (TO to)
+            (NP (CC but))))
+        (VP (MD can)
+          (VP (VB comment)
+            (PP (IN to)
+              (NP (PRP you)))))))
+    (VP (VBP are)
+      (ADJP (JJ fake)))
+    (NP (NNP AF))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fake-13)
+case(accounts-2, Like-1)
+obl:like(comment-9, accounts-2)
+nsubj(comment-9, you-3)
+compound(reply-5, cant-4)
+nsubj(comment-9, reply-5)
+case(but-7, to-6)
+nmod:to(reply-5, but-7)
+aux(comment-9, can-8)
+dep(fake-13, comment-9)
+case(you-11, to-10)
+obl:to(comment-9, you-11)
+cop(fake-13, are-12)
+nsubj(fake-13, AF-14)
+punct(fake-13, .-15)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,101 @@
+Document: ID=52010592.text (3 sentences, 19 tokens)
+
+Sentence #1 (3 tokens):
+It should.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD should))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, should-2)
+nsubj(should-2, It-1)
+punct(should-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+After all, Trump didn’t fire Fauci when he had the chance.
+
+Tokens:
+[Text=After CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=did CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=fire NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=when CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chance CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=chance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT all)))
+    (, ,)
+    (NP (NNP Trump))
+    (VP (VBD did) (RB n’t)
+      (VP (VB fire)
+        (NP (NNP Fauci))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD had)
+              (NP (DT the) (NN chance)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fire-7)
+case(all-2, After-1)
+obl:after(fire-7, all-2)
+punct(fire-7, ,-3)
+nsubj(fire-7, Trump-4)
+aux(fire-7, did-5)
+advmod(fire-7, n’t-6)
+obj(fire-7, Fauci-8)
+advmod(had-11, when-9)
+nsubj(had-11, he-10)
+advcl(fire-7, had-11)
+det(chance-13, the-12)
+obj(had-11, chance-13)
+punct(fire-7, .-14)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9426456495605781
+Fauci	PERSON	PERSON:0.9862870861256575
+he	PERSON	-
+
+Sentence #3 (2 tokens):
+Curious.
+
+Tokens:
+[Text=Curious CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=curious NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADJP (JJ Curious) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Curious-1)
+punct(Curious-1, .-2)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,121 @@
+Document: ID=7DEC1456.text (2 sentences, 30 tokens)
+
+Sentence #1 (11 tokens):
+Do you really think all the blue states are socialist?
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blue CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=blue NamedEntityTag=O]
+[Text=states CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NNS Lemma=state NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=socialist CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=socialist NamedEntityTag=IDEOLOGY]
+[Text=? CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP
+      (ADVP (RB really))
+      (VBP think)
+      (NP
+        (NP (PDT all) (DT the) (JJ blue) (NNS states))
+        (SBAR
+          (S
+            (VP (VBP are)
+              (NP (JJ socialist)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-4)
+aux(think-4, Do-1)
+nsubj(think-4, you-2)
+advmod(think-4, really-3)
+det:predet(states-8, all-5)
+det(states-8, the-6)
+amod(states-8, blue-7)
+obj(think-4, states-8)
+cop(socialist-10, are-9)
+acl:relcl(states-8, socialist-10)
+punct(think-4, ?-11)
+
+Extracted the following NER entity mentions:
+socialist	IDEOLOGY	-
+
+Sentence #2 (19 tokens):
+All the people in high paying corporate jobs that pay for McMansions in the suburbs… socialists everywhere…
+
+Tokens:
+[Text=All CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=paying CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=VBG Lemma=pay NamedEntityTag=O]
+[Text=corporate CharacterOffsetBegin=87 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=corporate NamedEntityTag=O]
+[Text=jobs CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=NNS Lemma=job NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=VBP Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=McMansions CharacterOffsetBegin=115 CharacterOffsetEnd=125 PartOfSpeech=NNPS Lemma=McMansions NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=suburbs CharacterOffsetBegin=133 CharacterOffsetEnd=140 PartOfSpeech=NNS Lemma=suburb NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=socialists CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=NNS Lemma=socialist NamedEntityTag=O]
+[Text=everywhere CharacterOffsetBegin=153 CharacterOffsetEnd=163 PartOfSpeech=RB Lemma=everywhere NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (PDT All) (DT the) (NNS people))
+    (PP (IN in)
+      (NP
+        (NP
+          (ADJP (JJ high) (VBG paying))
+          (JJ corporate) (NNS jobs))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP pay)
+              (PP (IN for)
+                (NP
+                  (NP (NNPS McMansions))
+                  (PP (IN in)
+                    (NP (DT the) (NNS suburbs)))))
+              (: …)
+              (NP (NNS socialists))
+              (ADVP (RB everywhere)))))))
+    (: …)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, people-3)
+det:predet(people-3, All-1)
+det(people-3, the-2)
+case(jobs-8, in-4)
+dep(paying-6, high-5)
+amod(jobs-8, paying-6)
+amod(jobs-8, corporate-7)
+nmod:in(people-3, jobs-8)
+nsubj(pay-10, jobs-8)
+ref(jobs-8, that-9)
+acl:relcl(jobs-8, pay-10)
+case(McMansions-12, for-11)
+obl:for(pay-10, McMansions-12)
+case(suburbs-15, in-13)
+det(suburbs-15, the-14)
+nmod:in(McMansions-12, suburbs-15)
+punct(pay-10, …-16)
+obj(pay-10, socialists-17)
+advmod(pay-10, everywhere-18)
+punct(people-3, …-19)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>02C3DA0C.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>And</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PRESENT_REF</NormalizedNER>
+            <Timex tid="t1" type="DATE">PRESENT_REF</Timex>
+          </token>
+          <token id="3">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>’re</word>
+            <lemma>’re</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>stuck</word>
+            <lemma>stick</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>worst</word>
+            <lemma>worst</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>President</word>
+            <lemma>President</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>TITLE</NER>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (CC And) (ADVP (RB now)) (NP (PRP we)) (VP (VBP ’re) (VP (VBN stuck) (PP (IN with) (NP (DT the) (JJS worst) (NNP President))) (PP (IN of) (NP (DT all) (NN time))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stuck</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">stuck</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stuck</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="4">’re</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">President</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">President</governor>
+            <dependent idx="8">worst</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="5">stuck</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">time</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">time</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="5">stuck</governor>
+            <dependent idx="12">time</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stuck</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">stuck</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stuck</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="4">’re</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">President</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">President</governor>
+            <dependent idx="8">worst</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="5">stuck</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">time</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">time</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="obl:of">
+            <governor idx="5">stuck</governor>
+            <dependent idx="12">time</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stuck</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">stuck</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stuck</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="4">’re</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">President</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">President</governor>
+            <dependent idx="8">worst</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="5">stuck</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">time</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">time</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="obl:of">
+            <governor idx="5">stuck</governor>
+            <dependent idx="12">time</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stuck</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">stuck</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stuck</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="4">’re</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">President</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">President</governor>
+            <dependent idx="8">worst</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="5">stuck</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">time</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">time</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="obl:of">
+            <governor idx="5">stuck</governor>
+            <dependent idx="12">time</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stuck</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">stuck</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stuck</governor>
+            <dependent idx="2">now</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">stuck</governor>
+            <dependent idx="4">’re</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">President</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">President</governor>
+            <dependent idx="8">worst</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="5">stuck</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">time</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">time</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="obl:of">
+            <governor idx="5">stuck</governor>
+            <dependent idx="12">time</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

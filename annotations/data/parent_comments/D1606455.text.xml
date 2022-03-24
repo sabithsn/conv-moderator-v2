@@ -1,0 +1,54 @@
+Document: ID=D1606455.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+i love vegetables but i dont eat em, only meat
+
+Tokens:
+[Text=i CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=i NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=vegetables CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=vegetable NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=i CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=i NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=nt CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=nt NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=eat NamedEntityTag=O]
+[Text=em CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=em NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=meat CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=meat NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (S
+        (NP (PRP i))
+        (VP (VBP love)
+          (NP (NNS vegetables))))
+      (CC but)
+      (S
+        (NP (PRP i))
+        (VP (VBP do) (RB nt)
+          (VP (VB eat)
+            (NP (PRP em))
+            (, ,)
+            (ADVP (RB only))))))
+    (NP (NN meat))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, meat-12)
+nsubj(love-2, i-1)
+dep(meat-12, love-2)
+obj(love-2, vegetables-3)
+cc(eat-8, but-4)
+nsubj(eat-8, i-5)
+aux(eat-8, do-6)
+advmod(eat-8, nt-7)
+conj:but(love-2, eat-8)
+dep(meat-12, eat-8)
+obj(eat-8, em-9)
+punct(eat-8, ,-10)
+advmod(eat-8, only-11)
+
+Extracted the following NER entity mentions:

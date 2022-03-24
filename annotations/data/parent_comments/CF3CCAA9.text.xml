@@ -1,0 +1,70 @@
+Document: ID=CF3CCAA9.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+>Sinema looks good without a ton of make up, like AOC trowels on.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Sinema CharacterOffsetBegin=1 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Sinema NamedEntityTag=PERSON]
+[Text=looks CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ton CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=ton NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=AOC CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=AOC NamedEntityTag=ORGANIZATION]
+[Text=trowels CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=trowel NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (S
+        (VP (SYM >)
+          (NP (NNP Sinema)))))
+    (VP (VBZ looks)
+      (ADJP (JJ good)
+        (PP (IN without)
+          (NP
+            (NP (DT a) (NN ton))
+            (PP (IN of)
+              (NP
+                (NML
+                  (S
+                    (VP (VB make)
+                      (PRT (RP up))
+                      (, ,)
+                      (PP (IN like)
+                        (NP (NNP AOC))))))
+                (NNS trowels))))))
+      (PP (IN on)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looks-3)
+dep(Sinema-2, >-1)
+nsubj(looks-3, Sinema-2)
+xcomp(looks-3, good-4)
+case(ton-7, without-5)
+det:qmod(trowels-14, a-6)
+fixed(a-6, ton-7)
+fixed(a-6, of-8)
+compound(trowels-14, make-9)
+compound:prt(make-9, up-10)
+punct(make-9, ,-11)
+case(AOC-13, like-12)
+obl:like(make-9, AOC-13)
+obl(good-4, trowels-14)
+obl(looks-3, on-15)
+punct(looks-3, .-16)
+
+Extracted the following NER entity mentions:
+Sinema	PERSON	PERSON:0.7946774263890091
+AOC	ORGANIZATION	ORGANIZATION:0.7496353050260295

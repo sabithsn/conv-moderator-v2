@@ -1,0 +1,61 @@
+Document: ID=F197EDE6.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Cawthorn Frets He’s ‘Close’ To Being Kept From Running For Reelection
+
+Tokens:
+[Text=Cawthorn CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Cawthorn NamedEntityTag=PERSON]
+[Text=Frets CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=fret NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Close CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=close NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Being CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=Kept CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Kept NamedEntityTag=O]
+[Text=From CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Running CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Reelection CharacterOffsetBegin=59 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=reelection NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Cawthorn))
+    (VP (VBZ Frets)
+      (SBAR
+        (S
+          (NP (PRP He))
+          (VP (VBZ ’s)
+            (ADJP (`` ‘) (JJ Close) ('' ’)
+              (PP (IN To)
+                (S
+                  (VP (VBG Being)
+                    (NP (NNP Kept))))))
+            (PP (IN From)
+              (S
+                (VP (VBG Running)
+                  (PP (IN For)
+                    (NP (NN Reelection))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Frets-2)
+nsubj(Frets-2, Cawthorn-1)
+nsubj(Close-6, He-3)
+cop(Close-6, ’s-4)
+punct(Close-6, ‘-5)
+ccomp(Frets-2, Close-6)
+punct(Close-6, ’-7)
+mark(Kept-10, To-8)
+cop(Kept-10, Being-9)
+advcl:to(Close-6, Kept-10)
+mark(Running-12, From-11)
+advcl:from(Close-6, Running-12)
+case(Reelection-14, For-13)
+obl:for(Running-12, Reelection-14)
+
+Extracted the following NER entity mentions:
+Cawthorn	PERSON	PERSON:0.9442000684662732
+He	PERSON	-

@@ -1,0 +1,76 @@
+Document: ID=3B71C12D.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Trump: ‘Biden Admitted Yesterday – That the 2020 Election May Very Well Have Been a Fraud’
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Admitted CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=admit NamedEntityTag=O]
+[Text=Yesterday CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday</TIMEX3>]
+[Text=– CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=: Lemma=– NamedEntityTag=O]
+[Text=That CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t2" type="DATE" value="2020">2020</TIMEX3>]
+[Text=Election CharacterOffsetBegin=49 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=Very CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=Well CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=Have CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=Been CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Fraud CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Fraud NamedEntityTag=CRIMINAL_CHARGE]
+[Text=’ CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Trump))
+    (: :)
+    (S
+      (S (`` ‘)
+        (NP (NNP Biden))
+        (VP (VBD Admitted)
+          (NP-TMP (NN Yesterday))))
+      (: –)
+      (S
+        (SBAR (IN That)
+          (S
+            (NP (DT the) (CD 2020) (NN Election))
+            (VP (MD May)
+              (ADVP (RB Very) (RB Well)))))
+        (VP (VBP Have)
+          (VP (VBN Been)
+            (NP (DT a)
+              (NML (NNP Fraud) (POS ’)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Trump-1)
+punct(Trump-1, :-2)
+punct(Admitted-5, ‘-3)
+nsubj(Admitted-5, Biden-4)
+parataxis(Trump-1, Admitted-5)
+obl:tmod(Admitted-5, Yesterday-6)
+punct(Admitted-5, –-7)
+mark(May-12, That-8)
+det(Election-11, the-9)
+nummod(Election-11, 2020-10)
+nsubj(May-12, Election-11)
+csubj(Fraud-18, May-12)
+advmod(Well-14, Very-13)
+advmod(May-12, Well-14)
+aux(Fraud-18, Have-15)
+cop(Fraud-18, Been-16)
+det(Fraud-18, a-17)
+parataxis(Admitted-5, Fraud-18)
+case(Fraud-18, ’-19)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.6319558118679907
+Biden	PERSON	PERSON:0.8514835823586012
+Yesterday	DATE	DATE:-1.0
+2020	DATE	DATE:0.8478067077027351
+Fraud	CRIMINAL_CHARGE	-

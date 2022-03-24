@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>EE62B051.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>US</word>
+            <lemma>US</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="2">
+            <word>politics</word>
+            <lemma>politics</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>#</word>
+            <lemma>#</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>**</word>
+            <lemma>**</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>SYM</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>GIVE</word>
+            <lemma>give</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>US</word>
+            <lemma>US</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="7">
+            <word>THE</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>THIGHS</word>
+            <lemma>thigh</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>GRAFO</word>
+            <lemma>grafo</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>**</word>
+            <lemma>**</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NFP</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP US) (NNS politics)) (SBAR (S (PP (NP (NP (NN #)) (X (SYM **))) (NP (NP (NML (S (VP (VB GIVE)))) (NNP US)) (NP (NP (DT THE) (NNS THIGHS)) (, ,) (NP (NN GRAFO)))))))) (X (NFP **)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">politics</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">politics</governor>
+            <dependent idx="1">US</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="2">politics</governor>
+            <dependent idx="3">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="4">**</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">US</governor>
+            <dependent idx="5">GIVE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="7">THE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">US</governor>
+            <dependent idx="8">THIGHS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="10">GRAFO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">politics</governor>
+            <dependent idx="11">**</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">politics</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">politics</governor>
+            <dependent idx="1">US</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="2">politics</governor>
+            <dependent idx="3">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="4">**</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">US</governor>
+            <dependent idx="5">GIVE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="7">THE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">US</governor>
+            <dependent idx="8">THIGHS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="10">GRAFO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">politics</governor>
+            <dependent idx="11">**</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">politics</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">politics</governor>
+            <dependent idx="1">US</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="2">politics</governor>
+            <dependent idx="3">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="4">**</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">US</governor>
+            <dependent idx="5">GIVE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="7">THE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">US</governor>
+            <dependent idx="8">THIGHS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="10">GRAFO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">politics</governor>
+            <dependent idx="11">**</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">politics</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">politics</governor>
+            <dependent idx="1">US</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="2">politics</governor>
+            <dependent idx="3">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="4">**</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">US</governor>
+            <dependent idx="5">GIVE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="7">THE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">US</governor>
+            <dependent idx="8">THIGHS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="10">GRAFO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">politics</governor>
+            <dependent idx="11">**</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">politics</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">politics</governor>
+            <dependent idx="1">US</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="2">politics</governor>
+            <dependent idx="3">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="4">**</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">US</governor>
+            <dependent idx="5">GIVE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">#</governor>
+            <dependent idx="6">US</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="7">THE</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">US</governor>
+            <dependent idx="8">THIGHS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">THIGHS</governor>
+            <dependent idx="10">GRAFO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">politics</governor>
+            <dependent idx="11">**</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

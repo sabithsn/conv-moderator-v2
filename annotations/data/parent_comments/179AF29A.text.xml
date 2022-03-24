@@ -1,0 +1,96 @@
+Document: ID=179AF29A.text (2 sentences, 23 tokens)
+
+Sentence #1 (18 tokens):
+Unless it’s a time sensitive message, I’m not obligated to do any such thing.
+
+Tokens:
+[Text=Unless CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=sensitive CharacterOffsetBegin=19 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=sensitive NamedEntityTag=O]
+[Text=message CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=message NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=obligated CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=VBN Lemma=obligate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Unless)
+      (S
+        (NP (PRP it))
+        (VP (VBZ ’s)
+          (NP (DT a)
+            (ADJP (NN time) (JJ sensitive))
+            (NN message)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP ’m) (RB not)
+      (VP (VBN obligated)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (NP (DT any) (JJ such) (NN thing)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, obligated-12)
+mark(message-7, Unless-1)
+nsubj(message-7, it-2)
+cop(message-7, ’s-3)
+det(message-7, a-4)
+obl:npmod(sensitive-6, time-5)
+amod(message-7, sensitive-6)
+advcl:unless(obligated-12, message-7)
+punct(obligated-12, ,-8)
+nsubj:pass(obligated-12, I-9)
+nsubj:xsubj(do-14, I-9)
+aux:pass(obligated-12, ’m-10)
+advmod(obligated-12, not-11)
+mark(do-14, to-13)
+xcomp(obligated-12, do-14)
+det(thing-17, any-15)
+amod(thing-17, such-16)
+obj(do-14, thing-17)
+punct(obligated-12, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+I’m fucking busy.
+
+Tokens:
+[Text=I CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=fucking NamedEntityTag=O]
+[Text=busy CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=busy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (ADJP (RB fucking) (JJ busy)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, busy-4)
+nsubj(busy-4, I-1)
+cop(busy-4, ’m-2)
+advmod(busy-4, fucking-3)
+punct(busy-4, .-5)
+
+Extracted the following NER entity mentions:

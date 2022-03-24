@@ -1,0 +1,42 @@
+Document: ID=02451FB2.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Harris to meet with Ukrainian refugees in Poland
+
+Tokens:
+[Text=Harris CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Harris NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Ukrainian CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=ukrainian NamedEntityTag=NATIONALITY]
+[Text=refugees CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=refugee NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Poland CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Poland NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Harris))
+    (VP (TO to)
+      (VP (VB meet)
+        (PP (IN with)
+          (NP
+            (NP (JJ Ukrainian) (NNS refugees))
+            (PP (IN in)
+              (NP (NNP Poland)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, meet-3)
+nsubj(meet-3, Harris-1)
+mark(meet-3, to-2)
+case(refugees-6, with-4)
+amod(refugees-6, Ukrainian-5)
+obl:with(meet-3, refugees-6)
+case(Poland-8, in-7)
+nmod:in(refugees-6, Poland-8)
+
+Extracted the following NER entity mentions:
+Harris	PERSON	PERSON:0.9577274475945102
+Ukrainian	NATIONALITY	MISC:0.999991001727947
+Poland	COUNTRY	LOCATION:0.9968141791922127

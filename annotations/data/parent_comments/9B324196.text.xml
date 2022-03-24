@@ -1,0 +1,74 @@
+Document: ID=9B324196.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Thanks to Biden’s war on energy, Americans are paying more — and Putin wins
+
+Tokens:
+[Text=Thanks CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=thanks NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=on CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=energy CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=paying CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=VBG Lemma=pay NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=— CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=: Lemma=— NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=wins CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=win NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NN Thanks))
+      (PP (IN to)
+        (NP
+          (NP
+            (NP (NNP Biden) (POS ’s))
+            (NN war))
+          (PP (IN on)
+            (NP (NN energy))))))
+    (, ,)
+    (SBAR
+      (S
+        (S
+          (NP (NNPS Americans))
+          (VP (VBP are)
+            (VP (VBG paying)
+              (NP (JJR more)))))
+        (: —)
+        (CC and)
+        (S
+          (NP (NNP Putin))
+          (VP (VBZ wins)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thanks-1)
+case(war-5, to-2)
+nmod:poss(war-5, Biden-3)
+case(Biden-3, ’s-4)
+nmod:to(Thanks-1, war-5)
+case(energy-7, on-6)
+nmod:on(war-5, energy-7)
+punct(Thanks-1, ,-8)
+nsubj(paying-11, Americans-9)
+aux(paying-11, are-10)
+acl:relcl(Thanks-1, paying-11)
+obj(paying-11, more-12)
+punct(paying-11, —-13)
+cc(wins-16, and-14)
+nsubj(wins-16, Putin-15)
+acl:relcl(Thanks-1, wins-16)
+conj:and(paying-11, wins-16)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9986401133775374
+war	CAUSE_OF_DEATH	-
+Americans	MISC	MISC:0.9999473059594172
+Putin	PERSON	PERSON:0.9864194594359611

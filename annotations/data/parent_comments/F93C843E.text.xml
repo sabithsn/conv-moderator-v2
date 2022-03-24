@@ -1,0 +1,48 @@
+Document: ID=F93C843E.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+CMV: Your Kid(s) annoy everyone at the restaurant
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Your CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=Kid CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=AFX Lemma=s NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=annoy CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=annoy NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=restaurant CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=restaurant NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NN CMV))
+      (: :)
+      (NP (PRP$ Your) (NN Kid) (-LRB- -LRB-) (AFX s) (-RRB- -RRB-)))
+    (S
+      (VP (VB annoy)
+        (NP (NN everyone))
+        (PP (IN at)
+          (NP (DT the) (NN restaurant)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nmod:poss(Kid-4, Your-3)
+dep(CMV-1, Kid-4)
+punct(Kid-4, (-5)
+dep(Kid-4, s-6)
+punct(Kid-4, )-7)
+dep(CMV-1, annoy-8)
+obj(annoy-8, everyone-9)
+case(restaurant-12, at-10)
+det(restaurant-12, the-11)
+obl:at(annoy-8, restaurant-12)
+
+Extracted the following NER entity mentions:

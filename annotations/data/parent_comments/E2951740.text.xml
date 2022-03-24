@@ -1,0 +1,607 @@
+Document: ID=E2951740.text (7 sentences, 160 tokens)
+
+Sentence #1 (5 tokens):
+Yikes on bikes bro.
+
+Tokens:
+[Text=Yikes CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=UH Lemma=yikes NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=bikes CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=bike NamedEntityTag=O]
+[Text=bro CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=bro NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Yikes))
+    (PP (IN on)
+      (NP (NNS bikes) (NN bro)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Yikes-1)
+case(bro-4, on-2)
+compound(bro-4, bikes-3)
+obl:on(Yikes-1, bro-4)
+punct(Yikes-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+That's like saying gay is sus, or people who are into bdsm are sus.
+
+Tokens:
+[Text=That CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=gay NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sus CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=sus NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=bdsm CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=bdsm NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sus CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=sus NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ 's)
+        (SBAR (IN like)
+          (S
+            (S
+              (VP (VBG saying)
+                (NP (NN gay))))
+            (VP (VBZ is)
+              (ADJP (JJ sus)))))))
+    (, ,)
+    (CC or)
+    (S
+      (NP
+        (NP (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (PP (IN into)
+                (NP (NN bdsm)))))))
+      (VP (VBP are)
+        (ADJP (JJ sus))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+nsubj('s-2, That-1)
+mark(sus-7, like-3)
+csubj(sus-7, saying-4)
+obj(saying-4, gay-5)
+cop(sus-7, is-6)
+advcl:like('s-2, sus-7)
+punct('s-2, ,-8)
+cc(sus-16, or-9)
+nsubj(bdsm-14, people-10)
+nsubj(sus-16, people-10)
+ref(people-10, who-11)
+cop(bdsm-14, are-12)
+case(bdsm-14, into-13)
+acl:relcl(people-10, bdsm-14)
+cop(sus-16, are-15)
+conj:or('s-2, sus-16)
+punct('s-2, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (17 tokens):
+There's nothing inherently wrong with polyamory as long as it's done between consenting adults.
+
+Tokens:
+[Text=There CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=inherently CharacterOffsetBegin=104 CharacterOffsetEnd=114 PartOfSpeech=RB Lemma=inherently NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=polyamory CharacterOffsetBegin=126 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=polyamory NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=157 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=consenting CharacterOffsetBegin=165 CharacterOffsetEnd=175 PartOfSpeech=VBG Lemma=consent NamedEntityTag=O]
+[Text=adults CharacterOffsetBegin=176 CharacterOffsetEnd=182 PartOfSpeech=NNS Lemma=adult NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (ADVP (NN nothing))
+      (ADJP (RB inherently) (JJ wrong)
+        (PP (IN with)
+          (NP (NN polyamory))))
+      (SBAR
+        (ADVP (RB as) (RB long))
+        (IN as)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (VP (VBN done)
+              (PP (IN between)
+                (NP (VBG consenting) (NNS adults))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+expl('s-2, There-1)
+advmod('s-2, nothing-3)
+advmod(wrong-5, inherently-4)
+xcomp('s-2, wrong-5)
+case(polyamory-7, with-6)
+obl:with(wrong-5, polyamory-7)
+advmod(long-9, as-8)
+advmod(done-13, long-9)
+mark(done-13, as-10)
+nsubj:pass(done-13, it-11)
+aux:pass(done-13, 's-12)
+advcl:as('s-2, done-13)
+case(adults-16, between-14)
+amod(adults-16, consenting-15)
+obl:between(done-13, adults-16)
+punct('s-2, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (36 tokens):
+It gets "sus" when shitty people use it as an excuse to be shitty, and those shitty people have a million titles to choose from to try and avoid being called out.
+
+Tokens:
+[Text=It CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=gets CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=sus CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=sus NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=shitty CharacterOffsetBegin=203 CharacterOffsetEnd=209 PartOfSpeech=JJ Lemma=shitty NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=VBP Lemma=use NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=227 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=excuse CharacterOffsetBegin=230 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=excuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=237 CharacterOffsetEnd=239 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=shitty CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=JJ Lemma=shitty NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=shitty CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=JJ Lemma=shitty NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=million CharacterOffsetBegin=282 CharacterOffsetEnd=289 PartOfSpeech=CD Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=1000000.0]
+[Text=titles CharacterOffsetBegin=290 CharacterOffsetEnd=296 PartOfSpeech=NNS Lemma=title NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=300 CharacterOffsetEnd=306 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=312 CharacterOffsetEnd=314 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=315 CharacterOffsetEnd=318 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=avoid CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=VB Lemma=avoid NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=329 CharacterOffsetEnd=334 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=335 CharacterOffsetEnd=341 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=345 CharacterOffsetEnd=346 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ gets)
+        (ADJP (`` ") (JJ sus) ('' "))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (ADJP (JJ shitty))
+              (NNS people))
+            (VP (VBP use)
+              (NP (PRP it))
+              (PP (IN as)
+                (NP (DT an) (NN excuse)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (ADJP (JJ shitty))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT those)
+        (ADJP (JJ shitty))
+        (NNS people))
+      (VP (VBP have)
+        (NP
+          (QP (DT a) (CD million))
+          (NNS titles)
+          (S
+            (VP (TO to)
+              (VP (VB choose)
+                (PP (IN from))
+                (S
+                  (VP (TO to)
+                    (VP
+                      (VP (VB try))
+                      (CC and)
+                      (VP (VB avoid)
+                        (S
+                          (VP (VBG being)
+                            (VP (VBN called)
+                              (PRT (RP out)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gets-2)
+nsubj(gets-2, It-1)
+punct(sus-4, "-3)
+xcomp(gets-2, sus-4)
+punct(sus-4, "-5)
+advmod(use-9, when-6)
+amod(people-8, shitty-7)
+nsubj(use-9, people-8)
+advcl(gets-2, use-9)
+obj(use-9, it-10)
+case(excuse-13, as-11)
+det(excuse-13, an-12)
+obl:as(use-9, excuse-13)
+mark(shitty-16, to-14)
+cop(shitty-16, be-15)
+acl:to(excuse-13, shitty-16)
+punct(gets-2, ,-17)
+cc(have-22, and-18)
+det(people-21, those-19)
+amod(people-21, shitty-20)
+nsubj(have-22, people-21)
+conj:and(gets-2, have-22)
+advmod(million-24, a-23)
+nummod(titles-25, million-24)
+obj(have-22, titles-25)
+mark(choose-27, to-26)
+acl:to(titles-25, choose-27)
+obl(choose-27, from-28)
+mark(try-30, to-29)
+xcomp(choose-27, try-30)
+cc(avoid-32, and-31)
+xcomp(choose-27, avoid-32)
+conj:and(try-30, avoid-32)
+aux:pass(called-34, being-33)
+xcomp(avoid-32, called-34)
+compound:prt(called-34, out-35)
+punct(gets-2, .-36)
+
+Extracted the following NER entity mentions:
+million	NUMBER	NUMBER:-1.0
+
+Sentence #5 (52 tokens):
+Ex: "I didn't do anything wrong, I have ADHD/I'm gay/I'm Irish/I'm ...." Etc, etc, etc. poly is just a convenient excuse for terrible people who want to cheat, or have control over their partner.
+
+Tokens:
+[Text=Ex CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=NNP Lemma=Ex NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=349 CharacterOffsetEnd=350 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=357 CharacterOffsetEnd=360 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=364 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=373 CharacterOffsetEnd=378 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=380 CharacterOffsetEnd=381 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=382 CharacterOffsetEnd=386 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=ADHD CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=NN Lemma=adhd NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech=, Lemma=/ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=392 CharacterOffsetEnd=393 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=399 CharacterOffsetEnd=400 PartOfSpeech=, Lemma=/ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Irish CharacterOffsetBegin=404 CharacterOffsetEnd=409 PartOfSpeech=JJ Lemma=irish NamedEntityTag=NATIONALITY]
+[Text=/ CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=, Lemma=/ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=411 CharacterOffsetEnd=413 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=.... CharacterOffsetBegin=414 CharacterOffsetEnd=418 PartOfSpeech=, Lemma=.... NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=418 CharacterOffsetEnd=419 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Etc CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=NN Lemma=etc NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=FW Lemma=etc NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=428 CharacterOffsetEnd=429 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=430 CharacterOffsetEnd=434 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=poly CharacterOffsetBegin=435 CharacterOffsetEnd=439 PartOfSpeech=NN Lemma=poly NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=440 CharacterOffsetEnd=442 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=443 CharacterOffsetEnd=447 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=convenient CharacterOffsetBegin=450 CharacterOffsetEnd=460 PartOfSpeech=JJ Lemma=convenient NamedEntityTag=O]
+[Text=excuse CharacterOffsetBegin=461 CharacterOffsetEnd=467 PartOfSpeech=NN Lemma=excuse NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=468 CharacterOffsetEnd=471 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=terrible CharacterOffsetBegin=472 CharacterOffsetEnd=480 PartOfSpeech=JJ Lemma=terrible NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=481 CharacterOffsetEnd=487 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=488 CharacterOffsetEnd=491 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=492 CharacterOffsetEnd=496 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=497 CharacterOffsetEnd=499 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cheat CharacterOffsetBegin=500 CharacterOffsetEnd=505 PartOfSpeech=VB Lemma=cheat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=505 CharacterOffsetEnd=506 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=507 CharacterOffsetEnd=509 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=510 CharacterOffsetEnd=514 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=control CharacterOffsetBegin=515 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=control NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=523 CharacterOffsetEnd=527 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=528 CharacterOffsetEnd=533 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=partner CharacterOffsetBegin=534 CharacterOffsetEnd=541 PartOfSpeech=NN Lemma=partner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=541 CharacterOffsetEnd=542 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Ex))
+      (: :) (`` ")
+      (S
+        (NP (PRP I))
+        (VP (VBD did) (RB n't)
+          (VP (VB do)
+            (NP (NN anything))
+            (S
+              (ADJP (JJ wrong)))))))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (NP (NN ADHD))))
+    (, /)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADJP (JJ gay))))
+    (, /)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADJP (JJ Irish))))
+    (, /)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)))
+    (, ....) (`` ")
+    (S
+      (NP
+        (NP (NN Etc))
+        (, ,)
+        (ADVP (FW etc))
+        (, ,)
+        (ADVP (FW etc.))
+        (NP (NN poly)))
+      (VP (VBZ is)
+        (ADVP (RB just))
+        (NP
+          (NP (DT a) (JJ convenient) (NN excuse))
+          (PP (IN for)
+            (NP
+              (NP (JJ terrible) (NNS people))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP
+                    (VP (VBP want)
+                      (S
+                        (VP (TO to)
+                          (VP (VB cheat)))))
+                    (, ,)
+                    (CC or)
+                    (VP (VBP have)
+                      (NP
+                        (NP (NN control))
+                        (PP (IN over)
+                          (NP (PRP$ their) (NN partner)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ex-1)
+punct(Ex-1, :-2)
+punct(Ex-1, "-3)
+nsubj(do-7, I-4)
+aux(do-7, did-5)
+advmod(do-7, n't-6)
+dep(Ex-1, do-7)
+obj(do-7, anything-8)
+xcomp(do-7, wrong-9)
+punct(Ex-1, ,-10)
+nsubj(have-12, I-11)
+dep(Ex-1, have-12)
+obj(have-12, ADHD-13)
+punct(Ex-1, /-14)
+nsubj(gay-17, I-15)
+cop(gay-17, 'm-16)
+parataxis(Ex-1, gay-17)
+punct(Ex-1, /-18)
+nsubj(Irish-21, I-19)
+cop(Irish-21, 'm-20)
+parataxis(Ex-1, Irish-21)
+punct(Ex-1, /-22)
+nsubj('m-24, I-23)
+parataxis(Ex-1, 'm-24)
+punct(Ex-1, ....-25)
+punct(Ex-1, "-26)
+nsubj(excuse-37, Etc-27)
+punct(Etc-27, ,-28)
+conj(Etc-27, etc-29)
+punct(Etc-27, ,-30)
+advmod(Etc-27, etc.-31)
+dep(Etc-27, poly-32)
+cop(excuse-37, is-33)
+advmod(excuse-37, just-34)
+det(excuse-37, a-35)
+amod(excuse-37, convenient-36)
+parataxis(Ex-1, excuse-37)
+case(people-40, for-38)
+amod(people-40, terrible-39)
+nmod:for(excuse-37, people-40)
+nsubj(want-42, people-40)
+nsubj:xsubj(cheat-44, people-40)
+nsubj(have-47, people-40)
+ref(people-40, who-41)
+acl:relcl(people-40, want-42)
+mark(cheat-44, to-43)
+xcomp(want-42, cheat-44)
+punct(want-42, ,-45)
+cc(have-47, or-46)
+acl:relcl(people-40, have-47)
+conj:or(want-42, have-47)
+obj(have-47, control-48)
+case(partner-51, over-49)
+nmod:poss(partner-51, their-50)
+nmod:over(control-48, partner-51)
+punct(Ex-1, .-52)
+
+Extracted the following NER entity mentions:
+Irish	NATIONALITY	MISC:0.9945261549370261
+
+Sentence #6 (22 tokens):
+There's tons of actual poly people who enter into relationships with their cards on the table and it's fine.
+
+Tokens:
+[Text=There CharacterOffsetBegin=543 CharacterOffsetEnd=548 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=548 CharacterOffsetEnd=550 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=tons CharacterOffsetBegin=551 CharacterOffsetEnd=555 PartOfSpeech=NNS Lemma=ton NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=559 CharacterOffsetEnd=565 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=poly CharacterOffsetBegin=566 CharacterOffsetEnd=570 PartOfSpeech=NN Lemma=poly NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=571 CharacterOffsetEnd=577 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=578 CharacterOffsetEnd=581 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=enter CharacterOffsetBegin=582 CharacterOffsetEnd=587 PartOfSpeech=VBP Lemma=enter NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=588 CharacterOffsetEnd=592 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=relationships CharacterOffsetBegin=593 CharacterOffsetEnd=606 PartOfSpeech=NNS Lemma=relationship NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=607 CharacterOffsetEnd=611 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=612 CharacterOffsetEnd=617 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=cards CharacterOffsetBegin=618 CharacterOffsetEnd=623 PartOfSpeech=NNS Lemma=card NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=624 CharacterOffsetEnd=626 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=627 CharacterOffsetEnd=630 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=table CharacterOffsetBegin=631 CharacterOffsetEnd=636 PartOfSpeech=NN Lemma=table NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=637 CharacterOffsetEnd=640 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=641 CharacterOffsetEnd=643 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=643 CharacterOffsetEnd=645 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=646 CharacterOffsetEnd=650 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=650 CharacterOffsetEnd=651 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBZ 's)
+        (NP
+          (NP (NNS tons))
+          (PP (IN of)
+            (NP
+              (NP (JJ actual) (NN poly) (NNS people))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP enter)
+                    (PP (IN into)
+                      (NP
+                        (NP (NNS relationships))
+                        (PP (IN with)
+                          (NP (PRP$ their) (NNS cards)))))
+                    (PP (IN on)
+                      (NP (DT the) (NN table)))))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADJP (JJ fine))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+expl('s-2, There-1)
+det:qmod(people-7, tons-3)
+fixed(tons-3, of-4)
+amod(people-7, actual-5)
+compound(people-7, poly-6)
+nsubj('s-2, people-7)
+nsubj(enter-9, people-7)
+ref(people-7, who-8)
+acl:relcl(people-7, enter-9)
+case(relationships-11, into-10)
+obl:into(enter-9, relationships-11)
+case(cards-14, with-12)
+nmod:poss(cards-14, their-13)
+nmod:with(relationships-11, cards-14)
+case(table-17, on-15)
+det(table-17, the-16)
+obl:on(enter-9, table-17)
+cc(fine-21, and-18)
+nsubj(fine-21, it-19)
+cop(fine-21, 's-20)
+conj:and('s-2, fine-21)
+punct('s-2, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (11 tokens):
+Don't paint them all with such a wide brush.
+
+Tokens:
+[Text=Do CharacterOffsetBegin=652 CharacterOffsetEnd=654 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=654 CharacterOffsetEnd=657 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=paint CharacterOffsetBegin=658 CharacterOffsetEnd=663 PartOfSpeech=VB Lemma=paint NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=664 CharacterOffsetEnd=668 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=669 CharacterOffsetEnd=672 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=673 CharacterOffsetEnd=677 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=678 CharacterOffsetEnd=682 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=683 CharacterOffsetEnd=684 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wide CharacterOffsetBegin=685 CharacterOffsetEnd=689 PartOfSpeech=JJ Lemma=wide NamedEntityTag=O]
+[Text=brush CharacterOffsetBegin=690 CharacterOffsetEnd=695 PartOfSpeech=NN Lemma=brush NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=695 CharacterOffsetEnd=696 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (VP (VB paint)
+        (NP (PRP them))
+        (PP (DT all) (IN with)
+          (NP (PDT such) (DT a) (JJ wide) (NN brush)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, paint-3)
+aux(paint-3, Do-1)
+advmod(paint-3, n't-2)
+obj(paint-3, them-4)
+dep(brush-10, all-5)
+case(brush-10, with-6)
+det:predet(brush-10, such-7)
+det(brush-10, a-8)
+amod(brush-10, wide-9)
+obl:with(paint-3, brush-10)
+punct(paint-3, .-11)
+
+Extracted the following NER entity mentions:

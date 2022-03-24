@@ -1,0 +1,51 @@
+Document: ID=1CA98060.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Ohio Officer Cleared In Shooting Death Of Knife-Wielding Ma’Khia Bryant
+
+Tokens:
+[Text=Ohio CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Ohio NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Officer CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Officer NamedEntityTag=O]
+[Text=Cleared CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBN Lemma=clear NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Shooting CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=shooting NamedEntityTag=CAUSE_OF_DEATH]
+[Text=Death CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Knife CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Knife NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Wielding CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Wielding NamedEntityTag=O]
+[Text=Ma’Khia CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Ma’Khia NamedEntityTag=PERSON]
+[Text=Bryant CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Bryant NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ohio) (NNP Officer))
+    (VP (VBN Cleared)
+      (S
+        (PP (IN In)
+          (NP (NN Shooting) (NN Death)))
+        (PP (IN Of)
+          (NP
+            (NML (NNP Knife) (HYPH -) (NNP Wielding))
+            (NNP Ma’Khia) (NNP Bryant)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cleared-3)
+compound(Officer-2, Ohio-1)
+nsubj(Cleared-3, Officer-2)
+case(Death-6, In-4)
+compound(Death-6, Shooting-5)
+dep(Bryant-12, Death-6)
+case(Bryant-12, Of-7)
+compound(Wielding-10, Knife-8)
+punct(Wielding-10, --9)
+compound(Bryant-12, Wielding-10)
+compound(Bryant-12, Ma’Khia-11)
+xcomp(Cleared-3, Bryant-12)
+
+Extracted the following NER entity mentions:
+Ohio	STATE_OR_PROVINCE	LOCATION:0.814374028144585
+Shooting	CAUSE_OF_DEATH	-
+Ma’Khia Bryant	PERSON	PERSON:0.548619362919823

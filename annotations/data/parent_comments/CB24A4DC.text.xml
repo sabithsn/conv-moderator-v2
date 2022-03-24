@@ -1,0 +1,87 @@
+Document: ID=CB24A4DC.text (2 sentences, 19 tokens)
+
+Sentence #1 (7 tokens):
+Saudi Arabia dropping bombs on Yemen.
+
+Tokens:
+[Text=Saudi CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Saudi NamedEntityTag=COUNTRY]
+[Text=Arabia CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Arabia NamedEntityTag=COUNTRY]
+[Text=dropping CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=VBG Lemma=drop NamedEntityTag=O]
+[Text=bombs CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=bomb NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Yemen CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Yemen NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Saudi) (NNP Arabia))
+    (VP (VBG dropping)
+      (NP
+        (NP (NNS bombs))
+        (PP (IN on)
+          (NP (NNP Yemen)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Arabia-2)
+compound(Arabia-2, Saudi-1)
+dep(Arabia-2, dropping-3)
+obj(dropping-3, bombs-4)
+case(Yemen-6, on-5)
+nmod:on(bombs-4, Yemen-6)
+punct(Arabia-2, .-7)
+
+Extracted the following NER entity mentions:
+Saudi Arabia	COUNTRY	LOCATION:0.991985673690669
+Yemen	COUNTRY	LOCATION:0.9970993624192538
+
+Sentence #2 (12 tokens):
+Definitely won't see this being reported on the nightly news.
+
+Tokens:
+[Text=Definitely CharacterOffsetBegin=38 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=wo CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=reported CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=report NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nightly CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=nightly NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t1" type="SET" value="TNI">nightly</TIMEX3>]
+[Text=news CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Definitely))
+    (VP (MD wo) (RB n't)
+      (VP (VB see)
+        (NP
+          (NP (DT this))
+          (VP (VBG being)
+            (VP (VBN reported)
+              (PP (IN on)
+                (NP (DT the) (JJ nightly) (NN news))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, see-4)
+advmod(see-4, Definitely-1)
+aux(see-4, wo-2)
+advmod(see-4, n't-3)
+obj(see-4, this-5)
+aux:pass(reported-7, being-6)
+acl(this-5, reported-7)
+case(news-11, on-8)
+det(news-11, the-9)
+amod(news-11, nightly-10)
+obl:on(reported-7, news-11)
+punct(see-4, .-12)
+
+Extracted the following NER entity mentions:
+nightly	SET	SET:-1.0

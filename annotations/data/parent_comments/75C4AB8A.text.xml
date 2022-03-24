@@ -1,0 +1,62 @@
+Document: ID=75C4AB8A.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+‘Don’t Say Gay bill passes Florida legislature and will be signed into law
+
+Tokens:
+[Text=‘ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=Say CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=Gay CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Gay NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=passes CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=pass NamedEntityTag=O]
+[Text=Florida CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=legislature CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=legislature NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=signed CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=sign NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (SINV
+        (VP (`` ‘) (VBP Do) (RB n’t)
+          (VP (VB Say)))
+        (NP (NNP Gay))))
+    (NP (NN bill))
+    (VP
+      (VP (VBZ passes)
+        (NP (NNP Florida) (NN legislature)))
+      (CC and)
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN signed)
+            (PP (IN into)
+              (NP (NN law)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, passes-7)
+punct(Say-4, ‘-1)
+aux(Say-4, Do-2)
+advmod(Say-4, n’t-3)
+parataxis(passes-7, Say-4)
+nsubj(Say-4, Gay-5)
+nsubj(passes-7, bill-6)
+nsubj:pass(signed-13, bill-6)
+compound(legislature-9, Florida-8)
+obj(passes-7, legislature-9)
+cc(signed-13, and-10)
+aux(signed-13, will-11)
+aux:pass(signed-13, be-12)
+conj:and(passes-7, signed-13)
+case(law-15, into-14)
+obl:into(signed-13, law-15)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.9816221525692019

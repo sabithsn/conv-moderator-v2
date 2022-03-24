@@ -1,0 +1,65 @@
+Document: ID=080FA987.text (2 sentences, 12 tokens)
+
+Sentence #1 (5 tokens):
+Your apocalypse has internet?
+
+Tokens:
+[Text=Your CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=apocalypse CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=apocalypse NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=internet CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=internet NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN apocalypse))
+    (VP (VBZ has)
+      (NP (NN internet)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-3)
+nmod:poss(apocalypse-2, Your-1)
+nsubj(has-3, apocalypse-2)
+obj(has-3, internet-4)
+punct(has-3, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Also, flair the fuck up.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=flair CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=flair NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP
+      (NP (NN flair))
+      (NP (DT the)))
+    (VP (VB fuck)
+      (PRT (RP up)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fuck-5)
+advmod(fuck-5, Also-1)
+punct(fuck-5, ,-2)
+nsubj(fuck-5, flair-3)
+dep(flair-3, the-4)
+compound:prt(fuck-5, up-6)
+punct(fuck-5, .-7)
+
+Extracted the following NER entity mentions:

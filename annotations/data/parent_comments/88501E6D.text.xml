@@ -1,0 +1,45 @@
+Document: ID=88501E6D.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Sixteen UPenn Swimmers Sign Letter Labeling Male Participation ‘Unfair’
+
+Tokens:
+[Text=Sixteen CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=CD Lemma=sixteen NamedEntityTag=NUMBER NormalizedNamedEntityTag=16.0]
+[Text=UPenn CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=UPenn NamedEntityTag=O]
+[Text=Swimmers CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNPS Lemma=Swimmers NamedEntityTag=O]
+[Text=Sign CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=sign NamedEntityTag=O]
+[Text=Letter CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=Labeling CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=labeling NamedEntityTag=O]
+[Text=Male CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=male NamedEntityTag=O]
+[Text=Participation CharacterOffsetBegin=49 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=participation NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Unfair CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=unfair NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD Sixteen) (NNP UPenn) (NNPS Swimmers))
+    (VP (VB Sign)
+      (S
+        (NP
+          (NP (NN Letter) (NN Labeling))
+          (NP (JJ Male) (NN Participation)))
+        (ADJP (`` ‘) (JJ Unfair) ('' ’))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sign-4)
+nummod(Swimmers-3, Sixteen-1)
+compound(Swimmers-3, UPenn-2)
+nsubj(Sign-4, Swimmers-3)
+compound(Labeling-6, Letter-5)
+nsubj(Unfair-10, Labeling-6)
+amod(Participation-8, Male-7)
+dep(Labeling-6, Participation-8)
+punct(Unfair-10, ‘-9)
+xcomp(Sign-4, Unfair-10)
+punct(Unfair-10, ’-11)
+
+Extracted the following NER entity mentions:
+Sixteen	NUMBER	NUMBER:-1.0

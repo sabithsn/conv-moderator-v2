@@ -1,0 +1,73 @@
+Document: ID=0D9E381D.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+It gets tiresome when everybody who replies to a Reddit post wants to be a comedian
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=gets CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=tiresome CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=tiresome NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=everybody CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=everybody NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=replies CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=VBZ Lemma=reply NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Reddit CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=reddit NamedEntityTag=LOCATION]
+[Text=post CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=wants CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=comedian CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=comedian NamedEntityTag=TITLE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ gets)
+      (NP
+        (NP (JJ tiresome))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP (NN everybody))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ replies)
+                    (PP (IN to)
+                      (NP (DT a) (NN Reddit) (NN post)))))))
+            (VP (VBZ wants)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP (DT a) (NN comedian))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gets-2)
+nsubj(gets-2, It-1)
+obj(gets-2, tiresome-3)
+nsubj(replies-7, tiresome-3)
+advmod(wants-12, when-4)
+nsubj(replies-7, everybody-5)
+nsubj(wants-12, everybody-5)
+nsubj:xsubj(comedian-16, everybody-5)
+ref(tiresome-3, who-6)
+ref(everybody-5, who-6)
+acl:relcl(everybody-5, replies-7)
+case(post-11, to-8)
+det(post-11, a-9)
+compound(post-11, Reddit-10)
+obl:to(replies-7, post-11)
+acl:relcl(tiresome-3, wants-12)
+mark(comedian-16, to-13)
+cop(comedian-16, be-14)
+det(comedian-16, a-15)
+xcomp(wants-12, comedian-16)
+
+Extracted the following NER entity mentions:
+Reddit	LOCATION	LOCATION:0.9895885800657013
+comedian	TITLE	-

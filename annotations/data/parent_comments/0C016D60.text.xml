@@ -1,0 +1,63 @@
+Document: ID=0C016D60.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+CMV:Black men are not the most masculine and Asian men are not the most feminine
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Black CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=masculine CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=masculine NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Asian CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=asian NamedEntityTag=NATIONALITY]
+[Text=men CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=feminine CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=feminine NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (S
+        (NP (JJ Black) (NNS men))
+        (VP (VBP are) (RB not)
+          (NP (DT the) (RBS most) (JJ masculine))))
+      (CC and)
+      (S
+        (NP (JJ Asian) (NNS men))
+        (VP (VBP are) (RB not)
+          (ADJP (DT the) (RBS most) (JJ feminine)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+amod(men-4, Black-3)
+nsubj(masculine-9, men-4)
+cop(masculine-9, are-5)
+advmod(masculine-9, not-6)
+det(masculine-9, the-7)
+advmod(masculine-9, most-8)
+appos(CMV-1, masculine-9)
+cc(feminine-17, and-10)
+amod(men-12, Asian-11)
+nsubj(feminine-17, men-12)
+cop(feminine-17, are-13)
+advmod(feminine-17, not-14)
+det(feminine-17, the-15)
+advmod(feminine-17, most-16)
+appos(CMV-1, feminine-17)
+conj:and(masculine-9, feminine-17)
+
+Extracted the following NER entity mentions:
+Asian	NATIONALITY	MISC:0.9993231414900604

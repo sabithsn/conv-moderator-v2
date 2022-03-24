@@ -1,0 +1,65 @@
+Document: ID=C55CBEC1.text (2 sentences, 12 tokens)
+
+Sentence #1 (11 tokens):
+Democrats opposed sanctions proposed by republicans not long ago.....
+
+Tokens:
+[Text=Democrats CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=opposed CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=oppose NamedEntityTag=O]
+[Text=sanctions CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=sanction NamedEntityTag=O]
+[Text=proposed CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=republicans CharacterOffsetBegin=40 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=republican NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=ago CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=ago NamedEntityTag=O]
+[Text=.... CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NFP Lemma=.... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNPS Democrats))
+    (VP (VBD opposed)
+      (NP
+        (NP (NNS sanctions))
+        (VP (VBN proposed)
+          (PP (IN by)
+            (NP (NNS republicans)))
+          (ADVP (RB not) (RB long))
+          (PP (IN ago)))))
+    (NFP ....) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, opposed-2)
+nsubj(opposed-2, Democrats-1)
+obj(opposed-2, sanctions-3)
+acl(sanctions-3, proposed-4)
+case(republicans-6, by-5)
+obl:ago(proposed-4, republicans-6)
+advmod(long-8, not-7)
+advmod(proposed-4, long-8)
+case(republicans-6, ago-9)
+punct(opposed-2, ....-10)
+punct(opposed-2, .-11)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.9991567689160572
+
+Sentence #2 (1 tokens):
+https://m.washingtontimes.com/news/2022/jan/13/senate-democrats-block-gop-bill-sanction-russian-p/
+
+Tokens:
+[Text=https://m.washingtontimes.com/news/2022/jan/13/senate-democrats-block-gop-bill-sanction-russian-p/ CharacterOffsetBegin=71 CharacterOffsetEnd=169 PartOfSpeech=ADD Lemma=https://m.washingtontimes.com/news/2022/jan/13/senate-democrats-block-gop-bill-sanction-russian-p/ NamedEntityTag=URL]
+
+Constituency parse: 
+(ROOT
+  (NP (ADD https://m.washingtontimes.com/news/2022/jan/13/senate-democrats-block-gop-bill-sanction-russian-p/)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, https://m.washingtontimes.com/news/2022/jan/13/senate-democrats-block-gop-bill-sanction-russian-p/-1)
+
+Extracted the following NER entity mentions:
+https://m.washingtontimes.com/news/2022/jan/13/senate-democrats-block-gop-bill-sanction-russian-p/	URL	-

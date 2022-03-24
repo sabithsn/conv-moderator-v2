@@ -1,0 +1,41 @@
+Document: ID=ECDF9D63.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+learn to discuss rather than attack me.
+
+Tokens:
+[Text=learn CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=learn NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discuss CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=discuss NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=attack CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=attack NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB learn)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB discuss))
+            (CONJP (RB rather) (IN than))
+            (VP (VB attack)
+              (NP (PRP me)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, learn-1)
+mark(discuss-3, to-2)
+xcomp(learn-1, discuss-3)
+cc(attack-6, rather-4)
+fixed(rather-4, than-5)
+xcomp(learn-1, attack-6)
+conj:negcc(discuss-3, attack-6)
+obj(attack-6, me-7)
+punct(learn-1, .-8)
+
+Extracted the following NER entity mentions:

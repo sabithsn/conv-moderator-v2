@@ -1,0 +1,50 @@
+Document: ID=D00E8C50.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+You’re going to be old too one day y’know
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CD Lemma=one NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">one day</TIMEX3>]
+[Text=day CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">one day</TIMEX3>]
+[Text=y’ CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=CD Lemma=y’ NamedEntityTag=NUMBER]
+[Text=know CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=know NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (PRP You))
+      (VP (VBP ’re)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (ADJP (JJ old))
+                (NP-TMP (RB too) (CD one) (NN day))))))))
+    (NP (CD y’) (NN know))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-11)
+nsubj(going-3, You-1)
+nsubj:xsubj(old-6, You-1)
+aux(going-3, ’re-2)
+dep(know-11, going-3)
+mark(old-6, to-4)
+cop(old-6, be-5)
+xcomp(going-3, old-6)
+advmod(day-9, too-7)
+nummod(day-9, one-8)
+obl:tmod(old-6, day-9)
+nummod(know-11, y’-10)
+
+Extracted the following NER entity mentions:
+one day	DURATION	DURATION:-1.0
+y’	NUMBER	NUMBER:-1.0

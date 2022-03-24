@@ -1,0 +1,69 @@
+Document: ID=9191F882.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Now There's No Denying It: Obama's FBI Spied On Trump... Period
+
+Tokens:
+[Text=Now CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=There CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=No CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=Denying CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VBG Lemma=deny NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Obama CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=FBI CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=FBI NamedEntityTag=ORGANIZATION]
+[Text=Spied CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=spy NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Period CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP (DT No)
+        (NML
+          (S
+            (VP (VBG Denying)
+              (NP
+                (NP (PRP It))
+                (: :)
+                (NP
+                  (NP
+                    (NP (NNP Obama) (POS 's))
+                    (NNP FBI))
+                  (SBAR
+                    (S
+                      (VP (VBD Spied)
+                        (PP (IN On)
+                          (NP (NNP Trump)))))))
+                (: ...)))))
+        (NN Period)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-3)
+advmod('s-3, Now-1)
+expl('s-3, There-2)
+det(Period-15, No-4)
+compound(Period-15, Denying-5)
+obj(Denying-5, It-6)
+punct(It-6, :-7)
+nmod:poss(FBI-10, Obama-8)
+case(Obama-8, 's-9)
+dep(It-6, FBI-10)
+acl:relcl(FBI-10, Spied-11)
+case(Trump-13, On-12)
+obl:on(Spied-11, Trump-13)
+punct(It-6, ...-14)
+nsubj('s-3, Period-15)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+Obama	PERSON	PERSON:0.9727483949371333
+FBI	ORGANIZATION	ORGANIZATION:0.92975755143862

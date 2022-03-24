@@ -1,0 +1,62 @@
+Document: ID=1D7D0F4F.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+For those who don’t know: Neil Young’s Boss is Pfizer.
+
+Tokens:
+[Text=For CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Neil CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Neil NamedEntityTag=PERSON]
+[Text=Young CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Young NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Boss CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Boss NamedEntityTag=TITLE]
+[Text=is CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Pfizer CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Pfizer NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP do) (RB n’t)
+              (VP (VB know)))))))
+    (: :)
+    (NP
+      (NP (NNP Neil) (NNP Young) (POS ’s))
+      (NNP Boss))
+    (VP (VBZ is)
+      (NP (NNP Pfizer)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pfizer-13)
+case(those-2, For-1)
+nsubj(know-6, those-2)
+obl:for(Pfizer-13, those-2)
+ref(those-2, who-3)
+aux(know-6, do-4)
+advmod(know-6, n’t-5)
+acl:relcl(those-2, know-6)
+punct(Pfizer-13, :-7)
+compound(Young-9, Neil-8)
+nmod:poss(Boss-11, Young-9)
+case(Young-9, ’s-10)
+nsubj(Pfizer-13, Boss-11)
+cop(Pfizer-13, is-12)
+punct(Pfizer-13, .-14)
+
+Extracted the following NER entity mentions:
+Neil Young	PERSON	PERSON:0.9500760927829869
+Boss	TITLE	-
+Pfizer	ORGANIZATION	ORGANIZATION:0.4930000683268854

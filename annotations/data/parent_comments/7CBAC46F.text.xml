@@ -1,0 +1,71 @@
+Document: ID=7CBAC46F.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+We The People by Kid Rock is, one of the most unintentionally hilarious songs of all time
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=People CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=people NamedEntityTag=MISC]
+[Text=by CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=by NamedEntityTag=MISC]
+[Text=Kid CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Kid NamedEntityTag=MISC]
+[Text=Rock CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Rock NamedEntityTag=MISC]
+[Text=is CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=unintentionally CharacterOffsetBegin=46 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=unintentionally NamedEntityTag=O]
+[Text=hilarious CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=hilarious NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP We))
+      (NP
+        (NP (DT The) (NNS People))
+        (PP (IN by)
+          (NP (NNP Kid) (NNP Rock)))))
+    (VP (VBZ is) (, ,)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (ADJP
+                (ADVP (RBS most) (RB unintentionally))
+                (JJ hilarious))
+              (NNS songs))
+            (PP (IN of)
+              (NP (DT all) (NN time)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, songs-15)
+nsubj(one-9, We-1)
+det(People-3, The-2)
+dep(We-1, People-3)
+case(Rock-6, by-4)
+compound(Rock-6, Kid-5)
+nmod:by(People-3, Rock-6)
+cop(one-9, is-7)
+punct(one-9, ,-8)
+det:qmod(songs-15, one-9)
+fixed(one-9, of-10)
+det(songs-15, the-11)
+advmod(unintentionally-13, most-12)
+advmod(hilarious-14, unintentionally-13)
+amod(songs-15, hilarious-14)
+case(time-18, of-16)
+det(time-18, all-17)
+nmod:of(songs-15, time-18)
+
+Extracted the following NER entity mentions:
+People by Kid Rock	MISC	MISC:0.6802019519195645
+one	NUMBER	NUMBER:-1.0

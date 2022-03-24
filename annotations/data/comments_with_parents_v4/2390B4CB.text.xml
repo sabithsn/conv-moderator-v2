@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>2390B4CB.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fuck</word>
+            <lemma>fuck</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Marry</word>
+            <lemma>marry</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Kill</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>rules</word>
+            <lemma>rule</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>reddit</word>
+            <lemma>reddit</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (INTJ (UH Fuck)) (, ,) (VP (VB Marry) (, ,) (VB Kill))) (, ,) (NP (PRP you)) (VP (VBP know) (NP (DT the) (NNS rules) (NN reddit))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">know</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">Marry</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">know</governor>
+            <dependent idx="3">Marry</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Marry</governor>
+            <dependent idx="5">Kill</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">know</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">reddit</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">reddit</governor>
+            <dependent idx="10">rules</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">know</governor>
+            <dependent idx="11">reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">know</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">Marry</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">know</governor>
+            <dependent idx="3">Marry</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Marry</governor>
+            <dependent idx="5">Kill</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">know</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">reddit</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">reddit</governor>
+            <dependent idx="10">rules</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">know</governor>
+            <dependent idx="11">reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">know</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">Marry</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">know</governor>
+            <dependent idx="3">Marry</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Marry</governor>
+            <dependent idx="5">Kill</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">know</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">reddit</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">reddit</governor>
+            <dependent idx="10">rules</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">know</governor>
+            <dependent idx="11">reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">know</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">Marry</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">know</governor>
+            <dependent idx="3">Marry</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Marry</governor>
+            <dependent idx="5">Kill</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">know</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">reddit</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">reddit</governor>
+            <dependent idx="10">rules</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">know</governor>
+            <dependent idx="11">reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">know</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">Marry</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">know</governor>
+            <dependent idx="3">Marry</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Marry</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Marry</governor>
+            <dependent idx="5">Kill</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">know</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">reddit</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">reddit</governor>
+            <dependent idx="10">rules</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">know</governor>
+            <dependent idx="11">reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">know</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Uhh</word>
+            <lemma>Uhh</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>kill</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>yourself</word>
+            <lemma>yourself</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>purple</word>
+            <lemma>purple</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Uhh)) (VP (VB kill) (S (NP (PRP yourself)) (ADJP (JJ purple)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">kill</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">kill</governor>
+            <dependent idx="1">Uhh</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">purple</governor>
+            <dependent idx="3">yourself</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">kill</governor>
+            <dependent idx="4">purple</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">kill</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">kill</governor>
+            <dependent idx="1">Uhh</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">purple</governor>
+            <dependent idx="3">yourself</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">kill</governor>
+            <dependent idx="4">purple</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">kill</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">kill</governor>
+            <dependent idx="1">Uhh</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">purple</governor>
+            <dependent idx="3">yourself</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">kill</governor>
+            <dependent idx="4">purple</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">kill</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">kill</governor>
+            <dependent idx="1">Uhh</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">purple</governor>
+            <dependent idx="3">yourself</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">kill</governor>
+            <dependent idx="4">purple</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">kill</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">kill</governor>
+            <dependent idx="1">Uhh</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">purple</governor>
+            <dependent idx="3">yourself</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">kill</governor>
+            <dependent idx="4">purple</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

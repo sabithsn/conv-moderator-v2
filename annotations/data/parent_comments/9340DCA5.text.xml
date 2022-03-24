@@ -1,0 +1,45 @@
+Document: ID=9340DCA5.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Trump's statement on YouTube taking down his interview
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=YouTube CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=YouTube NamedEntityTag=ORGANIZATION]
+[Text=taking CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=interview CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NNP Trump) (POS 's))
+        (NN statement))
+      (PP (IN on)
+        (NP (NNP YouTube))))
+    (VP (VBG taking)
+      (PRT (RP down))
+      (NP (PRP$ his) (NN interview)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, statement-3)
+nmod:poss(statement-3, Trump-1)
+case(Trump-1, 's-2)
+case(YouTube-5, on-4)
+nmod:on(statement-3, YouTube-5)
+acl(statement-3, taking-6)
+compound:prt(taking-6, down-7)
+nmod:poss(interview-9, his-8)
+obj(taking-6, interview-9)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.7980193999949413
+YouTube	ORGANIZATION	ORGANIZATION:0.79363642994947
+his	PERSON	-

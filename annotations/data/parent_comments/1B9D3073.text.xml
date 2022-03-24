@@ -1,0 +1,37 @@
+Document: ID=1B9D3073.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Gang rape is LITERALLY democracy in action
+
+Tokens:
+[Text=Gang CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Gang NamedEntityTag=O]
+[Text=rape CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=rape NamedEntityTag=CRIMINAL_CHARGE]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=LITERALLY CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=literally NamedEntityTag=O]
+[Text=democracy CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=democracy NamedEntityTag=IDEOLOGY]
+[Text=in CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=action CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=action NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Gang) (NN rape))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ LITERALLY) (NN democracy))
+        (PP (IN in)
+          (NP (NN action)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, democracy-5)
+compound(rape-2, Gang-1)
+nsubj(democracy-5, rape-2)
+cop(democracy-5, is-3)
+amod(democracy-5, LITERALLY-4)
+case(action-7, in-6)
+nmod:in(democracy-5, action-7)
+
+Extracted the following NER entity mentions:
+rape	CRIMINAL_CHARGE	-
+democracy	IDEOLOGY	-

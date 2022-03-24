@@ -1,0 +1,58 @@
+Document: ID=56A50507.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Shouldn't you be spitting on people who call out your favorite president?
+
+Tokens:
+[Text=Should CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=spitting CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=spit NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VBP Lemma=call NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=favorite CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=favorite NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=? CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Should) (RB n't)
+    (NP (PRP you))
+    (VP (VB be)
+      (VP (VBG spitting)
+        (PP (IN on)
+          (NP
+            (NP (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP call)
+                  (PRT (RP out))
+                  (NP (PRP$ your) (JJ favorite) (NN president)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spitting-5)
+aux(spitting-5, Should-1)
+advmod(spitting-5, n't-2)
+nsubj(spitting-5, you-3)
+aux(spitting-5, be-4)
+case(people-7, on-6)
+obl:on(spitting-5, people-7)
+nsubj(call-9, people-7)
+ref(people-7, who-8)
+acl:relcl(people-7, call-9)
+compound:prt(call-9, out-10)
+nmod:poss(president-13, your-11)
+amod(president-13, favorite-12)
+obj(call-9, president-13)
+punct(spitting-5, ?-14)
+
+Extracted the following NER entity mentions:
+president	TITLE	-

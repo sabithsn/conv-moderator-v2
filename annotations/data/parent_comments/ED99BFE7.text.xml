@@ -1,0 +1,55 @@
+Document: ID=ED99BFE7.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+I wish all the Auth-left on this sub a great day
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Auth CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Auth NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=HYPH Lemma=- NamedEntityTag=MISC]
+[Text=left CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBN Lemma=leave NamedEntityTag=MISC]
+[Text=on CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP wish)
+      (NP (PDT all) (DT the))
+      (NP
+        (NP (NNP Auth))
+        (HYPH -)
+        (SBAR
+          (S
+            (VP (VBN left)
+              (PP (IN on)
+                (NP (DT this) (NN sub)))
+              (NP-TMP (DT a) (JJ great) (NN day)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wish-2)
+nsubj(wish-2, I-1)
+det:predet(the-4, all-3)
+iobj(wish-2, the-4)
+obj(wish-2, Auth-5)
+punct(Auth-5, --6)
+acl:relcl(Auth-5, left-7)
+case(sub-10, on-8)
+det(sub-10, this-9)
+obl:on(left-7, sub-10)
+det(day-13, a-11)
+amod(day-13, great-12)
+obl:tmod(left-7, day-13)
+
+Extracted the following NER entity mentions:
+Auth-left	MISC	MISC:0.7942050617338825
+day	DURATION	DURATION:-1.0

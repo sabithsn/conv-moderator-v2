@@ -1,0 +1,73 @@
+Document: ID=AD2D0954.text (2 sentences, 14 tokens)
+
+Sentence #1 (4 tokens):
+I was wrong.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (JJ wrong)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wrong-3)
+nsubj(wrong-3, I-1)
+cop(wrong-3, was-2)
+punct(wrong-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+We would also be unable to agree in person.
+
+Tokens:
+[Text=We CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=unable CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=unable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=agree NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD would)
+      (ADVP (RB also))
+      (VP (VB be)
+        (ADJP (JJ unable)
+          (S
+            (VP (TO to)
+              (VP (VB agree)
+                (PP (IN in)
+                  (NP (NN person)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, unable-5)
+nsubj(unable-5, We-1)
+nsubj:xsubj(agree-7, We-1)
+aux(unable-5, would-2)
+advmod(unable-5, also-3)
+cop(unable-5, be-4)
+mark(agree-7, to-6)
+xcomp(unable-5, agree-7)
+case(person-9, in-8)
+obl:in(agree-7, person-9)
+punct(unable-5, .-10)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,90 @@
+Document: ID=E6BC9EC0.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+Why is nobody talking about the fact that there are Nazi’s in Ukraine’s government and it’s like an official thing???
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=nobody CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=nobody NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Nazi CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Nazi NamedEntityTag=IDEOLOGY]
+[Text=’s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=’s CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=official CharacterOffsetBegin=100 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=official NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=??? CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=??? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (NN nobody))
+      (VP (VBG talking)
+        (PP (IN about)
+          (NP (DT the) (NN fact)))
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP
+              (VP (VBP are)
+                (NP (NNP Nazi) (POS ’s))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Ukraine) (POS ’s))
+                    (NN government))))
+              (CC and)
+              (PRN
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ ’s))))
+              (PP (IN like)
+                (NP (DT an) (JJ official) (NN thing))))))))
+    (. ???)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, talking-4)
+advmod(talking-4, Why-1)
+aux(talking-4, is-2)
+nsubj(talking-4, nobody-3)
+case(fact-7, about-5)
+det(fact-7, the-6)
+obl:about(talking-4, fact-7)
+mark(Nazi-11, that-8)
+expl(Nazi-11, there-9)
+cop(Nazi-11, are-10)
+ccomp(talking-4, Nazi-11)
+case(Nazi-11, ’s-12)
+case(government-16, in-13)
+nmod:poss(government-16, Ukraine-14)
+case(Ukraine-14, ’s-15)
+obl:in(Nazi-11, government-16)
+cc(thing-23, and-17)
+nsubj(’s-19, it-18)
+parataxis(Nazi-11, ’s-19)
+case(thing-23, like-20)
+det(thing-23, an-21)
+amod(thing-23, official-22)
+ccomp(talking-4, thing-23)
+conj:and(Nazi-11, thing-23)
+punct(talking-4, ???-24)
+
+Extracted the following NER entity mentions:
+Nazi	IDEOLOGY	MISC:0.9999828799042885
+Ukraine	COUNTRY	LOCATION:0.9997894417361193

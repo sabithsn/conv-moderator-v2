@@ -1,0 +1,43 @@
+Document: ID=B90675BB.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Because I’m a college student on a scholarship?
+
+Tokens:
+[Text=Because CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=college CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=college NamedEntityTag=O]
+[Text=student CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=student NamedEntityTag=TITLE]
+[Text=on CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=scholarship CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=scholarship NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR (IN Because)
+    (S
+      (NP (PRP I))
+      (VP (VBP ’m)
+        (NP (DT a) (NN college) (NN student))
+        (PP (IN on)
+          (NP (DT a) (NN scholarship)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, student-6)
+mark(student-6, Because-1)
+nsubj(student-6, I-2)
+cop(student-6, ’m-3)
+det(student-6, a-4)
+compound(student-6, college-5)
+case(scholarship-9, on-7)
+det(scholarship-9, a-8)
+obl:on(student-6, scholarship-9)
+punct(student-6, ?-10)
+
+Extracted the following NER entity mentions:
+student	TITLE	-

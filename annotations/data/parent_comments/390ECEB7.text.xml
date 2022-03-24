@@ -1,0 +1,56 @@
+Document: ID=390ECEB7.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Also some of those horns are loud enough to cause hearing damage.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=horns CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=horn NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=loud CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=loud NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cause CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=cause NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=damage CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=damage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (NP
+      (NP (DT some))
+      (PP (IN of)
+        (NP (DT those) (NNS horns))))
+    (VP (VBP are)
+      (ADVP (JJ loud))
+      (ADJP (JJ enough)
+        (S
+          (VP (TO to)
+            (VP (VB cause)
+              (NP (NN hearing) (NN damage)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enough-8)
+advmod(enough-8, Also-1)
+det:qmod(horns-5, some-2)
+nsubj:xsubj(cause-10, some-2)
+fixed(some-2, of-3)
+det(horns-5, those-4)
+nsubj(enough-8, horns-5)
+nsubj:xsubj(cause-10, horns-5)
+cop(enough-8, are-6)
+advmod(enough-8, loud-7)
+mark(cause-10, to-9)
+xcomp(enough-8, cause-10)
+compound(damage-12, hearing-11)
+obj(cause-10, damage-12)
+punct(enough-8, .-13)
+
+Extracted the following NER entity mentions:

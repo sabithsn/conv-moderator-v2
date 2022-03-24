@@ -1,0 +1,60 @@
+Document: ID=DC64884D.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+4 hours is well below what is generally considered “part time hours.”
+
+Tokens:
+[Text=4 CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=CD Lemma=4 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT4H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT4H">4 hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT4H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT4H">4 hours</TIMEX3>]
+[Text=is CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=below CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=below NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=generally CharacterOffsetBegin=30 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=generally NamedEntityTag=O]
+[Text=considered CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=VBN Lemma=consider NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=hours CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PTXH Timex=<TIMEX3 tid="t2" type="DURATION" value="PTXH">hours</TIMEX3>]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 4) (NNS hours))
+    (VP (VBZ is)
+      (ADVP (RB well)
+        (PP (IN below)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ is)
+                (ADVP (RB generally))
+                (VP (VBN considered)
+                  (S (`` “)
+                    (NP (NN part) (NN time) (NNS hours))))))))))
+    (. .) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+nummod(hours-2, 4-1)
+nsubj(is-3, hours-2)
+advmod(is-3, well-4)
+mark(considered-9, below-5)
+nsubj:pass(considered-9, what-6)
+aux:pass(considered-9, is-7)
+advmod(considered-9, generally-8)
+advcl:below(well-4, considered-9)
+punct(hours-13, “-10)
+compound(hours-13, part-11)
+compound(hours-13, time-12)
+xcomp(considered-9, hours-13)
+punct(is-3, .-14)
+punct(is-3, ”-15)
+
+Extracted the following NER entity mentions:
+4 hours	DURATION	DURATION:-1.0
+hours	DURATION	DURATION:-1.0

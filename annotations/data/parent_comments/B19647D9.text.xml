@@ -1,0 +1,92 @@
+Document: ID=B19647D9.text (2 sentences, 20 tokens)
+
+Sentence #1 (10 tokens):
+I'll post citations when I get a chance.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=post NamedEntityTag=O]
+[Text=citations CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=citation NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=chance CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=chance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB post)
+        (NP (NNS citations))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP get)
+              (NP (DT a) (NN chance)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, post-3)
+nsubj(post-3, I-1)
+aux(post-3, 'll-2)
+obj(post-3, citations-4)
+advmod(get-7, when-5)
+nsubj(get-7, I-6)
+advcl(post-3, get-7)
+det(chance-9, a-8)
+obj(get-7, chance-9)
+punct(post-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+I'd encourage you to look into it yourself though
+
+Tokens:
+[Text=I CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=encourage CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=encourage NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=yourself CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=yourself NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=though NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB encourage)
+        (NP (PRP you))
+        (S
+          (VP (TO to)
+            (VP (VB look)
+              (PP (IN into)
+                (NP (PRP it)))
+              (NP (PRP yourself)))))
+        (ADVP (RB though))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, encourage-3)
+nsubj(encourage-3, I-1)
+aux(encourage-3, 'd-2)
+obj(encourage-3, you-4)
+nsubj:xsubj(look-6, you-4)
+mark(look-6, to-5)
+xcomp(encourage-3, look-6)
+case(it-8, into-7)
+obl:into(look-6, it-8)
+obj(look-6, yourself-9)
+advmod(encourage-3, though-10)
+
+Extracted the following NER entity mentions:

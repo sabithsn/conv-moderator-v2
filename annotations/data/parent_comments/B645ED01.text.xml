@@ -1,0 +1,81 @@
+Document: ID=B645ED01.text (2 sentences, 18 tokens)
+
+Sentence #1 (10 tokens):
+My HV boyfriend turned in to a LV fiancée.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=HV CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=HV NamedEntityTag=O]
+[Text=boyfriend CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=boyfriend NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=turn NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=RP Lemma=in NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=LV CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=LV NamedEntityTag=O]
+[Text=fiancée CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=fiancée NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NNP HV) (NN boyfriend))
+    (VP (VBD turned)
+      (PRT (RP in))
+      (PP (IN to)
+        (NP (DT a) (NNP LV) (NN fiancée))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, turned-4)
+nmod:poss(boyfriend-3, My-1)
+compound(boyfriend-3, HV-2)
+nsubj(turned-4, boyfriend-3)
+compound:prt(turned-4, in-5)
+case(fiancée-9, to-6)
+det(fiancée-9, a-7)
+compound(fiancée-9, LV-8)
+obl:to(turned-4, fiancée-9)
+punct(turned-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+I need help on how to leave.
+
+Tokens:
+[Text=I CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=leave NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP need)
+      (NP (NN help))
+      (PP (IN on)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (VP (TO to)
+              (VP (VB leave)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-2)
+nsubj(need-2, I-1)
+obj(need-2, help-3)
+mark(leave-7, on-4)
+advmod(leave-7, how-5)
+mark(leave-7, to-6)
+advcl:to(need-2, leave-7)
+punct(need-2, .-8)
+
+Extracted the following NER entity mentions:

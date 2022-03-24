@@ -1,0 +1,39 @@
+Document: ID=7658E2CE.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Putin Returns To The Gold Standard For Its Currency
+
+Tokens:
+[Text=Putin CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=Returns CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=return NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gold CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Gold NamedEntityTag=O]
+[Text=Standard CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Standard NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Its CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=Currency CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=currency NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Putin) (NNS Returns))
+    (PP (IN To)
+      (NP (DT The) (NNP Gold) (NNP Standard)))
+    (PP (IN For)
+      (NP (PRP$ Its) (NN Currency)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Returns-2)
+compound(Returns-2, Putin-1)
+case(Standard-6, To-3)
+det(Standard-6, The-4)
+compound(Standard-6, Gold-5)
+obl:to(Returns-2, Standard-6)
+case(Currency-9, For-7)
+nmod:poss(Currency-9, Its-8)
+obl:for(Returns-2, Currency-9)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9592152964168222

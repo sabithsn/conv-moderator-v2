@@ -1,0 +1,222 @@
+Document: ID=EE8EE9C2.text (5 sentences, 50 tokens)
+
+Sentence #1 (3 tokens):
+Meaningless words.
+
+Tokens:
+[Text=Meaningless CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=meaningless NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Meaningless) (NNS words) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, words-2)
+amod(words-2, Meaningless-1)
+punct(words-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+What defines an oligarchy?
+
+Tokens:
+[Text=What CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=defines CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=define NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=oligarchy CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=oligarchy NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What))
+    (SQ
+      (VP (VBZ defines)
+        (NP (DT an) (NN oligarchy))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, defines-2)
+nsubj(defines-2, What-1)
+det(oligarchy-4, an-3)
+obj(defines-2, oligarchy-4)
+punct(defines-2, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+Is America a corrupt oligarchy?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=corrupt CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=corrupt NamedEntityTag=O]
+[Text=oligarchy CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=oligarchy NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP America))
+    (NP (DT a) (JJ corrupt) (NN oligarchy))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, oligarchy-5)
+cop(oligarchy-5, Is-1)
+nsubj(oligarchy-5, America-2)
+det(oligarchy-5, a-3)
+amod(oligarchy-5, corrupt-4)
+punct(oligarchy-5, ?-6)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.6771046679937804
+
+Sentence #4 (7 tokens):
+Rich politicians = oligarchy like Russia?
+
+Tokens:
+[Text=Rich CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Rich NamedEntityTag=O]
+[Text=politicians CharacterOffsetBegin=83 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=politician NamedEntityTag=O]
+[Text== CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=SYM Lemma== NamedEntityTag=O]
+[Text=oligarchy CharacterOffsetBegin=97 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=oligarchy NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=112 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=? CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Rich) (NNS politicians))
+    (SYM =)
+    (NP (NN oligarchy))
+    (PP (IN like)
+      (NP (NNP Russia)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, politicians-2)
+compound(politicians-2, Rich-1)
+dep(politicians-2, =-3)
+dep(politicians-2, oligarchy-4)
+case(Russia-6, like-5)
+obl:like(politicians-2, Russia-6)
+punct(politicians-2, ?-7)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9895822726571029
+
+Sentence #5 (29 tokens):
+No government is perfect and there is no definition for a Democracy but I think Ukraine fits squarely in the “Westernized Democracy” category like I said.
+
+Tokens:
+[Text=No CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=124 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=perfect CharacterOffsetBegin=138 CharacterOffsetEnd=145 PartOfSpeech=JJ Lemma=perfect NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=definition CharacterOffsetBegin=162 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=definition NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Democracy CharacterOffsetBegin=179 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=democracy NamedEntityTag=IDEOLOGY]
+[Text=but CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=201 CharacterOffsetEnd=208 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=fits CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=VBZ Lemma=fit NamedEntityTag=O]
+[Text=squarely CharacterOffsetBegin=214 CharacterOffsetEnd=222 PartOfSpeech=RB Lemma=squarely NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=`` Lemma=“ NamedEntityTag=MISC]
+[Text=Westernized CharacterOffsetBegin=231 CharacterOffsetEnd=242 PartOfSpeech=NNP Lemma=Westernized NamedEntityTag=MISC]
+[Text=Democracy CharacterOffsetBegin=243 CharacterOffsetEnd=252 PartOfSpeech=NNP Lemma=Democracy NamedEntityTag=IDEOLOGY]
+[Text=” CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=category CharacterOffsetBegin=254 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=category NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=268 CharacterOffsetEnd=269 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT No) (NN government))
+      (VP (VBZ is)
+        (ADJP (JJ perfect))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (DT no) (NN definition))
+          (PP (IN for)
+            (NP (DT a) (NN Democracy))))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (NNP Ukraine))
+            (VP (VBZ fits)
+              (ADVP (RB squarely))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (`` “)
+                    (NML (NNP Westernized) (NNP Democracy))
+                    ('' ”) (NN category))
+                  (SBAR (IN like)
+                    (S
+                      (NP (PRP I))
+                      (VP (VBD said)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, perfect-4)
+det(government-2, No-1)
+nsubj(perfect-4, government-2)
+cop(perfect-4, is-3)
+cc(is-7, and-5)
+expl(is-7, there-6)
+conj:and(perfect-4, is-7)
+det(definition-9, no-8)
+nsubj(is-7, definition-9)
+case(Democracy-12, for-10)
+det(Democracy-12, a-11)
+nmod:for(definition-9, Democracy-12)
+cc(think-15, but-13)
+nsubj(think-15, I-14)
+conj:but(perfect-4, think-15)
+nsubj(fits-17, Ukraine-16)
+ccomp(think-15, fits-17)
+advmod(fits-17, squarely-18)
+case(category-25, in-19)
+det(category-25, the-20)
+punct(category-25, “-21)
+compound(Democracy-23, Westernized-22)
+compound(category-25, Democracy-23)
+punct(category-25, ”-24)
+obl:in(fits-17, category-25)
+mark(said-28, like-26)
+nsubj(said-28, I-27)
+acl:relcl(category-25, said-28)
+punct(perfect-4, .-29)
+
+Extracted the following NER entity mentions:
+Democracy	IDEOLOGY	MISC:0.9801902168492539
+Ukraine	COUNTRY	LOCATION:0.9954986836415337
+“Westernized	MISC	MISC:0.9590941693312766
+Democracy	IDEOLOGY	MISC:0.9590941693312766

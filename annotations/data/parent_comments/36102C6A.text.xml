@@ -1,0 +1,71 @@
+Document: ID=36102C6A.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Top lawmakers agree on $1.5 trillion spending deal with $13.6 billion for Ukraine and European allies
+
+Tokens:
+[Text=Top CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=JJ Lemma=top NamedEntityTag=O]
+[Text=lawmakers CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=lawmaker NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.5E12]
+[Text=1.5 CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CD Lemma=1.5 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.5E12]
+[Text=trillion CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=CD Lemma=trillion NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.5E12]
+[Text=spending CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=spending NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.36E10]
+[Text=13.6 CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=CD Lemma=13.6 NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.36E10]
+[Text=billion CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=CD Lemma=billion NamedEntityTag=MONEY NormalizedNamedEntityTag=$1.36E10]
+[Text=for CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=European CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=european NamedEntityTag=NATIONALITY]
+[Text=allies CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NNS Lemma=ally NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Top) (NNS lawmakers))
+    (VP (VBP agree)
+      (PP (IN on)
+        (NP
+          (NP
+            (QP ($ $) (CD 1.5) (CD trillion))
+            (NN spending) (NN deal))
+          (PP (IN with)
+            (NP
+              (QP ($ $) (CD 13.6) (CD billion))))))
+      (PP (IN for)
+        (NP
+          (NP (NNP Ukraine))
+          (CC and)
+          (NP (JJ European) (NNS allies)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agree-3)
+amod(lawmakers-2, Top-1)
+nsubj(agree-3, lawmakers-2)
+case(deal-9, on-4)
+nummod(deal-9, $-5)
+compound(trillion-7, 1.5-6)
+nummod($-5, trillion-7)
+compound(deal-9, spending-8)
+obl:on(agree-3, deal-9)
+case($-11, with-10)
+nmod:with(deal-9, $-11)
+compound(billion-13, 13.6-12)
+nummod($-11, billion-13)
+case(Ukraine-15, for-14)
+obl:for(agree-3, Ukraine-15)
+cc(allies-18, and-16)
+amod(allies-18, European-17)
+obl:for(agree-3, allies-18)
+conj:and(Ukraine-15, allies-18)
+
+Extracted the following NER entity mentions:
+$1.5 trillion	MONEY	MONEY:0.9845346598683682
+$13.6 billion	MONEY	MONEY:0.9997254476781099
+Ukraine	COUNTRY	LOCATION:0.9952760005925821
+European	NATIONALITY	MISC:0.9997181107523572

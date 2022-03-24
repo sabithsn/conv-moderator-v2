@@ -1,0 +1,127 @@
+Document: ID=B716244D.text (3 sentences, 27 tokens)
+
+Sentence #1 (10 tokens):
+No free speech and can't even handle debate.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=handle CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=handle NamedEntityTag=O]
+[Text=debate CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=debate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (UCP
+    (NP (DT No) (JJ free) (NN speech))
+    (CC and)
+    (VP (MD ca)
+      (VP (RB n't)
+        (ADVP (RB even))
+        (VP (VB handle)
+          (NP (NN debate)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, speech-3)
+det(speech-3, No-1)
+amod(speech-3, free-2)
+cc(handle-8, and-4)
+aux(handle-8, ca-5)
+advmod(handle-8, n't-6)
+advmod(handle-8, even-7)
+conj:and(speech-3, handle-8)
+obj(handle-8, debate-9)
+punct(handle-8, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Also allowing genocide, famine and all China's horror.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=allowing CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=allow NamedEntityTag=O]
+[Text=genocide CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=genocide NamedEntityTag=CRIMINAL_CHARGE]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=famine CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=famine NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text='s CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=horror CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=horror NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (VP (VBG allowing)
+      (NP
+        (NP (NN genocide))
+        (, ,)
+        (NP (NN famine))
+        (CC and)
+        (NP
+          (NP (DT all) (NNP China) (POS 's))
+          (NN horror))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, allowing-2)
+advmod(allowing-2, Also-1)
+obj(allowing-2, genocide-3)
+punct(genocide-3, ,-4)
+obj(allowing-2, famine-5)
+conj:and(genocide-3, famine-5)
+cc(horror-10, and-6)
+det(China-8, all-7)
+nmod:poss(horror-10, China-8)
+case(China-8, 's-9)
+obj(allowing-2, horror-10)
+conj:and(genocide-3, horror-10)
+punct(allowing-2, .-11)
+
+Extracted the following NER entity mentions:
+genocide	CRIMINAL_CHARGE	-
+China	COUNTRY	LOCATION:0.8375098842855594
+
+Sentence #3 (6 tokens):
+I wonder which sub it is
+
+Tokens:
+[Text=I CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wonder CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=VBP Lemma=wonder NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (PRP I))
+        (VP (VBP wonder)
+          (NP (WDT which) (NN sub)))))
+    (NP (PRP it))
+    (VP (VBZ is))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-6)
+nsubj(wonder-2, I-1)
+parataxis(is-6, wonder-2)
+det(sub-4, which-3)
+obj(wonder-2, sub-4)
+nsubj(is-6, it-5)
+
+Extracted the following NER entity mentions:

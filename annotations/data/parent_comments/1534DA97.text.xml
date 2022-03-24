@@ -1,0 +1,357 @@
+Document: ID=1534DA97.text (8 sentences, 75 tokens)
+
+Sentence #1 (2 tokens):
+OK.
+
+Tokens:
+[Text=OK CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=ok NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH OK) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, OK-1)
+punct(OK-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Assuming you are correct.
+
+Tokens:
+[Text=Assuming CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=VBG Lemma=assume NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=correct CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=correct NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Assuming)
+        (NP (PRP you))))
+    (VP (VBP are)
+      (ADJP (JJ correct)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, correct-4)
+csubj(correct-4, Assuming-1)
+obj(Assuming-1, you-2)
+cop(correct-4, are-3)
+punct(correct-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (5 tokens):
+Why not target   1.
+
+Tokens:
+[Text=Why CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=target CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=target NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why) (RB not))
+    (NP (NN target) (CD 1))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, target-3)
+advmod(not-2, Why-1)
+dep(target-3, not-2)
+nummod(target-3, 1-4)
+punct(target-3, .-5)
+
+Extracted the following NER entity mentions:
+1	NUMBER	NUMBER:-1.0
+
+Sentence #4 (11 tokens):
+the whole continent of Africa:  1.216 billion people 2.
+
+Tokens:
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=continent CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=continent NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Africa CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Africa NamedEntityTag=LOCATION]
+[Text=: CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1.216 CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=CD Lemma=1.216 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.216E9]
+[Text=billion CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=CD Lemma=billion NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.216E9]
+[Text=people CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (DT the) (JJ whole) (NN continent))
+      (PP (IN of)
+        (NP (NNP Africa))))
+    (: :)
+    (NP
+      (NP
+        (QP (CD 1.216) (CD billion))
+        (NNS people))
+      (NP-TMP (CD 2)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, continent-3)
+det(continent-3, the-1)
+amod(continent-3, whole-2)
+case(Africa-5, of-4)
+nmod:of(continent-3, Africa-5)
+punct(continent-3, :-6)
+compound(billion-8, 1.216-7)
+nummod(people-9, billion-8)
+dep(continent-3, people-9)
+obl:tmod(people-9, 2-10)
+punct(continent-3, .-11)
+
+Extracted the following NER entity mentions:
+Africa	LOCATION	LOCATION:0.8835899270010572
+1.216 billion	NUMBER	NUMBER:-1.0
+2	NUMBER	NUMBER:-1.0
+
+Sentence #5 (10 tokens):
+the country of India:  1.38 billion people 3.
+
+Tokens:
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=India CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=India NamedEntityTag=COUNTRY]
+[Text=: CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1.38 CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=CD Lemma=1.38 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.38E9]
+[Text=billion CharacterOffsetBegin=136 CharacterOffsetEnd=143 PartOfSpeech=CD Lemma=billion NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.38E9]
+[Text=people CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (DT the) (NN country))
+      (PP (IN of)
+        (NP (NNP India))))
+    (: :)
+    (NP
+      (NP
+        (QP (CD 1.38) (CD billion))
+        (NNS people))
+      (NP-TMP (CD 3)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, country-2)
+det(country-2, the-1)
+case(India-4, of-3)
+nmod:of(country-2, India-4)
+punct(country-2, :-5)
+compound(billion-7, 1.38-6)
+nummod(people-8, billion-7)
+dep(country-2, people-8)
+obl:tmod(people-8, 3-9)
+punct(country-2, .-10)
+
+Extracted the following NER entity mentions:
+India	COUNTRY	LOCATION:0.9457341592586608
+1.38 billion	NUMBER	NUMBER:-1.0
+3	NUMBER	NUMBER:-1.0
+
+Sentence #6 (32 tokens):
+the country of China: 1.402 billion people  That's a total of almost 4 billion people, which is more than half of the world's population of 7.9 billion.
+
+Tokens:
+[Text=the CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=: CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=1.402 CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=CD Lemma=1.402 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.402E9]
+[Text=billion CharacterOffsetBegin=182 CharacterOffsetEnd=189 PartOfSpeech=CD Lemma=billion NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.402E9]
+[Text=people CharacterOffsetBegin=190 CharacterOffsetEnd=196 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=That CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=207 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=total NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=216 CharacterOffsetEnd=222 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=4 CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=CD Lemma=4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~4.0E9]
+[Text=billion CharacterOffsetBegin=225 CharacterOffsetEnd=232 PartOfSpeech=CD Lemma=billion NamedEntityTag=NUMBER NormalizedNamedEntityTag=~4.0E9]
+[Text=people CharacterOffsetBegin=233 CharacterOffsetEnd=239 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=239 CharacterOffsetEnd=240 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=250 CharacterOffsetEnd=254 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=255 CharacterOffsetEnd=259 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=half NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=population CharacterOffsetBegin=280 CharacterOffsetEnd=290 PartOfSpeech=NN Lemma=population NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=7.9 CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=CD Lemma=7.9 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.9E9]
+[Text=billion CharacterOffsetBegin=298 CharacterOffsetEnd=305 PartOfSpeech=CD Lemma=billion NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.9E9]
+[Text=. CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (DT the) (NN country))
+      (PP (IN of)
+        (NP (NNP China))))
+    (: :)
+    (NP
+      (NP
+        (QP (CD 1.402) (CD billion))
+        (NNS people))
+      (SBAR
+        (S
+          (NP (DT That))
+          (VP (VBZ 's)
+            (NP
+              (NP (DT a) (NN total))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (QP (RB almost) (CD 4) (CD billion))
+                    (NNS people))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is)
+                        (NP
+                          (NP
+                            (QP (JJR more) (IN than) (NN half)))
+                          (PP (IN of)
+                            (NP
+                              (NP
+                                (NP (DT the) (NN world) (POS 's))
+                                (NN population))
+                              (PP (IN of)
+                                (NP
+                                  (QP (CD 7.9) (CD billion)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, country-2)
+det(country-2, the-1)
+case(China-4, of-3)
+nmod:of(country-2, China-4)
+punct(country-2, :-5)
+compound(billion-7, 1.402-6)
+nummod(people-8, billion-7)
+dep(country-2, people-8)
+nsubj(total-12, people-8)
+nsubj(half-23, people-8)
+ref(people-8, That-9)
+cop(total-12, 's-10)
+det:qmod(people-17, a-11)
+fixed(a-11, total-12)
+fixed(a-11, of-13)
+advmod(billion-16, almost-14)
+compound(billion-16, 4-15)
+nummod(people-17, billion-16)
+acl:relcl(people-8, people-17)
+nsubj(half-23, people-17)
+punct(people-17, ,-18)
+ref(people-8, which-19)
+ref(people-17, which-19)
+cop(half-23, is-20)
+advmod(half-23, more-21)
+fixed(more-21, than-22)
+acl:relcl(people-17, half-23)
+case(population-28, of-24)
+det(world-26, the-25)
+nmod:poss(population-28, world-26)
+case(world-26, 's-27)
+nmod:of(half-23, population-28)
+case(billion-31, of-29)
+compound(billion-31, 7.9-30)
+nmod:of(population-28, billion-31)
+punct(country-2, .-32)
+
+Extracted the following NER entity mentions:
+China	COUNTRY	LOCATION:0.9196791919562003
+1.402 billion	NUMBER	NUMBER:-1.0
+4 billion	NUMBER	NUMBER:-1.0
+7.9 billion	NUMBER	NUMBER:-1.0
+
+Sentence #7 (4 tokens):
+Why the West?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=West CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=NNP Lemma=West NamedEntityTag=LOCATION]
+[Text=? CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (NP (DT the) (NNP West)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, West-3)
+advmod(West-3, Why-1)
+det(West-3, the-2)
+punct(West-3, ?-4)
+
+Extracted the following NER entity mentions:
+West	LOCATION	LOCATION:0.6184198643271491
+
+Sentence #8 (6 tokens):
+What am I missing here?
+
+Tokens:
+[Text=What CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=331 CharacterOffsetEnd=332 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=missing CharacterOffsetBegin=333 CharacterOffsetEnd=340 PartOfSpeech=VBG Lemma=miss NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=345 CharacterOffsetEnd=346 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP am)
+      (NP (PRP I))
+      (VP (VBG missing)
+        (ADVP (RB here))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, missing-4)
+obj(missing-4, What-1)
+aux(missing-4, am-2)
+nsubj(missing-4, I-3)
+advmod(missing-4, here-5)
+punct(missing-4, ?-6)
+
+Extracted the following NER entity mentions:

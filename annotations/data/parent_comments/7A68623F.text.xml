@@ -1,0 +1,97 @@
+Document: ID=7A68623F.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+CMV: It's the stay at home parents job regardless of sex to cook, clean, and care for the children full time.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stay CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=stay NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=regardless CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=regardless NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=cook CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=cook NamedEntityTag=TITLE]
+[Text=, CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=clean CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=clean NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=care NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (NP
+          (NP (DT the) (NN stay))
+          (PP (IN at)
+            (NP (NN home) (NNS parents)
+              (UCP
+                (NML
+                  (NML (NN job))
+                  (PP
+                    (ADVP (RB regardless))
+                    (IN of)
+                    (NP
+                      (NP (NN sex))
+                      (PP (IN to)
+                        (NP (NN cook))))))
+                (, ,)
+                (ADJP (JJ clean))
+                (, ,)
+                (CC and)
+                (NML (NN care)))))
+          (PP (IN for)
+            (NP (DT the) (NNS children)))
+          (NP-TMP (JJ full) (NN time)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(stay-6, It-3)
+cop(stay-6, 's-4)
+det(stay-6, the-5)
+appos(CMV-1, stay-6)
+case(parents-9, at-7)
+compound(parents-9, home-8)
+nmod:at(stay-6, parents-9)
+dep(parents-9, job-10)
+case(sex-13, regardless-11)
+fixed(regardless-11, of-12)
+nmod:regardless_of(job-10, sex-13)
+case(cook-15, to-14)
+nmod:to(sex-13, cook-15)
+punct(job-10, ,-16)
+amod(job-10, clean-17)
+punct(job-10, ,-18)
+cc(care-20, and-19)
+dep(parents-9, care-20)
+conj:and(job-10, care-20)
+case(children-23, for-21)
+det(children-23, the-22)
+nmod:for(stay-6, children-23)
+amod(time-25, full-24)
+obl:tmod(stay-6, time-25)
+punct(CMV-1, .-26)
+
+Extracted the following NER entity mentions:
+cook	TITLE	-

@@ -1,0 +1,107 @@
+Document: ID=05417F5B.text (2 sentences, 26 tokens)
+
+Sentence #1 (21 tokens):
+I really am gay but keep using your privilege of denying a POC LGBTQ+ person of their sexual identity.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=privilege CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=privilege NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=denying CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=deny NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=POC CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=poc NamedEntityTag=O]
+[Text=LGBTQ CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=lgbtq NamedEntityTag=O]
+[Text=+ CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=SYM Lemma=+ NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=sexual CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=identity CharacterOffsetBegin=93 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=identity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB really))
+    (VP
+      (VP (VBP am)
+        (ADJP (JJ gay)))
+      (CC but)
+      (VP (VB keep)
+        (S
+          (VP (VBG using)
+            (NP
+              (NP (PRP$ your) (NN privilege))
+              (PP (IN of)
+                (S
+                  (VP (VBG denying)
+                    (NP (DT a) (NN POC))
+                    (NP
+                      (NP (NN LGBTQ) (SYM +) (NN person))
+                      (PP (IN of)
+                        (NP (PRP$ their) (JJ sexual) (NN identity))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gay-4)
+nsubj(gay-4, I-1)
+nsubj(keep-6, I-1)
+advmod(gay-4, really-2)
+cop(gay-4, am-3)
+cc(keep-6, but-5)
+conj:but(gay-4, keep-6)
+xcomp(keep-6, using-7)
+nmod:poss(privilege-9, your-8)
+obj(using-7, privilege-9)
+mark(denying-11, of-10)
+acl:of(privilege-9, denying-11)
+det(POC-13, a-12)
+iobj(denying-11, POC-13)
+compound(person-16, LGBTQ-14)
+dep(person-16, +-15)
+obj(denying-11, person-16)
+case(identity-20, of-17)
+nmod:poss(identity-20, their-18)
+amod(identity-20, sexual-19)
+nmod:of(person-16, identity-20)
+punct(gay-4, .-21)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+You should be embarrassed.
+
+Tokens:
+[Text=You CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=embarrassed CharacterOffsetBegin=117 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=embarrassed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ embarrassed))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, embarrassed-4)
+nsubj(embarrassed-4, You-1)
+aux(embarrassed-4, should-2)
+cop(embarrassed-4, be-3)
+punct(embarrassed-4, .-5)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,59 @@
+Document: ID=424A4B23.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Not in office and most everyone on this sub complains about him daily.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=complains CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=VBZ Lemma=complain NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=daily NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t1" type="SET" value="P1D">daily</TIMEX3>]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (FRAG (RB Not)
+      (PP (IN in)
+        (NP (NN office))))
+    (CC and)
+    (S
+      (NP
+        (NP (JJS most) (NN everyone))
+        (PP (IN on)
+          (NP (DT this) (NN sub))))
+      (VP (VBZ complains)
+        (PP (IN about)
+          (NP (PRP him)))
+        (ADVP (RB daily))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Not-1)
+case(office-3, in-2)
+obl:in(Not-1, office-3)
+cc(complains-10, and-4)
+amod(everyone-6, most-5)
+nsubj(complains-10, everyone-6)
+case(sub-9, on-7)
+det(sub-9, this-8)
+nmod:on(everyone-6, sub-9)
+conj:and(Not-1, complains-10)
+case(him-12, about-11)
+obl:about(complains-10, him-12)
+advmod(complains-10, daily-13)
+punct(Not-1, .-14)
+
+Extracted the following NER entity mentions:
+daily	SET	SET:-1.0
+him	PERSON	-

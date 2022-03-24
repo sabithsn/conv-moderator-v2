@@ -1,0 +1,93 @@
+Document: ID=E568F679.text (2 sentences, 19 tokens)
+
+Sentence #1 (4 tokens):
+Popular ≠ right.
+
+Tokens:
+[Text=Popular CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Popular NamedEntityTag=O]
+[Text=≠ CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=SYM Lemma=≠ NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=UH Lemma=right NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Popular))
+    (SYM ≠)
+    (INTJ (UH right))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Popular-1)
+dep(Popular-1, ≠-2)
+discourse(Popular-1, right-3)
+punct(Popular-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens):
+Republicans need to stand for what is right and have a spine about it.
+
+Tokens:
+[Text=Republicans CharacterOffsetBegin=17 CharacterOffsetEnd=28 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=need CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=stand NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=spine CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=spine NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNPS Republicans))
+    (VP
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB stand)
+              (PP (IN for)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ is)
+                      (ADJP (JJ right))))))))))
+      (CC and)
+      (VP (VBP have)
+        (NP
+          (NP (DT a) (NN spine))
+          (PP (IN about)
+            (NP (PRP it))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-2)
+nsubj(need-2, Republicans-1)
+nsubj:xsubj(stand-4, Republicans-1)
+nsubj(have-10, Republicans-1)
+mark(stand-4, to-3)
+xcomp(need-2, stand-4)
+mark(right-8, for-5)
+nsubj(right-8, what-6)
+cop(right-8, is-7)
+advcl:for(stand-4, right-8)
+cc(have-10, and-9)
+conj:and(need-2, have-10)
+det(spine-12, a-11)
+obj(have-10, spine-12)
+case(it-14, about-13)
+nmod:about(spine-12, it-14)
+punct(need-2, .-15)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.9994411071652868

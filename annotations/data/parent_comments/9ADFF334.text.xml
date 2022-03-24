@@ -1,0 +1,41 @@
+Document: ID=9ADFF334.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Ex-officer cleared in shooting during Breonna Taylor raid
+
+Tokens:
+[Text=Ex-officer CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=ex-officer NamedEntityTag=O]
+[Text=cleared CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=VBN Lemma=clear NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=shooting CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=shooting NamedEntityTag=CAUSE_OF_DEATH]
+[Text=during CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=Breonna CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Breonna NamedEntityTag=PERSON]
+[Text=Taylor CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Taylor NamedEntityTag=PERSON]
+[Text=raid CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=raid NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Ex-officer))
+    (VP (VBN cleared)
+      (PP (IN in)
+        (NP (NN shooting)))
+      (PP (IN during)
+        (NP
+          (NML (NNP Breonna) (NNP Taylor))
+          (NN raid))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ex-officer-1)
+dep(Ex-officer-1, cleared-2)
+case(shooting-4, in-3)
+obl:in(cleared-2, shooting-4)
+case(raid-8, during-5)
+compound(Taylor-7, Breonna-6)
+compound(raid-8, Taylor-7)
+obl:during(cleared-2, raid-8)
+
+Extracted the following NER entity mentions:
+shooting	CAUSE_OF_DEATH	-
+Breonna Taylor	PERSON	PERSON:0.9887122994661397

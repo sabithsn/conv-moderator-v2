@@ -1,0 +1,220 @@
+Document: ID=59B107EB.text (5 sentences, 47 tokens)
+
+Sentence #1 (17 tokens):
+> Salem had a governor who was out of town as the mass insanity took root.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Salem CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Salem NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=governor CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=governor NamedEntityTag=TITLE]
+[Text=who CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=town CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=town NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mass CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=mass NamedEntityTag=O]
+[Text=insanity CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=insanity NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=root CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=root NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (S
+        (VP (SYM >)
+          (NP (NNP Salem)))))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN governor))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (ADJP (IN out)
+                (PP (IN of)
+                  (NP (NN town))))
+              (SBAR (IN as)
+                (S
+                  (NP (DT the) (NN mass) (NN insanity))
+                  (VP (VBD took)
+                    (NP (NN root))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-3)
+dep(Salem-2, >-1)
+nsubj(had-3, Salem-2)
+det(governor-5, a-4)
+obj(had-3, governor-5)
+nsubj(town-10, governor-5)
+ref(governor-5, who-6)
+cop(town-10, was-7)
+case(town-10, out-8)
+fixed(out-8, of-9)
+acl:relcl(governor-5, town-10)
+mark(took-15, as-11)
+det(insanity-14, the-12)
+compound(insanity-14, mass-13)
+nsubj(took-15, insanity-14)
+advcl:as(town-10, took-15)
+obj(took-15, root-16)
+punct(had-3, .-17)
+
+Extracted the following NER entity mentions:
+Salem	PERSON	PERSON:0.6474031520453548
+governor	TITLE	-
+
+Sentence #2 (9 tokens):
+When he returned he shut it down immediately.
+
+Tokens:
+[Text=When CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=returned CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=VBD Lemma=return NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=shut CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=shut NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=108 CharacterOffsetEnd=119 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP he))
+        (VP (VBD returned))))
+    (NP (PRP he))
+    (VP (VBD shut)
+      (NP (PRP it))
+      (PRT (RP down))
+      (ADVP (RB immediately)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shut-5)
+advmod(returned-3, When-1)
+nsubj(returned-3, he-2)
+advcl(shut-5, returned-3)
+nsubj(shut-5, he-4)
+obj(shut-5, it-6)
+compound:prt(shut-5, down-7)
+advmod(shut-5, immediately-8)
+punct(shut-5, .-9)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+he	PERSON	-
+
+Sentence #3 (9 tokens):
+He hadn't taken any of the steps.
+
+Tokens:
+[Text=He CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD had) (RB n't)
+      (VP (VBN taken)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP (DT the) (NNS steps))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, taken-4)
+nsubj(taken-4, He-1)
+aux(taken-4, had-2)
+advmod(taken-4, n't-3)
+obj(taken-4, any-5)
+case(steps-8, of-6)
+det(steps-8, the-7)
+nmod:of(any-5, steps-8)
+punct(taken-4, .-9)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #4 (6 tokens):
+Wasnt it also drug related?
+
+Tokens:
+[Text=Wasnt CharacterOffsetBegin=156 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=Wasnt NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=drug CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=drug NamedEntityTag=O]
+[Text=related CharacterOffsetBegin=175 CharacterOffsetEnd=182 PartOfSpeech=VBN Lemma=relate NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Wasnt) (PRP it))
+      (ADVP (RB also)))
+    (ADJP (NN drug) (VBN related))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wasnt-1)
+dep(Wasnt-1, it-2)
+advmod(Wasnt-1, also-3)
+dep(related-5, drug-4)
+amod(Wasnt-1, related-5)
+punct(Wasnt-1, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (6 tokens):
+Like there was a fungus?
+
+Tokens:
+[Text=Like CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fungus CharacterOffsetBegin=201 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=fungus NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR (IN Like)
+    (S
+      (NP (EX there))
+      (VP (VBD was)
+        (NP (DT a) (NN fungus))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-3)
+mark(was-3, Like-1)
+expl(was-3, there-2)
+det(fungus-5, a-4)
+nsubj(was-3, fungus-5)
+punct(was-3, ?-6)
+
+Extracted the following NER entity mentions:

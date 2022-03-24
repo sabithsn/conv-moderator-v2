@@ -1,0 +1,86 @@
+Document: ID=108B36C2.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Graham Reiterates his position on Putin ‘Assassination’ and says to Take Him Out ‘By Any Means Possible’
+
+Tokens:
+[Text=Graham CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Graham NamedEntityTag=PERSON]
+[Text=Reiterates CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=reiterate NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=‘ CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Assassination CharacterOffsetBegin=41 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Assassination NamedEntityTag=CRIMINAL_CHARGE]
+[Text=’ CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Take CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=Him CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=By CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Any CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=Means CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=means NamedEntityTag=O]
+[Text=Possible CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=possible NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Graham))
+    (VP
+      (VP (VBZ Reiterates)
+        (NP (PRP$ his) (NN position))
+        (PP (IN on)
+          (NP
+            (NP (NNP Putin))
+            (`` ‘)
+            (NP (NNP Assassination))
+            ('' ’))))
+      (CC and)
+      (VP (VBZ says)
+        (PP (IN to)
+          (S
+            (VP (VB Take)
+              (S
+                (NP (PRP Him))
+                (PP (IN Out)
+                  (PP (`` ‘) (IN By)
+                    (NP
+                      (NP (DT Any) (NNS Means))
+                      (ADJP (JJ Possible)))
+                    ('' ’)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Reiterates-2)
+nsubj(Reiterates-2, Graham-1)
+nsubj(says-11, Graham-1)
+nmod:poss(position-4, his-3)
+obj(Reiterates-2, position-4)
+case(Putin-6, on-5)
+obl:on(Reiterates-2, Putin-6)
+punct(Putin-6, ‘-7)
+dep(Putin-6, Assassination-8)
+punct(Putin-6, ’-9)
+cc(says-11, and-10)
+conj:and(Reiterates-2, says-11)
+mark(Take-13, to-12)
+advcl:to(says-11, Take-13)
+xcomp(Take-13, Him-14)
+case(Means-19, Out-15)
+punct(Means-19, ‘-16)
+case(Means-19, By-17)
+det(Means-19, Any-18)
+dep(Him-14, Means-19)
+amod(Means-19, Possible-20)
+punct(Means-19, ’-21)
+
+Extracted the following NER entity mentions:
+Graham	PERSON	PERSON:0.9894539748036982
+Putin	PERSON	PERSON:0.8668885919517716
+Assassination	CRIMINAL_CHARGE	-
+his	PERSON	-
+Him	PERSON	-

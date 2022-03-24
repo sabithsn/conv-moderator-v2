@@ -1,0 +1,78 @@
+Document: ID=D3F52843.text (2 sentences, 16 tokens)
+
+Sentence #1 (6 tokens):
+Plllleeeaaassseeee start with Tucker Carlson.
+
+Tokens:
+[Text=Plllleeeaaassseeee CharacterOffsetBegin=0 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=plllleeeaaassseeee NamedEntityTag=O]
+[Text=start CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=start NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Plllleeeaaassseeee) (NN start))
+    (PP (IN with)
+      (NP (NNP Tucker) (NNP Carlson)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, start-2)
+amod(start-2, Plllleeeaaassseeee-1)
+case(Carlson-5, with-3)
+compound(Carlson-5, Tucker-4)
+nmod:with(start-2, Carlson-5)
+punct(start-2, .-6)
+
+Extracted the following NER entity mentions:
+Tucker Carlson	PERSON	PERSON:0.9976297067701096
+
+Sentence #2 (10 tokens):
+Naked covered in wasps and burning at the stake.
+
+Tokens:
+[Text=Naked CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Naked NamedEntityTag=O]
+[Text=covered CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=cover NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=wasps CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=wasp NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=burning CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=VBG Lemma=burn NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stake CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=stake NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Naked))
+    (VP (VBD covered)
+      (PP (IN in)
+        (NP
+          (NP (NNS wasps))
+          (CC and)
+          (NP
+            (NP (VBG burning))
+            (PP (IN at)
+              (NP (DT the) (NN stake)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, covered-2)
+nsubj(covered-2, Naked-1)
+case(wasps-4, in-3)
+obl:in(covered-2, wasps-4)
+cc(burning-6, and-5)
+obl:in(covered-2, burning-6)
+conj:and(wasps-4, burning-6)
+case(stake-9, at-7)
+det(stake-9, the-8)
+nmod:at(burning-6, stake-9)
+punct(covered-2, .-10)
+
+Extracted the following NER entity mentions:

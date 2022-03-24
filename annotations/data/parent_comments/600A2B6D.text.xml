@@ -1,0 +1,38 @@
+Document: ID=600A2B6D.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Tom Brady is MAGA-diot too?
+
+Tokens:
+[Text=Tom CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Tom NamedEntityTag=PERSON]
+[Text=Brady CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Brady NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=MAGA CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=MAGA NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=diot CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=diot NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Tom) (NNP Brady))
+    (VP (VBZ is)
+      (ADVP
+        (NML (NNP MAGA) (HYPH -) (NN diot))
+        (RB too)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+compound(Brady-2, Tom-1)
+nsubj(is-3, Brady-2)
+compound(diot-6, MAGA-4)
+punct(diot-6, --5)
+dep(too-7, diot-6)
+advmod(is-3, too-7)
+punct(is-3, ?-8)
+
+Extracted the following NER entity mentions:
+Tom Brady	PERSON	PERSON:0.9996227857387329

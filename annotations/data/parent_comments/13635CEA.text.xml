@@ -1,0 +1,115 @@
+Document: ID=13635CEA.text (2 sentences, 28 tokens)
+
+Sentence #1 (9 tokens):
+You know what they are trying to achieve.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=achieve CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=achieve NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP know)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (VP (VBG trying)
+              (S
+                (VP (TO to)
+                  (VP (VB achieve)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, You-1)
+obj(achieve-8, what-3)
+nsubj(trying-6, they-4)
+nsubj:xsubj(achieve-8, they-4)
+aux(trying-6, are-5)
+ccomp(know-2, trying-6)
+mark(achieve-8, to-7)
+xcomp(trying-6, achieve-8)
+punct(know-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (19 tokens):
+They want this to be a “racist” sub so this shit is posted all the time.
+
+Tokens:
+[Text=They CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=posted CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=VBN Lemma=post NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP want)
+      (S
+        (NP (DT this))
+        (VP (TO to)
+          (VP (VB be)
+            (NP (DT a) (`` “) (JJ racist) ('' ”) (NN sub))
+            (SBAR (IN so)
+              (S
+                (NP (DT this) (NN shit))
+                (VP (VBZ is)
+                  (VP (VBN posted)
+                    (NP-TMP
+                      (ADVP (DT all))
+                      (DT the) (NN time))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-2)
+nsubj(want-2, They-1)
+obj(want-2, this-3)
+nsubj:xsubj(sub-10, this-3)
+mark(sub-10, to-4)
+cop(sub-10, be-5)
+det(sub-10, a-6)
+punct(sub-10, “-7)
+amod(sub-10, racist-8)
+punct(sub-10, ”-9)
+xcomp(want-2, sub-10)
+mark(posted-15, so-11)
+det(shit-13, this-12)
+nsubj:pass(posted-15, shit-13)
+aux:pass(posted-15, is-14)
+advcl:so(sub-10, posted-15)
+advmod(time-18, all-16)
+det(time-18, the-17)
+obl:tmod(posted-15, time-18)
+punct(want-2, .-19)
+
+Extracted the following NER entity mentions:

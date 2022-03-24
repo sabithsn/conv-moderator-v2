@@ -1,0 +1,78 @@
+Document: ID=D93F4014.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+The only Rage against the Machine they have these days are when the batteries on their dildos are empty.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=Rage CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=rage NamedEntityTag=MISC]
+[Text=against CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Machine CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=machine NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=are CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=batteries CharacterOffsetBegin=68 CharacterOffsetEnd=77 PartOfSpeech=NNS Lemma=battery NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=dildos CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=NNS Lemma=dildo NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=empty CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=empty NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ only) (NN Rage))
+      (PP (IN against)
+        (NP
+          (NP (DT the) (NN Machine))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (VBP have)
+                (NP (DT these) (NNS days))))))))
+    (VP (VBP are)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP
+            (NP (DT the) (NNS batteries))
+            (PP (IN on)
+              (NP (PRP$ their) (NNS dildos))))
+          (VP (VBP are)
+            (ADJP (JJ empty))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-11)
+det(Rage-3, The-1)
+amod(Rage-3, only-2)
+nsubj(are-11, Rage-3)
+case(Machine-6, against-4)
+det(Machine-6, the-5)
+nmod:against(Rage-3, Machine-6)
+nsubj(have-8, they-7)
+acl:relcl(Machine-6, have-8)
+det(days-10, these-9)
+obl:tmod(have-8, days-10)
+advmod(empty-19, when-12)
+det(batteries-14, the-13)
+nsubj(empty-19, batteries-14)
+case(dildos-17, on-15)
+nmod:poss(dildos-17, their-16)
+nmod:on(batteries-14, dildos-17)
+cop(empty-19, are-18)
+advcl(are-11, empty-19)
+punct(are-11, .-20)
+
+Extracted the following NER entity mentions:
+Rage	MISC	MISC:0.4701148573740431
+days	DURATION	DURATION:-1.0

@@ -1,0 +1,82 @@
+Document: ID=F60BAD00.text (2 sentences, 19 tokens)
+
+Sentence #1 (6 tokens):
+Is it really his fault?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=fault CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=fault NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (ADVP (RB really))
+    (NP (PRP$ his) (NN fault))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fault-5)
+cop(fault-5, Is-1)
+nsubj(fault-5, it-2)
+advmod(fault-5, really-3)
+nmod:poss(fault-5, his-4)
+punct(fault-5, ?-6)
+
+Extracted the following NER entity mentions:
+his	PERSON	-
+
+Sentence #2 (13 tokens):
+Gas prices have gone up and down so much over the past decade
+
+Tokens:
+[Text=Gas CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=gone CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=PREV_IMMEDIATE P10Y Timex=<TIMEX3 alt_value="PREV_IMMEDIATE P10Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the past decade</TIMEX3>]
+[Text=past CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=PREV_IMMEDIATE P10Y Timex=<TIMEX3 alt_value="PREV_IMMEDIATE P10Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the past decade</TIMEX3>]
+[Text=decade CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=decade NamedEntityTag=DATE NormalizedNamedEntityTag=PREV_IMMEDIATE P10Y Timex=<TIMEX3 alt_value="PREV_IMMEDIATE P10Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the past decade</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Gas) (NNS prices))
+    (VP (VBP have)
+      (VP (VBN gone)
+        (PRT (RP up)
+          (CC and)
+          (RP down))
+        (ADVP (RB so) (RB much))
+        (PP (IN over)
+          (NP (DT the) (JJ past) (NN decade)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gone-4)
+compound(prices-2, Gas-1)
+nsubj(gone-4, prices-2)
+aux(gone-4, have-3)
+compound:prt(gone-4, up-5)
+cc(up-5, and-6)
+dep(up-5, down-7)
+advmod(much-9, so-8)
+advmod(gone-4, much-9)
+case(decade-13, over-10)
+det(decade-13, the-11)
+amod(decade-13, past-12)
+obl:over(gone-4, decade-13)
+
+Extracted the following NER entity mentions:
+the past decade	DATE	DATE:-1.0

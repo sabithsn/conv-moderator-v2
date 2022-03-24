@@ -1,0 +1,99 @@
+Document: ID=7B6B8210.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+She's 14 so I'm willing to cut her some slack but she needs to know what a big deal bleed through is
+
+Tokens:
+[Text=She CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=14 CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=CD Lemma=14 NamedEntityTag=NUMBER NormalizedNamedEntityTag=14.0]
+[Text=so CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=CC Lemma=so NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=willing CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=willing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cut CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=cut NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=slack CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=slack NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=bleed CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=VB Lemma=bleed NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=RP Lemma=through NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (PRP She))
+        (VP (VBZ 's)
+          (NP (CD 14)))))
+    (S
+      (S (CC so)
+        (NP (PRP I))
+        (VP (VBP 'm)
+          (ADJP (JJ willing)
+            (S
+              (VP (TO to)
+                (VP (VB cut)
+                  (NP (PRP$ her))
+                  (NP (DT some) (NN slack))))))))
+      (CC but)
+      (S
+        (NP (PRP she))
+        (VP (VBZ needs)
+          (S
+            (VP (TO to)
+              (VP (VB know)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (DT a) (JJ big) (NN deal))
+                    (VP (VB bleed)
+                      (PRT (RP through)))))))))))
+    (VP (VBZ is))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-24)
+nsubj(14-3, She-1)
+cop(14-3, 's-2)
+parataxis(is-24, 14-3)
+cc(willing-7, so-4)
+nsubj(willing-7, I-5)
+nsubj:xsubj(cut-9, I-5)
+cop(willing-7, 'm-6)
+csubj(is-24, willing-7)
+mark(cut-9, to-8)
+xcomp(willing-7, cut-9)
+dep(cut-9, her-10)
+det(slack-12, some-11)
+obj(cut-9, slack-12)
+cc(needs-15, but-13)
+nsubj(needs-15, she-14)
+nsubj:xsubj(know-17, she-14)
+conj:but(willing-7, needs-15)
+csubj(is-24, needs-15)
+mark(know-17, to-16)
+xcomp(needs-15, know-17)
+obj(bleed-22, what-18)
+det(deal-21, a-19)
+amod(deal-21, big-20)
+nsubj(bleed-22, deal-21)
+ccomp(know-17, bleed-22)
+compound:prt(bleed-22, through-23)
+
+Extracted the following NER entity mentions:
+14	NUMBER	NUMBER:-1.0
+She	PERSON	-
+her	PERSON	-
+she	PERSON	-

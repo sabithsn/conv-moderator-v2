@@ -1,0 +1,34 @@
+Document: ID=6DEA6358.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Why is Trump still suspended?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=still CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=suspended CharacterOffsetBegin=19 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=suspend NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (NNP Trump))
+      (ADVP (RB still))
+      (VP (VBN suspended)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suspended-5)
+advmod(suspended-5, Why-1)
+aux:pass(suspended-5, is-2)
+nsubj:pass(suspended-5, Trump-3)
+advmod(suspended-5, still-4)
+punct(suspended-5, ?-6)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.699345155067732

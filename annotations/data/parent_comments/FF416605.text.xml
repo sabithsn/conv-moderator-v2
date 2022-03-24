@@ -1,0 +1,76 @@
+Document: ID=FF416605.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+My minority status is greater then your minority status therefore you must allow me to do whatever I want.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=minority CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=minority NamedEntityTag=O]
+[Text=status CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=status NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=greater CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJR Lemma=greater NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=minority CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=minority NamedEntityTag=O]
+[Text=status CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=status NamedEntityTag=O]
+[Text=therefore CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=whatever CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=WDT Lemma=whatever NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN minority) (NN status))
+    (VP (VBZ is)
+      (ADJP (JJR greater))
+      (ADVP (RB then)))
+    (NP (PRP$ your) (NN minority) (NN status))
+    (ADVP (RB therefore))
+    (S
+      (NP (PRP you))
+      (VP (MD must)
+        (VP (VB allow)
+          (S
+            (NP (PRP me))
+            (VP (TO to)
+              (VP (VB do)
+                (SBAR
+                  (WHNP (WDT whatever))
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP want))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, greater-5)
+nmod:poss(status-3, My-1)
+compound(status-3, minority-2)
+nsubj(greater-5, status-3)
+cop(greater-5, is-4)
+advmod(greater-5, then-6)
+nmod:poss(status-9, your-7)
+compound(status-9, minority-8)
+dep(greater-5, status-9)
+advmod(greater-5, therefore-10)
+nsubj(allow-13, you-11)
+aux(allow-13, must-12)
+ccomp(greater-5, allow-13)
+obj(allow-13, me-14)
+nsubj:xsubj(do-16, me-14)
+mark(do-16, to-15)
+xcomp(allow-13, do-16)
+obj(want-19, whatever-17)
+nsubj(want-19, I-18)
+ccomp(do-16, want-19)
+punct(greater-5, .-20)
+
+Extracted the following NER entity mentions:

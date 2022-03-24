@@ -1,0 +1,104 @@
+Document: ID=C813595A.text (2 sentences, 24 tokens)
+
+Sentence #1 (6 tokens):
+Hey Reddit am I crazy?
+
+Tokens:
+[Text=Hey CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=hey NamedEntityTag=O]
+[Text=Reddit CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Reddit NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=crazy CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=crazy NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (INTJ (UH Hey))
+    (NP (NNP Reddit))
+    (VBP am)
+    (NP (PRP I))
+    (ADJP (JJ crazy))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, crazy-5)
+discourse(crazy-5, Hey-1)
+dep(crazy-5, Reddit-2)
+cop(crazy-5, am-3)
+nsubj(crazy-5, I-4)
+punct(crazy-5, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+I live in Pennsylvania and I swear I just saw a monkey run through my back yard?!
+
+Tokens:
+[Text=I CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Pennsylvania CharacterOffsetBegin=33 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Pennsylvania NamedEntityTag=STATE_OR_PROVINCE]
+[Text=and CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=swear CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=swear NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=monkey CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=monkey NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=back NamedEntityTag=O]
+[Text=yard CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=yard NamedEntityTag=O]
+[Text=?! CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=?! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP live)
+        (PP (IN in)
+          (NP (NNP Pennsylvania)))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP swear)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (ADVP (RB just))
+            (VP (VBD saw)
+              (S
+                (NP (DT a) (NN monkey))
+                (VP (VB run)
+                  (PP (IN through)
+                    (NP (PRP$ my) (NN back) (NN yard))))))))))
+    (. ?!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, live-2)
+nsubj(live-2, I-1)
+case(Pennsylvania-4, in-3)
+obl:in(live-2, Pennsylvania-4)
+cc(swear-7, and-5)
+nsubj(swear-7, I-6)
+conj:and(live-2, swear-7)
+nsubj(saw-10, I-8)
+advmod(saw-10, just-9)
+ccomp(swear-7, saw-10)
+det(monkey-12, a-11)
+nsubj(run-13, monkey-12)
+ccomp(saw-10, run-13)
+case(yard-17, through-14)
+nmod:poss(yard-17, my-15)
+compound(yard-17, back-16)
+obl:through(run-13, yard-17)
+punct(live-2, ?!-18)
+
+Extracted the following NER entity mentions:
+Pennsylvania	STATE_OR_PROVINCE	LOCATION:0.9999399384727601

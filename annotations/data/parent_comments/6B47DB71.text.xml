@@ -1,0 +1,51 @@
+Document: ID=6B47DB71.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+When the theft of $600,000 is racist and misogynistic...
+
+Tokens:
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=theft CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=theft NamedEntityTag=CRIMINAL_CHARGE]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$600000.0]
+[Text=600,000 CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=CD Lemma=600,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$600000.0]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=misogynistic CharacterOffsetBegin=41 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=misogynistic NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHADVP (WRB When))
+    (S
+      (NP
+        (NP (DT the) (NN theft))
+        (PP (IN of)
+          (NP ($ $) (CD 600,000))))
+      (VP (VBZ is)
+        (ADJP (JJ racist)
+          (CC and)
+          (JJ misogynistic))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, racist-8)
+advmod(racist-8, When-1)
+det(theft-3, the-2)
+nsubj(racist-8, theft-3)
+nsubj(misogynistic-10, theft-3)
+case($-5, of-4)
+nmod:of(theft-3, $-5)
+nummod($-5, 600,000-6)
+cop(racist-8, is-7)
+cc(misogynistic-10, and-9)
+conj:and(racist-8, misogynistic-10)
+punct(racist-8, ...-11)
+
+Extracted the following NER entity mentions:
+theft	CRIMINAL_CHARGE	-
+$600,000	MONEY	MONEY:0.9996059918072078

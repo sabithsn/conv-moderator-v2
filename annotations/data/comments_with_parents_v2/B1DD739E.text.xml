@@ -1,0 +1,46 @@
+Document: ID=B1DD739E.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Big Ounce took no quarter, judging by his facial expression
+
+Tokens:
+[Text=Big CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=Ounce CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=ounce NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=quarter CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=quarter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=judging CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=VBG Lemma=judge NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=facial CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=facial NamedEntityTag=O]
+[Text=expression CharacterOffsetBegin=49 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=expression NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Big) (NN Ounce))
+    (VP (VBD took)
+      (NP (DT no) (NN quarter))
+      (, ,)
+      (S
+        (VP (VBG judging)
+          (PP (IN by)
+            (NP (PRP$ his) (JJ facial) (NN expression))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, took-3)
+amod(Ounce-2, Big-1)
+nsubj(took-3, Ounce-2)
+det(quarter-5, no-4)
+obj(took-3, quarter-5)
+punct(took-3, ,-6)
+advcl(took-3, judging-7)
+case(expression-11, by-8)
+nmod:poss(expression-11, his-9)
+amod(expression-11, facial-10)
+obl:by(judging-7, expression-11)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

@@ -1,0 +1,43 @@
+Document: ID=D843B102.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Sen. Manchin Joins GOP Colleagues in Defeating Abortion Bill
+
+Tokens:
+[Text=Sen. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Sen. NamedEntityTag=O]
+[Text=Manchin CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Manchin NamedEntityTag=PERSON]
+[Text=Joins CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=join NamedEntityTag=O]
+[Text=GOP CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Colleagues CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=colleague NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Defeating CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=defeat NamedEntityTag=O]
+[Text=Abortion CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+[Text=Bill CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Sen.) (NNP Manchin))
+    (VP (VBZ Joins)
+      (NP (NNP GOP) (NNS Colleagues))
+      (PP (IN in)
+        (S
+          (VP (VBG Defeating)
+            (NP (NN Abortion) (NNP Bill))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Joins-3)
+compound(Manchin-2, Sen.-1)
+nsubj(Joins-3, Manchin-2)
+compound(Colleagues-5, GOP-4)
+obj(Joins-3, Colleagues-5)
+mark(Defeating-7, in-6)
+advcl:in(Joins-3, Defeating-7)
+compound(Bill-9, Abortion-8)
+obj(Defeating-7, Bill-9)
+
+Extracted the following NER entity mentions:
+Manchin	PERSON	PERSON:0.9929943065662608
+GOP Colleagues	ORGANIZATION	ORGANIZATION:0.6715754997057483
+Bill	PERSON	PERSON:0.6982760803968772

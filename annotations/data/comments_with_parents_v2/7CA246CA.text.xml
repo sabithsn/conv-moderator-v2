@@ -1,0 +1,96 @@
+Document: ID=7CA246CA.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+Parents Show Up In FORCE At Loudon County School Board, This Time To Protest The Insane Masking Rules Which Contradict The Order Of The Governor
+
+Tokens:
+[Text=Parents CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=Show CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=show NamedEntityTag=O]
+[Text=Up CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=FORCE CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=FORCE NamedEntityTag=O]
+[Text=At CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Loudon CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Loudon NamedEntityTag=ORGANIZATION]
+[Text=County CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=County NamedEntityTag=ORGANIZATION]
+[Text=School CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=School NamedEntityTag=ORGANIZATION]
+[Text=Board CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Board NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Time CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Time NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Protest CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=protest NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Insane CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Insane NamedEntityTag=O]
+[Text=Masking CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Masking NamedEntityTag=O]
+[Text=Rules CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NNPS Lemma=Rules NamedEntityTag=O]
+[Text=Which CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Contradict CharacterOffsetBegin=108 CharacterOffsetEnd=118 PartOfSpeech=VBP Lemma=contradict NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Order CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Governor CharacterOffsetBegin=136 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Governor NamedEntityTag=TITLE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Parents))
+    (VP (VBP Show)
+      (PRT (RP Up))
+      (S
+        (PP (IN In)
+          (NP (NNP FORCE)))
+        (PP (IN At)
+          (NP
+            (NP (NNP Loudon) (NNP County) (NNP School) (NNP Board))
+            (, ,)
+            (NP
+              (NP (DT This) (NNP Time))
+              (SBAR
+                (S
+                  (VP (TO To)
+                    (VP (VB Protest)
+                      (NP
+                        (NP (DT The) (NNP Insane) (NNP Masking) (NNPS Rules))
+                        (SBAR
+                          (WHNP (WDT Which))
+                          (S
+                            (VP (VBP Contradict)
+                              (NP
+                                (NP (DT The) (NN Order))
+                                (PP (IN Of)
+                                  (NP (DT The) (NNP Governor)))))))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Show-2)
+nsubj(Show-2, Parents-1)
+compound:prt(Show-2, Up-3)
+case(FORCE-5, In-4)
+dep(Board-10, FORCE-5)
+case(Board-10, At-6)
+compound(Board-10, Loudon-7)
+compound(Board-10, County-8)
+compound(Board-10, School-9)
+xcomp(Show-2, Board-10)
+punct(Board-10, ,-11)
+det(Time-13, This-12)
+appos(Board-10, Time-13)
+mark(Protest-15, To-14)
+acl:to(Time-13, Protest-15)
+det(Rules-19, The-16)
+compound(Rules-19, Insane-17)
+compound(Rules-19, Masking-18)
+obj(Protest-15, Rules-19)
+nsubj(Contradict-21, Rules-19)
+ref(Rules-19, Which-20)
+acl:relcl(Rules-19, Contradict-21)
+det(Order-23, The-22)
+obj(Contradict-21, Order-23)
+case(Governor-26, Of-24)
+det(Governor-26, The-25)
+nmod:of(Order-23, Governor-26)
+
+Extracted the following NER entity mentions:
+Loudon County School Board	ORGANIZATION	ORGANIZATION:0.767397869823192
+Governor	TITLE	-

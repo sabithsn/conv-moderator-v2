@@ -1,0 +1,90 @@
+Document: ID=570F6D6E.text (2 sentences, 20 tokens)
+
+Sentence #1 (15 tokens):
+Biden On Historic Gas Prices: ‘I Can’t Do Much Right Now.
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=On CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Historic CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=historic NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=Prices CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=Ca CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=Much CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=Right CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=right NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Right Now</TIMEX3>]
+[Text=Now CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Right Now</TIMEX3>]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Biden))
+      (PP (IN On)
+        (NP (JJ Historic) (NN Gas) (NNS Prices))))
+    (: :) (`` ‘)
+    (S
+      (NP (PRP I))
+      (VP (MD Ca) (RB n’t)
+        (VP (VB Do)
+          (S
+            (NP (JJ Much))
+            (ADJP (JJ Right))
+            (ADVP (RB Now))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Biden-1)
+case(Prices-5, On-2)
+amod(Prices-5, Historic-3)
+compound(Prices-5, Gas-4)
+nmod:on(Biden-1, Prices-5)
+punct(Biden-1, :-6)
+punct(Biden-1, ‘-7)
+nsubj(Do-11, I-8)
+aux(Do-11, Ca-9)
+advmod(Do-11, n’t-10)
+dep(Biden-1, Do-11)
+nsubj(Right-13, Much-12)
+xcomp(Do-11, Right-13)
+advmod(Right-13, Now-14)
+punct(Biden-1, .-15)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9495993461799853
+Right Now	DATE	DATE:-1.0
+
+Sentence #2 (5 tokens):
+Russia’s Responsible.’
+
+Tokens:
+[Text=Russia CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=’s CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Responsible CharacterOffsetBegin=67 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Russia) (POS ’s))
+      (NP (JJ Responsible)))
+    (. .) ('' ’)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Russia-1)
+case(Russia-1, ’s-2)
+dep(Russia-1, Responsible-3)
+punct(Russia-1, .-4)
+punct(Russia-1, ’-5)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9965214920134932

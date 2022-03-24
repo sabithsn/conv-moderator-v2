@@ -1,0 +1,87 @@
+Document: ID=E93D80D2.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+New Poll: Biden Gets An ‘F’ From More Than 1/3 Of The Country — At The End Of His First Year
+
+Tokens:
+[Text=New CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=Poll CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Poll NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Gets CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=An CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=F CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=F NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=From CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=More CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=Than CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=than NamedEntityTag=O]
+[Text=1/3 CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=CD Lemma=1/3 NamedEntityTag=NUMBER]
+[Text=Of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Country CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=— CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=: Lemma=— NamedEntityTag=O]
+[Text=At CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=End CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=His CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=First CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=First NamedEntityTag=DATE NormalizedNamedEntityTag=P1Y-#1 Timex=<TIMEX3 alt_value="P1Y-#1" tid="t1" type="DATE">First Year</TIMEX3>]
+[Text=Year CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Year NamedEntityTag=DATE NormalizedNamedEntityTag=P1Y-#1 Timex=<TIMEX3 alt_value="P1Y-#1" tid="t1" type="DATE">First Year</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP New) (NNP Poll))
+    (: :)
+    (S
+      (NP (NNP Biden))
+      (VP (VBZ Gets)
+        (S
+          (NP (DT An) (`` ‘) (NNP F) ('' ’))
+          (PP (IN From)
+            (NP
+              (ADVP (RBR More) (RB Than))
+              (CD 1/3)))
+          (PP (IN Of)
+            (NP
+              (NP (DT The) (NN Country))
+              (: —)
+              (RRC
+                (PP (IN At)
+                  (NP (DT The) (NN End)))
+                (PP (IN Of)
+                  (NP (PRP$ His) (NNP First) (NNP Year)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Poll-2)
+compound(Poll-2, New-1)
+punct(Poll-2, :-3)
+nsubj(Gets-5, Biden-4)
+parataxis(Poll-2, Gets-5)
+det(F-8, An-6)
+punct(F-8, ‘-7)
+xcomp(Gets-5, F-8)
+punct(F-8, ’-9)
+case(1/3-13, From-10)
+advmod(Than-12, More-11)
+advmod(1/3-13, Than-12)
+dep(F-8, 1/3-13)
+case(Country-16, Of-14)
+det(Country-16, The-15)
+dep(F-8, Country-16)
+punct(Country-16, —-17)
+case(End-20, At-18)
+det(End-20, The-19)
+obl:at(Year-24, End-20)
+case(Year-24, Of-21)
+nmod:poss(Year-24, His-22)
+compound(Year-24, First-23)
+acl:relcl(Country-16, Year-24)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9521382755413915
+1/3	NUMBER	NUMBER:-1.0
+First Year	DATE	DATE:-1.0
+His	PERSON	-

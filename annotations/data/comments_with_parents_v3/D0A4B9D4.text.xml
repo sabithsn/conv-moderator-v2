@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>D0A4B9D4.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Hey</word>
+            <lemma>hey</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Zelensky</word>
+            <lemma>Zelensky</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Fuck</word>
+            <lemma>fuck</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Russia</word>
+            <lemma>Russia</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>GOP</word>
+            <lemma>GOP</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (INTJ (UH Hey)) (NP (NNP Zelensky)) (, -) (VP (VB Fuck) (NP (NP (NNP Russia)) (CC and) (NP (DT the) (NNP GOP)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Fuck</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="2">Zelensky</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="3">-</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="5">Russia</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">GOP</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">GOP</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">Russia</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Fuck</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="2">Zelensky</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="3">-</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="5">Russia</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">GOP</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">GOP</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">Russia</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Fuck</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="2">Zelensky</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="3">-</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="5">Russia</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">GOP</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">GOP</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj" extra="true">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">Russia</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Fuck</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="2">Zelensky</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="3">-</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="5">Russia</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">GOP</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">GOP</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj" extra="true">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">Russia</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Fuck</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="2">Zelensky</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="3">-</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="5">Russia</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">GOP</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">GOP</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj" extra="true">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">Russia</governor>
+            <dependent idx="8">GOP</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">Fuck</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Keep</word>
+            <lemma>keep</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>fighting</word>
+            <lemma>fight</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>fight</word>
+            <lemma>fight</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>buy</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>brains</word>
+            <lemma>brain</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>fucking</word>
+            <lemma>fucking</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>propagandists</word>
+            <lemma>propagandist</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>lies</word>
+            <lemma>lie</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>!</word>
+            <lemma>!</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Keep) (S (VP (VBG fighting) (NP (DT the) (JJ good) (NN fight)) (S (VP (VB buy) (NP (PRP$ your) (NNS brains)) (, ,) (NP (PRP you)))) (ADVP (RB fucking)))) (NP (NP (NNS propagandists)) (PP (IN of) (NP (NNS lies))))) (. !))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Keep</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Keep</governor>
+            <dependent idx="2">fighting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fight</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">fight</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">fighting</governor>
+            <dependent idx="5">fight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">fighting</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="8">brains</governor>
+            <dependent idx="7">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="8">brains</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">fighting</governor>
+            <dependent idx="11">fucking</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Keep</governor>
+            <dependent idx="12">propagandists</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">lies</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="12">propagandists</governor>
+            <dependent idx="14">lies</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Keep</governor>
+            <dependent idx="15">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Keep</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Keep</governor>
+            <dependent idx="2">fighting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fight</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">fight</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">fighting</governor>
+            <dependent idx="5">fight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">fighting</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="8">brains</governor>
+            <dependent idx="7">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="8">brains</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">fighting</governor>
+            <dependent idx="11">fucking</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Keep</governor>
+            <dependent idx="12">propagandists</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">lies</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="12">propagandists</governor>
+            <dependent idx="14">lies</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Keep</governor>
+            <dependent idx="15">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Keep</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Keep</governor>
+            <dependent idx="2">fighting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fight</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">fight</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">fighting</governor>
+            <dependent idx="5">fight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">fighting</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="8">brains</governor>
+            <dependent idx="7">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="8">brains</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">fighting</governor>
+            <dependent idx="11">fucking</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Keep</governor>
+            <dependent idx="12">propagandists</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">lies</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="12">propagandists</governor>
+            <dependent idx="14">lies</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Keep</governor>
+            <dependent idx="15">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Keep</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Keep</governor>
+            <dependent idx="2">fighting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fight</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">fight</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">fighting</governor>
+            <dependent idx="5">fight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">fighting</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="8">brains</governor>
+            <dependent idx="7">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="8">brains</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">fighting</governor>
+            <dependent idx="11">fucking</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Keep</governor>
+            <dependent idx="12">propagandists</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">lies</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="12">propagandists</governor>
+            <dependent idx="14">lies</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Keep</governor>
+            <dependent idx="15">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Keep</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Keep</governor>
+            <dependent idx="2">fighting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fight</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">fight</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">fighting</governor>
+            <dependent idx="5">fight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">fighting</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="8">brains</governor>
+            <dependent idx="7">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="8">brains</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">buy</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">fighting</governor>
+            <dependent idx="11">fucking</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Keep</governor>
+            <dependent idx="12">propagandists</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">lies</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="12">propagandists</governor>
+            <dependent idx="14">lies</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Keep</governor>
+            <dependent idx="15">!</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,101 @@
+Document: ID=04519A18.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+AITA because I don't want our children to learn Chinese because I already want to raise them with German, English, and French?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=because CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=learn CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=learn NamedEntityTag=O]
+[Text=Chinese CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=chinese NamedEntityTag=NATIONALITY]
+[Text=because CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=raise CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=raise NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=German CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=german NamedEntityTag=NATIONALITY]
+[Text=, CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=106 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=English NamedEntityTag=NATIONALITY]
+[Text=, CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=JJ Lemma=french NamedEntityTag=NATIONALITY]
+[Text=? CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (SBAR (IN because)
+      (S
+        (NP (PRP I))
+        (VP (VBP do) (RB n't)
+          (VP (VB want)
+            (NP (PRP$ our) (NNS children))
+            (S
+              (VP (TO to)
+                (VP (VB learn)
+                  (ADJP (JJ Chinese))
+                  (SBAR (IN because)
+                    (S
+                      (NP (PRP I))
+                      (ADVP (RB already))
+                      (VP (VBP want)
+                        (S
+                          (VP (TO to)
+                            (VP (VB raise)
+                              (NP (PRP them))
+                              (PP (IN with))
+                              (S
+                                (ADJP (JJ German) (, ,) (NNP English) (, ,)
+                                  (CC and)
+                                  (JJ French))))))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(want-6, because-2)
+nsubj(want-6, I-3)
+aux(want-6, do-4)
+advmod(want-6, n't-5)
+dep(AITA-1, want-6)
+nmod:poss(children-8, our-7)
+obj(want-6, children-8)
+mark(learn-10, to-9)
+advcl:to(want-6, learn-10)
+xcomp(learn-10, Chinese-11)
+mark(want-15, because-12)
+nsubj(want-15, I-13)
+nsubj:xsubj(raise-17, I-13)
+advmod(want-15, already-14)
+advcl:because(learn-10, want-15)
+mark(raise-17, to-16)
+xcomp(want-15, raise-17)
+obj(raise-17, them-18)
+obl(raise-17, with-19)
+xcomp(raise-17, German-20)
+punct(German-20, ,-21)
+xcomp(raise-17, English-22)
+conj:and(German-20, English-22)
+punct(German-20, ,-23)
+cc(French-25, and-24)
+xcomp(raise-17, French-25)
+conj:and(German-20, French-25)
+punct(AITA-1, ?-26)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.580547312011313
+Chinese	NATIONALITY	MISC:0.9999965285433065
+German	NATIONALITY	MISC:0.9999916478921363
+English	NATIONALITY	MISC:0.9999062723433891
+French	NATIONALITY	MISC:0.9999602564677856

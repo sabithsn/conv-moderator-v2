@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>ECB7F3B5.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>*</word>
+            <lemma>*</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>NFP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Agenda</word>
+            <lemma>agenda</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Post</word>
+            <lemma>Post</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>*</word>
+            <lemma>*</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NFP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>hate</word>
+            <lemma>hate</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>January</word>
+            <lemma>January</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>XXXX-01-06</NormalizedNER>
+            <Timex tid="t1" type="DATE">XXXX-01-06</Timex>
+          </token>
+          <token id="8">
+            <word>6th</word>
+            <lemma>6th</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>XXXX-01-06</NormalizedNER>
+            <Timex tid="t1" type="DATE">XXXX-01-06</Timex>
+          </token>
+          <token id="9">
+            <word>because</word>
+            <lemma>because</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>politicians</word>
+            <lemma>politician</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>were</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>oofed</word>
+            <lemma>oof</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NFP *) (NP (NN Agenda) (NNP Post)) (NFP *) (NP (PRP I)) (VP (VBP hate) (NP (NNP January)) (NP-TMP (NN 6th)) (SBAR (IN because) (S (NP (DT no) (NNS politicians)) (VP (VBD were) (VP (VBN oofed)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">hate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Post</governor>
+            <dependent idx="2">Agenda</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="3">Post</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="4">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">hate</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="6">hate</governor>
+            <dependent idx="8">6th</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">oofed</governor>
+            <dependent idx="9">because</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">politicians</governor>
+            <dependent idx="10">no</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="11">politicians</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="12">were</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="6">hate</governor>
+            <dependent idx="13">oofed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">hate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Post</governor>
+            <dependent idx="2">Agenda</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="3">Post</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="4">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">hate</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="6">hate</governor>
+            <dependent idx="8">6th</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">oofed</governor>
+            <dependent idx="9">because</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">politicians</governor>
+            <dependent idx="10">no</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="11">politicians</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="12">were</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="6">hate</governor>
+            <dependent idx="13">oofed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">hate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Post</governor>
+            <dependent idx="2">Agenda</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="3">Post</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="4">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">hate</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="6">hate</governor>
+            <dependent idx="8">6th</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">oofed</governor>
+            <dependent idx="9">because</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">politicians</governor>
+            <dependent idx="10">no</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="11">politicians</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="12">were</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="6">hate</governor>
+            <dependent idx="13">oofed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">hate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Post</governor>
+            <dependent idx="2">Agenda</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="3">Post</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="4">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">hate</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="6">hate</governor>
+            <dependent idx="8">6th</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">oofed</governor>
+            <dependent idx="9">because</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">politicians</governor>
+            <dependent idx="10">no</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="11">politicians</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="12">were</dependent>
+          </dep>
+          <dep type="advcl:because">
+            <governor idx="6">hate</governor>
+            <dependent idx="13">oofed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">hate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Post</governor>
+            <dependent idx="2">Agenda</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="3">Post</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="4">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">hate</governor>
+            <dependent idx="5">I</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">hate</governor>
+            <dependent idx="7">January</dependent>
+          </dep>
+          <dep type="obl:tmod">
+            <governor idx="6">hate</governor>
+            <dependent idx="8">6th</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">oofed</governor>
+            <dependent idx="9">because</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">politicians</governor>
+            <dependent idx="10">no</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="11">politicians</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="13">oofed</governor>
+            <dependent idx="12">were</dependent>
+          </dep>
+          <dep type="advcl:because">
+            <governor idx="6">hate</governor>
+            <dependent idx="13">oofed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hate</governor>
+            <dependent idx="14">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

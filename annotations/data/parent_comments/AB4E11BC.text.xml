@@ -1,0 +1,44 @@
+Document: ID=AB4E11BC.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+AITA for sending someones inapropiate pictures to his mom
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=sending CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=send NamedEntityTag=O]
+[Text=someones CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=someone NamedEntityTag=O]
+[Text=inapropiate CharacterOffsetBegin=26 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=inapropiate NamedEntityTag=O]
+[Text=pictures CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=picture NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=mom CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=mom NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG sending)
+          (NP (NNS someones))
+          (NP
+            (NP (JJ inapropiate) (NNS pictures))
+            (PP (IN to)
+              (NP (PRP$ his) (NN mom)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(sending-3, for-2)
+acl:for(AITA-1, sending-3)
+iobj(sending-3, someones-4)
+amod(pictures-6, inapropiate-5)
+obj(sending-3, pictures-6)
+case(mom-9, to-7)
+nmod:poss(mom-9, his-8)
+nmod:to(pictures-6, mom-9)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.49823424140143235
+his	PERSON	-

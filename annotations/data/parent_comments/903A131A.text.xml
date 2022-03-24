@@ -1,0 +1,71 @@
+Document: ID=903A131A.text (2 sentences, 14 tokens)
+
+Sentence #1 (6 tokens):
+Yes it’s their business.
+
+Tokens:
+[Text=Yes CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (NP (PRP it))
+    (VP (VBZ ’s)
+      (NP (PRP$ their) (NN business)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, business-5)
+discourse(business-5, Yes-1)
+nsubj(business-5, it-2)
+cop(business-5, ’s-3)
+nmod:poss(business-5, their-4)
+punct(business-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+I asked if you would support it.
+
+Tokens:
+[Text=I CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=support NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD asked)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (MD would)
+            (VP (VB support)
+              (NP (PRP it)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-2)
+nsubj(asked-2, I-1)
+mark(support-6, if-3)
+nsubj(support-6, you-4)
+aux(support-6, would-5)
+advcl:if(asked-2, support-6)
+obj(support-6, it-7)
+punct(asked-2, .-8)
+
+Extracted the following NER entity mentions:

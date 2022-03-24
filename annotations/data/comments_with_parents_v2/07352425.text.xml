@@ -1,0 +1,90 @@
+Document: ID=07352425.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+Supreme Court justice Clarence Thomas' wife had ties to January 6 rally organizers and efforts to overturn the 2020 election: report
+
+Tokens:
+[Text=Supreme CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Supreme NamedEntityTag=ORGANIZATION]
+[Text=Court CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+[Text=justice CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=justice NamedEntityTag=O]
+[Text=Clarence CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Clarence NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=ties CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNS Lemma=tie NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">January 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">January 6</TIMEX3>]
+[Text=rally CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=rally NamedEntityTag=O]
+[Text=organizers CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=organizer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=efforts CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=effort NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=overturn CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=VB Lemma=overturn NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t2" type="DATE" value="2020">2020</TIMEX3>]
+[Text=election CharacterOffsetBegin=116 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=126 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NML (NNP Supreme) (NNP Court))
+        (NN justice))
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Clarence) (NNP Thomas) (POS '))
+            (NN wife))
+          (VP (VBD had)
+            (NP
+              (NP (NNS ties))
+              (PP (IN to)
+                (NP
+                  (NML (NNP January) (CD 6))
+                  (NN rally) (NNS organizers)
+                  (CC and)
+                  (NNS efforts)))
+              (S
+                (VP (TO to)
+                  (VP (VB overturn)
+                    (NP (DT the) (CD 2020) (NN election))))))))))
+    (: :)
+    (NP (NN report))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, justice-3)
+compound(Court-2, Supreme-1)
+compound(justice-3, Court-2)
+compound(Thomas-5, Clarence-4)
+nmod:poss(wife-7, Thomas-5)
+case(Thomas-5, '-6)
+nsubj(had-8, wife-7)
+acl:relcl(justice-3, had-8)
+obj(had-8, ties-9)
+case(organizers-14, to-10)
+compound(organizers-14, January-11)
+nummod(January-11, 6-12)
+compound(organizers-14, rally-13)
+nmod:to(ties-9, organizers-14)
+cc(efforts-16, and-15)
+nmod:to(ties-9, efforts-16)
+conj:and(organizers-14, efforts-16)
+mark(overturn-18, to-17)
+acl:to(ties-9, overturn-18)
+det(election-21, the-19)
+nummod(election-21, 2020-20)
+obj(overturn-18, election-21)
+punct(justice-3, :-22)
+dep(justice-3, report-23)
+
+Extracted the following NER entity mentions:
+Supreme Court	ORGANIZATION	ORGANIZATION:0.9995149127522078
+Clarence Thomas	PERSON	PERSON:0.9996411639899536
+January 6	DATE	DATE:0.9089458972089185
+2020	DATE	DATE:0.940339759954438

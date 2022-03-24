@@ -1,0 +1,153 @@
+Document: ID=ECB0F30D.text (3 sentences, 35 tokens)
+
+Sentence #1 (14 tokens):
+This is how most politicians think about themselves with respect to the peasants.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=politicians CharacterOffsetBegin=17 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=politician NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=themselves CharacterOffsetBegin=41 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=themselves NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=respect NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=peasants CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=peasant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (RBS most) (NNS politicians))
+          (VP (VBP think)
+            (PP (IN about)
+              (NP (PRP themselves)))
+            (PP (IN with)
+              (NP
+                (NP (NN respect))
+                (PP (IN to)
+                  (NP (DT the) (NNS peasants)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+advmod(think-6, how-3)
+advmod(politicians-5, most-4)
+nsubj(think-6, politicians-5)
+ccomp(is-2, think-6)
+case(themselves-8, about-7)
+obl:about(think-6, themselves-8)
+case(peasants-13, with-9)
+fixed(with-9, respect-10)
+fixed(with-9, to-11)
+det(peasants-13, the-12)
+obl:with_respect_to(think-6, peasants-13)
+punct(is-2, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+They set the rules and others have to follow.
+
+Tokens:
+[Text=They CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=set NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=follow CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=VB Lemma=follow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD set)
+      (SBAR
+        (S
+          (NP (DT the) (NNS rules)
+            (CC and)
+            (NNS others))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP (VB follow))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, set-2)
+nsubj(set-2, They-1)
+det(rules-4, the-3)
+nsubj(have-7, rules-4)
+nsubj:xsubj(follow-9, rules-4)
+cc(others-6, and-5)
+conj:and(rules-4, others-6)
+nsubj(have-7, others-6)
+nsubj:xsubj(follow-9, others-6)
+ccomp(set-2, have-7)
+mark(follow-9, to-8)
+xcomp(have-7, follow-9)
+punct(set-2, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (11 tokens):
+But they have a different set of rules for themselves.
+
+Tokens:
+[Text=But CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=144 CharacterOffsetEnd=153 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=set NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=themselves CharacterOffsetBegin=171 CharacterOffsetEnd=181 PartOfSpeech=PRP Lemma=themselves NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (PRP they))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (JJ different) (NN set))
+        (PP (IN of)
+          (NP
+            (NP (NNS rules))
+            (PP (IN for)
+              (NP (PRP themselves)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-3)
+cc(have-3, But-1)
+nsubj(have-3, they-2)
+det(set-6, a-4)
+amod(set-6, different-5)
+obj(have-3, set-6)
+case(rules-8, of-7)
+nmod:of(set-6, rules-8)
+case(themselves-10, for-9)
+nmod:for(rules-8, themselves-10)
+punct(have-3, .-11)
+
+Extracted the following NER entity mentions:

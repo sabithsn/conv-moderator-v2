@@ -1,0 +1,30 @@
+Document: ID=577BFF28.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Bread and Circuses 2022 edition
+
+Tokens:
+[Text=Bread CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Bread NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Circuses CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NNPS Lemma=Circuses NamedEntityTag=O]
+[Text=2022 CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=2022 NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 tid="t1" type="DATE" value="2022">2022</TIMEX3>]
+[Text=edition CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=edition NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Bread)
+      (CC and)
+      (NNPS Circuses))
+    (NP (CD 2022) (NN edition))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Bread-1)
+cc(Circuses-3, and-2)
+conj:and(Bread-1, Circuses-3)
+nummod(edition-5, 2022-4)
+dep(Bread-1, edition-5)
+
+Extracted the following NER entity mentions:
+2022	DATE	DATE:0.6166566965854131

@@ -1,0 +1,114 @@
+Document: ID=D60A5C65.text (2 sentences, 27 tokens)
+
+Sentence #1 (12 tokens):
+He’s probably imagining his sisters panties on that M&M cartoon.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=imagining CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=imagine NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=sisters CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=sister NamedEntityTag=O]
+[Text=panties CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=panties NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=M&M CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=m&m NamedEntityTag=O]
+[Text=cartoon CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=cartoon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ ’s)
+      (S
+        (ADVP (RB probably))
+        (VP (VBG imagining)
+          (NP (PRP$ his) (NNS sisters) (NNS panties))
+          (PP (IN on)
+            (NP (DT that) (NN M&M) (NN cartoon))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-2)
+nsubj(’s-2, He-1)
+advmod(imagining-4, probably-3)
+xcomp(’s-2, imagining-4)
+nmod:poss(panties-7, his-5)
+compound(panties-7, sisters-6)
+obj(imagining-4, panties-7)
+case(cartoon-11, on-8)
+det(cartoon-11, that-9)
+compound(cartoon-11, M&M-10)
+obl:on(imagining-4, cartoon-11)
+punct(’s-2, .-12)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+his	PERSON	-
+
+Sentence #2 (15 tokens):
+Edit – never mind, I got Tucker Carlson and Ben Shapiro mixed up.
+
+Tokens:
+[Text=Edit CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=– CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=: Lemma=– NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VB Lemma=mind NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Ben CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Ben NamedEntityTag=PERSON]
+[Text=Shapiro CharacterOffsetBegin=113 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Shapiro NamedEntityTag=PERSON]
+[Text=mixed CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=VBN Lemma=mix NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Edit))
+    (: –)
+    (S
+      (ADVP (RB never))
+      (VP (VB mind) (, ,)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD got)
+              (NP
+                (NP (NNP Tucker) (NNP Carlson))
+                (CC and)
+                (NP
+                  (NP (NNP Ben) (NNP Shapiro))
+                  (VP (VBN mixed)
+                    (PRT (RP up))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Edit-1)
+punct(Edit-1, –-2)
+advmod(mind-4, never-3)
+appos(Edit-1, mind-4)
+punct(mind-4, ,-5)
+nsubj(got-7, I-6)
+ccomp(mind-4, got-7)
+compound(Carlson-9, Tucker-8)
+obj(got-7, Carlson-9)
+cc(Shapiro-12, and-10)
+compound(Shapiro-12, Ben-11)
+obj(got-7, Shapiro-12)
+conj:and(Carlson-9, Shapiro-12)
+acl(Shapiro-12, mixed-13)
+compound:prt(mixed-13, up-14)
+punct(Edit-1, .-15)
+
+Extracted the following NER entity mentions:
+Tucker Carlson	PERSON	PERSON:0.9902653687155349
+Ben Shapiro	PERSON	PERSON:0.9985069065228399

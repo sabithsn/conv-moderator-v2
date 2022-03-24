@@ -1,0 +1,84 @@
+Document: ID=1AA9B762.text (2 sentences, 19 tokens)
+
+Sentence #1 (13 tokens):
+I’m buying Carhartt for the whole family to show my support!
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=buying CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=VBG Lemma=buy NamedEntityTag=O]
+[Text=Carhartt CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Carhartt NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (S
+        (VP (VBG buying)
+          (NP
+            (NP (NNP Carhartt))
+            (PP (IN for)
+              (NP (DT the) (JJ whole) (NN family))))
+          (S
+            (VP (TO to)
+              (VP (VB show)
+                (NP (PRP$ my) (NN support))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’m-2)
+nsubj(’m-2, I-1)
+xcomp(’m-2, buying-3)
+obj(buying-3, Carhartt-4)
+case(family-8, for-5)
+det(family-8, the-6)
+amod(family-8, whole-7)
+nmod:for(Carhartt-4, family-8)
+mark(show-10, to-9)
+advcl:to(buying-3, show-10)
+nmod:poss(support-12, my-11)
+obj(show-10, support-12)
+punct(’m-2, !-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+It’s a great company!
+
+Tokens:
+[Text=It CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=75 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP (DT a) (JJ great) (NN company)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, company-5)
+nsubj(company-5, It-1)
+cop(company-5, ’s-2)
+det(company-5, a-3)
+amod(company-5, great-4)
+punct(company-5, !-6)
+
+Extracted the following NER entity mentions:

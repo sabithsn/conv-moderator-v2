@@ -1,0 +1,117 @@
+Document: ID=447256FF.text (2 sentences, 29 tokens)
+
+Sentence #1 (13 tokens):
+Wait let me ask you a question to make sure I understand.
+
+Tokens:
+[Text=Wait CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=wait NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=ask NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=understand NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Wait)
+      (S
+        (VP (VB let)
+          (S
+            (NP (PRP me))
+            (VP (VB ask)
+              (NP (PRP you))
+              (NP (DT a) (NN question)
+                (S
+                  (VP (TO to)
+                    (VP (VB make)
+                      (ADJP (JJ sure)
+                        (SBAR
+                          (S
+                            (NP (PRP I))
+                            (VP (VBP understand))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wait-1)
+ccomp(Wait-1, let-2)
+nsubj(ask-4, me-3)
+ccomp(let-2, ask-4)
+iobj(ask-4, you-5)
+det(question-7, a-6)
+obj(ask-4, question-7)
+mark(make-9, to-8)
+acl:to(question-7, make-9)
+xcomp(make-9, sure-10)
+nsubj(understand-12, I-11)
+ccomp(sure-10, understand-12)
+punct(Wait-1, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+Is there something wrong with a black girl and a white guy in a relationship?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=relationship CharacterOffsetBegin=122 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=relationship NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (RB there))
+    (NP
+      (NP
+        (NP (NN something))
+        (ADJP (JJ wrong)
+          (PP (IN with)
+            (NP (DT a) (JJ black) (NN girl)))))
+      (CC and)
+      (NP
+        (NP (DT a) (JJ white) (NN guy))
+        (PP (IN in)
+          (NP (DT a) (NN relationship)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, something-3)
+cop(something-3, Is-1)
+nsubj(something-3, there-2)
+amod(something-3, wrong-4)
+case(girl-8, with-5)
+det(girl-8, a-6)
+amod(girl-8, black-7)
+obl:with(wrong-4, girl-8)
+cc(guy-12, and-9)
+det(guy-12, a-10)
+amod(guy-12, white-11)
+conj:and(something-3, guy-12)
+case(relationship-15, in-13)
+det(relationship-15, a-14)
+nmod:in(guy-12, relationship-15)
+punct(something-3, ?-16)
+
+Extracted the following NER entity mentions:

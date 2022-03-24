@@ -1,0 +1,55 @@
+Document: ID=FEFC16D3.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+We need more voting laws not voting rights (Moscow Mitch, 2022)
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=voting CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=voting NamedEntityTag=O]
+[Text=laws CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=law NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=voting CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=vote NamedEntityTag=O]
+[Text=rights CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=rights NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=Moscow CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Moscow NamedEntityTag=PERSON]
+[Text=Mitch CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Mitch NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=2022 CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=CD Lemma=2022 NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 tid="t1" type="DATE" value="2022">2022</TIMEX3>]
+[Text=) CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP need)
+      (NP (JJR more) (NN voting) (NNS laws))
+      (PP (RB not)
+        (NP (VBG voting) (NNS rights)))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Moscow) (NNP Mitch))
+        (, ,)
+        (NP (CD 2022))
+        (-RRB- -RRB-)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-2)
+nsubj(need-2, We-1)
+amod(laws-5, more-3)
+compound(laws-5, voting-4)
+obj(need-2, laws-5)
+advmod(rights-8, not-6)
+amod(rights-8, voting-7)
+obl(need-2, rights-8)
+punct(Mitch-11, (-9)
+compound(Mitch-11, Moscow-10)
+dep(need-2, Mitch-11)
+punct(Mitch-11, ,-12)
+dep(Mitch-11, 2022-13)
+punct(Mitch-11, )-14)
+
+Extracted the following NER entity mentions:
+Moscow Mitch	PERSON	PERSON:0.4125860175572979
+2022	DATE	DATE:-1.0

@@ -1,0 +1,61 @@
+Document: ID=2C0BDE8B.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Trucker convoy: Trudeau says protest ‘becoming illegal’ as demands for action grow
+
+Tokens:
+[Text=Trucker CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=trucker NamedEntityTag=O]
+[Text=convoy CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=convoy NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Trudeau CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Trudeau NamedEntityTag=PERSON]
+[Text=says CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=protest CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=protest NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=becoming CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=become NamedEntityTag=O]
+[Text=illegal CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=illegal NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=demands CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=demand NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=action CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=action NamedEntityTag=O]
+[Text=grow CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VB Lemma=grow NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Trucker) (NN convoy))
+    (: :)
+    (S
+      (NP (NNP Trudeau))
+      (VP (VBZ says)
+        (S
+          (NP
+            (NP (NN protest))
+            (VP (`` ‘) (VBG becoming)
+              (ADJP (JJ illegal) ('' ’)
+                (PP (IN as)
+                  (NP (NNS demands))))
+              (PP (IN for)
+                (NP (NN action)))))
+          (VP (VB grow)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, convoy-2)
+compound(convoy-2, Trucker-1)
+punct(convoy-2, :-3)
+nsubj(says-5, Trudeau-4)
+parataxis(convoy-2, says-5)
+nsubj(grow-15, protest-6)
+punct(becoming-8, ‘-7)
+acl(protest-6, becoming-8)
+xcomp(becoming-8, illegal-9)
+punct(illegal-9, ’-10)
+case(demands-12, as-11)
+obl:as(illegal-9, demands-12)
+case(action-14, for-13)
+obl:for(becoming-8, action-14)
+ccomp(says-5, grow-15)
+
+Extracted the following NER entity mentions:
+Trudeau	PERSON	PERSON:0.9898186174411016

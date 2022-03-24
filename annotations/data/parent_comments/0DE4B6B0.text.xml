@@ -1,0 +1,87 @@
+Document: ID=0DE4B6B0.text (2 sentences, 19 tokens)
+
+Sentence #1 (13 tokens):
+I don't see anything on his profile other than this post.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=profile CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=profile NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB see)
+        (NP (NN anything))
+        (PP (IN on)
+          (NP
+            (NP (PRP$ his) (NN profile) (JJ other))
+            (PP (IN than)
+              (NP (DT this) (NN post)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, see-4)
+nsubj(see-4, I-1)
+aux(see-4, do-2)
+advmod(see-4, n't-3)
+obj(see-4, anything-5)
+case(profile-8, on-6)
+nmod:poss(profile-8, his-7)
+obl:on(see-4, profile-8)
+amod(profile-8, other-9)
+case(post-12, than-10)
+det(post-12, this-11)
+nmod:than(profile-8, post-12)
+punct(see-4, .-13)
+
+Extracted the following NER entity mentions:
+his	PERSON	-
+
+Sentence #2 (6 tokens):
+He must of deleted it?
+
+Tokens:
+[Text=He CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=deleted CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=VBN Lemma=delete NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD must)
+      (VP
+        (PP (IN of)
+          (S
+            (VP (VBN deleted)
+              (NP (PRP it)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deleted-4)
+nsubj(deleted-4, He-1)
+aux(deleted-4, must-2)
+mark(deleted-4, of-3)
+obj(deleted-4, it-5)
+punct(deleted-4, ?-6)
+
+Extracted the following NER entity mentions:
+He	PERSON	-

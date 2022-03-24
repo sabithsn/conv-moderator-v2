@@ -1,0 +1,54 @@
+Document: ID=F99BD3B2.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Ukraine Says 'Destabilization' Fueled by Biden Admin Hysteria, Not Russia
+
+Tokens:
+[Text=Ukraine CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=Says CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Destabilization CharacterOffsetBegin=14 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=destabilization NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Fueled CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBN Lemma=fuel NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=ORGANIZATION]
+[Text=Admin CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Admin NamedEntityTag=ORGANIZATION]
+[Text=Hysteria CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Hysteria NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ukraine))
+    (VP (VBZ Says)
+      (NP
+        (NP (`` ') (NN Destabilization) ('' '))
+        (VP (VBN Fueled)
+          (PP (IN by)
+            (NP
+              (NP (NNP Biden) (NNP Admin) (NNP Hysteria))
+              (, ,) (RB Not)
+              (NP (NNP Russia)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Says-2)
+nsubj(Says-2, Ukraine-1)
+punct(Destabilization-4, '-3)
+obj(Says-2, Destabilization-4)
+punct(Destabilization-4, '-5)
+acl(Destabilization-4, Fueled-6)
+case(Hysteria-10, by-7)
+compound(Hysteria-10, Biden-8)
+compound(Hysteria-10, Admin-9)
+obl:by(Fueled-6, Hysteria-10)
+punct(Hysteria-10, ,-11)
+advmod(Hysteria-10, Not-12)
+dep(Hysteria-10, Russia-13)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9606588611978362
+Biden Admin Hysteria	ORGANIZATION	ORGANIZATION:0.4851558506373269
+Russia	COUNTRY	LOCATION:0.8638615699287581

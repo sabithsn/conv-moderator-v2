@@ -1,0 +1,38 @@
+Document: ID=7CF38BB8.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Most company's only care about money
+
+Tokens:
+[Text=Most CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP
+          (NP (JJS Most))
+          (NP (NN company) (POS 's)))
+        (ADVP (RB only))
+        (VP (VB care)
+          (PP (IN about)
+            (NP (NN money))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, care-5)
+nsubj(care-5, Most-1)
+nmod:poss(Most-1, company-2)
+case(company-2, 's-3)
+advmod(care-5, only-4)
+case(money-7, about-6)
+obl:about(care-5, money-7)
+
+Extracted the following NER entity mentions:

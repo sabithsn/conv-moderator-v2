@@ -1,0 +1,99 @@
+Document: ID=DEC34C1A.text (2 sentences, 21 tokens)
+
+Sentence #1 (12 tokens):
+You really need to stop posting on Moscow standard time kid.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Moscow CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Moscow NamedEntityTag=CITY]
+[Text=standard CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=standard NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB really))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB stop)
+            (S
+              (VP (VBG posting)
+                (PP (IN on)
+                  (NP (NNP Moscow) (JJ standard) (NN time) (NN kid)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-3)
+nsubj(need-3, You-1)
+nsubj:xsubj(stop-5, You-1)
+advmod(need-3, really-2)
+mark(stop-5, to-4)
+xcomp(need-3, stop-5)
+xcomp(stop-5, posting-6)
+case(kid-11, on-7)
+compound(kid-11, Moscow-8)
+amod(kid-11, standard-9)
+compound(kid-11, time-10)
+obl:on(posting-6, kid-11)
+punct(need-3, .-12)
+
+Extracted the following NER entity mentions:
+Moscow	CITY	LOCATION:0.9984892024124974
+
+Sentence #2 (9 tokens):
+Everyone knows you're a paid Russian troll.
+
+Tokens:
+[Text=Everyone CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=knows CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=VBZ Lemma=know NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=troll CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=troll NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (VP (VBZ knows)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP 're)
+            (NP
+              (NP (DT a))
+              (VP (VBN paid)
+                (S
+                  (ADJP (JJ Russian)))
+                (S
+                  (VP (VB troll)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, knows-2)
+nsubj(knows-2, Everyone-1)
+nsubj(a-5, you-3)
+cop(a-5, 're-4)
+ccomp(knows-2, a-5)
+acl(a-5, paid-6)
+xcomp(paid-6, Russian-7)
+ccomp(paid-6, troll-8)
+punct(knows-2, .-9)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999966600890884

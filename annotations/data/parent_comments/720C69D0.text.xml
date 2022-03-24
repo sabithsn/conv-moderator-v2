@@ -1,0 +1,64 @@
+Document: ID=720C69D0.text (2 sentences, 13 tokens)
+
+Sentence #1 (9 tokens):
+Killing babies is not a private medical decision.
+
+Tokens:
+[Text=Killing CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=kill NamedEntityTag=O]
+[Text=babies CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=baby NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=private CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=private NamedEntityTag=O]
+[Text=medical CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=medical NamedEntityTag=O]
+[Text=decision CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=decision NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (VBG Killing) (NNS babies))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (JJ private) (JJ medical) (NN decision)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, decision-8)
+amod(babies-2, Killing-1)
+nsubj(decision-8, babies-2)
+cop(decision-8, is-3)
+advmod(decision-8, not-4)
+det(decision-8, a-5)
+amod(decision-8, private-6)
+amod(decision-8, medical-7)
+punct(decision-8, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+It’s murder.
+
+Tokens:
+[Text=It CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=murder CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=murder NamedEntityTag=CRIMINAL_CHARGE]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP (NN murder)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, murder-3)
+nsubj(murder-3, It-1)
+cop(murder-3, ’s-2)
+punct(murder-3, .-4)
+
+Extracted the following NER entity mentions:
+murder	CRIMINAL_CHARGE	-

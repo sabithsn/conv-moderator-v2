@@ -1,0 +1,106 @@
+Document: ID=48DA54F9.text (2 sentences, 24 tokens)
+
+Sentence #1 (11 tokens):
+republicans are too spineless to do anything the voters want.
+
+Tokens:
+[Text=republicans CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=republican NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=spineless CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=spineless NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=voters CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=voter NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS republicans))
+    (VP (VBP are)
+      (ADJP (RB too) (JJ spineless)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (NP
+                (NP (NN anything))
+                (SBAR
+                  (S
+                    (NP (DT the) (NNS voters))
+                    (VP (VBP want))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spineless-4)
+nsubj(spineless-4, republicans-1)
+nsubj:xsubj(do-6, republicans-1)
+cop(spineless-4, are-2)
+advmod(spineless-4, too-3)
+mark(do-6, to-5)
+xcomp(spineless-4, do-6)
+obj(do-6, anything-7)
+det(voters-9, the-8)
+nsubj(want-10, voters-9)
+acl:relcl(anything-7, want-10)
+punct(spineless-4, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+yet, theres a laundry list of things Biden could be impeached for
+
+Tokens:
+[Text=yet CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=theres CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=VBZ Lemma=there NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=laundry CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=laundry NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=could CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=impeached CharacterOffsetBegin=115 CharacterOffsetEnd=124 PartOfSpeech=VBN Lemma=impeach NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB yet))
+    (, ,)
+    (PRN
+      (SINV
+        (VP (VBZ theres))
+        (NP
+          (NP (DT a) (NN laundry) (NN list))
+          (PP (IN of)
+            (NP (NNS things))))))
+    (NP (NNP Biden))
+    (VP (MD could)
+      (VP (VB be)
+        (VP (VBN impeached)
+          (PP (IN for)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, impeached-12)
+advmod(impeached-12, yet-1)
+punct(impeached-12, ,-2)
+parataxis(impeached-12, theres-3)
+det(list-6, a-4)
+compound(list-6, laundry-5)
+nsubj(theres-3, list-6)
+case(things-8, of-7)
+nmod:of(list-6, things-8)
+nsubj:pass(impeached-12, Biden-9)
+aux(impeached-12, could-10)
+aux:pass(impeached-12, be-11)
+obl(impeached-12, for-13)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.994049282987671

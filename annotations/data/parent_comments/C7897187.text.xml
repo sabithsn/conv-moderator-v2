@@ -1,0 +1,103 @@
+Document: ID=C7897187.text (2 sentences, 24 tokens)
+
+Sentence #1 (11 tokens):
+Why did you put the auth guy as grey centrist?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=auth CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=auth NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=grey CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=grey NamedEntityTag=O]
+[Text=centrist CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=centrist NamedEntityTag=IDEOLOGY]
+[Text=? CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP you))
+      (VP (VB put)
+        (NP (DT the) (NN auth) (NN guy))
+        (PP (IN as)
+          (NP (JJ grey) (NN centrist)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, put-4)
+advmod(put-4, Why-1)
+aux(put-4, did-2)
+nsubj(put-4, you-3)
+det(guy-7, the-5)
+compound(guy-7, auth-6)
+obj(put-4, guy-7)
+case(centrist-10, as-8)
+amod(centrist-10, grey-9)
+obl:as(put-4, centrist-10)
+punct(put-4, ?-11)
+
+Extracted the following NER entity mentions:
+centrist	IDEOLOGY	-
+
+Sentence #2 (13 tokens):
+Just because he's right doesn't mean he isn't auth.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=auth CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=auth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB Just))
+      (IN because)
+      (S
+        (NP (PRP he))
+        (VP (VBZ 's)
+          (ADJP (JJ right)))))
+    (VP (VBZ does) (RB n't)
+      (VP (VB mean)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBZ is) (RB n't)
+              (ADJP (JJ auth)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-8)
+advmod(right-5, Just-1)
+mark(right-5, because-2)
+nsubj(right-5, he-3)
+cop(right-5, 's-4)
+csubj(mean-8, right-5)
+aux(mean-8, does-6)
+advmod(mean-8, n't-7)
+nsubj(auth-12, he-9)
+cop(auth-12, is-10)
+advmod(auth-12, n't-11)
+ccomp(mean-8, auth-12)
+punct(mean-8, .-13)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+he	PERSON	-

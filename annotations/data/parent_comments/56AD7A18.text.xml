@@ -1,0 +1,123 @@
+Document: ID=56AD7A18.text (3 sentences, 27 tokens)
+
+Sentence #1 (2 tokens):
+Huh?
+
+Tokens:
+[Text=Huh CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=huh NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Huh) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Huh-1)
+punct(Huh-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Obviously I'm taking about colonialism.
+
+Tokens:
+[Text=Obviously CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=obviously NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=colonialism CharacterOffsetBegin=32 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=colonialism NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Obviously))
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG taking)
+        (NP (RB about) (NN colonialism))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, taking-4)
+advmod(taking-4, Obviously-1)
+nsubj(taking-4, I-2)
+aux(taking-4, 'm-3)
+advmod(colonialism-6, about-5)
+obj(taking-4, colonialism-6)
+punct(taking-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (18 tokens):
+Or did you think society existed in a vacuum and the past has no affect on it?
+
+Tokens:
+[Text=Or CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=existed CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=exist NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=vacuum CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=vacuum NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">the past</TIMEX3>]
+[Text=past CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">the past</TIMEX3>]
+[Text=has CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=affect CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=affect NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (CC Or)
+    (VBD did)
+    (NP (PRP you))
+    (VP (VB think)
+      (S
+        (S
+          (NP (NN society))
+          (VP (VBD existed)
+            (PP (IN in)
+              (NP (DT a) (NN vacuum)))))
+        (CC and)
+        (S
+          (NP (DT the) (NN past))
+          (VP (VBZ has)
+            (NP
+              (NP (DT no) (NN affect))
+              (PP (IN on)
+                (NP (PRP it))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-4)
+cc(think-4, Or-1)
+aux(think-4, did-2)
+nsubj(think-4, you-3)
+nsubj(existed-6, society-5)
+ccomp(think-4, existed-6)
+case(vacuum-9, in-7)
+det(vacuum-9, a-8)
+obl:in(existed-6, vacuum-9)
+cc(has-13, and-10)
+det(past-12, the-11)
+nsubj(has-13, past-12)
+ccomp(think-4, has-13)
+conj:and(existed-6, has-13)
+det(affect-15, no-14)
+obj(has-13, affect-15)
+case(it-17, on-16)
+nmod:on(affect-15, it-17)
+punct(think-4, ?-18)
+
+Extracted the following NER entity mentions:
+the past	DATE	DATE:-1.0

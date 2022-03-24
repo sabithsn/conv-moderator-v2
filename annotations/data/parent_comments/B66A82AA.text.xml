@@ -1,0 +1,77 @@
+Document: ID=B66A82AA.text (2 sentences, 16 tokens)
+
+Sentence #1 (11 tokens):
+Exactly, I'm lucky just to have a job!
+
+Tokens:
+[Text=Exactly CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=lucky CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=lucky NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Exactly))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ lucky) (RB just)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (DT a) (NN job)))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lucky-5)
+advmod(lucky-5, Exactly-1)
+punct(lucky-5, ,-2)
+nsubj(lucky-5, I-3)
+nsubj:xsubj(have-8, I-3)
+cop(lucky-5, 'm-4)
+advmod(lucky-5, just-6)
+mark(have-8, to-7)
+xcomp(lucky-5, have-8)
+det(job-10, a-9)
+obj(have-8, job-10)
+punct(lucky-5, !-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Min wage or no!!
+
+Tokens:
+[Text=Min CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1M">Min</TIMEX3>]
+[Text=wage CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=wage NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=!! CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Min) (NN wage))
+    (CC or)
+    (NP (DT no))
+    (. !!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wage-2)
+compound(wage-2, Min-1)
+cc(no-4, or-3)
+conj:or(wage-2, no-4)
+punct(wage-2, !!-5)
+
+Extracted the following NER entity mentions:
+Min	DURATION	DURATION:-1.0

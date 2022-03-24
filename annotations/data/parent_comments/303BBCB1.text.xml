@@ -1,0 +1,102 @@
+Document: ID=303BBCB1.text (2 sentences, 25 tokens)
+
+Sentence #1 (18 tokens):
+Even if that's true it doesn't mean white Americans don't benefit from American slavery.
+
+Tokens:
+[Text=Even CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=true CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=true NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=do CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=benefit CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=benefit NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=slavery CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=slavery NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (RB Even) (IN if)
+      (S
+        (NP (DT that))
+        (VP (VBZ 's)
+          (ADJP (JJ true)))))
+    (NP (PRP it))
+    (VP (VBZ does) (RB n't)
+      (VP (VB mean)
+        (SBAR
+          (S
+            (NP (JJ white) (NNPS Americans))
+            (VP (VBP do) (RB n't)
+              (VP (VB benefit)
+                (PP (IN from)
+                  (NP (JJ American) (NN slavery)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-9)
+advmod(true-5, Even-1)
+mark(true-5, if-2)
+nsubj(true-5, that-3)
+cop(true-5, 's-4)
+advcl:if(mean-9, true-5)
+nsubj(mean-9, it-6)
+aux(mean-9, does-7)
+advmod(mean-9, n't-8)
+amod(Americans-11, white-10)
+nsubj(benefit-14, Americans-11)
+aux(benefit-14, do-12)
+advmod(benefit-14, n't-13)
+ccomp(mean-9, benefit-14)
+case(slavery-17, from-15)
+amod(slavery-17, American-16)
+obl:from(benefit-14, slavery-17)
+punct(mean-9, .-18)
+
+Extracted the following NER entity mentions:
+Americans	MISC	MISC:0.9999820314116351
+American	NATIONALITY	MISC:0.9999716409077614
+
+Sentence #2 (7 tokens):
+Your comment is just textbook whataboutism.
+
+Tokens:
+[Text=Your CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=comment NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=textbook CharacterOffsetBegin=110 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=textbook NamedEntityTag=O]
+[Text=whataboutism CharacterOffsetBegin=119 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=whataboutism NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN comment))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP (NN textbook) (NN whataboutism)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, whataboutism-6)
+nmod:poss(comment-2, Your-1)
+nsubj(whataboutism-6, comment-2)
+cop(whataboutism-6, is-3)
+advmod(whataboutism-6, just-4)
+compound(whataboutism-6, textbook-5)
+punct(whataboutism-6, .-7)
+
+Extracted the following NER entity mentions:

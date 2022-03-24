@@ -1,0 +1,52 @@
+Document: ID=F14AE148.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Florida Governor Ron DeSantis: First Lady Casey DeSantis Is Cancer Free
+
+Tokens:
+[Text=Florida CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Governor CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Governor NamedEntityTag=TITLE]
+[Text=Ron CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Ron NamedEntityTag=PERSON]
+[Text=DeSantis CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=First CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=First NamedEntityTag=TITLE NormalizedNamedEntityTag=1.0]
+[Text=Lady CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Lady NamedEntityTag=TITLE]
+[Text=Casey CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Casey NamedEntityTag=O]
+[Text=DeSantis CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Cancer CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Cancer NamedEntityTag=CAUSE_OF_DEATH]
+[Text=Free CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Free NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Florida) (NNP Governor) (NNP Ron) (NNP DeSantis))
+    (: :)
+    (SBARQ
+      (WHNP
+        (NP (NNP First) (NNP Lady) (NNP Casey) (NNP DeSantis)))
+      (SQ (VBZ Is)
+        (NP (NNP Cancer) (NNP Free))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, DeSantis-4)
+compound(DeSantis-4, Florida-1)
+compound(DeSantis-4, Governor-2)
+compound(DeSantis-4, Ron-3)
+punct(DeSantis-4, :-5)
+compound(DeSantis-9, First-6)
+compound(DeSantis-9, Lady-7)
+compound(DeSantis-9, Casey-8)
+obj(Is-10, DeSantis-9)
+parataxis(DeSantis-4, Is-10)
+compound(Free-12, Cancer-11)
+nsubj(Is-10, Free-12)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.9927734725674899
+Governor	TITLE	-
+Ron DeSantis	PERSON	PERSON:0.9954699044641656
+First	TITLE	ORDINAL:-1.0
+Lady	TITLE	-
+Cancer	CAUSE_OF_DEATH	-

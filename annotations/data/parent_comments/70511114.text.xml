@@ -1,0 +1,49 @@
+Document: ID=70511114.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Ottawa police warn truckers: Leave now or face arrest
+
+Tokens:
+[Text=Ottawa CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Ottawa NamedEntityTag=CITY]
+[Text=police CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=police NamedEntityTag=O]
+[Text=warn CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=warn NamedEntityTag=O]
+[Text=truckers CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=trucker NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Leave CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=leave NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=or CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=face NamedEntityTag=O]
+[Text=arrest CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=arrest NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ottawa) (NNS police))
+    (VP (VBP warn)
+      (NP (NNS truckers))
+      (: :)
+      (S
+        (VP
+          (VP (VB Leave)
+            (ADVP (RB now)))
+          (CC or)
+          (VP (VB face)
+            (NP (NN arrest))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, warn-3)
+compound(police-2, Ottawa-1)
+nsubj(warn-3, police-2)
+obj(warn-3, truckers-4)
+punct(warn-3, :-5)
+parataxis(warn-3, Leave-6)
+advmod(Leave-6, now-7)
+cc(face-9, or-8)
+parataxis(warn-3, face-9)
+conj:or(Leave-6, face-9)
+obj(face-9, arrest-10)
+
+Extracted the following NER entity mentions:
+Ottawa	CITY	LOCATION:0.9751163453142274
+now	DATE	DATE:-1.0

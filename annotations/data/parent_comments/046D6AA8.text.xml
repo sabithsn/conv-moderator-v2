@@ -1,0 +1,56 @@
+Document: ID=046D6AA8.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Someone call the burn unit, we’ve got a patient inbound
+
+Tokens:
+[Text=Someone CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=call NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=burn CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=burn NamedEntityTag=O]
+[Text=unit CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=unit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=patient CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=patient NamedEntityTag=O]
+[Text=inbound CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=inbound NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NN Someone))
+        (VP (VBP call)
+          (NP (DT the)
+            (NML
+              (S
+                (VP (VB burn))))
+            (NN unit)))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP ’ve)
+      (SBAR
+        (S
+          (VP (VBD got)
+            (NP (DT a)
+              (ADJP (JJ patient) (JJ inbound)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-8)
+nsubj(call-2, Someone-1)
+parataxis(’ve-8, call-2)
+det(unit-5, the-3)
+compound(unit-5, burn-4)
+obj(call-2, unit-5)
+punct(’ve-8, ,-6)
+nsubj(’ve-8, we-7)
+ccomp(’ve-8, got-9)
+det(inbound-12, a-10)
+advmod(inbound-12, patient-11)
+obj(got-9, inbound-12)
+
+Extracted the following NER entity mentions:

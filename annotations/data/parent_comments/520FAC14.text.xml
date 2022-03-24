@@ -1,0 +1,113 @@
+Document: ID=520FAC14.text (4 sentences, 19 tokens)
+
+Sentence #1 (2 tokens):
+No.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH No) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, No-1)
+punct(No-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Only democrats can be weird and creepy.
+
+Tokens:
+[Text=Only CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=democrats CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=NNPS Lemma=democrats NamedEntityTag=IDEOLOGY]
+[Text=can CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=weird CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=weird NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=creepy CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=creepy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Only) (NNPS democrats))
+    (VP (MD can)
+      (VP (VB be)
+        (ADJP (JJ weird)
+          (CC and)
+          (JJ creepy))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, weird-5)
+advmod(democrats-2, Only-1)
+nsubj(weird-5, democrats-2)
+nsubj(creepy-7, democrats-2)
+aux(weird-5, can-3)
+cop(weird-5, be-4)
+cc(creepy-7, and-6)
+conj:and(weird-5, creepy-7)
+punct(weird-5, .-8)
+
+Extracted the following NER entity mentions:
+democrats	IDEOLOGY	-
+
+Sentence #3 (7 tokens):
+Trump was clearly being a baller.
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=clearly CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=clearly NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=baller CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=baller NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump))
+    (VP (VBD was)
+      (ADVP (RB clearly))
+      (VP (VBG being)
+        (NP (DT a) (NN baller))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, baller-6)
+nsubj(baller-6, Trump-1)
+aux(baller-6, was-2)
+advmod(baller-6, clearly-3)
+cop(baller-6, being-4)
+det(baller-6, a-5)
+punct(baller-6, .-7)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9331682416345126
+
+Sentence #4 (2 tokens):
+/s
+
+Tokens:
+[Text=/ CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=SYM Lemma=/ NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=s NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (SYM /))
+    (NP (NN s))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, /-1)
+dep(/-1, s-2)
+
+Extracted the following NER entity mentions:

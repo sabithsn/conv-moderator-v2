@@ -1,0 +1,84 @@
+Document: ID=BD4AA471.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+The physical similarities between the two men also lends credibility to the rumor, where he has no similarity to his father.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=similarities CharacterOffsetBegin=13 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=similarity NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=men CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=lends CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=lend NamedEntityTag=O]
+[Text=credibility CharacterOffsetBegin=57 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=credibility NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rumor CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=rumor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=similarity CharacterOffsetBegin=99 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=similarity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=father CharacterOffsetBegin=117 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ physical) (NNS similarities))
+      (PP (IN between)
+        (NP (DT the) (CD two) (NNS men))))
+    (ADVP (RB also))
+    (VP (VBZ lends)
+      (NP (NN credibility))
+      (PP (IN to)
+        (NP (DT the) (NN rumor)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBZ has)
+            (NP
+              (NP (DT no) (NN similarity))
+              (PP (IN to)
+                (NP (PRP$ his) (NN father))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lends-9)
+det(similarities-3, The-1)
+amod(similarities-3, physical-2)
+nsubj(lends-9, similarities-3)
+case(men-7, between-4)
+det(men-7, the-5)
+nummod(men-7, two-6)
+nmod:between(similarities-3, men-7)
+advmod(lends-9, also-8)
+obj(lends-9, credibility-10)
+case(rumor-13, to-11)
+det(rumor-13, the-12)
+obl:to(lends-9, rumor-13)
+punct(lends-9, ,-14)
+advmod(has-17, where-15)
+nsubj(has-17, he-16)
+advcl(lends-9, has-17)
+det(similarity-19, no-18)
+obj(has-17, similarity-19)
+case(father-22, to-20)
+nmod:poss(father-22, his-21)
+nmod:to(similarity-19, father-22)
+punct(lends-9, .-23)
+
+Extracted the following NER entity mentions:
+two	NUMBER	NUMBER:-1.0
+he	PERSON	-
+his	PERSON	-

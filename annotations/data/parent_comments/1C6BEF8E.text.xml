@@ -1,0 +1,86 @@
+Document: ID=1C6BEF8E.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+ELI5: Why do we sometimes have to sneeze in a rapid 2 sneeze burst instead of always sneezing just once?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=sometimes CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=sometimes NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sneeze CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=sneeze NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rapid CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=rapid NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=sneeze CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=sneeze NamedEntityTag=O]
+[Text=burst CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=VBN Lemma=burst NamedEntityTag=O]
+[Text=instead CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=sneezing CharacterOffsetBegin=85 CharacterOffsetEnd=93 PartOfSpeech=VBG Lemma=sneeze NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=? CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP do)
+        (NP (PRP we))
+        (VP
+          (ADVP (RB sometimes))
+          (VBP have)
+          (S
+            (VP (TO to)
+              (VP (VB sneeze)
+                (SBAR (IN in)
+                  (S
+                    (NP (DT a) (JJ rapid) (CD 2))
+                    (VP (VBP sneeze)
+                      (NP (VBN burst))
+                      (PP (RB instead) (IN of)
+                        (S
+                          (ADVP (RB always))
+                          (VP (VBG sneezing)
+                            (ADVP (RB just))
+                            (ADVP (RB once))))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(have-7, Why-3)
+aux(have-7, do-4)
+nsubj(have-7, we-5)
+nsubj:xsubj(sneeze-9, we-5)
+advmod(have-7, sometimes-6)
+parataxis(ELI5-1, have-7)
+mark(sneeze-9, to-8)
+xcomp(have-7, sneeze-9)
+mark(sneeze-14, in-10)
+det(2-13, a-11)
+amod(2-13, rapid-12)
+nsubj(sneeze-14, 2-13)
+advcl:in(sneeze-9, sneeze-14)
+obj(sneeze-14, burst-15)
+mark(sneezing-19, instead-16)
+fixed(instead-16, of-17)
+advmod(sneezing-19, always-18)
+advcl:instead_of(sneeze-14, sneezing-19)
+advmod(sneezing-19, just-20)
+advmod(sneezing-19, once-21)
+punct(ELI5-1, ?-22)
+
+Extracted the following NER entity mentions:
+2	NUMBER	NUMBER:-1.0
+once	DATE	DATE:-1.0

@@ -1,0 +1,49 @@
+Document: ID=E0B36E78.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+5 Things That Went Down In the March 1st Texas Primary
+
+Tokens:
+[Text=5 CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=Things CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=That CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=Went CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=Down CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03-01 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03-01">March 1st</TIMEX3>]
+[Text=1st CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=1st NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03-01 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03-01">March 1st</TIMEX3>]
+[Text=Texas CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Primary CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Primary NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (CD 5) (NNS Things))
+    (SBAR
+      (WHNP (WDT That))
+      (S
+        (VP (VBD Went)
+          (PRT (RP Down))
+          (PP (IN In)
+            (NP (DT the) (NNP March) (NN 1st) (NNP Texas) (NNP Primary))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Things-2)
+nummod(Things-2, 5-1)
+nsubj(Went-4, Things-2)
+ref(Things-2, That-3)
+acl:relcl(Things-2, Went-4)
+compound:prt(Went-4, Down-5)
+case(Primary-11, In-6)
+det(Primary-11, the-7)
+compound(Primary-11, March-8)
+compound(Primary-11, 1st-9)
+compound(Primary-11, Texas-10)
+obl:in(Went-4, Primary-11)
+
+Extracted the following NER entity mentions:
+5	NUMBER	NUMBER:-1.0
+March 1st	DATE	DATE:0.8890773431633411
+Texas	STATE_OR_PROVINCE	-

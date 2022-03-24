@@ -1,0 +1,34 @@
+Document: ID=DA6035F5.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+ELI5 I'm bad at english
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=english CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=english NamedEntityTag=NATIONALITY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN ELI5))
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ bad)
+        (PP (IN at)
+          (NP (NNP english)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bad-4)
+nsubj(bad-4, ELI5-1)
+nsubj(bad-4, I-2)
+cop(bad-4, 'm-3)
+case(english-6, at-5)
+obl:at(bad-4, english-6)
+
+Extracted the following NER entity mentions:
+english	NATIONALITY	-

@@ -1,0 +1,32 @@
+Document: ID=C95A2D12.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+communism is when government spending
+
+Tokens:
+[Text=communism CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=communism NamedEntityTag=IDEOLOGY]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=spending CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=spending NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN communism))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB when))
+        (FRAG
+          (NP (NN government) (NN spending)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, communism-1)
+advmod(spending-5, when-3)
+compound(spending-5, government-4)
+advcl(is-2, spending-5)
+
+Extracted the following NER entity mentions:
+communism	IDEOLOGY	-

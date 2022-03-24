@@ -1,0 +1,71 @@
+Document: ID=22042921.text (2 sentences, 14 tokens)
+
+Sentence #1 (6 tokens):
+First post on r all.
+
+Tokens:
+[Text=First CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=post CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=r CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=r NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (JJ First) (NN post))
+    (PP (IN on)
+      (NP (NN r)))
+    (NP (DT all))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, post-2)
+amod(post-2, First-1)
+case(r-4, on-3)
+obl:on(post-2, r-4)
+dep(post-2, all-5)
+punct(post-2, .-6)
+
+Extracted the following NER entity mentions:
+First	ORDINAL	ORDINAL:-1.0
+
+Sentence #2 (8 tokens):
+Is this how they control the narrative?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=control CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=control NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=narrative CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=narrative NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT this))
+    (SBAR
+      (WHADVP (WRB how))
+      (S
+        (NP (PRP they))
+        (VP (VBP control)
+          (NP (DT the) (NN narrative)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Is-1)
+nsubj(Is-1, this-2)
+advmod(control-5, how-3)
+nsubj(control-5, they-4)
+dep(Is-1, control-5)
+det(narrative-7, the-6)
+obj(control-5, narrative-7)
+punct(Is-1, ?-8)
+
+Extracted the following NER entity mentions:

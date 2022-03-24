@@ -1,0 +1,57 @@
+Document: ID=8C22787C.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+British student explains how terrible mask mandates have been for her classmates.
+
+Tokens:
+[Text=British CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=british NamedEntityTag=NATIONALITY]
+[Text=student CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=student NamedEntityTag=TITLE]
+[Text=explains CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=explain NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=terrible CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=terrible NamedEntityTag=O]
+[Text=mask CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=mandates CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=mandate NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=classmates CharacterOffsetBegin=70 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=classmate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ British) (NN student))
+    (VP (VBZ explains)
+      (SBAR
+        (WHNP
+          (WHADJP (WRB how) (JJ terrible))
+          (NN mask))
+        (S
+          (NP (NNS mandates))
+          (VP (VBP have)
+            (VP (VBN been)
+              (PP (IN for)
+                (NP (PRP$ her) (NNS classmates))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, explains-3)
+amod(student-2, British-1)
+nsubj(explains-3, student-2)
+advmod(terrible-5, how-4)
+amod(mask-6, terrible-5)
+obj(classmates-12, mask-6)
+nsubj(classmates-12, mandates-7)
+aux(classmates-12, have-8)
+cop(classmates-12, been-9)
+case(classmates-12, for-10)
+nmod:poss(classmates-12, her-11)
+ccomp(explains-3, classmates-12)
+punct(explains-3, .-13)
+
+Extracted the following NER entity mentions:
+British	NATIONALITY	MISC:0.999990872592082
+student	TITLE	-
+her	PERSON	-

@@ -1,0 +1,62 @@
+Document: ID=1201576E.text (2 sentences, 12 tokens)
+
+Sentence #1 (6 tokens):
+Everyone...including each other.
+
+Tokens:
+[Text=Everyone CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=including CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=include NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Everyone))
+    (: ...)
+    (PP (VBG including)
+      (NP (DT each) (JJ other)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Everyone-1)
+punct(Everyone-1, ...-2)
+case(other-5, including-3)
+det(other-5, each-4)
+nmod:including(Everyone-1, other-5)
+punct(Everyone-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+They're equal opportunity haters!
+
+Tokens:
+[Text=They CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=equal CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=equal NamedEntityTag=O]
+[Text=opportunity CharacterOffsetBegin=47 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=opportunity NamedEntityTag=O]
+[Text=haters CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=hater NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP 're)
+      (NP (JJ equal) (NN opportunity) (NNS haters)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, haters-5)
+nsubj(haters-5, They-1)
+cop(haters-5, 're-2)
+amod(haters-5, equal-3)
+compound(haters-5, opportunity-4)
+punct(haters-5, !-6)
+
+Extracted the following NER entity mentions:

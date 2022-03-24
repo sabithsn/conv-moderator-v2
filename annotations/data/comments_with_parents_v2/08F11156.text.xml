@@ -1,0 +1,67 @@
+Document: ID=08F11156.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+If it wasn’t the law at the time I don’t think they can do anything
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=time NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">time</TIMEX3>]
+[Text=I CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBD was) (RB n’t)
+          (NP
+            (NP (DT the) (NN law))
+            (PP (IN at)
+              (NP (DT the) (NN time)))))))
+    (NP (PRP I))
+    (VP (VBP do) (RB n’t)
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (MD can)
+              (VP (VB do)
+                (NP (NN anything))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-13)
+mark(law-6, If-1)
+nsubj(law-6, it-2)
+cop(law-6, was-3)
+advmod(law-6, n’t-4)
+det(law-6, the-5)
+advcl:if(think-13, law-6)
+case(time-9, at-7)
+det(time-9, the-8)
+nmod:at(law-6, time-9)
+nsubj(think-13, I-10)
+aux(think-13, do-11)
+advmod(think-13, n’t-12)
+nsubj(do-16, they-14)
+aux(do-16, can-15)
+ccomp(think-13, do-16)
+obj(do-16, anything-17)
+
+Extracted the following NER entity mentions:
+time	DATE	DATE:-1.0

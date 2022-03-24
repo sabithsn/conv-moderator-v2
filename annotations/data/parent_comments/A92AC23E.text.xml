@@ -1,0 +1,71 @@
+Document: ID=A92AC23E.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+I mean give it a few days things might change (this is also a joke)
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">a few days</TIMEX3>]
+[Text=few CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=few NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">a few days</TIMEX3>]
+[Text=days CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">a few days</TIMEX3>]
+[Text=things CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=joke CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=joke NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (S
+        (VP (VB give)
+          (NP (PRP it))
+          (NP
+            (NP
+              (QP (DT a) (JJ few))
+              (NNS days))
+            (SBAR
+              (S
+                (NP (NNS things))
+                (VP (MD might)
+                  (VP (VB change)))))
+            (PRN (-LRB- -LRB-)
+              (S
+                (NP (DT this))
+                (VP (VBZ is)
+                  (ADVP (RB also))
+                  (NP (DT a) (NN joke))))
+              (-RRB- -RRB-))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-2)
+nsubj(mean-2, I-1)
+ccomp(mean-2, give-3)
+iobj(give-3, it-4)
+advmod(few-6, a-5)
+nummod(days-7, few-6)
+obj(give-3, days-7)
+nsubj(change-10, things-8)
+aux(change-10, might-9)
+acl:relcl(days-7, change-10)
+punct(joke-16, (-11)
+nsubj(joke-16, this-12)
+cop(joke-16, is-13)
+advmod(joke-16, also-14)
+det(joke-16, a-15)
+dep(days-7, joke-16)
+punct(joke-16, )-17)
+
+Extracted the following NER entity mentions:
+a few days	DURATION	DURATION:-1.0

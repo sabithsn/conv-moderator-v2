@@ -1,0 +1,78 @@
+Document: ID=8E403A9D.text (2 sentences, 16 tokens)
+
+Sentence #1 (13 tokens):
+Lol getting 8 dislikes just means the brigaders have invaded this sub.
+
+Tokens:
+[Text=Lol CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=8 CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=CD Lemma=8 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=dislikes CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=dislike NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=means CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=mean NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=brigaders CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=brigader NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=invaded CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=VBN Lemma=invade NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Lol))
+    (S
+      (VP (VBG getting)
+        (SBAR
+          (S
+            (NP (CD 8) (NNS dislikes))
+            (ADVP (RB just))
+            (VP (VBZ means))))))
+    (NP (DT the) (NNS brigaders))
+    (VP (VBP have)
+      (VP (VBN invaded)
+        (NP (DT this) (NN sub))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, invaded-10)
+discourse(invaded-10, Lol-1)
+dep(invaded-10, getting-2)
+nummod(dislikes-4, 8-3)
+nsubj(means-6, dislikes-4)
+advmod(means-6, just-5)
+ccomp(getting-2, means-6)
+det(brigaders-8, the-7)
+nsubj(invaded-10, brigaders-8)
+aux(invaded-10, have-9)
+det(sub-12, this-11)
+obj(invaded-10, sub-12)
+punct(invaded-10, .-13)
+
+Extracted the following NER entity mentions:
+8	NUMBER	NUMBER:-1.0
+
+Sentence #2 (3 tokens):
+Like you.
+
+Tokens:
+[Text=Like CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP (PRP you)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, you-2)
+case(you-2, Like-1)
+punct(you-2, .-3)
+
+Extracted the following NER entity mentions:

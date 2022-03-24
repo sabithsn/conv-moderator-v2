@@ -1,0 +1,81 @@
+Document: ID=5A51892D.text (2 sentences, 17 tokens)
+
+Sentence #1 (13 tokens):
+When I can no longer feed myself, I'm murdering Emily.
+
+Tokens:
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=longer NamedEntityTag=O]
+[Text=feed CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=feed NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=murdering CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=VBG Lemma=murder NamedEntityTag=O]
+[Text=Emily CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Emily NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP I))
+        (VP (MD can)
+          (ADVP (RB no) (RB longer))
+          (VP (VB feed)
+            (NP (PRP myself))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG murdering)
+        (NP (NNP Emily))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, murdering-11)
+advmod(feed-6, When-1)
+nsubj(feed-6, I-2)
+aux(feed-6, can-3)
+advmod(longer-5, no-4)
+advmod(feed-6, longer-5)
+advcl(murdering-11, feed-6)
+obj(feed-6, myself-7)
+punct(murdering-11, ,-8)
+nsubj(murdering-11, I-9)
+aux(murdering-11, 'm-10)
+obj(murdering-11, Emily-12)
+punct(murdering-11, .-13)
+
+Extracted the following NER entity mentions:
+Emily	PERSON	PERSON:0.9511868307503712
+
+Sentence #2 (4 tokens):
+Fuck that bitch.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=bitch CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=bitch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fuck)
+      (NP (DT that) (NN bitch)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+det(bitch-3, that-2)
+obj(Fuck-1, bitch-3)
+punct(Fuck-1, .-4)
+
+Extracted the following NER entity mentions:

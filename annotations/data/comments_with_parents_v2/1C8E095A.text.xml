@@ -1,0 +1,79 @@
+Document: ID=1C8E095A.text (2 sentences, 17 tokens)
+
+Sentence #1 (15 tokens):
+Idiots usually don't care if they are right or wrong, so no.
+
+Tokens:
+[Text=Idiots CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=idiot NamedEntityTag=O]
+[Text=usually CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=usually NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Idiots))
+    (ADVP (RB usually))
+    (VP (VBP do) (RB n't)
+      (VP (VB care)
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (ADJP (JJ right)
+                (CC or)
+                (JJ wrong))
+              (, ,)
+              (ADVP (RB so) (RB no)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, care-5)
+nsubj(care-5, Idiots-1)
+advmod(care-5, usually-2)
+aux(care-5, do-3)
+advmod(care-5, n't-4)
+mark(right-9, if-6)
+nsubj(right-9, they-7)
+nsubj(wrong-11, they-7)
+cop(right-9, are-8)
+advcl:if(care-5, right-9)
+cc(wrong-11, or-10)
+advcl:if(care-5, wrong-11)
+conj:or(right-9, wrong-11)
+punct(right-9, ,-12)
+advmod(no-14, so-13)
+advmod(right-9, no-14)
+punct(care-5, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+Bye.
+
+Tokens:
+[Text=Bye CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=UH Lemma=bye NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Bye) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Bye-1)
+punct(Bye-1, .-2)
+
+Extracted the following NER entity mentions:

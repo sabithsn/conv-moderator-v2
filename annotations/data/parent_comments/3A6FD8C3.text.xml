@@ -1,0 +1,67 @@
+Document: ID=3A6FD8C3.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Dementia Joe just called in the most important weapon in information warfare, Tik Tok’ers
+
+Tokens:
+[Text=Dementia CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=dementia NamedEntityTag=CAUSE_OF_DEATH]
+[Text=Joe CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=just CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=weapon CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=weapon NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=57 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=warfare CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=warfare NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Tik CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Tik NamedEntityTag=O]
+[Text=Tok CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Tok NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=ers CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NNPS Lemma=ers NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Dementia))
+    (SBAR
+      (S
+        (NP (NNP Joe))
+        (ADVP (RB just))
+        (VP (VBN called)
+          (PP (IN in)
+            (NP (DT the)
+              (ADJP (RBS most) (JJ important))
+              (NN weapon)))
+          (PP (IN in)
+            (NP (NN information) (NN warfare)))
+          (, ,)
+          (NP
+            (NP (NNP Tik) (NNP Tok) (POS ’))
+            (NNPS ers)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Dementia-1)
+nsubj(called-4, Joe-2)
+advmod(called-4, just-3)
+acl:relcl(Dementia-1, called-4)
+case(weapon-9, in-5)
+det(weapon-9, the-6)
+advmod(important-8, most-7)
+amod(weapon-9, important-8)
+obl:in(called-4, weapon-9)
+case(warfare-12, in-10)
+compound(warfare-12, information-11)
+obl:in(called-4, warfare-12)
+punct(called-4, ,-13)
+compound(Tok-15, Tik-14)
+nmod:poss(ers-17, Tok-15)
+case(Tok-15, ’-16)
+obj(called-4, ers-17)
+
+Extracted the following NER entity mentions:
+Dementia	CAUSE_OF_DEATH	-
+Joe	PERSON	PERSON:0.745464207527529

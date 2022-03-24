@@ -1,0 +1,109 @@
+Document: ID=AB1E94C4.text (2 sentences, 26 tokens)
+
+Sentence #1 (9 tokens):
+Tell that to the countless religions that exist.
+
+Tokens:
+[Text=Tell CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=countless CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=countless NamedEntityTag=O]
+[Text=religions CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=religion NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=exist CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=exist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Tell)
+      (NP (DT that))
+      (PP (IN to)
+        (NP
+          (NP (DT the) (JJ countless) (NNS religions))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP exist)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tell-1)
+obj(Tell-1, that-2)
+case(religions-6, to-3)
+det(religions-6, the-4)
+amod(religions-6, countless-5)
+obl:to(Tell-1, religions-6)
+nsubj(exist-8, religions-6)
+ref(religions-6, that-7)
+acl:relcl(religions-6, exist-8)
+punct(Tell-1, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+The concept of gender and sex being different is backed up by pretty much every medical organization
+
+Tokens:
+[Text=The CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concept CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=concept NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=gender CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=gender NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=85 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=backed CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=VBN Lemma=back NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=medical CharacterOffsetBegin=129 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=medical NamedEntityTag=O]
+[Text=organization CharacterOffsetBegin=137 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=organization NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN concept))
+        (PP (IN of)
+          (NP (NN gender)
+            (CC and)
+            (NN sex))))
+      (VP (VBG being)
+        (ADJP (JJ different))))
+    (VP (VBZ is)
+      (VP (VBN backed)
+        (PRT (RP up))
+        (PP (IN by)
+          (NP
+            (ADJP (RB pretty) (JJ much))
+            (NP (DT every) (JJ medical) (NN organization))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, backed-10)
+det(concept-2, The-1)
+nsubj:pass(backed-10, concept-2)
+case(gender-4, of-3)
+nmod:of(concept-2, gender-4)
+cc(sex-6, and-5)
+nmod:of(concept-2, sex-6)
+conj:and(gender-4, sex-6)
+cop(different-8, being-7)
+acl(concept-2, different-8)
+aux:pass(backed-10, is-9)
+compound:prt(backed-10, up-11)
+case(organization-17, by-12)
+advmod(much-14, pretty-13)
+amod(organization-17, much-14)
+det(organization-17, every-15)
+amod(organization-17, medical-16)
+obl:agent(backed-10, organization-17)
+
+Extracted the following NER entity mentions:

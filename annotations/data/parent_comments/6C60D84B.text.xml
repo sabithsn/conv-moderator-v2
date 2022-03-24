@@ -1,0 +1,61 @@
+Document: ID=6C60D84B.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Eh Napoleon flexed pretty hard on the Germans, Berlin fell faster than Paris
+
+Tokens:
+[Text=Eh CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=eh NamedEntityTag=O]
+[Text=Napoleon CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Napoleon NamedEntityTag=PERSON]
+[Text=flexed CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=flex NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=hard NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Germans CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNPS Lemma=Germans NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Berlin CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Berlin NamedEntityTag=CITY]
+[Text=fell CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=fall NamedEntityTag=O]
+[Text=faster CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=RBR Lemma=faster NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=CITY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Eh))
+    (NP (NNP Napoleon))
+    (VP (VBD flexed)
+      (ADVP (RB pretty) (RB hard))
+      (PP (IN on)
+        (NP (DT the) (NNPS Germans)))
+      (, ,)
+      (SBAR
+        (S
+          (NP (NNP Berlin))
+          (VP (VBD fell)
+            (ADVP (RBR faster))
+            (PP (IN than)
+              (NP (NNP Paris)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, flexed-3)
+discourse(flexed-3, Eh-1)
+nsubj(flexed-3, Napoleon-2)
+advmod(hard-5, pretty-4)
+advmod(flexed-3, hard-5)
+case(Germans-8, on-6)
+det(Germans-8, the-7)
+obl:on(flexed-3, Germans-8)
+punct(flexed-3, ,-9)
+nsubj(fell-11, Berlin-10)
+ccomp(flexed-3, fell-11)
+advmod(fell-11, faster-12)
+case(Paris-14, than-13)
+obl:than(fell-11, Paris-14)
+
+Extracted the following NER entity mentions:
+Napoleon	PERSON	PERSON:0.9937515640204388
+Germans	MISC	MISC:0.9998780225247886
+Berlin	CITY	LOCATION:0.9930141326555396
+Paris	CITY	LOCATION:0.9221595647897858

@@ -1,0 +1,43 @@
+Document: ID=A422A367.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+My daughter builds forts stronger then this cardboard box.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=daughter CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=daughter NamedEntityTag=O]
+[Text=builds CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=build NamedEntityTag=O]
+[Text=forts CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=fort NamedEntityTag=O]
+[Text=stronger CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=JJR Lemma=stronger NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=cardboard CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=cardboard NamedEntityTag=O]
+[Text=box CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=box NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN daughter))
+    (VP (VBZ builds)
+      (NP (NNS forts) (JJR stronger))
+      (ADVP (RB then))
+      (NP-TMP
+        (NP (DT this) (NN cardboard))
+        (NP (NN box))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, builds-3)
+nmod:poss(daughter-2, My-1)
+nsubj(builds-3, daughter-2)
+dep(stronger-5, forts-4)
+obj(builds-3, stronger-5)
+advmod(builds-3, then-6)
+det(cardboard-8, this-7)
+obl:tmod(builds-3, cardboard-8)
+dep(cardboard-8, box-9)
+punct(builds-3, .-10)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,65 @@
+Document: ID=27FCF9CA.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Cry me a river then fuck off the the other side of it, budster.
+
+Tokens:
+[Text=Cry CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=cry NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=river NamedEntityTag=TITLE]
+[Text=then CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=budster CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=budster NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Cry)
+      (S
+        (NP (PRP me))
+        (ADVP
+          (NP (DT a) (NN river))
+          (RB then))
+        (VP (VB fuck)
+          (PRT (RP off))
+          (NP (DT the)
+            (NP
+              (NP
+                (NP (DT the) (JJ other) (NN side))
+                (PP (IN of)
+                  (NP (PRP it))))
+              (, ,)
+              (NP (NN budster)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cry-1)
+nsubj(fuck-6, me-2)
+det(river-4, a-3)
+obl:npmod(then-5, river-4)
+advmod(fuck-6, then-5)
+ccomp(Cry-1, fuck-6)
+compound:prt(fuck-6, off-7)
+det(side-11, the-8)
+det(side-11, the-9)
+amod(side-11, other-10)
+obj(fuck-6, side-11)
+case(it-13, of-12)
+nmod:of(side-11, it-13)
+punct(side-11, ,-14)
+appos(side-11, budster-15)
+punct(Cry-1, .-16)
+
+Extracted the following NER entity mentions:
+river	TITLE	-

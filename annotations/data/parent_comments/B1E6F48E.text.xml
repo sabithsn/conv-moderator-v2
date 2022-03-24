@@ -1,0 +1,77 @@
+Document: ID=B1E6F48E.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Same type of law that Russia passed in the 2000s under the auspice of decency and family values.
+
+Tokens:
+[Text=Same CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=type CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=type NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=passed CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=VBD Lemma=pass NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=200X Timex=<TIMEX3 tid="t1" type="DATE" value="200X">the 2000s</TIMEX3>]
+[Text=2000s CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=2000 NamedEntityTag=DATE NormalizedNamedEntityTag=200X Timex=<TIMEX3 tid="t1" type="DATE" value="200X">the 2000s</TIMEX3>]
+[Text=under CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=auspice CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=auspice NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=decency CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=decency NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=family NamedEntityTag=IDEOLOGY]
+[Text=values CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=value NamedEntityTag=IDEOLOGY]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Same) (NN type))
+    (PP (IN of)
+      (NP
+        (NP (NN law))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (NP (NNP Russia))
+            (VP (VBD passed)
+              (PP (IN in)
+                (NP (DT the) (NNS 2000s)))
+              (PP (IN under)
+                (NP
+                  (NP (DT the) (NN auspice))
+                  (PP (IN of)
+                    (NP (NN decency)
+                      (CC and)
+                      (NN family) (NNS values))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, type-2)
+amod(type-2, Same-1)
+case(law-4, of-3)
+nmod:of(type-2, law-4)
+obj(passed-7, law-4)
+ref(law-4, that-5)
+nsubj(passed-7, Russia-6)
+acl:relcl(law-4, passed-7)
+case(2000s-10, in-8)
+det(2000s-10, the-9)
+obl:in(passed-7, 2000s-10)
+case(auspice-13, under-11)
+det(auspice-13, the-12)
+obl:under(passed-7, auspice-13)
+case(values-18, of-14)
+compound(values-18, decency-15)
+cc(family-17, and-16)
+conj:and(decency-15, family-17)
+compound(values-18, family-17)
+nmod:of(auspice-13, values-18)
+punct(type-2, .-19)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9961446255703027
+the 2000s	DATE	DATE:-1.0
+family values	IDEOLOGY	-

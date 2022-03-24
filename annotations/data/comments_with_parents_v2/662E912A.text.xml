@@ -1,0 +1,40 @@
+Document: ID=662E912A.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+I wish I was born a man.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=born CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBN Lemma=bear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP wish)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (VP (VBN born)
+              (NP (DT a) (NN man)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wish-2)
+nsubj(wish-2, I-1)
+nsubj:pass(born-5, I-3)
+aux:pass(born-5, was-4)
+ccomp(wish-2, born-5)
+det(man-7, a-6)
+obj(born-5, man-7)
+punct(wish-2, .-8)
+
+Extracted the following NER entity mentions:

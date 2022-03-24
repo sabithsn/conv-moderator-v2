@@ -1,0 +1,252 @@
+Document: ID=8F6DF8B0.text (8 sentences, 48 tokens)
+
+Sentence #1 (4 tokens):
+No, like.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=UH Lemma=like NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH No))
+    (, ,)
+    (INTJ (UH like))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, No-1)
+punct(No-1, ,-2)
+discourse(No-1, like-3)
+punct(No-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+public transportation does suck in the United States.
+
+Tokens:
+[Text=public CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=transportation CharacterOffsetBegin=18 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=transportation NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=suck CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=suck NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=United CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=United NamedEntityTag=COUNTRY]
+[Text=States CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=States NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ public) (NN transportation))
+    (VP (VBZ does)
+      (VP (VB suck)
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNP States)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suck-4)
+amod(transportation-2, public-1)
+nsubj(suck-4, transportation-2)
+aux(suck-4, does-3)
+case(States-8, in-5)
+det(States-8, the-6)
+compound(States-8, United-7)
+obl:in(suck-4, States-8)
+punct(suck-4, .-9)
+
+Extracted the following NER entity mentions:
+United States	COUNTRY	LOCATION:0.9995692983167478
+
+Sentence #4 (8 tokens):
+And I say that as an American.
+
+Tokens:
+[Text=And CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP say)
+      (SBAR (IN that)
+        (FRAG
+          (PP (IN as)
+            (NP (DT an) (JJ American))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-3)
+cc(say-3, And-1)
+nsubj(say-3, I-2)
+mark(American-7, that-4)
+case(American-7, as-5)
+det(American-7, an-6)
+dep(say-3, American-7)
+punct(say-3, .-8)
+
+Extracted the following NER entity mentions:
+American	NATIONALITY	MISC:0.9995379316258098
+
+Sentence #5 (6 tokens):
+Also, as an American?
+
+Tokens:
+[Text=Also CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=108 CharacterOffsetEnd=116 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=? CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Also))
+    (, ,)
+    (PP (IN as)
+      (NP (DT an) (JJ American)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Also-1)
+punct(Also-1, ,-2)
+case(American-5, as-3)
+det(American-5, an-4)
+obl:as(Also-1, American-5)
+punct(Also-1, ?-6)
+
+Extracted the following NER entity mentions:
+American	NATIONALITY	MISC:0.9993106599857685
+
+Sentence #6 (8 tokens):
+Stop acting like a stuck up snob.
+
+Tokens:
+[Text=Stop CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=acting CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=VBG Lemma=act NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=stuck CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=VBN Lemma=stick NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=snob CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=snob NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Stop)
+      (S
+        (VP (VBG acting)
+          (PP (IN like)
+            (NP (DT a)
+              (ADJP (VBN stuck) (RP up))
+              (NN snob))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-1)
+xcomp(Stop-1, acting-2)
+case(snob-7, like-3)
+det(snob-7, a-4)
+amod(snob-7, stuck-5)
+compound:prt(stuck-5, up-6)
+obl:like(acting-2, snob-7)
+punct(Stop-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (10 tokens):
+People like you are the reason everyone hates Americans.
+
+Tokens:
+[Text=People CharacterOffsetBegin=152 CharacterOffsetEnd=158 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=176 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=183 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=hates CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=VBZ Lemma=hate NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=198 CharacterOffsetEnd=207 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR (IN like)
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (NP (DT the) (NN reason) (NN everyone))))))
+    (VP (VBZ hates)
+      (NP (NNPS Americans)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hates-8)
+nsubj(hates-8, People-1)
+mark(everyone-7, like-2)
+nsubj(everyone-7, you-3)
+cop(everyone-7, are-4)
+det(everyone-7, the-5)
+compound(everyone-7, reason-6)
+dep(People-1, everyone-7)
+obj(hates-8, Americans-9)
+punct(hates-8, .-10)
+
+Extracted the following NER entity mentions:
+Americans	MISC	MISC:0.9998924763115692
+
+Sentence #8 (2 tokens):
+Congrats.
+
+Tokens:
+[Text=Congrats CharacterOffsetBegin=209 CharacterOffsetEnd=217 PartOfSpeech=NNS Lemma=congrat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Congrats) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Congrats-1)
+punct(Congrats-1, .-2)
+
+Extracted the following NER entity mentions:

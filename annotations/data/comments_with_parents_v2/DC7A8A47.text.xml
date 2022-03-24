@@ -1,0 +1,163 @@
+Document: ID=DC7A8A47.text (4 sentences, 35 tokens)
+
+Sentence #1 (9 tokens):
+Did u read any of my previous comments?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=u CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=u NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=previous CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=previous NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Did)
+    (NP (PRP u))
+    (VP (VB read)
+      (NP
+        (NP (DT any))
+        (PP (IN of)
+          (NP (PRP$ my) (JJ previous) (NNS comments)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, read-3)
+aux(read-3, Did-1)
+nsubj(read-3, u-2)
+obj(read-3, any-4)
+case(comments-8, of-5)
+nmod:poss(comments-8, my-6)
+amod(comments-8, previous-7)
+nmod:of(any-4, comments-8)
+punct(read-3, ?-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Women face extreme rates of sexual violence.
+
+Tokens:
+[Text=Women CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=face NamedEntityTag=O]
+[Text=extreme CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=extreme NamedEntityTag=O]
+[Text=rates CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=rate NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=sexual CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=violence CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=violence NamedEntityTag=CAUSE_OF_DEATH]
+[Text=. CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Women))
+    (VP (VBP face)
+      (NP
+        (NP (JJ extreme) (NNS rates))
+        (PP (IN of)
+          (NP (JJ sexual) (NN violence)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, face-2)
+nsubj(face-2, Women-1)
+amod(rates-4, extreme-3)
+obj(face-2, rates-4)
+case(violence-7, of-5)
+amod(violence-7, sexual-6)
+nmod:of(rates-4, violence-7)
+punct(face-2, .-8)
+
+Extracted the following NER entity mentions:
+violence	CAUSE_OF_DEATH	-
+
+Sentence #3 (9 tokens):
+The sexualisation of women contributes to this number.
+
+Tokens:
+[Text=The CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sexualisation CharacterOffsetBegin=89 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=sexualisation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=contributes CharacterOffsetBegin=112 CharacterOffsetEnd=123 PartOfSpeech=VBZ Lemma=contribute NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN sexualisation))
+      (PP (IN of)
+        (NP (NNS women))))
+    (VP (VBZ contributes)
+      (PP (IN to)
+        (NP (DT this) (NN number))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contributes-5)
+det(sexualisation-2, The-1)
+nsubj(contributes-5, sexualisation-2)
+case(women-4, of-3)
+nmod:of(sexualisation-2, women-4)
+case(number-8, to-6)
+det(number-8, this-7)
+obl:to(contributes-5, number-8)
+punct(contributes-5, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (9 tokens):
+Therefore the sexualisation of specifically women needs to stop
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=140 CharacterOffsetEnd=149 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sexualisation CharacterOffsetBegin=154 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=sexualisation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=specifically CharacterOffsetBegin=171 CharacterOffsetEnd=183 PartOfSpeech=RB Lemma=specifically NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP
+      (NP (DT the) (NN sexualisation))
+      (PP (IN of)
+        (NP
+          (NML
+            (ADVP (RB specifically)))
+          (NNS women))))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB stop)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needs-7)
+advmod(needs-7, Therefore-1)
+det(sexualisation-3, the-2)
+nsubj(needs-7, sexualisation-3)
+nsubj:xsubj(stop-9, sexualisation-3)
+case(women-6, of-4)
+compound(women-6, specifically-5)
+nmod:of(sexualisation-3, women-6)
+mark(stop-9, to-8)
+xcomp(needs-7, stop-9)
+
+Extracted the following NER entity mentions:

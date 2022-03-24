@@ -1,0 +1,54 @@
+Document: ID=4A86AF18.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Pelosi says Boebert and Greene 'should just shut up'
+
+Tokens:
+[Text=Pelosi CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Pelosi NamedEntityTag=PERSON]
+[Text=says CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Boebert CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Boebert NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Greene CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=shut CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=shut NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pelosi))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Boebert))
+            (CC and)
+            (NP (NNP Greene) (POS ')))
+          (VP (MD should)
+            (ADVP (RB just))
+            (VP (VB shut)
+              (PRT (RP up)))))))
+    ('' ')))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-2)
+nsubj(says-2, Pelosi-1)
+nsubj(shut-9, Boebert-3)
+cc(Greene-5, and-4)
+conj:and(Boebert-3, Greene-5)
+nsubj(shut-9, Greene-5)
+case(Greene-5, '-6)
+aux(shut-9, should-7)
+advmod(shut-9, just-8)
+ccomp(says-2, shut-9)
+compound:prt(shut-9, up-10)
+punct(says-2, '-11)
+
+Extracted the following NER entity mentions:
+Pelosi	PERSON	PERSON:0.9945830458908149
+Boebert	PERSON	PERSON:0.9381049444523771
+Greene	PERSON	PERSON:0.9948473675585712

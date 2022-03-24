@@ -1,0 +1,111 @@
+Document: ID=18CE41EF.text (2 sentences, 26 tokens)
+
+Sentence #1 (11 tokens):
+He was a radical leftist who led many violent protests.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=radical CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=radical NamedEntityTag=O]
+[Text=leftist CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=leftist NamedEntityTag=IDEOLOGY]
+[Text=who CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=led CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=lead NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=violent CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=violent NamedEntityTag=O]
+[Text=protests CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=protest NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ radical) (JJ leftist))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD led)
+              (NP (JJ many) (JJ violent) (NNS protests)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, leftist-5)
+nsubj(leftist-5, He-1)
+cop(leftist-5, was-2)
+det(leftist-5, a-3)
+amod(leftist-5, radical-4)
+nsubj(led-7, leftist-5)
+ref(leftist-5, who-6)
+acl:relcl(leftist-5, led-7)
+amod(protests-10, many-8)
+amod(protests-10, violent-9)
+obj(led-7, protests-10)
+punct(leftist-5, .-11)
+
+Extracted the following NER entity mentions:
+leftist	IDEOLOGY	-
+He	PERSON	-
+
+Sentence #2 (15 tokens):
+What is this blatant transformation of history and why is it upvoted so much?
+
+Tokens:
+[Text=What CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=blatant CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=blatant NamedEntityTag=O]
+[Text=transformation CharacterOffsetBegin=77 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=transformation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=upvoted CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=upvote NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (SBARQ
+      (WHNP (WP What))
+      (SQ (VBZ is)
+        (NP
+          (NP (DT this) (JJ blatant) (NN transformation))
+          (PP (IN of)
+            (NP (NN history))))))
+    (CC and)
+    (SBARQ
+      (WHADVP (WRB why))
+      (SQ (VBZ is)
+        (S
+          (NP (PRP it))
+          (VP (VBD upvoted)
+            (ADJP (RB so) (JJ much))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-1)
+cop(What-1, is-2)
+det(transformation-5, this-3)
+amod(transformation-5, blatant-4)
+nsubj(What-1, transformation-5)
+nsubj(is-10, transformation-5)
+case(history-7, of-6)
+nmod:of(transformation-5, history-7)
+cc(is-10, and-8)
+advmod(is-10, why-9)
+conj:and(What-1, is-10)
+nsubj(upvoted-12, it-11)
+dep(is-10, upvoted-12)
+advmod(much-14, so-13)
+xcomp(upvoted-12, much-14)
+punct(What-1, ?-15)
+
+Extracted the following NER entity mentions:

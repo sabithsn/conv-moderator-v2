@@ -1,0 +1,48 @@
+Document: ID=E0E9083A.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Nearly half of Biden’s 500M free COVID tests still unclaimed
+
+Tokens:
+[Text=Nearly CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=nearly NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=half NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=500M CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=500m NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=tests CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=test NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=unclaimed CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=unclaimed NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP
+        (QP (RB Nearly) (NN half)))
+      (PP (IN of)
+        (NP
+          (NP (NNP Biden) (POS ’s))
+          (NN 500M))))
+    (NP
+      (NP (JJ free) (NN COVID) (NNS tests))
+      (ADJP (RB still) (JJ unclaimed)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, half-2)
+advmod(half-2, Nearly-1)
+case(500M-6, of-3)
+nmod:poss(500M-6, Biden-4)
+case(Biden-4, ’s-5)
+nmod:of(half-2, 500M-6)
+amod(tests-9, free-7)
+compound(tests-9, COVID-8)
+dep(half-2, tests-9)
+advmod(unclaimed-11, still-10)
+amod(tests-9, unclaimed-11)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.992454825039014

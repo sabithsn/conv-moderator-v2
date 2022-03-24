@@ -1,0 +1,62 @@
+Document: ID=E8721412.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+If you make jokes on a meme subreddit you must be alt-right Nazi lovers
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=jokes CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=joke NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=meme CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=meme NamedEntityTag=O]
+[Text=subreddit CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=subreddit NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=alt CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=alt NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=Nazi CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=nazi NamedEntityTag=IDEOLOGY]
+[Text=lovers CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=lover NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP make)
+          (NP (NNS jokes))
+          (PP (IN on)
+            (NP (DT a) (NN meme) (NN subreddit))))))
+    (NP (PRP you))
+    (VP (MD must)
+      (VP (VB be)
+        (S
+          (VP (VB alt) (HYPH -)
+            (ADVP (RB right)
+              (NP (NN Nazi) (NNS lovers)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, be-11)
+mark(make-3, If-1)
+nsubj(make-3, you-2)
+advcl:if(be-11, make-3)
+obj(make-3, jokes-4)
+case(subreddit-8, on-5)
+det(subreddit-8, a-6)
+compound(subreddit-8, meme-7)
+obl:on(make-3, subreddit-8)
+nsubj(be-11, you-9)
+aux(be-11, must-10)
+ccomp(be-11, alt-12)
+punct(alt-12, --13)
+advmod(alt-12, right-14)
+compound(lovers-16, Nazi-15)
+obl:npmod(right-14, lovers-16)
+
+Extracted the following NER entity mentions:
+Nazi	IDEOLOGY	MISC:0.9999374093703975

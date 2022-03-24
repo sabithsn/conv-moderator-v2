@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>9B7E4C51.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Rory</word>
+            <lemma>Rory</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>Herterich</word>
+            <lemma>Herterich</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>stfu</word>
+            <lemma>stfu</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>off</word>
+            <lemma>off</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Reddit</word>
+            <lemma>Reddit</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Rory) (NNP Herterich)) (NP (NN stfu)) (CC and) (NP (VP (VB get) (PRT (IN off))) (PP (IN of) (NP (NNP Reddit)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Herterich</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="1">Rory</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="3">stfu</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">get</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="5">get</governor>
+            <dependent idx="6">off</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Reddit</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="5">get</governor>
+            <dependent idx="8">Reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Herterich</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="1">Rory</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="3">stfu</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">get</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="5">get</governor>
+            <dependent idx="6">off</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Reddit</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">get</governor>
+            <dependent idx="8">Reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Herterich</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="1">Rory</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="3">stfu</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">get</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="5">get</governor>
+            <dependent idx="6">off</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Reddit</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">get</governor>
+            <dependent idx="8">Reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Herterich</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="1">Rory</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="3">stfu</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">get</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="5">get</governor>
+            <dependent idx="6">off</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Reddit</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">get</governor>
+            <dependent idx="8">Reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Herterich</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="1">Rory</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="3">stfu</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">get</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="5">get</governor>
+            <dependent idx="6">off</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Reddit</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">get</governor>
+            <dependent idx="8">Reddit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">Herterich</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,51 @@
+Document: ID=A4F21D6C.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Also apparently illiterate since there is english under the chinese.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=apparently CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=apparently NamedEntityTag=O]
+[Text=illiterate CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=illiterate NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=english CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=english NamedEntityTag=NATIONALITY]
+[Text=under CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chinese CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=chinese NamedEntityTag=NATIONALITY]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Also))
+    (ADVP (RB apparently))
+    (ADJP (JJ illiterate))
+    (SBAR (IN since)
+      (S
+        (NP (EX there))
+        (VP (VBZ is)
+          (NP
+            (NP (NNP english))
+            (PP (IN under)
+              (NP (DT the) (JJ chinese)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, illiterate-3)
+dep(illiterate-3, Also-1)
+dep(illiterate-3, apparently-2)
+mark(is-6, since-4)
+expl(is-6, there-5)
+dep(illiterate-3, is-6)
+nsubj(is-6, english-7)
+case(chinese-10, under-8)
+det(chinese-10, the-9)
+nmod:under(english-7, chinese-10)
+punct(illiterate-3, .-11)
+
+Extracted the following NER entity mentions:
+english	NATIONALITY	-
+chinese	NATIONALITY	MISC:0.9979202534871765

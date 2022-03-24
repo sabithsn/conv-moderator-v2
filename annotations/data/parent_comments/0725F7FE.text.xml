@@ -1,0 +1,60 @@
+Document: ID=0725F7FE.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+6 in 10 Americans oppose laws prohibiting LGBTQ lessons in elementary school: Poll
+
+Tokens:
+[Text=6 CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=CD Lemma=6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=in CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=Americans CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=oppose CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=oppose NamedEntityTag=O]
+[Text=laws CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=law NamedEntityTag=O]
+[Text=prohibiting CharacterOffsetBegin=30 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=prohibit NamedEntityTag=O]
+[Text=LGBTQ CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=lgbtq NamedEntityTag=O]
+[Text=lessons CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=lesson NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=elementary CharacterOffsetBegin=59 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=elementary NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Poll CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Poll NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP
+        (NP (CD 6))
+        (PP (IN in)
+          (NP (CD 10) (NNPS Americans))))
+      (VP (VBP oppose)
+        (NP (NNS laws))
+        (S
+          (VP (VBG prohibiting)
+            (NP (NN LGBTQ) (NNS lessons))
+            (PP (IN in)
+              (NP (JJ elementary) (NN school)))))))
+    (: :)
+    (NP (NNP Poll))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Poll-14)
+nsubj(oppose-5, 6-1)
+case(Americans-4, in-2)
+nummod(Americans-4, 10-3)
+nmod:in(6-1, Americans-4)
+dep(Poll-14, oppose-5)
+obj(oppose-5, laws-6)
+xcomp(oppose-5, prohibiting-7)
+compound(lessons-9, LGBTQ-8)
+obj(prohibiting-7, lessons-9)
+case(school-12, in-10)
+amod(school-12, elementary-11)
+obl:in(prohibiting-7, school-12)
+punct(Poll-14, :-13)
+
+Extracted the following NER entity mentions:
+6	NUMBER	NUMBER:-1.0
+10	NUMBER	NUMBER:-1.0
+Americans	MISC	MISC:0.9999834213740622

@@ -1,0 +1,102 @@
+Document: ID=A1E22996.text (2 sentences, 25 tokens)
+
+Sentence #1 (6 tokens):
+This was always the plan.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=plan NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (ADVP (RB always))
+      (NP (DT the) (NN plan)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, plan-5)
+nsubj(plan-5, This-1)
+cop(plan-5, was-2)
+advmod(plan-5, always-3)
+det(plan-5, the-4)
+punct(plan-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (19 tokens):
+He wasn’t going to do shit because the idiot can’t even piece a fucking sentence together.
+
+Tokens:
+[Text=He CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=idiot CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=idiot NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=piece NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=fucking NamedEntityTag=O]
+[Text=sentence CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=sentence NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=107 CharacterOffsetEnd=115 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was) (RB n’t)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (NP (NN shit))
+              (SBAR (IN because)
+                (S
+                  (NP (DT the) (NN idiot))
+                  (VP (MD ca) (RB n’t)
+                    (ADVP (RB even))
+                    (VP (VB piece)
+                      (NP (DT a) (JJ fucking) (NN sentence))
+                      (ADVP (RB together)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, going-4)
+nsubj(going-4, He-1)
+nsubj:xsubj(do-6, He-1)
+aux(going-4, was-2)
+advmod(going-4, n’t-3)
+mark(do-6, to-5)
+xcomp(going-4, do-6)
+obj(do-6, shit-7)
+mark(piece-14, because-8)
+det(idiot-10, the-9)
+nsubj(piece-14, idiot-10)
+aux(piece-14, ca-11)
+advmod(piece-14, n’t-12)
+advmod(piece-14, even-13)
+advcl:because(do-6, piece-14)
+det(sentence-17, a-15)
+amod(sentence-17, fucking-16)
+obj(piece-14, sentence-17)
+advmod(piece-14, together-18)
+punct(going-4, .-19)
+
+Extracted the following NER entity mentions:
+He	PERSON	-

@@ -1,0 +1,112 @@
+Document: ID=BAC3F8D9.text (2 sentences, 27 tokens)
+
+Sentence #1 (21 tokens):
+No, visual observations are more than enough to determine this is a piece of scrap mixed with tin foil.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=visual CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=visual NamedEntityTag=O]
+[Text=observations CharacterOffsetBegin=11 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=observation NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=determine CharacterOffsetBegin=48 CharacterOffsetEnd=57 PartOfSpeech=VB Lemma=determine NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=scrap CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=scrap NamedEntityTag=O]
+[Text=mixed CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=VBN Lemma=mix NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=tin CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=tin NamedEntityTag=O]
+[Text=foil CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=foil NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (JJ visual) (NNS observations))
+    (VP (VBP are)
+      (ADJP
+        (ADVP (JJR more) (IN than))
+        (JJ enough)
+        (S
+          (VP (TO to)
+            (VP (VB determine)
+              (SBAR
+                (S
+                  (NP (DT this))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (DT a) (NN piece))
+                      (PP (IN of)
+                        (NP
+                          (NP (NN scrap))
+                          (VP (VBN mixed)
+                            (PP (IN with)
+                              (NP (NN tin) (NN foil)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enough-8)
+discourse(enough-8, No-1)
+punct(enough-8, ,-2)
+amod(observations-4, visual-3)
+nsubj(enough-8, observations-4)
+nsubj:xsubj(determine-10, observations-4)
+cop(enough-8, are-5)
+advmod(enough-8, more-6)
+case(more-6, than-7)
+mark(determine-10, to-9)
+xcomp(enough-8, determine-10)
+nsubj(piece-14, this-11)
+cop(piece-14, is-12)
+det(piece-14, a-13)
+ccomp(determine-10, piece-14)
+case(scrap-16, of-15)
+nmod:of(piece-14, scrap-16)
+acl(scrap-16, mixed-17)
+case(foil-20, with-18)
+compound(foil-20, tin-19)
+obl:with(mixed-17, foil-20)
+punct(enough-8, .-21)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+I like your logic though.
+
+Tokens:
+[Text=I CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=logic CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=logic NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=RB Lemma=though NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP like)
+      (NP (PRP$ your) (NN logic))
+      (ADVP (RB though)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, like-2)
+nsubj(like-2, I-1)
+nmod:poss(logic-4, your-3)
+obj(like-2, logic-4)
+advmod(like-2, though-5)
+punct(like-2, .-6)
+
+Extracted the following NER entity mentions:

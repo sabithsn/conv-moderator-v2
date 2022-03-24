@@ -1,0 +1,50 @@
+Document: ID=53DF18F1.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+eli5 What does “hoisted by his own petard” mean?
+
+Tokens:
+[Text=eli5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=hoisted CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VBN Lemma=hoist NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=petard CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=petard NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (NP (NN eli5))
+    (WHNP (WP What))
+    (SQ (VBZ does) (`` “)
+      (NP
+        (NP (VBN hoisted))
+        (PP (IN by)
+          (NP (PRP$ his) (JJ own) (NN petard))))
+      ('' ”)
+      (VP (VB mean)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-11)
+dep(mean-11, eli5-1)
+obj(mean-11, What-2)
+aux(mean-11, does-3)
+punct(mean-11, “-4)
+nsubj(mean-11, hoisted-5)
+case(petard-9, by-6)
+nmod:poss(petard-9, his-7)
+amod(petard-9, own-8)
+nmod:by(hoisted-5, petard-9)
+punct(mean-11, ”-10)
+punct(mean-11, ?-12)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

@@ -1,0 +1,35 @@
+Document: ID=A1D05542.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+He spoke out against Trump unfortunately
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=spoke CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=unfortunately CharacterOffsetBegin=27 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=unfortunately NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD spoke)
+      (PRT (RP out))
+      (PP (IN against)
+        (NP (NNP Trump)))
+      (ADVP (RB unfortunately)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spoke-2)
+nsubj(spoke-2, He-1)
+compound:prt(spoke-2, out-3)
+case(Trump-5, against-4)
+obl:against(spoke-2, Trump-5)
+advmod(spoke-2, unfortunately-6)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.8676346796748979
+He	PERSON	-

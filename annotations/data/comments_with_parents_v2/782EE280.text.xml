@@ -1,0 +1,44 @@
+Document: ID=782EE280.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Cheerleaders in high school are pointless and sexualize minors
+
+Tokens:
+[Text=Cheerleaders CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=cheerleader NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=pointless CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=pointless NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sexualize CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=sexualize NamedEntityTag=O]
+[Text=minors CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=minor NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Cheerleaders))
+      (PP (IN in)
+        (NP (JJ high) (NN school))))
+    (VP
+      (VP (VBP are)
+        (ADJP (JJ pointless)))
+      (CC and)
+      (VP (VB sexualize)
+        (NP (NNS minors))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pointless-6)
+nsubj(pointless-6, Cheerleaders-1)
+nsubj(sexualize-8, Cheerleaders-1)
+case(school-4, in-2)
+amod(school-4, high-3)
+nmod:in(Cheerleaders-1, school-4)
+cop(pointless-6, are-5)
+cc(sexualize-8, and-7)
+conj:and(pointless-6, sexualize-8)
+obj(sexualize-8, minors-9)
+
+Extracted the following NER entity mentions:

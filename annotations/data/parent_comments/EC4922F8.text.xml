@@ -1,0 +1,113 @@
+Document: ID=EC4922F8.text (2 sentences, 27 tokens)
+
+Sentence #1 (25 tokens):
+AskScience AMA Series: I'm the Director of the Addiction Institute at Mount Sinai who studies the neurobiological effects of cannabis and opioids.
+
+Tokens:
+[Text=AskScience CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=AskScience NamedEntityTag=O]
+[Text=AMA CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=AMA NamedEntityTag=ORGANIZATION]
+[Text=Series CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Series NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Director CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Director NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Addiction CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Addiction NamedEntityTag=ORGANIZATION]
+[Text=Institute CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Institute NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=at NamedEntityTag=ORGANIZATION]
+[Text=Mount CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Mount NamedEntityTag=ORGANIZATION]
+[Text=Sinai CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Sinai NamedEntityTag=ORGANIZATION]
+[Text=who CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=studies CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=study NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=neurobiological CharacterOffsetBegin=98 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=neurobiological NamedEntityTag=O]
+[Text=effects CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=NNS Lemma=effect NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=cannabis CharacterOffsetBegin=125 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=cannabis NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=opioids CharacterOffsetBegin=138 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=opioid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AskScience) (NNP AMA) (NNP Series))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (NP
+          (NP (DT the) (NNP Director))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Addiction) (NNP Institute))
+              (PP (IN at)
+                (NP
+                  (NP (NNP Mount) (NNP Sinai))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ studies)
+                        (NP
+                          (NP (DT the) (JJ neurobiological) (NNS effects))
+                          (PP (IN of)
+                            (NP (NN cannabis)
+                              (CC and)
+                              (NNS opioids))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Series-3)
+compound(Series-3, AskScience-1)
+compound(Series-3, AMA-2)
+punct(Series-3, :-4)
+nsubj(Director-8, I-5)
+cop(Director-8, 'm-6)
+det(Director-8, the-7)
+parataxis(Series-3, Director-8)
+case(Institute-12, of-9)
+det(Institute-12, the-10)
+compound(Institute-12, Addiction-11)
+nmod:of(Director-8, Institute-12)
+case(Sinai-15, at-13)
+compound(Sinai-15, Mount-14)
+nmod:at(Institute-12, Sinai-15)
+nsubj(studies-17, Sinai-15)
+ref(Sinai-15, who-16)
+acl:relcl(Sinai-15, studies-17)
+det(effects-20, the-18)
+amod(effects-20, neurobiological-19)
+obj(studies-17, effects-20)
+case(cannabis-22, of-21)
+nmod:of(effects-20, cannabis-22)
+cc(opioids-24, and-23)
+nmod:of(effects-20, opioids-24)
+conj:and(cannabis-22, opioids-24)
+punct(Series-3, .-25)
+
+Extracted the following NER entity mentions:
+AMA	ORGANIZATION	ORGANIZATION:0.5542918156742751
+Director	TITLE	-
+Addiction Institute at Mount Sinai	ORGANIZATION	ORGANIZATION:0.5185799844774587
+
+Sentence #2 (2 tokens):
+AMA!
+
+Tokens:
+[Text=AMA CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=ama NamedEntityTag=ORGANIZATION]
+[Text=! CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN AMA) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AMA-1)
+punct(AMA-1, !-2)
+
+Extracted the following NER entity mentions:
+AMA	ORGANIZATION	ORGANIZATION:0.7460285138493264

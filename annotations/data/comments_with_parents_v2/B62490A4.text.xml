@@ -1,0 +1,58 @@
+Document: ID=B62490A4.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Canceled: Woke Soccer Player Megan Rapinoe Left Off U.S. Women’s Team Roster
+
+Tokens:
+[Text=Canceled CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=cancel NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Woke CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=wake NamedEntityTag=O]
+[Text=Soccer CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Soccer NamedEntityTag=TITLE]
+[Text=Player CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Player NamedEntityTag=TITLE]
+[Text=Megan CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Megan NamedEntityTag=PERSON]
+[Text=Rapinoe CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Rapinoe NamedEntityTag=PERSON]
+[Text=Left CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Left NamedEntityTag=O]
+[Text=Off CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=Women CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Women NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Team CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Team NamedEntityTag=O]
+[Text=Roster CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Roster NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (S
+      (S
+        (VP (VBN Canceled)))
+      (: :)
+      (S
+        (VP (VBD Woke)
+          (NP
+            (NP (NNP Soccer) (NNP Player) (NNP Megan) (NNP Rapinoe) (NNP Left))
+            (PP (IN Off)
+              (NP
+                (NP (NNP U.S.) (NNP Women) (POS ’s))
+                (NNP Team) (NNP Roster)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Canceled-1)
+punct(Canceled-1, :-2)
+parataxis(Canceled-1, Woke-3)
+compound(Left-8, Soccer-4)
+compound(Left-8, Player-5)
+compound(Left-8, Megan-6)
+compound(Left-8, Rapinoe-7)
+obj(Woke-3, Left-8)
+case(Roster-14, Off-9)
+compound(Women-11, U.S.-10)
+nmod:poss(Roster-14, Women-11)
+case(Women-11, ’s-12)
+compound(Roster-14, Team-13)
+nmod:off(Left-8, Roster-14)
+
+Extracted the following NER entity mentions:
+Soccer Player	TITLE	-
+Megan Rapinoe	PERSON	PERSON:0.9792999825397048
+U.S.	COUNTRY	LOCATION:0.9719954850781957

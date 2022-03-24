@@ -1,0 +1,80 @@
+Document: ID=7562FC17.text (2 sentences, 17 tokens)
+
+Sentence #1 (14 tokens):
+Stop promoting Russian propaganda or defending the invasion of Ukraine on this sub.
+
+Tokens:
+[Text=Stop CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=promoting CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=VBG Lemma=promote NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=propaganda CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=propaganda NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=defending CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=defend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=invasion CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=on CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Stop)
+      (S
+        (VP
+          (VP (VBG promoting)
+            (NP (JJ Russian) (NN propaganda)))
+          (CC or)
+          (VP (VBG defending)
+            (NP
+              (NP (DT the) (NN invasion))
+              (PP (IN of)
+                (NP (NNP Ukraine))))
+            (PP (IN on)
+              (NP (DT this) (NN sub)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-1)
+ccomp(Stop-1, promoting-2)
+amod(propaganda-4, Russian-3)
+obj(promoting-2, propaganda-4)
+cc(defending-6, or-5)
+ccomp(Stop-1, defending-6)
+conj:or(promoting-2, defending-6)
+det(invasion-8, the-7)
+obj(defending-6, invasion-8)
+case(Ukraine-10, of-9)
+nmod:of(invasion-8, Ukraine-10)
+case(sub-13, on-11)
+det(sub-13, this-12)
+obl:on(defending-6, sub-13)
+punct(Stop-1, .-14)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999995886626032
+Ukraine	COUNTRY	LOCATION:0.9990309004043718
+
+Sentence #2 (3 tokens):
+Full Stop.
+
+Tokens:
+[Text=Full CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=Stop CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=stop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Full) (NN Stop) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-2)
+amod(Stop-2, Full-1)
+punct(Stop-2, .-3)
+
+Extracted the following NER entity mentions:

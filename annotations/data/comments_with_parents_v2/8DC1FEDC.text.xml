@@ -1,0 +1,77 @@
+Document: ID=8DC1FEDC.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+They aren’t shaming his preferences, they’re shaming him for shaming other’s because of their preferences.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=shaming CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=shame NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=preferences CharacterOffsetBegin=24 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=preference NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=shaming CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=shame NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=shaming CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VBG Lemma=shame NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=preferences CharacterOffsetBegin=94 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=preference NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP are) (RB n’t)
+        (VP (VBG shaming)
+          (NP (PRP$ his) (NNS preferences)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP ’re)
+      (S
+        (VP (VBG shaming)
+          (NP (PRP him))
+          (PP (IN for)
+            (S
+              (VP (VBG shaming)
+                (S
+                  (NP (JJ other) (POS ’s)))
+                (PP (IN because)
+                  (PP (IN of)
+                    (NP (PRP$ their) (NNS preferences))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’re-9)
+nsubj(shaming-4, They-1)
+aux(shaming-4, are-2)
+advmod(shaming-4, n’t-3)
+ccomp(’re-9, shaming-4)
+nmod:poss(preferences-6, his-5)
+obj(shaming-4, preferences-6)
+punct(’re-9, ,-7)
+nsubj(’re-9, they-8)
+xcomp(’re-9, shaming-10)
+obj(shaming-10, him-11)
+mark(shaming-13, for-12)
+advcl:for(shaming-10, shaming-13)
+xcomp(shaming-13, other-14)
+case(other-14, ’s-15)
+case(preferences-19, because-16)
+case(preferences-19, of-17)
+nmod:poss(preferences-19, their-18)
+obl:of(shaming-13, preferences-19)
+punct(’re-9, .-20)
+
+Extracted the following NER entity mentions:
+his	PERSON	-
+him	PERSON	-

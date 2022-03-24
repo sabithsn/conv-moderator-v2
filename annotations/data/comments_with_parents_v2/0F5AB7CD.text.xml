@@ -1,0 +1,301 @@
+Document: ID=0F5AB7CD.text (8 sentences, 64 tokens)
+
+Sentence #1 (9 tokens):
+Question your assumptions a little bit more.  >
+
+Tokens:
+[Text=Question CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=assumptions CharacterOffsetBegin=14 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=assumption NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=-RRB- Lemma=> NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Question))
+    (NP (PRP$ your) (NNS assumptions))
+    (NP
+      (NP (DT a) (JJ little))
+      (NP
+        (NP (NN bit))
+        (NP (RBR more))
+        (. .)))
+    (-RRB- >)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Question-1)
+nmod:poss(assumptions-3, your-2)
+dep(Question-1, assumptions-3)
+det(little-5, a-4)
+dep(Question-1, little-5)
+dep(little-5, bit-6)
+dep(bit-6, more-7)
+punct(bit-6, .-8)
+punct(Question-1, >-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Short story.
+
+Tokens:
+[Text=Short CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=story CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=story NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Short) (NN story) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, story-2)
+amod(story-2, Short-1)
+punct(story-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+I’ve been eyes open about 3 1/2 years.
+
+Tokens:
+[Text=I CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=3 1/2 CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=CD Lemma=3 1/2 NamedEntityTag=NUMBER]
+[Text=years CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">years</TIMEX3>]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’ve)
+      (VP (VBN been)
+        (NP
+          (NP (NNS eyes))
+          (ADJP (JJ open)
+            (PP (IN about)
+              (NP (CD 3 1/2) (NNS years)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-2)
+nsubj(’ve-2, I-1)
+cop(eyes-4, been-3)
+dep(’ve-2, eyes-4)
+amod(eyes-4, open-5)
+case(years-8, about-6)
+nummod(years-8, 3 1/2-7)
+obl:about(open-5, years-8)
+punct(’ve-2, .-9)
+
+Extracted the following NER entity mentions:
+3 1/2	NUMBER	NUMBER:-1.0
+years	DURATION	DURATION:-1.0
+
+Sentence #4 (12 tokens):
+There is no binary eyes open/closed level of awareness.
+
+Tokens:
+[Text=There CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=binary CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=binary NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=closed CharacterOffsetBegin=131 CharacterOffsetEnd=137 PartOfSpeech=JJ Lemma=closed NamedEntityTag=O]
+[Text=level CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=level NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=awareness CharacterOffsetBegin=147 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=awareness NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT no) (JJ binary) (NNS eyes))
+          (UCP
+            (ADJP (JJ open))
+            (HYPH /)
+            (NML (JJ closed) (NN level))))
+        (PP (IN of)
+          (NP (NN awareness)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+expl(is-2, There-1)
+det(eyes-5, no-3)
+amod(eyes-5, binary-4)
+nsubj(is-2, eyes-5)
+amod(eyes-5, open-6)
+punct(open-6, /-7)
+amod(level-9, closed-8)
+dep(open-6, level-9)
+case(awareness-11, of-10)
+nmod:of(eyes-5, awareness-11)
+punct(is-2, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (20 tokens):
+That's bullshit easy-answer crap that a lot of people here would like you to believe.   >
+
+Tokens:
+[Text=That CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=bullshit CharacterOffsetBegin=166 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=bullshit NamedEntityTag=O]
+[Text=easy CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=JJ Lemma=easy NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=180 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=answer NamedEntityTag=O]
+[Text=crap CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=crap NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=206 CharacterOffsetEnd=212 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=218 CharacterOffsetEnd=223 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=236 CharacterOffsetEnd=243 PartOfSpeech=VB Lemma=believe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=-RRB- Lemma=> NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (NN bullshit) (JJ easy) (HYPH -) (NN answer) (NN crap))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (NP
+              (NP (DT a) (NN lot))
+              (PP (IN of)
+                (NP (NNS people))))
+            (ADVP (RB here))
+            (VP (MD would)
+              (VP (VB like)
+                (S
+                  (NP (PRP you))
+                  (VP (TO to)
+                    (VP (VB believe))))))))))
+    (. .) (-RRB- >)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, crap-7)
+nsubj(crap-7, That-1)
+cop(crap-7, 's-2)
+compound(crap-7, bullshit-3)
+amod(crap-7, easy-4)
+punct(crap-7, --5)
+compound(crap-7, answer-6)
+obj(believe-18, crap-7)
+ref(crap-7, that-8)
+det:qmod(people-12, a-9)
+fixed(a-9, lot-10)
+fixed(a-9, of-11)
+nsubj(like-15, people-12)
+advmod(like-15, here-13)
+aux(like-15, would-14)
+acl:relcl(crap-7, like-15)
+obj(like-15, you-16)
+nsubj:xsubj(believe-18, you-16)
+mark(believe-18, to-17)
+xcomp(like-15, believe-18)
+punct(crap-7, .-19)
+punct(crap-7, >-20)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (7 tokens):
+See you in the gulags friends.
+
+Tokens:
+[Text=See CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gulags CharacterOffsetBegin=263 CharacterOffsetEnd=269 PartOfSpeech=NNS Lemma=gulag NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=270 CharacterOffsetEnd=277 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB See)
+      (NP (PRP you))
+      (PP (IN in)
+        (NP (DT the) (NNS gulags) (NNS friends))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, See-1)
+obj(See-1, you-2)
+case(friends-6, in-3)
+det(friends-6, the-4)
+compound(friends-6, gulags-5)
+obl:in(See-1, friends-6)
+punct(See-1, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (2 tokens):
+What.
+
+Tokens:
+[Text=What CharacterOffsetBegin=281 CharacterOffsetEnd=285 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (WHNP (WP What))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-1)
+punct(What-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (2 tokens):
+Gulags.
+
+Tokens:
+[Text=Gulags CharacterOffsetBegin=287 CharacterOffsetEnd=293 PartOfSpeech=NNP Lemma=Gulags NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Gulags) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Gulags-1)
+punct(Gulags-1, .-2)
+
+Extracted the following NER entity mentions:

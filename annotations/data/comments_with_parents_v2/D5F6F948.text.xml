@@ -1,0 +1,80 @@
+Document: ID=D5F6F948.text (2 sentences, 17 tokens)
+
+Sentence #1 (10 tokens):
+And she’s still more successful than you are.
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=successful CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=successful NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP she))
+    (VP (VBZ ’s)
+      (ADVP (RB still))
+      (ADJP (RBR more) (JJ successful))
+      (SBAR (IN than)
+        (S
+          (NP (PRP you))
+          (VP (VBP are)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, successful-6)
+cc(successful-6, And-1)
+nsubj(successful-6, she-2)
+cop(successful-6, ’s-3)
+advmod(successful-6, still-4)
+advmod(successful-6, more-5)
+mark(are-9, than-7)
+nsubj(are-9, you-8)
+advcl:than(successful-6, are-9)
+punct(successful-6, .-10)
+
+Extracted the following NER entity mentions:
+she	PERSON	-
+
+Sentence #2 (7 tokens):
+Must sting a little for you.
+
+Tokens:
+[Text=Must CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=sting CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=sting NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Must)
+      (S
+        (VP (VBG sting)
+          (NP (DT a) (JJ little))
+          (PP (IN for)
+            (NP (PRP you))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Must-1)
+xcomp(Must-1, sting-2)
+det(little-4, a-3)
+obj(sting-2, little-4)
+case(you-6, for-5)
+obl:for(sting-2, you-6)
+punct(Must-1, .-7)
+
+Extracted the following NER entity mentions:

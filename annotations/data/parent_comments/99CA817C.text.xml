@@ -1,0 +1,55 @@
+Document: ID=99CA817C.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Pence Calls Trump Wrong in Claiming Vice President Could Overturn Election Result
+
+Tokens:
+[Text=Pence CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Pence NamedEntityTag=ORGANIZATION]
+[Text=Calls CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=call NamedEntityTag=ORGANIZATION]
+[Text=Trump CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=ORGANIZATION]
+[Text=Wrong CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Claiming CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=claim NamedEntityTag=O]
+[Text=Vice CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Vice NamedEntityTag=TITLE]
+[Text=President CharacterOffsetBegin=41 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=Could CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=Overturn CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=overturn NamedEntityTag=O]
+[Text=Election CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+[Text=Result CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=result NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pence))
+    (VP (VBZ Calls)
+      (S
+        (NP (NNP Trump))
+        (ADJP (JJ Wrong)
+          (PP (IN in)
+            (S
+              (VP (VBG Claiming)
+                (SBAR
+                  (S
+                    (NP (NNP Vice) (NNP President))
+                    (VP (MD Could)
+                      (VP (VB Overturn)
+                        (NP (NN Election) (NN Result))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Calls-2)
+nsubj(Calls-2, Pence-1)
+nsubj(Wrong-4, Trump-3)
+xcomp(Calls-2, Wrong-4)
+mark(Claiming-6, in-5)
+advcl:in(Wrong-4, Claiming-6)
+compound(President-8, Vice-7)
+nsubj(Overturn-10, President-8)
+aux(Overturn-10, Could-9)
+ccomp(Claiming-6, Overturn-10)
+compound(Result-12, Election-11)
+obj(Overturn-10, Result-12)
+
+Extracted the following NER entity mentions:
+Pence Calls Trump Wrong	ORGANIZATION	ORGANIZATION:0.4703742053545482
+Vice President	TITLE	-

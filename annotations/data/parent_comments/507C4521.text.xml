@@ -1,0 +1,44 @@
+Document: ID=507C4521.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Pitts: Conservatives about to lose the 21st century
+
+Tokens:
+[Text=Pitts CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Pitts NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Conservatives CharacterOffsetBegin=7 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=conservative NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=lose CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=lose NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=20XX Timex=<TIMEX3 tid="t1" type="DATE" value="20XX">the 21st century</TIMEX3>]
+[Text=21st CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=21st NamedEntityTag=DATE NormalizedNamedEntityTag=20XX Timex=<TIMEX3 tid="t1" type="DATE" value="20XX">the 21st century</TIMEX3>]
+[Text=century CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=century NamedEntityTag=DATE NormalizedNamedEntityTag=20XX Timex=<TIMEX3 tid="t1" type="DATE" value="20XX">the 21st century</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Pitts))
+    (: :)
+    (NP
+      (NP (NNS Conservatives))
+      (PP (IN about)
+        (S
+          (VP (TO to)
+            (VP (VB lose)
+              (NP (DT the) (JJ 21st) (NN century)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pitts-1)
+punct(Pitts-1, :-2)
+dep(Pitts-1, Conservatives-3)
+mark(lose-6, about-4)
+mark(lose-6, to-5)
+acl:to(Conservatives-3, lose-6)
+det(century-9, the-7)
+amod(century-9, 21st-8)
+obj(lose-6, century-9)
+
+Extracted the following NER entity mentions:
+Pitts	PERSON	PERSON:0.8554610701436437
+the 21st century	DATE	DATE:-1.0

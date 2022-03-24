@@ -1,0 +1,84 @@
+Document: ID=6126C87D.text (2 sentences, 19 tokens)
+
+Sentence #1 (15 tokens):
+Discussion Thread: President Biden provides an update on the Ukraine-Russia situation.
+
+Tokens:
+[Text=Discussion CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=discussion NamedEntityTag=O]
+[Text=Thread CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=thread NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=President CharacterOffsetBegin=19 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=Biden CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=provides CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=VBZ Lemma=provide NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=update CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=update NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=LOCATION]
+[Text=- CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=HYPH Lemma=- NamedEntityTag=LOCATION]
+[Text=Russia CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=LOCATION]
+[Text=situation CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=situation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Discussion) (NN Thread))
+    (: :)
+    (S
+      (NP (NNP President) (NNP Biden))
+      (VP (VBZ provides)
+        (NP
+          (NP (DT an) (NN update))
+          (PP (IN on)
+            (NP (DT the) (NNP Ukraine) (HYPH -) (NNP Russia) (NN situation))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thread-2)
+compound(Thread-2, Discussion-1)
+punct(Thread-2, :-3)
+compound(Biden-5, President-4)
+nsubj(provides-6, Biden-5)
+parataxis(Thread-2, provides-6)
+det(update-8, an-7)
+obj(provides-6, update-8)
+case(situation-14, on-9)
+det(situation-14, the-10)
+compound(situation-14, Ukraine-11)
+punct(situation-14, --12)
+compound(situation-14, Russia-13)
+nmod:on(update-8, situation-14)
+punct(Thread-2, .-15)
+
+Extracted the following NER entity mentions:
+President	TITLE	-
+Biden	PERSON	PERSON:0.998116328407629
+Ukraine-Russia	LOCATION	LOCATION:0.7143292156139112
+
+Sentence #2 (4 tokens):
+1:00 p.m. EST.
+
+Tokens:
+[Text=1:00 CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=CD Lemma=1:00 NamedEntityTag=TIME NormalizedNamedEntityTag=T13:00-0500 Timex=<TIMEX3 tid="t1" type="TIME" value="T13:00-0500">1:00 p.m. EST</TIMEX3>]
+[Text=p.m. CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=p.m. NamedEntityTag=TIME NormalizedNamedEntityTag=T13:00-0500 Timex=<TIMEX3 tid="t1" type="TIME" value="T13:00-0500">1:00 p.m. EST</TIMEX3>]
+[Text=EST. CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=EST. NamedEntityTag=TIME NormalizedNamedEntityTag=T13:00-0500 Timex=<TIMEX3 tid="t1" type="TIME" value="T13:00-0500">1:00 p.m. EST</TIMEX3>]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (CD 1:00) (NN p.m.))
+    (NP (NNP EST.))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, p.m.-2)
+nummod(p.m.-2, 1:00-1)
+dep(p.m.-2, EST.-3)
+punct(p.m.-2, .-4)
+
+Extracted the following NER entity mentions:
+1:00 p.m. EST	TIME	TIME:-1.0

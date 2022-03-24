@@ -1,0 +1,56 @@
+Document: ID=44F93ACB.text (2 sentences, 9 tokens)
+
+Sentence #1 (3 tokens):
+Oh man.
+
+Tokens:
+[Text=Oh CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=oh NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=UH Lemma=man NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Oh))
+    (INTJ (UH man))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Oh-1)
+discourse(Oh-1, man-2)
+punct(Oh-1, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Y’all ready for Ronabola?
+
+Tokens:
+[Text=Y’ CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Y’ NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=ready CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=ready NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Ronabola CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Ronabola NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Y’))
+    (ADJP (RB all) (JJ ready)
+      (PP (IN for)
+        (NP (NNP Ronabola))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Y’-1)
+advmod(ready-3, all-2)
+dep(Y’-1, ready-3)
+case(Ronabola-5, for-4)
+obl:for(ready-3, Ronabola-5)
+punct(Y’-1, ?-6)
+
+Extracted the following NER entity mentions:
+Ronabola	PERSON	PERSON:0.7669854140621086

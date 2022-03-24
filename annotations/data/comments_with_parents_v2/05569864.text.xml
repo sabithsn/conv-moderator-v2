@@ -1,0 +1,121 @@
+Document: ID=05569864.text (2 sentences, 30 tokens)
+
+Sentence #1 (15 tokens):
+Myocarditis (and most other side effects of vaccines) occur within 6 weeks.
+
+Tokens:
+[Text=Myocarditis CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=myocarditis NamedEntityTag=CAUSE_OF_DEATH]
+[Text=( CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=effects CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=effect NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=vaccines CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NNS Lemma=vaccine NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=occur CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=occur NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=CD Lemma=6 NamedEntityTag=DURATION NormalizedNamedEntityTag=P6W Timex=<TIMEX3 tid="t1" type="DURATION" value="P6W">6 weeks</TIMEX3>]
+[Text=weeks CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=P6W Timex=<TIMEX3 tid="t1" type="DURATION" value="P6W">6 weeks</TIMEX3>]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Myocarditis))
+      (-LRB- -LRB-)
+      (NP
+        (NP
+          (QP (CC and)
+            (JJS most))
+          (JJ other) (NN side) (NNS effects))
+        (PP (IN of)
+          (NP (NNS vaccines))))
+      (-RRB- -RRB-))
+    (VP (VBP occur)
+      (PP (IN within)
+        (NP (CD 6) (NNS weeks))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, occur-11)
+nsubj(occur-11, Myocarditis-1)
+punct(Myocarditis-1, (-2)
+cc(most-4, and-3)
+nummod(effects-7, most-4)
+amod(effects-7, other-5)
+compound(effects-7, side-6)
+dep(Myocarditis-1, effects-7)
+case(vaccines-9, of-8)
+nmod:of(effects-7, vaccines-9)
+punct(Myocarditis-1, )-10)
+case(weeks-14, within-12)
+nummod(weeks-14, 6-13)
+obl:within(occur-11, weeks-14)
+punct(occur-11, .-15)
+
+Extracted the following NER entity mentions:
+Myocarditis	CAUSE_OF_DEATH	-
+6 weeks	DURATION	DURATION:-1.0
+
+Sentence #2 (15 tokens):
+Myocarditis is also more likely to happen from COVID infection than the COVID vaccine.
+
+Tokens:
+[Text=Myocarditis CharacterOffsetBegin=78 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=myocarditis NamedEntityTag=CAUSE_OF_DEATH]
+[Text=is CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=likely NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=happen CharacterOffsetBegin=113 CharacterOffsetEnd=119 PartOfSpeech=VB Lemma=happen NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=infection CharacterOffsetBegin=131 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=infection NamedEntityTag=CAUSE_OF_DEATH]
+[Text=than CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Myocarditis))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (ADJP (RBR more) (JJ likely)
+        (S
+          (VP (TO to)
+            (VP (VB happen)
+              (PP (IN from)
+                (NP (NNP COVID) (NN infection)))
+              (PP (IN than)
+                (NP (DT the) (NNP COVID) (NN vaccine))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, likely-5)
+nsubj(likely-5, Myocarditis-1)
+nsubj:xsubj(happen-7, Myocarditis-1)
+cop(likely-5, is-2)
+advmod(likely-5, also-3)
+advmod(likely-5, more-4)
+mark(happen-7, to-6)
+xcomp(likely-5, happen-7)
+case(infection-10, from-8)
+compound(infection-10, COVID-9)
+obl:from(happen-7, infection-10)
+case(vaccine-14, than-11)
+det(vaccine-14, the-12)
+compound(vaccine-14, COVID-13)
+obl:than(happen-7, vaccine-14)
+punct(likely-5, .-15)
+
+Extracted the following NER entity mentions:
+Myocarditis	CAUSE_OF_DEATH	-
+infection	CAUSE_OF_DEATH	-

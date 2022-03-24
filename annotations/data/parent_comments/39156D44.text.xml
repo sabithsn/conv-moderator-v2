@@ -1,0 +1,340 @@
+Document: ID=39156D44.text (7 sentences, 78 tokens)
+
+Sentence #1 (5 tokens):
+Aww that's sad.
+
+Tokens:
+[Text=Aww CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Aww NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sad CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=sad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Aww))
+      (NP (DT that)))
+    (VP (VBZ 's)
+      (ADJP (JJ sad)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sad-4)
+nsubj(sad-4, Aww-1)
+dep(Aww-1, that-2)
+cop(sad-4, 's-3)
+punct(sad-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+My friend's mom just died of covid after having a compromised immune system from a year's worth of chemo.
+
+Tokens:
+[Text=My CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=mom CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=mom NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=compromised CharacterOffsetBegin=68 CharacterOffsetEnd=79 PartOfSpeech=VBN Lemma=compromise NamedEntityTag=O]
+[Text=immune CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=immune NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">a year</TIMEX3>]
+[Text=year CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">a year</TIMEX3>]
+[Text='s CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=worth NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=chemo CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=chemo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ My) (NN friend) (POS 's))
+      (NN mom))
+    (ADVP (RB just))
+    (VP (VBD died)
+      (PP (IN of)
+        (NP (NN covid)))
+      (PP (IN after)
+        (S
+          (VP (VBG having)
+            (NP
+              (NP (DT a) (VBN compromised) (JJ immune) (NN system))
+              (PP (IN from)
+                (NP
+                  (NP
+                    (NP (DT a) (NN year) (POS 's))
+                    (NN worth))
+                  (PP (IN of)
+                    (NP (NN chemo))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, died-6)
+nmod:poss(friend-2, My-1)
+nmod:poss(mom-4, friend-2)
+case(friend-2, 's-3)
+nsubj(died-6, mom-4)
+advmod(died-6, just-5)
+case(covid-8, of-7)
+obl:of(died-6, covid-8)
+mark(having-10, after-9)
+advcl:after(died-6, having-10)
+det(system-14, a-11)
+amod(system-14, compromised-12)
+amod(system-14, immune-13)
+obj(having-10, system-14)
+case(worth-19, from-15)
+det(year-17, a-16)
+nmod:poss(worth-19, year-17)
+case(year-17, 's-18)
+nmod:from(system-14, worth-19)
+case(chemo-21, of-20)
+nmod:of(worth-19, chemo-21)
+punct(died-6, .-22)
+
+Extracted the following NER entity mentions:
+a year	DURATION	DURATION:-1.0
+
+Sentence #3 (13 tokens):
+This makes the 3rd person I've known that died from covid.
+
+Tokens:
+[Text=This CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=3rd CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=3rd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=person CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=known CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=VBN Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ makes)
+      (NP
+        (NP (DT the) (JJ 3rd) (NN person))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP 've)
+              (VP (VBN known)
+                (SBAR (IN that)
+                  (S
+                    (VP (VBD died)
+                      (PP (IN from)
+                        (ADJP (JJ covid))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-2)
+nsubj(makes-2, This-1)
+det(person-5, the-3)
+amod(person-5, 3rd-4)
+obj(makes-2, person-5)
+mark(died-10, person-5)
+nsubj(known-8, I-6)
+aux(known-8, 've-7)
+acl:relcl(person-5, known-8)
+ref(person-5, that-9)
+ccomp(known-8, died-10)
+case(covid-12, from-11)
+advcl:from(died-10, covid-12)
+punct(makes-2, .-13)
+
+Extracted the following NER entity mentions:
+3rd	ORDINAL	ORDINAL:-1.0
+
+Sentence #4 (18 tokens):
+But sorry to hear your friend lost his job because he's afraid to get a shot.
+
+Tokens:
+[Text=But CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=sorry CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=JJ Lemma=sorry NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=207 CharacterOffsetEnd=213 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=lost CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=VBD Lemma=lose NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=227 CharacterOffsetEnd=234 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=237 CharacterOffsetEnd=239 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=afraid CharacterOffsetBegin=240 CharacterOffsetEnd=246 PartOfSpeech=JJ Lemma=afraid NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shot CharacterOffsetBegin=256 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=shot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (S
+      (ADJP (JJ sorry)
+        (S
+          (VP (TO to)
+            (VP (VB hear)
+              (NP (PRP$ your) (NN friend)))))))
+    (VP (VBD lost)
+      (NP (PRP$ his) (NN job))
+      (SBAR (IN because)
+        (S
+          (NP (PRP he))
+          (VP (VBZ 's)
+            (ADJP (JJ afraid)
+              (S
+                (VP (TO to)
+                  (VP (VB get)
+                    (NP (DT a) (NN shot))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lost-7)
+cc(lost-7, But-1)
+csubj(lost-7, sorry-2)
+mark(hear-4, to-3)
+xcomp(sorry-2, hear-4)
+nmod:poss(friend-6, your-5)
+obj(hear-4, friend-6)
+nmod:poss(job-9, his-8)
+obj(lost-7, job-9)
+mark(afraid-13, because-10)
+nsubj(afraid-13, he-11)
+nsubj:xsubj(get-15, he-11)
+cop(afraid-13, 's-12)
+advcl:because(lost-7, afraid-13)
+mark(get-15, to-14)
+xcomp(afraid-13, get-15)
+det(shot-17, a-16)
+obj(get-15, shot-17)
+punct(lost-7, .-18)
+
+Extracted the following NER entity mentions:
+his	PERSON	-
+he	PERSON	-
+
+Sentence #5 (4 tokens):
+Such a tragedy.
+
+Tokens:
+[Text=Such CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tragedy CharacterOffsetBegin=269 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=tragedy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (PDT Such) (DT a) (NN tragedy))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tragedy-3)
+det:predet(tragedy-3, Such-1)
+det(tragedy-3, a-2)
+punct(tragedy-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (12 tokens):
+/s  But for real, anti-vaxxers don't deserve sympathy.
+
+Tokens:
+[Text=/ CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=SYM Lemma=/ NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=POS Lemma=s NamedEntityTag=O]
+[Text=But CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=286 CharacterOffsetEnd=289 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=290 CharacterOffsetEnd=294 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=anti-vaxxers CharacterOffsetBegin=296 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=anti-vaxxer NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=deserve CharacterOffsetBegin=315 CharacterOffsetEnd=322 PartOfSpeech=VB Lemma=deserve NamedEntityTag=O]
+[Text=sympathy CharacterOffsetBegin=323 CharacterOffsetEnd=331 PartOfSpeech=NN Lemma=sympathy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=331 CharacterOffsetEnd=332 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (SYM /))
+    (S
+      (NP (POS s)))
+    (VP
+      (ADVP (CC But))
+      (VP
+        (PP (IN for)
+          (NP
+            (NP (JJ real))
+            (, ,)
+            (NP (NNS anti-vaxxers))))
+        (VP (VBP do) (RB n't)
+          (VP (VB deserve)
+            (NP (NN sympathy))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deserve-10)
+nsubj(deserve-10, /-1)
+dep(deserve-10, s-2)
+advmod(deserve-10, But-3)
+case(real-5, for-4)
+obl:for(deserve-10, real-5)
+punct(real-5, ,-6)
+appos(real-5, anti-vaxxers-7)
+aux(deserve-10, do-8)
+advmod(deserve-10, n't-9)
+obj(deserve-10, sympathy-11)
+punct(deserve-10, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (4 tokens):
+Fuck your friend.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=343 CharacterOffsetEnd=349 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=349 CharacterOffsetEnd=350 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fuck)
+      (NP (PRP$ your) (NN friend)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+nmod:poss(friend-3, your-2)
+obj(Fuck-1, friend-3)
+punct(Fuck-1, .-4)
+
+Extracted the following NER entity mentions:

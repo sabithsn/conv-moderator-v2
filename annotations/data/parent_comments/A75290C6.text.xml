@@ -1,0 +1,63 @@
+Document: ID=A75290C6.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+My only regret is that I can but downvote you once for your egregious stupidity.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=regret CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=regret NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=downvote CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=downvote NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=for CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=egregious CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=egregious NamedEntityTag=O]
+[Text=stupidity CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=stupidity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (JJ only) (NN regret))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (MD can)
+            (CC but)
+            (VP (VB downvote)
+              (NP (PRP you))
+              (ADVP (RB once))
+              (PP (IN for)
+                (NP (PRP$ your) (JJ egregious) (NN stupidity))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-4)
+nmod:poss(regret-3, My-1)
+amod(regret-3, only-2)
+nsubj(is-4, regret-3)
+mark(can-7, that-5)
+nsubj(can-7, I-6)
+nsubj(downvote-9, I-6)
+ccomp(is-4, can-7)
+cc(downvote-9, but-8)
+ccomp(is-4, downvote-9)
+conj:but(can-7, downvote-9)
+obj(downvote-9, you-10)
+advmod(downvote-9, once-11)
+case(stupidity-15, for-12)
+nmod:poss(stupidity-15, your-13)
+amod(stupidity-15, egregious-14)
+obl:for(downvote-9, stupidity-15)
+punct(is-4, .-16)
+
+Extracted the following NER entity mentions:
+once	DATE	DATE:-1.0

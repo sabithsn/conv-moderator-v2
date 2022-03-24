@@ -1,0 +1,57 @@
+Document: ID=88D35A90.text (2 sentences, 9 tokens)
+
+Sentence #1 (7 tokens):
+So CNN is a conservative outlet?
+
+Tokens:
+[Text=So CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=CNN CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=CNN NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=12 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=outlet CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=outlet NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP (NNP CNN))
+    (VP (VBZ is)
+      (NP (DT a) (JJ conservative) (NN outlet)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, outlet-6)
+advmod(outlet-6, So-1)
+nsubj(outlet-6, CNN-2)
+cop(outlet-6, is-3)
+det(outlet-6, a-4)
+amod(outlet-6, conservative-5)
+punct(outlet-6, ?-7)
+
+Extracted the following NER entity mentions:
+CNN	ORGANIZATION	ORGANIZATION:0.950880998123838
+conservative	IDEOLOGY	-
+
+Sentence #2 (2 tokens):
+https://www.nbcnews.com/news/us-news/second-former-cnn-reporter-police-investigation-rcna10457  https://www.nbcnews.com/news/us-news/cnn-producer-accused-coaxing-parents-underage-girls-sexual-training-rcna8479
+
+Tokens:
+[Text=https://www.nbcnews.com/news/us-news/second-former-cnn-reporter-police-investigation-rcna10457 CharacterOffsetBegin=34 CharacterOffsetEnd=128 PartOfSpeech=ADD Lemma=https://www.nbcnews.com/news/us-news/second-former-cnn-reporter-police-investigation-rcna10457 NamedEntityTag=URL]
+[Text=https://www.nbcnews.com/news/us-news/cnn-producer-accused-coaxing-parents-underage-girls-sexual-training-rcna8479 CharacterOffsetBegin=130 CharacterOffsetEnd=243 PartOfSpeech=ADD Lemma=https://www.nbcnews.com/news/us-news/cnn-producer-accused-coaxing-parents-underage-girls-sexual-training-rcna8479 NamedEntityTag=URL]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (ADD https://www.nbcnews.com/news/us-news/second-former-cnn-reporter-police-investigation-rcna10457))
+    (NP (ADD https://www.nbcnews.com/news/us-news/cnn-producer-accused-coaxing-parents-underage-girls-sexual-training-rcna8479))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, https://www.nbcnews.com/news/us-news/second-former-cnn-reporter-police-investigation-rcna10457-1)
+dep(https://www.nbcnews.com/news/us-news/second-former-cnn-reporter-police-investigation-rcna10457-1, https://www.nbcnews.com/news/us-news/cnn-producer-accused-coaxing-parents-underage-girls-sexual-training-rcna8479-2)
+
+Extracted the following NER entity mentions:
+https://www.nbcnews.com/news/us-news/second-former-cnn-reporter-police-investigation-rcna10457  https://www.nbcnews.com/news/us-news/cnn-producer-accused-coaxing-parents-underage-girls-sexual-training-rcna8479	URL	-

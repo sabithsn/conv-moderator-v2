@@ -1,0 +1,121 @@
+Document: ID=1CFC399E.text (2 sentences, 29 tokens)
+
+Sentence #1 (24 tokens):
+Not really, unfortunately  Quick Edit: America sits on a fuck ton of fossil fuels, but not much rare earth metals.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unfortunately CharacterOffsetBegin=12 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=unfortunately NamedEntityTag=O]
+[Text=Quick CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=quick NamedEntityTag=O]
+[Text=Edit CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=sits CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VBZ Lemma=sit NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=ton CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=ton NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=fossil CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=fossil NamedEntityTag=O]
+[Text=fuels CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=fuel NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=rare CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=rare NamedEntityTag=O]
+[Text=earth CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=earth NamedEntityTag=O]
+[Text=metals CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=metal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG (RB Not)
+      (ADVP (RB really)))
+    (, ,)
+    (FRAG
+      (ADVP (RB unfortunately))
+      (ADJP (JJ Quick)))
+    (FRAG
+      (NP (NN Edit))
+      (: :)
+      (S
+        (NP (NNP America))
+        (VP (VBZ sits)
+          (PP (IN on)
+            (NP (DT a)
+              (NML
+                (S
+                  (VP (VB fuck)
+                    (NP
+                      (NP
+                        (NP (NN ton))
+                        (PP (IN of)
+                          (NP (JJ fossil) (NNS fuels))))
+                      (, ,)
+                      (CONJP (CC but)
+                        (RB not))
+                      (NP (JJ much) (JJ rare) (NN earth))))))
+              (NNS metals))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Not-1)
+dep(Not-1, really-2)
+punct(Not-1, ,-3)
+dep(Quick-5, unfortunately-4)
+parataxis(Not-1, Quick-5)
+parataxis(Not-1, Edit-6)
+punct(Edit-6, :-7)
+nsubj(sits-9, America-8)
+appos(Edit-6, sits-9)
+case(metals-23, on-10)
+det(metals-23, a-11)
+compound(metals-23, fuck-12)
+obj(fuck-12, ton-13)
+case(fuels-16, of-14)
+amod(fuels-16, fossil-15)
+nmod:of(ton-13, fuels-16)
+punct(ton-13, ,-17)
+cc(not-19, but-18)
+cc(earth-22, not-19)
+amod(earth-22, much-20)
+amod(earth-22, rare-21)
+obj(fuck-12, earth-22)
+conj:negcc(ton-13, earth-22)
+obl:on(sits-9, metals-23)
+punct(Not-1, .-24)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.9337540029823868
+
+Sentence #2 (5 tokens):
+Canada has a decent bit
+
+Tokens:
+[Text=Canada CharacterOffsetBegin=115 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Canada NamedEntityTag=COUNTRY]
+[Text=has CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=decent CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=decent NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Canada))
+    (VP (VBZ has)
+      (NP (DT a) (JJ decent) (NN bit)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-2)
+nsubj(has-2, Canada-1)
+det(bit-5, a-3)
+amod(bit-5, decent-4)
+obj(has-2, bit-5)
+
+Extracted the following NER entity mentions:
+Canada	COUNTRY	LOCATION:0.992308732972324

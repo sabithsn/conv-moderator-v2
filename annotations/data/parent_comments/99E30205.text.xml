@@ -1,0 +1,33 @@
+Document: ID=99E30205.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Who watches cable tv anymore?
+
+Tokens:
+[Text=Who CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=watches CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=watch NamedEntityTag=O]
+[Text=cable CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=cable NamedEntityTag=O]
+[Text=tv CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=tv NamedEntityTag=O]
+[Text=anymore CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=anymore NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ watches)
+        (NP (NN cable) (NN tv))
+        (ADVP (RB anymore))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, watches-2)
+nsubj(watches-2, Who-1)
+compound(tv-4, cable-3)
+obj(watches-2, tv-4)
+advmod(watches-2, anymore-5)
+punct(watches-2, ?-6)
+
+Extracted the following NER entity mentions:

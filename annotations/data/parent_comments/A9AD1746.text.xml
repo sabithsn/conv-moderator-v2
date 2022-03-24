@@ -1,0 +1,76 @@
+Document: ID=A9AD1746.text (2 sentences, 17 tokens)
+
+Sentence #1 (5 tokens):
+I respect the law.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=2 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=respect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP respect)
+      (NP (DT the) (NN law)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, respect-2)
+nsubj(respect-2, I-1)
+det(law-4, the-3)
+obj(respect-2, law-4)
+punct(respect-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+I DO NOT respect the people that "uphold" it.
+
+Tokens:
+[Text=I CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=DO CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=respect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=uphold CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=uphold NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP DO) (RB NOT)
+      (VP (VB respect)
+        (NP (DT the) (NNS people))
+        (SBAR (IN that)
+          (SINV
+            (VP (`` ") (VB uphold) ('' "))
+            (NP (PRP it))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, respect-4)
+nsubj(respect-4, I-1)
+aux(respect-4, DO-2)
+advmod(respect-4, NOT-3)
+det(people-6, the-5)
+obj(respect-4, people-6)
+mark(uphold-9, that-7)
+punct(uphold-9, "-8)
+dep(respect-4, uphold-9)
+punct(uphold-9, "-10)
+nsubj(uphold-9, it-11)
+punct(respect-4, .-12)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,45 @@
+Document: ID=730E6212.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Oil-changes every 3-5k miles is silly superstition
+
+Tokens:
+[Text=Oil CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 - 5.0]
+[Text=- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=SYM Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 - 5.0]
+[Text=5k CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=5k NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 - 5.0]
+[Text=miles CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=mile NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=silly CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=silly NamedEntityTag=O]
+[Text=superstition CharacterOffsetBegin=38 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=superstition NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML (NN Oil) (HYPH -) (NNS changes))
+      (ADJP (DT every)
+        (QP (CD 3) (SYM -) (CD 5k)))
+      (NNS miles))
+    (VP (VBZ is)
+      (NP (JJ silly) (NN superstition)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, superstition-11)
+compound(changes-3, Oil-1)
+punct(changes-3, --2)
+compound(miles-8, changes-3)
+dep(5k-7, every-4)
+compound(5k-7, 3-5)
+dep(5k-7, --6)
+dep(miles-8, 5k-7)
+nsubj(superstition-11, miles-8)
+cop(superstition-11, is-9)
+amod(superstition-11, silly-10)
+
+Extracted the following NER entity mentions:
+3-5k	NUMBER	NUMBER:-1.0

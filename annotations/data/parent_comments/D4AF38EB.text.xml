@@ -1,0 +1,187 @@
+Document: ID=D4AF38EB.text (5 sentences, 39 tokens)
+
+Sentence #1 (10 tokens):
+We should hang our heads that they were elected.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=hang CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=hang NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=heads CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=head NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=elected CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=VBN Lemma=elect NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD should)
+      (VP (VB hang)
+        (NP (PRP$ our) (NNS heads))
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBD were)
+              (VP (VBN elected)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hang-3)
+nsubj(hang-3, We-1)
+aux(hang-3, should-2)
+nmod:poss(heads-5, our-4)
+obj(hang-3, heads-5)
+mark(elected-9, that-6)
+nsubj:pass(elected-9, they-7)
+aux:pass(elected-9, were-8)
+ccomp(hang-3, elected-9)
+punct(hang-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+People voted for them.
+
+Tokens:
+[Text=People CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=voted CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBD voted)
+      (PP (IN for)
+        (NP (PRP them))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, voted-2)
+nsubj(voted-2, People-1)
+case(them-4, for-3)
+obl:for(voted-2, them-4)
+punct(voted-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+Actual people.
+
+Tokens:
+[Text=Actual CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Actual) (NNS people) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, people-2)
+amod(people-2, Actual-1)
+punct(people-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (8 tokens):
+That’s the great failure and shame.
+
+Tokens:
+[Text=That CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=failure CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=failure NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=shame CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=shame NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ ’s)
+      (NP (DT the) (JJ great) (NN failure)
+        (CC and)
+        (NN shame)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, failure-5)
+nsubj(failure-5, That-1)
+cop(failure-5, ’s-2)
+det(failure-5, the-3)
+amod(failure-5, great-4)
+cc(shame-7, and-6)
+conj:and(failure-5, shame-7)
+punct(failure-5, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (13 tokens):
+To say nothing of the tens of millions who voted for Trump.
+
+Tokens:
+[Text=To CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tens CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=ten NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=millions CharacterOffsetBegin=153 CharacterOffsetEnd=161 PartOfSpeech=NNS Lemma=million NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=voted CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (TO To)
+      (VP (VB say)
+        (NP
+          (NP (NN nothing))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (QP (NNS tens) (IN of) (NNS millions)))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD voted)
+                    (PP (IN for)
+                      (NP (NNP Trump)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-2)
+mark(say-2, To-1)
+obj(say-2, nothing-3)
+case(millions-8, of-4)
+det(millions-8, the-5)
+dep(millions-8, tens-6)
+advmod(millions-8, of-7)
+nmod:of(nothing-3, millions-8)
+nsubj(voted-10, millions-8)
+ref(millions-8, who-9)
+acl:relcl(millions-8, voted-10)
+case(Trump-12, for-11)
+obl:for(voted-10, Trump-12)
+punct(say-2, .-13)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.682765423891859

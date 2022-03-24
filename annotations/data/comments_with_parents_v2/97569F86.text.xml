@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>97569F86.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Waiting</word>
+            <lemma>wait</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>…</word>
+            <lemma>…</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Well</word>
+            <lemma>well</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>nazi</word>
+            <lemma>nazi</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>IDEOLOGY</NER>
+          </token>
+          <token id="10">
+            <word>...</word>
+            <lemma>...</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>So</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>....</word>
+            <lemma>....</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (VBG Waiting) (PP (IN for) (NP (DT this))))) (: …) (S (INTJ (UH Well)) (NP (PRP he)) (VP (VBZ is) (NP (DT a) (NN nazi)) (, ...) (ADVP (RB So)))) (. ....))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">nazi</governor>
+            <dependent idx="5">Well</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">nazi</governor>
+            <dependent idx="6">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">nazi</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">nazi</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="9">nazi</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">nazi</governor>
+            <dependent idx="10">...</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">nazi</governor>
+            <dependent idx="11">So</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="12">....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">nazi</governor>
+            <dependent idx="5">Well</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">nazi</governor>
+            <dependent idx="6">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">nazi</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">nazi</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="9">nazi</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">nazi</governor>
+            <dependent idx="10">...</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">nazi</governor>
+            <dependent idx="11">So</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="12">....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">nazi</governor>
+            <dependent idx="5">Well</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">nazi</governor>
+            <dependent idx="6">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">nazi</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">nazi</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="9">nazi</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">nazi</governor>
+            <dependent idx="10">...</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">nazi</governor>
+            <dependent idx="11">So</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="12">....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">nazi</governor>
+            <dependent idx="5">Well</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">nazi</governor>
+            <dependent idx="6">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">nazi</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">nazi</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="9">nazi</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">nazi</governor>
+            <dependent idx="10">...</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">nazi</governor>
+            <dependent idx="11">So</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="12">....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">nazi</governor>
+            <dependent idx="5">Well</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">nazi</governor>
+            <dependent idx="6">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">nazi</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">nazi</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="9">nazi</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">nazi</governor>
+            <dependent idx="10">...</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">nazi</governor>
+            <dependent idx="11">So</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="12">....</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

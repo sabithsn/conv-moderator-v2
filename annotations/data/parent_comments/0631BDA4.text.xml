@@ -1,0 +1,61 @@
+Document: ID=0631BDA4.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Dude you’re stacking an isolated incident against hundreds of thousand of innocent Arab refugees
+
+Tokens:
+[Text=Dude CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=dude NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=stacking CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=stack NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=isolated CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=VBN Lemma=isolate NamedEntityTag=O]
+[Text=incident CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=incident NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=hundreds CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=hundred NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=thousand CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=CD Lemma=thousand NamedEntityTag=NUMBER NormalizedNamedEntityTag=1000.0]
+[Text=of CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=innocent CharacterOffsetBegin=74 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=innocent NamedEntityTag=O]
+[Text=Arab CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=arab NamedEntityTag=MISC]
+[Text=refugees CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NNS Lemma=refugee NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Dude))
+    (NP (PRP you))
+    (VP (VBP ’re)
+      (S
+        (VP (VBG stacking)
+          (NP (DT an) (VBN isolated) (NN incident))
+          (PP (IN against)
+            (NP
+              (NP (NNS hundreds))
+              (PP (IN of)
+                (NP
+                  (NP (CD thousand))
+                  (PP (IN of)
+                    (NP (JJ innocent) (JJ Arab) (NNS refugees))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’re-3)
+nsubj(’re-3, Dude-1)
+nsubj(’re-3, you-2)
+xcomp(’re-3, stacking-4)
+det(incident-7, an-5)
+amod(incident-7, isolated-6)
+obj(stacking-4, incident-7)
+case(hundreds-9, against-8)
+obl:against(stacking-4, hundreds-9)
+case(thousand-11, of-10)
+nmod:of(hundreds-9, thousand-11)
+case(refugees-15, of-12)
+amod(refugees-15, innocent-13)
+amod(refugees-15, Arab-14)
+nmod:of(thousand-11, refugees-15)
+
+Extracted the following NER entity mentions:
+thousand	NUMBER	NUMBER:-1.0
+Arab	MISC	MISC:0.9999711974448795

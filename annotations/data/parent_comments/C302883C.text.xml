@@ -1,0 +1,75 @@
+Document: ID=C302883C.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Biden formally approves new US troops to Europe amid Russia threat, deployments expected in 'coming days'
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=formally CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=formally NamedEntityTag=O]
+[Text=approves CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=approve NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=troops CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=troops NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=amid CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=amid NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=threat CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=threat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=deployments CharacterOffsetBegin=68 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=deployment NamedEntityTag=O]
+[Text=expected CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=VBN Lemma=expect NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=' CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (ADVP (RB formally))
+    (VP (VBZ approves)
+      (NP (JJ new) (NNP US) (NNS troops))
+      (PP (IN to)
+        (NP (NNP Europe)))
+      (PP (IN amid)
+        (NP
+          (NP (NNP Russia) (NN threat))
+          (, ,)
+          (NP
+            (NP (NNS deployments))
+            (VP (VBN expected)
+              (PP (IN in) (`` ')
+                (S
+                  (VP (VBG coming)
+                    (NP (NNS days) (POS '))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, approves-3)
+nsubj(approves-3, Biden-1)
+advmod(approves-3, formally-2)
+amod(troops-6, new-4)
+compound(troops-6, US-5)
+obj(approves-3, troops-6)
+case(Europe-8, to-7)
+obl:to(approves-3, Europe-8)
+case(threat-11, amid-9)
+compound(threat-11, Russia-10)
+obl:amid(approves-3, threat-11)
+punct(threat-11, ,-12)
+appos(threat-11, deployments-13)
+acl(deployments-13, expected-14)
+case(coming-17, in-15)
+punct(coming-17, '-16)
+advcl:in(expected-14, coming-17)
+obl:tmod(coming-17, days-18)
+case(days-18, '-19)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9946493027258112
+US	COUNTRY	LOCATION:0.9734996907629792
+Europe	LOCATION	LOCATION:0.9991141561756842
+Russia	COUNTRY	LOCATION:0.9990758633812731
+days	DURATION	DURATION:-1.0

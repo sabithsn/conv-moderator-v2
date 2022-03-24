@@ -1,0 +1,94 @@
+Document: ID=E95DA225.text (3 sentences, 18 tokens)
+
+Sentence #1 (4 tokens):
+“Him?”
+
+Tokens:
+[Text=“ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Him CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (`` “)
+    (ADJP (PRP Him))
+    (. ?) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Him-2)
+punct(Him-2, “-1)
+punct(Him-2, ?-3)
+punct(Him-2, ”-4)
+
+Extracted the following NER entity mentions:
+Him	PERSON	-
+
+Sentence #2 (6 tokens):
+“Him” is you.
+
+Tokens:
+[Text=“ CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Him CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` “)
+    (NP (PRP Him))
+    ('' ”)
+    (VP (VBZ is)
+      (NP (PRP you)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, you-5)
+punct(you-5, “-1)
+nsubj(you-5, Him-2)
+punct(you-5, ”-3)
+cop(you-5, is-4)
+punct(you-5, .-6)
+
+Extracted the following NER entity mentions:
+Him	PERSON	-
+
+Sentence #3 (8 tokens):
+You’re very confused, old fella.
+
+Tokens:
+[Text=You CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=confused CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=confused NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=fella CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=fella NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP ’re)
+      (ADJP (RB very) (JJ confused))
+      (, ,)
+      (NP (JJ old) (NN fella)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, confused-4)
+nsubj(confused-4, You-1)
+cop(confused-4, ’re-2)
+advmod(confused-4, very-3)
+punct(confused-4, ,-5)
+amod(fella-7, old-6)
+dep(confused-4, fella-7)
+punct(confused-4, .-8)
+
+Extracted the following NER entity mentions:

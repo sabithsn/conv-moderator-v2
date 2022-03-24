@@ -1,0 +1,54 @@
+Document: ID=306C3E39.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+ELI5: Why are taxes taken out of our paychecks from work?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=taxes CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=tax NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=paychecks CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=paycheck NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP are)
+        (NP (NNS taxes))
+        (VP (VBN taken)
+          (ADVP (IN out)
+            (PP (IN of)
+              (NP (PRP$ our) (NNS paychecks))))
+          (PP (IN from)
+            (NP (NN work))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(taken-6, Why-3)
+aux:pass(taken-6, are-4)
+nsubj:pass(taken-6, taxes-5)
+parataxis(ELI5-1, taken-6)
+case(paychecks-10, out-7)
+fixed(out-7, of-8)
+nmod:poss(paychecks-10, our-9)
+obl:out_of(taken-6, paychecks-10)
+case(work-12, from-11)
+obl:from(taken-6, work-12)
+punct(ELI5-1, ?-13)
+
+Extracted the following NER entity mentions:

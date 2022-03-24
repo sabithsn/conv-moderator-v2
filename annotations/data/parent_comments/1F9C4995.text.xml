@@ -1,0 +1,78 @@
+Document: ID=1F9C4995.text (2 sentences, 16 tokens)
+
+Sentence #1 (7 tokens):
+It's a screenshot from Twitter.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=screenshot CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=screenshot NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Twitter CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Twitter NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN screenshot))
+        (PP (IN from)
+          (NP (NNP Twitter)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, screenshot-4)
+nsubj(screenshot-4, It-1)
+cop(screenshot-4, 's-2)
+det(screenshot-4, a-3)
+case(Twitter-6, from-5)
+nmod:from(screenshot-4, Twitter-6)
+punct(screenshot-4, .-7)
+
+Extracted the following NER entity mentions:
+Twitter	ORGANIZATION	ORGANIZATION:0.7652999072548339
+
+Sentence #2 (9 tokens):
+I never said it was my original content.
+
+Tokens:
+[Text=I CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=content CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=content NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (NP (PRP$ my) (JJ original) (NN content))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-3)
+nsubj(said-3, I-1)
+advmod(said-3, never-2)
+nsubj(content-8, it-4)
+cop(content-8, was-5)
+nmod:poss(content-8, my-6)
+amod(content-8, original-7)
+ccomp(said-3, content-8)
+punct(said-3, .-9)
+
+Extracted the following NER entity mentions:

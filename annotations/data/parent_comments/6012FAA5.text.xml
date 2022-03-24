@@ -1,0 +1,67 @@
+Document: ID=6012FAA5.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Federal Judge: "Dictatorship Of A King" Court Blocks Biden's Head Start COVID Vaccine Mandate
+
+Tokens:
+[Text=Federal CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Federal NamedEntityTag=O]
+[Text=Judge CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Judge NamedEntityTag=TITLE]
+[Text=: CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Dictatorship CharacterOffsetBegin=16 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=dictatorship NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=King NamedEntityTag=TITLE]
+[Text=" CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Court CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Court NamedEntityTag=O]
+[Text=Blocks CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNPS Lemma=Blocks NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Head CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Head NamedEntityTag=O]
+[Text=Start CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Start NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=Vaccine CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Vaccine NamedEntityTag=O]
+[Text=Mandate CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Mandate NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Federal) (NNP Judge))
+    (: :)
+    (NP (`` ")
+      (NP (NN Dictatorship))
+      (PP (IN Of)
+        (NP (DT A) (NNP King)
+          (NML (`` ")
+            (NML (NNP Court) (NNPS Blocks))
+            (NML
+              (NP (NNP Biden) (POS 's))
+              (NNP Head) (NNP Start))
+            (NML (NNP COVID) (NNP Vaccine)))
+          (NNP Mandate))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Judge-2)
+compound(Judge-2, Federal-1)
+punct(Judge-2, :-3)
+punct(Dictatorship-5, "-4)
+dep(Judge-2, Dictatorship-5)
+case(Mandate-18, Of-6)
+det(Mandate-18, A-7)
+compound(Mandate-18, King-8)
+punct(Vaccine-17, "-9)
+compound(Blocks-11, Court-10)
+dep(Vaccine-17, Blocks-11)
+nmod:poss(Start-15, Biden-12)
+case(Biden-12, 's-13)
+compound(Start-15, Head-14)
+dep(Vaccine-17, Start-15)
+compound(Vaccine-17, COVID-16)
+compound(Mandate-18, Vaccine-17)
+nmod:of(Dictatorship-5, Mandate-18)
+
+Extracted the following NER entity mentions:
+Judge	TITLE	-
+King	TITLE	-
+Biden	PERSON	PERSON:0.9735370439192882

@@ -1,0 +1,51 @@
+Document: ID=CD2C5C56.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Nobody tell him how the electric for his tesla is made
+
+Tokens:
+[Text=Nobody CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=nobody NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=tell NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=electric CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=electric NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=tesla CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=tesla NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Nobody))
+    (VP (VBP tell)
+      (NP (PRP him))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP
+            (NP (DT the) (NN electric))
+            (PP (IN for)
+              (NP (PRP$ his) (NN tesla))))
+          (VP (VBZ is)
+            (VP (VBN made))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tell-2)
+nsubj(tell-2, Nobody-1)
+obj(tell-2, him-3)
+advmod(made-11, how-4)
+det(electric-6, the-5)
+nsubj:pass(made-11, electric-6)
+case(tesla-9, for-7)
+nmod:poss(tesla-9, his-8)
+nmod:for(electric-6, tesla-9)
+aux:pass(made-11, is-10)
+dep(tell-2, made-11)
+
+Extracted the following NER entity mentions:
+him	PERSON	-
+his	PERSON	-

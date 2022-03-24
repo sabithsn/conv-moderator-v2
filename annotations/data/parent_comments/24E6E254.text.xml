@@ -1,0 +1,89 @@
+Document: ID=24E6E254.text (2 sentences, 20 tokens)
+
+Sentence #1 (6 tokens):
+Look at her real name.
+
+Tokens:
+[Text=Look CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (NP (PRP$ her) (JJ real) (NN name))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Look-1)
+case(name-5, at-2)
+nmod:poss(name-5, her-3)
+amod(name-5, real-4)
+obl:at(Look-1, name-5)
+punct(Look-1, .-6)
+
+Extracted the following NER entity mentions:
+her	PERSON	-
+
+Sentence #2 (14 tokens):
+She should start being referred to by her real name from now on.
+
+Tokens:
+[Text=She CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=start CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=start NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=referred CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=VBN Lemma=refer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=on CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=on NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (MD should)
+      (VP (VB start)
+        (S
+          (VP (VBG being)
+            (VP (VBN referred)
+              (PP (IN to)
+                (PP (IN by)
+                  (NP (PRP$ her) (JJ real) (NN name))))
+              (PP (IN from)
+                (ADVP (RB now) (RB on))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, start-3)
+nsubj(start-3, She-1)
+aux(start-3, should-2)
+aux:pass(referred-5, being-4)
+xcomp(start-3, referred-5)
+case(name-10, to-6)
+case(name-10, by-7)
+nmod:poss(name-10, her-8)
+amod(name-10, real-9)
+obl:agent(referred-5, name-10)
+case(on-13, from-11)
+advmod(on-13, now-12)
+advcl:from(referred-5, on-13)
+punct(start-3, .-14)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+She	PERSON	-
+her	PERSON	-

@@ -1,0 +1,40 @@
+Document: ID=2C6BBD26.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+What point are you trying to make?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN point))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB make))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trying-5)
+det(point-2, What-1)
+dep(trying-5, point-2)
+aux(trying-5, are-3)
+nsubj(trying-5, you-4)
+nsubj:xsubj(make-7, you-4)
+mark(make-7, to-6)
+xcomp(trying-5, make-7)
+punct(trying-5, ?-8)
+
+Extracted the following NER entity mentions:

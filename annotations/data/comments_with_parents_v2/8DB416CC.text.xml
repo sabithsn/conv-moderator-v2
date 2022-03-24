@@ -1,0 +1,165 @@
+Document: ID=8DB416CC.text (3 sentences, 39 tokens)
+
+Sentence #1 (12 tokens):
+We aren't unified on the reasons we support the ban.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=unified CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=VBN Lemma=unify NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reasons CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=reason NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=support NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=ban NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are) (RB n't)
+      (ADJP (VBN unified)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNS reasons))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP support)
+                  (NP (DT the) (NN ban)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, unified-4)
+nsubj:pass(unified-4, We-1)
+aux:pass(unified-4, are-2)
+advmod(unified-4, n't-3)
+case(reasons-7, on-5)
+det(reasons-7, the-6)
+obl:on(unified-4, reasons-7)
+nsubj(support-9, we-8)
+acl:relcl(reasons-7, support-9)
+det(ban-11, the-10)
+obj(support-9, ban-11)
+punct(unified-4, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+I suspect Trump supporters are driven by nationalism which is the opposite of Democratic motivation.
+
+Tokens:
+[Text=I CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=suspect CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=suspect NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=supporters CharacterOffsetBegin=69 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=supporter NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=driven CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=VBN Lemma=drive NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=nationalism CharacterOffsetBegin=94 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=nationalism NamedEntityTag=RELIGION]
+[Text=which CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opposite CharacterOffsetBegin=119 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=opposite NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Democratic CharacterOffsetBegin=131 CharacterOffsetEnd=141 PartOfSpeech=JJ Lemma=democratic NamedEntityTag=IDEOLOGY]
+[Text=motivation CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=motivation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP suspect)
+      (SBAR
+        (S
+          (NP (NNP Trump) (NNS supporters))
+          (VP (VBP are)
+            (VP (VBN driven)
+              (PP (IN by)
+                (NP
+                  (NP (NN nationalism))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT the) (NN opposite))
+                          (PP (IN of)
+                            (NP (JJ Democratic) (NN motivation))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suspect-2)
+nsubj(suspect-2, I-1)
+compound(supporters-4, Trump-3)
+nsubj:pass(driven-6, supporters-4)
+aux:pass(driven-6, are-5)
+ccomp(suspect-2, driven-6)
+case(nationalism-8, by-7)
+obl:agent(driven-6, nationalism-8)
+nsubj(opposite-12, nationalism-8)
+ref(nationalism-8, which-9)
+cop(opposite-12, is-10)
+det(opposite-12, the-11)
+acl:relcl(nationalism-8, opposite-12)
+case(motivation-15, of-13)
+amod(motivation-15, Democratic-14)
+nmod:of(opposite-12, motivation-15)
+punct(suspect-2, .-16)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.7849364942361252
+nationalism	RELIGION	-
+Democratic	IDEOLOGY	MISC:0.999995035453554
+
+Sentence #3 (11 tokens):
+The enemy of my enemy can still be my enemy.
+
+Tokens:
+[Text=The CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=enemy CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=enemy CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=enemy CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN enemy))
+      (PP (IN of)
+        (NP (PRP$ my) (NN enemy))))
+    (VP (MD can)
+      (ADVP (RB still))
+      (VP (VB be)
+        (NP (PRP$ my) (NN enemy))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enemy-10)
+det(enemy-2, The-1)
+nsubj(enemy-10, enemy-2)
+case(enemy-5, of-3)
+nmod:poss(enemy-5, my-4)
+nmod:of(enemy-2, enemy-5)
+aux(enemy-10, can-6)
+advmod(enemy-10, still-7)
+cop(enemy-10, be-8)
+nmod:poss(enemy-10, my-9)
+punct(enemy-10, .-11)
+
+Extracted the following NER entity mentions:

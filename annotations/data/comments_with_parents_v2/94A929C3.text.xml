@@ -1,0 +1,71 @@
+Document: ID=94A929C3.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Hot Mic Catches Biden Calling Peter Doocy ‘A Stupid Son-Of-A-B*tch’
+
+Tokens:
+[Text=Hot CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Hot NamedEntityTag=O]
+[Text=Mic CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Mic NamedEntityTag=O]
+[Text=Catches CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=catch NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Calling CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=Peter CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Peter NamedEntityTag=PERSON]
+[Text=Doocy CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Doocy NamedEntityTag=PERSON]
+[Text=‘ CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Stupid CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=stupid NamedEntityTag=O]
+[Text=Son CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Son NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=A-B CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=a-b NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=tch CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=tch NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Hot) (NNP Mic))
+    (VP (VBZ Catches)
+      (S
+        (NP (NNP Biden))
+        (VP (VBG Calling)
+          (NP
+            (NP (NNP Peter) (NNP Doocy))
+            (`` ‘)
+            (NP (DT A) (JJ Stupid)
+              (NML
+                (NML (NNP Son))
+                (HYPH -)
+                (PP (IN Of)
+                  (NP
+                    (NP (HYPH -) (NN A-B))
+                    (X (NFP *)))))
+              (NN tch))
+            ('' ’)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Catches-3)
+compound(Mic-2, Hot-1)
+nsubj(Catches-3, Mic-2)
+nsubj(Calling-5, Biden-4)
+dep(Catches-3, Calling-5)
+compound(Doocy-7, Peter-6)
+iobj(Calling-5, Doocy-7)
+punct(Doocy-7, ‘-8)
+det(tch-17, A-9)
+amod(tch-17, Stupid-10)
+compound(tch-17, Son-11)
+punct(Son-11, --12)
+case(A-B-15, Of-13)
+punct(A-B-15, --14)
+nmod:of(Son-11, A-B-15)
+dep(A-B-15, *-16)
+dep(Doocy-7, tch-17)
+punct(Doocy-7, ’-18)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9592918851531737
+Peter Doocy	PERSON	PERSON:0.9602398221418943

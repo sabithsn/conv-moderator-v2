@@ -1,0 +1,120 @@
+Document: ID=3F6329F9.text (3 sentences, 27 tokens)
+
+Sentence #1 (13 tokens):
+I do not believe that hormone swings In males are the same.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=believe NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=hormone CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=hormone NamedEntityTag=O]
+[Text=swings CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=swing NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=males CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=male NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB believe)
+        (SBAR (IN that)
+          (S
+            (NP (NN hormone) (NNS swings))
+            (PP (IN In)
+              (NP (NNS males)))
+            (VP (VBP are)
+              (NP (DT the) (JJ same)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, believe-4)
+nsubj(believe-4, I-1)
+aux(believe-4, do-2)
+advmod(believe-4, not-3)
+mark(same-12, that-5)
+compound(swings-7, hormone-6)
+nsubj(same-12, swings-7)
+case(males-9, In-8)
+obl:in(same-12, males-9)
+cop(same-12, are-10)
+det(same-12, the-11)
+ccomp(believe-4, same-12)
+punct(believe-4, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+But , Ill probably power through it.
+
+Tokens:
+[Text=But CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ill CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Ill NamedEntityTag=STATE_OR_PROVINCE]
+[Text=probably CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=85 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC But)
+    (, ,)
+    (NP (NNP Ill)
+      (ADVP (RB probably)
+        (NP (NN power))
+        (PP (IN through)
+          (NP (PRP it)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ill-3)
+cc(Ill-3, But-1)
+punct(Ill-3, ,-2)
+advmod(Ill-3, probably-4)
+obl:npmod(probably-4, power-5)
+case(it-7, through-6)
+obl:through(probably-4, it-7)
+punct(Ill-3, .-8)
+
+Extracted the following NER entity mentions:
+Ill	STATE_OR_PROVINCE	-
+
+Sentence #3 (6 tokens):
+Child support is a bitch.
+
+Tokens:
+[Text=Child CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bitch CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=bitch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Child) (NN support))
+    (VP (VBZ is)
+      (NP (DT a) (NN bitch)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bitch-5)
+compound(support-2, Child-1)
+nsubj(bitch-5, support-2)
+cop(bitch-5, is-3)
+det(bitch-5, a-4)
+punct(bitch-5, .-6)
+
+Extracted the following NER entity mentions:

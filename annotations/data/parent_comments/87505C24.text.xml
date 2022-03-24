@@ -1,0 +1,30 @@
+Document: ID=87505C24.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Daily dose of Meta Post
+
+Tokens:
+[Text=Daily CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=daily NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t1" type="SET" value="P1D">Daily</TIMEX3>]
+[Text=dose CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=dose NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Meta CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Meta NamedEntityTag=ORGANIZATION]
+[Text=Post CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Post NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Daily) (NN dose))
+    (PP (IN of)
+      (NP (NNP Meta) (NNP Post)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dose-2)
+amod(dose-2, Daily-1)
+case(Post-5, of-3)
+compound(Post-5, Meta-4)
+nmod:of(dose-2, Post-5)
+
+Extracted the following NER entity mentions:
+Daily	SET	SET:-1.0
+Meta Post	ORGANIZATION	ORGANIZATION:0.4538572363753684

@@ -1,0 +1,38 @@
+Document: ID=A83DDCB4.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+We'll comment on whatever we want
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=comment NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=whatever CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=WDT Lemma=whatever NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD 'll)
+      (VP (VB comment)
+        (PP (IN on)
+          (SBAR
+            (WHNP (WDT whatever))
+            (S
+              (NP (PRP we))
+              (VP (VBP want)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, comment-3)
+nsubj(comment-3, We-1)
+aux(comment-3, 'll-2)
+mark(want-7, on-4)
+obj(want-7, whatever-5)
+nsubj(want-7, we-6)
+advcl:on(comment-3, want-7)
+
+Extracted the following NER entity mentions:

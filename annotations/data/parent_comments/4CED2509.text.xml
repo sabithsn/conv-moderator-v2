@@ -1,0 +1,74 @@
+Document: ID=4CED2509.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Am I really a victim of sexual assault if I didn’t put up a fight and orgasmed?
+
+Tokens:
+[Text=Am CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=victim CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=victim NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=sexual CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=CRIMINAL_CHARGE]
+[Text=assault CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=assault NamedEntityTag=CRIMINAL_CHARGE]
+[Text=if CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=fight NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=orgasmed CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=orgasm NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Am)
+    (NP (PRP I))
+    (NP
+      (NP
+        (ADVP (RB really))
+        (NP (DT a) (NN victim))
+        (PP (IN of)
+          (NP (JJ sexual) (NN assault))))
+      (SBAR (IN if)
+        (S
+          (NP (PRP I))
+          (VP
+            (VP (VBD did) (RB n’t)
+              (VP (VB put)
+                (PRT (RP up))
+                (NP (DT a) (NN fight))))
+            (CC and)
+            (VP (VBN orgasmed))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, victim-5)
+cop(victim-5, Am-1)
+nsubj(victim-5, I-2)
+advmod(victim-5, really-3)
+det(victim-5, a-4)
+case(assault-8, of-6)
+amod(assault-8, sexual-7)
+nmod:of(victim-5, assault-8)
+mark(put-13, if-9)
+nsubj(put-13, I-10)
+nsubj(orgasmed-18, I-10)
+aux(put-13, did-11)
+advmod(put-13, n’t-12)
+dep(victim-5, put-13)
+compound:prt(put-13, up-14)
+det(fight-16, a-15)
+obj(put-13, fight-16)
+cc(orgasmed-18, and-17)
+dep(victim-5, orgasmed-18)
+conj:and(put-13, orgasmed-18)
+punct(victim-5, ?-19)
+
+Extracted the following NER entity mentions:
+sexual assault	CRIMINAL_CHARGE	-

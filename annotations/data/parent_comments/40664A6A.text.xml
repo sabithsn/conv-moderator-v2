@@ -1,0 +1,46 @@
+Document: ID=40664A6A.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Biden reaffirms pledge to nominate Black woman to Supreme Court
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=reaffirms CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=reaffirm NamedEntityTag=O]
+[Text=pledge CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=pledge NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=nominate CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=nominate NamedEntityTag=O]
+[Text=Black CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Supreme CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Supreme NamedEntityTag=ORGANIZATION]
+[Text=Court CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (VP (VBZ reaffirms)
+      (NP (NN pledge))
+      (S
+        (VP (TO to)
+          (VP (VB nominate)
+            (NP (JJ Black) (NN woman))
+            (PP (IN to)
+              (NP (NNP Supreme) (NNP Court)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reaffirms-2)
+nsubj(reaffirms-2, Biden-1)
+obj(reaffirms-2, pledge-3)
+mark(nominate-5, to-4)
+advcl:to(reaffirms-2, nominate-5)
+amod(woman-7, Black-6)
+obj(nominate-5, woman-7)
+case(Court-10, to-8)
+compound(Court-10, Supreme-9)
+obl:to(nominate-5, Court-10)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9913058973642828
+Supreme Court	ORGANIZATION	ORGANIZATION:0.9312009532724325

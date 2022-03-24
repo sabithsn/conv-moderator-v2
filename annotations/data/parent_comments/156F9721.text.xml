@@ -1,0 +1,99 @@
+Document: ID=156F9721.text (2 sentences, 24 tokens)
+
+Sentence #1 (10 tokens):
+[I'd suggest yo do the same.]
+
+Tokens:
+[Text=[ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=[ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=suggest CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=suggest NamedEntityTag=O]
+[Text=yo CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=yo NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=] CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=-RRB- Lemma=] NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PRN (-LRB- [)
+    (S
+      (NP (PRP I))
+      (VP (MD 'd)
+        (VP (VB suggest)
+          (SBAR
+            (S
+              (NP (NN yo))
+              (VP (VBP do)
+                (NP (DT the) (JJ same))))))))
+    (. .) (-RRB- ])))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suggest-4)
+punct(suggest-4, [-1)
+nsubj(suggest-4, I-2)
+aux(suggest-4, 'd-3)
+nsubj(do-6, yo-5)
+ccomp(suggest-4, do-6)
+det(same-8, the-7)
+obj(do-6, same-8)
+punct(suggest-4, .-9)
+punct(suggest-4, ]-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+(https://i.imgur.com/Jb78xuN.png) OP is posting a conspiracy theory on a conspiracy sub.
+
+Tokens:
+[Text=( CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=https://i.imgur.com/Jb78xuN.png CharacterOffsetBegin=30 CharacterOffsetEnd=61 PartOfSpeech=ADD Lemma=https://i.imgur.com/jb78xun.png NamedEntityTag=URL]
+[Text=) CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=OP CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=79 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=theory CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=theory NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=102 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=sub CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (-LRB- -LRB-) (ADD https://i.imgur.com/Jb78xuN.png) (-RRB- -RRB-))
+      (NP (NN OP)))
+    (VP (VBZ is)
+      (VP (VBG posting)
+        (NP (DT a) (NN conspiracy) (NN theory))
+        (PP (IN on)
+          (NP (DT a) (NN conspiracy) (NN sub)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, posting-6)
+punct(https://i.imgur.com/Jb78xuN.png-2, (-1)
+nsubj(posting-6, https://i.imgur.com/Jb78xuN.png-2)
+punct(https://i.imgur.com/Jb78xuN.png-2, )-3)
+dep(https://i.imgur.com/Jb78xuN.png-2, OP-4)
+aux(posting-6, is-5)
+det(theory-9, a-7)
+compound(theory-9, conspiracy-8)
+obj(posting-6, theory-9)
+case(sub-13, on-10)
+det(sub-13, a-11)
+compound(sub-13, conspiracy-12)
+obl:on(posting-6, sub-13)
+punct(posting-6, .-14)
+
+Extracted the following NER entity mentions:
+https://i.imgur.com/Jb78xuN.png	URL	-
+conspiracy	CRIMINAL_CHARGE	-
+conspiracy	CRIMINAL_CHARGE	-

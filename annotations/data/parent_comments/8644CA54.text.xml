@@ -1,0 +1,37 @@
+Document: ID=8644CA54.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Barack Obama tests positive for COVID-19
+
+Tokens:
+[Text=Barack CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Barack NamedEntityTag=PERSON]
+[Text=Obama CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text=tests CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=test NamedEntityTag=O]
+[Text=positive CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=positive NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=19 CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=CD Lemma=19 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Barack) (NNP Obama))
+    (VP (VBZ tests)
+      (ADJP (JJ positive)
+        (PP (IN for)
+          (NP (NN COVID) (HYPH -) (CD 19)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tests-3)
+compound(Obama-2, Barack-1)
+nsubj(tests-3, Obama-2)
+xcomp(tests-3, positive-4)
+case(COVID-6, for-5)
+obl:for(positive-4, COVID-6)
+punct(COVID-6, --7)
+nummod(COVID-6, 19-8)
+
+Extracted the following NER entity mentions:
+Barack Obama	PERSON	PERSON:0.9947418116251238

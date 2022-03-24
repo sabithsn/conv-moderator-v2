@@ -1,0 +1,157 @@
+Document: ID=19974D64.text (4 sentences, 33 tokens)
+
+Sentence #1 (9 tokens):
+Yeah but that doesn’t negate the comment.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=negate CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=negate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=comment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (CC but)
+    (NP (DT that))
+    (VP (VBZ does) (RB n’t)
+      (VP (VB negate)
+        (NP (DT the) (NN comment))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, negate-6)
+discourse(negate-6, Yeah-1)
+cc(negate-6, but-2)
+conj(negate-6, that-3)
+aux(negate-6, does-4)
+advmod(negate-6, n’t-5)
+det(comment-8, the-7)
+obj(negate-6, comment-8)
+punct(negate-6, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+Sure, Cruz is a piece of shit.
+
+Tokens:
+[Text=Sure CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=UH Lemma=sure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Cruz CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Cruz NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Sure))
+    (, ,)
+    (NP (NNP Cruz))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN piece))
+        (PP (IN of)
+          (NP (NN shit)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, piece-6)
+discourse(piece-6, Sure-1)
+punct(piece-6, ,-2)
+nsubj(piece-6, Cruz-3)
+cop(piece-6, is-4)
+det(piece-6, a-5)
+case(shit-8, of-7)
+nmod:of(piece-6, shit-8)
+punct(piece-6, .-9)
+
+Extracted the following NER entity mentions:
+Cruz	PERSON	PERSON:0.9928936017605029
+
+Sentence #3 (8 tokens):
+Trump is a bigger piece of shit.
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bigger CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=JJR Lemma=bigger NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJR bigger) (NN piece))
+        (PP (IN of)
+          (NP (NN shit)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, piece-5)
+nsubj(piece-5, Trump-1)
+cop(piece-5, is-2)
+det(piece-5, a-3)
+amod(piece-5, bigger-4)
+case(shit-7, of-6)
+nmod:of(piece-5, shit-7)
+punct(piece-5, .-8)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.6467514392871078
+
+Sentence #4 (7 tokens):
+But none of that makes Biden good
+
+Tokens:
+[Text=But CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=good CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP
+      (NP (NN none))
+      (PP (IN of)
+        (NP (DT that))))
+    (VP (VBZ makes)
+      (S
+        (NP (NNP Biden))
+        (ADJP (JJ good))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-5)
+cc(makes-5, But-1)
+nsubj(makes-5, none-2)
+case(that-4, of-3)
+nmod:of(none-2, that-4)
+nsubj(good-7, Biden-6)
+xcomp(makes-5, good-7)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9888928313776704

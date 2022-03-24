@@ -1,0 +1,61 @@
+Document: ID=83AE860E.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+How does it feel to have everything go right over one’s head?
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=25 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=>1.0]
+[Text=’s CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=head CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=head NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB feel)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (S
+                (NP (NN everything))
+                (VP (VB go)
+                  (ADVP (RB right)
+                    (PP (IN over)
+                      (NP
+                        (NP (CD one) (POS ’s))
+                        (NN head)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, feel-4)
+advmod(feel-4, How-1)
+aux(feel-4, does-2)
+nsubj(feel-4, it-3)
+nsubj:xsubj(have-6, it-3)
+mark(have-6, to-5)
+xcomp(feel-4, have-6)
+nsubj(go-8, everything-7)
+ccomp(have-6, go-8)
+advmod(go-8, right-9)
+case(head-13, over-10)
+nmod:poss(head-13, one-11)
+case(one-11, ’s-12)
+obl:over(right-9, head-13)
+punct(feel-4, ?-14)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

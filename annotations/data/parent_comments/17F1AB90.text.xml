@@ -1,0 +1,315 @@
+Document: ID=17F1AB90.text (6 sentences, 72 tokens)
+
+Sentence #1 (2 tokens):
+Cool.
+
+Tokens:
+[Text=Cool CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=cool NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Cool) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cool-1)
+punct(Cool-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Sounds like your self-censoring your own brain.
+
+Tokens:
+[Text=Sounds CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=self CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=self NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=censoring CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=censor NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=brain CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=brain NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Sounds)
+      (PP (IN like)
+        (S
+          (NP (PRP$ your))
+          (VP (NN self) (HYPH -) (VBG censoring)
+            (NP (PRP$ your) (JJ own) (NN brain))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sounds-1)
+mark(censoring-6, like-2)
+nsubj(censoring-6, your-3)
+dep(censoring-6, self-4)
+punct(censoring-6, --5)
+advcl:like(Sounds-1, censoring-6)
+nmod:poss(brain-9, your-7)
+amod(brain-9, own-8)
+obj(censoring-6, brain-9)
+punct(Sounds-1, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens):
+I mean you're kinda making the case for why Rogan is dangerous.
+
+Tokens:
+[Text=I CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=kinda CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=kinda NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=Rogan CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Rogan NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=dangerous CharacterOffsetBegin=108 CharacterOffsetEnd=117 PartOfSpeech=JJ Lemma=dangerous NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP 're)
+            (ADVP (RB kinda))
+            (VP (VBG making)
+              (NP
+                (NP (DT the) (NN case))
+                (PP (IN for)
+                  (SBAR
+                    (WHADVP (WRB why))
+                    (S
+                      (NP (NNP Rogan))
+                      (VP (VBZ is)
+                        (ADJP (JJ dangerous))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-2)
+nsubj(mean-2, I-1)
+nsubj(making-6, you-3)
+aux(making-6, 're-4)
+advmod(making-6, kinda-5)
+ccomp(mean-2, making-6)
+det(case-8, the-7)
+obj(making-6, case-8)
+mark(dangerous-13, for-9)
+advmod(dangerous-13, why-10)
+nsubj(dangerous-13, Rogan-11)
+cop(dangerous-13, is-12)
+acl:for(case-8, dangerous-13)
+punct(mean-2, .-14)
+
+Extracted the following NER entity mentions:
+Rogan	PERSON	PERSON:0.992710667200151
+
+Sentence #4 (23 tokens):
+*"Why don't the fact checkers simply go on Rogan to dispute the claims, rather than cancelling him???"
+
+Tokens:
+[Text=* CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=checkers CharacterOffsetBegin=141 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=checkers NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=150 CharacterOffsetEnd=156 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Rogan CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=NNP Lemma=Rogan NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dispute CharacterOffsetBegin=172 CharacterOffsetEnd=179 PartOfSpeech=VB Lemma=dispute NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=192 CharacterOffsetEnd=198 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=cancelling CharacterOffsetBegin=204 CharacterOffsetEnd=214 PartOfSpeech=VBG Lemma=cancel NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=??? CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=. Lemma=??? NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (NFP *) (`` ")
+    (SBAR
+      (WHADVP (WRB Why))
+      (S
+        (VP (VBP do) (RB n't)
+          (NP
+            (NP (DT the) (NN fact))
+            (SBAR
+              (S
+                (NP (NNS checkers))
+                (ADVP (RB simply))
+                (VP (VBP go)
+                  (PP (IN on)
+                    (NP (NNP Rogan)))
+                  (S
+                    (VP
+                      (VP (TO to)
+                        (VP (VB dispute)
+                          (NP (DT the) (NNS claims))))
+                      (, ,)
+                      (CONJP (RB rather) (IN than))
+                      (VP (VBG cancelling)
+                        (NP (PRP him))))))))))))
+    (. ???) ('' ")))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-4)
+punct(do-4, *-1)
+punct(do-4, "-2)
+advmod(do-4, Why-3)
+advmod(do-4, n't-5)
+det(fact-7, the-6)
+obj(do-4, fact-7)
+nsubj(go-10, checkers-8)
+advmod(go-10, simply-9)
+acl:relcl(fact-7, go-10)
+case(Rogan-12, on-11)
+obl:on(go-10, Rogan-12)
+mark(dispute-14, to-13)
+ccomp(go-10, dispute-14)
+det(claims-16, the-15)
+obj(dispute-14, claims-16)
+punct(dispute-14, ,-17)
+cc(cancelling-20, rather-18)
+fixed(rather-18, than-19)
+ccomp(go-10, cancelling-20)
+conj:negcc(dispute-14, cancelling-20)
+obj(cancelling-20, him-21)
+punct(do-4, ???-22)
+punct(do-4, "-23)
+
+Extracted the following NER entity mentions:
+Rogan	PERSON	PERSON:0.8830808457230999
+him	PERSON	-
+
+Sentence #5 (22 tokens):
+*  also: ....*"I refuse to listen to anything that disputes what I've come to believe".
+
+Tokens:
+[Text=* CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=.... CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=, Lemma=.... NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=refuse CharacterOffsetBegin=239 CharacterOffsetEnd=245 PartOfSpeech=VBP Lemma=refuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=246 CharacterOffsetEnd=248 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=249 CharacterOffsetEnd=255 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=259 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=disputes CharacterOffsetBegin=273 CharacterOffsetEnd=281 PartOfSpeech=VBZ Lemma=dispute NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=VBN Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=300 CharacterOffsetEnd=307 PartOfSpeech=VB Lemma=believe NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NFP *)
+        (NP (RB also))
+        (: :)
+        (NP (, ....))
+        (NFP *))
+      (`` ")
+      (S
+        (NP (PRP I))
+        (VP (VBP refuse)
+          (S
+            (VP (TO to)
+              (VP (VB listen)
+                (PP (IN to)
+                  (NP
+                    (NP (NN anything))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ disputes)
+                          (SBAR
+                            (WHNP (WP what))
+                            (S
+                              (NP (PRP I))
+                              (VP (VBP 've)
+                                (VP (VBN come)
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB believe))))))))))))))))))
+      ('' "))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, also-2)
+punct(also-2, *-1)
+punct(also-2, :-3)
+dep(also-2, ....-4)
+punct(also-2, *-5)
+punct(also-2, "-6)
+nsubj(refuse-8, I-7)
+nsubj:xsubj(listen-10, I-7)
+dep(also-2, refuse-8)
+mark(listen-10, to-9)
+xcomp(refuse-8, listen-10)
+case(anything-12, to-11)
+obl:to(listen-10, anything-12)
+nsubj(disputes-14, anything-12)
+ref(anything-12, that-13)
+acl:relcl(anything-12, disputes-14)
+obj(believe-20, what-15)
+nsubj(come-18, I-16)
+nsubj:xsubj(believe-20, I-16)
+aux(come-18, 've-17)
+ccomp(disputes-14, come-18)
+mark(believe-20, to-19)
+xcomp(come-18, believe-20)
+punct(also-2, "-21)
+punct(also-2, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (1 tokens):
+*
+
+Tokens:
+[Text=* CharacterOffsetBegin=309 CharacterOffsetEnd=310 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X (NFP *)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, *-1)
+
+Extracted the following NER entity mentions:

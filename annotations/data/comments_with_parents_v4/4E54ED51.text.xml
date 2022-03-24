@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>4E54ED51.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>CMV</word>
+            <lemma>cmv</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Reddit</word>
+            <lemma>Reddit</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Karma</word>
+            <lemma>Karma</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>RELIGION</NER>
+          </token>
+          <token id="5">
+            <word>Encourages</word>
+            <lemma>encourage</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Echo</word>
+            <lemma>Echo</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Chambers</word>
+            <lemma>Chambers</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>fack</word>
+            <lemma>fack</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>apartheid</word>
+            <lemma>apartheid</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>IDEOLOGY</NER>
+          </token>
+          <token id="11">
+            <word>State</word>
+            <lemma>state</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="13">
+            <word>Israel</word>
+            <lemma>Israel</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>COUNTRY</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN CMV)) (: :) (S (NP (NNP Reddit) (NNP Karma)) (VP (VBZ Encourages) (SBAR (S (NP (NNP Echo) (NNP Chambers)) (VP (VBD fack) (NP (NP (DT the) (NN apartheid) (NN State)) (PP (IN of) (NP (NNP Israel))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">Karma</governor>
+            <dependent idx="3">Reddit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="4">Karma</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">CMV</governor>
+            <dependent idx="5">Encourages</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">Chambers</governor>
+            <dependent idx="6">Echo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fack</governor>
+            <dependent idx="7">Chambers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="8">fack</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">State</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">State</governor>
+            <dependent idx="10">apartheid</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">fack</governor>
+            <dependent idx="11">State</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">Israel</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="11">State</governor>
+            <dependent idx="13">Israel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">Karma</governor>
+            <dependent idx="3">Reddit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="4">Karma</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">CMV</governor>
+            <dependent idx="5">Encourages</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">Chambers</governor>
+            <dependent idx="6">Echo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fack</governor>
+            <dependent idx="7">Chambers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="8">fack</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">State</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">State</governor>
+            <dependent idx="10">apartheid</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">fack</governor>
+            <dependent idx="11">State</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">Israel</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="11">State</governor>
+            <dependent idx="13">Israel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">Karma</governor>
+            <dependent idx="3">Reddit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="4">Karma</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">CMV</governor>
+            <dependent idx="5">Encourages</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">Chambers</governor>
+            <dependent idx="6">Echo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fack</governor>
+            <dependent idx="7">Chambers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="8">fack</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">State</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">State</governor>
+            <dependent idx="10">apartheid</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">fack</governor>
+            <dependent idx="11">State</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">Israel</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="11">State</governor>
+            <dependent idx="13">Israel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">Karma</governor>
+            <dependent idx="3">Reddit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="4">Karma</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">CMV</governor>
+            <dependent idx="5">Encourages</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">Chambers</governor>
+            <dependent idx="6">Echo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fack</governor>
+            <dependent idx="7">Chambers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="8">fack</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">State</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">State</governor>
+            <dependent idx="10">apartheid</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">fack</governor>
+            <dependent idx="11">State</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">Israel</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="11">State</governor>
+            <dependent idx="13">Israel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">Karma</governor>
+            <dependent idx="3">Reddit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="4">Karma</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">CMV</governor>
+            <dependent idx="5">Encourages</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">Chambers</governor>
+            <dependent idx="6">Echo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fack</governor>
+            <dependent idx="7">Chambers</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">Encourages</governor>
+            <dependent idx="8">fack</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">State</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">State</governor>
+            <dependent idx="10">apartheid</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">fack</governor>
+            <dependent idx="11">State</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">Israel</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="11">State</governor>
+            <dependent idx="13">Israel</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

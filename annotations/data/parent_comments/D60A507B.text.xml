@@ -1,0 +1,81 @@
+Document: ID=D60A507B.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+that's why the GOP fawn over Putin, they want to turn the USA into what Russia is
+
+Tokens:
+[Text=that CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=GOP CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=fawn CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=fawn NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=turn NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=USA CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=USA NamedEntityTag=COUNTRY]
+[Text=into CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT that))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP
+            (NP (DT the) (NNP GOP) (NN fawn))
+            (PP (IN over)
+              (NP (NNP Putin))))
+          (, ,)
+          (NP (PRP they))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB turn)
+                  (NP (DT the) (NNP USA))
+                  (PP (IN into)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (NNP Russia))
+                        (VP (VBZ is))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+nsubj('s-2, that-1)
+advmod(want-11, why-3)
+det(fawn-6, the-4)
+compound(fawn-6, GOP-5)
+nsubj(want-11, fawn-6)
+nsubj:xsubj(turn-13, fawn-6)
+case(Putin-8, over-7)
+nmod:over(fawn-6, Putin-8)
+punct(want-11, ,-9)
+nsubj(want-11, they-10)
+nsubj:xsubj(turn-13, they-10)
+advcl('s-2, want-11)
+mark(turn-13, to-12)
+xcomp(want-11, turn-13)
+det(USA-15, the-14)
+obj(turn-13, USA-15)
+mark(is-19, into-16)
+obj(is-19, what-17)
+nsubj(is-19, Russia-18)
+advcl:into(turn-13, is-19)
+
+Extracted the following NER entity mentions:
+GOP	ORGANIZATION	ORGANIZATION:0.8318376436422414
+Putin	PERSON	PERSON:0.7392860602332436
+USA	COUNTRY	LOCATION:0.9838327071054466
+Russia	COUNTRY	LOCATION:0.9970568889856439

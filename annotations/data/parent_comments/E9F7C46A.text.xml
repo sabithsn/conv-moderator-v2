@@ -1,0 +1,81 @@
+Document: ID=E9F7C46A.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Okay, first: FTFY:  > Don't kill **embryos**  Second: Why not?
+
+Tokens:
+[Text=Okay CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=okay NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=: CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=FTFY CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=FTFY NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=kill CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=** CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=NFP Lemma=** NamedEntityTag=O]
+[Text=embryos CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=embryo NamedEntityTag=O]
+[Text=** CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=NFP Lemma=** NamedEntityTag=O]
+[Text=Second CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=LS Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=: CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (UH Okay))
+        (, ,)
+        (ADVP (RB first)))
+      (: :)
+      (NP (NNP FTFY))
+      (: :))
+    (VP (SYM >)
+      (NP
+        (NP
+          (NML
+            (S
+              (VP (VBP Do) (RB n't)
+                (VP (VB kill)
+                  (X (NFP **))))))
+          (NNS embryos))
+        (SBAR
+          (S
+            (VP
+              (VP (NFP **)
+                (S
+                  (ADVP (LS Second))))
+              (: :)
+              (ADVP (WRB Why))
+              (VP
+                (FRAG (RB not))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, embryos-12)
+nsubj(embryos-12, Okay-1)
+punct(Okay-1, ,-2)
+advmod(Okay-1, first-3)
+punct(Okay-1, :-4)
+dep(Okay-1, FTFY-5)
+punct(Okay-1, :-6)
+dep(embryos-12, >-7)
+aux(kill-10, Do-8)
+advmod(kill-10, n't-9)
+compound(embryos-12, kill-10)
+dep(kill-10, **-11)
+acl:relcl(embryos-12, **-13)
+xcomp(**-13, Second-14)
+punct(**-13, :-15)
+advmod(**-13, Why-16)
+dep(**-13, not-17)
+punct(embryos-12, ?-18)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0
+Second	ORDINAL	ORDINAL:-1.0

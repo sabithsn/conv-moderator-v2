@@ -1,0 +1,46 @@
+Document: ID=0A7EF43E.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+You know, im somewhat of a centrist myself.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=im CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=im NamedEntityTag=O]
+[Text=somewhat CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=somewhat NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=centrist CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=centrist NamedEntityTag=IDEOLOGY]
+[Text=myself CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (S
+      (NP (PRP You))
+      (VP (VBP know)))
+    (, ,)
+    (VP (VBP im)
+      (ADVP (RB somewhat))
+      (PP (IN of)
+        (NP (DT a) (JJ centrist))))
+    (NP (PRP myself))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, im-4)
+nsubj(know-2, You-1)
+ccomp(im-4, know-2)
+punct(im-4, ,-3)
+advmod(im-4, somewhat-5)
+case(centrist-8, of-6)
+det(centrist-8, a-7)
+obl:of(im-4, centrist-8)
+nsubj(im-4, myself-9)
+punct(im-4, .-10)
+
+Extracted the following NER entity mentions:
+centrist	IDEOLOGY	-

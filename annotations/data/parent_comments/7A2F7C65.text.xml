@@ -1,0 +1,115 @@
+Document: ID=7A2F7C65.text (3 sentences, 25 tokens)
+
+Sentence #1 (15 tokens):
+You get to add "you piece of shit" to any movie quote.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=add CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=add NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=movie CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=quote CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=quote NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP get)
+      (S
+        (VP (TO to)
+          (VP (VB add) (`` ")
+            (S
+              (NP (PRP you))
+              (NP
+                (NP (NN piece))
+                (PP (IN of)
+                  (NP (NN shit)))))
+            ('' ")
+            (PP (IN to)
+              (NP (DT any) (NN movie) (NN quote)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, get-2)
+nsubj(get-2, You-1)
+nsubj:xsubj(add-4, You-1)
+mark(add-4, to-3)
+xcomp(get-2, add-4)
+punct(add-4, "-5)
+nsubj(piece-7, you-6)
+xcomp(add-4, piece-7)
+case(shit-9, of-8)
+nmod:of(piece-7, shit-9)
+punct(add-4, "-10)
+case(quote-14, to-11)
+det(quote-14, any-12)
+compound(quote-14, movie-13)
+obl:to(add-4, quote-14)
+punct(get-2, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+What movie quote do you choose?
+
+Tokens:
+[Text=What CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=movie CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=quote CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=quote NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN movie) (NN quote))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB choose)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, choose-6)
+det(quote-3, What-1)
+compound(quote-3, movie-2)
+obj(choose-6, quote-3)
+aux(choose-6, do-4)
+nsubj(choose-6, you-5)
+punct(choose-6, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+(NSFW)
+
+Tokens:
+[Text=( CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=NSFW CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=NSFW NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (-LRB- -LRB-) (NNP NSFW) (-RRB- -RRB-))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, NSFW-2)
+punct(NSFW-2, (-1)
+punct(NSFW-2, )-3)
+
+Extracted the following NER entity mentions:

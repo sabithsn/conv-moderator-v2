@@ -1,0 +1,93 @@
+Document: ID=EA4562A5.text (2 sentences, 23 tokens)
+
+Sentence #1 (6 tokens):
+They do want their organs.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=organs CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=organ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP do)
+      (VP (VB want)
+        (NP (PRP$ their) (NNS organs))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-3)
+nsubj(want-3, They-1)
+aux(want-3, do-2)
+nmod:poss(organs-5, their-4)
+obj(want-3, organs-5)
+punct(want-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+They are removing them from the transplant list so that they can't receive any organs.
+
+Tokens:
+[Text=They CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=removing CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=remove NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=transplant CharacterOffsetBegin=59 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=transplant NamedEntityTag=O]
+[Text=list CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=list NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=organs CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=organ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (VP (VBG removing)
+        (NP (PRP them))
+        (PP (IN from)
+          (NP (DT the) (NN transplant) (NN list)))
+        (SBAR (IN so) (IN that)
+          (S
+            (NP (PRP they))
+            (VP (MD ca) (RB n't)
+              (VP (VB receive)
+                (NP (DT any) (NNS organs))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, removing-3)
+nsubj(removing-3, They-1)
+aux(removing-3, are-2)
+obj(removing-3, them-4)
+case(list-8, from-5)
+det(list-8, the-6)
+compound(list-8, transplant-7)
+obl:from(removing-3, list-8)
+mark(receive-14, so-9)
+fixed(so-9, that-10)
+nsubj(receive-14, they-11)
+aux(receive-14, ca-12)
+advmod(receive-14, n't-13)
+advcl:so_that(removing-3, receive-14)
+det(organs-16, any-15)
+obj(receive-14, organs-16)
+punct(removing-3, .-17)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,77 @@
+Document: ID=D110AFAF.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+I kind of have to go with the store, they have great products at low prices avalible in bulk
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=of NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=store CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=store NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=products CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=product NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=low CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=low NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=avalible CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=avalible NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=bulk CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=bulk NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB kind) (RB of))
+      (VP (VBP have)
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (PP (IN with)
+                (NP (DT the) (NN store))))))))
+    (, ,)
+    (S
+      (NP (PRP they))
+      (VP (VBP have)
+        (S
+          (NP
+            (NP (JJ great) (NNS products))
+            (PP (IN at)
+              (NP (JJ low) (NNS prices))))
+          (ADJP (JJ avalible)
+            (PP (IN in)
+              (NP (NN bulk)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+nsubj(have-4, I-1)
+nsubj:xsubj(go-6, I-1)
+advmod(have-4, kind-2)
+fixed(kind-2, of-3)
+mark(go-6, to-5)
+xcomp(have-4, go-6)
+case(store-9, with-7)
+det(store-9, the-8)
+obl:with(go-6, store-9)
+punct(have-4, ,-10)
+nsubj(have-12, they-11)
+parataxis(have-4, have-12)
+amod(products-14, great-13)
+nsubj(avalible-18, products-14)
+case(prices-17, at-15)
+amod(prices-17, low-16)
+nmod:at(products-14, prices-17)
+xcomp(have-12, avalible-18)
+case(bulk-20, in-19)
+obl:in(avalible-18, bulk-20)
+
+Extracted the following NER entity mentions:

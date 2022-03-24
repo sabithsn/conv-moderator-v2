@@ -1,0 +1,203 @@
+Document: ID=E203A4E9.text (6 sentences, 42 tokens)
+
+Sentence #1 (7 tokens):
+I’m not licking a boot.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=licking CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=lick NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=boot CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=boot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m) (RB not)
+      (VP (VBG licking)
+        (NP (DT a) (NN boot))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, licking-4)
+nsubj(licking-4, I-1)
+aux(licking-4, ’m-2)
+advmod(licking-4, not-3)
+det(boot-6, a-5)
+obj(licking-4, boot-6)
+punct(licking-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+Vaccine mandates aren’t tyranny, they’re public health measures.
+
+Tokens:
+[Text=Vaccine CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=mandates CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=mandate NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=tyranny CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=tyranny NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=public CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=health CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=health NamedEntityTag=O]
+[Text=measures CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=measure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NN Vaccine) (NNS mandates))
+      (VP (VBP are) (RB n’t)
+        (NP (NN tyranny))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP ’re)
+      (NP
+        (NML (JJ public) (NN health))
+        (NNS measures)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, measures-11)
+compound(mandates-2, Vaccine-1)
+nsubj(tyranny-5, mandates-2)
+cop(tyranny-5, are-3)
+advmod(tyranny-5, n’t-4)
+ccomp(measures-11, tyranny-5)
+punct(measures-11, ,-6)
+nsubj(measures-11, they-7)
+cop(measures-11, ’re-8)
+amod(health-10, public-9)
+compound(measures-11, health-10)
+punct(measures-11, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (7 tokens):
+Do you think seatbelts are tyranny?
+
+Tokens:
+[Text=Do CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=seatbelts CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=seatbelt NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=tyranny CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=tyranny NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB think)
+      (SBAR
+        (S
+          (NP (NNS seatbelts))
+          (VP (VBP are)
+            (NP (NN tyranny))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-3)
+aux(think-3, Do-1)
+nsubj(think-3, you-2)
+nsubj(tyranny-6, seatbelts-4)
+cop(tyranny-6, are-5)
+ccomp(think-3, tyranny-6)
+punct(think-3, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (3 tokens):
+Speed limits?
+
+Tokens:
+[Text=Speed CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=VB Lemma=speed NamedEntityTag=O]
+[Text=limits CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=NNS Lemma=limit NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (VP (VB Speed)
+      (NP (NNS limits)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Speed-1)
+obj(Speed-1, limits-2)
+punct(Speed-1, ?-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (4 tokens):
+Food safety laws?
+
+Tokens:
+[Text=Food CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=Food NamedEntityTag=O]
+[Text=safety CharacterOffsetBegin=148 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=safety NamedEntityTag=O]
+[Text=laws CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=NNS Lemma=law NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NML (NNP Food) (NN safety))
+    (NNS laws) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, laws-3)
+compound(safety-2, Food-1)
+compound(laws-3, safety-2)
+punct(laws-3, ?-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (9 tokens):
+All safety measures necessary for a better society.
+
+Tokens:
+[Text=All CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=safety CharacterOffsetBegin=166 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=safety NamedEntityTag=O]
+[Text=measures CharacterOffsetBegin=173 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=measure NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=182 CharacterOffsetEnd=191 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=205 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT All) (NN safety) (NNS measures))
+    (ADJP (JJ necessary)
+      (PP (IN for)
+        (NP (DT a) (JJR better) (NN society))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, necessary-4)
+det(measures-3, All-1)
+compound(measures-3, safety-2)
+dep(necessary-4, measures-3)
+case(society-8, for-5)
+det(society-8, a-6)
+amod(society-8, better-7)
+obl:for(necessary-4, society-8)
+punct(necessary-4, .-9)
+
+Extracted the following NER entity mentions:

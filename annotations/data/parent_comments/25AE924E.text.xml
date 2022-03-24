@@ -1,0 +1,44 @@
+Document: ID=25AE924E.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+CMV:Traffic lights should not apply to cyclists.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Traffic CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=traffic NamedEntityTag=O]
+[Text=lights CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=light NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=apply CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=apply NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=cyclists CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=cyclist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (NN Traffic) (NNS lights))
+      (VP (MD should) (RB not)
+        (VP (VB apply)
+          (PP (IN to)
+            (NP (NNS cyclists))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+compound(lights-4, Traffic-3)
+nsubj(apply-7, lights-4)
+aux(apply-7, should-5)
+advmod(apply-7, not-6)
+appos(CMV-1, apply-7)
+case(cyclists-9, to-8)
+obl:to(apply-7, cyclists-9)
+punct(CMV-1, .-10)
+
+Extracted the following NER entity mentions:

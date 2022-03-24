@@ -1,0 +1,59 @@
+Document: ID=FA1F7E99.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Boy, had to go back how many decades to make your point?
+
+Tokens:
+[Text=Boy CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=boy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=decades CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=decade NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">decades</TIMEX3>]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Boy))
+    (, ,)
+    (VP (VBD had)
+      (S
+        (VP (TO to)
+          (VP (VB go)
+            (ADVP (RB back))
+            (SBAR
+              (WHADJP (WRB how) (JJ many))
+              (S
+                (NP (NNS decades))
+                (VP (TO to)
+                  (VP (VB make)
+                    (NP (PRP$ your) (NN point))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-3)
+discourse(had-3, Boy-1)
+punct(had-3, ,-2)
+mark(go-5, to-4)
+xcomp(had-3, go-5)
+advmod(go-5, back-6)
+advmod(many-8, how-7)
+dep(make-11, many-8)
+nsubj(make-11, decades-9)
+mark(make-11, to-10)
+ccomp(go-5, make-11)
+nmod:poss(point-13, your-12)
+obj(make-11, point-13)
+punct(had-3, ?-14)
+
+Extracted the following NER entity mentions:
+decades	DURATION	DURATION:-1.0

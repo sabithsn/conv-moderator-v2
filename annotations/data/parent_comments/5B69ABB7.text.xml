@@ -1,0 +1,165 @@
+Document: ID=5B69ABB7.text (3 sentences, 38 tokens)
+
+Sentence #1 (13 tokens):
+There is a woman where I live who grows a fucking moustache.
+
+Tokens:
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=live NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=grows CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=grow NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=fucking NamedEntityTag=O]
+[Text=moustache CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=moustache NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN woman))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP I))
+            (VP (VBP live)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ grows)
+                    (NP (DT a) (JJ fucking) (NN moustache))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+expl(is-2, There-1)
+det(woman-4, a-3)
+nsubj(is-2, woman-4)
+nsubj(grows-9, woman-4)
+advmod(live-7, where-5)
+nsubj(live-7, I-6)
+acl:relcl(woman-4, live-7)
+ref(woman-4, who-8)
+ccomp(live-7, grows-9)
+det(moustache-12, a-10)
+amod(moustache-12, fucking-11)
+obj(grows-9, moustache-12)
+punct(is-2, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+She also smells like rotting cow shit but WAAAAAAAY worse.
+
+Tokens:
+[Text=She CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=smells CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=smell NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=rotting CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=VBG Lemma=rot NamedEntityTag=O]
+[Text=cow CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=cow NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=WAAAAAAAY CharacterOffsetBegin=103 CharacterOffsetEnd=112 PartOfSpeech=RB Lemma=waaaaaaay NamedEntityTag=O]
+[Text=worse CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (ADVP (RB also))
+    (VP (VBZ smells)
+      (PP (IN like)
+        (S
+          (VP (VBG rotting)
+            (UCP
+              (NP (NN cow) (NN shit))
+              (CC but)
+              (ADVP (RB WAAAAAAAY))
+              (ADJP (JJR worse)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, smells-3)
+nsubj(smells-3, She-1)
+advmod(smells-3, also-2)
+mark(rotting-5, like-4)
+advcl:like(smells-3, rotting-5)
+compound(shit-7, cow-6)
+obj(rotting-5, shit-7)
+cc(worse-10, but-8)
+advmod(worse-10, WAAAAAAAY-9)
+obj(rotting-5, worse-10)
+conj:but(shit-7, worse-10)
+punct(smells-3, .-11)
+
+Extracted the following NER entity mentions:
+She	PERSON	-
+
+Sentence #3 (14 tokens):
+Her smelling like shit is unrelated from her genes being fucked beyond redemption.
+
+Tokens:
+[Text=Her CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=smelling CharacterOffsetBegin=125 CharacterOffsetEnd=133 PartOfSpeech=VBG Lemma=smell NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=unrelated CharacterOffsetBegin=147 CharacterOffsetEnd=156 PartOfSpeech=JJ Lemma=unrelated NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=genes CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=NNS Lemma=gene NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=172 CharacterOffsetEnd=177 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=fucked CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=VBN Lemma=fuck NamedEntityTag=O]
+[Text=beyond CharacterOffsetBegin=185 CharacterOffsetEnd=191 PartOfSpeech=IN Lemma=beyond NamedEntityTag=O]
+[Text=redemption CharacterOffsetBegin=192 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=redemption NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Her)
+      (VP (VBG smelling)
+        (PP (IN like)
+          (NP (NN shit)))))
+    (VP (VBZ is)
+      (ADJP (JJ unrelated)
+        (PP (IN from)
+          (NP (PRP$ her) (NNS genes))))
+      (S
+        (VP (VBG being)
+          (VP (VBN fucked)
+            (PP (IN beyond)
+              (NP (NN redemption)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, unrelated-6)
+nsubj(unrelated-6, Her-1)
+dep(Her-1, smelling-2)
+case(shit-4, like-3)
+obl:like(smelling-2, shit-4)
+cop(unrelated-6, is-5)
+case(genes-9, from-7)
+nmod:poss(genes-9, her-8)
+obl:from(unrelated-6, genes-9)
+aux:pass(fucked-11, being-10)
+xcomp(unrelated-6, fucked-11)
+case(redemption-13, beyond-12)
+obl:beyond(fucked-11, redemption-13)
+punct(unrelated-6, .-14)
+
+Extracted the following NER entity mentions:
+Her	PERSON	-
+her	PERSON	-

@@ -1,0 +1,56 @@
+Document: ID=0C93569D.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+What’s the craziest one night stand you’ve ever had?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=craziest CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=JJS Lemma=craziest NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=night CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">night</TIMEX3>]
+[Text=stand CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=VBP Lemma=stand NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=’ve NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=have NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ ’s)
+        (SBAR
+          (S
+            (NP
+              (NP (DT the) (JJS craziest))
+              (NP-TMP (CD one) (NN night)))
+            (VP (VBP stand)
+              (S
+                (NP (PRP you))
+                (VP (VB ’ve)
+                  (ADVP (RB ever))
+                  (VP (VBN had)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-2)
+nsubj(’s-2, What-1)
+det(craziest-4, the-3)
+nsubj(stand-7, craziest-4)
+nummod(night-6, one-5)
+obl:tmod(craziest-4, night-6)
+ccomp(’s-2, stand-7)
+nsubj(’ve-9, you-8)
+ccomp(stand-7, ’ve-9)
+advmod(’ve-9, ever-10)
+dep(’ve-9, had-11)
+punct(’s-2, ?-12)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+night	TIME	TIME:-1.0

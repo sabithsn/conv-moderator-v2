@@ -1,0 +1,102 @@
+Document: ID=35219C0F.text (2 sentences, 23 tokens)
+
+Sentence #1 (10 tokens):
+Looks like it, since I'm not Jewish.
+
+Tokens:
+[Text=Looks CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Jewish CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=jewish NamedEntityTag=RELIGION]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Looks)
+      (PP (IN like)
+        (NP (PRP it)))
+      (, ,)
+      (SBAR (IN since)
+        (S
+          (NP (PRP I))
+          (VP (VBP 'm) (RB not)
+            (ADJP (JJ Jewish))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Looks-1)
+case(it-3, like-2)
+obl:like(Looks-1, it-3)
+punct(Looks-1, ,-4)
+mark(Jewish-9, since-5)
+nsubj(Jewish-9, I-6)
+cop(Jewish-9, 'm-7)
+advmod(Jewish-9, not-8)
+advcl:since(Looks-1, Jewish-9)
+punct(Looks-1, .-10)
+
+Extracted the following NER entity mentions:
+Jewish	RELIGION	MISC:0.9985531112634235
+
+Sentence #2 (13 tokens):
+Though it appears that I may not be allowed to do so.
+
+Tokens:
+[Text=Though CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=appears CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=VBZ Lemma=appear NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (S
+        (NP (PRP it))
+        (VP (VBZ appears)
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (MD may) (RB not)
+                (VP (VB be)
+                  (VP (VBN allowed)
+                    (S
+                      (VP (TO to)
+                        (VP (VB do))))))))))))
+    (ADVP (RB so))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, appears-3)
+mark(appears-3, Though-1)
+nsubj(appears-3, it-2)
+mark(allowed-9, that-4)
+nsubj:pass(allowed-9, I-5)
+nsubj:xsubj(do-11, I-5)
+aux(allowed-9, may-6)
+advmod(allowed-9, not-7)
+aux:pass(allowed-9, be-8)
+ccomp(appears-3, allowed-9)
+mark(do-11, to-10)
+xcomp(allowed-9, do-11)
+advmod(appears-3, so-12)
+punct(appears-3, .-13)
+
+Extracted the following NER entity mentions:

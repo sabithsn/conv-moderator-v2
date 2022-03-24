@@ -1,0 +1,45 @@
+Document: ID=4CB68CBD.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+BLM Leader Sentenced To 6 Years For Illegally Voting
+
+Tokens:
+[Text=BLM CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=BLM NamedEntityTag=O]
+[Text=Leader CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Leader NamedEntityTag=TITLE]
+[Text=Sentenced CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Sentenced NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=CD Lemma=6 NamedEntityTag=DURATION NormalizedNamedEntityTag=P6Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P6Y">6 Years</TIMEX3>]
+[Text=Years CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P6Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P6Y">6 Years</TIMEX3>]
+[Text=For CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Illegally CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=illegally NamedEntityTag=O]
+[Text=Voting CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Voting NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP
+          (NML (NNP BLM) (NNP Leader))
+          (NNP Sentenced))
+        (TO To)
+        (NP (CD 6) (NNS Years)))
+      (PP (IN For)
+        (ADVP (RB Illegally))))
+    (NP (NNP Voting))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sentenced-3)
+compound(Leader-2, BLM-1)
+compound(Sentenced-3, Leader-2)
+dep(Sentenced-3, To-4)
+nummod(Years-6, 6-5)
+dep(Sentenced-3, Years-6)
+case(Illegally-8, For-7)
+acl:for(Sentenced-3, Illegally-8)
+dep(Sentenced-3, Voting-9)
+
+Extracted the following NER entity mentions:
+Leader	TITLE	-
+6 Years	DURATION	DURATION:-1.0

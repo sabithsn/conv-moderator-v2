@@ -1,0 +1,49 @@
+Document: ID=FE8C2C59.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Israeli police beats a 12 year old girl in East Jerusalem
+
+Tokens:
+[Text=Israeli CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=israeli NamedEntityTag=NATIONALITY]
+[Text=police CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=police NamedEntityTag=O]
+[Text=beats CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=beat NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=12 CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=CD Lemma=12 NamedEntityTag=DURATION NormalizedNamedEntityTag=P12Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P12Y">12 year old</TIMEX3>]
+[Text=year CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P12Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P12Y">12 year old</TIMEX3>]
+[Text=old CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P12Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P12Y">12 year old</TIMEX3>]
+[Text=girl CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=East CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=East NamedEntityTag=LOCATION]
+[Text=Jerusalem CharacterOffsetBegin=48 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Jerusalem NamedEntityTag=CITY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Israeli) (NN police))
+    (VP (VBZ beats)
+      (NP
+        (NP (DT a)
+          (NML (CD 12) (NN year))
+          (JJ old) (NN girl))
+        (PP (IN in)
+          (NP (NNP East) (NNP Jerusalem)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beats-3)
+amod(police-2, Israeli-1)
+nsubj(beats-3, police-2)
+det(girl-8, a-4)
+nummod(year-6, 12-5)
+compound(girl-8, year-6)
+amod(girl-8, old-7)
+obj(beats-3, girl-8)
+case(Jerusalem-11, in-9)
+compound(Jerusalem-11, East-10)
+nmod:in(girl-8, Jerusalem-11)
+
+Extracted the following NER entity mentions:
+Israeli	NATIONALITY	MISC:0.9999972465777026
+12 year old	DURATION	DURATION:-1.0
+East	LOCATION	LOCATION:0.9450045304363386
+Jerusalem	CITY	LOCATION:0.9516596931682162

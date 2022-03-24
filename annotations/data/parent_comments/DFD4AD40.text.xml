@@ -1,0 +1,51 @@
+Document: ID=DFD4AD40.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Trump ally moves to decertify 2020 election in three Arizona counties
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=ally CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=ally NamedEntityTag=O]
+[Text=moves CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=move NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=decertify CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=decertify NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t1" type="DATE" value="2020">2020</TIMEX3>]
+[Text=election CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=Arizona CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Arizona NamedEntityTag=STATE_OR_PROVINCE]
+[Text=counties CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=county NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump) (NN ally))
+    (VP (VBZ moves)
+      (S
+        (VP (TO to)
+          (VP (VB decertify)
+            (NP
+              (NP (CD 2020) (NN election))
+              (PP (IN in)
+                (NP (CD three) (NNP Arizona) (NNS counties))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, moves-3)
+compound(ally-2, Trump-1)
+nsubj(moves-3, ally-2)
+nsubj:xsubj(decertify-5, ally-2)
+mark(decertify-5, to-4)
+xcomp(moves-3, decertify-5)
+nummod(election-7, 2020-6)
+obj(decertify-5, election-7)
+case(counties-11, in-8)
+nummod(counties-11, three-9)
+compound(counties-11, Arizona-10)
+nmod:in(election-7, counties-11)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.4960891007378914
+2020	DATE	DATE:0.6071646828674543
+three	NUMBER	NUMBER:-1.0
+Arizona	STATE_OR_PROVINCE	LOCATION:0.9994061303552827

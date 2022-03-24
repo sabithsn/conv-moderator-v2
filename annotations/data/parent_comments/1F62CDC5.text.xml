@@ -1,0 +1,76 @@
+Document: ID=1F62CDC5.text (2 sentences, 16 tokens)
+
+Sentence #1 (9 tokens):
+Is he still flyin his flags from it?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=flyin CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=flyin NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=flags CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=flag NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP he))
+    (ADJP (RB still))
+    (S
+      (VP (VBP flyin)
+        (NP (PRP$ his) (NNS flags))
+        (PP (IN from)
+          (NP (PRP it)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, still-3)
+cop(still-3, Is-1)
+nsubj(still-3, he-2)
+dep(still-3, flyin-4)
+nmod:poss(flags-6, his-5)
+obj(flyin-4, flags-6)
+case(it-8, from-7)
+obl:from(flyin-4, it-8)
+punct(still-3, ?-9)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+his	PERSON	-
+
+Sentence #2 (7 tokens):
+Teeny weenie syndrome runs deep in those
+
+Tokens:
+[Text=Teeny CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=teeny NamedEntityTag=O]
+[Text=weenie CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=weenie NamedEntityTag=O]
+[Text=syndrome CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=syndrome NamedEntityTag=O]
+[Text=runs CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VBZ Lemma=run NamedEntityTag=O]
+[Text=deep CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=deep NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Teeny) (NN weenie) (NN syndrome))
+    (VP (VBZ runs)
+      (ADVP (RB deep))
+      (PP (IN in)
+        (NP (DT those))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, runs-4)
+amod(syndrome-3, Teeny-1)
+compound(syndrome-3, weenie-2)
+nsubj(runs-4, syndrome-3)
+advmod(runs-4, deep-5)
+case(those-7, in-6)
+obl:in(runs-4, those-7)
+
+Extracted the following NER entity mentions:

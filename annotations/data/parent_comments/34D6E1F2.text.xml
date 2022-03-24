@@ -1,0 +1,44 @@
+Document: ID=34D6E1F2.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Rep. Liz Cheney breaks her campaign's quarterly fundraising record
+
+Tokens:
+[Text=Rep. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Liz CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Liz NamedEntityTag=PERSON]
+[Text=Cheney CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Cheney NamedEntityTag=PERSON]
+[Text=breaks CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBZ Lemma=break NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=campaign CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=campaign NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=quarterly CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=quarterly NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P3M" quant="EVERY" tid="t1" type="SET" value="P3M">quarterly</TIMEX3>]
+[Text=fundraising CharacterOffsetBegin=48 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=fundraising NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Rep.) (NNP Liz) (NNP Cheney))
+    (VP (VBZ breaks)
+      (NP
+        (NP (PRP$ her) (NN campaign) (POS 's))
+        (JJ quarterly) (NN fundraising) (NN record)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, breaks-4)
+compound(Cheney-3, Rep.-1)
+compound(Cheney-3, Liz-2)
+nsubj(breaks-4, Cheney-3)
+nmod:poss(campaign-6, her-5)
+nmod:poss(record-10, campaign-6)
+case(campaign-6, 's-7)
+amod(record-10, quarterly-8)
+compound(record-10, fundraising-9)
+obj(breaks-4, record-10)
+
+Extracted the following NER entity mentions:
+Rep.	TITLE	-
+Liz Cheney	PERSON	PERSON:0.9999858261146041
+quarterly	SET	SET:-1.0
+her	PERSON	-

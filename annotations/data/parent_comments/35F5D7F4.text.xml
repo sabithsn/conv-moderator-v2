@@ -1,0 +1,53 @@
+Document: ID=35F5D7F4.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+[Serious] What was the biggest crime committed in your town?
+
+Tokens:
+[Text=[ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=[ NamedEntityTag=O]
+[Text=Serious CharacterOffsetBegin=1 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Serious NamedEntityTag=O]
+[Text=] CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=-RRB- Lemma=] NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=biggest CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=JJS Lemma=biggest NamedEntityTag=O]
+[Text=crime CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=crime NamedEntityTag=O]
+[Text=committed CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=VBN Lemma=commit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=town CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=town NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (-LRB- [) (NNP Serious) (-RRB- ]))
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBD was)
+          (NP
+            (NP (DT the) (JJS biggest) (NN crime))
+            (VP (VBN committed)
+              (PP (IN in)
+                (NP (PRP$ your) (NN town))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Serious-2)
+punct(Serious-2, [-1)
+nsubj(crime-8, Serious-2)
+punct(Serious-2, ]-3)
+ref(Serious-2, What-4)
+cop(crime-8, was-5)
+det(crime-8, the-6)
+amod(crime-8, biggest-7)
+acl:relcl(Serious-2, crime-8)
+acl(crime-8, committed-9)
+case(town-12, in-10)
+nmod:poss(town-12, your-11)
+obl:in(committed-9, town-12)
+punct(Serious-2, ?-13)
+
+Extracted the following NER entity mentions:

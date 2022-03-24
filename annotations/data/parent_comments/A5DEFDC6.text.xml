@@ -1,0 +1,84 @@
+Document: ID=A5DEFDC6.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+cmv: if you’re gonna be on your phone every five minutes at the movie theater, please just stay home
+
+Tokens:
+[Text=cmv CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=phone CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="PT5M" quant="every" tid="t1" type="SET" value="PT5M">every five minutes</TIMEX3>]
+[Text=five CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=CD Lemma=five NamedEntityTag=SET Timex=<TIMEX3 periodicity="PT5M" quant="every" tid="t1" type="SET" value="PT5M">every five minutes</TIMEX3>]
+[Text=minutes CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=minute NamedEntityTag=SET Timex=<TIMEX3 periodicity="PT5M" quant="every" tid="t1" type="SET" value="PT5M">every five minutes</TIMEX3>]
+[Text=at CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=movie CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=theater CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=theater NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=stay CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=stay NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=RB Lemma=home NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP cmv))
+    (: :)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP ’re)
+            (VP (VBG gon)
+              (S
+                (VP (TO na)
+                  (VP (VB be)
+                    (PP (IN on)
+                      (NP (PRP$ your) (NN phone)))
+                    (NP-TMP (DT every) (CD five) (NNS minutes))
+                    (PP (IN at)
+                      (NP (DT the) (NN movie) (NN theater)))))))
+            (, ,)
+            (INTJ (UH please))
+            (ADVP (RB just)))))
+      (VP (VB stay)
+        (ADVP (RB home))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cmv-1)
+punct(cmv-1, :-2)
+mark(gon-6, if-3)
+nsubj(gon-6, you-4)
+nsubj:xsubj(phone-11, you-4)
+aux(gon-6, ’re-5)
+csubj(stay-22, gon-6)
+mark(phone-11, na-7)
+cop(phone-11, be-8)
+case(phone-11, on-9)
+nmod:poss(phone-11, your-10)
+xcomp(gon-6, phone-11)
+det(minutes-14, every-12)
+nummod(minutes-14, five-13)
+obl:tmod(phone-11, minutes-14)
+case(theater-18, at-15)
+det(theater-18, the-16)
+compound(theater-18, movie-17)
+obl:at(phone-11, theater-18)
+punct(gon-6, ,-19)
+discourse(gon-6, please-20)
+advmod(gon-6, just-21)
+parataxis(cmv-1, stay-22)
+advmod(stay-22, home-23)
+
+Extracted the following NER entity mentions:
+every five minutes	SET	SET:-1.0

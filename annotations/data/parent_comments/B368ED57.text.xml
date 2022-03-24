@@ -1,0 +1,68 @@
+Document: ID=B368ED57.text (2 sentences, 13 tokens)
+
+Sentence #1 (2 tokens):
+Insurrection?
+
+Tokens:
+[Text=Insurrection CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Insurrection NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Insurrection) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Insurrection-1)
+punct(Insurrection-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+You you referring to the fiery but mostly peacful protest?
+
+Tokens:
+[Text=You CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=referring CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=refer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fiery CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=fiery NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=mostly CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=mostly NamedEntityTag=O]
+[Text=peacful CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=peacful NamedEntityTag=O]
+[Text=protest CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=protest NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (PRP You))
+    (S
+      (NP (PRP you))
+      (VP (VBG referring)
+        (PP (IN to)
+          (NP (DT the)
+            (ADJP
+              (ADJP (JJ fiery))
+              (CC but)
+              (ADJP (RB mostly) (JJ peacful)))
+            (NN protest)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, You-1)
+nsubj(referring-3, you-2)
+dep(You-1, referring-3)
+case(protest-10, to-4)
+det(protest-10, the-5)
+amod(protest-10, fiery-6)
+cc(peacful-9, but-7)
+advmod(peacful-9, mostly-8)
+conj:but(fiery-6, peacful-9)
+amod(protest-10, peacful-9)
+obl:to(referring-3, protest-10)
+punct(You-1, ?-11)
+
+Extracted the following NER entity mentions:

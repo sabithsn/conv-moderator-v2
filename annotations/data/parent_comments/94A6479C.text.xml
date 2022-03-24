@@ -1,0 +1,38 @@
+Document: ID=94A6479C.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Liberal logic can't exist without doublethink.
+
+Tokens:
+[Text=Liberal CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=IDEOLOGY]
+[Text=logic CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=logic NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=exist CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=exist NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=doublethink CharacterOffsetBegin=34 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=doublethink NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Liberal) (NN logic))
+    (VP (MD ca) (RB n't)
+      (VP (VB exist)
+        (PP (IN without)
+          (NP (NN doublethink)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, exist-5)
+amod(logic-2, Liberal-1)
+nsubj(exist-5, logic-2)
+aux(exist-5, ca-3)
+advmod(exist-5, n't-4)
+case(doublethink-7, without-6)
+obl:without(exist-5, doublethink-7)
+punct(exist-5, .-8)
+
+Extracted the following NER entity mentions:
+Liberal	IDEOLOGY	-

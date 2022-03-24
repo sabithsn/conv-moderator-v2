@@ -1,0 +1,79 @@
+Document: ID=45F6DFFB.text (2 sentences, 16 tokens)
+
+Sentence #1 (11 tokens):
+And NATO was created to defend Europe from the USSR.
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=was CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=created CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBN Lemma=create NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=defend CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=defend NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=from CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=USSR CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=USSR NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (NNP NATO))
+    (VP (VBD was)
+      (VP (VBN created)
+        (S
+          (VP (TO to)
+            (VP (VB defend)
+              (NP (NNP Europe))
+              (PP (IN from)
+                (NP (DT the) (NNP USSR))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, created-4)
+cc(created-4, And-1)
+nsubj:pass(created-4, NATO-2)
+nsubj:xsubj(defend-6, NATO-2)
+aux:pass(created-4, was-3)
+mark(defend-6, to-5)
+xcomp(created-4, defend-6)
+obj(defend-6, Europe-7)
+case(USSR-10, from-8)
+det(USSR-10, the-9)
+obl:from(defend-6, USSR-10)
+punct(created-4, .-11)
+
+Extracted the following NER entity mentions:
+NATO	ORGANIZATION	ORGANIZATION:0.9929626448065157
+Europe	LOCATION	LOCATION:0.9800569231186924
+USSR	LOCATION	LOCATION:0.9939655324431248
+
+Sentence #2 (5 tokens):
+These rules mean anything.
+
+Tokens:
+[Text=These CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=rules CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=rule NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT These) (NNS rules))
+    (VP (VBP mean)
+      (NP (NN anything)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-3)
+det(rules-2, These-1)
+nsubj(mean-3, rules-2)
+obj(mean-3, anything-4)
+punct(mean-3, .-5)
+
+Extracted the following NER entity mentions:

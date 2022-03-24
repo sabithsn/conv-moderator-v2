@@ -1,0 +1,58 @@
+Document: ID=BA03871E.text (2 sentences, 10 tokens)
+
+Sentence #1 (7 tokens):
+What do u think of that?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=u CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=u NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP u))
+      (VP (VB think)
+        (PP (IN of)
+          (NP (DT that)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-4)
+obj(think-4, What-1)
+aux(think-4, do-2)
+nsubj(think-4, u-3)
+case(that-6, of-5)
+obl:of(think-4, that-6)
+punct(think-4, ?-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Not surprising.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=surprising CharacterOffsetBegin=29 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=surprising NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (RB Not)
+    (ADJP (JJ surprising))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Not-1)
+dep(Not-1, surprising-2)
+punct(Not-1, .-3)
+
+Extracted the following NER entity mentions:

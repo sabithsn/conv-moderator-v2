@@ -1,0 +1,313 @@
+Document: ID=AC015929.text (5 sentences, 76 tokens)
+
+Sentence #1 (17 tokens):
+Isreal provides for their own defense and has shown that capability on more than one occasion.
+
+Tokens:
+[Text=Isreal CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Isreal NamedEntityTag=LOCATION]
+[Text=provides CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=provide NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=defense CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=defense NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=shown CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=show NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=capability CharacterOffsetBegin=57 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=capability NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=>1.0]
+[Text=occasion CharacterOffsetBegin=85 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=occasion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Isreal))
+    (VP
+      (VP (VBZ provides)
+        (PP (IN for)
+          (NP (PRP$ their) (JJ own) (NN defense))))
+      (CC and)
+      (VP (VBZ has)
+        (VP (VBN shown)
+          (NP
+            (NP (DT that) (NN capability))
+            (PP (IN on)
+              (NP
+                (QP (JJR more) (IN than) (CD one))
+                (NN occasion)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, provides-2)
+nsubj(provides-2, Isreal-1)
+nsubj(shown-9, Isreal-1)
+case(defense-6, for-3)
+nmod:poss(defense-6, their-4)
+amod(defense-6, own-5)
+obl:for(provides-2, defense-6)
+cc(shown-9, and-7)
+aux(shown-9, has-8)
+conj:and(provides-2, shown-9)
+det(capability-11, that-10)
+obj(shown-9, capability-11)
+case(occasion-16, on-12)
+advmod(one-15, more-13)
+fixed(more-13, than-14)
+nummod(occasion-16, one-15)
+nmod:on(capability-11, occasion-16)
+punct(provides-2, .-17)
+
+Extracted the following NER entity mentions:
+Isreal	LOCATION	LOCATION:0.960358839952119
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (10 tokens):
+In many cases they produce weapons better than ours.
+
+Tokens:
+[Text=In CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=cases CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NNS Lemma=case NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=produce CharacterOffsetBegin=115 CharacterOffsetEnd=122 PartOfSpeech=VBP Lemma=produce NamedEntityTag=O]
+[Text=weapons CharacterOffsetBegin=123 CharacterOffsetEnd=130 PartOfSpeech=NNS Lemma=weapon NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=131 CharacterOffsetEnd=137 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=ours CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=ours NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ many) (NNS cases)))
+    (NP (PRP they))
+    (VP (VBP produce)
+      (S
+        (NP (NNS weapons))
+        (ADJP
+          (ADJP (JJR better))
+          (PP (IN than)
+            (NP (PRP ours))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, produce-5)
+case(cases-3, In-1)
+amod(cases-3, many-2)
+obl:in(produce-5, cases-3)
+nsubj(produce-5, they-4)
+nsubj(better-7, weapons-6)
+xcomp(produce-5, better-7)
+case(ours-9, than-8)
+obl:than(better-7, ours-9)
+punct(produce-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (20 tokens):
+They don't sit in NATO and cry that they can't afford to provide for their own defense.
+
+Tokens:
+[Text=They CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sit CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=VB Lemma=sit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cry CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=VB Lemma=cry NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=191 CharacterOffsetEnd=193 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=afford CharacterOffsetBegin=197 CharacterOffsetEnd=203 PartOfSpeech=VB Lemma=afford NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=207 CharacterOffsetEnd=214 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=219 CharacterOffsetEnd=224 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=defense CharacterOffsetBegin=229 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=defense NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP do) (RB n't)
+      (VP
+        (VP (VB sit)
+          (PP (IN in)
+            (NP (NNP NATO))))
+        (CC and)
+        (VP (VB cry)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (MD ca) (RB n't)
+                (VP (VB afford)
+                  (S
+                    (VP (TO to)
+                      (VP (VB provide)
+                        (PP (IN for)
+                          (NP (PRP$ their) (JJ own) (NN defense)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sit-4)
+nsubj(sit-4, They-1)
+nsubj(cry-8, They-1)
+aux(sit-4, do-2)
+advmod(sit-4, n't-3)
+case(NATO-6, in-5)
+obl:in(sit-4, NATO-6)
+cc(cry-8, and-7)
+conj:and(sit-4, cry-8)
+mark(afford-13, that-9)
+nsubj(afford-13, they-10)
+nsubj:xsubj(provide-15, they-10)
+aux(afford-13, ca-11)
+advmod(afford-13, n't-12)
+ccomp(cry-8, afford-13)
+mark(provide-15, to-14)
+xcomp(afford-13, provide-15)
+case(defense-19, for-16)
+nmod:poss(defense-19, their-17)
+amod(defense-19, own-18)
+obl:for(provide-15, defense-19)
+punct(sit-4, .-20)
+
+Extracted the following NER entity mentions:
+NATO	ORGANIZATION	ORGANIZATION:0.9983145986315173
+
+Sentence #4 (22 tokens):
+Isreal is happy to take our assistance but if we cut them off they'll nut up and provide for themselves.
+
+Tokens:
+[Text=Isreal CharacterOffsetBegin=239 CharacterOffsetEnd=245 PartOfSpeech=NNP Lemma=Isreal NamedEntityTag=LOCATION]
+[Text=is CharacterOffsetBegin=246 CharacterOffsetEnd=248 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=249 CharacterOffsetEnd=254 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=255 CharacterOffsetEnd=257 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=258 CharacterOffsetEnd=262 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=263 CharacterOffsetEnd=266 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=assistance CharacterOffsetBegin=267 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=assistance NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=278 CharacterOffsetEnd=281 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=285 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=cut CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=VBD Lemma=cut NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=301 CharacterOffsetEnd=305 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=nut CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=NN Lemma=nut NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=313 CharacterOffsetEnd=315 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=320 CharacterOffsetEnd=327 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=themselves CharacterOffsetBegin=332 CharacterOffsetEnd=342 PartOfSpeech=PRP Lemma=themselves NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Isreal))
+      (VP (VBZ is)
+        (ADJP (JJ happy)
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (NP (PRP$ our) (NN assistance))))))))
+    (CC but)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP we))
+          (VP (VBD cut)
+            (NP (PRP them))
+            (PRT (RP off)))))
+      (NP (PRP they))
+      (VP (MD 'll)
+        (ADVP
+          (NP (NN nut))
+          (RB up))
+        (VP (CC and)
+          (VP (VB provide)
+            (PP (IN for)
+              (NP (PRP themselves)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happy-3)
+nsubj(happy-3, Isreal-1)
+nsubj:xsubj(take-5, Isreal-1)
+cop(happy-3, is-2)
+mark(take-5, to-4)
+xcomp(happy-3, take-5)
+nmod:poss(assistance-7, our-6)
+obj(take-5, assistance-7)
+cc(provide-19, but-8)
+mark(cut-11, if-9)
+nsubj(cut-11, we-10)
+advcl:if(provide-19, cut-11)
+obj(cut-11, them-12)
+compound:prt(cut-11, off-13)
+nsubj(provide-19, they-14)
+aux(provide-19, 'll-15)
+obl:npmod(up-17, nut-16)
+advmod(provide-19, up-17)
+cc(provide-19, and-18)
+conj:but(happy-3, provide-19)
+case(themselves-21, for-20)
+obl:for(provide-19, themselves-21)
+punct(happy-3, .-22)
+
+Extracted the following NER entity mentions:
+Isreal	LOCATION	LOCATION:0.9920358558675675
+
+Sentence #5 (7 tokens):
+Taiwan needs to act like Isreal.
+
+Tokens:
+[Text=Taiwan CharacterOffsetBegin=345 CharacterOffsetEnd=351 PartOfSpeech=NNP Lemma=Taiwan NamedEntityTag=COUNTRY]
+[Text=needs CharacterOffsetBegin=352 CharacterOffsetEnd=357 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=act CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=VB Lemma=act NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Isreal CharacterOffsetBegin=370 CharacterOffsetEnd=376 PartOfSpeech=NNP Lemma=Isreal NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=376 CharacterOffsetEnd=377 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Taiwan))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB act)
+            (PP (IN like)
+              (NP (NNP Isreal)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needs-2)
+nsubj(needs-2, Taiwan-1)
+nsubj:xsubj(act-4, Taiwan-1)
+mark(act-4, to-3)
+xcomp(needs-2, act-4)
+case(Isreal-6, like-5)
+obl:like(act-4, Isreal-6)
+punct(needs-2, .-7)
+
+Extracted the following NER entity mentions:
+Taiwan	COUNTRY	LOCATION:0.987405430459912
+Isreal	LOCATION	LOCATION:0.9794231134334085

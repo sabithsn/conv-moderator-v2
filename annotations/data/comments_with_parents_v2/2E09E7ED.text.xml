@@ -1,0 +1,45 @@
+Document: ID=2E09E7ED.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+The media are the cheerleaders for America’s subversion.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=media CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cheerleaders CharacterOffsetBegin=18 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=cheerleader NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=’s CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=subversion CharacterOffsetBegin=45 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=subversion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNS media))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NNS cheerleaders))
+        (PP (IN for)
+          (NP
+            (NP (NNP America) (POS ’s))
+            (NN subversion)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cheerleaders-5)
+det(media-2, The-1)
+nsubj(cheerleaders-5, media-2)
+cop(cheerleaders-5, are-3)
+det(cheerleaders-5, the-4)
+case(subversion-9, for-6)
+nmod:poss(subversion-9, America-7)
+case(America-7, ’s-8)
+nmod:for(cheerleaders-5, subversion-9)
+punct(cheerleaders-5, .-10)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.9583900052371769

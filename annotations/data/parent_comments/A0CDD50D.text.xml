@@ -1,0 +1,66 @@
+Document: ID=A0CDD50D.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Peter Doocy Asks For A Straight Answer On Keystone, Gets The Runaround From Jen Psaki
+
+Tokens:
+[Text=Peter CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Peter NamedEntityTag=PERSON]
+[Text=Doocy CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Doocy NamedEntityTag=PERSON]
+[Text=Asks CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=ask NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Straight CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=straight NamedEntityTag=O]
+[Text=Answer CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=answer NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Keystone CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=keystone NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Gets CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Runaround CharacterOffsetBegin=61 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=runaround NamedEntityTag=O]
+[Text=From CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Jen CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Jen NamedEntityTag=PERSON]
+[Text=Psaki CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Psaki NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Peter) (NNP Doocy))
+    (VP (VBZ Asks)
+      (SBAR
+        (S
+          (SBAR (IN For)
+            (S
+              (NP (DT A)
+                (ADJP (RB Straight))
+                (NN Answer))
+              (PP (IN On)
+                (NP (NN Keystone)))))
+          (, ,)
+          (VP (VBZ Gets)
+            (NP (DT The) (NN Runaround))
+            (PP (IN From)
+              (NP (NNP Jen) (NNP Psaki)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Asks-3)
+compound(Doocy-2, Peter-1)
+nsubj(Asks-3, Doocy-2)
+mark(Answer-7, For-4)
+det(Answer-7, A-5)
+amod(Answer-7, Straight-6)
+advcl:for(Gets-11, Answer-7)
+case(Keystone-9, On-8)
+dep(Answer-7, Keystone-9)
+punct(Gets-11, ,-10)
+ccomp(Asks-3, Gets-11)
+det(Runaround-13, The-12)
+obj(Gets-11, Runaround-13)
+case(Psaki-16, From-14)
+compound(Psaki-16, Jen-15)
+obl:from(Gets-11, Psaki-16)
+
+Extracted the following NER entity mentions:
+Peter Doocy	PERSON	PERSON:0.9684032236002514
+Keystone	ORGANIZATION	ORGANIZATION:0.8602905543425727
+Jen Psaki	PERSON	PERSON:0.9935630714508357

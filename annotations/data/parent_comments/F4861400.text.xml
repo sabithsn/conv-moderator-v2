@@ -1,0 +1,42 @@
+Document: ID=F4861400.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Can't trust anything Russia says then!
+
+Tokens:
+[Text=Ca CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=trust CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=trust NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=says CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Ca) (RB n't)
+      (VP (VB trust)
+        (NP
+          (NP (NN anything))
+          (SBAR
+            (S
+              (NP (NNP Russia))
+              (VP (VBZ says)
+                (ADVP (RB then))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trust-3)
+aux(trust-3, Ca-1)
+advmod(trust-3, n't-2)
+obj(trust-3, anything-4)
+nsubj(says-6, Russia-5)
+acl:relcl(anything-4, says-6)
+advmod(says-6, then-7)
+punct(trust-3, !-8)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9971234683782322

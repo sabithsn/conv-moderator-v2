@@ -1,0 +1,178 @@
+Document: ID=2CCF295A.text (5 sentences, 36 tokens)
+
+Sentence #1 (2 tokens):
+Both.
+
+Tokens:
+[Text=Both CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT Both))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Both-1)
+punct(Both-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Drive everything and everyone out.
+
+Tokens:
+[Text=Drive CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=drive NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=12 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Drive)
+      (NP (NN everything)
+        (CC and)
+        (NN everyone))
+      (PRT (RP out)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Drive-1)
+obj(Drive-1, everything-2)
+cc(everyone-4, and-3)
+obj(Drive-1, everyone-4)
+conj:and(everything-2, everyone-4)
+compound:prt(Drive-1, out-5)
+punct(Drive-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens):
+Either to prison for aiding and abetting a rapist or for child abuse.
+
+Tokens:
+[Text=Either CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=prison CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=prison NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=aiding CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=VBG Lemma=aid NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=abetting CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=VBG Lemma=abet NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rapist CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=rapist NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=child NamedEntityTag=CRIMINAL_CHARGE]
+[Text=abuse CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=abuse NamedEntityTag=CRIMINAL_CHARGE]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC Either)
+    (S
+      (PP
+        (PP (IN to)
+          (NP
+            (NP (NN prison))
+            (PP (IN for)
+              (S
+                (VP (VBG aiding)
+                  (CC and)
+                  (VBG abetting)
+                  (NP (DT a) (NN rapist)))))))
+        (CC or)
+        (PP (IN for)
+          (NP (NN child) (NN abuse)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, prison-3)
+dep(prison-3, Either-1)
+case(prison-3, to-2)
+mark(aiding-5, for-4)
+acl:for(prison-3, aiding-5)
+cc(abetting-7, and-6)
+acl:for(prison-3, abetting-7)
+conj:and(aiding-5, abetting-7)
+det(rapist-9, a-8)
+obj(aiding-5, rapist-9)
+cc(abuse-13, or-10)
+case(abuse-13, for-11)
+compound(abuse-13, child-12)
+conj:or(prison-3, abuse-13)
+punct(prison-3, .-14)
+
+Extracted the following NER entity mentions:
+child abuse	CRIMINAL_CHARGE	-
+
+Sentence #4 (11 tokens):
+Or to a permanent unemployment line barred from any classroom.
+
+Tokens:
+[Text=Or CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=permanent CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=permanent NamedEntityTag=O]
+[Text=unemployment CharacterOffsetBegin=129 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=unemployment NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=barred CharacterOffsetBegin=147 CharacterOffsetEnd=153 PartOfSpeech=VBN Lemma=bar NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=classroom CharacterOffsetBegin=163 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=classroom NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC Or)
+    (PP (IN to)
+      (NP
+        (NP (DT a) (JJ permanent) (NN unemployment) (NN line))
+        (VP (VBN barred)
+          (PP (IN from)
+            (NP (DT any) (NN classroom))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Or-1)
+case(line-6, to-2)
+det(line-6, a-3)
+amod(line-6, permanent-4)
+compound(line-6, unemployment-5)
+obl:to(Or-1, line-6)
+acl(line-6, barred-7)
+case(classroom-10, from-8)
+det(classroom-10, any-9)
+obl:from(barred-7, classroom-10)
+punct(Or-1, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (3 tokens):
+Or both.
+
+Tokens:
+[Text=Or CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC Or)
+    (NP (DT both))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, both-2)
+cc(both-2, Or-1)
+punct(both-2, .-3)
+
+Extracted the following NER entity mentions:

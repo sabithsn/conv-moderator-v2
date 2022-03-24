@@ -1,0 +1,196 @@
+Document: ID=BC36FE98.text (4 sentences, 47 tokens)
+
+Sentence #1 (5 tokens):
+This is complete nonsense.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=complete CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=complete NamedEntityTag=O]
+[Text=nonsense CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=nonsense NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (JJ complete) (NN nonsense)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, nonsense-4)
+nsubj(nonsense-4, This-1)
+cop(nonsense-4, is-2)
+amod(nonsense-4, complete-3)
+punct(nonsense-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (19 tokens):
+It just turns out that a war is more interesting than talking about covid for the thousanth time.
+
+Tokens:
+[Text=It CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=turns CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=turn NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=is CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=interesting CharacterOffsetBegin=64 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=interesting NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=thousanth CharacterOffsetBegin=109 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=thousanth NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB just))
+    (VP (VBZ turns)
+      (PRT (RP out))
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (NN war))
+          (VP (VBZ is)
+            (ADJP (RBR more) (JJ interesting)
+              (PP (IN than)
+                (S
+                  (VP (VBG talking)
+                    (PP (IN about)
+                      (NP
+                        (NP (NN covid))
+                        (PP (IN for)
+                          (NP (DT the) (JJ thousanth) (NN time)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, turns-3)
+nsubj(turns-3, It-1)
+advmod(turns-3, just-2)
+compound:prt(turns-3, out-4)
+mark(interesting-10, that-5)
+det(war-7, a-6)
+nsubj(interesting-10, war-7)
+cop(interesting-10, is-8)
+advmod(interesting-10, more-9)
+ccomp(turns-3, interesting-10)
+mark(talking-12, than-11)
+advcl:than(interesting-10, talking-12)
+case(covid-14, about-13)
+obl:about(talking-12, covid-14)
+case(time-18, for-15)
+det(time-18, the-16)
+amod(time-18, thousanth-17)
+nmod:for(covid-14, time-18)
+punct(turns-3, .-19)
+
+Extracted the following NER entity mentions:
+war	CAUSE_OF_DEATH	-
+
+Sentence #3 (15 tokens):
+Media wants to make money, more people watch war stuff than covid stuff.
+
+Tokens:
+[Text=Media CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+[Text=wants CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=146 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=watch CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=VBP Lemma=watch NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=stuff CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=stuff NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=stuff CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=stuff NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNS Media))
+      (VP (VBZ wants)
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (NP (NN money)))))))
+    (, ,)
+    (NP (JJR more) (NNS people))
+    (VP (VBP watch)
+      (NP (NN war) (NN stuff))
+      (PP (IN than)
+        (NP (JJ covid) (NN stuff))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, watch-9)
+nsubj(wants-2, Media-1)
+nsubj:xsubj(make-4, Media-1)
+ccomp(watch-9, wants-2)
+mark(make-4, to-3)
+xcomp(wants-2, make-4)
+obj(make-4, money-5)
+punct(watch-9, ,-6)
+amod(people-8, more-7)
+nsubj(watch-9, people-8)
+compound(stuff-11, war-10)
+obj(watch-9, stuff-11)
+case(stuff-14, than-12)
+amod(stuff-14, covid-13)
+obl:than(watch-9, stuff-14)
+punct(watch-9, .-15)
+
+Extracted the following NER entity mentions:
+war	CAUSE_OF_DEATH	-
+
+Sentence #4 (8 tokens):
+You don't need a big conspiracy.
+
+Tokens:
+[Text=You CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=220 CharacterOffsetEnd=230 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=. CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB n't)
+      (VP (VB need)
+        (NP (DT a) (JJ big) (NN conspiracy))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-4)
+nsubj(need-4, You-1)
+aux(need-4, do-2)
+advmod(need-4, n't-3)
+det(conspiracy-7, a-5)
+amod(conspiracy-7, big-6)
+obj(need-4, conspiracy-7)
+punct(need-4, .-8)
+
+Extracted the following NER entity mentions:
+conspiracy	CRIMINAL_CHARGE	-

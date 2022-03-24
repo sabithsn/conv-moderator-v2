@@ -1,0 +1,70 @@
+Document: ID=74529B6C.text (2 sentences, 14 tokens)
+
+Sentence #1 (9 tokens):
+Someone asked if the flag could be swapped.
+
+Tokens:
+[Text=Someone CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=flag CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=flag NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=swapped CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=VBN Lemma=swap NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Someone))
+    (VP (VBD asked)
+      (SBAR (IN if)
+        (S
+          (NP (DT the) (NN flag))
+          (VP (MD could)
+            (VP (VB be)
+              (VP (VBN swapped)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-2)
+nsubj(asked-2, Someone-1)
+mark(swapped-8, if-3)
+det(flag-5, the-4)
+nsubj:pass(swapped-8, flag-5)
+aux(swapped-8, could-6)
+aux:pass(swapped-8, be-7)
+advcl:if(asked-2, swapped-8)
+punct(asked-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Here's my attempt.
+
+Tokens:
+[Text=Here CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=attempt CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=attempt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ 's)
+      (NP (PRP$ my) (NN attempt)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attempt-4)
+nsubj(attempt-4, Here-1)
+cop(attempt-4, 's-2)
+nmod:poss(attempt-4, my-3)
+punct(attempt-4, .-5)
+
+Extracted the following NER entity mentions:

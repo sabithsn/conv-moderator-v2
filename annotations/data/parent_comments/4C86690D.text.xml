@@ -1,0 +1,51 @@
+Document: ID=4C86690D.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+He must think Americans are as dumb as he is
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=dumb CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=dumb NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD must)
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (NNPS Americans))
+            (VP (VBP are)
+              (ADJP
+                (ADJP (IN as) (JJ dumb))
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP he))
+                    (VP (VBZ is))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-3)
+nsubj(think-3, He-1)
+aux(think-3, must-2)
+nsubj(dumb-7, Americans-4)
+cop(dumb-7, are-5)
+dep(dumb-7, as-6)
+ccomp(think-3, dumb-7)
+mark(is-10, as-8)
+nsubj(is-10, he-9)
+dep(dumb-7, is-10)
+
+Extracted the following NER entity mentions:
+Americans	MISC	MISC:0.9999690340880613
+He	PERSON	-
+he	PERSON	-

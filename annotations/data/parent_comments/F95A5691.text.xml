@@ -1,0 +1,82 @@
+Document: ID=F95A5691.text (2 sentences, 18 tokens)
+
+Sentence #1 (5 tokens):
+Nah I get it.
+
+Tokens:
+[Text=Nah CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=nah NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR (IN Nah)
+    (S
+      (NP (PRP I))
+      (VP (VBP get)
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, get-3)
+mark(get-3, Nah-1)
+nsubj(get-3, I-2)
+obj(get-3, it-4)
+punct(get-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+We could've been out by now if some people weren't dipshits
+
+Tokens:
+[Text=We CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=if CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=dipshits CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=dipshit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD could)
+      (VP (VB 've)
+        (VP (VBN been)
+          (PP (RB out) (IN by)
+            (ADVP (RB now)))
+          (SBAR (IN if)
+            (S
+              (NP (DT some) (NNS people))
+              (VP (VBD were) (RB n't)
+                (NP (NNS dipshits))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, now-7)
+nsubj(now-7, We-1)
+aux(now-7, could-2)
+aux(now-7, 've-3)
+cop(now-7, been-4)
+advmod(now-7, out-5)
+case(now-7, by-6)
+mark(dipshits-13, if-8)
+det(people-10, some-9)
+nsubj(dipshits-13, people-10)
+cop(dipshits-13, were-11)
+advmod(dipshits-13, n't-12)
+advcl:if(now-7, dipshits-13)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

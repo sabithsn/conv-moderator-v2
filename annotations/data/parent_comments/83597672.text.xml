@@ -1,0 +1,383 @@
+Document: ID=83597672.text (6 sentences, 97 tokens)
+
+Sentence #1 (12 tokens):
+>I am not from US  what country are you from?
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=what CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (S
+        (VP (SYM >)
+          (NP (PRP I)))))
+    (VP (VBP am) (RB not)
+      (PP (IN from)
+        (NP
+          (NP (NNP US))
+          (SBAR
+            (WHNP (WDT what) (NN country))
+            (S
+              (VP (VBP are)
+                (NP (PRP you))
+                (PP (IN from))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, US-6)
+dep(I-2, >-1)
+nsubj(US-6, I-2)
+cop(US-6, am-3)
+advmod(US-6, not-4)
+case(US-6, from-5)
+det(country-8, US-6)
+ref(US-6, what-7)
+nsubj(you-10, country-8)
+cop(you-10, are-9)
+acl:relcl(US-6, you-10)
+obl(you-10, from-11)
+punct(US-6, ?-12)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9601129945783006
+
+Sentence #2 (12 tokens):
+because your country has probably also done some heinous shit.  >
+
+Tokens:
+[Text=because CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=heinous CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=heinous NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=-RRB- Lemma=> NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (IN because)
+    (NP (PRP$ your) (NN country))
+    (VP (VBZ has)
+      (ADVP (RB probably))
+      (ADVP (RB also))
+      (VP (VBN done)
+        (NP (DT some) (JJ heinous) (NN shit))
+        (. .)))
+    (-RRB- >)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, done-7)
+dep(done-7, because-1)
+nmod:poss(country-3, your-2)
+nsubj(done-7, country-3)
+aux(done-7, has-4)
+advmod(done-7, probably-5)
+advmod(done-7, also-6)
+det(shit-10, some-8)
+amod(shit-10, heinous-9)
+obj(done-7, shit-10)
+punct(done-7, .-11)
+punct(done-7, >-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (12 tokens):
+Saddam was an ass to his people and to the world.
+
+Tokens:
+[Text=Saddam CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Saddam NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ass CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=ass NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=136 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Saddam))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NN ass))
+        (PP
+          (PP (IN to)
+            (NP (PRP$ his) (NNS people)))
+          (CC and)
+          (PP (IN to)
+            (NP (DT the) (NN world))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ass-4)
+nsubj(ass-4, Saddam-1)
+cop(ass-4, was-2)
+det(ass-4, an-3)
+conj:and(ass-4, ass-4')
+case(people-7, to-5)
+nmod:poss(people-7, his-6)
+nmod:to(ass-4, people-7)
+cc(ass-4', and-8)
+case(world-11, to-9)
+det(world-11, the-10)
+nmod:to(ass-4', world-11)
+punct(ass-4, .-12)
+
+Extracted the following NER entity mentions:
+Saddam	PERSON	PERSON:0.999677392351028
+his	PERSON	-
+
+Sentence #4 (3 tokens):
+So what?
+
+Tokens:
+[Text=So CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB So))
+    (NP (WP what))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, what-2)
+dep(what-2, So-1)
+punct(what-2, ?-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (31 tokens):
+that doesn't change that the Iraq war was an illegal war of aggression that made things much worse for the Iraqi people, and killed a lot of them.
+
+Tokens:
+[Text=that CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Iraq CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=NNP Lemma=Iraq NamedEntityTag=CAUSE_OF_DEATH]
+[Text=war CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=was CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=illegal CharacterOffsetBegin=216 CharacterOffsetEnd=223 PartOfSpeech=JJ Lemma=illegal NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=of CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=aggression CharacterOffsetBegin=231 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=aggression NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=252 CharacterOffsetEnd=258 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=worse CharacterOffsetBegin=264 CharacterOffsetEnd=269 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Iraqi CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=JJ Lemma=iraqi NamedEntityTag=NATIONALITY]
+[Text=people CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=292 CharacterOffsetEnd=295 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=296 CharacterOffsetEnd=302 PartOfSpeech=VBD Lemma=kill NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT that))
+    (VP (VBZ does) (RB n't)
+      (VP (VB change)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NNP Iraq) (NN war))
+            (VP (VBD was)
+              (NP
+                (NP (DT an) (JJ illegal) (NN war))
+                (PP (IN of)
+                  (NP
+                    (NP (NN aggression))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP
+                          (VP (VBD made)
+                            (NP
+                              (NP (NNS things))
+                              (ADJP (RB much) (JJR worse)))
+                            (PP (IN for)
+                              (NP (DT the) (JJ Iraqi) (NNS people))))
+                          (, ,)
+                          (CC and)
+                          (VP (VBD killed)
+                            (NP
+                              (NP (DT a) (NN lot))
+                              (PP (IN of)
+                                (NP (PRP them))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, change-4)
+nsubj(change-4, that-1)
+aux(change-4, does-2)
+advmod(change-4, n't-3)
+mark(war-12, that-5)
+det(war-8, the-6)
+compound(war-8, Iraq-7)
+nsubj(war-12, war-8)
+cop(war-12, was-9)
+det(war-12, an-10)
+amod(war-12, illegal-11)
+ccomp(change-4, war-12)
+case(aggression-14, of-13)
+nmod:of(war-12, aggression-14)
+nsubj(made-16, aggression-14)
+nsubj(killed-26, aggression-14)
+ref(aggression-14, that-15)
+acl:relcl(aggression-14, made-16)
+obj(made-16, things-17)
+advmod(worse-19, much-18)
+amod(things-17, worse-19)
+case(people-23, for-20)
+det(people-23, the-21)
+amod(people-23, Iraqi-22)
+obl:for(made-16, people-23)
+punct(made-16, ,-24)
+cc(killed-26, and-25)
+acl:relcl(aggression-14, killed-26)
+conj:and(made-16, killed-26)
+det:qmod(them-30, a-27)
+fixed(a-27, lot-28)
+fixed(a-27, of-29)
+obj(killed-26, them-30)
+punct(change-4, .-31)
+
+Extracted the following NER entity mentions:
+Iraq war	CAUSE_OF_DEATH	LOCATION:0.5216638091580632
+war	CAUSE_OF_DEATH	-
+Iraqi	NATIONALITY	MISC:0.9999962965099284
+
+Sentence #6 (27 tokens):
+Unless the majority of Iraqi people wanted the US to turn their country upside down, that doesn't make the US invasion any more legitimate.
+
+Tokens:
+[Text=Unless CharacterOffsetBegin=318 CharacterOffsetEnd=324 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=majority CharacterOffsetBegin=329 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=majority NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=338 CharacterOffsetEnd=340 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Iraqi CharacterOffsetBegin=341 CharacterOffsetEnd=346 PartOfSpeech=JJ Lemma=iraqi NamedEntityTag=NATIONALITY]
+[Text=people CharacterOffsetBegin=347 CharacterOffsetEnd=353 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=365 CharacterOffsetEnd=367 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=to CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=VB Lemma=turn NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=382 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=upside CharacterOffsetBegin=390 CharacterOffsetEnd=396 PartOfSpeech=RB Lemma=upside NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=401 CharacterOffsetEnd=402 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=412 CharacterOffsetEnd=415 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=416 CharacterOffsetEnd=420 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=425 CharacterOffsetEnd=427 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=invasion CharacterOffsetBegin=428 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=RB Lemma=any NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=441 CharacterOffsetEnd=445 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=legitimate CharacterOffsetBegin=446 CharacterOffsetEnd=456 PartOfSpeech=JJ Lemma=legitimate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=456 CharacterOffsetEnd=457 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN Unless)
+      (S
+        (NP
+          (NP (DT the) (NN majority))
+          (PP (IN of)
+            (NP (JJ Iraqi) (NNS people))))
+        (VP (VBD wanted)
+          (NP (DT the) (NNP US))
+          (S
+            (VP (TO to)
+              (VP (VB turn)
+                (NP (PRP$ their) (NN country))
+                (ADVP (RB upside) (RB down))))))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ does) (RB n't)
+      (VP (VB make)
+        (S
+          (NP (DT the) (NNP US) (NN invasion))
+          (ADJP
+            (ADVP (RB any) (RBR more))
+            (JJ legitimate)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-20)
+mark(wanted-7, Unless-1)
+det(majority-3, the-2)
+nsubj(wanted-7, majority-3)
+case(people-6, of-4)
+amod(people-6, Iraqi-5)
+nmod:of(majority-3, people-6)
+advcl:unless(make-20, wanted-7)
+det(US-9, the-8)
+obj(wanted-7, US-9)
+mark(turn-11, to-10)
+advcl:to(wanted-7, turn-11)
+nmod:poss(country-13, their-12)
+obj(turn-11, country-13)
+advmod(down-15, upside-14)
+advmod(turn-11, down-15)
+punct(make-20, ,-16)
+nsubj(make-20, that-17)
+aux(make-20, does-18)
+advmod(make-20, n't-19)
+det(invasion-23, the-21)
+compound(invasion-23, US-22)
+nsubj(legitimate-26, invasion-23)
+advmod(more-25, any-24)
+advmod(legitimate-26, more-25)
+xcomp(make-20, legitimate-26)
+punct(make-20, .-27)
+
+Extracted the following NER entity mentions:
+Iraqi	NATIONALITY	MISC:0.9999923782980301
+US	COUNTRY	LOCATION:0.9582297425427772
+US	COUNTRY	LOCATION:0.9878813495182648

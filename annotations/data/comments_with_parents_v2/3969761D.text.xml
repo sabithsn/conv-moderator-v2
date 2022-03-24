@@ -1,0 +1,51 @@
+Document: ID=3969761D.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+New York City cops shot dead in Harlem, sources say
+
+Tokens:
+[Text=New CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=New NamedEntityTag=CITY]
+[Text=York CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=York NamedEntityTag=CITY]
+[Text=City CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=City NamedEntityTag=CITY]
+[Text=cops CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=cop NamedEntityTag=O]
+[Text=shot CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBD Lemma=shoot NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Harlem CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Harlem NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sources CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=source NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NML (NNP New) (NNP York) (NNP City))
+        (NNS cops))
+      (VP (VBD shot)
+        (ADJP (JJ dead))
+        (PP (IN in)
+          (NP (NNP Harlem)))))
+    (, ,)
+    (S
+      (NP (NNS sources))
+      (VP (VBP say)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shot-5)
+compound(City-3, New-1)
+compound(City-3, York-2)
+compound(cops-4, City-3)
+nsubj(shot-5, cops-4)
+xcomp(shot-5, dead-6)
+case(Harlem-8, in-7)
+obl:in(shot-5, Harlem-8)
+punct(shot-5, ,-9)
+nsubj(say-11, sources-10)
+parataxis(shot-5, say-11)
+
+Extracted the following NER entity mentions:
+New York City	CITY	LOCATION:0.997592695461354
+Harlem	LOCATION	LOCATION:0.996676446993845

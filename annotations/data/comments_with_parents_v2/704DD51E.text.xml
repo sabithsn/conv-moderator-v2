@@ -1,0 +1,47 @@
+Document: ID=704DD51E.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+ELI5: Why is it called Shelling(Artillery)?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=Shelling CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Shelling NamedEntityTag=CAUSE_OF_DEATH]
+[Text=( CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=Artillery CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Artillery NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ is)
+        (NP (PRP it))
+        (VP (VBN called)
+          (NP (NNP Shelling) (-LRB- -LRB-) (NNP Artillery) (-RRB- -RRB-)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(called-6, Why-3)
+aux:pass(called-6, is-4)
+nsubj:pass(called-6, it-5)
+parataxis(ELI5-1, called-6)
+compound(Artillery-9, Shelling-7)
+punct(Artillery-9, (-8)
+obj(called-6, Artillery-9)
+punct(Artillery-9, )-10)
+punct(ELI5-1, ?-11)
+
+Extracted the following NER entity mentions:
+Shelling	CAUSE_OF_DEATH	-

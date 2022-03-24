@@ -1,0 +1,77 @@
+Document: ID=90CA1EF9.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Meat Loaf mocked by left for vaccine, lockdown opposition hours after death: 'Pandemic a**hole'
+
+Tokens:
+[Text=Meat CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=meat NamedEntityTag=O]
+[Text=Loaf CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=loaf NamedEntityTag=O]
+[Text=mocked CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=mock NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=lockdown CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=lockdown NamedEntityTag=O]
+[Text=opposition CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=opposition NamedEntityTag=O]
+[Text=hours CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PTXH Timex=<TIMEX3 tid="t1" type="DURATION" value="PTXH">hours</TIMEX3>]
+[Text=after CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Pandemic CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=pandemic NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=** CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=SYM Lemma=** NamedEntityTag=O]
+[Text=hole CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=hole NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NN Meat) (NN Loaf))
+        (VP (VBN mocked)
+          (PP (IN by)
+            (S
+              (VP (VBN left)
+                (PP (IN for)
+                  (NP (NN vaccine))))))))
+      (, ,)
+      (NP
+        (NP
+          (NP (NN lockdown) (NN opposition) (NNS hours))
+          (PP (IN after)
+            (NP
+              (NP (NN death))
+              (: :) (`` '))
+            (NP (NN Pandemic) (DT a)))
+          (X (SYM **)))
+        (NN hole))
+      ('' '))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Loaf-2)
+compound(Loaf-2, Meat-1)
+acl(Loaf-2, mocked-3)
+mark(left-5, by-4)
+advcl:by(mocked-3, left-5)
+case(vaccine-7, for-6)
+obl:for(left-5, vaccine-7)
+punct(Loaf-2, ,-8)
+compound(hours-11, lockdown-9)
+compound(hours-11, opposition-10)
+compound(hole-19, hours-11)
+case(death-13, after-12)
+nmod:after(hours-11, death-13)
+punct(death-13, :-14)
+punct(death-13, '-15)
+dep(death-13, Pandemic-16)
+dep(Pandemic-16, a-17)
+dep(hours-11, **-18)
+appos(Loaf-2, hole-19)
+punct(Loaf-2, '-20)
+
+Extracted the following NER entity mentions:
+hours	DURATION	DURATION:-1.0

@@ -1,0 +1,163 @@
+Document: ID=AA698B13.text (3 sentences, 40 tokens)
+
+Sentence #1 (19 tokens):
+A really shitty trailer of a movie about WhItE mEn assaulting wAhMeN oF cOlOr and they fight back.
+
+Tokens:
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=shitty CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=shitty NamedEntityTag=O]
+[Text=trailer CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=trailer NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=movie CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=WhItE CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=WhItE NamedEntityTag=O]
+[Text=mEn CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=mEn NamedEntityTag=O]
+[Text=assaulting CharacterOffsetBegin=51 CharacterOffsetEnd=61 PartOfSpeech=VBG Lemma=assault NamedEntityTag=O]
+[Text=wAhMeN CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=wAhMeN NamedEntityTag=O]
+[Text=oF CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=oF NamedEntityTag=O]
+[Text=cOlOr CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=cOlOr NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=VBP Lemma=fight NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT A)
+          (ADJP (RB really) (JJ shitty))
+          (NN trailer))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (NN movie))
+            (PP (IN about)
+              (NP (NNP WhItE) (NNP mEn))))))
+      (VP (VBG assaulting)
+        (NP (NNP wAhMeN) (NNP oF) (NNP cOlOr))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP fight)
+        (ADVP (RB back))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, assaulting-11)
+det(trailer-4, A-1)
+advmod(shitty-3, really-2)
+amod(trailer-4, shitty-3)
+nsubj(assaulting-11, trailer-4)
+case(movie-7, of-5)
+det(movie-7, a-6)
+nmod:of(trailer-4, movie-7)
+case(mEn-10, about-8)
+compound(mEn-10, WhItE-9)
+nmod:about(movie-7, mEn-10)
+compound(cOlOr-14, wAhMeN-12)
+compound(cOlOr-14, oF-13)
+obj(assaulting-11, cOlOr-14)
+cc(fight-17, and-15)
+nsubj(fight-17, they-16)
+conj:and(assaulting-11, fight-17)
+advmod(fight-17, back-18)
+punct(assaulting-11, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+It's called Asking for It.
+
+Tokens:
+[Text=It CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=Asking CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (VP (VBN called)
+        (S
+          (VP (VBG Asking)
+            (PP (IN for)
+              (NP (PRP It)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, called-3)
+nsubj:pass(called-3, It-1)
+aux:pass(called-3, 's-2)
+xcomp(called-3, Asking-4)
+case(It-6, for-5)
+obl:for(Asking-4, It-6)
+punct(called-3, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens):
+Got an ad for it on YouTube and it's sooo fucking bad.
+
+Tokens:
+[Text=Got CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ad CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=ad NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=YouTube CharacterOffsetBegin=146 CharacterOffsetEnd=153 PartOfSpeech=NNP Lemma=YouTube NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sooo CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=RB Lemma=sooo NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=168 CharacterOffsetEnd=175 PartOfSpeech=RB Lemma=fucking NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBD Got)
+        (NP (DT an) (NN ad))
+        (PP (IN for)
+          (NP (PRP it)))
+        (PP (IN on)
+          (NP (NNP YouTube)))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADJP (RB sooo) (RB fucking) (JJ bad))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Got-1)
+det(ad-3, an-2)
+obj(Got-1, ad-3)
+case(it-5, for-4)
+obl:for(Got-1, it-5)
+case(YouTube-7, on-6)
+obl:on(Got-1, YouTube-7)
+cc(bad-13, and-8)
+nsubj(bad-13, it-9)
+cop(bad-13, 's-10)
+advmod(bad-13, sooo-11)
+advmod(bad-13, fucking-12)
+conj:and(Got-1, bad-13)
+punct(Got-1, .-14)
+
+Extracted the following NER entity mentions:
+YouTube	ORGANIZATION	ORGANIZATION:0.9904760164620741

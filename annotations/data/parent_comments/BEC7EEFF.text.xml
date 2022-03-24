@@ -1,0 +1,99 @@
+Document: ID=BEC7EEFF.text (1 sentences, 27 tokens)
+
+Sentence #1 (27 tokens):
+ELI5: Why is it that glasses for nearsighted people cost hundreds of dollars, while glasses for farsighted people are $5 at the drugstore?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=glasses CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=glass NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=nearsighted CharacterOffsetBegin=33 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=nearsighted NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=cost NamedEntityTag=O]
+[Text=hundreds CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=hundred NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=of CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=of NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=dollars CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=, CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=glasses CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NNS Lemma=glass NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=farsighted CharacterOffsetBegin=96 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=farsighted NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=5 CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=CD Lemma=5 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=at CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=drugstore CharacterOffsetBegin=128 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=drugstore NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ is)
+        (NP (PRP it))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NNS glasses))
+              (PP (IN for)
+                (NP (JJ nearsighted) (NNS people))))
+            (VP (VBD cost)
+              (NP
+                (QP (NNS hundreds) (IN of) (NNS dollars)))
+              (, ,)
+              (SBAR (IN while)
+                (S
+                  (NP
+                    (NP (NNS glasses))
+                    (PP (IN for)
+                      (NP (JJ farsighted) (NNS people))))
+                  (VP (VBP are)
+                    (NP
+                      (NP ($ $) (CD 5))
+                      (PP (IN at)
+                        (NP (DT the) (NN drugstore))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(is-4, Why-3)
+parataxis(ELI5-1, is-4)
+nsubj(is-4, it-5)
+mark(cost-11, that-6)
+nsubj(cost-11, glasses-7)
+case(people-10, for-8)
+amod(people-10, nearsighted-9)
+nmod:for(glasses-7, people-10)
+dep(is-4, cost-11)
+dep(dollars-14, hundreds-12)
+advmod(dollars-14, of-13)
+obj(cost-11, dollars-14)
+punct(cost-11, ,-15)
+mark($-22, while-16)
+nsubj($-22, glasses-17)
+case(people-20, for-18)
+amod(people-20, farsighted-19)
+nmod:for(glasses-17, people-20)
+cop($-22, are-21)
+advcl:while(cost-11, $-22)
+nummod($-22, 5-23)
+case(drugstore-26, at-24)
+det(drugstore-26, the-25)
+nmod:at($-22, drugstore-26)
+punct(ELI5-1, ?-27)
+
+Extracted the following NER entity mentions:
+hundreds of dollars	MONEY	MONEY:0.7150098332961601
+$5	MONEY	MONEY:0.9940319721415455

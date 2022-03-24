@@ -1,0 +1,49 @@
+Document: ID=44263879.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Remember kids, when you turn 18; vote.
+
+Tokens:
+[Text=Remember CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=turn NamedEntityTag=O]
+[Text=18 CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=CD Lemma=18 NamedEntityTag=NUMBER NormalizedNamedEntityTag=18.0]
+[Text=; CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=vote NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Remember)
+      (NP (NNS kids))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP you))
+          (VP (VBP turn)
+            (NP
+              (NP (CD 18))
+              (: ;)
+              (NP (NN vote)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Remember-1)
+obj(Remember-1, kids-2)
+punct(Remember-1, ,-3)
+advmod(turn-6, when-4)
+nsubj(turn-6, you-5)
+advcl(Remember-1, turn-6)
+obj(turn-6, 18-7)
+punct(18-7, ;-8)
+dep(18-7, vote-9)
+punct(Remember-1, .-10)
+
+Extracted the following NER entity mentions:
+18	NUMBER	NUMBER:-1.0

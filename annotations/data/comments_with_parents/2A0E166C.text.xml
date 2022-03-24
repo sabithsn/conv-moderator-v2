@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>2A0E166C.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Tbf</word>
+            <lemma>tbf</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>said</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>&gt;</word>
+            <lemma>&gt;</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>SYM</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>kind</word>
+            <lemma>kind</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>tight</word>
+            <lemma>tight</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>WDT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>incorrect</word>
+            <lemma>incorrect</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>pedantic</word>
+            <lemma>pedantic</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>nerd</word>
+            <lemma>nerd</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN Tbf)) (NP (PRP they)) (VP (VBD said) (S (VP (SYM &gt;) (NP (NP (NN kind)) (PP (IN of) (NP (NP (JJ tight)) (SBAR (WHNP (WDT Which)) (S (VP (VBD was) (NP (JJ incorrect) (ADJP (NP (PRP you)) (JJ pedantic)) (NN nerd))))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="1">Tbf</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="2">they</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">kind</governor>
+            <dependent idx="4">&gt;</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">said</governor>
+            <dependent idx="5">kind</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">tight</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="5">kind</governor>
+            <dependent idx="7">tight</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">nerd</governor>
+            <dependent idx="8">Which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">nerd</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="10">incorrect</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="12">pedantic</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="12">pedantic</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">tight</governor>
+            <dependent idx="13">nerd</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="1">Tbf</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="2">they</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">kind</governor>
+            <dependent idx="4">&gt;</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">said</governor>
+            <dependent idx="5">kind</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">tight</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">kind</governor>
+            <dependent idx="7">tight</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">nerd</governor>
+            <dependent idx="8">Which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">nerd</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="10">incorrect</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="12">pedantic</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="12">pedantic</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">tight</governor>
+            <dependent idx="13">nerd</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="1">Tbf</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="2">they</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">kind</governor>
+            <dependent idx="4">&gt;</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">said</governor>
+            <dependent idx="5">kind</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">tight</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">kind</governor>
+            <dependent idx="7">tight</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">nerd</governor>
+            <dependent idx="8">Which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">nerd</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="10">incorrect</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="12">pedantic</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="12">pedantic</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">tight</governor>
+            <dependent idx="13">nerd</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="1">Tbf</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="2">they</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">kind</governor>
+            <dependent idx="4">&gt;</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">said</governor>
+            <dependent idx="5">kind</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">tight</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">kind</governor>
+            <dependent idx="7">tight</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="13">nerd</governor>
+            <dependent idx="7">tight</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="7">tight</governor>
+            <dependent idx="8">Which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">nerd</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="10">incorrect</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="12">pedantic</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="12">pedantic</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">tight</governor>
+            <dependent idx="13">nerd</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">said</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="1">Tbf</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">said</governor>
+            <dependent idx="2">they</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">kind</governor>
+            <dependent idx="4">&gt;</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">said</governor>
+            <dependent idx="5">kind</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">tight</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="5">kind</governor>
+            <dependent idx="7">tight</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="13">nerd</governor>
+            <dependent idx="7">tight</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="7">tight</governor>
+            <dependent idx="8">Which</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">nerd</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="10">incorrect</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="12">pedantic</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">nerd</governor>
+            <dependent idx="12">pedantic</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">tight</governor>
+            <dependent idx="13">nerd</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

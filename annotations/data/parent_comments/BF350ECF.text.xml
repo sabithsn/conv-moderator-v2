@@ -1,0 +1,43 @@
+Document: ID=BF350ECF.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+I bet you’re fun at klan rallies.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=bet CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBP Lemma=bet NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=fun NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=klan CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=klan NamedEntityTag=O]
+[Text=rallies CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=rally NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP bet)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP ’re)
+            (NP (NN fun))
+            (PP (IN at)
+              (NP (JJ klan) (NNS rallies)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bet-2)
+nsubj(bet-2, I-1)
+nsubj(fun-5, you-3)
+cop(fun-5, ’re-4)
+ccomp(bet-2, fun-5)
+case(rallies-8, at-6)
+amod(rallies-8, klan-7)
+obl:at(fun-5, rallies-8)
+punct(bet-2, .-9)
+
+Extracted the following NER entity mentions:

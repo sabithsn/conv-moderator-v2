@@ -1,0 +1,64 @@
+Document: ID=F05CD91C.text (2 sentences, 13 tokens)
+
+Sentence #1 (7 tokens):
+Lmao holy shit, great pun.
+
+Tokens:
+[Text=Lmao CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=lmao NamedEntityTag=PERSON]
+[Text=holy CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=holy NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=pun CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=pun NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Lmao) (JJ holy) (NN shit))
+    (, ,)
+    (NP (JJ great) (NN pun))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shit-3)
+amod(shit-3, Lmao-1)
+amod(shit-3, holy-2)
+punct(shit-3, ,-4)
+amod(pun-6, great-5)
+appos(shit-3, pun-6)
+punct(shit-3, .-7)
+
+Extracted the following NER entity mentions:
+Lmao	PERSON	PERSON:0.7538444632492499
+
+Sentence #2 (6 tokens):
+And quite true to boot.
+
+Tokens:
+[Text=And CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=true CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=true NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=boot CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=boot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC And)
+    (ADJP (RB quite) (JJ true)
+      (PP (IN to)
+        (NP (NN boot))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, true-3)
+cc(true-3, And-1)
+advmod(true-3, quite-2)
+case(boot-5, to-4)
+obl:to(true-3, boot-5)
+punct(true-3, .-6)
+
+Extracted the following NER entity mentions:

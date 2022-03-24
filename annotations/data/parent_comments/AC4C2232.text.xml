@@ -1,0 +1,96 @@
+Document: ID=AC4C2232.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+ELI5: Why do we see exhaust (I presume) trail/line/cloud from airplanes sometimes but not most of the time?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=exhaust CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=exhaust NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=presume CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=presume NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=trail CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=trail NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=cloud CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=cloud NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=airplanes CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=airplane NamedEntityTag=O]
+[Text=sometimes CharacterOffsetBegin=72 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=sometimes NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP do)
+        (NP (PRP we))
+        (VP (VB see)
+          (NP
+            (NP
+              (NP (NN exhaust)
+                (PRN (-LRB- -LRB-)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP presume)))
+                  (-RRB- -RRB-)))
+              (NP
+                (NP (NN trail) (HYPH /) (NN line) (HYPH /) (NN cloud))
+                (PP (IN from)
+                  (NP
+                    (NP (NNS airplanes))
+                    (ADVP (RB sometimes))))))
+            (CONJP (CC but)
+              (RB not))
+            (NP
+              (NP (JJS most))
+              (PP (IN of)
+                (NP (DT the) (NN time))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(see-6, Why-3)
+aux(see-6, do-4)
+nsubj(see-6, we-5)
+parataxis(ELI5-1, see-6)
+obj(see-6, exhaust-7)
+punct(presume-10, (-8)
+nsubj(presume-10, I-9)
+dep(exhaust-7, presume-10)
+punct(presume-10, )-11)
+compound(cloud-16, trail-12)
+punct(cloud-16, /-13)
+compound(cloud-16, line-14)
+punct(cloud-16, /-15)
+dep(exhaust-7, cloud-16)
+case(airplanes-18, from-17)
+nmod:from(cloud-16, airplanes-18)
+advmod(airplanes-18, sometimes-19)
+cc(not-21, but-20)
+cc(most-22, not-21)
+obj(see-6, most-22)
+conj:negcc(exhaust-7, most-22)
+case(time-25, of-23)
+det(time-25, the-24)
+nmod:of(most-22, time-25)
+punct(ELI5-1, ?-26)
+
+Extracted the following NER entity mentions:

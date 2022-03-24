@@ -1,0 +1,64 @@
+Document: ID=599DDE17.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Flair up scum or off to the trenches on the Eastern front with you.
+
+Tokens:
+[Text=Flair CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=flair NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=scum CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=scum NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=trenches CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=trench NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Eastern CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=eastern NamedEntityTag=MISC]
+[Text=front CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=front NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Flair))
+    (PP
+      (PP (IN up)
+        (NP (NN scum)))
+      (CC or)
+      (PP (IN off)
+        (PP (IN to)
+          (NP
+            (NP (DT the) (NNS trenches))
+            (PP (IN on)
+              (NP (DT the) (JJ Eastern) (NN front)))))))
+    (PP (IN with)
+      (NP (PRP you)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Flair-1)
+conj:or(Flair-1, Flair-1')
+conj:or(Flair-1, Flair-1'')
+conj:or(Flair-1, Flair-1''')
+conj:or(Flair-1, Flair-1'''')
+case(scum-3, up-2)
+obl:up(Flair-1, scum-3)
+cc(Flair-1', or-4)
+case(trenches-8, off-5)
+case(trenches-8, to-6)
+det(trenches-8, the-7)
+obl:to(Flair-1', trenches-8)
+case(front-12, on-9)
+det(front-12, the-10)
+amod(front-12, Eastern-11)
+nmod:on(trenches-8, front-12)
+case(you-14, with-13)
+obl:with(Flair-1, you-14)
+punct(Flair-1, .-15)
+
+Extracted the following NER entity mentions:
+Eastern	MISC	MISC:0.9960725019343571

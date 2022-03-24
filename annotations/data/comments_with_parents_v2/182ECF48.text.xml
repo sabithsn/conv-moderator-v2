@@ -1,0 +1,127 @@
+Document: ID=182ECF48.text (2 sentences, 31 tokens)
+
+Sentence #1 (12 tokens):
+They are called Rocky Mountain Oysters and are actually pretty good.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=Rocky CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Rocky NamedEntityTag=ORGANIZATION]
+[Text=Mountain CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Mountain NamedEntityTag=ORGANIZATION]
+[Text=Oysters CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NNPS Lemma=Oysters NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBP are)
+        (VP (VBN called)
+          (NP
+            (NML (NNP Rocky) (NNP Mountain))
+            (NNPS Oysters))))
+      (CC and)
+      (VP (VBP are)
+        (ADVP (RB actually))
+        (ADJP (RB pretty) (JJ good))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, called-3)
+nsubj:pass(called-3, They-1)
+nsubj(good-11, They-1)
+aux:pass(called-3, are-2)
+compound(Mountain-5, Rocky-4)
+compound(Oysters-6, Mountain-5)
+obj(called-3, Oysters-6)
+cc(good-11, and-7)
+cop(good-11, are-8)
+advmod(good-11, actually-9)
+advmod(good-11, pretty-10)
+conj:and(called-3, good-11)
+punct(called-3, .-12)
+
+Extracted the following NER entity mentions:
+Rocky Mountain Oysters	ORGANIZATION	ORGANIZATION:0.6091447247807081
+
+Sentence #2 (19 tokens):
+My uncle played a prank on me when I was a kid and told me they were meatballs.
+
+Tokens:
+[Text=My CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=uncle CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=uncle NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prank CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=prank NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=meatballs CharacterOffsetBegin=138 CharacterOffsetEnd=147 PartOfSpeech=NNS Lemma=meatball NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN uncle))
+    (VP
+      (VP (VBD played)
+        (NP (DT a) (NN prank))
+        (PP (IN on)
+          (NP (PRP me)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBD was)
+              (NP (DT a) (NN kid))))))
+      (CC and)
+      (VP (VBD told)
+        (NP (PRP me))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBD were)
+              (NP (NNS meatballs)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, played-3)
+nmod:poss(uncle-2, My-1)
+nsubj(played-3, uncle-2)
+nsubj(told-14, uncle-2)
+det(prank-5, a-4)
+obj(played-3, prank-5)
+case(me-7, on-6)
+obl:on(played-3, me-7)
+advmod(kid-12, when-8)
+nsubj(kid-12, I-9)
+cop(kid-12, was-10)
+det(kid-12, a-11)
+advcl(played-3, kid-12)
+cc(told-14, and-13)
+conj:and(played-3, told-14)
+obj(told-14, me-15)
+nsubj(meatballs-18, they-16)
+cop(meatballs-18, were-17)
+ccomp(told-14, meatballs-18)
+punct(played-3, .-19)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,60 @@
+Document: ID=3902A1EF.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Justice Stephen Breyer to retire from Supreme Court: AP sources | AP News
+
+Tokens:
+[Text=Justice CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Justice NamedEntityTag=O]
+[Text=Stephen CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Stephen NamedEntityTag=PERSON]
+[Text=Breyer CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Breyer NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=retire CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=retire NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Supreme CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Supreme NamedEntityTag=ORGANIZATION]
+[Text=Court CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+[Text=: CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=AP CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=ap NamedEntityTag=ORGANIZATION]
+[Text=sources CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=source NamedEntityTag=O]
+[Text=| CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=NFP Lemma=| NamedEntityTag=O]
+[Text=AP CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=AP NamedEntityTag=MISC]
+[Text=News CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=News NamedEntityTag=MISC]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Justice) (NNP Stephen) (NNP Breyer))
+      (VP (TO to)
+        (VP (VB retire)
+          (PP (IN from)
+            (NP
+              (NML
+                (NML (NNP Supreme) (NNP Court))
+                (: :)
+                (NML (NN AP)))
+              (NNS sources))))))
+    (NFP |)
+    (NP (NNP AP) (NNP News))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, News-14)
+compound(Breyer-3, Justice-1)
+compound(Breyer-3, Stephen-2)
+nsubj(retire-5, Breyer-3)
+mark(retire-5, to-4)
+dep(News-14, retire-5)
+case(sources-11, from-6)
+compound(Court-8, Supreme-7)
+dep(AP-10, Court-8)
+punct(AP-10, :-9)
+compound(sources-11, AP-10)
+obl:from(retire-5, sources-11)
+punct(News-14, |-12)
+compound(News-14, AP-13)
+
+Extracted the following NER entity mentions:
+Stephen Breyer	PERSON	PERSON:0.999985391656147
+Supreme Court	ORGANIZATION	ORGANIZATION:0.8510439765622411
+AP	ORGANIZATION	ORGANIZATION:0.5234925349873236
+AP News	MISC	MISC:0.5082835851416353

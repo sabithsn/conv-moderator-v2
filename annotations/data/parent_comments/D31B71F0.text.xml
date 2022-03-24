@@ -1,0 +1,73 @@
+Document: ID=D31B71F0.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Stacey Abrams on Not Conceding GA Election: Americans Should Be Allowed to 'Legitimately Question' Systems
+
+Tokens:
+[Text=Stacey CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Stacey NamedEntityTag=PERSON]
+[Text=Abrams CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Abrams NamedEntityTag=PERSON]
+[Text=on CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Conceding CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=concede NamedEntityTag=O]
+[Text=GA CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=GA NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Election CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Election NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=Should CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=MD Lemma=should NamedEntityTag=MISC]
+[Text=Be CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=be NamedEntityTag=MISC]
+[Text=Allowed CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=VBN Lemma=allow NamedEntityTag=MISC]
+[Text=to CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Legitimately CharacterOffsetBegin=76 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=legitimately NamedEntityTag=O]
+[Text=Question CharacterOffsetBegin=89 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Systems CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=NNPS Lemma=Systems NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Stacey) (NNP Abrams))
+      (PP (IN on)
+        (S (RB Not)
+          (VP (VBG Conceding)
+            (NP (NNP GA) (NNP Election))))))
+    (: :)
+    (NP (NNPS Americans))
+    (VP (MD Should)
+      (VP (VB Be)
+        (VP (VBN Allowed)
+          (PP (IN to)
+            (NP
+              (NML (`` ')
+                (FRAG
+                  (ADVP (RB Legitimately))
+                  (NP (NN Question)))
+                ('' '))
+              (NNPS Systems))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Allowed-12)
+compound(Abrams-2, Stacey-1)
+nsubj:pass(Allowed-12, Abrams-2)
+mark(Conceding-5, on-3)
+advmod(Conceding-5, Not-4)
+acl:on(Abrams-2, Conceding-5)
+compound(Election-7, GA-6)
+obj(Conceding-5, Election-7)
+punct(Allowed-12, :-8)
+nsubj:pass(Allowed-12, Americans-9)
+aux(Allowed-12, Should-10)
+aux:pass(Allowed-12, Be-11)
+case(Systems-18, to-13)
+punct(Question-16, '-14)
+dep(Question-16, Legitimately-15)
+compound(Systems-18, Question-16)
+punct(Question-16, '-17)
+obl:to(Allowed-12, Systems-18)
+
+Extracted the following NER entity mentions:
+Stacey Abrams	PERSON	PERSON:0.9639985146452503
+GA	STATE_OR_PROVINCE	-
+Americans Should Be Allowed	MISC	MISC:0.7177037275000665

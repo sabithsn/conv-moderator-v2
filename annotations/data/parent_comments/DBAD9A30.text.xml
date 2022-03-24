@@ -1,0 +1,195 @@
+Document: ID=DBAD9A30.text (4 sentences, 47 tokens)
+
+Sentence #1 (3 tokens):
+Lmao what?
+
+Tokens:
+[Text=Lmao CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Lmao NamedEntityTag=PERSON]
+[Text=what CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Lmao) (WP what) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, what-2)
+dep(what-2, Lmao-1)
+punct(what-2, ?-3)
+
+Extracted the following NER entity mentions:
+Lmao	PERSON	PERSON:0.9321116466057663
+
+Sentence #2 (16 tokens):
+You can’t “force feed” anyone “a double serving of STFU”.
+
+Tokens:
+[Text=You CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=force CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=force NamedEntityTag=O]
+[Text=feed CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=feed NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=double CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=double NamedEntityTag=O]
+[Text=serving CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=serving NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=STFU CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=stfu NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD ca) (RB n’t)
+      (VP
+        (NP
+          (NP (`` “)
+            (NML (NN force) (NN feed))
+            ('' ”) (NN anyone))
+          (NP (`` “)
+            (NP (DT a) (JJ double) (NN serving))
+            (PP (IN of)
+              (NP (NN STFU)))
+            ('' ”)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, anyone-8)
+nsubj(anyone-8, You-1)
+aux(anyone-8, ca-2)
+advmod(anyone-8, n’t-3)
+punct(anyone-8, “-4)
+compound(feed-6, force-5)
+compound(anyone-8, feed-6)
+punct(anyone-8, ”-7)
+punct(serving-12, “-9)
+det(serving-12, a-10)
+amod(serving-12, double-11)
+dep(anyone-8, serving-12)
+case(STFU-14, of-13)
+nmod:of(serving-12, STFU-14)
+punct(serving-12, ”-15)
+punct(anyone-8, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+Everyone is welcome to voice their opinions.
+
+Tokens:
+[Text=Everyone CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=welcome CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=welcome NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=opinions CharacterOffsetBegin=104 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=opinion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (VP (VBZ is)
+      (ADJP (JJ welcome)
+        (PP (IN to)
+          (NP (NN voice))))
+      (NP (PRP$ their) (NNS opinions)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, welcome-3)
+nsubj(welcome-3, Everyone-1)
+cop(welcome-3, is-2)
+case(voice-5, to-4)
+obl:to(welcome-3, voice-5)
+nmod:poss(opinions-7, their-6)
+dep(welcome-3, opinions-7)
+punct(welcome-3, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (20 tokens):
+Its on you to ignore it if you don’t like it, nobody should be silencing others by force
+
+Tokens:
+[Text=Its CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ignore CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=ignore NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=nobody CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=nobody NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=167 CharacterOffsetEnd=173 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=silencing CharacterOffsetBegin=177 CharacterOffsetEnd=186 PartOfSpeech=VBG Lemma=silence NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=force CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=force NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (PRP$ Its))
+        (PP (IN on)
+          (NP (PRP you))))
+      (VP (TO to)
+        (VP (VB ignore)
+          (NP (PRP it))
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP do) (RB n’t)
+                (VP (VB like)
+                  (NP (PRP it)))))))))
+    (, ,)
+    (S
+      (NP (NN nobody))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBG silencing)
+            (NP (NNS others))
+            (PP (IN by)
+              (NP (NN force)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ignore-5)
+nsubj(ignore-5, Its-1)
+case(you-3, on-2)
+nmod:on(Its-1, you-3)
+mark(ignore-5, to-4)
+obj(ignore-5, it-6)
+mark(like-11, if-7)
+nsubj(like-11, you-8)
+aux(like-11, do-9)
+advmod(like-11, n’t-10)
+advcl:if(ignore-5, like-11)
+obj(like-11, it-12)
+punct(ignore-5, ,-13)
+nsubj(silencing-17, nobody-14)
+aux(silencing-17, should-15)
+aux(silencing-17, be-16)
+parataxis(ignore-5, silencing-17)
+obj(silencing-17, others-18)
+case(force-20, by-19)
+obl:by(silencing-17, force-20)
+
+Extracted the following NER entity mentions:

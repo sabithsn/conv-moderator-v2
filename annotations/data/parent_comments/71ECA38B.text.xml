@@ -1,0 +1,56 @@
+Document: ID=71ECA38B.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+I’m glad you figured that out *seven days later*
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=glad CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=glad NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=figured CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=figure NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=seven CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=CD Lemma=seven NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P7D Timex=<TIMEX3 alt_value="OFFSET P7D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">seven days later</TIMEX3>]
+[Text=days CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P7D Timex=<TIMEX3 alt_value="OFFSET P7D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">seven days later</TIMEX3>]
+[Text=later CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P7D Timex=<TIMEX3 alt_value="OFFSET P7D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">seven days later</TIMEX3>]
+[Text=* CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (ADJP (JJ glad)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD figured)
+              (NP
+                (NP
+                  (NP (DT that))
+                  (PRT (RP out)))
+                (X (NFP *)))
+              (ADVP
+                (NP (CD seven) (NNS days))
+                (RB later)))))))
+    (NFP *)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, glad-3)
+nsubj(glad-3, I-1)
+cop(glad-3, ’m-2)
+nsubj(figured-5, you-4)
+ccomp(glad-3, figured-5)
+obj(figured-5, that-6)
+dep(that-6, out-7)
+dep(that-6, *-8)
+nummod(days-10, seven-9)
+obl:npmod(later-11, days-10)
+advmod(figured-5, later-11)
+punct(glad-3, *-12)
+
+Extracted the following NER entity mentions:
+seven days later	DATE	DATE:-1.0

@@ -1,0 +1,82 @@
+Document: ID=8896865D.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+AITA for blowing up on my husband infront of his family during N.Y.E celebration after he joked about my birth experience?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=blowing CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=blow NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=husband CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=husband NamedEntityTag=O]
+[Text=infront CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=infront NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=N.Y.E CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=n.y.e NamedEntityTag=O]
+[Text=celebration CharacterOffsetBegin=69 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=celebration NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=joked CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VBD Lemma=joke NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=birth CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=birth NamedEntityTag=O]
+[Text=experience CharacterOffsetBegin=111 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=experience NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG blowing)
+          (PRT (RP up))
+          (PP (IN on)
+            (NP (PRP$ my) (NN husband)))
+          (ADVP (RB infront)))))
+    (PP (IN of)
+      (NP (PRP$ his) (NN family)))
+    (PP (IN during)
+      (NP
+        (NP (NN N.Y.E) (NN celebration))
+        (SBAR (IN after)
+          (S
+            (NP (PRP he))
+            (VP (VBD joked)
+              (PP (IN about)
+                (NP (PRP$ my) (NN birth) (NN experience))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(blowing-3, for-2)
+acl:for(AITA-1, blowing-3)
+compound:prt(blowing-3, up-4)
+case(husband-7, on-5)
+nmod:poss(husband-7, my-6)
+obl:on(blowing-3, husband-7)
+advmod(blowing-3, infront-8)
+case(family-11, of-9)
+nmod:poss(family-11, his-10)
+nmod:of(AITA-1, family-11)
+case(celebration-14, during-12)
+compound(celebration-14, N.Y.E-13)
+nmod:during(AITA-1, celebration-14)
+mark(joked-17, after-15)
+nsubj(joked-17, he-16)
+acl:after(celebration-14, joked-17)
+case(experience-21, about-18)
+nmod:poss(experience-21, my-19)
+compound(experience-21, birth-20)
+obl:about(joked-17, experience-21)
+punct(AITA-1, ?-22)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.6650083282308957
+his	PERSON	-
+he	PERSON	-

@@ -1,0 +1,53 @@
+Document: ID=3D31A2BE.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Penn Women's Swimming Team Has ‘Fallen Apart’ As School Breaks Records
+
+Tokens:
+[Text=Penn CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Penn NamedEntityTag=LOCATION]
+[Text=Women CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNPS Lemma=Women NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Swimming CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Swimming NamedEntityTag=O]
+[Text=Team CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Team NamedEntityTag=O]
+[Text=Has CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Fallen CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=fall NamedEntityTag=O]
+[Text=Apart CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=apart NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=School CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=School NamedEntityTag=O]
+[Text=Breaks CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Breaks NamedEntityTag=O]
+[Text=Records CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNPS Lemma=Records NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Penn) (NNPS Women) (POS 's))
+      (NNP Swimming) (NNP Team))
+    (VP (VBZ Has)
+      (VP (`` ‘) (VBN Fallen)
+        (ADVP (RB Apart))
+        ('' ’)
+        (PP (IN As)
+          (NP (NNP School) (NNP Breaks) (NNPS Records)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fallen-8)
+compound(Women-2, Penn-1)
+nmod:poss(Team-5, Women-2)
+case(Women-2, 's-3)
+compound(Team-5, Swimming-4)
+nsubj(Fallen-8, Team-5)
+aux(Fallen-8, Has-6)
+punct(Fallen-8, ‘-7)
+advmod(Fallen-8, Apart-9)
+punct(Fallen-8, ’-10)
+case(Records-14, As-11)
+compound(Records-14, School-12)
+compound(Records-14, Breaks-13)
+obl:as(Fallen-8, Records-14)
+
+Extracted the following NER entity mentions:
+Penn	LOCATION	LOCATION:0.3634360227816446

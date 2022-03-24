@@ -1,0 +1,62 @@
+Document: ID=27F1A036.text (2 sentences, 13 tokens)
+
+Sentence #1 (6 tokens):
+What a fierce little girl.
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fierce CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=fierce NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (WDT What) (DT a) (JJ fierce) (JJ little) (NN girl) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, girl-5)
+det(girl-5, What-1)
+det(girl-5, a-2)
+amod(girl-5, fierce-3)
+amod(girl-5, little-4)
+punct(girl-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Many grown man needed to stop her
+
+Tokens:
+[Text=Many CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=grown CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=grown NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=needed CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VBN Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Many) (JJ grown) (NN man))
+    (VP (VBN needed)
+      (S
+        (VP (TO to)
+          (VP (VB stop)
+            (NP (PRP her))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, man-3)
+amod(man-3, Many-1)
+amod(man-3, grown-2)
+acl(man-3, needed-4)
+mark(stop-6, to-5)
+xcomp(needed-4, stop-6)
+obj(stop-6, her-7)
+
+Extracted the following NER entity mentions:
+her	PERSON	-

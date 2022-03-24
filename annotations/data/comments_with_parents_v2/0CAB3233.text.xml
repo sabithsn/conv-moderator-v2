@@ -1,0 +1,108 @@
+Document: ID=0CAB3233.text (3 sentences, 21 tokens)
+
+Sentence #1 (8 tokens):
+Well, that logic certainly checks out.
+
+Tokens:
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=logic CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=logic NamedEntityTag=O]
+[Text=certainly CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=certainly NamedEntityTag=O]
+[Text=checks CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=check NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (NP (DT that) (NN logic))
+    (ADVP (RB certainly))
+    (VP (VBZ checks)
+      (PRT (RP out)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, checks-6)
+discourse(checks-6, Well-1)
+punct(checks-6, ,-2)
+det(logic-4, that-3)
+nsubj(checks-6, logic-4)
+advmod(checks-6, certainly-5)
+compound:prt(checks-6, out-7)
+punct(checks-6, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+Have you ever considered running for office in TX or FL?
+
+Tokens:
+[Text=Have CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=considered CharacterOffsetBegin=54 CharacterOffsetEnd=64 PartOfSpeech=VBN Lemma=consider NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=TX CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=TX NamedEntityTag=STATE_OR_PROVINCE]
+[Text=or CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=FL CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=FL NamedEntityTag=STATE_OR_PROVINCE]
+[Text=? CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Have)
+    (NP (PRP you))
+    (ADVP (RB ever))
+    (VP (VBN considered)
+      (S
+        (VP (VBG running)
+          (PP (IN for)
+            (NP
+              (NP (NN office))
+              (PP (IN in)
+                (NP (NNP TX)
+                  (CC or)
+                  (NNP FL))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, considered-4)
+aux(considered-4, Have-1)
+nsubj(considered-4, you-2)
+advmod(considered-4, ever-3)
+xcomp(considered-4, running-5)
+case(office-7, for-6)
+obl:for(running-5, office-7)
+case(TX-9, in-8)
+nmod:in(office-7, TX-9)
+cc(FL-11, or-10)
+nmod:in(office-7, FL-11)
+conj:or(TX-9, FL-11)
+punct(considered-4, ?-12)
+
+Extracted the following NER entity mentions:
+TX	STATE_OR_PROVINCE	LOCATION:0.7441826503868991
+FL	STATE_OR_PROVINCE	-
+
+Sentence #3 (1 tokens):
+🙄
+
+Tokens:
+[Text=🙄 CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=NFP Lemma=🙄 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (NFP 🙄)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 🙄-1)
+
+Extracted the following NER entity mentions:

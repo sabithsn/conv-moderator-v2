@@ -1,0 +1,43 @@
+Document: ID=2AAF8795.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Newsmax Ratings Soar by 40% for Trump Rally
+
+Tokens:
+[Text=Newsmax CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Newsmax NamedEntityTag=ORGANIZATION]
+[Text=Ratings CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=rating NamedEntityTag=ORGANIZATION]
+[Text=Soar CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=soar NamedEntityTag=ORGANIZATION]
+[Text=by CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=40 CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=CD Lemma=40 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%40.0]
+[Text=% CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%40.0]
+[Text=for CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=ORGANIZATION]
+[Text=Rally CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Rally NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Newsmax) (NNS Ratings))
+    (VP (VBP Soar)
+      (PP (IN by)
+        (NP
+          (NP (CD 40) (NN %))
+          (PP (IN for)
+            (NP (NNP Trump) (NNP Rally))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Soar-3)
+compound(Ratings-2, Newsmax-1)
+nsubj(Soar-3, Ratings-2)
+case(%-6, by-4)
+nummod(%-6, 40-5)
+obl:by(Soar-3, %-6)
+case(Rally-9, for-7)
+compound(Rally-9, Trump-8)
+nmod:for(%-6, Rally-9)
+
+Extracted the following NER entity mentions:
+Newsmax Ratings Soar	ORGANIZATION	ORGANIZATION:0.4094196546808192
+40%	PERCENT	PERCENT:0.9996303239807143
+Trump Rally	ORGANIZATION	ORGANIZATION:0.7708763149748015

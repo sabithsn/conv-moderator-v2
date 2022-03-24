@@ -1,0 +1,108 @@
+Document: ID=F6E29C3A.text (2 sentences, 26 tokens)
+
+Sentence #1 (12 tokens):
+FYI, worth noting that person is on the autistic spectrum.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=fyi NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=noting CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=autistic CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=autistic NamedEntityTag=O]
+[Text=spectrum CharacterOffsetBegin=49 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=spectrum NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB FYI))
+    (, ,)
+    (S
+      (ADJP (JJ worth)
+        (S
+          (VP (VBG noting)
+            (NP (DT that) (NN person))))))
+    (VP (VBZ is)
+      (PP (IN on)
+        (NP (DT the)
+          (ADJP (JJ autistic))
+          (NN spectrum))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spectrum-11)
+advmod(spectrum-11, FYI-1)
+punct(spectrum-11, ,-2)
+csubj(spectrum-11, worth-3)
+dep(worth-3, noting-4)
+det(person-6, that-5)
+obj(noting-4, person-6)
+cop(spectrum-11, is-7)
+case(spectrum-11, on-8)
+det(spectrum-11, the-9)
+amod(spectrum-11, autistic-10)
+punct(spectrum-11, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+Many of those physical things and eye contact is a function of that.
+
+Tokens:
+[Text=Many CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=eye CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=eye NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=function CharacterOffsetBegin=110 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=function NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many))
+      (PP (IN of)
+        (NP
+          (NP (DT those) (JJ physical) (NNS things))
+          (CC and)
+          (NP (NN eye) (NN contact)))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN function))
+        (PP (IN of)
+          (NP (DT that)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, function-11)
+det:qmod(things-5, Many-1)
+fixed(Many-1, of-2)
+det(things-5, those-3)
+amod(things-5, physical-4)
+nsubj(function-11, things-5)
+cc(contact-8, and-6)
+compound(contact-8, eye-7)
+conj:and(things-5, contact-8)
+nsubj(function-11, contact-8)
+cop(function-11, is-9)
+det(function-11, a-10)
+case(that-13, of-12)
+nmod:of(function-11, that-13)
+punct(function-11, .-14)
+
+Extracted the following NER entity mentions:

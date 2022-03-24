@@ -1,0 +1,47 @@
+Document: ID=BC0D7FF3.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+He should be ejected from congress as a security threat.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=ejected CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBN Lemma=eject NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=congress CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=congress NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=security CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=security NamedEntityTag=O]
+[Text=threat CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=threat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN ejected)
+          (PP (IN from)
+            (NP (NN congress)))
+          (PP (IN as)
+            (NP (DT a) (NN security) (NN threat))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ejected-4)
+nsubj:pass(ejected-4, He-1)
+aux(ejected-4, should-2)
+aux:pass(ejected-4, be-3)
+case(congress-6, from-5)
+obl:from(ejected-4, congress-6)
+case(threat-10, as-7)
+det(threat-10, a-8)
+compound(threat-10, security-9)
+obl:as(ejected-4, threat-10)
+punct(ejected-4, .-11)
+
+Extracted the following NER entity mentions:
+He	PERSON	-

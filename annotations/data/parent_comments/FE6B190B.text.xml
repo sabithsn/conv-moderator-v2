@@ -1,0 +1,56 @@
+Document: ID=FE6B190B.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+this is a quote from AOC, in case anyone's clueless.
+
+Tokens:
+[Text=this CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quote CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=quote NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=AOC CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=AOC NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=clueless CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=clueless NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT this))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN quote))
+        (PP (IN from)
+          (NP (NNP AOC))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (NN case))
+          (ADJP
+            (NP (NN anyone) (POS 's))
+            (JJ clueless)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, quote-4)
+nsubj(quote-4, this-1)
+cop(quote-4, is-2)
+det(quote-4, a-3)
+case(AOC-6, from-5)
+nmod:from(quote-4, AOC-6)
+punct(quote-4, ,-7)
+case(case-9, in-8)
+obl:in(quote-4, case-9)
+obl:npmod(clueless-12, anyone-10)
+case(anyone-10, 's-11)
+amod(case-9, clueless-12)
+punct(quote-4, .-13)
+
+Extracted the following NER entity mentions:
+AOC	ORGANIZATION	ORGANIZATION:0.9149199108808529

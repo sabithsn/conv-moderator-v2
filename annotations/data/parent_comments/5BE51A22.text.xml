@@ -1,0 +1,50 @@
+Document: ID=5BE51A22.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Twitter Bans Marjorie Taylor Greene After She Criticized AOC Over DeSantis Tweet
+
+Tokens:
+[Text=Twitter CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Twitter NamedEntityTag=O]
+[Text=Bans CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNPS Lemma=Bans NamedEntityTag=O]
+[Text=Marjorie CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Marjorie NamedEntityTag=PERSON]
+[Text=Taylor CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Taylor NamedEntityTag=PERSON]
+[Text=Greene CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=After CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=She CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=Criticized CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=criticize NamedEntityTag=O]
+[Text=AOC CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=AOC NamedEntityTag=O]
+[Text=Over CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=DeSantis CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=O]
+[Text=Tweet CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Tweet NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP
+      (NP (NNP Twitter) (NNPS Bans) (NNP Marjorie) (NNP Taylor) (NNP Greene))
+      (IN After))
+    (NP (PRP She))
+    (VP (VBD Criticized)
+      (S
+        (NP (NNP AOC))
+        (PP (IN Over)
+          (NP (NNP DeSantis) (NNP Tweet)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Criticized-8)
+compound(Greene-5, Twitter-1)
+compound(Greene-5, Bans-2)
+compound(Greene-5, Marjorie-3)
+compound(Greene-5, Taylor-4)
+obl:after(Criticized-8, Greene-5)
+case(Greene-5, After-6)
+nsubj(Criticized-8, She-7)
+xcomp(Criticized-8, AOC-9)
+case(Tweet-12, Over-10)
+compound(Tweet-12, DeSantis-11)
+dep(AOC-9, Tweet-12)
+
+Extracted the following NER entity mentions:
+Marjorie Taylor Greene	PERSON	PERSON:0.8192565689546787
+She	PERSON	-

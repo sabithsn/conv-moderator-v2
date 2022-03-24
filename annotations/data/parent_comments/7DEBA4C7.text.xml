@@ -1,0 +1,39 @@
+Document: ID=7DEBA4C7.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+The Honking shall continue until Freedom improves!
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Honking CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Honking NamedEntityTag=O]
+[Text=shall CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=MD Lemma=shall NamedEntityTag=O]
+[Text=continue CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=Freedom CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Freedom NamedEntityTag=O]
+[Text=improves CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=improve NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Honking))
+    (VP (MD shall)
+      (VP (VB continue)
+        (SBAR (IN until)
+          (S
+            (NP (NNP Freedom))
+            (VP (VBZ improves))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, continue-4)
+det(Honking-2, The-1)
+nsubj(continue-4, Honking-2)
+aux(continue-4, shall-3)
+mark(improves-7, until-5)
+nsubj(improves-7, Freedom-6)
+advcl:until(continue-4, improves-7)
+punct(continue-4, !-8)
+
+Extracted the following NER entity mentions:

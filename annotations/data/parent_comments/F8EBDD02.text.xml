@@ -1,0 +1,53 @@
+Document: ID=F8EBDD02.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+January 6 committee member says Trump 'absolutely' tampering with witnesses
+
+Tokens:
+[Text=January CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">January 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">January 6</TIMEX3>]
+[Text=committee CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=committee NamedEntityTag=O]
+[Text=member CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=member NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=absolutely CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=absolutely NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=tampering CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=tamper NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=witnesses CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=witness NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP January))
+      (NP (CD 6) (NN committee) (NN member))
+      (VP (VBZ says)
+        (NP
+          (NP (NNP Trump) (POS '))
+          (RB absolutely)))
+      ('' '))
+    (S
+      (VP (VBG tampering)
+        (PP (IN with)
+          (NP (NNS witnesses)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-5)
+obl:tmod(says-5, January-1)
+nummod(member-4, 6-2)
+compound(member-4, committee-3)
+nsubj(says-5, member-4)
+obj(says-5, Trump-6)
+case(Trump-6, '-7)
+advmod(Trump-6, absolutely-8)
+punct(says-5, '-9)
+parataxis(says-5, tampering-10)
+case(witnesses-12, with-11)
+obl:with(tampering-10, witnesses-12)
+
+Extracted the following NER entity mentions:
+January 6	DATE	DATE:-1.0
+Trump	PERSON	PERSON:0.8652656256487097

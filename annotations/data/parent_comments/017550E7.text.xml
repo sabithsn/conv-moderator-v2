@@ -1,0 +1,94 @@
+Document: ID=017550E7.text (2 sentences, 22 tokens)
+
+Sentence #1 (15 tokens):
+Shouldn’t be a “but”   Putin and US right wingers were wrong.
+
+Tokens:
+[Text=Should CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=right CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=wingers CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=winger NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (MD Should) (RB n’t)
+        (VP (VB be)
+          (NP (DT a)
+            (NML (`` “)
+              (FRAG (CC but))
+              ('' ”))
+            (NNP Putin)))))
+    (CC and)
+    (S
+      (NP (NNP US) (JJ right) (NNS wingers))
+      (VP (VBD were)
+        (ADJP (JJ wrong))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Putin-8)
+aux(Putin-8, Should-1)
+advmod(Putin-8, n’t-2)
+cop(Putin-8, be-3)
+det(Putin-8, a-4)
+punct(but-6, “-5)
+compound(Putin-8, but-6)
+punct(but-6, ”-7)
+cc(wrong-14, and-9)
+compound(wingers-12, US-10)
+amod(wingers-12, right-11)
+nsubj(wrong-14, wingers-12)
+cop(wrong-14, were-13)
+conj:and(Putin-8, wrong-14)
+punct(Putin-8, .-15)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.8641705620455432
+US	COUNTRY	LOCATION:0.9970380391288783
+
+Sentence #2 (7 tokens):
+They are on the same team.
+
+Tokens:
+[Text=They CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (PP (IN on)
+        (NP (DT the) (JJ same) (NN team))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, team-6)
+nsubj(team-6, They-1)
+cop(team-6, are-2)
+case(team-6, on-3)
+det(team-6, the-4)
+amod(team-6, same-5)
+punct(team-6, .-7)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,96 @@
+Document: ID=0D7C1764.text (2 sentences, 23 tokens)
+
+Sentence #1 (16 tokens):
+You probably still think America is the leading contributor to air pollution in the world.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=leading CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=VBG Lemma=lead NamedEntityTag=O]
+[Text=contributor CharacterOffsetBegin=48 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=contributor NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=air CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=air NamedEntityTag=O]
+[Text=pollution CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=pollution NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB probably) (RB still))
+    (VP (VB think)
+      (S
+        (NP (NNP America))
+        (VP (VBZ is)
+          (NP (DT the) (VBG leading) (NN contributor)
+            (S
+              (VP (TO to)
+                (VP (VB air)
+                  (NP (NN pollution))
+                  (PP (IN in)
+                    (NP (DT the) (NN world))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-4)
+nsubj(think-4, You-1)
+advmod(still-3, probably-2)
+advmod(think-4, still-3)
+nsubj(contributor-9, America-5)
+cop(contributor-9, is-6)
+det(contributor-9, the-7)
+amod(contributor-9, leading-8)
+ccomp(think-4, contributor-9)
+mark(air-11, to-10)
+acl:to(contributor-9, air-11)
+obj(air-11, pollution-12)
+case(world-15, in-13)
+det(world-15, the-14)
+obl:in(air-11, world-15)
+punct(think-4, .-16)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.9873321605552676
+
+Sentence #2 (7 tokens):
+Falling right into foreign governments propaganda.
+
+Tokens:
+[Text=Falling CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=VBG Lemma=fall NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=foreign CharacterOffsetBegin=110 CharacterOffsetEnd=117 PartOfSpeech=JJ Lemma=foreign NamedEntityTag=O]
+[Text=governments CharacterOffsetBegin=118 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=government NamedEntityTag=O]
+[Text=propaganda CharacterOffsetBegin=130 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=propaganda NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (VP (VBG Falling)
+      (ADVP (RB right))
+      (PP (IN into)
+        (NP (JJ foreign) (NNS governments))))
+    (NP (NN propaganda))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, propaganda-6)
+dep(propaganda-6, Falling-1)
+advmod(Falling-1, right-2)
+case(governments-5, into-3)
+amod(governments-5, foreign-4)
+obl:into(Falling-1, governments-5)
+punct(propaganda-6, .-7)
+
+Extracted the following NER entity mentions:

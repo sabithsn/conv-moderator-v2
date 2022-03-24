@@ -1,0 +1,47 @@
+Document: ID=CD2FA83A.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+I put on my socks first when im getting dressed
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBP Lemma=put NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=socks CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=sock NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=when CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=im CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=im NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=dressed CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=dressed NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP put)
+      (PP (IN on)
+        (NP (PRP$ my) (NNS socks)))
+      (SBAR
+        (ADVP (RB first))
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP im))
+          (VP (VBG getting)
+            (ADJP (JJ dressed))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, put-2)
+nsubj(put-2, I-1)
+case(socks-5, on-3)
+nmod:poss(socks-5, my-4)
+obl:on(put-2, socks-5)
+advmod(getting-9, first-6)
+advmod(getting-9, when-7)
+nsubj(getting-9, im-8)
+advcl(put-2, getting-9)
+xcomp(getting-9, dressed-10)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0

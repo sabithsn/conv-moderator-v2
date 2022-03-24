@@ -1,0 +1,66 @@
+Document: ID=D78559A0.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+I'm divorcing my husband because I'm dark and ugly and he deserves better
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=divorcing CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=VBG Lemma=divorce NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=husband CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=husband NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=dark CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=dark NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=ugly CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=ugly NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=deserves CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=deserve NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG divorcing)
+        (NP (PRP$ my) (NN husband))
+        (SBAR (IN because)
+          (S
+            (S
+              (NP (PRP I))
+              (VP (VBP 'm)
+                (ADJP (JJ dark)
+                  (CC and)
+                  (JJ ugly))))
+            (CC and)
+            (S
+              (NP (PRP he))
+              (VP (VBZ deserves)
+                (ADJP (JJR better))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, divorcing-3)
+nsubj(divorcing-3, I-1)
+aux(divorcing-3, 'm-2)
+nmod:poss(husband-5, my-4)
+obj(divorcing-3, husband-5)
+mark(dark-9, because-6)
+nsubj(dark-9, I-7)
+nsubj(ugly-11, I-7)
+cop(dark-9, 'm-8)
+advcl:because(divorcing-3, dark-9)
+cc(ugly-11, and-10)
+advcl:because(divorcing-3, ugly-11)
+conj:and(dark-9, ugly-11)
+cc(deserves-14, and-12)
+nsubj(deserves-14, he-13)
+advcl:because(divorcing-3, deserves-14)
+conj:and(dark-9, deserves-14)
+xcomp(deserves-14, better-15)
+
+Extracted the following NER entity mentions:
+he	PERSON	-

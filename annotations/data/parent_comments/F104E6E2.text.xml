@@ -1,0 +1,80 @@
+Document: ID=F104E6E2.text (2 sentences, 17 tokens)
+
+Sentence #1 (6 tokens):
+Rule 2 forbids straightforward questions.
+
+Tokens:
+[Text=Rule CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=rule NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=forbids CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=forbid NamedEntityTag=O]
+[Text=straightforward CharacterOffsetBegin=15 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=straightforward NamedEntityTag=O]
+[Text=questions CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Rule) (CD 2))
+    (VP (VBZ forbids)
+      (NP (JJ straightforward) (NNS questions)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forbids-3)
+nsubj(forbids-3, Rule-1)
+nummod(Rule-1, 2-2)
+amod(questions-5, straightforward-4)
+obj(forbids-3, questions-5)
+punct(forbids-3, .-6)
+
+Extracted the following NER entity mentions:
+2	NUMBER	NUMBER:-1.0
+
+Sentence #2 (11 tokens):
+Rule 7 requires that you search the sub before posting.
+
+Tokens:
+[Text=Rule CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=rule NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=requires CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=require NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=search CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=search NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Rule) (CD 7))
+    (VP (VBZ requires)
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VB search)
+            (NP (DT the) (NN sub))
+            (PP (IN before)
+              (S
+                (VP (VBG posting))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, requires-3)
+nsubj(requires-3, Rule-1)
+nummod(Rule-1, 7-2)
+mark(search-6, that-4)
+nsubj(search-6, you-5)
+ccomp(requires-3, search-6)
+det(sub-8, the-7)
+obj(search-6, sub-8)
+mark(posting-10, before-9)
+advcl:before(search-6, posting-10)
+punct(requires-3, .-11)
+
+Extracted the following NER entity mentions:
+7	NUMBER	NUMBER:-1.0

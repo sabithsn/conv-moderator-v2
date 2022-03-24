@@ -1,0 +1,45 @@
+Document: ID=71D2DC3E.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Fast food places should serve burgers in the morning.
+
+Tokens:
+[Text=Fast CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=fast NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=places CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=place NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=serve CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=serve NamedEntityTag=O]
+[Text=burgers CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=burger NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML (JJ Fast) (NN food))
+      (NNS places))
+    (VP (MD should)
+      (VP (VB serve)
+        (NP (NNS burgers))
+        (PP (IN in)
+          (NP (DT the) (NN morning)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, serve-5)
+amod(food-2, Fast-1)
+compound(places-3, food-2)
+nsubj(serve-5, places-3)
+aux(serve-5, should-4)
+obj(serve-5, burgers-6)
+case(morning-9, in-7)
+det(morning-9, the-8)
+obl:in(serve-5, morning-9)
+punct(serve-5, .-10)
+
+Extracted the following NER entity mentions:
+morning	TIME	TIME:0.5490745440358014

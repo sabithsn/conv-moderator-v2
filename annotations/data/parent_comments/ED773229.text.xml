@@ -1,0 +1,108 @@
+Document: ID=ED773229.text (3 sentences, 24 tokens)
+
+Sentence #1 (4 tokens):
+Its fake news.
+
+Tokens:
+[Text=Its CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=fake CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=fake NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (PRP$ Its) (JJ fake) (NN news) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, news-3)
+nmod:poss(news-3, Its-1)
+amod(news-3, fake-2)
+punct(news-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Conspiracy to take over the government is a joke.
+
+Tokens:
+[Text=Conspiracy CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RP Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=43 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=joke CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=joke NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Conspiracy)
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (PRT (RP over))
+            (NP (DT the) (NN government))))))
+    (VP (VBZ is)
+      (NP (DT a) (NN joke)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, joke-9)
+nsubj(joke-9, Conspiracy-1)
+mark(take-3, to-2)
+acl:to(Conspiracy-1, take-3)
+compound:prt(take-3, over-4)
+det(government-6, the-5)
+obj(take-3, government-6)
+cop(joke-9, is-7)
+det(joke-9, a-8)
+punct(joke-9, .-10)
+
+Extracted the following NER entity mentions:
+Conspiracy	CRIMINAL_CHARGE	-
+
+Sentence #3 (10 tokens):
+In the United States the citizens are the government.
+
+Tokens:
+[Text=In CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=United CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=United NamedEntityTag=COUNTRY]
+[Text=States CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=States NamedEntityTag=COUNTRY]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=citizens CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=citizen NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=107 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP United) (NNP States)))
+    (NP (DT the) (NNS citizens))
+    (VP (VBP are)
+      (NP (DT the) (NN government)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, government-9)
+case(States-4, In-1)
+det(States-4, the-2)
+compound(States-4, United-3)
+obl:in(government-9, States-4)
+det(citizens-6, the-5)
+nsubj(government-9, citizens-6)
+cop(government-9, are-7)
+det(government-9, the-8)
+punct(government-9, .-10)
+
+Extracted the following NER entity mentions:
+United States	COUNTRY	LOCATION:0.9991567016891729

@@ -1,0 +1,58 @@
+Document: ID=76A781CE.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+... but would he be fighting *for* Ukraine or against?
+
+Tokens:
+[Text=... CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NFP Lemma=... NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=fighting CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=VBG Lemma=fight NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=or CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (UCP (NFP ...)
+    (FRAG (CC but))
+    (S (MD would)
+      (NP (PRP he))
+      (VP
+        (VP (VB be)
+          (VP (VBG fighting)
+            (ADVP (NFP *))
+            (PP (IN for)
+              (X (NFP *))
+              (NP (NNP Ukraine)))))
+        (CC or)
+        (VP
+          (PP (IN against)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ...-1)
+dep(...-1, but-2)
+dep(fighting-6, would-3)
+nsubj(fighting-6, he-4)
+aux(fighting-6, be-5)
+dep(...-1, fighting-6)
+advmod(fighting-6, *-7)
+case(Ukraine-10, for-8)
+dep(Ukraine-10, *-9)
+obl:for(fighting-6, Ukraine-10)
+cc(against-12, or-11)
+dep(...-1, against-12)
+conj:or(fighting-6, against-12)
+punct(...-1, ?-13)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9276723900686599
+he	PERSON	-

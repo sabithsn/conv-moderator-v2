@@ -1,0 +1,90 @@
+Document: ID=6E8FF4B6.text (2 sentences, 20 tokens)
+
+Sentence #1 (9 tokens):
+I hacked into a guy's Instagram account.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hacked CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=hack NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Instagram CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Instagram NamedEntityTag=ORGANIZATION]
+[Text=account CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=account NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD hacked)
+      (PP (IN into)
+        (NP
+          (NP (DT a) (NN guy) (POS 's))
+          (NNP Instagram) (NN account))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hacked-2)
+nsubj(hacked-2, I-1)
+case(account-8, into-3)
+det(guy-5, a-4)
+nmod:poss(account-8, guy-5)
+case(guy-5, 's-6)
+compound(account-8, Instagram-7)
+obl:into(hacked-2, account-8)
+punct(hacked-2, .-9)
+
+Extracted the following NER entity mentions:
+Instagram	ORGANIZATION	ORGANIZATION:0.7207502242759541
+
+Sentence #2 (11 tokens):
+I plan on using it to get with his girlfriend.
+
+Tokens:
+[Text=I CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=plan CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=plan NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=using CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=girlfriend CharacterOffsetBegin=76 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=girlfriend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP plan)
+      (PP (IN on)
+        (S
+          (VP (VBG using)
+            (NP (PRP it))
+            (S
+              (VP (TO to)
+                (VP (VB get)
+                  (PP (IN with)
+                    (NP (PRP$ his) (NN girlfriend))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, plan-2)
+nsubj(plan-2, I-1)
+mark(using-4, on-3)
+advcl:on(plan-2, using-4)
+obj(using-4, it-5)
+mark(get-7, to-6)
+advcl:to(using-4, get-7)
+case(girlfriend-10, with-8)
+nmod:poss(girlfriend-10, his-9)
+obl:with(get-7, girlfriend-10)
+punct(plan-2, .-11)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

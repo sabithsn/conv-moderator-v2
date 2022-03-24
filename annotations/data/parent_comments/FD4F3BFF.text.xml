@@ -1,0 +1,144 @@
+Document: ID=FD4F3BFF.text (4 sentences, 28 tokens)
+
+Sentence #1 (3 tokens):
+Fuck that.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fuck)
+      (NP (DT that)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+obj(Fuck-1, that-2)
+punct(Fuck-1, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+It’s murder plain and simple.
+
+Tokens:
+[Text=It CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=murder CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=murder NamedEntityTag=CRIMINAL_CHARGE]
+[Text=plain CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=plain NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=simple CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=simple NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP
+        (NP (NN murder))
+        (ADJP (JJ plain)
+          (CC and)
+          (JJ simple))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, murder-3)
+nsubj(murder-3, It-1)
+cop(murder-3, ’s-2)
+amod(murder-3, plain-4)
+cc(simple-6, and-5)
+amod(murder-3, simple-6)
+conj:and(plain-4, simple-6)
+punct(murder-3, .-7)
+
+Extracted the following NER entity mentions:
+murder	CRIMINAL_CHARGE	-
+
+Sentence #3 (12 tokens):
+“Don’t like murder, don’t do it.”
+
+Tokens:
+[Text=“ CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=murder CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=murder NamedEntityTag=CRIMINAL_CHARGE]
+[Text=, CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` “)
+    (S
+      (VP (VBP Do) (RB n’t)
+        (VP (VB like)
+          (NP (NN murder)))))
+    (, ,)
+    (VP (VBP do) (RB n’t)
+      (VP (VB do)
+        (NP (PRP it))))
+    (. .) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-9)
+punct(do-9, “-1)
+aux(like-4, Do-2)
+advmod(like-4, n’t-3)
+ccomp(do-9, like-4)
+obj(like-4, murder-5)
+punct(do-9, ,-6)
+aux(do-9, do-7)
+advmod(do-9, n’t-8)
+obj(do-9, it-10)
+punct(do-9, .-11)
+punct(do-9, ”-12)
+
+Extracted the following NER entity mentions:
+murder	CRIMINAL_CHARGE	-
+
+Sentence #4 (6 tokens):
+Hear how stupid you sound?
+
+Tokens:
+[Text=Hear CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=stupid CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=stupid NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=sound NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Hear)
+      (SBAR
+        (WHADJP (WRB how)
+          (ADJP (JJ stupid)))
+        (S
+          (NP (PRP you))
+          (VP (VB sound)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Hear-1)
+advmod(stupid-3, how-2)
+dep(sound-5, stupid-3)
+nsubj(sound-5, you-4)
+ccomp(Hear-1, sound-5)
+punct(Hear-1, ?-6)
+
+Extracted the following NER entity mentions:

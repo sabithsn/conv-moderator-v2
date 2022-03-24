@@ -1,0 +1,42 @@
+Document: ID=40F0F51A.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+AITA for defending my girlfriend’s gag reflex?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=defending CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=defend NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=girlfriend CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=girlfriend NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=gag CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=gag NamedEntityTag=O]
+[Text=reflex CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=reflex NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG defending)
+          (NP
+            (NP (PRP$ my) (NN girlfriend) (POS ’s))
+            (NN gag) (NN reflex)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(defending-3, for-2)
+dep(AITA-1, defending-3)
+nmod:poss(girlfriend-5, my-4)
+nmod:poss(reflex-8, girlfriend-5)
+case(girlfriend-5, ’s-6)
+compound(reflex-8, gag-7)
+obj(defending-3, reflex-8)
+punct(AITA-1, ?-9)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.5072917713083415

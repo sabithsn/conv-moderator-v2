@@ -1,0 +1,92 @@
+Document: ID=D8E14BC9.text (3 sentences, 17 tokens)
+
+Sentence #1 (3 tokens):
+Biden Admin.
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Admin CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Admin NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Biden) (NNP Admin) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Admin-2)
+compound(Admin-2, Biden-1)
+punct(Admin-2, .-3)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.6381794652767093
+
+Sentence #2 (10 tokens):
+Asked Florida to Send National Guard Units for SOTU.
+
+Tokens:
+[Text=Asked CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBN Lemma=ask NamedEntityTag=O]
+[Text=Florida CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Send CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=National CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=National NamedEntityTag=O]
+[Text=Guard CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Guard NamedEntityTag=TITLE]
+[Text=Units CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Units NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=SOTU CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=SOTU NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBN Asked)
+      (NP (NNP Florida))
+      (S
+        (VP (TO to)
+          (VP (VB Send)
+            (NP
+              (NP (NNP National) (NNP Guard) (NNP Units))
+              (PP (IN for)
+                (NP (NNP SOTU))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Asked-1)
+obj(Asked-1, Florida-2)
+nsubj:xsubj(Send-4, Florida-2)
+mark(Send-4, to-3)
+xcomp(Asked-1, Send-4)
+compound(Units-7, National-5)
+compound(Units-7, Guard-6)
+obj(Send-4, Units-7)
+case(SOTU-9, for-8)
+nmod:for(Units-7, SOTU-9)
+punct(Asked-1, .-10)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.9768639107569806
+Guard	TITLE	-
+
+Sentence #3 (4 tokens):
+DeSantis Said No.
+
+Tokens:
+[Text=DeSantis CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=PERSON]
+[Text=Said CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Said NamedEntityTag=O]
+[Text=No CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=No NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP DeSantis) (NNP Said) (NNP No) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, No-3)
+compound(No-3, DeSantis-1)
+compound(No-3, Said-2)
+punct(No-3, .-4)
+
+Extracted the following NER entity mentions:
+DeSantis	PERSON	PERSON:0.7499571238918951

@@ -1,0 +1,50 @@
+Document: ID=DE481BDC.text (2 sentences, 7 tokens)
+
+Sentence #1 (5 tokens):
+Why do you ask?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=ask NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB ask)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ask-4)
+advmod(ask-4, Why-1)
+aux(ask-4, do-2)
+nsubj(ask-4, you-3)
+punct(ask-4, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+But 15
+
+Tokens:
+[Text=But CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=15.0]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC But)
+    (NP (CD 15))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 15-2)
+cc(15-2, But-1)
+
+Extracted the following NER entity mentions:
+15	NUMBER	NUMBER:-1.0

@@ -1,0 +1,67 @@
+Document: ID=9FAFB496.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+> ‘No Idea More Un-American’  Except, of course, Democrats and RINO's
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=No CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=no NamedEntityTag=MISC]
+[Text=Idea CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=idea NamedEntityTag=MISC]
+[Text=More CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=RBR Lemma=more NamedEntityTag=MISC]
+[Text=Un-American CharacterOffsetBegin=16 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=un-american NamedEntityTag=MISC]
+[Text=’ CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=Except CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=except NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=49 CharacterOffsetEnd=58 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=and CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=RINO CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=RINO NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NP (`` ‘)
+          (NP
+            (NP (DT No) (NN Idea))
+            (ADJP (RBR More) (JJ Un-American)))
+          ('' ’)
+          (PP (IN Except)))
+        (, ,)
+        (PP (IN of)
+          (NP
+            (NP (NN course))
+            (, ,)
+            (NP (NNPS Democrats))
+            (CC and)
+            (NP (NNP RINO) (POS 's))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Idea-4)
+dep(Idea-4, >-1)
+punct(Idea-4, ‘-2)
+det(Idea-4, No-3)
+conj:and(Idea-4, Idea-4')
+advmod(Un-American-6, More-5)
+amod(Idea-4, Un-American-6)
+punct(Idea-4, ’-7)
+acl(Idea-4, Except-8)
+punct(Idea-4, ,-9)
+case(course-11, of-10)
+nmod:of(Idea-4, course-11)
+punct(course-11, ,-12)
+conj(course-11, Democrats-13)
+cc(Idea-4', and-14)
+nmod:'s(Idea-4', RINO-15)
+case(RINO-15, 's-16)
+
+Extracted the following NER entity mentions:
+No Idea More Un-American	MISC	MISC:0.9991834961540123
+Democrats	IDEOLOGY	MISC:0.9997629959483574
+RINO	ORGANIZATION	ORGANIZATION:0.6705518792814978

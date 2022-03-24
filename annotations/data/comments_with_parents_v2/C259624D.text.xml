@@ -1,0 +1,69 @@
+Document: ID=C259624D.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+ELI5: Why is drinking any alcohol before five P.M. in the US considered a bad thing?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=drinking CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=VBG Lemma=drink NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=alcohol CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=alcohol NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=five CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=five NamedEntityTag=TIME NormalizedNamedEntityTag=T17:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T17:00">five P.M.</TIMEX3>]
+[Text=P.M. CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=p.m. NamedEntityTag=TIME NormalizedNamedEntityTag=T17:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T17:00">five P.M.</TIMEX3>]
+[Text=in CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=considered CharacterOffsetBegin=61 CharacterOffsetEnd=71 PartOfSpeech=VBD Lemma=consider NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ is)
+        (VP (VBG drinking)
+          (NP (DT any) (NN alcohol))
+          (SBAR (IN before)
+            (S
+              (NP
+                (NP (CD five) (NN P.M.))
+                (PP (IN in)
+                  (NP (DT the) (NNP US))))
+              (VP (VBD considered)
+                (NP (DT a) (JJ bad) (NN thing))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(drinking-5, Why-3)
+aux(drinking-5, is-4)
+parataxis(ELI5-1, drinking-5)
+det(alcohol-7, any-6)
+obj(drinking-5, alcohol-7)
+mark(considered-14, before-8)
+nummod(P.M.-10, five-9)
+nsubj(considered-14, P.M.-10)
+case(US-13, in-11)
+det(US-13, the-12)
+nmod:in(P.M.-10, US-13)
+advcl:before(drinking-5, considered-14)
+det(thing-17, a-15)
+amod(thing-17, bad-16)
+obj(considered-14, thing-17)
+punct(ELI5-1, ?-18)
+
+Extracted the following NER entity mentions:
+five P.M.	TIME	TIME:-1.0
+US	COUNTRY	LOCATION:0.9446257494822743

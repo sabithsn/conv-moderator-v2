@@ -1,0 +1,61 @@
+Document: ID=477BD91D.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Joe Biden's weak, forgettable State of the Union won't help his abysmal poll numbers
+
+Tokens:
+[Text=Joe CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Biden CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=weak CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=weak NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=forgettable CharacterOffsetBegin=18 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=forgettable NamedEntityTag=O]
+[Text=State CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Union CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Union NamedEntityTag=O]
+[Text=wo CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=abysmal CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=abysmal NamedEntityTag=O]
+[Text=poll CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=poll NamedEntityTag=O]
+[Text=numbers CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=number NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Joe) (NNP Biden) (POS 's))
+        (ADJP (JJ weak) (, ,) (JJ forgettable))
+        (NN State))
+      (PP (IN of)
+        (NP (DT the) (NNP Union))))
+    (VP (MD wo) (RB n't)
+      (VP (VB help)
+        (NP (PRP$ his) (JJ abysmal) (NN poll) (NNS numbers))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, help-13)
+compound(Biden-2, Joe-1)
+nmod:poss(State-7, Biden-2)
+case(Biden-2, 's-3)
+amod(forgettable-6, weak-4)
+punct(forgettable-6, ,-5)
+amod(State-7, forgettable-6)
+nsubj(help-13, State-7)
+case(Union-10, of-8)
+det(Union-10, the-9)
+nmod:of(State-7, Union-10)
+aux(help-13, wo-11)
+advmod(help-13, n't-12)
+nmod:poss(numbers-17, his-14)
+amod(numbers-17, abysmal-15)
+compound(numbers-17, poll-16)
+obj(help-13, numbers-17)
+
+Extracted the following NER entity mentions:
+Joe Biden	PERSON	PERSON:0.9990707640265226
+his	PERSON	-

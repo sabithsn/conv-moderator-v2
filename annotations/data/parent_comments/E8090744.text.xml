@@ -1,0 +1,182 @@
+Document: ID=E8090744.text (5 sentences, 36 tokens)
+
+Sentence #1 (4 tokens):
+Ah I see.
+
+Tokens:
+[Text=Ah CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=ah NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=see NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Ah))
+    (NP (PRP I))
+    (VP (VBP see))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, see-3)
+discourse(see-3, Ah-1)
+nsubj(see-3, I-2)
+punct(see-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+I stereotype people who don't understand what programming is or how to interact with other people as neck beard incels.
+
+Tokens:
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=stereotype CharacterOffsetBegin=12 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=stereotype NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=programming CharacterOffsetBegin=56 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=programming NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=interact CharacterOffsetBegin=81 CharacterOffsetEnd=89 PartOfSpeech=VB Lemma=interact NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=neck CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=neck NamedEntityTag=O]
+[Text=beard CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=beard NamedEntityTag=O]
+[Text=incels CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=NNS Lemma=incel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (PRP I))
+    (NP
+      (NP (NN stereotype) (NNS people))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP do) (RB n't)
+            (VP (VB understand)
+              (SBAR
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (NN programming))
+                    (VP (VBZ is))))
+                (CC or)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (VP (TO to)
+                      (VP (VB interact)
+                        (PP (IN with)
+                          (NP (JJ other) (NNS people)))
+                        (PP (IN as)
+                          (NP (NN neck) (NN beard) (NNS incels)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, I-1)
+compound(people-3, stereotype-2)
+dep(I-1, people-3)
+nsubj(understand-7, people-3)
+ref(people-3, who-4)
+aux(understand-7, do-5)
+advmod(understand-7, n't-6)
+acl:relcl(people-3, understand-7)
+obj(is-10, what-8)
+nsubj(is-10, programming-9)
+nsubj(interact-14, programming-9)
+dep(understand-7, is-10)
+cc(interact-14, or-11)
+advmod(interact-14, how-12)
+mark(interact-14, to-13)
+dep(understand-7, interact-14)
+conj:or(is-10, interact-14)
+case(people-17, with-15)
+amod(people-17, other-16)
+obl:with(interact-14, people-17)
+case(incels-21, as-18)
+compound(incels-21, neck-19)
+compound(incels-21, beard-20)
+obl:as(interact-14, incels-21)
+punct(I-1, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (5 tokens):
+but thanks for your.
+
+Tokens:
+[Text=but CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=thanks CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC but)
+    (NP
+      (NP (NNS thanks))
+      (PP (IN for)
+        (NP (PRP$ your))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thanks-2)
+cc(thanks-2, but-1)
+case(your-4, for-3)
+nmod:for(thanks-2, your-4)
+punct(thanks-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (4 tokens):
+contribution to the conversation
+
+Tokens:
+[Text=contribution CharacterOffsetBegin=153 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=contribution NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conversation CharacterOffsetBegin=173 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=conversation NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN contribution))
+    (PP (IN to)
+      (NP (DT the) (NN conversation)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, contribution-1)
+case(conversation-4, to-2)
+det(conversation-4, the-3)
+nmod:to(contribution-1, conversation-4)
+
+Extracted the following NER entity mentions:

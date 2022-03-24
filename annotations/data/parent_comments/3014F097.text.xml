@@ -1,0 +1,124 @@
+Document: ID=3014F097.text (2 sentences, 31 tokens)
+
+Sentence #1 (22 tokens):
+* U.S. District Judge John C. Coughenour said her actions did “tremendous damage to Black Lives Matter in Seattle.”
+
+Tokens:
+[Text=* CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=District CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=District NamedEntityTag=O]
+[Text=Judge CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Judge NamedEntityTag=TITLE]
+[Text=John CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=C. CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=C. NamedEntityTag=PERSON]
+[Text=Coughenour CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Coughenour NamedEntityTag=PERSON]
+[Text=said CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=actions CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=action NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=tremendous CharacterOffsetBegin=63 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=tremendous NamedEntityTag=O]
+[Text=damage CharacterOffsetBegin=74 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=damage NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Black CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Black NamedEntityTag=O]
+[Text=Lives CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=live NamedEntityTag=O]
+[Text=Matter CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Matter NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Seattle CharacterOffsetBegin=106 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Seattle NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP *)
+    (NP (NNP U.S.) (NNP District) (NNP Judge) (NNP John) (NNP C.) (NNP Coughenour))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP$ her) (NNS actions))
+          (VP (VBD did)
+            (SBAR
+              (S (`` “)
+                (NP
+                  (NP (JJ tremendous) (NN damage))
+                  (PP (IN to)
+                    (NP (NNP Black))))
+                (VP (VBZ Lives)
+                  (NP
+                    (NP (NNP Matter))
+                    (PP (IN in)
+                      (NP (NNP Seattle)))))
+                (. .)))))))
+    ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-8)
+punct(said-8, *-1)
+compound(Coughenour-7, U.S.-2)
+compound(Coughenour-7, District-3)
+compound(Coughenour-7, Judge-4)
+compound(Coughenour-7, John-5)
+compound(Coughenour-7, C.-6)
+nsubj(said-8, Coughenour-7)
+nmod:poss(actions-10, her-9)
+nsubj(did-11, actions-10)
+ccomp(said-8, did-11)
+punct(Lives-17, “-12)
+amod(damage-14, tremendous-13)
+nsubj(Lives-17, damage-14)
+case(Black-16, to-15)
+nmod:to(damage-14, Black-16)
+ccomp(did-11, Lives-17)
+obj(Lives-17, Matter-18)
+case(Seattle-20, in-19)
+nmod:in(Matter-18, Seattle-20)
+punct(Lives-17, .-21)
+punct(said-8, ”-22)
+
+Extracted the following NER entity mentions:
+U.S.	COUNTRY	LOCATION:0.7570657755895837
+Judge	TITLE	-
+John C. Coughenour	PERSON	PERSON:0.9995580617963219
+Seattle	CITY	LOCATION:0.9954697868683473
+her	PERSON	-
+
+Sentence #2 (9 tokens):
+*   BLM is the real victim here, guys
+
+Tokens:
+[Text=* CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=BLM CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=blm NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=victim CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=victim NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (X
+    (X (NFP *))
+    (NP (NN BLM)
+      (SBAR
+        (S
+          (VP (VBZ is)
+            (NP (DT the) (JJ real) (NN victim))
+            (ADVP (RB here))
+            (, ,)
+            (NP (NNS guys))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, BLM-2)
+dep(BLM-2, *-1)
+cop(victim-6, is-3)
+det(victim-6, the-4)
+amod(victim-6, real-5)
+ccomp(BLM-2, victim-6)
+advmod(victim-6, here-7)
+punct(victim-6, ,-8)
+dep(victim-6, guys-9)
+
+Extracted the following NER entity mentions:

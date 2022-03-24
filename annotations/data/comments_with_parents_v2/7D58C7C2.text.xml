@@ -1,0 +1,74 @@
+Document: ID=7D58C7C2.text (2 sentences, 15 tokens)
+
+Sentence #1 (9 tokens):
+Fr*nch “people” are white.
+
+Tokens:
+[Text=Fr CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=Fr NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=nch CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=nch NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Fr))
+    (NFP *)
+    (NP
+      (NP (NN nch))
+      (`` “)
+      (NP (NNS people))
+      ('' ”))
+    (VP (VBP are)
+      (ADJP (JJ white)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, white-8)
+nsubj(white-8, Fr-1)
+punct(white-8, *-2)
+nsubj(white-8, nch-3)
+punct(nch-3, “-4)
+dep(nch-3, people-5)
+punct(nch-3, ”-6)
+cop(white-8, are-7)
+punct(white-8, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Therefore white people are bad.
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP (JJ white) (NNS people))
+    (VP (VBP are)
+      (ADJP (JJ bad)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bad-5)
+advmod(bad-5, Therefore-1)
+amod(people-3, white-2)
+nsubj(bad-5, people-3)
+cop(bad-5, are-4)
+punct(bad-5, .-6)
+
+Extracted the following NER entity mentions:

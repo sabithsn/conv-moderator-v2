@@ -1,0 +1,65 @@
+Document: ID=EE2B013B.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Why Did Mark Meadows Register to Vote at an Address Where He Did Not Reside?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=Did CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Mark CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Mark NamedEntityTag=O]
+[Text=Meadows CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Meadows NamedEntityTag=O]
+[Text=Register CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Register NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Vote CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=vote NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Address CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=address NamedEntityTag=O]
+[Text=Where CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=Did CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Reside CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=reside NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD Did)
+      (NP
+        (NP (NNP Mark) (NNP Meadows) (NNP Register))
+        (S
+          (VP (TO to)
+            (VP (VB Vote)
+              (PP (IN at)
+                (NP (DT an) (NN Address)))
+              (SBAR
+                (WHADVP (WRB Where))
+                (S
+                  (NP (PRP He))
+                  (VP (VBD Did)
+                    (ADVP (RB Not)))))))))
+      (VP (VB Reside)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Reside-15)
+advmod(Reside-15, Why-1)
+aux(Reside-15, Did-2)
+compound(Register-5, Mark-3)
+compound(Register-5, Meadows-4)
+nsubj(Reside-15, Register-5)
+mark(Vote-7, to-6)
+acl:to(Register-5, Vote-7)
+case(Address-10, at-8)
+det(Address-10, an-9)
+obl:at(Vote-7, Address-10)
+advmod(Did-13, Where-11)
+nsubj(Did-13, He-12)
+advcl(Vote-7, Did-13)
+advmod(Did-13, Not-14)
+punct(Reside-15, ?-16)
+
+Extracted the following NER entity mentions:
+He	PERSON	-

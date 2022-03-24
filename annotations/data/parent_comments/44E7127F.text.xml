@@ -1,0 +1,227 @@
+Document: ID=44E7127F.text (4 sentences, 54 tokens)
+
+Sentence #1 (10 tokens):
+>And I never said being gay is wrong.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=, Lemma=> NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (UCP
+    (NP (, >))
+    (S (CC And)
+      (NP (PRP I))
+      (VP
+        (ADVP (RB never))
+        (VBD said)
+        (S
+          (VP (VBG being)
+            (ADJP (JJ gay)
+              (SBAR
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ wrong))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, >-1)
+cc(said-5, And-2)
+nsubj(said-5, I-3)
+advmod(said-5, never-4)
+dep(>-1, said-5)
+cop(gay-7, being-6)
+xcomp(said-5, gay-7)
+cop(wrong-9, is-8)
+ccomp(gay-7, wrong-9)
+punct(>-1, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+Then why not tell kids that before they learn from someone else that it is wrong.
+
+Tokens:
+[Text=Then CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=learn CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=VBP Lemma=learn NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (ADVP (RB Then))
+    (WHADVP (WRB why))
+    (SQ (RB not)
+      (VP (VB tell)
+        (NP (NNS kids))
+        (SBAR
+          (WHNP (WDT that))
+          (IN before)
+          (S
+            (NP (PRP they))
+            (VP (VBP learn)
+              (PP (IN from)
+                (NP (NN someone) (RB else)))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (ADJP (JJ wrong))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tell-4)
+advmod(tell-4, Then-1)
+advmod(tell-4, why-2)
+advmod(tell-4, not-3)
+obj(tell-4, kids-5)
+obj(learn-9, that-6)
+mark(learn-9, before-7)
+nsubj(learn-9, they-8)
+advcl:before(tell-4, learn-9)
+case(someone-11, from-10)
+obl:from(learn-9, someone-11)
+advmod(someone-11, else-12)
+mark(wrong-16, that-13)
+nsubj(wrong-16, it-14)
+cop(wrong-16, is-15)
+ccomp(learn-9, wrong-16)
+punct(tell-4, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (13 tokens):
+Kids will see gay parents or might have friends with two dads.
+
+Tokens:
+[Text=Kids CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=161 CharacterOffsetEnd=168 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=dads CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=NNS Lemma=dad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Kids))
+    (VP
+      (VP (MD will)
+        (VP (VB see)
+          (NP (JJ gay) (NNS parents))))
+      (CC or)
+      (VP (MD might)
+        (VP (VB have)
+          (NP
+            (NP (NNS friends))
+            (PP (IN with)
+              (NP (CD two) (NNS dads)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, see-3)
+nsubj(see-3, Kids-1)
+nsubj(have-8, Kids-1)
+aux(see-3, will-2)
+amod(parents-5, gay-4)
+obj(see-3, parents-5)
+cc(have-8, or-6)
+aux(have-8, might-7)
+conj:or(see-3, have-8)
+obj(have-8, friends-9)
+case(dads-12, with-10)
+nummod(dads-12, two-11)
+nmod:with(friends-9, dads-12)
+punct(see-3, .-13)
+
+Extracted the following NER entity mentions:
+two	NUMBER	NUMBER:-1.0
+
+Sentence #4 (14 tokens):
+This wouldn't be an issue if it didn't have to be.
+
+Tokens:
+[Text=This CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=issue CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=issue NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD would) (RB n't)
+      (VP (VB be)
+        (NP (DT an) (NN issue))
+        (SBAR (IN if)
+          (S
+            (NP (PRP it))
+            (VP (VBD did) (RB n't)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB be))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, issue-6)
+nsubj(issue-6, This-1)
+aux(issue-6, would-2)
+advmod(issue-6, n't-3)
+cop(issue-6, be-4)
+det(issue-6, an-5)
+mark(have-11, if-7)
+nsubj(have-11, it-8)
+nsubj:xsubj(be-13, it-8)
+aux(have-11, did-9)
+advmod(have-11, n't-10)
+advcl:if(issue-6, have-11)
+mark(be-13, to-12)
+xcomp(have-11, be-13)
+punct(issue-6, .-14)
+
+Extracted the following NER entity mentions:

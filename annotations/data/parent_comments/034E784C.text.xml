@@ -1,0 +1,48 @@
+Document: ID=034E784C.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Stacey Abrams Digs the Hole Much Deeper Over Her Deleted Picture
+
+Tokens:
+[Text=Stacey CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Stacey NamedEntityTag=PERSON]
+[Text=Abrams CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Abrams NamedEntityTag=PERSON]
+[Text=Digs CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=dig NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Hole CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=hole NamedEntityTag=O]
+[Text=Much CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=Deeper CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=JJR Lemma=deeper NamedEntityTag=O]
+[Text=Over CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Her CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Deleted CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=VBN Lemma=delete NamedEntityTag=O]
+[Text=Picture CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=picture NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Stacey) (NNP Abrams))
+    (VP (VBZ Digs)
+      (S
+        (NP (DT the) (NN Hole))
+        (ADJP
+          (NP (JJ Much))
+          (JJR Deeper))
+        (PP (IN Over)
+          (NP (PRP$ Her) (VBN Deleted) (NN Picture)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Digs-3)
+compound(Abrams-2, Stacey-1)
+nsubj(Digs-3, Abrams-2)
+det(Hole-5, the-4)
+nsubj(Deeper-7, Hole-5)
+obl:npmod(Deeper-7, Much-6)
+xcomp(Digs-3, Deeper-7)
+case(Picture-11, Over-8)
+nmod:poss(Picture-11, Her-9)
+amod(Picture-11, Deleted-10)
+dep(Deeper-7, Picture-11)
+
+Extracted the following NER entity mentions:
+Stacey Abrams	PERSON	PERSON:0.7767529418698117
+Her	PERSON	-

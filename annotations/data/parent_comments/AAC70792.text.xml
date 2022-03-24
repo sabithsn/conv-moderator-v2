@@ -1,0 +1,83 @@
+Document: ID=AAC70792.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+Pediatric office taking extra precautions for student athlete clearance to play, to rule out heart damage specifically caused by the vx.
+
+Tokens:
+[Text=Pediatric CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Pediatric NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=extra CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=extra NamedEntityTag=O]
+[Text=precautions CharacterOffsetBegin=30 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=precaution NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=student CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=student NamedEntityTag=TITLE]
+[Text=athlete CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=athlete NamedEntityTag=TITLE]
+[Text=clearance CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=clearance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=rule CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VB Lemma=rule NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=heart CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=heart NamedEntityTag=O]
+[Text=damage CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=damage NamedEntityTag=O]
+[Text=specifically CharacterOffsetBegin=106 CharacterOffsetEnd=118 PartOfSpeech=RB Lemma=specifically NamedEntityTag=O]
+[Text=caused CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=VBN Lemma=cause NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vx CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=vx NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pediatric) (NN office))
+      (VP (VBG taking)
+        (NP
+          (NP (JJ extra) (NNS precautions))
+          (PP (IN for)
+            (NP (NN student) (NN athlete) (NN clearance))))
+        (S
+          (VP (TO to)
+            (VP (VB play))))
+        (, ,)
+        (S
+          (VP (TO to)
+            (VP (VB rule)
+              (PRT (RP out))
+              (NP (NN heart) (NN damage)))))))
+    (ADVP (RB specifically))
+    (VP (VBN caused)
+      (PP (IN by)
+        (NP (DT the) (NN vx))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, caused-19)
+compound(office-2, Pediatric-1)
+nsubj(caused-19, office-2)
+acl(office-2, taking-3)
+amod(precautions-5, extra-4)
+obj(taking-3, precautions-5)
+case(clearance-9, for-6)
+compound(clearance-9, student-7)
+compound(clearance-9, athlete-8)
+nmod:for(precautions-5, clearance-9)
+mark(play-11, to-10)
+advcl:to(taking-3, play-11)
+punct(taking-3, ,-12)
+mark(rule-14, to-13)
+advcl:to(taking-3, rule-14)
+compound:prt(rule-14, out-15)
+compound(damage-17, heart-16)
+obj(rule-14, damage-17)
+advmod(caused-19, specifically-18)
+case(vx-22, by-20)
+det(vx-22, the-21)
+obl:by(caused-19, vx-22)
+punct(caused-19, .-23)
+
+Extracted the following NER entity mentions:
+student athlete	TITLE	-

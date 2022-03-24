@@ -1,0 +1,132 @@
+Document: ID=C63D540E.text (2 sentences, 31 tokens)
+
+Sentence #1 (24 tokens):
+>I don’t think he ever seriously envisioned the US leaving NATO, but rather get Europe to hold up their end.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=seriously CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=envisioned CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=envision NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=leaving CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=leave NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=to CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hold CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=VB Lemma=hold NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (S
+        (VP (SYM >)
+          (NP (PRP I)))))
+    (VP (VBP do) (RB n’t)
+      (VP
+        (VP (VB think)
+          (SBAR
+            (S
+              (NP (PRP he))
+              (ADVP (RB ever) (RB seriously))
+              (VP (VBD envisioned)
+                (NP (DT the) (NNP US))
+                (S
+                  (VP (VBG leaving)
+                    (NP (NNP NATO))))))))
+        (, ,)
+        (CONJP (CC but)
+          (RB rather))
+        (VP (VB get)
+          (NP (NNP Europe))
+          (S
+            (VP (TO to)
+              (VP (VB hold)
+                (PRT (RP up))
+                (NP (PRP$ their) (NN end))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-5)
+dep(I-2, >-1)
+nsubj(think-5, I-2)
+nsubj(get-17, I-2)
+aux(think-5, do-3)
+advmod(think-5, n’t-4)
+nsubj(envisioned-9, he-6)
+advmod(seriously-8, ever-7)
+advmod(envisioned-9, seriously-8)
+ccomp(think-5, envisioned-9)
+det(US-11, the-10)
+obj(envisioned-9, US-11)
+xcomp(envisioned-9, leaving-12)
+obj(leaving-12, NATO-13)
+punct(think-5, ,-14)
+cc(rather-16, but-15)
+cc(get-17, rather-16)
+conj:rather(think-5, get-17)
+obj(get-17, Europe-18)
+mark(hold-20, to-19)
+advcl:to(get-17, hold-20)
+compound:prt(hold-20, up-21)
+nmod:poss(end-23, their-22)
+obj(hold-20, end-23)
+punct(think-5, .-24)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9794873698467236
+NATO	ORGANIZATION	ORGANIZATION:0.9966607851716356
+Europe	LOCATION	LOCATION:0.9982196783440395
+he	PERSON	-
+
+Sentence #2 (7 tokens):
+This is what I also believe.
+
+Tokens:
+[Text=This CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP I))
+          (ADVP (RB also))
+          (VP (VBP believe)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+nsubj(is-2, This-1)
+obj(believe-6, what-3)
+nsubj(believe-6, I-4)
+advmod(believe-6, also-5)
+ccomp(is-2, believe-6)
+punct(is-2, .-7)
+
+Extracted the following NER entity mentions:

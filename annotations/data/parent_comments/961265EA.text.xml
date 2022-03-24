@@ -1,0 +1,121 @@
+Document: ID=961265EA.text (2 sentences, 28 tokens)
+
+Sentence #1 (12 tokens):
+Trump probably would have extorted Ukraine a second time by now.
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=probably CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=extorted CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=extort NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=second CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=second NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=time CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump))
+    (ADVP (RB probably))
+    (VP (MD would)
+      (VP (VB have)
+        (VP (VBN extorted)
+          (NP (NNP Ukraine))
+          (NP-TMP (DT a) (JJ second) (NN time))
+          (PP (IN by)
+            (ADVP (RB now))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, extorted-5)
+nsubj(extorted-5, Trump-1)
+advmod(extorted-5, probably-2)
+aux(extorted-5, would-3)
+aux(extorted-5, have-4)
+obj(extorted-5, Ukraine-6)
+det(time-9, a-7)
+amod(time-9, second-8)
+obl:tmod(extorted-5, time-9)
+case(now-11, by-10)
+advcl:by(extorted-5, now-11)
+punct(extorted-5, .-12)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.7755609008872397
+Ukraine	COUNTRY	LOCATION:0.9947325548602837
+a second	DURATION	DURATION:-1.0
+now	DATE	DATE:-1.0
+
+Sentence #2 (16 tokens):
+And then he would have sanctioned Ukraine, and backed Putin's invasion of Ukraine.
+
+Tokens:
+[Text=And CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=sanctioned CharacterOffsetBegin=89 CharacterOffsetEnd=99 PartOfSpeech=VBN Lemma=sanction NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=100 CharacterOffsetEnd=107 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=backed CharacterOffsetBegin=113 CharacterOffsetEnd=119 PartOfSpeech=VBD Lemma=back NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=invasion CharacterOffsetBegin=128 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=140 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (ADVP (RB then))
+    (NP (PRP he))
+    (VP
+      (VP (MD would)
+        (VP (VB have)
+          (VP (VBN sanctioned)
+            (NP (NNP Ukraine)))))
+      (, ,)
+      (CC and)
+      (VP (VBD backed)
+        (NP
+          (NP
+            (NP (NNP Putin) (POS 's))
+            (NN invasion))
+          (PP (IN of)
+            (NP (NNP Ukraine))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sanctioned-6)
+cc(sanctioned-6, And-1)
+advmod(sanctioned-6, then-2)
+nsubj(sanctioned-6, he-3)
+nsubj(backed-10, he-3)
+aux(sanctioned-6, would-4)
+aux(sanctioned-6, have-5)
+obj(sanctioned-6, Ukraine-7)
+punct(sanctioned-6, ,-8)
+cc(backed-10, and-9)
+conj:and(sanctioned-6, backed-10)
+nmod:poss(invasion-13, Putin-11)
+case(Putin-11, 's-12)
+obj(backed-10, invasion-13)
+case(Ukraine-15, of-14)
+nmod:of(invasion-13, Ukraine-15)
+punct(sanctioned-6, .-16)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9972034704831955
+Putin	PERSON	PERSON:0.9941921800914182
+Ukraine	COUNTRY	LOCATION:0.9981920641671144
+he	PERSON	-

@@ -1,0 +1,31 @@
+Document: ID=6F5191DC.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Abused and tortured by Neo-Nazis
+
+Tokens:
+[Text=Abused CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=abuse NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tortured CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=VBN Lemma=torture NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Neo-Nazis CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Neo-Nazis NamedEntityTag=MISC]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBN Abused)
+      (CC and)
+      (VBN tortured)
+      (PP (IN by)
+        (NP (NNP Neo-Nazis))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Abused-1)
+cc(tortured-3, and-2)
+conj:and(Abused-1, tortured-3)
+case(Neo-Nazis-5, by-4)
+obl:by(Abused-1, Neo-Nazis-5)
+
+Extracted the following NER entity mentions:
+Neo-Nazis	MISC	MISC:0.5831483280838254

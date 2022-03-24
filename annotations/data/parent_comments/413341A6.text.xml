@@ -1,0 +1,73 @@
+Document: ID=413341A6.text (2 sentences, 15 tokens)
+
+Sentence #1 (9 tokens):
+owning a vape doesn’t make you cool.
+
+Tokens:
+[Text=owning CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBG Lemma=own NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=vape CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=vape NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=cool CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=cool NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG owning)
+        (NP (DT a) (NN vape))))
+    (VP (VBZ does) (RB n’t)
+      (VP (VB make)
+        (S
+          (NP (PRP you))
+          (ADJP (JJ cool)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-6)
+csubj(make-6, owning-1)
+det(vape-3, a-2)
+obj(owning-1, vape-3)
+aux(make-6, does-4)
+advmod(make-6, n’t-5)
+nsubj(cool-8, you-7)
+xcomp(make-6, cool-8)
+punct(make-6, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+you like like a dick.
+
+Tokens:
+[Text=you CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=dick CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=dick NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP you))
+    (VP (VBP like)
+      (PP (IN like)
+        (NP (DT a) (NN dick))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, like-2)
+nsubj(like-2, you-1)
+case(dick-5, like-3)
+det(dick-5, a-4)
+obl:like(like-2, dick-5)
+punct(like-2, .-6)
+
+Extracted the following NER entity mentions:

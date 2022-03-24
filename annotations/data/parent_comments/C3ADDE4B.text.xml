@@ -1,0 +1,48 @@
+Document: ID=C3ADDE4B.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Utah governor says he'll veto transgender youth sports ban
+
+Tokens:
+[Text=Utah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Utah NamedEntityTag=STATE_OR_PROVINCE]
+[Text=governor CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=governor NamedEntityTag=TITLE]
+[Text=says CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=veto CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=veto NamedEntityTag=O]
+[Text=transgender CharacterOffsetBegin=30 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=transgender NamedEntityTag=O]
+[Text=youth CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=youth NamedEntityTag=O]
+[Text=sports CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=sport NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=ban NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Utah) (NN governor))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (MD 'll)
+            (VP (VB veto)
+              (NP (JJ transgender)
+                (NML (NN youth) (NNS sports))
+                (NN ban)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-3)
+compound(governor-2, Utah-1)
+nsubj(says-3, governor-2)
+nsubj(veto-6, he-4)
+aux(veto-6, 'll-5)
+ccomp(says-3, veto-6)
+amod(ban-10, transgender-7)
+compound(sports-9, youth-8)
+compound(ban-10, sports-9)
+obj(veto-6, ban-10)
+
+Extracted the following NER entity mentions:
+Utah	STATE_OR_PROVINCE	LOCATION:0.971709114171604
+governor	TITLE	-
+he	PERSON	-

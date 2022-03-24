@@ -1,0 +1,84 @@
+Document: ID=938BC9CE.text (2 sentences, 18 tokens)
+
+Sentence #1 (7 tokens):
+I wasn't making a joke.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=joke CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=joke NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was) (RB n't)
+      (VP (VBG making)
+        (NP (DT a) (NN joke))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, making-4)
+nsubj(making-4, I-1)
+aux(making-4, was-2)
+advmod(making-4, n't-3)
+det(joke-6, a-5)
+obj(making-4, joke-6)
+punct(making-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Is an Englishman who hates Irish people racist for that?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Englishman CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Englishman NamedEntityTag=NATIONALITY]
+[Text=who CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=hates CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=hate NamedEntityTag=O]
+[Text=Irish CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=irish NamedEntityTag=NATIONALITY]
+[Text=people CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP
+      (NP (DT an) (NNP Englishman))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ hates)
+            (NP (JJ Irish) (NNS people))))))
+    (ADJP (JJ racist))
+    (PP (IN for)
+      (NP (DT that)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, racist-8)
+cop(racist-8, Is-1)
+det(Englishman-3, an-2)
+nsubj(hates-5, Englishman-3)
+nsubj(racist-8, Englishman-3)
+ref(Englishman-3, who-4)
+acl:relcl(Englishman-3, hates-5)
+amod(people-7, Irish-6)
+obj(hates-5, people-7)
+case(that-10, for-9)
+obl:for(racist-8, that-10)
+punct(racist-8, ?-11)
+
+Extracted the following NER entity mentions:
+Englishman	NATIONALITY	MISC:0.999870629585462
+Irish	NATIONALITY	MISC:0.9999900243576199

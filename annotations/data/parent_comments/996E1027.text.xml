@@ -1,0 +1,112 @@
+Document: ID=996E1027.text (2 sentences, 28 tokens)
+
+Sentence #1 (11 tokens):
+Mention of a body part everyone has is age appropriate!
+
+Tokens:
+[Text=Mention CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=mention NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=age CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=age NamedEntityTag=O]
+[Text=appropriate CharacterOffsetBegin=43 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=appropriate NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Mention))
+      (PP (IN of)
+        (NP (DT a) (NN body) (NN part) (NN everyone))))
+    (VP (VBZ has)
+      (VP (VBZ is)
+        (ADJP (NN age) (JJ appropriate))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, appropriate-10)
+nsubj(appropriate-10, Mention-1)
+case(everyone-6, of-2)
+det(everyone-6, a-3)
+compound(everyone-6, body-4)
+compound(everyone-6, part-5)
+nmod:of(Mention-1, everyone-6)
+aux(appropriate-10, has-7)
+cop(appropriate-10, is-8)
+obl:npmod(appropriate-10, age-9)
+punct(appropriate-10, !-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+It's funny and the humor of talking about butts will engage students in the lesson.
+
+Tokens:
+[Text=It CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=funny CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=humor CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=humor NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=butts CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=butt NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=engage CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=engage NamedEntityTag=O]
+[Text=students CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=student NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lesson CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=lesson NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (ADJP (JJ funny))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN humor))
+        (PP (IN of)
+          (S
+            (VP (VBG talking)
+              (PP (IN about)
+                (NP (NNS butts)))))))
+      (VP (MD will)
+        (VP (VB engage)
+          (NP (NNS students))
+          (PP (IN in)
+            (NP (DT the) (NN lesson))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, funny-3)
+nsubj(funny-3, It-1)
+cop(funny-3, 's-2)
+cc(engage-12, and-4)
+det(humor-6, the-5)
+nsubj(engage-12, humor-6)
+mark(talking-8, of-7)
+acl:of(humor-6, talking-8)
+case(butts-10, about-9)
+obl:about(talking-8, butts-10)
+aux(engage-12, will-11)
+conj:and(funny-3, engage-12)
+obj(engage-12, students-13)
+case(lesson-16, in-14)
+det(lesson-16, the-15)
+obl:in(engage-12, lesson-16)
+punct(funny-3, .-17)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>CA4DAC64.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Biden</word>
+            <lemma>Biden</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>Admin</word>
+            <lemma>Admin</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Issues</word>
+            <lemma>Issues</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Domestic</word>
+            <lemma>Domestic</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Terrorism</word>
+            <lemma>Terrorism</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>CRIMINAL_CHARGE</NER>
+          </token>
+          <token id="6">
+            <word>Warning</word>
+            <lemma>warning</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>About</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Misinformation</word>
+            <lemma>misinformation</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Fuck</word>
+            <lemma>fuck</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Joe</word>
+            <lemma>Joe</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="13">
+            <word>Biden</word>
+            <lemma>Biden</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (FRAG (NP (NNP Biden) (NNP Admin)) (NP (NNP Issues) (NNP Domestic) (NNP Terrorism))) (FRAG (NP (NN Warning)) (PP (IN About) (NP (`` ') (NN Misinformation) ('' ')))) (FRAG (INTJ (UH Fuck)) (NP (NNP Joe) (NNP Biden))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Admin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Admin</governor>
+            <dependent idx="1">Biden</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="3">Issues</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="4">Domestic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Admin</governor>
+            <dependent idx="5">Terrorism</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="6">Warning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="7">About</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="8">'</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">Warning</governor>
+            <dependent idx="9">Misinformation</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="10">'</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="13">Biden</governor>
+            <dependent idx="11">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">Biden</governor>
+            <dependent idx="12">Joe</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="13">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Admin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Admin</governor>
+            <dependent idx="1">Biden</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="3">Issues</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="4">Domestic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Admin</governor>
+            <dependent idx="5">Terrorism</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="6">Warning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="7">About</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="8">'</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="6">Warning</governor>
+            <dependent idx="9">Misinformation</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="10">'</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="13">Biden</governor>
+            <dependent idx="11">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">Biden</governor>
+            <dependent idx="12">Joe</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="13">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Admin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Admin</governor>
+            <dependent idx="1">Biden</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="3">Issues</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="4">Domestic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Admin</governor>
+            <dependent idx="5">Terrorism</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="6">Warning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="7">About</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="8">'</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="6">Warning</governor>
+            <dependent idx="9">Misinformation</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="10">'</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="13">Biden</governor>
+            <dependent idx="11">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">Biden</governor>
+            <dependent idx="12">Joe</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="13">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Admin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Admin</governor>
+            <dependent idx="1">Biden</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="3">Issues</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="4">Domestic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Admin</governor>
+            <dependent idx="5">Terrorism</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="6">Warning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="7">About</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="8">'</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="6">Warning</governor>
+            <dependent idx="9">Misinformation</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="10">'</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="13">Biden</governor>
+            <dependent idx="11">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">Biden</governor>
+            <dependent idx="12">Joe</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="13">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Admin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Admin</governor>
+            <dependent idx="1">Biden</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="3">Issues</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="5">Terrorism</governor>
+            <dependent idx="4">Domestic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Admin</governor>
+            <dependent idx="5">Terrorism</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="6">Warning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="7">About</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="8">'</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="6">Warning</governor>
+            <dependent idx="9">Misinformation</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">Misinformation</governor>
+            <dependent idx="10">'</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="13">Biden</governor>
+            <dependent idx="11">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">Biden</governor>
+            <dependent idx="12">Joe</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">Admin</governor>
+            <dependent idx="13">Biden</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

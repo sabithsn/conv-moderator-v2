@@ -1,0 +1,90 @@
+Document: ID=359E43E4.text (2 sentences, 20 tokens)
+
+Sentence #1 (5 tokens):
+Im thinking Jennifer Aniston.
+
+Tokens:
+[Text=Im CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=Im NamedEntityTag=O]
+[Text=thinking CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=VBG Lemma=think NamedEntityTag=O]
+[Text=Jennifer CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Jennifer NamedEntityTag=PERSON]
+[Text=Aniston CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Aniston NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Im))
+    (VP (VBG thinking)
+      (NP (NNP Jennifer) (NNP Aniston)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Im-1)
+dep(Im-1, thinking-2)
+compound(Aniston-4, Jennifer-3)
+obj(thinking-2, Aniston-4)
+punct(Im-1, .-5)
+
+Extracted the following NER entity mentions:
+Jennifer Aniston	PERSON	PERSON:0.9997327646729249
+
+Sentence #2 (15 tokens):
+For some reason it seems like she has trouble keeping guys around long term.
+
+Tokens:
+[Text=For CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=seems CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBZ Lemma=seem NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=trouble CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=trouble NamedEntityTag=O]
+[Text=keeping CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=keep NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=RB Lemma=around NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT some) (NN reason)))
+    (NP (PRP it))
+    (VP (VBZ seems)
+      (SBAR (IN like)
+        (S
+          (NP (PRP she))
+          (VP (VBZ has)
+            (NP
+              (NP (NN trouble))
+              (VP (VBG keeping)
+                (NP (NNS guys))
+                (ADVP (RB around))
+                (NP-TMP (JJ long) (NN term))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seems-5)
+case(reason-3, For-1)
+det(reason-3, some-2)
+obl:for(seems-5, reason-3)
+nsubj(seems-5, it-4)
+mark(has-8, like-6)
+nsubj(has-8, she-7)
+advcl:like(seems-5, has-8)
+obj(has-8, trouble-9)
+acl(trouble-9, keeping-10)
+obj(keeping-10, guys-11)
+advmod(keeping-10, around-12)
+amod(term-14, long-13)
+obl:tmod(keeping-10, term-14)
+punct(seems-5, .-15)
+
+Extracted the following NER entity mentions:
+she	PERSON	-

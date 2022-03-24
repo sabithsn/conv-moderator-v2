@@ -1,0 +1,90 @@
+Document: ID=C3785D9C.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+Sounds like some big rig fuel tanks are in need of some water, and some truck cabs in dire need for glitter dumping.
+
+Tokens:
+[Text=Sounds CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=rig CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=rig NamedEntityTag=O]
+[Text=fuel CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=fuel NamedEntityTag=O]
+[Text=tanks CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=tank NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=need NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=truck CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=truck NamedEntityTag=O]
+[Text=cabs CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=cab NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=dire CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=dire NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=need NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=glitter CharacterOffsetBegin=100 CharacterOffsetEnd=107 PartOfSpeech=VB Lemma=glitter NamedEntityTag=O]
+[Text=dumping CharacterOffsetBegin=108 CharacterOffsetEnd=115 PartOfSpeech=VBG Lemma=dump NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Sounds)
+      (SBAR (IN like)
+        (S
+          (NP (DT some) (JJ big)
+            (NML (NN rig) (NN fuel))
+            (NNS tanks))
+          (VP (VBP are)
+            (PP (IN in)
+              (NP
+                (NP
+                  (NP (NN need))
+                  (PP (IN of)
+                    (NP (DT some) (NN water))))
+                (, ,)
+                (CC and)
+                (NP
+                  (NP (DT some) (NN truck) (NNS cabs))
+                  (PP (IN in)
+                    (NP (JJ dire) (NN need))))))
+            (PP (IN for)
+              (VP (VB glitter)
+                (S
+                  (VP (VBG dumping)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sounds-1)
+mark(need-10, like-2)
+det(tanks-7, some-3)
+amod(tanks-7, big-4)
+compound(fuel-6, rig-5)
+compound(tanks-7, fuel-6)
+nsubj(need-10, tanks-7)
+cop(need-10, are-8)
+case(need-10, in-9)
+advcl:in(Sounds-1, need-10)
+case(water-13, of-11)
+det(water-13, some-12)
+nmod:of(need-10, water-13)
+punct(need-10, ,-14)
+cc(cabs-18, and-15)
+det(cabs-18, some-16)
+compound(cabs-18, truck-17)
+advcl:in(Sounds-1, cabs-18)
+conj:and(need-10, cabs-18)
+case(need-21, in-19)
+amod(need-21, dire-20)
+nmod:in(cabs-18, need-21)
+case(glitter-23, for-22)
+advcl:for(need-10, glitter-23)
+xcomp(glitter-23, dumping-24)
+punct(Sounds-1, .-25)
+
+Extracted the following NER entity mentions:

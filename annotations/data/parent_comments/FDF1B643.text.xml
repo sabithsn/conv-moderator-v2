@@ -1,0 +1,83 @@
+Document: ID=FDF1B643.text (2 sentences, 19 tokens)
+
+Sentence #1 (9 tokens):
+The hypocrisy is strong in the Republican Party.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hypocrisy CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=hypocrisy NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=strong CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=strong NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Republican CharacterOffsetBegin=31 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Republican NamedEntityTag=ORGANIZATION]
+[Text=Party CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Party NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN hypocrisy))
+    (VP (VBZ is)
+      (ADJP (JJ strong)
+        (PP (IN in)
+          (NP (DT the) (NNP Republican) (NNP Party)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, strong-4)
+det(hypocrisy-2, The-1)
+nsubj(strong-4, hypocrisy-2)
+cop(strong-4, is-3)
+case(Party-8, in-5)
+det(Party-8, the-6)
+compound(Party-8, Republican-7)
+obl:in(strong-4, Party-8)
+punct(strong-4, .-9)
+
+Extracted the following NER entity mentions:
+Republican Party	ORGANIZATION	ORGANIZATION:0.994657166856939
+
+Sentence #2 (10 tokens):
+it's almost like it's all an act.
+
+Tokens:
+[Text=it CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=act CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=act NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADVP (RB almost))
+      (SBAR (IN like)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (NP (PDT all) (DT an) (NN act))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+nsubj('s-2, it-1)
+advmod('s-2, almost-3)
+mark(act-9, like-4)
+nsubj(act-9, it-5)
+cop(act-9, 's-6)
+det:predet(act-9, all-7)
+det(act-9, an-8)
+advcl:like('s-2, act-9)
+punct('s-2, .-10)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,41 @@
+Document: ID=349D39CE.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+The quadrants react to the new Texas trans law.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=quadrants CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=quadrant NamedEntityTag=O]
+[Text=react CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=react NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=trans CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=trans NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNS quadrants))
+    (VP (VBP react)
+      (PP (IN to)
+        (NP (DT the) (JJ new) (NNP Texas) (NN trans) (NN law))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, react-3)
+det(quadrants-2, The-1)
+nsubj(react-3, quadrants-2)
+case(law-9, to-4)
+det(law-9, the-5)
+amod(law-9, new-6)
+compound(law-9, Texas-7)
+compound(law-9, trans-8)
+obl:to(react-3, law-9)
+punct(react-3, .-10)
+
+Extracted the following NER entity mentions:
+Texas	STATE_OR_PROVINCE	LOCATION:0.9876781026439174

@@ -1,0 +1,145 @@
+Document: ID=5BEAC28D.text (3 sentences, 34 tokens)
+
+Sentence #1 (15 tokens):
+1 it's the government's job to provide infrastructure not Amazon 2 Jobs?
+
+Tokens:
+[Text=1 CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=LS Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=it CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=11 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=provide CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=provide NamedEntityTag=O]
+[Text=infrastructure CharacterOffsetBegin=39 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=infrastructure NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Amazon CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Amazon NamedEntityTag=ORGANIZATION]
+[Text=2 CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=Jobs CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Jobs NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (LST (LS 1))
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (NN government) (POS 's))
+        (NN job)
+        (S
+          (VP (TO to)
+            (VP (VB provide)
+              (NP (NN infrastructure))
+              (PP (RB not)
+                (NP (NNP Amazon) (CD 2) (NNP Jobs))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, job-7)
+dep(job-7, 1-1)
+nsubj(job-7, it-2)
+cop(job-7, 's-3)
+det(government-5, the-4)
+nmod:poss(job-7, government-5)
+case(government-5, 's-6)
+mark(provide-9, to-8)
+acl:to(job-7, provide-9)
+obj(provide-9, infrastructure-10)
+advmod(Jobs-14, not-11)
+compound(Jobs-14, Amazon-12)
+nummod(Jobs-14, 2-13)
+obl(provide-9, Jobs-14)
+punct(job-7, ?-15)
+
+Extracted the following NER entity mentions:
+1	NUMBER	NUMBER:-1.0
+Amazon	ORGANIZATION	ORGANIZATION:0.9925894272482392
+2	NUMBER	NUMBER:-1.0
+
+Sentence #2 (11 tokens):
+Aren't half their workers on benefits and food stamps?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=PDT Lemma=half NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=workers CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=worker NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=benefits CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=NNS Lemma=benefit NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=stamps CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=stamp NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Are) (RB n't)
+      (NP (PDT half) (PRP$ their) (NNS workers))
+      (PP (IN on)
+        (NP
+          (NML (NNS benefits)
+            (CC and)
+            (NN food))
+          (NNS stamps))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, workers-5)
+cop(workers-5, Are-1)
+advmod(workers-5, n't-2)
+det:predet(workers-5, half-3)
+nmod:poss(workers-5, their-4)
+case(stamps-10, on-6)
+compound(stamps-10, benefits-7)
+cc(food-9, and-8)
+conj:and(benefits-7, food-9)
+compound(stamps-10, food-9)
+obl:on(workers-5, stamps-10)
+punct(workers-5, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+Lol does that boot taste good or what
+
+Tokens:
+[Text=Lol CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=boot CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=boot NamedEntityTag=O]
+[Text=taste CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=taste NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Lol))
+    (VP (VBZ does)
+      (NP (DT that) (NN boot) (NN taste))
+      (UCP
+        (ADJP (JJ good))
+        (CC or)
+        (NP (WP what))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, does-2)
+discourse(does-2, Lol-1)
+det(taste-5, that-3)
+compound(taste-5, boot-4)
+obj(does-2, taste-5)
+xcomp(does-2, good-6)
+cc(what-8, or-7)
+xcomp(does-2, what-8)
+conj:or(good-6, what-8)
+
+Extracted the following NER entity mentions:

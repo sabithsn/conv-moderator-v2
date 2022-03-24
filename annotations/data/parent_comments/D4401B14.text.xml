@@ -1,0 +1,48 @@
+Document: ID=D4401B14.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+BREAKING: Democrat Senator Ben Ray Lujan Hospitalized After Suffering Stroke
+
+Tokens:
+[Text=BREAKING CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBG Lemma=break NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Democrat CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=O]
+[Text=Senator CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Ben CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Ben NamedEntityTag=PERSON]
+[Text=Ray CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Ray NamedEntityTag=PERSON]
+[Text=Lujan CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Lujan NamedEntityTag=PERSON]
+[Text=Hospitalized CharacterOffsetBegin=41 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Hospitalized NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Suffering CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=VBG Lemma=suffer NamedEntityTag=O]
+[Text=Stroke CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=stroke NamedEntityTag=CAUSE_OF_DEATH]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (VP (VBG BREAKING))
+    (: :)
+    (S
+      (NP (NNP Democrat) (NNP Senator) (NNP Ben) (NNP Ray) (NNP Lujan) (NNP Hospitalized))
+      (PP (IN After)
+        (S
+          (VP (VBG Suffering)
+            (NP (NN Stroke))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Hospitalized-8)
+dep(Hospitalized-8, BREAKING-1)
+punct(Hospitalized-8, :-2)
+compound(Hospitalized-8, Democrat-3)
+compound(Hospitalized-8, Senator-4)
+compound(Hospitalized-8, Ben-5)
+compound(Hospitalized-8, Ray-6)
+compound(Hospitalized-8, Lujan-7)
+mark(Suffering-10, After-9)
+advcl:after(Hospitalized-8, Suffering-10)
+obj(Suffering-10, Stroke-11)
+
+Extracted the following NER entity mentions:
+Senator	TITLE	-
+Ben Ray Lujan	PERSON	PERSON:0.9968016104000805
+Stroke	CAUSE_OF_DEATH	-

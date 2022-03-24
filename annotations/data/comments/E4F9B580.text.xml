@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>E4F9B580.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Literally</word>
+            <lemma>literally</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>body</word>
+            <lemma>body</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Texas</word>
+            <lemma>Texas</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>STATE_OR_PROVINCE</NER>
+          </token>
+          <token id="6">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>real</word>
+            <lemma>real</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>integrity</word>
+            <lemma>integrity</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>actually</word>
+            <lemma>actually</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>likes</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>douche</word>
+            <lemma>douche</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (ADVP (ADVP (RB Literally) (NP (DT no) (NN body)) (PP (IN in) (NP (NNP Texas)))) (PP (IN with) (NP (JJ real) (NN integrity)))) (ADVP (RB actually)) (VP (VBZ likes)) (NP (DT this) (NN douche)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">likes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="1">Literally</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">body</governor>
+            <dependent idx="2">no</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="1">Literally</governor>
+            <dependent idx="3">body</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">Texas</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="1">Literally</governor>
+            <dependent idx="5">Texas</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">integrity</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">integrity</governor>
+            <dependent idx="7">real</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="1">Literally</governor>
+            <dependent idx="8">integrity</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="9">actually</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">douche</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">likes</governor>
+            <dependent idx="12">douche</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">likes</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">likes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="1">Literally</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">body</governor>
+            <dependent idx="2">no</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="1">Literally</governor>
+            <dependent idx="3">body</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">Texas</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Literally</governor>
+            <dependent idx="5">Texas</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">integrity</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">integrity</governor>
+            <dependent idx="7">real</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="1">Literally</governor>
+            <dependent idx="8">integrity</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="9">actually</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">douche</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">likes</governor>
+            <dependent idx="12">douche</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">likes</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">likes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="1">Literally</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">body</governor>
+            <dependent idx="2">no</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="1">Literally</governor>
+            <dependent idx="3">body</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">Texas</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Literally</governor>
+            <dependent idx="5">Texas</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">integrity</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">integrity</governor>
+            <dependent idx="7">real</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="1">Literally</governor>
+            <dependent idx="8">integrity</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="9">actually</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">douche</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">likes</governor>
+            <dependent idx="12">douche</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">likes</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">likes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="1">Literally</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">body</governor>
+            <dependent idx="2">no</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="1">Literally</governor>
+            <dependent idx="3">body</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">Texas</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Literally</governor>
+            <dependent idx="5">Texas</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">integrity</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">integrity</governor>
+            <dependent idx="7">real</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="1">Literally</governor>
+            <dependent idx="8">integrity</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="9">actually</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">douche</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">likes</governor>
+            <dependent idx="12">douche</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">likes</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">likes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="1">Literally</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">body</governor>
+            <dependent idx="2">no</dependent>
+          </dep>
+          <dep type="obl:npmod">
+            <governor idx="1">Literally</governor>
+            <dependent idx="3">body</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">Texas</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Literally</governor>
+            <dependent idx="5">Texas</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">integrity</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">integrity</governor>
+            <dependent idx="7">real</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="1">Literally</governor>
+            <dependent idx="8">integrity</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">likes</governor>
+            <dependent idx="9">actually</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">douche</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">likes</governor>
+            <dependent idx="12">douche</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">likes</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,60 @@
+Document: ID=C973A200.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+YouTube Pulls Donald Trump's Interview With 'Full Send' Podcast For Misinformation
+
+Tokens:
+[Text=YouTube CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=YouTube NamedEntityTag=ORGANIZATION]
+[Text=Pulls CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=pull NamedEntityTag=O]
+[Text=Donald CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=Trump CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Interview CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Full CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=Send CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Podcast CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Podcast NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Misinformation CharacterOffsetBegin=68 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Misinformation NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP YouTube))
+    (VP (VBZ Pulls)
+      (NP
+        (NP
+          (NP (NNP Donald) (NNP Trump) (POS 's))
+          (NN Interview))
+        (PP (IN With) (`` ')
+          (NP (JJ Full)
+            (NML
+              (NML
+                (S
+                  (VP (VB Send))))
+              ('' ') (NNP Podcast))))))
+    (PP (IN For)
+      (NP (NNP Misinformation)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pulls-2)
+nsubj(Pulls-2, YouTube-1)
+compound(Trump-4, Donald-3)
+nmod:poss(Interview-6, Trump-4)
+case(Trump-4, 's-5)
+obj(Pulls-2, Interview-6)
+case(Podcast-12, With-7)
+punct(Podcast-12, '-8)
+amod(Podcast-12, Full-9)
+compound(Podcast-12, Send-10)
+punct(Podcast-12, '-11)
+nmod:with(Interview-6, Podcast-12)
+case(Misinformation-14, For-13)
+obl:for(Pulls-2, Misinformation-14)
+
+Extracted the following NER entity mentions:
+YouTube	ORGANIZATION	ORGANIZATION:0.6846223699969661
+Donald Trump	PERSON	PERSON:0.9719056311718772

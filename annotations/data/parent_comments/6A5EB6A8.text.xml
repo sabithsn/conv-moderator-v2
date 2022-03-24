@@ -1,0 +1,66 @@
+Document: ID=6A5EB6A8.text (2 sentences, 14 tokens)
+
+Sentence #1 (2 tokens):
+Go!
+
+Tokens:
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Go))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Go-1)
+punct(Go-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+Don't Let The Door Hit You On The Way Out!
+
+Tokens:
+[Text=Do CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Let CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Door CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=door NamedEntityTag=O]
+[Text=Hit CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=hit NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Way CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Way NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Out NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (VP (VB Let)
+        (NP (DT The) (NN Door) (NN Hit))))
+    (NP (PRP You))
+    (PP (IN On)
+      (NP (DT The) (NNP Way) (NNP Out)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-3)
+aux(Let-3, Do-1)
+advmod(Let-3, n't-2)
+det(Hit-6, The-4)
+compound(Hit-6, Door-5)
+obj(Let-3, Hit-6)
+dep(Let-3, You-7)
+case(Out-11, On-8)
+det(Out-11, The-9)
+compound(Out-11, Way-10)
+obl:on(Let-3, Out-11)
+punct(Let-3, !-12)
+
+Extracted the following NER entity mentions:

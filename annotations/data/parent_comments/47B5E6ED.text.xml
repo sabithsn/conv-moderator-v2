@@ -1,0 +1,67 @@
+Document: ID=47B5E6ED.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Andrew Yang Deletes Tweets Saying Joe Rogan’s Not Racist After Left-Wing Backlash, Apologizes
+
+Tokens:
+[Text=Andrew CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Andrew NamedEntityTag=PERSON]
+[Text=Yang CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Yang NamedEntityTag=PERSON]
+[Text=Deletes CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=delete NamedEntityTag=O]
+[Text=Tweets CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=tweet NamedEntityTag=O]
+[Text=Saying CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=Joe CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Rogan CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Rogan NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Racist CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Left CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Left NamedEntityTag=IDEOLOGY]
+[Text=- CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=HYPH Lemma=- NamedEntityTag=IDEOLOGY]
+[Text=Wing CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Wing NamedEntityTag=IDEOLOGY]
+[Text=Backlash CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Backlash NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Apologizes CharacterOffsetBegin=83 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=apologize NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Andrew) (NNP Yang))
+    (VP (VBZ Deletes)
+      (NP (NNS Tweets))
+      (S
+        (VP (VBG Saying)
+          (NP
+            (NP
+              (NP (NNP Joe) (NNP Rogan) (POS ’s))
+              (ADJP (RB Not) (JJ Racist)))
+            (SBAR
+              (S
+                (PP (IN After)
+                  (NP (NNP Left) (HYPH -) (NNP Wing) (NNP Backlash)))
+                (, ,)
+                (VP (VBZ Apologizes))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Deletes-3)
+compound(Yang-2, Andrew-1)
+nsubj(Deletes-3, Yang-2)
+obj(Deletes-3, Tweets-4)
+xcomp(Deletes-3, Saying-5)
+compound(Rogan-7, Joe-6)
+obj(Saying-5, Rogan-7)
+case(Rogan-7, ’s-8)
+advmod(Racist-10, Not-9)
+amod(Rogan-7, Racist-10)
+case(Backlash-15, After-11)
+compound(Backlash-15, Left-12)
+punct(Backlash-15, --13)
+compound(Backlash-15, Wing-14)
+obl:after(Apologizes-17, Backlash-15)
+punct(Apologizes-17, ,-16)
+acl:relcl(Rogan-7, Apologizes-17)
+
+Extracted the following NER entity mentions:
+Andrew Yang	PERSON	PERSON:0.9583382749412036
+Joe Rogan	PERSON	PERSON:0.9964403892313499
+Left-Wing	IDEOLOGY	-

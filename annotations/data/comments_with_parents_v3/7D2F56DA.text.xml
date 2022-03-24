@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>7D2F56DA.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Waiting</word>
+            <lemma>wait</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>…</word>
+            <lemma>…</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Nothing</word>
+            <lemma>nothing</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>white</word>
+            <lemma>white</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>there</word>
+            <lemma>there</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (S (VP (VBG Waiting) (PP (IN for) (NP (DT this))))) (: …) (NP (NP (NN Nothing)) (PP (CC but) (NP (JJ white) (NNS people))) (ADVP (RB there))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Nothing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">people</governor>
+            <dependent idx="6">but</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">white</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="9">there</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Nothing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">people</governor>
+            <dependent idx="6">but</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">white</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="9">there</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Nothing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">people</governor>
+            <dependent idx="6">but</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">white</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="9">there</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Nothing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">people</governor>
+            <dependent idx="6">but</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">white</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="9">there</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Nothing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="1">Waiting</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">this</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="1">Waiting</governor>
+            <dependent idx="3">this</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">people</governor>
+            <dependent idx="6">but</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">people</governor>
+            <dependent idx="7">white</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="8">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">Nothing</governor>
+            <dependent idx="9">there</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

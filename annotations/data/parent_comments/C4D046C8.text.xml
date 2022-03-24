@@ -1,0 +1,81 @@
+Document: ID=C4D046C8.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+On the other hand, I know an Emily that prefers Em and that is how she introduces herself.
+
+Tokens:
+[Text=On CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Emily CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Emily NamedEntityTag=PERSON]
+[Text=that CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=prefers CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=VBZ Lemma=prefer NamedEntityTag=O]
+[Text=Em CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=UH Lemma=em NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=introduces CharacterOffsetBegin=71 CharacterOffsetEnd=81 PartOfSpeech=VBZ Lemma=introduce NamedEntityTag=O]
+[Text=herself CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=herself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (DT the) (JJ other) (NN hand)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP know)
+      (NP
+        (NP (DT an) (NNP Emily))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ prefers)
+              (S
+                (INTJ (UH Em))
+                (CC and)
+                (NP (DT that))
+                (VP (VBZ is)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP (PRP she))
+                      (VP (VBZ introduces)
+                        (NP (PRP herself))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-7)
+case(hand-4, On-1)
+det(hand-4, the-2)
+amod(hand-4, other-3)
+obl:on(know-7, hand-4)
+punct(know-7, ,-5)
+nsubj(know-7, I-6)
+det(Emily-9, an-8)
+obj(know-7, Emily-9)
+nsubj(prefers-11, Emily-9)
+ref(Emily-9, that-10)
+acl:relcl(Emily-9, prefers-11)
+discourse(is-15, Em-12)
+cc(is-15, and-13)
+conj(is-15, that-14)
+ccomp(prefers-11, is-15)
+advmod(introduces-18, how-16)
+nsubj(introduces-18, she-17)
+ccomp(is-15, introduces-18)
+obj(introduces-18, herself-19)
+punct(know-7, .-20)
+
+Extracted the following NER entity mentions:
+Emily	PERSON	PERSON:0.672570974187516
+she	PERSON	-

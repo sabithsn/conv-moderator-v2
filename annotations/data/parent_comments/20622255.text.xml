@@ -1,0 +1,288 @@
+Document: ID=20622255.text (4 sentences, 74 tokens)
+
+Sentence #1 (9 tokens):
+Here's an interesting one I learned.lately......
+
+Tokens:
+[Text=Here CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=interesting CharacterOffsetBegin=10 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=interesting NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=I CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=learned.lately CharacterOffsetBegin=28 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=learned.lately NamedEntityTag=O]
+[Text=..... CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NFP Lemma=..... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ 's)
+      (VP
+        (NP (DT an) (JJ interesting) (NN one))
+        (S
+          (NP (PRP I))
+          (ADVP (RB learned.lately)))))
+    (NFP .....) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, one-5)
+nsubj(one-5, Here-1)
+aux(one-5, 's-2)
+det(one-5, an-3)
+amod(one-5, interesting-4)
+xcomp(one-5, I-6)
+advmod(I-6, learned.lately-7)
+punct(one-5, .....-8)
+punct(one-5, .-9)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (14 tokens):
+You know when your bladder is full and you desperately need to wee ?
+
+Tokens:
+[Text=You CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=bladder CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=bladder NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=desperately CharacterOffsetBegin=92 CharacterOffsetEnd=103 PartOfSpeech=RB Lemma=desperately NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=wee CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=wee NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP know)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP$ your) (NN bladder))
+            (VP (VBZ is)
+              (ADJP (JJ full)))))))
+    (CC and)
+    (S
+      (NP (PRP you))
+      (ADVP (RB desperately))
+      (VP (VBP need)
+        (PP (IN to)
+          (NP (JJ wee)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, You-1)
+advmod(full-7, when-3)
+nmod:poss(bladder-5, your-4)
+nsubj(full-7, bladder-5)
+cop(full-7, is-6)
+ccomp(know-2, full-7)
+cc(need-11, and-8)
+nsubj(need-11, you-9)
+advmod(need-11, desperately-10)
+conj:and(know-2, need-11)
+case(wee-13, to-12)
+obl:to(need-11, wee-13)
+punct(know-2, ?-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (20 tokens):
+Well, turns out your bladder cannot feel " full" it can only feel "heavy".
+
+Tokens:
+[Text=Well CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=turns CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=VBZ Lemma=turn NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=bladder CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=bladder NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=heavy CharacterOffsetBegin=185 CharacterOffsetEnd=190 PartOfSpeech=JJ Lemma=heavy NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (VP (VBZ turns)
+      (PRT (RP out))
+      (SBAR
+        (S
+          (NP (PRP$ your) (NN bladder))
+          (VP (MD can) (RB not)
+            (VP (VB feel)
+              (ADJP (`` ") (JJ full) ('' ")
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (MD can)
+                      (ADVP (RB only))
+                      (VP (VB feel)
+                        (ADJP (`` ") (JJ heavy) ('' "))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, turns-3)
+discourse(turns-3, Well-1)
+punct(turns-3, ,-2)
+compound:prt(turns-3, out-4)
+nmod:poss(bladder-6, your-5)
+nsubj(feel-9, bladder-6)
+aux(feel-9, can-7)
+advmod(feel-9, not-8)
+ccomp(turns-3, feel-9)
+punct(full-11, "-10)
+xcomp(feel-9, full-11)
+punct(full-11, "-12)
+nsubj(feel-16, it-13)
+aux(feel-16, can-14)
+advmod(feel-16, only-15)
+ccomp(full-11, feel-16)
+punct(heavy-18, "-17)
+xcomp(feel-16, heavy-18)
+punct(heavy-18, "-19)
+punct(turns-3, .-20)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (31 tokens):
+So astronaut s in space HAVE to go per every couple of hours...'cos without gravity...they simply do not know if they need to or not !!!
+
+Tokens:
+[Text=So CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=astronaut CharacterOffsetBegin=196 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=astronaut NamedEntityTag=TITLE]
+[Text=s CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=s NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=space CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=space NamedEntityTag=O]
+[Text=HAVE CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="PT2H" quant="every" tid="t1" type="SET" value="PT2H">every couple of hours</TIMEX3>]
+[Text=couple CharacterOffsetBegin=238 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=couple NamedEntityTag=SET Timex=<TIMEX3 periodicity="PT2H" quant="every" tid="t1" type="SET" value="PT2H">every couple of hours</TIMEX3>]
+[Text=of CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=of NamedEntityTag=SET Timex=<TIMEX3 periodicity="PT2H" quant="every" tid="t1" type="SET" value="PT2H">every couple of hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=248 CharacterOffsetEnd=253 PartOfSpeech=NNS Lemma=hour NamedEntityTag=SET Timex=<TIMEX3 periodicity="PT2H" quant="every" tid="t1" type="SET" value="PT2H">every couple of hours</TIMEX3>]
+[Text=... CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=cos CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=NNS Lemma=cos NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=261 CharacterOffsetEnd=268 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=gravity CharacterOffsetBegin=269 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=gravity NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=319 CharacterOffsetEnd=321 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=!!! CharacterOffsetBegin=326 CharacterOffsetEnd=329 PartOfSpeech=. Lemma=!!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB So))
+      (NP
+        (NP (NN astronaut) (NN s))
+        (PP (IN in)
+          (NP (NN space))))
+      (VP (VBP HAVE)
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (PP (IN per)
+                (NP
+                  (NP (DT every) (NN couple))
+                  (PP (IN of)
+                    (NP (NNS hours)))
+                  (: ...) ('' ')))
+              (NP
+                (NP (NNS cos))
+                (PP (IN without)
+                  (NP (NN gravity)))))))))
+    (: ...)
+    (S
+      (NP (PRP they))
+      (ADVP (RB simply))
+      (VP (VBP do) (RB not)
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PRP they))
+              (VP (VBP need)
+                (S
+                  (VP (TO to)))))
+            (CC or)
+            (RB not)))))
+    (. !!!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, HAVE-6)
+advmod(HAVE-6, So-1)
+compound(s-3, astronaut-2)
+nsubj(HAVE-6, s-3)
+nsubj:xsubj(go-8, s-3)
+case(space-5, in-4)
+nmod:in(s-3, space-5)
+mark(go-8, to-7)
+xcomp(HAVE-6, go-8)
+case(couple-11, per-9)
+det(couple-11, every-10)
+obl:per(go-8, couple-11)
+case(hours-13, of-12)
+nmod:of(couple-11, hours-13)
+punct(couple-11, ...-14)
+punct(couple-11, '-15)
+obj(go-8, cos-16)
+case(gravity-18, without-17)
+nmod:without(cos-16, gravity-18)
+punct(HAVE-6, ...-19)
+nsubj(know-24, they-20)
+advmod(know-24, simply-21)
+aux(know-24, do-22)
+advmod(know-24, not-23)
+parataxis(HAVE-6, know-24)
+mark(need-27, if-25)
+nsubj(need-27, they-26)
+nsubj:xsubj(to-28, they-26)
+advcl:if(know-24, need-27)
+xcomp(need-27, to-28)
+cc(need-27, or-29)
+advmod(need-27, not-30)
+punct(HAVE-6, !!!-31)
+
+Extracted the following NER entity mentions:
+astronaut	TITLE	-
+every couple of hours	SET	SET:-1.0

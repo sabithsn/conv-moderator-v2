@@ -1,0 +1,105 @@
+Document: ID=0CDFA30D.text (2 sentences, 24 tokens)
+
+Sentence #1 (18 tokens):
+“It’s not racism, we know how they act and what they’re like.”
+
+Tokens:
+[Text=“ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=racism CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=racism NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=act CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=act NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` “)
+    (S
+      (NP (PRP It))
+      (VP (VBZ ’s) (RB not)
+        (NP (NN racism))))
+    (, ,)
+    (S
+      (NP (PRP we))
+      (VP (VBP know)
+        (SBAR
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP they))
+              (VP (VBP act))))
+          (CC and)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP they))
+              (VP (VBP ’re)
+                (PP (IN like))))))))
+    (. .) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, racism-5)
+punct(racism-5, “-1)
+nsubj(racism-5, It-2)
+cop(racism-5, ’s-3)
+advmod(racism-5, not-4)
+punct(racism-5, ,-6)
+nsubj(know-8, we-7)
+parataxis(racism-5, know-8)
+advmod(act-11, how-9)
+nsubj(act-11, they-10)
+dep(know-8, act-11)
+cc(like-16, and-12)
+obj(like-16, what-13)
+nsubj(like-16, they-14)
+cop(like-16, ’re-15)
+dep(know-8, like-16)
+conj:and(act-11, like-16)
+punct(racism-5, .-17)
+punct(racism-5, ”-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+-One of my French students
+
+Tokens:
+[Text=- CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=One CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CD Lemma=one NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=french NamedEntityTag=NATIONALITY]
+[Text=students CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=NNS Lemma=student NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (QP (HYPH -) (CD One))
+      (PP (IN of)
+        (NP (PRP$ my) (JJ French) (NNS students))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, One-2)
+punct(One-2, --1)
+case(students-6, of-3)
+nmod:poss(students-6, my-4)
+amod(students-6, French-5)
+nmod:of(One-2, students-6)
+
+Extracted the following NER entity mentions:
+French	NATIONALITY	MISC:0.9999909309491933

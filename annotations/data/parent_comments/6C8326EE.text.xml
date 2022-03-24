@@ -1,0 +1,87 @@
+Document: ID=6C8326EE.text (2 sentences, 18 tokens)
+
+Sentence #1 (14 tokens):
+If AOC was fat and in her 60’s, would anyone even listen?
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=AOC CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=AOC NamedEntityTag=ORGANIZATION]
+[Text=was CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=fat NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=60’s CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=60’s NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (SBAR (IN If)
+      (S
+        (NP (NNP AOC))
+        (VP (VBD was)
+          (UCP
+            (ADJP (JJ fat))
+            (CC and)
+            (PP (IN in)
+              (NP (PRP$ her) (NNS 60’s)))))))
+    (, ,) (MD would)
+    (NP (NN anyone))
+    (ADVP (RB even))
+    (VP (VB listen))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, listen-13)
+mark(fat-4, If-1)
+nsubj(fat-4, AOC-2)
+cop(fat-4, was-3)
+advcl:if(listen-13, fat-4)
+cc(listen-13', and-5)
+case(60’s-8, in-6)
+nmod:poss(60’s-8, her-7)
+advcl:in(listen-13', 60’s-8)
+punct(listen-13, ,-9)
+aux(listen-13, would-10)
+nsubj(listen-13, anyone-11)
+nsubj(listen-13', anyone-11)
+advmod(listen-13, even-12)
+conj:and(listen-13, listen-13')
+punct(listen-13, ?-14)
+
+Extracted the following NER entity mentions:
+AOC	ORGANIZATION	ORGANIZATION:0.9408131965077536
+her	PERSON	-
+
+Sentence #2 (4 tokens):
+- Adam Corolla.
+
+Tokens:
+[Text=- CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Adam CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Adam NamedEntityTag=PERSON]
+[Text=Corolla CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Corolla NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (PP (HYPH -)
+      (NP (NNP Adam) (NNP Corolla)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Corolla-3)
+punct(Corolla-3, --1)
+compound(Corolla-3, Adam-2)
+punct(Corolla-3, .-4)
+
+Extracted the following NER entity mentions:
+Adam Corolla	PERSON	PERSON:0.8071309527324403

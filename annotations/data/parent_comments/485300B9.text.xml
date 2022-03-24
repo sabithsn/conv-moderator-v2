@@ -1,0 +1,87 @@
+Document: ID=485300B9.text (2 sentences, 20 tokens)
+
+Sentence #1 (11 tokens):
+Clarence Thomas is a leftover from the previous Republican swamp.
+
+Tokens:
+[Text=Clarence CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Clarence NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=leftover CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=leftover NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=previous CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=previous NamedEntityTag=O]
+[Text=Republican CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Republican NamedEntityTag=IDEOLOGY]
+[Text=swamp CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=swamp NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Clarence) (NNP Thomas))
+    (VP (VBZ is)
+      (S
+        (NP
+          (NP (DT a) (NN leftover))
+          (PP (IN from)
+            (NP (DT the) (JJ previous) (NNP Republican))))
+        (VP (VB swamp))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+compound(Thomas-2, Clarence-1)
+nsubj(is-3, Thomas-2)
+det(leftover-5, a-4)
+nsubj(swamp-10, leftover-5)
+case(Republican-9, from-6)
+det(Republican-9, the-7)
+amod(Republican-9, previous-8)
+nmod:from(leftover-5, Republican-9)
+ccomp(is-3, swamp-10)
+punct(is-3, .-11)
+
+Extracted the following NER entity mentions:
+Clarence Thomas	PERSON	PERSON:0.9995299404460048
+Republican	IDEOLOGY	MISC:0.9999590634004358
+
+Sentence #2 (9 tokens):
+At this point he's practically a peat monster
+
+Tokens:
+[Text=At CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=practically CharacterOffsetBegin=85 CharacterOffsetEnd=96 PartOfSpeech=RB Lemma=practically NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=peat CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=peat NamedEntityTag=O]
+[Text=monster CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=monster NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT this) (NN point)))
+    (NP (PRP he))
+    (VP (VBZ 's)
+      (ADVP (RB practically))
+      (NP (DT a) (NN peat) (NN monster)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, monster-9)
+case(point-3, At-1)
+det(point-3, this-2)
+obl:at(monster-9, point-3)
+nsubj(monster-9, he-4)
+cop(monster-9, 's-5)
+advmod(monster-9, practically-6)
+det(monster-9, a-7)
+compound(monster-9, peat-8)
+
+Extracted the following NER entity mentions:
+he	PERSON	-

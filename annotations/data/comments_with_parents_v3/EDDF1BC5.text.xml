@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>EDDF1BC5.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>IDF</word>
+            <lemma>IDF</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>attacked</word>
+            <lemma>attack</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Palestinians</word>
+            <lemma>Palestinians</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="4">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>children</word>
+            <lemma>child</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Demascus</word>
+            <lemma>Demascus</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>Gate</word>
+            <lemma>Gate</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP IDF)) (VP (VBD attacked) (NP (NP (NNPS Palestinians)) (CC and) (NP (NNS children))) (PP (IN at) (NP (NNP Demascus) (NNP Gate)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">attacked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="1">IDF</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="3">Palestinians</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">children</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">Palestinians</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Gate</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">Gate</governor>
+            <dependent idx="7">Demascus</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="2">attacked</governor>
+            <dependent idx="8">Gate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">attacked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">attacked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="1">IDF</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="3">Palestinians</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">children</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="3">Palestinians</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Gate</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">Gate</governor>
+            <dependent idx="7">Demascus</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="2">attacked</governor>
+            <dependent idx="8">Gate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">attacked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">attacked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="1">IDF</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="3">Palestinians</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">children</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="obj" extra="true">
+            <governor idx="2">attacked</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="3">Palestinians</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Gate</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">Gate</governor>
+            <dependent idx="7">Demascus</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="2">attacked</governor>
+            <dependent idx="8">Gate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">attacked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">attacked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="1">IDF</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="3">Palestinians</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">children</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="obj" extra="true">
+            <governor idx="2">attacked</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="3">Palestinians</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Gate</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">Gate</governor>
+            <dependent idx="7">Demascus</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="2">attacked</governor>
+            <dependent idx="8">Gate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">attacked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">attacked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="1">IDF</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="2">attacked</governor>
+            <dependent idx="3">Palestinians</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">children</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="obj" extra="true">
+            <governor idx="2">attacked</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="3">Palestinians</governor>
+            <dependent idx="5">children</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">Gate</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">Gate</governor>
+            <dependent idx="7">Demascus</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="2">attacked</governor>
+            <dependent idx="8">Gate</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">attacked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Child</word>
+            <lemma>child</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>hit</word>
+            <lemma>hit</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>stun</word>
+            <lemma>stun</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>grenade</word>
+            <lemma>grenade</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>*</word>
+            <lemma>*</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>SYM</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>warning</word>
+            <lemma>warning</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>graphic</word>
+            <lemma>graphic</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>*</word>
+            <lemma>*</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NFP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Russian</word>
+            <lemma>russian</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>NATIONALITY</NER>
+          </token>
+          <token id="11">
+            <word>dictator</word>
+            <lemma>dictator</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>TITLE</NER>
+          </token>
+          <token id="12">
+            <word>sponsored</word>
+            <lemma>sponsor</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>crony</word>
+            <lemma>crony</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>capitalism</word>
+            <lemma>capitalism</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>IDEOLOGY</NER>
+          </token>
+          <token id="16">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>149</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>bombing</word>
+            <lemma>bomb</lemma>
+            <CharacterOffsetBegin>152</CharacterOffsetBegin>
+            <CharacterOffsetEnd>159</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>Freedom</word>
+            <lemma>Freedom</lemma>
+            <CharacterOffsetBegin>160</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="19">
+            <word>Square</word>
+            <lemma>Square</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>174</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="20">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>175</CharacterOffsetBegin>
+            <CharacterOffsetEnd>177</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>Kharkiv</word>
+            <lemma>Kharkiv</lemma>
+            <CharacterOffsetBegin>178</CharacterOffsetBegin>
+            <CharacterOffsetEnd>185</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="22">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>186</CharacterOffsetBegin>
+            <CharacterOffsetEnd>190</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>dozens</word>
+            <lemma>dozen</lemma>
+            <CharacterOffsetBegin>191</CharacterOffsetBegin>
+            <CharacterOffsetEnd>197</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>198</CharacterOffsetBegin>
+            <CharacterOffsetEnd>200</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>civilian</word>
+            <lemma>civilian</lemma>
+            <CharacterOffsetBegin>201</CharacterOffsetBegin>
+            <CharacterOffsetEnd>209</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>casualties</word>
+            <lemma>casualty</lemma>
+            <CharacterOffsetBegin>210</CharacterOffsetBegin>
+            <CharacterOffsetEnd>220</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>220</CharacterOffsetBegin>
+            <CharacterOffsetEnd>221</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>222</CharacterOffsetBegin>
+            <CharacterOffsetEnd>225</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>suddenly</word>
+            <lemma>suddenly</lemma>
+            <CharacterOffsetBegin>226</CharacterOffsetBegin>
+            <CharacterOffsetEnd>234</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>"</word>
+            <lemma>"</lemma>
+            <CharacterOffsetBegin>235</CharacterOffsetBegin>
+            <CharacterOffsetEnd>236</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>socialists</word>
+            <lemma>socialist</lemma>
+            <CharacterOffsetBegin>236</CharacterOffsetBegin>
+            <CharacterOffsetEnd>246</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>"</word>
+            <lemma>"</lemma>
+            <CharacterOffsetBegin>246</CharacterOffsetBegin>
+            <CharacterOffsetEnd>247</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>248</CharacterOffsetBegin>
+            <CharacterOffsetEnd>251</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="34">
+            <word>outraged</word>
+            <lemma>outrage</lemma>
+            <CharacterOffsetBegin>252</CharacterOffsetBegin>
+            <CharacterOffsetEnd>260</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="35">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>261</CharacterOffsetBegin>
+            <CharacterOffsetEnd>263</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="36">
+            <word>Jerusalem</word>
+            <lemma>Jerusalem</lemma>
+            <CharacterOffsetBegin>264</CharacterOffsetBegin>
+            <CharacterOffsetEnd>273</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>CITY</NER>
+          </token>
+          <token id="37">
+            <word>police</word>
+            <lemma>police</lemma>
+            <CharacterOffsetBegin>274</CharacterOffsetBegin>
+            <CharacterOffsetEnd>280</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="38">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>280</CharacterOffsetBegin>
+            <CharacterOffsetEnd>281</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (NP (NN Child)) (VP (VBN hit) (PP (IN by) (NP (NP (NN stun) (NML (NN grenade) (SYM *)) (NN warning) (JJ graphic)) (NFP *) (NP (NP (JJ Russian) (NN dictator)) (VP (VBN sponsored) (PP (IN by) (NP (JJ crony) (NN capitalism))))))))) (VP (VBZ is) (VP (VBG bombing) (NP (NP (NNP Freedom) (NNP Square)) (PP (IN in) (NP (NNP Kharkiv)))) (PP (IN with) (NP (NP (NNS dozens)) (PP (IN of) (NP (JJ civilian) (NNS casualties)))))))) (, ,) (CC and) (S (ADVP (RB suddenly)) (NP (`` ") (NNS socialists) ('' ")) (VP (VBP are) (VP (VBN outraged) (PP (IN by) (NP (NNP Jerusalem) (NN police)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="17">bombing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="1">Child</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Child</governor>
+            <dependent idx="2">hit</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">warning</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="4">stun</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="5">grenade</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">grenade</governor>
+            <dependent idx="6">*</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="2">hit</governor>
+            <dependent idx="7">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">warning</governor>
+            <dependent idx="8">graphic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">warning</governor>
+            <dependent idx="9">*</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">dictator</governor>
+            <dependent idx="10">Russian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">warning</governor>
+            <dependent idx="11">dictator</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="11">dictator</governor>
+            <dependent idx="12">sponsored</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="13">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="14">crony</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="12">sponsored</governor>
+            <dependent idx="15">capitalism</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">bombing</governor>
+            <dependent idx="16">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="19">Square</governor>
+            <dependent idx="18">Freedom</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="19">Square</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="21">Kharkiv</governor>
+            <dependent idx="20">in</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="19">Square</governor>
+            <dependent idx="21">Kharkiv</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="23">dozens</governor>
+            <dependent idx="22">with</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="17">bombing</governor>
+            <dependent idx="23">dozens</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="26">casualties</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="26">casualties</governor>
+            <dependent idx="25">civilian</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="23">dozens</governor>
+            <dependent idx="26">casualties</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="27">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="34">outraged</governor>
+            <dependent idx="28">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="34">outraged</governor>
+            <dependent idx="29">suddenly</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="30">"</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="31">socialists</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="32">"</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="33">are</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="34">outraged</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="37">police</governor>
+            <dependent idx="35">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="37">police</governor>
+            <dependent idx="36">Jerusalem</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="34">outraged</governor>
+            <dependent idx="37">police</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="38">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="17">bombing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="1">Child</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Child</governor>
+            <dependent idx="2">hit</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">warning</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="4">stun</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="5">grenade</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">grenade</governor>
+            <dependent idx="6">*</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="2">hit</governor>
+            <dependent idx="7">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">warning</governor>
+            <dependent idx="8">graphic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">warning</governor>
+            <dependent idx="9">*</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">dictator</governor>
+            <dependent idx="10">Russian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">warning</governor>
+            <dependent idx="11">dictator</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="11">dictator</governor>
+            <dependent idx="12">sponsored</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="13">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="14">crony</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="12">sponsored</governor>
+            <dependent idx="15">capitalism</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">bombing</governor>
+            <dependent idx="16">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="19">Square</governor>
+            <dependent idx="18">Freedom</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="19">Square</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="21">Kharkiv</governor>
+            <dependent idx="20">in</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="19">Square</governor>
+            <dependent idx="21">Kharkiv</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="23">dozens</governor>
+            <dependent idx="22">with</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="17">bombing</governor>
+            <dependent idx="23">dozens</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="26">casualties</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="26">casualties</governor>
+            <dependent idx="25">civilian</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="23">dozens</governor>
+            <dependent idx="26">casualties</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="27">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="34">outraged</governor>
+            <dependent idx="28">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="34">outraged</governor>
+            <dependent idx="29">suddenly</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="30">"</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="31">socialists</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="32">"</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="33">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="17">bombing</governor>
+            <dependent idx="34">outraged</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="37">police</governor>
+            <dependent idx="35">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="37">police</governor>
+            <dependent idx="36">Jerusalem</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="34">outraged</governor>
+            <dependent idx="37">police</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="38">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="17">bombing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="1">Child</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Child</governor>
+            <dependent idx="2">hit</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">warning</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="4">stun</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="5">grenade</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">grenade</governor>
+            <dependent idx="6">*</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="2">hit</governor>
+            <dependent idx="7">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">warning</governor>
+            <dependent idx="8">graphic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">warning</governor>
+            <dependent idx="9">*</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">dictator</governor>
+            <dependent idx="10">Russian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">warning</governor>
+            <dependent idx="11">dictator</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="11">dictator</governor>
+            <dependent idx="12">sponsored</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="13">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="14">crony</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="12">sponsored</governor>
+            <dependent idx="15">capitalism</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">bombing</governor>
+            <dependent idx="16">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="19">Square</governor>
+            <dependent idx="18">Freedom</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="19">Square</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="21">Kharkiv</governor>
+            <dependent idx="20">in</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="19">Square</governor>
+            <dependent idx="21">Kharkiv</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="23">dozens</governor>
+            <dependent idx="22">with</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="17">bombing</governor>
+            <dependent idx="23">dozens</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="26">casualties</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="26">casualties</governor>
+            <dependent idx="25">civilian</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="23">dozens</governor>
+            <dependent idx="26">casualties</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="27">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="34">outraged</governor>
+            <dependent idx="28">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="34">outraged</governor>
+            <dependent idx="29">suddenly</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="30">"</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="31">socialists</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="32">"</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="33">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="17">bombing</governor>
+            <dependent idx="34">outraged</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="37">police</governor>
+            <dependent idx="35">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="37">police</governor>
+            <dependent idx="36">Jerusalem</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="34">outraged</governor>
+            <dependent idx="37">police</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="38">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="17">bombing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="1">Child</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Child</governor>
+            <dependent idx="2">hit</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">warning</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="4">stun</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="5">grenade</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">grenade</governor>
+            <dependent idx="6">*</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="2">hit</governor>
+            <dependent idx="7">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">warning</governor>
+            <dependent idx="8">graphic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">warning</governor>
+            <dependent idx="9">*</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">dictator</governor>
+            <dependent idx="10">Russian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">warning</governor>
+            <dependent idx="11">dictator</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="11">dictator</governor>
+            <dependent idx="12">sponsored</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="13">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="14">crony</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="12">sponsored</governor>
+            <dependent idx="15">capitalism</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">bombing</governor>
+            <dependent idx="16">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="19">Square</governor>
+            <dependent idx="18">Freedom</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="19">Square</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="21">Kharkiv</governor>
+            <dependent idx="20">in</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="19">Square</governor>
+            <dependent idx="21">Kharkiv</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="23">dozens</governor>
+            <dependent idx="22">with</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="17">bombing</governor>
+            <dependent idx="23">dozens</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="26">casualties</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="26">casualties</governor>
+            <dependent idx="25">civilian</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="23">dozens</governor>
+            <dependent idx="26">casualties</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="27">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="34">outraged</governor>
+            <dependent idx="28">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="34">outraged</governor>
+            <dependent idx="29">suddenly</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="30">"</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="31">socialists</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="32">"</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="33">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="17">bombing</governor>
+            <dependent idx="34">outraged</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="37">police</governor>
+            <dependent idx="35">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="37">police</governor>
+            <dependent idx="36">Jerusalem</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="34">outraged</governor>
+            <dependent idx="37">police</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="38">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="17">bombing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="1">Child</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Child</governor>
+            <dependent idx="2">hit</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">warning</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="4">stun</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">warning</governor>
+            <dependent idx="5">grenade</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">grenade</governor>
+            <dependent idx="6">*</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="2">hit</governor>
+            <dependent idx="7">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">warning</governor>
+            <dependent idx="8">graphic</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">warning</governor>
+            <dependent idx="9">*</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">dictator</governor>
+            <dependent idx="10">Russian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">warning</governor>
+            <dependent idx="11">dictator</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="11">dictator</governor>
+            <dependent idx="12">sponsored</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="13">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">capitalism</governor>
+            <dependent idx="14">crony</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="12">sponsored</governor>
+            <dependent idx="15">capitalism</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">bombing</governor>
+            <dependent idx="16">is</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="19">Square</governor>
+            <dependent idx="18">Freedom</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="17">bombing</governor>
+            <dependent idx="19">Square</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="21">Kharkiv</governor>
+            <dependent idx="20">in</dependent>
+          </dep>
+          <dep type="nmod:in">
+            <governor idx="19">Square</governor>
+            <dependent idx="21">Kharkiv</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="23">dozens</governor>
+            <dependent idx="22">with</dependent>
+          </dep>
+          <dep type="det:qmod">
+            <governor idx="26">casualties</governor>
+            <dependent idx="23">dozens</dependent>
+          </dep>
+          <dep type="fixed">
+            <governor idx="23">dozens</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="26">casualties</governor>
+            <dependent idx="25">civilian</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="17">bombing</governor>
+            <dependent idx="26">casualties</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="27">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="34">outraged</governor>
+            <dependent idx="28">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="34">outraged</governor>
+            <dependent idx="29">suddenly</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="30">"</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="31">socialists</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="31">socialists</governor>
+            <dependent idx="32">"</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="34">outraged</governor>
+            <dependent idx="33">are</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="17">bombing</governor>
+            <dependent idx="34">outraged</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="37">police</governor>
+            <dependent idx="35">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="37">police</governor>
+            <dependent idx="36">Jerusalem</dependent>
+          </dep>
+          <dep type="obl:agent">
+            <governor idx="34">outraged</governor>
+            <dependent idx="37">police</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="17">bombing</governor>
+            <dependent idx="38">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

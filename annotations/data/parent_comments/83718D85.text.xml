@@ -1,0 +1,80 @@
+Document: ID=83718D85.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Trump blasts Biden on Ukraine, saying he has 'no concept of what he's doing'
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=blasts CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=blast NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=on CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=concept CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=concept NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump) (NNS blasts))
+    (VP
+      (FRAG
+        (FRAG
+          (NP (NNP Biden))
+          (PP (IN on)
+            (NP (NNP Ukraine))))
+        (, ,)
+        (S
+          (VP (VBG saying)
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBZ has)
+                  (NP (`` ')
+                    (NP (DT no) (NN concept))
+                    (PP (IN of)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP he))
+                          (VP (VBZ 's)
+                            (VP (VBG doing))))))
+                    ('' ')))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Biden-3)
+compound(blasts-2, Trump-1)
+nsubj(Biden-3, blasts-2)
+case(Ukraine-5, on-4)
+obl:on(Biden-3, Ukraine-5)
+punct(Biden-3, ,-6)
+parataxis(Biden-3, saying-7)
+nsubj(has-9, he-8)
+ccomp(saying-7, has-9)
+punct(concept-12, '-10)
+det(concept-12, no-11)
+obj(has-9, concept-12)
+mark(doing-17, of-13)
+obj(doing-17, what-14)
+nsubj(doing-17, he-15)
+aux(doing-17, 's-16)
+acl:of(concept-12, doing-17)
+punct(concept-12, '-18)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.49894891558912996
+Biden	PERSON	PERSON:0.996411046517094
+Ukraine	COUNTRY	LOCATION:0.9988414297882272
+he	PERSON	-
+he	PERSON	-

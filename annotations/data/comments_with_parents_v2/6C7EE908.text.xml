@@ -1,0 +1,36 @@
+Document: ID=6C7EE908.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+they should be treated by Joe Rogan
+
+Tokens:
+[Text=they CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=treated CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=treat NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Joe CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Rogan CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Rogan NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN treated)
+          (PP (IN by)
+            (NP (NNP Joe) (NNP Rogan))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, treated-4)
+nsubj:pass(treated-4, they-1)
+aux(treated-4, should-2)
+aux:pass(treated-4, be-3)
+case(Rogan-7, by-5)
+compound(Rogan-7, Joe-6)
+obl:agent(treated-4, Rogan-7)
+
+Extracted the following NER entity mentions:
+Joe Rogan	PERSON	PERSON:0.9998915243782003

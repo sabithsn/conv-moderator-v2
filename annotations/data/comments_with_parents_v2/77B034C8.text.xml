@@ -1,0 +1,68 @@
+Document: ID=77B034C8.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+my U.S. history teacher said something racist and now i dont know what to do.
+
+Tokens:
+[Text=my CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=history CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=teacher CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=teacher NamedEntityTag=TITLE]
+[Text=said CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=i CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=i NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=nt CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=nt NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ my) (NNP U.S.) (NN history) (NN teacher))
+      (VP (VBD said)
+        (NP (NN something) (JJ racist))))
+    (CC and)
+    (S
+      (ADVP (RB now))
+      (NP (PRP i))
+      (VP (VBP do) (RB nt)
+        (VP (VB know)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (TO to)
+                (VP (VB do))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-5)
+nmod:poss(teacher-4, my-1)
+compound(teacher-4, U.S.-2)
+compound(teacher-4, history-3)
+nsubj(said-5, teacher-4)
+obj(said-5, something-6)
+amod(something-6, racist-7)
+cc(know-13, and-8)
+advmod(know-13, now-9)
+nsubj(know-13, i-10)
+aux(know-13, do-11)
+advmod(know-13, nt-12)
+conj:and(said-5, know-13)
+nsubj(do-16, what-14)
+mark(do-16, to-15)
+ccomp(know-13, do-16)
+punct(said-5, .-17)
+
+Extracted the following NER entity mentions:
+U.S.	COUNTRY	LOCATION:0.9636062839750579
+teacher	TITLE	-
+now	DATE	DATE:-1.0

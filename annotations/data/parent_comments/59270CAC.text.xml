@@ -1,0 +1,60 @@
+Document: ID=59270CAC.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Also a shit judge who had made up his mind long before trial.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=judge CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=judge NamedEntityTag=TITLE]
+[Text=who CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=trial CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=trial NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Also))
+    (NP
+      (NP (DT a) (NN shit) (NN judge))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD had)
+            (VP (VBN made)
+              (PRT (RP up))
+              (NP (PRP$ his) (NN mind))
+              (ADVP (RB long)
+                (PP (IN before)
+                  (NP (NN trial)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, judge-4)
+dep(judge-4, Also-1)
+det(judge-4, a-2)
+compound(judge-4, shit-3)
+nsubj(made-7, judge-4)
+ref(judge-4, who-5)
+aux(made-7, had-6)
+acl:relcl(judge-4, made-7)
+compound:prt(made-7, up-8)
+nmod:poss(mind-10, his-9)
+obj(made-7, mind-10)
+advmod(made-7, long-11)
+case(trial-13, before-12)
+obl:before(long-11, trial-13)
+punct(judge-4, .-14)
+
+Extracted the following NER entity mentions:
+judge	TITLE	-
+his	PERSON	-

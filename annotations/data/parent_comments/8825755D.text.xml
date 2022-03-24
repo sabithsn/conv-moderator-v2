@@ -1,0 +1,114 @@
+Document: ID=8825755D.text (2 sentences, 27 tokens)
+
+Sentence #1 (15 tokens):
+Israel's government continues to oppress innocent Palestinian civilians and no one does anything.
+
+Tokens:
+[Text=Israel CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Israel NamedEntityTag=COUNTRY]
+[Text='s CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=continues CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=oppress CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=oppress NamedEntityTag=O]
+[Text=innocent CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=innocent NamedEntityTag=O]
+[Text=Palestinian CharacterOffsetBegin=50 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=palestinian NamedEntityTag=NATIONALITY]
+[Text=civilians CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=civilian NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=does CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Israel) (POS 's))
+        (NN government))
+      (VP (VBZ continues)
+        (S
+          (VP (TO to)
+            (VP (VB oppress)
+              (NP (JJ innocent) (JJ Palestinian) (NNS civilians)))))))
+    (CC and)
+    (S
+      (NP (DT no) (NN one))
+      (VP (VBZ does)
+        (NP (NN anything))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, continues-4)
+nmod:poss(government-3, Israel-1)
+case(Israel-1, 's-2)
+nsubj(continues-4, government-3)
+nsubj:xsubj(oppress-6, government-3)
+mark(oppress-6, to-5)
+xcomp(continues-4, oppress-6)
+amod(civilians-9, innocent-7)
+amod(civilians-9, Palestinian-8)
+obj(oppress-6, civilians-9)
+cc(does-13, and-10)
+det(one-12, no-11)
+nsubj(does-13, one-12)
+conj:and(continues-4, does-13)
+obj(does-13, anything-14)
+punct(continues-4, .-15)
+
+Extracted the following NER entity mentions:
+Israel	COUNTRY	LOCATION:0.9948361117102839
+Palestinian	NATIONALITY	MISC:0.9999992665152736
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (12 tokens):
+Does the West think some lives are worth more than others?
+
+Tokens:
+[Text=Does CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=West CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=West NamedEntityTag=LOCATION]
+[Text=think CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=lives CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NNS Lemma=life NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=149 CharacterOffsetEnd=155 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Does)
+    (NP (DT the) (NNP West))
+    (VP (VB think)
+      (SBAR
+        (S
+          (NP (DT some) (NNS lives))
+          (VP (VBP are)
+            (ADJP (JJ worth)
+              (NP
+                (QP (JJR more) (IN than))
+                (NNS others)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-4)
+aux(think-4, Does-1)
+det(West-3, the-2)
+nsubj(think-4, West-3)
+det(lives-6, some-5)
+nsubj(worth-8, lives-6)
+cop(worth-8, are-7)
+ccomp(think-4, worth-8)
+nummod(others-11, more-9)
+fixed(more-9, than-10)
+dep(worth-8, others-11)
+punct(think-4, ?-12)
+
+Extracted the following NER entity mentions:
+West	LOCATION	LOCATION:0.8372759311513884

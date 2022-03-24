@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>9F488555.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>CMV</word>
+            <lemma>cmv</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Women</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>lie</word>
+            <lemma>lie</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>rape</word>
+            <lemma>rape</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CRIMINAL_CHARGE</NER>
+          </token>
+          <token id="8">
+            <word>should</word>
+            <lemma>should</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>prosecuted</word>
+            <lemma>prosecute</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN CMV)) (: :) (NP (NP (NNS Women)) (SBAR (WHNP (WP who)) (S (VP (VBP lie) (SBAR (S (NP (RB about) (NN rape)) (VP (MD should) (VP (VB be) (VP (VBN prosecuted)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">CMV</governor>
+            <dependent idx="3">Women</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lie</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Women</governor>
+            <dependent idx="5">lie</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">rape</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="7">rape</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="8">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">lie</governor>
+            <dependent idx="10">prosecuted</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="11">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">CMV</governor>
+            <dependent idx="3">Women</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lie</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Women</governor>
+            <dependent idx="5">lie</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">rape</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="7">rape</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="8">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">lie</governor>
+            <dependent idx="10">prosecuted</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="11">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">CMV</governor>
+            <dependent idx="3">Women</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lie</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Women</governor>
+            <dependent idx="5">lie</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">rape</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="7">rape</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="8">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">lie</governor>
+            <dependent idx="10">prosecuted</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="11">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">CMV</governor>
+            <dependent idx="3">Women</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="5">lie</governor>
+            <dependent idx="3">Women</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="3">Women</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Women</governor>
+            <dependent idx="5">lie</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">rape</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="7">rape</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="8">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">lie</governor>
+            <dependent idx="10">prosecuted</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="11">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">CMV</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">CMV</governor>
+            <dependent idx="3">Women</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="5">lie</governor>
+            <dependent idx="3">Women</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="3">Women</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Women</governor>
+            <dependent idx="5">lie</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">rape</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="7">rape</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="8">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="10">prosecuted</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">lie</governor>
+            <dependent idx="10">prosecuted</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">CMV</governor>
+            <dependent idx="11">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>This</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>ridiculous</word>
+            <lemma>ridiculous</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>…</word>
+            <lemma>…</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>’s</word>
+            <lemma>’s</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>2022</word>
+            <lemma>2022</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2022</NormalizedNER>
+            <Timex tid="t1" type="DATE">2022</Timex>
+          </token>
+          <token id="8">
+            <word>dude</word>
+            <lemma>dude</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>🤦🏻‍♂️</word>
+            <lemma>🤦🏻‍♂️</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>SYM</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>ffs</word>
+            <lemma>ff</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (DT This)) (VP (VBZ is) (ADJP (JJ ridiculous)))) (: …) (S (NP (PRP it)) (VP (VBZ ’s) (NP (NP (CD 2022) (NN dude)) (PP (SYM 🤦🏻‍♂️) (NP (NNS ffs)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ridiculous</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">dude</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">dude</governor>
+            <dependent idx="6">’s</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="8">dude</governor>
+            <dependent idx="7">2022</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="8">dude</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">ffs</governor>
+            <dependent idx="9">🤦🏻‍♂️</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="8">dude</governor>
+            <dependent idx="10">ffs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ridiculous</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">dude</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">dude</governor>
+            <dependent idx="6">’s</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="8">dude</governor>
+            <dependent idx="7">2022</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="8">dude</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">ffs</governor>
+            <dependent idx="9">🤦🏻‍♂️</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="8">dude</governor>
+            <dependent idx="10">ffs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ridiculous</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">dude</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">dude</governor>
+            <dependent idx="6">’s</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="8">dude</governor>
+            <dependent idx="7">2022</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="8">dude</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">ffs</governor>
+            <dependent idx="9">🤦🏻‍♂️</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="8">dude</governor>
+            <dependent idx="10">ffs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ridiculous</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">dude</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">dude</governor>
+            <dependent idx="6">’s</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="8">dude</governor>
+            <dependent idx="7">2022</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="8">dude</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">ffs</governor>
+            <dependent idx="9">🤦🏻‍♂️</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="8">dude</governor>
+            <dependent idx="10">ffs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ridiculous</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="4">…</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">dude</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">dude</governor>
+            <dependent idx="6">’s</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="8">dude</governor>
+            <dependent idx="7">2022</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">ridiculous</governor>
+            <dependent idx="8">dude</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">ffs</governor>
+            <dependent idx="9">🤦🏻‍♂️</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="8">dude</governor>
+            <dependent idx="10">ffs</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

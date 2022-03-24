@@ -1,0 +1,88 @@
+Document: ID=5E398CEF.text (2 sentences, 22 tokens)
+
+Sentence #1 (10 tokens):
+I'm banned from all the main political subreddits.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=main CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=main NamedEntityTag=O]
+[Text=political CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=subreddits CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=subreddit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBN banned)
+        (PP (IN from)
+          (NP (PDT all) (DT the) (JJ main) (JJ political) (NNS subreddits)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, banned-3)
+nsubj:pass(banned-3, I-1)
+aux:pass(banned-3, 'm-2)
+case(subreddits-9, from-4)
+det:predet(subreddits-9, all-5)
+det(subreddits-9, the-6)
+amod(subreddits-9, main-7)
+amod(subreddits-9, political-8)
+obl:from(banned-3, subreddits-9)
+punct(banned-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+Not any leftwing ones just general politics and political humour subs.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=leftwing CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=leftwing NamedEntityTag=IDEOLOGY]
+[Text=ones CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=general CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=general NamedEntityTag=TITLE]
+[Text=politics CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=political CharacterOffsetBegin=99 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=humour CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=humour NamedEntityTag=O]
+[Text=subs CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=sub NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (RB Not)
+    (NP
+      (NP (DT any) (JJ leftwing) (NNS ones))
+      (NP (RB just) (JJ general) (NNS politics))
+      (CC and)
+      (NP (JJ political) (NN humour) (NNS subs)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Not-1)
+det(ones-4, any-2)
+amod(ones-4, leftwing-3)
+dep(Not-1, ones-4)
+advmod(politics-7, just-5)
+amod(politics-7, general-6)
+dep(ones-4, politics-7)
+cc(subs-11, and-8)
+amod(subs-11, political-9)
+compound(subs-11, humour-10)
+dep(Not-1, subs-11)
+conj:and(ones-4, subs-11)
+punct(Not-1, .-12)
+
+Extracted the following NER entity mentions:
+leftwing	IDEOLOGY	-
+general	TITLE	-

@@ -1,0 +1,138 @@
+Document: ID=3F848658.text (3 sentences, 31 tokens)
+
+Sentence #1 (23 tokens):
+by the end of 2022 not a single republican will support trump and it's bc he has burned all those bridges.
+
+Tokens:
+[Text=by CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="2022">the end of 2022</TIMEX3>]
+[Text=end CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=end NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="2022">the end of 2022</TIMEX3>]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="2022">the end of 2022</TIMEX3>]
+[Text=2022 CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=CD Lemma=2022 NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="2022">the end of 2022</TIMEX3>]
+[Text=not CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=single CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=single NamedEntityTag=O]
+[Text=republican CharacterOffsetBegin=32 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=will CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=support NamedEntityTag=O]
+[Text=trump CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=trump NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=bc CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=bc NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=burned CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=VBN Lemma=burn NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=bridges CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=bridge NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (PP (IN by)
+        (NP
+          (NP (DT the) (NN end))
+          (PP (IN of)
+            (NP (CD 2022)))))
+      (NP (RB not) (DT a) (JJ single) (NN republican))
+      (VP (MD will)
+        (VP (VB support)
+          (NP (NN trump)))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP
+          (NP (NNP bc))
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (VBZ has)
+                (VP (VBN burned)
+                  (NP (PDT all) (DT those) (NNS bridges)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, support-11)
+case(end-3, by-1)
+det(end-3, the-2)
+obl:by(support-11, end-3)
+case(2022-5, of-4)
+nmod:of(end-3, 2022-5)
+advmod(republican-9, not-6)
+det(republican-9, a-7)
+amod(republican-9, single-8)
+nsubj(support-11, republican-9)
+aux(support-11, will-10)
+obj(support-11, trump-12)
+cc(bc-16, and-13)
+nsubj(bc-16, it-14)
+cop(bc-16, 's-15)
+conj:and(support-11, bc-16)
+nsubj(burned-19, he-17)
+aux(burned-19, has-18)
+acl:relcl(bc-16, burned-19)
+det:predet(bridges-22, all-20)
+det(bridges-22, those-21)
+obj(burned-19, bridges-22)
+punct(support-11, .-23)
+
+Extracted the following NER entity mentions:
+the end of 2022	DATE	DATE:-1.0
+republican	IDEOLOGY	-
+he	PERSON	-
+
+Sentence #2 (5 tokens):
+I'm for desantis.
+
+Tokens:
+[Text=I CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=desantis CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=desanti NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (PP (IN for)
+        (NP (NNS desantis))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, desantis-4)
+nsubj(desantis-4, I-1)
+cop(desantis-4, 'm-2)
+case(desantis-4, for-3)
+punct(desantis-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+less baggage.
+
+Tokens:
+[Text=less CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=JJR Lemma=less NamedEntityTag=O]
+[Text=baggage CharacterOffsetBegin=134 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=baggage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (ADJP (JJR less))
+    (NN baggage) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, baggage-2)
+amod(baggage-2, less-1)
+punct(baggage-2, .-3)
+
+Extracted the following NER entity mentions:

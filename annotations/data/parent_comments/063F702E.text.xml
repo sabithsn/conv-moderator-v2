@@ -1,0 +1,41 @@
+Document: ID=063F702E.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+No self respecting republican would even want to
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=self CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=self NamedEntityTag=O]
+[Text=respecting CharacterOffsetBegin=8 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=respect NamedEntityTag=O]
+[Text=republican CharacterOffsetBegin=19 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=would CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No)
+      (ADJP (NN self) (VBG respecting))
+      (NN republican))
+    (VP (MD would)
+      (ADVP (RB even))
+      (VP (VB want)
+        (S
+          (VP (TO to)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-7)
+det(republican-4, No-1)
+dep(respecting-3, self-2)
+amod(republican-4, respecting-3)
+nsubj(want-7, republican-4)
+nsubj:xsubj(to-8, republican-4)
+aux(want-7, would-5)
+advmod(want-7, even-6)
+xcomp(want-7, to-8)
+
+Extracted the following NER entity mentions:
+republican	IDEOLOGY	-

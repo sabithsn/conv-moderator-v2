@@ -1,0 +1,46 @@
+Document: ID=B22B0B2F.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Pro-Mask Mob Beat and Hospitalize Girl Without Mask in Berlin
+
+Tokens:
+[Text=Pro-Mask CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Pro-Mask NamedEntityTag=O]
+[Text=Mob CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=mob NamedEntityTag=O]
+[Text=Beat CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=beat NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Hospitalize CharacterOffsetBegin=22 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=hospitalize NamedEntityTag=O]
+[Text=Girl CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=Without CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=Mask CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Berlin CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Berlin NamedEntityTag=CITY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pro-Mask) (NN Mob) (NN Beat))
+    (VP
+      (FRAG (CC and)
+        (VP (VB Hospitalize)
+          (NP (NN Girl))
+          (PP (IN Without)
+            (NP
+              (NP (NN Mask))
+              (PP (IN in)
+                (NP (NNP Berlin))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Hospitalize-5)
+compound(Beat-3, Pro-Mask-1)
+compound(Beat-3, Mob-2)
+nsubj(Hospitalize-5, Beat-3)
+cc(Hospitalize-5, and-4)
+obj(Hospitalize-5, Girl-6)
+case(Mask-8, Without-7)
+obl:without(Hospitalize-5, Mask-8)
+case(Berlin-10, in-9)
+nmod:in(Mask-8, Berlin-10)
+
+Extracted the following NER entity mentions:
+Berlin	CITY	LOCATION:0.9988066666695896

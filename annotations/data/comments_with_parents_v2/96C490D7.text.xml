@@ -1,0 +1,56 @@
+Document: ID=96C490D7.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+I got banned for saying stuff like this...but less eloquently.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=stuff CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=stuff NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RBR Lemma=less NamedEntityTag=O]
+[Text=eloquently CharacterOffsetBegin=51 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=eloquently NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD got)
+        (VP (VBN banned)
+          (PP (IN for)
+            (S
+              (VP (VBG saying)
+                (NP (NN stuff))
+                (PP (IN like)
+                  (NP (DT this))))))))
+      (, ...)
+      (CC but)
+      (VP
+        (ADVP (RBR less) (RB eloquently))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, banned-3)
+nsubj:pass(banned-3, I-1)
+aux:pass(banned-3, got-2)
+mark(saying-5, for-4)
+advcl:for(banned-3, saying-5)
+obj(saying-5, stuff-6)
+case(this-8, like-7)
+obl:like(saying-5, this-8)
+punct(banned-3, ...-9)
+cc(eloquently-12, but-10)
+advmod(eloquently-12, less-11)
+conj:but(banned-3, eloquently-12)
+punct(banned-3, .-13)
+
+Extracted the following NER entity mentions:

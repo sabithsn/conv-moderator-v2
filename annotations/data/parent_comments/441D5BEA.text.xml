@@ -1,0 +1,377 @@
+Document: ID=441D5BEA.text (4 sentences, 105 tokens)
+
+Sentence #1 (10 tokens):
+>Indians  This is actually quite a contested topic.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Indians CharacterOffsetBegin=1 CharacterOffsetEnd=8 PartOfSpeech=NNPS Lemma=Indians NamedEntityTag=MISC]
+[Text=This CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=this NamedEntityTag=MISC]
+[Text=is CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=PDT Lemma=quite NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=contested CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=contest NamedEntityTag=O]
+[Text=topic CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=topic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP (NNPS Indians)))
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (ADVP (RB actually))
+        (NP (PDT quite) (DT a)
+          (ADJP (VBN contested))
+          (NN topic))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, topic-9)
+dep(Indians-2, >-1)
+obl(topic-9, Indians-2)
+nsubj(topic-9, This-3)
+cop(topic-9, is-4)
+advmod(topic-9, actually-5)
+det:predet(topic-9, quite-6)
+det(topic-9, a-7)
+amod(topic-9, contested-8)
+punct(topic-9, .-10)
+
+Extracted the following NER entity mentions:
+Indians  This	MISC	MISC:0.9159905470475975
+
+Sentence #2 (19 tokens):
+Most Indians have adopted this as a common term for their people and prefer it over Native American.
+
+Tokens:
+[Text=Most CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=Indians CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NNPS Lemma=Indians NamedEntityTag=MISC]
+[Text=have CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=adopted CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=VBN Lemma=adopt NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=common CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=prefer CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=VBP Lemma=prefer NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Native CharacterOffsetBegin=136 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=native NamedEntityTag=MISC]
+[Text=American CharacterOffsetBegin=143 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=American NamedEntityTag=NATIONALITY]
+[Text=. CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJS Most) (NNPS Indians))
+    (VP
+      (VP (VBP have)
+        (VP (VBN adopted)
+          (NP (DT this))
+          (PP (IN as)
+            (NP
+              (NP (DT a) (JJ common) (NN term))
+              (PP (IN for)
+                (NP (PRP$ their) (NNS people)))))))
+      (CC and)
+      (VP (VBP prefer)
+        (NP (PRP it))
+        (PP (IN over)
+          (NP (JJ Native) (NNP American)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, adopted-4)
+amod(Indians-2, Most-1)
+nsubj(adopted-4, Indians-2)
+nsubj(prefer-14, Indians-2)
+aux(adopted-4, have-3)
+obj(adopted-4, this-5)
+case(term-9, as-6)
+det(term-9, a-7)
+amod(term-9, common-8)
+obl:as(adopted-4, term-9)
+case(people-12, for-10)
+nmod:poss(people-12, their-11)
+nmod:for(term-9, people-12)
+cc(prefer-14, and-13)
+conj:and(adopted-4, prefer-14)
+obj(prefer-14, it-15)
+case(American-18, over-16)
+amod(American-18, Native-17)
+obl:over(prefer-14, American-18)
+punct(adopted-4, .-19)
+
+Extracted the following NER entity mentions:
+Indians	MISC	MISC:0.9668218852392956
+Native	MISC	MISC:0.9592460510231895
+American	NATIONALITY	MISC:0.9592460510231895
+
+Sentence #3 (32 tokens):
+Just because a word have been used in a derogatory manner some times in the past does not mean that the term is tainted as being politically incorrect and offensive forever.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=word CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=word NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=derogatory CharacterOffsetBegin=193 CharacterOffsetEnd=203 PartOfSpeech=JJ Lemma=derogatory NamedEntityTag=O]
+[Text=manner CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=manner NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">the past</TIMEX3>]
+[Text=past CharacterOffsetBegin=229 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">the past</TIMEX3>]
+[Text=does CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=243 CharacterOffsetEnd=247 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=262 CharacterOffsetEnd=264 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=tainted CharacterOffsetBegin=265 CharacterOffsetEnd=272 PartOfSpeech=VBN Lemma=taint NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=276 CharacterOffsetEnd=281 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=politically CharacterOffsetBegin=282 CharacterOffsetEnd=293 PartOfSpeech=RB Lemma=politically NamedEntityTag=O]
+[Text=incorrect CharacterOffsetBegin=294 CharacterOffsetEnd=303 PartOfSpeech=JJ Lemma=incorrect NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=offensive CharacterOffsetBegin=308 CharacterOffsetEnd=317 PartOfSpeech=JJ Lemma=offensive NamedEntityTag=O]
+[Text=forever CharacterOffsetBegin=318 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=forever NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB Just))
+      (IN because)
+      (S
+        (NP (DT a) (NN word))
+        (VP (VBP have)
+          (VP (VBN been)
+            (VP (VBN used)
+              (PP (IN in)
+                (NP (DT a) (JJ derogatory) (NN manner)))
+              (NP-TMP (DT some) (NNS times))
+              (PP (IN in)
+                (NP (DT the) (NN past))))))))
+    (VP (VBZ does) (RB not)
+      (VP (VB mean)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN term))
+            (VP (VBZ is)
+              (VP (VBN tainted)
+                (PP (IN as)
+                  (S
+                    (VP (VBG being)
+                      (ADJP (RB politically) (JJ incorrect)
+                        (CC and)
+                        (JJ offensive))
+                      (ADVP (RB forever)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-19)
+advmod(used-7, Just-1)
+mark(used-7, because-2)
+det(word-4, a-3)
+nsubj:pass(used-7, word-4)
+aux(used-7, have-5)
+aux:pass(used-7, been-6)
+csubj(mean-19, used-7)
+case(manner-11, in-8)
+det(manner-11, a-9)
+amod(manner-11, derogatory-10)
+obl:in(used-7, manner-11)
+det(times-13, some-12)
+obl:tmod(used-7, times-13)
+case(past-16, in-14)
+det(past-16, the-15)
+obl:in(used-7, past-16)
+aux(mean-19, does-17)
+advmod(mean-19, not-18)
+mark(tainted-24, that-20)
+det(term-22, the-21)
+nsubj:pass(tainted-24, term-22)
+aux:pass(tainted-24, is-23)
+ccomp(mean-19, tainted-24)
+mark(incorrect-28, as-25)
+cop(incorrect-28, being-26)
+advmod(incorrect-28, politically-27)
+advcl:as(tainted-24, incorrect-28)
+cc(offensive-30, and-29)
+advcl:as(tainted-24, offensive-30)
+conj:and(incorrect-28, offensive-30)
+advmod(incorrect-28, forever-31)
+punct(mean-19, .-32)
+
+Extracted the following NER entity mentions:
+the past	DATE	DATE:-1.0
+
+Sentence #4 (44 tokens):
+If that was the case then the term American would have to be put in the same category as it have been used extensively as an insult and in fact is still used insultingly to this day in many parts of the world.
+
+Tokens:
+[Text=If CharacterOffsetBegin=327 CharacterOffsetEnd=329 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=343 CharacterOffsetEnd=347 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=353 CharacterOffsetEnd=356 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=357 CharacterOffsetEnd=361 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=362 CharacterOffsetEnd=370 PartOfSpeech=NNP Lemma=American NamedEntityTag=NATIONALITY]
+[Text=would CharacterOffsetBegin=371 CharacterOffsetEnd=376 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=VBN Lemma=put NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=392 CharacterOffsetEnd=394 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=category CharacterOffsetBegin=404 CharacterOffsetEnd=412 PartOfSpeech=NN Lemma=category NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=416 CharacterOffsetEnd=418 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=419 CharacterOffsetEnd=423 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=424 CharacterOffsetEnd=428 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=429 CharacterOffsetEnd=433 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=extensively CharacterOffsetBegin=434 CharacterOffsetEnd=445 PartOfSpeech=RB Lemma=extensively NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=446 CharacterOffsetEnd=448 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=449 CharacterOffsetEnd=451 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=insult CharacterOffsetBegin=452 CharacterOffsetEnd=458 PartOfSpeech=NN Lemma=insult NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=459 CharacterOffsetEnd=462 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=463 CharacterOffsetEnd=465 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=466 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=471 CharacterOffsetEnd=473 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=474 CharacterOffsetEnd=479 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=480 CharacterOffsetEnd=484 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=insultingly CharacterOffsetBegin=485 CharacterOffsetEnd=496 PartOfSpeech=RB Lemma=insultingly NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=497 CharacterOffsetEnd=499 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=500 CharacterOffsetEnd=504 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=day CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=in CharacterOffsetBegin=509 CharacterOffsetEnd=511 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=512 CharacterOffsetEnd=516 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=517 CharacterOffsetEnd=522 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=523 CharacterOffsetEnd=525 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=526 CharacterOffsetEnd=529 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=530 CharacterOffsetEnd=535 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=535 CharacterOffsetEnd=536 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT that))
+        (VP (VBD was)
+          (NP (DT the) (NN case))
+          (NP-TMP
+            (ADVP (RB then))
+            (DT the) (NN term)))))
+    (NP (NNP American))
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN put)
+                (PP (IN in)
+                  (NP (DT the) (JJ same) (NN category)))))))
+        (SBAR (IN as)
+          (S
+            (NP (PRP it))
+            (VP
+              (VP (VBP have)
+                (VP (VBN been)
+                  (VP (VBN used)
+                    (ADVP (RB extensively))
+                    (PP (IN as)
+                      (NP (DT an) (NN insult))))))
+              (CC and)
+              (VP
+                (PP (IN in)
+                  (NP (NN fact)))
+                (VBZ is)
+                (ADVP (RB still))
+                (VP (VBN used)
+                  (ADVP (RB insultingly))
+                  (PP (IN to)
+                    (NP
+                      (NP (DT this) (NN day))
+                      (PP (IN in)
+                        (NP
+                          (NP (JJ many) (NNS parts))
+                          (PP (IN of)
+                            (NP (DT the) (NN world))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-11)
+mark(case-5, If-1)
+nsubj(case-5, that-2)
+cop(case-5, was-3)
+det(case-5, the-4)
+advcl:if(have-11, case-5)
+advmod(term-8, then-6)
+det(term-8, the-7)
+obl:tmod(case-5, term-8)
+nsubj(have-11, American-9)
+nsubj:pass:xsubj(put-14, American-9)
+aux(have-11, would-10)
+mark(put-14, to-12)
+aux:pass(put-14, be-13)
+xcomp(have-11, put-14)
+case(category-18, in-15)
+det(category-18, the-16)
+amod(category-18, same-17)
+obl:in(put-14, category-18)
+mark(used-23, as-19)
+nsubj:pass(used-23, it-20)
+nsubj:pass(used-33, it-20)
+aux(used-23, have-21)
+aux:pass(used-23, been-22)
+advcl:as(have-11, used-23)
+advmod(used-23, extensively-24)
+case(insult-27, as-25)
+det(insult-27, an-26)
+obl:as(used-23, insult-27)
+cc(used-33, and-28)
+case(fact-30, in-29)
+obl:in(used-33, fact-30)
+aux:pass(used-33, is-31)
+advmod(used-33, still-32)
+advcl:as(have-11, used-33)
+conj:and(used-23, used-33)
+advmod(used-33, insultingly-34)
+case(day-37, to-35)
+det(day-37, this-36)
+obl:to(used-33, day-37)
+case(parts-40, in-38)
+amod(parts-40, many-39)
+nmod:in(day-37, parts-40)
+case(world-43, of-41)
+det(world-43, the-42)
+nmod:of(parts-40, world-43)
+punct(have-11, .-44)
+
+Extracted the following NER entity mentions:
+American	NATIONALITY	MISC:0.9998970222691133
+this day	DATE	DATE:-1.0

@@ -1,0 +1,91 @@
+Document: ID=1D66FD47.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+Analysis | ‘Genius,’ ‘Savvy’: Trump reacts to Putin’s invasion of Ukraine exactly as you’d expect
+
+Tokens:
+[Text=Analysis CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=analysis NamedEntityTag=O]
+[Text=| CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=NFP Lemma=| NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Genius CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Savvy CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=savvy NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=reacts CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=react NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=invasion CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=exactly CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’d CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=MD Lemma=’d NamedEntityTag=O]
+[Text=expect CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=VB Lemma=expect NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Analysis))
+      (NFP |)
+      (NP
+        (NP (`` ‘)
+          (NP (NN Genius))
+          (, ,) ('' ’))
+        (NP (`` ‘)
+          (NP (JJ Savvy))
+          ('' ’) (: :)))
+      (PRN
+        (S
+          (NP (NNP Trump)))
+        (VP (VBZ reacts)
+          (PP (IN to)
+            (NP
+              (NP
+                (NP (NNP Putin) (POS ’s))
+                (NN invasion))
+              (PP (IN of)
+                (NP (NNP Ukraine)))))
+          (PP
+            (ADVP (RB exactly))
+            (IN as)
+            (NP (PRP you))))))
+    (VP (MD ’d)
+      (VP (VB expect)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, expect-23)
+nsubj(expect-23, Analysis-1)
+punct(Analysis-1, |-2)
+punct(Genius-4, ‘-3)
+dep(Analysis-1, Genius-4)
+punct(Genius-4, ,-5)
+punct(Genius-4, ’-6)
+punct(Savvy-8, ‘-7)
+dep(Genius-4, Savvy-8)
+punct(Savvy-8, ’-9)
+punct(Savvy-8, :-10)
+dep(reacts-12, Trump-11)
+dep(Analysis-1, reacts-12)
+case(invasion-16, to-13)
+nmod:poss(invasion-16, Putin-14)
+case(Putin-14, ’s-15)
+obl:to(reacts-12, invasion-16)
+case(Ukraine-18, of-17)
+nmod:of(invasion-16, Ukraine-18)
+advmod(you-21, exactly-19)
+case(you-21, as-20)
+obl:as(reacts-12, you-21)
+aux(expect-23, ’d-22)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.7920499897921989
+Putin	PERSON	PERSON:0.9842048188088276
+Ukraine	COUNTRY	LOCATION:0.9915621015333795

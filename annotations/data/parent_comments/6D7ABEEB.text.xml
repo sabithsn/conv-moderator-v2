@@ -1,0 +1,41 @@
+Document: ID=6D7ABEEB.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+High court reimposes Boston Marathon bomber's death sentence
+
+Tokens:
+[Text=High CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=court CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=court NamedEntityTag=O]
+[Text=reimposes CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=reimpose NamedEntityTag=O]
+[Text=Boston CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Boston NamedEntityTag=CITY]
+[Text=Marathon CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Marathon NamedEntityTag=CITY]
+[Text=bomber CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=bomber NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=sentence CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=sentence NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ High) (NN court))
+    (VP (VBZ reimposes)
+      (S
+        (NP (NNP Boston) (NNP Marathon))
+        (NP
+          (NP (NN bomber) (POS 's))
+          (NN death) (NN sentence))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reimposes-3)
+amod(court-2, High-1)
+nsubj(reimposes-3, court-2)
+compound(Marathon-5, Boston-4)
+nsubj(sentence-9, Marathon-5)
+nmod:poss(sentence-9, bomber-6)
+case(bomber-6, 's-7)
+compound(sentence-9, death-8)
+xcomp(reimposes-3, sentence-9)
+
+Extracted the following NER entity mentions:
+Boston Marathon	CITY	LOCATION:0.5632675073921624

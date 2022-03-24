@@ -1,0 +1,89 @@
+Document: ID=EFCC2903.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+How long before the left makes Jeff Dahmer into a saint for his work as a homosexual pedophile when it wasn't cool?
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=left NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=Jeff CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Jeff NamedEntityTag=PERSON]
+[Text=Dahmer CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Dahmer NamedEntityTag=PERSON]
+[Text=into CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=saint CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=saint NamedEntityTag=TITLE]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=homosexual CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=homosexual NamedEntityTag=O]
+[Text=pedophile CharacterOffsetBegin=85 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=pedophile NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=cool CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=VB Lemma=cool NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WRB How) (RB long))
+      (PP (IN before)
+        (NP (DT the) (JJ left))))
+    (SQ
+      (VP (VBZ makes)
+        (NP (NNP Jeff) (NNP Dahmer))
+        (PP (IN into)
+          (NP
+            (NP (DT a) (NN saint))
+            (PP (IN for)
+              (NP (PRP$ his) (NN work)))))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (JJ homosexual) (NN pedophile))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP it))
+                (VP (VBD was) (RB n't)
+                  (S
+                    (VP (VB cool))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-6)
+advmod(long-2, How-1)
+nsubj(makes-6, long-2)
+case(left-5, before-3)
+det(left-5, the-4)
+nmod:before(long-2, left-5)
+compound(Dahmer-8, Jeff-7)
+obj(makes-6, Dahmer-8)
+case(saint-11, into-9)
+det(saint-11, a-10)
+obl:into(makes-6, saint-11)
+case(work-14, for-12)
+nmod:poss(work-14, his-13)
+nmod:for(saint-11, work-14)
+case(pedophile-18, as-15)
+det(pedophile-18, a-16)
+amod(pedophile-18, homosexual-17)
+obl:as(makes-6, pedophile-18)
+advmod(was-21, when-19)
+nsubj(was-21, it-20)
+acl:relcl(pedophile-18, was-21)
+advmod(was-21, n't-22)
+ccomp(was-21, cool-23)
+punct(makes-6, ?-24)
+
+Extracted the following NER entity mentions:
+Jeff Dahmer	PERSON	PERSON:0.9924706984121182
+saint	TITLE	-
+his	PERSON	-

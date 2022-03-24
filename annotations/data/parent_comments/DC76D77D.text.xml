@@ -1,0 +1,47 @@
+Document: ID=DC76D77D.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Can't do much now is almost every democrat politician.
+
+Tokens:
+[Text=Ca CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=is CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=democrat CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=democrat NamedEntityTag=O]
+[Text=politician CharacterOffsetBegin=43 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=politician NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (MD Ca) (RB n't)
+        (VP (VB do)
+          (ADVP (RB much) (RB now)))))
+    (VP (VBZ is)
+      (ADVP (RB almost))
+      (NP (DT every) (NNP democrat) (NN politician)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, politician-10)
+aux(do-3, Ca-1)
+advmod(do-3, n't-2)
+csubj(politician-10, do-3)
+advmod(now-5, much-4)
+advmod(do-3, now-5)
+cop(politician-10, is-6)
+advmod(politician-10, almost-7)
+det(politician-10, every-8)
+compound(politician-10, democrat-9)
+punct(politician-10, .-11)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+politician	TITLE	-

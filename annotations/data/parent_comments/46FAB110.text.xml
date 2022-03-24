@@ -1,0 +1,38 @@
+Document: ID=46FAB110.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Austrian government just made the covid vaccine mandatory
+
+Tokens:
+[Text=Austrian CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=austrian NamedEntityTag=NATIONALITY]
+[Text=government CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=mandatory CharacterOffsetBegin=48 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=mandatory NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Austrian) (NN government))
+    (ADVP (RB just))
+    (VP (VBD made)
+      (NP (DT the) (JJ covid) (NN vaccine))
+      (S
+        (ADJP (JJ mandatory))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, made-4)
+amod(government-2, Austrian-1)
+nsubj(made-4, government-2)
+advmod(made-4, just-3)
+det(vaccine-7, the-5)
+amod(vaccine-7, covid-6)
+obj(made-4, vaccine-7)
+xcomp(made-4, mandatory-8)
+
+Extracted the following NER entity mentions:
+Austrian	NATIONALITY	MISC:0.9999998037506167

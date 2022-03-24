@@ -1,0 +1,54 @@
+Document: ID=62D0F77A.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Telling someone to kill themselves is very different and pretty shitty.
+
+Tokens:
+[Text=Telling CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=tell NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=kill CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=themselves CharacterOffsetBegin=24 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=themselves NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=43 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=shitty CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=shitty NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Telling)
+        (NP (NN someone))
+        (S
+          (VP (TO to)
+            (VP (VB kill)
+              (NP (PRP themselves)))))))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB very) (JJ different))
+        (CC and)
+        (ADJP (RB pretty) (JJ shitty))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, different-8)
+csubj(different-8, Telling-1)
+csubj(shitty-11, Telling-1)
+obj(Telling-1, someone-2)
+nsubj:xsubj(kill-4, someone-2)
+mark(kill-4, to-3)
+xcomp(Telling-1, kill-4)
+obj(kill-4, themselves-5)
+cop(different-8, is-6)
+advmod(different-8, very-7)
+cc(shitty-11, and-9)
+advmod(shitty-11, pretty-10)
+conj:and(different-8, shitty-11)
+punct(different-8, .-12)
+
+Extracted the following NER entity mentions:

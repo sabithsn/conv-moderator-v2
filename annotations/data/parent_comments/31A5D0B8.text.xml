@@ -1,0 +1,40 @@
+Document: ID=31A5D0B8.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+I find Eminem's solo songs unlistenable.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=find NamedEntityTag=O]
+[Text=Eminem CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Eminem NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=solo CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=solo NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=unlistenable CharacterOffsetBegin=27 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=unlistenable NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP find)
+      (S
+        (NP
+          (NP (NNP Eminem) (POS 's))
+          (NN solo) (NNS songs))
+        (ADJP (JJ unlistenable))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, find-2)
+nsubj(find-2, I-1)
+nmod:poss(songs-6, Eminem-3)
+case(Eminem-3, 's-4)
+compound(songs-6, solo-5)
+nsubj(unlistenable-7, songs-6)
+xcomp(find-2, unlistenable-7)
+punct(find-2, .-8)
+
+Extracted the following NER entity mentions:
+Eminem	PERSON	PERSON:0.5949162792131045

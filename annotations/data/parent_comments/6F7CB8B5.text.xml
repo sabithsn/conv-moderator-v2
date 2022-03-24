@@ -1,0 +1,59 @@
+Document: ID=6F7CB8B5.text (2 sentences, 11 tokens)
+
+Sentence #1 (6 tokens):
+/r/Antiwork....
+
+Tokens:
+[Text=/ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NFP Lemma=/ NamedEntityTag=O]
+[Text=r CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=NN Lemma=r NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=Antiwork CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=antiwork NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (NFP /)
+      (NP (NN r) (HYPH /) (NN Antiwork)))
+    (: ...) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Antiwork-4)
+punct(Antiwork-4, /-1)
+compound(Antiwork-4, r-2)
+punct(Antiwork-4, /-3)
+punct(Antiwork-4, ...-5)
+punct(Antiwork-4, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+isn't working ;)
+
+Tokens:
+[Text=is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (VP (VBZ is) (RB n't)
+        (VP (VBG working))))
+    (: ;)
+    (NP (-RRB- -RRB-))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, )-5)
+aux(working-3, is-1)
+advmod(working-3, n't-2)
+dep()-5, working-3)
+punct()-5, ;-4)
+
+Extracted the following NER entity mentions:

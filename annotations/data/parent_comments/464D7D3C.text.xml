@@ -1,0 +1,90 @@
+Document: ID=464D7D3C.text (3 sentences, 17 tokens)
+
+Sentence #1 (4 tokens):
+Sure, bro.
+
+Tokens:
+[Text=Sure CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=sure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=bro CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=bro NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Sure))
+    (, ,)
+    (NP (NN bro))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bro-3)
+discourse(bro-3, Sure-1)
+punct(bro-3, ,-2)
+punct(bro-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Your avatar has a mask.
+
+Tokens:
+[Text=Your CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=avatar CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=avatar NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mask CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN avatar))
+    (VP (VBZ has)
+      (NP (DT a) (NN mask)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-3)
+nmod:poss(avatar-2, Your-1)
+nsubj(has-3, avatar-2)
+det(mask-5, a-4)
+obj(has-3, mask-5)
+punct(has-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (7 tokens):
+Therefore you’re a fucking idiot.
+
+Tokens:
+[Text=Therefore CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=fucking NamedEntityTag=O]
+[Text=idiot CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=idiot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP (PRP you))
+    (VP (VBP ’re)
+      (NP (DT a) (JJ fucking) (NN idiot)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, idiot-6)
+advmod(idiot-6, Therefore-1)
+nsubj(idiot-6, you-2)
+cop(idiot-6, ’re-3)
+det(idiot-6, a-4)
+amod(idiot-6, fucking-5)
+punct(idiot-6, .-7)
+
+Extracted the following NER entity mentions:

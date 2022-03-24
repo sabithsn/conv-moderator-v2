@@ -1,0 +1,119 @@
+Document: ID=ED72F491.text (3 sentences, 24 tokens)
+
+Sentence #1 (6 tokens):
+> I’ll just stop.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=i NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=’ll CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=MD Lemma=’ll NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (S
+        (VP (SYM >)
+          (NP (CD I)))))
+    (VP (MD ’ll)
+      (ADVP (RB just))
+      (VP (VB stop)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stop-5)
+dep(I-2, >-1)
+nsubj(stop-5, I-2)
+aux(stop-5, ’ll-3)
+advmod(stop-5, just-4)
+punct(stop-5, .-6)
+
+Extracted the following NER entity mentions:
+I	NUMBER	NUMBER:-1.0
+
+Sentence #2 (5 tokens):
+Thank god for that.
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=thank NamedEntityTag=O]
+[Text=god CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=god NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Thank)
+      (NP
+        (NP (NN god))
+        (PP (IN for)
+          (NP (DT that)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+obj(Thank-1, god-2)
+case(that-4, for-3)
+nmod:for(god-2, that-4)
+punct(Thank-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (13 tokens):
+You are clearly incapable of adding anything of value to a discussion.
+
+Tokens:
+[Text=You CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=clearly CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=clearly NamedEntityTag=O]
+[Text=incapable CharacterOffsetBegin=55 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=incapable NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=adding CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=VBG Lemma=add NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=value CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=value NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=discussion CharacterOffsetBegin=98 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=discussion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (ADJP (RB clearly) (JJ incapable)
+        (PP (IN of)
+          (S
+            (VP (VBG adding)
+              (NP
+                (NP (NN anything))
+                (PP (IN of)
+                  (NP (NN value))))
+              (PP (IN to)
+                (NP (DT a) (NN discussion))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, incapable-4)
+nsubj(incapable-4, You-1)
+cop(incapable-4, are-2)
+advmod(incapable-4, clearly-3)
+mark(adding-6, of-5)
+advcl:of(incapable-4, adding-6)
+obj(adding-6, anything-7)
+case(value-9, of-8)
+nmod:of(anything-7, value-9)
+case(discussion-12, to-10)
+det(discussion-12, a-11)
+obl:to(adding-6, discussion-12)
+punct(incapable-4, .-13)
+
+Extracted the following NER entity mentions:

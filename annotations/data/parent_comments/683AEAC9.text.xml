@@ -1,0 +1,59 @@
+Document: ID=683AEAC9.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+YTA- you should not have taken that kid’s DNA without his permission.
+
+Tokens:
+[Text=YTA CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=yta NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=DNA CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=dna NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=permission CharacterOffsetBegin=58 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=permission NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN YTA))
+    (: -)
+    (S
+      (NP (PRP you))
+      (VP (MD should) (RB not)
+        (VP (VB have)
+          (VP (VBN taken)
+            (NP
+              (NP (DT that) (NN kid) (POS ’s))
+              (NN DNA))
+            (PP (IN without)
+              (NP (PRP$ his) (NN permission)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, YTA-1)
+punct(YTA-1, --2)
+nsubj(taken-7, you-3)
+aux(taken-7, should-4)
+advmod(taken-7, not-5)
+aux(taken-7, have-6)
+appos(YTA-1, taken-7)
+det(kid-9, that-8)
+nmod:poss(DNA-11, kid-9)
+case(kid-9, ’s-10)
+obj(taken-7, DNA-11)
+case(permission-14, without-12)
+nmod:poss(permission-14, his-13)
+obl:without(taken-7, permission-14)
+punct(YTA-1, .-15)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

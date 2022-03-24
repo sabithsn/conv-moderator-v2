@@ -1,0 +1,85 @@
+Document: ID=400054C9.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+or 14-16 years if the first retard manages to put an even more retarded in his place like in Brazil
+
+Tokens:
+[Text=or CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=14 CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=CD Lemma=14 NamedEntityTag=NUMBER NormalizedNamedEntityTag=14.0 - 16.0]
+[Text=- CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=HYPH Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=14.0 - 16.0]
+[Text=16 CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=CD Lemma=16 NamedEntityTag=NUMBER NormalizedNamedEntityTag=14.0 - 16.0]
+[Text=years CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">years</TIMEX3>]
+[Text=if CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=retard CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=retard NamedEntityTag=O]
+[Text=manages CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=manage NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=retarded CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=retarded NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Brazil CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Brazil NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S (CC or)
+    (SBAR
+      (NP
+        (QP (CD 14) (HYPH -) (CD 16))
+        (NNS years))
+      (IN if)
+      (S
+        (NP (DT the) (JJ first) (NN retard))
+        (VP (VBZ manages)
+          (S
+            (VP (TO to)
+              (VP (VB put)
+                (ADJP
+                  (ADJP
+                    (NP (DT an) (RB even))
+                    (RBR more) (JJ retarded))
+                  (PP (IN in)
+                    (NP (PRP$ his) (NN place))))
+                (PP (IN like)
+                  (PP (IN in)
+                    (NP (NNP Brazil))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, manages-10)
+cc(manages-10, or-1)
+compound(16-4, 14-2)
+punct(16-4, --3)
+nummod(years-5, 16-4)
+dep(manages-10, years-5)
+mark(manages-10, if-6)
+det(retard-9, the-7)
+amod(retard-9, first-8)
+nsubj(manages-10, retard-9)
+nsubj:xsubj(put-12, retard-9)
+mark(put-12, to-11)
+xcomp(manages-10, put-12)
+det(even-14, an-13)
+dep(retarded-16, even-14)
+advmod(retarded-16, more-15)
+xcomp(put-12, retarded-16)
+case(place-19, in-17)
+nmod:poss(place-19, his-18)
+obl:in(retarded-16, place-19)
+case(Brazil-22, like-20)
+case(Brazil-22, in-21)
+obl:like(put-12, Brazil-22)
+
+Extracted the following NER entity mentions:
+14-16	NUMBER	NUMBER:-1.0
+years	DURATION	DURATION:-1.0
+first	ORDINAL	ORDINAL:-1.0
+Brazil	COUNTRY	LOCATION:0.9978518334706298
+his	PERSON	-

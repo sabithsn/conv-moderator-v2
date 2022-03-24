@@ -1,0 +1,86 @@
+Document: ID=BB41C33B.text (2 sentences, 20 tokens)
+
+Sentence #1 (8 tokens):
+The dark knight was a boring movie.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dark CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=dark NamedEntityTag=O]
+[Text=knight CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=knight NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=boring CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=boring NamedEntityTag=O]
+[Text=movie CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ dark) (NN knight))
+    (VP (VBD was)
+      (NP (DT a) (JJ boring) (NN movie)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, movie-7)
+det(knight-3, The-1)
+amod(knight-3, dark-2)
+nsubj(movie-7, knight-3)
+cop(movie-7, was-4)
+det(movie-7, a-5)
+amod(movie-7, boring-6)
+punct(movie-7, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+And it was definitely not as deep as people say it was
+
+Tokens:
+[Text=And CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=definitely CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=deep CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=deep NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADVP (RB definitely))
+      (PP (RB not) (IN as)
+        (ADJP (JJ deep)))
+      (SBAR (IN as)
+        (S
+          (NP (NNS people))
+          (VP (VBP say)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBD was))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deep-7)
+cc(deep-7, And-1)
+nsubj(deep-7, it-2)
+cop(deep-7, was-3)
+advmod(deep-7, definitely-4)
+advmod(deep-7, not-5)
+case(deep-7, as-6)
+mark(say-10, as-8)
+nsubj(say-10, people-9)
+advcl:as(deep-7, say-10)
+nsubj(was-12, it-11)
+ccomp(say-10, was-12)
+
+Extracted the following NER entity mentions:

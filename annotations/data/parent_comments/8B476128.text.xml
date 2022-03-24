@@ -1,0 +1,128 @@
+Document: ID=8B476128.text (3 sentences, 27 tokens)
+
+Sentence #1 (6 tokens):
+Personal insults are beneath you.
+
+Tokens:
+[Text=Personal CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=personal NamedEntityTag=O]
+[Text=insults CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=insult NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=beneath CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=beneath NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Personal) (NNS insults))
+    (VP (VBP are)
+      (PP (IN beneath)
+        (NP (PRP you))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, you-5)
+amod(insults-2, Personal-1)
+nsubj(you-5, insults-2)
+cop(you-5, are-3)
+case(you-5, beneath-4)
+punct(you-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Also no, I meant exactly what I said.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=meant CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=VBD Lemma=mean NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB Also))
+      (NP (DT no)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD meant)
+      (SBAR
+        (WHNP (RB exactly) (WP what))
+        (S
+          (NP (PRP I))
+          (VP (VBD said)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, meant-5)
+advmod(no-2, Also-1)
+ccomp(meant-5, no-2)
+punct(meant-5, ,-3)
+nsubj(meant-5, I-4)
+advmod(what-7, exactly-6)
+obj(said-9, what-7)
+nsubj(said-9, I-8)
+ccomp(meant-5, said-9)
+punct(meant-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (11 tokens):
+There is a difference, which I have explained already.
+
+Tokens:
+[Text=There CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=difference CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=explained CharacterOffsetBegin=109 CharacterOffsetEnd=118 PartOfSpeech=VBN Lemma=explain NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=119 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN difference))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP I))
+            (VP (VBP have)
+              (VP (VBN explained)
+                (ADVP (RB already))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+expl(is-2, There-1)
+det(difference-4, a-3)
+nsubj(is-2, difference-4)
+obj(explained-9, difference-4)
+punct(difference-4, ,-5)
+ref(difference-4, which-6)
+nsubj(explained-9, I-7)
+aux(explained-9, have-8)
+acl:relcl(difference-4, explained-9)
+advmod(explained-9, already-10)
+punct(is-2, .-11)
+
+Extracted the following NER entity mentions:

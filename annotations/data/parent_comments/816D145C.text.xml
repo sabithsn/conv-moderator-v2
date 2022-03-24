@@ -1,0 +1,43 @@
+Document: ID=816D145C.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+I'm a noob editor but tried this...
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=noob CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=noob NamedEntityTag=O]
+[Text=editor CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=editor NamedEntityTag=TITLE]
+[Text=but CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=tried CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=try NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP 'm)
+        (NP (DT a) (NN noob) (NN editor)))
+      (CC but)
+      (VP (VBD tried)
+        (NP (DT this))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, editor-5)
+nsubj(editor-5, I-1)
+nsubj(tried-7, I-1)
+cop(editor-5, 'm-2)
+det(editor-5, a-3)
+compound(editor-5, noob-4)
+cc(tried-7, but-6)
+conj:but(editor-5, tried-7)
+obj(tried-7, this-8)
+punct(editor-5, ...-9)
+
+Extracted the following NER entity mentions:
+editor	TITLE	-

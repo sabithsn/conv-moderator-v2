@@ -1,0 +1,109 @@
+Document: ID=BFBD0530.text (2 sentences, 26 tokens)
+
+Sentence #1 (12 tokens):
+It's an insult to anyone who isn't a fascist.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=insult CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=insult NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fascist CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=fascist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT an) (NN insult))
+        (PP (IN to)
+          (NP
+            (NP (NN anyone))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ is) (RB n't)
+                  (NP (DT a) (JJ fascist)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, insult-4)
+nsubj(insult-4, It-1)
+cop(insult-4, 's-2)
+det(insult-4, an-3)
+case(anyone-6, to-5)
+nmod:to(insult-4, anyone-6)
+nsubj(fascist-11, anyone-6)
+ref(anyone-6, who-7)
+cop(fascist-11, is-8)
+advmod(fascist-11, n't-9)
+det(fascist-11, a-10)
+acl:relcl(anyone-6, fascist-11)
+punct(insult-4, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+If you're proud of that label, that should tell you enough.
+
+Tokens:
+[Text=If CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=proud CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=proud NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=label CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=label NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=enough NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP 're)
+          (ADJP (JJ proud)
+            (PP (IN of)
+              (NP (DT that) (NN label)))))))
+    (, ,)
+    (NP (DT that))
+    (VP (MD should)
+      (VP (VB tell)
+        (NP (PRP you))
+        (ADVP (RB enough))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tell-11)
+mark(proud-4, If-1)
+nsubj(proud-4, you-2)
+cop(proud-4, 're-3)
+advcl:if(tell-11, proud-4)
+case(label-7, of-5)
+det(label-7, that-6)
+obl:of(proud-4, label-7)
+punct(tell-11, ,-8)
+nsubj(tell-11, that-9)
+aux(tell-11, should-10)
+obj(tell-11, you-12)
+advmod(tell-11, enough-13)
+punct(tell-11, .-14)
+
+Extracted the following NER entity mentions:

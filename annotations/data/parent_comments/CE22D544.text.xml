@@ -1,0 +1,71 @@
+Document: ID=CE22D544.text (2 sentences, 14 tokens)
+
+Sentence #1 (10 tokens):
+That sounds like a you problem, my guy.
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ sounds)
+      (PP (IN like)
+        (NP
+          (NP (DT a)
+            (NP (PRP you))
+            (NN problem))
+          (, ,)
+          (NP (PRP$ my) (NN guy)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sounds-2)
+nsubj(sounds-2, That-1)
+case(problem-6, like-3)
+det(problem-6, a-4)
+compound(problem-6, you-5)
+obl:like(sounds-2, problem-6)
+punct(problem-6, ,-7)
+nmod:poss(guy-9, my-8)
+appos(problem-6, guy-9)
+punct(sounds-2, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Have fun with that
+
+Tokens:
+[Text=Have CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=fun NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Have)
+      (NP (NN fun))
+      (PP (IN with)
+        (NP (DT that))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Have-1)
+obj(Have-1, fun-2)
+case(that-4, with-3)
+obl:with(Have-1, that-4)
+
+Extracted the following NER entity mentions:

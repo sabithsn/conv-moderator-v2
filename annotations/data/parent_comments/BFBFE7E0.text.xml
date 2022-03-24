@@ -1,0 +1,74 @@
+Document: ID=BFBFE7E0.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+>Opponent not dehumanised   Dude have you read any comic where he mocks either gays or Jews?
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Opponent CharacterOffsetBegin=1 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=opponent NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=dehumanised CharacterOffsetBegin=14 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=dehumanise NamedEntityTag=O]
+[Text=Dude CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=dude NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=comic CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=comic NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=mocks CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=VBZ Lemma=mock NamedEntityTag=O]
+[Text=either CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=gays CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=gay NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Jews CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NNPS Lemma=Jews NamedEntityTag=MISC]
+[Text=? CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP (NN Opponent)))
+    (S
+      (NP (RB not) (VBN dehumanised) (NN Dude))
+      (VP (VBP have)
+        (S
+          (NP (PRP you))
+          (VP (VB read)
+            (NP (DT any) (JJ comic))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBZ mocks)
+                  (S
+                    (NP (CC either)
+                      (NNS gays)
+                      (CC or)
+                      (NNPS Jews))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-6)
+dep(Opponent-2, >-1)
+obl(have-6, Opponent-2)
+advmod(Dude-5, not-3)
+amod(Dude-5, dehumanised-4)
+nsubj(have-6, Dude-5)
+nsubj(read-8, you-7)
+ccomp(have-6, read-8)
+det(comic-10, any-9)
+obj(read-8, comic-10)
+advmod(mocks-13, where-11)
+nsubj(mocks-13, he-12)
+advcl(read-8, mocks-13)
+cc:preconj(gays-15, either-14)
+xcomp(mocks-13, gays-15)
+cc(Jews-17, or-16)
+xcomp(mocks-13, Jews-17)
+conj:or(gays-15, Jews-17)
+punct(have-6, ?-18)
+
+Extracted the following NER entity mentions:
+Jews	MISC	MISC:0.987788873771052
+he	PERSON	-

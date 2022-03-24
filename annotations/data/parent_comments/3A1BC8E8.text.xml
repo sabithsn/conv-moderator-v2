@@ -1,0 +1,65 @@
+Document: ID=3A1BC8E8.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Detroit Man Accused of Setting Fire to Girlfriend Pregnant with Twins Bonds Out for $5,000
+
+Tokens:
+[Text=Detroit CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Detroit NamedEntityTag=CITY]
+[Text=Man CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Man NamedEntityTag=O]
+[Text=Accused CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Accused NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Setting CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=set NamedEntityTag=O]
+[Text=Fire CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Girlfriend CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=girlfriend NamedEntityTag=O]
+[Text=Pregnant CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=pregnant NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Twins CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Twins NamedEntityTag=O]
+[Text=Bonds CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Bonds NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5000.0]
+[Text=5,000 CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=CD Lemma=5,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5000.0]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Detroit) (NNP Man) (NNP Accused))
+    (PP (IN of)
+      (S
+        (VP (VBG Setting)
+          (S
+            (NP
+              (NP (NN Fire))
+              (PP (IN to)
+                (NP (NN Girlfriend))))
+            (ADJP (JJ Pregnant)
+              (PP (IN with)
+                (NP (NNP Twins) (NNP Bonds))))
+            (PP (IN Out)
+              (PP (IN for)
+                (NP ($ $) (CD 5,000))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Accused-3)
+compound(Accused-3, Detroit-1)
+compound(Accused-3, Man-2)
+mark(Setting-5, of-4)
+acl:of(Accused-3, Setting-5)
+nsubj(Pregnant-9, Fire-6)
+case(Girlfriend-8, to-7)
+nmod:to(Fire-6, Girlfriend-8)
+xcomp(Setting-5, Pregnant-9)
+case(Bonds-12, with-10)
+compound(Bonds-12, Twins-11)
+obl:with(Pregnant-9, Bonds-12)
+case($-15, Out-13)
+case($-15, for-14)
+dep(Pregnant-9, $-15)
+nummod($-15, 5,000-16)
+
+Extracted the following NER entity mentions:
+Detroit	CITY	LOCATION:0.7575530060339317
+Fire	CAUSE_OF_DEATH	-
+$5,000	MONEY	MONEY:0.999627603791069

@@ -1,0 +1,51 @@
+Document: ID=183DA208.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+AITA for telling my friend to stop celebrating Lunar New Year
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=telling CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=tell NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=celebrating CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=celebrate NamedEntityTag=O]
+[Text=Lunar CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Lunar NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=New NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-01 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-01">New Year</TIMEX3>]
+[Text=Year CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Year NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-01 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-01">New Year</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG telling)
+          (NP (PRP$ my) (NN friend))
+          (S
+            (VP (TO to)
+              (VP (VB stop)
+                (S
+                  (VP (VBG celebrating)
+                    (NP (NNP Lunar) (NNP New) (NNP Year))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(telling-3, for-2)
+acl:for(AITA-1, telling-3)
+nmod:poss(friend-5, my-4)
+obj(telling-3, friend-5)
+nsubj:xsubj(stop-7, friend-5)
+mark(stop-7, to-6)
+xcomp(telling-3, stop-7)
+xcomp(stop-7, celebrating-8)
+compound(Year-11, Lunar-9)
+compound(Year-11, New-10)
+obl:tmod(celebrating-8, Year-11)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.5737811201960074
+New Year	DATE	DATE:-1.0

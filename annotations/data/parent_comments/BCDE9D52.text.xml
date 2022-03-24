@@ -1,0 +1,84 @@
+Document: ID=BCDE9D52.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+GOP Doctors: Fauci Should Apologize For Calling Senator A “Moron,” Take Stock Of His Own “Divisive Actions”
+
+Tokens:
+[Text=GOP CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Doctors CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=doctor NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=Should CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Apologize CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=apologize NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Calling CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=Senator CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=A CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=A NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Moron CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Moron NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=Take CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=Stock CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=His CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Own CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Divisive CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=divisive NamedEntityTag=O]
+[Text=Actions CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=NNS Lemma=action NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP GOP) (NNS Doctors))
+    (: :)
+    (S
+      (NP (NNP Fauci))
+      (VP (MD Should)
+        (VP (VB Apologize)
+          (PP (IN For)
+            (S
+              (VP (VBG Calling)
+                (NP (NNP Senator) (NNP A))
+                (S (`` “)
+                  (NP (NNP Moron))
+                  (, ,) ('' ”)))))
+          (S
+            (VP (VB Take)
+              (NP
+                (NP (NN Stock))
+                (PP (IN Of)
+                  (NP (PRP$ His) (JJ Own) (`` “) (JJ Divisive) (NNS Actions) ('' ”)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Doctors-2)
+compound(Doctors-2, GOP-1)
+punct(Doctors-2, :-3)
+nsubj(Apologize-6, Fauci-4)
+aux(Apologize-6, Should-5)
+parataxis(Doctors-2, Apologize-6)
+mark(Calling-8, For-7)
+advcl:for(Apologize-6, Calling-8)
+compound(A-10, Senator-9)
+obj(Calling-8, A-10)
+punct(Moron-12, “-11)
+xcomp(Calling-8, Moron-12)
+punct(Moron-12, ,-13)
+punct(Moron-12, ”-14)
+ccomp(Apologize-6, Take-15)
+obj(Take-15, Stock-16)
+case(Actions-22, Of-17)
+nmod:poss(Actions-22, His-18)
+amod(Actions-22, Own-19)
+punct(Actions-22, “-20)
+amod(Actions-22, Divisive-21)
+nmod:of(Stock-16, Actions-22)
+punct(Actions-22, ”-23)
+
+Extracted the following NER entity mentions:
+GOP	ORGANIZATION	ORGANIZATION:0.6171068099876377
+Fauci	PERSON	PERSON:0.8367852631891808
+Senator	TITLE	-
+His	PERSON	-

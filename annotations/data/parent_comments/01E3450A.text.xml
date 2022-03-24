@@ -1,0 +1,60 @@
+Document: ID=01E3450A.text (2 sentences, 11 tokens)
+
+Sentence #1 (7 tokens):
+You sound like a mental patient.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mental CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=mental NamedEntityTag=O]
+[Text=patient CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=patient NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP sound)
+      (PP (IN like)
+        (NP (DT a) (JJ mental) (NN patient))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sound-2)
+nsubj(sound-2, You-1)
+case(patient-6, like-3)
+det(patient-6, a-4)
+amod(patient-6, mental-5)
+obl:like(sound-2, patient-6)
+punct(sound-2, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Jan 6th type.
+
+Tokens:
+[Text=Jan CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Jan NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6th</TIMEX3>]
+[Text=6th CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=6th NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6th</TIMEX3>]
+[Text=type CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=type NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP-TMP (NNP Jan))
+    (NP (JJ 6th) (NN type))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Jan-1)
+amod(type-3, 6th-2)
+dep(Jan-1, type-3)
+punct(Jan-1, .-4)
+
+Extracted the following NER entity mentions:
+Jan 6th	DATE	DATE:-1.0

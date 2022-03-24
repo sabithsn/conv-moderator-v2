@@ -1,0 +1,68 @@
+Document: ID=C9C7A3B6.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Governors of FL and VA tweets out their support for the March for Life rally.
+
+Tokens:
+[Text=Governors CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNS Lemma=governor NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=FL CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=FL NamedEntityTag=STATE_OR_PROVINCE]
+[Text=and CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=VA CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=VA NamedEntityTag=STATE_OR_PROVINCE]
+[Text=tweets CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=tweet NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=support NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03">March</TIMEX3>]
+[Text=for CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Life CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Life NamedEntityTag=O]
+[Text=rally CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=rally NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP-TMP
+      (NP
+        (NP (NNS Governors))
+        (PP (IN of)
+          (NP (NNP FL)
+            (CC and)
+            (NNP VA))))
+      (NP (NNS tweets)))
+    (PP (IN out)
+      (NP
+        (NP (PRP$ their) (NN support))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP March))
+            (PP (IN for)
+              (NP (NNP Life) (NN rally)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Governors-1)
+case(FL-3, of-2)
+nmod:of(Governors-1, FL-3)
+cc(VA-5, and-4)
+nmod:of(Governors-1, VA-5)
+conj:and(FL-3, VA-5)
+dep(Governors-1, tweets-6)
+case(support-9, out-7)
+nmod:poss(support-9, their-8)
+obl:out(Governors-1, support-9)
+case(March-12, for-10)
+det(March-12, the-11)
+nmod:for(support-9, March-12)
+case(rally-15, for-13)
+compound(rally-15, Life-14)
+nmod:for(March-12, rally-15)
+punct(Governors-1, .-16)
+
+Extracted the following NER entity mentions:
+FL	STATE_OR_PROVINCE	-
+VA	STATE_OR_PROVINCE	-
+March	DATE	DATE:0.9319395789265343

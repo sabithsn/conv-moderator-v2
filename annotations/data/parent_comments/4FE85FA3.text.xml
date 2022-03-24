@@ -1,0 +1,112 @@
+Document: ID=4FE85FA3.text (2 sentences, 28 tokens)
+
+Sentence #1 (6 tokens):
+Maybe they aren't testing.
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=testing CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=test NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP (PRP they))
+    (VP (VBP are) (RB n't)
+      (VP (VBG testing)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, testing-5)
+advmod(testing-5, Maybe-1)
+nsubj(testing-5, they-2)
+aux(testing-5, are-3)
+advmod(testing-5, n't-4)
+punct(testing-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+No test and covid+  = a common cold for a lot of people (not everyone but a lot).
+
+Tokens:
+[Text=No CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=test CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=test NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=+ CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=SYM Lemma=+ NamedEntityTag=O]
+[Text== CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=SYM Lemma== NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=SYM Lemma=a NamedEntityTag=O]
+[Text=common CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=common NamedEntityTag=CAUSE_OF_DEATH]
+[Text=cold CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=cold NamedEntityTag=CAUSE_OF_DEATH]
+[Text=for CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (DT No) (NN test))
+      (CC and)
+      (NP (NN covid) (SYM +) (SYM =) (SYM a)))
+    (NP
+      (NP (JJ common) (NN cold))
+      (PP (IN for)
+        (NP
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (NP (NNS people))))
+          (-LRB- -LRB-)
+          (FRAG (RB not)
+            (NP
+              (NP (NN everyone))
+              (CC but)
+              (NP (DT a) (NN lot))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, test-2)
+det(test-2, No-1)
+cc(covid-4, and-3)
+conj:and(test-2, covid-4)
+dep(covid-4, +-5)
+dep(covid-4, =-6)
+dep(covid-4, a-7)
+amod(cold-9, common-8)
+dep(test-2, cold-9)
+case(lot-12, for-10)
+det:qmod(people-14, a-11)
+fixed(a-11, lot-12)
+fixed(a-11, of-13)
+nmod(cold-9, people-14)
+punct(lot-12, (-15)
+dep(lot-12, not-16)
+dep(not-16, everyone-17)
+cc(lot-20, but-18)
+det(lot-20, a-19)
+dep(not-16, lot-20)
+conj:but(everyone-17, lot-20)
+punct(lot-12, )-21)
+punct(test-2, .-22)
+
+Extracted the following NER entity mentions:
+common cold	CAUSE_OF_DEATH	-

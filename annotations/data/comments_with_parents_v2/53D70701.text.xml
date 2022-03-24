@@ -1,0 +1,47 @@
+Document: ID=53D70701.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+100% of Americans should mind their own fucking business.
+
+Tokens:
+[Text=100 CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=100 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%100.0]
+[Text=% CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%100.0]
+[Text=of CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=should CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=mind NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=fucking NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (CD 100) (NN %))
+      (PP (IN of)
+        (NP (NNPS Americans))))
+    (VP (MD should)
+      (VP (VB mind)
+        (NP (PRP$ their) (JJ own) (JJ fucking) (NN business))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mind-6)
+nummod(%-2, 100-1)
+nsubj(mind-6, %-2)
+case(Americans-4, of-3)
+nmod:of(%-2, Americans-4)
+aux(mind-6, should-5)
+nmod:poss(business-10, their-7)
+amod(business-10, own-8)
+amod(business-10, fucking-9)
+obj(mind-6, business-10)
+punct(mind-6, .-11)
+
+Extracted the following NER entity mentions:
+100%	PERCENT	PERCENT:0.9523995119553584
+Americans	MISC	MISC:0.9999829852796724

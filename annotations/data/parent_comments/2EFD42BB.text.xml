@@ -1,0 +1,492 @@
+Document: ID=2EFD42BB.text (8 sentences, 119 tokens)
+
+Sentence #1 (2 tokens):
+NTA.
+
+Tokens:
+[Text=NTA CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=nta NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN NTA) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, NTA-1)
+punct(NTA-1, .-2)
+
+Extracted the following NER entity mentions:
+NTA	ORGANIZATION	ORGANIZATION:0.9764937941834244
+
+Sentence #2 (5 tokens):
+He’s pushing boundaries.
+
+Tokens:
+[Text=He CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=pushing CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=push NamedEntityTag=O]
+[Text=boundaries CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=boundary NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ ’s)
+      (S
+        (VP (VBG pushing)
+          (NP (NNS boundaries)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-2)
+nsubj(’s-2, He-1)
+xcomp(’s-2, pushing-3)
+obj(pushing-3, boundaries-4)
+punct(’s-2, .-5)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #3 (5 tokens):
+Run far far away.
+
+Tokens:
+[Text=Run CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Run)
+      (ADVP (RB far) (RB far) (RB away)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Run-1)
+advmod(away-4, far-2)
+advmod(away-4, far-3)
+advmod(Run-1, away-4)
+punct(Run-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (16 tokens):
+Edit: and if your parents see that as mature I mean okay I guess?
+
+Tokens:
+[Text=Edit CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=see NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=mature CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=mature NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=okay CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=UH Lemma=okay NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=guess CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=VBP Lemma=guess NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (NN Edit))
+      (: :))
+    (CC and)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP$ your) (NNS parents))
+          (VP (VBP see)
+            (SBAR (IN that) (IN as)
+              (FRAG
+                (ADJP (JJ mature)))))))
+      (NP (PRP I))
+      (VP (VBP mean)
+        (S
+          (INTJ (UH okay))
+          (NP (PRP I))
+          (VP (VBP guess)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Edit-1)
+punct(Edit-1, :-2)
+cc(Edit-1, and-3)
+mark(see-7, if-4)
+nmod:poss(parents-6, your-5)
+nsubj(see-7, parents-6)
+advcl:if(mean-12, see-7)
+mark(mature-10, that-8)
+mark(mature-10, as-9)
+advcl:as(see-7, mature-10)
+nsubj(mean-12, I-11)
+dep(Edit-1, mean-12)
+discourse(guess-15, okay-13)
+nsubj(guess-15, I-14)
+ccomp(mean-12, guess-15)
+punct(Edit-1, ?-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (38 tokens):
+I don’t understand “old school” or traditional people HOWEVER they should respect that it made you uncomfortable and understand that it was something you set as a line or boundary and he crossed it.
+
+Tokens:
+[Text=I CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=123 CharacterOffsetEnd=133 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=traditional CharacterOffsetBegin=150 CharacterOffsetEnd=161 PartOfSpeech=JJ Lemma=traditional NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=162 CharacterOffsetEnd=168 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=HOWEVER CharacterOffsetBegin=169 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=182 CharacterOffsetEnd=188 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=189 CharacterOffsetEnd=196 PartOfSpeech=VB Lemma=respect NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=uncomfortable CharacterOffsetBegin=214 CharacterOffsetEnd=227 PartOfSpeech=JJ Lemma=uncomfortable NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=232 CharacterOffsetEnd=242 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=243 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=255 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=VBP Lemma=set NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=278 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=boundary CharacterOffsetBegin=286 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=boundary NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=crossed CharacterOffsetBegin=302 CharacterOffsetEnd=309 PartOfSpeech=VBD Lemma=cross NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=312 CharacterOffsetEnd=313 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n’t)
+        (VP (VB understand)
+          (NP
+            (NP (`` “) (JJ old) (NN school) ('' ”))
+            (CC or)
+            (NP (JJ traditional) (NNS people))))))
+    (S
+      (ADVP (RB HOWEVER))
+      (NP (PRP they))
+      (VP (MD should)
+        (VP
+          (VP (VB respect)
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (VBD made)
+                  (S
+                    (NP (PRP you))
+                    (ADJP (JJ uncomfortable)))))))
+          (CC and)
+          (VP (VB understand)
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (VBD was)
+                  (NP
+                    (NP (NN something))
+                    (SBAR
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP set)
+                          (PP (IN as)
+                            (NP (DT a) (NN line)
+                              (CC or)
+                              (NN boundary))))))))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD crossed)
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understand-4)
+nsubj(understand-4, I-1)
+aux(understand-4, do-2)
+advmod(understand-4, n’t-3)
+punct(school-7, “-5)
+amod(school-7, old-6)
+obj(understand-4, school-7)
+punct(school-7, ”-8)
+cc(people-11, or-9)
+amod(people-11, traditional-10)
+obj(understand-4, people-11)
+conj:or(school-7, people-11)
+advmod(respect-15, HOWEVER-12)
+nsubj(respect-15, they-13)
+nsubj(understand-22, they-13)
+aux(respect-15, should-14)
+dep(understand-4, respect-15)
+mark(made-18, that-16)
+nsubj(made-18, it-17)
+ccomp(respect-15, made-18)
+nsubj(uncomfortable-20, you-19)
+xcomp(made-18, uncomfortable-20)
+cc(understand-22, and-21)
+dep(understand-4, understand-22)
+conj:and(respect-15, understand-22)
+mark(something-26, that-23)
+nsubj(something-26, it-24)
+cop(something-26, was-25)
+ccomp(understand-22, something-26)
+nsubj(set-28, you-27)
+acl:relcl(something-26, set-28)
+case(line-31, as-29)
+det(line-31, a-30)
+obl:as(set-28, line-31)
+cc(boundary-33, or-32)
+obl:as(set-28, boundary-33)
+conj:or(line-31, boundary-33)
+cc(crossed-36, and-34)
+nsubj(crossed-36, he-35)
+conj:and(understand-4, crossed-36)
+obj(crossed-36, it-37)
+punct(understand-4, .-38)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #6 (23 tokens):
+He waited until he felt safe and in the clear to do something you specifically said you did not want to happen.
+
+Tokens:
+[Text=He CharacterOffsetBegin=314 CharacterOffsetEnd=316 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=waited CharacterOffsetBegin=317 CharacterOffsetEnd=323 PartOfSpeech=VBD Lemma=wait NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=324 CharacterOffsetEnd=329 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=330 CharacterOffsetEnd=332 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=felt CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=VBD Lemma=feel NamedEntityTag=O]
+[Text=safe CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=JJ Lemma=safe NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=354 CharacterOffsetEnd=359 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=360 CharacterOffsetEnd=362 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=366 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=specifically CharacterOffsetBegin=380 CharacterOffsetEnd=392 PartOfSpeech=RB Lemma=specifically NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=393 CharacterOffsetEnd=397 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=398 CharacterOffsetEnd=401 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=410 CharacterOffsetEnd=414 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=happen CharacterOffsetBegin=418 CharacterOffsetEnd=424 PartOfSpeech=VB Lemma=happen NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=424 CharacterOffsetEnd=425 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD waited)
+        (SBAR (IN until)
+          (S
+            (NP (PRP he))
+            (VP (VBD felt)
+              (ADJP (JJ safe)))))))
+    (CC and)
+    (S
+      (PP (IN in)
+        (NP (DT the)
+          (ADJP (JJ clear)
+            (S
+              (VP (TO to)
+                (VP (VB do)))))
+          (NN something)))
+      (NP (PRP you))
+      (ADVP (RB specifically))
+      (VP (VBD said)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD did) (RB not)
+              (VP (VB want)
+                (S
+                  (VP (TO to)
+                    (VP (VB happen))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, waited-2)
+nsubj(waited-2, He-1)
+mark(felt-5, until-3)
+nsubj(felt-5, he-4)
+advcl:until(waited-2, felt-5)
+xcomp(felt-5, safe-6)
+cc(said-16, and-7)
+case(something-13, in-8)
+det(something-13, the-9)
+amod(something-13, clear-10)
+mark(do-12, to-11)
+xcomp(clear-10, do-12)
+obl:in(said-16, something-13)
+nsubj(said-16, you-14)
+advmod(said-16, specifically-15)
+conj:and(waited-2, said-16)
+nsubj(want-20, you-17)
+nsubj:xsubj(happen-22, you-17)
+aux(want-20, did-18)
+advmod(want-20, not-19)
+ccomp(said-16, want-20)
+mark(happen-22, to-21)
+xcomp(want-20, happen-22)
+punct(waited-2, .-23)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+he	PERSON	-
+
+Sentence #7 (27 tokens):
+Edit 2: maybe I should rephrase, I understand the old school/traditional views but I don’t agree with them in most cases.
+
+Tokens:
+[Text=Edit CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=: CharacterOffsetBegin=433 CharacterOffsetEnd=434 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=maybe CharacterOffsetBegin=435 CharacterOffsetEnd=440 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=441 CharacterOffsetEnd=442 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=443 CharacterOffsetEnd=449 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=rephrase CharacterOffsetBegin=450 CharacterOffsetEnd=458 PartOfSpeech=VB Lemma=rephrase NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=458 CharacterOffsetEnd=459 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=462 CharacterOffsetEnd=472 PartOfSpeech=VBP Lemma=understand NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=473 CharacterOffsetEnd=476 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=481 CharacterOffsetEnd=487 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=487 CharacterOffsetEnd=488 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=traditional CharacterOffsetBegin=488 CharacterOffsetEnd=499 PartOfSpeech=JJ Lemma=traditional NamedEntityTag=O]
+[Text=views CharacterOffsetBegin=500 CharacterOffsetEnd=505 PartOfSpeech=NNS Lemma=view NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=506 CharacterOffsetEnd=509 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=512 CharacterOffsetEnd=514 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=518 CharacterOffsetEnd=523 PartOfSpeech=VB Lemma=agree NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=524 CharacterOffsetEnd=528 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=529 CharacterOffsetEnd=533 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=534 CharacterOffsetEnd=536 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=537 CharacterOffsetEnd=541 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=cases CharacterOffsetBegin=542 CharacterOffsetEnd=547 PartOfSpeech=NNS Lemma=case NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=547 CharacterOffsetEnd=548 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Edit) (CD 2))
+    (: :)
+    (S
+      (S
+        (ADVP (RB maybe))
+        (NP (PRP I))
+        (VP (MD should)
+          (VP (VB rephrase) (, ,)
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBP understand)
+                  (NP (DT the) (JJ old)
+                    (NML (NN school) (HYPH /) (JJ traditional))
+                    (NNS views))))))))
+      (CC but)
+      (S
+        (NP (PRP I))
+        (VP (VBP do) (RB n’t)
+          (VP (VB agree)
+            (PP (IN with)
+              (NP (PRP them)))
+            (PP (IN in)
+              (NP (JJS most) (NNS cases)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Edit-1)
+nummod(Edit-1, 2-2)
+punct(Edit-1, :-3)
+advmod(rephrase-7, maybe-4)
+nsubj(rephrase-7, I-5)
+aux(rephrase-7, should-6)
+parataxis(Edit-1, rephrase-7)
+punct(rephrase-7, ,-8)
+nsubj(understand-10, I-9)
+ccomp(rephrase-7, understand-10)
+det(views-16, the-11)
+amod(views-16, old-12)
+compound(views-16, school-13)
+punct(school-13, /-14)
+amod(school-13, traditional-15)
+obj(understand-10, views-16)
+cc(agree-21, but-17)
+nsubj(agree-21, I-18)
+aux(agree-21, do-19)
+advmod(agree-21, n’t-20)
+parataxis(Edit-1, agree-21)
+conj:but(rephrase-7, agree-21)
+case(them-23, with-22)
+obl:with(agree-21, them-23)
+case(cases-26, in-24)
+amod(cases-26, most-25)
+obl:in(agree-21, cases-26)
+punct(Edit-1, .-27)
+
+Extracted the following NER entity mentions:
+2	NUMBER	NUMBER:-1.0
+
+Sentence #8 (3 tokens):
+Still NTA.
+
+Tokens:
+[Text=Still CharacterOffsetBegin=549 CharacterOffsetEnd=554 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=NTA CharacterOffsetBegin=555 CharacterOffsetEnd=558 PartOfSpeech=NN Lemma=nta NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=558 CharacterOffsetEnd=559 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Still))
+    (NP (NN NTA))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, NTA-2)
+dep(NTA-2, Still-1)
+punct(NTA-2, .-3)
+
+Extracted the following NER entity mentions:
+NTA	ORGANIZATION	ORGANIZATION:0.9126149067508467

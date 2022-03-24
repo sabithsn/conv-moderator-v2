@@ -1,0 +1,205 @@
+Document: ID=131E977D.text (3 sentences, 51 tokens)
+
+Sentence #1 (15 tokens):
+94% of deaths from covid in the US are age 50 and older.
+
+Tokens:
+[Text=94 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=94 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%94.0]
+[Text=% CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%94.0]
+[Text=of CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=deaths CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=death NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=are CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=age CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=age NamedEntityTag=O]
+[Text=50 CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=50 NamedEntityTag=NUMBER NormalizedNamedEntityTag=50.0]
+[Text=and CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=older CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=JJR Lemma=older NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (CD 94) (NN %))
+      (PP (IN of)
+        (NP
+          (NP (NNS deaths))
+          (PP (IN from)
+            (NP
+              (NP (NN covid))
+              (PP (IN in)
+                (NP (DT the) (NNP US))))))))
+    (VP (VBP are)
+      (UCP
+        (NP (NN age) (CD 50))
+        (CC and)
+        (ADJP (JJR older))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, age-11)
+nummod(%-2, 94-1)
+nsubj(age-11, %-2)
+nsubj(older-14, %-2)
+case(deaths-4, of-3)
+nmod:of(%-2, deaths-4)
+case(covid-6, from-5)
+nmod:from(deaths-4, covid-6)
+case(US-9, in-7)
+det(US-9, the-8)
+nmod:in(covid-6, US-9)
+cop(age-11, are-10)
+nummod(age-11, 50-12)
+cc(older-14, and-13)
+conj:and(age-11, older-14)
+punct(age-11, .-15)
+
+Extracted the following NER entity mentions:
+94%	PERCENT	PERCENT:0.995301900862964
+US	COUNTRY	LOCATION:0.9887078324266303
+50	NUMBER	NUMBER:-1.0
+
+Sentence #2 (8 tokens):
+75% are age 65 and older.
+
+Tokens:
+[Text=75 CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=CD Lemma=75 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%75.0]
+[Text=% CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%75.0]
+[Text=are CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=age CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=age NamedEntityTag=O]
+[Text=65 CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=CD Lemma=65 NamedEntityTag=NUMBER NormalizedNamedEntityTag=65.0]
+[Text=and CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=older CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=JJR Lemma=older NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 75) (NN %))
+    (VP (VBP are)
+      (UCP
+        (NP (NN age) (CD 65))
+        (CC and)
+        (ADJP (JJR older))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, age-4)
+nummod(%-2, 75-1)
+nsubj(age-4, %-2)
+nsubj(older-7, %-2)
+cop(age-4, are-3)
+nummod(age-4, 65-5)
+cc(older-7, and-6)
+conj:and(age-4, older-7)
+punct(age-4, .-8)
+
+Extracted the following NER entity mentions:
+75%	PERCENT	PERCENT:0.9972106445888715
+65	NUMBER	NUMBER:-1.0
+
+Sentence #3 (28 tokens):
+Why again for the last 2 years have there been vaccine mandates, offices closing, school closings, shutdowns, work from home, virtual school?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=the NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last 2 years</TIMEX3>]
+[Text=last CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last 2 years</TIMEX3>]
+[Text=2 CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=CD Lemma=2 NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last 2 years</TIMEX3>]
+[Text=years CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t1" endPoint="t0" tid="t2" type="DURATION" value="P2Y">the last 2 years</TIMEX3>]
+[Text=have CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=mandates CharacterOffsetBegin=138 CharacterOffsetEnd=146 PartOfSpeech=NNS Lemma=mandate NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=offices CharacterOffsetBegin=148 CharacterOffsetEnd=155 PartOfSpeech=NNS Lemma=office NamedEntityTag=O]
+[Text=closing CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=VBG Lemma=close NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=165 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=closings CharacterOffsetBegin=172 CharacterOffsetEnd=180 PartOfSpeech=NNS Lemma=closing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=shutdowns CharacterOffsetBegin=182 CharacterOffsetEnd=191 PartOfSpeech=NNS Lemma=shutdown NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=virtual CharacterOffsetBegin=209 CharacterOffsetEnd=216 PartOfSpeech=JJ Lemma=virtual NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (ADVP (RB again))
+      (VP
+        (PP (IN for)
+          (NP (DT the) (JJ last) (CD 2) (NNS years)))
+        (VBP have)
+        (ADVP (RB there))
+        (VP (VBN been)
+          (NP
+            (NP (NN vaccine) (NNS mandates))
+            (, ,)
+            (NP
+              (S
+                (NP (NNS offices))
+                (VP (VBG closing)))
+              (, ,)
+              (NP (NN school) (NNS closings))
+              (, ,)
+              (NP (NNS shutdowns))
+              (, ,)
+              (NP
+                (NP (NN work))
+                (PP (IN from)
+                  (NP (NN home))))
+              (, ,)
+              (NP (JJ virtual) (NN school)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mandates-12)
+advmod(mandates-12, Why-1)
+advmod(mandates-12, again-2)
+case(years-7, for-3)
+det(years-7, the-4)
+amod(years-7, last-5)
+nummod(years-7, 2-6)
+obl:for(mandates-12, years-7)
+aux(mandates-12, have-8)
+advmod(mandates-12, there-9)
+cop(mandates-12, been-10)
+compound(mandates-12, vaccine-11)
+punct(mandates-12, ,-13)
+nsubj(closing-15, offices-14)
+dep(closings-18, closing-15)
+punct(closings-18, ,-16)
+compound(closings-18, school-17)
+appos(mandates-12, closings-18)
+punct(closings-18, ,-19)
+appos(closings-18, shutdowns-20)
+punct(closings-18, ,-21)
+appos(closings-18, work-22)
+case(home-24, from-23)
+nmod:from(work-22, home-24)
+punct(closings-18, ,-25)
+amod(school-27, virtual-26)
+appos(closings-18, school-27)
+punct(mandates-12, ?-28)
+
+Extracted the following NER entity mentions:
+the	DURATION	DURATION:-1.0
+last 2 years	DATE	DATE:0.5774748470652465

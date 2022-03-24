@@ -1,0 +1,73 @@
+Document: ID=4226B243.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+The CDC Got Caught Hiding Data, Vaccination Might Increase Risk of Omicron Infection: Dr. Robert Malone
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CDC CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=CDC NamedEntityTag=ORGANIZATION]
+[Text=Got CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=Caught CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=caught NamedEntityTag=O]
+[Text=Hiding CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=hide NamedEntityTag=O]
+[Text=Data CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Vaccination CharacterOffsetBegin=32 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=vaccination NamedEntityTag=O]
+[Text=Might CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=Increase CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=increase NamedEntityTag=O]
+[Text=Risk CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Omicron CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Omicron NamedEntityTag=O]
+[Text=Infection CharacterOffsetBegin=75 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=infection NamedEntityTag=CAUSE_OF_DEATH]
+[Text=: CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Dr. CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Robert CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Robert NamedEntityTag=PERSON]
+[Text=Malone CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Malone NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (S
+        (NP (DT The) (NNP CDC))
+        (VP (VBD Got)
+          (NP (NN Caught))
+          (S
+            (VP (VBG Hiding)
+              (NP (NNS Data))))))
+      (, ,)
+      (S
+        (NP (NN Vaccination))
+        (VP (MD Might)
+          (VP (VB Increase)
+            (NP
+              (NP (NN Risk))
+              (PP (IN of)
+                (NP (NNP Omicron) (NN Infection))))))))
+    (: :)
+    (NP (NNP Dr.) (NNP Robert) (NNP Malone))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Malone-18)
+det(CDC-2, The-1)
+nsubj(Got-3, CDC-2)
+dep(Malone-18, Got-3)
+obj(Got-3, Caught-4)
+xcomp(Got-3, Hiding-5)
+obj(Hiding-5, Data-6)
+punct(Got-3, ,-7)
+nsubj(Increase-10, Vaccination-8)
+aux(Increase-10, Might-9)
+parataxis(Got-3, Increase-10)
+obj(Increase-10, Risk-11)
+case(Infection-14, of-12)
+compound(Infection-14, Omicron-13)
+nmod:of(Risk-11, Infection-14)
+punct(Malone-18, :-15)
+compound(Malone-18, Dr.-16)
+compound(Malone-18, Robert-17)
+
+Extracted the following NER entity mentions:
+CDC	ORGANIZATION	ORGANIZATION:0.9644132748961407
+Infection	CAUSE_OF_DEATH	-
+Robert Malone	PERSON	PERSON:0.9999611457421562

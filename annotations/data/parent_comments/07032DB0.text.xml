@@ -1,0 +1,94 @@
+Document: ID=07032DB0.text (2 sentences, 21 tokens)
+
+Sentence #1 (13 tokens):
+People who downvoted are egoists and not self-critical at all.
+
+Tokens:
+[Text=People CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=downvoted CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=downvote NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=egoists CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=egoist NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=self CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=self NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=critical CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=critical NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD downvoted)))))
+    (VP (VBP are)
+      (NP
+        (NP (NNS egoists))
+        (CC and)
+        (NP (RB not)
+          (ADJP (NN self) (HYPH -) (JJ critical))))
+      (ADVP (IN at) (RB all)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, egoists-5)
+nsubj(downvoted-3, People-1)
+nsubj(egoists-5, People-1)
+nsubj(critical-10, People-1)
+ref(People-1, who-2)
+acl:relcl(People-1, downvoted-3)
+cop(egoists-5, are-4)
+cc(critical-10, and-6)
+advmod(critical-10, not-7)
+obl:npmod(critical-10, self-8)
+punct(critical-10, --9)
+conj:and(egoists-5, critical-10)
+case(all-12, at-11)
+obl:at(egoists-5, all-12)
+punct(egoists-5, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Which is bad for a human being.
+
+Tokens:
+[Text=Which CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=human CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=human NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=being NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHNP (WDT Which))
+    (S
+      (VP (VBZ is)
+        (ADJP (JJ bad)
+          (PP (IN for)
+            (NP (DT a) (JJ human) (NN being))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bad-3)
+nsubj(bad-3, Which-1)
+cop(bad-3, is-2)
+case(being-7, for-4)
+det(being-7, a-5)
+amod(being-7, human-6)
+obl:for(bad-3, being-7)
+punct(bad-3, .-8)
+
+Extracted the following NER entity mentions:

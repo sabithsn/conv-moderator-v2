@@ -1,0 +1,52 @@
+Document: ID=84EE3FDC.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Banned for pointing out the Emperor is naked as a jaybird.
+
+Tokens:
+[Text=Banned CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=pointing CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=point NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Emperor CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Emperor NamedEntityTag=TITLE]
+[Text=is CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=naked CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=naked NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=jaybird CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=jaybird NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Banned)
+        (PP (IN for)
+          (S
+            (VP (VBG pointing)
+              (PRT (RP out))
+              (NP (DT the) (NNP Emperor)))))))
+    (VP (VBZ is)
+      (ADJP (JJ naked)
+        (PP (IN as)
+          (NP (DT a) (NN jaybird)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, naked-8)
+csubj(naked-8, Banned-1)
+mark(pointing-3, for-2)
+advcl:for(Banned-1, pointing-3)
+compound:prt(pointing-3, out-4)
+det(Emperor-6, the-5)
+obj(pointing-3, Emperor-6)
+cop(naked-8, is-7)
+case(jaybird-11, as-9)
+det(jaybird-11, a-10)
+obl:as(naked-8, jaybird-11)
+punct(naked-8, .-12)
+
+Extracted the following NER entity mentions:
+Emperor	TITLE	MISC:0.37781666775747463

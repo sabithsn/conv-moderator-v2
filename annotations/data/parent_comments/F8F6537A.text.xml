@@ -1,0 +1,106 @@
+Document: ID=F8F6537A.text (3 sentences, 22 tokens)
+
+Sentence #1 (10 tokens):
+Even regular restaurants in NYC don’t allow kids.
+
+Tokens:
+[Text=Even CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=regular CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=regular NamedEntityTag=O]
+[Text=restaurants CharacterOffsetBegin=13 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=restaurant NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=NYC CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=NYC NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=allow NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (RB Even) (JJ regular) (NNS restaurants))
+      (PP (IN in)
+        (NP (NNP NYC))))
+    (VP (VBP do) (RB n’t)
+      (VP (VB allow)
+        (NP (NNS kids))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, allow-8)
+advmod(restaurants-3, Even-1)
+amod(restaurants-3, regular-2)
+nsubj(allow-8, restaurants-3)
+case(NYC-5, in-4)
+nmod:in(restaurants-3, NYC-5)
+aux(allow-8, do-6)
+advmod(allow-8, n’t-7)
+obj(allow-8, kids-9)
+punct(allow-8, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+From pizzerias to Jean Georges restaurants have outright child bans.
+
+Tokens:
+[Text=From CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=pizzerias CharacterOffsetBegin=55 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=pizzeria NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Jean CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Jean NamedEntityTag=PERSON]
+[Text=Georges CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Georges NamedEntityTag=PERSON]
+[Text=restaurants CharacterOffsetBegin=81 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=restaurant NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=outright CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=outright NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=bans CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=ban NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (NNS pizzerias))
+        (PP (IN to)
+          (NP (NNP Jean) (NNP Georges)))))
+    (NP (NNS restaurants))
+    (VP (VBP have)
+      (NP (JJ outright) (NN child) (NNS bans)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-7)
+case(pizzerias-2, From-1)
+obl:from(have-7, pizzerias-2)
+case(Georges-5, to-3)
+compound(Georges-5, Jean-4)
+nmod:to(pizzerias-2, Georges-5)
+nsubj(have-7, restaurants-6)
+amod(bans-10, outright-8)
+compound(bans-10, child-9)
+obj(have-7, bans-10)
+punct(have-7, .-11)
+
+Extracted the following NER entity mentions:
+Jean Georges	PERSON	PERSON:0.8153251953771226
+
+Sentence #3 (1 tokens):
+https://www.nydailynews.com/life-style/new-york-restaurants-no-kids-policy-noise-annoying-kids-menus-drive-owners-ban-article-1.156483?outputType=amp
+
+Tokens:
+[Text=https://www.nydailynews.com/life-style/new-york-restaurants-no-kids-policy-noise-annoying-kids-menus-drive-owners-ban-article-1.156483?outputType=amp CharacterOffsetBegin=121 CharacterOffsetEnd=270 PartOfSpeech=ADD Lemma=https://www.nydailynews.com/life-style/new-york-restaurants-no-kids-policy-noise-annoying-kids-menus-drive-owners-ban-article-1.156483?outputtype=amp NamedEntityTag=URL]
+
+Constituency parse: 
+(ROOT
+  (NP (ADD https://www.nydailynews.com/life-style/new-york-restaurants-no-kids-policy-noise-annoying-kids-menus-drive-owners-ban-article-1.156483?outputType=amp)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, https://www.nydailynews.com/life-style/new-york-restaurants-no-kids-policy-noise-annoying-kids-menus-drive-owners-ban-article-1.156483?outputType=amp-1)
+
+Extracted the following NER entity mentions:
+https://www.nydailynews.com/life-style/new-york-restaurants-no-kids-policy-noise-annoying-kids-menus-drive-owners-ban-article-1.156483?outputType=amp	URL	-

@@ -1,0 +1,68 @@
+Document: ID=E30B1B9A.text (2 sentences, 12 tokens)
+
+Sentence #1 (7 tokens):
+> I am radical left.  >
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=radical CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=radical NamedEntityTag=IDEOLOGY]
+[Text=left CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VBN Lemma=leave NamedEntityTag=IDEOLOGY]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=-RRB- Lemma=> NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (ADJP (SYM >)
+          (NP (PRP I))))
+      (VP (VBP am)
+        (ADJP (JJ radical))))
+    (S
+      (VP (VBN left)))
+    (. .) (-RRB- >)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, radical-4)
+dep(I-2, >-1)
+nsubj(radical-4, I-2)
+cop(radical-4, am-3)
+parataxis(radical-4, left-5)
+punct(radical-4, .-6)
+punct(radical-4, >-7)
+
+Extracted the following NER entity mentions:
+radical left	IDEOLOGY	-
+
+Sentence #2 (5 tokens):
+Fill it with terrorists  Doubt
+
+Tokens:
+[Text=Fill CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=fill NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=terrorists CharacterOffsetBegin=37 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=terrorist NamedEntityTag=O]
+[Text=Doubt CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=doubt NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fill)
+      (NP (PRP it))
+      (PP (IN with)
+        (NP (NNS terrorists) (NN Doubt))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fill-1)
+obj(Fill-1, it-2)
+case(Doubt-5, with-3)
+compound(Doubt-5, terrorists-4)
+obl:with(Fill-1, Doubt-5)
+
+Extracted the following NER entity mentions:
+Doubt	PERSON	PERSON:0.7250183126638614

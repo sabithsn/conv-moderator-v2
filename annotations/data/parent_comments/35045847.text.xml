@@ -1,0 +1,199 @@
+Document: ID=35045847.text (3 sentences, 48 tokens)
+
+Sentence #1 (22 tokens):
+It gives me GREAT pleasure to see Democracy at work and seeing folks in Kalifornia getting exactly what they voted for!
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=gives CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=GREAT CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=pleasure CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=pleasure NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=Democracy CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=democracy NamedEntityTag=IDEOLOGY]
+[Text=at CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=seeing CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=VBG Lemma=see NamedEntityTag=O]
+[Text=folks CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=folk NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Kalifornia CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Kalifornia NamedEntityTag=LOCATION]
+[Text=getting CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=voted CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ gives)
+        (NP (PRP me))
+        (NP (JJ GREAT) (NN pleasure)
+          (S
+            (VP (TO to)
+              (VP (VB see)
+                (NP (NN Democracy))
+                (PP (IN at)
+                  (NP (NN work)))))))))
+    (CC and)
+    (S
+      (VP (VBG seeing)
+        (NP (NNS folks))
+        (PP (IN in)
+          (NP (NNP Kalifornia)))
+        (S
+          (VP (VBG getting)
+            (SBAR
+              (WHNP (RB exactly) (WP what))
+              (S
+                (NP (PRP they))
+                (VP (VBD voted)
+                  (PP (IN for)))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gives-2)
+nsubj(gives-2, It-1)
+nsubj(seeing-12, It-1)
+iobj(gives-2, me-3)
+amod(pleasure-5, GREAT-4)
+obj(gives-2, pleasure-5)
+mark(see-7, to-6)
+acl:to(pleasure-5, see-7)
+obj(see-7, Democracy-8)
+case(work-10, at-9)
+obl:at(see-7, work-10)
+cc(seeing-12, and-11)
+conj:and(gives-2, seeing-12)
+obj(seeing-12, folks-13)
+case(Kalifornia-15, in-14)
+obl:in(seeing-12, Kalifornia-15)
+advcl(seeing-12, getting-16)
+advmod(what-18, exactly-17)
+obl:for(voted-20, what-18)
+nsubj(voted-20, they-19)
+ccomp(getting-16, voted-20)
+case(what-18, for-21)
+punct(gives-2, !-22)
+
+Extracted the following NER entity mentions:
+Democracy	IDEOLOGY	MISC:0.5749830841004098
+Kalifornia	LOCATION	LOCATION:0.9543346092525897
+
+Sentence #2 (4 tokens):
+Elections have consequences!
+
+Tokens:
+[Text=Elections CharacterOffsetBegin=121 CharacterOffsetEnd=130 PartOfSpeech=NNS Lemma=election NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=consequences CharacterOffsetBegin=136 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=consequence NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Elections))
+    (VP (VBP have)
+      (NP (NNS consequences)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, Elections-1)
+obj(have-2, consequences-3)
+punct(have-2, !-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (22 tokens):
+Besides....if you think $5 a gallon is bad......wait until they ban the import of Russian Oil!
+
+Tokens:
+[Text=Besides CharacterOffsetBegin=151 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=besides NamedEntityTag=O]
+[Text=.... CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=, Lemma=.... NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=5 CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=CD Lemma=5 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=a CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=gallon CharacterOffsetBegin=180 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=gallon NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=190 CharacterOffsetEnd=193 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=...... CharacterOffsetBegin=193 CharacterOffsetEnd=199 PartOfSpeech=, Lemma=...... NamedEntityTag=O]
+[Text=wait CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=VB Lemma=wait NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=204 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=VBP Lemma=ban NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=import CharacterOffsetBegin=223 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=import NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=233 CharacterOffsetEnd=240 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=Oil CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (IN Besides))
+    (, ....)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP think)
+          (NP
+            (NP
+              (NP ($ $) (CD 5))
+              (NP (DT a) (NN gallon)))
+            (SBAR
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ bad)))))))))
+    (, ......)
+    (VP (VB wait)
+      (SBAR (IN until)
+        (S
+          (NP (PRP they))
+          (VP (VBP ban)
+            (NP
+              (NP (DT the) (NN import))
+              (PP (IN of)
+                (NP (JJ Russian) (NN Oil))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wait-13)
+advmod(wait-13, Besides-1)
+punct(wait-13, ....-2)
+mark(think-5, if-3)
+nsubj(think-5, you-4)
+dep(wait-13, think-5)
+obj(think-5, $-6)
+nummod($-6, 5-7)
+det(gallon-9, a-8)
+dep($-6, gallon-9)
+cop(bad-11, is-10)
+acl:relcl($-6, bad-11)
+punct(wait-13, ......-12)
+mark(ban-16, until-14)
+nsubj(ban-16, they-15)
+advcl:until(wait-13, ban-16)
+det(import-18, the-17)
+obj(ban-16, import-18)
+case(Oil-21, of-19)
+amod(Oil-21, Russian-20)
+nmod:of(import-18, Oil-21)
+punct(wait-13, !-22)
+
+Extracted the following NER entity mentions:
+$5	MONEY	MONEY:0.9918539621990108
+Russian	NATIONALITY	MISC:0.9999822604943959

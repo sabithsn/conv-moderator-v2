@@ -1,0 +1,106 @@
+Document: ID=3ECEEC28.text (2 sentences, 24 tokens)
+
+Sentence #1 (8 tokens):
+This is FOG or Forward Observations Group.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=FOG CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=fog NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Forward CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Forward NamedEntityTag=ORGANIZATION]
+[Text=Observations CharacterOffsetBegin=23 CharacterOffsetEnd=35 PartOfSpeech=NNPS Lemma=Observations NamedEntityTag=ORGANIZATION]
+[Text=Group CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Group NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (NN FOG))
+        (CC or)
+        (NP (NNP Forward) (NNPS Observations) (NNP Group))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FOG-3)
+nsubj(FOG-3, This-1)
+cop(FOG-3, is-2)
+cc(Group-7, or-4)
+compound(Group-7, Forward-5)
+compound(Group-7, Observations-6)
+conj:or(FOG-3, Group-7)
+punct(FOG-3, .-8)
+
+Extracted the following NER entity mentions:
+Forward Observations Group	ORGANIZATION	ORGANIZATION:0.9414392442639582
+
+Sentence #2 (16 tokens):
+A group of mercenaries funded by former US Army Special Forces that is in Ukraine now
+
+Tokens:
+[Text=A CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=mercenaries CharacterOffsetBegin=54 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=mercenary NamedEntityTag=O]
+[Text=funded CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=VBN Lemma=fund NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=former CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=US NamedEntityTag=ORGANIZATION]
+[Text=Army CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Army NamedEntityTag=ORGANIZATION]
+[Text=Special CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Special NamedEntityTag=ORGANIZATION]
+[Text=Forces CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NNPS Lemma=Forces NamedEntityTag=ORGANIZATION]
+[Text=that CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=now CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT A) (NN group))
+    (PP (IN of)
+      (NP
+        (NP (NNS mercenaries))
+        (VP (VBN funded)
+          (PP (IN by)
+            (NP
+              (NP
+                (NML (JJ former) (NNP US) (NNP Army))
+                (NNP Special) (NNPS Forces))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (PP (IN in)
+                      (NP (NNP Ukraine)))
+                    (ADVP (RB now))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, group-2)
+det(group-2, A-1)
+case(mercenaries-4, of-3)
+nmod:of(group-2, mercenaries-4)
+acl(mercenaries-4, funded-5)
+case(Forces-11, by-6)
+amod(Army-9, former-7)
+compound(Army-9, US-8)
+compound(Forces-11, Army-9)
+compound(Forces-11, Special-10)
+obl:by(funded-5, Forces-11)
+nsubj(Ukraine-15, Forces-11)
+ref(Forces-11, that-12)
+cop(Ukraine-15, is-13)
+case(Ukraine-15, in-14)
+acl:relcl(Forces-11, Ukraine-15)
+advmod(Ukraine-15, now-16)
+
+Extracted the following NER entity mentions:
+US Army Special Forces	ORGANIZATION	ORGANIZATION:0.9915741712370302
+Ukraine	COUNTRY	LOCATION:0.99922528339397
+now	DATE	DATE:-1.0

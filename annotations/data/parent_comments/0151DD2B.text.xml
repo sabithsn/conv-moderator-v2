@@ -1,0 +1,137 @@
+Document: ID=0151DD2B.text (2 sentences, 32 tokens)
+
+Sentence #1 (24 tokens):
+Fox was telling us two weeks ago that Putin would never attack Ukraine and Biden was just engaging in war mongering and hysteria.
+
+Tokens:
+[Text=Fox CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=telling CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=tell NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=two NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-2W Timex=<TIMEX3 alt_value="OFFSET P-2W" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">two weeks ago</TIMEX3>]
+[Text=weeks CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=week NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-2W Timex=<TIMEX3 alt_value="OFFSET P-2W" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">two weeks ago</TIMEX3>]
+[Text=ago CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=ago NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-2W Timex=<TIMEX3 alt_value="OFFSET P-2W" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">two weeks ago</TIMEX3>]
+[Text=that CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=would CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=attack CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=attack NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=engaging CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=VBG Lemma=engage NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=mongering CharacterOffsetBegin=106 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=mongering NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=hysteria CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=hysteria NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Fox))
+    (VP (VBD was)
+      (VP (VBG telling)
+        (NP (PRP us))
+        (PP
+          (NP (CD two) (NNS weeks))
+          (IN ago)
+          (NP
+            (NP (DT that))
+            (SBAR
+              (S
+                (NP (NNP Putin))
+                (VP (MD would)
+                  (ADVP (RB never))
+                  (VP (VB attack)
+                    (SBAR
+                      (S
+                        (NP (NNP Ukraine)
+                          (CC and)
+                          (NNP Biden))
+                        (VP (VBD was)
+                          (ADVP (RB just))
+                          (VP (VBG engaging)
+                            (PP (IN in)
+                              (NP (NN war) (NN mongering)
+                                (CC and)
+                                (NN hysteria)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, telling-3)
+nsubj(telling-3, Fox-1)
+aux(telling-3, was-2)
+obj(telling-3, us-4)
+nummod(weeks-6, two-5)
+obl:ago(telling-3, weeks-6)
+case(weeks-6, ago-7)
+dep(weeks-6, that-8)
+nsubj(attack-12, Putin-9)
+aux(attack-12, would-10)
+advmod(attack-12, never-11)
+acl:relcl(that-8, attack-12)
+nsubj(engaging-18, Ukraine-13)
+cc(Biden-15, and-14)
+conj:and(Ukraine-13, Biden-15)
+nsubj(engaging-18, Biden-15)
+aux(engaging-18, was-16)
+advmod(engaging-18, just-17)
+ccomp(attack-12, engaging-18)
+case(mongering-21, in-19)
+compound(mongering-21, war-20)
+obl:in(engaging-18, mongering-21)
+cc(hysteria-23, and-22)
+obl:in(engaging-18, hysteria-23)
+conj:and(mongering-21, hysteria-23)
+punct(telling-3, .-24)
+
+Extracted the following NER entity mentions:
+Fox	PERSON	PERSON:0.9832917428931482
+two weeks ago	DATE	DATE:-1.0
+Putin	PERSON	PERSON:0.975386993882412
+Ukraine	COUNTRY	LOCATION:0.9978258633062191
+Biden	PERSON	PERSON:0.996723891950595
+war	CAUSE_OF_DEATH	-
+
+Sentence #2 (8 tokens):
+Why should we take their advice now?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=149 CharacterOffsetEnd=154 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=advice CharacterOffsetBegin=155 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=advice NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=? CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP we))
+      (VP (VB take)
+        (NP (PRP$ their) (NN advice))
+        (ADVP (RB now))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, take-4)
+advmod(take-4, Why-1)
+aux(take-4, should-2)
+nsubj(take-4, we-3)
+nmod:poss(advice-6, their-5)
+obj(take-4, advice-6)
+advmod(take-4, now-7)
+punct(take-4, ?-8)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

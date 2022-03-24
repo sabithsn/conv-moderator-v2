@@ -1,0 +1,90 @@
+Document: ID=D8140029.text (2 sentences, 22 tokens)
+
+Sentence #1 (16 tokens):
+The heat output of the sun per volume is actually less than the human body.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=heat CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=heat NamedEntityTag=O]
+[Text=output CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=output NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sun CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=sun NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=volume CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=JJR Lemma=less NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=human CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=human NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN heat) (NN output))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN sun))
+          (PP (IN per)
+            (NP (NN volume))))))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB actually) (JJR less))
+        (PP (IN than)
+          (NP (DT the) (JJ human) (NN body)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, less-11)
+det(output-3, The-1)
+compound(output-3, heat-2)
+nsubj(less-11, output-3)
+case(sun-6, of-4)
+det(sun-6, the-5)
+nmod:of(output-3, sun-6)
+case(volume-8, per-7)
+nmod:per(sun-6, volume-8)
+cop(less-11, is-9)
+advmod(less-11, actually-10)
+case(body-15, than-12)
+det(body-15, the-13)
+amod(body-15, human-14)
+obl:than(less-11, body-15)
+punct(less-11, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+The sun is just HUGE.
+
+Tokens:
+[Text=The CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sun CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=sun NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=HUGE CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=huge NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN sun))
+    (VP (VBZ is)
+      (ADJP (RB just) (JJ HUGE)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, HUGE-5)
+det(sun-2, The-1)
+nsubj(HUGE-5, sun-2)
+cop(HUGE-5, is-3)
+advmod(HUGE-5, just-4)
+punct(HUGE-5, .-6)
+
+Extracted the following NER entity mentions:

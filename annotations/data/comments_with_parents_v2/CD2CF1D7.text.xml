@@ -1,0 +1,88 @@
+Document: ID=CD2CF1D7.text (2 sentences, 19 tokens)
+
+Sentence #1 (16 tokens):
+Someone who has never been to trial is inherently NOT qualified for a SCOTUS position.
+
+Tokens:
+[Text=Someone CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=trial CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=trial NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=inherently CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=inherently NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=qualified CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=qualified NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=SCOTUS CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=SCOTUS NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Someone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ has)
+            (ADVP (RB never))
+            (VP (VBN been)
+              (PP (IN to)
+                (NP (NN trial))))))))
+    (VP (VBZ is)
+      (ADVP (RB inherently))
+      (RB NOT)
+      (ADJP (JJ qualified)
+        (PP (IN for)
+          (NP (DT a) (NNP SCOTUS) (NN position)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, qualified-11)
+nsubj(trial-7, Someone-1)
+nsubj(qualified-11, Someone-1)
+ref(Someone-1, who-2)
+aux(trial-7, has-3)
+advmod(trial-7, never-4)
+cop(trial-7, been-5)
+case(trial-7, to-6)
+acl:relcl(Someone-1, trial-7)
+cop(qualified-11, is-8)
+advmod(qualified-11, inherently-9)
+advmod(qualified-11, NOT-10)
+case(position-15, for-12)
+det(position-15, a-13)
+compound(position-15, SCOTUS-14)
+obl:for(qualified-11, position-15)
+punct(qualified-11, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Try again.
+
+Tokens:
+[Text=Try CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Try)
+      (ADVP (RB again)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Try-1)
+advmod(Try-1, again-2)
+punct(Try-1, .-3)
+
+Extracted the following NER entity mentions:

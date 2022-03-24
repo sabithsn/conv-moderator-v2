@@ -1,0 +1,76 @@
+Document: ID=1E43E269.text (2 sentences, 16 tokens)
+
+Sentence #1 (8 tokens):
+Stacy Abrams deleted this twitter picture today.
+
+Tokens:
+[Text=Stacy CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Stacy NamedEntityTag=PERSON]
+[Text=Abrams CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Abrams NamedEntityTag=PERSON]
+[Text=deleted CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=delete NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=twitter CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=twitter NamedEntityTag=O]
+[Text=picture CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=picture NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Stacy) (NNP Abrams))
+    (VP (VBD deleted)
+      (NP (DT this) (NN twitter) (NN picture))
+      (NP-TMP (NN today)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deleted-3)
+compound(Abrams-2, Stacy-1)
+nsubj(deleted-3, Abrams-2)
+det(picture-6, this-4)
+compound(picture-6, twitter-5)
+obj(deleted-3, picture-6)
+obl:tmod(deleted-3, today-7)
+punct(deleted-3, .-8)
+
+Extracted the following NER entity mentions:
+Stacy Abrams	PERSON	PERSON:0.9906745439378765
+today	DATE	DATE:-1.0
+
+Sentence #2 (8 tokens):
+Please do not make it go viral.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=viral CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=viral NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Please))
+    (VP (VB do) (RB not)
+      (VP (VB make)
+        (S
+          (NP (PRP it))
+          (VP (VB go)
+            (NP (JJ viral))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-4)
+discourse(make-4, Please-1)
+aux(make-4, do-2)
+advmod(make-4, not-3)
+nsubj(go-6, it-5)
+ccomp(make-4, go-6)
+obj(go-6, viral-7)
+punct(make-4, .-8)
+
+Extracted the following NER entity mentions:

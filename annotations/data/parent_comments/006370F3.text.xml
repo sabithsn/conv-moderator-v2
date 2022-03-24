@@ -1,0 +1,76 @@
+Document: ID=006370F3.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+As a Romanian, the who created the term "Roma" and use it should be crucified.
+
+Tokens:
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Romanian CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=romanian NamedEntityTag=NATIONALITY]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=created CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=create NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Roma CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Roma NamedEntityTag=ORGANIZATION]
+[Text=" CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=crucified CharacterOffsetBegin=68 CharacterOffsetEnd=77 PartOfSpeech=VBN Lemma=crucify NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (JJ Romanian)))
+    (, ,)
+    (NP
+      (NP (DT the))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP
+            (VP (VBD created)
+              (NP (DT the) (NN term) (`` ") (NNP Roma) ('' ")))
+            (CC and)
+            (VP (VB use)
+              (NP (PRP it)))))))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN crucified))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, crucified-18)
+case(Romanian-3, As-1)
+det(Romanian-3, a-2)
+obl:as(crucified-18, Romanian-3)
+punct(crucified-18, ,-4)
+nsubj(created-7, the-5)
+nsubj(use-14, the-5)
+nsubj:pass(crucified-18, the-5)
+ref(the-5, who-6)
+acl:relcl(the-5, created-7)
+det(Roma-11, the-8)
+compound(Roma-11, term-9)
+punct(Roma-11, "-10)
+obj(created-7, Roma-11)
+punct(Roma-11, "-12)
+cc(use-14, and-13)
+acl:relcl(the-5, use-14)
+conj:and(created-7, use-14)
+obj(use-14, it-15)
+aux(crucified-18, should-16)
+aux:pass(crucified-18, be-17)
+punct(crucified-18, .-19)
+
+Extracted the following NER entity mentions:
+Romanian	NATIONALITY	MISC:0.99999872999528
+Roma	ORGANIZATION	ORGANIZATION:0.4491247289060263

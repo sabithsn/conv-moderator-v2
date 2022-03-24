@@ -1,0 +1,157 @@
+Document: ID=CA51C791.text (3 sentences, 36 tokens)
+
+Sentence #1 (21 tokens):
+In the same 24 hours that the Russia attack on Ukraine began, the United States attacked Yemen & Somalia.
+
+Tokens:
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=24 CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=CD Lemma=24 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT24H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT24H">24 hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT24H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT24H">24 hours</TIMEX3>]
+[Text=that CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=attack CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=attack NamedEntityTag=CAUSE_OF_DEATH]
+[Text=on CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=began CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=United CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=United NamedEntityTag=COUNTRY]
+[Text=States CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=States NamedEntityTag=COUNTRY]
+[Text=attacked CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=attack NamedEntityTag=O]
+[Text=Yemen CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Yemen NamedEntityTag=COUNTRY]
+[Text=& CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Somalia CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Somalia NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (JJ same) (CD 24) (NNS hours))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (NNP Russia) (NN attack))
+              (PP (IN on)
+                (NP (NNP Ukraine))))
+            (VP (VBD began))))))
+    (, ,)
+    (NP (DT the) (NNP United) (NNP States))
+    (VP (VBD attacked)
+      (NP (NNP Yemen)
+        (CC &)
+        (NNP Somalia)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attacked-17)
+case(hours-5, In-1)
+det(hours-5, the-2)
+amod(hours-5, same-3)
+nummod(hours-5, 24-4)
+obl:in(attacked-17, hours-5)
+mark(began-12, that-6)
+det(attack-9, the-7)
+compound(attack-9, Russia-8)
+nsubj(began-12, attack-9)
+case(Ukraine-11, on-10)
+nmod:on(attack-9, Ukraine-11)
+dep(hours-5, began-12)
+punct(attacked-17, ,-13)
+det(States-16, the-14)
+compound(States-16, United-15)
+nsubj(attacked-17, States-16)
+obj(attacked-17, Yemen-18)
+cc(Somalia-20, &-19)
+obj(attacked-17, Somalia-20)
+conj:&(Yemen-18, Somalia-20)
+punct(attacked-17, .-21)
+
+Extracted the following NER entity mentions:
+24 hours	DURATION	DURATION:-1.0
+Russia	COUNTRY	LOCATION:0.9968775271836412
+attack	CAUSE_OF_DEATH	-
+Ukraine	COUNTRY	LOCATION:0.9969005589462824
+United States	COUNTRY	LOCATION:0.9999855822269115
+Yemen	COUNTRY	LOCATION:0.8444062345767492
+Somalia	COUNTRY	LOCATION:0.8019023164082533
+
+Sentence #2 (8 tokens):
+Israel attacked Syria, violating international law.
+
+Tokens:
+[Text=Israel CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Israel NamedEntityTag=COUNTRY]
+[Text=attacked CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=attack NamedEntityTag=O]
+[Text=Syria CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Syria NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=violating CharacterOffsetBegin=129 CharacterOffsetEnd=138 PartOfSpeech=VBG Lemma=violate NamedEntityTag=O]
+[Text=international CharacterOffsetBegin=139 CharacterOffsetEnd=152 PartOfSpeech=JJ Lemma=international NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Israel))
+    (VP (VBD attacked)
+      (NP (NNP Syria))
+      (, ,)
+      (S
+        (VP (VBG violating)
+          (NP (JJ international) (NN law)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attacked-2)
+nsubj(attacked-2, Israel-1)
+obj(attacked-2, Syria-3)
+punct(attacked-2, ,-4)
+advcl(attacked-2, violating-5)
+amod(law-7, international-6)
+obj(violating-5, law-7)
+punct(attacked-2, .-8)
+
+Extracted the following NER entity mentions:
+Israel	COUNTRY	LOCATION:0.990188769263166
+Syria	COUNTRY	LOCATION:0.998330048264275
+
+Sentence #3 (7 tokens):
+Where are the sanctions on them?
+
+Tokens:
+[Text=Where CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sanctions CharacterOffsetBegin=172 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=sanction NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS sanctions))
+        (PP (IN on)
+          (NP (PRP them)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-2)
+advmod(are-2, Where-1)
+det(sanctions-4, the-3)
+nsubj(are-2, sanctions-4)
+case(them-6, on-5)
+nmod:on(sanctions-4, them-6)
+punct(are-2, ?-7)
+
+Extracted the following NER entity mentions:

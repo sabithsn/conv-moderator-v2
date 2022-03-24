@@ -1,0 +1,102 @@
+Document: ID=1C657818.text (2 sentences, 22 tokens)
+
+Sentence #1 (9 tokens):
+Funny I remember when Republicans were mostly decent.
+
+Tokens:
+[Text=Funny CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=22 CharacterOffsetEnd=33 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=were CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=mostly CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=mostly NamedEntityTag=O]
+[Text=decent CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=decent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADJP (JJ Funny)))
+    (NP (PRP I))
+    (VP (VBP remember)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNPS Republicans))
+          (VP (VBD were)
+            (ADJP (RB mostly) (JJ decent))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, remember-3)
+dep(remember-3, Funny-1)
+nsubj(remember-3, I-2)
+advmod(decent-8, when-4)
+nsubj(decent-8, Republicans-5)
+cop(decent-8, were-6)
+advmod(decent-8, mostly-7)
+advcl(remember-3, decent-8)
+punct(remember-3, .-9)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.999996089546912
+
+Sentence #2 (13 tokens):
+Now they support russias invasion of Ukraine and vote for sexual assaulters.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=they CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBP Lemma=support NamedEntityTag=O]
+[Text=russias CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=russia NamedEntityTag=O]
+[Text=invasion CharacterOffsetBegin=79 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=sexual CharacterOffsetBegin=112 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=assaulters CharacterOffsetBegin=119 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=assaulter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP (PRP they))
+    (VP (VBP support)
+      (NP
+        (NP
+          (NP (NNS russias) (NN invasion))
+          (PP (IN of)
+            (NP (NNP Ukraine))))
+        (CC and)
+        (NP
+          (NP (NN vote))
+          (PP (IN for)
+            (NP (JJ sexual) (NNS assaulters))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, support-3)
+advmod(support-3, Now-1)
+nsubj(support-3, they-2)
+compound(invasion-5, russias-4)
+obj(support-3, invasion-5)
+case(Ukraine-7, of-6)
+nmod:of(invasion-5, Ukraine-7)
+cc(vote-9, and-8)
+obj(support-3, vote-9)
+conj:and(invasion-5, vote-9)
+case(assaulters-12, for-10)
+amod(assaulters-12, sexual-11)
+nmod:for(vote-9, assaulters-12)
+punct(support-3, .-13)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+Ukraine	COUNTRY	LOCATION:0.99530895591596

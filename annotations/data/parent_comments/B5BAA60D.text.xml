@@ -1,0 +1,100 @@
+Document: ID=B5BAA60D.text (2 sentences, 22 tokens)
+
+Sentence #1 (11 tokens):
+‘You’re Gonna Go Home And Die!’
+
+Tokens:
+[Text=‘ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=Gon CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=Go CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=Home CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Home NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Die CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=die NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` ‘)
+    (NP (PRP You))
+    (VP (VBP ’re)
+      (S
+        (NP (NNP Gon))
+        (VP (TO na)
+          (VP
+            (VP (VB Go)
+              (NP (NNP Home)))
+            (CC And)
+            (VP (VB Die))))))
+    (. !) ('' ’)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’re-3)
+punct(’re-3, ‘-1)
+nsubj(’re-3, You-2)
+obj(’re-3, Gon-4)
+nsubj:xsubj(Go-6, Gon-4)
+nsubj:xsubj(Die-9, Gon-4)
+mark(Go-6, na-5)
+xcomp(’re-3, Go-6)
+obj(Go-6, Home-7)
+cc(Die-9, And-8)
+xcomp(’re-3, Die-9)
+conj:and(Go-6, Die-9)
+punct(’re-3, !-10)
+punct(’re-3, ’-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+: Howard Stern Wants Hospitals To Deny Care To The Unvaxxed
+
+Tokens:
+[Text=: CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Howard CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Howard NamedEntityTag=PERSON]
+[Text=Stern CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Stern NamedEntityTag=PERSON]
+[Text=Wants CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=Hospitals CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=hospital NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Deny CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=deny NamedEntityTag=O]
+[Text=Care CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Care NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Unvaxxed CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=VBN Lemma=unvaxx NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PRN (: :)
+    (S
+      (NP (NNP Howard) (NNP Stern))
+      (VP (VBZ Wants)
+        (NP (NNS Hospitals))
+        (S
+          (VP (TO To)
+            (VP (VB Deny)
+              (NP (NNP Care))
+              (S
+                (VP (TO To)
+                  (S
+                    (NP (DT The) (VBN Unvaxxed))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wants-4)
+punct(Wants-4, :-1)
+compound(Stern-3, Howard-2)
+nsubj(Wants-4, Stern-3)
+obj(Wants-4, Hospitals-5)
+mark(Deny-7, To-6)
+advcl:to(Wants-4, Deny-7)
+obj(Deny-7, Care-8)
+advcl(Deny-7, To-9)
+xcomp(To-9, The-10)
+amod(The-10, Unvaxxed-11)
+
+Extracted the following NER entity mentions:
+Howard Stern	PERSON	PERSON:0.807976027224778

@@ -1,0 +1,101 @@
+Document: ID=A1625DA3.text (2 sentences, 23 tokens)
+
+Sentence #1 (10 tokens):
+Great bill, totally agree with it's idea.
+
+Tokens:
+[Text=Great CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=totally CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=totally NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Great) (NN bill))
+    (, ,)
+    (ADVP (RB totally))
+    (VP (VBP agree)
+      (SBAR (IN with)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (NP (NN idea))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agree-5)
+amod(bill-2, Great-1)
+nsubj(agree-5, bill-2)
+punct(agree-5, ,-3)
+advmod(agree-5, totally-4)
+mark(idea-9, with-6)
+nsubj(idea-9, it-7)
+cop(idea-9, 's-8)
+advcl:with(agree-5, idea-9)
+punct(agree-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+Why do liberals think conservatives would find the idea of accountability bad?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=liberals CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=liberal NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=conservatives CharacterOffsetBegin=65 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=conservative NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=accountability CharacterOffsetBegin=102 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=accountability NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (NNS liberals))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (NNS conservatives))
+            (VP (MD would)
+              (VP (VB find)
+                (S
+                  (NP
+                    (NP (DT the) (NN idea))
+                    (PP (IN of)
+                      (NP (NN accountability))))
+                  (ADJP (JJ bad)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-4)
+advmod(think-4, Why-1)
+aux(think-4, do-2)
+nsubj(think-4, liberals-3)
+nsubj(find-7, conservatives-5)
+aux(find-7, would-6)
+ccomp(think-4, find-7)
+det(idea-9, the-8)
+nsubj(bad-12, idea-9)
+case(accountability-11, of-10)
+nmod:of(idea-9, accountability-11)
+xcomp(find-7, bad-12)
+punct(think-4, ?-13)
+
+Extracted the following NER entity mentions:

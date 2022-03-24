@@ -1,0 +1,82 @@
+Document: ID=4AB2D99D.text (3 sentences, 13 tokens)
+
+Sentence #1 (4 tokens):
+Go away Republican.
+
+Tokens:
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=Republican CharacterOffsetBegin=8 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=. CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Go)
+      (ADJP (RB away) (JJ Republican)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Go-1)
+advmod(Republican-3, away-2)
+xcomp(Go-1, Republican-3)
+punct(Go-1, .-4)
+
+Extracted the following NER entity mentions:
+Republican	IDEOLOGY	MISC:0.999885807775504
+
+Sentence #2 (6 tokens):
+"Trump cured Covid."
+
+Tokens:
+[Text=" CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=cured CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=cure NamedEntityTag=O]
+[Text=Covid CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Covid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (`` ")
+    (NP
+      (NP (NNP Trump))
+      (VP (VBN cured)
+        (NP (NNP Covid))))
+    (. .) ('' ")))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Trump-2)
+punct(Trump-2, "-1)
+acl(Trump-2, cured-3)
+obj(cured-3, Covid-4)
+punct(Trump-2, .-5)
+punct(Trump-2, "-6)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.7727940993000155
+
+Sentence #3 (3 tokens):
+Fuck off.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fuck)
+      (PRT (RP off)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+compound:prt(Fuck-1, off-2)
+punct(Fuck-1, .-3)
+
+Extracted the following NER entity mentions:

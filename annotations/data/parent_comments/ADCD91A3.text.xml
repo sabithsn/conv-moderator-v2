@@ -1,0 +1,78 @@
+Document: ID=ADCD91A3.text (2 sentences, 16 tokens)
+
+Sentence #1 (5 tokens):
+Got banned from Onguardforthee.
+
+Tokens:
+[Text=Got CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Onguardforthee CharacterOffsetBegin=16 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Onguardforthee NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Got)
+      (VP (VBN banned)
+        (PP (IN from)
+          (NP (NNP Onguardforthee)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, banned-2)
+aux:pass(banned-2, Got-1)
+case(Onguardforthee-4, from-3)
+obl:from(banned-2, Onguardforthee-4)
+punct(banned-2, .-5)
+
+Extracted the following NER entity mentions:
+Onguardforthee	LOCATION	LOCATION:0.6384440543990867
+
+Sentence #2 (11 tokens):
+Not really surprised but the reason they gave was pretty interesting
+
+Tokens:
+[Text=Not CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=surprised CharacterOffsetBegin=43 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=surprised NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=interesting CharacterOffsetBegin=89 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=interesting NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (RB Not)
+    (ADJP (RB really) (JJ surprised)
+      (SBAR
+        (S (CC but)
+          (NP
+            (NP (DT the) (NN reason))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBD gave)))))
+          (VP (VBD was)
+            (ADJP (RB pretty) (JJ interesting))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Not-1)
+advmod(surprised-3, really-2)
+dep(Not-1, surprised-3)
+cc(interesting-11, but-4)
+det(reason-6, the-5)
+nsubj(interesting-11, reason-6)
+nsubj(gave-8, they-7)
+acl:relcl(reason-6, gave-8)
+cop(interesting-11, was-9)
+advmod(interesting-11, pretty-10)
+ccomp(surprised-3, interesting-11)
+
+Extracted the following NER entity mentions:

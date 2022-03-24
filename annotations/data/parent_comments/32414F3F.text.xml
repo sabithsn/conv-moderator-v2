@@ -1,0 +1,57 @@
+Document: ID=32414F3F.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Maybe read more than the first couple of lines in the post then.
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=couple CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=lines CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=line NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (VP (VB read)
+      (NP (JJR more))
+      (PP (IN than)
+        (NP
+          (NP (DT the) (JJ first) (NN couple))
+          (PP (IN of)
+            (NP
+              (NP (NNS lines))
+              (PP (IN in)
+                (NP (DT the) (NN post)))))))
+      (ADVP (RB then)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, read-2)
+advmod(read-2, Maybe-1)
+obj(read-2, more-3)
+case(couple-7, than-4)
+det(couple-7, the-5)
+amod(couple-7, first-6)
+obl:than(read-2, couple-7)
+case(lines-9, of-8)
+nmod:of(couple-7, lines-9)
+case(post-12, in-10)
+det(post-12, the-11)
+nmod:in(lines-9, post-12)
+advmod(read-2, then-13)
+punct(read-2, .-14)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0

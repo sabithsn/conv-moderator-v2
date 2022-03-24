@@ -1,0 +1,133 @@
+Document: ID=6FA365FB.text (3 sentences, 30 tokens)
+
+Sentence #1 (9 tokens):
+You go to her doctors appointments with her?
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=doctors CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=doctor NamedEntityTag=O]
+[Text=appointments CharacterOffsetBegin=22 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=appointment NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP go)
+      (PP (IN to)
+        (NP
+          (NP (PRP$ her) (NNS doctors) (NNS appointments))
+          (PP (IN with)
+            (NP (PRP her))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-2)
+nsubj(go-2, You-1)
+case(appointments-6, to-3)
+nmod:poss(appointments-6, her-4)
+compound(appointments-6, doctors-5)
+obl:to(go-2, appointments-6)
+case(her-8, with-7)
+nmod:with(appointments-6, her-8)
+punct(go-2, ?-9)
+
+Extracted the following NER entity mentions:
+her	PERSON	-
+her	PERSON	-
+
+Sentence #2 (5 tokens):
+That’s illegal bro.
+
+Tokens:
+[Text=That CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=illegal CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=illegal NamedEntityTag=O]
+[Text=bro CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=bro NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ ’s)
+      (NP (JJ illegal) (NN bro)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bro-4)
+nsubj(bro-4, That-1)
+cop(bro-4, ’s-2)
+amod(bro-4, illegal-3)
+punct(bro-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (16 tokens):
+If you actually had any legit justification you wouldn’t need to make up bullshit.
+
+Tokens:
+[Text=If CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=legit CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=legit NamedEntityTag=O]
+[Text=justification CharacterOffsetBegin=95 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=justification NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=bullshit CharacterOffsetBegin=138 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=bullshit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (ADVP (RB actually))
+        (VP (VBD had)
+          (NP (DT any) (JJ legit) (NN justification)))))
+    (NP (PRP you))
+    (VP (MD would) (RB n’t)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (PRT (RP up))
+              (NP (NN bullshit)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-11)
+mark(had-4, If-1)
+nsubj(had-4, you-2)
+advmod(had-4, actually-3)
+advcl:if(need-11, had-4)
+det(justification-7, any-5)
+amod(justification-7, legit-6)
+obj(had-4, justification-7)
+nsubj(need-11, you-8)
+nsubj:xsubj(make-13, you-8)
+aux(need-11, would-9)
+advmod(need-11, n’t-10)
+mark(make-13, to-12)
+xcomp(need-11, make-13)
+compound:prt(make-13, up-14)
+obj(make-13, bullshit-15)
+punct(need-11, .-16)
+
+Extracted the following NER entity mentions:

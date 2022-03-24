@@ -1,0 +1,106 @@
+Document: ID=21D88FC1.text (2 sentences, 26 tokens)
+
+Sentence #1 (8 tokens):
+This seems like a pointless discussion then.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=seems CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=seem NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pointless CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=pointless NamedEntityTag=O]
+[Text=discussion CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=discussion NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ seems)
+      (PP (IN like)
+        (NP (DT a) (JJ pointless) (NN discussion)))
+      (ADVP (RB then)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seems-2)
+nsubj(seems-2, This-1)
+case(discussion-6, like-3)
+det(discussion-6, a-4)
+amod(discussion-6, pointless-5)
+obl:like(seems-2, discussion-6)
+advmod(seems-2, then-7)
+punct(seems-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+If Hitler was in the Capital, sure, it would be completely justified to storm it.
+
+Tokens:
+[Text=If CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Hitler CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Hitler NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Capital CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Capital NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=completely CharacterOffsetBegin=95 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=completely NamedEntityTag=O]
+[Text=justified CharacterOffsetBegin=106 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=justified NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=storm CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=storm NamedEntityTag=CAUSE_OF_DEATH]
+[Text=it CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Hitler))
+        (VP (VBD was)
+          (PP (IN in)
+            (NP (DT the) (NNP Capital))))))
+    (, ,)
+    (ADJP (JJ sure))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (RB completely) (JJ justified)
+          (PP (IN to)
+            (NP (NN storm))))
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, justified-14)
+mark(Capital-6, If-1)
+nsubj(Capital-6, Hitler-2)
+cop(Capital-6, was-3)
+case(Capital-6, in-4)
+det(Capital-6, the-5)
+advcl:in(justified-14, Capital-6)
+punct(justified-14, ,-7)
+dep(justified-14, sure-8)
+punct(justified-14, ,-9)
+nsubj(justified-14, it-10)
+aux(justified-14, would-11)
+cop(justified-14, be-12)
+advmod(justified-14, completely-13)
+case(storm-16, to-15)
+obl:to(justified-14, storm-16)
+dep(justified-14, it-17)
+punct(justified-14, .-18)
+
+Extracted the following NER entity mentions:
+Hitler	PERSON	PERSON:0.9992353428454153
+storm	CAUSE_OF_DEATH	-

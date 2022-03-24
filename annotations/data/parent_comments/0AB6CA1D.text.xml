@@ -1,0 +1,52 @@
+Document: ID=0AB6CA1D.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Eli5: Why do people put live lobsters in boiling water?
+
+Tokens:
+[Text=Eli5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=live NamedEntityTag=O]
+[Text=lobsters CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=lobster NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=boiling CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=boil NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Eli5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP do)
+        (NP (NNS people))
+        (VP (VB put)
+          (ADVP (RB live))
+          (NP
+            (NP (NNS lobsters))
+            (PP (IN in)
+              (NP (VBG boiling) (NN water)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Eli5-1)
+punct(Eli5-1, :-2)
+advmod(put-6, Why-3)
+aux(put-6, do-4)
+nsubj(put-6, people-5)
+parataxis(Eli5-1, put-6)
+advmod(put-6, live-7)
+obj(put-6, lobsters-8)
+case(water-11, in-9)
+amod(water-11, boiling-10)
+nmod:in(lobsters-8, water-11)
+punct(Eli5-1, ?-12)
+
+Extracted the following NER entity mentions:

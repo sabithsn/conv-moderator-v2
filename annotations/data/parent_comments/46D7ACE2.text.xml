@@ -1,0 +1,68 @@
+Document: ID=46D7ACE2.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Jill Biden introduces Kamala Harris as 'the president,' then says she was joking
+
+Tokens:
+[Text=Jill CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Jill NamedEntityTag=PERSON]
+[Text=Biden CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=introduces CharacterOffsetBegin=11 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=introduce NamedEntityTag=O]
+[Text=Kamala CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Kamala NamedEntityTag=PERSON]
+[Text=Harris CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Harris NamedEntityTag=PERSON]
+[Text=as CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=, CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=joking CharacterOffsetBegin=74 CharacterOffsetEnd=80 PartOfSpeech=VBG Lemma=joke NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Jill) (NNP Biden))
+    (VP (VBZ introduces)
+      (NP
+        (NP (NNP Kamala) (NNP Harris))
+        (PP (IN as)
+          (NP (`` ')
+            (NP (DT the) (NN president))
+            (, ,) ('' ')
+            (SBAR
+              (ADVP (RB then))
+              (S
+                (VP (VBZ says)
+                  (SBAR
+                    (S
+                      (NP (PRP she))
+                      (VP (VBD was)
+                        (VP (VBG joking))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, introduces-3)
+compound(Biden-2, Jill-1)
+nsubj(introduces-3, Biden-2)
+compound(Harris-5, Kamala-4)
+obj(introduces-3, Harris-5)
+case(president-9, as-6)
+punct(president-9, '-7)
+det(president-9, the-8)
+nmod:as(Harris-5, president-9)
+punct(president-9, ,-10)
+punct(president-9, '-11)
+advmod(says-13, then-12)
+dep(president-9, says-13)
+nsubj(joking-16, she-14)
+aux(joking-16, was-15)
+ccomp(says-13, joking-16)
+
+Extracted the following NER entity mentions:
+Jill Biden	PERSON	PERSON:0.9999527786979512
+Kamala Harris	PERSON	PERSON:0.9999680502633406
+president	TITLE	-
+she	PERSON	-

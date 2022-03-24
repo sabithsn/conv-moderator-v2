@@ -1,0 +1,59 @@
+Document: ID=19681AC6.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+DeSantis rejects Biden’s request for Florida National Guard at State of the Union
+
+Tokens:
+[Text=DeSantis CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=PERSON]
+[Text=rejects CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=reject NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=request CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=request NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Florida CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=ORGANIZATION]
+[Text=National CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=National NamedEntityTag=ORGANIZATION]
+[Text=Guard CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Guard NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=State CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=State NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Union CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Union NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP DeSantis))
+    (VP (VBZ rejects)
+      (NP
+        (NP (NNP Biden) (POS ’s))
+        (NN request))
+      (PP (IN for)
+        (NP
+          (NP (NNP Florida) (NNP National) (NNP Guard))
+          (PP (IN at)
+            (NP
+              (NP (NNP State))
+              (PP (IN of)
+                (NP (DT the) (NNP Union))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rejects-2)
+nsubj(rejects-2, DeSantis-1)
+nmod:poss(request-5, Biden-3)
+case(Biden-3, ’s-4)
+obj(rejects-2, request-5)
+case(Guard-9, for-6)
+compound(Guard-9, Florida-7)
+compound(Guard-9, National-8)
+obl:for(rejects-2, Guard-9)
+case(State-11, at-10)
+nmod:at(Guard-9, State-11)
+case(Union-14, of-12)
+det(Union-14, the-13)
+nmod:of(State-11, Union-14)
+
+Extracted the following NER entity mentions:
+DeSantis	PERSON	PERSON:0.873354027551382
+Biden	PERSON	PERSON:0.9980866513177923
+Florida National Guard	ORGANIZATION	ORGANIZATION:0.9329189183181319

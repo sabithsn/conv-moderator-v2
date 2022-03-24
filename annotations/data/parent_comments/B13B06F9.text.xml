@@ -1,0 +1,74 @@
+Document: ID=B13B06F9.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Everybody knows is the kind of insane, unsupported, assertion that fatass Trump makes.
+
+Tokens:
+[Text=Everybody CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=everybody NamedEntityTag=O]
+[Text=knows CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=know NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=insane CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=insane NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unsupported CharacterOffsetBegin=39 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=unsupported NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=assertion CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=assertion NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=fatass CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=VBZ Lemma=fatass NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=makes CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Everybody))
+    (VP (VBZ knows)
+      (SBAR
+        (S
+          (VP (VBZ is)
+            (NP
+              (NP
+                (NP (DT the) (NN kind))
+                (PP (IN of)
+                  (FRAG
+                    (ADJP (JJ insane))
+                    (, ,)
+                    (ADJP (JJ unsupported)))))
+              (, ,)
+              (NP
+                (NP (NN assertion))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ fatass)
+                      (SBAR
+                        (S
+                          (NP (NNP Trump))
+                          (VP (VBZ makes)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, knows-2)
+nsubj(knows-2, Everybody-1)
+cop(kind-5, is-3)
+det(kind-5, the-4)
+ccomp(knows-2, kind-5)
+case(insane-7, of-6)
+acl:of(kind-5, insane-7)
+punct(insane-7, ,-8)
+dep(insane-7, unsupported-9)
+punct(kind-5, ,-10)
+appos(kind-5, assertion-11)
+nsubj(fatass-13, assertion-11)
+ref(assertion-11, that-12)
+acl:relcl(assertion-11, fatass-13)
+nsubj(makes-15, Trump-14)
+ccomp(fatass-13, makes-15)
+punct(knows-2, .-16)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.4393403328521663

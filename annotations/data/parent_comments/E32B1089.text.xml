@@ -1,0 +1,68 @@
+Document: ID=E32B1089.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Omar offers condolences to friends and family of ISIS leader killed in raid • Genesius Times
+
+Tokens:
+[Text=Omar CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Omar NamedEntityTag=PERSON]
+[Text=offers CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=offer NamedEntityTag=O]
+[Text=condolences CharacterOffsetBegin=12 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=condolence NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=ISIS CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=ISIS NamedEntityTag=ORGANIZATION]
+[Text=leader CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=leader NamedEntityTag=TITLE]
+[Text=killed CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=kill NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=raid CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=raid NamedEntityTag=O]
+[Text=• CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=SYM Lemma=• NamedEntityTag=O]
+[Text=Genesius CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Genesius NamedEntityTag=O]
+[Text=Times CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Times NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Omar))
+      (VP (VBZ offers)
+        (NP (NNS condolences))
+        (PP (IN to)
+          (NP (NNS friends)))))
+    (CC and)
+    (S
+      (NP
+        (NP (NN family))
+        (PP (IN of)
+          (NP (NNP ISIS) (NN leader))))
+      (VP (VBD killed)
+        (PP (IN in)
+          (NP
+            (NP (NN raid))
+            (SYM •)
+            (NP (NNP Genesius) (NNP Times))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, offers-2)
+nsubj(offers-2, Omar-1)
+obj(offers-2, condolences-3)
+case(friends-5, to-4)
+obl:to(offers-2, friends-5)
+cc(killed-11, and-6)
+nsubj(killed-11, family-7)
+case(leader-10, of-8)
+compound(leader-10, ISIS-9)
+nmod:of(family-7, leader-10)
+conj:and(offers-2, killed-11)
+case(raid-13, in-12)
+obl:in(killed-11, raid-13)
+dep(raid-13, •-14)
+compound(Times-16, Genesius-15)
+dep(raid-13, Times-16)
+
+Extracted the following NER entity mentions:
+Omar	PERSON	PERSON:0.6004654666120026
+ISIS	ORGANIZATION	ORGANIZATION:0.9795224381300243
+leader	TITLE	-

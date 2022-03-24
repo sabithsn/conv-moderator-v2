@@ -1,0 +1,102 @@
+Document: ID=AE1D93A5.text (2 sentences, 26 tokens)
+
+Sentence #1 (19 tokens):
+Or, alternatively, a political party needed to create a fake problem to solve with a bill.
+
+Tokens:
+[Text=Or CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=alternatively CharacterOffsetBegin=4 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=alternatively NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=political CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=needed CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=create CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=create NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fake CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=fake NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=solve CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=solve NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC Or)
+    (, ,)
+    (ADVP (RB alternatively))
+    (, ,)
+    (NP (DT a) (JJ political) (NN party))
+    (VP (VBD needed)
+      (S
+        (VP (TO to)
+          (VP (VB create)
+            (NP (DT a) (JJ fake) (NN problem))
+            (S
+              (VP (TO to)
+                (VP (VB solve)
+                  (PP (IN with)
+                    (NP (DT a) (NN bill))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needed-8)
+cc(needed-8, Or-1)
+punct(needed-8, ,-2)
+advmod(needed-8, alternatively-3)
+punct(needed-8, ,-4)
+det(party-7, a-5)
+amod(party-7, political-6)
+nsubj(needed-8, party-7)
+nsubj:xsubj(create-10, party-7)
+mark(create-10, to-9)
+xcomp(needed-8, create-10)
+det(problem-13, a-11)
+amod(problem-13, fake-12)
+obj(create-10, problem-13)
+mark(solve-15, to-14)
+advcl:to(create-10, solve-15)
+case(bill-18, with-16)
+det(bill-18, a-17)
+obl:with(solve-15, bill-18)
+punct(needed-8, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+See similar bills regarding anti-sharia law legislation
+
+Tokens:
+[Text=See CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=similar CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=similar NamedEntityTag=O]
+[Text=bills CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NNS Lemma=bill NamedEntityTag=O]
+[Text=regarding CharacterOffsetBegin=110 CharacterOffsetEnd=119 PartOfSpeech=VBG Lemma=regard NamedEntityTag=O]
+[Text=anti-sharia CharacterOffsetBegin=120 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=anti-sharia NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=legislation CharacterOffsetBegin=136 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=legislation NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB See)
+      (NP
+        (NP (JJ similar) (NNS bills))
+        (PP (VBG regarding)
+          (NP (JJ anti-sharia) (NN law) (NN legislation)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, See-1)
+amod(bills-3, similar-2)
+obj(See-1, bills-3)
+case(legislation-7, regarding-4)
+amod(legislation-7, anti-sharia-5)
+compound(legislation-7, law-6)
+nmod:regarding(bills-3, legislation-7)
+
+Extracted the following NER entity mentions:

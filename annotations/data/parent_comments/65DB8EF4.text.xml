@@ -1,0 +1,73 @@
+Document: ID=65DB8EF4.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+AITA for wanting my sister to pay me back for the cans her kids stole from my shed?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=wanting CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=want NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=sister CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=sister NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=pay NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cans CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=can NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=stole CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=VBD Lemma=steal NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=shed CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=shed NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP AITA))
+      (PP (IN for)
+        (S
+          (VP (VBG wanting)
+            (NP (PRP$ my) (NN sister))
+            (S
+              (VP (TO to)
+                (VP (VB pay)
+                  (NP (PRP me))
+                  (ADVP (RB back)
+                    (PP (IN for)
+                      (NP (DT the) (NNS cans))))
+                  (NP (PRP$ her) (NNS kids)))))))))
+    (VP (VBD stole)
+      (PP (IN from)
+        (NP (PRP$ my) (NN shed))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stole-15)
+nsubj(stole-15, AITA-1)
+mark(wanting-3, for-2)
+acl:for(AITA-1, wanting-3)
+nmod:poss(sister-5, my-4)
+obj(wanting-3, sister-5)
+mark(pay-7, to-6)
+advcl:to(wanting-3, pay-7)
+obj(pay-7, me-8)
+advmod(pay-7, back-9)
+case(cans-12, for-10)
+det(cans-12, the-11)
+obl:for(back-9, cans-12)
+nmod:poss(kids-14, her-13)
+obj(pay-7, kids-14)
+case(shed-18, from-16)
+nmod:poss(shed-18, my-17)
+obl:from(stole-15, shed-18)
+punct(stole-15, ?-19)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.4855552527561788
+her	PERSON	-

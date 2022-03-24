@@ -1,0 +1,41 @@
+Document: ID=A9CA64D3.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+She gonna go blow Putin?
+
+Tokens:
+[Text=She CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=blow CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VB Lemma=blow NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (NP (PRP She))
+    (VP (VBG gon)
+      (S
+        (VP (TO na)
+          (VP (VB go)
+            (S
+              (VP (VB blow)
+                (NP (NNP Putin))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gon-2)
+nsubj(gon-2, She-1)
+nsubj:xsubj(go-4, She-1)
+mark(go-4, na-3)
+xcomp(gon-2, go-4)
+ccomp(go-4, blow-5)
+obj(blow-5, Putin-6)
+punct(gon-2, ?-7)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9842591942808973
+She	PERSON	-

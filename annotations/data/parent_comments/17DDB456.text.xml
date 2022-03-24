@@ -1,0 +1,441 @@
+Document: ID=17DDB456.text (8 sentences, 104 tokens)
+
+Sentence #1 (16 tokens):
+Someone please quote me from the Bible when that Jew ever demanded anything from government?
+
+Tokens:
+[Text=Someone CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=quote CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=quote NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bible CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Bible NamedEntityTag=MISC]
+[Text=when CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Jew CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Jew NamedEntityTag=RELIGION]
+[Text=ever CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=demanded CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=VBD Lemma=demand NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=81 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Someone))
+    (INTJ (UH please))
+    (VP (VB quote)
+      (NP (PRP me))
+      (PP (IN from)
+        (NP (DT the) (NNP Bible)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT that) (NNP Jew))
+          (ADVP (RB ever))
+          (VP (VBD demanded)
+            (NP (NN anything))
+            (PP (IN from)
+              (NP (NN government)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, quote-3)
+nsubj(quote-3, Someone-1)
+discourse(quote-3, please-2)
+obj(quote-3, me-4)
+case(Bible-7, from-5)
+det(Bible-7, the-6)
+obl:from(quote-3, Bible-7)
+advmod(demanded-12, when-8)
+det(Jew-10, that-9)
+nsubj(demanded-12, Jew-10)
+advmod(demanded-12, ever-11)
+advcl(quote-3, demanded-12)
+obj(demanded-12, anything-13)
+case(government-15, from-14)
+obl:from(demanded-12, government-15)
+punct(quote-3, ?-16)
+
+Extracted the following NER entity mentions:
+Bible	MISC	MISC:0.42679799614639485
+Jew	RELIGION	-
+
+Sentence #2 (10 tokens):
+He always demanded from the individual to be charitable.
+
+Tokens:
+[Text=He CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=demanded CharacterOffsetBegin=104 CharacterOffsetEnd=112 PartOfSpeech=VBD Lemma=demand NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=individual CharacterOffsetBegin=122 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=individual NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=charitable CharacterOffsetBegin=139 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=charitable NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB always))
+    (VP (VBD demanded)
+      (PP (IN from)
+        (NP (DT the) (JJ individual)))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ charitable))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, demanded-3)
+nsubj(demanded-3, He-1)
+nsubj:xsubj(charitable-9, He-1)
+advmod(demanded-3, always-2)
+case(individual-6, from-4)
+det(individual-6, the-5)
+obl:from(demanded-3, individual-6)
+mark(charitable-9, to-7)
+cop(charitable-9, be-8)
+xcomp(demanded-3, charitable-9)
+punct(demanded-3, .-10)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #3 (22 tokens):
+In other words with your money, time, and effort not Ceasars or reaching into someone else pocket demanding charity.
+
+Tokens:
+[Text=In CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=190 CharacterOffsetEnd=193 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=effort CharacterOffsetBegin=194 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=effort NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Ceasars CharacterOffsetBegin=205 CharacterOffsetEnd=212 PartOfSpeech=NNPS Lemma=Ceasars NamedEntityTag=MISC]
+[Text=or CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=reaching CharacterOffsetBegin=216 CharacterOffsetEnd=224 PartOfSpeech=VBG Lemma=reach NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=230 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=JJ Lemma=else NamedEntityTag=O]
+[Text=pocket CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=NN Lemma=pocket NamedEntityTag=O]
+[Text=demanding CharacterOffsetBegin=250 CharacterOffsetEnd=259 PartOfSpeech=VBG Lemma=demand NamedEntityTag=O]
+[Text=charity CharacterOffsetBegin=260 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=charity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (JJ other) (NNS words))
+        (PP (IN with)
+          (NP (PRP$ your) (NN money) (, ,) (NN time) (, ,)
+            (CC and)
+            (NN effort)))))
+    (NP
+      (NP (RB not) (NNPS Ceasars))
+      (CC or)
+      (NP
+        (NP
+          (ADJP (VBG reaching)
+            (PP (IN into)
+              (NP (NN someone))))
+          (JJ else) (NN pocket))
+        (VP (VBG demanding)
+          (NP (NN charity)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ceasars-13)
+case(words-3, In-1)
+amod(words-3, other-2)
+dep(Ceasars-13, words-3)
+case(money-6, with-4)
+nmod:poss(money-6, your-5)
+nmod:with(words-3, money-6)
+punct(money-6, ,-7)
+nmod:with(words-3, time-8)
+conj:and(money-6, time-8)
+punct(money-6, ,-9)
+cc(effort-11, and-10)
+nmod:with(words-3, effort-11)
+conj:and(money-6, effort-11)
+advmod(Ceasars-13, not-12)
+cc(pocket-19, or-14)
+amod(pocket-19, reaching-15)
+case(someone-17, into-16)
+obl:into(reaching-15, someone-17)
+amod(pocket-19, else-18)
+conj:or(Ceasars-13, pocket-19)
+acl(pocket-19, demanding-20)
+obj(demanding-20, charity-21)
+punct(Ceasars-13, .-22)
+
+Extracted the following NER entity mentions:
+Ceasars	MISC	MISC:0.6226350584269034
+
+Sentence #4 (13 tokens):
+I recommend Mark 12 and this stupid post will simply fall apart.
+
+Tokens:
+[Text=I CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=recommend CharacterOffsetBegin=272 CharacterOffsetEnd=281 PartOfSpeech=VBP Lemma=recommend NamedEntityTag=O]
+[Text=Mark CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=NNP Lemma=Mark NamedEntityTag=PERSON]
+[Text=12 CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=CD Lemma=12 NamedEntityTag=NUMBER NormalizedNamedEntityTag=12.0]
+[Text=and CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=stupid CharacterOffsetBegin=299 CharacterOffsetEnd=305 PartOfSpeech=JJ Lemma=stupid NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=316 CharacterOffsetEnd=322 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=fall CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=VB Lemma=fall NamedEntityTag=O]
+[Text=apart CharacterOffsetBegin=328 CharacterOffsetEnd=333 PartOfSpeech=RB Lemma=apart NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP recommend)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Mark) (CD 12))
+            (CC and)
+            (NP (DT this) (JJ stupid) (NN post)))
+          (VP (MD will)
+            (ADVP (RB simply))
+            (VP (VB fall)
+              (ADVP (RB apart)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, recommend-2)
+nsubj(recommend-2, I-1)
+nsubj(fall-11, Mark-3)
+nummod(Mark-3, 12-4)
+cc(post-8, and-5)
+det(post-8, this-6)
+amod(post-8, stupid-7)
+conj:and(Mark-3, post-8)
+nsubj(fall-11, post-8)
+aux(fall-11, will-9)
+advmod(fall-11, simply-10)
+ccomp(recommend-2, fall-11)
+advmod(fall-11, apart-12)
+punct(recommend-2, .-13)
+
+Extracted the following NER entity mentions:
+Mark	PERSON	PERSON:0.8007012303708414
+12	NUMBER	NUMBER:-1.0
+
+Sentence #5 (11 tokens):
+He was not a socialist he had no political ideology.
+
+Tokens:
+[Text=He CharacterOffsetBegin=336 CharacterOffsetEnd=338 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=socialist CharacterOffsetBegin=349 CharacterOffsetEnd=358 PartOfSpeech=JJ Lemma=socialist NamedEntityTag=IDEOLOGY]
+[Text=he CharacterOffsetBegin=359 CharacterOffsetEnd=361 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=political CharacterOffsetBegin=369 CharacterOffsetEnd=378 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=ideology CharacterOffsetBegin=379 CharacterOffsetEnd=387 PartOfSpeech=NN Lemma=ideology NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=387 CharacterOffsetEnd=388 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was) (RB not)
+      (NP
+        (NP (DT a) (JJ socialist))
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBD had)
+              (NP (DT no) (JJ political) (NN ideology)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, socialist-5)
+nsubj(socialist-5, He-1)
+cop(socialist-5, was-2)
+advmod(socialist-5, not-3)
+det(socialist-5, a-4)
+nsubj(had-7, he-6)
+acl:relcl(socialist-5, had-7)
+det(ideology-10, no-8)
+amod(ideology-10, political-9)
+obj(had-7, ideology-10)
+punct(socialist-5, .-11)
+
+Extracted the following NER entity mentions:
+socialist	IDEOLOGY	-
+He	PERSON	-
+he	PERSON	-
+
+Sentence #6 (18 tokens):
+He wanted for each of us to be kinds and generous to each other with free will.
+
+Tokens:
+[Text=He CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=393 CharacterOffsetEnd=399 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=400 CharacterOffsetEnd=403 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=404 CharacterOffsetEnd=408 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=409 CharacterOffsetEnd=411 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=kinds CharacterOffsetBegin=421 CharacterOffsetEnd=426 PartOfSpeech=NNS Lemma=kind NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=427 CharacterOffsetEnd=430 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=generous CharacterOffsetBegin=431 CharacterOffsetEnd=439 PartOfSpeech=JJ Lemma=generous NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=440 CharacterOffsetEnd=442 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=443 CharacterOffsetEnd=447 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=448 CharacterOffsetEnd=453 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=454 CharacterOffsetEnd=458 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=459 CharacterOffsetEnd=463 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=464 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=will NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD wanted)
+      (PP (IN for)
+        (NP
+          (NP (DT each))
+          (PP (IN of)
+            (NP (PRP us)))))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (UCP
+              (NP (NNS kinds))
+              (CC and)
+              (ADJP (JJ generous)
+                (PP (IN to)
+                  (NP
+                    (NP (DT each) (JJ other))
+                    (PP (IN with)
+                      (NP (JJ free) (NN will)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wanted-2)
+nsubj(wanted-2, He-1)
+nsubj:xsubj(kinds-9, He-1)
+nsubj:xsubj(generous-11, He-1)
+case(each-4, for-3)
+obl:for(wanted-2, each-4)
+case(us-6, of-5)
+nmod:of(each-4, us-6)
+mark(kinds-9, to-7)
+cop(kinds-9, be-8)
+xcomp(wanted-2, kinds-9)
+cc(generous-11, and-10)
+xcomp(wanted-2, generous-11)
+conj:and(kinds-9, generous-11)
+case(other-14, to-12)
+det(other-14, each-13)
+obl:to(generous-11, other-14)
+case(will-17, with-15)
+amod(will-17, free-16)
+nmod:with(other-14, will-17)
+punct(wanted-2, .-18)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #7 (13 tokens):
+Unlike most of you want to be charitable with someone else work.
+
+Tokens:
+[Text=Unlike CharacterOffsetBegin=471 CharacterOffsetEnd=477 PartOfSpeech=IN Lemma=unlike NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=478 CharacterOffsetEnd=482 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=486 CharacterOffsetEnd=489 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=490 CharacterOffsetEnd=494 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=495 CharacterOffsetEnd=497 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=498 CharacterOffsetEnd=500 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=charitable CharacterOffsetBegin=501 CharacterOffsetEnd=511 PartOfSpeech=JJ Lemma=charitable NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=512 CharacterOffsetEnd=516 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=517 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=525 CharacterOffsetEnd=529 PartOfSpeech=JJ Lemma=else NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=530 CharacterOffsetEnd=534 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=534 CharacterOffsetEnd=535 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP
+        (NP (JJS most))
+        (PP (IN of))))
+    (NP (PRP you))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ charitable)
+              (PP (IN with)
+                (NP (NN someone) (JJ else) (NN work))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-5)
+case(most-2, Unlike-1)
+obl:unlike(want-5, most-2)
+acl(most-2, of-3)
+nsubj(want-5, you-4)
+nsubj:xsubj(charitable-8, you-4)
+mark(charitable-8, to-6)
+cop(charitable-8, be-7)
+xcomp(want-5, charitable-8)
+case(work-12, with-9)
+compound(work-12, someone-10)
+amod(work-12, else-11)
+obl:with(charitable-8, work-12)
+punct(want-5, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (1 tokens):
+https://www.biblegateway.com/passage/?search=Mark+12&version=NIV
+
+Tokens:
+[Text=https://www.biblegateway.com/passage/?search=Mark+12&version=NIV CharacterOffsetBegin=537 CharacterOffsetEnd=601 PartOfSpeech=ADD Lemma=https://www.biblegateway.com/passage/?search=mark+12&version=niv NamedEntityTag=URL]
+
+Constituency parse: 
+(ROOT
+  (NP (ADD https://www.biblegateway.com/passage/?search=Mark+12&version=NIV)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, https://www.biblegateway.com/passage/?search=Mark+12&version=NIV-1)
+
+Extracted the following NER entity mentions:
+https://www.biblegateway.com/passage/?search=Mark+12&version=NIV	URL	-

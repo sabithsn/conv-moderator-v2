@@ -1,0 +1,192 @@
+Document: ID=7AB8C843.text (4 sentences, 41 tokens)
+
+Sentence #1 (13 tokens):
+Democrats are against Putin invading Ukraine, therefore Republicans are for it.
+
+Tokens:
+[Text=Democrats CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=are CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=invading CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=VBG Lemma=invade NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=therefore CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=therefore NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=56 CharacterOffsetEnd=67 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNPS Democrats))
+      (VP (VBP are)
+        (PP (IN against)
+          (NP
+            (NP (NNP Putin))
+            (VP (VBG invading)
+              (NP (NNP Ukraine)))))))
+    (, ,)
+    (S
+      (ADVP (RB therefore))
+      (NP (NNPS Republicans))
+      (VP (VBP are)
+        (PP (IN for)
+          (NP (PRP it)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Putin-4)
+nsubj(Putin-4, Democrats-1)
+cop(Putin-4, are-2)
+case(Putin-4, against-3)
+acl(Putin-4, invading-5)
+obj(invading-5, Ukraine-6)
+punct(Putin-4, ,-7)
+advmod(it-12, therefore-8)
+nsubj(it-12, Republicans-9)
+cop(it-12, are-10)
+case(it-12, for-11)
+parataxis(Putin-4, it-12)
+punct(Putin-4, .-13)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.9997750049795571
+Putin	PERSON	PERSON:0.9909797850867977
+Ukraine	COUNTRY	LOCATION:0.998115798254544
+Republicans	MISC	MISC:0.9999515805915036
+
+Sentence #2 (13 tokens):
+Democrats are against the spread of plague, Republicans are for it.
+
+Tokens:
+[Text=Democrats CharacterOffsetBegin=80 CharacterOffsetEnd=89 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=are CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=spread CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=spread NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=plague CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=plague NamedEntityTag=CAUSE_OF_DEATH]
+[Text=, CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=124 CharacterOffsetEnd=135 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNPS Democrats))
+      (VP (VBP are)
+        (PP (IN against)
+          (NP
+            (NP (DT the) (NN spread))
+            (PP (IN of)
+              (NP (NN plague)))))))
+    (, ,)
+    (NP (NNPS Republicans))
+    (VP (VBP are)
+      (PP (IN for)
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, it-12)
+nsubj(spread-5, Democrats-1)
+cop(spread-5, are-2)
+case(spread-5, against-3)
+det(spread-5, the-4)
+ccomp(it-12, spread-5)
+case(plague-7, of-6)
+nmod:of(spread-5, plague-7)
+punct(it-12, ,-8)
+nsubj(it-12, Republicans-9)
+cop(it-12, are-10)
+case(it-12, for-11)
+punct(it-12, .-13)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.9998385344873733
+plague	CAUSE_OF_DEATH	-
+Republicans	MISC	MISC:0.999820591832035
+
+Sentence #3 (11 tokens):
+Democrats are against child poverty, Republicans are for it.
+
+Tokens:
+[Text=Democrats CharacterOffsetBegin=148 CharacterOffsetEnd=157 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=are CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=162 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=poverty CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=poverty NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=185 CharacterOffsetEnd=196 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNPS Democrats))
+      (VP (VBP are)
+        (PP (IN against)
+          (NP (NN child) (NN poverty)))))
+    (, ,)
+    (NP (NNPS Republicans))
+    (VP (VBP are)
+      (PP (IN for)
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, it-10)
+nsubj(poverty-5, Democrats-1)
+cop(poverty-5, are-2)
+case(poverty-5, against-3)
+compound(poverty-5, child-4)
+ccomp(it-10, poverty-5)
+punct(it-10, ,-6)
+nsubj(it-10, Republicans-7)
+cop(it-10, are-8)
+case(it-10, for-9)
+punct(it-10, .-11)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.9997782625784002
+Republicans	MISC	MISC:0.9999076153832533
+
+Sentence #4 (4 tokens):
+See the pattern?
+
+Tokens:
+[Text=See CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pattern CharacterOffsetBegin=217 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=pattern NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=224 CharacterOffsetEnd=225 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (VP (VB See)
+      (NP (DT the) (NN pattern)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, See-1)
+det(pattern-3, the-2)
+obj(See-1, pattern-3)
+punct(See-1, ?-4)
+
+Extracted the following NER entity mentions:

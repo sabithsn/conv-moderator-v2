@@ -1,0 +1,51 @@
+Document: ID=A43A9090.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+They are, literally, paid trolls working for the CCP.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=trolls CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=troll NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CCP CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=CCP NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are) (, ,)
+      (ADVP (RB literally))
+      (, ,)
+      (VP (VBN paid)
+        (NP
+          (NP (NNS trolls))
+          (VP (VBG working)
+            (PP (IN for)
+              (NP (DT the) (NNP CCP)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, paid-6)
+nsubj:pass(paid-6, They-1)
+aux:pass(paid-6, are-2)
+punct(paid-6, ,-3)
+advmod(paid-6, literally-4)
+punct(paid-6, ,-5)
+obj(paid-6, trolls-7)
+acl(trolls-7, working-8)
+case(CCP-11, for-9)
+det(CCP-11, the-10)
+obl:for(working-8, CCP-11)
+punct(paid-6, .-12)
+
+Extracted the following NER entity mentions:
+CCP	ORGANIZATION	ORGANIZATION:0.9867381848181517

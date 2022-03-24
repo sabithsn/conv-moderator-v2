@@ -1,0 +1,55 @@
+Document: ID=AAE2EC99.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Stacey Abrams mocked after comparing herself, progressives to Zelenskyy and Ukraine
+
+Tokens:
+[Text=Stacey CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Stacey NamedEntityTag=PERSON]
+[Text=Abrams CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Abrams NamedEntityTag=PERSON]
+[Text=mocked CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=mock NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=comparing CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=VBG Lemma=compare NamedEntityTag=O]
+[Text=herself CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=herself NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=progressives CharacterOffsetBegin=46 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=progressive NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Zelenskyy CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Zelenskyy NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Stacey) (NNP Abrams))
+    (VP (VBD mocked)
+      (PP (IN after)
+        (S
+          (VP (VBG comparing)
+            (NP (PRP herself))
+            (, ,)
+            (NP (NNS progressives)))))
+      (PP (IN to)
+        (NP (NNP Zelenskyy)
+          (CC and)
+          (NNP Ukraine))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mocked-3)
+compound(Abrams-2, Stacey-1)
+nsubj(mocked-3, Abrams-2)
+mark(comparing-5, after-4)
+advcl:after(mocked-3, comparing-5)
+obj(comparing-5, herself-6)
+punct(comparing-5, ,-7)
+obj(comparing-5, progressives-8)
+case(Zelenskyy-10, to-9)
+obl:to(mocked-3, Zelenskyy-10)
+cc(Ukraine-12, and-11)
+obl:to(mocked-3, Ukraine-12)
+conj:and(Zelenskyy-10, Ukraine-12)
+
+Extracted the following NER entity mentions:
+Stacey Abrams	PERSON	PERSON:0.9943839550299435
+Zelenskyy	LOCATION	LOCATION:0.6472921775754785
+Ukraine	COUNTRY	LOCATION:0.9941540672609893

@@ -1,0 +1,153 @@
+Document: ID=6700D41E.text (4 sentences, 32 tokens)
+
+Sentence #1 (6 tokens):
+>Let's face it.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Let CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma='s NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=face NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NP (VB Let))
+        (SBAR
+          (S
+            (NP (PRP 's))
+            (VP (VB face)
+              (NP (PRP it)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-2)
+dep(Let-2, >-1)
+nsubj(face-4, 's-3)
+acl:relcl(Let-2, face-4)
+obj(face-4, it-5)
+punct(Let-2, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+We have seen a pattern.
+
+Tokens:
+[Text=We CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pattern CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=pattern NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (VP (VBN seen)
+        (NP (DT a) (NN pattern))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seen-3)
+nsubj(seen-3, We-1)
+aux(seen-3, have-2)
+det(pattern-5, a-4)
+obj(seen-3, pattern-5)
+punct(seen-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+Most conflicts occur in countries with Islamic culture.
+
+Tokens:
+[Text=Most CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=conflicts CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=conflict NamedEntityTag=O]
+[Text=occur CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=occur NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=countries CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=country NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Islamic CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=islamic NamedEntityTag=IDEOLOGY]
+[Text=culture CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=culture NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJS Most) (NNS conflicts))
+    (VP (VBP occur)
+      (PP (IN in)
+        (NP
+          (NP (NNS countries))
+          (PP (IN with)
+            (NP (JJ Islamic) (NN culture))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, occur-3)
+amod(conflicts-2, Most-1)
+nsubj(occur-3, conflicts-2)
+case(countries-5, in-4)
+obl:in(occur-3, countries-5)
+case(culture-8, with-6)
+amod(culture-8, Islamic-7)
+nmod:with(countries-5, culture-8)
+punct(occur-3, .-9)
+
+Extracted the following NER entity mentions:
+Islamic	IDEOLOGY	MISC:0.9999900054488453
+
+Sentence #4 (11 tokens):
+Ah yes, the great Islamic state of North Korea…
+
+Tokens:
+[Text=Ah CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=UH Lemma=ah NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=Islamic CharacterOffsetBegin=115 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=islamic NamedEntityTag=IDEOLOGY]
+[Text=state CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=North CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=North NamedEntityTag=COUNTRY]
+[Text=Korea CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Korea NamedEntityTag=COUNTRY]
+[Text=… CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Ah) (UH yes))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ great) (JJ Islamic) (NN state))
+      (PP (IN of)
+        (NP (NNP North) (NNP Korea))))
+    (: …)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, state-7)
+discourse(state-7, Ah-1)
+dep(Ah-1, yes-2)
+punct(state-7, ,-3)
+det(state-7, the-4)
+amod(state-7, great-5)
+amod(state-7, Islamic-6)
+case(Korea-10, of-8)
+compound(Korea-10, North-9)
+nmod:of(state-7, Korea-10)
+punct(state-7, …-11)
+
+Extracted the following NER entity mentions:
+Islamic	IDEOLOGY	MISC:0.9999913477367098
+North Korea	COUNTRY	LOCATION:0.9997095383901945

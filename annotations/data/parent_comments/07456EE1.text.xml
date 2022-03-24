@@ -1,0 +1,62 @@
+Document: ID=07456EE1.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+NYPD Officers Arrest 9 Year Old Who Didn't Show Her Vaccine Card At A Museum
+
+Tokens:
+[Text=NYPD CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=NYPD NamedEntityTag=O]
+[Text=Officers CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=officer NamedEntityTag=O]
+[Text=Arrest CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=arrest NamedEntityTag=O]
+[Text=9 CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=9 NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9 Year Old</TIMEX3>]
+[Text=Year CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Year NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9 Year Old</TIMEX3>]
+[Text=Old CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Old NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">9 Year Old</TIMEX3>]
+[Text=Who CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Did CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Show CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=Her CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Vaccine CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=Card CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=card NamedEntityTag=O]
+[Text=At CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Museum CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Museum NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP NYPD) (NNS Officers))
+    (VP (VBP Arrest)
+      (NP
+        (NP (CD 9) (NNP Year) (NNP Old))
+        (SBAR
+          (WHNP (WP Who))
+          (S
+            (VP (VBD Did) (RB n't)
+              (VP (VB Show)
+                (NP (PRP$ Her) (NN Vaccine) (NN Card))
+                (PP (IN At)
+                  (NP (DT A) (NNP Museum)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Arrest-3)
+compound(Officers-2, NYPD-1)
+nsubj(Arrest-3, Officers-2)
+nummod(Old-6, 9-4)
+compound(Old-6, Year-5)
+obj(Arrest-3, Old-6)
+nsubj(Show-10, Old-6)
+ref(Old-6, Who-7)
+aux(Show-10, Did-8)
+advmod(Show-10, n't-9)
+acl:relcl(Old-6, Show-10)
+nmod:poss(Card-13, Her-11)
+compound(Card-13, Vaccine-12)
+obj(Show-10, Card-13)
+case(Museum-16, At-14)
+det(Museum-16, A-15)
+obl:at(Show-10, Museum-16)
+
+Extracted the following NER entity mentions:
+9 Year Old	DURATION	DURATION:-1.0
+Her	PERSON	-

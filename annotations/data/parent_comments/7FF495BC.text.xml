@@ -1,0 +1,89 @@
+Document: ID=7FF495BC.text (2 sentences, 20 tokens)
+
+Sentence #1 (10 tokens):
+Russia was once enemy number one in the US.
+
+Tokens:
+[Text=Russia CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=was CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=enemy CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=in CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Russia))
+    (VP (VBD was)
+      (ADVP (RB once))
+      (NP
+        (NP (NN enemy) (NN number) (CD one))
+        (PP (IN in)
+          (NP (DT the) (NNP US)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, number-5)
+nsubj(number-5, Russia-1)
+cop(number-5, was-2)
+advmod(number-5, once-3)
+compound(number-5, enemy-4)
+nummod(number-5, one-6)
+case(US-9, in-7)
+det(US-9, the-8)
+nmod:in(number-5, US-9)
+punct(number-5, .-10)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9982521764902177
+once	DATE	DATE:-1.0
+one	NUMBER	NUMBER:-1.0
+US	COUNTRY	LOCATION:0.9682309018739549
+
+Sentence #2 (10 tokens):
+So how did Vladimir Putin infiltrate the Republican Party?
+
+Tokens:
+[Text=So CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Vladimir CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Vladimir NamedEntityTag=PERSON]
+[Text=Putin CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=infiltrate CharacterOffsetBegin=70 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=infiltrate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Republican CharacterOffsetBegin=85 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Republican NamedEntityTag=ORGANIZATION]
+[Text=Party CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Party NamedEntityTag=ORGANIZATION]
+[Text=? CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ (RB So)
+    (WHADVP (WRB how))
+    (SQ (VBD did)
+      (NP (NNP Vladimir) (NNP Putin))
+      (VP (VB infiltrate)
+        (NP (DT the) (NNP Republican) (NNP Party))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, infiltrate-6)
+advmod(infiltrate-6, So-1)
+advmod(infiltrate-6, how-2)
+aux(infiltrate-6, did-3)
+compound(Putin-5, Vladimir-4)
+nsubj(infiltrate-6, Putin-5)
+det(Party-9, the-7)
+compound(Party-9, Republican-8)
+obj(infiltrate-6, Party-9)
+punct(infiltrate-6, ?-10)
+
+Extracted the following NER entity mentions:
+Vladimir Putin	PERSON	PERSON:0.9998911834015475
+Republican Party	ORGANIZATION	ORGANIZATION:0.9857272458176519

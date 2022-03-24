@@ -1,0 +1,62 @@
+Document: ID=60CC9B0F.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+South Dakota Passes Gov. Kristi Noem’s Ban on Boys Competing in Girls’ Sports
+
+Tokens:
+[Text=South CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=South NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Dakota CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Dakota NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Passes CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=pass NamedEntityTag=O]
+[Text=Gov. CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Gov. NamedEntityTag=TITLE]
+[Text=Kristi CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Kristi NamedEntityTag=PERSON]
+[Text=Noem CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Noem NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Ban CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Ban NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Boys CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNPS Lemma=Boys NamedEntityTag=O]
+[Text=Competing CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=compete NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Girls CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=girl NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=Sports CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=NNPS Lemma=Sports NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP South) (NNP Dakota))
+    (VP (VBZ Passes)
+      (NP
+        (NP
+          (NP (NNP Gov.) (NNP Kristi) (NNP Noem) (POS ’s))
+          (NNP Ban))
+        (PP (IN on)
+          (NP
+            (NP (NNPS Boys))
+            (VP (VBG Competing)
+              (PP (IN in)
+                (NP
+                  (NP (NNS Girls) (POS ’))
+                  (NNPS Sports))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Passes-3)
+compound(Dakota-2, South-1)
+nsubj(Passes-3, Dakota-2)
+compound(Noem-6, Gov.-4)
+compound(Noem-6, Kristi-5)
+nmod:poss(Ban-8, Noem-6)
+case(Noem-6, ’s-7)
+obj(Passes-3, Ban-8)
+case(Boys-10, on-9)
+nmod:on(Ban-8, Boys-10)
+acl(Boys-10, Competing-11)
+case(Sports-15, in-12)
+nmod:poss(Sports-15, Girls-13)
+case(Girls-13, ’-14)
+obl:in(Competing-11, Sports-15)
+
+Extracted the following NER entity mentions:
+South Dakota	STATE_OR_PROVINCE	LOCATION:0.9040858994414523
+Gov.	TITLE	-
+Kristi Noem	PERSON	PERSON:0.9646537044739335

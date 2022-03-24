@@ -1,0 +1,74 @@
+Document: ID=EFC7E343.text (2 sentences, 15 tokens)
+
+Sentence #1 (8 tokens):
+Yeah, this could definitely be problematic.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=definitely CharacterOffsetBegin=17 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=problematic CharacterOffsetBegin=31 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=problematic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (, ,)
+    (NP (DT this))
+    (VP (MD could)
+      (ADVP (RB definitely))
+      (VP (VB be)
+        (ADJP (JJ problematic))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, problematic-7)
+discourse(problematic-7, Yeah-1)
+punct(problematic-7, ,-2)
+nsubj(problematic-7, this-3)
+aux(problematic-7, could-4)
+advmod(problematic-7, definitely-5)
+cop(problematic-7, be-6)
+punct(problematic-7, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+What can we do about it?
+
+Tokens:
+[Text=What CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (MD can)
+      (NP (PRP we))
+      (VP (VB do)
+        (PP (IN about)
+          (NP (PRP it)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-4)
+obj(do-4, What-1)
+aux(do-4, can-2)
+nsubj(do-4, we-3)
+case(it-6, about-5)
+obl:about(do-4, it-6)
+punct(do-4, ?-7)
+
+Extracted the following NER entity mentions:

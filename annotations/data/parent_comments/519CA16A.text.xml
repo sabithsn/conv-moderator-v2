@@ -1,0 +1,48 @@
+Document: ID=519CA16A.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+ELI5: Why does the year zero not exist?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y Timex=<TIMEX3 alt_value="THIS P1Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the year</TIMEX3>]
+[Text=year CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y Timex=<TIMEX3 alt_value="THIS P1Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the year</TIMEX3>]
+[Text=zero CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=zero NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=not CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=exist CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=exist NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ does)
+        (NP (DT the) (NN year))
+        (ADVP
+          (NP (CD zero))
+          (RB not))
+        (VP (VB exist))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(exist-9, Why-3)
+aux(exist-9, does-4)
+det(year-6, the-5)
+nsubj(exist-9, year-6)
+obl:npmod(not-8, zero-7)
+advmod(exist-9, not-8)
+parataxis(ELI5-1, exist-9)
+punct(ELI5-1, ?-10)
+
+Extracted the following NER entity mentions:
+the year	DATE	DATE:-1.0
+zero	NUMBER	NUMBER:-1.0

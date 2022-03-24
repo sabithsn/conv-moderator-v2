@@ -1,0 +1,100 @@
+Document: ID=7551CA6D.text (2 sentences, 23 tokens)
+
+Sentence #1 (12 tokens):
+Already responded to him, yes you can prove a negative.
+
+Tokens:
+[Text=Already CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=responded CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=respond NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=prove CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=prove NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=negative CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=negative NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Already))
+    (VP (VBD responded)
+      (PP (IN to)
+        (NP (PRP him)))
+      (, ,)
+      (S
+        (INTJ (UH yes))
+        (NP (PRP you))
+        (VP (MD can)
+          (VP (VB prove)
+            (NP (DT a) (JJ negative))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, responded-2)
+advmod(responded-2, Already-1)
+case(him-4, to-3)
+obl:to(responded-2, him-4)
+punct(responded-2, ,-5)
+discourse(prove-9, yes-6)
+nsubj(prove-9, you-7)
+aux(prove-9, can-8)
+ccomp(responded-2, prove-9)
+det(negative-11, a-10)
+obj(prove-9, negative-11)
+punct(responded-2, .-12)
+
+Extracted the following NER entity mentions:
+him	PERSON	-
+
+Sentence #2 (11 tokens):
+Like how hydroxycloroquene was proven to NOT work on covid patients
+
+Tokens:
+[Text=Like CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=hydroxycloroquene CharacterOffsetBegin=65 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=hydroxycloroquene NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=proven CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=VBN Lemma=prove NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=NOT CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=patients CharacterOffsetBegin=115 CharacterOffsetEnd=123 PartOfSpeech=NNS Lemma=patient NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Like)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NN hydroxycloroquene))
+          (VP (VBD was)
+            (VP (VBN proven)
+              (PP (IN to)
+                (ADVP (RB NOT))))))))
+    (VP (VB work)
+      (PP (IN on)
+        (NP (JJ covid) (NNS patients))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, work-8)
+mark(proven-5, Like-1)
+advmod(proven-5, how-2)
+nsubj:pass(proven-5, hydroxycloroquene-3)
+aux:pass(proven-5, was-4)
+advcl:like(work-8, proven-5)
+case(NOT-7, to-6)
+advcl:to(proven-5, NOT-7)
+case(patients-11, on-9)
+amod(patients-11, covid-10)
+obl:on(work-8, patients-11)
+
+Extracted the following NER entity mentions:

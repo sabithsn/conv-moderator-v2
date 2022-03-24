@@ -1,0 +1,40 @@
+Document: ID=FDC2172D.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+The talking box said it is OK.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=box CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=box NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=OK CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=ok NamedEntityTag=STATE_OR_PROVINCE]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (VBG talking) (NN box))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ OK))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-4)
+det(box-3, The-1)
+amod(box-3, talking-2)
+nsubj(said-4, box-3)
+nsubj(OK-7, it-5)
+cop(OK-7, is-6)
+ccomp(said-4, OK-7)
+punct(said-4, .-8)
+
+Extracted the following NER entity mentions:
+OK	STATE_OR_PROVINCE	-

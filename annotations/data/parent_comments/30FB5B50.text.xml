@@ -1,0 +1,60 @@
+Document: ID=30FB5B50.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+I ghosted my child’s father and later found out I was pregnant.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ghosted CharacterOffsetBegin=2 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=ghost NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=father CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pregnant CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=pregnant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP
+        (VP (VBD ghosted)
+          (NP
+            (NP (PRP$ my) (NN child) (POS ’s))
+            (NN father)))
+        (CC and)
+        (ADVP (RB later))
+        (VP (VBD found)
+          (PRT (RP out)))))
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (JJ pregnant)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pregnant-13)
+nsubj(ghosted-2, I-1)
+nsubj(found-9, I-1)
+dep(pregnant-13, ghosted-2)
+nmod:poss(child-4, my-3)
+nmod:poss(father-6, child-4)
+case(child-4, ’s-5)
+obj(ghosted-2, father-6)
+cc(found-9, and-7)
+advmod(found-9, later-8)
+conj:and(ghosted-2, found-9)
+dep(pregnant-13, found-9)
+compound:prt(found-9, out-10)
+nsubj(pregnant-13, I-11)
+cop(pregnant-13, was-12)
+punct(pregnant-13, .-14)
+
+Extracted the following NER entity mentions:

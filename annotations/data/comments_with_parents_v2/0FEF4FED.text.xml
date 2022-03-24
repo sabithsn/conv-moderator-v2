@@ -1,0 +1,50 @@
+Document: ID=0FEF4FED.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Women's US soccer actually won their BS gender discrimination lawsuit🤦‍♀️
+
+Tokens:
+[Text=Women CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=soccer CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=soccer NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=won CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=win NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=BS CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=bs NamedEntityTag=O]
+[Text=gender CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=gender NamedEntityTag=O]
+[Text=discrimination CharacterOffsetBegin=47 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=discrimination NamedEntityTag=O]
+[Text=lawsuit CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=lawsuit NamedEntityTag=O]
+[Text=🤦‍♀️ CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NFP Lemma=🤦‍♀️ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNS Women) (POS 's))
+        (NNP US) (NN soccer))
+      (ADVP (RB actually)))
+    (VP (VBD won)
+      (NP (PRP$ their)
+        (NML (NN BS) (NN gender))
+        (NN discrimination) (NN lawsuit)))
+    (NFP 🤦‍♀️)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, won-6)
+nmod:poss(soccer-4, Women-1)
+case(Women-1, 's-2)
+compound(soccer-4, US-3)
+nsubj(won-6, soccer-4)
+advmod(soccer-4, actually-5)
+nmod:poss(lawsuit-11, their-7)
+compound(gender-9, BS-8)
+compound(lawsuit-11, gender-9)
+compound(lawsuit-11, discrimination-10)
+obj(won-6, lawsuit-11)
+punct(won-6, 🤦‍♀️-12)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.7746935135971197

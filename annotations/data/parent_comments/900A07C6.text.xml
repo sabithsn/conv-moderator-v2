@@ -1,0 +1,46 @@
+Document: ID=900A07C6.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Remember when Biden stabilized democracy in Afghanistan lady?
+
+Tokens:
+[Text=Remember CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=stabilized CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=stabilize NamedEntityTag=O]
+[Text=democracy CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=democracy NamedEntityTag=IDEOLOGY]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Afghanistan CharacterOffsetBegin=44 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Afghanistan NamedEntityTag=COUNTRY]
+[Text=lady CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=lady NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Remember)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP Biden))
+          (VP (VBD stabilized)
+            (NP (NN democracy))
+            (PP (IN in)
+              (NP (NNP Afghanistan) (NN lady)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Remember-1)
+advmod(stabilized-4, when-2)
+nsubj(stabilized-4, Biden-3)
+advcl(Remember-1, stabilized-4)
+obj(stabilized-4, democracy-5)
+case(lady-8, in-6)
+compound(lady-8, Afghanistan-7)
+obl:in(stabilized-4, lady-8)
+punct(Remember-1, ?-9)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9986016587881225
+democracy	IDEOLOGY	-
+Afghanistan	COUNTRY	LOCATION:0.9992888186123149

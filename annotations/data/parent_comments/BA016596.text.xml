@@ -1,0 +1,71 @@
+Document: ID=BA016596.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+ELI5: We drink water, we eat salt, why can't we drink Saltwater?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=drink CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=drink NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=eat NamedEntityTag=O]
+[Text=salt CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=salt NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=drink CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=drink NamedEntityTag=O]
+[Text=Saltwater CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=saltwater NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (S
+      (S
+        (NP (PRP We))
+        (VP (VBP drink)
+          (NP (NN water))
+          (, ,)
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (VBP eat)
+                (NP (NN salt))
+                (, ,)
+                (SBARQ
+                  (WHADVP (WRB why))
+                  (SQ (MD ca) (RB n't))))))))
+      (S
+        (NP (PRP we))
+        (VP (VBP drink)
+          (NP (NN Saltwater)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+nsubj(drink-4, We-3)
+parataxis(ELI5-1, drink-4)
+obj(drink-4, water-5)
+punct(drink-4, ,-6)
+nsubj(eat-8, we-7)
+dep(drink-4, eat-8)
+obj(eat-8, salt-9)
+punct(eat-8, ,-10)
+advmod(ca-12, why-11)
+ccomp(eat-8, ca-12)
+advmod(ca-12, n't-13)
+nsubj(drink-15, we-14)
+parataxis(drink-4, drink-15)
+obj(drink-15, Saltwater-16)
+punct(ELI5-1, ?-17)
+
+Extracted the following NER entity mentions:

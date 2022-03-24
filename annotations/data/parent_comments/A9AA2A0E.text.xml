@@ -1,0 +1,66 @@
+Document: ID=A9AA2A0E.text (2 sentences, 13 tokens)
+
+Sentence #1 (6 tokens):
+That's not every year.
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1Y" quant="every" tid="t1" type="SET" value="P1Y">every year</TIMEX3>]
+[Text=year CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=year NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1Y" quant="every" tid="t1" type="SET" value="P1Y">every year</TIMEX3>]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's) (RB not)
+      (NP (DT every) (NN year)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, year-5)
+nsubj(year-5, That-1)
+cop(year-5, 's-2)
+advmod(year-5, not-3)
+det(year-5, every-4)
+punct(year-5, .-6)
+
+Extracted the following NER entity mentions:
+every year	SET	SET:-1.0
+
+Sentence #2 (7 tokens):
+You're missing 1776-2009.
+
+Tokens:
+[Text=You CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=missing CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=miss NamedEntityTag=O]
+[Text=1776 CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=CD Lemma=1776 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2042448H Timex=<TIMEX3 beginPoint="t2" endPoint="t3" tid="t4" type="DURATION" value="PT2042448H">1776-2009</TIMEX3>]
+[Text=- CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=SYM Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2042448H Timex=<TIMEX3 beginPoint="t2" endPoint="t3" tid="t4" type="DURATION" value="PT2042448H">1776-2009</TIMEX3>]
+[Text=2009 CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=CD Lemma=2009 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2042448H Timex=<TIMEX3 beginPoint="t2" endPoint="t3" tid="t4" type="DURATION" value="PT2042448H">1776-2009</TIMEX3>]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG missing)
+        (NP (CD 1776) (SYM -) (CD 2009))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, missing-3)
+nsubj(missing-3, You-1)
+aux(missing-3, 're-2)
+nummod(2009-6, 1776-4)
+dep(2009-6, --5)
+obj(missing-3, 2009-6)
+punct(missing-3, .-7)
+
+Extracted the following NER entity mentions:
+1776-2009	DURATION	DURATION:-1.0

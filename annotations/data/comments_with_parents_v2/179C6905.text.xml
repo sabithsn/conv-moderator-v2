@@ -1,0 +1,80 @@
+Document: ID=179C6905.text (3 sentences, 13 tokens)
+
+Sentence #1 (3 tokens):
+30 seconds?
+
+Tokens:
+[Text=30 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=30 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT30S Timex=<TIMEX3 tid="t1" type="DURATION" value="PT30S">30 seconds</TIMEX3>]
+[Text=seconds CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=NNS Lemma=seconds NamedEntityTag=DURATION NormalizedNamedEntityTag=PT30S Timex=<TIMEX3 tid="t1" type="DURATION" value="PT30S">30 seconds</TIMEX3>]
+[Text=? CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP-TMP (CD 30) (NNS seconds) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seconds-2)
+nummod(seconds-2, 30-1)
+punct(seconds-2, ?-3)
+
+Extracted the following NER entity mentions:
+30 seconds	DURATION	DURATION:-1.0
+
+Sentence #2 (5 tokens):
+What do you mean?
+
+Tokens:
+[Text=What CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB mean)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-4)
+obj(mean-4, What-1)
+aux(mean-4, do-2)
+nsubj(mean-4, you-3)
+punct(mean-4, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (5 tokens):
+It’s constantly like that
+
+Tokens:
+[Text=It CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=constantly CharacterOffsetBegin=35 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=constantly NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (ADVP (RB constantly))
+      (PP (IN like)
+        (NP (DT that))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, that-5)
+nsubj(that-5, It-1)
+cop(that-5, ’s-2)
+advmod(that-5, constantly-3)
+case(that-5, like-4)
+
+Extracted the following NER entity mentions:

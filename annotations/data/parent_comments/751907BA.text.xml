@@ -1,0 +1,62 @@
+Document: ID=751907BA.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Imagine if a white man was cast as MLK jr. in a movie about him.
+
+Tokens:
+[Text=Imagine CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=cast CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=cast NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=MLK CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=MLK NamedEntityTag=O]
+[Text=jr. CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=jr. NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=movie CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Imagine)
+      (SBAR (IN if)
+        (S
+          (NP (DT a) (JJ white) (NN man))
+          (VP (VBD was)
+            (VP (VBN cast)
+              (PP (IN as)
+                (NP (NNP MLK) (NN jr.)))
+              (PP (IN in)
+                (NP
+                  (NP (DT a) (NN movie))
+                  (PP (IN about)
+                    (NP (PRP him))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Imagine-1)
+mark(cast-7, if-2)
+det(man-5, a-3)
+amod(man-5, white-4)
+nsubj:pass(cast-7, man-5)
+aux:pass(cast-7, was-6)
+advcl:if(Imagine-1, cast-7)
+case(jr.-10, as-8)
+compound(jr.-10, MLK-9)
+obl:as(cast-7, jr.-10)
+case(movie-13, in-11)
+det(movie-13, a-12)
+obl:in(cast-7, movie-13)
+case(him-15, about-14)
+nmod:about(movie-13, him-15)
+punct(Imagine-1, .-16)
+
+Extracted the following NER entity mentions:
+him	PERSON	-

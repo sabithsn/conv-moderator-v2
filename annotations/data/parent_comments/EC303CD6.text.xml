@@ -1,0 +1,39 @@
+Document: ID=EC303CD6.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+New No Knock Warrant Death Just Dropped!!
+
+Tokens:
+[Text=New CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=No CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=No NamedEntityTag=O]
+[Text=Knock CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=knock NamedEntityTag=O]
+[Text=Warrant CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Warrant NamedEntityTag=O]
+[Text=Death CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Death NamedEntityTag=O]
+[Text=Just CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=Dropped CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=drop NamedEntityTag=O]
+[Text=!! CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=!! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP New) (NNP No))
+    (VP (VB Knock)
+      (SBAR
+        (S
+          (NP (NNP Warrant) (NNP Death))
+          (ADVP (RB Just))
+          (VP (VBD Dropped)))))
+    (. !!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Knock-3)
+compound(No-2, New-1)
+nsubj(Knock-3, No-2)
+compound(Death-5, Warrant-4)
+nsubj(Dropped-7, Death-5)
+advmod(Dropped-7, Just-6)
+ccomp(Knock-3, Dropped-7)
+punct(Knock-3, !!-8)
+
+Extracted the following NER entity mentions:

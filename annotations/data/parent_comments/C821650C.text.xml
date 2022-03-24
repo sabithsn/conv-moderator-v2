@@ -1,0 +1,46 @@
+Document: ID=C821650C.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Pro vaccine people watching Aaron Rogers lose to the 49ers.
+
+Tokens:
+[Text=Pro CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=pro NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=watching CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=VBG Lemma=watch NamedEntityTag=O]
+[Text=Aaron CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Aaron NamedEntityTag=PERSON]
+[Text=Rogers CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Rogers NamedEntityTag=PERSON]
+[Text=lose CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=lose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=49ers CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNPS Lemma=49ers NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Pro) (NN vaccine) (NNS people))
+      (VP (VBG watching)
+        (NP (NNP Aaron) (NNP Rogers))))
+    (VP (VBP lose)
+      (PP (IN to)
+        (NP (DT the) (NNPS 49ers))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lose-7)
+compound(people-3, Pro-1)
+compound(people-3, vaccine-2)
+nsubj(lose-7, people-3)
+acl(people-3, watching-4)
+compound(Rogers-6, Aaron-5)
+obj(watching-4, Rogers-6)
+case(49ers-10, to-8)
+det(49ers-10, the-9)
+obl:to(lose-7, 49ers-10)
+punct(lose-7, .-11)
+
+Extracted the following NER entity mentions:
+Aaron Rogers	PERSON	PERSON:0.9862394612188996

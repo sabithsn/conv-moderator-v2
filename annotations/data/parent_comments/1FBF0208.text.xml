@@ -1,0 +1,55 @@
+Document: ID=1FBF0208.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Kim Foxx under fire for saying Jussie Smollett faced ‘kangaroo prosecution’
+
+Tokens:
+[Text=Kim CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Kim NamedEntityTag=PERSON]
+[Text=Foxx CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Foxx NamedEntityTag=PERSON]
+[Text=under CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=for CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=Jussie CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Jussie NamedEntityTag=PERSON]
+[Text=Smollett CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Smollett NamedEntityTag=PERSON]
+[Text=faced CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=VBD Lemma=face NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=kangaroo CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=kangaroo NamedEntityTag=O]
+[Text=prosecution CharacterOffsetBegin=63 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=prosecution NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Kim) (NNP Foxx))
+      (PP (IN under)
+        (NP
+          (NP (NN fire))
+          (PP (IN for)
+            (S
+              (VP (VBG saying)
+                (NP (NNP Jussie) (NNP Smollett))))))))
+    (VP (VBD faced)
+      (NP (`` ‘) (NN kangaroo) (NN prosecution) ('' ’)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, faced-9)
+compound(Foxx-2, Kim-1)
+nsubj(faced-9, Foxx-2)
+case(fire-4, under-3)
+nmod:under(Foxx-2, fire-4)
+mark(saying-6, for-5)
+acl:for(fire-4, saying-6)
+compound(Smollett-8, Jussie-7)
+obj(saying-6, Smollett-8)
+punct(prosecution-12, ‘-10)
+compound(prosecution-12, kangaroo-11)
+obj(faced-9, prosecution-12)
+punct(prosecution-12, ’-13)
+
+Extracted the following NER entity mentions:
+Kim Foxx	PERSON	PERSON:0.9994105024633059
+fire	CAUSE_OF_DEATH	-
+Jussie Smollett	PERSON	PERSON:0.9811505163367411

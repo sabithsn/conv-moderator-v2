@@ -1,0 +1,115 @@
+Document: ID=0C4E9468.text (3 sentences, 23 tokens)
+
+Sentence #1 (13 tokens):
+Bet he is a white nationalist Trump supporter wearing a MAGA hat.
+
+Tokens:
+[Text=Bet CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=bet NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=nationalist CharacterOffsetBegin=18 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=nationalist NamedEntityTag=IDEOLOGY]
+[Text=Trump CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=supporter CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=supporter NamedEntityTag=O]
+[Text=wearing CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=VBG Lemma=wear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=MAGA CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=MAGA NamedEntityTag=ORGANIZATION]
+[Text=hat CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=hat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Bet))
+    (NP (PRP he))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ white) (JJ nationalist) (NNP Trump) (NN supporter))
+        (VP (VBG wearing)
+          (NP (DT a) (NNP MAGA) (NN hat)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, supporter-8)
+nsubj(supporter-8, Bet-1)
+nsubj(supporter-8, he-2)
+cop(supporter-8, is-3)
+det(supporter-8, a-4)
+amod(supporter-8, white-5)
+amod(supporter-8, nationalist-6)
+compound(supporter-8, Trump-7)
+acl(supporter-8, wearing-9)
+det(hat-12, a-10)
+compound(hat-12, MAGA-11)
+obj(wearing-9, hat-12)
+punct(supporter-8, .-13)
+
+Extracted the following NER entity mentions:
+nationalist	IDEOLOGY	-
+Trump	PERSON	PERSON:0.4698003760090589
+MAGA	ORGANIZATION	ORGANIZATION:0.7699394017728955
+he	PERSON	-
+
+Sentence #2 (4 tokens):
+Am I close?
+
+Tokens:
+[Text=Am CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=close CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=close NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Am)
+      (S
+        (NP (PRP I))
+        (VP (VB close))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Am-1)
+nsubj(close-3, I-2)
+ccomp(Am-1, close-3)
+punct(Am-1, ?-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+CNN told me I was.
+
+Tokens:
+[Text=CNN CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=CNN NamedEntityTag=ORGANIZATION]
+[Text=told CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP CNN))
+    (VP (VBD told)
+      (NP (PRP me))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-2)
+nsubj(told-2, CNN-1)
+obj(told-2, me-3)
+nsubj(was-5, I-4)
+ccomp(told-2, was-5)
+punct(told-2, .-6)
+
+Extracted the following NER entity mentions:
+CNN	ORGANIZATION	ORGANIZATION:0.9852425872072962

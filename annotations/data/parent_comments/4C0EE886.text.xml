@@ -1,0 +1,41 @@
+Document: ID=4C0EE886.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+which day isn't women's day?
+
+Tokens:
+[Text=which CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=? CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT which) (NN day))
+    (SQ
+      (VP (VBZ is)
+        (VP (RB n't)
+          (NP
+            (NP (NNS women) (POS 's))
+            (NN day)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, day-7)
+det(day-2, which-1)
+nsubj(day-7, day-2)
+aux(day-7, is-3)
+advmod(day-7, n't-4)
+nmod:poss(day-7, women-5)
+case(women-5, 's-6)
+punct(day-7, ?-8)
+
+Extracted the following NER entity mentions:
+day	DURATION	DURATION:-1.0
+day	DURATION	DURATION:-1.0

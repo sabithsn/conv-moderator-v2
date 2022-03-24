@@ -1,0 +1,86 @@
+Document: ID=76C6D0CE.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+The Biolabs, the Neo Nazi Azov Battalion of Ukraine and Talks to Make Ukraine Part of NATO led to the Invasion
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Biolabs CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Biolabs NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Neo CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=neo NamedEntityTag=ORGANIZATION]
+[Text=Nazi CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Nazi NamedEntityTag=ORGANIZATION]
+[Text=Azov CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Azov NamedEntityTag=ORGANIZATION]
+[Text=Battalion CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Battalion NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Talks CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NNPS Lemma=Talks NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Make CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=Part CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=led CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=lead NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Invasion CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Invasion NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Biolabs))
+    (, ,)
+    (NP
+      (NP (DT the) (NN Neo))
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Nazi) (NNP Azov) (NNP Battalion))
+            (PP (IN of)
+              (NP (NNP Ukraine)
+                (CC and)
+                (NNPS Talks))))
+          (VP (TO to)
+            (VP (VB Make)
+              (NP
+                (NP (NNP Ukraine) (NNP Part))
+                (PP (IN of)
+                  (NP (NNP NATO)))))))))
+    (VP (VBD led)
+      (PP (IN to)
+        (NP (DT the) (NNP Invasion))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, led-19)
+det(Biolabs-2, The-1)
+nsubj(led-19, Biolabs-2)
+punct(led-19, ,-3)
+det(Neo-5, the-4)
+nsubj(led-19, Neo-5)
+compound(Battalion-8, Nazi-6)
+compound(Battalion-8, Azov-7)
+nsubj(Make-14, Battalion-8)
+case(Ukraine-10, of-9)
+nmod:of(Battalion-8, Ukraine-10)
+cc(Talks-12, and-11)
+nmod:of(Battalion-8, Talks-12)
+conj:and(Ukraine-10, Talks-12)
+mark(Make-14, to-13)
+acl:to(Neo-5, Make-14)
+compound(Part-16, Ukraine-15)
+obj(Make-14, Part-16)
+case(NATO-18, of-17)
+nmod:of(Part-16, NATO-18)
+case(Invasion-22, to-20)
+det(Invasion-22, the-21)
+obl:to(led-19, Invasion-22)
+
+Extracted the following NER entity mentions:
+Biolabs	MISC	MISC:0.8071964742157361
+Neo Nazi Azov Battalion	ORGANIZATION	ORGANIZATION:0.9282234876341656
+Ukraine	COUNTRY	LOCATION:0.92696706200737
+Ukraine	COUNTRY	-
+NATO	ORGANIZATION	ORGANIZATION:0.9970849842886049

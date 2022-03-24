@@ -1,0 +1,78 @@
+Document: ID=EE19083A.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Shaq rips COVID vaccine mandates: 'You shouldn’t be forced to take something you don’t want'
+
+Tokens:
+[Text=Shaq CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Shaq NamedEntityTag=PERSON]
+[Text=rips CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=rip NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=mandates CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=mandate NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=forced CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VBN Lemma=force NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Shaq))
+    (VP (VBZ rips)
+      (NP
+        (NP (NNP COVID) (NN vaccine) (NNS mandates))
+        (: :)
+        (S ('' ')
+          (NP (PRP You))
+          (VP (MD should) (RB n’t)
+            (VP (VB be)
+              (VP (VBN forced)
+                (S
+                  (VP (TO to)
+                    (VP (VB take)
+                      (NP
+                        (NP (NN something))
+                        (SBAR
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP do) (RB n’t)
+                              (VP (VB want))))))))))))
+          ('' '))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rips-2)
+nsubj(rips-2, Shaq-1)
+compound(mandates-5, COVID-3)
+compound(mandates-5, vaccine-4)
+obj(rips-2, mandates-5)
+punct(mandates-5, :-6)
+punct(forced-12, '-7)
+nsubj:pass(forced-12, You-8)
+nsubj:xsubj(take-14, You-8)
+aux(forced-12, should-9)
+advmod(forced-12, n’t-10)
+aux:pass(forced-12, be-11)
+parataxis(mandates-5, forced-12)
+mark(take-14, to-13)
+xcomp(forced-12, take-14)
+obj(take-14, something-15)
+nsubj(want-19, you-16)
+aux(want-19, do-17)
+advmod(want-19, n’t-18)
+acl:relcl(something-15, want-19)
+punct(forced-12, '-20)
+
+Extracted the following NER entity mentions:
+Shaq	PERSON	PERSON:0.8482033073661845

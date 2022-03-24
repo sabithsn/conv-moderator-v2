@@ -1,0 +1,59 @@
+Document: ID=C91D914D.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Imagine betraying your entire species because you feel bad for killing an overfed roach.
+
+Tokens:
+[Text=Imagine CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=betraying CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=betray NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=entire CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=entire NamedEntityTag=O]
+[Text=species CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=species NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=feel NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=killing CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=kill NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=overfed CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=overfed NamedEntityTag=O]
+[Text=roach CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=roach NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Imagine)
+      (S
+        (VP (VBG betraying)
+          (NP (PRP$ your) (JJ entire) (NNS species))
+          (SBAR (IN because)
+            (S
+              (NP (PRP you))
+              (VP (VBP feel)
+                (ADJP (JJ bad)
+                  (PP (IN for)
+                    (S
+                      (VP (VBG killing)
+                        (NP (DT an) (JJ overfed) (NN roach))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Imagine-1)
+xcomp(Imagine-1, betraying-2)
+nmod:poss(species-5, your-3)
+amod(species-5, entire-4)
+obj(betraying-2, species-5)
+mark(feel-8, because-6)
+nsubj(feel-8, you-7)
+advcl:because(betraying-2, feel-8)
+xcomp(feel-8, bad-9)
+mark(killing-11, for-10)
+advcl:for(bad-9, killing-11)
+det(roach-14, an-12)
+amod(roach-14, overfed-13)
+obj(killing-11, roach-14)
+punct(Imagine-1, .-15)
+
+Extracted the following NER entity mentions:

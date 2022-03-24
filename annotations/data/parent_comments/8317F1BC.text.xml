@@ -1,0 +1,93 @@
+Document: ID=8317F1BC.text (3 sentences, 18 tokens)
+
+Sentence #1 (4 tokens):
+As a whole?
+
+Tokens:
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP (IN As)
+    (NP (DT a) (JJ whole))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, whole-3)
+case(whole-3, As-1)
+det(whole-3, a-2)
+punct(whole-3, ?-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Absolutely they do.
+
+Tokens:
+[Text=Absolutely CharacterOffsetBegin=12 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=absolutely NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Absolutely))
+    (NP (PRP they))
+    (VP (VBP do))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-3)
+advmod(do-3, Absolutely-1)
+nsubj(do-3, they-2)
+punct(do-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (10 tokens):
+How else would they bring their goods to market?
+
+Tokens:
+[Text=How CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=goods CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=goods NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=market CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=market NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WRB How) (RB else))
+    (SQ (MD would)
+      (NP (PRP they))
+      (VP (VB bring)
+        (NP (PRP$ their) (NNS goods))
+        (PP (IN to)
+          (NP (NN market)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bring-5)
+advmod(else-2, How-1)
+dep(bring-5, else-2)
+aux(bring-5, would-3)
+nsubj(bring-5, they-4)
+nmod:poss(goods-7, their-6)
+obj(bring-5, goods-7)
+case(market-9, to-8)
+obl:to(bring-5, market-9)
+punct(bring-5, ?-10)
+
+Extracted the following NER entity mentions:

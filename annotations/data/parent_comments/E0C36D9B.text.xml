@@ -1,0 +1,51 @@
+Document: ID=E0C36D9B.text (2 sentences, 8 tokens)
+
+Sentence #1 (6 tokens):
+Your protesters storm the Capitol.
+
+Tokens:
+[Text=Your CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=protesters CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=protester NamedEntityTag=O]
+[Text=storm CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=storm NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Capitol CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Capitol NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (NNS protesters))
+    (VP (VB storm)
+      (NP (DT the) (NNP Capitol)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, storm-3)
+nmod:poss(protesters-2, Your-1)
+nsubj(storm-3, protesters-2)
+det(Capitol-5, the-4)
+obj(storm-3, Capitol-5)
+punct(storm-3, .-6)
+
+Extracted the following NER entity mentions:
+Capitol	LOCATION	LOCATION:0.8017302523184161
+
+Sentence #2 (2 tokens):
+Derp.
+
+Tokens:
+[Text=Derp CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Derp NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Derp) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Derp-1)
+punct(Derp-1, .-2)
+
+Extracted the following NER entity mentions:
+Derp	PERSON	PERSON:0.6085063221065885

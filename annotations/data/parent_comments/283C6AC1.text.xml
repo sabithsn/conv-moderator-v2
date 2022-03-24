@@ -1,0 +1,72 @@
+Document: ID=283C6AC1.text (2 sentences, 14 tokens)
+
+Sentence #1 (11 tokens):
+Straights being killed and invaded: I sleep  The gays?
+
+Tokens:
+[Text=Straights CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNS Lemma=straight NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=kill NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=invaded CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=invade NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sleep CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=sleep NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gays CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=gay NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNS Straights))
+      (VP (VBG being)
+        (VP (VBN killed)
+          (CC and)
+          (VBN invaded))))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBP sleep)
+        (NP (DT The) (NNS gays))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Straights-1)
+aux:pass(killed-3, being-2)
+acl(Straights-1, killed-3)
+cc(invaded-5, and-4)
+acl(Straights-1, invaded-5)
+conj:and(killed-3, invaded-5)
+punct(Straights-1, :-6)
+nsubj(sleep-8, I-7)
+parataxis(Straights-1, sleep-8)
+det(gays-10, The-9)
+obj(sleep-8, gays-10)
+punct(Straights-1, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+: REAL SHIT
+
+Tokens:
+[Text=: CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=REAL CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=SHIT CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (LST (: :))
+    (JJ REAL) (NN SHIT)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SHIT-3)
+dep(SHIT-3, :-1)
+amod(SHIT-3, REAL-2)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>C33B2520.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Wow</word>
+            <lemma>wow</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>three</word>
+            <lemma>three</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>PT3H</NormalizedNER>
+            <Timex tid="t1" type="DURATION">PT3H</Timex>
+          </token>
+          <token id="5">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>HYPH</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>PT3H</NormalizedNER>
+            <Timex tid="t1" type="DURATION">PT3H</Timex>
+          </token>
+          <token id="6">
+            <word>hour</word>
+            <lemma>hour</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>PT3H</NormalizedNER>
+            <Timex tid="t1" type="DURATION">PT3H</Timex>
+          </token>
+          <token id="7">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>HYPH</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>PT3H</NormalizedNER>
+            <Timex tid="t1" type="DURATION">PT3H</Timex>
+          </token>
+          <token id="8">
+            <word>old</word>
+            <lemma>old</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>PT3H</NormalizedNER>
+            <Timex tid="t1" type="DURATION">PT3H</Timex>
+          </token>
+          <token id="9">
+            <word>account</word>
+            <lemma>account</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (INTJ (UH Wow)) (, ,) (NP (DT a) (ADJP (NP (CD three) (HYPH -) (NN hour)) (HYPH -) (JJ old)) (NN account)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">account</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">account</governor>
+            <dependent idx="1">Wow</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">account</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">hour</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hour</governor>
+            <dependent idx="5">-</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">old</governor>
+            <dependent idx="6">hour</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">old</governor>
+            <dependent idx="7">-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">account</governor>
+            <dependent idx="8">old</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">account</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">account</governor>
+            <dependent idx="1">Wow</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">account</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">hour</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hour</governor>
+            <dependent idx="5">-</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">old</governor>
+            <dependent idx="6">hour</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">old</governor>
+            <dependent idx="7">-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">account</governor>
+            <dependent idx="8">old</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">account</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">account</governor>
+            <dependent idx="1">Wow</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">account</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">hour</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hour</governor>
+            <dependent idx="5">-</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">old</governor>
+            <dependent idx="6">hour</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">old</governor>
+            <dependent idx="7">-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">account</governor>
+            <dependent idx="8">old</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">account</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">account</governor>
+            <dependent idx="1">Wow</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">account</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">hour</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hour</governor>
+            <dependent idx="5">-</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">old</governor>
+            <dependent idx="6">hour</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">old</governor>
+            <dependent idx="7">-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">account</governor>
+            <dependent idx="8">old</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">account</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="9">account</governor>
+            <dependent idx="1">Wow</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">account</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">hour</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">hour</governor>
+            <dependent idx="5">-</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">old</governor>
+            <dependent idx="6">hour</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">old</governor>
+            <dependent idx="7">-</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">account</governor>
+            <dependent idx="8">old</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">account</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>You</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>even</word>
+            <lemma>even</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>profile</word>
+            <lemma>profile</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>bruh</word>
+            <lemma>bruh</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP You)) (VP (VBP do) (RB n't) (ADVP (RB even)) (VP (VB have) (NP (DT a) (NN profile) (NN bruh)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="4">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">bruh</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">bruh</governor>
+            <dependent idx="7">profile</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">have</governor>
+            <dependent idx="8">bruh</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="4">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">bruh</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">bruh</governor>
+            <dependent idx="7">profile</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">have</governor>
+            <dependent idx="8">bruh</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="4">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">bruh</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">bruh</governor>
+            <dependent idx="7">profile</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">have</governor>
+            <dependent idx="8">bruh</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="4">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">bruh</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">bruh</governor>
+            <dependent idx="7">profile</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">have</governor>
+            <dependent idx="8">bruh</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">have</governor>
+            <dependent idx="4">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">bruh</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="8">bruh</governor>
+            <dependent idx="7">profile</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">have</governor>
+            <dependent idx="8">bruh</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

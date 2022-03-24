@@ -1,0 +1,66 @@
+Document: ID=6BC5D99E.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+US Bobsled team renames their sled ‘Biden’ because nothing has taken America downhill faster
+
+Tokens:
+[Text=US CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=Bobsled CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Bobsled NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=renames CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=rename NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=sled CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=sled NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=’ CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=downhill CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=downhill NamedEntityTag=O]
+[Text=faster CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=RBR Lemma=faster NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML (NNP US) (NNP Bobsled))
+      (NN team))
+    (VP (VBZ renames)
+      (NP
+        (NP (PRP$ their) (NN sled))
+        (`` ‘)
+        (NP (NNP Biden))
+        ('' ’))
+      (SBAR (IN because)
+        (S
+          (NP (NN nothing))
+          (VP (VBZ has)
+            (VP (VBN taken)
+              (NP (NNP America))
+              (ADVP (RB downhill) (RBR faster)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, renames-4)
+compound(Bobsled-2, US-1)
+compound(team-3, Bobsled-2)
+nsubj(renames-4, team-3)
+nmod:poss(sled-6, their-5)
+obj(renames-4, sled-6)
+punct(sled-6, ‘-7)
+dep(sled-6, Biden-8)
+punct(sled-6, ’-9)
+mark(taken-13, because-10)
+nsubj(taken-13, nothing-11)
+aux(taken-13, has-12)
+advcl:because(renames-4, taken-13)
+obj(taken-13, America-14)
+advmod(faster-16, downhill-15)
+advmod(taken-13, faster-16)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.6611078025456547
+Biden	PERSON	PERSON:0.945166127465564
+America	COUNTRY	LOCATION:0.7890780410935608

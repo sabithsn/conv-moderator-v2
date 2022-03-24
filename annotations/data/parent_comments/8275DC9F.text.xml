@@ -1,0 +1,141 @@
+Document: ID=8275DC9F.text (2 sentences, 34 tokens)
+
+Sentence #1 (26 tokens):
+Stalin wanted to go to war with Germany from 1933-38, he specifically said they should fight instead of give up the Czechs.
+
+Tokens:
+[Text=Stalin CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Stalin NamedEntityTag=PERSON]
+[Text=wanted CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=with CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Germany CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Germany NamedEntityTag=COUNTRY]
+[Text=from CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=1933 CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=1933 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1933.0 - 38.0]
+[Text=- CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=HYPH Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=1933.0 - 38.0]
+[Text=38 CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=CD Lemma=38 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1933.0 - 38.0]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=specifically CharacterOffsetBegin=57 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=specifically NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=VB Lemma=fight NamedEntityTag=O]
+[Text=instead CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Czechs CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NNPS Lemma=Czechs NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Stalin))
+      (VP (VBD wanted)
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (PP (IN to)
+                (NP
+                  (NP (NN war))
+                  (PP (IN with)
+                    (NP (NNP Germany)))))
+              (PP (IN from)
+                (NP (CD 1933) (HYPH -) (CD 38))))))))
+    (, ,)
+    (NP (PRP he))
+    (ADVP (RB specifically))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (MD should)
+            (VP
+              (VP (VB fight))
+              (CONJP (RB instead) (IN of))
+              (VP (VB give)
+                (PRT (RP up))
+                (NP (DT the) (NNPS Czechs))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-16)
+nsubj(wanted-2, Stalin-1)
+nsubj:xsubj(go-4, Stalin-1)
+ccomp(said-16, wanted-2)
+mark(go-4, to-3)
+xcomp(wanted-2, go-4)
+case(war-6, to-5)
+obl:to(go-4, war-6)
+case(Germany-8, with-7)
+nmod:with(war-6, Germany-8)
+case(38-12, from-9)
+nummod(38-12, 1933-10)
+punct(38-12, --11)
+obl:from(go-4, 38-12)
+punct(said-16, ,-13)
+nsubj(said-16, he-14)
+advmod(said-16, specifically-15)
+nsubj(fight-19, they-17)
+nsubj(give-22, they-17)
+aux(fight-19, should-18)
+ccomp(said-16, fight-19)
+cc(give-22, instead-20)
+fixed(instead-20, of-21)
+ccomp(said-16, give-22)
+conj:negcc(fight-19, give-22)
+compound:prt(give-22, up-23)
+det(Czechs-25, the-24)
+obj(give-22, Czechs-25)
+punct(said-16, .-26)
+
+Extracted the following NER entity mentions:
+Stalin	PERSON	PERSON:0.9918834839185
+war	CAUSE_OF_DEATH	-
+Germany	COUNTRY	LOCATION:0.9936840066002817
+1933-38	NUMBER	NUMBER:-1.0
+Czechs	MISC	MISC:0.9934786156447748
+he	PERSON	-
+
+Sentence #2 (8 tokens):
+What is this liberal self-blowing?
+
+Tokens:
+[Text=What CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=liberal CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=IDEOLOGY]
+[Text=self CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=self NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=blowing CharacterOffsetBegin=150 CharacterOffsetEnd=157 PartOfSpeech=VBG Lemma=blow NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT this) (JJ liberal))
+        (ADJP (NN self) (HYPH -) (VBG blowing))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-1)
+cop(What-1, is-2)
+det(liberal-4, this-3)
+nsubj(What-1, liberal-4)
+obl(blowing-7, self-5)
+punct(blowing-7, --6)
+amod(liberal-4, blowing-7)
+punct(What-1, ?-8)
+
+Extracted the following NER entity mentions:
+liberal	IDEOLOGY	-

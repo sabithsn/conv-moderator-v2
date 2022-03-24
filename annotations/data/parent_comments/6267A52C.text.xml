@@ -1,0 +1,82 @@
+Document: ID=6267A52C.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Dear Americans of Reddit, how do you find this first year of Biden's presidency compared to Trump's?
+
+Tokens:
+[Text=Dear CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=dear NamedEntityTag=MISC]
+[Text=Americans CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Reddit CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Reddit NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y-#1 Timex=<TIMEX3 alt_value="THIS P1Y-#1" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this first year</TIMEX3>]
+[Text=first CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=first NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y-#1 Timex=<TIMEX3 alt_value="THIS P1Y-#1" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this first year</TIMEX3>]
+[Text=year CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y-#1 Timex=<TIMEX3 alt_value="THIS P1Y-#1" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this first year</TIMEX3>]
+[Text=of CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=presidency CharacterOffsetBegin=69 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=presidency NamedEntityTag=O]
+[Text=compared CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=VBN Lemma=compare NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (JJ Dear) (NNPS Americans))
+      (PP (IN of)
+        (NP (NNP Reddit))))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (VBP do)
+        (NP (PRP you))
+        (VP (VB find)
+          (NP
+            (NP (DT this) (JJ first) (NN year))
+            (PP (IN of)
+              (NP
+                (NP (NNP Biden) (POS 's))
+                (NN presidency))))
+          (PP (VBN compared)
+            (PP (IN to)
+              (NP (NNP Trump) (POS 's)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Americans-2)
+amod(Americans-2, Dear-1)
+case(Reddit-4, of-3)
+nmod:of(Americans-2, Reddit-4)
+punct(Americans-2, ,-5)
+advmod(find-9, how-6)
+aux(find-9, do-7)
+nsubj(find-9, you-8)
+dep(Americans-2, find-9)
+det(year-12, this-10)
+amod(year-12, first-11)
+obj(find-9, year-12)
+case(presidency-16, of-13)
+nmod:poss(presidency-16, Biden-14)
+case(Biden-14, 's-15)
+nmod:of(year-12, presidency-16)
+case(Trump-19, compared-17)
+fixed(compared-17, to-18)
+advcl:compared_to(find-9, Trump-19)
+case(Trump-19, 's-20)
+punct(Americans-2, ?-21)
+
+Extracted the following NER entity mentions:
+Dear Americans	MISC	MISC:0.8420020188734764
+Reddit	LOCATION	LOCATION:0.9643265976786782
+this first year	DATE	DATE:-1.0
+Biden	PERSON	PERSON:0.9926143772171822
+Trump	PERSON	PERSON:0.9021044374582179

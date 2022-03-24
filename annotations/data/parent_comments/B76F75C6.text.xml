@@ -1,0 +1,70 @@
+Document: ID=B76F75C6.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Meta’s Sheryl Sandberg: ‘No two countries run by women would ever go to war’
+
+Tokens:
+[Text=Meta CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Meta NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Sheryl CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Sheryl NamedEntityTag=PERSON]
+[Text=Sandberg CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Sandberg NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=No CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=countries CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=country NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=run NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=’ CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP (NNP Meta) (POS ’s))
+        (NNP Sheryl) (NNP Sandberg))
+      (: :)
+      (S
+        (NP
+          (NP (`` ‘) (DT No) (CD two) (NNS countries))
+          (VP (VBN run)
+            (PP (IN by)
+              (NP (NNS women)))))
+        (VP (MD would)
+          (ADVP (RB ever))
+          (VP (VB go)
+            (PP (IN to)
+              (NP (NN war) ('' ’)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sandberg-4)
+nmod:poss(Sandberg-4, Meta-1)
+case(Meta-1, ’s-2)
+compound(Sandberg-4, Sheryl-3)
+punct(Sandberg-4, :-5)
+punct(countries-9, ‘-6)
+det(countries-9, No-7)
+nummod(countries-9, two-8)
+nsubj(go-15, countries-9)
+acl(countries-9, run-10)
+case(women-12, by-11)
+obl:by(run-10, women-12)
+aux(go-15, would-13)
+advmod(go-15, ever-14)
+parataxis(Sandberg-4, go-15)
+case(war-17, to-16)
+obl:to(go-15, war-17)
+punct(war-17, ’-18)
+
+Extracted the following NER entity mentions:
+Sheryl Sandberg	PERSON	PERSON:0.9969654620560217
+two	NUMBER	NUMBER:-1.0
+war	CAUSE_OF_DEATH	-

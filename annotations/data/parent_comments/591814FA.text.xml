@@ -1,0 +1,87 @@
+Document: ID=591814FA.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+EXCLUSIVE VIDEO – Freedom Convoy Supporter: 'Our Kids Will Have No Freedoms' if 'We Don't Fight' for Them Now
+
+Tokens:
+[Text=EXCLUSIVE CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=exclusive NamedEntityTag=O]
+[Text=VIDEO CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=video NamedEntityTag=O]
+[Text=– CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=: Lemma=– NamedEntityTag=O]
+[Text=Freedom CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Freedom NamedEntityTag=O]
+[Text=Convoy CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Convoy NamedEntityTag=O]
+[Text=Supporter CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Supporter NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=Our CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=Kids CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=kid NamedEntityTag=MISC]
+[Text=Will CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=MD Lemma=will NamedEntityTag=MISC]
+[Text=Have CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=have NamedEntityTag=MISC]
+[Text=No CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=no NamedEntityTag=MISC]
+[Text=Freedoms CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Freedoms NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Fight CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=fight NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Them CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=Now CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (JJ EXCLUSIVE) (NN VIDEO))
+    (: –)
+    (NP
+      (NP (NNP Freedom) (NNP Convoy) (NNP Supporter))
+      (: :)
+      (S (`` ')
+        (NP (PRP$ Our) (NNS Kids))
+        (VP (MD Will)
+          (VP (VB Have)
+            (NP
+              (NP (DT No)
+                (NML (NNP Freedoms) (POS ')))
+              (SBAR (IN if) (`` ')
+                (S
+                  (NP (PRP We))
+                  (VP (VBP Do) (RB n't)
+                    (VP (VB Fight) ('' ')
+                      (PP (IN for)
+                        (NP (PRP Them))))))))
+            (ADVP (RB Now))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, VIDEO-2)
+amod(VIDEO-2, EXCLUSIVE-1)
+punct(VIDEO-2, –-3)
+compound(Supporter-6, Freedom-4)
+compound(Supporter-6, Convoy-5)
+dep(VIDEO-2, Supporter-6)
+punct(Supporter-6, :-7)
+punct(Have-12, '-8)
+nmod:poss(Kids-10, Our-9)
+nsubj(Have-12, Kids-10)
+aux(Have-12, Will-11)
+parataxis(Supporter-6, Have-12)
+det(Freedoms-14, No-13)
+obj(Have-12, Freedoms-14)
+case(Freedoms-14, '-15)
+mark(Fight-21, if-16)
+punct(Fight-21, '-17)
+nsubj(Fight-21, We-18)
+aux(Fight-21, Do-19)
+advmod(Fight-21, n't-20)
+acl:relcl(Freedoms-14, Fight-21)
+punct(Fight-21, '-22)
+case(Them-24, for-23)
+obl:for(Fight-21, Them-24)
+advmod(Have-12, Now-25)
+
+Extracted the following NER entity mentions:
+Kids Will Have No Freedoms	MISC	MISC:0.9957703709759212
+Now	DATE	DATE:-1.0

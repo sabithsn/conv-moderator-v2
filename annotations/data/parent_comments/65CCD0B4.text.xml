@@ -1,0 +1,104 @@
+Document: ID=65CCD0B4.text (2 sentences, 24 tokens)
+
+Sentence #1 (12 tokens):
+I’ll clarify: Someone WHITE that is saying something racist.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’ll CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=MD Lemma=’ll NamedEntityTag=O]
+[Text=clarify CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=clarify NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Someone CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=WHITE CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=43 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD ’ll)
+      (VP (VB clarify) (: :)
+        (NP
+          (NP (NN Someone) (JJ WHITE))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (VP (VBG saying)
+                  (NP (NN something) (JJ racist)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, clarify-3)
+nsubj(clarify-3, I-1)
+aux(clarify-3, ’ll-2)
+punct(clarify-3, :-4)
+obj(clarify-3, Someone-5)
+nsubj(saying-9, Someone-5)
+amod(Someone-5, WHITE-6)
+ref(Someone-5, that-7)
+aux(saying-9, is-8)
+acl:relcl(Someone-5, saying-9)
+obj(saying-9, something-10)
+amod(something-10, racist-11)
+punct(clarify-3, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+It’s okay if it’s a non white being racist.
+
+Tokens:
+[Text=It CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=okay CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=okay NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=non CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=FW Lemma=non NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=racist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (ADJP (JJ okay))
+      (SBAR (IN if)
+        (S
+          (NP (PRP it))
+          (VP (VBZ ’s)
+            (S
+              (NP (DT a) (FW non))
+              (ADJP (JJ white))
+              (S
+                (VP (VBG being)
+                  (NP (NN racist)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, okay-3)
+nsubj(okay-3, It-1)
+cop(okay-3, ’s-2)
+mark(’s-6, if-4)
+nsubj(’s-6, it-5)
+advcl:if(okay-3, ’s-6)
+det(non-8, a-7)
+nsubj(racist-11, non-8)
+dep(racist-11, white-9)
+cop(racist-11, being-10)
+xcomp(’s-6, racist-11)
+punct(okay-3, .-12)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,58 @@
+Document: ID=E3BA7D30.text (2 sentences, 10 tokens)
+
+Sentence #1 (8 tokens):
+The real reason China is so angry.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=angry CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=angry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ real) (NN reason))
+      (NP (NNP China)))
+    (VP (VBZ is)
+      (ADJP (RB so) (JJ angry)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, angry-7)
+det(reason-3, The-1)
+amod(reason-3, real-2)
+nsubj(angry-7, reason-3)
+appos(reason-3, China-4)
+cop(angry-7, is-5)
+advmod(angry-7, so-6)
+punct(angry-7, .-8)
+
+Extracted the following NER entity mentions:
+China	COUNTRY	LOCATION:0.9849727065523771
+
+Sentence #2 (2 tokens):
+Confirmed!
+
+Tokens:
+[Text=Confirmed CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=confirm NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (VP (VBN Confirmed))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Confirmed-1)
+punct(Confirmed-1, !-2)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,74 @@
+Document: ID=9F630435.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+ELI5: What makes WhatsApp so uncommon in the U.S. as opposed to the rest of the world?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=WhatsApp CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=WhatsApp NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=uncommon CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=uncommon NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=as CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=opposed CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=VBN Lemma=oppose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHNP (WP What))
+      (SQ
+        (VP (VBZ makes)
+          (S
+            (NP (NNP WhatsApp))
+            (ADJP (RB so) (JJ uncommon)
+              (PP (IN in)
+                (NP (DT the) (NNP U.S.))))
+            (SBAR (IN as)
+              (S
+                (VP (VBN opposed)
+                  (PP (IN to)
+                    (NP
+                      (NP (DT the) (NN rest))
+                      (PP (IN of)
+                        (NP (DT the) (NN world))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+nsubj(makes-4, What-3)
+parataxis(ELI5-1, makes-4)
+nsubj(opposed-12, WhatsApp-5)
+advmod(uncommon-7, so-6)
+dep(opposed-12, uncommon-7)
+case(U.S.-10, in-8)
+det(U.S.-10, the-9)
+obl:in(uncommon-7, U.S.-10)
+mark(opposed-12, as-11)
+xcomp(makes-4, opposed-12)
+case(rest-15, to-13)
+det(rest-15, the-14)
+obl:to(opposed-12, rest-15)
+case(world-18, of-16)
+det(world-18, the-17)
+nmod:of(rest-15, world-18)
+punct(ELI5-1, ?-19)
+
+Extracted the following NER entity mentions:
+U.S.	COUNTRY	LOCATION:0.9988406951817801

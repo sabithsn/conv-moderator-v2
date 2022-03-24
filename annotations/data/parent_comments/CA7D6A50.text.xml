@@ -1,0 +1,56 @@
+Document: ID=CA7D6A50.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Oklahoma is advancing a bill that would criminalize school librarians over LGBTQ books
+
+Tokens:
+[Text=Oklahoma CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Oklahoma NamedEntityTag=STATE_OR_PROVINCE]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=advancing CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=VBG Lemma=advance NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=criminalize CharacterOffsetBegin=40 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=criminalize NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=librarians CharacterOffsetBegin=59 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=librarian NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=LGBTQ CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=lgbtq NamedEntityTag=O]
+[Text=books CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=book NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Oklahoma))
+    (VP (VBZ is)
+      (VP (VBG advancing)
+        (NP
+          (NP (DT a) (NN bill))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD would)
+                (VP (VB criminalize)
+                  (NP (NN school) (NNS librarians))
+                  (PP (IN over)
+                    (NP (NN LGBTQ) (NNS books))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, advancing-3)
+nsubj(advancing-3, Oklahoma-1)
+aux(advancing-3, is-2)
+det(bill-5, a-4)
+obj(advancing-3, bill-5)
+nsubj(criminalize-8, bill-5)
+ref(bill-5, that-6)
+aux(criminalize-8, would-7)
+acl:relcl(bill-5, criminalize-8)
+compound(librarians-10, school-9)
+obj(criminalize-8, librarians-10)
+case(books-13, over-11)
+compound(books-13, LGBTQ-12)
+obl:over(criminalize-8, books-13)
+
+Extracted the following NER entity mentions:
+Oklahoma	STATE_OR_PROVINCE	LOCATION:0.9860699118786895

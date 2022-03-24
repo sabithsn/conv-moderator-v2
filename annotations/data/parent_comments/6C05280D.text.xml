@@ -1,0 +1,54 @@
+Document: ID=6C05280D.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Quebec diner drops word ‘poutine’ over dish sharing name with Russian president
+
+Tokens:
+[Text=Quebec CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Quebec NamedEntityTag=STATE_OR_PROVINCE]
+[Text=diner CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=diner NamedEntityTag=O]
+[Text=drops CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=drop NamedEntityTag=O]
+[Text=word CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=word NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=poutine CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=poutine NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=dish CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=dish NamedEntityTag=O]
+[Text=sharing CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=sharing NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=president CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Quebec) (NN diner))
+    (VP (VBZ drops)
+      (NP
+        (NP (NN word) (`` ‘) (NN poutine) ('' ’))
+        (PP (IN over)
+          (NP (NN dish) (NN sharing) (NN name))))
+      (PP (IN with)
+        (NP (JJ Russian) (NN president))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, drops-3)
+compound(diner-2, Quebec-1)
+nsubj(drops-3, diner-2)
+compound(poutine-6, word-4)
+punct(poutine-6, ‘-5)
+obj(drops-3, poutine-6)
+punct(poutine-6, ’-7)
+case(name-11, over-8)
+compound(name-11, dish-9)
+compound(name-11, sharing-10)
+nmod:over(poutine-6, name-11)
+case(president-14, with-12)
+amod(president-14, Russian-13)
+obl:with(drops-3, president-14)
+
+Extracted the following NER entity mentions:
+Quebec	STATE_OR_PROVINCE	-
+Russian	NATIONALITY	MISC:0.9999987636419942
+president	TITLE	-

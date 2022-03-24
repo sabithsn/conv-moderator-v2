@@ -1,0 +1,49 @@
+Document: ID=436B71AA.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Convoy For Freedom 2022 breaks world record in first hour!
+
+Tokens:
+[Text=Convoy CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Convoy NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Freedom CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Freedom NamedEntityTag=O]
+[Text=2022 CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=2022 NamedEntityTag=DATE NormalizedNamedEntityTag=2022]
+[Text=breaks CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=break NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=first NamedEntityTag=DATE NormalizedNamedEntityTag=PT1H-#1 Timex=<TIMEX3 alt_value="PT1H-#1" tid="t1" type="DATE">first hour</TIMEX3>]
+[Text=hour CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=hour NamedEntityTag=DATE NormalizedNamedEntityTag=PT1H-#1 Timex=<TIMEX3 alt_value="PT1H-#1" tid="t1" type="DATE">first hour</TIMEX3>]
+[Text=! CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Convoy))
+    (PP (IN For)
+      (NP
+        (NML
+          (NML (NNP Freedom) (CD 2022))
+          (NNS breaks))
+        (NN world) (NN record)))
+    (PP (IN in)
+      (NP (JJ first) (NN hour)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Convoy-1)
+case(record-7, For-2)
+compound(breaks-5, Freedom-3)
+nummod(Freedom-3, 2022-4)
+compound(record-7, breaks-5)
+compound(record-7, world-6)
+obl:for(Convoy-1, record-7)
+case(hour-10, in-8)
+amod(hour-10, first-9)
+obl:in(Convoy-1, hour-10)
+punct(Convoy-1, !-11)
+
+Extracted the following NER entity mentions:
+2022	DATE	DATE:0.6500734300297362
+first hour	DATE	DATE:-1.0

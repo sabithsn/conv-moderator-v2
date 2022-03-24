@@ -1,0 +1,41 @@
+Document: ID=D4DD8484.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+CONFIRMED: bioweapons were being developed in Ukraine
+
+Tokens:
+[Text=CONFIRMED CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=VBN Lemma=confirm NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=bioweapons CharacterOffsetBegin=11 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=bioweapon NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=developed CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=VBN Lemma=develop NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN CONFIRMED)))
+    (: :)
+    (NP (NNS bioweapons))
+    (VP (VBD were)
+      (VP (VBG being)
+        (VP (VBN developed)
+          (PP (IN in)
+            (NP (NNP Ukraine))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, developed-6)
+dep(developed-6, CONFIRMED-1)
+punct(developed-6, :-2)
+nsubj:pass(developed-6, bioweapons-3)
+aux(developed-6, were-4)
+aux:pass(developed-6, being-5)
+case(Ukraine-8, in-7)
+obl:in(developed-6, Ukraine-8)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9952390254881895

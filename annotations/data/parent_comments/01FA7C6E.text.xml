@@ -1,0 +1,100 @@
+Document: ID=01FA7C6E.text (1 sentences, 27 tokens)
+
+Sentence #1 (27 tokens):
+We literally passed the last stimulus despite economists on both sides saying it was unnecessary, just so Biden could actually deliver something during his presidency.
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=3 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=passed CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=pass NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=stimulus CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=stimulus NamedEntityTag=O]
+[Text=despite CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=despite NamedEntityTag=O]
+[Text=economists CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=economist NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=sides CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=side NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=unnecessary CharacterOffsetBegin=85 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=unnecessary NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=could CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=deliver CharacterOffsetBegin=127 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=deliver NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=135 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=145 CharacterOffsetEnd=151 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=presidency CharacterOffsetBegin=156 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=presidency NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB literally))
+    (VP (VBD passed)
+      (NP (DT the) (JJ last) (NN stimulus))
+      (PP (IN despite)
+        (NP
+          (NP (NNS economists))
+          (PP (IN on)
+            (NP (DT both) (NNS sides)))))
+      (S
+        (VP (VBG saying)
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (ADJP (JJ unnecessary)))))))
+      (, ,)
+      (ADVP
+        (ADVP (RB just) (RB so))
+        (SBAR
+          (S
+            (NP (NNP Biden))
+            (VP (MD could)
+              (ADVP (RB actually))
+              (VP (VB deliver)
+                (NP (NN something))
+                (PP (IN during)
+                  (NP (PRP$ his) (NN presidency)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, passed-3)
+nsubj(passed-3, We-1)
+advmod(passed-3, literally-2)
+det(stimulus-6, the-4)
+amod(stimulus-6, last-5)
+obj(passed-3, stimulus-6)
+case(economists-8, despite-7)
+obl:despite(passed-3, economists-8)
+case(sides-11, on-9)
+det(sides-11, both-10)
+nmod:on(economists-8, sides-11)
+xcomp(passed-3, saying-12)
+nsubj(unnecessary-15, it-13)
+cop(unnecessary-15, was-14)
+ccomp(saying-12, unnecessary-15)
+punct(passed-3, ,-16)
+advmod(so-18, just-17)
+advmod(passed-3, so-18)
+nsubj(deliver-22, Biden-19)
+aux(deliver-22, could-20)
+advmod(deliver-22, actually-21)
+advcl(so-18, deliver-22)
+obj(deliver-22, something-23)
+case(presidency-26, during-24)
+nmod:poss(presidency-26, his-25)
+obl:during(deliver-22, presidency-26)
+punct(passed-3, .-27)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9967688137669759
+his	PERSON	-

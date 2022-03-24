@@ -1,0 +1,83 @@
+Document: ID=AE1B3868.text (2 sentences, 18 tokens)
+
+Sentence #1 (5 tokens):
+What is a woman?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT a) (NN woman)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-1)
+cop(What-1, is-2)
+det(woman-4, a-3)
+nsubj(What-1, woman-4)
+punct(What-1, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+': Controversy after Dr. Phil puts non-binary guests against conservative Matt Walsh
+
+Tokens:
+[Text=' CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Controversy CharacterOffsetBegin=19 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=controversy NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Dr. CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Phil CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Phil NamedEntityTag=PERSON]
+[Text=puts CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=put NamedEntityTag=O]
+[Text=non-binary CharacterOffsetBegin=51 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=non-binary NamedEntityTag=O]
+[Text=guests CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=guest NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=77 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=Matt CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Matt NamedEntityTag=PERSON]
+[Text=Walsh CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Walsh NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (S (`` ')
+      (NP
+        (LST (: :))
+        (NP (NN Controversy)))
+      (PP (IN after)
+        (NP (NNP Dr.) (NNP Phil)))
+      (VP (VBZ puts)
+        (NP
+          (NP (JJ non-binary) (NNS guests))
+          (PP (IN against)
+            (NP (JJ conservative) (NNP Matt) (NNP Walsh))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, puts-7)
+punct(puts-7, '-1)
+dep(Controversy-3, :-2)
+nsubj(puts-7, Controversy-3)
+case(Phil-6, after-4)
+compound(Phil-6, Dr.-5)
+obl:after(puts-7, Phil-6)
+amod(guests-9, non-binary-8)
+obj(puts-7, guests-9)
+case(Walsh-13, against-10)
+amod(Walsh-13, conservative-11)
+compound(Walsh-13, Matt-12)
+nmod:against(guests-9, Walsh-13)
+
+Extracted the following NER entity mentions:
+Phil	PERSON	PERSON:0.9997902070225233
+conservative	IDEOLOGY	-
+Matt Walsh	PERSON	PERSON:0.9998853715178916

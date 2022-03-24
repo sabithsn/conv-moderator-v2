@@ -1,0 +1,83 @@
+Document: ID=5C841FC9.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+ESPN Analyst Says ‘Who Are We to Criticize’ China’s Uyghur Genocide When Red States Violate ‘Voting Rights’
+
+Tokens:
+[Text=ESPN CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ESPN NamedEntityTag=ORGANIZATION]
+[Text=Analyst CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Analyst NamedEntityTag=TITLE]
+[Text=Says CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Who CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Criticize CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=criticize NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=’s CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Uyghur CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=uyghur NamedEntityTag=O]
+[Text=Genocide CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=genocide NamedEntityTag=CRIMINAL_CHARGE]
+[Text=When CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Red CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Red NamedEntityTag=O]
+[Text=States CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=States NamedEntityTag=O]
+[Text=Violate CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=violate NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Voting CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Voting NamedEntityTag=O]
+[Text=Rights CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNPS Lemma=Rights NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP ESPN) (NNP Analyst))
+    (VP (VBZ Says) (`` ‘)
+      (SBARQ
+        (WHNP (WP Who))
+        (SQ (VBP Are)
+          (NP (PRP We))
+          (S
+            (VP (TO to)
+              (VP (VB Criticize) ('' ’)
+                (NP
+                  (NP (NNP China) (POS ’s))
+                  (JJ Uyghur) (NN Genocide))
+                (SBAR
+                  (WHADVP (WRB When))
+                  (S
+                    (NP (NNP Red) (NNP States))
+                    (VP (VB Violate) (`` ‘)
+                      (NP
+                        (NML (NNP Voting))
+                        (NML (NNPS Rights) (POS ’))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Says-3)
+compound(Analyst-2, ESPN-1)
+nsubj(Says-3, Analyst-2)
+punct(Says-3, ‘-4)
+ccomp(Says-3, Who-5)
+cop(Who-5, Are-6)
+nsubj(Who-5, We-7)
+mark(Criticize-9, to-8)
+advcl:to(Who-5, Criticize-9)
+punct(Criticize-9, ’-10)
+nmod:poss(Genocide-14, China-11)
+case(China-11, ’s-12)
+amod(Genocide-14, Uyghur-13)
+obj(Criticize-9, Genocide-14)
+advmod(Violate-18, When-15)
+compound(States-17, Red-16)
+nsubj(Violate-18, States-17)
+advcl(Criticize-9, Violate-18)
+punct(Violate-18, ‘-19)
+dep(Rights-21, Voting-20)
+obj(Violate-18, Rights-21)
+case(Rights-21, ’-22)
+
+Extracted the following NER entity mentions:
+ESPN	ORGANIZATION	ORGANIZATION:0.964488889978087
+Analyst	TITLE	-
+China	COUNTRY	LOCATION:0.9808924193291256
+Genocide	CRIMINAL_CHARGE	-

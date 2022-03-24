@@ -1,0 +1,75 @@
+Document: ID=9710D4CE.text (2 sentences, 16 tokens)
+
+Sentence #1 (9 tokens):
+Eli5 is there a new moon every month?
+
+Tokens:
+[Text=Eli5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=moon CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=moon NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1M" quant="every" tid="t1" type="SET" value="P1M">every month</TIMEX3>]
+[Text=month CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=month NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1M" quant="every" tid="t1" type="SET" value="P1M">every month</TIMEX3>]
+[Text=? CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (NP (NN Eli5))
+    (VBZ is)
+    (NP (EX there))
+    (NP
+      (NP (DT a) (JJ new) (NN moon))
+      (NP-TMP (DT every) (NN month)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+dep(is-2, Eli5-1)
+expl(is-2, there-3)
+det(moon-6, a-4)
+amod(moon-6, new-5)
+nsubj(is-2, moon-6)
+det(month-8, every-7)
+obl:tmod(moon-6, month-8)
+punct(is-2, ?-9)
+
+Extracted the following NER entity mentions:
+every month	SET	SET:-1.0
+
+Sentence #2 (7 tokens):
+Where does the old on go?
+
+Tokens:
+[Text=Where CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=on NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ does)
+      (NP (DT the) (JJ old))
+      (ADVP (RB on))
+      (VP (VB go)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-6)
+advmod(go-6, Where-1)
+aux(go-6, does-2)
+det(old-4, the-3)
+nsubj(go-6, old-4)
+advmod(go-6, on-5)
+punct(go-6, ?-7)
+
+Extracted the following NER entity mentions:

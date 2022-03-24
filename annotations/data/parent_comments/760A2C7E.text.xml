@@ -1,0 +1,63 @@
+Document: ID=760A2C7E.text (2 sentences, 13 tokens)
+
+Sentence #1 (10 tokens):
+My solution towards ending the [redaced] comments.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=solution CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=solution NamedEntityTag=O]
+[Text=towards CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=towards NamedEntityTag=O]
+[Text=ending CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=end NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=[ CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=-LRB- Lemma=[ NamedEntityTag=O]
+[Text=redaced CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=redaced NamedEntityTag=O]
+[Text=] CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=-RRB- Lemma=] NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (PRP$ My) (NN solution))
+    (PP (IN towards)
+      (S
+        (VP (VBG ending)
+          (S
+            (NP (DT the) (-LRB- [) (JJ redaced) (-RRB- ]) (NNS comments))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, solution-2)
+nmod:poss(solution-2, My-1)
+mark(ending-4, towards-3)
+acl:towards(solution-2, ending-4)
+det(comments-9, the-5)
+punct(comments-9, [-6)
+amod(comments-9, redaced-7)
+punct(comments-9, ]-8)
+xcomp(ending-4, comments-9)
+punct(solution-2, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Merry Christmas!
+
+Tokens:
+[Text=Merry CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Merry NamedEntityTag=O]
+[Text=Christmas CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Christmas NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-12-25">Christmas</TIMEX3>]
+[Text=! CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Merry) (NNP Christmas) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Christmas-2)
+compound(Christmas-2, Merry-1)
+punct(Christmas-2, !-3)
+
+Extracted the following NER entity mentions:
+Christmas	DATE	DATE:-1.0

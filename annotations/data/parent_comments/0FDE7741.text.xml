@@ -1,0 +1,58 @@
+Document: ID=0FDE7741.text (2 sentences, 10 tokens)
+
+Sentence #1 (8 tokens):
+More then a crowd at this point.
+
+Tokens:
+[Text=More CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=crowd CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=crowd NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJR More))
+    (ADVP (RB then)
+      (NP (DT a) (NN crowd))
+      (PP (IN at)
+        (NP (DT this) (NN point))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, More-1)
+advmod(More-1, then-2)
+det(crowd-4, a-3)
+obl:npmod(then-2, crowd-4)
+case(point-7, at-5)
+det(point-7, this-6)
+obl:at(then-2, point-7)
+punct(More-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+Warren 2024
+
+Tokens:
+[Text=Warren CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Warren NamedEntityTag=O]
+[Text=2024 CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">2024</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Warren))
+    (NP-TMP (CD 2024))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Warren-1)
+obl:tmod(Warren-1, 2024-2)
+
+Extracted the following NER entity mentions:
+2024	DATE	DATE:0.5784637709654397

@@ -1,0 +1,103 @@
+Document: ID=9C1FDABE.text (2 sentences, 24 tokens)
+
+Sentence #1 (7 tokens):
+Mask mandate ended in my area.
+
+Tokens:
+[Text=Mask CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=mandate CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=mandate NamedEntityTag=O]
+[Text=ended CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBN Lemma=end NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=area CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=area NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Mask) (NN mandate))
+    (VP (VBN ended)
+      (PP (IN in)
+        (NP (PRP$ my) (NN area))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ended-3)
+compound(mandate-2, Mask-1)
+nsubj(ended-3, mandate-2)
+case(area-6, in-4)
+nmod:poss(area-6, my-5)
+obl:in(ended-3, area-6)
+punct(ended-3, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+I just wanna continue wearing masks (I really like em) without being bothered.
+
+Tokens:
+[Text=I CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=wan CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VBP Lemma=wan NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=continue CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=wearing CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=wear NamedEntityTag=O]
+[Text=masks CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=mask NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=em CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=em NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=bothered CharacterOffsetBegin=100 CharacterOffsetEnd=108 PartOfSpeech=VBN Lemma=bother NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP wan)
+      (S
+        (VP (TO na)
+          (VP (VB continue)
+            (NP
+              (NP (VBG wearing) (NNS masks))
+              (-LRB- -LRB-)
+              (S
+                (NP (PRP I))
+                (ADVP (RB really))
+                (VP (VBP like)
+                  (NP (PRP em))))
+              (-RRB- -RRB-))
+            (PP (IN without)
+              (S
+                (VP (VBG being)
+                  (VP (VBN bothered)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wan-3)
+nsubj(wan-3, I-1)
+nsubj:xsubj(continue-5, I-1)
+advmod(wan-3, just-2)
+mark(continue-5, na-4)
+xcomp(wan-3, continue-5)
+amod(masks-7, wearing-6)
+obj(continue-5, masks-7)
+punct(masks-7, (-8)
+nsubj(like-11, I-9)
+advmod(like-11, really-10)
+dep(masks-7, like-11)
+obj(like-11, em-12)
+punct(masks-7, )-13)
+mark(bothered-16, without-14)
+aux:pass(bothered-16, being-15)
+advcl:without(continue-5, bothered-16)
+punct(wan-3, .-17)
+
+Extracted the following NER entity mentions:

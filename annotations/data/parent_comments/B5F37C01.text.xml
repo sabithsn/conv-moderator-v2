@@ -1,0 +1,81 @@
+Document: ID=B5F37C01.text (2 sentences, 17 tokens)
+
+Sentence #1 (10 tokens):
+Religious people tend to like killing the non religious.
+
+Tokens:
+[Text=Religious CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=religious NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=tend CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=tend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=killing CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=kill NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=non CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=FW Lemma=non NamedEntityTag=IDEOLOGY]
+[Text=religious CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=religious NamedEntityTag=IDEOLOGY]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Religious) (NNS people))
+    (VP (VBP tend)
+      (S
+        (VP (TO to)
+          (VP (VB like)
+            (S
+              (VP (VBG killing)
+                (S
+                  (NP (DT the) (FW non))
+                  (ADJP (JJ religious)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tend-3)
+amod(people-2, Religious-1)
+nsubj(tend-3, people-2)
+nsubj:xsubj(like-5, people-2)
+mark(like-5, to-4)
+xcomp(tend-3, like-5)
+xcomp(like-5, killing-6)
+det(non-8, the-7)
+nsubj(religious-9, non-8)
+xcomp(killing-6, religious-9)
+punct(tend-3, .-10)
+
+Extracted the following NER entity mentions:
+non religious	IDEOLOGY	-
+
+Sentence #2 (7 tokens):
+Thats a pretty strong evolutionary pressure.
+
+Tokens:
+[Text=Thats CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=thats NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=strong CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=strong NamedEntityTag=O]
+[Text=evolutionary CharacterOffsetBegin=79 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=evolutionary NamedEntityTag=O]
+[Text=pressure CharacterOffsetBegin=92 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=pressure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Thats))
+    (NP (DT a)
+      (ADJP (RB pretty) (JJ strong) (JJ evolutionary))
+      (NN pressure))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pressure-6)
+dep(pressure-6, Thats-1)
+det(pressure-6, a-2)
+advmod(evolutionary-5, pretty-3)
+advmod(evolutionary-5, strong-4)
+amod(pressure-6, evolutionary-5)
+punct(pressure-6, .-7)
+
+Extracted the following NER entity mentions:

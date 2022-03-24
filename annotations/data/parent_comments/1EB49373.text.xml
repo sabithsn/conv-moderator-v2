@@ -1,0 +1,102 @@
+Document: ID=1EB49373.text (1 sentences, 28 tokens)
+
+Sentence #1 (28 tokens):
+Trump jokes US should 'put the Chinese flag' on F-22 fighter jets and 'bomb the s---' out of Russia: report
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=jokes CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=joke NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=should CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chinese CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=chinese NamedEntityTag=NATIONALITY]
+[Text=flag CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=flag NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=F CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=F NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=HYPH Lemma=- NamedEntityTag=MISC]
+[Text=22 CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=22 NamedEntityTag=MISC]
+[Text=fighter CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=fighter NamedEntityTag=O]
+[Text=jets CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=jet NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=bomb CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=bomb NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=s NamedEntityTag=O]
+[Text=--- CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=: Lemma=--- NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=: CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Trump))
+      (VP (VBZ jokes)
+        (S
+          (NP (NNP US))
+          (VP (MD should)
+            (VP
+              (VP (`` ') (VB put)
+                (NP (DT the) (JJ Chinese) (NN flag))
+                ('' ')
+                (PP (IN on)
+                  (NP
+                    (NML (NNP F) (HYPH -) (NNP 22))
+                    (NN fighter) (NNS jets))))
+              (CC and)
+              (`` ')
+              (VP (VB bomb)
+                (NP (DT the) (NN s)))))
+          (: ---) ('' '))
+        (ADVP (IN out)
+          (PP (IN of)
+            (NP (NNP Russia))))))
+    (: :)
+    (NP (NN report))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, report-28)
+nsubj(jokes-2, Trump-1)
+dep(report-28, jokes-2)
+nsubj(put-6, US-3)
+nsubj(bomb-19, US-3)
+aux(put-6, should-4)
+punct(put-6, '-5)
+ccomp(jokes-2, put-6)
+det(flag-9, the-7)
+amod(flag-9, Chinese-8)
+obj(put-6, flag-9)
+punct(put-6, '-10)
+case(jets-16, on-11)
+compound(22-14, F-12)
+punct(22-14, --13)
+compound(jets-16, 22-14)
+compound(jets-16, fighter-15)
+obl:on(put-6, jets-16)
+cc(bomb-19, and-17)
+punct(put-6, '-18)
+ccomp(jokes-2, bomb-19)
+conj:and(put-6, bomb-19)
+det(s-21, the-20)
+obj(bomb-19, s-21)
+punct(put-6, ----22)
+punct(put-6, '-23)
+case(Russia-26, out-24)
+fixed(out-24, of-25)
+obl:out_of(jokes-2, Russia-26)
+punct(report-28, :-27)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.6127510627688525
+US	COUNTRY	LOCATION:0.9753546053235441
+Chinese	NATIONALITY	MISC:0.9999987675181706
+F-22	MISC	MISC:0.9898798013271974
+Russia	COUNTRY	LOCATION:0.9925308278404043

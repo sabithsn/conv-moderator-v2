@@ -1,0 +1,59 @@
+Document: ID=6CBF6BCE.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+UPenn Officials Reportedly Ignore Complaints About Lia Thomas’ Nudity in Women’s Locker Room
+
+Tokens:
+[Text=UPenn CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=UPenn NamedEntityTag=O]
+[Text=Officials CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=NNPS Lemma=Officials NamedEntityTag=O]
+[Text=Reportedly CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=reportedly NamedEntityTag=O]
+[Text=Ignore CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=VBP Lemma=ignore NamedEntityTag=O]
+[Text=Complaints CharacterOffsetBegin=34 CharacterOffsetEnd=44 PartOfSpeech=NNPS Lemma=Complaints NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=Lia CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Lia NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=’ CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=Nudity CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=nudity NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Women CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Women NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Locker CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Locker NamedEntityTag=O]
+[Text=Room CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Room NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP UPenn) (NNPS Officials))
+    (ADVP (RB Reportedly))
+    (VP (VBP Ignore)
+      (S
+        (NP (NNPS Complaints))
+        (NP
+          (NP (RB About)
+            (NP (NNP Lia) (NNP Thomas) (POS ’))
+            (NN Nudity))
+          (PP (IN in)
+            (NP
+              (NP (NNP Women) (POS ’s))
+              (NNP Locker) (NNP Room))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ignore-4)
+compound(Officials-2, UPenn-1)
+nsubj(Ignore-4, Officials-2)
+advmod(Ignore-4, Reportedly-3)
+nsubj(Nudity-10, Complaints-5)
+advmod(Nudity-10, About-6)
+compound(Thomas-8, Lia-7)
+nmod:poss(Nudity-10, Thomas-8)
+case(Thomas-8, ’-9)
+xcomp(Ignore-4, Nudity-10)
+case(Room-15, in-11)
+nmod:poss(Room-15, Women-12)
+case(Women-12, ’s-13)
+compound(Room-15, Locker-14)
+nmod:in(Nudity-10, Room-15)
+
+Extracted the following NER entity mentions:
+Lia Thomas	PERSON	PERSON:0.9932803656632262

@@ -1,0 +1,169 @@
+Document: ID=E8649A3A.text (3 sentences, 43 tokens)
+
+Sentence #1 (13 tokens):
+It’s like the whole “all squares are rectangles” thing.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=squares CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=square NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=rectangles CharacterOffsetBegin=37 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=rectangle NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (PP (IN like)
+        (NP (DT the) (JJ whole)
+          (NML
+            (S (`` “)
+              (NP (DT all) (NNS squares))
+              (VP (VBP are)
+                (NP (NNS rectangles)))
+              ('' ”)))
+          (NN thing))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thing-12)
+nsubj(thing-12, It-1)
+cop(thing-12, ’s-2)
+case(thing-12, like-3)
+det(thing-12, the-4)
+amod(thing-12, whole-5)
+punct(rectangles-10, “-6)
+det(squares-8, all-7)
+nsubj(rectangles-10, squares-8)
+cop(rectangles-10, are-9)
+compound(thing-12, rectangles-10)
+punct(rectangles-10, ”-11)
+punct(thing-12, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+All nudibranchs are sea slugs but not all sea slugs are nudibranchs.
+
+Tokens:
+[Text=All CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=nudibranchs CharacterOffsetBegin=60 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=nudibranch NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sea CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=slugs CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=slug NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=sea CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=slugs CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NNS Lemma=slug NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=nudibranchs CharacterOffsetBegin=112 CharacterOffsetEnd=123 PartOfSpeech=NNS Lemma=nudibranch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT All) (NNS nudibranchs))
+      (VP (VBP are)
+        (NP (NN sea) (NNS slugs))))
+    (CONJP (CC but)
+      (RB not))
+    (S
+      (NP (DT all) (NN sea) (NNS slugs))
+      (VP (VBP are)
+        (NP (NNS nudibranchs))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, slugs-5)
+det(nudibranchs-2, All-1)
+nsubj(slugs-5, nudibranchs-2)
+cop(slugs-5, are-3)
+compound(slugs-5, sea-4)
+cc(not-7, but-6)
+cc(nudibranchs-12, not-7)
+det(slugs-10, all-8)
+compound(slugs-10, sea-9)
+nsubj(nudibranchs-12, slugs-10)
+cop(nudibranchs-12, are-11)
+conj:negcc(slugs-5, nudibranchs-12)
+punct(slugs-5, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (17 tokens):
+And all sea slugs are slugs, they’re just slugs that live in the sea.
+
+Tokens:
+[Text=And CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=sea CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=slugs CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=slug NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=slugs CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=NNS Lemma=slug NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=slugs CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=NNS Lemma=slug NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=VBP Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sea CharacterOffsetBegin=190 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S (CC And)
+      (NP (DT all) (NN sea) (NNS slugs))
+      (VP (VBP are)
+        (NP (NNS slugs))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP ’re)
+      (NP
+        (NP (RB just) (NNS slugs))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP live)
+              (PP (IN in)
+                (NP (DT the) (NN sea))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, slugs-11)
+cc(slugs-6, And-1)
+det(slugs-4, all-2)
+compound(slugs-4, sea-3)
+nsubj(slugs-6, slugs-4)
+cop(slugs-6, are-5)
+ccomp(slugs-11, slugs-6)
+punct(slugs-11, ,-7)
+nsubj(slugs-11, they-8)
+cop(slugs-11, ’re-9)
+advmod(slugs-11, just-10)
+nsubj(live-13, slugs-11)
+ref(slugs-11, that-12)
+acl:relcl(slugs-11, live-13)
+case(sea-16, in-14)
+det(sea-16, the-15)
+obl:in(live-13, sea-16)
+punct(slugs-11, .-17)
+
+Extracted the following NER entity mentions:

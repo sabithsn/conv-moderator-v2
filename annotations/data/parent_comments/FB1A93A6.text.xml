@@ -1,0 +1,73 @@
+Document: ID=FB1A93A6.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+The Monkeys That Escaped From the Pennsylvania Truck Crash May Be Government Created Trans HIV Infected Experiments
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Monkeys CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNPS Lemma=Monkeys NamedEntityTag=O]
+[Text=That CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Escaped CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=escape NamedEntityTag=O]
+[Text=From CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Pennsylvania CharacterOffsetBegin=34 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Pennsylvania NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Truck CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Truck NamedEntityTag=O]
+[Text=Crash CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Crash NamedEntityTag=CAUSE_OF_DEATH]
+[Text=May CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05">May</TIMEX3>]
+[Text=Be CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=Government CharacterOffsetBegin=66 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Government NamedEntityTag=O]
+[Text=Created CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=create NamedEntityTag=MISC]
+[Text=Trans CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Trans NamedEntityTag=MISC]
+[Text=HIV CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=HIV NamedEntityTag=CAUSE_OF_DEATH]
+[Text=Infected CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=VBD Lemma=infect NamedEntityTag=O]
+[Text=Experiments CharacterOffsetBegin=104 CharacterOffsetEnd=115 PartOfSpeech=NNS Lemma=experiment NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP
+      (NP (DT The) (NNPS Monkeys))
+      (SBAR
+        (S
+          (NP (DT That))
+          (VP (VBD Escaped)
+            (PP (IN From)
+              (NP (DT the)
+                (NML (NNP Pennsylvania) (NNP Truck))
+                (NNP Crash) (NNP May)))
+            (SBAR
+              (SINV (VB Be)
+                (NP (NNP Government))
+                (S
+                  (VP (VBN Created)))))))))
+    (NP (NNP Trans) (NNP HIV))
+    (VP (VBD Infected)
+      (NP (NNS Experiments)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Infected-16)
+det(Monkeys-2, The-1)
+nsubj(Escaped-4, Monkeys-2)
+obl:tmod(Infected-16, Monkeys-2)
+ref(Monkeys-2, That-3)
+acl:relcl(Monkeys-2, Escaped-4)
+case(May-10, From-5)
+det(May-10, the-6)
+compound(Truck-8, Pennsylvania-7)
+compound(May-10, Truck-8)
+compound(May-10, Crash-9)
+obl:from(Escaped-4, May-10)
+dep(Government-12, Be-11)
+advcl(Escaped-4, Government-12)
+dep(Government-12, Created-13)
+compound(HIV-15, Trans-14)
+nsubj(Infected-16, HIV-15)
+obj(Infected-16, Experiments-17)
+
+Extracted the following NER entity mentions:
+Pennsylvania	STATE_OR_PROVINCE	LOCATION:0.9925468804151135
+Crash	CAUSE_OF_DEATH	-
+May	DATE	DATE:-1.0
+Created Trans	MISC	MISC:0.7464357382277327
+HIV	CAUSE_OF_DEATH	MISC:0.7464357382277327

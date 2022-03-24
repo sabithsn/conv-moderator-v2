@@ -1,0 +1,71 @@
+Document: ID=9968A58D.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Bill Maher Rips Dr. Antony Fauci, Medical Establishment: ‘They Don’t Know A Lot About Anything’
+
+Tokens:
+[Text=Bill CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Maher CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Maher NamedEntityTag=PERSON]
+[Text=Rips CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Rips NamedEntityTag=O]
+[Text=Dr. CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Antony CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Antony NamedEntityTag=PERSON]
+[Text=Fauci CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Medical CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Medical NamedEntityTag=O]
+[Text=Establishment CharacterOffsetBegin=42 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Establishment NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=They CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=Know CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Lot CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Lot NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=Anything CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Bill) (NNP Maher) (NNP Rips) (NNP Dr.) (NNP Antony) (NNP Fauci))
+      (, ,)
+      (NP (NNP Medical) (NNP Establishment)))
+    (: :)
+    (S (`` ‘)
+      (NP (PRP They))
+      (VP (VBP Do) (RB n’t)
+        (VP (VB Know)
+          (NP
+            (NP (DT A) (NNP Lot))
+            (RB About)
+            (NP (NN Anything)))))
+      ('' ’))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fauci-6)
+compound(Fauci-6, Bill-1)
+compound(Fauci-6, Maher-2)
+compound(Fauci-6, Rips-3)
+compound(Fauci-6, Dr.-4)
+compound(Fauci-6, Antony-5)
+punct(Fauci-6, ,-7)
+compound(Establishment-9, Medical-8)
+appos(Fauci-6, Establishment-9)
+punct(Fauci-6, :-10)
+punct(Know-15, ‘-11)
+nsubj(Know-15, They-12)
+aux(Know-15, Do-13)
+advmod(Know-15, n’t-14)
+parataxis(Fauci-6, Know-15)
+det(Lot-17, A-16)
+iobj(Know-15, Lot-17)
+advmod(Lot-17, About-18)
+dep(Lot-17, Anything-19)
+punct(Know-15, ’-20)
+
+Extracted the following NER entity mentions:
+Bill Maher	PERSON	PERSON:0.9643184672193119
+Antony Fauci	PERSON	PERSON:0.9999470579419723

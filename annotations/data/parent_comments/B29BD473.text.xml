@@ -1,0 +1,100 @@
+Document: ID=B29BD473.text (2 sentences, 23 tokens)
+
+Sentence #1 (15 tokens):
+It would be grand if some disenchanted Russian FSB officer released the GOP kompromat.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=grand CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=grand NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=disenchanted CharacterOffsetBegin=26 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=disenchanted NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=FSB CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=FSB NamedEntityTag=ORGANIZATION]
+[Text=officer CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=officer NamedEntityTag=O]
+[Text=released CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=release NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=GOP CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=kompromat CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=kompromat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (JJ grand))
+        (SBAR (IN if)
+          (S
+            (NP (DT some) (JJ disenchanted)
+              (NML (JJ Russian) (NNP FSB))
+              (NN officer))
+            (VP (VBD released)
+              (NP (DT the) (NNP GOP) (NN kompromat)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, grand-4)
+nsubj(grand-4, It-1)
+aux(grand-4, would-2)
+cop(grand-4, be-3)
+mark(released-11, if-5)
+det(officer-10, some-6)
+amod(officer-10, disenchanted-7)
+amod(FSB-9, Russian-8)
+compound(officer-10, FSB-9)
+nsubj(released-11, officer-10)
+advcl:if(grand-4, released-11)
+det(kompromat-14, the-12)
+compound(kompromat-14, GOP-13)
+obj(released-11, kompromat-14)
+punct(grand-4, .-15)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9953130840348582
+FSB	ORGANIZATION	ORGANIZATION:0.8505302491093771
+GOP	ORGANIZATION	ORGANIZATION:0.7826696973104346
+
+Sentence #2 (8 tokens):
+Not likely, but one can hope.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=likely CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=can CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=hope CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=VB Lemma=hope NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (FRAG (RB Not)
+      (ADVP (RB likely)))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP one))
+      (VP (MD can)
+        (VP (VB hope))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Not-1)
+dep(Not-1, likely-2)
+punct(Not-1, ,-3)
+cc(hope-7, but-4)
+nsubj(hope-7, one-5)
+aux(hope-7, can-6)
+conj:but(Not-1, hope-7)
+punct(Not-1, .-8)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

@@ -1,0 +1,84 @@
+Document: ID=6A5894AD.text (2 sentences, 17 tokens)
+
+Sentence #1 (13 tokens):
+It's just as evil to fuck or lust after anyone underaged.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=evil CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=evil NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=lust CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=lust NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=underaged CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=underage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (CONJP (RB just) (IN as))
+        (ADJP (JJ evil)
+          (S
+            (VP (TO to)
+              (VP (VB fuck)))))))
+    (CC or)
+    (S
+      (NP
+        (NP (NN lust))
+        (PP (IN after)
+          (NP (NN anyone))))
+      (VP (VBD underaged)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+nsubj('s-2, It-1)
+nsubj(evil-5, It-1)
+nsubj:xsubj(fuck-7, It-1)
+cc(evil-5, just-3)
+dep(just-3, as-4)
+conj:just('s-2, evil-5)
+mark(fuck-7, to-6)
+xcomp(evil-5, fuck-7)
+cc(underaged-12, or-8)
+nsubj(underaged-12, lust-9)
+case(anyone-11, after-10)
+nmod:after(lust-9, anyone-11)
+conj:or('s-2, underaged-12)
+punct('s-2, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Do you disagree?
+
+Tokens:
+[Text=Do CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=disagree CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=VB Lemma=disagree NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB disagree))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, disagree-3)
+aux(disagree-3, Do-1)
+nsubj(disagree-3, you-2)
+punct(disagree-3, ?-4)
+
+Extracted the following NER entity mentions:

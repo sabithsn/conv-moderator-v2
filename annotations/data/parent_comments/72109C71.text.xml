@@ -1,0 +1,48 @@
+Document: ID=72109C71.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+He does not give a shit about America one bit.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=one CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=bit CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ does) (RB not)
+      (VP (VB give)
+        (NP (DT a) (NN shit))
+        (PP (IN about)
+          (NP (NNP America)))
+        (NP (CD one) (NN bit))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-4)
+nsubj(give-4, He-1)
+aux(give-4, does-2)
+advmod(give-4, not-3)
+det(shit-6, a-5)
+obj(give-4, shit-6)
+case(America-8, about-7)
+obl:about(give-4, America-8)
+nummod(bit-10, one-9)
+obj(give-4, bit-10)
+punct(give-4, .-11)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.9351393349996506
+one	NUMBER	NUMBER:-1.0
+He	PERSON	-

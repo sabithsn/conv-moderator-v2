@@ -1,0 +1,87 @@
+Document: ID=F5DF12AF.text (2 sentences, 18 tokens)
+
+Sentence #1 (14 tokens):
+Please actually answer my question without swears and I will answer your question .
+
+Tokens:
+[Text=Please CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=answer NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=swears CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=swear NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=answer NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Please))
+    (ADVP (RB actually))
+    (VP (VB answer)
+      (NP (PRP$ my) (NN question))
+      (PP (IN without)
+        (S
+          (S
+            (VP (VBZ swears)))
+          (CC and)
+          (S
+            (NP (PRP I))
+            (VP (MD will)
+              (VP (VB answer)
+                (NP (PRP$ your) (NN question))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, answer-3)
+discourse(answer-3, Please-1)
+advmod(answer-3, actually-2)
+nmod:poss(question-5, my-4)
+obj(answer-3, question-5)
+mark(swears-7, without-6)
+advcl:without(answer-3, swears-7)
+cc(answer-11, and-8)
+nsubj(answer-11, I-9)
+aux(answer-11, will-10)
+advcl:without(answer-3, answer-11)
+conj:and(swears-7, answer-11)
+nmod:poss(question-13, your-12)
+obj(answer-11, question-13)
+punct(answer-3, .-14)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Also without swears.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=swears CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=swear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Also))
+    (PP (IN without)
+      (SBAR
+        (S
+          (VP (VBZ swears)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Also-1)
+mark(swears-3, without-2)
+dep(Also-1, swears-3)
+punct(Also-1, .-4)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,92 @@
+Document: ID=479F65E5.text (2 sentences, 21 tokens)
+
+Sentence #1 (4 tokens):
+Holy Based Candace.
+
+Tokens:
+[Text=Holy CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Holy NamedEntityTag=O]
+[Text=Based CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Based NamedEntityTag=O]
+[Text=Candace CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Candace NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Holy) (NNP Based) (NNP Candace) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Candace-3)
+compound(Candace-3, Holy-1)
+compound(Candace-3, Based-2)
+punct(Candace-3, .-4)
+
+Extracted the following NER entity mentions:
+Candace	PERSON	PERSON:0.9273223386093076
+
+Sentence #2 (17 tokens):
+Putin is a degenerate fuckwit, but we need to stop playing God over the whole world
+
+Tokens:
+[Text=Putin CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=degenerate CharacterOffsetBegin=31 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=degenerate NamedEntityTag=O]
+[Text=fuckwit CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=fuckwit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=God CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=God NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Putin))
+      (VP (VBZ is)
+        (NP (DT a) (JJ degenerate) (NN fuckwit))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB stop)
+              (S
+                (VP (VBG playing)
+                  (NP
+                    (NP (NNP God))
+                    (PP (IN over)
+                      (NP (DT the) (JJ whole) (NN world)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fuckwit-5)
+nsubj(fuckwit-5, Putin-1)
+cop(fuckwit-5, is-2)
+det(fuckwit-5, a-3)
+amod(fuckwit-5, degenerate-4)
+punct(fuckwit-5, ,-6)
+cc(need-9, but-7)
+nsubj(need-9, we-8)
+nsubj:xsubj(stop-11, we-8)
+conj:but(fuckwit-5, need-9)
+mark(stop-11, to-10)
+xcomp(need-9, stop-11)
+xcomp(stop-11, playing-12)
+obj(playing-12, God-13)
+case(world-17, over-14)
+det(world-17, the-15)
+amod(world-17, whole-16)
+nmod:over(God-13, world-17)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9646010091730455

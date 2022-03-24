@@ -1,0 +1,56 @@
+Document: ID=B021A803.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+How the right embraced Russian disinformation about ‘U.S. bioweapons labs’ in Ukraine
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=embraced CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=embrace NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=disinformation CharacterOffsetBegin=31 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=disinformation NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=bioweapons CharacterOffsetBegin=58 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=bioweapon NamedEntityTag=O]
+[Text=labs CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=lab NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHADVP (WRB How))
+    (S
+      (NP (DT the) (NN right))
+      (VP (VBD embraced)
+        (NP (JJ Russian) (NN disinformation))
+        (PP (IN about) (`` ‘)
+          (NP
+            (NP (NNP U.S.) (NNS bioweapons) (NNS labs) (POS ’))
+            (PP (IN in)
+              (NP (NNP Ukraine)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, embraced-4)
+advmod(embraced-4, How-1)
+det(right-3, the-2)
+nsubj(embraced-4, right-3)
+amod(disinformation-6, Russian-5)
+obj(embraced-4, disinformation-6)
+case(labs-11, about-7)
+punct(labs-11, ‘-8)
+compound(labs-11, U.S.-9)
+compound(labs-11, bioweapons-10)
+obl:about(embraced-4, labs-11)
+case(labs-11, ’-12)
+case(Ukraine-14, in-13)
+nmod:in(labs-11, Ukraine-14)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999940149418527
+U.S.	COUNTRY	LOCATION:0.8635721476952417
+Ukraine	COUNTRY	LOCATION:0.99804300605459

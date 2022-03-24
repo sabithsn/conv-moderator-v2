@@ -1,0 +1,34 @@
+Document: ID=B1BA6207.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+My wife got a hotel room tonight
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hotel CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=hotel NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=tonight CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=tonight NamedEntityTag=DATE NormalizedNamedEntityTag=THIS NI Timex=<TIMEX3 alt_value="THIS NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">tonight</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN wife))
+    (VP (VBD got)
+      (NP (DT a) (NN hotel) (NN room))
+      (NP-TMP (NN tonight)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, got-3)
+nmod:poss(wife-2, My-1)
+nsubj(got-3, wife-2)
+det(room-6, a-4)
+compound(room-6, hotel-5)
+obj(got-3, room-6)
+obl:tmod(got-3, tonight-7)
+
+Extracted the following NER entity mentions:
+tonight	DATE	DATE:-1.0

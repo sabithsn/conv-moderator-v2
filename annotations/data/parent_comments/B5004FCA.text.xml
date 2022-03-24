@@ -1,0 +1,66 @@
+Document: ID=B5004FCA.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+U.S. journalist/filmmaker Brent Renaud shot dead by Russian troops in Ukraine: report
+
+Tokens:
+[Text=U.S. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=journalist CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=journalist NamedEntityTag=TITLE]
+[Text=/ CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=filmmaker CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=filmmaker NamedEntityTag=TITLE]
+[Text=Brent CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Brent NamedEntityTag=PERSON]
+[Text=Renaud CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Renaud NamedEntityTag=PERSON]
+[Text=shot CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=shoot NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=troops CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=troops NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=: CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP U.S.))
+      (SBAR
+        (S
+          (NP
+            (NML (NN journalist) (HYPH /) (NN filmmaker))
+            (NNP Brent) (NNP Renaud))
+          (VP (VBD shot)
+            (ADJP (JJ dead)
+              (PP (IN by)
+                (NP (JJ Russian) (NNS troops))))
+            (PP (IN in)
+              (NP (NNP Ukraine)))))))
+    (: :)
+    (NP (NN report))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, U.S.-1)
+compound(filmmaker-4, journalist-2)
+punct(filmmaker-4, /-3)
+compound(Renaud-6, filmmaker-4)
+compound(Renaud-6, Brent-5)
+nsubj(shot-7, Renaud-6)
+acl:relcl(U.S.-1, shot-7)
+xcomp(shot-7, dead-8)
+case(troops-11, by-9)
+amod(troops-11, Russian-10)
+obl:by(dead-8, troops-11)
+case(Ukraine-13, in-12)
+obl:in(shot-7, Ukraine-13)
+punct(U.S.-1, :-14)
+dep(U.S.-1, report-15)
+
+Extracted the following NER entity mentions:
+U.S.	COUNTRY	LOCATION:0.9975575726146174
+journalist	TITLE	-
+filmmaker	TITLE	-
+Brent Renaud	PERSON	PERSON:0.9935363568061731
+Russian	NATIONALITY	MISC:0.9999997268750551
+Ukraine	COUNTRY	LOCATION:0.9951926222565819

@@ -1,0 +1,68 @@
+Document: ID=BE5EABAC.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Progressive Christians Sad They Have No Way To Love Their Neighbors Now That Mask Mandates Are Gone
+
+Tokens:
+[Text=Progressive CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=progressive NamedEntityTag=IDEOLOGY]
+[Text=Christians CharacterOffsetBegin=12 CharacterOffsetEnd=22 PartOfSpeech=NNPS Lemma=Christians NamedEntityTag=MISC]
+[Text=Sad CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=sad NamedEntityTag=MISC]
+[Text=They CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=they NamedEntityTag=MISC]
+[Text=Have CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=have NamedEntityTag=MISC]
+[Text=No CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=no NamedEntityTag=MISC]
+[Text=Way CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=way NamedEntityTag=MISC]
+[Text=To CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=MISC]
+[Text=Love CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=love NamedEntityTag=MISC]
+[Text=Their CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=MISC]
+[Text=Neighbors CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=neighbor NamedEntityTag=MISC]
+[Text=Now CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=That CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Mask CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=Mandates CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=mandate NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Gone CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (JJ Progressive) (NNPS Christians))
+      (ADJP (JJ Sad)
+        (SBAR
+          (S
+            (NP (PRP They))
+            (VP (VBP Have)
+              (NP (DT No) (NN Way)
+                (S
+                  (VP (TO To)
+                    (VP (VB Love)
+                      (NP (PRP$ Their) (NNS Neighbors))
+                      (ADVP (RB Now)))))))))))
+    (NP (DT That) (NN Mask) (NNS Mandates))
+    (VP (VBP Are)
+      (VP (VBN Gone)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Gone-17)
+amod(Christians-2, Progressive-1)
+dep(Sad-3, Christians-2)
+dep(Gone-17, Sad-3)
+nsubj(Have-5, They-4)
+ccomp(Sad-3, Have-5)
+det(Way-7, No-6)
+obj(Have-5, Way-7)
+mark(Love-9, To-8)
+acl:to(Way-7, Love-9)
+nmod:poss(Neighbors-11, Their-10)
+obj(Love-9, Neighbors-11)
+advmod(Love-9, Now-12)
+det(Mandates-15, That-13)
+compound(Mandates-15, Mask-14)
+nsubj:pass(Gone-17, Mandates-15)
+aux:pass(Gone-17, Are-16)
+
+Extracted the following NER entity mentions:
+Progressive	IDEOLOGY	-
+Christians Sad They Have No Way To Love Their Neighbors	MISC	MISC:0.8189433906671297
+Now	DATE	DATE:-1.0

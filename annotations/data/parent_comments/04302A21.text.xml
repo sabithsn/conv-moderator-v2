@@ -1,0 +1,78 @@
+Document: ID=04302A21.text (2 sentences, 15 tokens)
+
+Sentence #1 (5 tokens):
+Don't do that.
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (VP (VB do)
+        (NP (DT that))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-3)
+aux(do-3, Do-1)
+advmod(do-3, n't-2)
+obj(do-3, that-4)
+punct(do-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Let's not make fun of how she looks.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma='s NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=fun CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=fun NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP 's))
+        (RB not)
+        (VP (VB make)
+          (NP
+            (NP (NN fun))
+            (PP (IN of)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (PRP she))
+                  (VP (VBZ looks)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(make-4, 's-2)
+advmod(make-4, not-3)
+ccomp(Let-1, make-4)
+obj(make-4, fun-5)
+mark(looks-9, of-6)
+advmod(looks-9, how-7)
+nsubj(looks-9, she-8)
+acl:of(fun-5, looks-9)
+punct(Let-1, .-10)
+
+Extracted the following NER entity mentions:
+she	PERSON	-

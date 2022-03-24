@@ -1,0 +1,33 @@
+Document: ID=1B17C18D.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Muricans voted for MAGA tax cuts
+
+Tokens:
+[Text=Muricans CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNPS Lemma=Muricans NamedEntityTag=PERSON]
+[Text=voted CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=MAGA CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=MAGA NamedEntityTag=ORGANIZATION]
+[Text=tax CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=tax NamedEntityTag=O]
+[Text=cuts CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=cut NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNPS Muricans))
+    (VP (VBD voted)
+      (PP (IN for)
+        (NP (NNP MAGA) (NN tax) (NNS cuts))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, voted-2)
+nsubj(voted-2, Muricans-1)
+case(cuts-6, for-3)
+compound(cuts-6, MAGA-4)
+compound(cuts-6, tax-5)
+obl:for(voted-2, cuts-6)
+
+Extracted the following NER entity mentions:
+Muricans	PERSON	PERSON:0.5617751724626233
+MAGA	ORGANIZATION	ORGANIZATION:0.8336773537889836

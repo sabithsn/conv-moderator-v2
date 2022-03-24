@@ -1,0 +1,74 @@
+Document: ID=C6C668E0.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+I thought it was established the knee was in his back, and not on his kneck?
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=2 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=established CharacterOffsetBegin=17 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=establish NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=knee CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=knee NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=back NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=kneck CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=kneck NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (VP (VBN established)
+              (SBAR
+                (S
+                  (NP (DT the) (NN knee))
+                  (VP (VBD was)
+                    (PP
+                      (PP (IN in)
+                        (NP (PRP$ his) (NN back)))
+                      (, ,)
+                      (CC and)
+                      (RB not)
+                      (PP (IN on)
+                        (NP (PRP$ his) (NN kneck))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thought-2)
+nsubj(thought-2, I-1)
+nsubj:pass(established-5, it-3)
+aux:pass(established-5, was-4)
+ccomp(thought-2, established-5)
+det(knee-7, the-6)
+nsubj(back-11, knee-7)
+cop(back-11, was-8)
+case(back-11, in-9)
+nmod:poss(back-11, his-10)
+ccomp(established-5, back-11)
+punct(back-11, ,-12)
+cc(kneck-17, and-13)
+advmod(kneck-17, not-14)
+case(kneck-17, on-15)
+nmod:poss(kneck-17, his-16)
+ccomp(established-5, kneck-17)
+conj:and(back-11, kneck-17)
+punct(thought-2, ?-18)
+
+Extracted the following NER entity mentions:
+his	PERSON	-
+his	PERSON	-

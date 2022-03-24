@@ -1,0 +1,75 @@
+Document: ID=1D88CC4E.text (2 sentences, 14 tokens)
+
+Sentence #1 (2 tokens):
+Reported.
+
+Tokens:
+[Text=Reported CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=report NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBN Reported))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Reported-1)
+punct(Reported-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+You're trying to get the sub banned I'm guessing.
+
+Tokens:
+[Text=You CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=guessing CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=guess NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP
+                (NP (DT the) (NN sub))
+                (VP (VBN banned)
+                  (SBAR
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP 'm)
+                        (VP (VBG guessing))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trying-3)
+nsubj(trying-3, You-1)
+nsubj:xsubj(get-5, You-1)
+aux(trying-3, 're-2)
+mark(get-5, to-4)
+xcomp(trying-3, get-5)
+det(sub-7, the-6)
+obj(get-5, sub-7)
+acl(sub-7, banned-8)
+nsubj(guessing-11, I-9)
+aux(guessing-11, 'm-10)
+ccomp(banned-8, guessing-11)
+punct(trying-3, .-12)
+
+Extracted the following NER entity mentions:

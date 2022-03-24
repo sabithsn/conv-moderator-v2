@@ -1,0 +1,78 @@
+Document: ID=7E0444DA.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Bill Barr Urges Republicans to Pick an ‘Impressive’ and ‘Younger’ 2024 Nominee Instead of Trump
+
+Tokens:
+[Text=Bill CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Barr CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Barr NamedEntityTag=PERSON]
+[Text=Urges CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=urge NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=16 CharacterOffsetEnd=27 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Pick CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=pick NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Impressive CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=impressive NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Younger CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=JJR Lemma=younger NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=2024 CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">2024</TIMEX3>]
+[Text=Nominee CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=nominee NamedEntityTag=O]
+[Text=Instead CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Bill) (NNP Barr))
+        (VP (VBZ Urges)
+          (NP (NNPS Republicans))
+          (S
+            (VP (TO to)
+              (VP (VB Pick)
+                (NP (DT an))
+                (ADJP (`` ‘)
+                  (ADJP (JJ Impressive))
+                  ('' ’)
+                  (CC and)
+                  (`` ‘)
+                  (ADJP (JJR Younger))
+                  ('' ’))))))))
+    (NP-TMP
+      (NP (CD 2024) (NN Nominee))
+      (PP (RB Instead) (IN of)
+        (NP (NNP Trump))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Nominee-16)
+compound(Barr-2, Bill-1)
+nsubj(Urges-3, Barr-2)
+dep(Nominee-16, Urges-3)
+obj(Urges-3, Republicans-4)
+nsubj:xsubj(Pick-6, Republicans-4)
+mark(Pick-6, to-5)
+xcomp(Urges-3, Pick-6)
+obj(Pick-6, an-7)
+punct(Impressive-9, ‘-8)
+xcomp(Pick-6, Impressive-9)
+punct(Impressive-9, ’-10)
+cc(Younger-13, and-11)
+punct(Impressive-9, ‘-12)
+xcomp(Pick-6, Younger-13)
+conj:and(Impressive-9, Younger-13)
+punct(Impressive-9, ’-14)
+nummod(Nominee-16, 2024-15)
+case(Trump-19, Instead-17)
+fixed(Instead-17, of-18)
+nmod:instead_of(Nominee-16, Trump-19)
+
+Extracted the following NER entity mentions:
+Bill Barr	PERSON	PERSON:0.9475544920855947
+2024	DATE	DATE:0.5885037966312622
+Trump	PERSON	PERSON:0.7291351910030193

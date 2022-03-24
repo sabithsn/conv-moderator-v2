@@ -1,0 +1,72 @@
+Document: ID=15E1C443.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Child Molester Who Now Claims To Identify As Female Gloats, Laughs Over Light Sentence In Jailhouse Phone Call
+
+Tokens:
+[Text=Child CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=Molester CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Molester NamedEntityTag=O]
+[Text=Who CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Now CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=Claims CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Claims NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Identify CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=identify NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Female CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=female NamedEntityTag=O]
+[Text=Gloats CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=gloat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Laughs CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=laugh NamedEntityTag=O]
+[Text=Over CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Light CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=light NamedEntityTag=O]
+[Text=Sentence CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=sentence NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Jailhouse CharacterOffsetBegin=90 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Jailhouse NamedEntityTag=O]
+[Text=Phone CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+[Text=Call CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=call NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Child) (NNP Molester))
+      (SBAR
+        (WHNP (WP Who))
+        (S
+          (NP (NNP Now) (NNP Claims))
+          (VP (TO To)
+            (VP (VB Identify)
+              (PP (IN As)
+                (NP (JJ Female) (NNS Gloats))))))))
+    (, ,)
+    (VP (VBZ Laughs)
+      (S
+        (PP (IN Over)
+          (NP (JJ Light) (NN Sentence)))
+        (PP (IN In)
+          (NP (NNP Jailhouse) (NN Phone) (NN Call)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Laughs-12)
+compound(Molester-2, Child-1)
+obj(Identify-7, Molester-2)
+nsubj(Laughs-12, Molester-2)
+ref(Molester-2, Who-3)
+compound(Claims-5, Now-4)
+nsubj(Identify-7, Claims-5)
+mark(Identify-7, To-6)
+acl:relcl(Molester-2, Identify-7)
+case(Gloats-10, As-8)
+amod(Gloats-10, Female-9)
+obl:as(Identify-7, Gloats-10)
+punct(Laughs-12, ,-11)
+case(Sentence-15, Over-13)
+amod(Sentence-15, Light-14)
+dep(Call-19, Sentence-15)
+case(Call-19, In-16)
+compound(Call-19, Jailhouse-17)
+compound(Call-19, Phone-18)
+xcomp(Laughs-12, Call-19)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0

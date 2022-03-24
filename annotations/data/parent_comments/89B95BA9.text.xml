@@ -1,0 +1,93 @@
+Document: ID=89B95BA9.text (2 sentences, 21 tokens)
+
+Sentence #1 (11 tokens):
+Wasn't some of the early psycologists really fucked up?
+
+Tokens:
+[Text=Was CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=psycologists CharacterOffsetBegin=25 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=psycologist NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=fucked CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=VBD Lemma=fuck NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Was) (RB n't)
+    (NP
+      (NP (DT some))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ early) (NNS psycologists))
+          (ADVP (RB really)))))
+    (S
+      (VP (VBD fucked)
+        (PRT (RP up))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Was-1)
+advmod(Was-1, n't-2)
+det:qmod(psycologists-7, some-3)
+fixed(some-3, of-4)
+det(psycologists-7, the-5)
+amod(psycologists-7, early-6)
+nsubj(Was-1, psycologists-7)
+advmod(psycologists-7, really-8)
+dep(Was-1, fucked-9)
+compound:prt(fucked-9, up-10)
+punct(Was-1, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+So should we throw out all of psycology now?
+
+Tokens:
+[Text=So CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=throw CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=throw NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=psycology CharacterOffsetBegin=86 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=psycology NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=? CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (ADVP (RB So))
+    (MD should)
+    (NP (PRP we))
+    (VP (VB throw)
+      (PRT (RP out))
+      (NP
+        (NP (DT all))
+        (PP (IN of)
+          (NP (NN psycology))))
+      (ADVP (RB now)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, throw-4)
+advmod(throw-4, So-1)
+aux(throw-4, should-2)
+nsubj(throw-4, we-3)
+compound:prt(throw-4, out-5)
+obj(throw-4, all-6)
+case(psycology-8, of-7)
+nmod:of(all-6, psycology-8)
+advmod(throw-4, now-9)
+punct(throw-4, ?-10)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

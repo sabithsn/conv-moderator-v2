@@ -1,0 +1,79 @@
+Document: ID=26B82E6C.text (2 sentences, 17 tokens)
+
+Sentence #1 (12 tokens):
+Okay so the men are retarded but what about the women?
+
+Tokens:
+[Text=Okay CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=okay NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=retarded CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=retarded NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Okay))
+    (ADVP (RB so))
+    (NP (DT the) (NNS men))
+    (VP
+      (VP (VBP are)
+        (ADJP (JJ retarded)))
+      (CC but)
+      (VP
+        (FRAG
+          (WHNP (WP what))
+          (PP (IN about)
+            (NP (DT the) (NNS women))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, retarded-6)
+discourse(retarded-6, Okay-1)
+advmod(retarded-6, so-2)
+det(men-4, the-3)
+nsubj(retarded-6, men-4)
+cop(retarded-6, are-5)
+cc(what-8, but-7)
+conj:but(retarded-6, what-8)
+case(women-11, about-9)
+det(women-11, the-10)
+obl:about(what-8, women-11)
+punct(retarded-6, ?-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Are they retarded too?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=retarded CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=retarded NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP they))
+    (ADJP (JJ retarded) (RB too))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, retarded-3)
+cop(retarded-3, Are-1)
+nsubj(retarded-3, they-2)
+advmod(retarded-3, too-4)
+punct(retarded-3, ?-5)
+
+Extracted the following NER entity mentions:

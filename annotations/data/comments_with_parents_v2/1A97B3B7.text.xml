@@ -1,0 +1,72 @@
+Document: ID=1A97B3B7.text (2 sentences, 15 tokens)
+
+Sentence #1 (7 tokens):
+But… but… muh guns!
+
+Tokens:
+[Text=But CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=muh CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=muh NamedEntityTag=O]
+[Text=guns CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=gun NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC But)
+    (ADVP
+      (NP (: …)
+        (FRAG (CC but))
+        (: …))
+      (NN muh))
+    (NP (NNS guns))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, guns-6)
+cc(guns-6, But-1)
+punct(but-3, …-2)
+dep(muh-5, but-3)
+punct(but-3, …-4)
+dep(guns-6, muh-5)
+punct(guns-6, !-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+I can’t give up muh guns!
+
+Tokens:
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=muh CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=muh NamedEntityTag=O]
+[Text=guns CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=gun NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD ca) (RB n’t)
+      (VP (VB give)
+        (PRT (RP up))
+        (NP (NN muh) (NNS guns))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-4)
+nsubj(give-4, I-1)
+aux(give-4, ca-2)
+advmod(give-4, n’t-3)
+compound:prt(give-4, up-5)
+compound(guns-7, muh-6)
+obj(give-4, guns-7)
+punct(give-4, !-8)
+
+Extracted the following NER entity mentions:

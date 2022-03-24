@@ -1,0 +1,45 @@
+Document: ID=95F09FA2.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+ELI5: What is the US dollar backed by?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=dollar CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=dollar NamedEntityTag=O]
+[Text=backed CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=back NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHNP (WP What))
+      (SQ (VBZ is)
+        (NP (DT the) (NNP US) (NN dollar))
+        (VP (VBN backed)
+          (PP (IN by)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+obl:agent(backed-8, What-3)
+aux:pass(backed-8, is-4)
+det(dollar-7, the-5)
+compound(dollar-7, US-6)
+nsubj:pass(backed-8, dollar-7)
+parataxis(ELI5-1, backed-8)
+case(What-3, by-9)
+punct(ELI5-1, ?-10)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9737732521111963

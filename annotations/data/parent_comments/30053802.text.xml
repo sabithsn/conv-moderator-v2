@@ -1,0 +1,70 @@
+Document: ID=30053802.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Lia Thomas Teammate Speaks Out: ‘Women Are Now Third-Class Citizens’ | The Daily Wire
+
+Tokens:
+[Text=Lia CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Lia NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=Teammate CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Teammate NamedEntityTag=O]
+[Text=Speaks CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=speak NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Women CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Now CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=Third CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=third NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Class CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=class NamedEntityTag=O]
+[Text=Citizens CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NNPS Lemma=Citizens NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=| CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=NFP Lemma=| NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Daily CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Daily NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t2" type="SET" value="P1D">Daily</TIMEX3>]
+[Text=Wire CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Wire NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Lia) (NNP Thomas) (NNP Teammate))
+      (VP (VBZ Speaks)
+        (PP (IN Out))
+        (: :) (`` ‘)
+        (S
+          (NP (NNS Women))
+          (VP (VBP Are)
+            (ADVP (RB Now))
+            (NP
+              (NML (JJ Third) (HYPH -) (NN Class))
+              (NML (NNPS Citizens) (POS ’)))))))
+    (NFP |)
+    (NP (DT The) (NNP Daily) (NNP Wire))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wire-19)
+compound(Teammate-3, Lia-1)
+compound(Teammate-3, Thomas-2)
+nsubj(Speaks-4, Teammate-3)
+dep(Wire-19, Speaks-4)
+obl(Speaks-4, Out-5)
+punct(Speaks-4, :-6)
+punct(Speaks-4, ‘-7)
+nsubj(Citizens-14, Women-8)
+cop(Citizens-14, Are-9)
+advmod(Citizens-14, Now-10)
+amod(Class-13, Third-11)
+punct(Class-13, --12)
+dep(Citizens-14, Class-13)
+ccomp(Speaks-4, Citizens-14)
+case(Citizens-14, ’-15)
+punct(Wire-19, |-16)
+det(Wire-19, The-17)
+compound(Wire-19, Daily-18)
+
+Extracted the following NER entity mentions:
+Lia Thomas	PERSON	PERSON:0.9844424582146201
+Now	DATE	DATE:-1.0
+Daily	SET	SET:-1.0

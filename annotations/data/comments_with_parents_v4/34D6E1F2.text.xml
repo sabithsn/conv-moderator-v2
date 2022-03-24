@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>34D6E1F2.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Rep.</word>
+            <lemma>Rep.</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>TITLE</NER>
+          </token>
+          <token id="2">
+            <word>Liz</word>
+            <lemma>Liz</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>Cheney</word>
+            <lemma>Cheney</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="4">
+            <word>breaks</word>
+            <lemma>break</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>campaign</word>
+            <lemma>campaign</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>quarterly</word>
+            <lemma>quarterly</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>SET</NER>
+            <Timex tid="t1" type="SET">P3M</Timex>
+          </token>
+          <token id="9">
+            <word>fundraising</word>
+            <lemma>fundraising</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>record</word>
+            <lemma>record</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>She</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>traitor</word>
+            <lemma>traitor</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PRN (S (NP (NNP Rep.) (NNP Liz) (NNP Cheney)) (VP (VBZ breaks) (NP (NP (PRP$ her) (NN campaign) (POS 's)) (JJ quarterly) (NN fundraising) (NN record))))) (NP (PRP She)) (VP (VBZ 's) (NP (DT a) (NN traitor))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">traitor</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="1">Rep.</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="2">Liz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="3">Cheney</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="14">traitor</governor>
+            <dependent idx="4">breaks</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">campaign</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="10">record</governor>
+            <dependent idx="6">campaign</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">campaign</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">record</governor>
+            <dependent idx="8">quarterly</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">record</governor>
+            <dependent idx="9">fundraising</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="10">record</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">traitor</governor>
+            <dependent idx="11">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">traitor</governor>
+            <dependent idx="12">'s</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">traitor</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">traitor</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="1">Rep.</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="2">Liz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="3">Cheney</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="14">traitor</governor>
+            <dependent idx="4">breaks</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">campaign</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="10">record</governor>
+            <dependent idx="6">campaign</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">campaign</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">record</governor>
+            <dependent idx="8">quarterly</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">record</governor>
+            <dependent idx="9">fundraising</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="10">record</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">traitor</governor>
+            <dependent idx="11">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">traitor</governor>
+            <dependent idx="12">'s</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">traitor</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">traitor</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="1">Rep.</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="2">Liz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="3">Cheney</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="14">traitor</governor>
+            <dependent idx="4">breaks</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">campaign</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="10">record</governor>
+            <dependent idx="6">campaign</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">campaign</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">record</governor>
+            <dependent idx="8">quarterly</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">record</governor>
+            <dependent idx="9">fundraising</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="10">record</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">traitor</governor>
+            <dependent idx="11">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">traitor</governor>
+            <dependent idx="12">'s</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">traitor</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">traitor</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="1">Rep.</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="2">Liz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="3">Cheney</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="14">traitor</governor>
+            <dependent idx="4">breaks</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">campaign</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="10">record</governor>
+            <dependent idx="6">campaign</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">campaign</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">record</governor>
+            <dependent idx="8">quarterly</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">record</governor>
+            <dependent idx="9">fundraising</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="10">record</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">traitor</governor>
+            <dependent idx="11">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">traitor</governor>
+            <dependent idx="12">'s</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">traitor</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">traitor</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="1">Rep.</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Cheney</governor>
+            <dependent idx="2">Liz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="3">Cheney</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="14">traitor</governor>
+            <dependent idx="4">breaks</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="6">campaign</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="10">record</governor>
+            <dependent idx="6">campaign</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">campaign</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">record</governor>
+            <dependent idx="8">quarterly</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">record</governor>
+            <dependent idx="9">fundraising</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">breaks</governor>
+            <dependent idx="10">record</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">traitor</governor>
+            <dependent idx="11">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">traitor</governor>
+            <dependent idx="12">'s</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">traitor</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

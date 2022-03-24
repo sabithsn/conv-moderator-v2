@@ -1,0 +1,66 @@
+Document: ID=77112484.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Biden Predicts ‘Sad, Sad Two Years’ If Republicans Retake Congress In Midterms
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Predicts CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=predict NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Sad CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=sad NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Sad CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=sad NamedEntityTag=O]
+[Text=Two CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=two NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P2Y">Two Years</TIMEX3>]
+[Text=Years CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P2Y">Two Years</TIMEX3>]
+[Text=’ CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=39 CharacterOffsetEnd=50 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=Retake CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=retake NamedEntityTag=O]
+[Text=Congress CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Congress NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Midterms CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=NNPS Lemma=Midterms NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (VP (VBZ Predicts)
+      (S
+        (ADJP (`` ‘)
+          (ADJP (JJ Sad))
+          (, ,)
+          (ADJP (JJ Sad)))
+        (NP
+          (NP (CD Two))
+          (NP (NNS Years) (POS ’)))))
+    (SBAR (IN If)
+      (S
+        (NP (NNPS Republicans))
+        (VP (VBP Retake)
+          (S
+            (NP (NNP Congress))
+            (PP (IN In)
+              (NP (NNPS Midterms)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Predicts-2)
+nsubj(Predicts-2, Biden-1)
+punct(Sad-4, ‘-3)
+xcomp(Predicts-2, Sad-4)
+punct(Sad-4, ,-5)
+dep(Sad-4, Sad-6)
+dep(Sad-4, Two-7)
+nmod:poss(Two-7, Years-8)
+case(Years-8, ’-9)
+mark(Retake-12, If-10)
+nsubj(Retake-12, Republicans-11)
+dep(Predicts-2, Retake-12)
+xcomp(Retake-12, Congress-13)
+case(Midterms-15, In-14)
+dep(Congress-13, Midterms-15)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9918219477688066
+Two Years	DURATION	DURATION:-1.0
+Republicans	MISC	MISC:0.9311338051896538

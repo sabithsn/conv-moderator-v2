@@ -1,0 +1,71 @@
+Document: ID=37258006.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+If you think it's hard to believe the information now just wait until the future.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=believe NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=38 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=just CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=wait CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=wait NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=FUTURE_REF Timex=<TIMEX3 tid="t2" type="DATE" value="FUTURE_REF">the future</TIMEX3>]
+[Text=future CharacterOffsetBegin=74 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=future NamedEntityTag=DATE NormalizedNamedEntityTag=FUTURE_REF Timex=<TIMEX3 tid="t2" type="DATE" value="FUTURE_REF">the future</TIMEX3>]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP think)
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ 's)
+                (ADJP (JJ hard)
+                  (S
+                    (VP (TO to)
+                      (VP (VB believe)
+                        (NP (DT the) (NN information))
+                        (ADVP (RB now))))))))))))
+    (ADVP (RB just))
+    (VP (VB wait)
+      (PP (IN until)
+        (NP (DT the) (NN future))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wait-13)
+mark(think-3, If-1)
+nsubj(think-3, you-2)
+advcl:if(wait-13, think-3)
+nsubj(hard-6, it-4)
+nsubj:xsubj(believe-8, it-4)
+cop(hard-6, 's-5)
+ccomp(think-3, hard-6)
+mark(believe-8, to-7)
+xcomp(hard-6, believe-8)
+det(information-10, the-9)
+obj(believe-8, information-10)
+advmod(believe-8, now-11)
+advmod(wait-13, just-12)
+case(future-16, until-14)
+det(future-16, the-15)
+obl:until(wait-13, future-16)
+punct(wait-13, .-17)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+the future	DATE	DATE:-1.0

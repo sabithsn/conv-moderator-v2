@@ -1,0 +1,74 @@
+Document: ID=F846E085.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Speaking seriously, I utterly hate that Ukrainian state tolerates and in many cases support literal Nazi retards.
+
+Tokens:
+[Text=Speaking CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBG Lemma=speak NamedEntityTag=O]
+[Text=seriously CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=utterly CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=utterly NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=hate NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Ukrainian CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=ukrainian NamedEntityTag=NATIONALITY]
+[Text=state CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=tolerates CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=VBZ Lemma=tolerate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=cases CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=case NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=VBP Lemma=support NamedEntityTag=O]
+[Text=literal CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=literal NamedEntityTag=O]
+[Text=Nazi CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=nazi NamedEntityTag=IDEOLOGY]
+[Text=retards CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=retard NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Speaking)
+        (ADVP (RB seriously))))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB utterly))
+    (VP (VBP hate)
+      (SBAR
+        (S
+          (NP (DT that) (JJ Ukrainian) (NN state))
+          (VP
+            (VP (VBZ tolerates))
+            (CC and)
+            (PP (IN in)
+              (NP (JJ many) (NNS cases)))
+            (VP (VBP support)
+              (NP (JJ literal) (JJ Nazi) (NNS retards)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hate-6)
+advcl(hate-6, Speaking-1)
+advmod(Speaking-1, seriously-2)
+punct(hate-6, ,-3)
+nsubj(hate-6, I-4)
+advmod(hate-6, utterly-5)
+det(state-9, that-7)
+amod(state-9, Ukrainian-8)
+nsubj(tolerates-10, state-9)
+ccomp(hate-6, tolerates-10)
+cc(cases-14, and-11)
+case(cases-14, in-12)
+amod(cases-14, many-13)
+ccomp(hate-6, cases-14)
+conj:and(tolerates-10, cases-14)
+dep(tolerates-10, support-15)
+amod(retards-18, literal-16)
+amod(retards-18, Nazi-17)
+obj(support-15, retards-18)
+punct(hate-6, .-19)
+
+Extracted the following NER entity mentions:
+Ukrainian	NATIONALITY	MISC:0.9999923981324806
+Nazi	IDEOLOGY	MISC:0.9999207323401695

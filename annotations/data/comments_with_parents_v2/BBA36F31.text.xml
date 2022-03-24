@@ -1,0 +1,73 @@
+Document: ID=BBA36F31.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Dr. Fauci has being trying to gather all the wealth he needs before he gets sacked.
+
+Tokens:
+[Text=Dr. CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=gather CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=gather NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wealth CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=wealth NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=gets CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=sacked CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=VBN Lemma=sack NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Dr.) (NNP Fauci))
+    (VP (VBZ has)
+      (S
+        (VP (VBG being)))
+      (S
+        (VP (VBG trying)
+          (S
+            (VP (TO to)
+              (VP (VB gather)
+                (NP
+                  (NP (PDT all) (DT the) (NN wealth))
+                  (SBAR
+                    (S
+                      (NP (PRP he))
+                      (VP (VBZ needs)
+                        (SBAR (IN before)
+                          (S
+                            (NP (PRP he))
+                            (VP (VBZ gets)
+                              (VP (VBN sacked)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-3)
+compound(Fauci-2, Dr.-1)
+nsubj(has-3, Fauci-2)
+xcomp(has-3, being-4)
+xcomp(has-3, trying-5)
+mark(gather-7, to-6)
+xcomp(trying-5, gather-7)
+det:predet(wealth-10, all-8)
+det(wealth-10, the-9)
+obj(gather-7, wealth-10)
+nsubj(needs-12, he-11)
+acl:relcl(wealth-10, needs-12)
+mark(sacked-16, before-13)
+nsubj:pass(sacked-16, he-14)
+aux:pass(sacked-16, gets-15)
+advcl:before(needs-12, sacked-16)
+punct(has-3, .-17)
+
+Extracted the following NER entity mentions:
+Fauci	PERSON	PERSON:0.9999571159080959
+he	PERSON	-
+he	PERSON	-

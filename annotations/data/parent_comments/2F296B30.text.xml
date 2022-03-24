@@ -1,0 +1,83 @@
+Document: ID=2F296B30.text (3 sentences, 15 tokens)
+
+Sentence #1 (3 tokens):
+Another reply!
+
+Tokens:
+[Text=Another CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=reply CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=reply NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (DT Another) (NN reply) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reply-2)
+det(reply-2, Another-1)
+punct(reply-2, !-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+I don’t get too many of these.
+
+Tokens:
+[Text=I CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n’t)
+      (VP (VB get)
+        (ADJP (RB too) (JJ many))
+        (PP (IN of)
+          (NP (DT these)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, get-4)
+nsubj(get-4, I-1)
+aux(get-4, do-2)
+advmod(get-4, n’t-3)
+advmod(many-6, too-5)
+xcomp(get-4, many-6)
+case(these-8, of-7)
+obl:of(get-4, these-8)
+punct(get-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+Thank you 🙏🏼
+
+Tokens:
+[Text=Thank CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=🙏🏼 CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NFP Lemma=🙏🏼 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Thank)
+      (NP (PRP you)))
+    (NFP 🙏🏼)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thank-1)
+obj(Thank-1, you-2)
+punct(Thank-1, 🙏🏼-3)
+
+Extracted the following NER entity mentions:

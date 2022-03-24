@@ -1,0 +1,62 @@
+Document: ID=3FEEAEBD.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Ruining Italy and causing the mafia to rise up again to own the fascists.
+
+Tokens:
+[Text=Ruining CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=ruin NamedEntityTag=O]
+[Text=Italy CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Italy NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=causing CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=cause NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mafia CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=mafia NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=rise CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=rise NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=own NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fascists CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=fascist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VBG Ruining)
+        (NP (NNP Italy)))
+      (CC and)
+      (VP (VBG causing)
+        (NP (DT the) (NN mafia))
+        (S
+          (VP (TO to)
+            (VP (VB rise)
+              (PRT (RP up))
+              (ADVP (RB again))
+              (S
+                (VP (TO to)
+                  (VP (VB own)
+                    (NP (DT the) (NNS fascists))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ruining-1)
+obj(Ruining-1, Italy-2)
+cc(causing-4, and-3)
+conj:and(Ruining-1, causing-4)
+det(mafia-6, the-5)
+obj(causing-4, mafia-6)
+mark(rise-8, to-7)
+advcl:to(causing-4, rise-8)
+compound:prt(rise-8, up-9)
+advmod(rise-8, again-10)
+mark(own-12, to-11)
+xcomp(rise-8, own-12)
+det(fascists-14, the-13)
+obj(own-12, fascists-14)
+punct(Ruining-1, .-15)
+
+Extracted the following NER entity mentions:
+Italy	COUNTRY	LOCATION:0.9854627373422998

@@ -1,0 +1,57 @@
+Document: ID=57C540E9.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+AITA for feeding seagulls laxatives to get people to leave my property?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=feeding CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=feed NamedEntityTag=O]
+[Text=seagulls CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=seagull NamedEntityTag=O]
+[Text=laxatives CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=laxative NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=leave NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=property CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=property NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG feeding)
+          (NP (NNS seagulls))
+          (NP (NNS laxatives))
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (NP (NNS people))
+                (S
+                  (VP (TO to)
+                    (VP (VB leave)
+                      (NP (PRP$ my) (NN property)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(feeding-3, for-2)
+dep(AITA-1, feeding-3)
+iobj(feeding-3, seagulls-4)
+obj(feeding-3, laxatives-5)
+mark(get-7, to-6)
+advcl:to(feeding-3, get-7)
+obj(get-7, people-8)
+mark(leave-10, to-9)
+advcl:to(get-7, leave-10)
+nmod:poss(property-12, my-11)
+obj(leave-10, property-12)
+punct(AITA-1, ?-13)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.5894981193956236

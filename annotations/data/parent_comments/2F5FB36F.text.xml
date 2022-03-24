@@ -1,0 +1,75 @@
+Document: ID=2F5FB36F.text (2 sentences, 15 tokens)
+
+Sentence #1 (5 tokens):
+No friggin' way.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=friggin CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=friggin NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT No) (NN friggin) ('' '))
+    (NP (NN way))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, friggin-2)
+det(friggin-2, No-1)
+punct(friggin-2, '-3)
+dep(friggin-2, way-4)
+punct(friggin-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+You're gonna have to explain that one.
+
+Tokens:
+[Text=You CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=explain CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=explain NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG gon)
+        (S
+          (VP (TO na)
+            (VP (VB have)
+              (S
+                (VP (TO to)
+                  (VP (VB explain)
+                    (NP (DT that) (NN one))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gon-3)
+nsubj(gon-3, You-1)
+nsubj:xsubj(have-5, You-1)
+aux(gon-3, 're-2)
+mark(have-5, na-4)
+xcomp(gon-3, have-5)
+mark(explain-7, to-6)
+xcomp(have-5, explain-7)
+det(one-9, that-8)
+obj(explain-7, one-9)
+punct(gon-3, .-10)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

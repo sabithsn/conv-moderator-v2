@@ -1,0 +1,99 @@
+Document: ID=B232E547.text (3 sentences, 18 tokens)
+
+Sentence #1 (2 tokens):
+NTA.
+
+Tokens:
+[Text=NTA CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=nta NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN NTA) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, NTA-1)
+punct(NTA-1, .-2)
+
+Extracted the following NER entity mentions:
+NTA	ORGANIZATION	ORGANIZATION:0.9764937941834244
+
+Sentence #2 (10 tokens):
+I would be petty : she blows your candles ?
+
+Tokens:
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=petty CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=petty NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=blows CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=blow NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=candles CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=candle NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (JJ petty)))))
+    (: :)
+    (S
+      (NP (PRP she))
+      (VP (VBZ blows)
+        (NP (PRP$ your) (NNS candles))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, petty-4)
+nsubj(petty-4, I-1)
+aux(petty-4, would-2)
+cop(petty-4, be-3)
+punct(petty-4, :-5)
+nsubj(blows-7, she-6)
+parataxis(petty-4, blows-7)
+nmod:poss(candles-9, your-8)
+obj(blows-7, candles-9)
+punct(petty-4, ?-10)
+
+Extracted the following NER entity mentions:
+she	PERSON	-
+
+Sentence #3 (6 tokens):
+Next birthday, blow hers.
+
+Tokens:
+[Text=Next CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=birthday CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=birthday NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=blow CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=blow NamedEntityTag=O]
+[Text=hers CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=hers NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Next) (NN birthday))
+    (, ,)
+    (NP
+      (NP (NN blow))
+      (NP (PRP hers)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, birthday-2)
+amod(birthday-2, Next-1)
+punct(birthday-2, ,-3)
+appos(birthday-2, blow-4)
+dep(blow-4, hers-5)
+punct(birthday-2, .-6)
+
+Extracted the following NER entity mentions:
+hers	PERSON	-

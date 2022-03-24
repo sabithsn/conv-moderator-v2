@@ -1,0 +1,100 @@
+Document: ID=8B5BCEEC.text (2 sentences, 24 tokens)
+
+Sentence #1 (15 tokens):
+Type in   >teaching children in the third grade about sexual activity  Into google.
+
+Tokens:
+[Text=Type CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=type NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=teaching CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=teaching NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=third CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=third NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=grade CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=grade NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=sexual CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=activity CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=activity NamedEntityTag=O]
+[Text=Into CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=google CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=google NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Type))
+      (PP (IN in)))
+    (VP (SYM >)
+      (NP (NN teaching) (NNS children))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ third) (NN grade))
+          (PP (IN about)
+            (NP (JJ sexual) (NN activity)))))
+      (PP (IN Into)
+        (NP (NNP google))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, children-5)
+nsubj(children-5, Type-1)
+acl(Type-1, in-2)
+dep(children-5, >-3)
+compound(children-5, teaching-4)
+case(grade-9, in-6)
+det(grade-9, the-7)
+amod(grade-9, third-8)
+obl:in(children-5, grade-9)
+case(activity-12, about-10)
+amod(activity-12, sexual-11)
+nmod:about(grade-9, activity-12)
+case(google-14, Into-13)
+obl:into(children-5, google-14)
+punct(children-5, .-15)
+
+Extracted the following NER entity mentions:
+third	ORDINAL	ORDINAL:-1.0
+
+Sentence #2 (9 tokens):
+I did not know about this until now.
+
+Tokens:
+[Text=I CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB not)
+      (VP (VB know)
+        (PP (IN about)
+          (NP (DT this)))
+        (PP (IN until)
+          (ADVP (RB now)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-4)
+nsubj(know-4, I-1)
+aux(know-4, did-2)
+advmod(know-4, not-3)
+case(this-6, about-5)
+obl:about(know-4, this-6)
+case(now-8, until-7)
+advcl:until(know-4, now-8)
+punct(know-4, .-9)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

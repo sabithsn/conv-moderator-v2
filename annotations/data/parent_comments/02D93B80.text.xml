@@ -1,0 +1,41 @@
+Document: ID=02D93B80.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Which guy looks old and tired again?
+
+Tokens:
+[Text=Which CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tired CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=tired NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHNP (WDT Which))
+    (S
+      (NP (NN guy))
+      (VP (VBZ looks)
+        (ADJP (JJ old)
+          (CC and)
+          (JJ tired))
+        (ADVP (RB again))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looks-3)
+obj(old-4, Which-1)
+nsubj(looks-3, guy-2)
+xcomp(looks-3, old-4)
+cc(tired-6, and-5)
+xcomp(looks-3, tired-6)
+conj:and(old-4, tired-6)
+advmod(looks-3, again-7)
+punct(looks-3, ?-8)
+
+Extracted the following NER entity mentions:

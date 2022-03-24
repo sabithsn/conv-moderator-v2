@@ -1,0 +1,74 @@
+Document: ID=30719100.text (3 sentences, 12 tokens)
+
+Sentence #1 (6 tokens):
+Your heroes are all sociopaths.
+
+Tokens:
+[Text=Your CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=heroes CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=hero NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=sociopaths CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=sociopath NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (NNS heroes))
+    (VP (VBP are)
+      (NP (DT all) (NNS sociopaths)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sociopaths-5)
+nmod:poss(heroes-2, Your-1)
+nsubj(sociopaths-5, heroes-2)
+cop(sociopaths-5, are-3)
+det(sociopaths-5, all-4)
+punct(sociopaths-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Change my mind.
+
+Tokens:
+[Text=Change CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Change)
+      (NP (PRP$ my) (NN mind)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Change-1)
+nmod:poss(mind-3, my-2)
+obj(Change-1, mind-3)
+punct(Change-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (2 tokens):
+Bell end
+
+Tokens:
+[Text=Bell CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Bell NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Bell) (NN end)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, end-2)
+compound(end-2, Bell-1)
+
+Extracted the following NER entity mentions:

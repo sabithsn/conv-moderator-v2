@@ -1,0 +1,71 @@
+Document: ID=F38EABEB.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+AT&T Commercial Star Milana Vayntrub: 'I Am Grateful for the Beautifully Boring Abortion I Had"
+
+Tokens:
+[Text=AT&T CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AT&T NamedEntityTag=ORGANIZATION]
+[Text=Commercial CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Commercial NamedEntityTag=O]
+[Text=Star CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Star NamedEntityTag=O]
+[Text=Milana CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Milana NamedEntityTag=PERSON]
+[Text=Vayntrub CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Vayntrub NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=Am CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Grateful CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Grateful NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Beautifully CharacterOffsetBegin=61 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=beautifully NamedEntityTag=O]
+[Text=Boring CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=boring NamedEntityTag=O]
+[Text=Abortion CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=Had CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP AT&T) (NNP Commercial) (NNP Star) (NNP Milana) (NNP Vayntrub))
+      (PRN (: :)
+        (S
+          (NP (`` ') (PRP I))
+          (VP (VBP Am)
+            (NP
+              (NP (NNP Grateful))
+              (PP (IN for)
+                (NP
+                  (NP (DT the)
+                    (ADJP (RB Beautifully) (JJ Boring))
+                    (NN Abortion))
+                  (SBAR
+                    (S
+                      (NP (PRP I))
+                      (VP (VBD Had))))))))))
+      (`` "))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Vayntrub-5)
+compound(Vayntrub-5, AT&T-1)
+compound(Vayntrub-5, Commercial-2)
+compound(Vayntrub-5, Star-3)
+compound(Vayntrub-5, Milana-4)
+punct(Grateful-10, :-6)
+punct(I-8, '-7)
+nsubj(Grateful-10, I-8)
+cop(Grateful-10, Am-9)
+dep(Vayntrub-5, Grateful-10)
+case(Abortion-15, for-11)
+det(Abortion-15, the-12)
+advmod(Boring-14, Beautifully-13)
+amod(Abortion-15, Boring-14)
+nmod:for(Grateful-10, Abortion-15)
+nsubj(Had-17, I-16)
+acl:relcl(Abortion-15, Had-17)
+punct(Vayntrub-5, "-18)
+
+Extracted the following NER entity mentions:
+AT&T	ORGANIZATION	ORGANIZATION:0.9713215965578021
+Milana Vayntrub	PERSON	PERSON:0.984818643492596

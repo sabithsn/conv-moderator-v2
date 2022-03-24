@@ -1,0 +1,58 @@
+Document: ID=92D5F78A.text (2 sentences, 9 tokens)
+
+Sentence #1 (5 tokens):
+Now do dick size.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=do CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=dick CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=dick NamedEntityTag=O]
+[Text=size CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=size NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (VP (VB do)
+      (VP (VB dick)
+        (NP (NN size))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dick-3)
+advmod(dick-3, Now-1)
+aux(dick-3, do-2)
+obj(dick-3, size-4)
+punct(dick-3, .-5)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+
+Sentence #2 (4 tokens):
+Sorry, Charlie.
+
+Tokens:
+[Text=Sorry CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=UH Lemma=sorry NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Charlie CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Charlie NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Sorry))
+    (, ,)
+    (NP (NNP Charlie))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Charlie-3)
+discourse(Charlie-3, Sorry-1)
+punct(Charlie-3, ,-2)
+punct(Charlie-3, .-4)
+
+Extracted the following NER entity mentions:
+Charlie	PERSON	PERSON:0.9934489369947779

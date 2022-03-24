@@ -1,0 +1,40 @@
+Document: ID=48718121.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+I'd make the planet spin the opposite direction
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=planet CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=planet NamedEntityTag=O]
+[Text=spin CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VB Lemma=spin NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opposite CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=opposite NamedEntityTag=O]
+[Text=direction CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=direction NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB make)
+        (S
+          (NP (DT the) (NN planet))
+          (VP (VB spin)
+            (NP (DT the) (JJ opposite) (NN direction))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-3)
+nsubj(make-3, I-1)
+aux(make-3, 'd-2)
+det(planet-5, the-4)
+nsubj(spin-6, planet-5)
+ccomp(make-3, spin-6)
+det(direction-9, the-7)
+amod(direction-9, opposite-8)
+obj(spin-6, direction-9)
+
+Extracted the following NER entity mentions:

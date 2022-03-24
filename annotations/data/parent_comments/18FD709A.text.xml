@@ -1,0 +1,47 @@
+Document: ID=18FD709A.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+US Judge Blocks Biden Federal Employee COVID-19 Vaccine Mandate
+
+Tokens:
+[Text=US CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=Judge CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Judge NamedEntityTag=TITLE]
+[Text=Blocks CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNPS Lemma=Blocks NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Federal CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Federal NamedEntityTag=O]
+[Text=Employee CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Employee NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=19 CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=19 NamedEntityTag=O]
+[Text=Vaccine CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Vaccine NamedEntityTag=O]
+[Text=Mandate CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Mandate NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP US)
+    (NML (NNP Judge) (NNPS Blocks))
+    (NNP Biden) (NNP Federal)
+    (NML
+      (NML (NNP Employee) (NNP COVID))
+      (PP (HYPH -)
+        (NP (NNP 19))))
+    (NNP Vaccine) (NNP Mandate)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Mandate-11)
+compound(Mandate-11, US-1)
+compound(Blocks-3, Judge-2)
+compound(Mandate-11, Blocks-3)
+compound(Mandate-11, Biden-4)
+compound(Mandate-11, Federal-5)
+compound(COVID-7, Employee-6)
+compound(Mandate-11, COVID-7)
+punct(19-9, --8)
+nmod(COVID-7, 19-9)
+compound(Mandate-11, Vaccine-10)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9816541489121318
+Judge	TITLE	-
+Biden	PERSON	PERSON:0.8826566025774196

@@ -1,0 +1,90 @@
+Document: ID=2453F60A.text (2 sentences, 21 tokens)
+
+Sentence #1 (5 tokens):
+The state protects capital.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=protects CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=protect NamedEntityTag=O]
+[Text=capital CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=capital NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN state))
+    (VP (VBZ protects)
+      (NP (NN capital)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, protects-3)
+det(state-2, The-1)
+nsubj(protects-3, state-2)
+obj(protects-3, capital-4)
+punct(protects-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+The monopoly on violence serves the bourgeois, the law is written by the bourgeois.
+
+Tokens:
+[Text=The CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=monopoly CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=monopoly NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=violence CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=violence NamedEntityTag=CAUSE_OF_DEATH]
+[Text=serves CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=serve NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bourgeois CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=bourgeois NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bourgeois CharacterOffsetBegin=101 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=bourgeois NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN monopoly))
+        (PP (IN on)
+          (NP (NN violence))))
+      (VP (VBZ serves)
+        (NP (DT the) (NN bourgeois))))
+    (, ,)
+    (NP (DT the) (NN law))
+    (VP (VBZ is)
+      (VP (VBN written)
+        (PP (IN by)
+          (NP (DT the) (NN bourgeois)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, written-12)
+det(monopoly-2, The-1)
+nsubj(serves-5, monopoly-2)
+case(violence-4, on-3)
+nmod:on(monopoly-2, violence-4)
+ccomp(written-12, serves-5)
+det(bourgeois-7, the-6)
+obj(serves-5, bourgeois-7)
+punct(written-12, ,-8)
+det(law-10, the-9)
+nsubj:pass(written-12, law-10)
+aux:pass(written-12, is-11)
+case(bourgeois-15, by-13)
+det(bourgeois-15, the-14)
+obl:agent(written-12, bourgeois-15)
+punct(written-12, .-16)
+
+Extracted the following NER entity mentions:
+violence	CAUSE_OF_DEATH	-

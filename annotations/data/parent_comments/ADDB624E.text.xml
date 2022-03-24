@@ -1,0 +1,58 @@
+Document: ID=ADDB624E.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Me When a Rightie Tries to Argue that the GOP Doesn't Fund Terrorism
+
+Tokens:
+[Text=Me CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=When CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Rightie CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Rightie NamedEntityTag=O]
+[Text=Tries CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Argue CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Argue NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=GOP CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Does CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Fund CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Fund NamedEntityTag=O]
+[Text=Terrorism CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Terrorism NamedEntityTag=CRIMINAL_CHARGE]
+
+Constituency parse: 
+(ROOT
+  (X
+    (NP (PRP Me))
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT a) (NNP Rightie))
+        (VP (VBZ Tries)
+          (PP (IN to)
+            (NP (NNP Argue)))
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (NNP GOP))
+              (VP (VBZ Does) (RB n't)
+                (NP (NNP Fund) (NNP Terrorism))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Me-1)
+advmod(Tries-5, When-2)
+det(Rightie-4, a-3)
+nsubj(Tries-5, Rightie-4)
+dep(Me-1, Tries-5)
+case(Argue-7, to-6)
+obl:to(Tries-5, Argue-7)
+mark(Does-11, that-8)
+det(GOP-10, the-9)
+nsubj(Does-11, GOP-10)
+ccomp(Tries-5, Does-11)
+advmod(Does-11, n't-12)
+compound(Terrorism-14, Fund-13)
+obj(Does-11, Terrorism-14)
+
+Extracted the following NER entity mentions:
+GOP	ORGANIZATION	ORGANIZATION:0.8134962696526974
+Terrorism	CRIMINAL_CHARGE	-

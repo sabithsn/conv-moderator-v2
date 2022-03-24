@@ -1,0 +1,108 @@
+Document: ID=5018372B.text (2 sentences, 24 tokens)
+
+Sentence #1 (8 tokens):
+He was literally dying from benzo withdrawal.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=dying CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VBG Lemma=die NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=benzo CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=benzo NamedEntityTag=O]
+[Text=withdrawal CharacterOffsetBegin=34 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=withdrawal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADVP (RB literally))
+      (VP (VBG dying)
+        (PP (IN from)
+          (NP (NN benzo) (NN withdrawal)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dying-4)
+nsubj(dying-4, He-1)
+aux(dying-4, was-2)
+advmod(dying-4, literally-3)
+case(withdrawal-7, from-5)
+compound(withdrawal-7, benzo-6)
+obl:from(dying-4, withdrawal-7)
+punct(dying-4, .-8)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #2 (16 tokens):
+Libleft only cares about drugs when it isn’t a conservative white male who needs help
+
+Tokens:
+[Text=Libleft CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Libleft NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=cares CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=VBZ Lemma=care NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=drugs CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=drug NamedEntityTag=CRIMINAL_CHARGE]
+[Text=when CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=93 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=white CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=male CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=male NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Libleft))
+    (ADVP (RB only))
+    (VP (VBZ cares)
+      (PP (IN about)
+        (NP
+          (NP (NNS drugs))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP it))
+              (VP (VBZ is) (RB n’t)
+                (NP
+                  (NP (DT a) (JJ conservative) (JJ white) (NN male))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ needs)
+                        (NP (NN help))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cares-3)
+nsubj(cares-3, Libleft-1)
+advmod(cares-3, only-2)
+case(drugs-5, about-4)
+obl:about(cares-3, drugs-5)
+nsubj(needs-15, drugs-5)
+advmod(male-13, when-6)
+nsubj(male-13, it-7)
+cop(male-13, is-8)
+advmod(male-13, n’t-9)
+det(male-13, a-10)
+amod(male-13, conservative-11)
+amod(male-13, white-12)
+acl:relcl(drugs-5, male-13)
+nsubj(needs-15, male-13)
+ref(drugs-5, who-14)
+ref(male-13, who-14)
+acl:relcl(male-13, needs-15)
+obj(needs-15, help-16)
+
+Extracted the following NER entity mentions:
+drugs	CRIMINAL_CHARGE	-
+conservative	IDEOLOGY	-

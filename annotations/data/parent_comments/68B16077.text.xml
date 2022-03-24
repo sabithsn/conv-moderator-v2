@@ -1,0 +1,63 @@
+Document: ID=68B16077.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+AITA for not wanting my 12yo sister to visit me in college with my mom?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=wanting CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=want NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=12yo CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=12yo NamedEntityTag=O]
+[Text=sister CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=sister NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=visit CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=visit NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=college CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=college NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mom CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=mom NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S (RB not)
+        (VP (VBG wanting)
+          (NP (PRP$ my) (JJ 12yo) (NN sister))
+          (S
+            (VP (TO to)
+              (VP (VB visit)
+                (NP (PRP me))
+                (PP (IN in)
+                  (NP
+                    (NP (NN college))
+                    (PP (IN with)
+                      (NP (PRP$ my) (NN mom)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(wanting-4, for-2)
+advmod(wanting-4, not-3)
+dep(AITA-1, wanting-4)
+nmod:poss(sister-7, my-5)
+amod(sister-7, 12yo-6)
+obj(wanting-4, sister-7)
+mark(visit-9, to-8)
+advcl:to(wanting-4, visit-9)
+obj(visit-9, me-10)
+case(college-12, in-11)
+obl:in(visit-9, college-12)
+case(mom-15, with-13)
+nmod:poss(mom-15, my-14)
+nmod:with(college-12, mom-15)
+punct(AITA-1, ?-16)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.45841132205362745

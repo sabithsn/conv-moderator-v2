@@ -1,0 +1,198 @@
+Document: ID=93FD8F50.text (5 sentences, 40 tokens)
+
+Sentence #1 (13 tokens):
+>And for the life of me I cannot understand why.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=, Lemma=> NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (, >)
+      (NP (CC And))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN life))
+          (PP (IN of)
+            (NP (PRP me))))))
+    (NP (PRP I))
+    (VP (MD can) (RB not)
+      (VP (VB understand)
+        (SBARQ
+          (WHADVP (WRB why)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understand-11)
+punct(And-2, >-1)
+nsubj(understand-11, And-2)
+case(life-5, for-3)
+det(life-5, the-4)
+nmod:for(And-2, life-5)
+case(me-7, of-6)
+nmod:of(life-5, me-7)
+nsubj(understand-11, I-8)
+aux(understand-11, can-9)
+advmod(understand-11, not-10)
+ccomp(understand-11, why-12)
+punct(understand-11, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+**They hate America and Americans who love America.
+
+Tokens:
+[Text=** CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=NFP Lemma=** NamedEntityTag=O]
+[Text=They CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=hate NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=75 CharacterOffsetEnd=84 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=who CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP **)
+    (NP (PRP They))
+    (VP (VBP hate)
+      (NP
+        (NP (NNP America)
+          (CC and)
+          (NNPS Americans))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP love)
+              (NP (NNP America)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hate-3)
+punct(hate-3, **-1)
+nsubj(hate-3, They-2)
+obj(hate-3, America-4)
+nsubj(love-8, America-4)
+cc(Americans-6, and-5)
+obj(hate-3, Americans-6)
+conj:and(America-4, Americans-6)
+nsubj(love-8, Americans-6)
+ref(America-4, who-7)
+acl:relcl(America-4, love-8)
+obj(love-8, America-9)
+punct(hate-3, .-10)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.9518629644613669
+Americans	MISC	MISC:0.9998909132797195
+America	COUNTRY	LOCATION:0.9553534785463326
+
+Sentence #3 (6 tokens):
+**  It is that simple.
+
+Tokens:
+[Text=** CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=NFP Lemma=** NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=simple CharacterOffsetBegin=117 CharacterOffsetEnd=123 PartOfSpeech=JJ Lemma=simple NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP **)
+    (NP (PRP It))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (FRAG
+          (ADJP (JJ simple)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+punct(is-3, **-1)
+nsubj(is-3, It-2)
+mark(simple-5, that-4)
+dep(is-3, simple-5)
+punct(is-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (6 tokens):
+They are the enemy within.
+
+Tokens:
+[Text=They CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=enemy CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=146 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (PP
+        (NP (DT the) (NN enemy))
+        (IN within)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enemy-4)
+nsubj(enemy-4, They-1)
+cop(enemy-4, are-2)
+det(enemy-4, the-3)
+case(enemy-4, within-5)
+punct(enemy-4, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (5 tokens):
+This is not hyperbole.
+
+Tokens:
+[Text=This CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=hyperbole CharacterOffsetBegin=166 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=hyperbole NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is) (RB not)
+      (NP (NN hyperbole)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hyperbole-4)
+nsubj(hyperbole-4, This-1)
+cop(hyperbole-4, is-2)
+advmod(hyperbole-4, not-3)
+punct(hyperbole-4, .-5)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,44 @@
+Document: ID=286D3519.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Seriously, you guys seem to REALLY hate Romani
+
+Tokens:
+[Text=Seriously CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=REALLY CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=hate NamedEntityTag=O]
+[Text=Romani CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Romani NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Seriously))
+    (, ,)
+    (NP (PRP you) (NNS guys))
+    (VP (VBP seem)
+      (S
+        (VP (TO to)
+          (ADVP (RB REALLY))
+          (VP (VB hate)
+            (NP (NNP Romani))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seem-5)
+advmod(seem-5, Seriously-1)
+punct(seem-5, ,-2)
+dep(guys-4, you-3)
+nsubj(seem-5, guys-4)
+nsubj:xsubj(hate-8, guys-4)
+mark(hate-8, to-6)
+advmod(hate-8, REALLY-7)
+xcomp(seem-5, hate-8)
+obj(hate-8, Romani-9)
+
+Extracted the following NER entity mentions:
+Romani	PERSON	PERSON:0.8713688112489266

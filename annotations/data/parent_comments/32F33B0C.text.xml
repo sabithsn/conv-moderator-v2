@@ -1,0 +1,84 @@
+Document: ID=32F33B0C.text (3 sentences, 14 tokens)
+
+Sentence #1 (4 tokens):
+I will say.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB say)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-3)
+nsubj(say-3, I-1)
+aux(say-3, will-2)
+punct(say-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+I’m more anti-war than I am anti-gene therapy
+
+Tokens:
+[Text=I CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=anti-war CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=anti-war NamedEntityTag=IDEOLOGY]
+[Text=than CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=anti-gene CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=anti-gene NamedEntityTag=O]
+[Text=therapy CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=therapy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (ADJP
+        (ADJP (JJR more) (JJ anti-war))
+        (SBAR (IN than)
+          (S
+            (NP (PRP I))
+            (VP (VBP am)
+              (NP (JJ anti-gene) (NN therapy)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, anti-war-4)
+nsubj(anti-war-4, I-1)
+cop(anti-war-4, ’m-2)
+advmod(anti-war-4, more-3)
+mark(therapy-9, than-5)
+nsubj(therapy-9, I-6)
+cop(therapy-9, am-7)
+amod(therapy-9, anti-gene-8)
+ccomp(anti-war-4, therapy-9)
+
+Extracted the following NER entity mentions:
+anti-war	IDEOLOGY	-

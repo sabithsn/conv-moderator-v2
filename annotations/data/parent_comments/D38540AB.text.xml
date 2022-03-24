@@ -1,0 +1,89 @@
+Document: ID=D38540AB.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+CMV: Bullies In School (As long as they're reported and have done relentlessly) should serve a prison sentence.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Bullies CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNPS Lemma=Bullies NamedEntityTag=ORGANIZATION]
+[Text=In CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=in NamedEntityTag=ORGANIZATION]
+[Text=School CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=School NamedEntityTag=ORGANIZATION]
+[Text=( CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=reported CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=report NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=relentlessly CharacterOffsetBegin=66 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=relentlessly NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=serve CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=VB Lemma=serve NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prison CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=prison NamedEntityTag=O]
+[Text=sentence CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=sentence NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP
+        (NP (NNPS Bullies))
+        (PP (IN In)
+          (NP (NNP School)))
+        (PRN (-LRB- -LRB-)
+          (SBAR
+            (ADVP (RB As) (RB long))
+            (IN as)
+            (S
+              (NP (PRP they))
+              (VP
+                (VP (VBP 're)
+                  (VP (VBN reported)))
+                (CC and)
+                (VP (VBP have)
+                  (VP (VBN done)
+                    (ADVP (RB relentlessly)))))))
+          (-RRB- -RRB-)))
+      (VP (MD should)
+        (VP (VB serve)
+          (NP (DT a) (NN prison) (NN sentence)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(serve-19, Bullies-3)
+case(School-5, In-4)
+nmod:in(Bullies-3, School-5)
+punct(reported-12, (-6)
+advmod(long-8, As-7)
+advmod(reported-12, long-8)
+mark(reported-12, as-9)
+nsubj:pass(reported-12, they-10)
+nsubj:pass(done-15, they-10)
+aux:pass(reported-12, 're-11)
+dep(Bullies-3, reported-12)
+cc(done-15, and-13)
+aux(done-15, have-14)
+dep(Bullies-3, done-15)
+conj:and(reported-12, done-15)
+advmod(done-15, relentlessly-16)
+punct(reported-12, )-17)
+aux(serve-19, should-18)
+appos(CMV-1, serve-19)
+det(sentence-22, a-20)
+compound(sentence-22, prison-21)
+obj(serve-19, sentence-22)
+punct(CMV-1, .-23)
+
+Extracted the following NER entity mentions:
+Bullies In School	ORGANIZATION	ORGANIZATION:0.5349777541840206

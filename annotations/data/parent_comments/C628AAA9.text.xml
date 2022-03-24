@@ -1,0 +1,131 @@
+Document: ID=C628AAA9.text (3 sentences, 28 tokens)
+
+Sentence #1 (6 tokens):
+Ironic, isn’t it?
+
+Tokens:
+[Text=Ironic CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=ironic NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADJP (JJ Ironic))
+    (, ,)
+    (S
+      (VP (VBZ is) (RB n’t)
+        (NP (PRP it))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ironic-1)
+punct(Ironic-1, ,-2)
+cop(it-5, is-3)
+advmod(it-5, n’t-4)
+dep(Ironic-1, it-5)
+punct(Ironic-1, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+Who banned Tom Sawyer and huck Finn because it contained n-words?
+
+Tokens:
+[Text=Who CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=ban NamedEntityTag=O]
+[Text=Tom CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Tom NamedEntityTag=PERSON]
+[Text=Sawyer CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Sawyer NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=huck CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=huck NamedEntityTag=O]
+[Text=Finn CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Finn NamedEntityTag=NATIONALITY]
+[Text=because CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=contained CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=VBD Lemma=contain NamedEntityTag=O]
+[Text=n CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=n NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD banned)
+        (NP
+          (NP (NNP Tom) (NNP Sawyer))
+          (CC and)
+          (NP (NNP huck) (NNP Finn)))
+        (SBAR (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBD contained)
+              (NP (NN n) (HYPH -) (NNS words)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, banned-2)
+nsubj(banned-2, Who-1)
+compound(Sawyer-4, Tom-3)
+obj(banned-2, Sawyer-4)
+cc(Finn-7, and-5)
+compound(Finn-7, huck-6)
+obj(banned-2, Finn-7)
+conj:and(Sawyer-4, Finn-7)
+mark(contained-10, because-8)
+nsubj(contained-10, it-9)
+advcl:because(banned-2, contained-10)
+compound(words-13, n-11)
+punct(words-13, --12)
+obj(contained-10, words-13)
+punct(banned-2, ?-14)
+
+Extracted the following NER entity mentions:
+Tom Sawyer	PERSON	PERSON:0.9995053906393487
+Finn	NATIONALITY	-
+
+Sentence #3 (8 tokens):
+Who takes down statues of Christopher Columbus?
+
+Tokens:
+[Text=Who CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=takes CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=take NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=statues CharacterOffsetBegin=101 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=statue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Christopher CharacterOffsetBegin=112 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=Christopher NamedEntityTag=PERSON]
+[Text=Columbus CharacterOffsetBegin=124 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=Columbus NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ takes)
+        (PRT (RP down))
+        (NP
+          (NP (NNS statues))
+          (PP (IN of)
+            (NP (NNP Christopher) (NNP Columbus))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, takes-2)
+nsubj(takes-2, Who-1)
+compound:prt(takes-2, down-3)
+obj(takes-2, statues-4)
+case(Columbus-7, of-5)
+compound(Columbus-7, Christopher-6)
+nmod:of(statues-4, Columbus-7)
+punct(takes-2, ?-8)
+
+Extracted the following NER entity mentions:
+Christopher Columbus	PERSON	PERSON:0.9891591733022108

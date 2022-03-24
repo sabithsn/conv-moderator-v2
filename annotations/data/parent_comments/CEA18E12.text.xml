@@ -1,0 +1,43 @@
+Document: ID=CEA18E12.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Alexander Kerensky and Volodymyr Zelenskyy bloodlines of the Illuminati
+
+Tokens:
+[Text=Alexander CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Alexander NamedEntityTag=PERSON]
+[Text=Kerensky CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Kerensky NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Volodymyr CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Volodymyr NamedEntityTag=PERSON]
+[Text=Zelenskyy CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Zelenskyy NamedEntityTag=PERSON]
+[Text=bloodlines CharacterOffsetBegin=43 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=bloodline NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Illuminati CharacterOffsetBegin=61 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Illuminati NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Alexander) (NNP Kerensky))
+      (CC and)
+      (NP (NNP Volodymyr) (NNP Zelenskyy)))
+    (NP
+      (NP (NNS bloodlines))
+      (PP (IN of)
+        (NP (DT the) (NNP Illuminati))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Kerensky-2)
+compound(Kerensky-2, Alexander-1)
+cc(Zelenskyy-5, and-3)
+compound(Zelenskyy-5, Volodymyr-4)
+conj:and(Kerensky-2, Zelenskyy-5)
+dep(Kerensky-2, bloodlines-6)
+case(Illuminati-9, of-7)
+det(Illuminati-9, the-8)
+nmod:of(bloodlines-6, Illuminati-9)
+
+Extracted the following NER entity mentions:
+Alexander Kerensky	PERSON	PERSON:0.9987282557066098
+Volodymyr Zelenskyy	PERSON	PERSON:0.9993290444394659

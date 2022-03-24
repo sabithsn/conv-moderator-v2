@@ -1,0 +1,144 @@
+Document: ID=0AF2A9AF.text (4 sentences, 30 tokens)
+
+Sentence #1 (2 tokens):
+Sweet.
+
+Tokens:
+[Text=Sweet CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Sweet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Sweet) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Sweet-1)
+punct(Sweet-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+More jobs/money for Americans.
+
+Tokens:
+[Text=More CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=jobs CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=job NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=SYM Lemma=/ NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJR More) (NNS jobs))
+    (PP (SYM /)
+      (NP (NN money)))
+    (PP (IN for)
+      (NP (NNPS Americans)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, jobs-2)
+amod(jobs-2, More-1)
+dep(money-4, /-3)
+nmod(jobs-2, money-4)
+case(Americans-6, for-5)
+nmod:for(jobs-2, Americans-6)
+punct(jobs-2, .-7)
+
+Extracted the following NER entity mentions:
+Americans	MISC	MISC:0.9996656536398875
+
+Sentence #3 (15 tokens):
+All McDonalds people can drive trucks and all the McDonald’s can go away.
+
+Tokens:
+[Text=All CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=McDonalds CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=McDonalds NamedEntityTag=ORGANIZATION]
+[Text=people CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=drive CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=drive NamedEntityTag=O]
+[Text=trucks CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=truck NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=McDonald CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=McDonald NamedEntityTag=ORGANIZATION]
+[Text=’s CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT All) (NNP McDonalds) (NNS people))
+    (VP (MD can)
+      (VP (VB drive)
+        (SBAR
+          (S
+            (NP
+              (NP (NNS trucks))
+              (CC and)
+              (NP (PDT all) (DT the) (NNP McDonald) (POS ’s)))
+            (VP (MD can)
+              (VP (VB go)
+                (ADVP (RB away))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, drive-5)
+det(people-3, All-1)
+compound(people-3, McDonalds-2)
+nsubj(drive-5, people-3)
+aux(drive-5, can-4)
+nsubj(go-13, trucks-6)
+cc(McDonald-10, and-7)
+det:predet(McDonald-10, all-8)
+det(McDonald-10, the-9)
+conj:and(trucks-6, McDonald-10)
+nsubj(go-13, McDonald-10)
+case(McDonald-10, ’s-11)
+aux(go-13, can-12)
+ccomp(drive-5, go-13)
+advmod(go-13, away-14)
+punct(drive-5, .-15)
+
+Extracted the following NER entity mentions:
+McDonalds	ORGANIZATION	ORGANIZATION:0.810468318538162
+McDonald	ORGANIZATION	ORGANIZATION:0.46835660210795216
+
+Sentence #4 (6 tokens):
+It’s a win/win
+
+Tokens:
+[Text=It CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=win CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=win NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=win CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=win NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP (DT a)
+        (NML (NN win) (HYPH /) (NN win))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, win-6)
+nsubj(win-6, It-1)
+cop(win-6, ’s-2)
+det(win-6, a-3)
+compound(win-6, win-4)
+punct(win-6, /-5)
+
+Extracted the following NER entity mentions:

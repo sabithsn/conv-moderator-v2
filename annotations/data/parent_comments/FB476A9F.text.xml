@@ -1,0 +1,91 @@
+Document: ID=FB476A9F.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+Flair up, literally a convicted paedophile who we learned was just released in 2020 after serving 5 years for raping a child.
+
+Tokens:
+[Text=Flair CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=flair NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=convicted CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=convict NamedEntityTag=O]
+[Text=paedophile CharacterOffsetBegin=32 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=paedophile NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=learned CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=learn NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=released CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=VBN Lemma=release NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t1" type="DATE" value="2020">2020</TIMEX3>]
+[Text=after CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=serving CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=VBG Lemma=serve NamedEntityTag=O]
+[Text=5 CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=CD Lemma=5 NamedEntityTag=DURATION NormalizedNamedEntityTag=P5Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P5Y">5 years</TIMEX3>]
+[Text=years CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P5Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P5Y">5 years</TIMEX3>]
+[Text=for CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=raping CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=VBG Lemma=rape NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP
+      (NP (NN Flair))
+      (RB up))
+    (, ,)
+    (NP
+      (NP (RB literally) (DT a) (VBN convicted) (NN paedophile))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (NP (PRP we))
+          (VP (VBD learned)))))
+    (VP (VBD was)
+      (ADVP (RB just))
+      (VP (VBN released)
+        (PP (IN in)
+          (NP (CD 2020)))
+        (PP (IN after)
+          (S
+            (VP (VBG serving)
+              (NP (CD 5) (NNS years))
+              (PP (IN for)
+                (S
+                  (VP (VBG raping)
+                    (NP (DT a) (NN child))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, released-13)
+obl:npmod(up-2, Flair-1)
+advmod(released-13, up-2)
+punct(released-13, ,-3)
+advmod(paedophile-7, literally-4)
+det(paedophile-7, a-5)
+amod(paedophile-7, convicted-6)
+obj(learned-10, paedophile-7)
+nsubj:pass(released-13, paedophile-7)
+ref(paedophile-7, who-8)
+nsubj(learned-10, we-9)
+acl:relcl(paedophile-7, learned-10)
+aux:pass(released-13, was-11)
+advmod(released-13, just-12)
+case(2020-15, in-14)
+obl:in(released-13, 2020-15)
+mark(serving-17, after-16)
+advcl:after(released-13, serving-17)
+nummod(years-19, 5-18)
+obl:tmod(serving-17, years-19)
+mark(raping-21, for-20)
+advcl:for(serving-17, raping-21)
+det(child-23, a-22)
+obj(raping-21, child-23)
+punct(released-13, .-24)
+
+Extracted the following NER entity mentions:
+2020	DATE	DATE:0.9902806023651742
+5 years	DURATION	DURATION:-1.0

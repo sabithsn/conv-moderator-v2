@@ -1,0 +1,52 @@
+Document: ID=D3A3B342.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Why are US rightwingers so opposed to a Black female supreme court nominee?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=rightwingers CharacterOffsetBegin=11 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=rightwinger NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=opposed CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=opposed NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Black CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=black NamedEntityTag=ORGANIZATION]
+[Text=female CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=female NamedEntityTag=ORGANIZATION]
+[Text=supreme CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=supreme NamedEntityTag=ORGANIZATION]
+[Text=court CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=court NamedEntityTag=ORGANIZATION]
+[Text=nominee CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=nominee NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP (NNP US) (NNS rightwingers))
+      (ADJP (RB so) (JJ opposed)
+        (PP (IN to)
+          (NP (DT a) (JJ Black) (JJ female) (JJ supreme) (NN court) (NN nominee)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, opposed-6)
+advmod(opposed-6, Why-1)
+cop(opposed-6, are-2)
+compound(rightwingers-4, US-3)
+nsubj(opposed-6, rightwingers-4)
+advmod(opposed-6, so-5)
+case(nominee-13, to-7)
+det(nominee-13, a-8)
+amod(nominee-13, Black-9)
+amod(nominee-13, female-10)
+amod(nominee-13, supreme-11)
+compound(nominee-13, court-12)
+obl:to(opposed-6, nominee-13)
+punct(opposed-6, ?-14)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.7880845101361758
+Black female supreme court	ORGANIZATION	ORGANIZATION:0.5271341434019052

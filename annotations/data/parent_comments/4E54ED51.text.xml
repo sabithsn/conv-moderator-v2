@@ -1,0 +1,36 @@
+Document: ID=4E54ED51.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+CMV: Reddit Karma Encourages Echo Chambers
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Reddit CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Reddit NamedEntityTag=O]
+[Text=Karma CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Karma NamedEntityTag=RELIGION]
+[Text=Encourages CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=encourage NamedEntityTag=O]
+[Text=Echo CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Echo NamedEntityTag=O]
+[Text=Chambers CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Chambers NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (NNP Reddit) (NNP Karma))
+      (VP (VBZ Encourages)
+        (NP (NNP Echo) (NNP Chambers))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+compound(Karma-4, Reddit-3)
+nsubj(Encourages-5, Karma-4)
+appos(CMV-1, Encourages-5)
+compound(Chambers-7, Echo-6)
+obj(Encourages-5, Chambers-7)
+
+Extracted the following NER entity mentions:
+Karma	RELIGION	-

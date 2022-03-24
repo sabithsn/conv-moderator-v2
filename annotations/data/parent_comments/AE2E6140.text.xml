@@ -1,0 +1,148 @@
+Document: ID=AE2E6140.text (3 sentences, 36 tokens)
+
+Sentence #1 (12 tokens):
+ELI5: Why are speed limits in the US so slow?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=speed CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=speed NamedEntityTag=O]
+[Text=limits CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=limit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=so CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP are)
+        (NP
+          (NP (NN speed) (NNS limits))
+          (PP (IN in)
+            (NP (DT the) (NNP US))))
+        (ADJP (RB so) (JJ slow))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(slow-11, Why-3)
+cop(slow-11, are-4)
+compound(limits-6, speed-5)
+nsubj(slow-11, limits-6)
+case(US-9, in-7)
+det(US-9, the-8)
+nmod:in(limits-6, US-9)
+advmod(slow-11, so-10)
+parataxis(ELI5-1, slow-11)
+punct(ELI5-1, ?-12)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9864578555928721
+
+Sentence #2 (16 tokens):
+Technology in the automotive industry has progressed so much from when these limits were created.
+
+Tokens:
+[Text=Technology CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=technology NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=automotive CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=automotive NamedEntityTag=O]
+[Text=industry CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=industry NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=progressed CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=VBN Lemma=progress NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=limits CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=limit NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=created CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=VBN Lemma=create NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN Technology))
+      (PP (IN in)
+        (NP (DT the) (JJ automotive) (NN industry))))
+    (VP (VBZ has)
+      (VP (VBN progressed)
+        (ADVP (RB so) (RB much))
+        (PP (IN from)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT these) (NNS limits))
+              (VP (VBD were)
+                (VP (VBN created))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, progressed-7)
+nsubj(progressed-7, Technology-1)
+case(industry-5, in-2)
+det(industry-5, the-3)
+amod(industry-5, automotive-4)
+nmod:in(Technology-1, industry-5)
+aux(progressed-7, has-6)
+advmod(much-9, so-8)
+advmod(progressed-7, much-9)
+mark(created-15, from-10)
+advmod(created-15, when-11)
+det(limits-13, these-12)
+nsubj:pass(created-15, limits-13)
+aux:pass(created-15, were-14)
+advcl:from(progressed-7, created-15)
+punct(progressed-7, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+So why are they still so low?
+
+Tokens:
+[Text=So CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=low CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=low NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ (RB So)
+    (WHADVP (WRB why))
+    (SQ (VBP are)
+      (NP (PRP they))
+      (ADVP (RB still))
+      (ADJP (RB so) (JJ low)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, low-7)
+advmod(low-7, So-1)
+advmod(low-7, why-2)
+cop(low-7, are-3)
+nsubj(low-7, they-4)
+advmod(low-7, still-5)
+advmod(low-7, so-6)
+punct(low-7, ?-8)
+
+Extracted the following NER entity mentions:

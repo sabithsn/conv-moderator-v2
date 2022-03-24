@@ -1,0 +1,86 @@
+Document: ID=561DC837.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+Most of Reddit still believes the unvaccinated people are the problem, not the governments and big pharma for overpromising a vaccine.
+
+Tokens:
+[Text=Most CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Reddit CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=reddit NamedEntityTag=LOCATION]
+[Text=still CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=believes CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=believe NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=unvaccinated CharacterOffsetBegin=34 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=unvaccinated NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=governments CharacterOffsetBegin=79 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=government NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=pharma CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=pharma NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=overpromising CharacterOffsetBegin=110 CharacterOffsetEnd=123 PartOfSpeech=VBG Lemma=overpromise NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP (NN Reddit))))
+    (ADVP (RB still))
+    (VP (VBZ believes)
+      (SBAR
+        (S
+          (NP (DT the) (JJ unvaccinated) (NNS people))
+          (VP (VBP are)
+            (NP
+              (NP (DT the) (NN problem))
+              (, ,)
+              (NP (RB not) (DT the) (NNS governments))
+              (CC and)
+              (NP
+                (NP (JJ big) (NN pharma))
+                (PP (IN for)
+                  (S
+                    (VP (VBG overpromising)
+                      (NP (DT a) (NN vaccine)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, believes-5)
+nsubj(believes-5, Most-1)
+case(Reddit-3, of-2)
+nmod:of(Most-1, Reddit-3)
+advmod(believes-5, still-4)
+det(people-8, the-6)
+amod(people-8, unvaccinated-7)
+nsubj(problem-11, people-8)
+cop(problem-11, are-9)
+det(problem-11, the-10)
+ccomp(believes-5, problem-11)
+punct(problem-11, ,-12)
+advmod(governments-15, not-13)
+det(governments-15, the-14)
+ccomp(believes-5, governments-15)
+conj:and(problem-11, governments-15)
+cc(pharma-18, and-16)
+amod(pharma-18, big-17)
+ccomp(believes-5, pharma-18)
+conj:and(problem-11, pharma-18)
+mark(overpromising-20, for-19)
+acl:for(pharma-18, overpromising-20)
+det(vaccine-22, a-21)
+obj(overpromising-20, vaccine-22)
+punct(believes-5, .-23)
+
+Extracted the following NER entity mentions:
+Reddit	LOCATION	LOCATION:0.9726193545421781

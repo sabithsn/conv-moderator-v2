@@ -1,0 +1,69 @@
+Document: ID=AA7AF88B.text (2 sentences, 13 tokens)
+
+Sentence #1 (2 tokens):
+And?
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC And)
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, And-1)
+punct(And-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+He by lore literally escaped from GULAG with his family.
+
+Tokens:
+[Text=He CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=lore CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=lore NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=escaped CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=escape NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=GULAG CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=GULAG NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP He))
+      (PP (IN by)
+        (NP (NN lore))))
+    (ADVP (RB literally))
+    (VP (VBD escaped)
+      (PP (IN from)
+        (NP (NNP GULAG)))
+      (PP (IN with)
+        (NP (PRP$ his) (NN family))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, escaped-5)
+nsubj(escaped-5, He-1)
+case(lore-3, by-2)
+nmod:by(He-1, lore-3)
+advmod(escaped-5, literally-4)
+case(GULAG-7, from-6)
+obl:from(escaped-5, GULAG-7)
+case(family-10, with-8)
+nmod:poss(family-10, his-9)
+obl:with(escaped-5, family-10)
+punct(escaped-5, .-11)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+his	PERSON	-

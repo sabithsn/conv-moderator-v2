@@ -1,0 +1,84 @@
+Document: ID=7918AF03.text (2 sentences, 18 tokens)
+
+Sentence #1 (2 tokens):
+Never.
+
+Tokens:
+[Text=Never CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADVP (RB Never) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Never-1)
+punct(Never-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+They say it's the unvaxxed and because Trump moved too slow at the start.
+
+Tokens:
+[Text=They CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=unvaxxed CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=unvaxxed NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=moved CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=move NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=start CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=start NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP say)
+      (SBAR
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (NP (DT the) (JJ unvaxxed)))))
+        (CC and)
+        (SBAR (IN because)
+          (S
+            (NP (NNP Trump))
+            (VP (VBD moved)
+              (ADJP (RB too) (JJ slow))
+              (PP (IN at)
+                (NP (DT the) (NN start))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-2)
+nsubj(say-2, They-1)
+nsubj(unvaxxed-6, it-3)
+cop(unvaxxed-6, 's-4)
+det(unvaxxed-6, the-5)
+advcl(say-2, unvaxxed-6)
+cc(moved-10, and-7)
+mark(moved-10, because-8)
+nsubj(moved-10, Trump-9)
+advcl(say-2, moved-10)
+conj:and(unvaxxed-6, moved-10)
+advmod(slow-12, too-11)
+xcomp(moved-10, slow-12)
+case(start-15, at-13)
+det(start-15, the-14)
+obl:at(moved-10, start-15)
+punct(say-2, .-16)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.8650062355540555

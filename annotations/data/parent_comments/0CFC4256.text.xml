@@ -1,0 +1,39 @@
+Document: ID=0CFC4256.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Unironically posted by a conservative boomer family friend.
+
+Tokens:
+[Text=Unironically CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=unironically NamedEntityTag=O]
+[Text=posted CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBN Lemma=post NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=25 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=boomer CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=boomer NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Unironically))
+    (VP (VBN posted)
+      (PP (IN by)
+        (NP (DT a) (JJ conservative) (NN boomer) (NN family) (NN friend))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, posted-2)
+advmod(posted-2, Unironically-1)
+case(friend-8, by-3)
+det(friend-8, a-4)
+amod(friend-8, conservative-5)
+compound(friend-8, boomer-6)
+compound(friend-8, family-7)
+obl:by(posted-2, friend-8)
+punct(posted-2, .-9)
+
+Extracted the following NER entity mentions:
+conservative	IDEOLOGY	-

@@ -1,0 +1,67 @@
+Document: ID=EB455DF2.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+It’s just a COINCIDENCE that Pelosi bought a massive stake in Lockheed Martin prior to this
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=COINCIDENCE CharacterOffsetBegin=12 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=coincidence NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=Pelosi CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Pelosi NamedEntityTag=PERSON]
+[Text=bought CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=VBD Lemma=buy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=massive CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=massive NamedEntityTag=O]
+[Text=stake CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=stake NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Lockheed CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Lockheed NamedEntityTag=ORGANIZATION]
+[Text=Martin CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Martin NamedEntityTag=ORGANIZATION]
+[Text=prior CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP
+        (NP (RB just) (DT a) (NN COINCIDENCE))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (NP (NNP Pelosi))
+            (VP (VBD bought)
+              (NP (DT a) (JJ massive) (NN stake))
+              (PP (IN in)
+                (NP
+                  (NP (NNP Lockheed) (NNP Martin))
+                  (PP (JJ prior) (IN to)
+                    (NP (DT this))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, COINCIDENCE-5)
+nsubj(COINCIDENCE-5, It-1)
+cop(COINCIDENCE-5, ’s-2)
+advmod(COINCIDENCE-5, just-3)
+det(COINCIDENCE-5, a-4)
+obj(bought-8, COINCIDENCE-5)
+ref(COINCIDENCE-5, that-6)
+nsubj(bought-8, Pelosi-7)
+acl:relcl(COINCIDENCE-5, bought-8)
+det(stake-11, a-9)
+amod(stake-11, massive-10)
+obj(bought-8, stake-11)
+case(Martin-14, in-12)
+compound(Martin-14, Lockheed-13)
+obl:in(bought-8, Martin-14)
+case(this-17, prior-15)
+fixed(prior-15, to-16)
+nmod:prior_to(Martin-14, this-17)
+
+Extracted the following NER entity mentions:
+Pelosi	PERSON	PERSON:0.9937197821952176
+Lockheed Martin	ORGANIZATION	ORGANIZATION:0.9928917424478197

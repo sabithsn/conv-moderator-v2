@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>1B17C18D.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Muricans</word>
+            <lemma>Muricans</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>voted</word>
+            <lemma>vote</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>MAGA</word>
+            <lemma>MAGA</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>tax</word>
+            <lemma>tax</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>cuts</word>
+            <lemma>cut</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Shameless</word>
+            <lemma>shameless</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>misinformation</word>
+            <lemma>misinformation</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/</word>
+            <lemma>https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>177</CharacterOffsetEnd>
+            <POS>ADD</POS>
+            <NER>URL</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (S (NP (NNPS Muricans)) (VP (VBD voted) (PP (IN for) (NP (NNP MAGA) (NN tax) (NNS cuts))))) (FRAG (NP (JJ Shameless) (NN misinformation)) (NP (ADD https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">misinformation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">voted</governor>
+            <dependent idx="1">Muricans</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="2">voted</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">cuts</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">MAGA</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">tax</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="2">voted</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="7">Shameless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="9">https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">misinformation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">voted</governor>
+            <dependent idx="1">Muricans</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="2">voted</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">cuts</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">MAGA</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">tax</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="2">voted</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="7">Shameless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="9">https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">misinformation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">voted</governor>
+            <dependent idx="1">Muricans</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="2">voted</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">cuts</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">MAGA</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">tax</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="2">voted</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="7">Shameless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="9">https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">misinformation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">voted</governor>
+            <dependent idx="1">Muricans</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="2">voted</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">cuts</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">MAGA</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">tax</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="2">voted</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="7">Shameless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="9">https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="8">misinformation</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">voted</governor>
+            <dependent idx="1">Muricans</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="2">voted</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">cuts</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">MAGA</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">tax</dependent>
+          </dep>
+          <dep type="obl:for">
+            <governor idx="2">voted</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="7">Shameless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">misinformation</governor>
+            <dependent idx="9">https://www.politifact.com/factchecks/2021/feb/05/facebook-posts/social-media-post-misleads-analysis-trump-tax-bill/</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

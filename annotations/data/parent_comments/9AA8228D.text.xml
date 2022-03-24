@@ -1,0 +1,109 @@
+Document: ID=9AA8228D.text (2 sentences, 24 tokens)
+
+Sentence #1 (4 tokens):
+Yeah I know.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (NP (PRP I))
+    (VP (VBP know))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-3)
+discourse(know-3, Yeah-1)
+nsubj(know-3, I-2)
+punct(know-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (20 tokens):
+He will be bullied cuz of her (and also have to wear a mask 8 hours a day)
+
+Tokens:
+[Text=He CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=bullied CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=bully NamedEntityTag=O]
+[Text=cuz CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=cuz NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wear CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=wear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mask CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=8 CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=CD Lemma=8 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT8H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT8H">8 hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT8H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT8H">8 hours</TIMEX3>]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=day CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=) CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN bullied)
+            (SBAR (IN cuz)
+              (FRAG
+                (PP (IN of)
+                  (NP (PRP$ her))))))))
+      (-LRB- -LRB-)
+      (CC and)
+      (VP
+        (ADVP (RB also))
+        (VBP have)
+        (S
+          (VP (TO to)
+            (VP (VB wear)
+              (NP (DT a) (NN mask))
+              (NP
+                (NP (CD 8) (NNS hours))
+                (NP (DT a) (NN day)))))))
+      (-RRB- -RRB-))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bullied-4)
+nsubj:pass(bullied-4, He-1)
+nsubj(have-11, He-1)
+nsubj:xsubj(wear-13, He-1)
+aux(bullied-4, will-2)
+aux:pass(bullied-4, be-3)
+mark(her-7, cuz-5)
+case(her-7, of-6)
+advcl:of(bullied-4, her-7)
+punct(bullied-4, (-8)
+cc(have-11, and-9)
+advmod(have-11, also-10)
+conj:and(bullied-4, have-11)
+mark(wear-13, to-12)
+xcomp(have-11, wear-13)
+det(mask-15, a-14)
+iobj(wear-13, mask-15)
+nummod(hours-17, 8-16)
+obj(wear-13, hours-17)
+det(day-19, a-18)
+dep(hours-17, day-19)
+punct(bullied-4, )-20)
+
+Extracted the following NER entity mentions:
+8 hours	DURATION	DURATION:-1.0
+a day	DURATION	DURATION:-1.0
+He	PERSON	-
+her	PERSON	-

@@ -1,0 +1,100 @@
+Document: ID=76021485.text (2 sentences, 23 tokens)
+
+Sentence #1 (7 tokens):
+Bunch of unsupported and wild assertions.
+
+Tokens:
+[Text=Bunch CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=bunch NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=unsupported CharacterOffsetBegin=9 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=unsupported NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=wild CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=wild NamedEntityTag=O]
+[Text=assertions CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=assertion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Bunch))
+    (PP (IN of)
+      (NP
+        (ADJP (JJ unsupported)
+          (CC and)
+          (JJ wild))
+        (NNS assertions)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Bunch-1)
+case(assertions-6, of-2)
+amod(assertions-6, unsupported-3)
+cc(wild-5, and-4)
+conj:and(unsupported-3, wild-5)
+amod(assertions-6, wild-5)
+nmod:of(Bunch-1, assertions-6)
+punct(Bunch-1, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+Why are your panties in such a bunch about the thought of calling out misinformation?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=panties CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=panties NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bunch CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=bunch NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=thought NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=calling CharacterOffsetBegin=101 CharacterOffsetEnd=108 PartOfSpeech=VBG Lemma=call NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=misinformation CharacterOffsetBegin=113 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=misinformation NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP
+        (NP (PRP$ your) (NNS panties))
+        (PP (IN in)
+          (NP
+            (NP (PDT such) (DT a) (NN bunch))
+            (PP (IN about)
+              (NP
+                (NP (DT the) (NN thought))
+                (PP (IN of)
+                  (S
+                    (VP (VBG calling)
+                      (PRT (RP out))
+                      (NP (NN misinformation)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-2)
+advmod(are-2, Why-1)
+nmod:poss(panties-4, your-3)
+nsubj(are-2, panties-4)
+case(bunch-8, in-5)
+det:predet(bunch-8, such-6)
+det(bunch-8, a-7)
+nmod:in(panties-4, bunch-8)
+case(thought-11, about-9)
+det(thought-11, the-10)
+nmod:about(bunch-8, thought-11)
+mark(calling-13, of-12)
+acl:of(thought-11, calling-13)
+compound:prt(calling-13, out-14)
+obj(calling-13, misinformation-15)
+punct(are-2, ?-16)
+
+Extracted the following NER entity mentions:

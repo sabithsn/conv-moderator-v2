@@ -1,0 +1,221 @@
+Document: ID=43C622E4.text (4 sentences, 53 tokens)
+
+Sentence #1 (12 tokens):
+I'd love to see which reality you're living in.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=love NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=reality CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=reality NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=living CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB love)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (SBAR
+                (WHNP (WDT which) (NN reality))
+                (S
+                  (NP (PRP you))
+                  (VP (VBP 're)
+                    (VP (VBG living)
+                      (PP (IN in)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, love-3)
+nsubj(love-3, I-1)
+nsubj:xsubj(see-5, I-1)
+aux(love-3, 'd-2)
+mark(see-5, to-4)
+xcomp(love-3, see-5)
+det(reality-7, which-6)
+obl:in(living-10, reality-7)
+nsubj(living-10, you-8)
+aux(living-10, 're-9)
+ccomp(see-5, living-10)
+case(reality-7, in-11)
+punct(love-3, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+GQP types have been groveling at Pootin's feet in earnest for years.
+
+Tokens:
+[Text=GQP CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=gqp NamedEntityTag=O]
+[Text=types CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=type NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=groveling CharacterOffsetBegin=68 CharacterOffsetEnd=77 PartOfSpeech=VBG Lemma=grovel NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Pootin CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Pootin NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=feet CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=foot NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=earnest CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=earnest NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=years CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">years</TIMEX3>]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN GQP) (NNS types))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBG groveling)
+          (PP (IN at)
+            (NP
+              (NP (NNP Pootin) (POS 's))
+              (NNS feet)))
+          (PP (IN in)
+            (ADJP (JJ earnest)))
+          (PP (IN for)
+            (NP (NNS years))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, groveling-5)
+compound(types-2, GQP-1)
+nsubj(groveling-5, types-2)
+aux(groveling-5, have-3)
+aux(groveling-5, been-4)
+case(feet-9, at-6)
+nmod:poss(feet-9, Pootin-7)
+case(Pootin-7, 's-8)
+obl:at(groveling-5, feet-9)
+case(earnest-11, in-10)
+advcl:in(groveling-5, earnest-11)
+case(years-13, for-12)
+obl:for(groveling-5, years-13)
+punct(groveling-5, .-14)
+
+Extracted the following NER entity mentions:
+Pootin	LOCATION	LOCATION:0.800824476057695
+years	DURATION	DURATION:-1.0
+
+Sentence #3 (15 tokens):
+Unlike addled Republiqans these days, Democrats have never forgotten who the enemy is.
+
+Tokens:
+[Text=Unlike CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=unlike NamedEntityTag=O]
+[Text=addled CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=addled NamedEntityTag=O]
+[Text=Republiqans CharacterOffsetBegin=132 CharacterOffsetEnd=143 PartOfSpeech=NNPS Lemma=Republiqans NamedEntityTag=MISC]
+[Text=these CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t2" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=, CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=156 CharacterOffsetEnd=165 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=have CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=171 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=forgotten CharacterOffsetBegin=177 CharacterOffsetEnd=186 PartOfSpeech=VBN Lemma=forget NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=enemy CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP (JJ addled) (NNPS Republiqans)))
+    (NP-TMP (DT these) (NNS days))
+    (, ,)
+    (NP (NNPS Democrats))
+    (VP (VBP have)
+      (ADVP (RB never))
+      (VP (VBN forgotten)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (NP (DT the) (NN enemy))
+            (VP (VBZ is))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forgotten-10)
+case(Republiqans-3, Unlike-1)
+amod(Republiqans-3, addled-2)
+obl:unlike(forgotten-10, Republiqans-3)
+det(days-5, these-4)
+obl:tmod(forgotten-10, days-5)
+punct(forgotten-10, ,-6)
+nsubj(forgotten-10, Democrats-7)
+aux(forgotten-10, have-8)
+advmod(forgotten-10, never-9)
+obj(is-14, who-11)
+det(enemy-13, the-12)
+nsubj(is-14, enemy-13)
+ccomp(forgotten-10, is-14)
+punct(forgotten-10, .-15)
+
+Extracted the following NER entity mentions:
+Republiqans	MISC	MISC:0.9930097632552543
+days	DURATION	DURATION:-1.0
+Democrats	IDEOLOGY	MISC:0.999731830584619
+
+Sentence #4 (12 tokens):
+Also unlike Republiqans, the enemy is not our fellow Americans.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=unlike CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=IN Lemma=unlike NamedEntityTag=O]
+[Text=Republiqans CharacterOffsetBegin=217 CharacterOffsetEnd=228 PartOfSpeech=NNPS Lemma=Republiqans NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=enemy CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=enemy NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=fellow CharacterOffsetBegin=251 CharacterOffsetEnd=257 PartOfSpeech=JJ Lemma=fellow NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=258 CharacterOffsetEnd=267 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Also))
+      (IN unlike)
+      (NP (NNPS Republiqans)))
+    (, ,)
+    (NP (DT the) (NN enemy))
+    (VP (VBZ is) (RB not)
+      (NP (PRP$ our) (JJ fellow) (NNPS Americans)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Americans-11)
+advmod(Republiqans-3, Also-1)
+case(Republiqans-3, unlike-2)
+obl:unlike(Americans-11, Republiqans-3)
+punct(Americans-11, ,-4)
+det(enemy-6, the-5)
+nsubj(Americans-11, enemy-6)
+cop(Americans-11, is-7)
+advmod(Americans-11, not-8)
+nmod:poss(Americans-11, our-9)
+amod(Americans-11, fellow-10)
+punct(Americans-11, .-12)
+
+Extracted the following NER entity mentions:
+Republiqans	MISC	MISC:0.9792840432322647
+Americans	MISC	MISC:0.9999791323451115

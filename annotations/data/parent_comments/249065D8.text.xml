@@ -1,0 +1,82 @@
+Document: ID=249065D8.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+*The same kids who he put in office that are being investigated for their involvement in the attempted coup.
+
+Tokens:
+[Text=* CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=put NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=office CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=office NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=investigated CharacterOffsetBegin=51 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=investigate NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=involvement CharacterOffsetBegin=74 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=involvement NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=attempted CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=VBN Lemma=attempt NamedEntityTag=O]
+[Text=coup CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=coup NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP *)
+    (NP
+      (NP (DT The) (JJ same) (NNS kids))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (NP (PRP he)))))
+    (VP (VBD put)
+      (PP (IN in)
+        (NP
+          (NP (NN office))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (VBG being)
+                  (VP (VBN investigated)
+                    (PP (IN for)
+                      (NP
+                        (NP (PRP$ their) (NN involvement))
+                        (PP (IN in)
+                          (NP (DT the) (VBN attempted) (NN coup)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, put-7)
+punct(put-7, *-1)
+det(kids-4, The-2)
+amod(kids-4, same-3)
+dep(he-6, kids-4)
+nsubj(put-7, kids-4)
+ref(kids-4, who-5)
+acl:relcl(kids-4, he-6)
+case(office-9, in-8)
+obl:in(put-7, office-9)
+nsubj:pass(investigated-13, office-9)
+ref(office-9, that-10)
+aux(investigated-13, are-11)
+aux:pass(investigated-13, being-12)
+acl:relcl(office-9, investigated-13)
+case(involvement-16, for-14)
+nmod:poss(involvement-16, their-15)
+obl:for(investigated-13, involvement-16)
+case(coup-20, in-17)
+det(coup-20, the-18)
+amod(coup-20, attempted-19)
+nmod:in(involvement-16, coup-20)
+punct(put-7, .-21)
+
+Extracted the following NER entity mentions:
+he	PERSON	-

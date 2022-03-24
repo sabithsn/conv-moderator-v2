@@ -1,0 +1,70 @@
+Document: ID=836B5ACC.text (2 sentences, 13 tokens)
+
+Sentence #1 (12 tokens):
+Says the one getting upset over someone asking for a source.
+
+Tokens:
+[Text=Says CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=getting CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=upset CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=upset NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=asking CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=source CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=source NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Says)
+      (NP
+        (NP (DT the) (CD one))
+        (VP (VBG getting)
+          (S
+            (ADJP (JJ upset)
+              (PP (IN over)
+                (NP
+                  (NP (NN someone))
+                  (VP (VBG asking)
+                    (PP (IN for)
+                      (NP (DT a) (NN source)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Says-1)
+det(one-3, the-2)
+obj(Says-1, one-3)
+acl(one-3, getting-4)
+xcomp(getting-4, upset-5)
+case(someone-7, over-6)
+obl:over(upset-5, someone-7)
+acl(someone-7, asking-8)
+case(source-11, for-9)
+det(source-11, a-10)
+obl:for(asking-8, source-11)
+punct(Says-1, .-12)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (1 tokens):
+Lmao
+
+Tokens:
+[Text=Lmao CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Lmao NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Lmao)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lmao-1)
+
+Extracted the following NER entity mentions:
+Lmao	PERSON	PERSON:0.880969034258754

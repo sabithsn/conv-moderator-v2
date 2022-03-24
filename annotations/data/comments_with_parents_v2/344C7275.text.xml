@@ -1,0 +1,109 @@
+Document: ID=344C7275.text (2 sentences, 24 tokens)
+
+Sentence #1 (6 tokens):
+‘Stop Bullying Kids!’
+
+Tokens:
+[Text=‘ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Stop CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=stop NamedEntityTag=O]
+[Text=Bullying CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=bullying NamedEntityTag=O]
+[Text=Kids CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (`` ‘)
+    (NP (NN Stop))
+    (NP (NN Bullying))
+    (NP (NNS Kids))
+    (. !) ('' ’)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-2)
+punct(Stop-2, ‘-1)
+dep(Stop-2, Bullying-3)
+dep(Stop-2, Kids-4)
+punct(Stop-2, !-5)
+punct(Stop-2, ’-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+High School Freshman Who Defied DeSantis and Kept Mask On Speaks Out — And So Does His Dad
+
+Tokens:
+[Text=High CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=High NamedEntityTag=O]
+[Text=School CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=School NamedEntityTag=O]
+[Text=Freshman CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=freshman NamedEntityTag=O]
+[Text=Who CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Defied CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=defy NamedEntityTag=O]
+[Text=DeSantis CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Kept CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Kept NamedEntityTag=O]
+[Text=Mask CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Mask NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Speaks CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNPS Lemma=Speaks NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=— CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=: Lemma=— NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=So CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=Does CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=His CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Dad CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Dad NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NML (NNP High) (NNP School))
+      (NN Freshman))
+    (SBAR
+      (WHNP (WP Who))
+      (S
+        (VP
+          (VP (VBD Defied)
+            (NP (NNP DeSantis)
+              (CC and)
+              (NNP Kept))
+            (S
+              (PP
+                (NP (NNP Mask))
+                (IN On))
+              (PP
+                (NP (NNPS Speaks))
+                (IN Out))))
+          (: —)
+          (CC And)
+          (ADVP (RB So))
+          (VP (VBZ Does)
+            (NP (PRP$ His) (NNP Dad))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Freshman-3)
+compound(School-2, High-1)
+compound(Freshman-3, School-2)
+nsubj(Defied-5, Who-4)
+nsubj(Does-16, Who-4)
+dep(Freshman-3, Defied-5)
+obj(Defied-5, DeSantis-6)
+cc(Kept-8, and-7)
+obj(Defied-5, Kept-8)
+conj:and(DeSantis-6, Kept-8)
+dep(Speaks-11, Mask-9)
+case(Mask-9, On-10)
+xcomp(Defied-5, Speaks-11)
+case(Speaks-11, Out-12)
+punct(Defied-5, —-13)
+cc(Does-16, And-14)
+advmod(Does-16, So-15)
+dep(Freshman-3, Does-16)
+conj:and(Defied-5, Does-16)
+nmod:poss(Dad-18, His-17)
+obj(Does-16, Dad-18)
+
+Extracted the following NER entity mentions:
+DeSantis	PERSON	PERSON:0.7856159530842498
+His	PERSON	-

@@ -1,0 +1,116 @@
+Document: ID=A9158F08.text (2 sentences, 28 tokens)
+
+Sentence #1 (11 tokens):
+I was getting downvoted before I put the /s.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=downvoted CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=VBN Lemma=downvote NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=put NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=SYM Lemma=/ NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG getting)
+        (VP (VBN downvoted)
+          (SBAR (IN before)
+            (S
+              (NP (PRP I))
+              (VP (VBD put)
+                (NP (DT the)
+                  (NML
+                    (PP (SYM /)
+                      (NP (NN s)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, downvoted-4)
+nsubj:pass(downvoted-4, I-1)
+aux(downvoted-4, was-2)
+aux:pass(downvoted-4, getting-3)
+mark(put-7, before-5)
+nsubj(put-7, I-6)
+advcl:before(downvoted-4, put-7)
+det(s-10, the-8)
+dep(s-10, /-9)
+obj(put-7, s-10)
+punct(downvoted-4, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+You need the funny redditor /s here or else you're gonna get dicked down
+
+Tokens:
+[Text=You CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=funny CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=redditor CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=redditor NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=s NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=dicked CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=VBN Lemma=dick NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (PRP You))
+        (VP (VBP need)
+          (NP (DT the) (JJ funny) (NN redditor) (HYPH /) (NN s))
+          (ADVP (RB here)
+            (CC or)
+            (RB else)))))
+    (NP (PRP you))
+    (VP (VBP 're)
+      (VP (VBG gon)
+        (S
+          (VP (TO na)
+            (VP (VB get)
+              (VP (VBN dicked)
+                (PRT (RP down))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gon-13)
+nsubj(need-2, You-1)
+parataxis(gon-13, need-2)
+det(s-7, the-3)
+amod(s-7, funny-4)
+compound(s-7, redditor-5)
+punct(s-7, /-6)
+obj(need-2, s-7)
+advmod(need-2, here-8)
+cc(else-10, or-9)
+advmod(need-2, else-10)
+conj:or(here-8, else-10)
+nsubj(gon-13, you-11)
+nsubj:pass:xsubj(dicked-16, you-11)
+aux(gon-13, 're-12)
+mark(dicked-16, na-14)
+aux:pass(dicked-16, get-15)
+xcomp(gon-13, dicked-16)
+compound:prt(dicked-16, down-17)
+
+Extracted the following NER entity mentions:

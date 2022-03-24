@@ -1,0 +1,92 @@
+Document: ID=7706CAB8.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+SCOOP: @MotherJones has obtained Russian government memos sent to pro-Putin media outlets telling them "it is essential" they feature Tucker Carlson
+
+Tokens:
+[Text=SCOOP CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=scoop NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=@MotherJones CharacterOffsetBegin=7 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=@motherjones NamedEntityTag=HANDLE]
+[Text=has CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=obtained CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=VBN Lemma=obtain NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=government CharacterOffsetBegin=41 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=memos CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=memo NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBN Lemma=send NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=pro-Putin CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=pro-putin NamedEntityTag=MISC]
+[Text=media CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=media NamedEntityTag=O]
+[Text=outlets CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=outlet NamedEntityTag=O]
+[Text=telling CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=VBG Lemma=tell NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=essential CharacterOffsetBegin=110 CharacterOffsetEnd=119 PartOfSpeech=JJ Lemma=essential NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=feature CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=VBP Lemma=feature NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=141 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN SCOOP))
+    (: :)
+    (S
+      (NP (NNS @MotherJones))
+      (VP (VBZ has)
+        (VP (VBN obtained)
+          (SBAR
+            (S
+              (NP
+                (NP (JJ Russian) (NN government) (NNS memos))
+                (VP (VBN sent)
+                  (PP (IN to)
+                    (NP
+                      (NP (JJ pro-Putin) (NN media) (NNS outlets))
+                      (VP (VBG telling)
+                        (NP (PRP them))
+                        (`` ")
+                        (NP (PRP it)))))))
+              (VP (VBZ is)
+                (ADJP (JJ essential))
+                (SBAR (`` ")
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP feature)
+                      (NP (NNP Tucker) (NNP Carlson)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SCOOP-1)
+punct(SCOOP-1, :-2)
+nsubj(obtained-5, @MotherJones-3)
+aux(obtained-5, has-4)
+appos(SCOOP-1, obtained-5)
+amod(memos-8, Russian-6)
+compound(memos-8, government-7)
+nsubj(essential-19, memos-8)
+acl(memos-8, sent-9)
+case(outlets-13, to-10)
+amod(outlets-13, pro-Putin-11)
+compound(outlets-13, media-12)
+obl:to(sent-9, outlets-13)
+acl(outlets-13, telling-14)
+obj(telling-14, them-15)
+punct(telling-14, "-16)
+obj(telling-14, it-17)
+cop(essential-19, is-18)
+ccomp(obtained-5, essential-19)
+punct(feature-22, "-20)
+nsubj(feature-22, they-21)
+ccomp(essential-19, feature-22)
+compound(Carlson-24, Tucker-23)
+obj(feature-22, Carlson-24)
+
+Extracted the following NER entity mentions:
+@MotherJones	HANDLE	-
+Russian	NATIONALITY	MISC:0.9999988732829005
+pro-Putin	MISC	MISC:0.98859510226482
+Tucker Carlson	PERSON	PERSON:0.9962904097580516

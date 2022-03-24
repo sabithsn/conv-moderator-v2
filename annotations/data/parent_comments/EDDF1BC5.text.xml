@@ -1,0 +1,89 @@
+Document: ID=EDDF1BC5.text (2 sentences, 18 tokens)
+
+Sentence #1 (9 tokens):
+IDF attacked Palestinians and children at Demascus Gate.
+
+Tokens:
+[Text=IDF CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=IDF NamedEntityTag=ORGANIZATION]
+[Text=attacked CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=attack NamedEntityTag=O]
+[Text=Palestinians CharacterOffsetBegin=13 CharacterOffsetEnd=25 PartOfSpeech=NNPS Lemma=Palestinians NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Demascus CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Demascus NamedEntityTag=LOCATION]
+[Text=Gate CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Gate NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP IDF))
+    (VP (VBD attacked)
+      (NP
+        (NP (NNPS Palestinians))
+        (CC and)
+        (NP (NNS children)))
+      (PP (IN at)
+        (NP (NNP Demascus) (NNP Gate))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attacked-2)
+nsubj(attacked-2, IDF-1)
+obj(attacked-2, Palestinians-3)
+cc(children-5, and-4)
+obj(attacked-2, children-5)
+conj:and(Palestinians-3, children-5)
+case(Gate-8, at-6)
+compound(Gate-8, Demascus-7)
+obl:at(attacked-2, Gate-8)
+punct(attacked-2, .-9)
+
+Extracted the following NER entity mentions:
+IDF	ORGANIZATION	ORGANIZATION:0.8847858432999322
+Palestinians	MISC	MISC:0.9999995057386086
+Demascus Gate	LOCATION	LOCATION:0.8509525907204806
+
+Sentence #2 (9 tokens):
+Child hit by stun grenade *warning graphic*
+
+Tokens:
+[Text=Child CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=hit CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=VBN Lemma=hit NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=stun CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=stun NamedEntityTag=O]
+[Text=grenade CharacterOffsetBegin=75 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=grenade NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=warning CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=VBG Lemma=warn NamedEntityTag=O]
+[Text=graphic CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=graphic NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NN Child))
+      (VP (VBN hit)
+        (PP (IN by)
+          (NP
+            (NP (NN stun) (NN grenade))
+            (X (NFP *))))
+        (S
+          (VP (VBG warning)
+            (NP (JJ graphic))))))
+    (X (NFP *))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Child-1)
+acl(Child-1, hit-2)
+case(grenade-5, by-3)
+compound(grenade-5, stun-4)
+obl:by(hit-2, grenade-5)
+dep(grenade-5, *-6)
+xcomp(hit-2, warning-7)
+obj(warning-7, graphic-8)
+dep(Child-1, *-9)
+
+Extracted the following NER entity mentions:

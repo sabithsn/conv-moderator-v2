@@ -1,0 +1,50 @@
+Document: ID=19EF02B7.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Theory Vaccines are used to create a supply of elite specific organs
+
+Tokens:
+[Text=Theory CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=theory NamedEntityTag=O]
+[Text=Vaccines CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=vaccine NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=create CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=create NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=supply CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=supply NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=elite CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=elite NamedEntityTag=O]
+[Text=specific CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=specific NamedEntityTag=O]
+[Text=organs CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=organ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Theory) (NNS Vaccines))
+    (VP (VBP are)
+      (VP (VBN used)
+        (S
+          (VP (TO to)
+            (VP (VB create)
+              (NP
+                (NP (DT a) (NN supply))
+                (PP (IN of)
+                  (NP (NN elite) (JJ specific) (NNS organs)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, used-4)
+compound(Vaccines-2, Theory-1)
+nsubj:pass(used-4, Vaccines-2)
+nsubj:xsubj(create-6, Vaccines-2)
+aux:pass(used-4, are-3)
+mark(create-6, to-5)
+xcomp(used-4, create-6)
+det(supply-8, a-7)
+obj(create-6, supply-8)
+case(organs-12, of-9)
+compound(organs-12, elite-10)
+amod(organs-12, specific-11)
+nmod:of(supply-8, organs-12)
+
+Extracted the following NER entity mentions:

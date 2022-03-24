@@ -1,0 +1,78 @@
+Document: ID=D046D1D6.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Outrage erupts over Kentucky sexual summer camp; kids taught to masturbate, have sex on drugs & more
+
+Tokens:
+[Text=Outrage CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=outrage NamedEntityTag=O]
+[Text=erupts CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=erupt NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Kentucky CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Kentucky NamedEntityTag=STATE_OR_PROVINCE]
+[Text=sexual CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=summer CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=summer NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SU Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SU">summer</TIMEX3>]
+[Text=camp CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=camp NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=taught CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=teach NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=masturbate CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=masturbate NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=drugs CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=NNS Lemma=drug NamedEntityTag=CRIMINAL_CHARGE]
+[Text=& CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NN Outrage))
+      (VP (VBZ erupts)
+        (PP (IN over)
+          (NP (NNP Kentucky) (JJ sexual) (NN summer) (NN camp)))))
+    (: ;)
+    (S
+      (NP (NNS kids))
+      (VP
+        (VP (VBD taught)
+          (PP (IN to)
+            (NP (NN masturbate))))
+        (, ,)
+        (VP (VBP have)
+          (NP
+            (NP (NN sex))
+            (PP (IN on)
+              (NP
+                (NP (NNS drugs))
+                (CC &)
+                (NP (JJR more))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, erupts-2)
+nsubj(erupts-2, Outrage-1)
+case(camp-7, over-3)
+compound(camp-7, Kentucky-4)
+amod(camp-7, sexual-5)
+compound(camp-7, summer-6)
+obl:over(erupts-2, camp-7)
+punct(erupts-2, ;-8)
+nsubj(taught-10, kids-9)
+parataxis(erupts-2, taught-10)
+case(masturbate-12, to-11)
+obl:to(taught-10, masturbate-12)
+punct(taught-10, ,-13)
+dep(taught-10, have-14)
+obj(have-14, sex-15)
+case(drugs-17, on-16)
+nmod:on(sex-15, drugs-17)
+cc(more-19, &-18)
+nmod:on(sex-15, more-19)
+conj:&(drugs-17, more-19)
+
+Extracted the following NER entity mentions:
+Kentucky	STATE_OR_PROVINCE	LOCATION:0.9496955743938222
+summer	DATE	DATE:0.9400445368906132
+drugs	CRIMINAL_CHARGE	-

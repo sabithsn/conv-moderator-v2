@@ -1,0 +1,50 @@
+Document: ID=E47E3ABD.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Twitter Permanently Boots Marjorie Taylor Greene Over Vaccine ‘Misinformation’
+
+Tokens:
+[Text=Twitter CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Twitter NamedEntityTag=O]
+[Text=Permanently CharacterOffsetBegin=8 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=permanently NamedEntityTag=O]
+[Text=Boots CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=boot NamedEntityTag=O]
+[Text=Marjorie CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Marjorie NamedEntityTag=PERSON]
+[Text=Taylor CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Taylor NamedEntityTag=PERSON]
+[Text=Greene CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=Over CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Vaccine CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Vaccine NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Misinformation CharacterOffsetBegin=63 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=misinformation NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (NNP Twitter))
+      (ADVP (RB Permanently)))
+    (FRAG
+      (NP (NNS Boots))
+      (NP (NNP Marjorie) (NNP Taylor) (NNP Greene))
+      (PP (IN Over)
+        (NP
+          (NP (NNP Vaccine))
+          (`` ‘)
+          (NP (NN Misinformation))
+          ('' ’))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Twitter-1)
+dep(Twitter-1, Permanently-2)
+parataxis(Twitter-1, Boots-3)
+compound(Greene-6, Marjorie-4)
+compound(Greene-6, Taylor-5)
+dep(Boots-3, Greene-6)
+case(Vaccine-8, Over-7)
+obl:over(Boots-3, Vaccine-8)
+punct(Vaccine-8, ‘-9)
+dep(Vaccine-8, Misinformation-10)
+punct(Vaccine-8, ’-11)
+
+Extracted the following NER entity mentions:
+Marjorie Taylor Greene	PERSON	PERSON:0.9606317967192248

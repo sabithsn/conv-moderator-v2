@@ -1,0 +1,76 @@
+Document: ID=7AAE4B5C.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+AITA for telling my boyfriend he was embarrassing us when he started sobbing in the Vet clininc hallway?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=telling CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=tell NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=boyfriend CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=boyfriend NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=embarrassing CharacterOffsetBegin=37 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=embarrass NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=sobbing CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=sob NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Vet CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=vet NamedEntityTag=O]
+[Text=clininc CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=clininc NamedEntityTag=O]
+[Text=hallway CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=hallway NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP AITA))
+      (PP (IN for)
+        (S
+          (VP (VBG telling)
+            (NP (PRP$ my) (NN boyfriend))
+            (NP (PRP he))))))
+    (VP (VBD was)
+      (VP (VBG embarrassing)
+        (NP (PRP us))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD started)
+              (S
+                (VP (VBG sobbing)
+                  (PP (IN in)
+                    (NP (DT the) (NN Vet) (NN clininc) (NN hallway))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, embarrassing-8)
+nsubj(embarrassing-8, AITA-1)
+mark(telling-3, for-2)
+acl:for(AITA-1, telling-3)
+nmod:poss(boyfriend-5, my-4)
+dep(telling-3, boyfriend-5)
+obj(telling-3, he-6)
+aux(embarrassing-8, was-7)
+obj(embarrassing-8, us-9)
+advmod(started-12, when-10)
+nsubj(started-12, he-11)
+advcl(embarrassing-8, started-12)
+xcomp(started-12, sobbing-13)
+case(hallway-18, in-14)
+det(hallway-18, the-15)
+compound(hallway-18, Vet-16)
+compound(hallway-18, clininc-17)
+obl:in(sobbing-13, hallway-18)
+punct(embarrassing-8, ?-19)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.4886511371477283
+he	PERSON	-
+he	PERSON	-

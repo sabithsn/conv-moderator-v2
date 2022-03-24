@@ -1,0 +1,128 @@
+Document: ID=D3EF8645.text (3 sentences, 29 tokens)
+
+Sentence #1 (8 tokens):
+Well quit crying like a little bitch.
+
+Tokens:
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=quit CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=quit NamedEntityTag=O]
+[Text=crying CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=cry NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=bitch CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=bitch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (VP (VB quit)
+      (S
+        (VP (VBG crying)
+          (PP (IN like)
+            (NP (DT a) (JJ little) (NN bitch))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, quit-2)
+discourse(quit-2, Well-1)
+xcomp(quit-2, crying-3)
+case(bitch-7, like-4)
+det(bitch-7, a-5)
+amod(bitch-7, little-6)
+obl:like(crying-3, bitch-7)
+punct(quit-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (19 tokens):
+You people on the right act so tough until someone offends you then you cry harder than libleft.
+
+Tokens:
+[Text=You CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=act CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=act NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=tough CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=tough NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=offends CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=VBZ Lemma=offend NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=cry CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=VB Lemma=cry NamedEntityTag=O]
+[Text=harder CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=JJR Lemma=harder NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=libleft CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=libleft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP You) (NNS people))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (JJ right) (NN act))
+          (ADJP (RB so) (JJ tough)
+            (PP (IN until)
+              (NP (NN someone)))))))
+    (VP (VBZ offends)
+      (NP (PRP you))
+      (ADVP (RB then))
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VB cry)
+            (ADJP
+              (ADJP (JJR harder))
+              (PP (IN than)
+                (NP (NN libleft))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, offends-11)
+dep(people-2, You-1)
+nsubj(offends-11, people-2)
+case(act-6, on-3)
+det(act-6, the-4)
+amod(act-6, right-5)
+nmod:on(people-2, act-6)
+advmod(tough-8, so-7)
+amod(act-6, tough-8)
+case(someone-10, until-9)
+obl:until(tough-8, someone-10)
+obj(offends-11, you-12)
+advmod(offends-11, then-13)
+nsubj(cry-15, you-14)
+dep(offends-11, cry-15)
+xcomp(cry-15, harder-16)
+case(libleft-18, than-17)
+obl:than(harder-16, libleft-18)
+punct(offends-11, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (2 tokens):
+Pathetic.
+
+Tokens:
+[Text=Pathetic CharacterOffsetBegin=136 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=pathetic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Pathetic) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pathetic-1)
+punct(Pathetic-1, .-2)
+
+Extracted the following NER entity mentions:

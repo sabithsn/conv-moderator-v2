@@ -1,0 +1,81 @@
+Document: ID=BD6F6E98.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+AITA for refusing to force my son to apologize to my wife for "ruining" her New Years toast speech?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=refusing CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=refuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=force CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=force NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=son CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=son NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=apologize CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=apologize NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=ruining CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=ruin NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=Years CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Years NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">Years</TIMEX3>]
+[Text=toast CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=toast NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG refusing)
+          (S
+            (VP (TO to)
+              (VP (VB force)
+                (NP (PRP$ my) (NN son))
+                (PP (IN to)
+                  (NP (NN apologize)))))))))
+    (PP (IN to)
+      (NP (PRP$ my) (NN wife)))
+    (PP (IN for) (`` ")
+      (S
+        (VP (VBG ruining) ('' ")
+          (NP (PRP$ her)
+            (NML (NNP New) (NNP Years))
+            (NN toast) (NN speech)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(refusing-3, for-2)
+acl:for(AITA-1, refusing-3)
+mark(force-5, to-4)
+xcomp(refusing-3, force-5)
+nmod:poss(son-7, my-6)
+obj(force-5, son-7)
+case(apologize-9, to-8)
+obl:to(force-5, apologize-9)
+case(wife-12, to-10)
+nmod:poss(wife-12, my-11)
+nmod:to(AITA-1, wife-12)
+case(ruining-15, for-13)
+punct(ruining-15, "-14)
+acl:for(AITA-1, ruining-15)
+punct(ruining-15, "-16)
+nmod:poss(speech-21, her-17)
+compound(Years-19, New-18)
+compound(speech-21, Years-19)
+compound(speech-21, toast-20)
+obj(ruining-15, speech-21)
+punct(AITA-1, ?-22)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.584151955148938
+Years	DURATION	DURATION:-1.0
+her	PERSON	-

@@ -1,0 +1,55 @@
+Document: ID=5E18FBF3.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+I make my cheesecake without the crust  Just means more cheesecake per pan
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=cheesecake CharacterOffsetBegin=10 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=cheesecake NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=crust CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=crust NamedEntityTag=O]
+[Text=Just CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=means CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=mean NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=cheesecake CharacterOffsetBegin=56 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=cheesecake NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=pan CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=pan NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP make)
+      (SBAR
+        (S
+          (NP
+            (NP (PRP$ my) (NN cheesecake))
+            (PP (IN without)
+              (NP (DT the) (NN crust))))
+          (ADVP (RB Just))
+          (VP (VBZ means)
+            (NP
+              (NP (JJR more) (NN cheesecake))
+              (PP (IN per)
+                (NP (NN pan))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-2)
+nsubj(make-2, I-1)
+nmod:poss(cheesecake-4, my-3)
+nsubj(means-9, cheesecake-4)
+case(crust-7, without-5)
+det(crust-7, the-6)
+nmod:without(cheesecake-4, crust-7)
+advmod(means-9, Just-8)
+ccomp(make-2, means-9)
+amod(cheesecake-11, more-10)
+obj(means-9, cheesecake-11)
+case(pan-13, per-12)
+nmod:per(cheesecake-11, pan-13)
+
+Extracted the following NER entity mentions:

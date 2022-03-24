@@ -1,0 +1,53 @@
+Document: ID=13096052.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Select committee concludes Trump violated multiple laws in effort to overturn election
+
+Tokens:
+[Text=Select CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=select NamedEntityTag=O]
+[Text=committee CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=committee NamedEntityTag=O]
+[Text=concludes CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=VBZ Lemma=conclude NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=violated CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=violate NamedEntityTag=O]
+[Text=multiple CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=multiple NamedEntityTag=O]
+[Text=laws CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=law NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=effort CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=effort NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=overturn CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=overturn NamedEntityTag=O]
+[Text=election CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Select) (NN committee))
+    (VP (VBZ concludes)
+      (SBAR
+        (S
+          (NP (NNP Trump))
+          (VP (VBD violated)
+            (NP (JJ multiple) (NNS laws))
+            (PP (IN in)
+              (NP (NN effort)))
+            (S
+              (VP (TO to)
+                (VP (VB overturn)
+                  (NP (NN election)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, concludes-3)
+amod(committee-2, Select-1)
+nsubj(concludes-3, committee-2)
+nsubj(violated-5, Trump-4)
+ccomp(concludes-3, violated-5)
+amod(laws-7, multiple-6)
+obj(violated-5, laws-7)
+case(effort-9, in-8)
+obl:in(violated-5, effort-9)
+mark(overturn-11, to-10)
+advcl:to(violated-5, overturn-11)
+obj(overturn-11, election-12)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9377529309874119

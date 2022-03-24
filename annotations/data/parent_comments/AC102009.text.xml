@@ -1,0 +1,46 @@
+Document: ID=AC102009.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+The 2020 election was the *actual* insurrection.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t1" type="DATE" value="2020">2020</TIMEX3>]
+[Text=election CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=election NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=insurrection CharacterOffsetBegin=35 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=insurrection NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (CD 2020) (NN election))
+    (VP (VBD was)
+      (NP
+        (NP
+          (NP (DT the))
+          (PP (SYM *)
+            (NP (JJ actual)))
+          (X (NFP *)))
+        (NP (NN insurrection))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, the-5)
+det(election-3, The-1)
+nummod(election-3, 2020-2)
+nsubj(the-5, election-3)
+cop(the-5, was-4)
+dep(actual-7, *-6)
+nmod(the-5, actual-7)
+dep(the-5, *-8)
+dep(the-5, insurrection-9)
+punct(the-5, .-10)
+
+Extracted the following NER entity mentions:
+2020	DATE	DATE:0.7400156045825957

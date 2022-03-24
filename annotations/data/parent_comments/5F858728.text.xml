@@ -1,0 +1,46 @@
+Document: ID=5F858728.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+9000 protests... you're proving the post correct.
+
+Tokens:
+[Text=9000 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=CD Lemma=9000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=9000.0]
+[Text=protests CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=protest NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=proving CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=prove NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=correct CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=correct NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (CD 9000) (NNS protests))
+    (: ...)
+    (S
+      (NP (PRP you))
+      (VP (VBP 're)
+        (VP (VBG proving)
+          (S
+            (NP (DT the) (NN post))
+            (ADJP (JJ correct))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, protests-2)
+nummod(protests-2, 9000-1)
+punct(protests-2, ...-3)
+nsubj(proving-6, you-4)
+aux(proving-6, 're-5)
+parataxis(protests-2, proving-6)
+det(post-8, the-7)
+nsubj(correct-9, post-8)
+xcomp(proving-6, correct-9)
+punct(protests-2, .-10)
+
+Extracted the following NER entity mentions:
+9000	NUMBER	NUMBER:-1.0

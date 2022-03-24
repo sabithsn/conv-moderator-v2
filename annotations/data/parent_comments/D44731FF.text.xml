@@ -1,0 +1,40 @@
+Document: ID=D44731FF.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Fuck Palestine, all my homies hate Palestine
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=Palestine CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Palestine NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=homies CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=homy NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=hate NamedEntityTag=O]
+[Text=Palestine CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Palestine NamedEntityTag=CITY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fuck)
+      (S
+        (NP (NNP Palestine))
+        (, ,)
+        (NP (DT all) (PRP$ my) (NNS homies))
+        (VP (VBP hate)
+          (NP (NNP Palestine)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+nsubj(hate-7, Palestine-2)
+punct(hate-7, ,-3)
+det:predet(homies-6, all-4)
+nmod:poss(homies-6, my-5)
+nsubj(hate-7, homies-6)
+ccomp(Fuck-1, hate-7)
+obj(hate-7, Palestine-8)
+
+Extracted the following NER entity mentions:
+Palestine	CITY	LOCATION:0.5386409590194381
+Palestine	CITY	LOCATION:0.649249894453516

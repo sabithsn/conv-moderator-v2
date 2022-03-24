@@ -1,0 +1,40 @@
+Document: ID=FEA092C9.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+lol  Edit, lmao the bitch blocked me
+
+Tokens:
+[Text=lol CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=Edit CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=lmao CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=lmao NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bitch CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=bitch NamedEntityTag=O]
+[Text=blocked CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=block NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH lol))
+    (S
+      (NP
+        (NP (NN Edit))
+        (, ,)
+        (PP (IN lmao)
+          (NP (DT the) (NN bitch))))
+      (VP (VBD blocked)
+        (NP (PRP me))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, blocked-7)
+discourse(blocked-7, lol-1)
+nsubj(blocked-7, Edit-2)
+punct(Edit-2, ,-3)
+case(bitch-6, lmao-4)
+det(bitch-6, the-5)
+nmod:lmao(Edit-2, bitch-6)
+obj(blocked-7, me-8)
+
+Extracted the following NER entity mentions:

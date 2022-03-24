@@ -1,0 +1,32 @@
+Document: ID=4FFD7D33.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Trump shitting on the flag 2024
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=O]
+[Text=shitting CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=VBG Lemma=shit NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=flag CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=flag NamedEntityTag=O]
+[Text=2024 CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">2024</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (NP (NNP Trump))
+    (VP (VBG shitting)
+      (PP (IN on)
+        (NP (DT the) (NN flag) (CD 2024))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shitting-2)
+nsubj(shitting-2, Trump-1)
+case(flag-5, on-3)
+det(flag-5, the-4)
+obl:on(shitting-2, flag-5)
+nummod(flag-5, 2024-6)
+
+Extracted the following NER entity mentions:
+2024	DATE	DATE:0.810605000329378

@@ -1,0 +1,74 @@
+Document: ID=EF527D11.text (2 sentences, 16 tokens)
+
+Sentence #1 (5 tokens):
+Another badge of honour.
+
+Tokens:
+[Text=Another CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=badge CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=badge NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=honour CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=honour NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT Another) (NN badge))
+    (PP (IN of)
+      (NP (NN honour)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, badge-2)
+det(badge-2, Another-1)
+case(honour-4, of-3)
+nmod:of(badge-2, honour-4)
+punct(badge-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Fits right next to my warning for my comments about gypsys
+
+Tokens:
+[Text=Fits CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=fit NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=warning CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=warning NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=gypsys CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=gypsy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Fits)
+      (ADVP
+        (ADVP (RB right) (JJ next)
+          (PP (IN to)
+            (NP (PRP$ my) (NN warning))))
+        (PP (IN for)
+          (NP (PRP$ my) (NNS comments))))
+      (PP (IN about)
+        (NP (NNS gypsys))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fits-1)
+advmod(warning-6, right-2)
+case(warning-6, next-3)
+fixed(next-3, to-4)
+nmod:poss(warning-6, my-5)
+obl:next_to(Fits-1, warning-6)
+case(comments-9, for-7)
+nmod:poss(comments-9, my-8)
+obl:for(warning-6, comments-9)
+case(gypsys-11, about-10)
+obl:about(Fits-1, gypsys-11)
+
+Extracted the following NER entity mentions:

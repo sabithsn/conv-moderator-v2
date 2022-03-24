@@ -1,0 +1,61 @@
+Document: ID=BDF742FA.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Nah ... Brett Kavanaugh just was a harmless rapist and drunk high school boi ...
+
+Tokens:
+[Text=Nah CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Nah NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NFP Lemma=... NamedEntityTag=O]
+[Text=Brett CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Brett NamedEntityTag=PERSON]
+[Text=Kavanaugh CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Kavanaugh NamedEntityTag=PERSON]
+[Text=just CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=harmless CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=harmless NamedEntityTag=O]
+[Text=rapist CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=rapist NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=drunk CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=drunk NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=boi CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=boi NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Nah))
+    (NFP ...)
+    (S
+      (NP (NNP Brett) (NNP Kavanaugh))
+      (ADVP (RB just))
+      (VP (VBD was)
+        (NP
+          (NP (DT a)
+            (ADJP (JJ harmless))
+            (NN rapist))
+          (CC and)
+          (NP (JJ drunk)
+            (NML (JJ high) (NN school))
+            (NN boi)))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rapist-9)
+dep(rapist-9, Nah-1)
+punct(rapist-9, ...-2)
+compound(Kavanaugh-4, Brett-3)
+nsubj(rapist-9, Kavanaugh-4)
+advmod(rapist-9, just-5)
+cop(rapist-9, was-6)
+det(rapist-9, a-7)
+amod(rapist-9, harmless-8)
+cc(boi-14, and-10)
+amod(boi-14, drunk-11)
+amod(school-13, high-12)
+compound(boi-14, school-13)
+conj:and(rapist-9, boi-14)
+punct(rapist-9, ...-15)
+
+Extracted the following NER entity mentions:
+Brett Kavanaugh	PERSON	PERSON:0.9964390825845496

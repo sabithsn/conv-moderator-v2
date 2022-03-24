@@ -1,0 +1,42 @@
+Document: ID=252D24AF.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+don't forget Duke lacrosse team and VA fraternity
+
+Tokens:
+[Text=do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=forget CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=forget NamedEntityTag=O]
+[Text=Duke CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Duke NamedEntityTag=PERSON]
+[Text=lacrosse CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=lacrosse NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=VA CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=VA NamedEntityTag=STATE_OR_PROVINCE]
+[Text=fraternity CharacterOffsetBegin=39 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=fraternity NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB do) (RB n't)
+      (VP (VB forget)
+        (NP
+          (NP (NNP Duke) (NN lacrosse) (NN team))
+          (CC and)
+          (NP (NNP VA) (NN fraternity)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forget-3)
+aux(forget-3, do-1)
+advmod(forget-3, n't-2)
+compound(team-6, Duke-4)
+compound(team-6, lacrosse-5)
+obj(forget-3, team-6)
+cc(fraternity-9, and-7)
+compound(fraternity-9, VA-8)
+obj(forget-3, fraternity-9)
+conj:and(team-6, fraternity-9)
+
+Extracted the following NER entity mentions:
+Duke	PERSON	PERSON:0.6309163701722875
+VA	STATE_OR_PROVINCE	-

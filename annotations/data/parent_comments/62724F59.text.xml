@@ -1,0 +1,44 @@
+Document: ID=62724F59.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Well most Ukrainian refugees are actually woman and children...........
+
+Tokens:
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=Ukrainian CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=ukrainian NamedEntityTag=NATIONALITY]
+[Text=refugees CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=refugee NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=........... CharacterOffsetBegin=60 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=........... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (NP (RBS most) (JJ Ukrainian) (NNS refugees))
+    (VP (VBP are)
+      (ADVP (RB actually))
+      (NP (NN woman)
+        (CC and)
+        (NNS children)))
+    (. ...........)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, woman-7)
+discourse(woman-7, Well-1)
+advmod(refugees-4, most-2)
+amod(refugees-4, Ukrainian-3)
+nsubj(woman-7, refugees-4)
+cop(woman-7, are-5)
+advmod(woman-7, actually-6)
+cc(children-9, and-8)
+conj:and(woman-7, children-9)
+punct(woman-7, ...........-10)
+
+Extracted the following NER entity mentions:
+Ukrainian	NATIONALITY	MISC:0.9999779725957287

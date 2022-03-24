@@ -1,0 +1,33 @@
+Document: ID=3BDFE1DD.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Stickers blast Biden at gas pumps
+
+Tokens:
+[Text=Stickers CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=sticker NamedEntityTag=O]
+[Text=blast CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=blast NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=pumps CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=pump NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Stickers))
+    (VP (VBP blast)
+      (NP (NNP Biden))
+      (PP (IN at)
+        (NP (NN gas) (NNS pumps))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, blast-2)
+nsubj(blast-2, Stickers-1)
+obj(blast-2, Biden-3)
+case(pumps-6, at-4)
+compound(pumps-6, gas-5)
+obl:at(blast-2, pumps-6)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9928123433291126

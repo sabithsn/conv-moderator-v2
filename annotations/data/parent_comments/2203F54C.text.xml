@@ -1,0 +1,67 @@
+Document: ID=2203F54C.text (2 sentences, 13 tokens)
+
+Sentence #1 (9 tokens):
+So many cops have died this year already.
+
+Tokens:
+[Text=So CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=cops CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=cop NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=die NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y Timex=<TIMEX3 alt_value="THIS P1Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this year</TIMEX3>]
+[Text=year CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y Timex=<TIMEX3 alt_value="THIS P1Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this year</TIMEX3>]
+[Text=already CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP (JJ many) (NNS cops))
+    (VP (VBP have)
+      (VP (VBN died)
+        (NP (DT this) (NN year))
+        (ADVP (RB already))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, died-5)
+advmod(died-5, So-1)
+amod(cops-3, many-2)
+nsubj(died-5, cops-3)
+aux(died-5, have-4)
+det(year-7, this-6)
+obl:tmod(died-5, year-7)
+advmod(died-5, already-8)
+punct(died-5, .-9)
+
+Extracted the following NER entity mentions:
+this year	DATE	DATE:-1.0
+
+Sentence #2 (4 tokens):
+It's sickening.
+
+Tokens:
+[Text=It CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sickening CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=sicken NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (VP (VBG sickening)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sickening-3)
+nsubj(sickening-3, It-1)
+aux(sickening-3, 's-2)
+punct(sickening-3, .-4)
+
+Extracted the following NER entity mentions:

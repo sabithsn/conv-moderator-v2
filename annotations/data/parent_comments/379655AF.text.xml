@@ -1,0 +1,68 @@
+Document: ID=379655AF.text (2 sentences, 13 tokens)
+
+Sentence #1 (6 tokens):
+You’re kidding me right?
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=kidding CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VBG Lemma=kid NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP ’re)
+      (S
+        (VP (VBG kidding)
+          (S
+            (NP (PRP me))
+            (ADJP (JJ right))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’re-2)
+nsubj(’re-2, You-1)
+xcomp(’re-2, kidding-3)
+nsubj(right-5, me-4)
+xcomp(kidding-3, right-5)
+punct(’re-2, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+You literally post in an opioid subreddit
+
+Tokens:
+[Text=You CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=post NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=opioid CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=opioid NamedEntityTag=O]
+[Text=subreddit CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=subreddit NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB literally))
+    (VP (VBP post)
+      (PP (IN in)
+        (NP (DT an) (JJ opioid) (NN subreddit))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, post-3)
+nsubj(post-3, You-1)
+advmod(post-3, literally-2)
+case(subreddit-7, in-4)
+det(subreddit-7, an-5)
+amod(subreddit-7, opioid-6)
+obl:in(post-3, subreddit-7)
+
+Extracted the following NER entity mentions:

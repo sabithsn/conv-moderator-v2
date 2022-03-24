@@ -1,0 +1,75 @@
+Document: ID=DE3EA28C.text (2 sentences, 15 tokens)
+
+Sentence #1 (5 tokens):
+Flagrant agenda posting lmao.
+
+Tokens:
+[Text=Flagrant CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=flagrant NamedEntityTag=O]
+[Text=agenda CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=agenda NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=lmao CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=lmao NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Flagrant) (NN agenda))
+    (VP (VBG posting)
+      (NP (NN lmao)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agenda-2)
+amod(agenda-2, Flagrant-1)
+acl(agenda-2, posting-3)
+obj(posting-3, lmao-4)
+punct(agenda-2, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Worried about the guy who doesn't matter right now
+
+Tokens:
+[Text=Worried CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=worried NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=matter CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=matter NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=right NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=now CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADJP (JJ Worried))
+    (PP (IN about)
+      (NP
+        (NP (DT the) (NN guy))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ does) (RB n't)
+              (VP (VB matter)
+                (ADVP (RB right) (RB now))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Worried-1)
+case(guy-4, about-2)
+det(guy-4, the-3)
+obl:about(Worried-1, guy-4)
+nsubj(matter-8, guy-4)
+ref(guy-4, who-5)
+aux(matter-8, does-6)
+advmod(matter-8, n't-7)
+acl:relcl(guy-4, matter-8)
+advmod(now-10, right-9)
+advmod(matter-8, now-10)
+
+Extracted the following NER entity mentions:
+right now	DATE	DATE:-1.0

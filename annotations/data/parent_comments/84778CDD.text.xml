@@ -1,0 +1,98 @@
+Document: ID=84778CDD.text (2 sentences, 22 tokens)
+
+Sentence #1 (10 tokens):
+Jokes on you, I'm into that shit.
+
+Tokens:
+[Text=Jokes CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNS Lemma=joke NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP
+      (NP (NNS Jokes))
+      (PP (IN on)
+        (NP (PRP you))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (PP (IN into)
+        (NP (DT that) (NN shit))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shit-9)
+obl:tmod(shit-9, Jokes-1)
+case(you-3, on-2)
+nmod:on(Jokes-1, you-3)
+punct(shit-9, ,-4)
+nsubj(shit-9, I-5)
+cop(shit-9, 'm-6)
+case(shit-9, into-7)
+det(shit-9, that-8)
+punct(shit-9, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+Now I'm gonna go chomp me some string cheese.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=I CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=chomp CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=chomp NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=string CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=string NamedEntityTag=O]
+[Text=cheese CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=cheese NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG gon)
+        (S
+          (VP (TO na)
+            (VP (VB go)
+              (S
+                (VP (VB chomp)
+                  (NP (PRP me))
+                  (S
+                    (NP (DT some) (NN string) (NN cheese))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gon-4)
+advmod(gon-4, Now-1)
+nsubj(gon-4, I-2)
+nsubj:xsubj(go-6, I-2)
+aux(gon-4, 'm-3)
+mark(go-6, na-5)
+xcomp(gon-4, go-6)
+ccomp(go-6, chomp-7)
+obj(chomp-7, me-8)
+det(cheese-11, some-9)
+compound(cheese-11, string-10)
+xcomp(chomp-7, cheese-11)
+punct(gon-4, .-12)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0

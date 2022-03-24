@@ -1,0 +1,40 @@
+Document: ID=DDE2F772.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+What party did Richard Spencer vote for?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Richard CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Richard NamedEntityTag=PERSON]
+[Text=Spencer CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Spencer NamedEntityTag=PERSON]
+[Text=vote CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN party))
+    (SQ
+      (VP (VBD did)
+        (NP (NNP Richard) (NNP Spencer))
+        (PP
+          (NP (NN vote))
+          (IN for))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-3)
+det(party-2, What-1)
+nsubj(did-3, party-2)
+compound(Spencer-5, Richard-4)
+obj(did-3, Spencer-5)
+obl:for(did-3, vote-6)
+case(vote-6, for-7)
+punct(did-3, ?-8)
+
+Extracted the following NER entity mentions:
+Richard Spencer	PERSON	PERSON:0.9900526541851644

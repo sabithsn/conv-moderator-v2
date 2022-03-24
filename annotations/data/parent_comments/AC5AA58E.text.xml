@@ -1,0 +1,110 @@
+Document: ID=AC5AA58E.text (2 sentences, 27 tokens)
+
+Sentence #1 (11 tokens):
+Dont degrade their sacrifices to complain about western society.
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=nt CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=nt NamedEntityTag=O]
+[Text=degrade CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=degrade NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=sacrifices CharacterOffsetBegin=19 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=sacrifice NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=complain CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=complain NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=western CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=western NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Do) (RB nt)
+      (VP (VB degrade)
+        (NP (PRP$ their) (NNS sacrifices))
+        (S
+          (VP (TO to)
+            (VP (VB complain)
+              (PP (IN about)
+                (NP (JJ western) (NN society))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, degrade-3)
+aux(degrade-3, Do-1)
+advmod(degrade-3, nt-2)
+nmod:poss(sacrifices-5, their-4)
+obj(degrade-3, sacrifices-5)
+mark(complain-7, to-6)
+advcl:to(degrade-3, complain-7)
+case(society-10, about-8)
+amod(society-10, western-9)
+obl:about(complain-7, society-10)
+punct(degrade-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+And there are plenty of women doing their part, whether fighting or helping otherwise.
+
+Tokens:
+[Text=And CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=plenty CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=plenty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=113 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=fighting CharacterOffsetBegin=121 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=fighting NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=helping CharacterOffsetBegin=133 CharacterOffsetEnd=140 PartOfSpeech=VBG Lemma=help NamedEntityTag=O]
+[Text=otherwise CharacterOffsetBegin=141 CharacterOffsetEnd=150 PartOfSpeech=RB Lemma=otherwise NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (NN plenty))
+        (PP (IN of)
+          (NP
+            (NP (NNS women))
+            (VP
+              (VP (VBG doing)
+                (NP (PRP$ their) (NN part))
+                (, ,)
+                (PP (IN whether)
+                  (NP (NN fighting))))
+              (CC or)
+              (VP (VBG helping)
+                (ADVP (RB otherwise))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-3)
+cc(are-3, And-1)
+expl(are-3, there-2)
+det:qmod(women-6, plenty-4)
+fixed(plenty-4, of-5)
+nsubj(are-3, women-6)
+dep(women-6, doing-7)
+nmod:poss(part-9, their-8)
+obj(doing-7, part-9)
+punct(doing-7, ,-10)
+case(fighting-12, whether-11)
+obl:whether(doing-7, fighting-12)
+cc(helping-14, or-13)
+dep(women-6, helping-14)
+conj:or(doing-7, helping-14)
+advmod(helping-14, otherwise-15)
+punct(are-3, .-16)
+
+Extracted the following NER entity mentions:

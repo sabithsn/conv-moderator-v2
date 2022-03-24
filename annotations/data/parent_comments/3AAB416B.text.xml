@@ -1,0 +1,61 @@
+Document: ID=3AAB416B.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+New SCOTUS pick could bring the one thing Biden needs—A united party
+
+Tokens:
+[Text=New CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=SCOTUS CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=SCOTUS NamedEntityTag=O]
+[Text=pick CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=pick NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=thing CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=needs CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=— CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=: Lemma=— NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=united CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=united NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP New) (NNP SCOTUS))
+      (SBAR
+        (S
+          (S
+            (VP (VB pick)))
+          (VP (MD could)
+            (VP (VB bring)
+              (NP
+                (NP (DT the) (CD one) (NN thing))
+                (SBAR
+                  (S
+                    (NP (NNP Biden))
+                    (VP (VBZ needs))))))))))
+    (: —)
+    (NP (DT A) (JJ united) (NN party))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SCOTUS-2)
+compound(SCOTUS-2, New-1)
+csubj(bring-5, pick-3)
+aux(bring-5, could-4)
+acl:relcl(SCOTUS-2, bring-5)
+det(thing-8, the-6)
+nummod(thing-8, one-7)
+obj(bring-5, thing-8)
+nsubj(needs-10, Biden-9)
+acl:relcl(thing-8, needs-10)
+punct(SCOTUS-2, —-11)
+det(party-14, A-12)
+amod(party-14, united-13)
+dep(SCOTUS-2, party-14)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+Biden	PERSON	PERSON:0.9943148787769068

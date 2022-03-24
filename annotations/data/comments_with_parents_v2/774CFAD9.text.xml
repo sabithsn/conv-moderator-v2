@@ -1,0 +1,61 @@
+Document: ID=774CFAD9.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+…are you suggesting everyone on the left only counts rape as sex?
+
+Tokens:
+[Text=… CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=suggesting CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=suggest NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=counts CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=VBZ Lemma=count NamedEntityTag=O]
+[Text=rape CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=rape NamedEntityTag=CRIMINAL_CHARGE]
+[Text=as CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (: …)
+    (VP (VBP are)
+      (NP
+        (NP (PRP you))
+        (VP (VBG suggesting)
+          (NP
+            (NP (NN everyone))
+            (PP (IN on)
+              (NP (DT the)
+                (S
+                  (S
+                    (VP (VBN left)
+                      (ADVP (RB only))))
+                  (VP (VBZ counts)))
+                (NN rape))))
+          (PP (IN as)
+            (NP (NN sex))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, you-3)
+punct(you-3, …-1)
+cop(you-3, are-2)
+acl(you-3, suggesting-4)
+obj(suggesting-4, everyone-5)
+case(rape-11, on-6)
+det(rape-11, the-7)
+csubj(counts-10, left-8)
+advmod(left-8, only-9)
+dep(rape-11, counts-10)
+nmod:on(everyone-5, rape-11)
+case(sex-13, as-12)
+obl:as(suggesting-4, sex-13)
+punct(you-3, ?-14)
+
+Extracted the following NER entity mentions:
+rape	CRIMINAL_CHARGE	-

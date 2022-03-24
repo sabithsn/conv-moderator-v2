@@ -1,0 +1,80 @@
+Document: ID=72E572CF.text (2 sentences, 16 tokens)
+
+Sentence #1 (6 tokens):
+Call me an idiot Yankee.
+
+Tokens:
+[Text=Call CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=idiot CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=idiot NamedEntityTag=O]
+[Text=Yankee CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=yankee NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Call)
+      (NP (PRP me))
+      (S
+        (NP (DT an) (NN idiot) (NN Yankee))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Call-1)
+obj(Call-1, me-2)
+det(Yankee-5, an-3)
+compound(Yankee-5, idiot-4)
+xcomp(Call-1, Yankee-5)
+punct(Call-1, .-6)
+
+Extracted the following NER entity mentions:
+Yankee	ORGANIZATION	ORGANIZATION:0.6667815628441424
+
+Sentence #2 (10 tokens):
+But gypsies are people too and they deserve to live
+
+Tokens:
+[Text=But CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=gypsies CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=gypsy NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=deserve CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=deserve NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=live NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S (CC But)
+      (NP (NNS gypsies))
+      (VP (VBP are)
+        (NP (NNS people))
+        (ADVP (RB too))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP deserve)
+        (S
+          (VP (TO to)
+            (VP (VB live))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, people-4)
+cc(people-4, But-1)
+nsubj(people-4, gypsies-2)
+cop(people-4, are-3)
+advmod(people-4, too-5)
+cc(deserve-8, and-6)
+nsubj(deserve-8, they-7)
+nsubj:xsubj(live-10, they-7)
+conj:and(people-4, deserve-8)
+mark(live-10, to-9)
+xcomp(deserve-8, live-10)
+
+Extracted the following NER entity mentions:

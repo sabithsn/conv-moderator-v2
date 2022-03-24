@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>9B90453C.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Mona</word>
+            <lemma>Mona</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Lisa</word>
+            <lemma>Lisa</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>ugly</word>
+            <lemma>ugly</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>painting</word>
+            <lemma>painting</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>You</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>'re</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>idiot</word>
+            <lemma>idiot</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNP Mona) (NNP Lisa)) (VP (VBZ is) (NP (NP (DT an) (JJ ugly) (NN painting)) (SBAR (S (NP (PRP You)) (VP (VBP 're) (NP (DT an) (NN idiot))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">painting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="2">Mona</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">painting</governor>
+            <dependent idx="3">Lisa</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">painting</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">painting</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">painting</governor>
+            <dependent idx="6">ugly</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">idiot</governor>
+            <dependent idx="8">You</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">idiot</governor>
+            <dependent idx="9">'re</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">idiot</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">painting</governor>
+            <dependent idx="11">idiot</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">painting</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">painting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="2">Mona</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">painting</governor>
+            <dependent idx="3">Lisa</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">painting</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">painting</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">painting</governor>
+            <dependent idx="6">ugly</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">idiot</governor>
+            <dependent idx="8">You</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">idiot</governor>
+            <dependent idx="9">'re</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">idiot</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">painting</governor>
+            <dependent idx="11">idiot</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">painting</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">painting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="2">Mona</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">painting</governor>
+            <dependent idx="3">Lisa</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">painting</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">painting</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">painting</governor>
+            <dependent idx="6">ugly</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">idiot</governor>
+            <dependent idx="8">You</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">idiot</governor>
+            <dependent idx="9">'re</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">idiot</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">painting</governor>
+            <dependent idx="11">idiot</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">painting</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">painting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="2">Mona</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">painting</governor>
+            <dependent idx="3">Lisa</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">painting</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">painting</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">painting</governor>
+            <dependent idx="6">ugly</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">idiot</governor>
+            <dependent idx="8">You</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">idiot</governor>
+            <dependent idx="9">'re</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">idiot</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">painting</governor>
+            <dependent idx="11">idiot</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">painting</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">painting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Lisa</governor>
+            <dependent idx="2">Mona</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">painting</governor>
+            <dependent idx="3">Lisa</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">painting</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">painting</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">painting</governor>
+            <dependent idx="6">ugly</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">idiot</governor>
+            <dependent idx="8">You</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">idiot</governor>
+            <dependent idx="9">'re</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">idiot</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="7">painting</governor>
+            <dependent idx="11">idiot</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">painting</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

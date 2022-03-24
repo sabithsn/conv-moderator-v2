@@ -1,0 +1,63 @@
+Document: ID=23E66E36.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+*Mods all agreed the person was the best one to go on the interview.
+
+Tokens:
+[Text=* CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=Mods CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=NNS Lemma=mod NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=agreed CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=agree NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=to CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=interview CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP *)
+    (NP (NNS Mods))
+    (NP (DT all))
+    (VP (VBD agreed)
+      (SBAR
+        (S
+          (NP (DT the) (NN person))
+          (VP (VBD was)
+            (NP
+              (NP (DT the) (JJS best) (CD one))
+              (S
+                (VP (TO to)
+                  (VP (VB go)
+                    (PP (IN on)
+                      (NP (DT the) (NN interview)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agreed-4)
+punct(agreed-4, *-1)
+nsubj(agreed-4, Mods-2)
+nsubj(agreed-4, all-3)
+det(person-6, the-5)
+nsubj(one-10, person-6)
+cop(one-10, was-7)
+det(one-10, the-8)
+amod(one-10, best-9)
+ccomp(agreed-4, one-10)
+mark(go-12, to-11)
+acl:to(one-10, go-12)
+case(interview-15, on-13)
+det(interview-15, the-14)
+obl:on(go-12, interview-15)
+punct(agreed-4, .-16)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

@@ -1,0 +1,39 @@
+Document: ID=16686B6A.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+What’s wrong with Carhartt now?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Carhartt CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Carhartt NamedEntityTag=PERSON]
+[Text=now CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=? CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ ’s)
+        (ADVP (JJ wrong)
+          (PP (IN with)
+            (NP (NNP Carhartt))))
+        (ADVP (RB now))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-2)
+nsubj(’s-2, What-1)
+advmod(’s-2, wrong-3)
+case(Carhartt-5, with-4)
+obl:with(wrong-3, Carhartt-5)
+advmod(’s-2, now-6)
+punct(’s-2, ?-7)
+
+Extracted the following NER entity mentions:
+Carhartt	PERSON	PERSON:0.6662286973387596
+now	DATE	DATE:-1.0

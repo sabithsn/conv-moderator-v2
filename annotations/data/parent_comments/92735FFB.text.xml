@@ -1,0 +1,44 @@
+Document: ID=92735FFB.text (2 sentences, 5 tokens)
+
+Sentence #1 (4 tokens):
+Jesus save me!
+
+Tokens:
+[Text=Jesus CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Jesus NamedEntityTag=PERSON]
+[Text=save CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=save NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Jesus))
+    (VP (VBD save)
+      (NP (PRP me)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, save-2)
+nsubj(save-2, Jesus-1)
+obj(save-2, me-3)
+punct(save-2, !-4)
+
+Extracted the following NER entity mentions:
+Jesus	PERSON	PERSON:0.9899258296762815
+
+Sentence #2 (1 tokens):
+...
+
+Tokens:
+[Text=... CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=NFP Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (NFP ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ...-1)
+
+Extracted the following NER entity mentions:

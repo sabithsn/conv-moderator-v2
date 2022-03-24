@@ -1,0 +1,68 @@
+Document: ID=31FD59AD.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+You have to wonder why there is not even one of these labs in Europe union
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wonder CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=wonder NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=labs CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=lab NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=union CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=union NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB wonder)
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (NP (EX there))
+                (VP (VBZ is) (RB not)
+                  (ADVP (RB even))
+                  (NP
+                    (NP (CD one))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT these) (NNS labs))
+                        (PP (IN in)
+                          (NP (NNP Europe) (NN union)))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, You-1)
+nsubj:xsubj(wonder-4, You-1)
+mark(wonder-4, to-3)
+xcomp(have-2, wonder-4)
+advmod(is-7, why-5)
+expl(is-7, there-6)
+ccomp(wonder-4, is-7)
+advmod(is-7, not-8)
+advmod(is-7, even-9)
+det:qmod(labs-13, one-10)
+fixed(one-10, of-11)
+det(labs-13, these-12)
+nsubj(is-7, labs-13)
+case(union-16, in-14)
+compound(union-16, Europe-15)
+nmod:in(labs-13, union-16)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+Europe	LOCATION	LOCATION:0.9983129867459293

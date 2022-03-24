@@ -1,0 +1,99 @@
+Document: ID=FD8B90E7.text (2 sentences, 20 tokens)
+
+Sentence #1 (16 tokens):
+Replace Texas with California, Trump with Biden, and 50% with 65%.
+
+Tokens:
+[Text=Replace CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=replace NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=with CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=19 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=with CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=50 CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=CD Lemma=50 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%50.0]
+[Text=% CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%50.0]
+[Text=with CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=65 CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=CD Lemma=65 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%65.0]
+[Text=% CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%65.0]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Replace)
+      (NP
+        (NP
+          (NP (NNP Texas))
+          (PP (IN with)
+            (NP (NNP California))))
+        (, ,)
+        (NP
+          (NP (NNP Trump))
+          (PP (IN with)
+            (NP (NNP Biden))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (CD 50) (NN %))
+          (PP (IN with)
+            (NP (CD 65) (NN %))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Replace-1)
+obj(Replace-1, Texas-2)
+case(California-4, with-3)
+nmod:with(Texas-2, California-4)
+punct(Texas-2, ,-5)
+obj(Replace-1, Trump-6)
+conj:and(Texas-2, Trump-6)
+case(Biden-8, with-7)
+nmod:with(Trump-6, Biden-8)
+punct(Texas-2, ,-9)
+cc(%-12, and-10)
+nummod(%-12, 50-11)
+obj(Replace-1, %-12)
+conj:and(Texas-2, %-12)
+case(%-15, with-13)
+nummod(%-15, 65-14)
+nmod:with(%-12, %-15)
+punct(Replace-1, .-16)
+
+Extracted the following NER entity mentions:
+Texas	STATE_OR_PROVINCE	LOCATION:0.8386489056839455
+California	STATE_OR_PROVINCE	LOCATION:0.9834186110637295
+Trump	PERSON	PERSON:0.8093405900321622
+Biden	PERSON	PERSON:0.9758492384429822
+50%	PERCENT	PERCENT:0.999705111826922
+65%	PERCENT	PERCENT:0.9997280881950621
+
+Sentence #2 (4 tokens):
+Joke still works.
+
+Tokens:
+[Text=Joke CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=joke NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Joke))
+    (ADVP (RB still))
+    (VP (VBZ works))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, works-3)
+nsubj(works-3, Joke-1)
+advmod(works-3, still-2)
+punct(works-3, .-4)
+
+Extracted the following NER entity mentions:

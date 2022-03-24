@@ -1,0 +1,67 @@
+Document: ID=E0023A1A.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Under DA Chesa Boudin, convictions are down and down-charging of felonies is up
+
+Tokens:
+[Text=Under CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=DA CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=DA NamedEntityTag=PERSON]
+[Text=Chesa CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Chesa NamedEntityTag=PERSON]
+[Text=Boudin CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Boudin NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=convictions CharacterOffsetBegin=23 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=conviction NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=charging CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=VBG Lemma=charge NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=felonies CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=felony NamedEntityTag=CRIMINAL_CHARGE]
+[Text=is CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN Under)
+      (NP (NNP DA) (NNP Chesa) (NNP Boudin)))
+    (, ,)
+    (NP
+      (NP
+        (NP (NNS convictions))
+        (SBAR
+          (S
+            (VP (VBP are)
+              (ADJP
+                (ADJP (RB down))
+                (CC and)
+                (ADJP (RB down) (HYPH -) (VBG charging)))))))
+      (PP (IN of)
+        (NP (NNS felonies))))
+    (VP (VBZ is)
+      (ADVP (RB up)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-15)
+case(Boudin-4, Under-1)
+compound(Boudin-4, DA-2)
+compound(Boudin-4, Chesa-3)
+obl:under(is-15, Boudin-4)
+punct(is-15, ,-5)
+nsubj(is-15, convictions-6)
+cop(down-8, are-7)
+acl:relcl(convictions-6, down-8)
+cc(charging-12, and-9)
+advmod(charging-12, down-10)
+punct(charging-12, --11)
+acl:relcl(convictions-6, charging-12)
+conj:and(down-8, charging-12)
+case(felonies-14, of-13)
+nmod:of(convictions-6, felonies-14)
+advmod(is-15, up-16)
+
+Extracted the following NER entity mentions:
+DA Chesa Boudin	PERSON	PERSON:0.5927269748088999
+felonies	CRIMINAL_CHARGE	-

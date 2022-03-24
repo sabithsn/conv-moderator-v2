@@ -1,0 +1,101 @@
+Document: ID=060D0869.text (1 sentences, 28 tokens)
+
+Sentence #1 (28 tokens):
+I'm a former "Hot girl" who gained weight due to a thyroid disease & I'm tired of being treated like shit for it.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=former CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Hot CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=hot NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=gained CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=VBD Lemma=gain NamedEntityTag=O]
+[Text=weight CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=weight NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=thyroid CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=thyroid NamedEntityTag=O]
+[Text=disease CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=disease NamedEntityTag=CAUSE_OF_DEATH]
+[Text=& CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=tired CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=tired NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=treated CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=VBN Lemma=treat NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (NP
+          (NP (DT a) (JJ former) (`` ") (JJ Hot) (NN girl) ('' "))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD gained)
+                (NP (NN weight))
+                (PP (IN due)
+                  (PP (IN to)
+                    (NP (DT a) (NN thyroid) (NN disease))))))))))
+    (CC &)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADJP (JJ tired)
+          (PP (IN of)
+            (S
+              (VP (VBG being)
+                (VP (VBN treated)
+                  (PP (IN like)
+                    (NP (NN shit)))
+                  (PP (IN for)
+                    (NP (PRP it))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, girl-7)
+nsubj(girl-7, I-1)
+cop(girl-7, 'm-2)
+det(girl-7, a-3)
+amod(girl-7, former-4)
+punct(girl-7, "-5)
+amod(girl-7, Hot-6)
+nsubj(gained-10, girl-7)
+punct(girl-7, "-8)
+ref(girl-7, who-9)
+acl:relcl(girl-7, gained-10)
+obj(gained-10, weight-11)
+case(disease-16, due-12)
+case(disease-16, to-13)
+det(disease-16, a-14)
+compound(disease-16, thyroid-15)
+obl:to(gained-10, disease-16)
+cc(tired-20, &-17)
+nsubj(tired-20, I-18)
+cop(tired-20, 'm-19)
+conj:&(girl-7, tired-20)
+nsubj(gained-10, tired-20)
+mark(treated-23, of-21)
+aux:pass(treated-23, being-22)
+advcl:of(tired-20, treated-23)
+case(shit-25, like-24)
+obl:like(treated-23, shit-25)
+case(it-27, for-26)
+obl:for(treated-23, it-27)
+punct(girl-7, .-28)
+
+Extracted the following NER entity mentions:
+disease	CAUSE_OF_DEATH	-

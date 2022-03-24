@@ -1,0 +1,109 @@
+Document: ID=A3C042DC.text (3 sentences, 22 tokens)
+
+Sentence #1 (8 tokens):
+My Grand Mother was herself from Tabriz.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Grand CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Grand NamedEntityTag=MISC]
+[Text=Mother CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Mother NamedEntityTag=MISC]
+[Text=was CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=herself CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=herself NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Tabriz CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Tabriz NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NNP Grand) (NNP Mother))
+    (VP (VBD was)
+      (NP (PRP herself))
+      (PP (IN from)
+        (NP (NNP Tabriz))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, herself-5)
+nmod:poss(Mother-3, My-1)
+compound(Mother-3, Grand-2)
+nsubj(herself-5, Mother-3)
+cop(herself-5, was-4)
+case(Tabriz-7, from-6)
+obl:from(herself-5, Tabriz-7)
+punct(herself-5, .-8)
+
+Extracted the following NER entity mentions:
+Grand Mother	MISC	MISC:0.9956614553012264
+Tabriz	CITY	LOCATION:0.9976801719599194
+
+Sentence #2 (9 tokens):
+and they never had a problem with Iran.
+
+Tokens:
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Iran CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Iran NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC and)
+    (NP (PRP they))
+    (ADVP (RB never))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN problem))
+        (PP (IN with)
+          (NP (NNP Iran)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-4)
+cc(had-4, and-1)
+nsubj(had-4, they-2)
+advmod(had-4, never-3)
+det(problem-6, a-5)
+obj(had-4, problem-6)
+case(Iran-8, with-7)
+nmod:with(problem-6, Iran-8)
+punct(had-4, .-9)
+
+Extracted the following NER entity mentions:
+Iran	COUNTRY	LOCATION:0.9931032373489147
+
+Sentence #3 (5 tokens):
+Your just a raging roach
+
+Tokens:
+[Text=Your CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=raging CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=VBG Lemma=rage NamedEntityTag=O]
+[Text=roach CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=roach NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (PRP$ Your)
+        (QP (RB just) (DT a)))
+      (VP (VBG raging)
+        (NP (NN roach))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, a-3)
+nmod:poss(a-3, Your-1)
+advmod(a-3, just-2)
+acl(a-3, raging-4)
+obj(raging-4, roach-5)
+
+Extracted the following NER entity mentions:

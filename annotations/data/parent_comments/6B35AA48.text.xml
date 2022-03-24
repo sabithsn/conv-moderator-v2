@@ -1,0 +1,62 @@
+Document: ID=6B35AA48.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+What would 10-year-old you never believe about adult you?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=CD Lemma=10 NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10-year-old</TIMEX3>]
+[Text=- CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10-year-old</TIMEX3>]
+[Text=year CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10-year-old</TIMEX3>]
+[Text=- CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10-year-old</TIMEX3>]
+[Text=old CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P10Y">10-year-old</TIMEX3>]
+[Text=you CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=adult CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=adult NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (MD would)
+        (S
+          (S
+            (ADJP
+              (ADJP
+                (NP (CD 10) (HYPH -) (NN year))
+                (HYPH -) (JJ old))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (ADVP (RB never))
+                  (VP (VBP believe)
+                    (PP (IN about)
+                      (NP (NN adult))))))))
+          (NP (PRP you)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, would-2)
+nsubj(would-2, What-1)
+nummod(year-5, 10-3)
+punct(year-5, --4)
+obl:tmod(old-7, year-5)
+punct(old-7, --6)
+xcomp(would-2, old-7)
+nsubj(believe-10, you-8)
+advmod(believe-10, never-9)
+ccomp(old-7, believe-10)
+case(adult-12, about-11)
+obl:about(believe-10, adult-12)
+dep(old-7, you-13)
+punct(would-2, ?-14)
+
+Extracted the following NER entity mentions:
+10-year-old	DURATION	DURATION:-1.0

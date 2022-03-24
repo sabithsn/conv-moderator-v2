@@ -1,0 +1,148 @@
+Document: ID=F8D4261E.text (3 sentences, 36 tokens)
+
+Sentence #1 (5 tokens):
+> As they should.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NFP Lemma=> NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP >)
+    (NP
+      (NP (IN As))
+      (NP (PRP they)))
+    (VP (MD should))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, should-4)
+punct(should-4, >-1)
+nsubj(should-4, As-2)
+dep(As-2, they-3)
+punct(should-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Tired of people saying they’re 10 different genders.
+
+Tokens:
+[Text=Tired CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=tired NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=different CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=genders CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=gender NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Tired))
+      (PP (IN of)
+        (NP
+          (NP (NNS people))
+          (VP (VBG saying)
+            (NP (PRP they))))))
+    (VP (VBP ’re)
+      (NP (CD 10) (JJ different) (NNS genders)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, genders-9)
+nsubj(genders-9, Tired-1)
+case(people-3, of-2)
+nmod:of(Tired-1, people-3)
+acl(people-3, saying-4)
+obj(saying-4, they-5)
+cop(genders-9, ’re-6)
+nummod(genders-9, 10-7)
+amod(genders-9, different-8)
+punct(genders-9, .-10)
+
+Extracted the following NER entity mentions:
+10	NUMBER	NUMBER:-1.0
+
+Sentence #3 (21 tokens):
+I other words "Children should be persecuted b/c I don't like some people's speech".
+
+Tokens:
+[Text=I CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=Children CharacterOffsetBegin=87 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=persecuted CharacterOffsetBegin=106 CharacterOffsetEnd=116 PartOfSpeech=VBN Lemma=persecute NamedEntityTag=O]
+[Text=b CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=b NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=c CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=c NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=148 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (NP (JJ other) (NNS words) ('' ") (NNS Children))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN persecuted)
+          (NP
+            (NP (NN b) (HYPH /) (NN c))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBP do) (RB n't)
+                  (VP (VB like)
+                    (NP
+                      (NP (DT some) (NNS people) (POS 's))
+                      (NN speech)))))))))
+      ('' "))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, persecuted-8)
+nsubj:pass(persecuted-8, I-1)
+amod(Children-5, other-2)
+compound(Children-5, words-3)
+punct(Children-5, "-4)
+nsubj:pass(persecuted-8, Children-5)
+aux(persecuted-8, should-6)
+aux:pass(persecuted-8, be-7)
+compound(c-11, b-9)
+punct(c-11, /-10)
+obj(persecuted-8, c-11)
+nsubj(like-15, I-12)
+aux(like-15, do-13)
+advmod(like-15, n't-14)
+acl:relcl(c-11, like-15)
+det(people-17, some-16)
+nmod:poss(speech-19, people-17)
+case(people-17, 's-18)
+obj(like-15, speech-19)
+punct(persecuted-8, "-20)
+punct(persecuted-8, .-21)
+
+Extracted the following NER entity mentions:

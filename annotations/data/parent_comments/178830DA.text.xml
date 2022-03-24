@@ -1,0 +1,67 @@
+Document: ID=178830DA.text (2 sentences, 13 tokens)
+
+Sentence #1 (7 tokens):
+Did he not cross state lines?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=cross CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=cross NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=lines CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=line NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Did)
+    (NP (PRP he))
+    (RB not)
+    (VP (VB cross)
+      (NP (NN state) (NNS lines)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cross-4)
+aux(cross-4, Did-1)
+nsubj(cross-4, he-2)
+advmod(cross-4, not-3)
+compound(lines-6, state-5)
+obj(cross-4, lines-6)
+punct(cross-4, ?-7)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #2 (6 tokens):
+Maybe you should shut up?
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=shut CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=shut NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP (PRP you))
+    (VP (MD should)
+      (VP (VB shut)
+        (PRT (RP up))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shut-4)
+advmod(shut-4, Maybe-1)
+nsubj(shut-4, you-2)
+aux(shut-4, should-3)
+compound:prt(shut-4, up-5)
+punct(shut-4, ?-6)
+
+Extracted the following NER entity mentions:

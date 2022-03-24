@@ -1,0 +1,64 @@
+Document: ID=4F6B8E6F.text (2 sentences, 12 tokens)
+
+Sentence #1 (7 tokens):
+Then imagine commenting on their comment.
+
+Tokens:
+[Text=Then CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=imagine CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=commenting CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=comment NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=comment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (VP (VB imagine)
+      (S
+        (VP (VBG commenting)
+          (PP (IN on)
+            (NP (PRP$ their) (NN comment))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, imagine-2)
+advmod(imagine-2, Then-1)
+xcomp(imagine-2, commenting-3)
+case(comment-6, on-4)
+nmod:poss(comment-6, their-5)
+obl:on(commenting-3, comment-6)
+punct(imagine-2, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+And that's you.
+
+Tokens:
+[Text=And CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (DT that))
+    (VP (VBZ 's)
+      (NP (PRP you)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, you-4)
+cc(you-4, And-1)
+nsubj(you-4, that-2)
+cop(you-4, 's-3)
+punct(you-4, .-5)
+
+Extracted the following NER entity mentions:

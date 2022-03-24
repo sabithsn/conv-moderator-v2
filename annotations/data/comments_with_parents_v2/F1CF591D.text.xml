@@ -1,0 +1,42 @@
+Document: ID=F1CF591D.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+International Cat Federation bans Russian felines over Ukraine crisis
+
+Tokens:
+[Text=International CharacterOffsetBegin=0 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=International NamedEntityTag=ORGANIZATION]
+[Text=Cat CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Cat NamedEntityTag=ORGANIZATION]
+[Text=Federation CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Federation NamedEntityTag=ORGANIZATION]
+[Text=bans CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=ban NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=felines CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=feline NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=crisis CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=crisis NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP International) (NNP Cat) (NNP Federation))
+    (VP (VBZ bans)
+      (NP
+        (NP (JJ Russian) (NNS felines))
+        (PP (IN over)
+          (NP (NNP Ukraine) (NN crisis)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bans-4)
+compound(Federation-3, International-1)
+compound(Federation-3, Cat-2)
+nsubj(bans-4, Federation-3)
+amod(felines-6, Russian-5)
+obj(bans-4, felines-6)
+case(crisis-9, over-7)
+compound(crisis-9, Ukraine-8)
+nmod:over(felines-6, crisis-9)
+
+Extracted the following NER entity mentions:
+International Cat Federation	ORGANIZATION	ORGANIZATION:0.991974269614196
+Russian	NATIONALITY	MISC:0.9999989037350656
+Ukraine	COUNTRY	LOCATION:0.9988668526588631

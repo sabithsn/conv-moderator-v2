@@ -1,0 +1,94 @@
+Document: ID=438987F6.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+The most depressing thing is, innocent people are dying because elites (top 0.1) want to profit and get a new world order!
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=depressing CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=depressing NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=innocent CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=innocent NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=dying CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBG Lemma=die NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=elites CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=elite NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=top CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=top NamedEntityTag=O]
+[Text=0.1 CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=CD Lemma=0.1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.1]
+[Text=) CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=profit CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=profit NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The)
+      (ADJP (RBS most) (JJ depressing))
+      (NN thing))
+    (VP (VBZ is) (, ,)
+      (SBAR
+        (S
+          (NP (JJ innocent) (NNS people))
+          (VP (VBP are)
+            (VP (VBG dying)
+              (SBAR (IN because)
+                (S
+                  (NP (NNS elites)
+                    (PRN (-LRB- -LRB-)
+                      (NP (JJ top) (CD 0.1))
+                      (-RRB- -RRB-)))
+                  (VP (VBP want)
+                    (S
+                      (VP (TO to)
+                        (VP (VB profit)
+                          (CC and)
+                          (VB get)
+                          (NP (DT a) (JJ new) (NN world) (NN order)))))))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-5)
+det(thing-4, The-1)
+advmod(depressing-3, most-2)
+amod(thing-4, depressing-3)
+nsubj(is-5, thing-4)
+punct(is-5, ,-6)
+amod(people-8, innocent-7)
+nsubj(dying-10, people-8)
+aux(dying-10, are-9)
+ccomp(is-5, dying-10)
+mark(want-17, because-11)
+nsubj(want-17, elites-12)
+nsubj:xsubj(profit-19, elites-12)
+nsubj:xsubj(get-21, elites-12)
+punct(0.1-15, (-13)
+amod(0.1-15, top-14)
+appos(elites-12, 0.1-15)
+punct(0.1-15, )-16)
+advcl:because(dying-10, want-17)
+mark(profit-19, to-18)
+xcomp(want-17, profit-19)
+cc(get-21, and-20)
+xcomp(want-17, get-21)
+conj:and(profit-19, get-21)
+det(order-25, a-22)
+amod(order-25, new-23)
+compound(order-25, world-24)
+obj(profit-19, order-25)
+punct(is-5, !-26)
+
+Extracted the following NER entity mentions:
+0.1	NUMBER	NUMBER:-1.0

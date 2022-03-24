@@ -1,0 +1,67 @@
+Document: ID=E9203E80.text (2 sentences, 14 tokens)
+
+Sentence #1 (10 tokens):
+It’s called dysfunctional bleeding and delayed menstrual cycles.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=dysfunctional CharacterOffsetBegin=12 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=dysfunctional NamedEntityTag=O]
+[Text=bleeding CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=bleeding NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=delayed CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=VBN Lemma=delay NamedEntityTag=O]
+[Text=menstrual CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=menstrual NamedEntityTag=O]
+[Text=cycles CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=cycle NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP
+        (NP (VBN called) (JJ dysfunctional) (NN bleeding))
+        (CC and)
+        (NP (VBN delayed) (JJ menstrual) (NNS cycles))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bleeding-5)
+nsubj(bleeding-5, It-1)
+cop(bleeding-5, ’s-2)
+amod(bleeding-5, called-3)
+amod(bleeding-5, dysfunctional-4)
+cc(cycles-9, and-6)
+amod(cycles-9, delayed-7)
+amod(cycles-9, menstrual-8)
+conj:and(bleeding-5, cycles-9)
+punct(bleeding-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+You dense POS.
+
+Tokens:
+[Text=You CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=dense CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=dense NamedEntityTag=O]
+[Text=POS CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=pos NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (PRP You))
+    (NP (JJ dense) (NN POS))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, You-1)
+amod(POS-3, dense-2)
+dep(You-1, POS-3)
+punct(You-1, .-4)
+
+Extracted the following NER entity mentions:

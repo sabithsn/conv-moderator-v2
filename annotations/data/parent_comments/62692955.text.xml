@@ -1,0 +1,209 @@
+Document: ID=62692955.text (5 sentences, 43 tokens)
+
+Sentence #1 (10 tokens):
+Diesel is 4.30 per gallon in north Florida today.
+
+Tokens:
+[Text=Diesel CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Diesel NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=4.30 CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=CD Lemma=4.30 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.3]
+[Text=per CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=gallon CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=gallon NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=north CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=north NamedEntityTag=O]
+[Text=Florida CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=today CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Diesel))
+    (VP (VBZ is)
+      (NP
+        (NP (CD 4.30))
+        (PP (IN per)
+          (NP
+            (NP (NN gallon))
+            (PP (IN in)
+              (NP (NN north)))
+            (NP-TMP (NNP Florida) (NN today))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 4.30-3)
+nsubj(4.30-3, Diesel-1)
+cop(4.30-3, is-2)
+case(gallon-5, per-4)
+nmod:per(4.30-3, gallon-5)
+case(north-7, in-6)
+nmod:in(gallon-5, north-7)
+compound(today-9, Florida-8)
+obl:tmod(gallon-5, today-9)
+punct(4.30-3, .-10)
+
+Extracted the following NER entity mentions:
+4.30	NUMBER	NUMBER:-1.0
+Florida	STATE_OR_PROVINCE	LOCATION:0.999922595535286
+today	DATE	DATE:-1.0
+
+Sentence #2 (12 tokens):
+Cheapest I can freight any crops is .20 per ton mile.
+
+Tokens:
+[Text=Cheapest CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=JJS Lemma=cheapest NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=freight CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=freight NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=crops CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=crop NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=.20 CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CD Lemma=.20 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.2]
+[Text=per CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=ton CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=ton NamedEntityTag=O]
+[Text=mile CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=mile NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP
+      (NP (JJS Cheapest))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (MD can)
+            (VP
+              (NP (NN freight)))))))
+    (NP (DT any) (NNS crops))
+    (VP (VBZ is)
+      (NP
+        (NP (CD .20))
+        (PP (IN per)
+          (NP (NN ton) (NN mile)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .20-8)
+obl:tmod(.20-8, Cheapest-1)
+nsubj(freight-4, I-2)
+aux(freight-4, can-3)
+acl:relcl(Cheapest-1, freight-4)
+det(crops-6, any-5)
+nsubj(.20-8, crops-6)
+cop(.20-8, is-7)
+case(mile-11, per-9)
+compound(mile-11, ton-10)
+nmod:per(.20-8, mile-11)
+punct(.20-8, .-12)
+
+Extracted the following NER entity mentions:
+.20	NUMBER	NUMBER:-1.0
+
+Sentence #3 (7 tokens):
+Average freight distance is 75 miles.
+
+Tokens:
+[Text=Average CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=average NamedEntityTag=O]
+[Text=freight CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=freight NamedEntityTag=O]
+[Text=distance CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=distance NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=75 CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=CD Lemma=75 NamedEntityTag=NUMBER NormalizedNamedEntityTag=75.0]
+[Text=miles CharacterOffsetBegin=135 CharacterOffsetEnd=140 PartOfSpeech=NNS Lemma=mile NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Average) (NN freight) (NN distance))
+    (VP (VBZ is)
+      (NP (CD 75) (NNS miles)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, miles-6)
+amod(distance-3, Average-1)
+compound(distance-3, freight-2)
+nsubj(miles-6, distance-3)
+cop(miles-6, is-4)
+nummod(miles-6, 75-5)
+punct(miles-6, .-7)
+
+Extracted the following NER entity mentions:
+75	NUMBER	NUMBER:-1.0
+
+Sentence #4 (6 tokens):
+This is adding up quick.
+
+Tokens:
+[Text=This CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=adding CharacterOffsetBegin=150 CharacterOffsetEnd=156 PartOfSpeech=VBG Lemma=add NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=quick CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=quick NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (VP (VBG adding)
+        (PRT (RP up))
+        (ADVP (RB quick))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, adding-3)
+nsubj(adding-3, This-1)
+aux(adding-3, is-2)
+compound:prt(adding-3, up-4)
+advmod(adding-3, quick-5)
+punct(adding-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (8 tokens):
+Buy up supplies now while you can.
+
+Tokens:
+[Text=Buy CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=VB Lemma=buy NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=supplies CharacterOffsetBegin=174 CharacterOffsetEnd=182 PartOfSpeech=NNS Lemma=supplies NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=while CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Buy)
+      (PRT (RP up))
+      (NP (NNS supplies))
+      (SBAR
+        (ADVP (RB now))
+        (IN while)
+        (S
+          (NP (PRP you))
+          (VP (MD can)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Buy-1)
+compound:prt(Buy-1, up-2)
+obj(Buy-1, supplies-3)
+advmod(can-7, now-4)
+mark(can-7, while-5)
+nsubj(can-7, you-6)
+advcl:while(Buy-1, can-7)
+punct(Buy-1, .-8)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

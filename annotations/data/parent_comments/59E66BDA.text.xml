@@ -1,0 +1,81 @@
+Document: ID=59E66BDA.text (2 sentences, 19 tokens)
+
+Sentence #1 (8 tokens):
+Being gay isn't a personal choice.
+
+Tokens:
+[Text=Being CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=gay NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=personal CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=personal NamedEntityTag=O]
+[Text=choice CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=choice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Being)
+        (NP (NN gay))))
+    (VP (VBZ is) (RB n't)
+      (NP (DT a) (JJ personal) (NN choice)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, choice-7)
+cop(gay-2, Being-1)
+csubj(choice-7, gay-2)
+cop(choice-7, is-3)
+advmod(choice-7, n't-4)
+det(choice-7, a-5)
+amod(choice-7, personal-6)
+punct(choice-7, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Being born to horrible parents isn't a personal choice.
+
+Tokens:
+[Text=Being CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=born CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VBN Lemma=bear NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=horrible CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=horrible NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=personal CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=personal NamedEntityTag=O]
+[Text=choice CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=choice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Being)
+        (VP (VBN born)
+          (PP (IN to)
+            (NP (JJ horrible) (NNS parents))))))
+    (VP (VBZ is) (RB n't)
+      (NP (DT a) (JJ personal) (NN choice)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, choice-10)
+aux:pass(born-2, Being-1)
+csubj(choice-10, born-2)
+case(parents-5, to-3)
+amod(parents-5, horrible-4)
+obl:to(born-2, parents-5)
+cop(choice-10, is-6)
+advmod(choice-10, n't-7)
+det(choice-10, a-8)
+amod(choice-10, personal-9)
+punct(choice-10, .-11)
+
+Extracted the following NER entity mentions:

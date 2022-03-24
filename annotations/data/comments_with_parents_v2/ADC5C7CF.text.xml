@@ -1,0 +1,280 @@
+Document: ID=ADC5C7CF.text (4 sentences, 69 tokens)
+
+Sentence #1 (25 tokens):
+I'm a mechanic... so when I need to fix something, I don't just turn one bolt and call it done.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mechanic CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=mechanic NamedEntityTag=TITLE]
+[Text=... CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fix CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=fix NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=turn NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=bolt CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=bolt NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (NP (DT a) (NN mechanic))))
+    (, ...) (RB so)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP I))
+          (VP (VBP need)
+            (S
+              (VP (TO to)
+                (VP (VB fix)
+                  (NP (NN something))))))))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (ADVP (RB just))
+        (VP
+          (VP (VB turn)
+            (NP (CD one) (NN bolt)))
+          (CC and)
+          (VP (VB call)
+            (S
+              (NP (PRP it))
+              (VP (VBN done)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mechanic-4)
+nsubj(mechanic-4, I-1)
+cop(mechanic-4, 'm-2)
+det(mechanic-4, a-3)
+punct(mechanic-4, ...-5)
+advmod(mechanic-4, so-6)
+advmod(need-9, when-7)
+nsubj(need-9, I-8)
+nsubj:xsubj(fix-11, I-8)
+advcl(turn-18, need-9)
+mark(fix-11, to-10)
+xcomp(need-9, fix-11)
+obj(fix-11, something-12)
+punct(turn-18, ,-13)
+nsubj(turn-18, I-14)
+nsubj(call-22, I-14)
+aux(turn-18, do-15)
+advmod(turn-18, n't-16)
+advmod(turn-18, just-17)
+parataxis(mechanic-4, turn-18)
+nummod(bolt-20, one-19)
+obj(turn-18, bolt-20)
+cc(call-22, and-21)
+parataxis(mechanic-4, call-22)
+conj:and(turn-18, call-22)
+nsubj(done-24, it-23)
+dep(call-22, done-24)
+punct(mechanic-4, .-25)
+
+Extracted the following NER entity mentions:
+mechanic	TITLE	-
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (12 tokens):
+I keep going till what I'm working on is fixed.
+
+Tokens:
+[Text=I CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=VBP Lemma=keep NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=till CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=till NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=123 CharacterOffsetEnd=130 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=fixed CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=VBN Lemma=fix NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP keep)
+      (S
+        (VP (VBG going)
+          (SBAR (IN till)
+            (S
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP I))
+                  (VP (VBP 'm)
+                    (VP (VBG working)
+                      (PP (IN on))))))
+              (VP (VBZ is)
+                (VP (VBN fixed))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-2)
+nsubj(keep-2, I-1)
+xcomp(keep-2, going-3)
+mark(fixed-11, till-4)
+obl:on(working-8, what-5)
+nsubj(working-8, I-6)
+aux(working-8, 'm-7)
+csubj:pass(fixed-11, working-8)
+case(what-5, on-9)
+aux:pass(fixed-11, is-10)
+advcl:till(going-3, fixed-11)
+punct(keep-2, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (26 tokens):
+If that takes an hour, a day, or a week... it doesn't matter, I keep going till it's done.
+
+Tokens:
+[Text=If CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=takes CharacterOffsetBegin=152 CharacterOffsetEnd=157 PartOfSpeech=VBZ Lemma=take NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1H">an hour</TIMEX3>]
+[Text=hour CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1H">an hour</TIMEX3>]
+[Text=, CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=day CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=, CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1W Timex=<TIMEX3 tid="t3" type="DURATION" value="P1W">a week</TIMEX3>]
+[Text=week CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=P1W Timex=<TIMEX3 tid="t3" type="DURATION" value="P1W">a week</TIMEX3>]
+[Text=... CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=matter CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=VB Lemma=matter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=VBP Lemma=keep NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=till CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=till NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=229 CharacterOffsetEnd=233 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (DT that))
+          (VP (VBZ takes)
+            (NP
+              (NP (DT an) (NN hour))
+              (, ,)
+              (NP (DT a) (NN day))
+              (, ,)
+              (CC or)
+              (NP (DT a) (NN week))))))
+      (, ...)
+      (NP (PRP it))
+      (VP (VBZ does) (RB n't)
+        (VP (VB matter))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP keep)
+      (S
+        (VP (VBG going)
+          (SBAR (IN till)
+            (S
+              (NP (PRP it))
+              (VP (VBZ 's)
+                (VP (VBN done))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-20)
+mark(takes-3, If-1)
+nsubj(takes-3, that-2)
+advcl:if(matter-17, takes-3)
+det(hour-5, an-4)
+obj(takes-3, hour-5)
+punct(hour-5, ,-6)
+det(day-8, a-7)
+obj(takes-3, day-8)
+conj:or(hour-5, day-8)
+punct(hour-5, ,-9)
+cc(week-12, or-10)
+det(week-12, a-11)
+obj(takes-3, week-12)
+conj:or(hour-5, week-12)
+punct(matter-17, ...-13)
+nsubj(matter-17, it-14)
+aux(matter-17, does-15)
+advmod(matter-17, n't-16)
+ccomp(keep-20, matter-17)
+punct(keep-20, ,-18)
+nsubj(keep-20, I-19)
+xcomp(keep-20, going-21)
+mark(done-25, till-22)
+nsubj:pass(done-25, it-23)
+aux:pass(done-25, 's-24)
+advcl:till(going-21, done-25)
+punct(keep-20, .-26)
+
+Extracted the following NER entity mentions:
+an hour	DURATION	DURATION:-1.0
+a day	DURATION	DURATION:-1.0
+a week	DURATION	DURATION:-1.0
+
+Sentence #4 (6 tokens):
+This problem is no different.
+
+Tokens:
+[Text=This CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=254 CharacterOffsetEnd=263 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN problem))
+    (VP (VBZ is)
+      (ADJP (RB no) (JJ different)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, different-5)
+det(problem-2, This-1)
+nsubj(different-5, problem-2)
+cop(different-5, is-3)
+advmod(different-5, no-4)
+punct(different-5, .-6)
+
+Extracted the following NER entity mentions:

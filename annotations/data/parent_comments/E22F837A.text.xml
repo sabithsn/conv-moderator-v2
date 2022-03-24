@@ -1,0 +1,38 @@
+Document: ID=E22F837A.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+May Russia when and virtually destroy Ukraine
+
+Tokens:
+[Text=May CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=when CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=virtually CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=virtually NamedEntityTag=O]
+[Text=destroy CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=destroy NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD May)
+    (NP (NNP Russia))
+    (ADVP (WRB when))
+    (VP (CC and)
+      (VP
+        (ADVP (RB virtually))
+        (VB destroy)
+        (NP (NNP Ukraine))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, destroy-6)
+aux(destroy-6, May-1)
+nsubj(destroy-6, Russia-2)
+advmod(destroy-6, when-3)
+cc(destroy-6, and-4)
+advmod(destroy-6, virtually-5)
+obj(destroy-6, Ukraine-7)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9771119737871135
+Ukraine	COUNTRY	LOCATION:0.9962597708103529

@@ -1,0 +1,91 @@
+Document: ID=FA8489C0.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+Parents of a trans child who reached out to Attorney General Ken Paxton over dinner are now under investigation for child abuse.
+
+Tokens:
+[Text=Parents CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=trans CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=trans NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=reached CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=reach NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Attorney CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Attorney NamedEntityTag=TITLE]
+[Text=General CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=General NamedEntityTag=TITLE]
+[Text=Ken CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Ken NamedEntityTag=PERSON]
+[Text=Paxton CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Paxton NamedEntityTag=PERSON]
+[Text=over CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=under CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=investigation CharacterOffsetBegin=98 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=investigation NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=child NamedEntityTag=CRIMINAL_CHARGE]
+[Text=abuse CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=abuse NamedEntityTag=CRIMINAL_CHARGE]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS Parents))
+      (PP (IN of)
+        (NP
+          (NP (DT a) (NN trans) (NN child))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD reached)
+                (PRT (RP out))
+                (PP (IN to)
+                  (NP
+                    (NP
+                      (NML (NNP Attorney) (NNP General))
+                      (NNP Ken) (NNP Paxton))
+                    (PP (IN over)
+                      (NP (NN dinner)))))))))))
+    (VP (VBP are)
+      (ADVP (RB now))
+      (PP (IN under)
+        (NP
+          (NP (NN investigation))
+          (PP (IN for)
+            (NP (NN child) (NN abuse))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, investigation-19)
+nsubj(investigation-19, Parents-1)
+case(child-5, of-2)
+det(child-5, a-3)
+compound(child-5, trans-4)
+nmod:of(Parents-1, child-5)
+nsubj(reached-7, child-5)
+ref(child-5, who-6)
+acl:relcl(child-5, reached-7)
+compound:prt(reached-7, out-8)
+case(Paxton-13, to-9)
+compound(General-11, Attorney-10)
+compound(Paxton-13, General-11)
+compound(Paxton-13, Ken-12)
+obl:to(reached-7, Paxton-13)
+case(dinner-15, over-14)
+nmod:over(Paxton-13, dinner-15)
+cop(investigation-19, are-16)
+advmod(investigation-19, now-17)
+case(investigation-19, under-18)
+case(abuse-22, for-20)
+compound(abuse-22, child-21)
+nmod:for(investigation-19, abuse-22)
+punct(investigation-19, .-23)
+
+Extracted the following NER entity mentions:
+Attorney General	TITLE	-
+Ken Paxton	PERSON	PERSON:0.9998828835230142
+now	DATE	DATE:-1.0
+child abuse	CRIMINAL_CHARGE	-

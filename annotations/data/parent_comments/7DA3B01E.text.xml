@@ -1,0 +1,83 @@
+Document: ID=7DA3B01E.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Ladies, get yourself a man who looks at you like a Fox News host looks at an AntiWork mod.
+
+Tokens:
+[Text=Ladies CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=lady NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=yourself CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=yourself NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=ORGANIZATION]
+[Text=News CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=News NamedEntityTag=ORGANIZATION]
+[Text=host CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=host NamedEntityTag=TITLE]
+[Text=looks CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=AntiWork CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=AntiWork NamedEntityTag=O]
+[Text=mod CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=mod NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Ladies))
+    (, ,)
+    (S
+      (VP (VB get)
+        (NP (PRP yourself))
+        (NP
+          (NP (DT a) (NN man))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ looks)
+                (PP (IN at)
+                  (NP (PRP you)))))))))
+    (VP (VBP like)
+      (SBAR
+        (S
+          (NP (DT a)
+            (NML (NNP Fox) (NNP News))
+            (NN host))
+          (VP (VBZ looks)
+            (PP (IN at)
+              (NP (DT an) (NNP AntiWork) (NNP mod)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, like-11)
+nsubj(like-11, Ladies-1)
+punct(like-11, ,-2)
+dep(like-11, get-3)
+iobj(get-3, yourself-4)
+det(man-6, a-5)
+obj(get-3, man-6)
+nsubj(looks-8, man-6)
+ref(man-6, who-7)
+acl:relcl(man-6, looks-8)
+case(you-10, at-9)
+obl:at(looks-8, you-10)
+det(host-15, a-12)
+compound(News-14, Fox-13)
+compound(host-15, News-14)
+nsubj(looks-16, host-15)
+ccomp(like-11, looks-16)
+case(mod-20, at-17)
+det(mod-20, an-18)
+compound(mod-20, AntiWork-19)
+obl:at(looks-16, mod-20)
+punct(like-11, .-21)
+
+Extracted the following NER entity mentions:
+Fox News	ORGANIZATION	ORGANIZATION:0.9922171656156571
+host	TITLE	-

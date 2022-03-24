@@ -1,0 +1,33 @@
+Document: ID=A23436B7.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Cause he’s got dementia
+
+Tokens:
+[Text=Cause CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=cause NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=dementia CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=dementia NamedEntityTag=CAUSE_OF_DEATH]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Cause)
+      (S
+        (NP (PRP he))
+        (VP (VBZ ’s)
+          (VP (VBN got)
+            (NP (NN dementia))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cause-1)
+nsubj:pass(got-4, he-2)
+aux:pass(got-4, ’s-3)
+ccomp(Cause-1, got-4)
+obj(got-4, dementia-5)
+
+Extracted the following NER entity mentions:
+dementia	CAUSE_OF_DEATH	-
+he	PERSON	-

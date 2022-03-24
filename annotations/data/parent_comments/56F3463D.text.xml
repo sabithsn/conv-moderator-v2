@@ -1,0 +1,35 @@
+Document: ID=56F3463D.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Don’t forget the Senate Turkey.
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=forget CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=forget NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Senate CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=Turkey CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Turkey NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Do) (RB n’t)
+      (VP (VB forget)
+        (NP (DT the) (NNP Senate) (NNP Turkey))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forget-3)
+aux(forget-3, Do-1)
+advmod(forget-3, n’t-2)
+det(Turkey-6, the-4)
+compound(Turkey-6, Senate-5)
+obj(forget-3, Turkey-6)
+punct(forget-3, .-7)
+
+Extracted the following NER entity mentions:
+Senate	ORGANIZATION	ORGANIZATION:0.5321530992638013
+Turkey	COUNTRY	LOCATION:0.8859126972416926

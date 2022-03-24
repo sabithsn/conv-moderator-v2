@@ -1,0 +1,41 @@
+Document: ID=18871FD9.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Fauci gave me $20 to post this
+
+Tokens:
+[Text=Fauci CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=gave CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$20.0]
+[Text=20 CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=20 NamedEntityTag=MONEY NormalizedNamedEntityTag=$20.0]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=post NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Fauci))
+    (VP (VBD gave)
+      (NP (PRP me))
+      (NP ($ $) (CD 20))
+      (S
+        (VP (TO to)
+          (VP (VB post)
+            (NP (DT this))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gave-2)
+nsubj(gave-2, Fauci-1)
+iobj(gave-2, me-3)
+obj(gave-2, $-4)
+nummod($-4, 20-5)
+mark(post-7, to-6)
+advcl:to(gave-2, post-7)
+obj(post-7, this-8)
+
+Extracted the following NER entity mentions:
+Fauci	PERSON	PERSON:0.9818085924604498
+$20	MONEY	MONEY:0.998634010037249

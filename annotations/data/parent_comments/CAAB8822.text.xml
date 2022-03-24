@@ -1,0 +1,73 @@
+Document: ID=CAAB8822.text (2 sentences, 16 tokens)
+
+Sentence #1 (5 tokens):
+You're an idiot.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=idiot CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=idiot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (NP (DT an) (NN idiot)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, idiot-4)
+nsubj(idiot-4, You-1)
+cop(idiot-4, 're-2)
+det(idiot-4, an-3)
+punct(idiot-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+The pipeline isn't even for the US you donkey.
+
+Tokens:
+[Text=The CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pipeline CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=pipeline NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=you CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=donkey CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=donkey NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN pipeline))
+    (VP (VBZ is) (RB n't)
+      (ADVP (RB even)
+        (PP (IN for)
+          (NP (DT the) (NNP US))))
+      (NP (PRP you) (NN donkey)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, donkey-10)
+det(pipeline-2, The-1)
+nsubj(donkey-10, pipeline-2)
+cop(donkey-10, is-3)
+advmod(donkey-10, n't-4)
+advmod(donkey-10, even-5)
+case(US-8, for-6)
+det(US-8, the-7)
+obl:for(even-5, US-8)
+dep(donkey-10, you-9)
+punct(donkey-10, .-11)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9585433438417427

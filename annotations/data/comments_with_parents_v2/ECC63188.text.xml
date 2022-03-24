@@ -1,0 +1,56 @@
+Document: ID=ECC63188.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Let’s remember famous traitorous scum (and bullet sponge) Ashli Babbitt.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=’s NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=famous CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=famous NamedEntityTag=O]
+[Text=traitorous CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=traitorous NamedEntityTag=O]
+[Text=scum CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=scum NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bullet CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=bullet NamedEntityTag=O]
+[Text=sponge CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=sponge NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=Ashli CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Ashli NamedEntityTag=PERSON]
+[Text=Babbitt CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Babbitt NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP ’s))
+        (VP (VB remember)
+          (NP
+            (NP (JJ famous) (JJ traitorous) (NN scum)
+              (PRN (-LRB- -LRB-)
+                (CC and)
+                (NP (NN bullet) (NN sponge))
+                (-RRB- -RRB-)))
+            (NP (NNP Ashli) (NNP Babbitt))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(remember-3, ’s-2)
+ccomp(Let-1, remember-3)
+amod(scum-6, famous-4)
+amod(scum-6, traitorous-5)
+iobj(remember-3, scum-6)
+punct(sponge-10, (-7)
+cc(sponge-10, and-8)
+compound(sponge-10, bullet-9)
+appos(scum-6, sponge-10)
+punct(sponge-10, )-11)
+compound(Babbitt-13, Ashli-12)
+dep(scum-6, Babbitt-13)
+punct(Let-1, .-14)
+
+Extracted the following NER entity mentions:
+Ashli Babbitt	PERSON	PERSON:0.9975181922271091

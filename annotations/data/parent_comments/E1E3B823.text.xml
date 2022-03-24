@@ -1,0 +1,44 @@
+Document: ID=E1E3B823.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+AITA for not giving my kid, my jacket?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=giving CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=give NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=jacket CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=jacket NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S (RB not)
+        (VP (VBG giving)
+          (NP (PRP$ my) (NN kid))
+          (, ,)
+          (NP (PRP$ my) (NN jacket)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(giving-4, for-2)
+advmod(giving-4, not-3)
+dep(AITA-1, giving-4)
+nmod:poss(kid-6, my-5)
+obj(giving-4, kid-6)
+punct(giving-4, ,-7)
+nmod:poss(jacket-9, my-8)
+obj(giving-4, jacket-9)
+punct(AITA-1, ?-10)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.6249208017072082

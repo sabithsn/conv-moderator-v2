@@ -1,0 +1,61 @@
+Document: ID=209F7EDF.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Haley says Biden, Harris should resign for 'the good of our country'
+
+Tokens:
+[Text=Haley CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Haley NamedEntityTag=PERSON]
+[Text=says CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Harris CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Harris NamedEntityTag=PERSON]
+[Text=should CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=resign CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=resign NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=good NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Haley))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (NNP Biden) (, ,) (NNP Harris))
+          (VP (MD should)
+            (VP (VB resign)
+              (PP (IN for)
+                (NP (`` ')
+                  (NP (DT the) (NN good))
+                  (PP (IN of)
+                    (NP (PRP$ our) (NN country)))
+                  ('' '))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-2)
+nsubj(says-2, Haley-1)
+compound(Harris-5, Biden-3)
+punct(Harris-5, ,-4)
+nsubj(resign-7, Harris-5)
+aux(resign-7, should-6)
+ccomp(says-2, resign-7)
+case(good-11, for-8)
+punct(good-11, '-9)
+det(good-11, the-10)
+obl:for(resign-7, good-11)
+case(country-14, of-12)
+nmod:poss(country-14, our-13)
+nmod:of(good-11, country-14)
+punct(good-11, '-15)
+
+Extracted the following NER entity mentions:
+Haley	PERSON	PERSON:0.9722668682523921
+Biden	PERSON	PERSON:0.9871002286763494
+Harris	PERSON	PERSON:0.996161017496159

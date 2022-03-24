@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>3121BAB0.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Ukraine</word>
+            <lemma>Ukraine</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="2">
+            <word>Discussion</word>
+            <lemma>discussion</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Thread</word>
+            <lemma>thread</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>What</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>WDT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>ever</word>
+            <lemma>ever</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>happened</word>
+            <lemma>happen</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Conservative</word>
+            <lemma>conservative</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>IDEOLOGY</NER>
+          </token>
+          <token id="10">
+            <word>leaders</word>
+            <lemma>leader</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Regan</word>
+            <lemma>Regan</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Ukraine) (NN Discussion) (NN Thread)) (SBAR (WHNP (WDT What)) (S (ADVP (RB ever)) (VP (VBD happened) (PP (IN to) (NP (JJ good) (JJ Conservative) (NNS leaders))) (PP (IN like) (NP (NNP Regan)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Thread</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="1">Ukraine</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="2">Discussion</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">happened</governor>
+            <dependent idx="4">What</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">happened</governor>
+            <dependent idx="5">ever</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Thread</governor>
+            <dependent idx="6">happened</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">leaders</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="9">Conservative</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">happened</governor>
+            <dependent idx="10">leaders</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Regan</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">happened</governor>
+            <dependent idx="12">Regan</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Thread</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Thread</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="1">Ukraine</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="2">Discussion</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">happened</governor>
+            <dependent idx="4">What</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">happened</governor>
+            <dependent idx="5">ever</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Thread</governor>
+            <dependent idx="6">happened</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">leaders</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="9">Conservative</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="6">happened</governor>
+            <dependent idx="10">leaders</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Regan</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">happened</governor>
+            <dependent idx="12">Regan</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Thread</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Thread</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="1">Ukraine</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="2">Discussion</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">happened</governor>
+            <dependent idx="4">What</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">happened</governor>
+            <dependent idx="5">ever</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Thread</governor>
+            <dependent idx="6">happened</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">leaders</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="9">Conservative</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="6">happened</governor>
+            <dependent idx="10">leaders</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Regan</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">happened</governor>
+            <dependent idx="12">Regan</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Thread</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Thread</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="1">Ukraine</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="2">Discussion</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="6">happened</governor>
+            <dependent idx="3">Thread</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="3">Thread</governor>
+            <dependent idx="4">What</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">happened</governor>
+            <dependent idx="5">ever</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Thread</governor>
+            <dependent idx="6">happened</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">leaders</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="9">Conservative</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="6">happened</governor>
+            <dependent idx="10">leaders</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Regan</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">happened</governor>
+            <dependent idx="12">Regan</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Thread</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Thread</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="1">Ukraine</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Thread</governor>
+            <dependent idx="2">Discussion</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="6">happened</governor>
+            <dependent idx="3">Thread</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="3">Thread</governor>
+            <dependent idx="4">What</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">happened</governor>
+            <dependent idx="5">ever</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="3">Thread</governor>
+            <dependent idx="6">happened</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">leaders</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">leaders</governor>
+            <dependent idx="9">Conservative</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="6">happened</governor>
+            <dependent idx="10">leaders</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Regan</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">happened</governor>
+            <dependent idx="12">Regan</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Thread</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PRESENT_REF</NormalizedNER>
+            <Timex tid="t1" type="DATE">PRESENT_REF</Timex>
+          </token>
+          <token id="2">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>'ve</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>got</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>these</word>
+            <lemma>these</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>bought</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>paid</word>
+            <lemma>pay</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>Putin</word>
+            <lemma>Putin</lemma>
+            <CharacterOffsetBegin>131</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="12">
+            <word>celebrity</word>
+            <lemma>celebrity</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>stooges</word>
+            <lemma>stooge</lemma>
+            <CharacterOffsetBegin>147</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>159</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>Trump</word>
+            <lemma>Trump</lemma>
+            <CharacterOffsetBegin>160</CharacterOffsetBegin>
+            <CharacterOffsetEnd>165</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="16">
+            <word>spreading</word>
+            <lemma>spread</lemma>
+            <CharacterOffsetBegin>166</CharacterOffsetBegin>
+            <CharacterOffsetEnd>175</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>Communist</word>
+            <lemma>communist</lemma>
+            <CharacterOffsetBegin>176</CharacterOffsetBegin>
+            <CharacterOffsetEnd>185</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>IDEOLOGY</NER>
+          </token>
+          <token id="18">
+            <word>BS</word>
+            <lemma>bs</lemma>
+            <CharacterOffsetBegin>186</CharacterOffsetBegin>
+            <CharacterOffsetEnd>188</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>188</CharacterOffsetBegin>
+            <CharacterOffsetEnd>189</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Now)) (NP (PRP you)) (VP (VBP 've) (VP (VBN got) (NP (NP (DT these)) (VP (VBN bought) (CC and) (VBN paid) (PP (IN for) (PP (IN by) (NP (NNP Putin) (NN celebrity) (NNS stooges)))) (PP (IN like) (NP (NNP Trump))) (S (VP (VBG spreading) (NP (JJ Communist) (NN BS)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">got</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">got</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">got</governor>
+            <dependent idx="3">'ve</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">got</governor>
+            <dependent idx="5">these</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="5">these</governor>
+            <dependent idx="6">bought</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">paid</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">bought</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="9">for</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="11">Putin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="12">celebrity</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">bought</governor>
+            <dependent idx="13">stooges</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">Trump</governor>
+            <dependent idx="14">like</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">bought</governor>
+            <dependent idx="15">Trump</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">bought</governor>
+            <dependent idx="16">spreading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">BS</governor>
+            <dependent idx="17">Communist</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="16">spreading</governor>
+            <dependent idx="18">BS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">got</governor>
+            <dependent idx="19">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">got</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">got</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">got</governor>
+            <dependent idx="3">'ve</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">got</governor>
+            <dependent idx="5">these</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="5">these</governor>
+            <dependent idx="6">bought</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">paid</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">bought</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="9">for</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="11">Putin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="12">celebrity</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">bought</governor>
+            <dependent idx="13">stooges</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">Trump</governor>
+            <dependent idx="14">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">bought</governor>
+            <dependent idx="15">Trump</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">bought</governor>
+            <dependent idx="16">spreading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">BS</governor>
+            <dependent idx="17">Communist</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="16">spreading</governor>
+            <dependent idx="18">BS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">got</governor>
+            <dependent idx="19">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">got</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">got</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">got</governor>
+            <dependent idx="3">'ve</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">got</governor>
+            <dependent idx="5">these</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="5">these</governor>
+            <dependent idx="6">bought</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">paid</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="acl" extra="true">
+            <governor idx="5">these</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">bought</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="9">for</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="11">Putin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="12">celebrity</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">bought</governor>
+            <dependent idx="13">stooges</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">Trump</governor>
+            <dependent idx="14">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">bought</governor>
+            <dependent idx="15">Trump</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">bought</governor>
+            <dependent idx="16">spreading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">BS</governor>
+            <dependent idx="17">Communist</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="16">spreading</governor>
+            <dependent idx="18">BS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">got</governor>
+            <dependent idx="19">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">got</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">got</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">got</governor>
+            <dependent idx="3">'ve</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">got</governor>
+            <dependent idx="5">these</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="5">these</governor>
+            <dependent idx="6">bought</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">paid</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="acl" extra="true">
+            <governor idx="5">these</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">bought</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="9">for</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="11">Putin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="12">celebrity</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">bought</governor>
+            <dependent idx="13">stooges</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">Trump</governor>
+            <dependent idx="14">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">bought</governor>
+            <dependent idx="15">Trump</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">bought</governor>
+            <dependent idx="16">spreading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">BS</governor>
+            <dependent idx="17">Communist</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="16">spreading</governor>
+            <dependent idx="18">BS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">got</governor>
+            <dependent idx="19">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">got</governor>
+            <dependent idx="1">Now</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">got</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">got</governor>
+            <dependent idx="3">'ve</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">got</governor>
+            <dependent idx="5">these</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="5">these</governor>
+            <dependent idx="6">bought</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">paid</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="acl" extra="true">
+            <governor idx="5">these</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="6">bought</governor>
+            <dependent idx="8">paid</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="9">for</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="13">stooges</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="11">Putin</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="13">stooges</governor>
+            <dependent idx="12">celebrity</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">bought</governor>
+            <dependent idx="13">stooges</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="15">Trump</governor>
+            <dependent idx="14">like</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">bought</governor>
+            <dependent idx="15">Trump</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">bought</governor>
+            <dependent idx="16">spreading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">BS</governor>
+            <dependent idx="17">Communist</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="16">spreading</governor>
+            <dependent idx="18">BS</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">got</governor>
+            <dependent idx="19">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

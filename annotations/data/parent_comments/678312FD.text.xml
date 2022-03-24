@@ -1,0 +1,41 @@
+Document: ID=678312FD.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Do Republicans Know What Communism Is?
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=3 CharacterOffsetEnd=14 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=Know CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Know NamedEntityTag=MISC]
+[Text=What CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=WDT Lemma=what NamedEntityTag=MISC]
+[Text=Communism CharacterOffsetBegin=25 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Communism NamedEntityTag=IDEOLOGY]
+[Text=Is CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Do)
+      (NP
+        (NP (NNPS Republicans) (NNP Know))
+        (SBAR
+          (WHNP (WDT What))
+          (S
+            (NP (NNP Communism))
+            (VP (VBZ Is))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Do-1)
+compound(Know-3, Republicans-2)
+obj(Do-1, Know-3)
+obj(Is-6, Know-3)
+ref(Know-3, What-4)
+nsubj(Is-6, Communism-5)
+acl:relcl(Know-3, Is-6)
+punct(Do-1, ?-7)
+
+Extracted the following NER entity mentions:
+Republicans Know What	MISC	MISC:0.9944836855334751
+Communism	IDEOLOGY	MISC:0.9944836855334751

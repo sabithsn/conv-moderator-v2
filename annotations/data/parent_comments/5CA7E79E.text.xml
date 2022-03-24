@@ -1,0 +1,107 @@
+Document: ID=5CA7E79E.text (2 sentences, 25 tokens)
+
+Sentence #1 (9 tokens):
+Eli5: Why is cave diving so dangerous ?
+
+Tokens:
+[Text=Eli5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=cave CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=cave NamedEntityTag=O]
+[Text=diving CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=diving NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=dangerous CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=dangerous NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Eli5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ is)
+        (NP (NN cave) (NN diving))
+        (ADJP (RB so) (JJ dangerous))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Eli5-1)
+punct(Eli5-1, :-2)
+advmod(dangerous-8, Why-3)
+cop(dangerous-8, is-4)
+compound(diving-6, cave-5)
+nsubj(dangerous-8, diving-6)
+advmod(dangerous-8, so-7)
+parataxis(Eli5-1, dangerous-8)
+punct(Eli5-1, ?-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens):
+To the point people with 20+ years of diving experience refuse to do so.
+
+Tokens:
+[Text=To CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=20 CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=CD Lemma=20 NamedEntityTag=NUMBER NormalizedNamedEntityTag=20.0]
+[Text=+ CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=SYM Lemma=+ NamedEntityTag=O]
+[Text=years CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">years</TIMEX3>]
+[Text=of CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=diving CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=diving NamedEntityTag=O]
+[Text=experience CharacterOffsetBegin=85 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=experience NamedEntityTag=O]
+[Text=refuse CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=VBP Lemma=refuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN To)
+      (NP (DT the) (NN point)))
+    (NP
+      (NP (NNS people))
+      (PP (IN with)
+        (NP
+          (NP
+            (NML (CD 20) (SYM +))
+            (NNS years))
+          (PP (IN of)
+            (NP (JJ diving) (NN experience))))))
+    (VP (VBP refuse)
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (ADVP (RB so))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, refuse-12)
+case(point-3, To-1)
+det(point-3, the-2)
+obl:to(refuse-12, point-3)
+nsubj(refuse-12, people-4)
+nsubj:xsubj(do-14, people-4)
+case(years-8, with-5)
+compound(years-8, 20-6)
+dep(20-6, +-7)
+nmod:with(people-4, years-8)
+case(experience-11, of-9)
+amod(experience-11, diving-10)
+nmod:of(years-8, experience-11)
+mark(do-14, to-13)
+xcomp(refuse-12, do-14)
+advmod(do-14, so-15)
+punct(refuse-12, .-16)
+
+Extracted the following NER entity mentions:
+20	NUMBER	NUMBER:-1.0
+years	DURATION	DURATION:-1.0

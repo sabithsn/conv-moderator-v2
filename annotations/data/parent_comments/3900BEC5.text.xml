@@ -1,0 +1,34 @@
+Document: ID=3900BEC5.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Because their government told them to
+
+Tokens:
+[Text=Because CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=14 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR (IN Because)
+    (S
+      (NP (PRP$ their) (NN government))
+      (VP (VBD told)
+        (S
+          (NP (PRP them))
+          (VP (TO to)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-4)
+mark(told-4, Because-1)
+nmod:poss(government-3, their-2)
+nsubj(told-4, government-3)
+obj(told-4, them-5)
+nsubj:xsubj(to-6, them-5)
+xcomp(told-4, to-6)
+
+Extracted the following NER entity mentions:

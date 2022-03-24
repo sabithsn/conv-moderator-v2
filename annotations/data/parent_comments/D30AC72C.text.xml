@@ -1,0 +1,183 @@
+Document: ID=D30AC72C.text (3 sentences, 45 tokens)
+
+Sentence #1 (18 tokens):
+By taking words out of the lexicon and banning everyone from saying them you give them power.
+
+Tokens:
+[Text=By CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lexicon CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=lexicon NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=banning CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=ban NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VBP Lemma=give NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN By)
+      (S
+        (VP
+          (VP (VBG taking)
+            (NP (NNS words))
+            (PP (IN out)
+              (PP (IN of)
+                (NP (DT the) (NN lexicon)))))
+          (CC and)
+          (VP (VBG banning)
+            (NP (NN everyone))
+            (PP (IN from)
+              (S
+                (VP (VBG saying)
+                  (NP (PRP them)))))))))
+    (NP (PRP you))
+    (VP (VBP give)
+      (NP (PRP them))
+      (NP (NN power)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-15)
+mark(taking-2, By-1)
+advcl:by(give-15, taking-2)
+obj(taking-2, words-3)
+case(lexicon-7, out-4)
+fixed(out-4, of-5)
+det(lexicon-7, the-6)
+obl:out_of(taking-2, lexicon-7)
+cc(banning-9, and-8)
+conj:and(taking-2, banning-9)
+advcl:by(give-15, banning-9)
+obj(banning-9, everyone-10)
+mark(saying-12, from-11)
+advcl:from(banning-9, saying-12)
+obj(saying-12, them-13)
+nsubj(give-15, you-14)
+iobj(give-15, them-16)
+obj(give-15, power-17)
+punct(give-15, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Instead if everyone learned to trivialize words they mean nothing.
+
+Tokens:
+[Text=Instead CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=105 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=learned CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=learn NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=trivialize CharacterOffsetBegin=125 CharacterOffsetEnd=135 PartOfSpeech=VB Lemma=trivialize NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=152 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB Instead))
+      (IN if)
+      (S
+        (NP (NN everyone))
+        (VP (VBD learned)
+          (S
+            (VP (TO to)
+              (VP (VB trivialize)
+                (NP (NNS words))))))))
+    (NP (PRP they))
+    (VP (VBP mean)
+      (NP (NN nothing)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-9)
+advmod(learned-4, Instead-1)
+mark(learned-4, if-2)
+nsubj(learned-4, everyone-3)
+nsubj:xsubj(trivialize-6, everyone-3)
+advcl:if(mean-9, learned-4)
+mark(trivialize-6, to-5)
+xcomp(learned-4, trivialize-6)
+obj(trivialize-6, words-7)
+nsubj(mean-9, they-8)
+obj(mean-9, nothing-10)
+punct(mean-9, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (16 tokens):
+It's no different than not responding to a bully on the playground as a kid
+
+Tokens:
+[Text=It CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=169 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=responding CharacterOffsetBegin=188 CharacterOffsetEnd=198 PartOfSpeech=VBG Lemma=respond NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bully CharacterOffsetBegin=204 CharacterOffsetEnd=209 PartOfSpeech=NN Lemma=bully NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=playground CharacterOffsetBegin=217 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=playground NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (RB no) (JJ different)
+        (PP (IN than)
+          (S (RB not)
+            (VP (VBG responding)
+              (PP (IN to)
+                (NP
+                  (NP (DT a) (NN bully))
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (NN playground))
+                      (PP (IN as)
+                        (NP (DT a) (NN kid))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, different-4)
+nsubj(different-4, It-1)
+cop(different-4, 's-2)
+advmod(different-4, no-3)
+mark(responding-7, than-5)
+advmod(responding-7, not-6)
+advcl:than(different-4, responding-7)
+case(bully-10, to-8)
+det(bully-10, a-9)
+obl:to(responding-7, bully-10)
+case(playground-13, on-11)
+det(playground-13, the-12)
+nmod:on(bully-10, playground-13)
+case(kid-16, as-14)
+det(kid-16, a-15)
+nmod:as(playground-13, kid-16)
+
+Extracted the following NER entity mentions:

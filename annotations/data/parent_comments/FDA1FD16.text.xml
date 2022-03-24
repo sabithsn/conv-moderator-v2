@@ -1,0 +1,93 @@
+Document: ID=FDA1FD16.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+Seriously, you aren't tipped off by when you have to put on big, floppy shoes and a red nose in the morning?
+
+Tokens:
+[Text=Seriously CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=tipped CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=tip NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=floppy CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=floppy NamedEntityTag=O]
+[Text=shoes CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NNS Lemma=shoe NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=red CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=red NamedEntityTag=O]
+[Text=nose CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=nose NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=100 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=? CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Seriously))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP are) (RB n't)
+      (VP (VBN tipped)
+        (PRT (RP off))
+        (PP (IN by)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (S
+                  (VP (TO to)
+                    (VP (VB put)
+                      (PRT (RP on))
+                      (NP
+                        (NP (JJ big) (, ,) (JJ floppy) (NNS shoes))
+                        (CC and)
+                        (NP (DT a) (JJ red) (NN nose)))
+                      (PP (IN in)
+                        (NP (DT the) (NN morning))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tipped-6)
+advmod(tipped-6, Seriously-1)
+punct(tipped-6, ,-2)
+nsubj:pass(tipped-6, you-3)
+aux:pass(tipped-6, are-4)
+advmod(tipped-6, n't-5)
+compound:prt(tipped-6, off-7)
+mark(have-11, by-8)
+advmod(have-11, when-9)
+nsubj(have-11, you-10)
+nsubj:xsubj(put-13, you-10)
+advcl:by(tipped-6, have-11)
+mark(put-13, to-12)
+xcomp(have-11, put-13)
+compound:prt(put-13, on-14)
+amod(shoes-18, big-15)
+punct(shoes-18, ,-16)
+amod(shoes-18, floppy-17)
+obj(put-13, shoes-18)
+cc(nose-22, and-19)
+det(nose-22, a-20)
+amod(nose-22, red-21)
+obj(put-13, nose-22)
+conj:and(shoes-18, nose-22)
+case(morning-25, in-23)
+det(morning-25, the-24)
+obl:in(put-13, morning-25)
+punct(tipped-6, ?-26)
+
+Extracted the following NER entity mentions:
+morning	TIME	TIME:-1.0

@@ -1,0 +1,51 @@
+Document: ID=3A1AB233.text (2 sentences, 9 tokens)
+
+Sentence #1 (5 tokens):
+Those algorithms are crazy.
+
+Tokens:
+[Text=Those CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=algorithms CharacterOffsetBegin=6 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=algorithm NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=crazy CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=crazy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT Those) (NNS algorithms))
+    (VP (VBP are)
+      (ADJP (JJ crazy)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, crazy-4)
+det(algorithms-2, Those-1)
+nsubj(crazy-4, algorithms-2)
+cop(crazy-4, are-3)
+punct(crazy-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Poor little fascists!
+
+Tokens:
+[Text=Poor CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=fascists CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=fascist NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Poor) (JJ little) (NNS fascists) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fascists-3)
+amod(fascists-3, Poor-1)
+amod(fascists-3, little-2)
+punct(fascists-3, !-4)
+
+Extracted the following NER entity mentions:

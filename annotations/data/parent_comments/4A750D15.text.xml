@@ -1,0 +1,128 @@
+Document: ID=4A750D15.text (3 sentences, 27 tokens)
+
+Sentence #1 (7 tokens):
+yeah hes not even 80 yet.
+
+Tokens:
+[Text=yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=hes CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=he NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=80 CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=CD Lemma=80 NamedEntityTag=NUMBER NormalizedNamedEntityTag=80.0]
+[Text=yet CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH yeah))
+    (NP (NNS hes))
+    (ADVP (RB not) (RB even))
+    (NP (CD 80))
+    (ADVP (RB yet))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hes-2)
+discourse(hes-2, yeah-1)
+advmod(even-4, not-3)
+dep(hes-2, even-4)
+dep(hes-2, 80-5)
+dep(hes-2, yet-6)
+punct(hes-2, .-7)
+
+Extracted the following NER entity mentions:
+80	NUMBER	NUMBER:-1.0
+
+Sentence #2 (19 tokens):
+Cognitively he's going downhill but that won't stop any of his base from voting for him.
+
+Tokens:
+[Text=Cognitively CharacterOffsetBegin=26 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=cognitively NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=downhill CharacterOffsetBegin=49 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=downhill NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=wo CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=base CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=base NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=voting CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=VBG Lemma=vote NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB Cognitively))
+      (NP (PRP he))
+      (VP (VBZ 's)
+        (VP (VBG going)
+          (ADVP (RB downhill)))))
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (MD wo) (RB n't)
+        (VP (VB stop)
+          (NP
+            (NP (DT any))
+            (PP (IN of)
+              (NP (PRP$ his) (NN base))))
+          (PP (IN from)
+            (S
+              (VP (VBG voting)
+                (PP (IN for)
+                  (NP (PRP him)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, going-4)
+advmod(going-4, Cognitively-1)
+nsubj(going-4, he-2)
+aux(going-4, 's-3)
+advmod(going-4, downhill-5)
+cc(stop-10, but-6)
+nsubj(stop-10, that-7)
+aux(stop-10, wo-8)
+advmod(stop-10, n't-9)
+conj:but(going-4, stop-10)
+obj(stop-10, any-11)
+case(base-14, of-12)
+nmod:poss(base-14, his-13)
+nmod:of(any-11, base-14)
+mark(voting-16, from-15)
+advcl:from(stop-10, voting-16)
+case(him-18, for-17)
+obl:for(voting-16, him-18)
+punct(going-4, .-19)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+his	PERSON	-
+him	PERSON	-
+
+Sentence #3 (1 tokens):
+Probably
+
+Tokens:
+[Text=Probably CharacterOffsetBegin=115 CharacterOffsetEnd=123 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADVP (RB Probably)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Probably-1)
+
+Extracted the following NER entity mentions:

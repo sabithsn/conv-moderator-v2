@@ -1,0 +1,55 @@
+Document: ID=B2C3BBDE.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Putin revealing he is openly against the Soviet Union's socialist past
+
+Tokens:
+[Text=Putin CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=revealing CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=VBG Lemma=reveal NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=openly CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=openly NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Soviet CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Soviet NamedEntityTag=LOCATION]
+[Text=Union CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Union NamedEntityTag=CITY]
+[Text='s CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=socialist CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=socialist NamedEntityTag=IDEOLOGY]
+[Text=past CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">past</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Putin))
+      (VP (VBG revealing)
+        (NP (PRP he))))
+    (VP (VBZ is)
+      (ADVP (RB openly))
+      (PP (IN against)
+        (NP
+          (NP (DT the) (NNP Soviet) (NNP Union) (POS 's))
+          (JJ socialist) (NN past))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, past-12)
+nsubj(past-12, Putin-1)
+acl(Putin-1, revealing-2)
+obj(revealing-2, he-3)
+cop(past-12, is-4)
+advmod(past-12, openly-5)
+case(past-12, against-6)
+det(Union-9, the-7)
+compound(Union-9, Soviet-8)
+nmod:poss(past-12, Union-9)
+case(Union-9, 's-10)
+amod(past-12, socialist-11)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9956956313499405
+Soviet	LOCATION	LOCATION:0.9677792901800542
+Union	CITY	LOCATION:0.9679476250094727
+socialist	IDEOLOGY	-
+past	DATE	DATE:-1.0
+he	PERSON	-

@@ -1,0 +1,80 @@
+Document: ID=470202A9.text (2 sentences, 18 tokens)
+
+Sentence #1 (4 tokens):
+That's false.
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=false CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=false NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADJP (JJ false)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, false-3)
+nsubj(false-3, That-1)
+cop(false-3, 's-2)
+punct(false-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+The pipeline was blocked by the conservative Supreme Court under the Trump administration.
+
+Tokens:
+[Text=The CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pipeline CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=pipeline NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=blocked CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VBN Lemma=block NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=47 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=Supreme CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Supreme NamedEntityTag=ORGANIZATION]
+[Text=Court CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+[Text=under CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=administration CharacterOffsetBegin=90 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=administration NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN pipeline))
+    (VP (VBD was)
+      (VP (VBN blocked)
+        (PP (IN by)
+          (NP (DT the) (JJ conservative) (NNP Supreme) (NNP Court)))
+        (PP (IN under)
+          (NP (DT the) (NNP Trump) (NN administration)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, blocked-4)
+det(pipeline-2, The-1)
+nsubj:pass(blocked-4, pipeline-2)
+aux:pass(blocked-4, was-3)
+case(Court-9, by-5)
+det(Court-9, the-6)
+amod(Court-9, conservative-7)
+compound(Court-9, Supreme-8)
+obl:agent(blocked-4, Court-9)
+case(administration-13, under-10)
+det(administration-13, the-11)
+compound(administration-13, Trump-12)
+obl:under(blocked-4, administration-13)
+punct(blocked-4, .-14)
+
+Extracted the following NER entity mentions:
+conservative	IDEOLOGY	-
+Supreme Court	ORGANIZATION	ORGANIZATION:0.9997006296842399
+Trump	PERSON	PERSON:0.743771003033566

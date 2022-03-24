@@ -1,0 +1,36 @@
+Document: ID=28F3CE76.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+CNN CEO Jeff Zucker Abruptly Resigns!
+
+Tokens:
+[Text=CNN CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=CNN NamedEntityTag=ORGANIZATION]
+[Text=CEO CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=CEO NamedEntityTag=TITLE]
+[Text=Jeff CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Jeff NamedEntityTag=PERSON]
+[Text=Zucker CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Zucker NamedEntityTag=PERSON]
+[Text=Abruptly CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=abruptly NamedEntityTag=O]
+[Text=Resigns CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=VBZ Lemma=resign NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP CNN) (NNP CEO) (NNP Jeff) (NNP Zucker))
+    (ADVP (RB Abruptly))
+    (VP (VBZ Resigns))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Resigns-6)
+compound(Zucker-4, CNN-1)
+compound(Zucker-4, CEO-2)
+compound(Zucker-4, Jeff-3)
+nsubj(Resigns-6, Zucker-4)
+advmod(Resigns-6, Abruptly-5)
+punct(Resigns-6, !-7)
+
+Extracted the following NER entity mentions:
+CNN	ORGANIZATION	ORGANIZATION:0.894181067689192
+CEO	TITLE	-
+Jeff Zucker	PERSON	PERSON:0.9808813205700407

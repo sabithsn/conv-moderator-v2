@@ -1,0 +1,61 @@
+Document: ID=13D75157.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Biden Increasingly Likely to Be Impeached if Republicans Regain Control of House in Midterms
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Increasingly CharacterOffsetBegin=6 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=increasingly NamedEntityTag=O]
+[Text=Likely CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Be CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=Impeached CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=VBN Lemma=impeach NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=45 CharacterOffsetEnd=56 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=ORGANIZATION]
+[Text=Regain CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=VBP Lemma=regain NamedEntityTag=ORGANIZATION]
+[Text=Control CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=control NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=House CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Midterms CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=NNPS Lemma=Midterms NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Biden))
+    (ADJP (RB Increasingly) (RB Likely)
+      (S
+        (VP (TO to)
+          (VP (VB Be)
+            (VP (VBN Impeached)
+              (SBAR (IN if)
+                (S
+                  (NP (NNPS Republicans))
+                  (VP (VBP Regain)
+                    (NP
+                      (NP (NN Control))
+                      (PP (IN of)
+                        (NP (NNP House))))
+                    (PP (IN in)
+                      (NP (NNPS Midterms)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Biden-1)
+advmod(Likely-3, Increasingly-2)
+dep(Biden-1, Likely-3)
+mark(Impeached-6, to-4)
+aux:pass(Impeached-6, Be-5)
+xcomp(Likely-3, Impeached-6)
+mark(Regain-9, if-7)
+nsubj(Regain-9, Republicans-8)
+advcl:if(Impeached-6, Regain-9)
+obj(Regain-9, Control-10)
+case(House-12, of-11)
+nmod:of(Control-10, House-12)
+case(Midterms-14, in-13)
+obl:in(Regain-9, Midterms-14)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.8893778621742833
+Republicans Regain Control of House	ORGANIZATION	ORGANIZATION:0.6351750662569227

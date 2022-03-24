@@ -1,0 +1,56 @@
+Document: ID=354294BF.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Fox News: Leaked Kremlin memo tells Russian media to feature Tucker Carlson
+
+Tokens:
+[Text=Fox CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=MISC]
+[Text=News CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=News NamedEntityTag=MISC]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Leaked CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Leaked NamedEntityTag=ORGANIZATION]
+[Text=Kremlin CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Kremlin NamedEntityTag=ORGANIZATION]
+[Text=memo CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=memo NamedEntityTag=O]
+[Text=tells CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=media CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=feature CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=feature NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Fox) (NNP News))
+    (: :)
+    (S
+      (NP (NNP Leaked) (NNP Kremlin) (NN memo))
+      (VP (VBZ tells)
+        (NP (JJ Russian) (NNS media))
+        (S
+          (VP (TO to)
+            (VP (VB feature)
+              (NP (NNP Tucker) (NNP Carlson)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, News-2)
+compound(News-2, Fox-1)
+punct(News-2, :-3)
+compound(memo-6, Leaked-4)
+compound(memo-6, Kremlin-5)
+nsubj(tells-7, memo-6)
+parataxis(News-2, tells-7)
+amod(media-9, Russian-8)
+obj(tells-7, media-9)
+nsubj:xsubj(feature-11, media-9)
+mark(feature-11, to-10)
+xcomp(tells-7, feature-11)
+compound(Carlson-13, Tucker-12)
+obj(feature-11, Carlson-13)
+
+Extracted the following NER entity mentions:
+Fox News	MISC	MISC:0.7074492021105037
+Leaked Kremlin	ORGANIZATION	ORGANIZATION:0.4936017113428487
+Russian	NATIONALITY	MISC:0.9999986032974937
+Tucker Carlson	PERSON	PERSON:0.9970153804522079

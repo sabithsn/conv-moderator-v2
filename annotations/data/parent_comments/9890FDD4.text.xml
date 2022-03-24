@@ -1,0 +1,69 @@
+Document: ID=9890FDD4.text (2 sentences, 13 tokens)
+
+Sentence #1 (6 tokens):
+> pov  3000 people died.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=pov CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=CD Lemma=pov NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=3000 CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=CD Lemma=3000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3000.0]
+[Text=people CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (QP (SYM >) (CD pov) (CD 3000))
+      (NNS people))
+    (VP (VBD died))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, died-5)
+dep(3000-3, >-1)
+compound(3000-3, pov-2)
+nummod(people-4, 3000-3)
+nsubj(died-5, people-4)
+punct(died-5, .-6)
+
+Extracted the following NER entity mentions:
+pov	NUMBER	NUMBER:-1.0
+3000	NUMBER	NUMBER:-1.0
+
+Sentence #2 (7 tokens):
+What pov are you talking about?
+
+Tokens:
+[Text=What CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=pov CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=pov NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WDT What)
+      (NP (NN pov)))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG talking)
+        (PP (IN about))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, talking-5)
+det(pov-2, What-1)
+obl:about(talking-5, pov-2)
+aux(talking-5, are-3)
+nsubj(talking-5, you-4)
+case(pov-2, about-6)
+punct(talking-5, ?-7)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,77 @@
+Document: ID=C25089A3.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Don't get fooled by the name, the majority on this sub are Trump supporters... expect some downvotes
+
+Tokens:
+[Text=Do CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=fooled CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=fool NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=majority CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=majority NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=ORGANIZATION]
+[Text=supporters CharacterOffsetBegin=65 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=supporter NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NFP Lemma=... NamedEntityTag=O]
+[Text=expect CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=VBP Lemma=expect NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=downvotes CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=NNS Lemma=downvote NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Do) (RB n't)
+        (VP (VB get)
+          (VP (VBN fooled)
+            (PP (IN by)
+              (NP (DT the) (NN name)))))))
+    (, ,)
+    (S
+      (NP
+        (NP (DT the) (NN majority))
+        (PP (IN on)
+          (NP (DT this) (NN sub))))
+      (VP (VBP are)
+        (NP
+          (NP (NNP Trump))
+          (SBAR
+            (S
+              (NP (NNS supporters))
+              (NFP ...)
+              (VP (VBP expect)
+                (NP (DT some) (NNS downvotes))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fooled-4)
+aux(fooled-4, Do-1)
+advmod(fooled-4, n't-2)
+aux:pass(fooled-4, get-3)
+case(name-7, by-5)
+det(name-7, the-6)
+obl:agent(fooled-4, name-7)
+punct(fooled-4, ,-8)
+det(majority-10, the-9)
+nsubj(Trump-15, majority-10)
+case(sub-13, on-11)
+det(sub-13, this-12)
+nmod:on(majority-10, sub-13)
+cop(Trump-15, are-14)
+parataxis(fooled-4, Trump-15)
+nsubj(expect-18, supporters-16)
+punct(expect-18, ...-17)
+acl:relcl(Trump-15, expect-18)
+det(downvotes-20, some-19)
+obj(expect-18, downvotes-20)
+
+Extracted the following NER entity mentions:
+Trump	ORGANIZATION	ORGANIZATION:0.7089245624856763

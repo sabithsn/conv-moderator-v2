@@ -1,0 +1,81 @@
+Document: ID=0C51C5FC.text (2 sentences, 16 tokens)
+
+Sentence #1 (5 tokens):
+Move him to Kiev.
+
+Tokens:
+[Text=Move CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=move NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Kiev CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Kiev NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Move)
+      (NP (PRP him))
+      (PP (IN to)
+        (NP (NNP Kiev))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Move-1)
+obj(Move-1, him-2)
+case(Kiev-4, to-3)
+obl:to(Move-1, Kiev-4)
+punct(Move-1, .-5)
+
+Extracted the following NER entity mentions:
+Kiev	CITY	LOCATION:0.9810536587463167
+him	PERSON	-
+
+Sentence #2 (11 tokens):
+Let him broadcast from a city under siege by Putin.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=broadcast CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=broadcast NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=city CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=city NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=siege CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=siege NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP him))
+        (VP (VBN broadcast)
+          (PP (IN from)
+            (NP (DT a) (NN city)))
+          (PP (IN under)
+            (NP (NN siege)))
+          (PP (IN by)
+            (NP (NNP Putin))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(broadcast-3, him-2)
+dep(Let-1, broadcast-3)
+case(city-6, from-4)
+det(city-6, a-5)
+obl:from(broadcast-3, city-6)
+case(siege-8, under-7)
+obl:under(broadcast-3, siege-8)
+case(Putin-10, by-9)
+obl:by(broadcast-3, Putin-10)
+punct(Let-1, .-11)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9889871160758311
+him	PERSON	-

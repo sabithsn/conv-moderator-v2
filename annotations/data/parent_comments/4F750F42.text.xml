@@ -1,0 +1,129 @@
+Document: ID=4F750F42.text (2 sentences, 32 tokens)
+
+Sentence #1 (12 tokens):
+Not everyone was there to execute Pence and Pelosi, sure.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=execute CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=execute NamedEntityTag=O]
+[Text=Pence CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Pence NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Pelosi CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Pelosi NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (RB Not) (NN everyone))
+    (VP (VBD was)
+      (ADVP (RB there))
+      (S
+        (VP (TO to)
+          (VP (VB execute)
+            (UCP
+              (NP (NNP Pence)
+                (CC and)
+                (NNP Pelosi))
+              (, ,)
+              (ADJP (JJ sure)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-3)
+advmod(everyone-2, Not-1)
+nsubj(was-3, everyone-2)
+nsubj:xsubj(execute-6, everyone-2)
+advmod(was-3, there-4)
+mark(execute-6, to-5)
+xcomp(was-3, execute-6)
+obj(execute-6, Pence-7)
+cc(Pelosi-9, and-8)
+obj(execute-6, Pelosi-9)
+conj:and(Pence-7, Pelosi-9)
+punct(Pence-7, ,-10)
+amod(Pence-7, sure-11)
+punct(was-3, .-12)
+
+Extracted the following NER entity mentions:
+Pelosi	PERSON	PERSON:0.9871099526296756
+
+Sentence #2 (20 tokens):
+Have you not seen the violent clashes between the police and protestors at the doorways and on the steps?
+
+Tokens:
+[Text=Have CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=violent CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=violent NamedEntityTag=O]
+[Text=clashes CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=clash NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=police CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=police NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=protestors CharacterOffsetBegin=119 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=protestor NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=doorways CharacterOffsetBegin=137 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=doorway NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Have)
+    (NP (PRP you))
+    (RB not)
+    (VP (VBN seen)
+      (NP
+        (NP (DT the) (JJ violent) (NNS clashes))
+        (PP (IN between)
+          (NP
+            (NP (DT the) (NN police))
+            (CC and)
+            (NP (NNS protestors)))))
+      (PP
+        (PP (IN at)
+          (NP (DT the) (NNS doorways)))
+        (CC and)
+        (PP (IN on)
+          (NP (DT the) (NNS steps)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seen-4)
+aux(seen-4, Have-1)
+nsubj(seen-4, you-2)
+nsubj(seen-4', you-2)
+advmod(seen-4, not-3)
+conj:and(seen-4, seen-4')
+det(clashes-7, the-5)
+amod(clashes-7, violent-6)
+obj(seen-4, clashes-7)
+case(police-10, between-8)
+det(police-10, the-9)
+nmod:between(clashes-7, police-10)
+cc(protestors-12, and-11)
+nmod:between(clashes-7, protestors-12)
+conj:and(police-10, protestors-12)
+case(doorways-15, at-13)
+det(doorways-15, the-14)
+obl:at(seen-4, doorways-15)
+cc(seen-4', and-16)
+case(steps-19, on-17)
+det(steps-19, the-18)
+obl:on(seen-4', steps-19)
+punct(seen-4, ?-20)
+
+Extracted the following NER entity mentions:

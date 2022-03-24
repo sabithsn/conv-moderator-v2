@@ -1,0 +1,66 @@
+Document: ID=2F9505A4.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Biden administration to protect millions of Americans from the risk of being mistaken for a Republican
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=administration CharacterOffsetBegin=6 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=administration NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=protect CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=protect NamedEntityTag=O]
+[Text=millions CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=million NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=from CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=risk CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=risk NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=mistaken CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=VBN Lemma=mistake NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Republican CharacterOffsetBegin=92 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=republican NamedEntityTag=IDEOLOGY]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Biden) (NN administration)
+      (S
+        (VP (TO to)
+          (VP (VB protect)
+            (NP
+              (NP (NNS millions))
+              (PP (IN of)
+                (NP (NNPS Americans))))
+            (PP (IN from)
+              (NP (DT the) (NN risk)))))))
+    (PP (IN of)
+      (S
+        (VP (VBG being)
+          (VP (VBN mistaken)
+            (PP (IN for)
+              (NP (DT a) (JJ Republican)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, administration-2)
+compound(administration-2, Biden-1)
+mark(protect-4, to-3)
+acl:to(administration-2, protect-4)
+det:qmod(Americans-7, millions-5)
+fixed(millions-5, of-6)
+obj(protect-4, Americans-7)
+case(risk-10, from-8)
+det(risk-10, the-9)
+obl:from(protect-4, risk-10)
+mark(mistaken-13, of-11)
+aux:pass(mistaken-13, being-12)
+acl:of(administration-2, mistaken-13)
+case(Republican-16, for-14)
+det(Republican-16, a-15)
+obl:for(mistaken-13, Republican-16)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9988123008534241
+Americans	MISC	MISC:0.9999928997830773
+Republican	IDEOLOGY	MISC:0.9998672158478256

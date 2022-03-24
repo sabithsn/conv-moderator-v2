@@ -1,0 +1,76 @@
+Document: ID=53F97F0E.text (2 sentences, 16 tokens)
+
+Sentence #1 (5 tokens):
+Definitely emotionally manipulative behavior.
+
+Tokens:
+[Text=Definitely CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=emotionally CharacterOffsetBegin=11 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=emotionally NamedEntityTag=O]
+[Text=manipulative CharacterOffsetBegin=23 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=manipulative NamedEntityTag=O]
+[Text=behavior CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=behavior NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Definitely))
+    (NP
+      (ADJP (RB emotionally) (JJ manipulative))
+      (NN behavior))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, behavior-4)
+dep(behavior-4, Definitely-1)
+advmod(manipulative-3, emotionally-2)
+amod(behavior-4, manipulative-3)
+punct(behavior-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+You should seriously consider being evaluated by a psychiatric professional.
+
+Tokens:
+[Text=You CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=seriously CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=consider CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=consider NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=evaluated CharacterOffsetBegin=82 CharacterOffsetEnd=91 PartOfSpeech=VBN Lemma=evaluate NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=psychiatric CharacterOffsetBegin=97 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=psychiatric NamedEntityTag=O]
+[Text=professional CharacterOffsetBegin=109 CharacterOffsetEnd=121 PartOfSpeech=JJ Lemma=professional NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should)
+      (ADVP (RB seriously))
+      (VP (VB consider)
+        (S
+          (VP (VBG being)
+            (VP (VBN evaluated)
+              (PP (IN by)
+                (NP (DT a) (JJ psychiatric) (JJ professional))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, consider-4)
+nsubj(consider-4, You-1)
+aux(consider-4, should-2)
+advmod(consider-4, seriously-3)
+aux:pass(evaluated-6, being-5)
+xcomp(consider-4, evaluated-6)
+case(professional-10, by-7)
+det(professional-10, a-8)
+amod(professional-10, psychiatric-9)
+obl:agent(evaluated-6, professional-10)
+punct(consider-4, .-11)
+
+Extracted the following NER entity mentions:

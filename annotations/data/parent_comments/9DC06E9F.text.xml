@@ -1,0 +1,62 @@
+Document: ID=9DC06E9F.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Transgender Texas kids are terrified after governor orders that parents be investigated for child abuse
+
+Tokens:
+[Text=Transgender CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Transgender NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=kids CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=terrified CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=terrify NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=governor CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=governor NamedEntityTag=TITLE]
+[Text=orders CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=order NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=investigated CharacterOffsetBegin=75 CharacterOffsetEnd=87 PartOfSpeech=VBN Lemma=investigate NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=child NamedEntityTag=CRIMINAL_CHARGE]
+[Text=abuse CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=abuse NamedEntityTag=CRIMINAL_CHARGE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Transgender) (NNP Texas) (NNS kids))
+    (VP (VBP are)
+      (VP (VBN terrified)
+        (PP (IN after)
+          (NP
+            (NP (NN governor) (NNS orders))
+            (SBAR
+              (WHNP (WDT that) (NNS parents))
+              (S
+                (VP (VB be)
+                  (VP (VBN investigated)
+                    (PP (IN for)
+                      (NP (NN child) (NN abuse)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, terrified-5)
+compound(kids-3, Transgender-1)
+compound(kids-3, Texas-2)
+nsubj:pass(terrified-5, kids-3)
+aux:pass(terrified-5, are-4)
+case(orders-8, after-6)
+compound(orders-8, governor-7)
+obl:after(terrified-5, orders-8)
+det(parents-10, orders-8)
+ref(orders-8, that-9)
+nsubj:pass(investigated-12, parents-10)
+aux:pass(investigated-12, be-11)
+acl:relcl(orders-8, investigated-12)
+case(abuse-15, for-13)
+compound(abuse-15, child-14)
+obl:for(investigated-12, abuse-15)
+
+Extracted the following NER entity mentions:
+Texas	STATE_OR_PROVINCE	LOCATION:0.7483556598801904
+governor	TITLE	-
+child abuse	CRIMINAL_CHARGE	-

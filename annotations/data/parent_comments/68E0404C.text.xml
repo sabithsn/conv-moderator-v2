@@ -1,0 +1,60 @@
+Document: ID=68E0404C.text (2 sentences, 11 tokens)
+
+Sentence #1 (7 tokens):
+And you're a terrorist sympathizer.
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=terrorist CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=terrorist NamedEntityTag=O]
+[Text=sympathizer CharacterOffsetBegin=23 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=sympathizer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP you))
+    (VP (VBP 're)
+      (NP (DT a) (JJ terrorist) (NN sympathizer)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sympathizer-6)
+cc(sympathizer-6, And-1)
+nsubj(sympathizer-6, you-2)
+cop(sympathizer-6, 're-3)
+det(sympathizer-6, a-4)
+amod(sympathizer-6, terrorist-5)
+punct(sympathizer-6, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Kindly fuck off now
+
+Tokens:
+[Text=Kindly CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=kindly NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Kindly))
+    (VP (VB fuck)
+      (PRT (RP off))
+      (ADVP (RB now)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fuck-2)
+advmod(fuck-2, Kindly-1)
+compound:prt(fuck-2, off-3)
+advmod(fuck-2, now-4)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

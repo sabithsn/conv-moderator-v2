@@ -1,0 +1,67 @@
+Document: ID=2BA6FBAF.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+While the left claims to be against Russia, how many of their policies benefit Russia?
+
+Tokens:
+[Text=While CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=left NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=policies CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=policy NamedEntityTag=O]
+[Text=benefit CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=benefit NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=? CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (SBAR (IN While)
+      (S
+        (NP (DT the) (JJ left) (NNS claims))
+        (VP (TO to)
+          (VP (VB be)
+            (PP (IN against)
+              (NP (NNP Russia)))))))
+    (, ,)
+    (WHNP
+      (WHADJP (WRB how) (JJ many))
+      (PP (IN of)
+        (NP (PRP$ their) (NNS policies))))
+    (SQ
+      (VP (VBP benefit)
+        (NP (NNP Russia))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, benefit-15)
+mark(Russia-8, While-1)
+det(claims-4, the-2)
+amod(claims-4, left-3)
+nsubj(Russia-8, claims-4)
+mark(Russia-8, to-5)
+cop(Russia-8, be-6)
+case(Russia-8, against-7)
+advcl:against(benefit-15, Russia-8)
+punct(benefit-15, ,-9)
+advmod(many-11, how-10)
+det:qmod(policies-14, many-11)
+fixed(many-11, of-12)
+nmod:poss(policies-14, their-13)
+nsubj(benefit-15, policies-14)
+obj(benefit-15, Russia-16)
+punct(benefit-15, ?-17)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9749201594475473
+Russia	COUNTRY	LOCATION:0.9951657619850547

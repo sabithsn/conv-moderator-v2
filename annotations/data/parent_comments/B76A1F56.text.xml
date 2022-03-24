@@ -1,0 +1,56 @@
+Document: ID=B76A1F56.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Isreal and anyone who supports religious imperialism are straight up fucking scum
+
+Tokens:
+[Text=Isreal CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Isreal NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=supports CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=support NamedEntityTag=O]
+[Text=religious CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=religious NamedEntityTag=O]
+[Text=imperialism CharacterOffsetBegin=41 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=imperialism NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=straight CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=straight NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=fucking NamedEntityTag=O]
+[Text=scum CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=scum NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Isreal))
+      (CC and)
+      (NP
+        (NP (NN anyone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ supports)
+              (NP (JJ religious) (NN imperialism)))))))
+    (VP (VBP are)
+      (ADVP (RB straight) (RB up))
+      (ADVP (RB fucking))
+      (NP (NN scum)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, scum-12)
+nsubj(scum-12, Isreal-1)
+cc(anyone-3, and-2)
+conj:and(Isreal-1, anyone-3)
+nsubj(supports-5, anyone-3)
+nsubj(scum-12, anyone-3)
+ref(anyone-3, who-4)
+acl:relcl(anyone-3, supports-5)
+amod(imperialism-7, religious-6)
+obj(supports-5, imperialism-7)
+cop(scum-12, are-8)
+advmod(up-10, straight-9)
+advmod(scum-12, up-10)
+advmod(scum-12, fucking-11)
+
+Extracted the following NER entity mentions:
+Isreal	LOCATION	LOCATION:0.9652764534187505

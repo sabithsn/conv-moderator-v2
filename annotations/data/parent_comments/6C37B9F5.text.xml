@@ -1,0 +1,62 @@
+Document: ID=6C37B9F5.text (2 sentences, 10 tokens)
+
+Sentence #1 (6 tokens):
+He needs to go away.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=needs CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB go)
+            (ADVP (RB away))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, needs-2)
+nsubj(needs-2, He-1)
+nsubj:xsubj(go-4, He-1)
+mark(go-4, to-3)
+xcomp(needs-2, go-4)
+advmod(go-4, away-5)
+punct(needs-2, .-6)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #2 (4 tokens):
+Preferably to jail.
+
+Tokens:
+[Text=Preferably CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=preferably NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=jail CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=jail NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Preferably))
+    (PP (IN to)
+      (NP (NN jail)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Preferably-1)
+case(jail-3, to-2)
+obl:to(Preferably-1, jail-3)
+punct(Preferably-1, .-4)
+
+Extracted the following NER entity mentions:

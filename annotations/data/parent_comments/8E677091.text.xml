@@ -1,0 +1,40 @@
+Document: ID=8E677091.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+My dad got fired for not getting the vaccine
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=dad CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=dad NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=fired CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=fire NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN dad))
+    (VP (VBD got)
+      (VP (VBN fired)
+        (PP (IN for)
+          (S (RB not)
+            (VP (VBG getting)
+              (NP (DT the) (NN vaccine)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fired-4)
+nmod:poss(dad-2, My-1)
+nsubj:pass(fired-4, dad-2)
+aux:pass(fired-4, got-3)
+mark(getting-7, for-5)
+advmod(getting-7, not-6)
+advcl:for(fired-4, getting-7)
+det(vaccine-9, the-8)
+obj(getting-7, vaccine-9)
+
+Extracted the following NER entity mentions:

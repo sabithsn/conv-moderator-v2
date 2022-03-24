@@ -1,0 +1,83 @@
+Document: ID=97FBF0C6.text (2 sentences, 19 tokens)
+
+Sentence #1 (18 tokens):
+A self-referential clusterfuck, aiming squarely at its own extinction, one might almost say.
+
+Tokens:
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=self CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=self NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=referential CharacterOffsetBegin=7 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=referential NamedEntityTag=O]
+[Text=clusterfuck CharacterOffsetBegin=19 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=clusterfuck NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=aiming CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBG Lemma=aim NamedEntityTag=O]
+[Text=squarely CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=squarely NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=extinction CharacterOffsetBegin=59 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=extinction NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=might CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A)
+      (ADJP (NN self) (HYPH -) (JJ referential))
+      (NN clusterfuck))
+    (, ,)
+    (S
+      (VP (VBG aiming)
+        (ADVP (RB squarely))
+        (PP (IN at)
+          (NP (PRP$ its) (JJ own) (NN extinction)))))
+    (, ,)
+    (NP (PRP one))
+    (VP (MD might)
+      (ADVP (RB almost))
+      (VP (VB say)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-17)
+det(clusterfuck-5, A-1)
+obl:npmod(referential-4, self-2)
+punct(referential-4, --3)
+amod(clusterfuck-5, referential-4)
+nsubj(say-17, clusterfuck-5)
+punct(say-17, ,-6)
+advcl(say-17, aiming-7)
+advmod(aiming-7, squarely-8)
+case(extinction-12, at-9)
+nmod:poss(extinction-12, its-10)
+amod(extinction-12, own-11)
+obl:at(aiming-7, extinction-12)
+punct(say-17, ,-13)
+nsubj(say-17, one-14)
+aux(say-17, might-15)
+advmod(say-17, almost-16)
+punct(say-17, .-18)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (1 tokens):
+😂
+
+Tokens:
+[Text=😂 CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=NFP Lemma=😂 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (NFP 😂)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 😂-1)
+
+Extracted the following NER entity mentions:

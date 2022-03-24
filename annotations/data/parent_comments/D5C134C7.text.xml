@@ -1,0 +1,41 @@
+Document: ID=D5C134C7.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Wonder why Eastern Europe was on top??
+
+Tokens:
+[Text=Wonder CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=wonder NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=Eastern CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Eastern NamedEntityTag=LOCATION]
+[Text=Europe CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=was CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=top CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=top NamedEntityTag=O]
+[Text=?? CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=?? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Wonder))
+    (SBAR
+      (WHADVP (WRB why))
+      (S
+        (NP (NNP Eastern) (NNP Europe))
+        (VP (VBD was)
+          (PP (IN on)
+            (NP (JJ top))))))
+    (. ??)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wonder-1)
+advmod(top-7, why-2)
+compound(Europe-4, Eastern-3)
+nsubj(top-7, Europe-4)
+cop(top-7, was-5)
+case(top-7, on-6)
+acl:relcl(Wonder-1, top-7)
+punct(Wonder-1, ??-8)
+
+Extracted the following NER entity mentions:
+Eastern Europe	LOCATION	LOCATION:0.8395678604185126

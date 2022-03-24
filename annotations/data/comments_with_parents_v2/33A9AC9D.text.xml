@@ -1,0 +1,46 @@
+Document: ID=33A9AC9D.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+And the nazi battalion is being funded by... ISREAL !
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nazi CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=nazi NamedEntityTag=IDEOLOGY]
+[Text=battalion CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=battalion NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=funded CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=fund NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=ISREAL CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=ISREAL NamedEntityTag=LOCATION]
+[Text=! CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (DT the) (NN nazi) (NN battalion))
+    (VP (VBZ is)
+      (VP (VBG being)
+        (VP (VBN funded)
+          (PP (IN by) (: ...)
+            (NP (NNP ISREAL))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, funded-7)
+cc(funded-7, And-1)
+det(battalion-4, the-2)
+compound(battalion-4, nazi-3)
+nsubj:pass(funded-7, battalion-4)
+aux(funded-7, is-5)
+aux:pass(funded-7, being-6)
+case(ISREAL-10, by-8)
+punct(ISREAL-10, ...-9)
+obl:agent(funded-7, ISREAL-10)
+punct(funded-7, !-11)
+
+Extracted the following NER entity mentions:
+nazi	IDEOLOGY	MISC:0.7701929319128485
+ISREAL	LOCATION	LOCATION:0.6697431901562388

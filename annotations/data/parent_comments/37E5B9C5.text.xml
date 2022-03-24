@@ -1,0 +1,68 @@
+Document: ID=37E5B9C5.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+AITA for snitching to my upstairs neighbors that her daughter uses my balcony to sneak out?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=snitching CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=snitch NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=upstairs CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=upstairs NamedEntityTag=O]
+[Text=neighbors CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=neighbor NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=daughter CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=daughter NamedEntityTag=O]
+[Text=uses CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VBZ Lemma=use NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=balcony CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=balcony NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sneak CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=sneak NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG snitching)
+          (PP (IN to)
+            (NP (PRP$ my) (NN upstairs) (NNS neighbors)))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (NP (PRP$ her) (NN daughter))
+              (VP (VBZ uses)
+                (NP (PRP$ my) (NN balcony))
+                (S
+                  (VP (TO to)
+                    (VP (VB sneak)
+                      (PRT (RP out)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(snitching-3, for-2)
+dep(AITA-1, snitching-3)
+case(neighbors-7, to-4)
+nmod:poss(neighbors-7, my-5)
+compound(neighbors-7, upstairs-6)
+obl:to(snitching-3, neighbors-7)
+obj(uses-11, that-8)
+nmod:poss(daughter-10, her-9)
+nsubj(uses-11, daughter-10)
+ccomp(snitching-3, uses-11)
+nmod:poss(balcony-13, my-12)
+obj(uses-11, balcony-13)
+mark(sneak-15, to-14)
+advcl:to(uses-11, sneak-15)
+compound:prt(sneak-15, out-16)
+punct(AITA-1, ?-17)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.5680698654282543
+her	PERSON	-

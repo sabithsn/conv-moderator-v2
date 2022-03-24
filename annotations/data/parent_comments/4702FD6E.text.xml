@@ -1,0 +1,38 @@
+Document: ID=4702FD6E.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Florida Passes 15-Week Abortion Ban
+
+Tokens:
+[Text=Florida CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Passes CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=pass NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=15 NamedEntityTag=DURATION NormalizedNamedEntityTag=P15W Timex=<TIMEX3 tid="t1" type="DURATION" value="P15W">15-Week</TIMEX3>]
+[Text=- CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=P15W Timex=<TIMEX3 tid="t1" type="DURATION" value="P15W">15-Week</TIMEX3>]
+[Text=Week CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=P15W Timex=<TIMEX3 tid="t1" type="DURATION" value="P15W">15-Week</TIMEX3>]
+[Text=Abortion CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+[Text=Ban CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Ban NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Florida))
+    (VP (VBZ Passes)
+      (NP
+        (NML
+          (NML (CD 15) (HYPH -) (NN Week))
+          (NN Abortion))
+        (NNP Ban)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Passes-2)
+nsubj(Passes-2, Florida-1)
+nummod(Week-5, 15-3)
+punct(Week-5, --4)
+compound(Abortion-6, Week-5)
+compound(Ban-7, Abortion-6)
+obj(Passes-2, Ban-7)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.9633847560652748
+15-Week	DURATION	DURATION:-1.0

@@ -1,0 +1,131 @@
+Document: ID=DE3ABCC1.text (3 sentences, 27 tokens)
+
+Sentence #1 (7 tokens):
+Sure, try and backtrack now.
+
+Tokens:
+[Text=Sure CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=sure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=backtrack CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=backtrack NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Sure))
+    (, ,)
+    (VP
+      (VP (VB try))
+      (CC and)
+      (VP (VB backtrack)
+        (ADVP (RB now))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, try-3)
+discourse(try-3, Sure-1)
+punct(try-3, ,-2)
+cc(backtrack-5, and-4)
+conj:and(try-3, backtrack-5)
+advmod(backtrack-5, now-6)
+punct(try-3, .-7)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+
+Sentence #2 (11 tokens):
+Communism and Fascism are trash ideologies addicted to causing suffering.
+
+Tokens:
+[Text=Communism CharacterOffsetBegin=30 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Communism NamedEntityTag=IDEOLOGY]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Fascism CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Fascism NamedEntityTag=IDEOLOGY]
+[Text=are CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=trash CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=trash NamedEntityTag=O]
+[Text=ideologies CharacterOffsetBegin=62 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=ideology NamedEntityTag=O]
+[Text=addicted CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=VBN Lemma=addict NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=causing CharacterOffsetBegin=85 CharacterOffsetEnd=92 PartOfSpeech=VBG Lemma=cause NamedEntityTag=O]
+[Text=suffering CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=suffering NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Communism)
+      (CC and)
+      (NNP Fascism))
+    (VP (VBP are)
+      (NP
+        (NP (NN trash) (NNS ideologies))
+        (ADJP (VBN addicted)
+          (PP (IN to)
+            (S
+              (VP (VBG causing)
+                (NP (NN suffering))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ideologies-6)
+nsubj(ideologies-6, Communism-1)
+cc(Fascism-3, and-2)
+conj:and(Communism-1, Fascism-3)
+nsubj(ideologies-6, Fascism-3)
+cop(ideologies-6, are-4)
+compound(ideologies-6, trash-5)
+amod(ideologies-6, addicted-7)
+mark(causing-9, to-8)
+advcl:to(addicted-7, causing-9)
+obj(causing-9, suffering-10)
+punct(ideologies-6, .-11)
+
+Extracted the following NER entity mentions:
+Communism	IDEOLOGY	-
+Fascism	IDEOLOGY	MISC:0.4534902607838845
+
+Sentence #3 (9 tokens):
+Please shoo and take your hate with you.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=shoo CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=shoo NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=hate NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (UCP
+    (INTJ
+      (INTJ (UH Please))
+      (NP (NN shoo)))
+    (CC and)
+    (S
+      (VP (VB take)
+        (NP (PRP$ your) (NN hate))
+        (PP (IN with)
+          (NP (PRP you)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Please-1)
+dep(Please-1, shoo-2)
+cc(take-4, and-3)
+conj:and(Please-1, take-4)
+nmod:poss(hate-6, your-5)
+obj(take-4, hate-6)
+case(you-8, with-7)
+obl:with(take-4, you-8)
+punct(Please-1, .-9)
+
+Extracted the following NER entity mentions:

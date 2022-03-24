@@ -1,0 +1,79 @@
+Document: ID=D7ADA5CB.text (2 sentences, 18 tokens)
+
+Sentence #1 (10 tokens):
+I’d love to dick stomp this lil twit.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’d CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=MD Lemma=’d NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=love NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=dick CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=dick NamedEntityTag=O]
+[Text=stomp CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=stomp NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=lil CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=lil NamedEntityTag=O]
+[Text=twit CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=twit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD ’d)
+      (VP (VB love)
+        (PP (IN to)
+          (NP
+            (NP (NN dick) (NN stomp))
+            (NP (DT this) (NN lil) (NN twit))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, love-3)
+nsubj(love-3, I-1)
+aux(love-3, ’d-2)
+case(stomp-6, to-4)
+compound(stomp-6, dick-5)
+obl:to(love-3, stomp-6)
+det(twit-9, this-7)
+compound(twit-9, lil-8)
+dep(stomp-6, twit-9)
+punct(love-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+He’s like a nattering little fly.
+
+Tokens:
+[Text=He CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nattering CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=VBG Lemma=natter NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=fly CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=fly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ ’s)
+      (PP (IN like)
+        (NP (DT a) (VBG nattering) (JJ little) (NN fly))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fly-7)
+nsubj(fly-7, He-1)
+cop(fly-7, ’s-2)
+case(fly-7, like-3)
+det(fly-7, a-4)
+amod(fly-7, nattering-5)
+amod(fly-7, little-6)
+punct(fly-7, .-8)
+
+Extracted the following NER entity mentions:
+He	PERSON	-

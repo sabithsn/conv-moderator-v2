@@ -1,0 +1,48 @@
+Document: ID=EF3CC9B4.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Leaves trillions of dollars worth of military equipment to a terrorist organization
+
+Tokens:
+[Text=Leaves CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNPS Lemma=Leaves NamedEntityTag=O]
+[Text=trillions CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=trillion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=dollars CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=military CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=military NamedEntityTag=O]
+[Text=equipment CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=equipment NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=terrorist CharacterOffsetBegin=61 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=terrorist NamedEntityTag=O]
+[Text=organization CharacterOffsetBegin=71 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=organization NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNPS Leaves) (NNS trillions))
+    (PP (IN of)
+      (NP
+        (NP (NNS dollars))
+        (PP (JJ worth) (IN of)
+          (NP
+            (NP (JJ military) (NN equipment))
+            (PP (IN to)
+              (NP (DT a) (JJ terrorist) (NN organization)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dollars-4)
+compound(trillions-2, Leaves-1)
+det:qmod(dollars-4, trillions-2)
+fixed(trillions-2, of-3)
+case(equipment-8, worth-5)
+case(equipment-8, of-6)
+amod(equipment-8, military-7)
+nmod:of(dollars-4, equipment-8)
+case(organization-12, to-9)
+det(organization-12, a-10)
+amod(organization-12, terrorist-11)
+nmod:to(equipment-8, organization-12)
+
+Extracted the following NER entity mentions:

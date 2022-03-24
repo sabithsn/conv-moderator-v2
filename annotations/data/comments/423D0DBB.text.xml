@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>423D0DBB.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Once</word>
+            <lemma>once</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PAST_REF</NormalizedNER>
+            <Timex tid="t1" type="DATE">PAST_REF</Timex>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>international</word>
+            <lemma>international</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>waters</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>should</word>
+            <lemma>should</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>torpedo</word>
+            <lemma>torpedo</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>them</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Once) (PP (IN in) (NP (JJ international) (NNS waters)))) (NP (PRP they)) (VP (MD should) (VP (VB torpedo) (NP (PRP them)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">torpedo</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="1">Once</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">waters</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">waters</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="1">Once</governor>
+            <dependent idx="4">waters</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="6">should</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="8">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">torpedo</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="1">Once</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">waters</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">waters</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Once</governor>
+            <dependent idx="4">waters</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="6">should</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="8">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">torpedo</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="1">Once</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">waters</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">waters</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Once</governor>
+            <dependent idx="4">waters</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="6">should</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="8">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">torpedo</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="1">Once</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">waters</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">waters</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Once</governor>
+            <dependent idx="4">waters</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="6">should</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="8">them</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">torpedo</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="1">Once</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">waters</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">waters</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="1">Once</governor>
+            <dependent idx="4">waters</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="5">they</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="6">should</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="7">torpedo</governor>
+            <dependent idx="8">them</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

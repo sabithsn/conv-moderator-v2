@@ -1,0 +1,196 @@
+Document: ID=5607E264.text (4 sentences, 43 tokens)
+
+Sentence #1 (7 tokens):
+There are two types of men.
+
+Tokens:
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=types CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=type NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (CD two) (NNS types))
+        (PP (IN of)
+          (NP (NNS men)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-2)
+expl(are-2, There-1)
+nummod(types-4, two-3)
+nsubj(are-2, types-4)
+case(men-6, of-5)
+nmod:of(types-4, men-6)
+punct(are-2, .-7)
+
+Extracted the following NER entity mentions:
+two	NUMBER	NUMBER:-1.0
+
+Sentence #2 (12 tokens):
+There’s Ukrainian President Zelensky & then there’s Ted Cruz.
+
+Tokens:
+[Text=There CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=Ukrainian CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=ukrainian NamedEntityTag=NATIONALITY]
+[Text=President CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=Zelensky CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Zelensky NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=Ted CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Ted NamedEntityTag=PERSON]
+[Text=Cruz CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Cruz NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBZ ’s)
+        (NP (JJ Ukrainian)
+          (NML (NNP President) (NNP Zelensky)))))
+    (CC &)
+    (S
+      (ADVP (RB then))
+      (NP (EX there))
+      (VP (VBZ ’s)
+        (NP (NNP Ted) (NNP Cruz))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-2)
+expl(’s-2, There-1)
+amod(Zelensky-5, Ukrainian-3)
+compound(Zelensky-5, President-4)
+nsubj(’s-2, Zelensky-5)
+cc(’s-9, &-6)
+advmod(’s-9, then-7)
+expl(’s-9, there-8)
+conj:&(’s-2, ’s-9)
+compound(Cruz-11, Ted-10)
+nsubj(’s-9, Cruz-11)
+punct(’s-2, .-12)
+
+Extracted the following NER entity mentions:
+Ukrainian	NATIONALITY	MISC:0.9995700866033215
+President	TITLE	-
+Zelensky	PERSON	PERSON:0.9937127734068267
+Ted Cruz	PERSON	PERSON:0.9811720925839983
+
+Sentence #3 (14 tokens):
+| One man is taking the heat and standing up for his people.
+
+Tokens:
+[Text=| CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=NFP Lemma=| NamedEntityTag=O]
+[Text=One CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=man CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=heat CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=heat NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=standing CharacterOffsetBegin=123 CharacterOffsetEnd=131 PartOfSpeech=VBG Lemma=stand NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (NFP |)
+    (NP (CD One))
+    (S
+      (NP (NN man))
+      (VP (VBZ is)
+        (VP
+          (VP (VBG taking)
+            (NP (DT the) (NN heat)))
+          (CC and)
+          (VP (VBG standing)
+            (PRT (RP up))
+            (PP (IN for)
+              (NP (PRP$ his) (NNS people)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, One-2)
+punct(One-2, |-1)
+nsubj(taking-5, man-3)
+nsubj(standing-9, man-3)
+aux(taking-5, is-4)
+dep(One-2, taking-5)
+det(heat-7, the-6)
+obj(taking-5, heat-7)
+cc(standing-9, and-8)
+dep(One-2, standing-9)
+conj:and(taking-5, standing-9)
+compound:prt(standing-9, up-10)
+case(people-13, for-11)
+nmod:poss(people-13, his-12)
+obl:for(standing-9, people-13)
+punct(One-2, .-14)
+
+Extracted the following NER entity mentions:
+One	NUMBER	NUMBER:-1.0
+his	PERSON	-
+
+Sentence #4 (10 tokens):
+The other fled the cold and abandoned freezing Texans.
+
+Tokens:
+[Text=The CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=fled CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=VBD Lemma=flee NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cold CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=JJ Lemma=cold NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=abandoned CharacterOffsetBegin=179 CharacterOffsetEnd=188 PartOfSpeech=VBN Lemma=abandon NamedEntityTag=O]
+[Text=freezing CharacterOffsetBegin=189 CharacterOffsetEnd=197 PartOfSpeech=VBG Lemma=freeze NamedEntityTag=O]
+[Text=Texans CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=NNPS Lemma=Texans NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ other))
+    (VP
+      (VP (VBD fled)
+        (NP (DT the) (JJ cold)))
+      (CC and)
+      (VP (VBN abandoned)
+        (S
+          (VP (VBG freezing)
+            (NP (NNPS Texans))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fled-3)
+det(other-2, The-1)
+nsubj(fled-3, other-2)
+nsubj(abandoned-7, other-2)
+det(cold-5, the-4)
+obj(fled-3, cold-5)
+cc(abandoned-7, and-6)
+conj:and(fled-3, abandoned-7)
+xcomp(abandoned-7, freezing-8)
+obj(freezing-8, Texans-9)
+punct(fled-3, .-10)
+
+Extracted the following NER entity mentions:
+Texans	MISC	MISC:0.9920374372517137

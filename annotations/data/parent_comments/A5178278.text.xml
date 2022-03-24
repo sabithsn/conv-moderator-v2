@@ -1,0 +1,129 @@
+Document: ID=A5178278.text (4 sentences, 24 tokens)
+
+Sentence #1 (8 tokens):
+Ah okay that’s what I thought.
+
+Tokens:
+[Text=Ah CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=ah NamedEntityTag=O]
+[Text=okay CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=UH Lemma=okay NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Ah))
+    (INTJ (UH okay))
+    (NP (DT that))
+    (VP (VBZ ’s)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP I))
+          (VP (VBD thought)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-4)
+discourse(’s-4, Ah-1)
+discourse(’s-4, okay-2)
+nsubj(’s-4, that-3)
+obj(thought-7, what-5)
+nsubj(thought-7, I-6)
+ccomp(’s-4, thought-7)
+punct(’s-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+Welp.
+
+Tokens:
+[Text=Welp CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Welp NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Welp) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Welp-1)
+punct(Welp-1, .-2)
+
+Extracted the following NER entity mentions:
+Welp	PERSON	PERSON:0.9084968366894167
+
+Sentence #3 (11 tokens):
+Not gonna legitimize your beliefs here with a discussion.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=gon CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=gon NamedEntityTag=O]
+[Text=na CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=na NamedEntityTag=O]
+[Text=legitimize CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=VB Lemma=legitimize NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=beliefs CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=belief NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=discussion CharacterOffsetBegin=83 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=discussion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (FRAG (RB Not)
+      (VP (VBG gon)
+        (S
+          (VP (TO na)
+            (VP (VB legitimize)
+              (NP (PRP$ your) (NNS beliefs))
+              (ADVP (RB here))
+              (PP (IN with)
+                (NP (DT a) (NN discussion))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gon-2)
+advmod(gon-2, Not-1)
+mark(legitimize-4, na-3)
+xcomp(gon-2, legitimize-4)
+nmod:poss(beliefs-6, your-5)
+obj(legitimize-4, beliefs-6)
+advmod(legitimize-4, here-7)
+case(discussion-10, with-8)
+det(discussion-10, a-9)
+obl:with(legitimize-4, discussion-10)
+punct(gon-2, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (3 tokens):
+Get well.
+
+Tokens:
+[Text=Get CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Get)
+      (ADVP (RB well)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Get-1)
+advmod(Get-1, well-2)
+punct(Get-1, .-3)
+
+Extracted the following NER entity mentions:

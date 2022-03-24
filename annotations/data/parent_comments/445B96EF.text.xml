@@ -1,0 +1,88 @@
+Document: ID=445B96EF.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+If the unvaxxed were sent to concentration camps most people would cheer and still tell you to not compare the situation with nazi germany
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=unvaxxed CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=unvaxxed NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBN Lemma=send NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=concentration CharacterOffsetBegin=29 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=concentration NamedEntityTag=O]
+[Text=camps CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=camp NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=cheer CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=cheer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=compare CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=VB Lemma=compare NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=situation CharacterOffsetBegin=111 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=situation NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=nazi CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=JJ Lemma=nazi NamedEntityTag=IDEOLOGY]
+[Text=germany CharacterOffsetBegin=131 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=germany NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (JJ unvaxxed))
+        (VP (VBD were)
+          (VP (VBN sent)
+            (PP (IN to)
+              (NP (NN concentration) (NNS camps)))))))
+    (NP (JJS most) (NNS people))
+    (VP (MD would)
+      (VP
+        (VP (VB cheer))
+        (CC and)
+        (ADVP (RB still))
+        (VP (VB tell)
+          (S
+            (NP (PRP you))
+            (VP (TO to) (RB not)
+              (VP (VB compare)
+                (NP (DT the) (NN situation))
+                (PP (IN with)
+                  (NP (JJ nazi) (NN germany)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cheer-12)
+mark(sent-5, If-1)
+det(unvaxxed-3, the-2)
+nsubj:pass(sent-5, unvaxxed-3)
+aux:pass(sent-5, were-4)
+advcl:if(cheer-12, sent-5)
+case(camps-8, to-6)
+compound(camps-8, concentration-7)
+obl:to(sent-5, camps-8)
+amod(people-10, most-9)
+nsubj(cheer-12, people-10)
+nsubj(tell-15, people-10)
+aux(cheer-12, would-11)
+cc(tell-15, and-13)
+advmod(tell-15, still-14)
+conj:and(cheer-12, tell-15)
+obj(tell-15, you-16)
+nsubj:xsubj(compare-19, you-16)
+mark(compare-19, to-17)
+advmod(compare-19, not-18)
+xcomp(tell-15, compare-19)
+det(situation-21, the-20)
+obj(compare-19, situation-21)
+case(germany-24, with-22)
+amod(germany-24, nazi-23)
+obl:with(compare-19, germany-24)
+
+Extracted the following NER entity mentions:
+nazi	IDEOLOGY	MISC:0.8989281429589016
+germany	COUNTRY	-

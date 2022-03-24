@@ -1,0 +1,232 @@
+Document: ID=C0AE08A3.text (4 sentences, 56 tokens)
+
+Sentence #1 (16 tokens):
+I am in the USA and am unable to reach RT (Russia Today).
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=USA CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=USA NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=unable CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=unable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=reach CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=reach NamedEntityTag=O]
+[Text=RT CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=rt NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=Today CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Today</TIMEX3>]
+[Text=) CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP am)
+        (PP (IN in)
+          (NP (DT the) (NNP USA))))
+      (CC and)
+      (VP (VBP am)
+        (ADJP (JJ unable))
+        (S
+          (VP (TO to)
+            (VP (VB reach)
+              (NP (NN RT)))))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Russia) (NNP Today))
+          (-RRB- -RRB-))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, USA-5)
+nsubj(USA-5, I-1)
+nsubj(unable-8, I-1)
+nsubj:xsubj(reach-10, I-1)
+cop(USA-5, am-2)
+case(USA-5, in-3)
+det(USA-5, the-4)
+cc(unable-8, and-6)
+cop(unable-8, am-7)
+conj:and(USA-5, unable-8)
+mark(reach-10, to-9)
+xcomp(unable-8, reach-10)
+obj(reach-10, RT-11)
+punct(Today-14, (-12)
+compound(Today-14, Russia-13)
+dep(unable-8, Today-14)
+punct(Today-14, )-15)
+punct(USA-5, .-16)
+
+Extracted the following NER entity mentions:
+USA	COUNTRY	LOCATION:0.9426747960984643
+Russia	COUNTRY	LOCATION:0.9152986176163082
+Today	DATE	DATE:-1.0
+
+Sentence #2 (12 tokens):
+I also cannot reach any websites of the Russian Government.
+
+Tokens:
+[Text=I CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=reach CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=reach NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=websites CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=website NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=Government CharacterOffsetBegin=106 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP (MD can) (RB not)
+      (VP (VB reach)
+        (NP
+          (NP (DT any) (NNS websites))
+          (PP (IN of)
+            (NP (DT the) (JJ Russian) (NN Government))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reach-5)
+nsubj(reach-5, I-1)
+advmod(reach-5, also-2)
+aux(reach-5, can-3)
+advmod(reach-5, not-4)
+det(websites-7, any-6)
+obj(reach-5, websites-7)
+case(Government-11, of-8)
+det(Government-11, the-9)
+amod(Government-11, Russian-10)
+nmod:of(websites-7, Government-11)
+punct(reach-5, .-12)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9997567842435516
+
+Sentence #3 (8 tokens):
+The Internet has been weaponized against Russia.
+
+Tokens:
+[Text=The CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Internet CharacterOffsetBegin=122 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=internet NamedEntityTag=MISC]
+[Text=has CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=weaponized CharacterOffsetBegin=140 CharacterOffsetEnd=150 PartOfSpeech=VBN Lemma=weaponize NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=151 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=159 CharacterOffsetEnd=165 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN Internet))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN weaponized)
+          (PP (IN against)
+            (NP (NNP Russia))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, weaponized-5)
+det(Internet-2, The-1)
+nsubj:pass(weaponized-5, Internet-2)
+aux(weaponized-5, has-3)
+aux:pass(weaponized-5, been-4)
+case(Russia-7, against-6)
+obl:against(weaponized-5, Russia-7)
+punct(weaponized-5, .-8)
+
+Extracted the following NER entity mentions:
+Internet	MISC	MISC:0.9983272811644994
+Russia	COUNTRY	LOCATION:0.8999119717914306
+
+Sentence #4 (20 tokens):
+I suspect the people who control the Government of the USA and the USA Deep State are behind this.
+
+Tokens:
+[Text=I CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=suspect CharacterOffsetBegin=169 CharacterOffsetEnd=176 PartOfSpeech=VBP Lemma=suspect NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=control CharacterOffsetBegin=192 CharacterOffsetEnd=199 PartOfSpeech=VBP Lemma=control NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Government CharacterOffsetBegin=204 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=government NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=the CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=the NamedEntityTag=ORGANIZATION]
+[Text=USA CharacterOffsetBegin=222 CharacterOffsetEnd=225 PartOfSpeech=NNP Lemma=USA NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=USA CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=NNP Lemma=USA NamedEntityTag=ORGANIZATION]
+[Text=Deep CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=NNP Lemma=Deep NamedEntityTag=ORGANIZATION]
+[Text=State CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=NNP Lemma=State NamedEntityTag=ORGANIZATION]
+[Text=are CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=253 CharacterOffsetEnd=259 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP suspect)
+        (NP
+          (NP (DT the) (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP control)
+                (NP
+                  (NP (DT the) (NN Government))
+                  (PP (IN of)
+                    (NP (DT the) (NNP USA))))))))))
+    (CC and)
+    (S
+      (NP (DT the) (NNP USA) (NNP Deep) (NNP State))
+      (VP (VBP are)
+        (PP (IN behind)
+          (NP (DT this)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, suspect-2)
+nsubj(suspect-2, I-1)
+det(people-4, the-3)
+obj(suspect-2, people-4)
+nsubj(control-6, people-4)
+ref(people-4, who-5)
+acl:relcl(people-4, control-6)
+det(Government-8, the-7)
+obj(control-6, Government-8)
+case(USA-11, of-9)
+det(USA-11, the-10)
+nmod:of(Government-8, USA-11)
+cc(this-19, and-12)
+det(State-16, the-13)
+compound(State-16, USA-14)
+compound(State-16, Deep-15)
+nsubj(this-19, State-16)
+cop(this-19, are-17)
+case(this-19, behind-18)
+conj:and(suspect-2, this-19)
+punct(suspect-2, .-20)
+
+Extracted the following NER entity mentions:
+Government of the USA	ORGANIZATION	ORGANIZATION:0.6791124450813745
+USA Deep State	ORGANIZATION	ORGANIZATION:0.9300351279517318

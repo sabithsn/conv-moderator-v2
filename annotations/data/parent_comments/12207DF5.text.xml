@@ -1,0 +1,146 @@
+Document: ID=12207DF5.text (3 sentences, 33 tokens)
+
+Sentence #1 (13 tokens):
+Teens can be stupid and get massive internet clout for it nowadays.
+
+Tokens:
+[Text=Teens CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNS Lemma=teens NamedEntityTag=MISC]
+[Text=can CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=stupid CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=stupid NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=massive CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=massive NamedEntityTag=O]
+[Text=internet CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=internet NamedEntityTag=O]
+[Text=clout CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=clout NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=nowadays CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=nowadays NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Teens))
+    (VP (MD can)
+      (VP
+        (VP (VB be)
+          (ADJP (JJ stupid)))
+        (CC and)
+        (VP (VB get)
+          (NP
+            (NP (JJ massive) (NN internet) (NN clout))
+            (PP (IN for)
+              (NP (PRP it))))
+          (ADVP (RB nowadays)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stupid-4)
+nsubj(stupid-4, Teens-1)
+nsubj(get-6, Teens-1)
+aux(stupid-4, can-2)
+cop(stupid-4, be-3)
+cc(get-6, and-5)
+conj:and(stupid-4, get-6)
+amod(clout-9, massive-7)
+compound(clout-9, internet-8)
+obj(get-6, clout-9)
+case(it-11, for-10)
+nmod:for(clout-9, it-11)
+advmod(get-6, nowadays-12)
+punct(stupid-4, .-13)
+
+Extracted the following NER entity mentions:
+Teens	MISC	MISC:0.7485415485671998
+
+Sentence #2 (12 tokens):
+Aside from that teens are the same they've always been.
+
+Tokens:
+[Text=Aside CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=aside NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=teens CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=teens NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Aside)
+      (PP (IN from)
+        (NP (DT that))))
+    (NP (NNS teens))
+    (VP (VBP are)
+      (ADJP
+        (NP (DT the) (JJ same)))
+      (PRN
+        (S
+          (NP (PRP they))
+          (VP (VBP 've)
+            (ADVP (RB always))
+            (VP (VBN been))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, same-7)
+case(that-3, Aside-1)
+fixed(Aside-1, from-2)
+obl:aside_from(same-7, that-3)
+nsubj(same-7, teens-4)
+cop(same-7, are-5)
+det(same-7, the-6)
+nsubj(been-11, they-8)
+aux(been-11, 've-9)
+advmod(been-11, always-10)
+parataxis(same-7, been-11)
+punct(same-7, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+You have good ones and bad ones.
+
+Tokens:
+[Text=You CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=ones CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=ones CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (NP
+        (NP (JJ good) (NNS ones))
+        (CC and)
+        (NP (JJ bad) (NNS ones))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, You-1)
+amod(ones-4, good-3)
+obj(have-2, ones-4)
+cc(ones-7, and-5)
+amod(ones-7, bad-6)
+obj(have-2, ones-7)
+conj:and(ones-4, ones-7)
+punct(have-2, .-8)
+
+Extracted the following NER entity mentions:

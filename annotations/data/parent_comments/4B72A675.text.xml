@@ -1,0 +1,65 @@
+Document: ID=4B72A675.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+ELI5: Are pickup trucks and SUVs inherently safer than sedans and smaller cars?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=pickup CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=pickup NamedEntityTag=O]
+[Text=trucks CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=truck NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=SUVs CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=suv NamedEntityTag=O]
+[Text=inherently CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=inherently NamedEntityTag=O]
+[Text=safer CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=JJR Lemma=safer NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=sedans CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=sedan NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=smaller CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=JJR Lemma=smaller NamedEntityTag=O]
+[Text=cars CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=car NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SQ (VBP Are)
+      (NP (NN pickup))
+      (ADJP
+        (ADJP
+          (NP
+            (NP (NNS trucks)
+              (CC and)
+              (NNS SUVs))
+            (ADVP (RB inherently)))
+          (JJR safer))
+        (PP (IN than)
+          (NP
+            (NP (NNS sedans))
+            (CC and)
+            (NP (JJR smaller) (NNS cars))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+cop(safer-9, Are-3)
+nsubj(safer-9, pickup-4)
+obl:npmod(safer-9, trucks-5)
+cc(SUVs-7, and-6)
+conj:and(trucks-5, SUVs-7)
+obl:npmod(safer-9, SUVs-7)
+advmod(trucks-5, inherently-8)
+parataxis(ELI5-1, safer-9)
+case(sedans-11, than-10)
+obl:than(safer-9, sedans-11)
+cc(cars-14, and-12)
+amod(cars-14, smaller-13)
+obl:than(safer-9, cars-14)
+conj:and(sedans-11, cars-14)
+punct(ELI5-1, ?-15)
+
+Extracted the following NER entity mentions:

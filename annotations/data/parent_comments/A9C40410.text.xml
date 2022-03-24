@@ -1,0 +1,59 @@
+Document: ID=A9C40410.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+CMV: Color Blindness in accordance to race won't solve all racism.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Color CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Color NamedEntityTag=O]
+[Text=Blindness CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=blindness NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=accordance CharacterOffsetBegin=24 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=accordance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=race CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=race NamedEntityTag=O]
+[Text=wo CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=solve CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=solve NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=racism CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=racism NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NML
+          (NML (NN CMV))
+          (: :)
+          (NML (NNP Color)))
+        (NN Blindness))
+      (PP (IN in)
+        (NP
+          (NP (NN accordance))
+          (PP (IN to)
+            (NP (NN race))))))
+    (VP (MD wo) (RB n't)
+      (VP (VB solve)
+        (NP (DT all) (NN racism))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, solve-11)
+dep(Color-3, CMV-1)
+punct(Color-3, :-2)
+compound(Blindness-4, Color-3)
+nsubj(solve-11, Blindness-4)
+case(accordance-6, in-5)
+nmod:in(Blindness-4, accordance-6)
+case(race-8, to-7)
+nmod:to(accordance-6, race-8)
+aux(solve-11, wo-9)
+advmod(solve-11, n't-10)
+det(racism-13, all-12)
+obj(solve-11, racism-13)
+punct(solve-11, .-14)
+
+Extracted the following NER entity mentions:

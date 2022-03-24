@@ -1,0 +1,181 @@
+Document: ID=4F99CC24.text (4 sentences, 40 tokens)
+
+Sentence #1 (2 tokens):
+Yes.
+
+Tokens:
+[Text=Yes CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Yes) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Yes-1)
+punct(Yes-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (25 tokens):
+The original said that he went to the hospital because he couldn't breathe, and he refused the vax and he refused treatment.
+
+Tokens:
+[Text=The CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=original NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hospital CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=hospital NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=breathe CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=breathe NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=refused CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=VBD Lemma=refuse NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vax CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=vax NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=refused CharacterOffsetBegin=111 CharacterOffsetEnd=118 PartOfSpeech=VBD Lemma=refuse NamedEntityTag=O]
+[Text=treatment CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=treatment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN original))
+      (VP (VBD said)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBD went)
+              (PP (IN to)
+                (NP (DT the) (NN hospital)))
+              (SBAR (IN because)
+                (S
+                  (NP (PRP he))
+                  (VP (MD could) (RB n't)
+                    (VP (VB breathe))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (S
+        (NP (PRP he))
+        (VP (VBD refused)
+          (NP (DT the) (NN vax))))
+      (CC and)
+      (S
+        (NP (PRP he))
+        (VP (VBD refused)
+          (NP (NN treatment)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-3)
+det(original-2, The-1)
+nsubj(said-3, original-2)
+mark(went-6, that-4)
+nsubj(went-6, he-5)
+ccomp(said-3, went-6)
+case(hospital-9, to-7)
+det(hospital-9, the-8)
+obl:to(went-6, hospital-9)
+mark(breathe-14, because-10)
+nsubj(breathe-14, he-11)
+aux(breathe-14, could-12)
+advmod(breathe-14, n't-13)
+advcl:because(went-6, breathe-14)
+punct(said-3, ,-15)
+cc(refused-18, and-16)
+nsubj(refused-18, he-17)
+conj:and(said-3, refused-18)
+det(vax-20, the-19)
+obj(refused-18, vax-20)
+cc(refused-23, and-21)
+nsubj(refused-23, he-22)
+conj:and(said-3, refused-23)
+conj:and(refused-18, refused-23)
+obj(refused-23, treatment-24)
+punct(said-3, .-25)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+he	PERSON	-
+he	PERSON	-
+he	PERSON	-
+
+Sentence #3 (7 tokens):
+And then he died at home.
+
+Tokens:
+[Text=And CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (ADVP (RB then))
+    (NP (PRP he))
+    (VP (VBD died)
+      (PP (IN at)
+        (NP (NN home))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, died-4)
+cc(died-4, And-1)
+advmod(died-4, then-2)
+nsubj(died-4, he-3)
+case(home-6, at-5)
+obl:at(died-4, home-6)
+punct(died-4, .-7)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #4 (6 tokens):
+What exactly am I misinterpreting?
+
+Tokens:
+[Text=What CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=161 CharacterOffsetEnd=168 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=misinterpreting CharacterOffsetBegin=174 CharacterOffsetEnd=189 PartOfSpeech=VBG Lemma=misinterpret NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What) (RB exactly))
+    (SQ (VBP am)
+      (NP (PRP I))
+      (VP (VBG misinterpreting)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, misinterpreting-5)
+obj(misinterpreting-5, What-1)
+advmod(What-1, exactly-2)
+aux(misinterpreting-5, am-3)
+nsubj(misinterpreting-5, I-4)
+punct(misinterpreting-5, ?-6)
+
+Extracted the following NER entity mentions:

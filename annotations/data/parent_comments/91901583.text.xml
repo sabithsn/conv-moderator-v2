@@ -1,0 +1,50 @@
+Document: ID=91901583.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Ivanka Trump to be asked to cooperate with Capitol attack committee
+
+Tokens:
+[Text=Ivanka CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Ivanka NamedEntityTag=PERSON]
+[Text=Trump CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=VBN Lemma=ask NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cooperate CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=cooperate NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Capitol CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Capitol NamedEntityTag=ORGANIZATION]
+[Text=attack CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=attack NamedEntityTag=CAUSE_OF_DEATH]
+[Text=committee CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=committee NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ivanka) (NNP Trump))
+    (VP (TO to)
+      (VP (VB be)
+        (VP (VBN asked)
+          (S
+            (VP (TO to)
+              (VP (VB cooperate)
+                (PP (IN with)
+                  (NP (NNP Capitol) (NN attack) (NN committee)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-5)
+compound(Trump-2, Ivanka-1)
+nsubj:pass(asked-5, Trump-2)
+nsubj:xsubj(cooperate-7, Trump-2)
+mark(asked-5, to-3)
+aux:pass(asked-5, be-4)
+mark(cooperate-7, to-6)
+xcomp(asked-5, cooperate-7)
+case(committee-11, with-8)
+compound(committee-11, Capitol-9)
+compound(committee-11, attack-10)
+obl:with(cooperate-7, committee-11)
+
+Extracted the following NER entity mentions:
+Ivanka Trump	PERSON	PERSON:0.9982086718024609
+Capitol	ORGANIZATION	ORGANIZATION:0.3986376281649848
+attack	CAUSE_OF_DEATH	-

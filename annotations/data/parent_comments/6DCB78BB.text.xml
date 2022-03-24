@@ -1,0 +1,46 @@
+Document: ID=6DCB78BB.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Texas right to criminalize puberty-suppressing hormones for children
+
+Tokens:
+[Text=Texas CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=right CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=criminalize CharacterOffsetBegin=15 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=criminalize NamedEntityTag=O]
+[Text=puberty CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=puberty NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=suppressing CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=suppress NamedEntityTag=O]
+[Text=hormones CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=hormone NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Texas))
+    (ADVP (RB right)
+      (PP (IN to)))
+    (VP (VB criminalize)
+      (NP
+        (NP
+          (ADJP (NN puberty) (HYPH -) (VBG suppressing))
+          (NNS hormones))
+        (PP (IN for)
+          (NP (NNS children)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, criminalize-4)
+nsubj(criminalize-4, Texas-1)
+advmod(criminalize-4, right-2)
+dep(right-2, to-3)
+obl(suppressing-7, puberty-5)
+punct(suppressing-7, --6)
+amod(hormones-8, suppressing-7)
+obj(criminalize-4, hormones-8)
+case(children-10, for-9)
+nmod:for(hormones-8, children-10)
+
+Extracted the following NER entity mentions:
+Texas	STATE_OR_PROVINCE	LOCATION:0.986796060877633

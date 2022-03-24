@@ -1,0 +1,139 @@
+Document: ID=0D381C89.text (3 sentences, 32 tokens)
+
+Sentence #1 (13 tokens):
+The feminist admins handed down a three day sitewide suspension over this.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=feminist CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=feminist NamedEntityTag=IDEOLOGY]
+[Text=admins CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=admin NamedEntityTag=O]
+[Text=handed CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VBN Lemma=hand NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=three NamedEntityTag=DURATION NormalizedNamedEntityTag=P3D Timex=<TIMEX3 tid="t1" type="DURATION" value="P3D">three day</TIMEX3>]
+[Text=day CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P3D Timex=<TIMEX3 tid="t1" type="DURATION" value="P3D">three day</TIMEX3>]
+[Text=sitewide CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=sitewide NamedEntityTag=O]
+[Text=suspension CharacterOffsetBegin=53 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=suspension NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT The) (JJ feminist) (NNS admins))
+    (VP (VBN handed)
+      (PRT (RP down))
+      (NP
+        (NP (DT a)
+          (NML (CD three) (NN day))
+          (NN sitewide) (NN suspension))
+        (PP (IN over)
+          (NP (DT this)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, admins-3)
+det(admins-3, The-1)
+amod(admins-3, feminist-2)
+acl(admins-3, handed-4)
+compound:prt(handed-4, down-5)
+det(suspension-10, a-6)
+nummod(day-8, three-7)
+compound(suspension-10, day-8)
+compound(suspension-10, sitewide-9)
+obj(handed-4, suspension-10)
+case(this-12, over-11)
+nmod:over(suspension-10, this-12)
+punct(admins-3, .-13)
+
+Extracted the following NER entity mentions:
+feminist	IDEOLOGY	-
+three day	DURATION	DURATION:-1.0
+
+Sentence #2 (10 tokens):
+Gotta defend the narrative through any means necessary.
+
+Tokens:
+[Text=Got CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=ta CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=ta NamedEntityTag=O]
+[Text=defend CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=defend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=narrative CharacterOffsetBegin=92 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=narrative NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=means CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=means NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=120 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (VP (VBN Got)
+        (S
+          (VP (TO ta)
+            (VP (VB defend)
+              (NP (DT the) (NN narrative))
+              (PP (IN through)
+                (NP (DT any) (NNS means))))))))
+    (FRAG
+      (ADJP (JJ necessary)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, necessary-9)
+dep(necessary-9, Got-1)
+mark(defend-3, ta-2)
+xcomp(Got-1, defend-3)
+det(narrative-5, the-4)
+obj(defend-3, narrative-5)
+case(means-8, through-6)
+det(means-8, any-7)
+obl:through(defend-3, means-8)
+punct(necessary-9, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+Let's blow it up in their faces.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=PRP Lemma='s NamedEntityTag=O]
+[Text=blow CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=VB Lemma=blow NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=151 CharacterOffsetEnd=156 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=faces CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=NNS Lemma=face NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP 's))
+        (VP (VB blow)
+          (NP (PRP it))
+          (PRT (RP up))
+          (PP (IN in)
+            (NP (PRP$ their) (NNS faces))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Let-1)
+nsubj(blow-3, 's-2)
+ccomp(Let-1, blow-3)
+obj(blow-3, it-4)
+compound:prt(blow-3, up-5)
+case(faces-8, in-6)
+nmod:poss(faces-8, their-7)
+obl:in(blow-3, faces-8)
+punct(Let-1, .-9)
+
+Extracted the following NER entity mentions:

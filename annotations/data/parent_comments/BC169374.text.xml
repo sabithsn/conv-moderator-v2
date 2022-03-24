@@ -1,0 +1,221 @@
+Document: ID=BC169374.text (5 sentences, 51 tokens)
+
+Sentence #1 (9 tokens):
+Oh lordie I’m right there with you.
+
+Tokens:
+[Text=Oh CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=oh NamedEntityTag=O]
+[Text=lordie CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=lordie NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (NP (NN lordie))
+    (NP (PRP I))
+    (VP (VBP ’m)
+      (ADVP (RB right) (RB there))
+      (PP (IN with)
+        (NP (PRP you))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, you-8)
+discourse(you-8, Oh-1)
+nsubj(you-8, lordie-2)
+nsubj(you-8, I-3)
+cop(you-8, ’m-4)
+advmod(there-6, right-5)
+advmod(you-8, there-6)
+case(you-8, with-7)
+punct(you-8, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Can’t stand super hero movies.
+
+Tokens:
+[Text=Ca CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=stand NamedEntityTag=O]
+[Text=super CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=super NamedEntityTag=O]
+[Text=hero CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=hero NamedEntityTag=O]
+[Text=movies CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=movie NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Ca) (RB n’t)
+      (VP (VB stand)
+        (NP (JJ super) (NN hero) (NNS movies))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stand-3)
+aux(stand-3, Ca-1)
+advmod(stand-3, n’t-2)
+amod(movies-6, super-4)
+compound(movies-6, hero-5)
+obj(stand-3, movies-6)
+punct(stand-3, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (12 tokens):
+And I’ve seen them all because my kids love them.
+
+Tokens:
+[Text=And CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP ’ve)
+      (VP (VBN seen)
+        (NP (PRP them))
+        (NP (DT all))
+        (SBAR (IN because)
+          (S
+            (NP (PRP$ my) (NNS kids))
+            (VP (VBP love)
+              (NP (PRP them)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-3)
+cc(’ve-3, And-1)
+nsubj(’ve-3, I-2)
+dep(’ve-3, seen-4)
+iobj(seen-4, them-5)
+obj(seen-4, all-6)
+mark(love-10, because-7)
+nmod:poss(kids-9, my-8)
+nsubj(love-10, kids-9)
+advcl:because(seen-4, love-10)
+obj(love-10, them-11)
+punct(’ve-3, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (17 tokens):
+Honestly I sit in the theatre and listen to a podcast   With the exception of deadpool.
+
+Tokens:
+[Text=Honestly CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=RB Lemma=honestly NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sit CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=VBP Lemma=sit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=theatre CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=theatre NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=151 CharacterOffsetEnd=157 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=podcast CharacterOffsetBegin=163 CharacterOffsetEnd=170 PartOfSpeech=NN Lemma=podcast NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=exception CharacterOffsetBegin=182 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=exception NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=deadpool CharacterOffsetBegin=195 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=deadpool NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Honestly))
+    (NP (PRP I))
+    (VP
+      (VP (VBP sit)
+        (PP (IN in)
+          (NP (DT the) (NN theatre))))
+      (CC and)
+      (VP (VB listen)
+        (PP (IN to)
+          (NP
+            (NP (DT a) (NN podcast))
+            (PP (IN With)
+              (NP
+                (NP (DT the) (NN exception))
+                (PP (IN of)
+                  (NP (NN deadpool)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sit-3)
+advmod(sit-3, Honestly-1)
+nsubj(sit-3, I-2)
+nsubj(listen-8, I-2)
+case(theatre-6, in-4)
+det(theatre-6, the-5)
+obl:in(sit-3, theatre-6)
+cc(listen-8, and-7)
+conj:and(sit-3, listen-8)
+case(podcast-11, to-9)
+det(podcast-11, a-10)
+obl:to(listen-8, podcast-11)
+case(exception-14, With-12)
+det(exception-14, the-13)
+nmod:with(podcast-11, exception-14)
+case(deadpool-16, of-15)
+nmod:of(exception-14, deadpool-16)
+punct(sit-3, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (6 tokens):
+That actually made me laugh.
+
+Tokens:
+[Text=That CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=210 CharacterOffsetEnd=218 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=laugh CharacterOffsetBegin=227 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=laugh NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (ADVP (RB actually))
+    (VP (VBD made)
+      (S
+        (NP (PRP me))
+        (VP (VB laugh))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, made-3)
+nsubj(made-3, That-1)
+advmod(made-3, actually-2)
+nsubj(laugh-5, me-4)
+ccomp(made-3, laugh-5)
+punct(made-3, .-6)
+
+Extracted the following NER entity mentions:

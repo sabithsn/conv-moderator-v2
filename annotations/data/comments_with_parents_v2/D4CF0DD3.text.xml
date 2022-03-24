@@ -1,0 +1,44 @@
+Document: ID=D4CF0DD3.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Republicans are really obsessed with kids genitals eh?
+
+Tokens:
+[Text=Republicans CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=obsessed CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=obsess NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=genitals CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=genitals NamedEntityTag=O]
+[Text=eh CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=UH Lemma=eh NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PRN
+      (S
+        (NP (NNPS Republicans))
+        (VP (VBP are)
+          (ADVP (RB really))
+          (VP (VBN obsessed)
+            (PP (IN with)
+              (NP (NNS kids) (NNS genitals)))))))
+    (INTJ (UH eh))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, obsessed-4)
+nsubj:pass(obsessed-4, Republicans-1)
+aux:pass(obsessed-4, are-2)
+advmod(obsessed-4, really-3)
+case(genitals-7, with-5)
+compound(genitals-7, kids-6)
+obl:with(obsessed-4, genitals-7)
+discourse(obsessed-4, eh-8)
+punct(obsessed-4, ?-9)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.9998973235458241

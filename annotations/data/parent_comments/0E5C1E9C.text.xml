@@ -1,0 +1,73 @@
+Document: ID=0E5C1E9C.text (2 sentences, 15 tokens)
+
+Sentence #1 (6 tokens):
+you- you're serious?
+
+Tokens:
+[Text=you CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=serious CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=serious NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (PRP you))
+    (: -)
+    (S
+      (NP (PRP you))
+      (VP (VBP 're)
+        (ADJP (JJ serious))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, you-1)
+punct(you-1, --2)
+nsubj(serious-5, you-3)
+cop(serious-5, 're-4)
+parataxis(you-1, serious-5)
+punct(you-1, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+u sure you're not auth-right?
+
+Tokens:
+[Text=u CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=u NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=sure NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=auth CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=auth NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP u))
+      (ADVP (RB sure)))
+    (NP (PRP you))
+    (VP (VBP 're) (RB not)
+      (NP (JJ auth) (HYPH -) (NN right)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, right-8)
+dep(right-8, u-1)
+advmod(u-1, sure-2)
+nsubj(right-8, you-3)
+cop(right-8, 're-4)
+advmod(right-8, not-5)
+amod(right-8, auth-6)
+punct(right-8, --7)
+punct(right-8, ?-9)
+
+Extracted the following NER entity mentions:

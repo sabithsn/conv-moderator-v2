@@ -1,0 +1,195 @@
+Document: ID=39392AA5.text (3 sentences, 49 tokens)
+
+Sentence #1 (16 tokens):
+Submission Statement  Remember, Trump has been saying the Dems are stealing elections since 2016.
+
+Tokens:
+[Text=Submission CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Submission NamedEntityTag=O]
+[Text=Statement CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Statement NamedEntityTag=O]
+[Text=Remember CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Dems CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NNPS Lemma=Dems NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=stealing CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=VBG Lemma=steal NamedEntityTag=O]
+[Text=elections CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=election NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=2016 CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=CD Lemma=2016 NamedEntityTag=DATE NormalizedNamedEntityTag=2016 Timex=<TIMEX3 tid="t1" type="DATE" value="2016">2016</TIMEX3>]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Submission) (NNP Statement))
+      (VP (VB Remember)))
+    (, ,)
+    (NP (NNP Trump))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBG saying)
+          (SBAR
+            (S
+              (NP (DT the) (NNPS Dems))
+              (VP (VBP are)
+                (VP (VBG stealing)
+                  (NP (NNS elections))
+                  (PP (IN since)
+                    (NP (CD 2016))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, saying-8)
+compound(Statement-2, Submission-1)
+nsubj(Remember-3, Statement-2)
+ccomp(saying-8, Remember-3)
+punct(saying-8, ,-4)
+nsubj(saying-8, Trump-5)
+aux(saying-8, has-6)
+aux(saying-8, been-7)
+det(Dems-10, the-9)
+nsubj(stealing-12, Dems-10)
+aux(stealing-12, are-11)
+ccomp(saying-8, stealing-12)
+obj(stealing-12, elections-13)
+case(2016-15, since-14)
+obl:since(stealing-12, 2016-15)
+punct(saying-8, .-16)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9539757097351325
+Dems	MISC	MISC:0.9904743530467739
+2016	DATE	DATE:0.9215313395802446
+
+Sentence #2 (11 tokens):
+And yet, his government did nothing for four years.
+
+Tokens:
+[Text=And CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=111 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=CD Lemma=four NamedEntityTag=DURATION NormalizedNamedEntityTag=P4Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P4Y">four years</TIMEX3>]
+[Text=years CharacterOffsetBegin=143 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P4Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P4Y">four years</TIMEX3>]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (ADVP (RB yet))
+    (, ,)
+    (NP (PRP$ his) (NN government))
+    (VP (VBD did)
+      (NP (NN nothing))
+      (PP (IN for)
+        (NP (CD four) (NNS years))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-6)
+cc(did-6, And-1)
+advmod(did-6, yet-2)
+punct(did-6, ,-3)
+nmod:poss(government-5, his-4)
+nsubj(did-6, government-5)
+obj(did-6, nothing-7)
+case(years-10, for-8)
+nummod(years-10, four-9)
+obl:for(did-6, years-10)
+punct(did-6, .-11)
+
+Extracted the following NER entity mentions:
+four years	DURATION	DURATION:-1.0
+his	PERSON	-
+
+Sentence #3 (22 tokens):
+They only threw out crazy, unsubstantiated claims after Trump lost and have since spiraled into delusion and attempts at illegal actions
+
+Tokens:
+[Text=They CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=threw CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=VBD Lemma=throw NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=crazy CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=JJ Lemma=crazy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unsubstantiated CharacterOffsetBegin=177 CharacterOffsetEnd=192 PartOfSpeech=JJ Lemma=unsubstantiated NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=193 CharacterOffsetEnd=199 PartOfSpeech=NNS Lemma=claim NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=lost CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=VBD Lemma=lose NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=221 CharacterOffsetEnd=225 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=226 CharacterOffsetEnd=231 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=spiraled CharacterOffsetBegin=232 CharacterOffsetEnd=240 PartOfSpeech=VBN Lemma=spiral NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=delusion CharacterOffsetBegin=246 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=delusion NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=255 CharacterOffsetEnd=258 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=attempts CharacterOffsetBegin=259 CharacterOffsetEnd=267 PartOfSpeech=NNS Lemma=attempt NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=illegal CharacterOffsetBegin=271 CharacterOffsetEnd=278 PartOfSpeech=JJ Lemma=illegal NamedEntityTag=O]
+[Text=actions CharacterOffsetBegin=279 CharacterOffsetEnd=286 PartOfSpeech=NNS Lemma=action NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB only))
+    (VP (VBD threw)
+      (PRT (RP out))
+      (NP (JJ crazy) (, ,) (JJ unsubstantiated) (NNS claims))
+      (SBAR (IN after)
+        (S
+          (NP (NNP Trump))
+          (VP
+            (VP (VBD lost))
+            (CC and)
+            (VP (VB have)
+              (ADVP (IN since))
+              (VP (VBN spiraled)
+                (PP (IN into)
+                  (NP (NN delusion)
+                    (CC and)
+                    (NNS attempts)))
+                (PP (IN at)
+                  (NP (JJ illegal) (NNS actions)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, threw-3)
+nsubj(threw-3, They-1)
+advmod(threw-3, only-2)
+compound:prt(threw-3, out-4)
+amod(claims-8, crazy-5)
+punct(claims-8, ,-6)
+amod(claims-8, unsubstantiated-7)
+obj(threw-3, claims-8)
+mark(lost-11, after-9)
+nsubj(lost-11, Trump-10)
+nsubj(spiraled-15, Trump-10)
+advcl:after(threw-3, lost-11)
+cc(spiraled-15, and-12)
+aux(spiraled-15, have-13)
+advmod(spiraled-15, since-14)
+advcl:after(threw-3, spiraled-15)
+conj:and(lost-11, spiraled-15)
+case(delusion-17, into-16)
+obl:into(spiraled-15, delusion-17)
+cc(attempts-19, and-18)
+obl:into(spiraled-15, attempts-19)
+conj:and(delusion-17, attempts-19)
+case(actions-22, at-20)
+amod(actions-22, illegal-21)
+obl:at(spiraled-15, actions-22)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.820909201939911

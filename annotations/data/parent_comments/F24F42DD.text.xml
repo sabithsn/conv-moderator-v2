@@ -1,0 +1,27 @@
+Document: ID=F24F42DD.text (1 sentences, 4 tokens)
+
+Sentence #1 (4 tokens):
+I hate Lebron James
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=hate NamedEntityTag=O]
+[Text=Lebron CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Lebron NamedEntityTag=PERSON]
+[Text=James CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=James NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hate)
+      (NP (NNP Lebron) (NNP James)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hate-2)
+nsubj(hate-2, I-1)
+compound(James-4, Lebron-3)
+obj(hate-2, James-4)
+
+Extracted the following NER entity mentions:
+Lebron James	PERSON	PERSON:0.9746098277797048

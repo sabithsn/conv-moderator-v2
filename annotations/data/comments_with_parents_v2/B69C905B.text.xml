@@ -1,0 +1,110 @@
+Document: ID=B69C905B.text (2 sentences, 26 tokens)
+
+Sentence #1 (14 tokens):
+ELI5 do tanks actually have explosives attached to the outside of their armour?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=tanks CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=tank NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=explosives CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=explosive NamedEntityTag=CRIMINAL_CHARGE]
+[Text=attached CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=VBN Lemma=attach NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=outside CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=outside NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=armour CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=armour NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (PRN
+      (S
+        (NP (NN ELI5))
+        (VP (VBP do)
+          (NP (NNS tanks))
+          (ADVP (RB actually)))))
+    (VBP have)
+    (NP (NNS explosives))
+    (VP (VBN attached)
+      (PP (IN to)
+        (NP
+          (NP (DT the) (NN outside))
+          (PP (IN of)
+            (NP (PRP$ their) (NN armour))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attached-7)
+nsubj(do-2, ELI5-1)
+parataxis(attached-7, do-2)
+obj(do-2, tanks-3)
+advmod(do-2, actually-4)
+aux(attached-7, have-5)
+nsubj(attached-7, explosives-6)
+case(armour-13, to-8)
+det(armour-13, the-9)
+case(armour-13, outside-10)
+fixed(outside-10, of-11)
+nmod:poss(armour-13, their-12)
+nmod:outside_of(attached-7, armour-13)
+punct(attached-7, ?-14)
+
+Extracted the following NER entity mentions:
+explosives	CRIMINAL_CHARGE	-
+
+Sentence #2 (12 tokens):
+Wouldnt this help in damaging the tanks rather than saving them?
+
+Tokens:
+[Text=Wouldnt CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Wouldnt NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=damaging CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=VBG Lemma=damage NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tanks CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=tank NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=saving CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=VBG Lemma=save NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Wouldnt))
+    (NP
+      (NP (DT this) (NN help))
+      (PP (IN in)
+        (S
+          (VP
+            (VP (VBG damaging)
+              (NP (DT the) (NNS tanks)))
+            (CONJP (RB rather) (IN than))
+            (VP (VBG saving)
+              (NP (PRP them)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wouldnt-1)
+det(help-3, this-2)
+dep(Wouldnt-1, help-3)
+mark(damaging-5, in-4)
+acl:in(help-3, damaging-5)
+det(tanks-7, the-6)
+obj(damaging-5, tanks-7)
+cc(saving-10, rather-8)
+fixed(rather-8, than-9)
+acl:in(help-3, saving-10)
+conj:negcc(damaging-5, saving-10)
+obj(saving-10, them-11)
+punct(Wouldnt-1, ?-12)
+
+Extracted the following NER entity mentions:

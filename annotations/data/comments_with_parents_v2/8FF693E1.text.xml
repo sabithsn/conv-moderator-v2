@@ -1,0 +1,54 @@
+Document: ID=8FF693E1.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Airbnb BANS columnist Michelle Malkin for attending American Renaissance event in Nashville
+
+Tokens:
+[Text=Airbnb CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Airbnb NamedEntityTag=O]
+[Text=BANS CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=BANS NamedEntityTag=O]
+[Text=columnist CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=columnist NamedEntityTag=TITLE]
+[Text=Michelle CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Michelle NamedEntityTag=PERSON]
+[Text=Malkin CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Malkin NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=attending CharacterOffsetBegin=42 CharacterOffsetEnd=51 PartOfSpeech=VBG Lemma=attend NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=Renaissance CharacterOffsetBegin=61 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Renaissance NamedEntityTag=MISC]
+[Text=event CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=event NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Nashville CharacterOffsetBegin=82 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Nashville NamedEntityTag=CITY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Airbnb) (NNP BANS))
+    (VP
+      (FRAG
+        (NP (NN columnist) (NNP Michelle) (NNP Malkin))
+        (PP (IN for)
+          (S
+            (VP (VBG attending)
+              (NP (JJ American) (NNP Renaissance) (NN event))
+              (PP (IN in)
+                (NP (NNP Nashville))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Malkin-5)
+compound(BANS-2, Airbnb-1)
+nsubj(Malkin-5, BANS-2)
+compound(Malkin-5, columnist-3)
+compound(Malkin-5, Michelle-4)
+mark(attending-7, for-6)
+dep(Malkin-5, attending-7)
+amod(event-10, American-8)
+compound(event-10, Renaissance-9)
+obj(attending-7, event-10)
+case(Nashville-12, in-11)
+obl:in(attending-7, Nashville-12)
+
+Extracted the following NER entity mentions:
+columnist	TITLE	-
+Michelle Malkin	PERSON	PERSON:0.9999599166481142
+American	NATIONALITY	MISC:0.9666562664576641
+Renaissance	MISC	MISC:0.9666562664576641
+Nashville	CITY	LOCATION:0.9974381899185494

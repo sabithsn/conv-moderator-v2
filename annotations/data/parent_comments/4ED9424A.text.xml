@@ -1,0 +1,64 @@
+Document: ID=4ED9424A.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+They did 2 summers ago and our cities burned and still haven’t fully recovered
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=summers CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=summer NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1Y" tid="t1" type="SET" value="XXXX-SU">summers ago</TIMEX3>]
+[Text=ago CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=ago NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1Y" tid="t1" type="SET" value="XXXX-SU">summers ago</TIMEX3>]
+[Text=and CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=cities CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=city NamedEntityTag=O]
+[Text=burned CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=burn NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=fully CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=fully NamedEntityTag=O]
+[Text=recovered CharacterOffsetBegin=69 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=recover NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD did)
+        (NP (CD 2) (NNS summers))
+        (PP (IN ago))))
+    (CC and)
+    (S
+      (NP (PRP$ our) (NNS cities))
+      (VP
+        (VP (VBD burned))
+        (CC and)
+        (ADVP (RB still))
+        (VP (VBP have) (RB n’t)
+          (ADVP (RB fully))
+          (VP (VBN recovered)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-2)
+nsubj(did-2, They-1)
+nummod(summers-4, 2-3)
+obj(did-2, summers-4)
+obl(did-2, ago-5)
+cc(burned-9, and-6)
+nmod:poss(cities-8, our-7)
+nsubj(burned-9, cities-8)
+nsubj(recovered-15, cities-8)
+conj:and(did-2, burned-9)
+cc(recovered-15, and-10)
+advmod(recovered-15, still-11)
+aux(recovered-15, have-12)
+advmod(recovered-15, n’t-13)
+advmod(recovered-15, fully-14)
+conj:and(did-2, recovered-15)
+conj:and(burned-9, recovered-15)
+
+Extracted the following NER entity mentions:
+2	NUMBER	NUMBER:-1.0
+summers ago	SET	SET:-1.0

@@ -1,0 +1,45 @@
+Document: ID=1D7919B3.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Anti mandate people are those refusing to get vaccinated.
+
+Tokens:
+[Text=Anti CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=anti NamedEntityTag=O]
+[Text=mandate CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=mandate NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=refusing CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=VBG Lemma=refuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=vaccinated CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=VBN Lemma=vaccinate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Anti) (NN mandate) (NNS people))
+    (VP (VBP are)
+      (NP
+        (NP (DT those))
+        (VP (VBG refusing)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (VP (VBN vaccinated))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, those-5)
+amod(people-3, Anti-1)
+compound(people-3, mandate-2)
+nsubj(those-5, people-3)
+cop(those-5, are-4)
+acl(those-5, refusing-6)
+mark(vaccinated-9, to-7)
+aux:pass(vaccinated-9, get-8)
+xcomp(refusing-6, vaccinated-9)
+punct(those-5, .-10)
+
+Extracted the following NER entity mentions:

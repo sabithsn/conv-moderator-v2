@@ -1,0 +1,44 @@
+Document: ID=107A358D.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Michelle Obama will run for president as a transgender woman
+
+Tokens:
+[Text=Michelle CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Michelle NamedEntityTag=PERSON]
+[Text=Obama CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text=will CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=run CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=run NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=as CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=transgender CharacterOffsetBegin=43 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=transgender NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Michelle) (NNP Obama))
+    (VP (MD will)
+      (VP (VB run)
+        (PP (IN for)
+          (NP (NN president)))
+        (PP (IN as)
+          (NP (DT a) (JJ transgender) (NN woman)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, run-4)
+compound(Obama-2, Michelle-1)
+nsubj(run-4, Obama-2)
+aux(run-4, will-3)
+case(president-6, for-5)
+obl:for(run-4, president-6)
+case(woman-10, as-7)
+det(woman-10, a-8)
+amod(woman-10, transgender-9)
+obl:as(run-4, woman-10)
+
+Extracted the following NER entity mentions:
+Michelle Obama	PERSON	PERSON:0.9996739613119707
+president	TITLE	-

@@ -1,0 +1,63 @@
+Document: ID=453BD7D6.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Trump on Putin plan to recognize breakaway Ukraine regions: 'This is genius'
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=on CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=plan CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=plan NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=recognize CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=recognize NamedEntityTag=O]
+[Text=breakaway CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=breakaway NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=regions CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=region NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=genius CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Trump))
+      (PP (IN on)
+        (NP (NNP Putin) (NN plan))))
+    (S
+      (VP (TO to)
+        (VP (VB recognize)
+          (NP
+            (NP (NN breakaway) (NNP Ukraine) (NNS regions))
+            (: :)
+            (S (`` ')
+              (NP (DT This))
+              (VP (VBZ is)
+                (NP (NN genius)))
+              ('' '))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Trump-1)
+case(plan-4, on-2)
+compound(plan-4, Putin-3)
+nmod:on(Trump-1, plan-4)
+mark(recognize-6, to-5)
+dep(Trump-1, recognize-6)
+compound(regions-9, breakaway-7)
+compound(regions-9, Ukraine-8)
+obj(recognize-6, regions-9)
+punct(regions-9, :-10)
+punct(genius-14, '-11)
+nsubj(genius-14, This-12)
+cop(genius-14, is-13)
+parataxis(regions-9, genius-14)
+punct(genius-14, '-15)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.5272623364588752
+Putin	PERSON	PERSON:0.9073037735064469
+Ukraine	COUNTRY	LOCATION:0.9987668410910725

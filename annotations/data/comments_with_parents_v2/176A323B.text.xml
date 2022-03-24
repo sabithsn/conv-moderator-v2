@@ -1,0 +1,70 @@
+Document: ID=176A323B.text (2 sentences, 13 tokens)
+
+Sentence #1 (7 tokens):
+FUCK THAT GUY & HIS KID.
+
+Tokens:
+[Text=FUCK CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=THAT CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=GUY CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=GUY NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=HIS CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=KID CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB FUCK)
+      (NP
+        (NP (DT THAT) (NNP GUY))
+        (CC &)
+        (NP (PRP$ HIS) (NN KID))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FUCK-1)
+det(GUY-3, THAT-2)
+obj(FUCK-1, GUY-3)
+cc(KID-6, &-4)
+nmod:poss(KID-6, HIS-5)
+obj(FUCK-1, KID-6)
+conj:&(GUY-3, KID-6)
+punct(FUCK-1, .-7)
+
+Extracted the following NER entity mentions:
+HIS	PERSON	-
+
+Sentence #2 (6 tokens):
+LET HIS LINE DIE OUT.
+
+Tokens:
+[Text=LET CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=HIS CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=LINE CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=DIE CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=die NamedEntityTag=O]
+[Text=OUT CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB LET)
+      (S
+        (NP (PRP$ HIS) (NN LINE))
+        (VP (VB DIE)
+          (PRT (RP OUT)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, LET-1)
+nmod:poss(LINE-3, HIS-2)
+nsubj(DIE-4, LINE-3)
+ccomp(LET-1, DIE-4)
+compound:prt(DIE-4, OUT-5)
+punct(LET-1, .-6)
+
+Extracted the following NER entity mentions:
+HIS	PERSON	-

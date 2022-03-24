@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>6A84880B.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>raped</word>
+            <lemma>rape</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>party</word>
+            <lemma>party</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Sounds</word>
+            <lemma>sound</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="8">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>regret</word>
+            <lemma>regret</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>sex</word>
+            <lemma>sex</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>me</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP i)) (VP (VBD was) (VP (VBN raped) (PP (IN at) (NP (NP (DT a) (NN party)) (SBAR (S (VP (VBZ Sounds) (PP (IN like) (NP (NN regret) (NN sex))) (PP (IN to) (NP (PRP me)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">raped</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="1">i</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">party</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">party</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="3">raped</governor>
+            <dependent idx="6">party</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="6">party</governor>
+            <dependent idx="7">Sounds</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">sex</governor>
+            <dependent idx="8">like</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">sex</governor>
+            <dependent idx="9">regret</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="10">sex</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">me</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">raped</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">raped</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="1">i</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">party</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">party</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">raped</governor>
+            <dependent idx="6">party</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="6">party</governor>
+            <dependent idx="7">Sounds</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">sex</governor>
+            <dependent idx="8">like</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">sex</governor>
+            <dependent idx="9">regret</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="10">sex</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">me</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">raped</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">raped</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="1">i</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">party</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">party</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">raped</governor>
+            <dependent idx="6">party</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="6">party</governor>
+            <dependent idx="7">Sounds</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">sex</governor>
+            <dependent idx="8">like</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">sex</governor>
+            <dependent idx="9">regret</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="10">sex</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">me</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">raped</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">raped</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="1">i</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">party</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">party</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">raped</governor>
+            <dependent idx="6">party</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="6">party</governor>
+            <dependent idx="7">Sounds</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">sex</governor>
+            <dependent idx="8">like</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">sex</governor>
+            <dependent idx="9">regret</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="10">sex</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">me</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">raped</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">raped</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="1">i</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="3">raped</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">party</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">party</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">raped</governor>
+            <dependent idx="6">party</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="6">party</governor>
+            <dependent idx="7">Sounds</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">sex</governor>
+            <dependent idx="8">like</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">sex</governor>
+            <dependent idx="9">regret</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="10">sex</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">me</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="7">Sounds</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">raped</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>n’t</word>
+            <lemma>n’t</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>drunk</word>
+            <lemma>drunk</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>parties</word>
+            <lemma>party</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBP Do) (RB n’t) (VP (VB get) (ADJP (JJ drunk) (PP (IN at) (NP (NNS parties)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">get</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">get</governor>
+            <dependent idx="2">n’t</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">get</governor>
+            <dependent idx="4">drunk</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">parties</governor>
+            <dependent idx="5">at</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="4">drunk</governor>
+            <dependent idx="6">parties</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">get</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">get</governor>
+            <dependent idx="2">n’t</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">get</governor>
+            <dependent idx="4">drunk</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">parties</governor>
+            <dependent idx="5">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="4">drunk</governor>
+            <dependent idx="6">parties</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">get</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">get</governor>
+            <dependent idx="2">n’t</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">get</governor>
+            <dependent idx="4">drunk</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">parties</governor>
+            <dependent idx="5">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="4">drunk</governor>
+            <dependent idx="6">parties</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">get</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">get</governor>
+            <dependent idx="2">n’t</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">get</governor>
+            <dependent idx="4">drunk</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">parties</governor>
+            <dependent idx="5">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="4">drunk</governor>
+            <dependent idx="6">parties</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">get</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">get</governor>
+            <dependent idx="2">n’t</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">get</governor>
+            <dependent idx="4">drunk</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">parties</governor>
+            <dependent idx="5">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="4">drunk</governor>
+            <dependent idx="6">parties</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

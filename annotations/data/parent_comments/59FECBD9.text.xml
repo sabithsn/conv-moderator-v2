@@ -1,0 +1,88 @@
+Document: ID=59FECBD9.text (2 sentences, 19 tokens)
+
+Sentence #1 (15 tokens):
+Russia's Nazi Wagner group is larger and has more political influence than Azov.
+
+Tokens:
+[Text=Russia CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text='s CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Nazi CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Nazi NamedEntityTag=IDEOLOGY]
+[Text=Wagner CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=PERSON]
+[Text=group CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=larger CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=JJR Lemma=larger NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=political CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=influence CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=influence NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=Azov CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Azov NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Russia) (POS 's))
+      (NNP Nazi) (NNP Wagner) (NN group))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJR larger)))
+      (CC and)
+      (VP (VBZ has)
+        (NP
+          (NP (JJR more) (JJ political) (NN influence))
+          (PP (IN than)
+            (NP (NNP Azov))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, larger-7)
+nmod:poss(group-5, Russia-1)
+case(Russia-1, 's-2)
+compound(group-5, Nazi-3)
+compound(group-5, Wagner-4)
+nsubj(larger-7, group-5)
+nsubj(has-9, group-5)
+cop(larger-7, is-6)
+cc(has-9, and-8)
+conj:and(larger-7, has-9)
+amod(influence-12, more-10)
+amod(influence-12, political-11)
+obj(has-9, influence-12)
+case(Azov-14, than-13)
+nmod:than(influence-12, Azov-14)
+punct(larger-7, .-15)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9995123241556433
+Nazi	IDEOLOGY	-
+Wagner	PERSON	PERSON:0.45137102057046713
+Azov	PERSON	PERSON:0.46690630419716245
+
+Sentence #2 (4 tokens):
+Cry more pussy.
+
+Tokens:
+[Text=Cry CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VB Lemma=cry NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=pussy CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=pussy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Cry)
+      (NP (JJR more) (NN pussy)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cry-1)
+amod(pussy-3, more-2)
+obj(Cry-1, pussy-3)
+punct(Cry-1, .-4)
+
+Extracted the following NER entity mentions:

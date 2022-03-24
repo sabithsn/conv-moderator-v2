@@ -1,0 +1,34 @@
+Document: ID=2FD5F9E2.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Dick should Be measured in volume
+
+Tokens:
+[Text=Dick CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Dick NamedEntityTag=PERSON]
+[Text=should CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Be CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=measured CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=VBN Lemma=measure NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=volume CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Dick))
+    (VP (MD should)
+      (VP (VB Be)
+        (VP (VBN measured)
+          (PP (IN in)
+            (NP (NN volume))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, measured-4)
+nsubj:pass(measured-4, Dick-1)
+aux(measured-4, should-2)
+aux:pass(measured-4, Be-3)
+case(volume-6, in-5)
+obl:in(measured-4, volume-6)
+
+Extracted the following NER entity mentions:
+Dick	PERSON	PERSON:0.9577448306403282

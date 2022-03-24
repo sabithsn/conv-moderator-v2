@@ -1,0 +1,80 @@
+Document: ID=C4DE4C94.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+NY Times editorial board calls for nuking the filibuster in op-ed proclaiming 'every day is Jan. 6'
+
+Tokens:
+[Text=NY CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=NY NamedEntityTag=ORGANIZATION]
+[Text=Times CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNPS Lemma=Times NamedEntityTag=ORGANIZATION]
+[Text=editorial CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=editorial NamedEntityTag=O]
+[Text=board CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=board NamedEntityTag=O]
+[Text=calls CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=nuking CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=nuke NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=filibuster CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=filibuster NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=op CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=ed CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=ed NamedEntityTag=O]
+[Text=proclaiming CharacterOffsetBegin=66 CharacterOffsetEnd=77 PartOfSpeech=VBG Lemma=proclaim NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="P1D">every day</TIMEX3>]
+[Text=day CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=day NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="P1D">every day</TIMEX3>]
+[Text=is CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Jan. CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Jan. NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-01-06">Jan. 6</TIMEX3>]
+[Text=' CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP NY) (NNPS Times))
+    (NP (NN editorial) (NN board))
+    (VP (VBZ calls)
+      (PP (IN for)
+        (S
+          (VP (VBG nuking)
+            (NP
+              (NP
+                (NP (DT the) (NN filibuster))
+                (PP (IN in)
+                  (NP
+                    (NML (NN op) (HYPH -) (NN ed)))))
+              (VP (VBG proclaiming) (`` ')
+                (NP
+                  (NP (DT every) (NN day))
+                  (SBAR
+                    (S
+                      (VP (VBZ is)
+                        (NP-TMP (NNP Jan.) (CD 6))))))
+                ('' ')))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, calls-5)
+compound(Times-2, NY-1)
+nsubj(calls-5, Times-2)
+compound(board-4, editorial-3)
+nsubj(calls-5, board-4)
+mark(nuking-7, for-6)
+advcl:for(calls-5, nuking-7)
+det(filibuster-9, the-8)
+obj(nuking-7, filibuster-9)
+case(ed-13, in-10)
+compound(ed-13, op-11)
+punct(ed-13, --12)
+nmod:in(filibuster-9, ed-13)
+acl(filibuster-9, proclaiming-14)
+punct(proclaiming-14, '-15)
+det(day-17, every-16)
+obj(proclaiming-14, day-17)
+acl:relcl(day-17, is-18)
+obl:tmod(is-18, Jan.-19)
+nummod(Jan.-19, 6-20)
+punct(proclaiming-14, '-21)
+
+Extracted the following NER entity mentions:
+NY Times	ORGANIZATION	ORGANIZATION:0.9942991923695366
+every day	SET	SET:-1.0
+Jan. 6	DATE	DATE:0.9382228740584199

@@ -1,0 +1,65 @@
+Document: ID=CDE1F897.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+ABC slammed for suspending Whoopi Goldberg for Holocaust remark but firing Roseanne for offensive tweet
+
+Tokens:
+[Text=ABC CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=ABC NamedEntityTag=ORGANIZATION]
+[Text=slammed CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=slam NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=suspending CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=suspend NamedEntityTag=O]
+[Text=Whoopi CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Whoopi NamedEntityTag=PERSON]
+[Text=Goldberg CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Goldberg NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Holocaust CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Holocaust NamedEntityTag=O]
+[Text=remark CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=remark NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=firing CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=VBG Lemma=fire NamedEntityTag=O]
+[Text=Roseanne CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Roseanne NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=offensive CharacterOffsetBegin=88 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=offensive NamedEntityTag=O]
+[Text=tweet CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=tweet NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP ABC))
+    (VP (VBD slammed)
+      (PP (IN for)
+        (S
+          (VP
+            (VP (VBG suspending)
+              (NP
+                (NP (NNP Whoopi) (NNP Goldberg))
+                (PP (IN for)
+                  (NP (NNP Holocaust) (NN remark)))))
+            (CC but)
+            (VP (VBG firing)
+              (NP
+                (NP (NNP Roseanne))
+                (PP (IN for)
+                  (NP (JJ offensive) (NN tweet)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, slammed-2)
+nsubj(slammed-2, ABC-1)
+mark(suspending-4, for-3)
+advcl:for(slammed-2, suspending-4)
+compound(Goldberg-6, Whoopi-5)
+obj(suspending-4, Goldberg-6)
+case(remark-9, for-7)
+compound(remark-9, Holocaust-8)
+nmod:for(Goldberg-6, remark-9)
+cc(firing-11, but-10)
+advcl:for(slammed-2, firing-11)
+conj:but(suspending-4, firing-11)
+obj(firing-11, Roseanne-12)
+case(tweet-15, for-13)
+amod(tweet-15, offensive-14)
+nmod:for(Roseanne-12, tweet-15)
+
+Extracted the following NER entity mentions:
+ABC	ORGANIZATION	ORGANIZATION:0.9714994296941991
+Whoopi Goldberg	PERSON	PERSON:0.9985871361493603
+Roseanne	PERSON	PERSON:0.6617579492013995

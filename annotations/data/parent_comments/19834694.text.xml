@@ -1,0 +1,74 @@
+Document: ID=19834694.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+OP is getting roasted about being anti-vax and is now trying to par it off as trolling.
+
+Tokens:
+[Text=OP CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=roasted CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=roasted NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=anti-vax CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=anti-vax NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=trying CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=par CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=par NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=trolling CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=trolling NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN OP))
+    (VP
+      (VP (VBZ is)
+        (VP (VBG getting)
+          (S
+            (ADJP (JJ roasted)
+              (PP (IN about)
+                (S
+                  (VP (VBG being)
+                    (ADJP (JJ anti-vax)))))))))
+      (CC and)
+      (VP (VBZ is)
+        (ADVP (RB now))
+        (VP (VBG trying)
+          (PP (TO to)
+            (NP (IN par)
+              (NP (PRP it))))
+          (PP (RP off)
+            (PP (IN as)
+              (NP (NN trolling)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, getting-3)
+nsubj(getting-3, OP-1)
+nsubj(trying-11, OP-1)
+aux(getting-3, is-2)
+xcomp(getting-3, roasted-4)
+mark(anti-vax-7, about-5)
+cop(anti-vax-7, being-6)
+advcl:about(roasted-4, anti-vax-7)
+cc(trying-11, and-8)
+aux(trying-11, is-9)
+advmod(trying-11, now-10)
+conj:and(getting-3, trying-11)
+case(it-14, to-12)
+amod(it-14, par-13)
+obl:to(trying-11, it-14)
+dep(trolling-17, off-15)
+case(trolling-17, as-16)
+advcl:as(trying-11, trolling-17)
+punct(getting-3, .-18)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

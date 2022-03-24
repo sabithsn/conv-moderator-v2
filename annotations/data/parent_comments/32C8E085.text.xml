@@ -1,0 +1,56 @@
+Document: ID=32C8E085.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Sarah Palin returns to NYC restaurant two days after testing positive for Covid
+
+Tokens:
+[Text=Sarah CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Sarah NamedEntityTag=PERSON]
+[Text=Palin CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Palin NamedEntityTag=PERSON]
+[Text=returns CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=return NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=NYC CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=NYC NamedEntityTag=CITY]
+[Text=restaurant CharacterOffsetBegin=27 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=restaurant NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=two NamedEntityTag=DURATION NormalizedNamedEntityTag=P2D Timex=<TIMEX3 tid="t1" type="DURATION" value="P2D">two days</TIMEX3>]
+[Text=days CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P2D Timex=<TIMEX3 tid="t1" type="DURATION" value="P2D">two days</TIMEX3>]
+[Text=after CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=testing CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=test NamedEntityTag=O]
+[Text=positive CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=positive NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Covid CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Covid NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Sarah) (NNP Palin))
+    (VP (VBZ returns)
+      (PP (IN to)
+        (NP (NNP NYC) (NN restaurant)))
+      (PP
+        (NP (CD two) (NNS days))
+        (IN after)
+        (S
+          (VP (VBG testing)
+            (ADJP (JJ positive))
+            (PP (IN for)
+              (NP (NNP Covid)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, returns-3)
+compound(Palin-2, Sarah-1)
+nsubj(returns-3, Palin-2)
+case(restaurant-6, to-4)
+compound(restaurant-6, NYC-5)
+obl:to(returns-3, restaurant-6)
+nummod(days-8, two-7)
+obl(returns-3, days-8)
+mark(days-8, after-9)
+dep(days-8, testing-10)
+xcomp(testing-10, positive-11)
+case(Covid-13, for-12)
+obl:for(testing-10, Covid-13)
+
+Extracted the following NER entity mentions:
+Sarah Palin	PERSON	PERSON:0.9990148019349178
+NYC	CITY	LOCATION:0.4667787884864844
+two days	DURATION	DURATION:-1.0

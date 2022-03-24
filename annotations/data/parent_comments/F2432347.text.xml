@@ -1,0 +1,62 @@
+Document: ID=F2432347.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+CMV: Biden is one of the worst President in decades if not ever
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=worst CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=JJS Lemma=worst NamedEntityTag=O]
+[Text=President CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=President NamedEntityTag=TITLE]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=decades CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=decade NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">decades</TIMEX3>]
+[Text=if CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (NNP Biden))
+      (VP (VBZ is)
+        (NP
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP (DT the) (JJS worst) (NNP President)))
+            (PP (IN in)
+              (NP (NNS decades))))
+          (SBAR (IN if)
+            (FRAG (RB not)
+              (ADVP (RB ever)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(one-5, Biden-3)
+cop(one-5, is-4)
+det:qmod(President-9, one-5)
+fixed(one-5, of-6)
+det(President-9, the-7)
+amod(President-9, worst-8)
+appos(CMV-1, President-9)
+case(decades-11, in-10)
+nmod:in(one-5, decades-11)
+mark(not-13, if-12)
+dep(one-5, not-13)
+dep(not-13, ever-14)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9939466022779291
+one	NUMBER	NUMBER:-1.0
+President	TITLE	-
+decades	DURATION	DURATION:-1.0

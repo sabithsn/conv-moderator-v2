@@ -1,0 +1,87 @@
+Document: ID=0C434CD1.text (3 sentences, 16 tokens)
+
+Sentence #1 (9 tokens):
+Maybe read up on the meaning of fascism.
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meaning CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=meaning NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=fascism CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=fascism NamedEntityTag=IDEOLOGY]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (VP (VB read)
+      (PRT (RP up))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN meaning))
+          (PP (IN of)
+            (NP (NN fascism))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, read-2)
+advmod(read-2, Maybe-1)
+compound:prt(read-2, up-3)
+case(meaning-6, on-4)
+det(meaning-6, the-5)
+obl:on(read-2, meaning-6)
+case(fascism-8, of-7)
+nmod:of(meaning-6, fascism-8)
+punct(read-2, .-9)
+
+Extracted the following NER entity mentions:
+fascism	IDEOLOGY	-
+
+Sentence #2 (5 tokens):
+And "Russiabot"?
+
+Tokens:
+[Text=And CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Russiabot CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Russiabot NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC And)
+    (NP (`` ") (NNP Russiabot) ('' "))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Russiabot-3)
+cc(Russiabot-3, And-1)
+punct(Russiabot-3, "-2)
+punct(Russiabot-3, "-4)
+punct(Russiabot-3, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (2 tokens):
+Pathetic.
+
+Tokens:
+[Text=Pathetic CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=pathetic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Pathetic) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Pathetic-1)
+punct(Pathetic-1, .-2)
+
+Extracted the following NER entity mentions:

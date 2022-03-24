@@ -1,0 +1,87 @@
+Document: ID=5F64B503.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+And if covid infection gave you near lifelong protection against getting it again the way chicken pox does, you might have a point.
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=infection CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=infection NamedEntityTag=CAUSE_OF_DEATH]
+[Text=gave CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=near CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=near NamedEntityTag=O]
+[Text=lifelong CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=lifelong NamedEntityTag=O]
+[Text=protection CharacterOffsetBegin=46 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=protection NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=chicken CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=chicken NamedEntityTag=O]
+[Text=pox CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=pox NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (JJ covid) (NN infection))
+        (VP (VBD gave)
+          (NP (PRP you))
+          (PP (IN near)
+            (NP (JJ lifelong) (NN protection)))
+          (PP (IN against)
+            (S
+              (VP (VBG getting)
+                (NP (PRP it))))))))
+    (ADVP (RB again))
+    (NP (DT the) (NN way) (NN chicken) (NN pox))
+    (VP (VBZ does) (, ,)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (MD might)
+            (VP (VB have)
+              (NP (DT a) (NN point)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, does-18)
+cc(does-18, And-1)
+mark(gave-5, if-2)
+amod(infection-4, covid-3)
+nsubj(gave-5, infection-4)
+advcl:if(does-18, gave-5)
+obj(gave-5, you-6)
+case(protection-9, near-7)
+amod(protection-9, lifelong-8)
+obl:near(gave-5, protection-9)
+mark(getting-11, against-10)
+advcl:against(gave-5, getting-11)
+obj(getting-11, it-12)
+advmod(does-18, again-13)
+det(pox-17, the-14)
+compound(pox-17, way-15)
+compound(pox-17, chicken-16)
+nsubj(does-18, pox-17)
+punct(does-18, ,-19)
+nsubj(have-22, you-20)
+aux(have-22, might-21)
+ccomp(does-18, have-22)
+det(point-24, a-23)
+obj(have-22, point-24)
+punct(does-18, .-25)
+
+Extracted the following NER entity mentions:
+infection	CAUSE_OF_DEATH	-

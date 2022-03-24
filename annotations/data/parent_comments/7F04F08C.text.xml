@@ -1,0 +1,39 @@
+Document: ID=7F04F08C.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Bill Gates and the “Lucifer Trust.”
+
+Tokens:
+[Text=Bill CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Gates CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Gates NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Lucifer CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Lucifer NamedEntityTag=O]
+[Text=Trust CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Trust NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Bill) (NNP Gates))
+      (CC and)
+      (NP (DT the) (`` “) (NNP Lucifer) (NNP Trust)))
+    (. .) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Gates-2)
+compound(Gates-2, Bill-1)
+cc(Trust-7, and-3)
+det(Trust-7, the-4)
+punct(Trust-7, “-5)
+compound(Trust-7, Lucifer-6)
+conj:and(Gates-2, Trust-7)
+punct(Gates-2, .-8)
+punct(Gates-2, ”-9)
+
+Extracted the following NER entity mentions:
+Bill Gates	PERSON	PERSON:0.990299850195658

@@ -1,0 +1,65 @@
+Document: ID=E36271C0.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Rep. Lauren Boebert Asked A Group Of Jewish Capitol Visitors If They Were Doing "Reconnaissance"
+
+Tokens:
+[Text=Rep. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Lauren CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Lauren NamedEntityTag=PERSON]
+[Text=Boebert CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Boebert NamedEntityTag=PERSON]
+[Text=Asked CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=A NamedEntityTag=O]
+[Text=Group CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Group NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Jewish CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=jewish NamedEntityTag=RELIGION]
+[Text=Capitol CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Capitol NamedEntityTag=O]
+[Text=Visitors CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNPS Lemma=Visitors NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=They CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=Were CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Doing CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Reconnaissance CharacterOffsetBegin=81 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=reconnaissance NamedEntityTag=MISC]
+[Text=" CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Rep.) (NNP Lauren) (NNP Boebert))
+    (VP (VBD Asked)
+      (S
+        (NP (NNP A) (NNP Group))
+        (PP (IN Of)
+          (NP (JJ Jewish) (NNP Capitol) (NNPS Visitors)))
+        (SBAR (IN If)
+          (S
+            (NP (PRP They))
+            (VP (VBD Were)
+              (VP (VBG Doing)
+                (NP (`` ") (NN Reconnaissance) ('' "))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Asked-4)
+compound(Boebert-3, Rep.-1)
+compound(Boebert-3, Lauren-2)
+nsubj(Asked-4, Boebert-3)
+compound(Group-6, A-5)
+dep(Doing-14, Group-6)
+case(Visitors-10, Of-7)
+amod(Visitors-10, Jewish-8)
+compound(Visitors-10, Capitol-9)
+dep(Doing-14, Visitors-10)
+mark(Doing-14, If-11)
+nsubj(Doing-14, They-12)
+aux(Doing-14, Were-13)
+xcomp(Asked-4, Doing-14)
+punct(Reconnaissance-16, "-15)
+obj(Doing-14, Reconnaissance-16)
+punct(Reconnaissance-16, "-17)
+
+Extracted the following NER entity mentions:
+Rep.	TITLE	-
+Lauren Boebert	PERSON	PERSON:0.9992457500174615
+Jewish	RELIGION	-
+Reconnaissance	MISC	MISC:0.7583182482802981

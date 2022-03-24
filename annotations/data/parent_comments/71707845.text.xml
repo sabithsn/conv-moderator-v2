@@ -1,0 +1,66 @@
+Document: ID=71707845.text (2 sentences, 12 tokens)
+
+Sentence #1 (10 tokens):
+and you're doing what, healing that division?
+
+Tokens:
+[Text=and CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=healing CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=heal NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=division CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=division NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC and)
+    (NP (PRP you))
+    (VP (VBP 're)
+      (VP
+        (VP (VBG doing)
+          (NP (WP what)))
+        (, ,)
+        (VP (VBG healing)
+          (SBAR (IN that)
+            (FRAG
+              (NP (NN division)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, doing-4)
+cc(doing-4, and-1)
+nsubj(doing-4, you-2)
+aux(doing-4, 're-3)
+obj(doing-4, what-5)
+punct(doing-4, ,-6)
+dep(doing-4, healing-7)
+mark(division-9, that-8)
+dep(healing-7, division-9)
+punct(doing-4, ?-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+shut up
+
+Tokens:
+[Text=shut CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=shut NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB shut)
+      (PRT (RP up)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shut-1)
+compound:prt(shut-1, up-2)
+
+Extracted the following NER entity mentions:

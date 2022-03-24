@@ -1,0 +1,74 @@
+Document: ID=429C3242.text (2 sentences, 14 tokens)
+
+Sentence #1 (8 tokens):
+Remember when she ran that anti-bullying campaign?
+
+Tokens:
+[Text=Remember CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=ran CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=run NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=anti-bullying CharacterOffsetBegin=27 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=anti-bullying NamedEntityTag=O]
+[Text=campaign CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=campaign NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Remember)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP she))
+          (VP (VBD ran)
+            (SBAR (IN that)
+              (FRAG
+                (NP (JJ anti-bullying) (NN campaign))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Remember-1)
+advmod(ran-4, when-2)
+nsubj(ran-4, she-3)
+advcl(Remember-1, ran-4)
+mark(campaign-7, that-5)
+amod(campaign-7, anti-bullying-6)
+dep(ran-4, campaign-7)
+punct(Remember-1, ?-8)
+
+Extracted the following NER entity mentions:
+she	PERSON	-
+
+Sentence #2 (6 tokens):
+What was THAT all about??
+
+Tokens:
+[Text=What CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=THAT CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=that NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=?? CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=?? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD was)
+        (ADVP (RB THAT))
+        (ADVP (RB all) (RB about))))
+    (. ??)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-2)
+nsubj(was-2, What-1)
+advmod(was-2, THAT-3)
+advmod(about-5, all-4)
+advmod(was-2, about-5)
+punct(was-2, ??-6)
+
+Extracted the following NER entity mentions:

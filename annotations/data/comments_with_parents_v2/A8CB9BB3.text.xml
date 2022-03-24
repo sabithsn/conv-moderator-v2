@@ -1,0 +1,67 @@
+Document: ID=A8CB9BB3.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Democrat Tim Kaine concedes Biden's Build Back Better is 'dead' as we know it
+
+Tokens:
+[Text=Democrat CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=MISC]
+[Text=Tim CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Tim NamedEntityTag=PERSON]
+[Text=Kaine CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Kaine NamedEntityTag=PERSON]
+[Text=concedes CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=concede NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Build CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Build NamedEntityTag=O]
+[Text=Back CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Back NamedEntityTag=O]
+[Text=Better CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Better NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Democrat) (NNP Tim) (NNP Kaine))
+    (VP (VBZ concedes)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Biden) (POS 's))
+            (NNP Build) (NNP Back) (NNP Better))
+          (VP (VBZ is) (`` ')
+            (ADJP (JJ dead))
+            ('' ')
+            (SBAR (IN as)
+              (S
+                (NP (PRP we))
+                (VP (VBP know)
+                  (NP (PRP it)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, concedes-4)
+compound(Kaine-3, Democrat-1)
+compound(Kaine-3, Tim-2)
+nsubj(concedes-4, Kaine-3)
+nmod:poss(Better-9, Biden-5)
+case(Biden-5, 's-6)
+compound(Better-9, Build-7)
+compound(Better-9, Back-8)
+nsubj(dead-12, Better-9)
+cop(dead-12, is-10)
+punct(dead-12, '-11)
+ccomp(concedes-4, dead-12)
+punct(dead-12, '-13)
+mark(know-16, as-14)
+nsubj(know-16, we-15)
+advcl:as(dead-12, know-16)
+obj(know-16, it-17)
+
+Extracted the following NER entity mentions:
+Democrat	MISC	MISC:0.9235299169192324
+Tim Kaine	PERSON	PERSON:0.9968153958026456
+Biden	PERSON	PERSON:0.9931444808560282

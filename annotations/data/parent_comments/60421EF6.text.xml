@@ -1,0 +1,65 @@
+Document: ID=60421EF6.text (2 sentences, 12 tokens)
+
+Sentence #1 (7 tokens):
+I agree it's a coincidence.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=coincidence CharacterOffsetBegin=15 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=coincidence NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (NP (DT a) (NN coincidence))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, agree-2)
+nsubj(agree-2, I-1)
+nsubj(coincidence-6, it-3)
+cop(coincidence-6, 's-4)
+det(coincidence-6, a-5)
+ccomp(agree-2, coincidence-6)
+punct(agree-2, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Any thoughts on why?
+
+Tokens:
+[Text=Any CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=thoughts CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=thought NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (DT Any) (NNS thoughts))
+    (PP (IN on)
+      (ADVP (WRB why)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thoughts-2)
+det(thoughts-2, Any-1)
+case(why-4, on-3)
+dep(thoughts-2, why-4)
+punct(thoughts-2, ?-5)
+
+Extracted the following NER entity mentions:

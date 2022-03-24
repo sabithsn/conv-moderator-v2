@@ -1,0 +1,72 @@
+Document: ID=02228881.text (2 sentences, 15 tokens)
+
+Sentence #1 (12 tokens):
+POLL: What color should Anthony Fauci's prison jumpsuit be?
+
+Tokens:
+[Text=POLL CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=poll NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=color CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=color NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Anthony CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Anthony NamedEntityTag=PERSON]
+[Text=Fauci CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=prison CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=prison NamedEntityTag=O]
+[Text=jumpsuit CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=jumpsuit NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN POLL))
+    (: :)
+    (SBARQ
+      (WHNP (WDT What) (NN color))
+      (SQ (MD should)
+        (NP
+          (NP (NNP Anthony) (NNP Fauci) (POS 's))
+          (NN prison) (NN jumpsuit))
+        (VP (VB be))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, POLL-1)
+punct(POLL-1, :-2)
+det(color-4, What-3)
+obj(be-11, color-4)
+aux(be-11, should-5)
+compound(Fauci-7, Anthony-6)
+nmod:poss(jumpsuit-10, Fauci-7)
+case(Fauci-7, 's-8)
+compound(jumpsuit-10, prison-9)
+nsubj(be-11, jumpsuit-10)
+parataxis(POLL-1, be-11)
+punct(POLL-1, ?-12)
+
+Extracted the following NER entity mentions:
+Anthony Fauci	PERSON	PERSON:0.9997222666993199
+
+Sentence #2 (3 tokens):
+• Genesius Times
+
+Tokens:
+[Text=• CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=SYM Lemma=• NamedEntityTag=O]
+[Text=Genesius CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Genesius NamedEntityTag=O]
+[Text=Times CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Times NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (SYM •))
+    (NP (NNP Genesius) (NNP Times))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, •-1)
+compound(Times-3, Genesius-2)
+dep(•-1, Times-3)
+
+Extracted the following NER entity mentions:

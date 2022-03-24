@@ -1,0 +1,61 @@
+Document: ID=05A1EB34.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Leaked Kremlin Memo to Russian Media: It Is “Essential” to Feature Tucker Carlson
+
+Tokens:
+[Text=Leaked CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=leak NamedEntityTag=O]
+[Text=Kremlin CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Kremlin NamedEntityTag=ORGANIZATION]
+[Text=Memo CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Memo NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=Media CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=media NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=Essential CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=essential NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Feature CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Feature NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBN Leaked)
+        (NP (NNP Kremlin) (NNP Memo))
+        (PP (IN to)
+          (NP (JJ Russian) (NN Media)))))
+    (: :)
+    (NP (PRP It))
+    (VP (VBZ Is)
+      (ADJP (`` “) (JJ Essential) ('' ”)
+        (PP (IN to)
+          (NP (NNP Feature) (NNP Tucker) (NNP Carlson)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Essential-11)
+dep(Essential-11, Leaked-1)
+compound(Memo-3, Kremlin-2)
+obj(Leaked-1, Memo-3)
+case(Media-6, to-4)
+amod(Media-6, Russian-5)
+obl:to(Leaked-1, Media-6)
+punct(Essential-11, :-7)
+nsubj(Essential-11, It-8)
+cop(Essential-11, Is-9)
+punct(Essential-11, “-10)
+punct(Essential-11, ”-12)
+case(Carlson-16, to-13)
+compound(Carlson-16, Feature-14)
+compound(Carlson-16, Tucker-15)
+obl:to(Essential-11, Carlson-16)
+
+Extracted the following NER entity mentions:
+Kremlin	ORGANIZATION	ORGANIZATION:0.5633105710923408
+Russian	NATIONALITY	MISC:0.9981713329696296
+Tucker Carlson	PERSON	PERSON:0.9932726172435348

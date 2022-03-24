@@ -1,0 +1,59 @@
+Document: ID=8A10F264.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Poll: 75% Don’t Trust Social Media to Make Fair Content Moderation Decisions
+
+Tokens:
+[Text=Poll CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Poll NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=75 CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=CD Lemma=75 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%75.0]
+[Text=% CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%75.0]
+[Text=Do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=Trust CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=trust NamedEntityTag=MISC]
+[Text=Social CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Social NamedEntityTag=MISC]
+[Text=Media CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Media NamedEntityTag=MISC]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=MISC]
+[Text=Make CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=make NamedEntityTag=MISC]
+[Text=Fair CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=fair NamedEntityTag=MISC]
+[Text=Content CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=content NamedEntityTag=MISC]
+[Text=Moderation CharacterOffsetBegin=56 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=moderation NamedEntityTag=MISC]
+[Text=Decisions CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=decision NamedEntityTag=MISC]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Poll))
+    (: :)
+    (S
+      (NP (CD 75) (NN %))
+      (VP (VBP Do) (RB n’t)
+        (VP (VB Trust)
+          (S
+            (NP (NNP Social) (NNP Media))
+            (VP (TO to)
+              (VP (VB Make)
+                (NP (NN Fair) (NN Content) (NN Moderation) (NNS Decisions))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Poll-1)
+punct(Poll-1, :-2)
+nummod(%-4, 75-3)
+nsubj(Trust-7, %-4)
+aux(Trust-7, Do-5)
+advmod(Trust-7, n’t-6)
+parataxis(Poll-1, Trust-7)
+compound(Media-9, Social-8)
+obj(Trust-7, Media-9)
+nsubj:xsubj(Make-11, Media-9)
+mark(Make-11, to-10)
+xcomp(Trust-7, Make-11)
+compound(Decisions-15, Fair-12)
+compound(Decisions-15, Content-13)
+compound(Decisions-15, Moderation-14)
+obj(Make-11, Decisions-15)
+
+Extracted the following NER entity mentions:
+75%	PERCENT	PERCENT:0.9992093876966974
+Trust Social Media to Make Fair Content Moderation Decisions	MISC	MISC:0.7701309893018559

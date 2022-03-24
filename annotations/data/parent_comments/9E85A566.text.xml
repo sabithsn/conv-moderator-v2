@@ -1,0 +1,54 @@
+Document: ID=9E85A566.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Why are there so many pro Trump/Russian posts on here?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=pro CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=pro NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=/ CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Russian NamedEntityTag=NATIONALITY]
+[Text=posts CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=post NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP (EX there))
+      (ADJP (RB so) (JJ many)))
+    (FRAG
+      (NP
+        (NP (JJ pro) (NNP Trump) (HYPH /) (NNP Russian))
+        (NP (NNS posts)))
+      (PP (IN on)
+        (ADVP (RB here))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, many-5)
+advmod(many-5, Why-1)
+cop(many-5, are-2)
+expl(many-5, there-3)
+advmod(many-5, so-4)
+amod(Russian-9, pro-6)
+compound(Russian-9, Trump-7)
+punct(Russian-9, /-8)
+dep(many-5, Russian-9)
+dep(Russian-9, posts-10)
+case(here-12, on-11)
+dep(Russian-9, here-12)
+punct(many-5, ?-13)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.3952405750326308
+Russian	NATIONALITY	MISC:0.9992857140559945

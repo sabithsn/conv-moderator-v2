@@ -1,0 +1,45 @@
+Document: ID=3F81D3E3.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+These three Republicans voted against making lynching a hate crime
+
+Tokens:
+[Text=These CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=Republicans CharacterOffsetBegin=12 CharacterOffsetEnd=23 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=voted CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=lynching CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=VBG Lemma=lynch NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=hate NamedEntityTag=O]
+[Text=crime CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=crime NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT These) (CD three) (NNPS Republicans))
+    (VP (VBD voted)
+      (PP (IN against)
+        (S
+          (VP (VBG making)
+            (S
+              (VP (VBG lynching)
+                (NP (DT a) (NN hate) (NN crime))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, voted-4)
+det(Republicans-3, These-1)
+nummod(Republicans-3, three-2)
+nsubj(voted-4, Republicans-3)
+mark(making-6, against-5)
+advcl:against(voted-4, making-6)
+advcl(making-6, lynching-7)
+det(crime-10, a-8)
+compound(crime-10, hate-9)
+obj(lynching-7, crime-10)
+
+Extracted the following NER entity mentions:
+three	NUMBER	NUMBER:-1.0
+Republicans	MISC	MISC:0.9999998036408806

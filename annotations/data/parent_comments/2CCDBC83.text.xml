@@ -1,0 +1,53 @@
+Document: ID=2CCDBC83.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+CMV: Tucker Carlson asking for KBJ's LSAT score is racist
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=Carlson CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Carlson NamedEntityTag=PERSON]
+[Text=asking CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=KBJ CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=KBJ NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=LSAT CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=lsat NamedEntityTag=O]
+[Text=score CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=score NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP
+        (NP (NNP Tucker) (NNP Carlson))
+        (VP (VBG asking)
+          (PP (IN for)
+            (NP
+              (NP (NNP KBJ) (POS 's))
+              (NN LSAT) (NN score)))))
+      (VP (VBZ is)
+        (ADJP (JJ racist))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+compound(Carlson-4, Tucker-3)
+nsubj(racist-12, Carlson-4)
+acl(Carlson-4, asking-5)
+case(score-10, for-6)
+nmod:poss(score-10, KBJ-7)
+case(KBJ-7, 's-8)
+compound(score-10, LSAT-9)
+obl:for(asking-5, score-10)
+cop(racist-12, is-11)
+appos(CMV-1, racist-12)
+
+Extracted the following NER entity mentions:
+Tucker Carlson	PERSON	PERSON:0.9965116292055702
+KBJ	ORGANIZATION	ORGANIZATION:0.8906290263189209

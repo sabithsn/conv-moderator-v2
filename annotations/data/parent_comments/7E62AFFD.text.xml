@@ -1,0 +1,98 @@
+Document: ID=7E62AFFD.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+Mayorkas Releases New Rules on Extremism – DHS Will Target Anyone Who Believes Election Was Stolen or Who Challenged Fauci’s Everchanging COVID Narrative
+
+Tokens:
+[Text=Mayorkas CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=mayorkas NamedEntityTag=MISC]
+[Text=Releases CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=GW Lemma=releases NamedEntityTag=MISC]
+[Text=New CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=new NamedEntityTag=MISC]
+[Text=Rules CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=rule NamedEntityTag=MISC]
+[Text=on CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=on NamedEntityTag=MISC]
+[Text=Extremism CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=extremism NamedEntityTag=MISC]
+[Text=– CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=: Lemma=– NamedEntityTag=O]
+[Text=DHS CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=DHS NamedEntityTag=O]
+[Text=Will CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Will NamedEntityTag=O]
+[Text=Target CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Target NamedEntityTag=O]
+[Text=Anyone CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=Who CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Believes CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=VBZ Lemma=believe NamedEntityTag=O]
+[Text=Election CharacterOffsetBegin=79 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Election NamedEntityTag=O]
+[Text=Was CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Stolen CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Stolen NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Who CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Challenged CharacterOffsetBegin=106 CharacterOffsetEnd=116 PartOfSpeech=VBN Lemma=challenge NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Everchanging CharacterOffsetBegin=125 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=Everchanging NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=Narrative CharacterOffsetBegin=144 CharacterOffsetEnd=153 PartOfSpeech=NNP Lemma=Narrative NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (ADVP (RB Mayorkas))
+      (NP (GW Releases)))
+    (S
+      (NP
+        (NP
+          (NP
+            (NP (JJ New) (NNS Rules))
+            (PP (IN on)
+              (NP (NN Extremism))))
+          (: –)
+          (NP
+            (NP (NNP DHS) (NNP Will) (NNP Target))
+            (NP (NN Anyone))))
+        (SBAR
+          (WHNP (WP Who))
+          (S
+            (VP (VBZ Believes)
+              (NP (NNP Election))))))
+      (VP (VBD Was)
+        (NP
+          (NP (NNP Stolen))
+          (CC or)
+          (SBAR
+            (WHNP (WP Who))
+            (S
+              (VP (VBN Challenged)
+                (S
+                  (NP
+                    (NP (NNP Fauci) (POS ’s))
+                    (NNP Everchanging) (NNP COVID) (NNP Narrative)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Releases-2)
+dep(Releases-2, Mayorkas-1)
+amod(Rules-4, New-3)
+nsubj(Believes-13, Rules-4)
+nsubj(Stolen-16, Rules-4)
+case(Extremism-6, on-5)
+nmod:on(Rules-4, Extremism-6)
+punct(Rules-4, –-7)
+compound(Target-10, DHS-8)
+compound(Target-10, Will-9)
+dep(Rules-4, Target-10)
+dep(Target-10, Anyone-11)
+ref(Rules-4, Who-12)
+acl:relcl(Rules-4, Believes-13)
+obj(Believes-13, Election-14)
+cop(Stolen-16, Was-15)
+parataxis(Releases-2, Stolen-16)
+cc(Challenged-19, or-17)
+nsubj(Challenged-19, Who-18)
+parataxis(Releases-2, Challenged-19)
+conj:or(Stolen-16, Challenged-19)
+nmod:poss(Narrative-24, Fauci-20)
+case(Fauci-20, ’s-21)
+compound(Narrative-24, Everchanging-22)
+compound(Narrative-24, COVID-23)
+xcomp(Challenged-19, Narrative-24)
+
+Extracted the following NER entity mentions:
+Mayorkas Releases New Rules on Extremism	MISC	MISC:0.6321218485962183
+Fauci	PERSON	PERSON:0.988141030276793

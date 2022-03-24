@@ -1,0 +1,106 @@
+Document: ID=0C978E63.text (2 sentences, 25 tokens)
+
+Sentence #1 (11 tokens):
+I am weaker than any other man I have met.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=weaker CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=JJR Lemma=weaker NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VBN Lemma=meet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP
+        (ADJP (JJR weaker))
+        (PP (IN than)
+          (NP
+            (NP (DT any) (JJ other) (NN man))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBP have)
+                  (VP (VBN met)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, weaker-3)
+nsubj(weaker-3, I-1)
+cop(weaker-3, am-2)
+case(man-7, than-4)
+det(man-7, any-5)
+amod(man-7, other-6)
+obl:than(weaker-3, man-7)
+nsubj(met-10, I-8)
+aux(met-10, have-9)
+acl:relcl(man-7, met-10)
+punct(weaker-3, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+I don't panic when I am alone with another man, though.
+
+Tokens:
+[Text=I CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=panic CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=panic NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=alone CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=alone NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=though NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB panic)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP am)
+              (ADJP (JJ alone)
+                (PP (IN with)
+                  (NP (DT another) (NN man))))
+              (, ,)
+              (ADVP (RB though)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, panic-4)
+nsubj(panic-4, I-1)
+aux(panic-4, do-2)
+advmod(panic-4, n't-3)
+advmod(alone-8, when-5)
+nsubj(alone-8, I-6)
+cop(alone-8, am-7)
+advcl(panic-4, alone-8)
+case(man-11, with-9)
+det(man-11, another-10)
+obl:with(alone-8, man-11)
+punct(alone-8, ,-12)
+advmod(alone-8, though-13)
+punct(panic-4, .-14)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,54 @@
+Document: ID=2EC4AC7D.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+75 year old woman former Democrat acknowledged that Democrats now are communists
+
+Tokens:
+[Text=75 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=75 NamedEntityTag=DURATION NormalizedNamedEntityTag=P75Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P75Y">75 year old</TIMEX3>]
+[Text=year CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P75Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P75Y">75 year old</TIMEX3>]
+[Text=old CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P75Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P75Y">75 year old</TIMEX3>]
+[Text=woman CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=former CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=Democrat CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=MISC]
+[Text=acknowledged CharacterOffsetBegin=34 CharacterOffsetEnd=46 PartOfSpeech=VBD Lemma=acknowledge NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=now CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=are CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=communists CharacterOffsetBegin=70 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=communist NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML (CD 75) (NN year))
+      (JJ old) (NN woman))
+    (NP (JJ former) (NNP Democrat))
+    (VP (VBD acknowledged)
+      (SBAR (IN that)
+        (S
+          (NP (NNPS Democrats))
+          (ADVP (RB now))
+          (VP (VBP are)
+            (NP (NNS communists))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, acknowledged-7)
+nummod(year-2, 75-1)
+compound(woman-4, year-2)
+amod(woman-4, old-3)
+nsubj(acknowledged-7, woman-4)
+amod(Democrat-6, former-5)
+nsubj(acknowledged-7, Democrat-6)
+mark(communists-12, that-8)
+nsubj(communists-12, Democrats-9)
+advmod(communists-12, now-10)
+cop(communists-12, are-11)
+ccomp(acknowledged-7, communists-12)
+
+Extracted the following NER entity mentions:
+75 year old	DURATION	DURATION:-1.0
+Democrat	MISC	MISC:0.9998750957076367
+Democrats	IDEOLOGY	MISC:0.9999315412913805
+now	DATE	DATE:-1.0

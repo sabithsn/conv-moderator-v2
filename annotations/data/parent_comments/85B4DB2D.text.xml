@@ -1,0 +1,74 @@
+Document: ID=85B4DB2D.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Typical excuse to try and cover up the Democrat history of racism that persists to this day.
+
+Tokens:
+[Text=Typical CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=typical NamedEntityTag=O]
+[Text=excuse CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=excuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cover CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=cover NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Democrat CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=MISC]
+[Text=history CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=racism CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=racism NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=persists CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=VBZ Lemma=persist NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=day CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Typical) (NN excuse)
+    (S
+      (VP (TO to)
+        (VP
+          (VP (VB try))
+          (CC and)
+          (VP (VB cover)
+            (PRT (RP up))
+            (NP
+              (NP (DT the) (NNP Democrat) (NN history))
+              (PP (IN of)
+                (NP
+                  (NP (NN racism))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ persists)
+                        (PP (IN to)
+                          (NP (DT this) (NN day)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, excuse-2)
+amod(excuse-2, Typical-1)
+mark(try-4, to-3)
+acl:to(excuse-2, try-4)
+cc(cover-6, and-5)
+acl:to(excuse-2, cover-6)
+conj:and(try-4, cover-6)
+compound:prt(cover-6, up-7)
+det(history-10, the-8)
+compound(history-10, Democrat-9)
+obj(cover-6, history-10)
+case(racism-12, of-11)
+nmod:of(history-10, racism-12)
+nsubj(persists-14, racism-12)
+ref(racism-12, that-13)
+acl:relcl(racism-12, persists-14)
+case(day-17, to-15)
+det(day-17, this-16)
+obl:to(persists-14, day-17)
+punct(excuse-2, .-18)
+
+Extracted the following NER entity mentions:
+Democrat	MISC	MISC:0.9999866357013636
+this day	DATE	DATE:-1.0

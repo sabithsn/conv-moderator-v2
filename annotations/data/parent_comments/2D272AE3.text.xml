@@ -1,0 +1,55 @@
+Document: ID=2D272AE3.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+No Latino person I know used LatinX in a positive or un-sarcastic way
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=MISC]
+[Text=Latino CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=latino NamedEntityTag=MISC]
+[Text=person CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=LatinX CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=latinx NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=positive CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=positive NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=un-sarcastic CharacterOffsetBegin=53 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=un-sarcastic NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No) (JJ Latino) (NN person))
+    (NP (PRP I))
+    (VP (VBP know)
+      (VP (VBN used)
+        (NP
+          (NP (NN LatinX))
+          (PP (IN in)
+            (NP (DT a)
+              (ADJP (JJ positive)
+                (CC or)
+                (JJ un-sarcastic))
+              (NN way))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-5)
+det(person-3, No-1)
+amod(person-3, Latino-2)
+nsubj(know-5, person-3)
+nsubj(know-5, I-4)
+dep(know-5, used-6)
+obj(used-6, LatinX-7)
+case(way-13, in-8)
+det(way-13, a-9)
+amod(way-13, positive-10)
+cc(un-sarcastic-12, or-11)
+conj:or(positive-10, un-sarcastic-12)
+amod(way-13, un-sarcastic-12)
+nmod:in(LatinX-7, way-13)
+
+Extracted the following NER entity mentions:
+No Latino	MISC	MISC:0.8972316116450888

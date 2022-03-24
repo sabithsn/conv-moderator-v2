@@ -1,0 +1,154 @@
+Document: ID=F1E7487D.text (3 sentences, 35 tokens)
+
+Sentence #1 (10 tokens):
+Whoopi hates on whites all day, no apology.
+
+Tokens:
+[Text=Whoopi CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Whoopi NamedEntityTag=PERSON]
+[Text=hates CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=hate NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=whites CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=whites NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=apology CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=apology NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Whoopi))
+    (VP (VBZ hates)
+      (PP (IN on)
+        (NP
+          (NP
+            (NP (NNS whites))
+            (NP (DT all) (NN day)))
+          (, ,)
+          (NP (DT no) (NN apology)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hates-2)
+nsubj(hates-2, Whoopi-1)
+case(whites-4, on-3)
+obl:on(hates-2, whites-4)
+det(day-6, all-5)
+dep(whites-4, day-6)
+punct(whites-4, ,-7)
+det(apology-9, no-8)
+appos(whites-4, apology-9)
+punct(hates-2, .-10)
+
+Extracted the following NER entity mentions:
+Whoopi	PERSON	PERSON:0.9289658898915488
+day	DURATION	DURATION:-1.0
+
+Sentence #2 (14 tokens):
+Crosses the Jews one time and has a written statement and a suspension.
+
+Tokens:
+[Text=Crosses CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=cross NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Jews CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NNPS Lemma=Jews NamedEntityTag=MISC]
+[Text=one CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=88 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=suspension CharacterOffsetBegin=104 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=suspension NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Crosses))
+    (VP
+      (VP
+        (NP (DT the) (NNPS Jews))
+        (NP-TMP (CD one) (NN time)))
+      (CC and)
+      (VP (VBZ has)
+        (NP
+          (NP (DT a) (VBN written) (NN statement))
+          (CC and)
+          (NP (DT a) (NN suspension)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Jews-3)
+nsubj(Jews-3, Crosses-1)
+nsubj(has-7, Crosses-1)
+det(Jews-3, the-2)
+nummod(time-5, one-4)
+obl:tmod(Jews-3, time-5)
+cc(has-7, and-6)
+conj:and(Jews-3, has-7)
+det(statement-10, a-8)
+amod(statement-10, written-9)
+obj(has-7, statement-10)
+cc(suspension-13, and-11)
+det(suspension-13, a-12)
+obj(has-7, suspension-13)
+conj:and(statement-10, suspension-13)
+punct(Jews-3, .-14)
+
+Extracted the following NER entity mentions:
+Jews	MISC	MISC:0.9998157515475147
+one	NUMBER	NUMBER:-1.0
+
+Sentence #3 (11 tokens):
+Alex Jones is right, but so is Nick Fuentes...
+
+Tokens:
+[Text=Alex CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Alex NamedEntityTag=PERSON]
+[Text=Jones CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=Jones NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Nick CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=Nick NamedEntityTag=PERSON]
+[Text=Fuentes CharacterOffsetBegin=152 CharacterOffsetEnd=159 PartOfSpeech=NNP Lemma=Fuentes NamedEntityTag=PERSON]
+[Text=... CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Alex) (NNP Jones))
+      (VP (VBZ is)
+        (ADJP (JJ right))))
+    (, ,)
+    (CC but)
+    (SINV
+      (ADVP (RB so))
+      (VP (VBZ is))
+      (NP (NNP Nick) (NNP Fuentes)))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, right-4)
+compound(Jones-2, Alex-1)
+nsubj(right-4, Jones-2)
+cop(right-4, is-3)
+punct(right-4, ,-5)
+cc(is-8, but-6)
+advmod(is-8, so-7)
+conj:but(right-4, is-8)
+compound(Fuentes-10, Nick-9)
+nsubj(is-8, Fuentes-10)
+punct(right-4, ...-11)
+
+Extracted the following NER entity mentions:
+Alex Jones	PERSON	PERSON:0.9999308693701524
+Nick Fuentes	PERSON	PERSON:0.9994391222461138

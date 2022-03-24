@@ -1,0 +1,62 @@
+Document: ID=423D0DBB.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Russian oligarchs move yachts as U.S. moves to ‘hunt down’ and freeze assets
+
+Tokens:
+[Text=Russian CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=oligarchs CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=oligarch NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=move NamedEntityTag=O]
+[Text=yachts CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=yacht NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=moves CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=move NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=hunt CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=VB Lemma=hunt NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=freeze CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=freeze NamedEntityTag=O]
+[Text=assets CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=asset NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Russian) (NNS oligarchs))
+    (VP (VBP move)
+      (NP (NNS yachts))
+      (PP (IN as)
+        (NP (NNP U.S.) (NNS moves)))
+      (S
+        (VP (TO to)
+          (VP
+            (VP (`` ‘) (VB hunt)
+              (PRT (RP down))
+              ('' ’))
+            (CC and)
+            (VP (VB freeze)
+              (NP (NNS assets)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, move-3)
+amod(oligarchs-2, Russian-1)
+nsubj(move-3, oligarchs-2)
+obj(move-3, yachts-4)
+case(moves-7, as-5)
+compound(moves-7, U.S.-6)
+obl:as(move-3, moves-7)
+mark(hunt-10, to-8)
+punct(hunt-10, ‘-9)
+advcl:to(move-3, hunt-10)
+compound:prt(hunt-10, down-11)
+punct(hunt-10, ’-12)
+cc(freeze-14, and-13)
+advcl:to(move-3, freeze-14)
+conj:and(hunt-10, freeze-14)
+obj(freeze-14, assets-15)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999904920173996
+U.S.	COUNTRY	LOCATION:0.9995319492583267

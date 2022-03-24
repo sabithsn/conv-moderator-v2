@@ -1,0 +1,60 @@
+Document: ID=B6B391FB.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Gretchen Whitmer kidnap plot: How Trump targeted ‘that woman’ over militia threat
+
+Tokens:
+[Text=Gretchen CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Gretchen NamedEntityTag=PERSON]
+[Text=Whitmer CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Whitmer NamedEntityTag=PERSON]
+[Text=kidnap CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=kidnap NamedEntityTag=O]
+[Text=plot CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=plot NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=targeted CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=target NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=militia CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=militia NamedEntityTag=O]
+[Text=threat CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=threat NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Gretchen) (NNP Whitmer) (NN kidnap) (NN plot))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB How))
+      (S
+        (NP (NNP Trump))
+        (VP (VBD targeted) (`` ‘)
+          (NP
+            (NP (DT that) (NN woman) (POS ’))
+            (NML
+              (PP (IN over)
+                (NP (NN militia))))
+            (NN threat)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, plot-4)
+compound(plot-4, Gretchen-1)
+compound(plot-4, Whitmer-2)
+compound(plot-4, kidnap-3)
+punct(plot-4, :-5)
+advmod(targeted-8, How-6)
+nsubj(targeted-8, Trump-7)
+parataxis(plot-4, targeted-8)
+punct(targeted-8, ‘-9)
+det(woman-11, that-10)
+nmod:poss(threat-15, woman-11)
+case(woman-11, ’-12)
+case(militia-14, over-13)
+compound(threat-15, militia-14)
+obj(targeted-8, threat-15)
+
+Extracted the following NER entity mentions:
+Gretchen Whitmer	PERSON	PERSON:0.9987663877987232
+Trump	PERSON	PERSON:0.719387614287711

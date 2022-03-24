@@ -1,0 +1,104 @@
+Document: ID=3803BA69.text (2 sentences, 25 tokens)
+
+Sentence #1 (17 tokens):
+Why tf do you have to ask permission to take a picture of your own baby?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=tf CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=tf NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=ask NamedEntityTag=O]
+[Text=permission CharacterOffsetBegin=26 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=permission NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=picture CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=picture NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=baby CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why)
+      (NP (NNP tf)))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB ask)
+              (NP (NN permission))
+              (S
+                (VP (TO to)
+                  (VP (VB take)
+                    (NP
+                      (NP (DT a) (NN picture))
+                      (PP (IN of)
+                        (NP (PRP$ your) (JJ own) (NN baby))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-5)
+advmod(have-5, Why-1)
+dep(Why-1, tf-2)
+aux(have-5, do-3)
+nsubj(have-5, you-4)
+nsubj:xsubj(ask-7, you-4)
+mark(ask-7, to-6)
+xcomp(have-5, ask-7)
+obj(ask-7, permission-8)
+nsubj:xsubj(take-10, permission-8)
+mark(take-10, to-9)
+xcomp(ask-7, take-10)
+det(picture-12, a-11)
+obj(take-10, picture-12)
+case(baby-16, of-13)
+nmod:poss(baby-16, your-14)
+amod(baby-16, own-15)
+nmod:of(picture-12, baby-16)
+punct(have-5, ?-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+Your husband is fucked in the head.
+
+Tokens:
+[Text=Your CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=husband CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=husband NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=fucked CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=VBN Lemma=fuck NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=head CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=head NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN husband))
+    (VP (VBZ is)
+      (VP (VBN fucked)
+        (PP (IN in)
+          (NP (DT the) (NN head)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fucked-4)
+nmod:poss(husband-2, Your-1)
+nsubj:pass(fucked-4, husband-2)
+aux:pass(fucked-4, is-3)
+case(head-7, in-5)
+det(head-7, the-6)
+obl:in(fucked-4, head-7)
+punct(fucked-4, .-8)
+
+Extracted the following NER entity mentions:

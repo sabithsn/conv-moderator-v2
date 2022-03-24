@@ -1,0 +1,70 @@
+Document: ID=B7017A64.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+New 'Ebola-like' virus discovered in bats is spreading in China, report says
+
+Tokens:
+[Text=New CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=Ebola CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Ebola NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=virus CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=discovered CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=VBN Lemma=discover NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=bats CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=bat NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=spreading CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=spread NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=report NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (NP (NNP New) (POS '))
+          (NML
+            (NML (NNP Ebola))
+            (HYPH -)
+            (PP (IN like)
+              (NP (`` ') (NN virus)))))
+        (VP (VBN discovered)
+          (PP (IN in)
+            (NP (NNS bats)))))
+      (VP (VBZ is)
+        (VP (VBG spreading)
+          (PP (IN in)
+            (NP (NNP China))))))
+    (, ,)
+    (S
+      (NP (NN report))
+      (VP (VBZ says)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, spreading-12)
+nmod:poss(Ebola-3, New-1)
+case(New-1, '-2)
+nsubj(spreading-12, Ebola-3)
+punct(Ebola-3, --4)
+case(virus-7, like-5)
+punct(virus-7, '-6)
+nmod:like(Ebola-3, virus-7)
+acl(Ebola-3, discovered-8)
+case(bats-10, in-9)
+obl:in(discovered-8, bats-10)
+aux(spreading-12, is-11)
+case(China-14, in-13)
+obl:in(spreading-12, China-14)
+punct(spreading-12, ,-15)
+nsubj(says-17, report-16)
+parataxis(spreading-12, says-17)
+
+Extracted the following NER entity mentions:
+China	COUNTRY	LOCATION:0.9964636358613317

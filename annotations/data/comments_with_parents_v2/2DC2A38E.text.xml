@@ -1,0 +1,27 @@
+Document: ID=2DC2A38E.text (1 sentences, 4 tokens)
+
+Sentence #1 (4 tokens):
+Man fuck joe biden
+
+Tokens:
+[Text=Man CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Man NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=fuck NamedEntityTag=O]
+[Text=joe CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=joe NamedEntityTag=PERSON]
+[Text=biden CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=biden NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Man))
+    (VP (VBP fuck)
+      (NP (NNP joe) (NNP biden)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fuck-2)
+nsubj(fuck-2, Man-1)
+compound(biden-4, joe-3)
+obj(fuck-2, biden-4)
+
+Extracted the following NER entity mentions:
+joe biden	PERSON	PERSON:0.5621426859305438

@@ -1,0 +1,59 @@
+Document: ID=CF32E0F3.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Truck delivering 100 monkeys to a lab crashes and now some are missing.
+
+Tokens:
+[Text=Truck CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Truck NamedEntityTag=O]
+[Text=delivering CharacterOffsetBegin=6 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=deliver NamedEntityTag=O]
+[Text=100 CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=CD Lemma=100 NamedEntityTag=NUMBER NormalizedNamedEntityTag=100.0]
+[Text=monkeys CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=monkey NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lab CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=lab NamedEntityTag=O]
+[Text=crashes CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=crash NamedEntityTag=CAUSE_OF_DEATH]
+[Text=and CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=some CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=missing CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=miss NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Truck))
+      (VP (VBG delivering)
+        (NP (CD 100) (NNS monkeys))
+        (PP (IN to)
+          (NP (DT a) (NN lab) (NNS crashes)))))
+    (CC and)
+    (S
+      (ADVP (RB now))
+      (NP (DT some))
+      (VP (VBP are)
+        (VP (VBG missing))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, delivering-2)
+nsubj(delivering-2, Truck-1)
+nummod(monkeys-4, 100-3)
+obj(delivering-2, monkeys-4)
+case(crashes-8, to-5)
+det(crashes-8, a-6)
+compound(crashes-8, lab-7)
+obl:to(delivering-2, crashes-8)
+cc(missing-13, and-9)
+advmod(missing-13, now-10)
+nsubj(missing-13, some-11)
+aux(missing-13, are-12)
+conj:and(delivering-2, missing-13)
+punct(delivering-2, .-14)
+
+Extracted the following NER entity mentions:
+100	NUMBER	NUMBER:-1.0
+crashes	CAUSE_OF_DEATH	-
+now	DATE	DATE:-1.0

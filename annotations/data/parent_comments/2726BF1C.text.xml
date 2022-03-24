@@ -1,0 +1,68 @@
+Document: ID=2726BF1C.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Feminist leaders from the end of the 19th century said equality with men was not enough.
+
+Tokens:
+[Text=Feminist CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Feminist NamedEntityTag=IDEOLOGY]
+[Text=leaders CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=leader NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=18XX Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="18XX">the end of the 19th century</TIMEX3>]
+[Text=end CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=end NamedEntityTag=DATE NormalizedNamedEntityTag=18XX Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="18XX">the end of the 19th century</TIMEX3>]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=18XX Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="18XX">the end of the 19th century</TIMEX3>]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=18XX Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="18XX">the end of the 19th century</TIMEX3>]
+[Text=19th CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=19th NamedEntityTag=DATE NormalizedNamedEntityTag=18XX Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="18XX">the end of the 19th century</TIMEX3>]
+[Text=century CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=century NamedEntityTag=DATE NormalizedNamedEntityTag=18XX Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="18XX">the end of the 19th century</TIMEX3>]
+[Text=said CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=equality CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=equality NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Feminist) (NNS leaders))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN end))
+          (PP (IN of)
+            (NP (DT the) (JJ 19th) (NN century))))))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP
+            (NP (NN equality))
+            (PP (IN with)
+              (NP (NNS men))))
+          (VP (VBD was) (RB not)
+            (ADJP (JJ enough))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-10)
+compound(leaders-2, Feminist-1)
+nsubj(said-10, leaders-2)
+case(end-5, from-3)
+det(end-5, the-4)
+nmod:from(leaders-2, end-5)
+case(century-9, of-6)
+det(century-9, the-7)
+amod(century-9, 19th-8)
+nmod:of(end-5, century-9)
+nsubj(enough-16, equality-11)
+case(men-13, with-12)
+nmod:with(equality-11, men-13)
+cop(enough-16, was-14)
+advmod(enough-16, not-15)
+ccomp(said-10, enough-16)
+punct(said-10, .-17)
+
+Extracted the following NER entity mentions:
+Feminist	IDEOLOGY	-
+the end of the 19th century	DATE	DATE:-1.0

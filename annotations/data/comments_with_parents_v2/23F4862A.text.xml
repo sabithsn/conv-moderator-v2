@@ -1,0 +1,83 @@
+Document: ID=23F4862A.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+What's Shooter Alec Baldwin Doing in the UK Making a Movie When He's Under Investigation in New Mexico?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Shooter CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Shooter NamedEntityTag=TITLE]
+[Text=Alec CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Alec NamedEntityTag=PERSON]
+[Text=Baldwin CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Baldwin NamedEntityTag=PERSON]
+[Text=Doing CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=UK CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=UK NamedEntityTag=COUNTRY]
+[Text=Making CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Movie CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=When CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Under CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Investigation CharacterOffsetBegin=75 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=investigation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=New NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Mexico CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Mexico NamedEntityTag=STATE_OR_PROVINCE]
+[Text=? CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ 's)
+      (NP (NNP Shooter) (NNP Alec) (NNP Baldwin))
+      (VP (VBG Doing)
+        (PP (IN in)
+          (NP (DT the) (NNP UK)))
+        (S
+          (VP (VBG Making)
+            (NP
+              (NP (DT a) (NN Movie))
+              (SBAR
+                (WHADVP (WRB When))
+                (S
+                  (NP (PRP He))
+                  (VP (VBZ 's))))))))
+      (PP (IN Under)
+        (NP
+          (NP (NN Investigation))
+          (PP (IN in)
+            (NP (NNP New) (NNP Mexico))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Doing-6)
+nsubj(Doing-6, What-1)
+aux(Doing-6, 's-2)
+compound(Baldwin-5, Shooter-3)
+compound(Baldwin-5, Alec-4)
+nsubj(Doing-6, Baldwin-5)
+case(UK-9, in-7)
+det(UK-9, the-8)
+obl:in(Doing-6, UK-9)
+advcl(Doing-6, Making-10)
+det(Movie-12, a-11)
+obj(Making-10, Movie-12)
+advmod('s-15, When-13)
+nsubj('s-15, He-14)
+acl:relcl(Movie-12, 's-15)
+case(Investigation-17, Under-16)
+obl:under(Doing-6, Investigation-17)
+case(Mexico-20, in-18)
+compound(Mexico-20, New-19)
+nmod:in(Investigation-17, Mexico-20)
+punct(Doing-6, ?-21)
+
+Extracted the following NER entity mentions:
+Shooter	TITLE	-
+Alec Baldwin	PERSON	PERSON:0.9993944165548856
+UK	COUNTRY	LOCATION:0.8581705553277504
+New Mexico	STATE_OR_PROVINCE	LOCATION:0.9981173693198713
+He	PERSON	-

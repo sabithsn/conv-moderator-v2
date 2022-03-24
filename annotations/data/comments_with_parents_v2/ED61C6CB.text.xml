@@ -1,0 +1,237 @@
+Document: ID=ED61C6CB.text (4 sentences, 58 tokens)
+
+Sentence #1 (22 tokens):
+>Please quote anywhere in any of my replies to you that I have written the words "bio weapon".
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Please CharacterOffsetBegin=1 CharacterOffsetEnd=7 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=quote CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=UH Lemma=quote NamedEntityTag=O]
+[Text=anywhere CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=anywhere NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=replies CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=reply NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=bio CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=bio NamedEntityTag=O]
+[Text=weapon CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=weapon NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NP
+          (NP
+            (ADJP
+              (ADJP
+                (FRAG
+                  (INTJ (UH Please) (UH quote))
+                  (ADVP (RB anywhere))))
+              (PP (IN in)
+                (NP
+                  (NP (DT any))
+                  (PP (IN of)
+                    (NP (PRP$ my) (NNS replies)))))))
+          (PP (IN to)
+            (NP (PRP you))))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBP have)
+              (VP (VBN written)
+                (NP
+                  (NP (DT the) (NNS words))
+                  (`` ")
+                  (NP (JJ bio) (NN weapon))
+                  ('' "))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, anywhere-4)
+dep(anywhere-4, >-1)
+discourse(anywhere-4, Please-2)
+dep(Please-2, quote-3)
+case(any-6, in-5)
+obl:in(anywhere-4, any-6)
+case(replies-9, of-7)
+nmod:poss(replies-9, my-8)
+nmod:of(any-6, replies-9)
+case(you-11, to-10)
+nmod:to(anywhere-4, you-11)
+mark(written-15, that-12)
+nsubj(written-15, I-13)
+aux(written-15, have-14)
+dep(anywhere-4, written-15)
+det(words-17, the-16)
+iobj(written-15, words-17)
+punct(words-17, "-18)
+amod(weapon-20, bio-19)
+dep(words-17, weapon-20)
+punct(words-17, "-21)
+punct(anywhere-4, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+Stop being a weasel.
+
+Tokens:
+[Text=Stop CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=weasel CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=weasel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Stop)
+      (S
+        (VP (VBG being)
+          (NP (DT a) (NN weasel)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-1)
+cop(weasel-4, being-2)
+det(weasel-4, a-3)
+xcomp(Stop-1, weasel-4)
+punct(Stop-1, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (25 tokens):
+You damn well are implying a conspiracy to create the COVID virus and China needed some Dr. Strangelove in the USA to fund it.
+
+Tokens:
+[Text=You CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=damn CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=RB Lemma=damn NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=implying CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=VBG Lemma=imply NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=146 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=to CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=create CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=VB Lemma=create NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=171 CharacterOffsetEnd=176 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=MISC]
+[Text=virus CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=virus NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=needed CharacterOffsetBegin=193 CharacterOffsetEnd=199 PartOfSpeech=VBD Lemma=need NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=Dr. CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Strangelove CharacterOffsetBegin=209 CharacterOffsetEnd=220 PartOfSpeech=NNP Lemma=Strangelove NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=USA CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=USA NamedEntityTag=COUNTRY]
+[Text=to CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fund CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=VB Lemma=fund NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (ADVP (RB damn) (RB well))
+      (VP (VBP are)
+        (VP (VBG implying)
+          (NP (DT a) (NN conspiracy))
+          (S
+            (VP (TO to)
+              (VP (VB create)
+                (NP (DT the) (NNP COVID) (NN virus))))))))
+    (CC and)
+    (S
+      (NP (NNP China))
+      (VP (VBD needed)
+        (NP (DT some) (NNP Dr.) (NNP Strangelove))
+        (PP (IN in)
+          (NP (DT the) (NNP USA)))
+        (S
+          (VP (TO to)
+            (VP (VB fund)
+              (NP (PRP it)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, implying-5)
+nsubj(implying-5, You-1)
+advmod(well-3, damn-2)
+advmod(implying-5, well-3)
+aux(implying-5, are-4)
+det(conspiracy-7, a-6)
+obj(implying-5, conspiracy-7)
+mark(create-9, to-8)
+advcl:to(implying-5, create-9)
+det(virus-12, the-10)
+compound(virus-12, COVID-11)
+obj(create-9, virus-12)
+cc(needed-15, and-13)
+nsubj(needed-15, China-14)
+conj:and(implying-5, needed-15)
+det(Strangelove-18, some-16)
+compound(Strangelove-18, Dr.-17)
+obj(needed-15, Strangelove-18)
+case(USA-21, in-19)
+det(USA-21, the-20)
+obl:in(needed-15, USA-21)
+mark(fund-23, to-22)
+advcl:to(needed-15, fund-23)
+obj(fund-23, it-24)
+punct(implying-5, .-25)
+
+Extracted the following NER entity mentions:
+conspiracy	CRIMINAL_CHARGE	-
+COVID	MISC	MISC:0.4437017835587035
+China	COUNTRY	LOCATION:0.9923821022938982
+Strangelove	PERSON	PERSON:0.9988142424995461
+USA	COUNTRY	LOCATION:0.9817946108555713
+
+Sentence #4 (6 tokens):
+You are wasting my time.
+
+Tokens:
+[Text=You CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=wasting CharacterOffsetBegin=254 CharacterOffsetEnd=261 PartOfSpeech=VBG Lemma=waste NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=262 CharacterOffsetEnd=264 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=269 CharacterOffsetEnd=270 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (VP (VBG wasting)
+        (NP (PRP$ my) (NN time))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wasting-3)
+nsubj(wasting-3, You-1)
+aux(wasting-3, are-2)
+nmod:poss(time-5, my-4)
+obj(wasting-3, time-5)
+punct(wasting-3, .-6)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,64 @@
+Document: ID=4F157E7A.text (2 sentences, 13 tokens)
+
+Sentence #1 (10 tokens):
+I mockingly said “humanity” opening this thread.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mockingly CharacterOffsetBegin=2 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=mockingly NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=humanity CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=humanity NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=opening CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=opening NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=thread CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=thread NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB mockingly))
+    (VP (VBD said)
+      (NP (`` “) (NN humanity) ('' ”) (NN opening))
+      (S
+        (NP (DT this) (NN thread))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-3)
+nsubj(said-3, I-1)
+advmod(said-3, mockingly-2)
+punct(opening-7, “-4)
+compound(opening-7, humanity-5)
+punct(opening-7, ”-6)
+obj(said-3, opening-7)
+det(thread-9, this-8)
+xcomp(said-3, thread-9)
+punct(said-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Fuck this place
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fuck)
+      (NP (DT this) (NN place)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+det(place-3, this-2)
+obj(Fuck-1, place-3)
+
+Extracted the following NER entity mentions:

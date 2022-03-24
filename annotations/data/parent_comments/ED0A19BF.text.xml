@@ -1,0 +1,33 @@
+Document: ID=ED0A19BF.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Fire up the wood chipper!
+
+Tokens:
+[Text=Fire CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=up CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wood CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=wood NamedEntityTag=O]
+[Text=chipper CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=chipper NamedEntityTag=TITLE]
+[Text=! CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Fire))
+    (PP (IN up)
+      (NP (DT the) (NN wood) (NN chipper)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fire-1)
+case(chipper-5, up-2)
+det(chipper-5, the-3)
+compound(chipper-5, wood-4)
+obl:up(Fire-1, chipper-5)
+punct(Fire-1, !-6)
+
+Extracted the following NER entity mentions:
+Fire	CAUSE_OF_DEATH	-
+chipper	TITLE	-

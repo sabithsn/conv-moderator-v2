@@ -1,0 +1,83 @@
+Document: ID=F2D14548.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+Republicans are ok with raping children, you think they care about one that died halfway around the world?
+
+Tokens:
+[Text=Republicans CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=ok CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=ok NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=raping CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=rape NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=~1.0]
+[Text=that CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=halfway CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=halfway NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNPS Republicans))
+      (VP (VBP are)
+        (ADJP (JJ ok)
+          (PP (IN with)
+            (S
+              (VP (VBG raping)
+                (NP (NNS children))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP think)
+      (S
+        (NP (PRP they))
+        (VP (VB care)
+          (PP (IN about)
+            (NP
+              (NP (CD one))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD died)
+                    (ADVP (RB halfway))
+                    (PP (IN around)
+                      (NP (DT the) (NN world)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-9)
+nsubj(ok-3, Republicans-1)
+cop(ok-3, are-2)
+ccomp(think-9, ok-3)
+mark(raping-5, with-4)
+advcl:with(ok-3, raping-5)
+obj(raping-5, children-6)
+punct(think-9, ,-7)
+nsubj(think-9, you-8)
+nsubj(care-11, they-10)
+ccomp(think-9, care-11)
+case(one-13, about-12)
+obl:about(care-11, one-13)
+nsubj(died-15, one-13)
+ref(one-13, that-14)
+acl:relcl(one-13, died-15)
+advmod(died-15, halfway-16)
+case(world-19, around-17)
+det(world-19, the-18)
+obl:around(died-15, world-19)
+punct(think-9, ?-20)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.9998354730431978
+one	NUMBER	NUMBER:-1.0

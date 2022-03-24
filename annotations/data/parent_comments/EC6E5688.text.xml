@@ -1,0 +1,51 @@
+Document: ID=EC6E5688.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+INFO: what exactly happened that knocked this other kid out?
+
+Tokens:
+[Text=INFO CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=info NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=happened CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=happen NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=knocked CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=knock NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN INFO))
+    (: :)
+    (SBARQ
+      (WHNP (WP what) (RB exactly))
+      (SQ
+        (VP (VBD happened)
+          (SBAR (IN that)
+            (S
+              (VP (VBD knocked)
+                (NP (DT this) (JJ other) (NN kid))
+                (PRT (RP out))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, INFO-1)
+punct(INFO-1, :-2)
+nsubj(happened-5, what-3)
+advmod(what-3, exactly-4)
+parataxis(INFO-1, happened-5)
+mark(knocked-7, that-6)
+ccomp(happened-5, knocked-7)
+det(kid-10, this-8)
+amod(kid-10, other-9)
+obj(knocked-7, kid-10)
+compound:prt(knocked-7, out-11)
+punct(INFO-1, ?-12)
+
+Extracted the following NER entity mentions:

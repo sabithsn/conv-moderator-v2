@@ -1,0 +1,59 @@
+Document: ID=592FF06D.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+It's crazy how un-vaxxed Covid patients are being prioritized over those with cancer
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=crazy CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=crazy NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=un-vaxxed CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=un-vaxxed NamedEntityTag=O]
+[Text=Covid CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=patients CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NNS Lemma=patient NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=prioritized CharacterOffsetBegin=50 CharacterOffsetEnd=61 PartOfSpeech=VBN Lemma=prioritize NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=cancer CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=cancer NamedEntityTag=CAUSE_OF_DEATH]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJ crazy))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (JJ un-vaxxed) (JJ Covid) (NNS patients))
+          (VP (VBP are)
+            (VP (VBG being)
+              (VP (VBN prioritized)
+                (PP (IN over)
+                  (NP
+                    (NP (DT those))
+                    (PP (IN with)
+                      (NP (NN cancer)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, crazy-3)
+nsubj(crazy-3, It-1)
+cop(crazy-3, 's-2)
+advmod(prioritized-10, how-4)
+amod(patients-7, un-vaxxed-5)
+amod(patients-7, Covid-6)
+nsubj:pass(prioritized-10, patients-7)
+aux(prioritized-10, are-8)
+aux:pass(prioritized-10, being-9)
+ccomp(crazy-3, prioritized-10)
+case(those-12, over-11)
+obl:over(prioritized-10, those-12)
+case(cancer-14, with-13)
+nmod:with(those-12, cancer-14)
+
+Extracted the following NER entity mentions:
+cancer	CAUSE_OF_DEATH	-

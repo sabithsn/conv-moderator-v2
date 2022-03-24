@@ -1,0 +1,46 @@
+Document: ID=046BE209.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+AOC Ends 2021 Even Dumber Than She Started It
+
+Tokens:
+[Text=AOC CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=aoc NamedEntityTag=ORGANIZATION]
+[Text=Ends CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=end NamedEntityTag=O]
+[Text=2021 CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=CD Lemma=2021 NamedEntityTag=DATE NormalizedNamedEntityTag=2021 Timex=<TIMEX3 tid="t1" type="DATE" value="2021">2021</TIMEX3>]
+[Text=Even CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=Dumber CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=JJR Lemma=dumber NamedEntityTag=O]
+[Text=Than CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Than NamedEntityTag=O]
+[Text=She CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=Started CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NN AOC) (NNS Ends))
+      (NP (CD 2021)
+        (ADJP (RB Even) (JJR Dumber))
+        (NNP Than)))
+    (SBAR
+      (S
+        (NP (PRP She))
+        (VP (VBD Started)
+          (NP (PRP It)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ends-2)
+compound(Ends-2, AOC-1)
+nummod(Than-6, 2021-3)
+advmod(Dumber-5, Even-4)
+amod(Than-6, Dumber-5)
+dep(Ends-2, Than-6)
+nsubj(Started-8, She-7)
+acl:relcl(Ends-2, Started-8)
+obj(Started-8, It-9)
+
+Extracted the following NER entity mentions:
+AOC	ORGANIZATION	ORGANIZATION:0.8163138357958528
+2021	DATE	DATE:-1.0
+She	PERSON	-

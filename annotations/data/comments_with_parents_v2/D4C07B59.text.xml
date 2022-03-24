@@ -1,0 +1,74 @@
+Document: ID=D4C07B59.text (2 sentences, 15 tokens)
+
+Sentence #1 (9 tokens):
+Wait, biden is rounding up gay people?
+
+Tokens:
+[Text=Wait CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=wait NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=biden CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=biden NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=rounding CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=round NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Wait)))
+    (, ,)
+    (NP (NN biden))
+    (VP (VBZ is)
+      (VP (VBG rounding)
+        (PRT (RP up))
+        (NP (JJ gay) (NNS people))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rounding-5)
+ccomp(rounding-5, Wait-1)
+punct(rounding-5, ,-2)
+nsubj(rounding-5, biden-3)
+aux(rounding-5, is-4)
+compound:prt(rounding-5, up-6)
+amod(people-8, gay-7)
+obj(rounding-5, people-8)
+punct(rounding-5, ?-9)
+
+Extracted the following NER entity mentions:
+biden	PERSON	PERSON:0.6611026561945074
+
+Sentence #2 (6 tokens):
+I must have missed this arc
+
+Tokens:
+[Text=I CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=missed CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=VBN Lemma=miss NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=arc CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=arc NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD must)
+      (VP (VB have)
+        (VP (VBN missed)
+          (NP (DT this) (NN arc)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, missed-4)
+nsubj(missed-4, I-1)
+aux(missed-4, must-2)
+aux(missed-4, have-3)
+det(arc-6, this-5)
+obj(missed-4, arc-6)
+
+Extracted the following NER entity mentions:

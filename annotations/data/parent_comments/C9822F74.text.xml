@@ -1,0 +1,73 @@
+Document: ID=C9822F74.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Judicial Watch: China Was Witholding COVID Data As Early As January 2020 -- And Fauci Knew It
+
+Tokens:
+[Text=Judicial CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Judicial NamedEntityTag=O]
+[Text=Watch CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Watch NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=Was CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Witholding CharacterOffsetBegin=26 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Witholding NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=Data CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Data NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Early CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Early NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=January CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=2020-01 Timex=<TIMEX3 tid="t1" type="DATE" value="2020-01">January 2020</TIMEX3>]
+[Text=2020 CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020-01 Timex=<TIMEX3 tid="t1" type="DATE" value="2020-01">January 2020</TIMEX3>]
+[Text=-- CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=, Lemma=-- NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+[Text=Knew CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Judicial) (NNP Watch))
+    (: :)
+    (S
+      (S
+        (NP (NNP China))
+        (VP (VBD Was)
+          (S
+            (NP (NNP Witholding) (NNP COVID) (NNP Data))
+            (PP (IN As)
+              (NP (NNP Early)))
+            (PP (IN As)
+              (NP (NNP January) (CD 2020))))))
+      (, --)
+      (CC And)
+      (S
+        (NP (NNP Fauci))
+        (VP (VBD Knew)
+          (NP (PRP It)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Watch-2)
+compound(Watch-2, Judicial-1)
+punct(Watch-2, :-3)
+nsubj(Was-5, China-4)
+parataxis(Watch-2, Was-5)
+compound(Data-8, Witholding-6)
+compound(Data-8, COVID-7)
+xcomp(Was-5, Data-8)
+case(Early-10, As-9)
+dep(Data-8, Early-10)
+case(January-12, As-11)
+dep(Data-8, January-12)
+nummod(January-12, 2020-13)
+punct(Was-5, ---14)
+cc(Knew-17, And-15)
+nsubj(Knew-17, Fauci-16)
+parataxis(Watch-2, Knew-17)
+conj:and(Was-5, Knew-17)
+obj(Knew-17, It-18)
+
+Extracted the following NER entity mentions:
+China	COUNTRY	LOCATION:0.9753218912111636
+January 2020	DATE	DATE:0.814074235338608
+Fauci	PERSON	PERSON:0.9617634066122227

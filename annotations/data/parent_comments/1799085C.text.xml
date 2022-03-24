@@ -1,0 +1,80 @@
+Document: ID=1799085C.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+But imagine what the world would look like today if Iraq had been allowed to sell oil for euros.
+
+Tokens:
+[Text=But CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=imagine CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=if CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Iraq CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Iraq NamedEntityTag=COUNTRY]
+[Text=had CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sell CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=sell NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=euros CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=NNS Lemma=euro NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (VP (VB imagine)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT the) (NN world))
+          (VP (MD would)
+            (VP (VB look)
+              (PP (IN like)
+                (NP (NN today)))
+              (SBAR (IN if)
+                (S
+                  (NP (NNP Iraq))
+                  (VP (VBD had)
+                    (VP (VBN been)
+                      (VP (VBN allowed)
+                        (S
+                          (VP (TO to)
+                            (VP (VB sell)
+                              (NP (NN oil))
+                              (PP (IN for)
+                                (NP (NNS euros))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, imagine-2)
+cc(imagine-2, But-1)
+obj(look-7, what-3)
+det(world-5, the-4)
+nsubj(look-7, world-5)
+aux(look-7, would-6)
+ccomp(imagine-2, look-7)
+case(today-9, like-8)
+obl:like(look-7, today-9)
+mark(allowed-14, if-10)
+nsubj:pass(allowed-14, Iraq-11)
+nsubj:xsubj(sell-16, Iraq-11)
+aux(allowed-14, had-12)
+aux:pass(allowed-14, been-13)
+advcl:if(look-7, allowed-14)
+mark(sell-16, to-15)
+xcomp(allowed-14, sell-16)
+obj(sell-16, oil-17)
+case(euros-19, for-18)
+obl:for(sell-16, euros-19)
+punct(imagine-2, .-20)
+
+Extracted the following NER entity mentions:
+today	DATE	DATE:-1.0
+Iraq	COUNTRY	LOCATION:0.9956100022221144

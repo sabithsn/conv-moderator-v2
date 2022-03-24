@@ -1,0 +1,84 @@
+Document: ID=631D578A.text (2 sentences, 19 tokens)
+
+Sentence #1 (7 tokens):
+This was my first thought too.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=thought CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=thought NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (NP (PRP$ my) (JJ first) (NN thought))
+      (ADVP (RB too)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thought-5)
+nsubj(thought-5, This-1)
+cop(thought-5, was-2)
+nmod:poss(thought-5, my-3)
+amod(thought-5, first-4)
+advmod(thought-5, too-6)
+punct(thought-5, .-7)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0
+
+Sentence #2 (12 tokens):
+But after reading about the anxiety part I kind of get OP
+
+Tokens:
+[Text=But CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=reading CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=read NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=anxiety CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=anxiety NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=of NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=OP CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (SBAR (IN after)
+      (S
+        (VP (VBG reading)
+          (PP (IN about)
+            (NP (DT the) (NN anxiety) (NN part))))))
+    (NP (PRP I))
+    (PRN
+      (S
+        (ADVP (RB kind) (RB of))
+        (VP (VB get)
+          (NP (NN OP)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reading-3)
+cc(reading-3, But-1)
+mark(reading-3, after-2)
+case(part-7, about-4)
+det(part-7, the-5)
+compound(part-7, anxiety-6)
+obl:about(reading-3, part-7)
+dep(reading-3, I-8)
+advmod(get-11, kind-9)
+fixed(kind-9, of-10)
+dep(reading-3, get-11)
+obj(get-11, OP-12)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,65 @@
+Document: ID=D70DA768.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Whoopi Goldberg goes off on Bill Maher over pandemic comments: 'How dare you'
+
+Tokens:
+[Text=Whoopi CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Whoopi NamedEntityTag=PERSON]
+[Text=Goldberg CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Goldberg NamedEntityTag=PERSON]
+[Text=goes CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Bill CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Maher CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Maher NamedEntityTag=PERSON]
+[Text=over CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=pandemic CharacterOffsetBegin=44 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=pandemic NamedEntityTag=O]
+[Text=comments CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=comment NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=dare CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VBP Lemma=dare NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Whoopi) (NNP Goldberg))
+    (VP
+      (VP (VBZ goes)
+        (PRT (RP off))
+        (PP (IN on)
+          (NP
+            (NP (NNP Bill) (NNP Maher))
+            (PP (IN over)
+              (NP (NN pandemic) (NNS comments))))))
+      (: :)
+      (SBAR ('' ')
+        (WHADVP (WRB How))
+        (S
+          (VP (VBP dare))
+          (NP (PRP you)))
+        ('' ')))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, goes-3)
+compound(Goldberg-2, Whoopi-1)
+nsubj(goes-3, Goldberg-2)
+compound:prt(goes-3, off-4)
+case(Maher-7, on-5)
+compound(Maher-7, Bill-6)
+obl:on(goes-3, Maher-7)
+case(comments-10, over-8)
+compound(comments-10, pandemic-9)
+nmod:over(Maher-7, comments-10)
+punct(goes-3, :-11)
+punct(dare-14, '-12)
+advmod(dare-14, How-13)
+ccomp(goes-3, dare-14)
+dep(dare-14, you-15)
+punct(dare-14, '-16)
+
+Extracted the following NER entity mentions:
+Whoopi Goldberg	PERSON	PERSON:0.9966401159309163
+Bill Maher	PERSON	PERSON:0.9986653297427478

@@ -1,0 +1,55 @@
+Document: ID=6F888634.text (2 sentences, 9 tokens)
+
+Sentence #1 (4 tokens):
+That's Masonic.
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Masonic CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=masonic NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADJP (JJ Masonic)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Masonic-3)
+nsubj(Masonic-3, That-1)
+cop(Masonic-3, 's-2)
+punct(Masonic-3, .-4)
+
+Extracted the following NER entity mentions:
+Masonic	MISC	MISC:0.8009884732016705
+
+Sentence #2 (5 tokens):
+The illuminati is a distraction
+
+Tokens:
+[Text=The CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=illuminati CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=illuminati NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=distraction CharacterOffsetBegin=36 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=distraction NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN illuminati))
+    (VP (VBZ is)
+      (NP (DT a) (NN distraction)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, distraction-5)
+det(illuminati-2, The-1)
+nsubj(distraction-5, illuminati-2)
+cop(distraction-5, is-3)
+det(distraction-5, a-4)
+
+Extracted the following NER entity mentions:

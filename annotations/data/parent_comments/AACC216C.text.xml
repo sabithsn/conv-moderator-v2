@@ -1,0 +1,56 @@
+Document: ID=AACC216C.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Official data: Fully vaccinated people account for 9 of 10 COVID deaths
+
+Tokens:
+[Text=Official CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Official NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=datum NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Fully CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=fully NamedEntityTag=O]
+[Text=vaccinated CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=vaccinate NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=account CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=account NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=9 CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=CD Lemma=9 NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.0]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=COVID CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=covid NamedEntityTag=O]
+[Text=deaths CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=death NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Official) (NNS data))
+    (: :)
+    (NP
+      (NP
+        (QP (RB Fully)
+          (PRN
+            (S
+              (NP (VBN vaccinated) (NNS people))
+              (VP (VBP account)
+                (PP (IN for)))))
+          (CD 9)))
+      (PP (IN of)
+        (NP (CD 10) (NN COVID) (NNS deaths))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, data-2)
+compound(data-2, Official-1)
+punct(data-2, :-3)
+advmod(9-9, Fully-4)
+amod(people-6, vaccinated-5)
+nsubj(account-7, people-6)
+dep(9-9, account-7)
+obl(account-7, for-8)
+dep(data-2, 9-9)
+case(deaths-13, of-10)
+nummod(deaths-13, 10-11)
+compound(deaths-13, COVID-12)
+nmod:of(9-9, deaths-13)
+
+Extracted the following NER entity mentions:
+9	NUMBER	NUMBER:-1.0
+10	NUMBER	NUMBER:-1.0

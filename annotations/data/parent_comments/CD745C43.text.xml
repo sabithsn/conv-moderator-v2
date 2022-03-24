@@ -1,0 +1,104 @@
+Document: ID=CD745C43.text (3 sentences, 22 tokens)
+
+Sentence #1 (2 tokens):
+And?
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC And)
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, And-1)
+punct(And-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+You don't give wedding gifts with conditions.
+
+Tokens:
+[Text=You CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=wedding CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=wedding NamedEntityTag=O]
+[Text=gifts CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=gift NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=conditions CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=condition NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB n't)
+      (VP (VB give)
+        (NP (NN wedding) (NNS gifts))
+        (PP (IN with)
+          (NP (NNS conditions)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-4)
+nsubj(give-4, You-1)
+aux(give-4, do-2)
+advmod(give-4, n't-3)
+compound(gifts-6, wedding-5)
+obj(give-4, gifts-6)
+case(conditions-8, with-7)
+obl:with(give-4, conditions-8)
+punct(give-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (11 tokens):
+That's not a gift, it's a leash.
+
+Tokens:
+[Text=That CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=gift CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=gift NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=leash CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=leash NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ 's) (RB not)
+        (NP (DT a) (NN gift))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (NP (DT a) (NN leash)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, leash-10)
+nsubj(gift-5, That-1)
+cop(gift-5, 's-2)
+advmod(gift-5, not-3)
+det(gift-5, a-4)
+ccomp(leash-10, gift-5)
+punct(leash-10, ,-6)
+nsubj(leash-10, it-7)
+cop(leash-10, 's-8)
+det(leash-10, a-9)
+punct(leash-10, .-11)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,46 @@
+Document: ID=DDD12D09.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+if they are european then they definitely aren't joking
+
+Tokens:
+[Text=if CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=european CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=european NamedEntityTag=NATIONALITY]
+[Text=then CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=definitely CharacterOffsetBegin=31 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=joking CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=VBG Lemma=joke NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN if)
+      (S
+        (NP (PRP they))
+        (VP (VBP are)
+          (NP (NNP european)))))
+    (ADVP (RB then))
+    (NP (PRP they))
+    (ADVP (RB definitely))
+    (VP (VBP are) (RB n't)
+      (VP (VBG joking)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, joking-10)
+mark(european-4, if-1)
+nsubj(european-4, they-2)
+cop(european-4, are-3)
+advcl:if(joking-10, european-4)
+advmod(joking-10, then-5)
+nsubj(joking-10, they-6)
+advmod(joking-10, definitely-7)
+aux(joking-10, are-8)
+advmod(joking-10, n't-9)
+
+Extracted the following NER entity mentions:
+european	NATIONALITY	-

@@ -1,0 +1,96 @@
+Document: ID=55A2A9BC.text (3 sentences, 17 tokens)
+
+Sentence #1 (5 tokens):
+Ah, dang it.
+
+Tokens:
+[Text=Ah CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=ah NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dang CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=dang NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Ah))
+    (, ,)
+    (VP (VB dang)
+      (NP (PRP it)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dang-3)
+discourse(dang-3, Ah-1)
+punct(dang-3, ,-2)
+obj(dang-3, it-4)
+punct(dang-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+I wish I was more like you guys.
+
+Tokens:
+[Text=I CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP wish)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (ADVP (RBR more)
+              (PP (IN like)
+                (NP (PRP you))))
+            (NP (NNS guys))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wish-2)
+nsubj(wish-2, I-1)
+nsubj(guys-8, I-3)
+cop(guys-8, was-4)
+advmod(guys-8, more-5)
+case(you-7, like-6)
+obl:like(more-5, you-7)
+ccomp(wish-2, guys-8)
+punct(wish-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+Oh well.
+
+Tokens:
+[Text=Oh CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=UH Lemma=oh NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Oh))
+    (INTJ (UH well))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Oh-1)
+discourse(Oh-1, well-2)
+punct(Oh-1, .-3)
+
+Extracted the following NER entity mentions:

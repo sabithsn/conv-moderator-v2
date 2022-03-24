@@ -1,0 +1,44 @@
+Document: ID=4841C141.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Leftists Demand Big Tech Preemptively Censor Trump's Truth Social
+
+Tokens:
+[Text=Leftists CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=leftist NamedEntityTag=O]
+[Text=Demand CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=demand NamedEntityTag=O]
+[Text=Big CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=Tech CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=tech NamedEntityTag=O]
+[Text=Preemptively CharacterOffsetBegin=25 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=preemptively NamedEntityTag=O]
+[Text=Censor CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Censor NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Truth CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Truth NamedEntityTag=O]
+[Text=Social CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Social NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Leftists))
+    (NP
+      (NP (NN Demand))
+      (ADJP (JJ Big) (NN Tech))
+      (ADVP (RB Preemptively))
+      (NP
+        (NP (NNP Censor) (NNP Trump) (POS 's))
+        (NNP Truth) (NNP Social)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Leftists-1)
+dep(Leftists-1, Demand-2)
+dep(Tech-4, Big-3)
+amod(Demand-2, Tech-4)
+advmod(Demand-2, Preemptively-5)
+compound(Trump-7, Censor-6)
+nmod:poss(Social-10, Trump-7)
+case(Trump-7, 's-8)
+compound(Social-10, Truth-9)
+dep(Demand-2, Social-10)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.539206204077262

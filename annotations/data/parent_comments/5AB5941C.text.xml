@@ -1,0 +1,68 @@
+Document: ID=5AB5941C.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+This Is Us Actress Milana Vayntrub Calls Killing Her Baby in an Abortion a "Beautiful" Experience
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Us CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=Actress CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=actress NamedEntityTag=TITLE]
+[Text=Milana CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Milana NamedEntityTag=PERSON]
+[Text=Vayntrub CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Vayntrub NamedEntityTag=PERSON]
+[Text=Calls CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=call NamedEntityTag=O]
+[Text=Killing CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=kill NamedEntityTag=O]
+[Text=Her CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Baby CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Abortion CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Beautiful CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=Experience CharacterOffsetBegin=87 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=experience NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (DT This))
+        (VP (VBZ Is)
+          (NP (PRP Us)))))
+    (NP (NN Actress) (NNP Milana) (NNP Vayntrub))
+    (VP (VBZ Calls)
+      (S
+        (VP (VBG Killing)
+          (NP (PRP$ Her) (NN Baby))
+          (PP (IN in)
+            (NP
+              (NP (DT an) (NN Abortion))
+              (NP (DT a) (`` ") (JJ Beautiful) ('' ") (NN Experience)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Calls-7)
+nsubj(Us-3, This-1)
+cop(Us-3, Is-2)
+parataxis(Calls-7, Us-3)
+compound(Vayntrub-6, Actress-4)
+compound(Vayntrub-6, Milana-5)
+nsubj(Calls-7, Vayntrub-6)
+xcomp(Calls-7, Killing-8)
+nmod:poss(Baby-10, Her-9)
+obj(Killing-8, Baby-10)
+case(Abortion-13, in-11)
+det(Abortion-13, an-12)
+obl:in(Killing-8, Abortion-13)
+det(Experience-18, a-14)
+punct(Experience-18, "-15)
+amod(Experience-18, Beautiful-16)
+punct(Experience-18, "-17)
+dep(Abortion-13, Experience-18)
+
+Extracted the following NER entity mentions:
+Actress	TITLE	-
+Milana Vayntrub	PERSON	PERSON:0.9524774801800134
+Her	PERSON	-

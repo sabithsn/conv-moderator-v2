@@ -1,0 +1,35 @@
+Document: ID=96D05F55.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+Moscow Mitch and Moscow's Bitch
+
+Tokens:
+[Text=Moscow CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Moscow NamedEntityTag=CITY]
+[Text=Mitch CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Mitch NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Moscow CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Moscow NamedEntityTag=CITY]
+[Text='s CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Bitch CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Bitch NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Moscow) (NNP Mitch)
+      (CC and)
+      (NNP Moscow) (POS 's))
+    (NNP Bitch)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Bitch-6)
+compound(Mitch-2, Moscow-1)
+nmod:poss(Bitch-6, Mitch-2)
+cc(Moscow-4, and-3)
+conj:and(Mitch-2, Moscow-4)
+nmod:poss(Bitch-6, Moscow-4)
+case(Moscow-4, 's-5)
+
+Extracted the following NER entity mentions:
+Moscow	CITY	LOCATION:0.8142843683500783
+Mitch	PERSON	PERSON:0.8760535691388252
+Moscow	CITY	LOCATION:0.9993980768892491

@@ -1,0 +1,36 @@
+Document: ID=1B98AE96.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Meet the Chairman of the Republican Party
+
+Tokens:
+[Text=Meet CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Republican CharacterOffsetBegin=25 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Republican NamedEntityTag=ORGANIZATION]
+[Text=Party CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Party NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Meet)
+      (NP
+        (NP (DT the) (NNP Chairman))
+        (PP (IN of)
+          (NP (DT the) (NNP Republican) (NNP Party)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Meet-1)
+det(Chairman-3, the-2)
+obj(Meet-1, Chairman-3)
+case(Party-7, of-4)
+det(Party-7, the-5)
+compound(Party-7, Republican-6)
+nmod:of(Chairman-3, Party-7)
+
+Extracted the following NER entity mentions:
+Chairman	TITLE	-
+Republican Party	ORGANIZATION	ORGANIZATION:0.8344393708786558

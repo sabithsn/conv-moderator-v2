@@ -1,0 +1,164 @@
+Document: ID=4B6A7426.text (4 sentences, 37 tokens)
+
+Sentence #1 (10 tokens):
+The guys in the picture of Azov certainly are.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=guys CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=guy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=picture CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=picture NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Azov CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Azov NamedEntityTag=O]
+[Text=certainly CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=certainly NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS guys))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN picture))
+          (PP (IN of)
+            (NP (NNP Azov))))))
+    (ADVP (RB certainly))
+    (VP (VBP are))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-9)
+det(guys-2, The-1)
+nsubj(are-9, guys-2)
+case(picture-5, in-3)
+det(picture-5, the-4)
+nmod:in(guys-2, picture-5)
+case(Azov-7, of-6)
+nmod:of(picture-5, Azov-7)
+advmod(are-9, certainly-8)
+punct(are-9, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+The rest of your "evidence" consists of people who look similar being in other pictures.
+
+Tokens:
+[Text=The CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=evidence CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=evidence NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=consists CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=VBZ Lemma=consist NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=VBP Lemma=look NamedEntityTag=O]
+[Text=similar CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=similar NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=pictures CharacterOffsetBegin=127 CharacterOffsetEnd=135 PartOfSpeech=NNS Lemma=picture NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN rest))
+      (PP (IN of)
+        (NP (PRP$ your) (`` ") (NN evidence) ('' "))))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP look)
+                (ADJP (JJ similar)
+                  (S
+                    (VP (VBG being)
+                      (PP (IN in)
+                        (NP (JJ other) (NNS pictures))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, consists-8)
+det(rest-2, The-1)
+nsubj(consists-8, rest-2)
+case(evidence-6, of-3)
+nmod:poss(evidence-6, your-4)
+punct(evidence-6, "-5)
+nmod:of(rest-2, evidence-6)
+punct(evidence-6, "-7)
+case(people-10, of-9)
+obl:of(consists-8, people-10)
+nsubj(look-12, people-10)
+ref(people-10, who-11)
+acl:relcl(people-10, look-12)
+xcomp(look-12, similar-13)
+cop(pictures-17, being-14)
+case(pictures-17, in-15)
+amod(pictures-17, other-16)
+dep(similar-13, pictures-17)
+punct(consists-8, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+Incredible work.
+
+Tokens:
+[Text=Incredible CharacterOffsetBegin=139 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=incredible NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Incredible) (NN work) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, work-2)
+amod(work-2, Incredible-1)
+punct(work-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (6 tokens):
+Well done fearless internet warrior.
+
+Tokens:
+[Text=Well CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=fearless CharacterOffsetBegin=167 CharacterOffsetEnd=175 PartOfSpeech=JJ Lemma=fearless NamedEntityTag=O]
+[Text=internet CharacterOffsetBegin=176 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=internet NamedEntityTag=O]
+[Text=warrior CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=warrior NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Well))
+    (VP (VBN done)
+      (NP (JJ fearless) (NN internet) (NN warrior)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, done-2)
+advmod(done-2, Well-1)
+amod(warrior-5, fearless-3)
+compound(warrior-5, internet-4)
+obj(done-2, warrior-5)
+punct(done-2, .-6)
+
+Extracted the following NER entity mentions:

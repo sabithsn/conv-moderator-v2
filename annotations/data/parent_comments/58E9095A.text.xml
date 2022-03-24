@@ -1,0 +1,31 @@
+Document: ID=58E9095A.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Lmao the letters keep growing
+
+Tokens:
+[Text=Lmao CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Lmao NamedEntityTag=PERSON]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=letters CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=letter NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=keep NamedEntityTag=O]
+[Text=growing CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VBG Lemma=grow NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Lmao))
+    (NP (DT the) (NNS letters))
+    (VP (VBP keep)
+      (S
+        (VP (VBG growing))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-4)
+nsubj(keep-4, Lmao-1)
+det(letters-3, the-2)
+nsubj(keep-4, letters-3)
+xcomp(keep-4, growing-5)
+
+Extracted the following NER entity mentions:
+Lmao	PERSON	PERSON:0.85240468875904

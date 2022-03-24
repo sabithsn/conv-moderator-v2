@@ -1,0 +1,79 @@
+Document: ID=665FEF87.text (2 sentences, 16 tokens)
+
+Sentence #1 (4 tokens):
+They were busy.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=busy CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=busy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD were)
+      (ADJP (JJ busy)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, busy-3)
+nsubj(busy-3, They-1)
+cop(busy-3, were-2)
+punct(busy-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+For 6 long hard years they were occupied subverting American politics.
+
+Tokens:
+[Text=For CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=6 CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=CD Lemma=6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=long CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=years CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">years</TIMEX3>]
+[Text=they CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=occupied CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=VBN Lemma=occupy NamedEntityTag=O]
+[Text=subverting CharacterOffsetBegin=57 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=subvert NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=politics CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (CD 6)
+        (ADJP (RB long) (JJ hard))
+        (NNS years)))
+    (NP (PRP they))
+    (VP (VBD were)
+      (VP (VBN occupied)
+        (S
+          (VP (VBG subverting)
+            (NP (JJ American) (NNS politics))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, occupied-8)
+case(years-5, For-1)
+nummod(years-5, 6-2)
+advmod(hard-4, long-3)
+amod(years-5, hard-4)
+obl:for(occupied-8, years-5)
+nsubj:pass(occupied-8, they-6)
+aux:pass(occupied-8, were-7)
+xcomp(occupied-8, subverting-9)
+amod(politics-11, American-10)
+obj(subverting-9, politics-11)
+punct(occupied-8, .-12)
+
+Extracted the following NER entity mentions:
+6	NUMBER	NUMBER:-1.0
+years	DURATION	DURATION:-1.0
+American	NATIONALITY	MISC:0.9999718787214611

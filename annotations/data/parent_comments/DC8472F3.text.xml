@@ -1,0 +1,168 @@
+Document: ID=DC8472F3.text (3 sentences, 42 tokens)
+
+Sentence #1 (7 tokens):
+You're confusing two different things.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=confusing CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=confuse NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=different CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG confusing)
+        (NP (CD two) (JJ different) (NNS things))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, confusing-3)
+nsubj(confusing-3, You-1)
+aux(confusing-3, 're-2)
+nummod(things-6, two-4)
+amod(things-6, different-5)
+obj(confusing-3, things-6)
+punct(confusing-3, .-7)
+
+Extracted the following NER entity mentions:
+two	NUMBER	NUMBER:-1.0
+
+Sentence #2 (21 tokens):
+"Dr." is used as a prefix, and it is used by anyone who had a doctoral degree.
+
+Tokens:
+[Text=" CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Dr. CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prefix CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=prefix NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=doctoral CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=doctoral NamedEntityTag=O]
+[Text=degree CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=degree NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (`` ") (NNP Dr.) ('' "))
+      (VP (VBZ is)
+        (VP (VBN used)
+          (PP (IN as)
+            (NP (DT a) (NN prefix))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (VP (VBN used)
+          (PP (IN by)
+            (NP
+              (NP (NN anyone))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD had)
+                    (NP (DT a) (JJ doctoral) (NN degree))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, used-5)
+punct(Dr.-2, "-1)
+nsubj:pass(used-5, Dr.-2)
+punct(Dr.-2, "-3)
+aux:pass(used-5, is-4)
+case(prefix-8, as-6)
+det(prefix-8, a-7)
+obl:as(used-5, prefix-8)
+punct(used-5, ,-9)
+cc(used-13, and-10)
+nsubj:pass(used-13, it-11)
+aux:pass(used-13, is-12)
+conj:and(used-5, used-13)
+case(anyone-15, by-14)
+obl:agent(used-13, anyone-15)
+nsubj(had-17, anyone-15)
+ref(anyone-15, who-16)
+acl:relcl(anyone-15, had-17)
+det(degree-20, a-18)
+amod(degree-20, doctoral-19)
+obj(had-17, degree-20)
+punct(used-5, .-21)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens):
+"Doctor" is a noun and it most typically refers to physicians.
+
+Tokens:
+[Text=" CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Doctor CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=doctor NamedEntityTag=TITLE]
+[Text=" CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=noun CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=noun NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=typically CharacterOffsetBegin=151 CharacterOffsetEnd=160 PartOfSpeech=RB Lemma=typically NamedEntityTag=O]
+[Text=refers CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=VBZ Lemma=refer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=physicians CharacterOffsetBegin=171 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=physician NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (`` ") (NN Doctor) ('' "))
+      (VP (VBZ is)
+        (NP (DT a) (NN noun))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RBS most) (RB typically))
+      (VP (VBZ refers)
+        (PP (IN to)
+          (NP (NNS physicians)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, noun-6)
+punct(Doctor-2, "-1)
+nsubj(noun-6, Doctor-2)
+punct(Doctor-2, "-3)
+cop(noun-6, is-4)
+det(noun-6, a-5)
+cc(refers-11, and-7)
+nsubj(refers-11, it-8)
+advmod(typically-10, most-9)
+advmod(refers-11, typically-10)
+conj:and(noun-6, refers-11)
+case(physicians-13, to-12)
+obl:to(refers-11, physicians-13)
+punct(noun-6, .-14)
+
+Extracted the following NER entity mentions:
+Doctor	TITLE	-

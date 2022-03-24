@@ -1,0 +1,62 @@
+Document: ID=3747C19D.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Proposed CA law would require schools to collect gun ownership information from parents of students
+
+Tokens:
+[Text=Proposed CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=CA CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=ca NamedEntityTag=STATE_OR_PROVINCE]
+[Text=law CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=require CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=require NamedEntityTag=O]
+[Text=schools CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=school NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=collect CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=collect NamedEntityTag=O]
+[Text=gun CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=gun NamedEntityTag=O]
+[Text=ownership CharacterOffsetBegin=53 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=ownership NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=63 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=students CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=student NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (VBN Proposed) (NN CA) (NN law))
+    (VP (MD would)
+      (VP (VB require)
+        (NP (NNS schools))
+        (S
+          (VP (TO to)
+            (VP (VB collect)
+              (NP
+                (NML (NN gun) (NN ownership))
+                (NN information))
+              (PP (IN from)
+                (NP
+                  (NP (NNS parents))
+                  (PP (IN of)
+                    (NP (NNS students))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, require-5)
+amod(law-3, Proposed-1)
+compound(law-3, CA-2)
+nsubj(require-5, law-3)
+aux(require-5, would-4)
+obj(require-5, schools-6)
+nsubj:xsubj(collect-8, schools-6)
+mark(collect-8, to-7)
+xcomp(require-5, collect-8)
+compound(ownership-10, gun-9)
+compound(information-11, ownership-10)
+obj(collect-8, information-11)
+case(parents-13, from-12)
+obl:from(collect-8, parents-13)
+case(students-15, of-14)
+nmod:of(parents-13, students-15)
+
+Extracted the following NER entity mentions:
+CA	STATE_OR_PROVINCE	-

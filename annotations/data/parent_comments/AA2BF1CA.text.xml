@@ -1,0 +1,95 @@
+Document: ID=AA2BF1CA.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+Recall petition for George Gascón approved - Opponents of LA District Attorney have 160 days to collect 570,000 signatures to force recall ballot in November
+
+Tokens:
+[Text=Recall CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=recall NamedEntityTag=O]
+[Text=petition CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=petition NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text=Gascón CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Gascón NamedEntityTag=PERSON]
+[Text=approved CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=VBN Lemma=approve NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Opponents CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=opponent NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=LA CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=LA NamedEntityTag=CITY]
+[Text=District CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=District NamedEntityTag=TITLE]
+[Text=Attorney CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Attorney NamedEntityTag=TITLE]
+[Text=have CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=160 CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=CD Lemma=160 NamedEntityTag=DURATION NormalizedNamedEntityTag=P160D Timex=<TIMEX3 tid="t1" type="DURATION" value="P160D">160 days</TIMEX3>]
+[Text=days CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P160D Timex=<TIMEX3 tid="t1" type="DURATION" value="P160D">160 days</TIMEX3>]
+[Text=to CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=collect CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=VB Lemma=collect NamedEntityTag=O]
+[Text=570,000 CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=CD Lemma=570,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=570000.0]
+[Text=signatures CharacterOffsetBegin=112 CharacterOffsetEnd=122 PartOfSpeech=NNS Lemma=signature NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=force CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=VB Lemma=force NamedEntityTag=O]
+[Text=recall CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=recall NamedEntityTag=O]
+[Text=ballot CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=ballot NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=November CharacterOffsetBegin=149 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-11 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-11">November</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Recall)
+      (NP (NN petition))
+      (PP (IN for)
+        (NP
+          (NP (NNP George) (NNP Gascón))
+          (SBAR
+            (S
+              (NP
+                (NP (VBN approved) (HYPH -) (NNS Opponents))
+                (PP (IN of)
+                  (NP (NNP LA) (NNP District) (NNP Attorney))))
+              (VP (VBP have)
+                (NP
+                  (NP (CD 160) (NNS days))
+                  (S
+                    (VP (TO to)
+                      (VP (VB collect)
+                        (NP (CD 570,000) (NNS signatures))
+                        (S
+                          (VP (TO to)
+                            (VP (VB force)
+                              (NP (NN recall) (NN ballot))
+                              (PP (IN in)
+                                (NP (NNP November))))))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Recall-1)
+obj(Recall-1, petition-2)
+case(Gascón-5, for-3)
+compound(Gascón-5, George-4)
+obl:for(Recall-1, Gascón-5)
+amod(Opponents-8, approved-6)
+punct(Opponents-8, --7)
+nsubj(have-13, Opponents-8)
+case(Attorney-12, of-9)
+compound(Attorney-12, LA-10)
+compound(Attorney-12, District-11)
+nmod:of(Opponents-8, Attorney-12)
+acl:relcl(Gascón-5, have-13)
+nummod(days-15, 160-14)
+obj(have-13, days-15)
+mark(collect-17, to-16)
+acl:to(days-15, collect-17)
+nummod(signatures-19, 570,000-18)
+obj(collect-17, signatures-19)
+mark(force-21, to-20)
+advcl:to(collect-17, force-21)
+compound(ballot-23, recall-22)
+obj(force-21, ballot-23)
+case(November-25, in-24)
+obl:in(force-21, November-25)
+
+Extracted the following NER entity mentions:
+George Gascón	PERSON	PERSON:0.9832361932387658
+LA	CITY	LOCATION:0.9234196745115579
+District Attorney	TITLE	-
+160 days	DURATION	DURATION:-1.0
+570,000	NUMBER	NUMBER:-1.0
+November	DATE	DATE:0.9844398409567062

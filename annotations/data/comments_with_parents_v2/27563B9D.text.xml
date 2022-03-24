@@ -1,0 +1,83 @@
+Document: ID=27563B9D.text (2 sentences, 17 tokens)
+
+Sentence #1 (3 tokens):
+I know.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP know))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, I-1)
+punct(know-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (14 tokens):
+How are you even capable of posting here when you’re so ignorant?
+
+Tokens:
+[Text=How CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=capable CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=capable NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=posting CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=post NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=ignorant CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=ignorant NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (ADJP (RB even) (JJ capable)
+        (PP (IN of)
+          (S
+            (VP (VBG posting)
+              (ADVP (RB here))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP you))
+                  (VP (VBP ’re)
+                    (SBAR (IN so)
+                      (FRAG
+                        (ADJP (JJ ignorant))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, capable-5)
+advmod(capable-5, How-1)
+cop(capable-5, are-2)
+nsubj(capable-5, you-3)
+advmod(capable-5, even-4)
+mark(posting-7, of-6)
+advcl:of(capable-5, posting-7)
+advmod(posting-7, here-8)
+advmod(’re-11, when-9)
+nsubj(’re-11, you-10)
+advcl(posting-7, ’re-11)
+mark(ignorant-13, so-12)
+advcl:so(’re-11, ignorant-13)
+punct(capable-5, ?-14)
+
+Extracted the following NER entity mentions:

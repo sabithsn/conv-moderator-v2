@@ -1,0 +1,123 @@
+Document: ID=D4268062.text (3 sentences, 26 tokens)
+
+Sentence #1 (12 tokens):
+Black people accused of crimes tend to be killed by cops.
+
+Tokens:
+[Text=Black CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=accused CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBN Lemma=accuse NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=crimes CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=crime NamedEntityTag=O]
+[Text=tend CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VBP Lemma=tend NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VBN Lemma=kill NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=cops CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=cop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Black) (NNS people))
+      (VP (VBN accused)
+        (PP (IN of)
+          (NP (NNS crimes)))))
+    (VP (VBP tend)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN killed)
+              (PP (IN by)
+                (NP (NNS cops))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tend-6)
+amod(people-2, Black-1)
+nsubj(tend-6, people-2)
+nsubj:pass:xsubj(killed-9, people-2)
+acl(people-2, accused-3)
+case(crimes-5, of-4)
+obl:of(accused-3, crimes-5)
+mark(killed-9, to-7)
+aux:pass(killed-9, be-8)
+xcomp(tend-6, killed-9)
+case(cops-11, by-10)
+obl:agent(killed-9, cops-11)
+punct(tend-6, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (5 tokens):
+And you know that.
+
+Tokens:
+[Text=And CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP you))
+    (VP (VBP know)
+      (SBAR (IN that)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-3)
+cc(know-3, And-1)
+nsubj(know-3, you-2)
+dep(know-3, that-4)
+punct(know-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+Stop lying in order to own the liberals.
+
+Tokens:
+[Text=Stop CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=lying CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=VBG Lemma=lie NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=VB Lemma=own NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=liberals CharacterOffsetBegin=109 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=liberal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Stop)
+      (S
+        (VP (VBG lying)
+          (PP (IN in)
+            (NP (NN order)))
+          (S
+            (VP (TO to)
+              (VP (VB own)
+                (NP (DT the) (NNS liberals))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Stop-1)
+xcomp(Stop-1, lying-2)
+advcl(lying-2, in-3)
+fixed(in-3, order-4)
+mark(own-6, to-5)
+xcomp(lying-2, own-6)
+det(liberals-8, the-7)
+obj(own-6, liberals-8)
+punct(Stop-1, .-9)
+
+Extracted the following NER entity mentions:

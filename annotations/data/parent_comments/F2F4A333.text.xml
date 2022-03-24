@@ -1,0 +1,62 @@
+Document: ID=F2F4A333.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+As serious as Trucker Carolina being a Russian ~~asshole~~ asset.
+
+Tokens:
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=serious CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=serious NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Trucker CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Trucker NamedEntityTag=ORGANIZATION]
+[Text=Carolina CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Carolina NamedEntityTag=ORGANIZATION]
+[Text=being CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=~ CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=SYM Lemma=~ NamedEntityTag=O]
+[Text=~ CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=SYM Lemma=~ NamedEntityTag=O]
+[Text=asshole CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=asshole NamedEntityTag=O]
+[Text=~ CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=SYM Lemma=~ NamedEntityTag=O]
+[Text=~ CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=SYM Lemma=~ NamedEntityTag=O]
+[Text=asset CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=asset NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN As)
+      (FRAG
+        (ADJP (JJ serious)
+          (PP (IN as)
+            (S
+              (NP (NNP Trucker) (NNP Carolina))
+              (VP (VBG being)
+                (NP
+                  (NP (DT a) (JJ Russian))
+                  (PP (SYM ~)
+                    (PP (SYM ~)
+                      (NP (NN asshole) (SYM ~))))
+                  (PP (SYM ~)
+                    (NP (NN asset))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, serious-2)
+mark(serious-2, As-1)
+mark(Russian-8, as-3)
+compound(Carolina-5, Trucker-4)
+nsubj(Russian-8, Carolina-5)
+cop(Russian-8, being-6)
+det(Russian-8, a-7)
+advcl:as(serious-2, Russian-8)
+dep(asshole-11, ~-9)
+dep(asshole-11, ~-10)
+acl(Russian-8, asshole-11)
+dep(asshole-11, ~-12)
+dep(asset-14, ~-13)
+nmod(Russian-8, asset-14)
+punct(serious-2, .-15)
+
+Extracted the following NER entity mentions:
+Trucker Carolina	ORGANIZATION	ORGANIZATION:0.5068250828873683
+Russian	NATIONALITY	MISC:0.9999986013165032

@@ -1,0 +1,54 @@
+Document: ID=0AB58C32.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Ashli Babbitt’s brother accused of assaulting, hurling slurs at Latino road worker
+
+Tokens:
+[Text=Ashli CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Ashli NamedEntityTag=PERSON]
+[Text=Babbitt CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Babbitt NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=brother CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=brother NamedEntityTag=O]
+[Text=accused CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBD Lemma=accuse NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=assaulting CharacterOffsetBegin=35 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=assault NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=hurling CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=hurl NamedEntityTag=O]
+[Text=slurs CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=slur NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Latino CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=latino NamedEntityTag=O]
+[Text=road CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=road NamedEntityTag=O]
+[Text=worker CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=worker NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ashli) (NNP Babbitt) (POS ’s))
+      (NN brother))
+    (VP (VBD accused)
+      (PP (IN of)
+        (S
+          (VP (VBG assaulting) (, ,) (VBG hurling)
+            (NP (NNS slurs))
+            (PP (IN at)
+              (NP (JJ Latino) (NN road) (NN worker)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, accused-5)
+compound(Babbitt-2, Ashli-1)
+nmod:poss(brother-4, Babbitt-2)
+case(Babbitt-2, ’s-3)
+nsubj(accused-5, brother-4)
+mark(assaulting-7, of-6)
+advcl:of(accused-5, assaulting-7)
+punct(assaulting-7, ,-8)
+dep(assaulting-7, hurling-9)
+obj(assaulting-7, slurs-10)
+case(worker-14, at-11)
+amod(worker-14, Latino-12)
+compound(worker-14, road-13)
+obl:at(assaulting-7, worker-14)
+
+Extracted the following NER entity mentions:
+Ashli Babbitt	PERSON	PERSON:0.9986147801339467

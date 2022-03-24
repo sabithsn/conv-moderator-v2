@@ -1,0 +1,113 @@
+Document: ID=9F48AC83.text (2 sentences, 28 tokens)
+
+Sentence #1 (22 tokens):
+Some people can't move to California if they're gay, they can only get executed by their theocratic government.
+
+Tokens:
+[Text=Some CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=move NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=26 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=if CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=executed CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=VBN Lemma=execute NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=theocratic CharacterOffsetBegin=89 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=theocratic NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=100 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT Some) (NNS people))
+      (VP (MD ca) (RB n't)
+        (VP (VB move)
+          (PP (IN to)
+            (NP (NNP California)))
+          (SBAR (IN if)
+            (S
+              (NP (PRP they))
+              (VP (VBP 're)
+                (ADJP (JJ gay))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD can)
+      (ADVP (RB only))
+      (VP (VB get)
+        (VP (VBN executed)
+          (PP (IN by)
+            (NP (PRP$ their) (JJ theocratic) (NN government))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, executed-17)
+det(people-2, Some-1)
+nsubj(move-5, people-2)
+aux(move-5, ca-3)
+advmod(move-5, n't-4)
+ccomp(executed-17, move-5)
+case(California-7, to-6)
+obl:to(move-5, California-7)
+mark(gay-11, if-8)
+nsubj(gay-11, they-9)
+cop(gay-11, 're-10)
+advcl:if(move-5, gay-11)
+punct(executed-17, ,-12)
+nsubj:pass(executed-17, they-13)
+aux(executed-17, can-14)
+advmod(executed-17, only-15)
+aux:pass(executed-17, get-16)
+case(government-21, by-18)
+nmod:poss(government-21, their-19)
+amod(government-21, theocratic-20)
+obl:agent(executed-17, government-21)
+punct(executed-17, .-22)
+
+Extracted the following NER entity mentions:
+California	STATE_OR_PROVINCE	LOCATION:0.9989787005689353
+
+Sentence #2 (6 tokens):
+Maybe go worry about them first
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=worry CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=VB Lemma=worry NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (VP (VB go)
+      (VP (VB worry)
+        (PP (IN about)
+          (NP (PRP them)))
+        (ADVP (RB first))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-2)
+advmod(go-2, Maybe-1)
+xcomp(go-2, worry-3)
+case(them-5, about-4)
+obl:about(worry-3, them-5)
+advmod(worry-3, first-6)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0

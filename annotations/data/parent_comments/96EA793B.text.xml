@@ -1,0 +1,89 @@
+Document: ID=96EA793B.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+Former Keystone Pipeline worker says US energy crisis is result of Biden's policies: 'We tried to warn you'
+
+Tokens:
+[Text=Former CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=Keystone CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=keystone NamedEntityTag=ORGANIZATION]
+[Text=Pipeline CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Pipeline NamedEntityTag=ORGANIZATION]
+[Text=worker CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=worker NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=energy CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=energy NamedEntityTag=O]
+[Text=crisis CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=crisis NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=result CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=result NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=policies CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=policy NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=tried CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=warn CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=VB Lemma=warn NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML
+        (NML (JJ Former) (NN Keystone))
+        (NNP Pipeline))
+      (NN worker))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (NNP US) (NN energy) (NN crisis))
+          (VP (VBZ is)
+            (NP
+              (NP
+                (NP (NN result))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Biden) (POS 's))
+                    (NNS policies))))
+              (: :)
+              (S (`` ')
+                (NP (PRP We))
+                (VP (VBD tried)
+                  (S
+                    (VP (TO to)
+                      (VP (VB warn)
+                        (NP (PRP you))))))
+                ('' ')))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-5)
+amod(Keystone-2, Former-1)
+compound(Pipeline-3, Keystone-2)
+compound(worker-4, Pipeline-3)
+nsubj(says-5, worker-4)
+compound(crisis-8, US-6)
+compound(crisis-8, energy-7)
+nsubj(result-10, crisis-8)
+cop(result-10, is-9)
+ccomp(says-5, result-10)
+case(policies-14, of-11)
+nmod:poss(policies-14, Biden-12)
+case(Biden-12, 's-13)
+nmod:of(result-10, policies-14)
+punct(result-10, :-15)
+punct(tried-18, '-16)
+nsubj(tried-18, We-17)
+nsubj:xsubj(warn-20, We-17)
+parataxis(result-10, tried-18)
+mark(warn-20, to-19)
+xcomp(tried-18, warn-20)
+obj(warn-20, you-21)
+punct(tried-18, '-22)
+
+Extracted the following NER entity mentions:
+Keystone Pipeline	ORGANIZATION	ORGANIZATION:0.7949167688864653
+US	COUNTRY	LOCATION:0.9596433174330398
+Biden	PERSON	PERSON:0.9963421878844406

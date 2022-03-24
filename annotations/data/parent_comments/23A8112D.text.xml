@@ -1,0 +1,54 @@
+Document: ID=23A8112D.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+In Blatantly Fascist Move, Florida GOP Passes Bill to Form Election Police Force
+
+Tokens:
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Blatantly CharacterOffsetBegin=3 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=blatantly NamedEntityTag=O]
+[Text=Fascist CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=fascist NamedEntityTag=O]
+[Text=Move CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=move NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Florida CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=GOP CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=O]
+[Text=Passes CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VBZ Lemma=pass NamedEntityTag=O]
+[Text=Bill CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Form CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Form NamedEntityTag=O]
+[Text=Election CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Election NamedEntityTag=O]
+[Text=Police CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Police NamedEntityTag=O]
+[Text=Force CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Force NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (ADVP (RB Blatantly))
+        (JJ Fascist) (NN Move)))
+    (, ,)
+    (NP (NNP Florida) (NNP GOP))
+    (VP (VBZ Passes)
+      (NP (NNP Bill))
+      (PP (IN to)
+        (NP (NNP Form) (NNP Election) (NNP Police) (NNP Force))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Passes-8)
+case(Move-4, In-1)
+advmod(Move-4, Blatantly-2)
+amod(Move-4, Fascist-3)
+obl:in(Passes-8, Move-4)
+punct(Passes-8, ,-5)
+compound(GOP-7, Florida-6)
+nsubj(Passes-8, GOP-7)
+obj(Passes-8, Bill-9)
+case(Force-14, to-10)
+compound(Force-14, Form-11)
+compound(Force-14, Election-12)
+compound(Force-14, Police-13)
+obl:to(Passes-8, Force-14)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.9340422655774419

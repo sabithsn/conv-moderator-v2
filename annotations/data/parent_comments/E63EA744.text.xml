@@ -1,0 +1,217 @@
+Document: ID=E63EA744.text (3 sentences, 55 tokens)
+
+Sentence #1 (25 tokens):
+TV news: I heard a Ukrainian soldier yell at the men not to take the water bottles, they are for women only.
+
+Tokens:
+[Text=TV CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NN Lemma=tv NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Ukrainian CharacterOffsetBegin=19 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=ukrainian NamedEntityTag=NATIONALITY]
+[Text=soldier CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=soldier NamedEntityTag=TITLE]
+[Text=yell CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=yell NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=bottles CharacterOffsetBegin=75 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=bottle NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN TV) (NN news))
+    (: :)
+    (PRN
+      (S
+        (NP (PRP I))
+        (VP (VBD heard)
+          (S
+            (NP (DT a) (JJ Ukrainian) (NN soldier))
+            (VP (VB yell)
+              (PP (IN at)
+                (NP (DT the) (NNS men)))
+              (S (RB not)
+                (VP (TO to)
+                  (VP (VB take)
+                    (NP (DT the) (NN water) (NNS bottles))))))))))
+    (, ,)
+    (S
+      (NP (PRP they))
+      (VP (VBP are)
+        (PP (IN for)
+          (NP (NNS women)))
+        (ADVP (RB only))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, news-2)
+compound(news-2, TV-1)
+punct(news-2, :-3)
+nsubj(heard-5, I-4)
+dep(news-2, heard-5)
+det(soldier-8, a-6)
+amod(soldier-8, Ukrainian-7)
+nsubj(yell-9, soldier-8)
+nsubj:xsubj(take-15, soldier-8)
+ccomp(heard-5, yell-9)
+case(men-12, at-10)
+det(men-12, the-11)
+obl:at(yell-9, men-12)
+advmod(take-15, not-13)
+mark(take-15, to-14)
+xcomp(yell-9, take-15)
+det(bottles-18, the-16)
+compound(bottles-18, water-17)
+obj(take-15, bottles-18)
+punct(news-2, ,-19)
+nsubj(women-23, they-20)
+cop(women-23, are-21)
+case(women-23, for-22)
+dep(news-2, women-23)
+advmod(women-23, only-24)
+punct(news-2, .-25)
+
+Extracted the following NER entity mentions:
+Ukrainian	NATIONALITY	MISC:0.9999958588972983
+soldier	TITLE	-
+
+Sentence #2 (21 tokens):
+And then they report about women's day, women complaining they are treated worse than men and want equality.
+
+Tokens:
+[Text=And CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=report CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=VBP Lemma=report NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=, CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=149 CharacterOffsetEnd=154 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=complaining CharacterOffsetBegin=155 CharacterOffsetEnd=166 PartOfSpeech=VBG Lemma=complain NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=treated CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=VBN Lemma=treat NamedEntityTag=O]
+[Text=worse CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=equality CharacterOffsetBegin=208 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=equality NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (ADVP (RB then))
+    (NP (PRP they))
+    (VP
+      (VP (VBP report)
+        (PP (IN about)
+          (NP
+            (NP
+              (NP (NNS women) (POS 's))
+              (NN day))
+            (, ,)
+            (NP
+              (NP (NNS women))
+              (VP (VBG complaining)
+                (SBAR
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are)
+                      (VP (VBN treated)
+                        (S
+                          (ADJP (JJR worse)))
+                        (PP (IN than)
+                          (NP (NNS men))))))))))))
+      (CC and)
+      (VP (VBP want)
+        (NP (NN equality))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, report-4)
+cc(report-4, And-1)
+advmod(report-4, then-2)
+nsubj(report-4, they-3)
+nsubj(want-19, they-3)
+case(day-8, about-5)
+nmod:poss(day-8, women-6)
+case(women-6, 's-7)
+obl:about(report-4, day-8)
+punct(day-8, ,-9)
+appos(day-8, women-10)
+acl(women-10, complaining-11)
+nsubj:pass(treated-14, they-12)
+aux:pass(treated-14, are-13)
+ccomp(complaining-11, treated-14)
+xcomp(treated-14, worse-15)
+case(men-17, than-16)
+obl:than(treated-14, men-17)
+cc(want-19, and-18)
+conj:and(report-4, want-19)
+obj(want-19, equality-20)
+punct(report-4, .-21)
+
+Extracted the following NER entity mentions:
+day	DURATION	DURATION:-1.0
+
+Sentence #3 (9 tokens):
+I'm going to lose my mind here.
+
+Tokens:
+[Text=I CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=lose CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=VB Lemma=lose NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=236 CharacterOffsetEnd=238 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB lose)
+              (NP (PRP$ my) (NN mind))
+              (ADVP (RB here)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, going-3)
+nsubj(going-3, I-1)
+nsubj:xsubj(lose-5, I-1)
+aux(going-3, 'm-2)
+mark(lose-5, to-4)
+xcomp(going-3, lose-5)
+nmod:poss(mind-7, my-6)
+obj(lose-5, mind-7)
+advmod(lose-5, here-8)
+punct(going-3, .-9)
+
+Extracted the following NER entity mentions:

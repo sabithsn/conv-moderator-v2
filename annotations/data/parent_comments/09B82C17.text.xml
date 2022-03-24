@@ -1,0 +1,50 @@
+Document: ID=09B82C17.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+16 Penn swimmers say Lia Thomas should be barred from competition
+
+Tokens:
+[Text=16 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=16 NamedEntityTag=NUMBER NormalizedNamedEntityTag=16.0]
+[Text=Penn CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Penn NamedEntityTag=LOCATION]
+[Text=swimmers CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=swimmer NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+[Text=Lia CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Lia NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=should CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=barred CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VBN Lemma=bar NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=competition CharacterOffsetBegin=54 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=competition NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 16) (NNP Penn) (NNS swimmers))
+    (VP (VBP say)
+      (SBAR
+        (S
+          (NP (NNP Lia) (NNP Thomas))
+          (VP (MD should)
+            (VP (VB be)
+              (VP (VBN barred)
+                (PP (IN from)
+                  (NP (NN competition)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-4)
+nummod(swimmers-3, 16-1)
+compound(swimmers-3, Penn-2)
+nsubj(say-4, swimmers-3)
+compound(Thomas-6, Lia-5)
+nsubj:pass(barred-9, Thomas-6)
+aux(barred-9, should-7)
+aux:pass(barred-9, be-8)
+ccomp(say-4, barred-9)
+case(competition-11, from-10)
+obl:from(barred-9, competition-11)
+
+Extracted the following NER entity mentions:
+16	NUMBER	NUMBER:-1.0
+Penn	LOCATION	LOCATION:0.9296906413775593
+Lia Thomas	PERSON	PERSON:0.9989505476149175

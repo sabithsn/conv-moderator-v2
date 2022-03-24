@@ -1,0 +1,65 @@
+Document: ID=32692ADA.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Reciprocal violence in relationships go both ways, both the man and women are being physical
+
+Tokens:
+[Text=Reciprocal CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=reciprocal NamedEntityTag=O]
+[Text=violence CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=violence NamedEntityTag=CAUSE_OF_DEATH]
+[Text=in CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=relationships CharacterOffsetBegin=23 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=relationship NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=ways CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=way NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=physical CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=JJ Lemma=physical NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Reciprocal) (NN violence))
+      (PP (IN in)
+        (NP (NNS relationships))))
+    (VP (VBP go)
+      (NP (DT both) (NNS ways))
+      (, ,)
+      (SBAR
+        (S
+          (NP (CC both)
+            (NP (DT the) (NN man))
+            (CC and)
+            (NP (NNS women)))
+          (VP (VBP are)
+            (VP (VBG being)
+              (ADJP (JJ physical)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-5)
+amod(violence-2, Reciprocal-1)
+nsubj(go-5, violence-2)
+case(relationships-4, in-3)
+nmod:in(violence-2, relationships-4)
+det(ways-7, both-6)
+obj(go-5, ways-7)
+punct(go-5, ,-8)
+cc:preconj(man-11, both-9)
+det(man-11, the-10)
+nsubj(physical-16, man-11)
+cc(women-13, and-12)
+conj:and(man-11, women-13)
+nsubj(physical-16, women-13)
+aux(physical-16, are-14)
+cop(physical-16, being-15)
+dep(go-5, physical-16)
+
+Extracted the following NER entity mentions:
+violence	CAUSE_OF_DEATH	-

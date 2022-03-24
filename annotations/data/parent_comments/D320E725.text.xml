@@ -1,0 +1,1827 @@
+Document: ID=D320E725.text (19 sentences, 487 tokens)
+
+Sentence #1 (6 tokens):
+Depends what exactly you mean.
+
+Tokens:
+[Text=Depends CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=depend NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Depends)
+      (SBAR
+        (WHNP (WP what) (RB exactly))
+        (S
+          (NP (PRP you))
+          (VP (VBP mean)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Depends-1)
+obj(mean-5, what-2)
+advmod(what-2, exactly-3)
+nsubj(mean-5, you-4)
+ccomp(Depends-1, mean-5)
+punct(Depends-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Are you asking for who financed Hitler before the NSDAP?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=asking CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=financed CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=VBN Lemma=finance NamedEntityTag=O]
+[Text=Hitler CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Hitler NamedEntityTag=PERSON]
+[Text=before CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NSDAP CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=NSDAP NamedEntityTag=ORGANIZATION]
+[Text=? CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (VP (VBG asking)
+      (PP (IN for)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBN financed)
+              (NP (NNP Hitler))
+              (PP (IN before)
+                (NP (DT the) (NNP NSDAP))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asking-3)
+aux(asking-3, Are-1)
+nsubj(asking-3, you-2)
+mark(financed-6, for-4)
+nsubj(financed-6, who-5)
+advcl:for(asking-3, financed-6)
+obj(financed-6, Hitler-7)
+case(NSDAP-10, before-8)
+det(NSDAP-10, the-9)
+obl:before(financed-6, NSDAP-10)
+punct(asking-3, ?-11)
+
+Extracted the following NER entity mentions:
+Hitler	PERSON	PERSON:0.9961335768293642
+NSDAP	ORGANIZATION	ORGANIZATION:0.8990925265953538
+
+Sentence #3 (8 tokens):
+Or who financed Hitler and the Nazis?
+
+Tokens:
+[Text=Or CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=financed CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=VBD Lemma=finance NamedEntityTag=O]
+[Text=Hitler CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Hitler NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Nazis CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NNPS Lemma=Nazis NamedEntityTag=CAUSE_OF_DEATH]
+[Text=? CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ (CC Or)
+    (WHNP (WP who))
+    (SQ
+      (VP (VBD financed)
+        (NP
+          (NP (NNP Hitler))
+          (CC and)
+          (NP (DT the) (NNPS Nazis)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, financed-3)
+cc(financed-3, Or-1)
+nsubj(financed-3, who-2)
+obj(financed-3, Hitler-4)
+cc(Nazis-7, and-5)
+det(Nazis-7, the-6)
+obj(financed-3, Nazis-7)
+conj:and(Hitler-4, Nazis-7)
+punct(financed-3, ?-8)
+
+Extracted the following NER entity mentions:
+Hitler	PERSON	PERSON:0.9989007138380589
+Nazis	CAUSE_OF_DEATH	MISC:0.922354143961623
+
+Sentence #4 (41 tokens):
+The first one is a bit harder to answer since Hitler tried (and succeeded) to eradicate a lot of evidence about his own past to simply be able to paint a much more favorable picture of said past.
+
+Tokens:
+[Text=The CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=one CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=is CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=harder CharacterOffsetBegin=149 CharacterOffsetEnd=155 PartOfSpeech=JJR Lemma=harder NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=159 CharacterOffsetEnd=165 PartOfSpeech=VB Lemma=answer NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=Hitler CharacterOffsetBegin=172 CharacterOffsetEnd=178 PartOfSpeech=NNP Lemma=Hitler NamedEntityTag=PERSON]
+[Text=tried CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=VBD Lemma=try NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=succeeded CharacterOffsetBegin=190 CharacterOffsetEnd=199 PartOfSpeech=VBD Lemma=succeed NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=eradicate CharacterOffsetBegin=204 CharacterOffsetEnd=213 PartOfSpeech=VB Lemma=eradicate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=evidence CharacterOffsetBegin=223 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=evidence NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=242 CharacterOffsetEnd=245 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">past</TIMEX3>]
+[Text=to CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=254 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=paint CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=VB Lemma=paint NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=280 CharacterOffsetEnd=284 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=285 CharacterOffsetEnd=289 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=favorable CharacterOffsetBegin=290 CharacterOffsetEnd=299 PartOfSpeech=JJ Lemma=favorable NamedEntityTag=O]
+[Text=picture CharacterOffsetBegin=300 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=picture NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PAST_REF">past</TIMEX3>]
+[Text=. CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (JJ first) (CD one))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP
+          (NP (DT a) (NN bit))
+          (JJR harder))
+        (S
+          (VP (TO to)
+            (VP (VB answer)
+              (SBAR (IN since)
+                (S
+                  (NP (NNP Hitler))
+                  (VP (VBD tried) (-LRB- -LRB-)
+                    (CC and)
+                    (VBD succeeded) (-RRB- -RRB-))))))))
+      (PP (IN to)
+        (VP (VB eradicate)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (NP (NN evidence))))
+          (PP (IN about)
+            (NP (PRP$ his) (JJ own) (NN past)))
+          (S
+            (VP (TO to)
+              (ADVP (RB simply))
+              (VP (VB be)
+                (ADJP (JJ able)
+                  (S
+                    (VP (TO to)
+                      (VP (VB paint)
+                        (NP
+                          (NP (DT a)
+                            (ADJP (RB much) (RBR more) (JJ favorable))
+                            (NN picture))
+                          (PP (IN of)
+                            (S
+                              (VP (VBD said)
+                                (NP (NN past))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, harder-7)
+det(one-3, The-1)
+amod(one-3, first-2)
+nsubj(harder-7, one-3)
+nsubj:xsubj(answer-9, one-3)
+cop(harder-7, is-4)
+det(bit-6, a-5)
+obl:npmod(harder-7, bit-6)
+mark(answer-9, to-8)
+xcomp(harder-7, answer-9)
+mark(tried-12, since-10)
+nsubj(tried-12, Hitler-11)
+nsubj(succeeded-15, Hitler-11)
+advcl:since(answer-9, tried-12)
+punct(tried-12, (-13)
+cc(succeeded-15, and-14)
+advcl:since(answer-9, succeeded-15)
+conj:and(tried-12, succeeded-15)
+punct(tried-12, )-16)
+case(eradicate-18, to-17)
+advcl:to(harder-7, eradicate-18)
+det:qmod(evidence-22, a-19)
+fixed(a-19, lot-20)
+fixed(a-19, of-21)
+obj(eradicate-18, evidence-22)
+case(past-26, about-23)
+nmod:poss(past-26, his-24)
+amod(past-26, own-25)
+obl:about(eradicate-18, past-26)
+mark(able-30, to-27)
+advmod(able-30, simply-28)
+cop(able-30, be-29)
+advcl:to(eradicate-18, able-30)
+mark(paint-32, to-31)
+xcomp(able-30, paint-32)
+det(picture-37, a-33)
+advmod(favorable-36, much-34)
+advmod(favorable-36, more-35)
+amod(picture-37, favorable-36)
+obj(paint-32, picture-37)
+mark(said-39, of-38)
+acl:of(picture-37, said-39)
+obj(said-39, past-40)
+punct(harder-7, .-41)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0
+one	NUMBER	NUMBER:-1.0
+Hitler	PERSON	PERSON:0.9976862279395172
+past	DATE	DATE:-1.0
+past	DATE	DATE:-1.0
+his	PERSON	-
+
+Sentence #5 (68 tokens):
+While he was in Vienna and Munich he mostly lived of a mixture Orphan's allowance (half at first because of his father having been dead already and full extend after his mother had died because he successfully claimed to be a Student of Art despite not being one) as well as some financial help from his Mother and Aunt while they were still alive.
+
+Tokens:
+[Text=While CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=335 CharacterOffsetEnd=337 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Vienna CharacterOffsetBegin=338 CharacterOffsetEnd=344 PartOfSpeech=NNP Lemma=Vienna NamedEntityTag=CITY]
+[Text=and CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Munich CharacterOffsetBegin=349 CharacterOffsetEnd=355 PartOfSpeech=NNP Lemma=Munich NamedEntityTag=CITY]
+[Text=he CharacterOffsetBegin=356 CharacterOffsetEnd=358 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=mostly CharacterOffsetBegin=359 CharacterOffsetEnd=365 PartOfSpeech=RB Lemma=mostly NamedEntityTag=O]
+[Text=lived CharacterOffsetBegin=366 CharacterOffsetEnd=371 PartOfSpeech=VBD Lemma=live NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mixture CharacterOffsetBegin=377 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=mixture NamedEntityTag=O]
+[Text=Orphan CharacterOffsetBegin=385 CharacterOffsetEnd=391 PartOfSpeech=NNP Lemma=Orphan NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=allowance CharacterOffsetBegin=394 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=allowance NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=half NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=413 CharacterOffsetEnd=418 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=because CharacterOffsetBegin=419 CharacterOffsetEnd=426 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=427 CharacterOffsetEnd=429 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=father CharacterOffsetBegin=434 CharacterOffsetEnd=440 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=441 CharacterOffsetEnd=447 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=448 CharacterOffsetEnd=452 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=453 CharacterOffsetEnd=457 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=458 CharacterOffsetEnd=465 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=470 CharacterOffsetEnd=474 PartOfSpeech=RB Lemma=full NamedEntityTag=O]
+[Text=extend CharacterOffsetBegin=475 CharacterOffsetEnd=481 PartOfSpeech=VB Lemma=extend NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=482 CharacterOffsetEnd=487 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=488 CharacterOffsetEnd=491 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=mother CharacterOffsetBegin=492 CharacterOffsetEnd=498 PartOfSpeech=NN Lemma=mother NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=503 CharacterOffsetEnd=507 PartOfSpeech=VBN Lemma=die NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=508 CharacterOffsetEnd=515 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=516 CharacterOffsetEnd=518 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=successfully CharacterOffsetBegin=519 CharacterOffsetEnd=531 PartOfSpeech=RB Lemma=successfully NamedEntityTag=O]
+[Text=claimed CharacterOffsetBegin=532 CharacterOffsetEnd=539 PartOfSpeech=VBD Lemma=claim NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=540 CharacterOffsetEnd=542 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=543 CharacterOffsetEnd=545 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=546 CharacterOffsetEnd=547 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Student CharacterOffsetBegin=548 CharacterOffsetEnd=555 PartOfSpeech=NN Lemma=student NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Art CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=NNP Lemma=Art NamedEntityTag=O]
+[Text=despite CharacterOffsetBegin=563 CharacterOffsetEnd=570 PartOfSpeech=IN Lemma=despite NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=571 CharacterOffsetEnd=574 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=575 CharacterOffsetEnd=580 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=581 CharacterOffsetEnd=584 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=) CharacterOffsetBegin=584 CharacterOffsetEnd=585 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=586 CharacterOffsetEnd=588 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=589 CharacterOffsetEnd=593 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=594 CharacterOffsetEnd=596 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=597 CharacterOffsetEnd=601 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=financial CharacterOffsetBegin=602 CharacterOffsetEnd=611 PartOfSpeech=JJ Lemma=financial NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=612 CharacterOffsetEnd=616 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=617 CharacterOffsetEnd=621 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=622 CharacterOffsetEnd=625 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Mother CharacterOffsetBegin=626 CharacterOffsetEnd=632 PartOfSpeech=NN Lemma=mother NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=633 CharacterOffsetEnd=636 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Aunt CharacterOffsetBegin=637 CharacterOffsetEnd=641 PartOfSpeech=NN Lemma=aunt NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=642 CharacterOffsetEnd=647 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=648 CharacterOffsetEnd=652 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=653 CharacterOffsetEnd=657 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=658 CharacterOffsetEnd=663 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=alive CharacterOffsetBegin=664 CharacterOffsetEnd=669 PartOfSpeech=JJ Lemma=alive NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=669 CharacterOffsetEnd=670 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP he))
+        (VP (VBD was)
+          (PP (IN in)
+            (NP (NNP Vienna)
+              (CC and)
+              (NNP Munich))))))
+    (NP (PRP he))
+    (ADVP (RB mostly))
+    (VP (VBD lived)
+      (PP (IN of)
+        (NP (DT a) (NN mixture)))
+      (NP
+        (NP
+          (NP
+            (NP (NNP Orphan) (POS 's))
+            (NN allowance))
+          (-LRB- -LRB-)
+          (RRC
+            (NP (NN half))
+            (PP
+              (PP (IN at)
+                (ADVP (RB first)))
+              (IN because) (IN of)
+              (NP (PRP$ his) (NN father)
+                (S
+                  (VP (VBG having)
+                    (VP (VBN been)
+                      (ADJP
+                        (ADJP (JJ dead) (RB already))
+                        (CC and)
+                        (ADJP (RB full)))
+                      (S
+                        (VP (VB extend)
+                          (SBAR (IN after)
+                            (S
+                              (NP (PRP$ his) (NN mother))
+                              (VP (VBD had)
+                                (VP (VBN died)
+                                  (SBAR (IN because)
+                                    (S
+                                      (NP (PRP he))
+                                      (ADVP (RB successfully))
+                                      (VP (VBD claimed)
+                                        (S
+                                          (VP (TO to)
+                                            (VP (VB be)
+                                              (NP
+                                                (NP (DT a) (NN Student))
+                                                (PP (IN of)
+                                                  (NP (NNP Art))))))))))))))))
+                      (PP (IN despite)
+                        (S (RB not)
+                          (VP (VBG being)
+                            (NP (CD one)))))))))))
+          (-RRB- -RRB-))
+        (CONJP (RB as) (RB well) (IN as))
+        (NP
+          (NP
+            (NP (DT some) (JJ financial) (NN help))
+            (PP (IN from)
+              (NP (PRP$ his) (NN Mother)
+                (CC and)
+                (NN Aunt))))
+          (SBAR (IN while)
+            (S
+              (NP (PRP they))
+              (VP (VBD were)
+                (ADVP (RB still))
+                (ADJP (JJ alive))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lived-10)
+mark(Vienna-5, While-1)
+nsubj(Vienna-5, he-2)
+cop(Vienna-5, was-3)
+case(Vienna-5, in-4)
+advcl:in(lived-10, Vienna-5)
+cc(Munich-7, and-6)
+conj:and(Vienna-5, Munich-7)
+advcl:in(lived-10, Munich-7)
+nsubj(lived-10, he-8)
+advmod(lived-10, mostly-9)
+case(mixture-13, of-11)
+det(mixture-13, a-12)
+obl:of(lived-10, mixture-13)
+nmod:poss(allowance-16, Orphan-14)
+case(Orphan-14, 's-15)
+obj(lived-10, allowance-16)
+punct(allowance-16, (-17)
+acl:relcl(allowance-16, half-18)
+case(first-20, at-19)
+obl:at(father-24, first-20)
+case(father-24, because-21)
+fixed(because-21, of-22)
+nmod:poss(father-24, his-23)
+obl:because_of(half-18, father-24)
+aux(dead-27, having-25)
+cop(dead-27, been-26)
+dep(father-24, dead-27)
+advmod(dead-27, already-28)
+cc(full-30, and-29)
+dep(father-24, full-30)
+conj:and(dead-27, full-30)
+ccomp(dead-27, extend-31)
+mark(died-36, after-32)
+nmod:poss(mother-34, his-33)
+nsubj(died-36, mother-34)
+aux(died-36, had-35)
+advcl:after(extend-31, died-36)
+mark(claimed-40, because-37)
+nsubj(claimed-40, he-38)
+nsubj:xsubj(Student-44, he-38)
+advmod(claimed-40, successfully-39)
+advcl:because(died-36, claimed-40)
+mark(Student-44, to-41)
+cop(Student-44, be-42)
+det(Student-44, a-43)
+xcomp(claimed-40, Student-44)
+case(Art-46, of-45)
+nmod:of(Student-44, Art-46)
+mark(one-50, despite-47)
+advmod(one-50, not-48)
+cop(one-50, being-49)
+advcl:despite(dead-27, one-50)
+punct(allowance-16, )-51)
+cc(help-57, as-52)
+fixed(as-52, well-53)
+fixed(as-52, as-54)
+det(help-57, some-55)
+amod(help-57, financial-56)
+obj(lived-10, help-57)
+conj:and(allowance-16, help-57)
+case(Mother-60, from-58)
+nmod:poss(Mother-60, his-59)
+nmod:from(help-57, Mother-60)
+cc(Aunt-62, and-61)
+nmod:from(help-57, Aunt-62)
+conj:and(Mother-60, Aunt-62)
+mark(alive-67, while-63)
+nsubj(alive-67, they-64)
+cop(alive-67, were-65)
+advmod(alive-67, still-66)
+dep(help-57, alive-67)
+punct(lived-10, .-68)
+
+Extracted the following NER entity mentions:
+Vienna	CITY	LOCATION:0.9986556500879047
+Munich	CITY	LOCATION:0.9839822320082832
+first	ORDINAL	ORDINAL:-1.0
+Student	TITLE	-
+one	NUMBER	NUMBER:-1.0
+he	PERSON	-
+he	PERSON	-
+his	PERSON	-
+his	PERSON	-
+he	PERSON	-
+his	PERSON	-
+
+Sentence #6 (44 tokens):
+But he kept running out of money more and more and eventually held himself above water bei moving into a boarding house for men (yes, that was a thing) and started selling some copies of paintings or other famous motives.
+
+Tokens:
+[Text=But CharacterOffsetBegin=671 CharacterOffsetEnd=674 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=675 CharacterOffsetEnd=677 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=kept CharacterOffsetBegin=678 CharacterOffsetEnd=682 PartOfSpeech=VBD Lemma=keep NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=683 CharacterOffsetEnd=690 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=691 CharacterOffsetEnd=694 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=695 CharacterOffsetEnd=697 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=698 CharacterOffsetEnd=703 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=704 CharacterOffsetEnd=708 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=709 CharacterOffsetEnd=712 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=713 CharacterOffsetEnd=717 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=718 CharacterOffsetEnd=721 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=eventually CharacterOffsetBegin=722 CharacterOffsetEnd=732 PartOfSpeech=RB Lemma=eventually NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=733 CharacterOffsetEnd=737 PartOfSpeech=VBD Lemma=hold NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=738 CharacterOffsetEnd=745 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=746 CharacterOffsetEnd=751 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=752 CharacterOffsetEnd=757 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=bei CharacterOffsetBegin=758 CharacterOffsetEnd=761 PartOfSpeech=NN Lemma=bei NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=762 CharacterOffsetEnd=768 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=769 CharacterOffsetEnd=773 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=774 CharacterOffsetEnd=775 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=boarding CharacterOffsetBegin=776 CharacterOffsetEnd=784 PartOfSpeech=NN Lemma=boarding NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=785 CharacterOffsetEnd=790 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=791 CharacterOffsetEnd=794 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=795 CharacterOffsetEnd=798 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=799 CharacterOffsetEnd=800 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=800 CharacterOffsetEnd=803 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=803 CharacterOffsetEnd=804 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=805 CharacterOffsetEnd=809 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=810 CharacterOffsetEnd=813 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=814 CharacterOffsetEnd=815 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=816 CharacterOffsetEnd=821 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=821 CharacterOffsetEnd=822 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=823 CharacterOffsetEnd=826 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=827 CharacterOffsetEnd=834 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=selling CharacterOffsetBegin=835 CharacterOffsetEnd=842 PartOfSpeech=VBG Lemma=sell NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=843 CharacterOffsetEnd=847 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=copies CharacterOffsetBegin=848 CharacterOffsetEnd=854 PartOfSpeech=NNS Lemma=copy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=855 CharacterOffsetEnd=857 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=paintings CharacterOffsetBegin=858 CharacterOffsetEnd=867 PartOfSpeech=NNS Lemma=painting NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=868 CharacterOffsetEnd=870 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=871 CharacterOffsetEnd=876 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=famous CharacterOffsetBegin=877 CharacterOffsetEnd=883 PartOfSpeech=JJ Lemma=famous NamedEntityTag=O]
+[Text=motives CharacterOffsetBegin=884 CharacterOffsetEnd=891 PartOfSpeech=NNS Lemma=motive NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=891 CharacterOffsetEnd=892 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (PRP he))
+    (VP
+      (VP (VBD kept)
+        (S
+          (VP (VBG running)
+            (PRT (IN out))
+            (PP (IN of)
+              (NP (NN money)))
+            (ADVP (RBR more)
+              (CC and)
+              (RBR more)))))
+      (CC and)
+      (ADVP (RB eventually))
+      (VP (VBD held)
+        (NP (PRP himself))
+        (PP (IN above)
+          (NP
+            (NP (NN water) (NN bei))
+            (VP (VBG moving)
+              (PP (IN into)
+                (NP
+                  (NP (DT a) (NN boarding) (NN house))
+                  (PP (IN for)
+                    (NP (NNS men))))))
+            (PRN (-LRB- -LRB-)
+              (S
+                (INTJ (UH yes))
+                (, ,)
+                (NP (DT that))
+                (VP (VBD was)
+                  (NP (DT a) (NN thing))))
+              (-RRB- -RRB-)))))
+      (CC and)
+      (VP (VBD started)
+        (S
+          (VP (VBG selling)
+            (NP
+              (NP (DT some) (NNS copies))
+              (PP (IN of)
+                (NP
+                  (NP (NNS paintings))
+                  (CC or)
+                  (NP (JJ other) (JJ famous) (NNS motives)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, kept-3)
+cc(kept-3, But-1)
+nsubj(kept-3, he-2)
+nsubj(held-13, he-2)
+nsubj(started-34, he-2)
+xcomp(kept-3, running-4)
+compound:prt(running-4, out-5)
+case(money-7, of-6)
+obl:of(running-4, money-7)
+advmod(running-4, more-8)
+cc(more-10, and-9)
+advmod(running-4, more-10)
+conj:and(more-8, more-10)
+cc(held-13, and-11)
+advmod(held-13, eventually-12)
+conj:and(kept-3, held-13)
+obj(held-13, himself-14)
+case(bei-17, above-15)
+compound(bei-17, water-16)
+obl:above(held-13, bei-17)
+acl(bei-17, moving-18)
+case(house-22, into-19)
+det(house-22, a-20)
+compound(house-22, boarding-21)
+obl:into(moving-18, house-22)
+case(men-24, for-23)
+nmod:for(house-22, men-24)
+punct(thing-31, (-25)
+discourse(thing-31, yes-26)
+punct(thing-31, ,-27)
+nsubj(thing-31, that-28)
+cop(thing-31, was-29)
+det(thing-31, a-30)
+parataxis(moving-18, thing-31)
+punct(thing-31, )-32)
+cc(started-34, and-33)
+conj:and(kept-3, started-34)
+xcomp(started-34, selling-35)
+det(copies-37, some-36)
+obj(selling-35, copies-37)
+case(paintings-39, of-38)
+nmod:of(copies-37, paintings-39)
+cc(motives-43, or-40)
+amod(motives-43, other-41)
+amod(motives-43, famous-42)
+nmod:of(copies-37, motives-43)
+conj:or(paintings-39, motives-43)
+punct(kept-3, .-44)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #7 (20 tokens):
+Often with the help of, ironically enough, a lot of jewish people who helped him sell those.
+
+Tokens:
+[Text=Often CharacterOffsetBegin=893 CharacterOffsetEnd=898 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=899 CharacterOffsetEnd=903 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=904 CharacterOffsetEnd=907 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=908 CharacterOffsetEnd=912 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=913 CharacterOffsetEnd=915 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=915 CharacterOffsetEnd=916 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ironically CharacterOffsetBegin=917 CharacterOffsetEnd=927 PartOfSpeech=RB Lemma=ironically NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=928 CharacterOffsetEnd=934 PartOfSpeech=RB Lemma=enough NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=934 CharacterOffsetEnd=935 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=936 CharacterOffsetEnd=937 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=938 CharacterOffsetEnd=941 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=942 CharacterOffsetEnd=944 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=jewish CharacterOffsetBegin=945 CharacterOffsetEnd=951 PartOfSpeech=JJ Lemma=jewish NamedEntityTag=RELIGION]
+[Text=people CharacterOffsetBegin=952 CharacterOffsetEnd=958 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=959 CharacterOffsetEnd=962 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=helped CharacterOffsetBegin=963 CharacterOffsetEnd=969 PartOfSpeech=VBD Lemma=help NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=970 CharacterOffsetEnd=973 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=sell CharacterOffsetBegin=974 CharacterOffsetEnd=978 PartOfSpeech=VB Lemma=sell NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=979 CharacterOffsetEnd=984 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=984 CharacterOffsetEnd=985 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB Often))
+    (PP (IN with)
+      (NP
+        (NP (DT the) (NN help))
+        (PP (IN of) (, ,)
+          (ADVP
+            (ADVP (RB ironically))
+            (RB enough))
+          (, ,)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (NP
+                (NP (JJ jewish) (NNS people))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD helped)
+                      (S
+                        (NP (PRP him))
+                        (VP (VB sell)
+                          (NP (DT those)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Often-1)
+case(help-4, with-2)
+det(help-4, the-3)
+obl:with(Often-1, help-4)
+case(lot-11, of-5)
+punct(lot-11, ,-6)
+advmod(lot-11, ironically-7)
+advmod(ironically-7, enough-8)
+punct(lot-11, ,-9)
+det:qmod(people-14, a-10)
+fixed(a-10, lot-11)
+fixed(a-10, of-12)
+amod(people-14, jewish-13)
+nmod(help-4, people-14)
+nsubj(helped-16, people-14)
+ref(people-14, who-15)
+acl:relcl(people-14, helped-16)
+nsubj(sell-18, him-17)
+ccomp(helped-16, sell-18)
+obj(sell-18, those-19)
+punct(Often-1, .-20)
+
+Extracted the following NER entity mentions:
+jewish	RELIGION	MISC:0.6323186436689511
+him	PERSON	-
+
+Sentence #8 (33 tokens):
+In 1913 he then got paid out the full inheritance of his fathers fortune (or, well, his share of it) and used that Money to move to Munich.
+
+Tokens:
+[Text=In CharacterOffsetBegin=987 CharacterOffsetEnd=989 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1913 CharacterOffsetBegin=990 CharacterOffsetEnd=994 PartOfSpeech=CD Lemma=1913 NamedEntityTag=DATE NormalizedNamedEntityTag=1913 Timex=<TIMEX3 tid="t3" type="DATE" value="1913">1913</TIMEX3>]
+[Text=he CharacterOffsetBegin=995 CharacterOffsetEnd=997 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=998 CharacterOffsetEnd=1002 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=1003 CharacterOffsetEnd=1006 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=1007 CharacterOffsetEnd=1011 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=1012 CharacterOffsetEnd=1015 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1016 CharacterOffsetEnd=1019 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=1020 CharacterOffsetEnd=1024 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=inheritance CharacterOffsetBegin=1025 CharacterOffsetEnd=1036 PartOfSpeech=NN Lemma=inheritance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1037 CharacterOffsetEnd=1039 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=1040 CharacterOffsetEnd=1043 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=fathers CharacterOffsetBegin=1044 CharacterOffsetEnd=1051 PartOfSpeech=NNS Lemma=father NamedEntityTag=O]
+[Text=fortune CharacterOffsetBegin=1052 CharacterOffsetEnd=1059 PartOfSpeech=NN Lemma=fortune NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=1060 CharacterOffsetEnd=1061 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=1061 CharacterOffsetEnd=1063 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1063 CharacterOffsetEnd=1064 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=1065 CharacterOffsetEnd=1069 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1069 CharacterOffsetEnd=1070 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=1071 CharacterOffsetEnd=1074 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=share CharacterOffsetBegin=1075 CharacterOffsetEnd=1080 PartOfSpeech=NN Lemma=share NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1081 CharacterOffsetEnd=1083 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=1084 CharacterOffsetEnd=1086 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=1086 CharacterOffsetEnd=1087 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1088 CharacterOffsetEnd=1091 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=1092 CharacterOffsetEnd=1096 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1097 CharacterOffsetEnd=1101 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Money CharacterOffsetBegin=1102 CharacterOffsetEnd=1107 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1108 CharacterOffsetEnd=1110 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=1111 CharacterOffsetEnd=1115 PartOfSpeech=VB Lemma=move NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1116 CharacterOffsetEnd=1118 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Munich CharacterOffsetBegin=1119 CharacterOffsetEnd=1125 PartOfSpeech=NNP Lemma=Munich NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=1125 CharacterOffsetEnd=1126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1913)))
+    (NP (PRP he))
+    (ADVP (RB then))
+    (VP
+      (VP (VBD got)
+        (VP (VBN paid)
+          (PP (IN out)
+            (NP
+              (NP (DT the) (JJ full) (NN inheritance))
+              (PP (IN of)
+                (NP (PRP$ his) (NNS fathers) (NN fortune)))
+              (-LRB- -LRB-)
+              (CC or)
+              (, ,)
+              (INTJ (UH well))
+              (, ,)
+              (NP
+                (NP (PRP$ his) (NN share))
+                (PP (IN of)
+                  (NP (PRP it))))))))
+      (-RRB- -RRB-)
+      (CC and)
+      (VP (VBD used)
+        (NP (DT that) (NN Money))
+        (S
+          (VP (TO to)
+            (VP (VB move)
+              (PP (IN to)
+                (NP (NNP Munich))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, paid-6)
+case(1913-2, In-1)
+obl:in(paid-6, 1913-2)
+nsubj:pass(paid-6, he-3)
+nsubj:pass(used-26, he-3)
+advmod(paid-6, then-4)
+aux:pass(paid-6, got-5)
+case(inheritance-10, out-7)
+det(inheritance-10, the-8)
+amod(inheritance-10, full-9)
+obl:out(paid-6, inheritance-10)
+case(fortune-14, of-11)
+nmod:poss(fortune-14, his-12)
+compound(fortune-14, fathers-13)
+nmod:of(inheritance-10, fortune-14)
+punct(inheritance-10, (-15)
+cc(share-21, or-16)
+punct(inheritance-10, ,-17)
+discourse(inheritance-10, well-18)
+punct(inheritance-10, ,-19)
+nmod:poss(share-21, his-20)
+obl:out(paid-6, share-21)
+conj:or(inheritance-10, share-21)
+case(it-23, of-22)
+nmod:of(share-21, it-23)
+punct(paid-6, )-24)
+cc(used-26, and-25)
+conj:and(paid-6, used-26)
+det(Money-28, that-27)
+obj(used-26, Money-28)
+mark(move-30, to-29)
+advcl:to(used-26, move-30)
+case(Munich-32, to-31)
+obl:to(move-30, Munich-32)
+punct(paid-6, .-33)
+
+Extracted the following NER entity mentions:
+1913	DATE	DATE:0.9903775857592869
+Munich	CITY	LOCATION:0.9924769572245528
+he	PERSON	-
+his	PERSON	-
+his	PERSON	-
+
+Sentence #9 (17 tokens):
+That's where he got caught by the german police because he dodged Austrian military Service.
+
+Tokens:
+[Text=That CharacterOffsetBegin=1127 CharacterOffsetEnd=1131 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=1131 CharacterOffsetEnd=1133 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=1134 CharacterOffsetEnd=1139 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1140 CharacterOffsetEnd=1142 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=1143 CharacterOffsetEnd=1146 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=caught CharacterOffsetBegin=1147 CharacterOffsetEnd=1153 PartOfSpeech=VBN Lemma=catch NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1154 CharacterOffsetEnd=1156 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1157 CharacterOffsetEnd=1160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=german CharacterOffsetBegin=1161 CharacterOffsetEnd=1167 PartOfSpeech=JJ Lemma=german NamedEntityTag=NATIONALITY]
+[Text=police CharacterOffsetBegin=1168 CharacterOffsetEnd=1174 PartOfSpeech=NN Lemma=police NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=1175 CharacterOffsetEnd=1182 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1183 CharacterOffsetEnd=1185 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=dodged CharacterOffsetBegin=1186 CharacterOffsetEnd=1192 PartOfSpeech=VBD Lemma=dodge NamedEntityTag=O]
+[Text=Austrian CharacterOffsetBegin=1193 CharacterOffsetEnd=1201 PartOfSpeech=JJ Lemma=austrian NamedEntityTag=NATIONALITY]
+[Text=military CharacterOffsetBegin=1202 CharacterOffsetEnd=1210 PartOfSpeech=JJ Lemma=military NamedEntityTag=O]
+[Text=Service CharacterOffsetBegin=1211 CharacterOffsetEnd=1218 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1218 CharacterOffsetEnd=1219 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP he))
+          (VP (VBD got)
+            (VP (VBN caught)
+              (PP (IN by)
+                (NP (DT the) (JJ german) (NN police)))
+              (SBAR (IN because)
+                (S
+                  (NP (PRP he))
+                  (VP (VBD dodged)
+                    (NP
+                      (NML (JJ Austrian) (JJ military))
+                      (NN Service))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-2)
+nsubj('s-2, That-1)
+advmod(caught-6, where-3)
+nsubj:pass(caught-6, he-4)
+aux:pass(caught-6, got-5)
+advcl('s-2, caught-6)
+case(police-10, by-7)
+det(police-10, the-8)
+amod(police-10, german-9)
+obl:agent(caught-6, police-10)
+mark(dodged-13, because-11)
+nsubj(dodged-13, he-12)
+advcl:because(caught-6, dodged-13)
+amod(military-15, Austrian-14)
+compound(Service-16, military-15)
+obj(dodged-13, Service-16)
+punct('s-2, .-17)
+
+Extracted the following NER entity mentions:
+german	NATIONALITY	MISC:0.9995615887000142
+Austrian	NATIONALITY	MISC:0.9999995052103346
+he	PERSON	-
+he	PERSON	-
+
+Sentence #10 (10 tokens):
+So in the end he was pulled in anyway.
+
+Tokens:
+[Text=So CharacterOffsetBegin=1220 CharacterOffsetEnd=1222 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1223 CharacterOffsetEnd=1225 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1226 CharacterOffsetEnd=1229 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=1230 CharacterOffsetEnd=1233 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1234 CharacterOffsetEnd=1236 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1237 CharacterOffsetEnd=1240 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pulled CharacterOffsetBegin=1241 CharacterOffsetEnd=1247 PartOfSpeech=VBN Lemma=pull NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1248 CharacterOffsetEnd=1250 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=anyway CharacterOffsetBegin=1251 CharacterOffsetEnd=1257 PartOfSpeech=RB Lemma=anyway NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1257 CharacterOffsetEnd=1258 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (PP (IN in)
+      (NP (DT the) (NN end)))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN pulled)
+        (PP (IN in)
+          (ADVP (RB anyway)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pulled-7)
+advmod(pulled-7, So-1)
+case(end-4, in-2)
+det(end-4, the-3)
+obl:in(pulled-7, end-4)
+nsubj:pass(pulled-7, he-5)
+aux:pass(pulled-7, was-6)
+case(anyway-9, in-8)
+advcl:in(pulled-7, anyway-9)
+punct(pulled-7, .-10)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #11 (14 tokens):
+So from 1914 to 1920 he was pretty much financed by the Army.
+
+Tokens:
+[Text=So CharacterOffsetBegin=1259 CharacterOffsetEnd=1261 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=1262 CharacterOffsetEnd=1266 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=1914 CharacterOffsetBegin=1267 CharacterOffsetEnd=1271 PartOfSpeech=CD Lemma=1914 NamedEntityTag=DATE NormalizedNamedEntityTag=1914/1920 Timex=<TIMEX3 tid="t4" type="DATE" value="1914">1914</TIMEX3>]
+[Text=to CharacterOffsetBegin=1272 CharacterOffsetEnd=1274 PartOfSpeech=IN Lemma=to NamedEntityTag=DATE NormalizedNamedEntityTag=1914/1920]
+[Text=1920 CharacterOffsetBegin=1275 CharacterOffsetEnd=1279 PartOfSpeech=CD Lemma=1920 NamedEntityTag=DATE NormalizedNamedEntityTag=1914/1920 Timex=<TIMEX3 tid="t5" type="DATE" value="1920">1920</TIMEX3>]
+[Text=he CharacterOffsetBegin=1280 CharacterOffsetEnd=1282 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1283 CharacterOffsetEnd=1286 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=1287 CharacterOffsetEnd=1293 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=1294 CharacterOffsetEnd=1298 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=financed CharacterOffsetBegin=1299 CharacterOffsetEnd=1307 PartOfSpeech=VBN Lemma=finance NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=1308 CharacterOffsetEnd=1310 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1311 CharacterOffsetEnd=1314 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Army CharacterOffsetBegin=1315 CharacterOffsetEnd=1319 PartOfSpeech=NNP Lemma=Army NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=1319 CharacterOffsetEnd=1320 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So)
+      (PP (IN from)
+        (NP
+          (QP (CD 1914) (IN to) (CD 1920)))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (ADVP (RB pretty) (JJ much))
+      (VP (VBN financed)
+        (PP (IN by)
+          (NP (DT the) (NNP Army)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, financed-10)
+advmod(financed-10, So-1)
+case(1920-5, from-2)
+compound(1920-5, 1914-3)
+advmod(1920-5, to-4)
+obl:from(So-1, 1920-5)
+nsubj:pass(financed-10, he-6)
+aux:pass(financed-10, was-7)
+advmod(much-9, pretty-8)
+advmod(financed-10, much-9)
+case(Army-13, by-11)
+det(Army-13, the-12)
+obl:agent(financed-10, Army-13)
+punct(financed-10, .-14)
+
+Extracted the following NER entity mentions:
+1914	DATE	DATE:0.9788384611697826
+to	DATE	-
+1920	DATE	DATE:0.9637184803072659
+Army	ORGANIZATION	ORGANIZATION:0.9788544219386658
+he	PERSON	-
+
+Sentence #12 (49 tokens):
+He took part in the Munich Council Republic in 1919 where he even became a Councilor himself but as soon as the Freikorps came in at Mai of that year he pretty much denounced all of his comrades in an instance in order to save his own neck.
+
+Tokens:
+[Text=He CharacterOffsetBegin=1322 CharacterOffsetEnd=1324 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=1325 CharacterOffsetEnd=1329 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=1330 CharacterOffsetEnd=1334 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1335 CharacterOffsetEnd=1337 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1338 CharacterOffsetEnd=1341 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Munich CharacterOffsetBegin=1342 CharacterOffsetEnd=1348 PartOfSpeech=NNP Lemma=Munich NamedEntityTag=CITY]
+[Text=Council CharacterOffsetBegin=1349 CharacterOffsetEnd=1356 PartOfSpeech=NNP Lemma=Council NamedEntityTag=LOCATION]
+[Text=Republic CharacterOffsetBegin=1357 CharacterOffsetEnd=1365 PartOfSpeech=NNP Lemma=Republic NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=1366 CharacterOffsetEnd=1368 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1919 CharacterOffsetBegin=1369 CharacterOffsetEnd=1373 PartOfSpeech=CD Lemma=1919 NamedEntityTag=DATE NormalizedNamedEntityTag=1919 Timex=<TIMEX3 tid="t6" type="DATE" value="1919">1919</TIMEX3>]
+[Text=where CharacterOffsetBegin=1374 CharacterOffsetEnd=1379 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1380 CharacterOffsetEnd=1382 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=1383 CharacterOffsetEnd=1387 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=became CharacterOffsetBegin=1388 CharacterOffsetEnd=1394 PartOfSpeech=VBD Lemma=become NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1395 CharacterOffsetEnd=1396 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Councilor CharacterOffsetBegin=1397 CharacterOffsetEnd=1406 PartOfSpeech=NN Lemma=councilor NamedEntityTag=TITLE]
+[Text=himself CharacterOffsetBegin=1407 CharacterOffsetEnd=1414 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=1415 CharacterOffsetEnd=1418 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1419 CharacterOffsetEnd=1421 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=1422 CharacterOffsetEnd=1426 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1427 CharacterOffsetEnd=1429 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1430 CharacterOffsetEnd=1433 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Freikorps CharacterOffsetBegin=1434 CharacterOffsetEnd=1443 PartOfSpeech=NNPS Lemma=Freikorps NamedEntityTag=MISC]
+[Text=came CharacterOffsetBegin=1444 CharacterOffsetEnd=1448 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1449 CharacterOffsetEnd=1451 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1452 CharacterOffsetEnd=1454 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Mai CharacterOffsetBegin=1455 CharacterOffsetEnd=1458 PartOfSpeech=NNP Lemma=Mai NamedEntityTag=PERSON]
+[Text=of CharacterOffsetBegin=1459 CharacterOffsetEnd=1461 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1462 CharacterOffsetEnd=1466 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=1467 CharacterOffsetEnd=1471 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t7" type="DURATION" value="P1Y">year</TIMEX3>]
+[Text=he CharacterOffsetBegin=1472 CharacterOffsetEnd=1474 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=1475 CharacterOffsetEnd=1481 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=1482 CharacterOffsetEnd=1486 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=denounced CharacterOffsetBegin=1487 CharacterOffsetEnd=1496 PartOfSpeech=VBD Lemma=denounce NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=1497 CharacterOffsetEnd=1500 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1501 CharacterOffsetEnd=1503 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=1504 CharacterOffsetEnd=1507 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=comrades CharacterOffsetBegin=1508 CharacterOffsetEnd=1516 PartOfSpeech=NNS Lemma=comrade NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1517 CharacterOffsetEnd=1519 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=1520 CharacterOffsetEnd=1522 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=instance CharacterOffsetBegin=1523 CharacterOffsetEnd=1531 PartOfSpeech=NN Lemma=instance NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1532 CharacterOffsetEnd=1534 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=1535 CharacterOffsetEnd=1540 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1541 CharacterOffsetEnd=1543 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=save CharacterOffsetBegin=1544 CharacterOffsetEnd=1548 PartOfSpeech=VB Lemma=save NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=1549 CharacterOffsetEnd=1552 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=1553 CharacterOffsetEnd=1556 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=neck CharacterOffsetBegin=1557 CharacterOffsetEnd=1561 PartOfSpeech=NN Lemma=neck NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1561 CharacterOffsetEnd=1562 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD took)
+        (NP (NN part))
+        (PP (IN in)
+          (NP (DT the) (NNP Munich) (NNP Council) (NNP Republic)))
+        (PP (IN in)
+          (NP (CD 1919)))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP he))
+            (ADVP (RB even))
+            (VP (VBD became)
+              (NP (DT a) (NN Councilor))
+              (NP (PRP himself)))))))
+    (CC but)
+    (S
+      (ADVP
+        (ADVP (RB as) (RB soon))
+        (SBAR (IN as)
+          (S
+            (NP (DT the) (NNPS Freikorps))
+            (VP (VBD came)
+              (PP (IN in)
+                (PP (IN at)
+                  (NP
+                    (NP (NNP Mai))
+                    (PP (IN of)
+                      (NP (DT that) (NN year))))))))))
+      (NP (PRP he))
+      (VP
+        (ADVP (RB pretty) (RB much))
+        (VBD denounced)
+        (NP
+          (NP (DT all))
+          (PP (IN of)
+            (NP (PRP$ his) (NNS comrades))))
+        (PP (IN in)
+          (NP
+            (NP (DT an) (NN instance))
+            (PP (IN in)
+              (NP (NN order)))))
+        (S
+          (VP (TO to)
+            (VP (VB save)
+              (NP (PRP$ his) (JJ own) (NN neck)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, took-2)
+nsubj(took-2, He-1)
+obj(took-2, part-3)
+case(Republic-8, in-4)
+det(Republic-8, the-5)
+compound(Republic-8, Munich-6)
+compound(Republic-8, Council-7)
+obl:in(took-2, Republic-8)
+case(1919-10, in-9)
+obl:in(took-2, 1919-10)
+advmod(became-14, where-11)
+nsubj(became-14, he-12)
+advmod(became-14, even-13)
+advcl(took-2, became-14)
+det(Councilor-16, a-15)
+iobj(became-14, Councilor-16)
+xcomp(became-14, himself-17)
+cc(denounced-34, but-18)
+advmod(soon-20, as-19)
+advmod(denounced-34, soon-20)
+mark(came-24, as-21)
+det(Freikorps-23, the-22)
+nsubj(came-24, Freikorps-23)
+advcl:as(soon-20, came-24)
+case(Mai-27, in-25)
+case(Mai-27, at-26)
+obl:at(came-24, Mai-27)
+case(year-30, of-28)
+det(year-30, that-29)
+nmod:of(Mai-27, year-30)
+nsubj(denounced-34, he-31)
+advmod(much-33, pretty-32)
+advmod(denounced-34, much-33)
+conj:but(took-2, denounced-34)
+obj(denounced-34, all-35)
+case(comrades-38, of-36)
+nmod:poss(comrades-38, his-37)
+nmod:of(all-35, comrades-38)
+case(instance-41, in-39)
+det(instance-41, an-40)
+obl:in(denounced-34, instance-41)
+acl(instance-41, in-42)
+fixed(in-42, order-43)
+mark(save-45, to-44)
+advcl:to(denounced-34, save-45)
+nmod:poss(neck-48, his-46)
+amod(neck-48, own-47)
+obj(save-45, neck-48)
+punct(took-2, .-49)
+
+Extracted the following NER entity mentions:
+Munich	CITY	LOCATION:0.9814960635087513
+Council Republic	LOCATION	LOCATION:0.9796388850510874
+1919	DATE	DATE:0.998896400055742
+Councilor	TITLE	MISC:0.9414113284027508
+Freikorps	MISC	MISC:0.5276825570631968
+Mai	PERSON	PERSON:0.5428354200473824
+year	DURATION	DURATION:-1.0
+He	PERSON	-
+he	PERSON	-
+he	PERSON	-
+his	PERSON	-
+his	PERSON	-
+
+Sentence #13 (3 tokens):
+And career.
+
+Tokens:
+[Text=And CharacterOffsetBegin=1563 CharacterOffsetEnd=1566 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=career CharacterOffsetBegin=1567 CharacterOffsetEnd=1573 PartOfSpeech=NN Lemma=career NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1573 CharacterOffsetEnd=1574 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (CC And)
+    (NP (NN career))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, career-2)
+cc(career-2, And-1)
+punct(career-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #14 (47 tokens):
+The Reichswehr pretty much paid him as well for being a contact (known in German as "V-Mann") among the Socialists in the Council Republic and then send him off to take part in seminars against "Bolchewik-Propaganda".
+
+Tokens:
+[Text=The CharacterOffsetBegin=1575 CharacterOffsetEnd=1578 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Reichswehr CharacterOffsetBegin=1579 CharacterOffsetEnd=1589 PartOfSpeech=NNP Lemma=Reichswehr NamedEntityTag=MISC]
+[Text=pretty CharacterOffsetBegin=1590 CharacterOffsetEnd=1596 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=1597 CharacterOffsetEnd=1601 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=1602 CharacterOffsetEnd=1606 PartOfSpeech=VBD Lemma=pay NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=1607 CharacterOffsetEnd=1610 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1611 CharacterOffsetEnd=1613 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=1614 CharacterOffsetEnd=1618 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1619 CharacterOffsetEnd=1622 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=1623 CharacterOffsetEnd=1628 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1629 CharacterOffsetEnd=1630 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=1631 CharacterOffsetEnd=1638 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=1639 CharacterOffsetEnd=1640 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=known CharacterOffsetBegin=1640 CharacterOffsetEnd=1645 PartOfSpeech=VBN Lemma=know NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1646 CharacterOffsetEnd=1648 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=German CharacterOffsetBegin=1649 CharacterOffsetEnd=1655 PartOfSpeech=JJ Lemma=german NamedEntityTag=NATIONALITY]
+[Text=as CharacterOffsetBegin=1656 CharacterOffsetEnd=1658 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=1659 CharacterOffsetEnd=1660 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=V CharacterOffsetBegin=1660 CharacterOffsetEnd=1661 PartOfSpeech=NNP Lemma=V NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=1661 CharacterOffsetEnd=1662 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Mann CharacterOffsetBegin=1662 CharacterOffsetEnd=1666 PartOfSpeech=NNP Lemma=Mann NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=1666 CharacterOffsetEnd=1667 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=1667 CharacterOffsetEnd=1668 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=1669 CharacterOffsetEnd=1674 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1675 CharacterOffsetEnd=1678 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Socialists CharacterOffsetBegin=1679 CharacterOffsetEnd=1689 PartOfSpeech=NNPS Lemma=Socialists NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1690 CharacterOffsetEnd=1692 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1693 CharacterOffsetEnd=1696 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Council CharacterOffsetBegin=1697 CharacterOffsetEnd=1704 PartOfSpeech=NNP Lemma=Council NamedEntityTag=ORGANIZATION]
+[Text=Republic CharacterOffsetBegin=1705 CharacterOffsetEnd=1713 PartOfSpeech=NNP Lemma=Republic NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=1714 CharacterOffsetEnd=1717 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=1718 CharacterOffsetEnd=1722 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=1723 CharacterOffsetEnd=1727 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=1728 CharacterOffsetEnd=1731 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=1732 CharacterOffsetEnd=1735 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1736 CharacterOffsetEnd=1738 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=1739 CharacterOffsetEnd=1743 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=1744 CharacterOffsetEnd=1748 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1749 CharacterOffsetEnd=1751 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=seminars CharacterOffsetBegin=1752 CharacterOffsetEnd=1760 PartOfSpeech=NNS Lemma=seminar NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=1761 CharacterOffsetEnd=1768 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=1769 CharacterOffsetEnd=1770 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=Bolchewik CharacterOffsetBegin=1770 CharacterOffsetEnd=1779 PartOfSpeech=NNP Lemma=Bolchewik NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=1779 CharacterOffsetEnd=1780 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Propaganda CharacterOffsetBegin=1780 CharacterOffsetEnd=1790 PartOfSpeech=NNP Lemma=Propaganda NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=1790 CharacterOffsetEnd=1791 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1791 CharacterOffsetEnd=1792 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNP Reichswehr))
+    (ADVP (RB pretty) (RB much))
+    (VP (VBD paid)
+      (NP (PRP him))
+      (ADVP
+        (ADVP (RB as) (RB well))
+        (SBAR (IN for)
+          (S
+            (S
+              (VP (VBG being)
+                (NP
+                  (NP
+                    (NP (DT a) (NN contact))
+                    (-LRB- -LRB-)
+                    (VP (VBN known)
+                      (PP (IN in)
+                        (ADJP (JJ German)))
+                      (PP (IN as) (`` ")
+                        (NP (NNP V) (HYPH -) (NNP Mann))
+                        ('' ")))
+                    (-RRB- -RRB-))
+                  (PP (IN among)
+                    (NP
+                      (NP (DT the) (NNPS Socialists))
+                      (PP (IN in)
+                        (NP (DT the) (NNP Council) (NNP Republic))))))))
+            (CC and)
+            (S
+              (ADVP (RB then))
+              (VP (VB send)
+                (NP (PRP him))
+                (PRT (RP off))
+                (S
+                  (VP (TO to)
+                    (VP (VB take)
+                      (NP (NN part))
+                      (PP (IN in)
+                        (NP
+                          (NP (NNS seminars))
+                          (PP (IN against) (`` ")
+                            (NP (NNP Bolchewik) (HYPH -) (NNP Propaganda))
+                            ('' ")))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, paid-5)
+det(Reichswehr-2, The-1)
+nsubj(paid-5, Reichswehr-2)
+advmod(much-4, pretty-3)
+advmod(paid-5, much-4)
+obj(paid-5, him-6)
+advmod(paid-5, as-7)
+fixed(as-7, well-8)
+mark(contact-12, for-9)
+cop(contact-12, being-10)
+det(contact-12, a-11)
+advcl:for(as-7, contact-12)
+punct(contact-12, (-13)
+acl(contact-12, known-14)
+case(German-16, in-15)
+advcl:in(known-14, German-16)
+case(Mann-21, as-17)
+punct(Mann-21, "-18)
+compound(Mann-21, V-19)
+punct(Mann-21, --20)
+obl:as(known-14, Mann-21)
+punct(Mann-21, "-22)
+punct(contact-12, )-23)
+case(Socialists-26, among-24)
+det(Socialists-26, the-25)
+nmod:among(contact-12, Socialists-26)
+case(Republic-30, in-27)
+det(Republic-30, the-28)
+compound(Republic-30, Council-29)
+nmod:in(Socialists-26, Republic-30)
+cc(send-33, and-31)
+advmod(send-33, then-32)
+advcl:for(as-7, send-33)
+conj:and(contact-12, send-33)
+obj(send-33, him-34)
+compound:prt(send-33, off-35)
+mark(take-37, to-36)
+advcl:to(send-33, take-37)
+obj(take-37, part-38)
+case(seminars-40, in-39)
+obl:in(take-37, seminars-40)
+case(Propaganda-45, against-41)
+punct(Propaganda-45, "-42)
+compound(Propaganda-45, Bolchewik-43)
+punct(Propaganda-45, --44)
+nmod:against(seminars-40, Propaganda-45)
+punct(Propaganda-45, "-46)
+punct(paid-5, .-47)
+
+Extracted the following NER entity mentions:
+Reichswehr	MISC	MISC:0.5405220803908165
+German	NATIONALITY	MISC:0.9999582565537681
+Council Republic	ORGANIZATION	ORGANIZATION:0.43813040463986863
+him	PERSON	-
+him	PERSON	-
+
+Sentence #15 (43 tokens):
+He was released from the Army (Reichswehr) on April 1st 1920 and from thereon he was pretty much making a living of holding Speeches (yes, he got paid for that) and his general work within the NSDAP.
+
+Tokens:
+[Text=He CharacterOffsetBegin=1794 CharacterOffsetEnd=1796 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1797 CharacterOffsetEnd=1800 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=released CharacterOffsetBegin=1801 CharacterOffsetEnd=1809 PartOfSpeech=VBN Lemma=release NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=1810 CharacterOffsetEnd=1814 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1815 CharacterOffsetEnd=1818 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Army CharacterOffsetBegin=1819 CharacterOffsetEnd=1823 PartOfSpeech=NNP Lemma=Army NamedEntityTag=ORGANIZATION]
+[Text=( CharacterOffsetBegin=1824 CharacterOffsetEnd=1825 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=Reichswehr CharacterOffsetBegin=1825 CharacterOffsetEnd=1835 PartOfSpeech=NNP Lemma=Reichswehr NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=1835 CharacterOffsetEnd=1836 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=1837 CharacterOffsetEnd=1839 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=April CharacterOffsetBegin=1840 CharacterOffsetEnd=1845 PartOfSpeech=NNP Lemma=April NamedEntityTag=DATE NormalizedNamedEntityTag=1920-04-01 Timex=<TIMEX3 tid="t8" type="DATE" value="1920-04-01">April 1st 1920</TIMEX3>]
+[Text=1st CharacterOffsetBegin=1846 CharacterOffsetEnd=1849 PartOfSpeech=NN Lemma=1st NamedEntityTag=DATE NormalizedNamedEntityTag=1920-04-01 Timex=<TIMEX3 tid="t8" type="DATE" value="1920-04-01">April 1st 1920</TIMEX3>]
+[Text=1920 CharacterOffsetBegin=1850 CharacterOffsetEnd=1854 PartOfSpeech=CD Lemma=1920 NamedEntityTag=DATE NormalizedNamedEntityTag=1920-04-01 Timex=<TIMEX3 tid="t8" type="DATE" value="1920-04-01">April 1st 1920</TIMEX3>]
+[Text=and CharacterOffsetBegin=1855 CharacterOffsetEnd=1858 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=1859 CharacterOffsetEnd=1863 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=thereon CharacterOffsetBegin=1864 CharacterOffsetEnd=1871 PartOfSpeech=NN Lemma=thereon NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1872 CharacterOffsetEnd=1874 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1875 CharacterOffsetEnd=1878 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=1879 CharacterOffsetEnd=1885 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=1886 CharacterOffsetEnd=1890 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=1891 CharacterOffsetEnd=1897 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=1898 CharacterOffsetEnd=1899 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=living CharacterOffsetBegin=1900 CharacterOffsetEnd=1906 PartOfSpeech=NN Lemma=living NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1907 CharacterOffsetEnd=1909 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=holding CharacterOffsetBegin=1910 CharacterOffsetEnd=1917 PartOfSpeech=VBG Lemma=hold NamedEntityTag=O]
+[Text=Speeches CharacterOffsetBegin=1918 CharacterOffsetEnd=1926 PartOfSpeech=NNPS Lemma=Speeches NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=1927 CharacterOffsetEnd=1928 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=1928 CharacterOffsetEnd=1931 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1931 CharacterOffsetEnd=1932 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=1933 CharacterOffsetEnd=1935 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=1936 CharacterOffsetEnd=1939 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=1940 CharacterOffsetEnd=1944 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1945 CharacterOffsetEnd=1948 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=1949 CharacterOffsetEnd=1953 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=1953 CharacterOffsetEnd=1954 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1955 CharacterOffsetEnd=1958 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=1959 CharacterOffsetEnd=1962 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=general CharacterOffsetBegin=1963 CharacterOffsetEnd=1970 PartOfSpeech=JJ Lemma=general NamedEntityTag=TITLE]
+[Text=work CharacterOffsetBegin=1971 CharacterOffsetEnd=1975 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=1976 CharacterOffsetEnd=1982 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1983 CharacterOffsetEnd=1986 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NSDAP CharacterOffsetBegin=1987 CharacterOffsetEnd=1992 PartOfSpeech=NNP Lemma=NSDAP NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=1992 CharacterOffsetEnd=1993 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP
+        (VP (VBN released)
+          (PP
+            (PP (IN from)
+              (NP
+                (NP
+                  (NP (DT the) (NNP Army))
+                  (-LRB- -LRB-)
+                  (NP (NNP Reichswehr))
+                  (-RRB- -RRB-))
+                (PP (IN on)
+                  (NP (NNP April)))
+                (NP-TMP (NN 1st) (CD 1920))))
+            (CC and)
+            (PP (IN from)
+              (NP
+                (NP (NN thereon))
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD was)
+                      (ADVP (RB pretty) (RB much))
+                      (VP (VBG making)
+                        (NP
+                          (NP (DT a) (NN living))
+                          (PP (IN of)
+                            (S
+                              (VP (VBG holding)
+                                (NP (NNPS Speeches)))))))))))))
+          (PRN (-LRB- -LRB-)
+            (S
+              (INTJ (UH yes))
+              (, ,)
+              (NP (PRP he))
+              (VP (VBD got)
+                (VP (VBN paid)
+                  (PP (IN for)
+                    (NP (DT that))))))
+            (-RRB- -RRB-)))
+        (CC and)
+        (VP
+          (NP (PRP$ his) (JJ general) (NN work))
+          (PP (IN within)
+            (NP (DT the) (NNP NSDAP))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, released-3)
+nsubj:pass(released-3, He-1)
+nsubj:pass(released-3', He-1)
+aux:pass(released-3, was-2)
+conj:and(released-3, released-3')
+case(Army-6, from-4)
+det(Army-6, the-5)
+obl:from(released-3, Army-6)
+punct(Army-6, (-7)
+dep(Army-6, Reichswehr-8)
+punct(Army-6, )-9)
+case(April-11, on-10)
+nmod:on(Army-6, April-11)
+obl:tmod(Army-6, 1st-12)
+nummod(1st-12, 1920-13)
+cc(released-3', and-14)
+case(thereon-16, from-15)
+obl:from(released-3', thereon-16)
+nsubj(making-21, he-17)
+aux(making-21, was-18)
+advmod(much-20, pretty-19)
+advmod(making-21, much-20)
+acl:relcl(thereon-16, making-21)
+det(living-23, a-22)
+obj(making-21, living-23)
+mark(holding-25, of-24)
+acl:of(living-23, holding-25)
+obj(holding-25, Speeches-26)
+punct(paid-32, (-27)
+discourse(paid-32, yes-28)
+punct(paid-32, ,-29)
+nsubj:pass(paid-32, he-30)
+aux:pass(paid-32, got-31)
+parataxis(released-3, paid-32)
+case(that-34, for-33)
+obl:for(paid-32, that-34)
+punct(paid-32, )-35)
+cc(work-39, and-36)
+nmod:poss(work-39, his-37)
+amod(work-39, general-38)
+conj:and(released-3, work-39)
+case(NSDAP-42, within-40)
+det(NSDAP-42, the-41)
+obl:within(work-39, NSDAP-42)
+punct(released-3, .-43)
+
+Extracted the following NER entity mentions:
+Army	ORGANIZATION	ORGANIZATION:0.7558721381871746
+April 1st 1920	DATE	DATE:0.9982879320948628
+general	TITLE	-
+NSDAP	ORGANIZATION	ORGANIZATION:0.9726659427686772
+He	PERSON	-
+he	PERSON	-
+he	PERSON	-
+his	PERSON	-
+
+Sentence #16 (12 tokens):
+Now the NSDAP throughout the 20s had a multitude of supporters.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=1995 CharacterOffsetEnd=1998 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t9" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=the CharacterOffsetBegin=1999 CharacterOffsetEnd=2002 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NSDAP CharacterOffsetBegin=2003 CharacterOffsetEnd=2008 PartOfSpeech=NNP Lemma=NSDAP NamedEntityTag=ORGANIZATION]
+[Text=throughout CharacterOffsetBegin=2009 CharacterOffsetEnd=2019 PartOfSpeech=IN Lemma=throughout NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2020 CharacterOffsetEnd=2023 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=20s CharacterOffsetBegin=2024 CharacterOffsetEnd=2027 PartOfSpeech=NNS Lemma=20 NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=2028 CharacterOffsetEnd=2031 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2032 CharacterOffsetEnd=2033 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=multitude CharacterOffsetBegin=2034 CharacterOffsetEnd=2043 PartOfSpeech=NN Lemma=multitude NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2044 CharacterOffsetEnd=2046 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=supporters CharacterOffsetBegin=2047 CharacterOffsetEnd=2057 PartOfSpeech=NNS Lemma=supporter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2057 CharacterOffsetEnd=2058 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP
+      (NP (DT the) (NNP NSDAP))
+      (PP (IN throughout)
+        (NP (DT the) (NNS 20s))))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN multitude))
+        (PP (IN of)
+          (NP (NNS supporters)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-7)
+advmod(had-7, Now-1)
+det(NSDAP-3, the-2)
+nsubj(had-7, NSDAP-3)
+case(20s-6, throughout-4)
+det(20s-6, the-5)
+nmod:throughout(NSDAP-3, 20s-6)
+det:qmod(supporters-11, a-8)
+fixed(a-8, multitude-9)
+fixed(a-8, of-10)
+obj(had-7, supporters-11)
+punct(had-7, .-12)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+NSDAP	ORGANIZATION	ORGANIZATION:0.9699871881989083
+
+Sentence #17 (42 tokens):
+Many of them members of the aristocracy among which Wilhelm III was a very enthusiastic Nazi who supported the NSDAP and Hitler quite a lot financially or, of course, as well as Industrialists like Fritz Thyssen or Emil Kirdorf.
+
+Tokens:
+[Text=Many CharacterOffsetBegin=2059 CharacterOffsetEnd=2063 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2064 CharacterOffsetEnd=2066 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=2067 CharacterOffsetEnd=2071 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=members CharacterOffsetBegin=2072 CharacterOffsetEnd=2079 PartOfSpeech=NNS Lemma=member NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2080 CharacterOffsetEnd=2082 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2083 CharacterOffsetEnd=2086 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=aristocracy CharacterOffsetBegin=2087 CharacterOffsetEnd=2098 PartOfSpeech=NN Lemma=aristocracy NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=2099 CharacterOffsetEnd=2104 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=2105 CharacterOffsetEnd=2110 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Wilhelm CharacterOffsetBegin=2111 CharacterOffsetEnd=2118 PartOfSpeech=NNP Lemma=Wilhelm NamedEntityTag=PERSON]
+[Text=III CharacterOffsetBegin=2119 CharacterOffsetEnd=2122 PartOfSpeech=NNP Lemma=III NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=2123 CharacterOffsetEnd=2126 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2127 CharacterOffsetEnd=2128 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=2129 CharacterOffsetEnd=2133 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=enthusiastic CharacterOffsetBegin=2134 CharacterOffsetEnd=2146 PartOfSpeech=JJ Lemma=enthusiastic NamedEntityTag=O]
+[Text=Nazi CharacterOffsetBegin=2147 CharacterOffsetEnd=2151 PartOfSpeech=NN Lemma=nazi NamedEntityTag=IDEOLOGY]
+[Text=who CharacterOffsetBegin=2152 CharacterOffsetEnd=2155 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=supported CharacterOffsetBegin=2156 CharacterOffsetEnd=2165 PartOfSpeech=VBD Lemma=support NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=2166 CharacterOffsetEnd=2169 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NSDAP CharacterOffsetBegin=2170 CharacterOffsetEnd=2175 PartOfSpeech=NNP Lemma=NSDAP NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=2176 CharacterOffsetEnd=2179 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Hitler CharacterOffsetBegin=2180 CharacterOffsetEnd=2186 PartOfSpeech=NNP Lemma=Hitler NamedEntityTag=PERSON]
+[Text=quite CharacterOffsetBegin=2187 CharacterOffsetEnd=2192 PartOfSpeech=PDT Lemma=quite NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=2193 CharacterOffsetEnd=2194 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=2195 CharacterOffsetEnd=2198 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=financially CharacterOffsetBegin=2199 CharacterOffsetEnd=2210 PartOfSpeech=RB Lemma=financially NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=2211 CharacterOffsetEnd=2213 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2213 CharacterOffsetEnd=2214 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2215 CharacterOffsetEnd=2217 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=2218 CharacterOffsetEnd=2224 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2224 CharacterOffsetEnd=2225 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=2226 CharacterOffsetEnd=2228 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=2229 CharacterOffsetEnd=2233 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=2234 CharacterOffsetEnd=2236 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Industrialists CharacterOffsetBegin=2237 CharacterOffsetEnd=2251 PartOfSpeech=NNS Lemma=industrialist NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=2252 CharacterOffsetEnd=2256 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Fritz CharacterOffsetBegin=2257 CharacterOffsetEnd=2262 PartOfSpeech=NNP Lemma=Fritz NamedEntityTag=PERSON]
+[Text=Thyssen CharacterOffsetBegin=2263 CharacterOffsetEnd=2270 PartOfSpeech=NNP Lemma=Thyssen NamedEntityTag=PERSON]
+[Text=or CharacterOffsetBegin=2271 CharacterOffsetEnd=2273 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Emil CharacterOffsetBegin=2274 CharacterOffsetEnd=2278 PartOfSpeech=NNP Lemma=Emil NamedEntityTag=PERSON]
+[Text=Kirdorf CharacterOffsetBegin=2279 CharacterOffsetEnd=2286 PartOfSpeech=NNP Lemma=Kirdorf NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=2286 CharacterOffsetEnd=2287 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Many))
+    (PP (IN of)
+      (NP
+        (NP (PRP them) (NNS members))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN aristocracy))
+            (SBAR
+              (WHPP (IN among)
+                (WHNP (WDT which)))
+              (S
+                (NP (NNP Wilhelm) (NNP III))
+                (VP (VBD was)
+                  (NP
+                    (NP (DT a)
+                      (ADJP (RB very) (JJ enthusiastic))
+                      (NN Nazi))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBD supported)
+                          (NP
+                            (NP
+                              (NP
+                                (NP (DT the) (NNP NSDAP)
+                                  (CC and)
+                                  (NNP Hitler))
+                                (ADVP
+                                  (NP (PDT quite) (DT a) (NN lot))
+                                  (RB financially)))
+                              (CC or)
+                              (, ,)
+                              (PP (IN of)
+                                (NP (NN course))))
+                            (, ,)
+                            (CONJP (RB as) (RB well) (IN as))
+                            (NP
+                              (NP (NNS Industrialists))
+                              (PP (IN like)
+                                (NP
+                                  (NP (NNP Fritz) (NNP Thyssen))
+                                  (CC or)
+                                  (NP (NNP Emil) (NNP Kirdorf)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, members-4)
+det:qmod(members-4, Many-1)
+fixed(Many-1, of-2)
+dep(members-4, them-3)
+case(aristocracy-7, of-5)
+det(aristocracy-7, the-6)
+nmod:of(members-4, aristocracy-7)
+obl:among(Nazi-16, aristocracy-7)
+case(which-9, among-8)
+ref(aristocracy-7, which-9)
+compound(III-11, Wilhelm-10)
+nsubj(Nazi-16, III-11)
+cop(Nazi-16, was-12)
+det(Nazi-16, a-13)
+advmod(enthusiastic-15, very-14)
+amod(Nazi-16, enthusiastic-15)
+acl:relcl(aristocracy-7, Nazi-16)
+nsubj(supported-18, Nazi-16)
+ref(Nazi-16, who-17)
+acl:relcl(Nazi-16, supported-18)
+det(NSDAP-20, the-19)
+obj(supported-18, NSDAP-20)
+cc(Hitler-22, and-21)
+obj(supported-18, Hitler-22)
+conj:and(NSDAP-20, Hitler-22)
+det:predet(lot-25, quite-23)
+det(lot-25, a-24)
+obl:npmod(financially-26, lot-25)
+advmod(NSDAP-20, financially-26)
+cc(course-30, or-27)
+punct(course-30, ,-28)
+case(course-30, of-29)
+obj(supported-18, course-30)
+conj:or(NSDAP-20, course-30)
+punct(NSDAP-20, ,-31)
+cc(Industrialists-35, as-32)
+fixed(as-32, well-33)
+fixed(as-32, as-34)
+obj(supported-18, Industrialists-35)
+conj:or(NSDAP-20, Industrialists-35)
+case(Thyssen-38, like-36)
+compound(Thyssen-38, Fritz-37)
+nmod:like(Industrialists-35, Thyssen-38)
+cc(Kirdorf-41, or-39)
+compound(Kirdorf-41, Emil-40)
+nmod:like(Industrialists-35, Kirdorf-41)
+conj:or(Thyssen-38, Kirdorf-41)
+punct(Many-1, .-42)
+
+Extracted the following NER entity mentions:
+Wilhelm III	PERSON	PERSON:0.9950101125239599
+Nazi	IDEOLOGY	MISC:0.9999688286172242
+NSDAP	ORGANIZATION	ORGANIZATION:0.9604061253502169
+Hitler	PERSON	PERSON:0.959619279349425
+Fritz Thyssen	PERSON	PERSON:0.97291594024182
+Emil Kirdorf	PERSON	PERSON:0.9250854466605819
+
+Sentence #18 (12 tokens):
+The Nazis really had no lack of powerful an rich supporters.
+
+Tokens:
+[Text=The CharacterOffsetBegin=2288 CharacterOffsetEnd=2291 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Nazis CharacterOffsetBegin=2292 CharacterOffsetEnd=2297 PartOfSpeech=NNPS Lemma=Nazis NamedEntityTag=CAUSE_OF_DEATH]
+[Text=really CharacterOffsetBegin=2298 CharacterOffsetEnd=2304 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=2305 CharacterOffsetEnd=2308 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=2309 CharacterOffsetEnd=2311 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=lack CharacterOffsetBegin=2312 CharacterOffsetEnd=2316 PartOfSpeech=NN Lemma=lack NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=2317 CharacterOffsetEnd=2319 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=powerful CharacterOffsetBegin=2320 CharacterOffsetEnd=2328 PartOfSpeech=JJ Lemma=powerful NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=2329 CharacterOffsetEnd=2331 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rich CharacterOffsetBegin=2332 CharacterOffsetEnd=2336 PartOfSpeech=JJ Lemma=rich NamedEntityTag=O]
+[Text=supporters CharacterOffsetBegin=2337 CharacterOffsetEnd=2347 PartOfSpeech=NNS Lemma=supporter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2347 CharacterOffsetEnd=2348 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNPS Nazis))
+    (ADVP (RB really))
+    (VP (VBD had)
+      (NP
+        (NP (DT no) (NN lack))
+        (PP (IN of)
+          (NP
+            (ADJP (JJ powerful)
+              (NP (DT an) (JJ rich)))
+            (NNS supporters)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-4)
+det(Nazis-2, The-1)
+nsubj(had-4, Nazis-2)
+advmod(had-4, really-3)
+det(lack-6, no-5)
+obj(had-4, lack-6)
+case(supporters-11, of-7)
+amod(supporters-11, powerful-8)
+det(rich-10, an-9)
+dep(powerful-8, rich-10)
+nmod:of(lack-6, supporters-11)
+punct(had-4, .-12)
+
+Extracted the following NER entity mentions:
+Nazis	CAUSE_OF_DEATH	MISC:0.9896402029556753
+
+Sentence #19 (7 tokens):
+Hope that answers your question somewhat.
+
+Tokens:
+[Text=Hope CharacterOffsetBegin=2350 CharacterOffsetEnd=2354 PartOfSpeech=VBP Lemma=hope NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=2355 CharacterOffsetEnd=2359 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=answers CharacterOffsetBegin=2360 CharacterOffsetEnd=2367 PartOfSpeech=NNS Lemma=answer NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=2368 CharacterOffsetEnd=2372 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=2373 CharacterOffsetEnd=2381 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=somewhat CharacterOffsetBegin=2382 CharacterOffsetEnd=2390 PartOfSpeech=RB Lemma=somewhat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=2390 CharacterOffsetEnd=2391 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Hope)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NNS answers))
+            (NP (PRP$ your) (NN question)))
+          (ADVP (RB somewhat)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Hope-1)
+mark(answers-3, that-2)
+dep(Hope-1, answers-3)
+nmod:poss(question-5, your-4)
+dep(answers-3, question-5)
+advmod(answers-3, somewhat-6)
+punct(Hope-1, .-7)
+
+Extracted the following NER entity mentions:

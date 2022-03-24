@@ -1,0 +1,59 @@
+Document: ID=EA34DBA0.text (2 sentences, 11 tokens)
+
+Sentence #1 (9 tokens):
+Wishing death on a kid for defending himself.
+
+Tokens:
+[Text=Wishing CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=wish NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=defending CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=VBG Lemma=defend NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (VBG Wishing) (NN death))
+    (PP (IN on)
+      (NP (DT a) (NN kid)))
+    (PP (IN for)
+      (S
+        (VP (VBG defending)
+          (NP (PRP himself)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, death-2)
+amod(death-2, Wishing-1)
+case(kid-5, on-3)
+det(kid-5, a-4)
+nmod:on(death-2, kid-5)
+mark(defending-7, for-6)
+acl:for(death-2, defending-7)
+obj(defending-7, himself-8)
+punct(death-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+Yikes.
+
+Tokens:
+[Text=Yikes CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=UH Lemma=yikes NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Yikes) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Yikes-1)
+punct(Yikes-1, .-2)
+
+Extracted the following NER entity mentions:

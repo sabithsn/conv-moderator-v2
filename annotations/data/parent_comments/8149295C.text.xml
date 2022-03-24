@@ -1,0 +1,156 @@
+Document: ID=8149295C.text (3 sentences, 37 tokens)
+
+Sentence #1 (12 tokens):
+Found the clever disingenuous libertarian with nothing to add to society.
+
+Tokens:
+[Text=Found CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=find NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=clever CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=clever NamedEntityTag=O]
+[Text=disingenuous CharacterOffsetBegin=17 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=disingenuous NamedEntityTag=O]
+[Text=libertarian CharacterOffsetBegin=30 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=libertarian NamedEntityTag=IDEOLOGY]
+[Text=with CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=add CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=add NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Found)
+      (NP (DT the) (JJ clever) (JJ disingenuous) (NN libertarian))
+      (PP (IN with)
+        (NP (NN nothing)))
+      (S
+        (VP (TO to)
+          (VP (VB add)
+            (PP (IN to)
+              (NP (NN society)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Found-1)
+det(libertarian-5, the-2)
+amod(libertarian-5, clever-3)
+amod(libertarian-5, disingenuous-4)
+obj(Found-1, libertarian-5)
+case(nothing-7, with-6)
+obl:with(Found-1, nothing-7)
+mark(add-9, to-8)
+advcl:to(Found-1, add-9)
+case(society-11, to-10)
+obl:to(add-9, society-11)
+punct(Found-1, .-12)
+
+Extracted the following NER entity mentions:
+libertarian	IDEOLOGY	-
+
+Sentence #2 (17 tokens):
+I’m not going to reply to you, it’d be a waste of time.
+
+Tokens:
+[Text=I CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=reply CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=VB Lemma=reply NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’d CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=MD Lemma=’d NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=waste CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=waste NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP ’m) (RB not)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB reply)
+                (PP (IN to)
+                  (NP (PRP you)))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD ’d)
+      (VP (VB be)
+        (NP
+          (NP (DT a) (NN waste))
+          (PP (IN of)
+            (NP (NN time))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, waste-14)
+nsubj(going-4, I-1)
+nsubj:xsubj(reply-6, I-1)
+aux(going-4, ’m-2)
+advmod(going-4, not-3)
+ccomp(waste-14, going-4)
+mark(reply-6, to-5)
+xcomp(going-4, reply-6)
+case(you-8, to-7)
+obl:to(reply-6, you-8)
+punct(waste-14, ,-9)
+nsubj(waste-14, it-10)
+aux(waste-14, ’d-11)
+cop(waste-14, be-12)
+det(waste-14, a-13)
+case(time-16, of-15)
+nmod:of(waste-14, time-16)
+punct(waste-14, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+(You seem a bit racist…)
+
+Tokens:
+[Text=( CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=147 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=racist NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (S
+      (ADJP
+        (NP (PRP You))
+        (SBAR
+          (S
+            (VP (VBP seem)
+              (NP (DT a) (NN bit) (NN racist)))
+            (: …)))))
+    (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, You-2)
+punct(You-2, (-1)
+ccomp(You-2, seem-3)
+det(racist-6, a-4)
+compound(racist-6, bit-5)
+xcomp(seem-3, racist-6)
+punct(seem-3, …-7)
+punct(You-2, )-8)
+
+Extracted the following NER entity mentions:

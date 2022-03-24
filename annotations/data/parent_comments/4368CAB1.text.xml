@@ -1,0 +1,75 @@
+Document: ID=4368CAB1.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+A woman falsely accused a man of rape, then has the audacity to write a book about it.
+
+Tokens:
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=falsely CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=falsely NamedEntityTag=O]
+[Text=accused CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VBD Lemma=accuse NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=rape CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=rape NamedEntityTag=CRIMINAL_CHARGE]
+[Text=, CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=audacity CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=audacity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=book CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=book NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A) (NN woman))
+    (ADVP (RB falsely))
+    (VP
+      (VP (VBD accused)
+        (NP
+          (NP (DT a) (NN man))
+          (PP (IN of)
+            (NP (NN rape)))))
+      (, ,)
+      (ADVP (RB then))
+      (VP (VBZ has)
+        (NP (DT the) (NN audacity)
+          (S
+            (VP (TO to)
+              (VP (VB write)
+                (NP (DT a) (NN book))
+                (PP (IN about)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, accused-4)
+det(woman-2, A-1)
+nsubj(accused-4, woman-2)
+advmod(accused-4, falsely-3)
+det(man-6, a-5)
+obj(accused-4, man-6)
+case(rape-8, of-7)
+nmod:of(man-6, rape-8)
+punct(accused-4, ,-9)
+advmod(has-11, then-10)
+dep(accused-4, has-11)
+det(audacity-13, the-12)
+obj(has-11, audacity-13)
+mark(write-15, to-14)
+acl:to(audacity-13, write-15)
+det(book-17, a-16)
+obj(write-15, book-17)
+case(it-19, about-18)
+obl:about(write-15, it-19)
+punct(accused-4, .-20)
+
+Extracted the following NER entity mentions:
+rape	CRIMINAL_CHARGE	-

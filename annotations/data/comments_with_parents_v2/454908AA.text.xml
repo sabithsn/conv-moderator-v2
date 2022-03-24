@@ -1,0 +1,100 @@
+Document: ID=454908AA.text (2 sentences, 23 tokens)
+
+Sentence #1 (13 tokens):
+Those accused of witchcraft were commonly the political enemies of the accuser.
+
+Tokens:
+[Text=Those CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=accused CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=VBN Lemma=accuse NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=witchcraft CharacterOffsetBegin=17 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=witchcraft NamedEntityTag=RELIGION]
+[Text=were CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=commonly CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=commonly NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=political CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=political NamedEntityTag=O]
+[Text=enemies CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=enemy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=accuser CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=accuser NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT Those))
+      (VP (VBN accused)
+        (PP (IN of)
+          (NP (NN witchcraft)))))
+    (VP (VBD were)
+      (ADVP (RB commonly))
+      (NP
+        (NP (DT the) (JJ political) (NNS enemies))
+        (PP (IN of)
+          (NP (DT the) (NN accuser)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, enemies-9)
+nsubj(enemies-9, Those-1)
+acl(Those-1, accused-2)
+case(witchcraft-4, of-3)
+obl:of(accused-2, witchcraft-4)
+cop(enemies-9, were-5)
+advmod(enemies-9, commonly-6)
+det(enemies-9, the-7)
+amod(enemies-9, political-8)
+case(accuser-12, of-10)
+det(accuser-12, the-11)
+nmod:of(enemies-9, accuser-12)
+punct(enemies-9, .-13)
+
+Extracted the following NER entity mentions:
+witchcraft	RELIGION	-
+
+Sentence #2 (10 tokens):
+Funny how that works out, ain’t it?
+
+Tokens:
+[Text=Funny CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ai CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Funny))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (DT that))
+          (VP (VBZ works)
+            (PRT (RP out))))))
+    (, ,)
+    (VP (VBP ai) (RB n’t)
+      (NP (PRP it)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, it-9)
+nsubj(it-9, Funny-1)
+advmod(works-4, how-2)
+nsubj(works-4, that-3)
+dep(Funny-1, works-4)
+compound:prt(works-4, out-5)
+punct(it-9, ,-6)
+cop(it-9, ai-7)
+advmod(it-9, n’t-8)
+punct(it-9, ?-10)
+
+Extracted the following NER entity mentions:

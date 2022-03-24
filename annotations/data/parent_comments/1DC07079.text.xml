@@ -1,0 +1,90 @@
+Document: ID=1DC07079.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+I had a short, unintentional emotional affair and now I'm more sure than ever that I want my husband out of my life.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unintentional CharacterOffsetBegin=15 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=unintentional NamedEntityTag=O]
+[Text=emotional CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=emotional NamedEntityTag=O]
+[Text=affair CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=affair NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=I CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=husband CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=husband NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD had)
+        (NP (DT a) (JJ short) (, ,) (JJ unintentional) (JJ emotional) (NN affair))))
+    (CC and)
+    (S
+      (ADVP (RB now))
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADJP (RBR more) (JJ sure)
+          (PP (IN than)
+            (SBAR
+              (ADVP (RB ever))
+              (WHNP (WDT that))
+              (S
+                (NP (PRP I))
+                (VP (VBP want)
+                  (NP (PRP$ my) (NN husband))
+                  (ADVP (IN out)
+                    (PP (IN of)
+                      (NP (PRP$ my) (NN life)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, had-2)
+nsubj(had-2, I-1)
+det(affair-8, a-3)
+amod(affair-8, short-4)
+punct(affair-8, ,-5)
+amod(affair-8, unintentional-6)
+amod(affair-8, emotional-7)
+obj(had-2, affair-8)
+cc(sure-14, and-9)
+advmod(sure-14, now-10)
+nsubj(sure-14, I-11)
+cop(sure-14, 'm-12)
+advmod(sure-14, more-13)
+conj:and(had-2, sure-14)
+mark(want-19, than-15)
+advmod(want-19, ever-16)
+obj(want-19, that-17)
+nsubj(want-19, I-18)
+advcl:than(sure-14, want-19)
+nmod:poss(husband-21, my-20)
+obj(want-19, husband-21)
+case(life-25, out-22)
+fixed(out-22, of-23)
+nmod:poss(life-25, my-24)
+obl:out_of(want-19, life-25)
+punct(had-2, .-26)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

@@ -1,0 +1,62 @@
+Document: ID=90710FBB.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Dem Senator Says Breyer’s Replacement Should Not Make Decisions Just Based On The Law
+
+Tokens:
+[Text=Dem CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=JJ Lemma=dem NamedEntityTag=IDEOLOGY]
+[Text=Senator CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Senator NamedEntityTag=TITLE]
+[Text=Says CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=Breyer CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Breyer NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Replacement CharacterOffsetBegin=26 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=replacement NamedEntityTag=O]
+[Text=Should CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Make CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=Decisions CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=decision NamedEntityTag=O]
+[Text=Just CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=Based CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Law CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Law NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Dem) (NNP Senator))
+    (VP (VBZ Says)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Breyer) (POS ’s))
+            (NN Replacement))
+          (VP (MD Should) (RB Not)
+            (VP (VB Make)
+              (NP (NNS Decisions))
+              (ADVP (RB Just))
+              (PP (VBN Based)
+                (PP (IN On)
+                  (NP (DT The) (NNP Law)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Says-3)
+amod(Senator-2, Dem-1)
+nsubj(Says-3, Senator-2)
+nmod:poss(Replacement-6, Breyer-4)
+case(Breyer-4, ’s-5)
+nsubj(Make-9, Replacement-6)
+aux(Make-9, Should-7)
+advmod(Make-9, Not-8)
+ccomp(Says-3, Make-9)
+obj(Make-9, Decisions-10)
+advmod(Make-9, Just-11)
+case(Law-15, Based-12)
+fixed(Based-12, On-13)
+det(Law-15, The-14)
+advcl:based_on(Make-9, Law-15)
+
+Extracted the following NER entity mentions:
+Dem	IDEOLOGY	-
+Senator	TITLE	-
+Breyer	PERSON	PERSON:0.9954981362479457

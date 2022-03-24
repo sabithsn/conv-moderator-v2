@@ -1,0 +1,55 @@
+Document: ID=C0CA23E1.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+California school leaders and legislators announce new bill requiring COVID vaccine for school children
+
+Tokens:
+[Text=California CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=school CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=leaders CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=leader NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=legislators CharacterOffsetBegin=30 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=legislator NamedEntityTag=O]
+[Text=announce CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=announce NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=requiring CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=VBG Lemma=require NamedEntityTag=O]
+[Text=COVID CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=COVID NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP California) (NN school) (NNS leaders)
+      (CC and)
+      (NNS legislators))
+    (VP (VBP announce)
+      (NP (JJ new) (NN bill))
+      (S
+        (VP (VBG requiring)
+          (NP (NNP COVID) (NN vaccine))
+          (PP (IN for)
+            (NP (NN school) (NNS children))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, announce-6)
+compound(leaders-3, California-1)
+compound(leaders-3, school-2)
+nsubj(announce-6, leaders-3)
+cc(legislators-5, and-4)
+conj:and(leaders-3, legislators-5)
+nsubj(announce-6, legislators-5)
+amod(bill-8, new-7)
+obj(announce-6, bill-8)
+xcomp(announce-6, requiring-9)
+compound(vaccine-11, COVID-10)
+obj(requiring-9, vaccine-11)
+case(children-14, for-12)
+compound(children-14, school-13)
+obl:for(requiring-9, children-14)
+
+Extracted the following NER entity mentions:
+California	STATE_OR_PROVINCE	LOCATION:0.8851867866338028

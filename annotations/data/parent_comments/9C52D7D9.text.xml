@@ -1,0 +1,104 @@
+Document: ID=9C52D7D9.text (2 sentences, 27 tokens)
+
+Sentence #1 (20 tokens):
+Let's stop 'climate change' by changing the climate so drastically Earth no longer receives direct sunlight.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma='s NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=climate CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=climate NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=changing CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=change NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=climate CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=climate NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=drastically CharacterOffsetBegin=55 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=drastically NamedEntityTag=O]
+[Text=Earth CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Earth NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=RBR Lemma=longer NamedEntityTag=O]
+[Text=receives CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=VBZ Lemma=receive NamedEntityTag=O]
+[Text=direct CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=direct NamedEntityTag=O]
+[Text=sunlight CharacterOffsetBegin=99 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=sunlight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Let)
+        (NP (PRP 's))
+        (VP (VB stop) ('' ')
+          (NP (NN climate) (NN change))
+          ('' ')
+          (PP (IN by)
+            (S
+              (VP (VBG changing)
+                (NP (DT the) (NN climate))
+                (ADVP (RB so) (RB drastically))))))))
+    (NP (NNP Earth))
+    (ADVP (RB no) (RBR longer))
+    (VP (VBZ receives)
+      (NP (JJ direct) (NN sunlight)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, receives-17)
+dep(receives-17, Let-1)
+obj(Let-1, 's-2)
+dep(Let-1, stop-3)
+punct(stop-3, '-4)
+compound(change-6, climate-5)
+obj(stop-3, change-6)
+punct(stop-3, '-7)
+mark(changing-9, by-8)
+advcl:by(stop-3, changing-9)
+det(climate-11, the-10)
+obj(changing-9, climate-11)
+advmod(drastically-13, so-12)
+advmod(changing-9, drastically-13)
+nsubj(receives-17, Earth-14)
+advmod(longer-16, no-15)
+advmod(receives-17, longer-16)
+amod(sunlight-19, direct-18)
+obj(receives-17, sunlight-19)
+punct(receives-17, .-20)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+"It just might work!!!"
+
+Tokens:
+[Text=" CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=!!! CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=!!! NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` ")
+    (NP (PRP It))
+    (ADVP (RB just))
+    (VP (MD might)
+      (VP (VB work)))
+    (. !!!) ('' ")))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, work-5)
+punct(work-5, "-1)
+nsubj(work-5, It-2)
+advmod(work-5, just-3)
+aux(work-5, might-4)
+punct(work-5, !!!-6)
+punct(work-5, "-7)
+
+Extracted the following NER entity mentions:

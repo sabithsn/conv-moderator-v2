@@ -1,0 +1,104 @@
+Document: ID=80803BD5.text (2 sentences, 25 tokens)
+
+Sentence #1 (6 tokens):
+when did I say this?
+
+Tokens:
+[Text=when CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB when))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VB say)
+        (NP (DT this))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-4)
+advmod(say-4, when-1)
+aux(say-4, did-2)
+nsubj(say-4, I-3)
+obj(say-4, this-5)
+punct(say-4, ?-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (19 tokens):
+🤨   >And it’s crazy that you think black people are less ignorant than any other group.
+
+Tokens:
+[Text=🤨 CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=NFP Lemma=🤨 NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=> NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=crazy CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=crazy NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=RBR Lemma=less NamedEntityTag=O]
+[Text=ignorant CharacterOffsetBegin=79 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=ignorant NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NFP 🤨) (, >)
+      (CC And)
+      (PRP it))
+    (VP (VBZ ’s)
+      (ADJP (JJ crazy))
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (JJ black) (NNS people))
+                (VP (VBP are)
+                  (ADJP
+                    (ADJP (RBR less) (JJ ignorant))
+                    (PP (IN than)
+                      (NP (DT any) (JJ other) (NN group)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, crazy-6)
+nsubj(crazy-6, 🤨-1)
+punct(🤨-1, >-2)
+cc(it-4, And-3)
+conj:and(🤨-1, it-4)
+nsubj(crazy-6, it-4)
+cop(crazy-6, ’s-5)
+mark(think-9, that-7)
+nsubj(think-9, you-8)
+ccomp(crazy-6, think-9)
+amod(people-11, black-10)
+nsubj(ignorant-14, people-11)
+cop(ignorant-14, are-12)
+advmod(ignorant-14, less-13)
+ccomp(think-9, ignorant-14)
+case(group-18, than-15)
+det(group-18, any-16)
+amod(group-18, other-17)
+obl:than(ignorant-14, group-18)
+punct(crazy-6, .-19)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,69 @@
+Document: ID=97767E18.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Biden Tries to Call Saudi Arabia and UAE and They Refuse to Answer the Phone
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Tries CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Call CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=call NamedEntityTag=O]
+[Text=Saudi CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Saudi NamedEntityTag=COUNTRY]
+[Text=Arabia CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Arabia NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=UAE CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=UAE NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=They CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=Refuse CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=refuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Answer CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=answer NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Phone CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=phone NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (VP (VBZ Tries)
+      (PP (IN to)
+        (S
+          (VP (VB Call)
+            (S
+              (NP (NNP Saudi) (NNP Arabia)
+                (CC and)
+                (NNP UAE)
+                (CC and)
+                (PRP They))
+              (VP (VB Refuse)
+                (S
+                  (VP (TO to)
+                    (VP (VB Answer)
+                      (NP (DT the) (NN Phone)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Tries-2)
+nsubj(Tries-2, Biden-1)
+mark(Call-4, to-3)
+advcl:to(Tries-2, Call-4)
+compound(Arabia-6, Saudi-5)
+nsubj(Refuse-11, Arabia-6)
+nsubj:xsubj(Answer-13, Arabia-6)
+cc(UAE-8, and-7)
+conj:and(Arabia-6, UAE-8)
+nsubj(Refuse-11, UAE-8)
+nsubj:xsubj(Answer-13, UAE-8)
+cc(They-10, and-9)
+conj:and(Arabia-6, They-10)
+nsubj(Refuse-11, They-10)
+nsubj:xsubj(Answer-13, They-10)
+ccomp(Call-4, Refuse-11)
+mark(Answer-13, to-12)
+xcomp(Refuse-11, Answer-13)
+det(Phone-15, the-14)
+obj(Answer-13, Phone-15)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9450154141684474
+Saudi Arabia	COUNTRY	LOCATION:0.9659248117637247
+UAE	COUNTRY	LOCATION:0.661396321648616

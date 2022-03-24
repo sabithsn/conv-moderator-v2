@@ -1,0 +1,91 @@
+Document: ID=999C9A6C.text (2 sentences, 20 tokens)
+
+Sentence #1 (16 tokens):
+Nah, you should swipe right on them, hit it, and quit it.
+
+Tokens:
+[Text=Nah CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Nah NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=swipe CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=swipe NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=hit CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=hit NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=quit CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=quit NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Nah))
+    (PRN (, ,)
+      (S
+        (NP (PRP you))
+        (VP (MD should)
+          (VP (VB swipe)
+            (ADVP (RB right)
+              (PP (IN on)
+                (NP (PRP them)))))))
+      (, ,))
+    (VP
+      (VP (VBD hit)
+        (NP (PRP it)))
+      (, ,)
+      (CC and)
+      (VP (VB quit)
+        (NP (PRP it))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hit-10)
+nsubj(hit-10, Nah-1)
+nsubj(quit-14, Nah-1)
+punct(swipe-5, ,-2)
+nsubj(swipe-5, you-3)
+aux(swipe-5, should-4)
+parataxis(hit-10, swipe-5)
+advmod(swipe-5, right-6)
+case(them-8, on-7)
+obl:on(right-6, them-8)
+punct(swipe-5, ,-9)
+obj(hit-10, it-11)
+punct(hit-10, ,-12)
+cc(quit-14, and-13)
+conj:and(hit-10, quit-14)
+obj(quit-14, it-15)
+punct(hit-10, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+They're the best
+
+Tokens:
+[Text=They CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP 're)
+      (NP (DT the) (JJS best)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, best-4)
+nsubj(best-4, They-1)
+cop(best-4, 're-2)
+det(best-4, the-3)
+
+Extracted the following NER entity mentions:

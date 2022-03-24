@@ -1,0 +1,75 @@
+Document: ID=CE94C3D3.text (2 sentences, 14 tokens)
+
+Sentence #1 (8 tokens):
+What the fuck is happening to people?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=happening CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=happen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHNP (WP What))
+    (S
+      (NP (DT the)
+        (NML
+          (S
+            (VP (VB fuck)))))
+      (VP (VBZ is)
+        (VP (VBG happening)
+          (PP (IN to)
+            (NP (NNS people))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happening-5)
+obj(happening-5, What-1)
+det(fuck-3, the-2)
+nsubj(happening-5, fuck-3)
+aux(happening-5, is-4)
+case(people-7, to-6)
+obl:to(happening-5, people-7)
+punct(happening-5, ?-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Why is this ok now?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=ok CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=ok NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (DT this))
+      (ADJP (JJ ok))
+      (ADVP (RB now)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ok-4)
+advmod(ok-4, Why-1)
+cop(ok-4, is-2)
+nsubj(ok-4, this-3)
+advmod(ok-4, now-5)
+punct(ok-4, ?-6)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

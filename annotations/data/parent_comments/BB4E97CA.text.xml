@@ -1,0 +1,179 @@
+Document: ID=BB4E97CA.text (4 sentences, 41 tokens)
+
+Sentence #1 (9 tokens):
+I asked "You do realize ______?"
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=realize CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=realize NamedEntityTag=O]
+[Text=______ CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NFP Lemma=______ NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD asked)))
+    (`` ")
+    (S
+      (NP (PRP You))
+      (VP (VBP do)
+        (VP (VB realize)))
+      (NFP ______))
+    (. ?) ('' ")))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-2)
+nsubj(asked-2, I-1)
+punct(asked-2, "-3)
+nsubj(realize-6, You-4)
+aux(realize-6, do-5)
+parataxis(asked-2, realize-6)
+punct(realize-6, ______-7)
+punct(asked-2, ?-8)
+punct(asked-2, "-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+A yes or no question.
+
+Tokens:
+[Text=A CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT A) (UH yes))
+    (CC or)
+    (NP (DT no) (NN question))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, A-1)
+dep(A-1, yes-2)
+cc(question-5, or-3)
+det(question-5, no-4)
+conj:or(A-1, question-5)
+punct(A-1, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+You replied with a question about autism rates.
+
+Tokens:
+[Text=You CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=replied CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=VBD Lemma=reply NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=autism CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=autism NamedEntityTag=O]
+[Text=rates CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=rate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD replied)
+      (PP (IN with)
+        (NP (DT a) (NN question)))
+      (PP (IN about)
+        (NP (NN autism) (NNS rates))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, replied-2)
+nsubj(replied-2, You-1)
+case(question-5, with-3)
+det(question-5, a-4)
+obl:with(replied-2, question-5)
+case(rates-8, about-6)
+compound(rates-8, autism-7)
+obl:about(replied-2, rates-8)
+punct(replied-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (17 tokens):
+How about the definition of the term "non-sequiter," do you know that one?
+
+Tokens:
+[Text=How CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=definition CharacterOffsetBegin=121 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=definition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=term CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=non-sequiter CharacterOffsetBegin=145 CharacterOffsetEnd=157 PartOfSpeech=JJ Lemma=non-sequiter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=? CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How)
+      (PP (IN about)
+        (NP
+          (NP (DT the) (NN definition))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN term))
+              (`` ")
+              (ADJP (JJ non-sequiter))
+              (, ,)))
+          ('' "))))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB know)
+        (SBAR (IN that)
+          (FRAG
+            (NP (CD one))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-14)
+advmod(know-14, How-1)
+case(definition-4, about-2)
+det(definition-4, the-3)
+obl:about(How-1, definition-4)
+case(term-7, of-5)
+det(term-7, the-6)
+nmod:of(definition-4, term-7)
+punct(term-7, "-8)
+amod(term-7, non-sequiter-9)
+punct(term-7, ,-10)
+punct(definition-4, "-11)
+aux(know-14, do-12)
+nsubj(know-14, you-13)
+mark(one-16, that-15)
+dep(know-14, one-16)
+punct(know-14, ?-17)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

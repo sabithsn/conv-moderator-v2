@@ -1,0 +1,65 @@
+Document: ID=46A3ABCF.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+The mayor is a big on crime guy who the fuck are you talking about
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mayor CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=mayor NamedEntityTag=TITLE]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=crime CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=crime NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (S
+      (NP (DT The) (NN mayor))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a)
+            (ADJP (JJ big)
+              (PP (IN on)
+                (NP (NN crime))))
+            (NN guy))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (NP (DT the))
+              (VP (VB fuck)))))))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG talking)
+        (PP (IN about))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, talking-14)
+det(mayor-2, The-1)
+nsubj(guy-8, mayor-2)
+cop(guy-8, is-3)
+det(guy-8, a-4)
+amod(guy-8, big-5)
+case(crime-7, on-6)
+obl:on(big-5, crime-7)
+obj(fuck-11, guy-8)
+dep(talking-14, guy-8)
+ref(guy-8, who-9)
+nsubj(fuck-11, the-10)
+acl:relcl(guy-8, fuck-11)
+aux(talking-14, are-12)
+nsubj(talking-14, you-13)
+obl(talking-14, about-15)
+
+Extracted the following NER entity mentions:
+mayor	TITLE	-

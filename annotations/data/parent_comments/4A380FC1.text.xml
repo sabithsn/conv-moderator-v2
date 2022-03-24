@@ -1,0 +1,42 @@
+Document: ID=4A380FC1.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+We need to end the Department of Education
+
+Tokens:
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=end NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Department CharacterOffsetBegin=19 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Department NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Education CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Education NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB end)
+            (NP
+              (NP (DT the) (NNP Department))
+              (PP (IN of)
+                (NP (NNP Education))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, need-2)
+nsubj(need-2, We-1)
+nsubj:xsubj(end-4, We-1)
+mark(end-4, to-3)
+xcomp(need-2, end-4)
+det(Department-6, the-5)
+obj(end-4, Department-6)
+case(Education-8, of-7)
+nmod:of(Department-6, Education-8)
+
+Extracted the following NER entity mentions:
+Department of Education	ORGANIZATION	ORGANIZATION:0.5598697624251513

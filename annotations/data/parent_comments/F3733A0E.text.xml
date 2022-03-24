@@ -1,0 +1,62 @@
+Document: ID=F3733A0E.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+US-Born Skater Who Defected to Team China Blasted After Last Place Finish
+
+Tokens:
+[Text=US CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=US NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=HYPH Lemma=- NamedEntityTag=MISC]
+[Text=Born CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Born NamedEntityTag=MISC]
+[Text=Skater CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Skater NamedEntityTag=TITLE]
+[Text=Who CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=WP Lemma=who NamedEntityTag=MISC]
+[Text=Defected CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=defect NamedEntityTag=MISC]
+[Text=to CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Team CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Team NamedEntityTag=O]
+[Text=China CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=China NamedEntityTag=COUNTRY]
+[Text=Blasted CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=VBD Lemma=blast NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Last CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=Place CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=Finish CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Finish NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP US) (HYPH -) (NNP Born) (NNP Skater))
+        (SBAR
+          (WHNP (WP Who))
+          (S
+            (VP (VBD Defected)
+              (PP (IN to)
+                (NP (NNP Team) (NNP China)))))))
+      (VP (VBD Blasted)))
+    (S
+      (PP (IN After)
+        (NP (JJ Last) (NN Place)))
+      (NP (NNP Finish)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Blasted-10)
+compound(Skater-4, US-1)
+punct(Skater-4, --2)
+compound(Skater-4, Born-3)
+nsubj(Defected-6, Skater-4)
+nsubj(Blasted-10, Skater-4)
+ref(Skater-4, Who-5)
+acl:relcl(Skater-4, Defected-6)
+case(China-9, to-7)
+compound(China-9, Team-8)
+obl:to(Defected-6, China-9)
+case(Place-13, After-11)
+amod(Place-13, Last-12)
+dep(Finish-14, Place-13)
+parataxis(Blasted-10, Finish-14)
+
+Extracted the following NER entity mentions:
+US-Born	MISC	MISC:0.87023422889646
+Skater	TITLE	MISC:0.87023422889646
+Who Defected	MISC	MISC:0.87023422889646
+China	COUNTRY	-

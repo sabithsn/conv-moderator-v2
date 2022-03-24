@@ -1,0 +1,32 @@
+Document: ID=D8DE50DB.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+My girlfriend is cheating on me
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=girlfriend CharacterOffsetBegin=3 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=girlfriend NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=cheating CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=cheat NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN girlfriend))
+    (VP (VBZ is)
+      (VP (VBG cheating)
+        (PP (IN on)
+          (NP (PRP me)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cheating-4)
+nmod:poss(girlfriend-2, My-1)
+nsubj(cheating-4, girlfriend-2)
+aux(cheating-4, is-3)
+case(me-6, on-5)
+obl:on(cheating-4, me-6)
+
+Extracted the following NER entity mentions:

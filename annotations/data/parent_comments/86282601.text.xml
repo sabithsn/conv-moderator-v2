@@ -1,0 +1,107 @@
+Document: ID=86282601.text (2 sentences, 27 tokens)
+
+Sentence #1 (17 tokens):
+The government shouldn’t be telling schools what should or shouldn’t be taught in schools.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=government CharacterOffsetBegin=4 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=telling CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=tell NamedEntityTag=O]
+[Text=schools CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=school NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=taught CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=teach NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=schools CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=school NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN government))
+    (VP (MD should) (RB n’t)
+      (VP (VB be)
+        (VP (VBG telling)
+          (NP
+            (NP (NNS schools))
+            (SBAR
+              (WHNP (WDT what))
+              (S
+                (VP (MD should)
+                  (CC or)
+                  (MD should) (RB n’t)
+                  (VP (VB be)
+                    (VP (VBN taught)
+                      (PP (IN in)
+                        (NP (NNS schools))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, telling-6)
+det(government-2, The-1)
+nsubj(telling-6, government-2)
+aux(telling-6, should-3)
+advmod(telling-6, n’t-4)
+aux(telling-6, be-5)
+obj(telling-6, schools-7)
+nsubj:pass(taught-14, schools-7)
+ref(schools-7, what-8)
+aux(taught-14, should-9)
+cc(taught-14, or-10)
+aux(taught-14, should-11)
+advmod(taught-14, n’t-12)
+aux:pass(taught-14, be-13)
+acl:relcl(schools-7, taught-14)
+case(schools-16, in-15)
+obl:in(taught-14, schools-16)
+punct(telling-6, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Kind of goes against that whole free speech thing.
+
+Tokens:
+[Text=Kind CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=135 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Kind)
+      (PP (IN of)))
+    (VP (VBZ goes)
+      (PP (IN against)
+        (NP (DT that) (JJ whole) (JJ free) (NN speech) (NN thing))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, goes-3)
+advmod(goes-3, Kind-1)
+dep(Kind-1, of-2)
+case(thing-9, against-4)
+det(thing-9, that-5)
+amod(thing-9, whole-6)
+amod(thing-9, free-7)
+compound(thing-9, speech-8)
+obl:against(goes-3, thing-9)
+punct(goes-3, .-10)
+
+Extracted the following NER entity mentions:

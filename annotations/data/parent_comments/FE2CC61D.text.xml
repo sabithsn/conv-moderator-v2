@@ -1,0 +1,53 @@
+Document: ID=FE2CC61D.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Biden Weighs Deploying Thousands of Troops to Eastern Europe and Baltics
+
+Tokens:
+[Text=Biden CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Weighs CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=weigh NamedEntityTag=O]
+[Text=Deploying CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=VBG Lemma=deploy NamedEntityTag=O]
+[Text=Thousands CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=thousand NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Troops CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=troops NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Eastern CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Eastern NamedEntityTag=LOCATION]
+[Text=Europe CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Baltics CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Baltics NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Biden))
+    (VP (VBZ Weighs)
+      (S
+        (VP (VBG Deploying)
+          (NP
+            (NP (NNS Thousands))
+            (PP (IN of)
+              (NP (NNS Troops))))
+          (PP (IN to)
+            (NP (NNP Eastern) (NNP Europe)
+              (CC and)
+              (NNP Baltics))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Weighs-2)
+nsubj(Weighs-2, Biden-1)
+xcomp(Weighs-2, Deploying-3)
+det:qmod(Troops-6, Thousands-4)
+fixed(Thousands-4, of-5)
+obj(Deploying-3, Troops-6)
+case(Europe-9, to-7)
+compound(Europe-9, Eastern-8)
+obl:to(Deploying-3, Europe-9)
+cc(Baltics-11, and-10)
+obl:to(Deploying-3, Baltics-11)
+conj:and(Europe-9, Baltics-11)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9157234347862054
+Eastern Europe	LOCATION	LOCATION:0.8119205551708957
+Baltics	PERSON	PERSON:0.46454256277640543

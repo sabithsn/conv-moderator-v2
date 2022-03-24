@@ -1,0 +1,65 @@
+Document: ID=ACB59527.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Ron Paul, Congressman of 30 Years, Banned on Facebook After Quoting Pfizer CEO
+
+Tokens:
+[Text=Ron CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Ron NamedEntityTag=PERSON]
+[Text=Paul CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Paul NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Congressman CharacterOffsetBegin=10 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Congressman NamedEntityTag=TITLE]
+[Text=of CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=30 CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=CD Lemma=30 NamedEntityTag=DURATION NormalizedNamedEntityTag=P30Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P30Y">30 Years</TIMEX3>]
+[Text=Years CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P30Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P30Y">30 Years</TIMEX3>]
+[Text=, CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Banned CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Facebook CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Facebook NamedEntityTag=ORGANIZATION]
+[Text=After CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Quoting CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=quote NamedEntityTag=O]
+[Text=Pfizer CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Pfizer NamedEntityTag=O]
+[Text=CEO CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=CEO NamedEntityTag=TITLE]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Ron) (NNP Paul))
+    (, ,)
+    (S
+      (NP
+        (NP (NNP Congressman))
+        (PP (IN of)
+          (NP (CD 30) (NNS Years))))
+      (, ,)
+      (VP (VBN Banned)
+        (PP (IN on)
+          (NP (NNP Facebook)))
+        (PP (IN After)
+          (S
+            (VP (VBG Quoting)
+              (NP (NNP Pfizer) (NNP CEO)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Paul-2)
+compound(Paul-2, Ron-1)
+punct(Paul-2, ,-3)
+nsubj(Banned-9, Congressman-4)
+case(Years-7, of-5)
+nummod(Years-7, 30-6)
+nmod:of(Congressman-4, Years-7)
+punct(Banned-9, ,-8)
+dep(Paul-2, Banned-9)
+case(Facebook-11, on-10)
+obl:on(Banned-9, Facebook-11)
+mark(Quoting-13, After-12)
+advcl:after(Banned-9, Quoting-13)
+compound(CEO-15, Pfizer-14)
+obj(Quoting-13, CEO-15)
+
+Extracted the following NER entity mentions:
+Ron Paul	PERSON	PERSON:0.9965397337322356
+Congressman	TITLE	-
+30 Years	DURATION	DURATION:-1.0
+Facebook	ORGANIZATION	ORGANIZATION:0.5957964458127926
+CEO	TITLE	-

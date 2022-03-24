@@ -1,0 +1,66 @@
+Document: ID=FC3462A5.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Lia Thomas is genuinely one of the most selfish people in all of NCAA sports.
+
+Tokens:
+[Text=Lia CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Lia NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=genuinely CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=genuinely NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=selfish CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=selfish NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=NCAA CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=NCAA NamedEntityTag=ORGANIZATION]
+[Text=sports CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=sport NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Lia) (NNP Thomas))
+    (VP (VBZ is)
+      (ADVP (RB genuinely))
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the)
+              (ADJP (RBS most) (JJ selfish))
+              (NNS people))
+            (PP (IN in)
+              (NP
+                (NP (DT all))
+                (PP (IN of)
+                  (NP (NNP NCAA) (NNS sports)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, people-10)
+compound(Thomas-2, Lia-1)
+nsubj(one-5, Thomas-2)
+cop(one-5, is-3)
+advmod(one-5, genuinely-4)
+det:qmod(people-10, one-5)
+fixed(one-5, of-6)
+det(people-10, the-7)
+advmod(selfish-9, most-8)
+amod(people-10, selfish-9)
+case(all-12, in-11)
+nmod:in(people-10, all-12)
+case(sports-15, of-13)
+compound(sports-15, NCAA-14)
+nmod:of(all-12, sports-15)
+punct(one-5, .-16)
+
+Extracted the following NER entity mentions:
+Lia Thomas	PERSON	PERSON:0.9994045821990498
+one	NUMBER	NUMBER:-1.0
+NCAA	ORGANIZATION	ORGANIZATION:0.980855702357931

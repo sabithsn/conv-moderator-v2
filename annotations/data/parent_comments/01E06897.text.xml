@@ -1,0 +1,63 @@
+Document: ID=01E06897.text (2 sentences, 12 tokens)
+
+Sentence #1 (6 tokens):
+This is more like ELI13.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=ELI13 CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=ELI13 NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADVP (RBR more))
+      (PP (IN like)
+        (NP (NNP ELI13))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI13-5)
+nsubj(ELI13-5, This-1)
+cop(ELI13-5, is-2)
+advmod(ELI13-5, more-3)
+case(ELI13-5, like-4)
+punct(ELI13-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Way too many big words .
+
+Tokens:
+[Text=Way CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Way))
+    (ADVP (RB too))
+    (NP (JJ many) (JJ big) (NNS words))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Way-1)
+dep(Way-1, too-2)
+amod(words-5, many-3)
+amod(words-5, big-4)
+dep(Way-1, words-5)
+punct(Way-1, .-6)
+
+Extracted the following NER entity mentions:

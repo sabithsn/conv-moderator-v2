@@ -1,0 +1,38 @@
+Document: ID=57F9D859.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Pedos should get put in the brazen bull
+
+Tokens:
+[Text=Pedos CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Pedos NamedEntityTag=PERSON]
+[Text=should CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBN Lemma=put NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=brazen CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=brazen NamedEntityTag=O]
+[Text=bull CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=bull NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Pedos))
+    (VP (MD should)
+      (VP (VB get)
+        (VP (VBN put)
+          (PP (IN in)
+            (NP (DT the) (JJ brazen) (NN bull))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, put-4)
+nsubj:pass(put-4, Pedos-1)
+aux(put-4, should-2)
+aux:pass(put-4, get-3)
+case(bull-8, in-5)
+det(bull-8, the-6)
+amod(bull-8, brazen-7)
+obl:in(put-4, bull-8)
+
+Extracted the following NER entity mentions:
+Pedos	PERSON	PERSON:0.603087744125804

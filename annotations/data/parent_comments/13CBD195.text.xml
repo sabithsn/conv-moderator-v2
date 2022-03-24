@@ -1,0 +1,45 @@
+Document: ID=13CBD195.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Florida High School Student Suspended After Handing Out Pride Flags
+
+Tokens:
+[Text=Florida CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=ORGANIZATION]
+[Text=High CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=High NamedEntityTag=ORGANIZATION]
+[Text=School CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=School NamedEntityTag=ORGANIZATION]
+[Text=Student CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Student NamedEntityTag=TITLE]
+[Text=Suspended CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Suspended NamedEntityTag=O]
+[Text=After CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Handing CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=VBG Lemma=hand NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=Pride CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Pride NamedEntityTag=O]
+[Text=Flags CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=flag NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Florida)
+      (NML (NNP High) (NNP School) (NNP Student))
+      (NNP Suspended))
+    (SBAR (IN After)
+      (S
+        (NP (VBG Handing))
+        (PP (IN Out)
+          (NP (NNP Pride) (NNS Flags)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Suspended-5)
+compound(Suspended-5, Florida-1)
+compound(Student-4, High-2)
+compound(Student-4, School-3)
+compound(Suspended-5, Student-4)
+mark(Handing-7, After-6)
+dep(Suspended-5, Handing-7)
+case(Flags-10, Out-8)
+compound(Flags-10, Pride-9)
+dep(Handing-7, Flags-10)
+
+Extracted the following NER entity mentions:
+Florida High School	ORGANIZATION	ORGANIZATION:0.8122822328182964
+Student	TITLE	-

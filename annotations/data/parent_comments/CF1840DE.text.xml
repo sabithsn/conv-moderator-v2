@@ -1,0 +1,77 @@
+Document: ID=CF1840DE.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+If Biden doesn't nominate a Muslim trans disabled person of colxr, I'm going to have a peaceful protest
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=does CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=nominate CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=nominate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Muslim CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=muslim NamedEntityTag=RELIGION]
+[Text=trans CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=trans NamedEntityTag=O]
+[Text=disabled CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=disabled NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=colxr CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=colxr NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=peaceful CharacterOffsetBegin=87 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=peaceful NamedEntityTag=O]
+[Text=protest CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=protest NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Biden))
+        (VP (VBZ does) (RB n't)
+          (VP (VB nominate)
+            (NP
+              (NP (DT a) (JJ Muslim) (NN trans) (JJ disabled) (NN person))
+              (PP (IN of)
+                (NP (NN colxr))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (DT a) (JJ peaceful) (NN protest)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, going-16)
+mark(nominate-5, If-1)
+nsubj(nominate-5, Biden-2)
+aux(nominate-5, does-3)
+advmod(nominate-5, n't-4)
+advcl:if(going-16, nominate-5)
+det(person-10, a-6)
+amod(person-10, Muslim-7)
+compound(person-10, trans-8)
+amod(person-10, disabled-9)
+obj(nominate-5, person-10)
+case(colxr-12, of-11)
+nmod:of(person-10, colxr-12)
+punct(going-16, ,-13)
+nsubj(going-16, I-14)
+nsubj:xsubj(have-18, I-14)
+aux(going-16, 'm-15)
+mark(have-18, to-17)
+xcomp(going-16, have-18)
+det(protest-21, a-19)
+amod(protest-21, peaceful-20)
+obj(have-18, protest-21)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9986884469515788
+Muslim	RELIGION	MISC:0.9955940628373142

@@ -1,0 +1,114 @@
+Document: ID=F2B00311.text (3 sentences, 21 tokens)
+
+Sentence #1 (8 tokens):
+> Trespassing is a crime. >  >
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Trespassing CharacterOffsetBegin=2 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=trespassing NamedEntityTag=CRIMINAL_CHARGE]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=crime CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=crime NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=NFP Lemma=> NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=-RRB- Lemma=> NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NP (NN Trespassing))
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (NP (DT a)
+                (NP
+                  (NP (NN crime))
+                  (. .)
+                  (NP (NFP >))
+                  (-RRB- >))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Trespassing-2)
+dep(Trespassing-2, >-1)
+cop(crime-5, is-3)
+det(crime-5, a-4)
+acl:relcl(Trespassing-2, crime-5)
+punct(crime-5, .-6)
+dep(crime-5, >-7)
+punct(crime-5, >-8)
+
+Extracted the following NER entity mentions:
+Trespassing	CRIMINAL_CHARGE	-
+
+Sentence #2 (9 tokens):
+Glad they just got arrested and not shot.
+
+Tokens:
+[Text=Glad CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=glad NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=arrested CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=VBN Lemma=arrest NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=shot CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBN Lemma=shoot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (ADJP (JJ Glad)))
+      (NP (PRP they))
+      (ADVP (RB just))
+      (VP (VBD got)
+        (VP (VBN arrested))))
+    (CC and)
+    (FRAG (RB not)
+      (VP (VBN shot)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, arrested-5)
+dep(arrested-5, Glad-1)
+nsubj:pass(arrested-5, they-2)
+nsubj:pass(shot-8, they-2)
+advmod(arrested-5, just-3)
+aux:pass(arrested-5, got-4)
+cc(shot-8, and-6)
+advmod(shot-8, not-7)
+conj:and(arrested-5, shot-8)
+punct(arrested-5, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (4 tokens):
+Now do BLM riots
+
+Tokens:
+[Text=Now CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=do CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=BLM CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=blm NamedEntityTag=O]
+[Text=riots CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=riot NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (VP (VB do)
+      (NP (NN BLM) (NNS riots)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-2)
+advmod(do-2, Now-1)
+compound(riots-4, BLM-3)
+obj(do-2, riots-4)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0

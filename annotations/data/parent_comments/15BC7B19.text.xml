@@ -1,0 +1,84 @@
+Document: ID=15BC7B19.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+CMV: Pregnant individuals with no complications should not be allowed to have an elective cesarean section prior to 37 weeks gestation.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Pregnant CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=pregnant NamedEntityTag=O]
+[Text=individuals CharacterOffsetBegin=14 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=individual NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=complications CharacterOffsetBegin=34 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=complication NamedEntityTag=CAUSE_OF_DEATH]
+[Text=should CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=elective CharacterOffsetBegin=81 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=elective NamedEntityTag=O]
+[Text=cesarean CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=cesarean NamedEntityTag=O]
+[Text=section CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=section NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=37 CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=CD Lemma=37 NamedEntityTag=DURATION NormalizedNamedEntityTag=P37W Timex=<TIMEX3 tid="t1" type="DURATION" value="P37W">37 weeks</TIMEX3>]
+[Text=weeks CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=P37W Timex=<TIMEX3 tid="t1" type="DURATION" value="P37W">37 weeks</TIMEX3>]
+[Text=gestation CharacterOffsetBegin=125 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=gestation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP
+        (NP (JJ Pregnant) (NNS individuals))
+        (PP (IN with)
+          (NP (DT no) (NNS complications))))
+      (VP (MD should) (RB not)
+        (VP (VB be)
+          (VP (VBN allowed)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP
+                    (NP (DT an) (JJ elective) (JJ cesarean) (NN section))
+                    (PP (JJ prior) (IN to)
+                      (NP
+                        (NP (CD 37) (NNS weeks))
+                        (NP (NN gestation))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+amod(individuals-4, Pregnant-3)
+nsubj:pass(allowed-11, individuals-4)
+nsubj:xsubj(have-13, individuals-4)
+case(complications-7, with-5)
+det(complications-7, no-6)
+nmod:with(individuals-4, complications-7)
+aux(allowed-11, should-8)
+advmod(allowed-11, not-9)
+aux:pass(allowed-11, be-10)
+appos(CMV-1, allowed-11)
+mark(have-13, to-12)
+xcomp(allowed-11, have-13)
+det(section-17, an-14)
+amod(section-17, elective-15)
+amod(section-17, cesarean-16)
+obj(have-13, section-17)
+case(weeks-21, prior-18)
+fixed(prior-18, to-19)
+nummod(weeks-21, 37-20)
+nmod:prior_to(section-17, weeks-21)
+dep(weeks-21, gestation-22)
+punct(CMV-1, .-23)
+
+Extracted the following NER entity mentions:
+complications	CAUSE_OF_DEATH	-
+37 weeks	DURATION	DURATION:-1.0

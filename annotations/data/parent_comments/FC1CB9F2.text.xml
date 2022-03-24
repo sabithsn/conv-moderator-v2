@@ -1,0 +1,89 @@
+Document: ID=FC1CB9F2.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+They would be fine with nationalizing Tesla and and throwing Musk in jail for the offense of "making obscene profits".
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=nationalizing CharacterOffsetBegin=24 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=nationalize NamedEntityTag=O]
+[Text=Tesla CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Tesla NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=throwing CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=VBG Lemma=throw NamedEntityTag=O]
+[Text=Musk CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=musk NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=jail CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=jail NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=offense CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=offense NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=obscene CharacterOffsetBegin=101 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=obscene NamedEntityTag=O]
+[Text=profits CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=NNS Lemma=profit NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (JJ fine)
+          (PP (IN with)
+            (S
+              (VP
+                (VP (VBG nationalizing)
+                  (NP (NNP Tesla)))
+                (CC and)
+                (VP (CC and)
+                  (VP (VBG throwing)
+                    (NP
+                      (NP (NN Musk))
+                      (PP (IN in)
+                        (NP (NN jail))))
+                    (PP (IN for)
+                      (NP
+                        (NP (DT the) (NN offense))
+                        (PP (IN of) (`` ")
+                          (S
+                            (VP (VBG making)
+                              (NP (JJ obscene) (NNS profits))))
+                          ('' "))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fine-4)
+nsubj(fine-4, They-1)
+aux(fine-4, would-2)
+cop(fine-4, be-3)
+mark(nationalizing-6, with-5)
+advcl:with(fine-4, nationalizing-6)
+obj(nationalizing-6, Tesla-7)
+cc(throwing-10, and-8)
+cc(throwing-10, and-9)
+advcl:with(fine-4, throwing-10)
+conj:and(nationalizing-6, throwing-10)
+obj(throwing-10, Musk-11)
+case(jail-13, in-12)
+nmod:in(Musk-11, jail-13)
+case(offense-16, for-14)
+det(offense-16, the-15)
+obl:for(throwing-10, offense-16)
+case(making-19, of-17)
+punct(making-19, "-18)
+acl:of(offense-16, making-19)
+amod(profits-21, obscene-20)
+obj(making-19, profits-21)
+punct(making-19, "-22)
+punct(fine-4, .-23)
+
+Extracted the following NER entity mentions:
+Tesla	PERSON	PERSON:0.9085550513397324
+Musk	PERSON	PERSON:0.5296038217073444

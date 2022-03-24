@@ -1,0 +1,61 @@
+Document: ID=A0EDA7E5.text (2 sentences, 11 tokens)
+
+Sentence #1 (10 tokens):
+I would take this guy over Trudeau any day.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Trudeau CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Trudeau NamedEntityTag=PERSON]
+[Text=any CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB take)
+        (NP
+          (NP (DT this) (NN guy))
+          (PP (IN over)
+            (NP (NNP Trudeau))))
+        (NP-TMP (DT any) (NN day))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, take-3)
+nsubj(take-3, I-1)
+aux(take-3, would-2)
+det(guy-5, this-4)
+obj(take-3, guy-5)
+case(Trudeau-7, over-6)
+nmod:over(guy-5, Trudeau-7)
+det(day-9, any-8)
+obl:tmod(take-3, day-9)
+punct(take-3, .-10)
+
+Extracted the following NER entity mentions:
+Trudeau	PERSON	PERSON:0.9452666295603901
+day	DURATION	DURATION:-1.0
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:

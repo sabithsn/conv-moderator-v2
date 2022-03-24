@@ -1,0 +1,49 @@
+Document: ID=8855553C.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Clarence Thomas: supreme court could be ‘compromised’ by politics
+
+Tokens:
+[Text=Clarence CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Clarence NamedEntityTag=PERSON]
+[Text=Thomas CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=supreme CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=supreme NamedEntityTag=O]
+[Text=court CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=court NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=compromised CharacterOffsetBegin=41 CharacterOffsetEnd=52 PartOfSpeech=VBN Lemma=compromise NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=politics CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Clarence) (NNP Thomas))
+    (: :)
+    (S
+      (NP (JJ supreme) (NN court))
+      (VP (MD could)
+        (VP (VB be)
+          (VP (`` ‘) (VBN compromised) ('' ’)
+            (PP (IN by)
+              (NP (NNS politics)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thomas-2)
+compound(Thomas-2, Clarence-1)
+punct(Thomas-2, :-3)
+amod(court-5, supreme-4)
+nsubj:pass(compromised-9, court-5)
+aux(compromised-9, could-6)
+aux:pass(compromised-9, be-7)
+punct(compromised-9, ‘-8)
+parataxis(Thomas-2, compromised-9)
+punct(compromised-9, ’-10)
+case(politics-12, by-11)
+obl:agent(compromised-9, politics-12)
+
+Extracted the following NER entity mentions:
+Clarence Thomas	PERSON	PERSON:0.9977318868109687

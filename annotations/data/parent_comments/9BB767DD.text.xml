@@ -1,0 +1,119 @@
+Document: ID=9BB767DD.text (3 sentences, 24 tokens)
+
+Sentence #1 (10 tokens):
+I am chuckling at how happy you must be.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=chuckling CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=VBG Lemma=chuckle NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBG chuckling)
+        (PP (IN at)
+          (SBAR
+            (WHADJP (WRB how) (JJ happy))
+            (S
+              (NP (PRP you))
+              (VP (MD must)
+                (VP (VB be))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, chuckling-3)
+nsubj(chuckling-3, I-1)
+aux(chuckling-3, am-2)
+mark(be-9, at-4)
+advmod(happy-6, how-5)
+dep(be-9, happy-6)
+nsubj(be-9, you-7)
+aux(be-9, must-8)
+advcl:at(chuckling-3, be-9)
+punct(chuckling-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+You think you scored, and big!
+
+Tokens:
+[Text=You CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=scored CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=VBN Lemma=score NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP think)
+      (NP
+        (NP
+          (NP (PRP you))
+          (VP (VBN scored)))
+        (, ,)
+        (CC and)
+        (NP (JJ big))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, You-1)
+obj(think-2, you-3)
+acl(you-3, scored-4)
+punct(you-3, ,-5)
+cc(big-7, and-6)
+obj(think-2, big-7)
+conj:and(you-3, big-7)
+punct(think-2, !-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+Enjoy your moment, troll.
+
+Tokens:
+[Text=Enjoy CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=enjoy NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=moment CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=moment NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=troll CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=troll NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP
+      (VP (VB Enjoy)
+        (NP (PRP$ your) (NN moment)))
+      (, ,)
+      (VP (VB troll)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Enjoy-1)
+nmod:poss(moment-3, your-2)
+obj(Enjoy-1, moment-3)
+punct(Enjoy-1, ,-4)
+dep(Enjoy-1, troll-5)
+punct(Enjoy-1, .-6)
+
+Extracted the following NER entity mentions:

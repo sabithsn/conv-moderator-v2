@@ -1,0 +1,94 @@
+Document: ID=D350961A.text (2 sentences, 20 tokens)
+
+Sentence #1 (6 tokens):
+No one can use nukes.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=can CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=nukes CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=nuke NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (MD can)
+      (VP (VB use)
+        (NP (NNS nukes))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, use-4)
+det(one-2, No-1)
+nsubj(use-4, one-2)
+aux(use-4, can-3)
+obj(use-4, nukes-5)
+punct(use-4, .-6)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+
+Sentence #2 (14 tokens):
+It would cause global catastrophe- there would be at least 2 used.
+
+Tokens:
+[Text=It CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=cause CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=cause NamedEntityTag=O]
+[Text=global CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=global NamedEntityTag=O]
+[Text=catastrophe CharacterOffsetBegin=44 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=catastrophe NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=RBS Lemma=least NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=>=2.0]
+[Text=used CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB cause)
+        (NP
+          (NP (JJ global) (NN catastrophe))
+          (HYPH -)
+          (SBAR
+            (S
+              (NP (EX there))
+              (VP (MD would)
+                (VP (VB be)
+                  (ADJP
+                    (NP
+                      (QP
+                        (ADVP (IN at) (RBS least))
+                        (CD 2)))
+                    (VBN used)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cause-3)
+nsubj(cause-3, It-1)
+aux(cause-3, would-2)
+amod(catastrophe-5, global-4)
+obj(cause-3, catastrophe-5)
+punct(catastrophe-5, --6)
+expl(used-13, there-7)
+aux(used-13, would-8)
+aux:pass(used-13, be-9)
+case(least-11, at-10)
+obl:npmod(2-12, least-11)
+dep(used-13, 2-12)
+acl:relcl(catastrophe-5, used-13)
+punct(cause-3, .-14)
+
+Extracted the following NER entity mentions:
+2	NUMBER	NUMBER:-1.0

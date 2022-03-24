@@ -1,0 +1,56 @@
+Document: ID=E70076EE.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Minnie Mouse to Shed Iconic Dress for a Pantsuit for Women’s History Month
+
+Tokens:
+[Text=Minnie CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Minnie NamedEntityTag=PERSON]
+[Text=Mouse CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Mouse NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Shed CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Shed NamedEntityTag=O]
+[Text=Iconic CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Iconic NamedEntityTag=O]
+[Text=Dress CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Dress NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Pantsuit CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=pantsuit NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Women CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Women NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=History CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=History NamedEntityTag=O]
+[Text=Month CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Month NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t1" type="DURATION" value="P1M">Month</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Minnie) (NNP Mouse))
+    (PP (IN to)
+      (NP
+        (NP (NNP Shed) (NNP Iconic) (NNP Dress))
+        (PP (IN for)
+          (NP
+            (NP (DT a) (NN Pantsuit))
+            (PP (IN for)
+              (NP
+                (NP (NNP Women) (POS ’s))
+                (NNP History) (NNP Month)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Mouse-2)
+compound(Mouse-2, Minnie-1)
+case(Dress-6, to-3)
+compound(Dress-6, Shed-4)
+compound(Dress-6, Iconic-5)
+obl:to(Mouse-2, Dress-6)
+case(Pantsuit-9, for-7)
+det(Pantsuit-9, a-8)
+nmod:for(Dress-6, Pantsuit-9)
+case(Month-14, for-10)
+nmod:poss(Month-14, Women-11)
+case(Women-11, ’s-12)
+compound(Month-14, History-13)
+nmod:for(Pantsuit-9, Month-14)
+
+Extracted the following NER entity mentions:
+Minnie Mouse	PERSON	PERSON:0.9058085545478187
+Month	DURATION	DURATION:-1.0

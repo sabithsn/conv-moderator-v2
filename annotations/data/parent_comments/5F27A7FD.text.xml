@@ -1,0 +1,89 @@
+Document: ID=5F27A7FD.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+Uh-oh, she BIG mad: Stacey Abrams' statement on her REALLY horrible maskless photo-op only makes things WORSE
+
+Tokens:
+[Text=Uh-oh CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=uh-oh NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=BIG CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=mad CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=mad NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Stacey CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Stacey NamedEntityTag=PERSON]
+[Text=Abrams CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Abrams NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=statement CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=statement NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=REALLY CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=horrible CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=horrible NamedEntityTag=O]
+[Text=maskless CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=maskless NamedEntityTag=O]
+[Text=photo CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=photo NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=op CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=WORSE CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Uh-oh))
+    (, ,)
+    (NP (PRP she))
+    (PRN
+      (S
+        (UCP
+          (ADJP
+            (NP (JJ BIG))
+            (JJ mad))
+          (: :)
+          (NP
+            (NP
+              (NP (NNP Stacey) (NNP Abrams) (POS '))
+              (NN statement))
+            (PP (IN on)
+              (NP
+                (NP (PRP$ her)
+                  (NML
+                    (FRAG
+                      (ADVP (RB REALLY))
+                      (ADJP (JJ horrible))))
+                  (JJ maskless) (NN photo) (HYPH -) (NN op))
+                (ADVP (RB only))))))))
+    (VP (VBZ makes)
+      (S
+        (NP (NNS things))
+        (ADJP (JJR WORSE))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-20)
+advmod(makes-20, Uh-oh-1)
+punct(makes-20, ,-2)
+nsubj(makes-20, she-3)
+obl:npmod(mad-5, BIG-4)
+parataxis(makes-20, mad-5)
+punct(mad-5, :-6)
+compound(Abrams-8, Stacey-7)
+nmod:poss(statement-10, Abrams-8)
+case(Abrams-8, '-9)
+dep(mad-5, statement-10)
+case(op-18, on-11)
+nmod:poss(op-18, her-12)
+dep(horrible-14, REALLY-13)
+compound(op-18, horrible-14)
+amod(op-18, maskless-15)
+compound(op-18, photo-16)
+punct(op-18, --17)
+nmod:on(statement-10, op-18)
+advmod(op-18, only-19)
+nsubj(WORSE-22, things-21)
+xcomp(makes-20, WORSE-22)
+
+Extracted the following NER entity mentions:
+Stacey Abrams	PERSON	PERSON:0.9945124582899504
+she	PERSON	-
+her	PERSON	-

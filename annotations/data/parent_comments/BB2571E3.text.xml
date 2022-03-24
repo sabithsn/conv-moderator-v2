@@ -1,0 +1,67 @@
+Document: ID=BB2571E3.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+ELI5: Why can’t rehab centres just sedate you until the drugs leave your system?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=rehab CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VB Lemma=rehab NamedEntityTag=O]
+[Text=centres CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=centre NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=sedate CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=sedate NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=drugs CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=drug NamedEntityTag=CRIMINAL_CHARGE]
+[Text=leave CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=VBP Lemma=leave NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ
+        (VP (MD ca) (RB n’t)
+          (VP (VB rehab)
+            (NP
+              (NP (NNS centres))
+              (NP (RB just) (JJ sedate)))))
+        (NP (PRP you))
+        (SBAR (IN until)
+          (S
+            (NP (DT the) (NNS drugs))
+            (VP (VBP leave)
+              (NP (PRP$ your) (NN system)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(rehab-6, Why-3)
+aux(rehab-6, ca-4)
+advmod(rehab-6, n’t-5)
+parataxis(ELI5-1, rehab-6)
+iobj(rehab-6, centres-7)
+advmod(sedate-9, just-8)
+dep(centres-7, sedate-9)
+dep(rehab-6, you-10)
+mark(leave-14, until-11)
+det(drugs-13, the-12)
+nsubj(leave-14, drugs-13)
+dep(rehab-6, leave-14)
+nmod:poss(system-16, your-15)
+obj(leave-14, system-16)
+punct(ELI5-1, ?-17)
+
+Extracted the following NER entity mentions:
+drugs	CRIMINAL_CHARGE	-

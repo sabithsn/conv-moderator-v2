@@ -1,0 +1,37 @@
+Document: ID=A6CCD575.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+I hope Amazon Prime reposts this meme
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hope CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=hope NamedEntityTag=O]
+[Text=Amazon CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Amazon NamedEntityTag=ORGANIZATION]
+[Text=Prime CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Prime NamedEntityTag=O]
+[Text=reposts CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=repost NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=meme CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=meme NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hope)
+      (SBAR
+        (S
+          (NP (NNP Amazon) (NNP Prime))
+          (VP (VBZ reposts)
+            (NP (DT this) (NN meme))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hope-2)
+nsubj(hope-2, I-1)
+compound(Prime-4, Amazon-3)
+nsubj(reposts-5, Prime-4)
+ccomp(hope-2, reposts-5)
+det(meme-7, this-6)
+obj(reposts-5, meme-7)
+
+Extracted the following NER entity mentions:
+Amazon	ORGANIZATION	ORGANIZATION:0.4951020866254214

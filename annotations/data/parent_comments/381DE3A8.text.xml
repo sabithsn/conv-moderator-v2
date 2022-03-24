@@ -1,0 +1,96 @@
+Document: ID=381DE3A8.text (2 sentences, 21 tokens)
+
+Sentence #1 (19 tokens):
+>Is it right wing bullshit that she funneled money from down ballot candidates into her own campaign?
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=right NamedEntityTag=IDEOLOGY]
+[Text=wing CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=wing NamedEntityTag=IDEOLOGY]
+[Text=bullshit CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=bullshit NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=funneled CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=funnel NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=ballot CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=ballot NamedEntityTag=O]
+[Text=candidates CharacterOffsetBegin=68 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=candidate NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=campaign CharacterOffsetBegin=92 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=campaign NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PP (SYM >)
+      (NP
+        (NP
+          (NML
+            (SQ (VBZ Is)
+              (NP (PRP it))
+              (ADJP (JJ right) (NN wing))))
+          (NN bullshit))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (NP (PRP she))
+            (VP (VBD funneled)
+              (NP (NN money))
+              (PP (IN from)
+                (NP
+                  (ADJP (RB down))
+                  (NN ballot) (NNS candidates)))
+              (PP (IN into)
+                (NP (PRP$ her) (JJ own) (NN campaign))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bullshit-6)
+dep(bullshit-6, >-1)
+cop(wing-5, Is-2)
+nsubj(wing-5, it-3)
+dep(wing-5, right-4)
+compound(bullshit-6, wing-5)
+obj(funneled-9, bullshit-6)
+ref(bullshit-6, that-7)
+nsubj(funneled-9, she-8)
+acl:relcl(bullshit-6, funneled-9)
+obj(funneled-9, money-10)
+case(candidates-14, from-11)
+amod(candidates-14, down-12)
+compound(candidates-14, ballot-13)
+obl:from(funneled-9, candidates-14)
+case(campaign-18, into-15)
+nmod:poss(campaign-18, her-16)
+amod(campaign-18, own-17)
+obl:into(funneled-9, campaign-18)
+punct(bullshit-6, ?-19)
+
+Extracted the following NER entity mentions:
+right wing	IDEOLOGY	-
+she	PERSON	-
+her	PERSON	-
+
+Sentence #2 (2 tokens):
+YUP.
+
+Tokens:
+[Text=YUP CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=yup NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN YUP) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, YUP-1)
+punct(YUP-1, .-2)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,42 @@
+Document: ID=F1508EE5.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+eli5 What are the basic beliefs of satanism?
+
+Tokens:
+[Text=eli5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=basic CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=basic NamedEntityTag=O]
+[Text=beliefs CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NNS Lemma=belief NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=satanism CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=satanism NamedEntityTag=RELIGION]
+[Text=? CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (NP (NN eli5))
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (JJ basic) (NNS beliefs))
+        (PP (IN of)
+          (NP (NNP satanism)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-2)
+nsubj(What-2, eli5-1)
+cop(What-2, are-3)
+det(beliefs-6, the-4)
+amod(beliefs-6, basic-5)
+nsubj(What-2, beliefs-6)
+case(satanism-8, of-7)
+nmod:of(beliefs-6, satanism-8)
+punct(What-2, ?-9)
+
+Extracted the following NER entity mentions:
+satanism	RELIGION	-

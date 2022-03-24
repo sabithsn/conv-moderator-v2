@@ -1,0 +1,88 @@
+Document: ID=DAD0A554.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+Anyone else notice that the number of active "thinking freely" free thinkers on the sub is down like 40% every day?
+
+Tokens:
+[Text=Anyone CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=else NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=notice NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=active CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=active NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=thinking CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=think NamedEntityTag=O]
+[Text=freely CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=freely NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=thinkers CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=thinker NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=40 CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=CD Lemma=40 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%40.0]
+[Text=% CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%40.0]
+[Text=every CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="P1D">every day</TIMEX3>]
+[Text=day CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=day NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="P1D">every day</TIMEX3>]
+[Text=? CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Anyone) (JJ else) (NN notice))
+    (SBAR (IN that)
+      (S
+        (NP
+          (NP (DT the) (NN number))
+          (PP (IN of)
+            (NP (JJ active) (`` ")
+              (NML
+                (S
+                  (VP (VBG thinking)
+                    (ADVP (RB freely)))))
+              ('' ") (JJ free) (NNS thinkers)))
+          (PP (IN on)
+            (NP (DT the) (NN sub))))
+        (VP (VBZ is)
+          (ADVP (RP down))
+          (PP (IN like)
+            (NP
+              (NP (CD 40) (NN %))
+              (NP (DT every) (NN day)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, notice-3)
+compound(notice-3, Anyone-1)
+amod(notice-3, else-2)
+mark(%-22, that-4)
+det(number-6, the-5)
+nsubj(%-22, number-6)
+case(thinkers-14, of-7)
+amod(thinkers-14, active-8)
+punct(thinkers-14, "-9)
+compound(thinkers-14, thinking-10)
+advmod(thinking-10, freely-11)
+punct(thinkers-14, "-12)
+amod(thinkers-14, free-13)
+nmod:of(number-6, thinkers-14)
+case(sub-17, on-15)
+det(sub-17, the-16)
+nmod:on(number-6, sub-17)
+cop(%-22, is-18)
+advmod(%-22, down-19)
+case(%-22, like-20)
+nummod(%-22, 40-21)
+dep(notice-3, %-22)
+det(day-24, every-23)
+dep(%-22, day-24)
+punct(notice-3, ?-25)
+
+Extracted the following NER entity mentions:
+40%	PERCENT	PERCENT:0.9992947691543494
+every day	SET	SET:-1.0

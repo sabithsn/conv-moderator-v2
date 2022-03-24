@@ -1,0 +1,96 @@
+Document: ID=0CA680E2.text (3 sentences, 18 tokens)
+
+Sentence #1 (5 tokens):
+And when was this?
+
+Tokens:
+[Text=And CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ (CC And)
+    (WHADVP (WRB when))
+    (SQ (VBD was)
+      (NP (DT this)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-3)
+cc(was-3, And-1)
+advmod(was-3, when-2)
+nsubj(was-3, this-4)
+punct(was-3, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+15 years ago?
+
+Tokens:
+[Text=15 CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=CD Lemma=15 NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-15Y Timex=<TIMEX3 alt_value="OFFSET P-15Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">15 years ago</TIMEX3>]
+[Text=years CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-15Y Timex=<TIMEX3 alt_value="OFFSET P-15Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">15 years ago</TIMEX3>]
+[Text=ago CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=ago NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-15Y Timex=<TIMEX3 alt_value="OFFSET P-15Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">15 years ago</TIMEX3>]
+[Text=? CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (CD 15) (NNS years))
+    (PP (IN ago))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, years-2)
+nummod(years-2, 15-1)
+dep(years-2, ago-3)
+punct(years-2, ?-4)
+
+Extracted the following NER entity mentions:
+15 years ago	DATE	DATE:-1.0
+
+Sentence #3 (9 tokens):
+When medical costs have only increased since then…
+
+Tokens:
+[Text=When CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=medical CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=medical NamedEntityTag=O]
+[Text=costs CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=cost NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=increased CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=VBN Lemma=increase NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHADVP (WRB When)
+      (NP (JJ medical) (NNS costs)))
+    (S
+      (VP (VBP have)
+        (ADVP (RB only))
+        (VP (VBN increased)
+          (PP (IN since)
+            (ADVP (RB then))))))
+    (: …)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, increased-6)
+advmod(increased-6, When-1)
+amod(costs-3, medical-2)
+dep(When-1, costs-3)
+aux(increased-6, have-4)
+advmod(increased-6, only-5)
+case(then-8, since-7)
+advcl:since(increased-6, then-8)
+punct(increased-6, …-9)
+
+Extracted the following NER entity mentions:

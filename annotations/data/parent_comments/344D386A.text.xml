@@ -1,0 +1,75 @@
+Document: ID=344D386A.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+One Thing to Look Forward to If GOP Takes Back Majority: Chairman Rand Paul Investigating Fauci
+
+Tokens:
+[Text=One CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=Thing CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Look CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=Forward CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Forward NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=GOP CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=Takes CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=take NamedEntityTag=O]
+[Text=Back CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=Majority CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Majority NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Chairman CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Chairman NamedEntityTag=TITLE]
+[Text=Rand CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Rand NamedEntityTag=O]
+[Text=Paul CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Paul NamedEntityTag=O]
+[Text=Investigating CharacterOffsetBegin=76 CharacterOffsetEnd=89 PartOfSpeech=VBG Lemma=investigate NamedEntityTag=O]
+[Text=Fauci CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Fauci NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (CD One) (NN Thing))
+    (SBAR
+      (S
+        (VP (TO to)
+          (VP (VB Look)
+            (NP (NNP Forward))
+            (S
+              (VP (TO to)))
+            (SBAR (IN If)
+              (S
+                (NP (NNP GOP))
+                (VP (VBZ Takes)
+                  (PP (RB Back)
+                    (S
+                      (NP
+                        (NML
+                          (NML (NNP Majority))
+                          (: :)
+                          (NML (NNP Chairman) (NNP Rand)))
+                        (NNP Paul))
+                      (VP (VBG Investigating)
+                        (NP (NNP Fauci))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Thing-2)
+nummod(Thing-2, One-1)
+mark(Look-4, to-3)
+acl:to(Thing-2, Look-4)
+obj(Look-4, Forward-5)
+advcl(Look-4, to-6)
+mark(Takes-9, If-7)
+nsubj(Takes-9, GOP-8)
+advcl:if(Look-4, Takes-9)
+advmod(Investigating-16, Back-10)
+dep(Rand-14, Majority-11)
+punct(Rand-14, :-12)
+compound(Rand-14, Chairman-13)
+compound(Paul-15, Rand-14)
+nsubj(Investigating-16, Paul-15)
+advcl(Takes-9, Investigating-16)
+obj(Investigating-16, Fauci-17)
+
+Extracted the following NER entity mentions:
+One	NUMBER	NUMBER:-1.0
+GOP	ORGANIZATION	ORGANIZATION:0.8218360604294287
+Chairman	TITLE	-
+Fauci	PERSON	PERSON:0.945376757651989

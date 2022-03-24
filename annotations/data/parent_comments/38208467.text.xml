@@ -1,0 +1,92 @@
+Document: ID=38208467.text (2 sentences, 21 tokens)
+
+Sentence #1 (12 tokens):
+Fuck off you nazi bot, you’re not owning anyone.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=nazi CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=nazi NamedEntityTag=O]
+[Text=bot CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=bot NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=owning CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=own NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VB Fuck)
+          (PRT (RP off))
+          (NP (PRP you))))
+      (VP (VBP nazi)
+        (NP (NN bot))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP ’re) (RB not)
+      (VP (VBG owning)
+        (NP (NN anyone))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, owning-10)
+csubj(nazi-4, Fuck-1)
+compound:prt(Fuck-1, off-2)
+obj(Fuck-1, you-3)
+ccomp(owning-10, nazi-4)
+obj(nazi-4, bot-5)
+punct(owning-10, ,-6)
+nsubj(owning-10, you-7)
+aux(owning-10, ’re-8)
+advmod(owning-10, not-9)
+obj(owning-10, anyone-11)
+punct(owning-10, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+Socialists aren’t arguing any of this shit.
+
+Tokens:
+[Text=Socialists CharacterOffsetBegin=49 CharacterOffsetEnd=59 PartOfSpeech=NNPS Lemma=Socialists NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=arguing CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=VBG Lemma=argue NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNPS Socialists))
+    (VP (VBP are) (RB n’t)
+      (VP (VBG arguing)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP (DT this) (NN shit))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, arguing-4)
+nsubj(arguing-4, Socialists-1)
+aux(arguing-4, are-2)
+advmod(arguing-4, n’t-3)
+obj(arguing-4, any-5)
+case(shit-8, of-6)
+det(shit-8, this-7)
+nmod:of(any-5, shit-8)
+punct(arguing-4, .-9)
+
+Extracted the following NER entity mentions:

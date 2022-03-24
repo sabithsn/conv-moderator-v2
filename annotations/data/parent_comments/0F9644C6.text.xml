@@ -1,0 +1,67 @@
+Document: ID=0F9644C6.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+a good response to anyone who says putin wouldnt have invaded if trump were president.
+
+Tokens:
+[Text=a CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=putin CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=putin NamedEntityTag=O]
+[Text=wouldnt CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=wouldnt NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=invaded CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=VBN Lemma=invade NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=trump CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=trump NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (JJ good) (NN response))
+      (PP (IN to)
+        (NP
+          (NP (NN anyone))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ says)
+                (NP (NN putin) (NN wouldnt))))))))
+    (VP (VBP have)
+      (VP (VBN invaded)
+        (SBAR (IN if)
+          (S
+            (NP (NN trump))
+            (VP (VBD were)
+              (NP (NN president)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, invaded-11)
+det(response-3, a-1)
+amod(response-3, good-2)
+nsubj(invaded-11, response-3)
+case(anyone-5, to-4)
+nmod:to(response-3, anyone-5)
+nsubj(says-7, anyone-5)
+ref(anyone-5, who-6)
+acl:relcl(anyone-5, says-7)
+compound(wouldnt-9, putin-8)
+obj(says-7, wouldnt-9)
+aux(invaded-11, have-10)
+mark(president-15, if-12)
+nsubj(president-15, trump-13)
+cop(president-15, were-14)
+advcl:if(invaded-11, president-15)
+punct(invaded-11, .-16)
+
+Extracted the following NER entity mentions:
+president	TITLE	-

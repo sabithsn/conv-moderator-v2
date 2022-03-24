@@ -1,0 +1,99 @@
+Document: ID=1337FE02.text (1 sentences, 27 tokens)
+
+Sentence #1 (27 tokens):
+ELI5: Why do some elevators have an up and a down button on their door, when they call the elevator to your floor regardless?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=elevators CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=elevator NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=down NamedEntityTag=O]
+[Text=button CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=button NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=door CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=door NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=call CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=VBP Lemma=call NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=elevator CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=elevator NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=floor CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=floor NamedEntityTag=O]
+[Text=regardless CharacterOffsetBegin=114 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=regardless NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP do)
+        (NP (DT some) (NNS elevators))
+        (VP (VBP have)
+          (NP
+            (NP
+              (NP (DT an)
+                (NML
+                  (UCP
+                    (ADVP (RB up))
+                    (CC and)
+                    (NP (DT a) (NN down)))
+                  (NN button)))
+              (PP (IN on)
+                (NP (PRP$ their) (NN door))))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP they))
+                (VP (VBP call)
+                  (NP (DT the) (NN elevator))
+                  (PP (IN to)
+                    (NP (PRP$ your) (NN floor)))
+                  (ADVP (RB regardless)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(have-7, Why-3)
+aux(have-7, do-4)
+det(elevators-6, some-5)
+nsubj(have-7, elevators-6)
+parataxis(ELI5-1, have-7)
+det(button-13, an-8)
+dep(button-13, up-9)
+cc(down-12, and-10)
+det(down-12, a-11)
+conj:and(up-9, down-12)
+dep(button-13, down-12)
+obj(have-7, button-13)
+case(door-16, on-14)
+nmod:poss(door-16, their-15)
+nmod:on(button-13, door-16)
+punct(button-13, ,-17)
+advmod(call-20, when-18)
+nsubj(call-20, they-19)
+acl:relcl(button-13, call-20)
+det(elevator-22, the-21)
+obj(call-20, elevator-22)
+case(floor-25, to-23)
+nmod:poss(floor-25, your-24)
+obl:to(call-20, floor-25)
+advmod(call-20, regardless-26)
+punct(ELI5-1, ?-27)
+
+Extracted the following NER entity mentions:

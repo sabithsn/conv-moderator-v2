@@ -1,0 +1,92 @@
+Document: ID=4B8F2CF1.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+‘Stop Trying To Cancel People’: CNN Host Don Lemon Accepts Whoopi Goldberg’s Apology, Urges Forgiveness | The Daily Wire
+
+Tokens:
+[Text=‘ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Stop CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=Trying CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Cancel CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=cancel NamedEntityTag=O]
+[Text=People CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=CNN CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=CNN NamedEntityTag=ORGANIZATION]
+[Text=Host CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=host NamedEntityTag=ORGANIZATION]
+[Text=Don CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Don NamedEntityTag=ORGANIZATION]
+[Text=Lemon CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Lemon NamedEntityTag=ORGANIZATION]
+[Text=Accepts CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=accept NamedEntityTag=O]
+[Text=Whoopi CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Whoopi NamedEntityTag=PERSON]
+[Text=Goldberg CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Goldberg NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Apology CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=apology NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Urges CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=VBZ Lemma=urge NamedEntityTag=O]
+[Text=Forgiveness CharacterOffsetBegin=92 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=forgiveness NamedEntityTag=O]
+[Text=| CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=NFP Lemma=| NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Daily CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Daily NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t1" type="SET" value="P1D">Daily</TIMEX3>]
+[Text=Wire CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Wire NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP
+        (NP
+          (S (`` ‘)
+            (VP (VB Stop)
+              (S
+                (VP (VBG Trying)
+                  (S
+                    (VP (TO To)
+                      (VP (VB Cancel)
+                        (NP (NNS People) (POS ’)))))))))
+          (: :)
+          (NP
+            (NP (NNP CNN) (NN Host))
+            (SBAR
+              (S
+                (NP (NNP Don) (NNP Lemon))
+                (VP (VBZ Accepts))))))
+        (NP
+          (NP (NNP Whoopi) (NNP Goldberg) (POS ’s))
+          (NN Apology)))
+      (, ,)
+      (VP (VBZ Urges)
+        (NP (NN Forgiveness))))
+    (NFP |)
+    (NP (DT The) (NNP Daily) (NNP Wire))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wire-24)
+punct(Stop-2, ‘-1)
+dep(Host-10, Stop-2)
+xcomp(Stop-2, Trying-3)
+mark(Cancel-5, To-4)
+xcomp(Trying-3, Cancel-5)
+obj(Cancel-5, People-6)
+case(People-6, ’-7)
+punct(Host-10, :-8)
+compound(Host-10, CNN-9)
+nsubj(Urges-19, Host-10)
+compound(Lemon-12, Don-11)
+nsubj(Accepts-13, Lemon-12)
+acl:relcl(Host-10, Accepts-13)
+compound(Goldberg-15, Whoopi-14)
+nmod:poss(Apology-17, Goldberg-15)
+case(Goldberg-15, ’s-16)
+dep(Host-10, Apology-17)
+punct(Urges-19, ,-18)
+dep(Wire-24, Urges-19)
+obj(Urges-19, Forgiveness-20)
+punct(Wire-24, |-21)
+det(Wire-24, The-22)
+compound(Wire-24, Daily-23)
+
+Extracted the following NER entity mentions:
+CNN Host Don Lemon	ORGANIZATION	ORGANIZATION:0.3426032542198292
+Whoopi Goldberg	PERSON	PERSON:0.9879492021625907
+Daily	SET	SET:-1.0

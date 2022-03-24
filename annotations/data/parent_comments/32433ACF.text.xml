@@ -1,0 +1,58 @@
+Document: ID=32433ACF.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+ELI5: Why do some colds move through the body in a specific pattern?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=colds CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=cold NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=move NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=specific CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=specific NamedEntityTag=O]
+[Text=pattern CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=pattern NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBP do)
+        (NP (DT some) (NNS colds))
+        (VP (VBP move)
+          (PP (IN through)
+            (NP
+              (NP (DT the) (NN body))
+              (PP (IN in)
+                (NP (DT a) (JJ specific) (NN pattern))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(move-7, Why-3)
+aux(move-7, do-4)
+det(colds-6, some-5)
+nsubj(move-7, colds-6)
+parataxis(ELI5-1, move-7)
+case(body-10, through-8)
+det(body-10, the-9)
+obl:through(move-7, body-10)
+case(pattern-14, in-11)
+det(pattern-14, a-12)
+amod(pattern-14, specific-13)
+nmod:in(body-10, pattern-14)
+punct(ELI5-1, ?-15)
+
+Extracted the following NER entity mentions:

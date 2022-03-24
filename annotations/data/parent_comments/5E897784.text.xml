@@ -1,0 +1,67 @@
+Document: ID=5E897784.text (2 sentences, 12 tokens)
+
+Sentence #1 (6 tokens):
+Trump was right on Russia.
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump))
+    (VP (VBD was)
+      (ADJP (JJ right)
+        (PP (IN on)
+          (NP (NNP Russia)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, right-3)
+nsubj(right-3, Trump-1)
+cop(right-3, was-2)
+case(Russia-5, on-4)
+obl:on(right-3, Russia-5)
+punct(right-3, .-6)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.923486319399463
+Russia	COUNTRY	LOCATION:0.9923964584163938
+
+Sentence #2 (6 tokens):
+He could have been its deterrent
+
+Tokens:
+[Text=He CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=deterrent CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=deterrent NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD could)
+      (VP (VB have)
+        (VP (VBN been)
+          (NP (PRP$ its) (NN deterrent)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deterrent-6)
+nsubj(deterrent-6, He-1)
+aux(deterrent-6, could-2)
+aux(deterrent-6, have-3)
+cop(deterrent-6, been-4)
+nmod:poss(deterrent-6, its-5)
+
+Extracted the following NER entity mentions:
+He	PERSON	-

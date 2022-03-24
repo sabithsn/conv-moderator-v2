@@ -1,0 +1,171 @@
+Document: ID=79CE8407.text (2 sentences, 45 tokens)
+
+Sentence #1 (24 tokens):
+Ilhan Omar warns against US sending Ukraine weapons, claiming that it would be difficult to know where American weapons might end up.
+
+Tokens:
+[Text=Ilhan CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Ilhan NamedEntityTag=PERSON]
+[Text=Omar CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Omar NamedEntityTag=PERSON]
+[Text=warns CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=warn NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=sending CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=send NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=weapons CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=weapon NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=claiming CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=VBG Lemma=claim NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=difficult CharacterOffsetBegin=79 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=difficult NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=103 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=weapons CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=weapon NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=VB Lemma=end NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ilhan) (NNP Omar))
+    (VP (VBZ warns)
+      (PP (IN against)
+        (NP (NNP US)))
+      (S
+        (VP (VBG sending)
+          (NP (NNP Ukraine) (NNS weapons))))
+      (, ,)
+      (S
+        (VP (VBG claiming)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (MD would)
+                (VP (VB be)
+                  (ADJP (JJ difficult)
+                    (S
+                      (VP (TO to)
+                        (VP (VB know)
+                          (SBAR
+                            (WHADVP (WRB where))
+                            (S
+                              (NP (JJ American) (NNS weapons))
+                              (VP (MD might)
+                                (VP (VB end)
+                                  (PRT (RP up)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, warns-3)
+compound(Omar-2, Ilhan-1)
+nsubj(warns-3, Omar-2)
+case(US-5, against-4)
+obl:against(warns-3, US-5)
+xcomp(warns-3, sending-6)
+compound(weapons-8, Ukraine-7)
+obj(sending-6, weapons-8)
+punct(warns-3, ,-9)
+xcomp(warns-3, claiming-10)
+mark(difficult-15, that-11)
+nsubj(difficult-15, it-12)
+nsubj:xsubj(know-17, it-12)
+aux(difficult-15, would-13)
+cop(difficult-15, be-14)
+ccomp(claiming-10, difficult-15)
+mark(know-17, to-16)
+xcomp(difficult-15, know-17)
+advmod(end-22, where-18)
+amod(weapons-20, American-19)
+nsubj(end-22, weapons-20)
+aux(end-22, might-21)
+ccomp(know-17, end-22)
+compound:prt(end-22, up-23)
+punct(warns-3, .-24)
+
+Extracted the following NER entity mentions:
+Ilhan Omar	PERSON	PERSON:0.9914758568035816
+US	COUNTRY	LOCATION:0.9838131365306376
+Ukraine	COUNTRY	LOCATION:0.998037202890281
+American	NATIONALITY	MISC:0.999952765356152
+
+Sentence #2 (21 tokens):
+Omar also warned that the U.S. should not form stronger ties to other countries with questionable records like Saudi Arabia.
+
+Tokens:
+[Text=Omar CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=Omar NamedEntityTag=PERSON]
+[Text=also CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=warned CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=VBD Lemma=warn NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=U.S. CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=should CharacterOffsetBegin=165 CharacterOffsetEnd=171 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=form CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=VB Lemma=form NamedEntityTag=O]
+[Text=stronger CharacterOffsetBegin=181 CharacterOffsetEnd=189 PartOfSpeech=JJR Lemma=stronger NamedEntityTag=O]
+[Text=ties CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NNS Lemma=tie NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=198 CharacterOffsetEnd=203 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=countries CharacterOffsetBegin=204 CharacterOffsetEnd=213 PartOfSpeech=NNS Lemma=country NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=questionable CharacterOffsetBegin=219 CharacterOffsetEnd=231 PartOfSpeech=JJ Lemma=questionable NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=232 CharacterOffsetEnd=239 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Saudi CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=Saudi NamedEntityTag=COUNTRY]
+[Text=Arabia CharacterOffsetBegin=251 CharacterOffsetEnd=257 PartOfSpeech=NNP Lemma=Arabia NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Omar))
+    (ADVP (RB also))
+    (VP (VBD warned)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP U.S.))
+          (VP (MD should) (RB not)
+            (VP (VB form)
+              (NP (JJR stronger) (NNS ties))
+              (PP (IN to)
+                (NP (JJ other) (NNS countries)))
+              (PP (IN with)
+                (NP
+                  (NP (JJ questionable) (NNS records))
+                  (PP (IN like)
+                    (NP (NNP Saudi) (NNP Arabia))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, warned-3)
+nsubj(warned-3, Omar-1)
+advmod(warned-3, also-2)
+mark(form-9, that-4)
+det(U.S.-6, the-5)
+nsubj(form-9, U.S.-6)
+aux(form-9, should-7)
+advmod(form-9, not-8)
+ccomp(warned-3, form-9)
+amod(ties-11, stronger-10)
+obj(form-9, ties-11)
+case(countries-14, to-12)
+amod(countries-14, other-13)
+obl:to(form-9, countries-14)
+case(records-17, with-15)
+amod(records-17, questionable-16)
+obl:with(form-9, records-17)
+case(Arabia-20, like-18)
+compound(Arabia-20, Saudi-19)
+nmod:like(records-17, Arabia-20)
+punct(warned-3, .-21)
+
+Extracted the following NER entity mentions:
+Omar	PERSON	PERSON:0.9792233657760926
+U.S.	COUNTRY	LOCATION:0.9993560146138949
+Saudi Arabia	COUNTRY	LOCATION:0.9984963176127777

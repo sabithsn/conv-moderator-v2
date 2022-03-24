@@ -1,0 +1,81 @@
+Document: ID=649C7445.text (2 sentences, 18 tokens)
+
+Sentence #1 (8 tokens):
+In her defense, she's lesbian.
+
+Tokens:
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=defense CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=defense NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=lesbian CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=lesbian NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (PRP$ her) (NN defense)))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ 's)
+      (ADJP (JJ lesbian)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lesbian-7)
+case(defense-3, In-1)
+nmod:poss(defense-3, her-2)
+obl:in(lesbian-7, defense-3)
+punct(lesbian-7, ,-4)
+nsubj(lesbian-7, she-5)
+cop(lesbian-7, 's-6)
+punct(lesbian-7, .-8)
+
+Extracted the following NER entity mentions:
+her	PERSON	-
+she	PERSON	-
+
+Sentence #2 (10 tokens):
+Note the double female symbols next to her name.
+
+Tokens:
+[Text=Note CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=note NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=double CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=double NamedEntityTag=O]
+[Text=female CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=female NamedEntityTag=O]
+[Text=symbols CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=symbol NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Note)
+      (NP (DT the) (JJ double) (JJ female) (NNS symbols))
+      (ADVP (JJ next)
+        (PP (IN to)
+          (NP (PRP$ her) (NN name)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Note-1)
+det(symbols-5, the-2)
+amod(symbols-5, double-3)
+amod(symbols-5, female-4)
+obj(Note-1, symbols-5)
+case(name-9, next-6)
+fixed(next-6, to-7)
+nmod:poss(name-9, her-8)
+obl:next_to(Note-1, name-9)
+punct(Note-1, .-10)
+
+Extracted the following NER entity mentions:
+her	PERSON	-

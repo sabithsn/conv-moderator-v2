@@ -1,0 +1,40 @@
+Document: ID=E26E323C.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+Define communism you fucking bottom feeder.
+
+Tokens:
+[Text=Define CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=define NamedEntityTag=O]
+[Text=communism CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=communism NamedEntityTag=IDEOLOGY]
+[Text=you CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=fucking NamedEntityTag=O]
+[Text=bottom CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=bottom NamedEntityTag=O]
+[Text=feeder CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=feeder NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (VP (VB Define)
+        (NP (NN communism))
+        (S
+          (NP (PRP you)))))
+    (FRAG
+      (ADVP (RB fucking))
+      (NP (JJ bottom) (NN feeder)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, feeder-6)
+dep(feeder-6, Define-1)
+obj(Define-1, communism-2)
+xcomp(Define-1, you-3)
+dep(feeder-6, fucking-4)
+amod(feeder-6, bottom-5)
+punct(feeder-6, .-7)
+
+Extracted the following NER entity mentions:
+communism	IDEOLOGY	-
+feeder	TITLE	-

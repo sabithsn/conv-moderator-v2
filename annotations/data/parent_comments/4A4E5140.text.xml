@@ -1,0 +1,65 @@
+Document: ID=4A4E5140.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Florida students participate in massive walkout to protest the ‘Don’t Say Gay’ bill
+
+Tokens:
+[Text=Florida CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=students CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=student NamedEntityTag=O]
+[Text=participate CharacterOffsetBegin=17 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=participate NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=massive CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=massive NamedEntityTag=O]
+[Text=walkout CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=walkout NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=protest CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=protest NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=Say CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=Gay CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=NNS Lemma=gay NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Florida) (NNS students))
+    (VP (VBP participate)
+      (PP (IN in)
+        (NP (JJ massive) (NN walkout)))
+      (S
+        (VP (TO to)
+          (VP (VB protest)
+            (NP
+              (NP (DT the) (`` ‘))
+              (SBAR
+                (S
+                  (VP (VBP Do) (RB n’t)
+                    (VP (VB Say)
+                      (NP
+                        (NP (NNS Gay) (POS ’))
+                        (NN bill)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, participate-3)
+compound(students-2, Florida-1)
+nsubj(participate-3, students-2)
+nsubj:xsubj(protest-8, students-2)
+case(walkout-6, in-4)
+amod(walkout-6, massive-5)
+obl:in(participate-3, walkout-6)
+mark(protest-8, to-7)
+xcomp(participate-3, protest-8)
+obj(protest-8, the-9)
+punct(the-9, ‘-10)
+aux(Say-13, Do-11)
+advmod(Say-13, n’t-12)
+acl:relcl(the-9, Say-13)
+nmod:poss(bill-16, Gay-14)
+case(Gay-14, ’-15)
+obj(Say-13, bill-16)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.9155792007014671

@@ -1,0 +1,39 @@
+Document: ID=3FC9BD10.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+This shit will be over by 2024.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=shit NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=2024 CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=CD Lemma=2024 NamedEntityTag=DATE NormalizedNamedEntityTag=2024 Timex=<TIMEX3 tid="t1" type="DATE" value="2024">2024</TIMEX3>]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN shit))
+    (VP (MD will)
+      (VP (VB be)
+        (ADJP (IN over)
+          (PP (IN by)
+            (NP (CD 2024))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, over-5)
+det(shit-2, This-1)
+nsubj(over-5, shit-2)
+aux(over-5, will-3)
+cop(over-5, be-4)
+case(2024-7, by-6)
+obl:by(over-5, 2024-7)
+punct(over-5, .-8)
+
+Extracted the following NER entity mentions:
+2024	DATE	DATE:0.919147152852929

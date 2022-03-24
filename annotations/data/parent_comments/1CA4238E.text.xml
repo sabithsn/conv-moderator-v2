@@ -1,0 +1,110 @@
+Document: ID=1CA4238E.text (2 sentences, 26 tokens)
+
+Sentence #1 (22 tokens):
+The Right:”Why can’t you just choose to wear your mask and let us choose not to?”
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Right CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=Why CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wear CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=wear NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=mask CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (DT The) (JJ Right))
+    (: :) ('' ”)
+    (S
+      (SBAR
+        (WHADVP (WRB Why))
+        (SQ (MD ca) (RB n’t)
+          (NP (PRP you))
+          (VP
+            (ADVP (RB just))
+            (VB choose)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB wear)
+                    (NP (PRP$ your) (NN mask)))
+                  (CC and)
+                  (VP (VB let)
+                    (NP (PRP us)))))))))
+      (VP (VB choose)
+        (S (RB not)
+          (VP (TO to)))))
+    (. ?) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Right-2)
+det(Right-2, The-1)
+punct(Right-2, :-3)
+punct(Right-2, ”-4)
+advmod(choose-10, Why-5)
+aux(choose-10, ca-6)
+advmod(choose-10, n’t-7)
+nsubj(choose-10, you-8)
+nsubj:xsubj(wear-12, you-8)
+nsubj:xsubj(let-16, you-8)
+advmod(choose-10, just-9)
+advcl(choose-18, choose-10)
+mark(wear-12, to-11)
+xcomp(choose-10, wear-12)
+nmod:poss(mask-14, your-13)
+obj(wear-12, mask-14)
+cc(let-16, and-15)
+xcomp(choose-10, let-16)
+conj:and(wear-12, let-16)
+obj(let-16, us-17)
+dep(Right-2, choose-18)
+advmod(to-20, not-19)
+xcomp(choose-18, to-20)
+punct(Right-2, ?-21)
+punct(Right-2, ”-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+Ten seconds later:
+
+Tokens:
+[Text=Ten CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=CD Lemma=ten NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET PT10S Timex=<TIMEX3 alt_value="OFFSET PT10S" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Ten seconds later</TIMEX3>]
+[Text=seconds CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NNS Lemma=seconds NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET PT10S Timex=<TIMEX3 alt_value="OFFSET PT10S" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Ten seconds later</TIMEX3>]
+[Text=later CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET PT10S Timex=<TIMEX3 alt_value="OFFSET PT10S" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Ten seconds later</TIMEX3>]
+[Text=: CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (CD Ten) (NNS seconds))
+    (ADVP (RB later))
+    (: :)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, seconds-2)
+nummod(seconds-2, Ten-1)
+dep(seconds-2, later-3)
+punct(seconds-2, :-4)
+
+Extracted the following NER entity mentions:
+Ten seconds later	DATE	DATE:-1.0

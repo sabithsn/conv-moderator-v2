@@ -1,0 +1,59 @@
+Document: ID=F02C28D3.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Lauren Boebert asked Jews visiting US Capitol if they were doing ‘reconnaissance’
+
+Tokens:
+[Text=Lauren CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Lauren NamedEntityTag=PERSON]
+[Text=Boebert CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Boebert NamedEntityTag=PERSON]
+[Text=asked CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=Jews CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNPS Lemma=Jews NamedEntityTag=MISC]
+[Text=visiting CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VBG Lemma=visit NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=Capitol CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Capitol NamedEntityTag=LOCATION]
+[Text=if CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=reconnaissance CharacterOffsetBegin=66 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=reconnaissance NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Lauren) (NNP Boebert))
+    (VP (VBD asked)
+      (NP (NNPS Jews))
+      (S
+        (VP (VBG visiting)
+          (NP (NNP US) (NNP Capitol))
+          (SBAR (IN if)
+            (S
+              (NP (PRP they))
+              (VP (VBD were)
+                (VP (VBG doing)
+                  (NP (`` ‘) (NN reconnaissance) ('' ’)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-3)
+compound(Boebert-2, Lauren-1)
+nsubj(asked-3, Boebert-2)
+obj(asked-3, Jews-4)
+xcomp(asked-3, visiting-5)
+compound(Capitol-7, US-6)
+obj(visiting-5, Capitol-7)
+mark(doing-11, if-8)
+nsubj(doing-11, they-9)
+aux(doing-11, were-10)
+advcl:if(visiting-5, doing-11)
+punct(reconnaissance-13, ‘-12)
+obj(doing-11, reconnaissance-13)
+punct(reconnaissance-13, ’-14)
+
+Extracted the following NER entity mentions:
+Lauren Boebert	PERSON	PERSON:0.997419898440511
+Jews	MISC	MISC:0.9999063352841596
+US	COUNTRY	LOCATION:0.987688409544268
+Capitol	LOCATION	LOCATION:0.7816463850860221

@@ -1,0 +1,55 @@
+Document: ID=3847D94A.text (2 sentences, 10 tokens)
+
+Sentence #1 (8 tokens):
+John Brennan is a little girl fucker.
+
+Tokens:
+[Text=John CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Brennan CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Brennan NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=fucker CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=fucker NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP John) (NNP Brennan))
+    (VP (VBZ is)
+      (NP (DT a) (JJ little) (NN girl) (NN fucker)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fucker-7)
+compound(Brennan-2, John-1)
+nsubj(fucker-7, Brennan-2)
+cop(fucker-7, is-3)
+det(fucker-7, a-4)
+amod(fucker-7, little-5)
+compound(fucker-7, girl-6)
+punct(fucker-7, .-8)
+
+Extracted the following NER entity mentions:
+John Brennan	PERSON	PERSON:0.9999866066282055
+
+Sentence #2 (2 tokens):
+Wdythnk?
+
+Tokens:
+[Text=Wdythnk CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Wdythnk NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Wdythnk) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wdythnk-1)
+punct(Wdythnk-1, ?-2)
+
+Extracted the following NER entity mentions:
+Wdythnk	PERSON	PERSON:0.587095168450417

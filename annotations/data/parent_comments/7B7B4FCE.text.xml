@@ -1,0 +1,67 @@
+Document: ID=7B7B4FCE.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Today, my normally non-confrontational husband completely lost it on a stranger- for being racist.
+
+Tokens:
+[Text=Today CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Today</TIMEX3>]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=normally CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=normally NamedEntityTag=O]
+[Text=non-confrontational CharacterOffsetBegin=19 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=non-confrontational NamedEntityTag=O]
+[Text=husband CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=husband NamedEntityTag=O]
+[Text=completely CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=completely NamedEntityTag=O]
+[Text=lost CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=lose NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=stranger CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=stranger NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (, ,)
+    (NP (PRP$ my)
+      (ADJP (RB normally) (JJ non-confrontational))
+      (NN husband))
+    (ADVP (RB completely))
+    (VP (VBD lost)
+      (NP (PRP it))
+      (PP (IN on)
+        (NP
+          (NP (DT a) (NN stranger))
+          (HYPH -)
+          (PP (IN for)
+            (S
+              (VP (VBG being)
+                (ADJP (JJ racist))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lost-8)
+obl:tmod(lost-8, Today-1)
+punct(lost-8, ,-2)
+nmod:poss(husband-6, my-3)
+advmod(non-confrontational-5, normally-4)
+amod(husband-6, non-confrontational-5)
+nsubj(lost-8, husband-6)
+advmod(lost-8, completely-7)
+obj(lost-8, it-9)
+case(stranger-12, on-10)
+det(stranger-12, a-11)
+obl:on(lost-8, stranger-12)
+punct(stranger-12, --13)
+mark(racist-16, for-14)
+cop(racist-16, being-15)
+acl:for(stranger-12, racist-16)
+punct(lost-8, .-17)
+
+Extracted the following NER entity mentions:
+Today	DATE	DATE:-1.0

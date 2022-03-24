@@ -1,0 +1,55 @@
+Document: ID=FF4E6F69.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+AITA for not paying for my food when my boyfriend ate it?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=paying CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=food CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=food NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=boyfriend CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=boyfriend NamedEntityTag=O]
+[Text=ate CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=eat NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S (RB not)
+        (VP (VBG paying)
+          (PP (IN for)
+            (NP (PRP$ my) (NN food)))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP$ my) (NN boyfriend))
+              (VP (VBD ate)
+                (NP (PRP it))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(paying-4, for-2)
+advmod(paying-4, not-3)
+dep(AITA-1, paying-4)
+case(food-7, for-5)
+nmod:poss(food-7, my-6)
+obl:for(paying-4, food-7)
+advmod(ate-11, when-8)
+nmod:poss(boyfriend-10, my-9)
+nsubj(ate-11, boyfriend-10)
+advcl(paying-4, ate-11)
+obj(ate-11, it-12)
+punct(AITA-1, ?-13)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.5729869917823378

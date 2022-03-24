@@ -1,0 +1,38 @@
+Document: ID=5C7BB731.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+But Nancy makes millions off slave labor!
+
+Tokens:
+[Text=But CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=Nancy CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Nancy NamedEntityTag=PERSON]
+[Text=makes CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=millions CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=million NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=slave CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=slave NamedEntityTag=O]
+[Text=labor CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=labor NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC But)
+    (NP (NNP Nancy))
+    (VP (VBZ makes)
+      (NP (NNS millions))
+      (PP (IN off)
+        (NP (NN slave) (NN labor))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-3)
+cc(makes-3, But-1)
+nsubj(makes-3, Nancy-2)
+obj(makes-3, millions-4)
+case(labor-7, off-5)
+compound(labor-7, slave-6)
+obl:off(makes-3, labor-7)
+punct(makes-3, !-8)
+
+Extracted the following NER entity mentions:
+Nancy	PERSON	PERSON:0.9876910776152102

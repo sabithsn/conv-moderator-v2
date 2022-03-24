@@ -1,0 +1,46 @@
+Document: ID=AA9B8C75.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+No one can be more corrupt than Biden anyway.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=can CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=corrupt CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=corrupt NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=anyway CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=anyway NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (MD can)
+      (VP (VB be)
+        (ADJP
+          (ADJP (RBR more) (JJ corrupt))
+          (PP (IN than)
+            (NP (NNP Biden))))
+        (ADVP (RB anyway))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, corrupt-6)
+det(one-2, No-1)
+nsubj(corrupt-6, one-2)
+aux(corrupt-6, can-3)
+cop(corrupt-6, be-4)
+advmod(corrupt-6, more-5)
+case(Biden-8, than-7)
+obl:than(corrupt-6, Biden-8)
+advmod(corrupt-6, anyway-9)
+punct(corrupt-6, .-10)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+Biden	PERSON	PERSON:0.9927243829401989

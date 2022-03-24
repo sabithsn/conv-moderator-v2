@@ -1,0 +1,100 @@
+Document: ID=011A36B1.text (2 sentences, 23 tokens)
+
+Sentence #1 (15 tokens):
+Likely a comment on death row inmates dying of natural causes before facing execution.
+
+Tokens:
+[Text=Likely CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=likely NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=comment CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=comment NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=row CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=row NamedEntityTag=O]
+[Text=inmates CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=inmate NamedEntityTag=O]
+[Text=dying CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=die NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=natural NamedEntityTag=CAUSE_OF_DEATH]
+[Text=causes CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=cause NamedEntityTag=CAUSE_OF_DEATH]
+[Text=before CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=facing CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=VBG Lemma=face NamedEntityTag=O]
+[Text=execution CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=execution NamedEntityTag=CAUSE_OF_DEATH]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP
+        (ADJP (RB Likely) (DT a))
+        (NN comment))
+      (PP (IN on)
+        (NP (NN death) (NN row) (NNS inmates))))
+    (VP (VBG dying)
+      (PP (IN of)
+        (NP (JJ natural) (NNS causes)))
+      (PP (IN before)
+        (S
+          (VP (VBG facing)
+            (NP (NN execution))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, comment-3)
+advmod(a-2, Likely-1)
+amod(comment-3, a-2)
+case(inmates-7, on-4)
+compound(inmates-7, death-5)
+compound(inmates-7, row-6)
+nmod:on(comment-3, inmates-7)
+acl(comment-3, dying-8)
+case(causes-11, of-9)
+amod(causes-11, natural-10)
+obl:of(dying-8, causes-11)
+mark(facing-13, before-12)
+advcl:before(dying-8, facing-13)
+obj(facing-13, execution-14)
+punct(comment-3, .-15)
+
+Extracted the following NER entity mentions:
+natural causes	CAUSE_OF_DEATH	-
+execution	CAUSE_OF_DEATH	-
+
+Sentence #2 (8 tokens):
+Not sure how politics was extrapolated from it
+
+Tokens:
+[Text=Not CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=politics CharacterOffsetBegin=100 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=extrapolated CharacterOffsetBegin=113 CharacterOffsetEnd=125 PartOfSpeech=VBN Lemma=extrapolate NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (RB Not)
+    (ADJP (JJ sure)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNS politics))
+          (VP (VBD was)
+            (VP (VBN extrapolated)
+              (PP (IN from)
+                (NP (PRP it))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Not-1)
+dep(Not-1, sure-2)
+advmod(extrapolated-6, how-3)
+nsubj:pass(extrapolated-6, politics-4)
+aux:pass(extrapolated-6, was-5)
+ccomp(sure-2, extrapolated-6)
+case(it-8, from-7)
+obl:from(extrapolated-6, it-8)
+
+Extracted the following NER entity mentions:

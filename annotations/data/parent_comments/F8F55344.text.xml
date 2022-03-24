@@ -1,0 +1,102 @@
+Document: ID=F8F55344.text (2 sentences, 24 tokens)
+
+Sentence #1 (14 tokens):
+If Brazil isn’t in “America”, then neither is Canada.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=Brazil CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Brazil NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=” CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=neither CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=neither NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Canada CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Canada NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Brazil))
+        (VP (VBZ is) (RB n’t)
+          (PP (IN in) (`` “)
+            (NP (NNP America))
+            ('' ”)))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (DT neither))
+    (VP (VBZ is)
+      (NP (NNP Canada)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Canada-13)
+mark(America-7, If-1)
+nsubj(America-7, Brazil-2)
+cop(America-7, is-3)
+advmod(America-7, n’t-4)
+case(America-7, in-5)
+punct(America-7, “-6)
+advcl:if(Canada-13, America-7)
+punct(America-7, ”-8)
+punct(Canada-13, ,-9)
+advmod(neither-11, then-10)
+nsubj(Canada-13, neither-11)
+cop(Canada-13, is-12)
+punct(Canada-13, .-14)
+
+Extracted the following NER entity mentions:
+Brazil	COUNTRY	LOCATION:0.9990072397817398
+America	COUNTRY	-
+Canada	COUNTRY	LOCATION:0.9973129795461261
+
+Sentence #2 (10 tokens):
+Sorry, you can’t have it both ways.
+
+Tokens:
+[Text=Sorry CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=UH Lemma=sorry NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=ways CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Sorry))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD ca) (RB n’t)
+      (VP (VB have)
+        (S
+          (NP (PRP it))
+          (NP (DT both) (NNS ways)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-6)
+discourse(have-6, Sorry-1)
+punct(have-6, ,-2)
+nsubj(have-6, you-3)
+aux(have-6, ca-4)
+advmod(have-6, n’t-5)
+nsubj(ways-9, it-7)
+det(ways-9, both-8)
+xcomp(have-6, ways-9)
+punct(have-6, .-10)
+
+Extracted the following NER entity mentions:

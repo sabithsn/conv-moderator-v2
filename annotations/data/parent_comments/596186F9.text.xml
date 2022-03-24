@@ -1,0 +1,42 @@
+Document: ID=596186F9.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+ELI5: The current trucker protests happening in Canada
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=current CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=current NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">current</TIMEX3>]
+[Text=trucker CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=trucker NamedEntityTag=O]
+[Text=protests CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=protest NamedEntityTag=O]
+[Text=happening CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=happen NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Canada CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Canada NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP ELI5))
+    (: :)
+    (NP
+      (NP (DT The) (JJ current) (NN trucker) (NNS protests))
+      (VP (VBG happening)
+        (PP (IN in)
+          (NP (NNP Canada)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+det(protests-6, The-3)
+amod(protests-6, current-4)
+compound(protests-6, trucker-5)
+dep(ELI5-1, protests-6)
+acl(protests-6, happening-7)
+case(Canada-9, in-8)
+obl:in(happening-7, Canada-9)
+
+Extracted the following NER entity mentions:
+current	DATE	DATE:-1.0
+Canada	COUNTRY	LOCATION:0.9965769652019539

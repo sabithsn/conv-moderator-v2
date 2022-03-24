@@ -1,0 +1,89 @@
+Document: ID=A4E2AD24.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+CMV: The sex scene in Marvel Studio’s Eternals did not add anything to the film, and in fact detracted from it
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=scene CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=scene NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Marvel CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Marvel NamedEntityTag=O]
+[Text=Studio CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Studio NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Eternals CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NNPS Lemma=Eternals NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=add CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=add NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=film CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=film NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=detracted CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=VBN Lemma=detract NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP
+        (NP (DT The) (NN sex) (NN scene))
+        (PP (IN in)
+          (NP
+            (NP (NNP Marvel) (NNP Studio) (POS ’s))
+            (NNPS Eternals))))
+      (VP (VBD did) (RB not)
+        (VP (VB add)
+          (NP (NN anything))
+          (PP
+            (PP (IN to)
+              (NP (DT the) (NN film)))
+            (, ,)
+            (CC and)
+            (PP (IN in)
+              (NP
+                (NP (NN fact))
+                (VP (VBN detracted)
+                  (PP (IN from)
+                    (NP (PRP it))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+det(scene-5, The-3)
+compound(scene-5, sex-4)
+nsubj(add-13, scene-5)
+nsubj(add-13', scene-5)
+case(Eternals-10, in-6)
+compound(Studio-8, Marvel-7)
+nmod:poss(Eternals-10, Studio-8)
+case(Studio-8, ’s-9)
+nmod:in(scene-5, Eternals-10)
+aux(add-13, did-11)
+advmod(add-13, not-12)
+appos(CMV-1, add-13)
+appos(CMV-1, add-13')
+conj:and(add-13, add-13')
+obj(add-13, anything-14)
+case(film-17, to-15)
+det(film-17, the-16)
+obl:to(add-13, film-17)
+punct(film-17, ,-18)
+cc(add-13', and-19)
+case(fact-21, in-20)
+obl:in(add-13', fact-21)
+acl(fact-21, detracted-22)
+case(it-24, from-23)
+obl:from(detracted-22, it-24)
+
+Extracted the following NER entity mentions:

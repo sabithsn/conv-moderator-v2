@@ -1,0 +1,64 @@
+Document: ID=404D0E48.text (2 sentences, 12 tokens)
+
+Sentence #1 (4 tokens):
+Cannot relate.
+
+Tokens:
+[Text=Can CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=relate CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=relate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Can) (RB not)
+      (VP (VB relate)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, relate-3)
+aux(relate-3, Can-1)
+advmod(relate-3, not-2)
+punct(relate-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+I have no problem boycotting Chinese bullshit.
+
+Tokens:
+[Text=I CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=boycotting CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=boycott NamedEntityTag=O]
+[Text=Chinese CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=chinese NamedEntityTag=NATIONALITY]
+[Text=bullshit CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=bullshit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP
+        (NP (DT no) (NN problem))
+        (VP (VBG boycotting)
+          (NP (JJ Chinese) (NN bullshit)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, I-1)
+det(problem-4, no-3)
+obj(have-2, problem-4)
+acl(problem-4, boycotting-5)
+amod(bullshit-7, Chinese-6)
+obj(boycotting-5, bullshit-7)
+punct(have-2, .-8)
+
+Extracted the following NER entity mentions:
+Chinese	NATIONALITY	MISC:0.999993751054787

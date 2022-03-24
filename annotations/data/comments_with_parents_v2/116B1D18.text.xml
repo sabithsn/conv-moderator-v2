@@ -1,0 +1,66 @@
+Document: ID=116B1D18.text (2 sentences, 12 tokens)
+
+Sentence #1 (5 tokens):
+16 year old rapper?
+
+Tokens:
+[Text=16 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=16 NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16 year old</TIMEX3>]
+[Text=year CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16 year old</TIMEX3>]
+[Text=old CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P16Y">16 year old</TIMEX3>]
+[Text=rapper CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=rapper NamedEntityTag=TITLE]
+[Text=? CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP-TMP (CD 16) (NN year))
+    (NP (JJ old) (NN rapper))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, year-2)
+nummod(year-2, 16-1)
+amod(rapper-4, old-3)
+dep(year-2, rapper-4)
+punct(year-2, ?-5)
+
+Extracted the following NER entity mentions:
+16 year old	DURATION	DURATION:-1.0
+rapper	TITLE	-
+
+Sentence #2 (7 tokens):
+16 year old drug dealing criminal...
+
+Tokens:
+[Text=16 CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=16 NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P16Y">16 year old</TIMEX3>]
+[Text=year CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P16Y">16 year old</TIMEX3>]
+[Text=old CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P16Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P16Y">16 year old</TIMEX3>]
+[Text=drug CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=drug NamedEntityTag=CRIMINAL_CHARGE]
+[Text=dealing CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=deal NamedEntityTag=CRIMINAL_CHARGE]
+[Text=criminal CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=criminal NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP-TMP (CD 16) (NN year))
+    (NP
+      (NP (JJ old) (NN drug))
+      (VP (VBG dealing)
+        (ADJP (JJ criminal))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, year-2)
+nummod(year-2, 16-1)
+amod(drug-4, old-3)
+dep(year-2, drug-4)
+acl(drug-4, dealing-5)
+xcomp(dealing-5, criminal-6)
+punct(year-2, ...-7)
+
+Extracted the following NER entity mentions:
+16 year old	DURATION	DURATION:-1.0
+drug dealing	CRIMINAL_CHARGE	-

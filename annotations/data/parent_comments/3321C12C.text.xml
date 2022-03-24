@@ -1,0 +1,63 @@
+Document: ID=3321C12C.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+ELI5: How do they make those "loaves" of meat at the deli counter?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=loaves CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=loaf NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=meat CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=meat NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=deli CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=deli NamedEntityTag=O]
+[Text=counter CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=counter NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHADVP (WRB How))
+      (SQ (VBP do)
+        (NP (PRP they))
+        (VP (VBP make)
+          (NP
+            (NP (DT those) (`` ") (NNS loaves) ('' "))
+            (PP (IN of)
+              (NP (NN meat))))
+          (PP (IN at)
+            (NP (DT the) (NN deli) (NN counter))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+advmod(make-6, How-3)
+aux(make-6, do-4)
+nsubj(make-6, they-5)
+parataxis(ELI5-1, make-6)
+det(loaves-9, those-7)
+punct(loaves-9, "-8)
+obj(make-6, loaves-9)
+punct(loaves-9, "-10)
+case(meat-12, of-11)
+nmod:of(loaves-9, meat-12)
+case(counter-16, at-13)
+det(counter-16, the-14)
+compound(counter-16, deli-15)
+obl:at(make-6, counter-16)
+punct(ELI5-1, ?-17)
+
+Extracted the following NER entity mentions:

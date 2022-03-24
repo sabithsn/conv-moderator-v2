@@ -1,0 +1,74 @@
+Document: ID=54302BFB.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Leonardo DiCaprio: Earth ‘Literally’ Has Nine Years Left (He Went Yachting Weeks Ago)
+
+Tokens:
+[Text=Leonardo CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Leonardo NamedEntityTag=PERSON]
+[Text=DiCaprio CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=DiCaprio NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Earth CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Earth NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Literally CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=Has CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=Nine CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Nine NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">Nine Years</TIMEX3>]
+[Text=Years CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Years NamedEntityTag=DURATION NormalizedNamedEntityTag=P9Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P9Y">Nine Years</TIMEX3>]
+[Text=Left CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Left NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=He NamedEntityTag=O]
+[Text=Went CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=Yachting CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=yachting NamedEntityTag=O]
+[Text=Weeks CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=week NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1W Timex=<TIMEX3 alt_value="OFFSET P-1W" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">Weeks Ago</TIMEX3>]
+[Text=Ago CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=ago NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1W Timex=<TIMEX3 alt_value="OFFSET P-1W" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">Weeks Ago</TIMEX3>]
+[Text=) CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Leonardo) (NNP DiCaprio))
+    (: :)
+    (NP
+      (NP (NNP Earth))
+      (`` ‘)
+      (S
+        (ADVP (RB Literally))
+        (NP ('' ’))
+        (VP (VBZ Has)
+          (NP (NNP Nine) (NNP Years) (NNP Left))
+          (PRN (-LRB- -LRB-)
+            (S
+              (NP (NNP He))
+              (VP (VBD Went)
+                (NP
+                  (NP (NN Yachting))
+                  (NP (NNS Weeks)))
+                (PP (IN Ago))))
+            (-RRB- -RRB-)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, DiCaprio-2)
+compound(DiCaprio-2, Leonardo-1)
+punct(DiCaprio-2, :-3)
+dep(DiCaprio-2, Earth-4)
+punct(Earth-4, ‘-5)
+advmod(Has-8, Literally-6)
+nsubj(Has-8, ’-7)
+dep(Earth-4, Has-8)
+compound(Left-11, Nine-9)
+compound(Left-11, Years-10)
+obj(Has-8, Left-11)
+punct(Went-14, (-12)
+nsubj(Went-14, He-13)
+parataxis(Has-8, Went-14)
+obj(Went-14, Yachting-15)
+dep(Yachting-15, Weeks-16)
+obl(Went-14, Ago-17)
+punct(Went-14, )-18)
+
+Extracted the following NER entity mentions:
+Leonardo DiCaprio	PERSON	PERSON:0.9934590316357532
+Nine Years	DURATION	DURATION:-1.0
+Weeks Ago	DATE	DATE:-1.0
+He	PERSON	-

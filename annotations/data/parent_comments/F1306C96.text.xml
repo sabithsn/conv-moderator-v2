@@ -1,0 +1,160 @@
+Document: ID=F1306C96.text (3 sentences, 40 tokens)
+
+Sentence #1 (17 tokens):
+The bill bans comprehensive sex ed, by inventing a boogyman about "indoctrinating minors."
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=bans CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=ban NamedEntityTag=O]
+[Text=comprehensive CharacterOffsetBegin=14 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=comprehensive NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=ed CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=ed NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=inventing CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=invent NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=boogyman CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=boogyman NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=indoctrinating CharacterOffsetBegin=67 CharacterOffsetEnd=81 PartOfSpeech=VBG Lemma=indoctrinate NamedEntityTag=O]
+[Text=minors CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=minor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN bill))
+    (VP (VBZ bans)
+      (NP (JJ comprehensive)
+        (NML (NN sex) (NN ed)))
+      (, ,)
+      (PP (IN by)
+        (S
+          (VP (VBG inventing)
+            (NP (DT a) (NN boogyman))
+            (PP (IN about) (`` ")
+              (S
+                (VP (VBG indoctrinating)
+                  (NP (NNS minors)))))))))
+    (. .) ('' ")))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bans-3)
+det(bill-2, The-1)
+nsubj(bans-3, bill-2)
+amod(ed-6, comprehensive-4)
+compound(ed-6, sex-5)
+obj(bans-3, ed-6)
+punct(bans-3, ,-7)
+mark(inventing-9, by-8)
+advcl:by(bans-3, inventing-9)
+det(boogyman-11, a-10)
+obj(inventing-9, boogyman-11)
+case(indoctrinating-14, about-12)
+punct(indoctrinating-14, "-13)
+advcl:about(inventing-9, indoctrinating-14)
+obj(indoctrinating-14, minors-15)
+punct(bans-3, .-16)
+punct(bans-3, "-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens):
+Did you really fall for that tired old line?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=fall CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=VB Lemma=fall NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=tired CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=JJ Lemma=tired NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Did)
+    (NP (PRP you))
+    (ADVP (RB really))
+    (VP (VB fall)
+      (PP (IN for)
+        (NP (DT that)
+          (ADJP (JJ tired) (JJ old))
+          (NN line))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fall-4)
+aux(fall-4, Did-1)
+nsubj(fall-4, you-2)
+advmod(fall-4, really-3)
+case(line-9, for-5)
+det(line-9, that-6)
+advmod(old-8, tired-7)
+amod(line-9, old-8)
+obl:for(fall-4, line-9)
+punct(fall-4, ?-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (13 tokens):
+If so, I got a bridge in Pittsburgh to sell you.
+
+Tokens:
+[Text=If CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bridge CharacterOffsetBegin=153 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=bridge NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Pittsburgh CharacterOffsetBegin=163 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Pittsburgh NamedEntityTag=CITY]
+[Text=to CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sell CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=VB Lemma=sell NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (FRAG
+        (ADVP (RB so))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD got)
+      (NP (DT a) (NN bridge))
+      (PP (IN in)
+        (NP (NNP Pittsburgh)))
+      (S
+        (VP (TO to)
+          (VP (VB sell)
+            (NP (PRP you))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, got-5)
+mark(so-2, If-1)
+advcl:if(got-5, so-2)
+punct(got-5, ,-3)
+nsubj(got-5, I-4)
+det(bridge-7, a-6)
+obj(got-5, bridge-7)
+case(Pittsburgh-9, in-8)
+obl:in(got-5, Pittsburgh-9)
+mark(sell-11, to-10)
+advcl:to(got-5, sell-11)
+obj(sell-11, you-12)
+punct(got-5, .-13)
+
+Extracted the following NER entity mentions:
+Pittsburgh	CITY	LOCATION:0.9963276832762383

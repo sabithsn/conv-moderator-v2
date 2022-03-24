@@ -1,0 +1,52 @@
+Document: ID=4B4553CA.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Conservative Irony - not funny "ha ha" but funny sad
+
+Tokens:
+[Text=Conservative CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=Irony CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=irony NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=- NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=funny CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=ha CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=UH Lemma=ha NamedEntityTag=O]
+[Text=ha CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=UH Lemma=ha NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=funny CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=sad CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=sad NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (FRAG
+      (NP (JJ Conservative))
+      (NP
+        (NP (NN Irony))
+        (ADJP (, -) (RB not) (JJ funny) ('' "))))
+    (INTJ (UH ha))
+    (NP
+      (NP
+        (NP (UH ha))
+        (`` ")
+        (NP (CC but)))
+      (ADJP (JJ funny) (JJ sad)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ha-8)
+dep(ha-8, Conservative-1)
+dep(Conservative-1, Irony-2)
+punct(funny-5, --3)
+advmod(funny-5, not-4)
+amod(Irony-2, funny-5)
+punct(funny-5, "-6)
+discourse(ha-8, ha-7)
+punct(ha-8, "-9)
+dep(ha-8, but-10)
+advmod(sad-12, funny-11)
+amod(ha-8, sad-12)
+
+Extracted the following NER entity mentions:
+Conservative	IDEOLOGY	-

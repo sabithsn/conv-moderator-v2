@@ -1,0 +1,92 @@
+Document: ID=F7196D11.text (2 sentences, 22 tokens)
+
+Sentence #1 (11 tokens):
+As a Marine I can tell you, pound sand.
+
+Tokens:
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Marine CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Marine NamedEntityTag=TITLE]
+[Text=I CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=pound CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=pound NamedEntityTag=O]
+[Text=sand CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=sand NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (NNP Marine)))
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB tell)
+        (NP (PRP you))
+        (, ,)
+        (NP (NN pound) (NN sand))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tell-6)
+case(Marine-3, As-1)
+det(Marine-3, a-2)
+obl:as(tell-6, Marine-3)
+nsubj(tell-6, I-4)
+aux(tell-6, can-5)
+obj(tell-6, you-7)
+punct(tell-6, ,-8)
+compound(sand-10, pound-9)
+obj(tell-6, sand-10)
+punct(tell-6, .-11)
+
+Extracted the following NER entity mentions:
+Marine	TITLE	-
+
+Sentence #2 (11 tokens):
+Your second hand conjecture can fuck right the fuck off.
+
+Tokens:
+[Text=Your CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=hand CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=conjecture CharacterOffsetBegin=57 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=conjecture NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Your) (JJ second) (NN hand) (NN conjecture))
+    (VP (MD can)
+      (VP (VB fuck)
+        (S
+          (NP (RB right) (DT the))
+          (VP (VB fuck)
+            (PRT (RP off))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fuck-6)
+nmod:poss(conjecture-4, Your-1)
+amod(conjecture-4, second-2)
+compound(conjecture-4, hand-3)
+nsubj(fuck-6, conjecture-4)
+aux(fuck-6, can-5)
+advmod(the-8, right-7)
+nsubj(fuck-9, the-8)
+ccomp(fuck-6, fuck-9)
+compound:prt(fuck-9, off-10)
+punct(fuck-6, .-11)
+
+Extracted the following NER entity mentions:
+second	ORDINAL	ORDINAL:-1.0

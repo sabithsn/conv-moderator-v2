@@ -1,0 +1,69 @@
+Document: ID=57CBDDC3.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+I’ve seen absolutely 0 people on any of the right leaning subs supporting Putin, at all
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=absolutely CharacterOffsetBegin=10 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=absolutely NamedEntityTag=O]
+[Text=0 CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=CD Lemma=0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=people CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=leaning CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=leaning NamedEntityTag=O]
+[Text=subs CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=sub NamedEntityTag=O]
+[Text=supporting CharacterOffsetBegin=63 CharacterOffsetEnd=73 PartOfSpeech=VBG Lemma=support NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ’ve)
+      (VP (VBN seen)
+        (ADVP (RB absolutely)
+          (NP (CD 0) (NNS people)))
+        (PP (IN on)
+          (NP
+            (NP (DT any))
+            (PP (IN of)
+              (NP (DT the) (JJ right) (NN leaning) (NNS subs)))))
+        (S
+          (VP (VBG supporting)
+            (NP (NNP Putin))))
+        (, ,)
+        (PP (IN at)
+          (NP (DT all)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-2)
+nsubj(’ve-2, I-1)
+dep(’ve-2, seen-3)
+advmod(seen-3, absolutely-4)
+nummod(people-6, 0-5)
+obl:npmod(absolutely-4, people-6)
+case(any-8, on-7)
+obl:on(seen-3, any-8)
+case(subs-13, of-9)
+det(subs-13, the-10)
+amod(subs-13, right-11)
+compound(subs-13, leaning-12)
+nmod:of(any-8, subs-13)
+xcomp(seen-3, supporting-14)
+obj(supporting-14, Putin-15)
+punct(seen-3, ,-16)
+case(all-18, at-17)
+obl:at(seen-3, all-18)
+
+Extracted the following NER entity mentions:
+0	NUMBER	NUMBER:-1.0
+Putin	PERSON	PERSON:0.9675320614884174

@@ -1,0 +1,361 @@
+Document: ID=1F768306.text (5 sentences, 94 tokens)
+
+Sentence #1 (10 tokens):
+He’d fit right in with the azov battalion.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’d CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=MD Lemma=’d NamedEntityTag=O]
+[Text=fit CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=fit NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=azov CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=azov NamedEntityTag=O]
+[Text=battalion CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=battalion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD ’d)
+      (VP (VB fit)
+        (ADJP (JJ right)
+          (PP (IN in)
+            (PP (IN with)
+              (NP (DT the) (NN azov) (NN battalion)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fit-3)
+nsubj(fit-3, He-1)
+aux(fit-3, ’d-2)
+xcomp(fit-3, right-4)
+case(battalion-9, in-5)
+case(battalion-9, with-6)
+det(battalion-9, the-7)
+compound(battalion-9, azov-8)
+obl:with(right-4, battalion-9)
+punct(fit-3, .-10)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #2 (18 tokens):
+Many right wing nut jobs did go over there and train in Ukraine prior to the invasion.
+
+Tokens:
+[Text=Many CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=right NamedEntityTag=IDEOLOGY]
+[Text=wing CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=wing NamedEntityTag=IDEOLOGY]
+[Text=nut CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=nut NamedEntityTag=O]
+[Text=jobs CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=job NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=over NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=train CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=train NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=prior CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=invasion CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Many)
+      (ADJP (JJ right) (NN wing))
+      (NN nut) (NNS jobs))
+    (VP (VBD did)
+      (S
+        (VP
+          (VP (VB go)
+            (ADVP (RB over) (RB there)))
+          (CC and)
+          (VP (VB train)
+            (PP (IN in)
+              (NP
+                (NP (NNP Ukraine))
+                (PP (JJ prior) (IN to)
+                  (NP (DT the) (NN invasion)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-6)
+amod(jobs-5, Many-1)
+dep(wing-3, right-2)
+amod(jobs-5, wing-3)
+compound(jobs-5, nut-4)
+nsubj(did-6, jobs-5)
+ccomp(did-6, go-7)
+advmod(there-9, over-8)
+advmod(go-7, there-9)
+cc(train-11, and-10)
+ccomp(did-6, train-11)
+conj:and(go-7, train-11)
+case(Ukraine-13, in-12)
+obl:in(train-11, Ukraine-13)
+case(invasion-17, prior-14)
+fixed(prior-14, to-15)
+det(invasion-17, the-16)
+nmod:prior_to(Ukraine-13, invasion-17)
+punct(did-6, .-18)
+
+Extracted the following NER entity mentions:
+right wing	IDEOLOGY	-
+Ukraine	COUNTRY	LOCATION:0.9996776961058781
+
+Sentence #3 (27 tokens):
+Then again there are plenty of neo-nazis in the US military so he wouldn’t have to go that far to join other scumbags like him.
+
+Tokens:
+[Text=Then CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=135 CharacterOffsetEnd=140 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=plenty CharacterOffsetBegin=151 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=plenty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=neo-nazis CharacterOffsetBegin=161 CharacterOffsetEnd=170 PartOfSpeech=NNS Lemma=neo-nazi NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=military CharacterOffsetBegin=181 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=military NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=190 CharacterOffsetEnd=192 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=196 CharacterOffsetEnd=201 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=RB Lemma=that NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=join CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=join NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=scumbags CharacterOffsetBegin=239 CharacterOffsetEnd=247 PartOfSpeech=NNS Lemma=scumbag NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (ADVP (RB again))
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (NN plenty))
+        (PP (IN of)
+          (NP
+            (NP (NNS neo-nazis))
+            (PP (IN in)
+              (NP (DT the) (NNP US) (NN military))))))
+      (SBAR (IN so)
+        (S
+          (NP (PRP he))
+          (VP (MD would) (RB n’t)
+            (VP (VB have)
+              (S
+                (VP (TO to)
+                  (VP (VB go)
+                    (ADVP (RB that) (RB far))
+                    (S
+                      (VP (TO to)
+                        (VP (VB join)
+                          (NP (JJ other) (NNS scumbags))
+                          (PP (IN like)
+                            (NP (PRP him))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-4)
+advmod(are-4, Then-1)
+advmod(are-4, again-2)
+expl(are-4, there-3)
+det:qmod(neo-nazis-7, plenty-5)
+fixed(plenty-5, of-6)
+nsubj(are-4, neo-nazis-7)
+case(military-11, in-8)
+det(military-11, the-9)
+compound(military-11, US-10)
+nmod:in(neo-nazis-7, military-11)
+mark(have-16, so-12)
+nsubj(have-16, he-13)
+nsubj:xsubj(go-18, he-13)
+aux(have-16, would-14)
+advmod(have-16, n’t-15)
+advcl:so(are-4, have-16)
+mark(go-18, to-17)
+xcomp(have-16, go-18)
+advmod(far-20, that-19)
+advmod(go-18, far-20)
+mark(join-22, to-21)
+xcomp(go-18, join-22)
+amod(scumbags-24, other-23)
+obj(join-22, scumbags-24)
+case(him-26, like-25)
+obl:like(join-22, him-26)
+punct(are-4, .-27)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9572162551890956
+he	PERSON	-
+him	PERSON	-
+
+Sentence #4 (18 tokens):
+Russian military also has plenty of neo-nazi groups as well like the Sparta mob and Wagner group.
+
+Tokens:
+[Text=Russian CharacterOffsetBegin=258 CharacterOffsetEnd=265 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=military CharacterOffsetBegin=266 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=military NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=280 CharacterOffsetEnd=283 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=plenty CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=NN Lemma=plenty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=neo-nazi CharacterOffsetBegin=294 CharacterOffsetEnd=302 PartOfSpeech=JJ Lemma=neo-nazi NamedEntityTag=O]
+[Text=groups CharacterOffsetBegin=303 CharacterOffsetEnd=309 PartOfSpeech=NNS Lemma=group NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sparta CharacterOffsetBegin=327 CharacterOffsetEnd=333 PartOfSpeech=NNP Lemma=Sparta NamedEntityTag=ORGANIZATION]
+[Text=mob CharacterOffsetBegin=334 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=mob NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Wagner CharacterOffsetBegin=342 CharacterOffsetEnd=348 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=PERSON]
+[Text=group CharacterOffsetBegin=349 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=354 CharacterOffsetEnd=355 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Russian) (NN military))
+    (ADVP (RB also))
+    (VP (VBZ has)
+      (NP
+        (NP (NN plenty))
+        (PP
+          (PP (IN of)
+            (NP (JJ neo-nazi) (NNS groups)))
+          (CONJP (RB as) (RB well))
+          (PP (IN like)
+            (NP
+              (NP (DT the) (NNP Sparta) (NN mob))
+              (CC and)
+              (NP (NNP Wagner) (NN group)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-4)
+amod(military-2, Russian-1)
+nsubj(has-4, military-2)
+advmod(has-4, also-3)
+det:qmod(groups-8, plenty-5)
+fixed(plenty-5, of-6)
+amod(groups-8, neo-nazi-7)
+obj(has-4, groups-8)
+cc(mob-14, as-9)
+fixed(as-9, well-10)
+case(mob-14, like-11)
+det(mob-14, the-12)
+compound(mob-14, Sparta-13)
+obj(has-4, mob-14)
+conj:and(groups-8, mob-14)
+cc(group-17, and-15)
+compound(group-17, Wagner-16)
+conj:and(groups-8, group-17)
+conj:and(mob-14, group-17)
+punct(has-4, .-18)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999971583282575
+Sparta	ORGANIZATION	ORGANIZATION:0.8882506390123244
+Wagner	PERSON	PERSON:0.9124257746006196
+
+Sentence #5 (21 tokens):
+Then again Kyle is just cosplaying as a soldier and would cry at first sign of anyone on the other side
+
+Tokens:
+[Text=Then CharacterOffsetBegin=356 CharacterOffsetEnd=360 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=361 CharacterOffsetEnd=366 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=Kyle CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=Kyle NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=375 CharacterOffsetEnd=379 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=cosplaying CharacterOffsetBegin=380 CharacterOffsetEnd=390 PartOfSpeech=VBG Lemma=cosplay NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=soldier CharacterOffsetBegin=396 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=soldier NamedEntityTag=TITLE]
+[Text=and CharacterOffsetBegin=404 CharacterOffsetEnd=407 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=408 CharacterOffsetEnd=413 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=cry CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=VB Lemma=cry NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=421 CharacterOffsetEnd=426 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=sign CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=sign NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=432 CharacterOffsetEnd=434 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=435 CharacterOffsetEnd=441 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=445 CharacterOffsetEnd=448 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=449 CharacterOffsetEnd=454 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=455 CharacterOffsetEnd=459 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (ADVP (RB again))
+    (NP (NNP Kyle))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB just))
+        (VP (VBG cosplaying)
+          (PP (IN as)
+            (NP (DT a) (NN soldier)))))
+      (CC and)
+      (VP (MD would)
+        (VP (VB cry)
+          (PP (IN at)
+            (NP
+              (NP (JJ first) (NN sign))
+              (PP (IN of)
+                (NP (NN anyone)))))
+          (PP (IN on)
+            (NP (DT the) (JJ other) (NN side))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cosplaying-6)
+advmod(cosplaying-6, Then-1)
+advmod(cosplaying-6, again-2)
+nsubj(cosplaying-6, Kyle-3)
+nsubj(cry-12, Kyle-3)
+aux(cosplaying-6, is-4)
+advmod(cosplaying-6, just-5)
+case(soldier-9, as-7)
+det(soldier-9, a-8)
+obl:as(cosplaying-6, soldier-9)
+cc(cry-12, and-10)
+aux(cry-12, would-11)
+conj:and(cosplaying-6, cry-12)
+case(sign-15, at-13)
+amod(sign-15, first-14)
+obl:at(cry-12, sign-15)
+case(anyone-17, of-16)
+nmod:of(sign-15, anyone-17)
+case(side-21, on-18)
+det(side-21, the-19)
+amod(side-21, other-20)
+obl:on(cry-12, side-21)
+
+Extracted the following NER entity mentions:
+Kyle	PERSON	PERSON:0.9872909856409919
+soldier	TITLE	-
+first	ORDINAL	ORDINAL:-1.0

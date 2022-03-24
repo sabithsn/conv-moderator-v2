@@ -1,0 +1,112 @@
+Document: ID=F577CC4F.text (2 sentences, 27 tokens)
+
+Sentence #1 (8 tokens):
+> regardless if innocent/guilty.  >
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=regardless CharacterOffsetBegin=2 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=regardless NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=innocent CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=innocent NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=guilty CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=guilty NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=> CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=NFP Lemma=> NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (SYM >)
+      (ADVP (RB regardless)
+        (PP (IN if)
+          (ADJP (JJ innocent) (HYPH /) (JJ guilty)))))
+    (. .) (NFP >)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, >-1)
+advmod(>-1, regardless-2)
+case(guilty-6, if-3)
+amod(guilty-6, innocent-4)
+punct(guilty-6, /-5)
+advcl:if(regardless-2, guilty-6)
+punct(>-1, .-7)
+punct(>-1, >-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (19 tokens):
+The penalty for treason is death  Whose judgement are we depending on to decide if someone is treasonous?
+
+Tokens:
+[Text=The CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=penalty CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=penalty NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=treason CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=treason NamedEntityTag=CRIMINAL_CHARGE]
+[Text=is CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=Whose CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=WP$ Lemma=whose NamedEntityTag=O]
+[Text=judgement CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=judgement NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=depending CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=VBG Lemma=depend NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=decide CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=VB Lemma=decide NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=119 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=treasonous CharacterOffsetBegin=130 CharacterOffsetEnd=140 PartOfSpeech=JJ Lemma=treasonous NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (PRN
+      (S
+        (NP
+          (NP (DT The) (NN penalty))
+          (PP (IN for)
+            (NP (NN treason))))
+        (VP (VBZ is)
+          (NP (NN death)))))
+    (WHNP (WP$ Whose) (NN judgement))
+    (SQ (VBP are)
+      (NP (PRP we))
+      (VP (VBG depending)
+        (PP (IN on))
+        (S
+          (VP (TO to)
+            (VP (VB decide)
+              (SBAR (IN if)
+                (S
+                  (NP (NN someone))
+                  (VP (VBZ is)
+                    (ADJP (JJ treasonous))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, depending-11)
+det(penalty-2, The-1)
+nsubj(death-6, penalty-2)
+case(treason-4, for-3)
+nmod:for(penalty-2, treason-4)
+cop(death-6, is-5)
+dep(depending-11, death-6)
+nmod:poss(judgement-8, Whose-7)
+obl:on(depending-11, judgement-8)
+aux(depending-11, are-9)
+nsubj(depending-11, we-10)
+nsubj:xsubj(decide-14, we-10)
+case(judgement-8, on-12)
+mark(decide-14, to-13)
+xcomp(depending-11, decide-14)
+mark(treasonous-18, if-15)
+nsubj(treasonous-18, someone-16)
+cop(treasonous-18, is-17)
+advcl:if(decide-14, treasonous-18)
+punct(depending-11, ?-19)
+
+Extracted the following NER entity mentions:
+treason	CRIMINAL_CHARGE	-

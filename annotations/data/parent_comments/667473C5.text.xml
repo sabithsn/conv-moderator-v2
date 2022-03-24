@@ -1,0 +1,77 @@
+Document: ID=667473C5.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+AOC Claims Ron DeSantis Kidnapped Her And Held Her Hostage In Miami And Now She Is Dead
+
+Tokens:
+[Text=AOC CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=AOC NamedEntityTag=ORGANIZATION]
+[Text=Claims CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Claims NamedEntityTag=O]
+[Text=Ron CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Ron NamedEntityTag=PERSON]
+[Text=DeSantis CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=PERSON]
+[Text=Kidnapped CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=kidnap NamedEntityTag=O]
+[Text=Her CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Held CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VBD Lemma=hold NamedEntityTag=O]
+[Text=Her CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Hostage CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=hostage NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Miami CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Miami NamedEntityTag=CITY]
+[Text=And CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Now CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=She CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Dead CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NML (NNP AOC) (NNP Claims))
+      (NNP Ron) (NNP DeSantis))
+    (VP
+      (VP (VBD Kidnapped)
+        (NP (PRP$ Her)))
+      (CC And)
+      (VP (VBD Held)
+        (S
+          (S
+            (NP (PRP$ Her) (NN Hostage))
+            (PP (IN In)
+              (NP (NNP Miami))))
+          (CC And)
+          (S
+            (ADVP (RB Now))
+            (NP (PRP She))
+            (VP (VBZ Is)
+              (ADJP (JJ Dead)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Kidnapped-5)
+compound(Claims-2, AOC-1)
+compound(DeSantis-4, Claims-2)
+compound(DeSantis-4, Ron-3)
+nsubj(Kidnapped-5, DeSantis-4)
+nsubj(Held-8, DeSantis-4)
+obj(Kidnapped-5, Her-6)
+cc(Held-8, And-7)
+conj:and(Kidnapped-5, Held-8)
+nmod:poss(Hostage-10, Her-9)
+ccomp(Held-8, Hostage-10)
+case(Miami-12, In-11)
+dep(Hostage-10, Miami-12)
+cc(Dead-17, And-13)
+advmod(Dead-17, Now-14)
+nsubj(Dead-17, She-15)
+cop(Dead-17, Is-16)
+ccomp(Held-8, Dead-17)
+conj:and(Hostage-10, Dead-17)
+
+Extracted the following NER entity mentions:
+AOC	ORGANIZATION	ORGANIZATION:0.9638537542636373
+Ron DeSantis	PERSON	PERSON:0.9543240574463481
+Miami	CITY	LOCATION:0.9936217145467339
+Now	DATE	DATE:-1.0
+Her	PERSON	-
+Her	PERSON	-
+She	PERSON	-

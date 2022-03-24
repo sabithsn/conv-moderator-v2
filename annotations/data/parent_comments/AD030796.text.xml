@@ -1,0 +1,96 @@
+Document: ID=AD030796.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+AskReddit: If you had to guess, what percentage of human mental disorders are caused by society rather than innate mental divergencies or family?
+
+Tokens:
+[Text=AskReddit CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=AskReddit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=guess CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=guess NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=percentage CharacterOffsetBegin=37 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=percentage NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=human CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=human NamedEntityTag=O]
+[Text=mental CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=mental NamedEntityTag=O]
+[Text=disorders CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=disorder NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=caused CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=cause NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=innate CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=innate NamedEntityTag=O]
+[Text=mental CharacterOffsetBegin=115 CharacterOffsetEnd=121 PartOfSpeech=JJ Lemma=mental NamedEntityTag=O]
+[Text=divergencies CharacterOffsetBegin=122 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=divergency NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=family CharacterOffsetBegin=138 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AskReddit))
+    (: :)
+    (SBARQ
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (VP (VBD had)
+            (S
+              (VP (TO to)
+                (VP (VB guess)))))))
+      (, ,)
+      (WHNP
+        (WHNP (WDT what) (NN percentage))
+        (PP (IN of)
+          (NP (JJ human) (JJ mental) (NNS disorders))))
+      (SQ (VBP are)
+        (VP (VBN caused)
+          (PP (IN by)
+            (NP
+              (NP (NN society))
+              (CONJP (RB rather) (IN than))
+              (NP
+                (NP (JJ innate) (JJ mental) (NNS divergencies))
+                (CC or)
+                (NP (NN family))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AskReddit-1)
+punct(AskReddit-1, :-2)
+mark(had-5, If-3)
+nsubj(had-5, you-4)
+nsubj:xsubj(guess-7, you-4)
+advcl:if(caused-16, had-5)
+mark(guess-7, to-6)
+xcomp(had-5, guess-7)
+punct(caused-16, ,-8)
+det(percentage-10, what-9)
+nsubj:pass(caused-16, percentage-10)
+case(disorders-14, of-11)
+amod(disorders-14, human-12)
+amod(disorders-14, mental-13)
+nmod:of(percentage-10, disorders-14)
+aux:pass(caused-16, are-15)
+parataxis(AskReddit-1, caused-16)
+case(society-18, by-17)
+obl:agent(caused-16, society-18)
+cc(divergencies-23, rather-19)
+fixed(rather-19, than-20)
+amod(divergencies-23, innate-21)
+amod(divergencies-23, mental-22)
+obl:agent(caused-16, divergencies-23)
+conj:negcc(society-18, divergencies-23)
+cc(family-25, or-24)
+conj:negcc(society-18, family-25)
+conj:or(divergencies-23, family-25)
+punct(AskReddit-1, ?-26)
+
+Extracted the following NER entity mentions:

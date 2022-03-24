@@ -1,0 +1,39 @@
+Document: ID=A6B302F6.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Clan Ma is having a pity party 🎉 🤣
+
+Tokens:
+[Text=Clan CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Clan NamedEntityTag=O]
+[Text=Ma CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Ma NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pity CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=pity NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=🎉 CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=NFP Lemma=🎉 NamedEntityTag=O]
+[Text=🤣 CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=NFP Lemma=🤣 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Clan) (NNP Ma))
+    (VP (VBZ is)
+      (VP (VBG having)
+        (NP (DT a) (NN pity) (NN party))))
+    (NFP 🎉) (NFP 🤣)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, having-4)
+compound(Ma-2, Clan-1)
+nsubj(having-4, Ma-2)
+aux(having-4, is-3)
+det(party-7, a-5)
+compound(party-7, pity-6)
+obj(having-4, party-7)
+punct(having-4, 🎉-8)
+punct(having-4, 🤣-9)
+
+Extracted the following NER entity mentions:
+Ma	PERSON	PERSON:0.6535422040175777

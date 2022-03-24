@@ -1,0 +1,36 @@
+Document: ID=25FC3607.text (1 sentences, 6 tokens)
+
+Sentence #1 (6 tokens):
+tony...break his fahkin legs
+
+Tokens:
+[Text=tony CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=tony NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=break CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=break NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=fahkin CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=fahkin NamedEntityTag=O]
+[Text=legs CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=leg NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ tony))
+    (: ...)
+    (NP
+      (NML
+        (S
+          (VP (VB break)
+            (NP (PRP$ his) (NN fahkin)))))
+      (NNS legs))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tony-1)
+punct(tony-1, ...-2)
+compound(legs-6, break-3)
+nmod:poss(fahkin-5, his-4)
+obj(break-3, fahkin-5)
+dep(tony-1, legs-6)
+
+Extracted the following NER entity mentions:
+his	PERSON	-

@@ -1,0 +1,51 @@
+Document: ID=926992A8.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Putin Claims US Is Trying To Pull Russia Into A War
+
+Tokens:
+[Text=Putin CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=Claims CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Claims NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=Is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Trying CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Pull CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=pull NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=Into CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=War CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=War NamedEntityTag=CAUSE_OF_DEATH]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Putin) (NNP Claims) (NNP US))
+    (VP (VBZ Is)
+      (VP (VBG Trying)
+        (S
+          (VP (TO To)
+            (VP (VB Pull)
+              (NP (NNP Russia))
+              (PP (IN Into)
+                (NP (DT A) (NNP War))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Trying-5)
+compound(US-3, Putin-1)
+compound(US-3, Claims-2)
+nsubj(Trying-5, US-3)
+nsubj:xsubj(Pull-7, US-3)
+aux(Trying-5, Is-4)
+mark(Pull-7, To-6)
+xcomp(Trying-5, Pull-7)
+obj(Pull-7, Russia-8)
+case(War-11, Into-9)
+det(War-11, A-10)
+obl:into(Pull-7, War-11)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9576963214903401
+US	COUNTRY	LOCATION:0.7833558802577298
+Russia	COUNTRY	-
+War	CAUSE_OF_DEATH	-

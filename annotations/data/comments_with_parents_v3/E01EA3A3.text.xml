@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>E01EA3A3.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>*</word>
+            <lemma>*</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>NFP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>reason</word>
+            <lemma>reason</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Here</word>
+            <lemma>here</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>’s</word>
+            <lemma>’s</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>hoping</word>
+            <lemma>hope</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>business</word>
+            <lemma>business</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>fails</word>
+            <lemma>fail</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>garbage</word>
+            <lemma>garbage</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>person</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NFP *) (NP (NP (NN reason)) (ADVP (RB Here))) (VP (VBZ ’s) (S (VP (VBG hoping) (SBAR (S (NP (PRP$ your) (NN business)) (VP (VBZ fails) (, ,) (S (NP (PRP you)) (NP (NN garbage) (NN person))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">’s</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">’s</governor>
+            <dependent idx="2">reason</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">reason</governor>
+            <dependent idx="3">Here</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">’s</governor>
+            <dependent idx="5">hoping</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="7">business</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fails</governor>
+            <dependent idx="7">business</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">hoping</governor>
+            <dependent idx="8">fails</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">fails</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">person</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">person</governor>
+            <dependent idx="11">garbage</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">fails</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">’s</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">’s</governor>
+            <dependent idx="2">reason</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">reason</governor>
+            <dependent idx="3">Here</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">’s</governor>
+            <dependent idx="5">hoping</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="7">business</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fails</governor>
+            <dependent idx="7">business</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">hoping</governor>
+            <dependent idx="8">fails</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">fails</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">person</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">person</governor>
+            <dependent idx="11">garbage</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">fails</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">’s</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">’s</governor>
+            <dependent idx="2">reason</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">reason</governor>
+            <dependent idx="3">Here</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">’s</governor>
+            <dependent idx="5">hoping</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="7">business</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fails</governor>
+            <dependent idx="7">business</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">hoping</governor>
+            <dependent idx="8">fails</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">fails</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">person</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">person</governor>
+            <dependent idx="11">garbage</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">fails</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">’s</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">’s</governor>
+            <dependent idx="2">reason</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">reason</governor>
+            <dependent idx="3">Here</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">’s</governor>
+            <dependent idx="5">hoping</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="7">business</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fails</governor>
+            <dependent idx="7">business</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">hoping</governor>
+            <dependent idx="8">fails</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">fails</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">person</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">person</governor>
+            <dependent idx="11">garbage</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">fails</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">’s</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="1">*</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">’s</governor>
+            <dependent idx="2">reason</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">reason</governor>
+            <dependent idx="3">Here</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">’s</governor>
+            <dependent idx="5">hoping</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="7">business</governor>
+            <dependent idx="6">your</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">fails</governor>
+            <dependent idx="7">business</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">hoping</governor>
+            <dependent idx="8">fails</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="8">fails</governor>
+            <dependent idx="9">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">person</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">person</governor>
+            <dependent idx="11">garbage</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">fails</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">’s</governor>
+            <dependent idx="13">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

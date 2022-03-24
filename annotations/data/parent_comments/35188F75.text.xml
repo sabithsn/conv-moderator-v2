@@ -1,0 +1,93 @@
+Document: ID=35188F75.text (3 sentences, 17 tokens)
+
+Sentence #1 (4 tokens):
+Regulations are restraints.
+
+Tokens:
+[Text=Regulations CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=regulation NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=restraints CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=restraint NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Regulations))
+    (VP (VBP are)
+      (NP (NNS restraints)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, restraints-3)
+nsubj(restraints-3, Regulations-1)
+cop(restraints-3, are-2)
+punct(restraints-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+So are handcuffs made of toilet paper.
+
+Tokens:
+[Text=So CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=handcuffs CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=handcuffs NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=toilet CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=toilet NamedEntityTag=O]
+[Text=paper CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=paper NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (ADVP (RB So))
+    (VP (VBP are))
+    (NP
+      (NP (NNS handcuffs))
+      (VP (VBN made)
+        (PP (IN of)
+          (NP (NN toilet) (NN paper)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, are-2)
+advmod(are-2, So-1)
+nsubj(are-2, handcuffs-3)
+acl(handcuffs-3, made-4)
+case(paper-7, of-5)
+compound(paper-7, toilet-6)
+obl:of(made-4, paper-7)
+punct(are-2, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (5 tokens):
+What's your point?
+
+Tokens:
+[Text=What CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ 's)
+      (NP (PRP$ your) (NN point)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-1)
+cop(What-1, 's-2)
+nmod:poss(point-4, your-3)
+nsubj(What-1, point-4)
+punct(What-1, ?-5)
+
+Extracted the following NER entity mentions:

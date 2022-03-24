@@ -1,0 +1,99 @@
+Document: ID=6F084C84.text (2 sentences, 20 tokens)
+
+Sentence #1 (11 tokens):
+Camilla Long: Epstein is dead, Maxwell is guilty.
+
+Tokens:
+[Text=Camilla CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Camilla NamedEntityTag=PERSON]
+[Text=Long CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Long NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Epstein CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Epstein NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Maxwell CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Maxwell NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=guilty CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=guilty NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Camilla) (NNP Long))
+    (: :)
+    (PRN
+      (S
+        (NP (NNP Epstein))
+        (VP (VBZ is)
+          (ADJP (JJ dead)))))
+    (, ,)
+    (S
+      (NP (NNP Maxwell))
+      (VP (VBZ is)
+        (ADJP (JJ guilty))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Long-2)
+compound(Long-2, Camilla-1)
+punct(Long-2, :-3)
+nsubj(dead-6, Epstein-4)
+cop(dead-6, is-5)
+dep(Long-2, dead-6)
+punct(Long-2, ,-7)
+nsubj(guilty-10, Maxwell-8)
+cop(guilty-10, is-9)
+dep(Long-2, guilty-10)
+punct(Long-2, .-11)
+
+Extracted the following NER entity mentions:
+Camilla Long	PERSON	PERSON:0.9755942983301676
+Epstein	PERSON	PERSON:0.9910568182580309
+Maxwell	PERSON	PERSON:0.8446431197182862
+
+Sentence #2 (9 tokens):
+Now let’s talk about the men who escaped
+
+Tokens:
+[Text=Now CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=let CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=’s NamedEntityTag=O]
+[Text=talk CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=escaped CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=escape NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (VP (VB let)
+      (S
+        (NP (PRP ’s))
+        (VP (VB talk)
+          (PP (IN about)
+            (NP
+              (NP (DT the) (NNS men))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD escaped)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-2)
+advmod(let-2, Now-1)
+nsubj(talk-4, ’s-3)
+ccomp(let-2, talk-4)
+case(men-7, about-5)
+det(men-7, the-6)
+obl:about(talk-4, men-7)
+nsubj(escaped-9, men-7)
+ref(men-7, who-8)
+acl:relcl(men-7, escaped-9)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0

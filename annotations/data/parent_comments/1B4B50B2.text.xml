@@ -1,0 +1,88 @@
+Document: ID=1B4B50B2.text (2 sentences, 18 tokens)
+
+Sentence #1 (12 tokens):
+Man, I totally forgot that Al used to be rotund.
+
+Tokens:
+[Text=Man CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=man NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=totally CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=totally NamedEntityTag=O]
+[Text=forgot CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=forget NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Al CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Al NamedEntityTag=PERSON]
+[Text=used CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=rotund CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=rotund NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Man))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB totally))
+    (VP (VBD forgot)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Al))
+          (VP (VBD used)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ rotund)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forgot-5)
+discourse(forgot-5, Man-1)
+punct(forgot-5, ,-2)
+nsubj(forgot-5, I-3)
+advmod(forgot-5, totally-4)
+mark(used-8, that-6)
+nsubj(used-8, Al-7)
+nsubj:xsubj(rotund-11, Al-7)
+ccomp(forgot-5, used-8)
+mark(rotund-11, to-9)
+cop(rotund-11, be-10)
+xcomp(used-8, rotund-11)
+punct(forgot-5, .-12)
+
+Extracted the following NER entity mentions:
+Al	PERSON	PERSON:0.530197982910994
+
+Sentence #2 (6 tokens):
+(he lost 176lbs)
+
+Tokens:
+[Text=( CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=lost CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=lose NamedEntityTag=O]
+[Text=176 CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CD Lemma=176 NamedEntityTag=NUMBER NormalizedNamedEntityTag=176.0]
+[Text=lbs CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=lb NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (S
+      (NP (PRP he))
+      (VP (VBD lost)
+        (NP (CD 176) (NNS lbs))))
+    (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lost-3)
+punct(lost-3, (-1)
+nsubj(lost-3, he-2)
+nummod(lbs-5, 176-4)
+obj(lost-3, lbs-5)
+punct(lost-3, )-6)
+
+Extracted the following NER entity mentions:
+176	NUMBER	NUMBER:-1.0
+he	PERSON	-

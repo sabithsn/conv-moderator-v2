@@ -1,0 +1,52 @@
+Document: ID=1C9FCF7C.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+GOP leaders denounce Greene, Gosar for speaking at white nationalist event
+
+Tokens:
+[Text=GOP CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=ORGANIZATION]
+[Text=leaders CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNS Lemma=leader NamedEntityTag=O]
+[Text=denounce CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=denounce NamedEntityTag=O]
+[Text=Greene CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Gosar CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Gosar NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=speaking CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=VBG Lemma=speak NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=nationalist CharacterOffsetBegin=57 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=nationalist NamedEntityTag=IDEOLOGY]
+[Text=event CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=event NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP GOP) (NNS leaders))
+    (VP (VBP denounce)
+      (NP
+        (NP (NNP Greene) (, ,) (NNP Gosar))
+        (PP (IN for)
+          (S
+            (VP (VBG speaking)
+              (PP (IN at)
+                (NP (JJ white) (JJ nationalist) (NN event))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, denounce-3)
+compound(leaders-2, GOP-1)
+nsubj(denounce-3, leaders-2)
+compound(Gosar-6, Greene-4)
+punct(Gosar-6, ,-5)
+obj(denounce-3, Gosar-6)
+mark(speaking-8, for-7)
+acl:for(Gosar-6, speaking-8)
+case(event-12, at-9)
+amod(event-12, white-10)
+amod(event-12, nationalist-11)
+obl:at(speaking-8, event-12)
+
+Extracted the following NER entity mentions:
+GOP	ORGANIZATION	ORGANIZATION:0.9131146668553514
+Greene	PERSON	PERSON:0.8824505233408051
+Gosar	PERSON	PERSON:0.7450556513289478
+nationalist	IDEOLOGY	-

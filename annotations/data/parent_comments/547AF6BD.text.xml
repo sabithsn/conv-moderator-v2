@@ -1,0 +1,118 @@
+Document: ID=547AF6BD.text (2 sentences, 30 tokens)
+
+Sentence #1 (8 tokens):
+Have you read War of the Worlds?
+
+Tokens:
+[Text=Have CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=War CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=War NamedEntityTag=CAUSE_OF_DEATH]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Worlds CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NNPS Lemma=Worlds NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Have)
+      (S
+        (NP (PRP you))
+        (VP (VB read)
+          (NP
+            (NP (NNP War))
+            (PP (IN of)
+              (NP (DT the) (NNPS Worlds)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Have-1)
+nsubj(read-3, you-2)
+ccomp(Have-1, read-3)
+obj(read-3, War-4)
+case(Worlds-7, of-5)
+det(Worlds-7, the-6)
+nmod:of(War-4, Worlds-7)
+punct(Have-1, ?-8)
+
+Extracted the following NER entity mentions:
+War	CAUSE_OF_DEATH	-
+
+Sentence #2 (22 tokens):
+Yes, sometimes tiny, weird things inside your body is much scarier than bullets or large men with big sticks.
+
+Tokens:
+[Text=Yes CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sometimes CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=sometimes NamedEntityTag=O]
+[Text=tiny CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=tiny NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=weird CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=weird NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=inside CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=inside NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=body CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=scarier CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=JJR Lemma=scarier NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=bullets CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=NNS Lemma=bullet NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=sticks CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=stick NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (ADVP (RB sometimes))
+    (NP
+      (NP (JJ tiny) (, ,) (JJ weird) (NNS things))
+      (PP (IN inside)
+        (NP (PRP$ your) (NN body))))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (JJ much) (JJR scarier))
+        (PP (IN than)
+          (NP
+            (NP (NNS bullets))
+            (CC or)
+            (NP (JJ large) (NNS men)))))
+      (PP (IN with)
+        (NP (JJ big) (NNS sticks))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, much-12)
+discourse(much-12, Yes-1)
+punct(much-12, ,-2)
+advmod(much-12, sometimes-3)
+amod(things-7, tiny-4)
+punct(things-7, ,-5)
+amod(things-7, weird-6)
+nsubj(much-12, things-7)
+case(body-10, inside-8)
+nmod:poss(body-10, your-9)
+nmod:inside(things-7, body-10)
+cop(much-12, is-11)
+dep(much-12, scarier-13)
+case(bullets-15, than-14)
+obl:than(much-12, bullets-15)
+cc(men-18, or-16)
+amod(men-18, large-17)
+obl:than(much-12, men-18)
+conj:or(bullets-15, men-18)
+case(sticks-21, with-19)
+amod(sticks-21, big-20)
+obl:with(much-12, sticks-21)
+punct(much-12, .-22)
+
+Extracted the following NER entity mentions:

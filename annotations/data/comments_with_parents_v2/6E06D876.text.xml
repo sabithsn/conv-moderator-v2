@@ -1,0 +1,75 @@
+Document: ID=6E06D876.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Trump calls on supporters to 'lay down their very lives' to defend US against Critical Race Theory
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=calls CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=call NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=supporters CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=supporter NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=lay CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=lay NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=lives CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBZ Lemma=live NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=defend CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=defend NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=against CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Critical CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=critical NamedEntityTag=O]
+[Text=Race CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=race NamedEntityTag=O]
+[Text=Theory CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=theory NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Trump))
+        (VP (VBZ calls)
+          (PP (IN on)
+            (NP (NNS supporters)))
+          (PP (IN to) (`` ')
+            (S
+              (VP (VB lay)
+                (PRT (RP down))))))))
+    (NP (PRP$ their))
+    (ADVP (RB very))
+    (VP (VBZ lives) ('' ')
+      (S
+        (VP (TO to)
+          (VP (VB defend)
+            (NP (NNP US)))))
+      (PP (IN against)
+        (NP (JJ Critical) (NN Race) (NN Theory))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lives-11)
+nsubj(calls-2, Trump-1)
+parataxis(lives-11, calls-2)
+case(supporters-4, on-3)
+obl:on(calls-2, supporters-4)
+case(lay-7, to-5)
+punct(lay-7, '-6)
+advcl:to(calls-2, lay-7)
+compound:prt(lay-7, down-8)
+nsubj(lives-11, their-9)
+nsubj:xsubj(defend-14, their-9)
+advmod(lives-11, very-10)
+punct(lives-11, '-12)
+mark(defend-14, to-13)
+xcomp(lives-11, defend-14)
+obj(defend-14, US-15)
+case(Theory-19, against-16)
+amod(Theory-19, Critical-17)
+compound(Theory-19, Race-18)
+obl:against(lives-11, Theory-19)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.904859858148926
+US	COUNTRY	LOCATION:0.8028411124972402

@@ -1,0 +1,66 @@
+Document: ID=B132BE2F.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Trump praised Putin's justification to invade Ukraine as 'genius' and 'savvy'
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=praised CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=praise NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=justification CharacterOffsetBegin=22 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=justification NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=invade CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=invade NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=as CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=genius CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=savvy CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=savvy NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Trump))
+      (VP (VBD praised)
+        (NP
+          (NP (NNP Putin) (POS 's))
+          (NN justification)
+          (S
+            (VP (TO to)
+              (VP (VB invade)
+                (NP (NNP Ukraine))
+                (PP (IN as)
+                  (NP (`` ') (NN genius) ('' ')))))))))
+    (CC and)
+    (S
+      (ADJP (`` ') (JJ savvy) ('' ')))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, praised-2)
+nsubj(praised-2, Trump-1)
+nsubj(savvy-15, Trump-1)
+nmod:poss(justification-5, Putin-3)
+case(Putin-3, 's-4)
+obj(praised-2, justification-5)
+mark(invade-7, to-6)
+acl:to(justification-5, invade-7)
+obj(invade-7, Ukraine-8)
+case(genius-11, as-9)
+punct(genius-11, '-10)
+obl:as(invade-7, genius-11)
+punct(genius-11, '-12)
+cc(savvy-15, and-13)
+punct(savvy-15, '-14)
+conj:and(praised-2, savvy-15)
+punct(savvy-15, '-16)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9095739561138032
+Putin	PERSON	PERSON:0.9922657833824885
+Ukraine	COUNTRY	LOCATION:0.9990808367750625

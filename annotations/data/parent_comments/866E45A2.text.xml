@@ -1,0 +1,47 @@
+Document: ID=866E45A2.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Ahh yes, that’s what Adam Smith died for
+
+Tokens:
+[Text=Ahh CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Ahh NamedEntityTag=O]
+[Text=yes CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=Adam CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Adam NamedEntityTag=PERSON]
+[Text=Smith CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Smith NamedEntityTag=PERSON]
+[Text=died CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Ahh))
+    (INTJ (UH yes))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ ’s)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (NNP Adam) (NNP Smith))
+          (VP (VBD died)
+            (PP (IN for))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-5)
+nsubj(’s-5, Ahh-1)
+discourse(’s-5, yes-2)
+punct(’s-5, ,-3)
+nsubj(’s-5, that-4)
+obl:for(died-9, what-6)
+compound(Smith-8, Adam-7)
+nsubj(died-9, Smith-8)
+ccomp(’s-5, died-9)
+case(what-6, for-10)
+
+Extracted the following NER entity mentions:
+Adam Smith	PERSON	PERSON:0.9996853285135254

@@ -1,0 +1,58 @@
+Document: ID=EB2C2B0D.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Americans Who Voted For Joe Biden Owe The Rest Of Us An Apology
+
+Tokens:
+[Text=Americans CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=Who CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Voted CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Joe CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Biden CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Owe CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Owe NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Rest CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Rest NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Us CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=An CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Apology CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=apology NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNPS Americans))
+    (SBAR
+      (WHNP (WP Who))
+      (S
+        (VP (VBD Voted)
+          (S
+            (PP (IN For)
+              (NP (NNP Joe) (NNP Biden) (NNP Owe)))
+            (NP
+              (NP
+                (NP (DT The) (NNP Rest))
+                (PP (IN Of)
+                  (NP (PRP Us))))
+              (NP (DT An) (NN Apology)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Americans-1)
+nsubj(Voted-3, Americans-1)
+ref(Americans-1, Who-2)
+acl:relcl(Americans-1, Voted-3)
+case(Owe-7, For-4)
+compound(Owe-7, Joe-5)
+compound(Owe-7, Biden-6)
+dep(Rest-9, Owe-7)
+det(Rest-9, The-8)
+xcomp(Voted-3, Rest-9)
+case(Us-11, Of-10)
+nmod:of(Rest-9, Us-11)
+det(Apology-13, An-12)
+dep(Rest-9, Apology-13)
+
+Extracted the following NER entity mentions:
+Americans	MISC	MISC:0.9988041171469988
+Joe Biden	PERSON	PERSON:0.9985609678682897

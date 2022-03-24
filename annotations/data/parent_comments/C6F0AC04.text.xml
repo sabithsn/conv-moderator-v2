@@ -1,0 +1,102 @@
+Document: ID=C6F0AC04.text (1 sentences, 28 tokens)
+
+Sentence #1 (28 tokens):
+No, but I think part of the price increase is shutting down and preventing new oil drilling within the US in an attempt to look green.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=increase CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=increase NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=shutting CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=shut NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=preventing CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=VBG Lemma=prevent NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=oil CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=oil NamedEntityTag=O]
+[Text=drilling CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=drilling NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=in CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=attempt CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=attempt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=green CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=green NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (CC but)
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP
+            (NP (NN part))
+            (PP (IN of)
+              (NP (DT the) (NN price) (NN increase))))
+          (VP (VBZ is)
+            (VP
+              (VP (VBG shutting)
+                (PRT (RP down)))
+              (CC and)
+              (VP (VBG preventing)
+                (NP
+                  (NP (JJ new) (NN oil) (NN drilling))
+                  (PP (IN within)
+                    (NP (DT the) (NNP US))))
+                (PP (IN in)
+                  (NP (DT an) (NN attempt)))
+                (S
+                  (VP (TO to)
+                    (VP (VB look)
+                      (ADJP (JJ green)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-5)
+discourse(think-5, No-1)
+punct(think-5, ,-2)
+cc(think-5, but-3)
+conj(think-5, I-4)
+nsubj(shutting-12, part-6)
+nsubj(preventing-15, part-6)
+case(increase-10, of-7)
+det(increase-10, the-8)
+compound(increase-10, price-9)
+nmod:of(part-6, increase-10)
+aux(shutting-12, is-11)
+ccomp(think-5, shutting-12)
+compound:prt(shutting-12, down-13)
+cc(preventing-15, and-14)
+ccomp(think-5, preventing-15)
+conj:and(shutting-12, preventing-15)
+amod(drilling-18, new-16)
+compound(drilling-18, oil-17)
+obj(preventing-15, drilling-18)
+case(US-21, within-19)
+det(US-21, the-20)
+nmod:within(drilling-18, US-21)
+case(attempt-24, in-22)
+det(attempt-24, an-23)
+obl:in(preventing-15, attempt-24)
+mark(look-26, to-25)
+advcl:to(preventing-15, look-26)
+xcomp(look-26, green-27)
+punct(think-5, .-28)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.997991761965372

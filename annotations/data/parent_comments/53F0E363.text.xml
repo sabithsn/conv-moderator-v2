@@ -1,0 +1,71 @@
+Document: ID=53F0E363.text (2 sentences, 14 tokens)
+
+Sentence #1 (6 tokens):
+The vaccine creates natural antibodies.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=creates CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=create NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=antibodies CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=NNS Lemma=antibody NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN vaccine))
+    (VP (VBZ creates)
+      (NP (JJ natural) (NNS antibodies)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, creates-3)
+det(vaccine-2, The-1)
+nsubj(creates-3, vaccine-2)
+amod(antibodies-5, natural-4)
+obj(creates-3, antibodies-5)
+punct(creates-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+The fuck did you think it does?
+
+Tokens:
+[Text=The CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VBP Lemma=fuck NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The)
+      (SBAR
+        (S
+          (VP (VBP fuck)
+            (SQ (VBD did)
+              (NP (PRP you))
+              (VP (VB think)
+                (NP (PRP it))))))))
+    (VP (VBZ does))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, does-7)
+nsubj(does-7, The-1)
+dep(The-1, fuck-2)
+aux(think-5, did-3)
+nsubj(think-5, you-4)
+dep(fuck-2, think-5)
+obj(think-5, it-6)
+punct(does-7, ?-8)
+
+Extracted the following NER entity mentions:

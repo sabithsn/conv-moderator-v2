@@ -1,0 +1,76 @@
+Document: ID=3C531330.text (2 sentences, 16 tokens)
+
+Sentence #1 (6 tokens):
+Texas is full of racist.
+
+Tokens:
+[Text=Texas CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=racist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Texas))
+    (VP (VBZ is)
+      (ADJP (JJ full)
+        (PP (IN of)
+          (NP (NN racist)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, full-3)
+nsubj(full-3, Texas-1)
+cop(full-3, is-2)
+case(racist-5, of-4)
+obl:of(full-3, racist-5)
+punct(full-3, .-6)
+
+Extracted the following NER entity mentions:
+Texas	STATE_OR_PROVINCE	LOCATION:0.9955530494216536
+
+Sentence #2 (10 tokens):
+The state was literally created for that reason lol.
+
+Tokens:
+[Text=The CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=created CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=VBN Lemma=create NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=lol CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN state))
+    (VP (VBD was)
+      (ADVP (RB literally))
+      (VP (VBN created)
+        (PP (IN for)
+          (NP (DT that) (NN reason)))
+        (INTJ (UH lol))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, created-5)
+det(state-2, The-1)
+nsubj:pass(created-5, state-2)
+aux:pass(created-5, was-3)
+advmod(created-5, literally-4)
+case(reason-8, for-6)
+det(reason-8, that-7)
+obl:for(created-5, reason-8)
+discourse(created-5, lol-9)
+punct(created-5, .-10)
+
+Extracted the following NER entity mentions:

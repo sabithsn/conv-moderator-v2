@@ -1,0 +1,30 @@
+Document: ID=F883BF8E.text (1 sentences, 5 tokens)
+
+Sentence #1 (5 tokens):
+Conservative Equality vs. Liberal Equity
+
+Tokens:
+[Text=Conservative CharacterOffsetBegin=0 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Conservative NamedEntityTag=IDEOLOGY]
+[Text=Equality CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Equality NamedEntityTag=O]
+[Text=vs. CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=FW Lemma=vs. NamedEntityTag=O]
+[Text=Liberal CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Liberal NamedEntityTag=IDEOLOGY]
+[Text=Equity CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Equity NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Conservative) (NNP Equality))
+    (PP (FW vs.)
+      (NP (NNP Liberal) (NNP Equity)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Equality-2)
+compound(Equality-2, Conservative-1)
+dep(Equity-5, vs.-3)
+compound(Equity-5, Liberal-4)
+nmod(Equality-2, Equity-5)
+
+Extracted the following NER entity mentions:
+Conservative	IDEOLOGY	-
+Liberal	IDEOLOGY	-

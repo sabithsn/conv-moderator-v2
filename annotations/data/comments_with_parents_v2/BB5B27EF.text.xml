@@ -1,0 +1,138 @@
+Document: ID=BB5B27EF.text (3 sentences, 29 tokens)
+
+Sentence #1 (4 tokens):
+They’re protesting.
+
+Tokens:
+[Text=They CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=protesting CharacterOffsetBegin=8 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=protest NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP ’re)
+      (S
+        (VP (VBG protesting))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’re-2)
+nsubj(’re-2, They-1)
+xcomp(’re-2, protesting-3)
+punct(’re-2, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+Better than burning precincts, homes, and robbing businesses.
+
+Tokens:
+[Text=Better CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=burning CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=burn NamedEntityTag=O]
+[Text=precincts CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=precinct NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=homes CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=home NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=robbing CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=VBG Lemma=rob NamedEntityTag=O]
+[Text=businesses CharacterOffsetBegin=70 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=business NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADJP
+    (ADJP (JJR Better))
+    (PP (IN than)
+      (S
+        (VP
+          (VP (VBG burning)
+            (NP
+              (NP (NNS precincts))
+              (, ,)
+              (NP (NNS homes))
+              (, ,)))
+          (CC and)
+          (VP (VBG robbing)
+            (NP (NNS businesses))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Better-1)
+mark(burning-3, than-2)
+advcl:than(Better-1, burning-3)
+obj(burning-3, precincts-4)
+punct(precincts-4, ,-5)
+appos(precincts-4, homes-6)
+punct(precincts-4, ,-7)
+cc(robbing-9, and-8)
+advcl:than(Better-1, robbing-9)
+conj:and(burning-3, robbing-9)
+obj(robbing-9, businesses-10)
+punct(Better-1, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens):
+Please stop talking, you’re brainwashed mind can’t process information properly.
+
+Tokens:
+[Text=Please CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=brainwashed CharacterOffsetBegin=110 CharacterOffsetEnd=121 PartOfSpeech=VBN Lemma=brainwash NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=133 CharacterOffsetEnd=140 PartOfSpeech=VB Lemma=process NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=141 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=properly CharacterOffsetBegin=153 CharacterOffsetEnd=161 PartOfSpeech=RB Lemma=properly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (INTJ (UH Please))
+      (VP (VB stop)
+        (S
+          (VP (VBG talking)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP ’re)
+      (VP (VBN brainwashed)
+        (SBAR
+          (S
+            (NP (NN mind))
+            (VP (MD ca) (RB n’t)
+              (VP (VB process)
+                (NP (NN information))
+                (ADVP (RB properly))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, brainwashed-7)
+discourse(stop-2, Please-1)
+ccomp(brainwashed-7, stop-2)
+xcomp(stop-2, talking-3)
+punct(brainwashed-7, ,-4)
+nsubj:pass(brainwashed-7, you-5)
+aux:pass(brainwashed-7, ’re-6)
+nsubj(process-11, mind-8)
+aux(process-11, ca-9)
+advmod(process-11, n’t-10)
+ccomp(brainwashed-7, process-11)
+obj(process-11, information-12)
+advmod(process-11, properly-13)
+punct(brainwashed-7, .-14)
+
+Extracted the following NER entity mentions:

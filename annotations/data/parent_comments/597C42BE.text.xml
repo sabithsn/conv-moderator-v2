@@ -1,0 +1,48 @@
+Document: ID=597C42BE.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Florida Governor's Team DeSantis Launches "DeSantis Freedom Team Club"
+
+Tokens:
+[Text=Florida CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Florida NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Governor CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Governor NamedEntityTag=TITLE]
+[Text='s CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Team CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Team NamedEntityTag=PERSON]
+[Text=DeSantis CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=PERSON]
+[Text=Launches CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=launch NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=DeSantis CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=DeSantis NamedEntityTag=ORGANIZATION]
+[Text=Freedom CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Freedom NamedEntityTag=ORGANIZATION]
+[Text=Team CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Team NamedEntityTag=ORGANIZATION]
+[Text=Club CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Club NamedEntityTag=ORGANIZATION]
+[Text=" CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Florida) (NNP Governor) (POS 's))
+      (NNP Team) (NNP DeSantis))
+    (VP (VBZ Launches)
+      (NP (`` ") (NNP DeSantis) (NNP Freedom) (NNP Team) (NNP Club) ('' ")))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Launches-6)
+compound(Governor-2, Florida-1)
+nmod:poss(DeSantis-5, Governor-2)
+case(Governor-2, 's-3)
+compound(DeSantis-5, Team-4)
+nsubj(Launches-6, DeSantis-5)
+punct(Club-11, "-7)
+compound(Club-11, DeSantis-8)
+compound(Club-11, Freedom-9)
+compound(Club-11, Team-10)
+obj(Launches-6, Club-11)
+punct(Club-11, "-12)
+
+Extracted the following NER entity mentions:
+Florida	STATE_OR_PROVINCE	LOCATION:0.9494593570926491
+Governor	TITLE	-
+Team DeSantis	PERSON	PERSON:0.36944975822491205
+DeSantis Freedom Team Club	ORGANIZATION	ORGANIZATION:0.9831908906049561

@@ -1,0 +1,53 @@
+Document: ID=49E276C3.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Far-right activist Ammon Bundy claims "ambush" after hospital arrest
+
+Tokens:
+[Text=Far CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=activist CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=activist NamedEntityTag=TITLE]
+[Text=Ammon CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Ammon NamedEntityTag=PERSON]
+[Text=Bundy CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Bundy NamedEntityTag=PERSON]
+[Text=claims CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=claim NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=ambush CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=ambush NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=hospital CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=hospital NamedEntityTag=O]
+[Text=arrest CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=arrest NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (ADJP (RB Far) (HYPH -) (JJ right))
+      (NN activist))
+    (SBAR
+      (S
+        (NP (NNP Ammon) (NNP Bundy))
+        (VP (VBZ claims)
+          (NP (`` ") (NN ambush) ('' "))
+          (PP (IN after)
+            (NP (NN hospital) (NN arrest))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, activist-4)
+advmod(right-3, Far-1)
+punct(right-3, --2)
+amod(activist-4, right-3)
+compound(Bundy-6, Ammon-5)
+nsubj(claims-7, Bundy-6)
+acl:relcl(activist-4, claims-7)
+punct(ambush-9, "-8)
+obj(claims-7, ambush-9)
+punct(ambush-9, "-10)
+case(arrest-13, after-11)
+compound(arrest-13, hospital-12)
+obl:after(claims-7, arrest-13)
+
+Extracted the following NER entity mentions:
+activist	TITLE	-
+Ammon Bundy	PERSON	PERSON:0.9962910537257181

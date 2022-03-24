@@ -1,0 +1,53 @@
+Document: ID=5E991F76.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Yet “fragile snowflakes” are boycotting Starbucks for not enforcing the mandate lol
+
+Tokens:
+[Text=Yet CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CC Lemma=yet NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=fragile CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=fragile NamedEntityTag=O]
+[Text=snowflakes CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=snowflake NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=boycotting CharacterOffsetBegin=29 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=boycott NamedEntityTag=O]
+[Text=Starbucks CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Starbucks NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=enforcing CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=enforce NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mandate CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=mandate NamedEntityTag=O]
+[Text=lol CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC Yet)
+    (NP (`` “) (JJ fragile) (NNS snowflakes) ('' ”))
+    (VP (VBP are)
+      (VP (VBG boycotting)
+        (NP (NNP Starbucks))
+        (PP (IN for)
+          (S (RB not)
+            (VP (VBG enforcing)
+              (NP (DT the) (NN mandate))
+              (INTJ (UH lol)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, boycotting-7)
+cc(boycotting-7, Yet-1)
+punct(snowflakes-4, “-2)
+amod(snowflakes-4, fragile-3)
+nsubj(boycotting-7, snowflakes-4)
+punct(snowflakes-4, ”-5)
+aux(boycotting-7, are-6)
+obj(boycotting-7, Starbucks-8)
+mark(enforcing-11, for-9)
+advmod(enforcing-11, not-10)
+advcl:for(boycotting-7, enforcing-11)
+det(mandate-13, the-12)
+obj(enforcing-11, mandate-13)
+discourse(enforcing-11, lol-14)
+
+Extracted the following NER entity mentions:
+Starbucks	ORGANIZATION	ORGANIZATION:0.9900788541832751

@@ -1,0 +1,196 @@
+Document: ID=272AD2A5.text (4 sentences, 44 tokens)
+
+Sentence #1 (5 tokens):
+That is factually incorrect.
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=factually CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=factually NamedEntityTag=O]
+[Text=incorrect CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=incorrect NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (ADJP (RB factually) (JJ incorrect)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, incorrect-4)
+nsubj(incorrect-4, That-1)
+cop(incorrect-4, is-2)
+advmod(incorrect-4, factually-3)
+punct(incorrect-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (21 tokens):
+FGM is mentioned in the second century BC in egypt and also practiced in Christian and Jewish groups in Ethiopia.
+
+Tokens:
+[Text=FGM CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=FGM NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=mentioned CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=mention NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=-01XX Timex=<TIMEX3 tid="t1" type="DATE" value="-01XX">the second century BC</TIMEX3>]
+[Text=second CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=second NamedEntityTag=DATE NormalizedNamedEntityTag=-01XX Timex=<TIMEX3 tid="t1" type="DATE" value="-01XX">the second century BC</TIMEX3>]
+[Text=century CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=century NamedEntityTag=DATE NormalizedNamedEntityTag=-01XX Timex=<TIMEX3 tid="t1" type="DATE" value="-01XX">the second century BC</TIMEX3>]
+[Text=BC CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=bc NamedEntityTag=DATE NormalizedNamedEntityTag=-01XX Timex=<TIMEX3 tid="t1" type="DATE" value="-01XX">the second century BC</TIMEX3>]
+[Text=in CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=egypt CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=egypt NamedEntityTag=COUNTRY]
+[Text=and CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=practiced CharacterOffsetBegin=89 CharacterOffsetEnd=98 PartOfSpeech=VBD Lemma=practice NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Christian CharacterOffsetBegin=102 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Christian NamedEntityTag=RELIGION]
+[Text=and CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Jewish CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=jewish NamedEntityTag=RELIGION]
+[Text=groups CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=group NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ethiopia CharacterOffsetBegin=133 CharacterOffsetEnd=141 PartOfSpeech=NNP Lemma=Ethiopia NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP FGM))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN mentioned)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ second) (NN century) (NN BC))
+              (PP (IN in)
+                (NP (NN egypt)))))))
+      (CC and)
+      (ADVP (RB also))
+      (VP (VBD practiced)
+        (PP (IN in)
+          (NP
+            (NP (NNP Christian))
+            (CC and)
+            (NP (JJ Jewish) (NNS groups))))
+        (PP (IN in)
+          (NP (NNP Ethiopia)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mentioned-3)
+nsubj:pass(mentioned-3, FGM-1)
+nsubj:pass(practiced-13, FGM-1)
+aux:pass(mentioned-3, is-2)
+case(BC-8, in-4)
+det(BC-8, the-5)
+amod(BC-8, second-6)
+compound(BC-8, century-7)
+obl:in(mentioned-3, BC-8)
+case(egypt-10, in-9)
+nmod:in(BC-8, egypt-10)
+cc(practiced-13, and-11)
+advmod(practiced-13, also-12)
+conj:and(mentioned-3, practiced-13)
+case(Christian-15, in-14)
+obl:in(practiced-13, Christian-15)
+cc(groups-18, and-16)
+amod(groups-18, Jewish-17)
+obl:in(practiced-13, groups-18)
+conj:and(Christian-15, groups-18)
+case(Ethiopia-20, in-19)
+obl:in(practiced-13, Ethiopia-20)
+punct(mentioned-3, .-21)
+
+Extracted the following NER entity mentions:
+FGM	ORGANIZATION	ORGANIZATION:0.9557396263515955
+the second century BC	DATE	DATE:-1.0
+egypt	COUNTRY	-
+Christian	RELIGION	MISC:0.999141229136855
+Jewish	RELIGION	MISC:0.9999880187853981
+Ethiopia	COUNTRY	LOCATION:0.9990769333056739
+
+Sentence #3 (12 tokens):
+It also happens in pagan religions in many cultures in Africa.
+
+Tokens:
+[Text=It CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=happens CharacterOffsetBegin=151 CharacterOffsetEnd=158 PartOfSpeech=VBZ Lemma=happen NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=pagan CharacterOffsetBegin=162 CharacterOffsetEnd=167 PartOfSpeech=JJ Lemma=pagan NamedEntityTag=RELIGION]
+[Text=religions CharacterOffsetBegin=168 CharacterOffsetEnd=177 PartOfSpeech=NNS Lemma=religion NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=cultures CharacterOffsetBegin=186 CharacterOffsetEnd=194 PartOfSpeech=NNS Lemma=culture NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Africa CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=NNP Lemma=Africa NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ happens)
+      (PP (IN in)
+        (NP
+          (NP (JJ pagan) (NNS religions))
+          (PP (IN in)
+            (NP
+              (NP (JJ many) (NNS cultures))
+              (PP (IN in)
+                (NP (NNP Africa))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happens-3)
+nsubj(happens-3, It-1)
+advmod(happens-3, also-2)
+case(religions-6, in-4)
+amod(religions-6, pagan-5)
+obl:in(happens-3, religions-6)
+case(cultures-9, in-7)
+amod(cultures-9, many-8)
+nmod:in(religions-6, cultures-9)
+case(Africa-11, in-10)
+nmod:in(cultures-9, Africa-11)
+punct(happens-3, .-12)
+
+Extracted the following NER entity mentions:
+pagan	RELIGION	-
+Africa	LOCATION	LOCATION:0.9920664104009456
+
+Sentence #4 (6 tokens):
+FGM is a preislamic practice.
+
+Tokens:
+[Text=FGM CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=NNP Lemma=FGM NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=preislamic CharacterOffsetBegin=215 CharacterOffsetEnd=225 PartOfSpeech=JJ Lemma=preislamic NamedEntityTag=O]
+[Text=practice CharacterOffsetBegin=226 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=practice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP FGM))
+    (VP (VBZ is)
+      (NP (DT a) (JJ preislamic) (NN practice)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, practice-5)
+nsubj(practice-5, FGM-1)
+cop(practice-5, is-2)
+det(practice-5, a-3)
+amod(practice-5, preislamic-4)
+punct(practice-5, .-6)
+
+Extracted the following NER entity mentions:
+FGM	ORGANIZATION	ORGANIZATION:0.9460734698987037

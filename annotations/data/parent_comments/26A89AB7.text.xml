@@ -1,0 +1,74 @@
+Document: ID=26A89AB7.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Joe Biden Rages: ‘I’m Sick’ of Americans Blaming Me for Inflation, Not Vladimir Putin
+
+Tokens:
+[Text=Joe CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Biden CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Rages CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=rage NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=Sick CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=sick NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=Blaming CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=blame NamedEntityTag=O]
+[Text=Me CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Inflation CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=inflation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Not CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Vladimir CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Vladimir NamedEntityTag=PERSON]
+[Text=Putin CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Joe) (NNP Biden))
+    (VP (VBZ Rages) (: :) (`` ‘)
+      (S
+        (NP (PRP I))
+        (VP (VBP ’m)
+          (NP
+            (NP (JJ Sick))
+            ('' ’)
+            (PP (IN of)
+              (NP
+                (NP (NNPS Americans))
+                (VP (VBG Blaming)
+                  (NP (PRP Me))
+                  (PP (IN for)
+                    (NP
+                      (NP (NN Inflation))
+                      (, ,) (RB Not)
+                      (NP (NNP Vladimir) (NNP Putin)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Rages-3)
+compound(Biden-2, Joe-1)
+nsubj(Rages-3, Biden-2)
+punct(Rages-3, :-4)
+punct(Rages-3, ‘-5)
+nsubj(Sick-8, I-6)
+cop(Sick-8, ’m-7)
+ccomp(Rages-3, Sick-8)
+punct(Sick-8, ’-9)
+case(Americans-11, of-10)
+nmod:of(Sick-8, Americans-11)
+acl(Americans-11, Blaming-12)
+obj(Blaming-12, Me-13)
+case(Inflation-15, for-14)
+obl:for(Blaming-12, Inflation-15)
+punct(Inflation-15, ,-16)
+advmod(Inflation-15, Not-17)
+compound(Putin-19, Vladimir-18)
+dep(Inflation-15, Putin-19)
+
+Extracted the following NER entity mentions:
+Joe Biden	PERSON	PERSON:0.9989519438541595
+Americans	MISC	MISC:0.999305261450597
+Vladimir Putin	PERSON	PERSON:0.9990747393625988

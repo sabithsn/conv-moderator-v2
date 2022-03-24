@@ -1,0 +1,61 @@
+Document: ID=5474C732.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+No, Democratic Socialists, America is not to blame for Putin’s imperialism
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Democratic CharacterOffsetBegin=4 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=democratic NamedEntityTag=ORGANIZATION]
+[Text=Socialists CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=NNPS Lemma=Socialists NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=blame CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VB Lemma=blame NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=imperialism CharacterOffsetBegin=63 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=imperialism NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP
+      (NP (JJ Democratic) (NNPS Socialists))
+      (, ,)
+      (NP (NNP America)))
+    (VP (VBZ is) (RB not)
+      (S
+        (VP (TO to)
+          (VP (VB blame)
+            (PP (IN for)
+              (NP
+                (NP (NNP Putin) (POS ’s))
+                (NN imperialism)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-7)
+discourse(is-7, No-1)
+punct(is-7, ,-2)
+amod(Socialists-4, Democratic-3)
+nsubj(is-7, Socialists-4)
+nsubj:xsubj(blame-10, Socialists-4)
+punct(Socialists-4, ,-5)
+appos(Socialists-4, America-6)
+advmod(is-7, not-8)
+mark(blame-10, to-9)
+xcomp(is-7, blame-10)
+case(imperialism-14, for-11)
+nmod:poss(imperialism-14, Putin-12)
+case(Putin-12, ’s-13)
+obl:for(blame-10, imperialism-14)
+
+Extracted the following NER entity mentions:
+Democratic Socialists	ORGANIZATION	ORGANIZATION:0.5778952829476048
+America	COUNTRY	LOCATION:0.9158810967813952
+Putin	PERSON	PERSON:0.9950819371612349

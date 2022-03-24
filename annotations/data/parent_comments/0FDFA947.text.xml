@@ -1,0 +1,95 @@
+Document: ID=0FDFA947.text (4 sentences, 14 tokens)
+
+Sentence #1 (2 tokens):
+Wow.
+
+Tokens:
+[Text=Wow CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=wow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Wow) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Wow-1)
+punct(Wow-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+LOL.
+
+Tokens:
+[Text=LOL CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH LOL) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, LOL-1)
+punct(LOL-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+Bye now.
+
+Tokens:
+[Text=Bye CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=UH Lemma=bye NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Bye))
+    (ADVP (RB now))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, now-2)
+discourse(now-2, Bye-1)
+punct(now-2, .-3)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+
+Sentence #4 (7 tokens):
+Also reporting this to the mods.
+
+Tokens:
+[Text=Also CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=reporting CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=VBG Lemma=report NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mods CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=mod NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (VP (VBG reporting)
+      (NP (DT this))
+      (PP (IN to)
+        (NP (DT the) (NNS mods))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, reporting-2)
+advmod(reporting-2, Also-1)
+obj(reporting-2, this-3)
+case(mods-6, to-4)
+det(mods-6, the-5)
+obl:to(reporting-2, mods-6)
+punct(reporting-2, .-7)
+
+Extracted the following NER entity mentions:

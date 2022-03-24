@@ -1,0 +1,108 @@
+Document: ID=3A36093A.text (2 sentences, 26 tokens)
+
+Sentence #1 (10 tokens):
+So the covid opportunity was blown, now this?
+
+Tokens:
+[Text=So CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=covid CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=covid NamedEntityTag=O]
+[Text=opportunity CharacterOffsetBegin=13 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=opportunity NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=blown CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=blow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=this CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (ADVP (RB So))
+      (NP (DT the) (JJ covid) (NN opportunity))
+      (VP (VBD was)
+        (VP (VBN blown))))
+    (, ,)
+    (FRAG
+      (ADVP (RB now))
+      (NP (DT this)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, this-9)
+advmod(blown-6, So-1)
+det(opportunity-4, the-2)
+amod(opportunity-4, covid-3)
+nsubj:pass(blown-6, opportunity-4)
+aux:pass(blown-6, was-5)
+dep(this-9, blown-6)
+punct(this-9, ,-7)
+dep(this-9, now-8)
+punct(this-9, ?-10)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+
+Sentence #2 (16 tokens):
+Making a few people rich to destroy us all is some stinkin' thinkin'.
+
+Tokens:
+[Text=Making CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=rich CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=rich NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=destroy CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=destroy NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=stinkin CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=stinkin NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=thinkin CharacterOffsetBegin=106 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=thinkin NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Making)
+        (S
+          (NP (DT a) (JJ few) (NNS people))
+          (ADJP (JJ rich)
+            (S
+              (VP (TO to)
+                (VP (VB destroy))))))))
+    (NP (PRP us))
+    (ADVP (DT all))
+    (VP (VBZ is)
+      (NP
+        (NP (DT some) (NN stinkin) (POS '))
+        (NN thinkin)))
+    ('' ') (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thinkin-14)
+dep(thinkin-14, Making-1)
+det(people-4, a-2)
+amod(people-4, few-3)
+nsubj(rich-5, people-4)
+nsubj:xsubj(destroy-7, people-4)
+xcomp(Making-1, rich-5)
+mark(destroy-7, to-6)
+xcomp(rich-5, destroy-7)
+nsubj(thinkin-14, us-8)
+advmod(thinkin-14, all-9)
+cop(thinkin-14, is-10)
+det(stinkin-12, some-11)
+nmod:poss(thinkin-14, stinkin-12)
+case(stinkin-12, '-13)
+punct(thinkin-14, '-15)
+punct(thinkin-14, .-16)
+
+Extracted the following NER entity mentions:

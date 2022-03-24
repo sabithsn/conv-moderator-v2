@@ -1,0 +1,57 @@
+Document: ID=ECFD2051.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+I wouldn’t know she was gone cuz I got banned last year
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=gone CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+[Text=cuz CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=cuz NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y OFFSET P-1Y Timex=<TIMEX3 alt_value="THIS P1Y OFFSET P-1Y" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last year</TIMEX3>]
+[Text=year CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1Y OFFSET P-1Y Timex=<TIMEX3 alt_value="THIS P1Y OFFSET P-1Y" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last year</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would) (RB n’t)
+      (VP (VB know)
+        (SBAR
+          (S
+            (NP (PRP she))
+            (VP (VBD was)
+              (VP (VBN gone)
+                (SBAR (IN cuz)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBD got)
+                      (VP (VBN banned)
+                        (NP-TMP (JJ last) (NN year))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-4)
+nsubj(know-4, I-1)
+aux(know-4, would-2)
+advmod(know-4, n’t-3)
+nsubj:pass(gone-7, she-5)
+aux:pass(gone-7, was-6)
+ccomp(know-4, gone-7)
+mark(banned-11, cuz-8)
+nsubj:pass(banned-11, I-9)
+aux:pass(banned-11, got-10)
+advcl:cuz(gone-7, banned-11)
+amod(year-13, last-12)
+obl:tmod(banned-11, year-13)
+
+Extracted the following NER entity mentions:
+last year	DATE	DATE:0.5670601963620547
+she	PERSON	-

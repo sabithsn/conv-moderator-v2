@@ -1,0 +1,63 @@
+Document: ID=562C235D.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Joe Rogan Gives Update On How He’s ‘Handling All This Bulls***’
+
+Tokens:
+[Text=Joe CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Rogan CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Rogan NamedEntityTag=PERSON]
+[Text=Gives CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=VBZ Lemma=give NamedEntityTag=O]
+[Text=Update CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=update NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Handling CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=handle NamedEntityTag=O]
+[Text=All CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Bulls CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NNPS Lemma=Bulls NamedEntityTag=O]
+[Text=*** CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=NFP Lemma=*** NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Joe) (NNP Rogan))
+    (VP (VBZ Gives)
+      (NP
+        (NP (NN Update))
+        (SBAR
+          (WHPP (IN On)
+            (WHADVP (WRB How)))
+          (S
+            (NP (PRP He))
+            (VP (VBZ ’s) (`` ‘)
+              (S
+                (VP (VBG Handling)
+                  (S
+                    (NP (DT All))
+                    (NP (DT This) (NNPS Bulls))))))))))
+    (NFP ***) ('' ’)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Gives-3)
+compound(Rogan-2, Joe-1)
+nsubj(Gives-3, Rogan-2)
+obj(Gives-3, Update-4)
+case(How-6, On-5)
+obl:on(’s-8, How-6)
+nsubj(’s-8, He-7)
+acl:relcl(Update-4, ’s-8)
+punct(’s-8, ‘-9)
+xcomp(’s-8, Handling-10)
+nsubj(Bulls-13, All-11)
+det(Bulls-13, This-12)
+xcomp(Handling-10, Bulls-13)
+punct(Gives-3, ***-14)
+punct(Gives-3, ’-15)
+
+Extracted the following NER entity mentions:
+Joe Rogan	PERSON	PERSON:0.9974152221182019
+He	PERSON	-

@@ -1,0 +1,84 @@
+Document: ID=5DAE2D2F.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Nearly 10,000 women traveled from out of state to have an abortion in Illinois in 2020 — a 29% increase
+
+Tokens:
+[Text=Nearly CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=nearly NamedEntityTag=O]
+[Text=10,000 CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=CD Lemma=10,000 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~10000.0]
+[Text=women CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=traveled CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=VBD Lemma=travel NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=abortion CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=abortion NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Illinois CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Illinois NamedEntityTag=STATE_OR_PROVINCE]
+[Text=in CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=2020 CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=CD Lemma=2020 NamedEntityTag=DATE NormalizedNamedEntityTag=2020 Timex=<TIMEX3 tid="t1" type="DATE" value="2020">2020</TIMEX3>]
+[Text=— CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=: Lemma=— NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=29 CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=CD Lemma=29 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%29.0]
+[Text=% CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%29.0]
+[Text=increase CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=increase NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (QP (RB Nearly) (CD 10,000))
+      (NNS women))
+    (VP (VBD traveled)
+      (PP (IN from)
+        (PP (IN out)
+          (PP (IN of)
+            (NP (NN state)))))
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (DT an) (NN abortion))
+              (PP (IN in)
+                (NP (NNP Illinois))))
+            (PP (IN in)
+              (NP
+                (NP (CD 2020))
+                (: —)
+                (NP (DT a)
+                  (NML (CD 29) (NN %))
+                  (NN increase))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, traveled-4)
+advmod(10,000-2, Nearly-1)
+nummod(women-3, 10,000-2)
+nsubj(traveled-4, women-3)
+nsubj:xsubj(have-10, women-3)
+case(state-8, from-5)
+case(state-8, out-6)
+fixed(out-6, of-7)
+dep(traveled-4, state-8)
+mark(have-10, to-9)
+xcomp(traveled-4, have-10)
+det(abortion-12, an-11)
+obj(have-10, abortion-12)
+case(Illinois-14, in-13)
+nmod:in(abortion-12, Illinois-14)
+case(2020-16, in-15)
+obl:in(have-10, 2020-16)
+punct(2020-16, —-17)
+det(increase-21, a-18)
+nummod(%-20, 29-19)
+compound(increase-21, %-20)
+dep(2020-16, increase-21)
+
+Extracted the following NER entity mentions:
+10,000	NUMBER	NUMBER:-1.0
+Illinois	STATE_OR_PROVINCE	LOCATION:0.9961218603747279
+2020	DATE	DATE:0.9315127055001842
+29%	PERCENT	PERCENT:0.9997608276858122

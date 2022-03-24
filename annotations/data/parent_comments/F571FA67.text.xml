@@ -1,0 +1,46 @@
+Document: ID=F571FA67.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+NYC Councilwoman Richardson Jordan blames Ukraine for Russian invasion.
+
+Tokens:
+[Text=NYC CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=NYC NamedEntityTag=O]
+[Text=Councilwoman CharacterOffsetBegin=4 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Councilwoman NamedEntityTag=TITLE]
+[Text=Richardson CharacterOffsetBegin=17 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Richardson NamedEntityTag=PERSON]
+[Text=Jordan CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Jordan NamedEntityTag=PERSON]
+[Text=blames CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=blame NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=for CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=invasion CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP NYC) (NNP Councilwoman) (NNP Richardson) (NNP Jordan))
+    (VP (VBZ blames)
+      (NP
+        (NP (NNP Ukraine))
+        (PP (IN for)
+          (NP (JJ Russian) (NN invasion)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, blames-5)
+compound(Jordan-4, NYC-1)
+compound(Jordan-4, Councilwoman-2)
+compound(Jordan-4, Richardson-3)
+nsubj(blames-5, Jordan-4)
+obj(blames-5, Ukraine-6)
+case(invasion-9, for-7)
+amod(invasion-9, Russian-8)
+nmod:for(Ukraine-6, invasion-9)
+punct(blames-5, .-10)
+
+Extracted the following NER entity mentions:
+Councilwoman	TITLE	-
+Richardson Jordan	PERSON	PERSON:0.8832835180170824
+Ukraine	COUNTRY	LOCATION:0.9991724183895265
+Russian	NATIONALITY	MISC:0.9999984098227936

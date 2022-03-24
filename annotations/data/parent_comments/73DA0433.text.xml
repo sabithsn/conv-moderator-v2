@@ -1,0 +1,58 @@
+Document: ID=73DA0433.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+> none of the data supports my point so let me predict the future
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=data CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=data NamedEntityTag=O]
+[Text=supports CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=VBZ Lemma=support NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=predict CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=predict NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=FUTURE_REF Timex=<TIMEX3 tid="t1" type="DATE" value="FUTURE_REF">the future</TIMEX3>]
+[Text=future CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=future NamedEntityTag=DATE NormalizedNamedEntityTag=FUTURE_REF Timex=<TIMEX3 tid="t1" type="DATE" value="FUTURE_REF">the future</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (QP (SYM >) (NN none)))
+      (PP (IN of)
+        (NP (DT the) (NN data))))
+    (VP (VBZ supports)
+      (S
+        (NP (PRP$ my) (NN point))
+        (RB so)
+        (VP (VB let)
+          (S
+            (NP (PRP me))
+            (VP (VB predict)
+              (NP (DT the) (NN future)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, supports-6)
+dep(none-2, >-1)
+nsubj(supports-6, none-2)
+case(data-5, of-3)
+det(data-5, the-4)
+nmod:of(none-2, data-5)
+nmod:poss(point-8, my-7)
+nsubj(let-10, point-8)
+advmod(let-10, so-9)
+ccomp(supports-6, let-10)
+nsubj(predict-12, me-11)
+ccomp(let-10, predict-12)
+det(future-14, the-13)
+obj(predict-12, future-14)
+
+Extracted the following NER entity mentions:
+the future	DATE	DATE:-1.0

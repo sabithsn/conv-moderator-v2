@@ -1,0 +1,78 @@
+Document: ID=3EF146AE.text (2 sentences, 17 tokens)
+
+Sentence #1 (11 tokens):
+CMV: Being an ugly man is a depressing existence.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Being CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ugly CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=ugly NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=depressing CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=depressing NamedEntityTag=O]
+[Text=existence CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=existence NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (S
+        (VP (VBG Being)
+          (NP (DT an) (JJ ugly) (NN man))))
+      (VP (VBZ is)
+        (NP (DT a) (JJ depressing) (NN existence))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+cop(man-6, Being-3)
+det(man-6, an-4)
+amod(man-6, ugly-5)
+csubj(existence-10, man-6)
+cop(existence-10, is-7)
+det(existence-10, a-8)
+amod(existence-10, depressing-9)
+appos(CMV-1, existence-10)
+punct(CMV-1, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Worse if you're short too
+
+Tokens:
+[Text=Worse CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (JJR Worse))
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP 're)
+          (ADJP (JJ short) (RB too)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, short-5)
+advmod(short-5, Worse-1)
+mark(short-5, if-2)
+nsubj(short-5, you-3)
+cop(short-5, 're-4)
+advmod(short-5, too-6)
+
+Extracted the following NER entity mentions:

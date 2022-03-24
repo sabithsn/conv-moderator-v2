@@ -1,0 +1,132 @@
+Document: ID=CBFF3536.text (3 sentences, 28 tokens)
+
+Sentence #1 (9 tokens):
+So it’s end of business March 11th.
+
+Tokens:
+[Text=So CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03-11 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03-11">March 11th</TIMEX3>]
+[Text=11th CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=11th NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03-11 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03-11">March 11th</TIMEX3>]
+[Text=. CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP (PRP it))
+    (VP (VBZ ’s)
+      (NP
+        (NP (NN end))
+        (PP (IN of)
+          (NP (NN business))))
+      (NP-TMP (NNP March) (NN 11th)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, end-4)
+advmod(end-4, So-1)
+nsubj(end-4, it-2)
+cop(end-4, ’s-3)
+case(business-6, of-5)
+nmod:of(end-4, business-6)
+compound(11th-8, March-7)
+obl:tmod(end-4, 11th-8)
+punct(end-4, .-9)
+
+Extracted the following NER entity mentions:
+March 11th	DATE	DATE:0.9872730419871137
+
+Sentence #2 (11 tokens):
+Wasn’t the CDC supposed to release information about VAIDS?
+
+Tokens:
+[Text=Was CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=CDC CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=CDC NamedEntityTag=ORGANIZATION]
+[Text=supposed CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=VBN Lemma=suppose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=release CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=release NamedEntityTag=O]
+[Text=information CharacterOffsetBegin=71 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=information NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=VAIDS CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=VAIDS NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Was) (RB n’t)
+    (NP (DT the) (NNP CDC))
+    (VP (VBN supposed)
+      (S
+        (VP (TO to)
+          (VP (VB release)
+            (NP (NN information))
+            (PP (IN about)
+              (NP (NNP VAIDS)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, supposed-5)
+aux:pass(supposed-5, Was-1)
+advmod(supposed-5, n’t-2)
+det(CDC-4, the-3)
+nsubj:pass(supposed-5, CDC-4)
+nsubj:xsubj(release-7, CDC-4)
+mark(release-7, to-6)
+xcomp(supposed-5, release-7)
+obj(release-7, information-8)
+case(VAIDS-10, about-9)
+obl:about(release-7, VAIDS-10)
+punct(supposed-5, ?-11)
+
+Extracted the following NER entity mentions:
+CDC	ORGANIZATION	ORGANIZATION:0.9567629323999641
+
+Sentence #3 (8 tokens):
+Where’s the employees that threatened whistleblowing?
+
+Tokens:
+[Text=Where CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=employees CharacterOffsetBegin=108 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=employee NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=threatened CharacterOffsetBegin=123 CharacterOffsetEnd=133 PartOfSpeech=VBD Lemma=threaten NamedEntityTag=O]
+[Text=whistleblowing CharacterOffsetBegin=134 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=whistleblowing NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ
+      (VP (VBZ ’s))
+      (NP
+        (NP (DT the) (NNS employees))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD threatened)
+              (NP (NN whistleblowing)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’s-2)
+advmod(’s-2, Where-1)
+det(employees-4, the-3)
+dep(’s-2, employees-4)
+nsubj(threatened-6, employees-4)
+ref(employees-4, that-5)
+acl:relcl(employees-4, threatened-6)
+obj(threatened-6, whistleblowing-7)
+punct(’s-2, ?-8)
+
+Extracted the following NER entity mentions:

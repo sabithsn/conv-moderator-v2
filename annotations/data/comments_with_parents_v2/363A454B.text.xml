@@ -1,0 +1,117 @@
+Document: ID=363A454B.text (3 sentences, 26 tokens)
+
+Sentence #1 (12 tokens):
+I maybe a brat but I’m actually a great friend.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=maybe CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=brat CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=brat NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’m CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=’m NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (PRP I))
+      (ADVP (RB maybe)
+        (NP (DT a) (NN brat))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP ’m)
+        (ADVP (RB actually))
+        (NP (DT a) (JJ great) (NN friend))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, I-1)
+advmod(I-1, maybe-2)
+det(brat-4, a-3)
+obl:npmod(maybe-2, brat-4)
+cc(I-1, but-5)
+nsubj(friend-11, I-6)
+cop(friend-11, ’m-7)
+advmod(friend-11, actually-8)
+det(friend-11, a-9)
+amod(friend-11, great-10)
+dep(I-1, friend-11)
+punct(I-1, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+You’re entitled to your opinion though.
+
+Tokens:
+[Text=You CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=entitled CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=entitle NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=opinion CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=opinion NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP ’re)
+      (VP (VBN entitled)
+        (PP (IN to)
+          (NP (PRP$ your) (NN opinion) (IN though)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, entitled-3)
+nsubj:pass(entitled-3, You-1)
+aux:pass(entitled-3, ’re-2)
+case(opinion-6, to-4)
+nmod:poss(opinion-6, your-5)
+obl:to(entitled-3, opinion-6)
+amod(opinion-6, though-7)
+punct(entitled-3, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+You must be so perfect!
+
+Tokens:
+[Text=You CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=perfect CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=perfect NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD must)
+      (VP (VB be)
+        (ADJP (RB so) (JJ perfect))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, perfect-5)
+nsubj(perfect-5, You-1)
+aux(perfect-5, must-2)
+cop(perfect-5, be-3)
+advmod(perfect-5, so-4)
+punct(perfect-5, !-6)
+
+Extracted the following NER entity mentions:

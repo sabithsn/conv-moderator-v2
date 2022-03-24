@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>4CB68CBD.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>BLM</word>
+            <lemma>BLM</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Leader</word>
+            <lemma>Leader</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>TITLE</NER>
+          </token>
+          <token id="3">
+            <word>Sentenced</word>
+            <lemma>Sentenced</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>To</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>6</word>
+            <lemma>6</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>P6Y</NormalizedNER>
+            <Timex tid="t1" type="DURATION">P6Y</Timex>
+          </token>
+          <token id="6">
+            <word>Years</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>P6Y</NormalizedNER>
+            <Timex tid="t1" type="DURATION">P6Y</Timex>
+          </token>
+          <token id="7">
+            <word>For</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Illegally</word>
+            <lemma>illegally</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Voting</word>
+            <lemma>Voting</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>LMFAO</word>
+            <lemma>LMFAO</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>...</word>
+            <lemma>...</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (FRAG (NP (NP (NP (NML (NNP BLM) (NNP Leader)) (NNP Sentenced)) (TO To) (NP (CD 6) (NNS Years))) (PP (IN For))) (ADVP (RB Illegally))) (FRAG (NP (NNP Voting) (NNP LMFAO)) (: ...)) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Sentenced</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Leader</governor>
+            <dependent idx="1">BLM</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="2">Leader</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="4">To</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">Years</governor>
+            <dependent idx="5">6</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="6">Years</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="7">For</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="8">Illegally</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="9">Voting</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="10">LMFAO</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="11">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Sentenced</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Leader</governor>
+            <dependent idx="1">BLM</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="2">Leader</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="4">To</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">Years</governor>
+            <dependent idx="5">6</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="6">Years</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="7">For</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="8">Illegally</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="9">Voting</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="10">LMFAO</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="11">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Sentenced</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Leader</governor>
+            <dependent idx="1">BLM</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="2">Leader</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="4">To</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">Years</governor>
+            <dependent idx="5">6</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="6">Years</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="7">For</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="8">Illegally</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="9">Voting</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="10">LMFAO</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="11">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Sentenced</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Leader</governor>
+            <dependent idx="1">BLM</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="2">Leader</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="4">To</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">Years</governor>
+            <dependent idx="5">6</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="6">Years</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="7">For</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="8">Illegally</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="9">Voting</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="10">LMFAO</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="11">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Sentenced</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Leader</governor>
+            <dependent idx="1">BLM</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="2">Leader</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="4">To</dependent>
+          </dep>
+          <dep type="nummod">
+            <governor idx="6">Years</governor>
+            <dependent idx="5">6</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="6">Years</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="7">For</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="8">Illegally</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="9">Voting</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="10">LMFAO</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="10">LMFAO</governor>
+            <dependent idx="11">...</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">Sentenced</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Dumb</word>
+            <lemma>dumb</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Hood</word>
+            <lemma>Hood</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Bitch</word>
+            <lemma>Bitch</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>.....</word>
+            <lemma>.....</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Dumb)) (NP (NNP Hood) (NNP Bitch)) (. .....))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Dumb</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Bitch</governor>
+            <dependent idx="2">Hood</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="3">Bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="4">.....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Dumb</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Bitch</governor>
+            <dependent idx="2">Hood</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="3">Bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="4">.....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Dumb</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Bitch</governor>
+            <dependent idx="2">Hood</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="3">Bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="4">.....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Dumb</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Bitch</governor>
+            <dependent idx="2">Hood</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="3">Bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="4">.....</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Dumb</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Bitch</governor>
+            <dependent idx="2">Hood</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="3">Bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Dumb</governor>
+            <dependent idx="4">.....</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

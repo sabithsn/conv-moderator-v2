@@ -1,0 +1,260 @@
+Document: ID=19CE118F.text (4 sentences, 65 tokens)
+
+Sentence #1 (4 tokens):
+I am sure.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ sure)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sure-3)
+nsubj(sure-3, I-1)
+cop(sure-3, am-2)
+punct(sure-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (24 tokens):
+If they were caught, they were all returned unless it was an illegal alien who was a criminal or had a warrant.
+
+Tokens:
+[Text=If CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=caught CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=catch NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=returned CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=VBN Lemma=return NamedEntityTag=O]
+[Text=unless CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=illegal CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=illegal NamedEntityTag=O]
+[Text=alien CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=alien NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=criminal CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=criminal NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=warrant CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=warrant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VBD were)
+          (VP (VBN caught)))))
+    (, ,)
+    (NP (PRP they))
+    (VP
+      (VP (VBD were) (RB all)
+        (VP (VBN returned)
+          (SBAR (IN unless)
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (NP
+                  (NP (DT an) (JJ illegal) (NN alien))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBD was)
+                        (NP (DT a) (JJ criminal)))))))))))
+      (CC or)
+      (VP (VBD had)
+        (NP (DT a) (NN warrant))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, returned-9)
+mark(caught-4, If-1)
+nsubj:pass(caught-4, they-2)
+aux:pass(caught-4, were-3)
+advcl:if(returned-9, caught-4)
+punct(returned-9, ,-5)
+nsubj:pass(returned-9, they-6)
+nsubj:pass(had-21, they-6)
+aux:pass(returned-9, were-7)
+advmod(returned-9, all-8)
+mark(alien-15, unless-10)
+nsubj(alien-15, it-11)
+cop(alien-15, was-12)
+det(alien-15, an-13)
+amod(alien-15, illegal-14)
+advcl:unless(returned-9, alien-15)
+nsubj(criminal-19, alien-15)
+ref(alien-15, who-16)
+cop(criminal-19, was-17)
+det(criminal-19, a-18)
+acl:relcl(alien-15, criminal-19)
+cc(had-21, or-20)
+conj:or(returned-9, had-21)
+det(warrant-23, a-22)
+obj(had-21, warrant-23)
+punct(returned-9, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (8 tokens):
+Those were taken into custody and prosecuted.
+
+Tokens:
+[Text=Those CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=134 CharacterOffsetEnd=139 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=custody CharacterOffsetBegin=145 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=custody NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=prosecuted CharacterOffsetBegin=157 CharacterOffsetEnd=167 PartOfSpeech=VBN Lemma=prosecute NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT Those))
+    (VP (VBD were)
+      (VP
+        (VP (VBN taken)
+          (PP (IN into)
+            (NP (NN custody))))
+        (CC and)
+        (VP (VBN prosecuted))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, taken-3)
+nsubj:pass(taken-3, Those-1)
+nsubj:pass(prosecuted-7, Those-1)
+aux:pass(taken-3, were-2)
+case(custody-5, into-4)
+obl:into(taken-3, custody-5)
+cc(prosecuted-7, and-6)
+conj:and(taken-3, prosecuted-7)
+punct(taken-3, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (29 tokens):
+FYI: They were all seeking "asylum" as that's the one word that the Mx Cartels and coyotes told them to say to Border Patrol.
+
+Tokens:
+[Text=FYI CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=RB Lemma=fyi NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=They CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=seeking CharacterOffsetBegin=189 CharacterOffsetEnd=196 PartOfSpeech=VBG Lemma=seek NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=asylum CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=asylum NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=word CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=NN Lemma=word NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=229 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Mx CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=mx NamedEntityTag=COUNTRY]
+[Text=Cartels CharacterOffsetBegin=241 CharacterOffsetEnd=248 PartOfSpeech=NNS Lemma=cartel NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=coyotes CharacterOffsetBegin=253 CharacterOffsetEnd=260 PartOfSpeech=NNS Lemma=coyote NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Border CharacterOffsetBegin=281 CharacterOffsetEnd=287 PartOfSpeech=NNP Lemma=Border NamedEntityTag=ORGANIZATION]
+[Text=Patrol CharacterOffsetBegin=288 CharacterOffsetEnd=294 PartOfSpeech=NNP Lemma=Patrol NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB FYI))
+    (: :)
+    (NP (PRP They))
+    (VP (VBD were)
+      (NP
+        (NP (DT all))
+        (VP (VBG seeking)
+          (NP (`` ") (NN asylum) ('' "))
+          (SBAR (IN as)
+            (S
+              (NP (DT that))
+              (VP (VBZ 's)
+                (NP (DT the) (CD one) (NN word))
+                (SBAR (IN that)
+                  (S
+                    (NP
+                      (NP (DT the) (NN Mx) (NNS Cartels))
+                      (CC and)
+                      (NP (NNS coyotes)))
+                    (VP (VBD told)
+                      (NP (PRP them))
+                      (S
+                        (VP (TO to)
+                          (VP (VB say)
+                            (PP (IN to)
+                              (NP (NNP Border) (NNP Patrol)))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, all-5)
+advmod(all-5, FYI-1)
+punct(all-5, :-2)
+nsubj(all-5, They-3)
+cop(all-5, were-4)
+acl(all-5, seeking-6)
+punct(asylum-8, "-7)
+obj(seeking-6, asylum-8)
+punct(asylum-8, "-9)
+mark(word-15, as-10)
+nsubj(word-15, that-11)
+cop(word-15, 's-12)
+det(word-15, the-13)
+nummod(word-15, one-14)
+advcl:as(seeking-6, word-15)
+mark(told-22, that-16)
+det(Cartels-19, the-17)
+compound(Cartels-19, Mx-18)
+nsubj(told-22, Cartels-19)
+cc(coyotes-21, and-20)
+conj:and(Cartels-19, coyotes-21)
+nsubj(told-22, coyotes-21)
+ccomp(word-15, told-22)
+obj(told-22, them-23)
+nsubj:xsubj(say-25, them-23)
+mark(say-25, to-24)
+xcomp(told-22, say-25)
+case(Patrol-28, to-26)
+compound(Patrol-28, Border-27)
+obl:to(say-25, Patrol-28)
+punct(all-5, .-29)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+Mx	COUNTRY	-
+Border Patrol	ORGANIZATION	ORGANIZATION:0.8952747408312789

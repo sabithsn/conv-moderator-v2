@@ -1,0 +1,115 @@
+Document: ID=21AFCCED.text (2 sentences, 27 tokens)
+
+Sentence #1 (17 tokens):
+There used to be DAILY gore threads only featuring black people and they weren’t banned.
+
+Tokens:
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=DAILY CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=DAILY NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t1" type="SET" value="P1D">DAILY</TIMEX3>]
+[Text=gore CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=gore NamedEntityTag=O]
+[Text=threads CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=thread NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=featuring CharacterOffsetBegin=41 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=feature NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=banned CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=VBN Lemma=ban NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (ADVP (RB There))
+      (VP (VBN used)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (S
+                (NP (NNP DAILY))
+                (VP (VB gore)
+                  (NP (NNS threads))
+                  (S
+                    (ADVP (RB only))
+                    (VP (VBG featuring)
+                      (NP (JJ black) (NNS people)))))))))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBD were) (RB n’t)
+        (VP (VBN banned))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, used-2)
+advmod(used-2, There-1)
+mark(be-4, to-3)
+xcomp(used-2, be-4)
+nsubj(gore-6, DAILY-5)
+ccomp(be-4, gore-6)
+obj(gore-6, threads-7)
+advmod(featuring-9, only-8)
+xcomp(gore-6, featuring-9)
+amod(people-11, black-10)
+obj(featuring-9, people-11)
+cc(banned-16, and-12)
+nsubj:pass(banned-16, they-13)
+aux:pass(banned-16, were-14)
+advmod(banned-16, n’t-15)
+conj:and(used-2, banned-16)
+punct(used-2, .-17)
+
+Extracted the following NER entity mentions:
+DAILY	SET	SET:-1.0
+
+Sentence #2 (10 tokens):
+Like how can one be more racist than that?
+
+Tokens:
+[Text=Like CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=PRP Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=be CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=racist CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=racist NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (PP (IN Like))
+    (WHADVP (WRB how))
+    (SQ (MD can)
+      (NP (PRP one))
+      (VP (VB be)
+        (ADJP
+          (ADJP (RBR more) (JJ racist))
+          (PP (IN than)
+            (NP (DT that))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, racist-7)
+obl(racist-7, Like-1)
+advmod(racist-7, how-2)
+aux(racist-7, can-3)
+nsubj(racist-7, one-4)
+cop(racist-7, be-5)
+advmod(racist-7, more-6)
+case(that-9, than-8)
+obl:than(racist-7, that-9)
+punct(racist-7, ?-10)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

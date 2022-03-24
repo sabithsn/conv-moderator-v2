@@ -1,0 +1,64 @@
+Document: ID=CB4FB880.text (2 sentences, 13 tokens)
+
+Sentence #1 (9 tokens):
+*tHE fOUndInG FaTh—*  Fuck them.
+
+Tokens:
+[Text=* CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=tHE CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=the NamedEntityTag=O]
+[Text=fOUndInG CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=founding NamedEntityTag=O]
+[Text=FaTh CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=FaTh NamedEntityTag=O]
+[Text=— CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=: Lemma=— NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=Fuck CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG (NFP *)
+    (NP (NN tHE) (NN fOUndInG) (NNP FaTh))
+    (: —) (NFP *)
+    (PP (VB Fuck)
+      (NP (PRP them)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, FaTh-4)
+punct(FaTh-4, *-1)
+compound(FaTh-4, tHE-2)
+compound(FaTh-4, fOUndInG-3)
+punct(FaTh-4, —-5)
+punct(FaTh-4, *-6)
+dep(them-8, Fuck-7)
+obl(FaTh-4, them-8)
+punct(FaTh-4, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens):
+They're dead.
+
+Tokens:
+[Text=They CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP 're)
+      (ADJP (JJ dead)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dead-3)
+nsubj(dead-3, They-1)
+cop(dead-3, 're-2)
+punct(dead-3, .-4)
+
+Extracted the following NER entity mentions:

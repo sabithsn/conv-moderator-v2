@@ -1,0 +1,86 @@
+Document: ID=C63BDB65.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+Ukraine-Russia news live: Russia's nuclear forces put on 'enhanced combat duty' - as peace talks end on Belarus border
+
+Tokens:
+[Text=Ukraine CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=live NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text='s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=nuclear CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=nuclear NamedEntityTag=O]
+[Text=forces CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=force NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=put NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=enhanced CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=VBN Lemma=enhance NamedEntityTag=O]
+[Text=combat CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=combat NamedEntityTag=O]
+[Text=duty CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=duty NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=peace CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=peace NamedEntityTag=O]
+[Text=talks CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NNS Lemma=talk NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=VBP Lemma=end NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Belarus CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Belarus NamedEntityTag=COUNTRY]
+[Text=border CharacterOffsetBegin=112 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=border NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Ukraine) (HYPH -) (NNP Russia))
+      (NP (NN news) (NN live)))
+    (: :)
+    (S
+      (NP
+        (NP
+          (NP (NNP Russia) (POS 's))
+          (JJ nuclear) (NNS forces))
+        (VP (VBN put)
+          (PP (IN on)
+            (NP (`` ')
+              (NP (VBN enhanced) (NN combat) (NN duty) ('' '))
+              (: -)
+              (PP (IN as)
+                (NP (NN peace) (NNS talks)))))))
+      (VP (VBP end)
+        (PP (IN on)
+          (NP (NNP Belarus) (NN border)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Russia-3)
+compound(Russia-3, Ukraine-1)
+punct(Russia-3, --2)
+compound(live-5, news-4)
+dep(Russia-3, live-5)
+punct(Russia-3, :-6)
+nmod:poss(forces-10, Russia-7)
+case(Russia-7, 's-8)
+amod(forces-10, nuclear-9)
+nsubj(end-22, forces-10)
+acl(forces-10, put-11)
+case(duty-16, on-12)
+punct(duty-16, '-13)
+amod(duty-16, enhanced-14)
+compound(duty-16, combat-15)
+obl:on(put-11, duty-16)
+punct(duty-16, '-17)
+punct(duty-16, --18)
+case(talks-21, as-19)
+compound(talks-21, peace-20)
+nmod:as(duty-16, talks-21)
+parataxis(Russia-3, end-22)
+case(border-25, on-23)
+compound(border-25, Belarus-24)
+obl:on(end-22, border-25)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9997237677278614
+Belarus	COUNTRY	LOCATION:0.7750901160959249

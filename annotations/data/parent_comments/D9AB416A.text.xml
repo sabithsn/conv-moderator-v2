@@ -1,0 +1,68 @@
+Document: ID=D9AB416A.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+Foreign Volunteers - AKA NATO / US special trained troops in disguise as civilian volunteers for Proxy War
+
+Tokens:
+[Text=Foreign CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=foreign NamedEntityTag=O]
+[Text=Volunteers CharacterOffsetBegin=8 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=volunteer NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=AKA CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=AKA NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=/ CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=special CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=trained CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBN Lemma=train NamedEntityTag=O]
+[Text=troops CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=troops NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=in NamedEntityTag=O]
+[Text=disguise CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=VBP Lemma=disguise NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=civilian CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=civilian NamedEntityTag=O]
+[Text=volunteers CharacterOffsetBegin=82 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=volunteer NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Proxy CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Proxy NamedEntityTag=O]
+[Text=War CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=War NamedEntityTag=CAUSE_OF_DEATH]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Foreign) (NNS Volunteers))
+    (HYPH -)
+    (NP
+      (NP (NNP AKA) (NNP NATO) (HYPH /) (NNP US))
+      (SBAR
+        (S
+          (NP (JJ special) (VBN trained) (NNS troops))
+          (ADVP (RB in))
+          (VP (VBP disguise)
+            (PP (IN as)
+              (NP
+                (NP (JJ civilian) (NNS volunteers))
+                (PP (IN for)
+                  (NP (NNP Proxy) (NNP War)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Volunteers-2)
+amod(Volunteers-2, Foreign-1)
+punct(Volunteers-2, --3)
+compound(US-7, AKA-4)
+compound(US-7, NATO-5)
+punct(US-7, /-6)
+dep(Volunteers-2, US-7)
+amod(troops-10, special-8)
+amod(troops-10, trained-9)
+nsubj(disguise-12, troops-10)
+advmod(disguise-12, in-11)
+acl:relcl(US-7, disguise-12)
+case(volunteers-15, as-13)
+amod(volunteers-15, civilian-14)
+obl:as(disguise-12, volunteers-15)
+case(War-18, for-16)
+compound(War-18, Proxy-17)
+nmod:for(volunteers-15, War-18)
+
+Extracted the following NER entity mentions:
+NATO	ORGANIZATION	ORGANIZATION:0.940386165079611
+US	COUNTRY	LOCATION:0.9909758062747539
+War	CAUSE_OF_DEATH	-

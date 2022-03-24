@@ -1,0 +1,100 @@
+Document: ID=FEA3E72C.text (2 sentences, 26 tokens)
+
+Sentence #1 (15 tokens):
+The world didn’t rally around RT censorship until after they published this article.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=rally CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=rally NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=around NamedEntityTag=O]
+[Text=RT CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=rt NamedEntityTag=O]
+[Text=censorship CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=censorship NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=published CharacterOffsetBegin=61 CharacterOffsetEnd=70 PartOfSpeech=VBD Lemma=publish NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=article CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=article NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN world))
+    (VP (VBD did) (RB n’t)
+      (VP (VB rally)
+        (NP (RB around) (NN RT) (NN censorship))
+        (SBAR (IN until) (IN after)
+          (S
+            (NP (PRP they))
+            (VP (VBD published)
+              (NP (DT this) (NN article)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rally-5)
+det(world-2, The-1)
+nsubj(rally-5, world-2)
+aux(rally-5, did-3)
+advmod(rally-5, n’t-4)
+advmod(censorship-8, around-6)
+compound(censorship-8, RT-7)
+obj(rally-5, censorship-8)
+mark(published-12, until-9)
+mark(published-12, after-10)
+nsubj(published-12, they-11)
+advcl:after(rally-5, published-12)
+det(article-14, this-13)
+obj(published-12, article-14)
+punct(rally-5, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+"The first casualty of every war is truth."
+
+Tokens:
+[Text=" CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=casualty CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=casualty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=is CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=truth CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=truth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` ")
+    (NP
+      (NP (DT The) (JJ first) (NN casualty))
+      (PP (IN of)
+        (NP (DT every) (NN war))))
+    (VP (VBZ is)
+      (NP (NN truth)))
+    (. .) ('' ")))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, truth-9)
+punct(truth-9, "-1)
+det(casualty-4, The-2)
+amod(casualty-4, first-3)
+nsubj(truth-9, casualty-4)
+case(war-7, of-5)
+det(war-7, every-6)
+nmod:of(casualty-4, war-7)
+cop(truth-9, is-8)
+punct(truth-9, .-10)
+punct(truth-9, "-11)
+
+Extracted the following NER entity mentions:
+first	ORDINAL	ORDINAL:-1.0
+war	CAUSE_OF_DEATH	-

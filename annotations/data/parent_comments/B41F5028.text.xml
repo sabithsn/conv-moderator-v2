@@ -1,0 +1,67 @@
+Document: ID=B41F5028.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Breastfeeding past 2 years old is perfectly normal and doesn’t deserve the hate it gets
+
+Tokens:
+[Text=Breastfeeding CharacterOffsetBegin=0 CharacterOffsetEnd=13 PartOfSpeech=VBG Lemma=breastfeed NamedEntityTag=O]
+[Text=past CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">past</TIMEX3>]
+[Text=2 CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=CD Lemma=2 NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P2Y">2 years old</TIMEX3>]
+[Text=years CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P2Y">2 years old</TIMEX3>]
+[Text=old CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P2Y">2 years old</TIMEX3>]
+[Text=is CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=perfectly CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=perfectly NamedEntityTag=O]
+[Text=normal CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=normal NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=deserve CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=deserve NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=hate NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=gets CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VBG Breastfeeding)
+        (PP (IN past)
+          (NP (CD 2) (NNS years)))
+        (S
+          (ADJP (JJ old)
+            (SBAR
+              (S
+                (VP
+                  (VP (VBZ is)
+                    (ADJP (RB perfectly) (JJ normal)))
+                  (CC and)
+                  (VP (VBZ does) (RB n’t)
+                    (VP (VB deserve)
+                      (NP (DT the) (NN hate)))))))))))
+    (NP (PRP it))
+    (VP (VBZ gets))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gets-16)
+dep(gets-16, Breastfeeding-1)
+case(years-4, past-2)
+nummod(years-4, 2-3)
+obl:past(Breastfeeding-1, years-4)
+xcomp(Breastfeeding-1, old-5)
+cop(normal-8, is-6)
+advmod(normal-8, perfectly-7)
+ccomp(old-5, normal-8)
+cc(deserve-12, and-9)
+aux(deserve-12, does-10)
+advmod(deserve-12, n’t-11)
+ccomp(old-5, deserve-12)
+conj:and(normal-8, deserve-12)
+det(hate-14, the-13)
+obj(deserve-12, hate-14)
+nsubj(gets-16, it-15)
+
+Extracted the following NER entity mentions:
+past	DATE	DATE:-1.0
+2 years old	DURATION	DURATION:-1.0

@@ -1,0 +1,46 @@
+Document: ID=D351A797.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+CMV: Reddit should ban r/Russia immediately.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Reddit CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=reddit NamedEntityTag=LOCATION]
+[Text=should CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=ban NamedEntityTag=O]
+[Text=r CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=r NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=russia NamedEntityTag=COUNTRY]
+[Text=immediately CharacterOffsetBegin=32 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (NN Reddit))
+      (VP (MD should)
+        (VP (VB ban)
+          (NP (NN r) (HYPH /) (NN Russia))
+          (ADVP (RB immediately)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(ban-5, Reddit-3)
+aux(ban-5, should-4)
+appos(CMV-1, ban-5)
+compound(Russia-8, r-6)
+punct(Russia-8, /-7)
+obj(ban-5, Russia-8)
+advmod(ban-5, immediately-9)
+punct(CMV-1, .-10)
+
+Extracted the following NER entity mentions:
+Reddit	LOCATION	LOCATION:0.9667895608688553
+Russia	COUNTRY	LOCATION:0.9894871478723045

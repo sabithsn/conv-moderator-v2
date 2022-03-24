@@ -1,0 +1,54 @@
+Document: ID=E05EC087.text (2 sentences, 10 tokens)
+
+Sentence #1 (2 tokens):
+Lol!
+
+Tokens:
+[Text=Lol CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=lol NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (UH Lol) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lol-1)
+punct(Lol-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+This person has a legitimate point here.
+
+Tokens:
+[Text=This CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=legitimate CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=legitimate NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN person))
+    (VP (VBZ has)
+      (NP (DT a) (JJ legitimate) (NN point))
+      (ADVP (RB here)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-3)
+det(person-2, This-1)
+nsubj(has-3, person-2)
+det(point-6, a-4)
+amod(point-6, legitimate-5)
+obj(has-3, point-6)
+advmod(has-3, here-7)
+punct(has-3, .-8)
+
+Extracted the following NER entity mentions:

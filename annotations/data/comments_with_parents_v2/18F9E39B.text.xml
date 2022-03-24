@@ -1,0 +1,59 @@
+Document: ID=18F9E39B.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Independent reporting from the Front Lines in Ukraine; tells a different story than MSM
+
+Tokens:
+[Text=Independent CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=independent NamedEntityTag=RELIGION]
+[Text=reporting CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=reporting NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Front CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Front NamedEntityTag=ORGANIZATION]
+[Text=Lines CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=line NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=; CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=tells CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=story CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=story NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=MSM CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=MSM NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Independent) (NN reporting))
+      (PP (IN from)
+        (NP (DT the) (NNP Front) (NNS Lines)))
+      (PP (IN in)
+        (NP (NNP Ukraine))))
+    (: ;)
+    (VP (VBZ tells)
+      (NP (DT a) (JJ different) (NN story))
+      (PP (IN than)
+        (NP (NNP MSM))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tells-10)
+amod(reporting-2, Independent-1)
+nsubj(tells-10, reporting-2)
+case(Lines-6, from-3)
+det(Lines-6, the-4)
+compound(Lines-6, Front-5)
+nmod:from(reporting-2, Lines-6)
+case(Ukraine-8, in-7)
+nmod:in(reporting-2, Ukraine-8)
+punct(tells-10, ;-9)
+det(story-13, a-11)
+amod(story-13, different-12)
+obj(tells-10, story-13)
+case(MSM-15, than-14)
+obl:than(tells-10, MSM-15)
+
+Extracted the following NER entity mentions:
+Independent	RELIGION	-
+Front Lines	ORGANIZATION	ORGANIZATION:0.8523013442798595
+Ukraine	COUNTRY	LOCATION:0.9994929986302541

@@ -1,0 +1,63 @@
+Document: ID=1E28955D.text (2 sentences, 11 tokens)
+
+Sentence #1 (8 tokens):
+Yeah retards are also happier than me.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=retards CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=retard NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=happier CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJR Lemma=happier NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (NP (NNS retards))
+    (VP (VBP are)
+      (ADVP (RB also))
+      (ADJP
+        (ADJP (JJR happier))
+        (PP (IN than)
+          (NP (PRP me)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happier-5)
+discourse(happier-5, Yeah-1)
+nsubj(happier-5, retards-2)
+cop(happier-5, are-3)
+advmod(happier-5, also-4)
+case(me-7, than-6)
+obl:than(happier-5, me-7)
+punct(happier-5, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+So what?
+
+Tokens:
+[Text=So CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB So))
+    (NP (WP what))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, what-2)
+dep(what-2, So-1)
+punct(what-2, ?-3)
+
+Extracted the following NER entity mentions:

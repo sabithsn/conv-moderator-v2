@@ -1,0 +1,87 @@
+Document: ID=404CCB98.text (1 sentences, 25 tokens)
+
+Sentence #1 (25 tokens):
+Are you familiar with [circular reasoning](https://en.wikipedia.org/wiki/Circular_reasoning), and why that isn't a valid way to formulate an argument?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=familiar CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=familiar NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=[ CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=-LRB- Lemma=[ NamedEntityTag=O]
+[Text=circular CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=circular NamedEntityTag=O]
+[Text=reasoning CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=reasoning NamedEntityTag=O]
+[Text=] CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=-RRB- Lemma=] NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=https://en.wikipedia.org/wiki/Circular_reasoning CharacterOffsetBegin=43 CharacterOffsetEnd=91 PartOfSpeech=ADD Lemma=https://en.wikipedia.org/wiki/circular_reasoning NamedEntityTag=URL]
+[Text=) CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=valid CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=valid NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=formulate CharacterOffsetBegin=128 CharacterOffsetEnd=137 PartOfSpeech=VB Lemma=formulate NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=argument CharacterOffsetBegin=141 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=argument NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (ADJP (JJ familiar)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (-LRB- [) (JJ circular) (NN reasoning) (-RRB- ]))
+            (NP (-LRB- -LRB-) (ADD https://en.wikipedia.org/wiki/Circular_reasoning) (-RRB- -RRB-)))
+          (, ,)
+          (CC and)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (DT that))
+              (VP (VBZ is) (RB n't)
+                (NP (DT a) (JJ valid) (NN way)
+                  (S
+                    (VP (TO to)
+                      (VP (VB formulate)
+                        (NP (DT an) (NN argument))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, familiar-3)
+cop(familiar-3, Are-1)
+nsubj(familiar-3, you-2)
+case(reasoning-7, with-4)
+punct(reasoning-7, [-5)
+amod(reasoning-7, circular-6)
+obl:with(familiar-3, reasoning-7)
+nsubj(way-20, reasoning-7)
+punct(reasoning-7, ]-8)
+punct(https://en.wikipedia.org/wiki/Circular_reasoning-10, (-9)
+appos(reasoning-7, https://en.wikipedia.org/wiki/Circular_reasoning-10)
+punct(https://en.wikipedia.org/wiki/Circular_reasoning-10, )-11)
+punct(reasoning-7, ,-12)
+cc(reasoning-7, and-13)
+advmod(way-20, why-14)
+ref(reasoning-7, that-15)
+cop(way-20, is-16)
+advmod(way-20, n't-17)
+det(way-20, a-18)
+amod(way-20, valid-19)
+acl:relcl(reasoning-7, way-20)
+mark(formulate-22, to-21)
+acl:to(way-20, formulate-22)
+det(argument-24, an-23)
+obj(formulate-22, argument-24)
+punct(familiar-3, ?-25)
+
+Extracted the following NER entity mentions:
+https://en.wikipedia.org/wiki/Circular_reasoning	URL	-

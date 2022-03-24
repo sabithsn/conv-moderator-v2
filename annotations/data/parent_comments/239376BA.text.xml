@@ -1,0 +1,61 @@
+Document: ID=239376BA.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+‘Defund Police’ Democrats Spent More than $350,000 on Private Security in 2021
+
+Tokens:
+[Text=‘ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Defund CharacterOffsetBegin=1 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=defund NamedEntityTag=O]
+[Text=Police CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=police NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=Spent CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Spent NamedEntityTag=O]
+[Text=More CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=>$350000.0]
+[Text=350,000 CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=CD Lemma=350,000 NamedEntityTag=MONEY NormalizedNamedEntityTag=>$350000.0]
+[Text=on CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Private CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=private NamedEntityTag=TITLE]
+[Text=Security CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=security NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=2021 CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=CD Lemma=2021 NamedEntityTag=DATE NormalizedNamedEntityTag=2021 Timex=<TIMEX3 tid="t1" type="DATE" value="2021">2021</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (VP (`` ‘) (VB Defund)
+      (NP
+        (NP
+          (NP (NNS Police) (POS ’))
+          (NNPS Democrats) (NNP Spent))
+        (NP
+          (NP
+            (QP (JJR More) (IN than) ($ $) (CD 350,000)))
+          (PP (IN on)
+            (NP (JJ Private) (NN Security)))
+          (PP (IN in)
+            (NP (CD 2021))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Defund-2)
+punct(Defund-2, ‘-1)
+nmod:poss(Spent-6, Police-3)
+case(Police-3, ’-4)
+compound(Spent-6, Democrats-5)
+iobj(Defund-2, Spent-6)
+advmod($-9, More-7)
+fixed(More-7, than-8)
+dep(Spent-6, $-9)
+nummod($-9, 350,000-10)
+case(Security-13, on-11)
+amod(Security-13, Private-12)
+nmod:on($-9, Security-13)
+case(2021-15, in-14)
+nmod:in($-9, 2021-15)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.6320284822929113
+$350,000	MONEY	MONEY:0.9994759146829769
+Private	TITLE	-
+2021	DATE	DATE:0.9766607154135973

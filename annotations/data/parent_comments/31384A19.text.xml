@@ -1,0 +1,355 @@
+Document: ID=31384A19.text (7 sentences, 86 tokens)
+
+Sentence #1 (7 tokens):
+This map is HALF the story.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=map CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=map NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=HALF CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=HALF NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=story CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=story NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN map))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP HALF))
+        (NP (DT the) (NN story))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, HALF-4)
+det(map-2, This-1)
+nsubj(HALF-4, map-2)
+cop(HALF-4, is-3)
+det(story-6, the-5)
+dep(HALF-4, story-6)
+punct(HALF-4, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (18 tokens):
+Senate is 2-per State, HOUSE Representatives are based off of POPULATION of said State.
+
+Tokens:
+[Text=Senate CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Senate NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=- CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=HYPH Lemma=- NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=per CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=per NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=State CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=HOUSE CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=HOUSE NamedEntityTag=O]
+[Text=Representatives CharacterOffsetBegin=57 CharacterOffsetEnd=72 PartOfSpeech=NNPS Lemma=Representatives NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=POPULATION CharacterOffsetBegin=90 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=population NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=State CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=NNP Lemma=State NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Senate))
+      (VP (VBZ is)
+        (NP
+          (NP (CD 2))
+          (HYPH -)
+          (PP (IN per)
+            (NP (NN State))))))
+    (, ,)
+    (NP (NNP HOUSE) (NNPS Representatives))
+    (VP (VBP are)
+      (VP (VBN based)
+        (PRT (IN off))
+        (PP (IN of)
+          (NP
+            (NP (NN POPULATION))
+            (PP (IN of)
+              (S
+                (VP (VBD said)
+                  (NP (NNP State)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, based-11)
+nsubj(2-3, Senate-1)
+cop(2-3, is-2)
+ccomp(based-11, 2-3)
+punct(2-3, --4)
+case(State-6, per-5)
+nmod:per(2-3, State-6)
+punct(based-11, ,-7)
+compound(Representatives-9, HOUSE-8)
+nsubj:pass(based-11, Representatives-9)
+aux:pass(based-11, are-10)
+compound:prt(based-11, off-12)
+case(POPULATION-14, of-13)
+obl:of(based-11, POPULATION-14)
+mark(said-16, of-15)
+acl:of(POPULATION-14, said-16)
+obj(said-16, State-17)
+punct(based-11, .-18)
+
+Extracted the following NER entity mentions:
+Senate	ORGANIZATION	ORGANIZATION:0.9318396493869601
+2-per	NUMBER	NUMBER:-1.0
+
+Sentence #3 (18 tokens):
+Or maybe, the world is a [bigger place ](http://www.picturequotes.com/there-are-more-things-in-heaven-and-earth-horatio-than-are-dreamt-of-in-your-philosophy-quote-18762) than you imagined.
+
+Tokens:
+[Text=Or CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=maybe CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=[ CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=-LRB- Lemma=[ NamedEntityTag=O]
+[Text=bigger CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=JJR Lemma=bigger NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=151 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=] CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=-RRB- Lemma=] NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=http://www.picturequotes.com/there-are-more-things-in-heaven-and-earth-horatio-than-are-dreamt-of-in-your-philosophy-quote-18762 CharacterOffsetBegin=159 CharacterOffsetEnd=287 PartOfSpeech=ADD Lemma=http://www.picturequotes.com/there-are-more-things-in-heaven-and-earth-horatio-than-are-dreamt-of-in-your-philosophy-quote-18762 NamedEntityTag=URL]
+[Text=) CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=imagined CharacterOffsetBegin=298 CharacterOffsetEnd=306 PartOfSpeech=VBD Lemma=imagine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC Or)
+    (ADVP (RB maybe))
+    (, ,)
+    (NP (DT the) (NN world))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a))
+          (-LRB- [)
+          (NP (JJR bigger) (NN place))
+          (-RRB- ]))
+        (-LRB- -LRB-)
+        (NP (ADD http://www.picturequotes.com/there-are-more-things-in-heaven-and-earth-horatio-than-are-dreamt-of-in-your-philosophy-quote-18762))
+        (-RRB- -RRB-))
+      (SBAR (IN than)
+        (S
+          (NP (PRP you))
+          (VP (VBD imagined)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, a-7)
+cc(a-7, Or-1)
+advmod(a-7, maybe-2)
+punct(a-7, ,-3)
+det(world-5, the-4)
+nsubj(a-7, world-5)
+cop(a-7, is-6)
+punct(a-7, [-8)
+amod(place-10, bigger-9)
+dep(a-7, place-10)
+punct(a-7, ]-11)
+punct(a-7, (-12)
+dep(a-7, http://www.picturequotes.com/there-are-more-things-in-heaven-and-earth-horatio-than-are-dreamt-of-in-your-philosophy-quote-18762-13)
+punct(a-7, )-14)
+mark(imagined-17, than-15)
+nsubj(imagined-17, you-16)
+advcl:than(a-7, imagined-17)
+punct(a-7, .-18)
+
+Extracted the following NER entity mentions:
+http://www.picturequotes.com/there-are-more-things-in-heaven-and-earth-horatio-than-are-dreamt-of-in-your-philosophy-quote-18762	URL	-
+
+Sentence #4 (3 tokens):
+(??)
+
+Tokens:
+[Text=( CharacterOffsetBegin=309 CharacterOffsetEnd=310 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=?? CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=. Lemma=?? NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=312 CharacterOffsetEnd=313 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (-LRB- -LRB-) (. ??) (-RRB- -RRB-)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, (-1)
+punct((-1, ??-2)
+punct((-1, )-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=313 CharacterOffsetEnd=314 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (15 tokens):
+“States Rights” give everyone a chance to live as they would like.
+
+Tokens:
+[Text=“ CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=States CharacterOffsetBegin=316 CharacterOffsetEnd=322 PartOfSpeech=NNP Lemma=States NamedEntityTag=O]
+[Text=Rights CharacterOffsetBegin=323 CharacterOffsetEnd=329 PartOfSpeech=NNPS Lemma=Rights NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=329 CharacterOffsetEnd=330 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=336 CharacterOffsetEnd=344 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=345 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=chance CharacterOffsetBegin=347 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=chance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=357 CharacterOffsetEnd=361 PartOfSpeech=VB Lemma=live NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=362 CharacterOffsetEnd=364 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=370 CharacterOffsetEnd=375 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=380 CharacterOffsetEnd=381 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (`` “) (NNP States) (NNPS Rights) ('' ”))
+    (VP (VB give)
+      (NP (NN everyone))
+      (NP (DT a) (NN chance)
+        (S
+          (VP (TO to)
+            (VP (VB live)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP they))
+                  (VP (MD would)
+                    (VP (VB like))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, give-5)
+punct(Rights-3, “-1)
+compound(Rights-3, States-2)
+nsubj(give-5, Rights-3)
+punct(Rights-3, ”-4)
+iobj(give-5, everyone-6)
+det(chance-8, a-7)
+obj(give-5, chance-8)
+mark(live-10, to-9)
+acl:to(chance-8, live-10)
+mark(like-14, as-11)
+nsubj(like-14, they-12)
+aux(like-14, would-13)
+advcl:as(live-10, like-14)
+punct(give-5, .-15)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (24 tokens):
+‘California Standards’ (turned Federal) may not work for others, and Freedom is the right to choose YOUR life.
+
+Tokens:
+[Text=‘ CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=California CharacterOffsetBegin=384 CharacterOffsetEnd=394 PartOfSpeech=NNP Lemma=California NamedEntityTag=STATE_OR_PROVINCE]
+[Text=Standards CharacterOffsetBegin=395 CharacterOffsetEnd=404 PartOfSpeech=NNPS Lemma=Standards NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=407 CharacterOffsetEnd=413 PartOfSpeech=VBN Lemma=turn NamedEntityTag=O]
+[Text=Federal CharacterOffsetBegin=414 CharacterOffsetEnd=421 PartOfSpeech=NNP Lemma=Federal NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=421 CharacterOffsetEnd=422 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=427 CharacterOffsetEnd=430 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=436 CharacterOffsetEnd=439 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=440 CharacterOffsetEnd=446 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=448 CharacterOffsetEnd=451 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Freedom CharacterOffsetBegin=452 CharacterOffsetEnd=459 PartOfSpeech=NNP Lemma=Freedom NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=467 CharacterOffsetEnd=472 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=473 CharacterOffsetEnd=475 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=476 CharacterOffsetEnd=482 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=YOUR CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=492 CharacterOffsetEnd=493 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (`` ‘)
+    (S
+      (NP
+        (NP (NNP California)
+          (NML (NNPS Standards) (POS ’)))
+        (-LRB- -LRB-)
+        (VP (VBN turned)
+          (NP (NNP Federal)))
+        (-RRB- -RRB-))
+      (VP (MD may) (RB not)
+        (VP (VB work)
+          (PP (IN for)
+            (NP (NNS others))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Freedom))
+      (VP (VBZ is)
+        (NP (DT the) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB choose)
+                (NP (PRP$ YOUR) (NN life))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, work-11)
+punct(work-11, ‘-1)
+dep(Standards-3, California-2)
+nsubj(work-11, Standards-3)
+case(Standards-3, ’-4)
+punct(Standards-3, (-5)
+acl(Standards-3, turned-6)
+obj(turned-6, Federal-7)
+punct(Standards-3, )-8)
+aux(work-11, may-9)
+advmod(work-11, not-10)
+case(others-13, for-12)
+obl:for(work-11, others-13)
+punct(work-11, ,-14)
+cc(right-19, and-15)
+nsubj(right-19, Freedom-16)
+cop(right-19, is-17)
+det(right-19, the-18)
+conj:and(work-11, right-19)
+mark(choose-21, to-20)
+acl:to(right-19, choose-21)
+nmod:poss(life-23, YOUR-22)
+obj(choose-21, life-23)
+punct(work-11, .-24)
+
+Extracted the following NER entity mentions:
+California	STATE_OR_PROVINCE	-

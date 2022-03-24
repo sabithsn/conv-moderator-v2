@@ -1,0 +1,48 @@
+Document: ID=C2ED13A0.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+What you said can easily be taken as antisemitism.
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=easily CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=easily NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=antisemitism CharacterOffsetBegin=37 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=antisemitism NamedEntityTag=IDEOLOGY]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP you))
+        (VP (VBD said))))
+    (VP (MD can)
+      (ADVP (RB easily))
+      (VP (VB be)
+        (VP (VBN taken)
+          (PP (IN as)
+            (NP (NN antisemitism))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, taken-7)
+obj(said-3, What-1)
+nsubj(said-3, you-2)
+csubj:pass(taken-7, said-3)
+aux(taken-7, can-4)
+advmod(taken-7, easily-5)
+aux:pass(taken-7, be-6)
+case(antisemitism-9, as-8)
+obl:as(taken-7, antisemitism-9)
+punct(taken-7, .-10)
+
+Extracted the following NER entity mentions:
+antisemitism	IDEOLOGY	-

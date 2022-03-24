@@ -1,0 +1,72 @@
+Document: ID=32327258.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+How does it feel to swim and be thrown into the lake of fire in Christian hell?
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=swim CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=swim NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=thrown CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=throw NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lake CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=lake NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=fire NamedEntityTag=CAUSE_OF_DEATH]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Christian CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Christian NamedEntityTag=RELIGION]
+[Text=hell CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=hell NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP
+        (VP (VB feel)
+          (PP (IN to)
+            (NP (NN swim))))
+        (CC and)
+        (VP (VB be)
+          (VP (VBN thrown)
+            (PP (IN into)
+              (NP
+                (NP (DT the) (NN lake))
+                (PP (IN of)
+                  (NP (NN fire)))))
+            (PP (IN in)
+              (NP (NNP Christian) (NNP hell)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, feel-4)
+advmod(feel-4, How-1)
+aux(feel-4, does-2)
+nsubj(feel-4, it-3)
+nsubj:pass(thrown-9, it-3)
+case(swim-6, to-5)
+obl:to(feel-4, swim-6)
+cc(thrown-9, and-7)
+aux:pass(thrown-9, be-8)
+conj:and(feel-4, thrown-9)
+case(lake-12, into-10)
+det(lake-12, the-11)
+obl:into(thrown-9, lake-12)
+case(fire-14, of-13)
+nmod:of(lake-12, fire-14)
+case(hell-17, in-15)
+compound(hell-17, Christian-16)
+obl:in(thrown-9, hell-17)
+punct(feel-4, ?-18)
+
+Extracted the following NER entity mentions:
+fire	CAUSE_OF_DEATH	-
+Christian	RELIGION	MISC:0.9955886179146562

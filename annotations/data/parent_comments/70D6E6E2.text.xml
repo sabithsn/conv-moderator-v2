@@ -1,0 +1,102 @@
+Document: ID=70D6E6E2.text (2 sentences, 24 tokens)
+
+Sentence #1 (23 tokens):
+It’s not a choice, if you don’t constantly want to live with the fear of dropping dead any second.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=choice CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=choice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=constantly CharacterOffsetBegin=32 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=constantly NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=live NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fear CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=fear NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=dropping CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=VBG Lemma=drop NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ ’s)
+      (NP (RB not) (DT a) (NN choice))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP do) (RB n’t)
+            (ADVP (RB constantly))
+            (VP (VB want)
+              (S
+                (VP (TO to)
+                  (VP (VB live)
+                    (PP (IN with)
+                      (NP
+                        (NP (DT the) (NN fear))
+                        (PP (IN of)
+                          (S
+                            (VP (VBG dropping)
+                              (ADJP (JJ dead)
+                                (NP (DT any) (JJ second))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, choice-5)
+nsubj(choice-5, It-1)
+cop(choice-5, ’s-2)
+advmod(choice-5, not-3)
+det(choice-5, a-4)
+punct(choice-5, ,-6)
+mark(want-12, if-7)
+nsubj(want-12, you-8)
+nsubj:xsubj(live-14, you-8)
+aux(want-12, do-9)
+advmod(want-12, n’t-10)
+advmod(want-12, constantly-11)
+advcl:if(choice-5, want-12)
+mark(live-14, to-13)
+xcomp(want-12, live-14)
+case(fear-17, with-15)
+det(fear-17, the-16)
+obl:with(live-14, fear-17)
+mark(dropping-19, of-18)
+acl:of(fear-17, dropping-19)
+xcomp(dropping-19, dead-20)
+det(second-22, any-21)
+dep(dead-20, second-22)
+punct(choice-5, .-23)
+
+Extracted the following NER entity mentions:
+second	ORDINAL	ORDINAL:-1.0
+
+Sentence #2 (1 tokens):
+https://youtu.be/IDsK07g5ZFg
+
+Tokens:
+[Text=https://youtu.be/IDsK07g5ZFg CharacterOffsetBegin=99 CharacterOffsetEnd=127 PartOfSpeech=ADD Lemma=https://youtu.be/idsk07g5zfg NamedEntityTag=URL]
+
+Constituency parse: 
+(ROOT
+  (NP (ADD https://youtu.be/IDsK07g5ZFg)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, https://youtu.be/IDsK07g5ZFg-1)
+
+Extracted the following NER entity mentions:
+https://youtu.be/IDsK07g5ZFg	URL	-

@@ -1,0 +1,46 @@
+Document: ID=7511D0CD.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+How to destroy a nation in less than 50 years
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=destroy CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=destroy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nation CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=nation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=JJR Lemma=less NamedEntityTag=DURATION NormalizedNamedEntityTag=P50Y Timex=<TIMEX3 mod="LESS_THAN" tid="t1" type="DURATION" value="P50Y">less than 50 years</TIMEX3>]
+[Text=than CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=than NamedEntityTag=DURATION NormalizedNamedEntityTag=P50Y Timex=<TIMEX3 mod="LESS_THAN" tid="t1" type="DURATION" value="P50Y">less than 50 years</TIMEX3>]
+[Text=50 CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=50 NamedEntityTag=DURATION NormalizedNamedEntityTag=P50Y Timex=<TIMEX3 mod="LESS_THAN" tid="t1" type="DURATION" value="P50Y">less than 50 years</TIMEX3>]
+[Text=years CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P50Y Timex=<TIMEX3 mod="LESS_THAN" tid="t1" type="DURATION" value="P50Y">less than 50 years</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHADVP (WRB How))
+    (S
+      (VP (TO to)
+        (VP (VB destroy)
+          (NP
+            (NP (DT a) (NN nation))
+            (PP (IN in)
+              (NP
+                (QP (JJR less) (IN than) (CD 50))
+                (NNS years)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, destroy-3)
+advmod(destroy-3, How-1)
+mark(destroy-3, to-2)
+det(nation-5, a-4)
+obj(destroy-3, nation-5)
+case(years-10, in-6)
+advmod(50-9, less-7)
+fixed(less-7, than-8)
+nummod(years-10, 50-9)
+nmod:in(nation-5, years-10)
+
+Extracted the following NER entity mentions:
+less than 50 years	DURATION	DURATION:-1.0

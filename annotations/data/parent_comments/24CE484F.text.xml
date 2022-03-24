@@ -1,0 +1,88 @@
+Document: ID=24CE484F.text (2 sentences, 19 tokens)
+
+Sentence #1 (15 tokens):
+Spent a 100 dollars to fill my tank, $50 more then usual.
+
+Tokens:
+[Text=Spent CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=spend NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=100 CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=CD Lemma=100 NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=dollars CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fill CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=fill NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=tank CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=tank NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$50.0]
+[Text=50 CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=CD Lemma=50 NamedEntityTag=MONEY NormalizedNamedEntityTag=$50.0]
+[Text=more CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Spent)
+      (NP (DT a) (CD 100) (NNS dollars))
+      (S
+        (VP (TO to)
+          (VP (VB fill)
+            (NP (PRP$ my) (NN tank))
+            (, ,)
+            (PP
+              (ADVP
+                (NP ($ $) (CD 50))
+                (JJR more))
+              (RB then)
+              (ADJP (JJ usual)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Spent-1)
+det(dollars-4, a-2)
+nummod(dollars-4, 100-3)
+obj(Spent-1, dollars-4)
+mark(fill-6, to-5)
+advcl:to(Spent-1, fill-6)
+nmod:poss(tank-8, my-7)
+obj(fill-6, tank-8)
+punct(fill-6, ,-9)
+obl:npmod(more-12, $-10)
+nummod($-10, 50-11)
+advcl(fill-6, more-12)
+dep(more-12, then-13)
+dep(more-12, usual-14)
+punct(Spent-1, .-15)
+
+Extracted the following NER entity mentions:
+100 dollars	MONEY	MONEY:0.976267371530921
+$50	MONEY	MONEY:0.9958212295361211
+
+Sentence #2 (4 tokens):
+Lets go biden!
+
+Tokens:
+[Text=Lets CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=let NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=biden CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=biden NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Lets)
+      (S
+        (VP (VB go)
+          (ADJP (JJ biden)))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Lets-1)
+ccomp(Lets-1, go-2)
+xcomp(go-2, biden-3)
+punct(Lets-1, !-4)
+
+Extracted the following NER entity mentions:

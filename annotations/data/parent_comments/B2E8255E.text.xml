@@ -1,0 +1,386 @@
+Document: ID=B2E8255E.text (5 sentences, 95 tokens)
+
+Sentence #1 (8 tokens):
+You think Trump is better than Biden.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (NNP Trump))
+          (VP (VBZ is)
+            (ADJP
+              (ADJP (JJR better))
+              (PP (IN than)
+                (NP (NNP Biden))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, You-1)
+nsubj(better-5, Trump-3)
+cop(better-5, is-4)
+ccomp(think-2, better-5)
+case(Biden-7, than-6)
+obl:than(better-5, Biden-7)
+punct(think-2, .-8)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9440505076459268
+Biden	PERSON	PERSON:0.9927716346709412
+
+Sentence #2 (16 tokens):
+That's all I really need to know about how "educated" you are.
+
+Tokens:
+[Text=That CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=educated CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=VBN Lemma=educate NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT all))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (ADVP (RB really))
+            (VP (VBP need)
+              (S
+                (VP (TO to)
+                  (VP (VB know)
+                    (PP (IN about)
+                      (SBAR
+                        (WHADVP (WRB how))
+                        (S (`` ")
+                          (S
+                            (VP (VBN educated)))
+                          ('' ")
+                          (NP (PRP you))
+                          (VP (VBP are)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, all-3)
+nsubj(all-3, That-1)
+cop(all-3, 's-2)
+nsubj(need-6, I-4)
+nsubj:xsubj(know-8, I-4)
+advmod(need-6, really-5)
+acl:relcl(all-3, need-6)
+mark(know-8, to-7)
+xcomp(need-6, know-8)
+mark(are-15, about-9)
+advmod(are-15, how-10)
+punct(are-15, "-11)
+dep(are-15, educated-12)
+punct(are-15, "-13)
+nsubj(are-15, you-14)
+advcl:about(know-8, are-15)
+punct(all-3, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (10 tokens):
+And you pay $100k in taxes a year?
+
+Tokens:
+[Text=And CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=pay CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=VBP Lemma=pay NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=100k CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=CD Lemma=100k NamedEntityTag=MONEY NormalizedNamedEntityTag=$100.0]
+[Text=in CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=taxes CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=tax NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">a year</TIMEX3>]
+[Text=year CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">a year</TIMEX3>]
+[Text=? CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP you))
+    (VP (VBP pay)
+      (NP
+        (NP ($ $) (CD 100k))
+        (PP (IN in)
+          (NP
+            (NP (NNS taxes))
+            (NP (DT a) (NN year))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pay-3)
+cc(pay-3, And-1)
+nsubj(pay-3, you-2)
+obj(pay-3, $-4)
+nummod($-4, 100k-5)
+case(taxes-7, in-6)
+nmod:in($-4, taxes-7)
+det(year-9, a-8)
+dep(taxes-7, year-9)
+punct(pay-3, ?-10)
+
+Extracted the following NER entity mentions:
+$100k	MONEY	MONEY:0.9840136637794255
+a year	DURATION	DURATION:-1.0
+
+Sentence #4 (7 tokens):
+So you're a rich moron.
+
+Tokens:
+[Text=So CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rich CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=JJ Lemma=rich NamedEntityTag=O]
+[Text=moron CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=moron NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP (PRP you))
+    (VP (VBP 're)
+      (NP (DT a) (JJ rich) (NN moron)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, moron-6)
+advmod(moron-6, So-1)
+nsubj(moron-6, you-2)
+cop(moron-6, 're-3)
+det(moron-6, a-4)
+amod(moron-6, rich-5)
+punct(moron-6, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (54 tokens):
+I don't watch CNN and Biden has his faults, but to say he's the worst president ever after the train wreck of the Trump administration and the fucking COUP that he attempted to thwart the will of the people... well, that's why I say you're braindead.
+
+Tokens:
+[Text=I CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=watch CharacterOffsetBegin=168 CharacterOffsetEnd=173 PartOfSpeech=VB Lemma=watch NamedEntityTag=O]
+[Text=CNN CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=NNP Lemma=CNN NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=faults CharacterOffsetBegin=196 CharacterOffsetEnd=202 PartOfSpeech=NNS Lemma=fault NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=worst CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=JJS Lemma=worst NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=230 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=ever CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=train CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=train NamedEntityTag=CRIMINAL_CHARGE]
+[Text=wreck CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=wreck NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=267 CharacterOffsetEnd=269 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=administration CharacterOffsetBegin=280 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=administration NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=303 CharacterOffsetEnd=310 PartOfSpeech=JJ Lemma=fucking NamedEntityTag=O]
+[Text=COUP CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=coup NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=attempted CharacterOffsetBegin=324 CharacterOffsetEnd=333 PartOfSpeech=VBD Lemma=attempt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=thwart CharacterOffsetBegin=337 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=thwart NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=will NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=353 CharacterOffsetEnd=355 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=356 CharacterOffsetEnd=359 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=360 CharacterOffsetEnd=366 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=UH Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=374 CharacterOffsetEnd=375 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=380 CharacterOffsetEnd=382 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=387 CharacterOffsetEnd=388 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=braindead CharacterOffsetBegin=400 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=braindead NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB watch)
+          (SBAR
+            (S
+              (NP (NNP CNN)
+                (CC and)
+                (NNP Biden))
+              (VP (VBZ has)
+                (NP (PRP$ his) (NNS faults))))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBZ 's)
+                  (NP
+                    (NP (DT the) (JJS worst) (NN president))
+                    (UCP
+                      (ADVP (RB ever))
+                      (PP (IN after)
+                        (NP
+                          (NP (DT the) (NN train) (NN wreck))
+                          (PP (IN of)
+                            (NP (DT the) (NNP Trump) (NN administration)))))
+                      (CC and)
+                      (NP
+                        (NP (DT the) (JJ fucking) (NN COUP))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (NP (PRP he))
+                            (VP (VBD attempted)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB thwart)
+                                    (NP
+                                      (NP (DT the) (NN will))
+                                      (PP (IN of)
+                                        (NP (DT the) (NNS people)))))))))))))))))))
+      (, ...)
+      (INTJ (UH well))
+      (, ,)
+      (NP (DT that))
+      (VP (VBZ 's)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP I))
+            (VP (VBP say)
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP 're)
+                    (NP (NN braindead))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, watch-4)
+nsubj(watch-4, I-1)
+aux(watch-4, do-2)
+advmod(watch-4, n't-3)
+nsubj(has-8, CNN-5)
+cc(Biden-7, and-6)
+conj:and(CNN-5, Biden-7)
+nsubj(has-8, Biden-7)
+ccomp(watch-4, has-8)
+nmod:poss(faults-10, his-9)
+obj(has-8, faults-10)
+punct(watch-4, ,-11)
+cc('s-47, but-12)
+mark(say-14, to-13)
+advcl:to('s-47, say-14)
+nsubj(president-19, he-15)
+cop(president-19, 's-16)
+det(president-19, the-17)
+amod(president-19, worst-18)
+ccomp(say-14, president-19)
+advmod(president-19, ever-20)
+case(wreck-24, after-21)
+det(wreck-24, the-22)
+compound(wreck-24, train-23)
+obl:after(ever-20, wreck-24)
+case(administration-28, of-25)
+det(administration-28, the-26)
+compound(administration-28, Trump-27)
+nmod:of(wreck-24, administration-28)
+cc(COUP-32, and-29)
+det(COUP-32, the-30)
+amod(COUP-32, fucking-31)
+advmod(president-19, COUP-32)
+conj:and(ever-20, COUP-32)
+obj(attempted-35, COUP-32)
+nsubj:xsubj(thwart-37, COUP-32)
+ref(COUP-32, that-33)
+nsubj(attempted-35, he-34)
+acl:relcl(COUP-32, attempted-35)
+mark(thwart-37, to-36)
+xcomp(attempted-35, thwart-37)
+det(will-39, the-38)
+obj(thwart-37, will-39)
+case(people-42, of-40)
+det(people-42, the-41)
+nmod:of(will-39, people-42)
+punct('s-47, ...-43)
+discourse('s-47, well-44)
+punct('s-47, ,-45)
+nsubj('s-47, that-46)
+conj:but(watch-4, 's-47)
+advmod(say-50, why-48)
+nsubj(say-50, I-49)
+advcl('s-47, say-50)
+nsubj(braindead-53, you-51)
+cop(braindead-53, 're-52)
+ccomp(say-50, braindead-53)
+punct(watch-4, .-54)
+
+Extracted the following NER entity mentions:
+CNN	ORGANIZATION	ORGANIZATION:0.9849616747663453
+Biden	PERSON	PERSON:0.9963290245059805
+president	TITLE	-
+train	CRIMINAL_CHARGE	-
+Trump	PERSON	PERSON:0.7188829124158647
+his	PERSON	-
+he	PERSON	-
+he	PERSON	-

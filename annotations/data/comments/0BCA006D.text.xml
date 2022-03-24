@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>0BCA006D.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>School</word>
+            <lemma>School</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>buses</word>
+            <lemma>bus</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>designed</word>
+            <lemma>design</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>kill</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>kids</word>
+            <lemma>kid</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>upon</word>
+            <lemma>upon</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>crashing</word>
+            <lemma>crash</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP School) (NNS buses)) (VP (VBP are) (VP (VBN designed) (S (VP (TO to) (VP (VB kill) (NP (NNS kids)) (PP (IN upon) (S (VP (VBG crashing))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">buses</governor>
+            <dependent idx="1">School</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="2">buses</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">kill</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">kill</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">crashing</governor>
+            <dependent idx="8">upon</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="6">kill</governor>
+            <dependent idx="9">crashing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">buses</governor>
+            <dependent idx="1">School</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="2">buses</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">kill</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">kill</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">crashing</governor>
+            <dependent idx="8">upon</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="6">kill</governor>
+            <dependent idx="9">crashing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">buses</governor>
+            <dependent idx="1">School</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="2">buses</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">kill</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">kill</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">crashing</governor>
+            <dependent idx="8">upon</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="6">kill</governor>
+            <dependent idx="9">crashing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">buses</governor>
+            <dependent idx="1">School</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="2">buses</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="6">kill</governor>
+            <dependent idx="2">buses</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">kill</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">kill</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">crashing</governor>
+            <dependent idx="8">upon</dependent>
+          </dep>
+          <dep type="advcl:upon">
+            <governor idx="6">kill</governor>
+            <dependent idx="9">crashing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">buses</governor>
+            <dependent idx="1">School</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="2">buses</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="6">kill</governor>
+            <dependent idx="2">buses</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">kill</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">kill</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">kill</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">crashing</governor>
+            <dependent idx="8">upon</dependent>
+          </dep>
+          <dep type="advcl:upon">
+            <governor idx="6">kill</governor>
+            <dependent idx="9">crashing</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,123 @@
+Document: ID=35E29CF4.text (4 sentences, 23 tokens)
+
+Sentence #1 (4 tokens):
+relative to Trump?
+
+Tokens:
+[Text=relative CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=relative NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (ADJP (JJ relative)
+    (PP (IN to)
+      (NP (NNP Trump)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, relative-1)
+case(Trump-3, to-2)
+obl:to(relative-1, Trump-3)
+punct(relative-1, ?-4)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9041679105320971
+
+Sentence #2 (4 tokens):
+Yeah he is.
+
+Tokens:
+[Text=Yeah CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=UH Lemma=yeah NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (NP (PRP he))
+    (VP (VBZ is))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+discourse(is-3, Yeah-1)
+nsubj(is-3, he-2)
+punct(is-3, .-4)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+
+Sentence #3 (10 tokens):
+On his own or by his own campaign promises.
+
+Tokens:
+[Text=On CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=campaign CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=campaign NamedEntityTag=O]
+[Text=promises CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=promise NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (PP
+    (PP (IN On)
+      (NP (PRP$ his) (JJ own)))
+    (CC or)
+    (PP (IN by)
+      (NP (PRP$ his) (JJ own) (NN campaign) (NNS promises)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, own-3)
+case(own-3, On-1)
+nmod:poss(own-3, his-2)
+cc(promises-9, or-4)
+case(promises-9, by-5)
+nmod:poss(promises-9, his-6)
+amod(promises-9, own-7)
+compound(promises-9, campaign-8)
+conj:or(own-3, promises-9)
+punct(own-3, .-10)
+
+Extracted the following NER entity mentions:
+his	PERSON	-
+his	PERSON	-
+
+Sentence #4 (5 tokens):
+No not at all.
+
+Tokens:
+[Text=No CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH No))
+    (ADVP (RB not) (RB at) (RB all))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, No-1)
+advmod(all-4, not-2)
+case(all-4, at-3)
+obl:at(No-1, all-4)
+punct(No-1, .-5)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,49 @@
+Document: ID=0F0E71F8.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Denton, TX, is lovely this time of year
+
+Tokens:
+[Text=Denton CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Denton NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=TX CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=TX NamedEntityTag=STATE_OR_PROVINCE]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">year</TIMEX3>]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Denton))
+      (, ,)
+      (NP (NNP TX))
+      (, ,))
+    (VP (VBZ is)
+      (ADJP (JJ lovely)
+        (NP
+          (NP (DT this) (NN time))
+          (PP (IN of)
+            (NP (NN year))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lovely-6)
+nsubj(lovely-6, Denton-1)
+punct(Denton-1, ,-2)
+appos(Denton-1, TX-3)
+punct(Denton-1, ,-4)
+cop(lovely-6, is-5)
+det(time-8, this-7)
+dep(lovely-6, time-8)
+case(year-10, of-9)
+nmod:of(time-8, year-10)
+
+Extracted the following NER entity mentions:
+Denton	PERSON	PERSON:0.9191844897588101
+TX	STATE_OR_PROVINCE	LOCATION:0.9947971349140351
+year	DURATION	DURATION:-1.0

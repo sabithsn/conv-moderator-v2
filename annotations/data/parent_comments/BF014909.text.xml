@@ -1,0 +1,55 @@
+Document: ID=BF014909.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Next Week on Tucker: My Secret Life as a Russian Agent.
+
+Tokens:
+[Text=Next CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Next NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1W OFFSET P1W Timex=<TIMEX3 alt_value="THIS P1W OFFSET P1W" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Next Week</TIMEX3>]
+[Text=Week CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Week NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1W OFFSET P1W Timex=<TIMEX3 alt_value="THIS P1W OFFSET P1W" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Next Week</TIMEX3>]
+[Text=on CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=My CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Secret CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=secret NamedEntityTag=O]
+[Text=Life CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=Agent CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Agent NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Next) (NNP Week))
+      (PP (IN on)
+        (NP (NNP Tucker))))
+    (: :)
+    (NP
+      (NP (PRP$ My) (JJ Secret) (NN Life))
+      (PP (IN as)
+        (NP (DT a) (JJ Russian) (NNP Agent))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Week-2)
+compound(Week-2, Next-1)
+case(Tucker-4, on-3)
+nmod:on(Week-2, Tucker-4)
+punct(Week-2, :-5)
+nmod:poss(Life-8, My-6)
+amod(Life-8, Secret-7)
+dep(Week-2, Life-8)
+case(Agent-12, as-9)
+det(Agent-12, a-10)
+amod(Agent-12, Russian-11)
+nmod:as(Life-8, Agent-12)
+punct(Week-2, .-13)
+
+Extracted the following NER entity mentions:
+Next Week	DATE	DATE:-1.0
+Tucker	PERSON	PERSON:0.6943209087565941
+Russian	NATIONALITY	MISC:0.7776257727559844
+Agent	MISC	MISC:0.7776257727559844

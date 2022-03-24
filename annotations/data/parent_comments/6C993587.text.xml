@@ -1,0 +1,107 @@
+Document: ID=6C993587.text (2 sentences, 24 tokens)
+
+Sentence #1 (17 tokens):
+I'm a woman and I definitely don't think that or know anyone who does.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=definitely CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (NP (DT a) (NN woman))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (ADVP (RB definitely))
+      (VP (VBP do) (RB n't)
+        (VP
+          (VP (VB think)
+            (NP (DT that)))
+          (CC or)
+          (VP (VB know)
+            (NP
+              (NP (NN anyone))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ does)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, woman-4)
+nsubj(woman-4, I-1)
+cop(woman-4, 'm-2)
+det(woman-4, a-3)
+cc(think-10, and-5)
+nsubj(think-10, I-6)
+nsubj(know-13, I-6)
+advmod(think-10, definitely-7)
+aux(think-10, do-8)
+advmod(think-10, n't-9)
+conj:and(woman-4, think-10)
+obj(think-10, that-11)
+cc(know-13, or-12)
+conj:and(woman-4, know-13)
+conj:or(think-10, know-13)
+obj(know-13, anyone-14)
+nsubj(does-16, anyone-14)
+ref(anyone-14, who-15)
+acl:relcl(anyone-14, does-16)
+punct(woman-4, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+Where have you gotten this idea?
+
+Tokens:
+[Text=Where CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=gotten CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBP have)
+      (NP (PRP you))
+      (VP (VBN gotten)
+        (NP (DT this) (NN idea))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gotten-4)
+advmod(gotten-4, Where-1)
+aux(gotten-4, have-2)
+nsubj(gotten-4, you-3)
+det(idea-6, this-5)
+obj(gotten-4, idea-6)
+punct(gotten-4, ?-7)
+
+Extracted the following NER entity mentions:

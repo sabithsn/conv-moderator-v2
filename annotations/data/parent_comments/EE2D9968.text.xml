@@ -1,0 +1,173 @@
+Document: ID=EE2D9968.text (3 sentences, 42 tokens)
+
+Sentence #1 (11 tokens):
+He's always been the guy that challenges the man.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=challenges CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=challenge NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ 's)
+      (ADVP (RB always))
+      (VP (VBN been)
+        (NP
+          (NP (DT the) (NN guy))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ challenges)
+                (NP (DT the) (NN man))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, guy-6)
+nsubj:pass(guy-6, He-1)
+aux:pass(guy-6, 's-2)
+advmod(guy-6, always-3)
+cop(guy-6, been-4)
+det(guy-6, the-5)
+nsubj(challenges-8, guy-6)
+ref(guy-6, that-7)
+acl:relcl(guy-6, challenges-8)
+det(man-10, the-9)
+obj(challenges-8, man-10)
+punct(guy-6, .-11)
+
+Extracted the following NER entity mentions:
+He	PERSON	-
+
+Sentence #2 (14 tokens):
+Now he's become such a shill for Big Government and Big Pharma.
+
+Tokens:
+[Text=Now CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=he CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=become CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=become NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shill CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=shill NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Big CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=Government CharacterOffsetBegin=87 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=government NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Big CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=big NamedEntityTag=ORGANIZATION]
+[Text=Pharma CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Pharma NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP (PRP he))
+    (VP (VBZ 's)
+      (VP (VBN become)
+        (NP (PDT such) (DT a) (NN shill))
+        (PP (IN for)
+          (NP
+            (NP (JJ Big) (NN Government))
+            (CC and)
+            (NP (JJ Big) (NNP Pharma))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, become-4)
+advmod(become-4, Now-1)
+nsubj:pass(become-4, he-2)
+aux:pass(become-4, 's-3)
+det:predet(shill-7, such-5)
+det(shill-7, a-6)
+xcomp(become-4, shill-7)
+case(Government-10, for-8)
+amod(Government-10, Big-9)
+obl:for(become-4, Government-10)
+cc(Pharma-13, and-11)
+amod(Pharma-13, Big-12)
+obl:for(become-4, Pharma-13)
+conj:and(Government-10, Pharma-13)
+punct(become-4, .-14)
+
+Extracted the following NER entity mentions:
+Now	DATE	DATE:-1.0
+Big Pharma	ORGANIZATION	ORGANIZATION:0.9120760797724538
+he	PERSON	-
+
+Sentence #3 (17 tokens):
+And people have been asking over the past two years, what happened to Howard Stern?
+
+Tokens:
+[Text=And CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=asking CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=VBG Lemma=ask NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=the NamedEntityTag=DURATION NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t2" endPoint="t0" tid="t3" type="DURATION" value="P2Y">the past two years</TIMEX3>]
+[Text=past CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=JJ Lemma=past NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t2" endPoint="t0" tid="t3" type="DURATION" value="P2Y">the past two years</TIMEX3>]
+[Text=two CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=CD Lemma=two NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t2" endPoint="t0" tid="t3" type="DURATION" value="P2Y">the past two years</TIMEX3>]
+[Text=years CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=P2Y Timex=<TIMEX3 beginPoint="t2" endPoint="t0" tid="t3" type="DURATION" value="P2Y">the past two years</TIMEX3>]
+[Text=, CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=happened CharacterOffsetBegin=172 CharacterOffsetEnd=180 PartOfSpeech=VBD Lemma=happen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Howard CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Howard NamedEntityTag=PERSON]
+[Text=Stern CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=NNP Lemma=Stern NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (S (CC And)
+      (NP (NNS people))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBG asking)
+            (PP (IN over)
+              (NP (DT the) (JJ past) (CD two) (NNS years)))))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ
+      (VP (VBD happened)
+        (PP (IN to)
+          (NP (NNP Howard) (NNP Stern)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happened-13)
+cc(asking-5, And-1)
+nsubj(asking-5, people-2)
+aux(asking-5, have-3)
+aux(asking-5, been-4)
+dep(happened-13, asking-5)
+case(years-10, over-6)
+det(years-10, the-7)
+amod(years-10, past-8)
+nummod(years-10, two-9)
+obl:over(asking-5, years-10)
+punct(happened-13, ,-11)
+nsubj(happened-13, what-12)
+case(Stern-16, to-14)
+compound(Stern-16, Howard-15)
+obl:to(happened-13, Stern-16)
+punct(happened-13, ?-17)
+
+Extracted the following NER entity mentions:
+the	DURATION	DURATION:-1.0
+past two years	DATE	DATE:0.5440579361445607
+Howard Stern	PERSON	PERSON:0.9988739013428235

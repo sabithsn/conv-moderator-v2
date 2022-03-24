@@ -1,0 +1,129 @@
+Document: ID=50C40C7F.text (2 sentences, 32 tokens)
+
+Sentence #1 (19 tokens):
+The Biden’s are above the law, only difference is gas prices are $5/gallon.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=’s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=difference CharacterOffsetBegin=36 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=5 CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=CD Lemma=5 NamedEntityTag=MONEY NormalizedNamedEntityTag=$5.0]
+[Text=/ CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=SYM Lemma=/ NamedEntityTag=O]
+[Text=gallon CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=gallon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Biden) (POS ’s))
+      (VP (VBP are)
+        (PP (IN above)
+          (NP (DT the) (NN law)))))
+    (, ,)
+    (NP (RB only) (NN difference))
+    (VP (VBZ is)
+      (NP
+        (NP (NN gas) (NNS prices))
+        (SBAR
+          (S
+            (VP (VBP are)
+              (NP
+                (NP ($ $) (CD 5))
+                (PP (SYM /)
+                  (NP (NN gallon)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, prices-13)
+det(Biden-2, The-1)
+nsubj(law-7, Biden-2)
+case(Biden-2, ’s-3)
+cop(law-7, are-4)
+case(law-7, above-5)
+det(law-7, the-6)
+ccomp(prices-13, law-7)
+punct(prices-13, ,-8)
+advmod(difference-10, only-9)
+nsubj(prices-13, difference-10)
+cop(prices-13, is-11)
+compound(prices-13, gas-12)
+cop($-15, are-14)
+acl:relcl(prices-13, $-15)
+nummod($-15, 5-16)
+dep(gallon-18, /-17)
+nmod($-15, gallon-18)
+punct(prices-13, .-19)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.9886546973300159
+$5	MONEY	MONEY:0.9615475115112886
+
+Sentence #2 (13 tokens):
+I would rather have Trump and gas at $2.50 a gallon?
+
+Tokens:
+[Text=I CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=$ CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5]
+[Text=2.50 CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=CD Lemma=2.50 NamedEntityTag=MONEY NormalizedNamedEntityTag=$2.5]
+[Text=a CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=gallon CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=gallon NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (ADVP (RB rather))
+      (VP (VB have)
+        (NP
+          (NP (NNP Trump))
+          (CC and)
+          (NP (NN gas)))
+        (PP (IN at)
+          (NP
+            (NP ($ $) (CD 2.50))
+            (NP (DT a) (NN gallon))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+nsubj(have-4, I-1)
+aux(have-4, would-2)
+advmod(have-4, rather-3)
+obj(have-4, Trump-5)
+cc(gas-7, and-6)
+obj(have-4, gas-7)
+conj:and(Trump-5, gas-7)
+case($-9, at-8)
+obl:at(have-4, $-9)
+nummod($-9, 2.50-10)
+det(gallon-12, a-11)
+dep($-9, gallon-12)
+punct(have-4, ?-13)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9692034695969035
+$2.50	MONEY	MONEY:0.999362866042536

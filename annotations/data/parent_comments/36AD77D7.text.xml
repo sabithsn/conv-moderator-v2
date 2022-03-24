@@ -1,0 +1,42 @@
+Document: ID=36AD77D7.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Nope, not getting away with reflection nazi.
+
+Tokens:
+[Text=Nope CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=UH Lemma=nope NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=reflection CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=reflection NamedEntityTag=O]
+[Text=nazi CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=nazi NamedEntityTag=IDEOLOGY]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Nope))
+    (, ,)
+    (S
+      (VP (RB not) (VBG getting)
+        (ADVP (RB away)
+          (PP (IN with)
+            (NP (NN reflection) (NN nazi))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, getting-4)
+discourse(getting-4, Nope-1)
+punct(getting-4, ,-2)
+advmod(getting-4, not-3)
+advmod(getting-4, away-5)
+case(nazi-8, with-6)
+compound(nazi-8, reflection-7)
+obl:with(away-5, nazi-8)
+punct(getting-4, .-9)
+
+Extracted the following NER entity mentions:
+nazi	IDEOLOGY	-

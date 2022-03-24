@@ -1,0 +1,57 @@
+Document: ID=E2702E44.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+ELI5 What exactly does Russia have to gain from invading Ukraine?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=have CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=gain CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=gain NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=invading CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=invade NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=? CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (NP (NN ELI5))
+    (WHNP
+      (WHNP (WDT What))
+      (ADVP (RB exactly)))
+    (SQ (VBZ does)
+      (NP (NNP Russia))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB gain)
+              (PP (IN from)
+                (S
+                  (VP (VBG invading)
+                    (NP (NNP Ukraine))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-6)
+dep(have-6, ELI5-1)
+dep(have-6, What-2)
+advmod(What-2, exactly-3)
+aux(have-6, does-4)
+nsubj(have-6, Russia-5)
+nsubj:xsubj(gain-8, Russia-5)
+mark(gain-8, to-7)
+xcomp(have-6, gain-8)
+mark(invading-10, from-9)
+advcl:from(gain-8, invading-10)
+obj(invading-10, Ukraine-11)
+punct(have-6, ?-12)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9987473773908822
+Ukraine	COUNTRY	LOCATION:0.9993511757948179

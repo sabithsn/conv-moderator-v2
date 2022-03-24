@@ -1,0 +1,105 @@
+Document: ID=8D2415AC.text (2 sentences, 26 tokens)
+
+Sentence #1 (7 tokens):
+YTA and your boss is too.
+
+Tokens:
+[Text=YTA CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=YTA NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=boss CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=boss NamedEntityTag=TITLE]
+[Text=is CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP YTA))
+      (CC and)
+      (NP (PRP$ your) (NN boss)))
+    (VP (VBZ is)
+      (ADVP (RB too)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-5)
+nsubj(is-5, YTA-1)
+cc(boss-4, and-2)
+nmod:poss(boss-4, your-3)
+conj:and(YTA-1, boss-4)
+nsubj(is-5, boss-4)
+advmod(is-5, too-6)
+punct(is-5, .-7)
+
+Extracted the following NER entity mentions:
+boss	TITLE	-
+
+Sentence #2 (19 tokens):
+This also smells like a future pending lawsuit based on your boss having mandatory “prayer” meetings.
+
+Tokens:
+[Text=This CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=smells CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=smell NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=future CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=future NamedEntityTag=DATE NormalizedNamedEntityTag=FUTURE_REF Timex=<TIMEX3 tid="t1" type="DATE" value="FUTURE_REF">future</TIMEX3>]
+[Text=pending CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=VBG Lemma=pend NamedEntityTag=O]
+[Text=lawsuit CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=lawsuit NamedEntityTag=O]
+[Text=based CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=VBN Lemma=base NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=boss CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=boss NamedEntityTag=TITLE]
+[Text=having CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=mandatory CharacterOffsetBegin=99 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=mandatory NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=prayer CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=prayer NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=meetings CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=meeting NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (ADVP (RB also))
+    (VP (VBZ smells)
+      (PP (IN like)
+        (NP
+          (NP (DT a) (JJ future) (VBG pending) (NN lawsuit))
+          (PP (VBN based)
+            (PP (IN on)
+              (NP
+                (NP (PRP$ your) (NN boss))
+                (VP (VBG having)
+                  (NP (JJ mandatory) (`` “) (NN prayer) ('' ”) (NNS meetings)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, smells-3)
+nsubj(smells-3, This-1)
+advmod(smells-3, also-2)
+case(lawsuit-8, like-4)
+det(lawsuit-8, a-5)
+amod(lawsuit-8, future-6)
+amod(lawsuit-8, pending-7)
+obl:like(smells-3, lawsuit-8)
+case(boss-12, based-9)
+fixed(based-9, on-10)
+nmod:poss(boss-12, your-11)
+nmod:based_on(lawsuit-8, boss-12)
+acl(boss-12, having-13)
+amod(meetings-18, mandatory-14)
+punct(meetings-18, “-15)
+compound(meetings-18, prayer-16)
+punct(meetings-18, ”-17)
+obj(having-13, meetings-18)
+punct(smells-3, .-19)
+
+Extracted the following NER entity mentions:
+future	DATE	DATE:-1.0
+boss	TITLE	-

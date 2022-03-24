@@ -1,0 +1,68 @@
+Document: ID=922A3D63.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+US deplores cluster bombs and then retracts it because the US opposes a ban of cluster bombs
+
+Tokens:
+[Text=US CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=deplores CharacterOffsetBegin=3 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=deplore NamedEntityTag=O]
+[Text=cluster CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=cluster NamedEntityTag=O]
+[Text=bombs CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=bomb NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=retracts CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=VBZ Lemma=retract NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=opposes CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=VBZ Lemma=oppose NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=ban NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=cluster CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=cluster NamedEntityTag=O]
+[Text=bombs CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=bomb NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP US))
+    (VP
+      (VP (VBZ deplores)
+        (NP (NN cluster) (NNS bombs)))
+      (CC and)
+      (ADVP (RB then))
+      (VP (VBZ retracts)
+        (NP (PRP it))
+        (SBAR (IN because)
+          (S
+            (NP (DT the) (NNP US))
+            (VP (VBZ opposes)
+              (NP
+                (NP (DT a) (NN ban))
+                (PP (IN of)
+                  (NP (NN cluster) (NNS bombs)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, deplores-2)
+nsubj(deplores-2, US-1)
+nsubj(retracts-7, US-1)
+compound(bombs-4, cluster-3)
+obj(deplores-2, bombs-4)
+cc(retracts-7, and-5)
+advmod(retracts-7, then-6)
+conj:and(deplores-2, retracts-7)
+obj(retracts-7, it-8)
+mark(opposes-12, because-9)
+det(US-11, the-10)
+nsubj(opposes-12, US-11)
+advcl:because(retracts-7, opposes-12)
+det(ban-14, a-13)
+obj(opposes-12, ban-14)
+case(bombs-17, of-15)
+compound(bombs-17, cluster-16)
+nmod:of(ban-14, bombs-17)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9961613896084904
+US	COUNTRY	LOCATION:0.9834031949734853

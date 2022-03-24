@@ -1,0 +1,80 @@
+Document: ID=939401B0.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Childless Ottawa Mayor: ‘Disturbing’ to See Kids in ‘Bouncy Castles’ Having ‘Fun’ at Protest
+
+Tokens:
+[Text=Childless CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Childless NamedEntityTag=O]
+[Text=Ottawa CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Ottawa NamedEntityTag=CITY]
+[Text=Mayor CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Mayor NamedEntityTag=TITLE]
+[Text=: CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Disturbing CharacterOffsetBegin=25 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=disturbing NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=See CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=Kids CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Bouncy CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Bouncy NamedEntityTag=O]
+[Text=Castles CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NNPS Lemma=Castles NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=Having CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Fun CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Fun NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Protest CharacterOffsetBegin=85 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Protest NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Childless) (NNP Ottawa) (NNP Mayor))
+    (: :)
+    (S
+      (ADJP
+        (ADJP (`` ‘) (JJ Disturbing) ('' ’))
+        (S
+          (VP (TO to)
+            (VP (VB See)
+              (NP
+                (NP (NNS Kids))
+                (PP (IN in) (`` ‘)
+                  (NP
+                    (NP (NNP Bouncy) (NNPS Castles) (POS ’))
+                    (SBAR
+                      (S
+                        (VP (VBG Having)
+                          (NP (`` ‘)
+                            (NP (NNP Fun))
+                            ('' ’)
+                            (PP (IN at)
+                              (NP (NNP Protest)))))))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Mayor-3)
+compound(Mayor-3, Childless-1)
+compound(Mayor-3, Ottawa-2)
+punct(Mayor-3, :-4)
+punct(Disturbing-6, ‘-5)
+parataxis(Mayor-3, Disturbing-6)
+punct(Disturbing-6, ’-7)
+mark(See-9, to-8)
+xcomp(Disturbing-6, See-9)
+obj(See-9, Kids-10)
+case(Castles-14, in-11)
+punct(Castles-14, ‘-12)
+compound(Castles-14, Bouncy-13)
+nmod:in(Kids-10, Castles-14)
+case(Castles-14, ’-15)
+acl:relcl(Castles-14, Having-16)
+punct(Fun-18, ‘-17)
+obj(Having-16, Fun-18)
+punct(Fun-18, ’-19)
+case(Protest-21, at-20)
+nmod:at(Fun-18, Protest-21)
+
+Extracted the following NER entity mentions:
+Ottawa	CITY	LOCATION:0.6753595111941723
+Mayor	TITLE	-

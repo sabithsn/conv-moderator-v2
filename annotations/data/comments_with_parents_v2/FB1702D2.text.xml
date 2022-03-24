@@ -1,0 +1,69 @@
+Document: ID=FB1702D2.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Western Companies Are Happy To Cut Ties With Russia, But Stay Silent On Uyghur Genocide
+
+Tokens:
+[Text=Western CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=western NamedEntityTag=O]
+[Text=Companies CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Happy CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Cut CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=cut NamedEntityTag=O]
+[Text=Ties CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNS Lemma=tie NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=But CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=Stay CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=stay NamedEntityTag=O]
+[Text=Silent CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=silent NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Uyghur CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=uyghur NamedEntityTag=O]
+[Text=Genocide CharacterOffsetBegin=79 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=genocide NamedEntityTag=CRIMINAL_CHARGE]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Western) (NNS Companies))
+    (VP (VBP Are)
+      (ADJP (JJ Happy)
+        (S
+          (VP (TO To)
+            (VP (VB Cut)
+              (S
+                (NP (NNS Ties))
+                (UCP
+                  (PP (IN With)
+                    (NP (NNP Russia)))
+                  (, ,)
+                  (CC But)
+                  (S
+                    (VP (VB Stay)
+                      (ADJP (JJ Silent)))))
+                (PP (IN On)
+                  (NP (JJ Uyghur) (NN Genocide)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Happy-4)
+amod(Companies-2, Western-1)
+nsubj(Happy-4, Companies-2)
+nsubj:xsubj(Cut-6, Companies-2)
+cop(Happy-4, Are-3)
+mark(Cut-6, To-5)
+xcomp(Happy-4, Cut-6)
+dep(Russia-9, Ties-7)
+case(Russia-9, With-8)
+xcomp(Cut-6, Russia-9)
+punct(Russia-9, ,-10)
+cc(Stay-12, But-11)
+xcomp(Cut-6, Stay-12)
+conj:but(Russia-9, Stay-12)
+xcomp(Stay-12, Silent-13)
+case(Genocide-16, On-14)
+amod(Genocide-16, Uyghur-15)
+dep(Russia-9, Genocide-16)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9919437379366637
+Genocide	CRIMINAL_CHARGE	-

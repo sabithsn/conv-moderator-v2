@@ -1,0 +1,65 @@
+Document: ID=BE09DAAB.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+All third party news is automatically misinformation until the corporate media and fact checkers prove otherwise.
+
+Tokens:
+[Text=All CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=third CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=third NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=party CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=automatically CharacterOffsetBegin=24 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=automatically NamedEntityTag=O]
+[Text=misinformation CharacterOffsetBegin=38 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=misinformation NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=corporate CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=corporate NamedEntityTag=O]
+[Text=media CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=checkers CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NNS Lemma=checkers NamedEntityTag=O]
+[Text=prove CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=VBP Lemma=prove NamedEntityTag=O]
+[Text=otherwise CharacterOffsetBegin=103 CharacterOffsetEnd=112 PartOfSpeech=RB Lemma=otherwise NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT All)
+      (NML (JJ third) (NN party))
+      (NN news))
+    (VP (VBZ is)
+      (ADVP (RB automatically))
+      (NP (NN misinformation))
+      (SBAR (IN until)
+        (S
+          (NP (DT the) (JJ corporate) (NNS media)
+            (CC and)
+            (NN fact) (NNS checkers))
+          (VP (VBP prove)
+            (ADVP (RB otherwise))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, misinformation-7)
+det(news-4, All-1)
+amod(party-3, third-2)
+compound(news-4, party-3)
+nsubj(misinformation-7, news-4)
+cop(misinformation-7, is-5)
+advmod(misinformation-7, automatically-6)
+mark(prove-15, until-8)
+det(media-11, the-9)
+amod(media-11, corporate-10)
+nsubj(prove-15, media-11)
+cc(checkers-14, and-12)
+compound(checkers-14, fact-13)
+conj:and(media-11, checkers-14)
+nsubj(prove-15, checkers-14)
+advcl:until(misinformation-7, prove-15)
+advmod(prove-15, otherwise-16)
+punct(misinformation-7, .-17)
+
+Extracted the following NER entity mentions:
+third	ORDINAL	ORDINAL:-1.0

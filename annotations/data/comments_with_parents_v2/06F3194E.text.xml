@@ -1,0 +1,44 @@
+Document: ID=06F3194E.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Putin and NATO*  Fixed it for you
+
+Tokens:
+[Text=Putin CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=* CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=Fixed CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=fix NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Putin))
+    (PP (CC and)
+      (NP
+        (NP (NNP NATO))
+        (NFP *)
+        (SBAR
+          (S
+            (VP (VBN Fixed)
+              (NP (PRP it))
+              (PP (IN for)
+                (NP (PRP you))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Putin-1)
+case(NATO-3, and-2)
+nmod:and(Putin-1, NATO-3)
+punct(NATO-3, *-4)
+acl:relcl(NATO-3, Fixed-5)
+obj(Fixed-5, it-6)
+case(you-8, for-7)
+obl:for(Fixed-5, you-8)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9906010243182698
+NATO	ORGANIZATION	ORGANIZATION:0.9859347016966783

@@ -1,0 +1,50 @@
+Document: ID=E0420337.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Haha yes let’s shit on mental disorders and addictions.
+
+Tokens:
+[Text=Haha CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Haha NamedEntityTag=PERSON]
+[Text=yes CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=’s NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=shit NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=mental CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=mental NamedEntityTag=O]
+[Text=disorders CharacterOffsetBegin=30 CharacterOffsetEnd=39 PartOfSpeech=NNS Lemma=disorder NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=addictions CharacterOffsetBegin=44 CharacterOffsetEnd=54 PartOfSpeech=NNS Lemma=addiction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Haha))
+    (INTJ (UH yes))
+    (VP (VB let)
+      (S
+        (NP (PRP ’s))
+        (VP (VB shit)
+          (PP (IN on)
+            (NP (JJ mental) (NNS disorders)
+              (CC and)
+              (NNS addictions))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, let-3)
+nsubj(let-3, Haha-1)
+discourse(let-3, yes-2)
+nsubj(shit-5, ’s-4)
+ccomp(let-3, shit-5)
+case(disorders-8, on-6)
+amod(disorders-8, mental-7)
+obl:on(shit-5, disorders-8)
+cc(addictions-10, and-9)
+obl:on(shit-5, addictions-10)
+conj:and(disorders-8, addictions-10)
+punct(let-3, .-11)
+
+Extracted the following NER entity mentions:
+Haha	PERSON	PERSON:0.6280890954037186

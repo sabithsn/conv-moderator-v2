@@ -1,0 +1,94 @@
+Document: ID=E9CF5AE1.text (2 sentences, 21 tokens)
+
+Sentence #1 (12 tokens):
+People of India worship Narendra Modi like he’s a god.
+
+Tokens:
+[Text=People CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=India CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=India NamedEntityTag=COUNTRY]
+[Text=worship CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=worship NamedEntityTag=O]
+[Text=Narendra CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Narendra NamedEntityTag=PERSON]
+[Text=Modi CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Modi NamedEntityTag=PERSON]
+[Text=like CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=god CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=god NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (PP (IN of)
+        (NP (NNP India))))
+    (VP (VBP worship)
+      (NP (NNP Narendra) (NNP Modi))
+      (SBAR (IN like)
+        (S
+          (NP (PRP he))
+          (VP (VBZ ’s)
+            (NP (DT a) (NN god))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, worship-4)
+nsubj(worship-4, People-1)
+case(India-3, of-2)
+nmod:of(People-1, India-3)
+compound(Modi-6, Narendra-5)
+obj(worship-4, Modi-6)
+mark(god-11, like-7)
+nsubj(god-11, he-8)
+cop(god-11, ’s-9)
+det(god-11, a-10)
+advcl:like(worship-4, god-11)
+punct(worship-4, .-12)
+
+Extracted the following NER entity mentions:
+India	COUNTRY	LOCATION:0.9264319752381152
+Narendra Modi	PERSON	PERSON:0.999574405207351
+he	PERSON	-
+
+Sentence #2 (9 tokens):
+How can anyone trust a politician so much?
+
+Tokens:
+[Text=How CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=trust CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=trust NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=politician CharacterOffsetBegin=78 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=politician NamedEntityTag=TITLE]
+[Text=so CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD can)
+      (NP (NN anyone))
+      (VP (VB trust)
+        (NP (DT a) (NN politician))
+        (ADVP (RB so) (RB much))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, trust-4)
+advmod(trust-4, How-1)
+aux(trust-4, can-2)
+nsubj(trust-4, anyone-3)
+det(politician-6, a-5)
+obj(trust-4, politician-6)
+advmod(much-8, so-7)
+advmod(trust-4, much-8)
+punct(trust-4, ?-9)
+
+Extracted the following NER entity mentions:
+politician	TITLE	-

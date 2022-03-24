@@ -1,0 +1,66 @@
+Document: ID=CA8228AC.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+No really, keep showing the world how communism is all about love and tolerance.
+
+Tokens:
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=showing CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=show NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=communism CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=communism NamedEntityTag=IDEOLOGY]
+[Text=is CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=all NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=love NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tolerance CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=tolerance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT No) (RB really))
+    (, ,)
+    (VP (VB keep)
+      (S
+        (VP (VBG showing)
+          (NP
+            (NP (DT the) (NN world))
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (NN communism))
+                (VP (VBZ is)
+                  (ADVP (RB all) (RB about))
+                  (NP (NN love)
+                    (CC and)
+                    (NN tolerance)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, keep-4)
+det(really-2, No-1)
+nsubj(keep-4, really-2)
+punct(keep-4, ,-3)
+xcomp(keep-4, showing-5)
+det(world-7, the-6)
+obj(showing-5, world-7)
+advmod(love-13, how-8)
+nsubj(love-13, communism-9)
+cop(love-13, is-10)
+advmod(about-12, all-11)
+advmod(love-13, about-12)
+dep(world-7, love-13)
+cc(tolerance-15, and-14)
+dep(world-7, tolerance-15)
+conj:and(love-13, tolerance-15)
+punct(keep-4, .-16)
+
+Extracted the following NER entity mentions:
+communism	IDEOLOGY	-

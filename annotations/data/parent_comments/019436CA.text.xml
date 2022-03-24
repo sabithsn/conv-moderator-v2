@@ -1,0 +1,278 @@
+Document: ID=019436CA.text (4 sentences, 70 tokens)
+
+Sentence #1 (6 tokens):
+Not Romanians, but Roma.
+
+Tokens:
+[Text=Not CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Romanians CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNPS Lemma=Romanians NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=Roma CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Roma NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (RB Not) (NNPS Romanians))
+    (, ,)
+    (CC but)
+    (NP (NNP Roma))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Romanians-2)
+advmod(Romanians-2, Not-1)
+punct(Romanians-2, ,-3)
+cc(Roma-5, but-4)
+conj:but(Romanians-2, Roma-5)
+punct(Romanians-2, .-6)
+
+Extracted the following NER entity mentions:
+Romanians	MISC	MISC:0.9999724844653278
+Roma	ORGANIZATION	ORGANIZATION:0.7250754883885601
+
+Sentence #2 (18 tokens):
+They're basically a culture of wandering nomads that go from country to country setting up shop.
+
+Tokens:
+[Text=They CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=basically CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=basically NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=culture CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=culture NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=wandering CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=VBG Lemma=wander NamedEntityTag=O]
+[Text=nomads CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=nomad NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=setting CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=VBG Lemma=set NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=shop CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=shop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP 're)
+      (ADVP (RB basically))
+      (NP
+        (NP (DT a) (NN culture))
+        (PP (IN of)
+          (S
+            (VP (VBG wandering)
+              (NP
+                (NP (NNS nomads))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP go)
+                      (PP (IN from)
+                        (NP (NN country)))
+                      (PP (IN to)
+                        (NP
+                          (NP (NN country))
+                          (VP (VBG setting)
+                            (PRT (RP up))
+                            (NP (NN shop))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, culture-5)
+nsubj(culture-5, They-1)
+cop(culture-5, 're-2)
+advmod(culture-5, basically-3)
+det(culture-5, a-4)
+mark(wandering-7, of-6)
+acl:of(culture-5, wandering-7)
+obj(wandering-7, nomads-8)
+nsubj(go-10, nomads-8)
+ref(nomads-8, that-9)
+acl:relcl(nomads-8, go-10)
+case(country-12, from-11)
+obl:from(go-10, country-12)
+case(country-14, to-13)
+obl:to(go-10, country-14)
+acl(country-14, setting-15)
+compound:prt(setting-15, up-16)
+obj(setting-15, shop-17)
+punct(culture-5, .-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (22 tokens):
+Their culture as a whole kinda goes against most countries they go to, so they get a lot of hate.
+
+Tokens:
+[Text=Their CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=culture CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=culture NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=kinda CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=RB Lemma=kinda NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=countries CharacterOffsetBegin=171 CharacterOffsetEnd=180 PartOfSpeech=NNS Lemma=country NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=hate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Their) (NN culture))
+      (PP (IN as)
+        (NP (DT a) (JJ whole))))
+    (ADVP (RB kinda))
+    (VP (VBZ goes)
+      (PP (IN against)
+        (NP
+          (NP (JJS most) (NNS countries))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (VBP go)
+                (PP (IN to))
+                (, ,)
+                (SBAR (IN so)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP get)
+                      (NP
+                        (NP (DT a) (NN lot))
+                        (PP (IN of)
+                          (NP (NN hate)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, goes-7)
+nmod:poss(culture-2, Their-1)
+nsubj(goes-7, culture-2)
+case(whole-5, as-3)
+det(whole-5, a-4)
+nmod:as(culture-2, whole-5)
+advmod(goes-7, kinda-6)
+case(countries-10, against-8)
+amod(countries-10, most-9)
+obl:against(goes-7, countries-10)
+nsubj(go-12, they-11)
+acl:relcl(countries-10, go-12)
+obl(go-12, to-13)
+punct(go-12, ,-14)
+mark(get-17, so-15)
+nsubj(get-17, they-16)
+advcl:so(go-12, get-17)
+det:qmod(hate-21, a-18)
+fixed(a-18, lot-19)
+fixed(a-18, of-20)
+obj(get-17, hate-21)
+punct(goes-7, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (24 tokens):
+I lived in Hungary for a while and while I only believe in the individual, I met a lot of individually shitty gypsies
+
+Tokens:
+[Text=I CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=lived CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=VBD Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Hungary CharacterOffsetBegin=231 CharacterOffsetEnd=238 PartOfSpeech=NNP Lemma=Hungary NamedEntityTag=COUNTRY]
+[Text=for CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=while NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=268 CharacterOffsetEnd=275 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=individual CharacterOffsetBegin=283 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=individual NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=301 CharacterOffsetEnd=302 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=individually CharacterOffsetBegin=310 CharacterOffsetEnd=322 PartOfSpeech=RB Lemma=individually NamedEntityTag=O]
+[Text=shitty CharacterOffsetBegin=323 CharacterOffsetEnd=329 PartOfSpeech=JJ Lemma=shitty NamedEntityTag=O]
+[Text=gypsies CharacterOffsetBegin=330 CharacterOffsetEnd=337 PartOfSpeech=NNS Lemma=gypsy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD lived)
+        (PP (IN in)
+          (NP (NNP Hungary)))
+        (PP (IN for)
+          (NP (DT a) (NN while)))))
+    (CC and)
+    (S
+      (SBAR (IN while)
+        (S
+          (NP (PRP I))
+          (ADVP (RB only))
+          (VP (VBP believe)
+            (PP (IN in)
+              (NP (DT the) (NN individual))))))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBD met)
+        (NP
+          (NP (DT a) (NN lot))
+          (PP (IN of)
+            (NP
+              (ADJP (RB individually) (JJ shitty))
+              (NNS gypsies))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lived-2)
+nsubj(lived-2, I-1)
+case(Hungary-4, in-3)
+obl:in(lived-2, Hungary-4)
+case(while-7, for-5)
+det(while-7, a-6)
+obl:for(lived-2, while-7)
+cc(met-18, and-8)
+mark(believe-12, while-9)
+nsubj(believe-12, I-10)
+advmod(believe-12, only-11)
+advcl:while(met-18, believe-12)
+case(individual-15, in-13)
+det(individual-15, the-14)
+obl:in(believe-12, individual-15)
+punct(met-18, ,-16)
+nsubj(met-18, I-17)
+conj:and(lived-2, met-18)
+det:qmod(gypsies-24, a-19)
+fixed(a-19, lot-20)
+fixed(a-19, of-21)
+advmod(shitty-23, individually-22)
+amod(gypsies-24, shitty-23)
+obj(met-18, gypsies-24)
+
+Extracted the following NER entity mentions:
+Hungary	COUNTRY	LOCATION:0.9992573378035143

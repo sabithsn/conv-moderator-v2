@@ -1,0 +1,118 @@
+Document: ID=1D5BE890.text (2 sentences, 27 tokens)
+
+Sentence #1 (12 tokens):
+Opiates, Heroin, Morphine, Benzo's, and Alcohol.
+
+Tokens:
+[Text=Opiates CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNS Lemma=opiate NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Heroin CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Heroin NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Morphine CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Morphine NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Benzo CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Benzo NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Alcohol CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=alcohol NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNS Opiates))
+    (, ,)
+    (NP
+      (NP (NNP Heroin))
+      (, ,)
+      (NP (NNP Morphine))
+      (, ,)
+      (NP (NNP Benzo) (POS 's))
+      (, ,)
+      (CC and)
+      (NP (NN Alcohol)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Opiates-1)
+punct(Opiates-1, ,-2)
+appos(Opiates-1, Heroin-3)
+punct(Heroin-3, ,-4)
+appos(Opiates-1, Morphine-5)
+conj:and(Heroin-3, Morphine-5)
+punct(Heroin-3, ,-6)
+appos(Opiates-1, Benzo-7)
+conj:and(Heroin-3, Benzo-7)
+case(Benzo-7, 's-8)
+punct(Heroin-3, ,-9)
+cc(Alcohol-11, and-10)
+appos(Opiates-1, Alcohol-11)
+conj:and(Heroin-3, Alcohol-11)
+punct(Opiates-1, .-12)
+
+Extracted the following NER entity mentions:
+Benzo	PERSON	PERSON:0.7138674456973435
+
+Sentence #2 (15 tokens):
+OP forgot 80% of the stuff that can kill you from withdrawals alone.
+
+Tokens:
+[Text=OP CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=forgot CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=forget NamedEntityTag=O]
+[Text=80 CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=CD Lemma=80 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%80.0]
+[Text=% CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%80.0]
+[Text=of CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stuff CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=stuff NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=kill CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=withdrawals CharacterOffsetBegin=99 CharacterOffsetEnd=110 PartOfSpeech=NNS Lemma=withdrawal NamedEntityTag=O]
+[Text=alone CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=RB Lemma=alone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN OP))
+    (VP (VBD forgot)
+      (NP
+        (NP (CD 80) (NN %))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN stuff))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD can)
+                  (VP (VB kill)
+                    (NP (PRP you))
+                    (PP (IN from)
+                      (NP (NNS withdrawals)))
+                    (ADVP (RB alone))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, forgot-2)
+nsubj(forgot-2, OP-1)
+nummod(%-4, 80-3)
+obj(forgot-2, %-4)
+case(stuff-7, of-5)
+det(stuff-7, the-6)
+nmod:of(%-4, stuff-7)
+nsubj(kill-10, stuff-7)
+ref(stuff-7, that-8)
+aux(kill-10, can-9)
+acl:relcl(stuff-7, kill-10)
+obj(kill-10, you-11)
+case(withdrawals-13, from-12)
+obl:from(kill-10, withdrawals-13)
+advmod(kill-10, alone-14)
+punct(forgot-2, .-15)
+
+Extracted the following NER entity mentions:
+80%	PERCENT	PERCENT:0.9989402866734659

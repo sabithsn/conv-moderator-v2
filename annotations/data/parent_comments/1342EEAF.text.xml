@@ -1,0 +1,114 @@
+Document: ID=1342EEAF.text (2 sentences, 26 tokens)
+
+Sentence #1 (10 tokens):
+> There's no liberal equivalent of Fox News.
+
+Tokens:
+[Text=> CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=SYM Lemma=> NamedEntityTag=O]
+[Text=There CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=liberal CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=IDEOLOGY]
+[Text=equivalent CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=equivalent NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=ORGANIZATION]
+[Text=News CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=News NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (S
+        (VP (SYM >)
+          (NP (EX There)))))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT no) (JJ liberal) (NN equivalent))
+        (PP (IN of)
+          (NP (NNP Fox) (NNP News)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 's-3)
+dep(There-2, >-1)
+nsubj('s-3, There-2)
+det(equivalent-6, no-4)
+amod(equivalent-6, liberal-5)
+dep('s-3, equivalent-6)
+case(News-9, of-7)
+compound(News-9, Fox-8)
+nmod:of(equivalent-6, News-9)
+punct('s-3, .-10)
+
+Extracted the following NER entity mentions:
+liberal	IDEOLOGY	-
+Fox News	ORGANIZATION	ORGANIZATION:0.9678727659686801
+
+Sentence #2 (16 tokens):
+MSNBC+ABC+CBS+NPR+CNN = Fox News       Really in terms of style alone, MSNBC = Fox News.
+
+Tokens:
+[Text=MSNBC+ABC+CBS+NPR+CNN CharacterOffsetBegin=49 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=msnbc+abc+cbs+npr+cnn NamedEntityTag=O]
+[Text== CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=SYM Lemma== NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=ORGANIZATION]
+[Text=News CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=News NamedEntityTag=ORGANIZATION]
+[Text=Really CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=RB Lemma=really NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=terms CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=term NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=style CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=style NamedEntityTag=O]
+[Text=alone CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=RB Lemma=alone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=MSNBC CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=MSNBC NamedEntityTag=ORGANIZATION]
+[Text== CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=SYM Lemma== NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=ORGANIZATION]
+[Text=News CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=News NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN MSNBC+ABC+CBS+NPR+CNN))
+    (SYM =)
+    (NP (NNP Fox) (NNP News))
+    (PP
+      (ADVP (RB Really))
+      (IN in)
+      (NP
+        (NP (NNS terms))
+        (PP (IN of)
+          (NP
+            (NP (NN style))
+            (ADVP (RB alone))
+            (PRN (, ,)
+              (S
+                (NP (NNP MSNBC))
+                (VP (SYM =)
+                  (NP (NNP Fox) (NNP News)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, MSNBC+ABC+CBS+NPR+CNN-1)
+dep(MSNBC+ABC+CBS+NPR+CNN-1, =-2)
+compound(News-4, Fox-3)
+dep(MSNBC+ABC+CBS+NPR+CNN-1, News-4)
+advmod(terms-7, Really-5)
+case(terms-7, in-6)
+obl:in(MSNBC+ABC+CBS+NPR+CNN-1, terms-7)
+case(style-9, of-8)
+nmod:of(terms-7, style-9)
+advmod(style-9, alone-10)
+punct(News-15, ,-11)
+nsubj(News-15, MSNBC-12)
+dep(News-15, =-13)
+compound(News-15, Fox-14)
+dep(style-9, News-15)
+punct(MSNBC+ABC+CBS+NPR+CNN-1, .-16)
+
+Extracted the following NER entity mentions:
+Fox News       Really	ORGANIZATION	ORGANIZATION:0.7254475255773731
+MSNBC	ORGANIZATION	ORGANIZATION:0.8957689557514255
+Fox News	ORGANIZATION	ORGANIZATION:0.6966928874882633

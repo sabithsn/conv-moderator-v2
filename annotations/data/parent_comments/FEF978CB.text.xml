@@ -1,0 +1,79 @@
+Document: ID=FEF978CB.text (1 sentences, 20 tokens)
+
+Sentence #1 (20 tokens):
+CMV: US companies such as YouTube and FB blocking RT and other Russian media is a bad thing.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=companies CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=company NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=YouTube CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=YouTube NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=FB CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=fb NamedEntityTag=O]
+[Text=blocking CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=block NamedEntityTag=O]
+[Text=RT CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=rt NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=media CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=media NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP
+        (NML
+          (NML
+            (NML (NN CMV))
+            (: :)
+            (NP
+              (NP (NNP US) (NNS companies))
+              (PP (JJ such) (IN as)
+                (NP (NNP YouTube)))))
+          (CC and)
+          (NML (NN FB)))
+        (VBG blocking) (NN RT))
+      (CC and)
+      (NP (JJ other) (JJ Russian) (NNS media)))
+    (VP (VBZ is)
+      (NP (DT a) (JJ bad) (NN thing)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thing-19)
+compound(RT-11, CMV-1)
+punct(CMV-1, :-2)
+compound(companies-4, US-3)
+dep(CMV-1, companies-4)
+case(YouTube-7, such-5)
+fixed(such-5, as-6)
+nmod:such_as(companies-4, YouTube-7)
+cc(FB-9, and-8)
+conj:and(CMV-1, FB-9)
+compound(RT-11, FB-9)
+amod(RT-11, blocking-10)
+nsubj(thing-19, RT-11)
+cc(media-15, and-12)
+amod(media-15, other-13)
+amod(media-15, Russian-14)
+conj:and(RT-11, media-15)
+nsubj(thing-19, media-15)
+cop(thing-19, is-16)
+det(thing-19, a-17)
+amod(thing-19, bad-18)
+punct(thing-19, .-20)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9896092160469746
+YouTube	ORGANIZATION	ORGANIZATION:0.9698041976112838
+RT	ORGANIZATION	ORGANIZATION:0.5826567348316325
+Russian	NATIONALITY	MISC:0.9999996439843878

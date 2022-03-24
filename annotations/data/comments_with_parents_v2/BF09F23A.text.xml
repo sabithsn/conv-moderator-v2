@@ -1,0 +1,71 @@
+Document: ID=BF09F23A.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Poll: Majority Say Biden Will Be Remembered as ‘One of the Worst Presidents’ in American History
+
+Tokens:
+[Text=Poll CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Poll NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Majority CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Majority NamedEntityTag=O]
+[Text=Say CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Say NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Will CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Will NamedEntityTag=O]
+[Text=Be CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=Remembered CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=VBN Lemma=remember NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=One CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Worst CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=JJS Lemma=worst NamedEntityTag=O]
+[Text=Presidents CharacterOffsetBegin=65 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=president NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=American NamedEntityTag=NATIONALITY]
+[Text=History CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=History NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Poll))
+    (: :)
+    (SQ
+      (NP (NNP Majority) (NNP Say) (NNP Biden) (NNP Will))
+      (VP (VB Be)
+        (VP (VBN Remembered)
+          (PP (IN as) (`` ‘)
+            (NP
+              (NP (CD One))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (JJS Worst) (NNS Presidents))
+                  (POS ’)))))
+          (PP (IN in)
+            (NP (NNP American) (NNP History))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Poll-1)
+punct(Poll-1, :-2)
+compound(Will-6, Majority-3)
+compound(Will-6, Say-4)
+compound(Will-6, Biden-5)
+nsubj:pass(Remembered-8, Will-6)
+aux:pass(Remembered-8, Be-7)
+parataxis(Poll-1, Remembered-8)
+case(One-11, as-9)
+punct(One-11, ‘-10)
+det:qmod(Presidents-15, One-11)
+fixed(One-11, of-12)
+det(Presidents-15, the-13)
+amod(Presidents-15, Worst-14)
+obl:’(Remembered-8, Presidents-15)
+case(Presidents-15, ’-16)
+case(History-19, in-17)
+compound(History-19, American-18)
+obl:in(Remembered-8, History-19)
+
+Extracted the following NER entity mentions:
+Biden	PERSON	PERSON:0.8517375676685217
+One	NUMBER	NUMBER:-1.0
+American	NATIONALITY	MISC:0.9969448011849396

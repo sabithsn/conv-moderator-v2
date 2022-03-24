@@ -1,0 +1,67 @@
+Document: ID=851F6FC7.text (2 sentences, 13 tokens)
+
+Sentence #1 (5 tokens):
+My Body My Choice!
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Body CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=body NamedEntityTag=O]
+[Text=My CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Choice CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=choice NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (PRP$ My) (NN Body))
+    (NP (PRP$ My) (NN Choice))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Body-2)
+nmod:poss(Body-2, My-1)
+nmod:poss(Choice-4, My-3)
+dep(Body-2, Choice-4)
+punct(Body-2, !-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+You cannot force me to stay!
+
+Tokens:
+[Text=You CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=force CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=force NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=stay CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=stay NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can) (RB not)
+      (VP (VB force)
+        (S
+          (NP (PRP me))
+          (VP (TO to)
+            (VP (VB stay))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, force-4)
+nsubj(force-4, You-1)
+aux(force-4, can-2)
+advmod(force-4, not-3)
+obj(force-4, me-5)
+nsubj:xsubj(stay-7, me-5)
+mark(stay-7, to-6)
+xcomp(force-4, stay-7)
+punct(force-4, !-8)
+
+Extracted the following NER entity mentions:

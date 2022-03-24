@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>22E693F8.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Alpha</word>
+            <lemma>alpha</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Blobfish</word>
+            <lemma>Blobfish</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Same</word>
+            <lemma>same</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>dude</word>
+            <lemma>dude</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>tried</word>
+            <lemma>try</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>dildos</word>
+            <lemma>dildo</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>banned</word>
+            <lemma>ban</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>Texas</word>
+            <lemma>Texas</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>STATE_OR_PROVINCE</NER>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NML (NML (NN Alpha)) (NNP Blobfish)) (JJ Same) (NN dude)) (SBAR (WHNP (WP who)) (S (VP (VBD tried) (S (VP (TO to) (VP (VB get) (NP (NNS dildos))))))))) (VP (VBN banned) (PP (IN in) (NP (NNP Texas)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Blobfish</governor>
+            <dependent idx="1">Alpha</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">dude</governor>
+            <dependent idx="2">Blobfish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">dude</governor>
+            <dependent idx="3">Same</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">tried</governor>
+            <dependent idx="5">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="4">dude</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">get</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">get</governor>
+            <dependent idx="9">dildos</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="4">dude</governor>
+            <dependent idx="10">banned</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Texas</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="10">banned</governor>
+            <dependent idx="12">Texas</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">dude</governor>
+            <dependent idx="13">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Blobfish</governor>
+            <dependent idx="1">Alpha</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">dude</governor>
+            <dependent idx="2">Blobfish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">dude</governor>
+            <dependent idx="3">Same</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">tried</governor>
+            <dependent idx="5">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="4">dude</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">get</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">get</governor>
+            <dependent idx="9">dildos</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="4">dude</governor>
+            <dependent idx="10">banned</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Texas</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="10">banned</governor>
+            <dependent idx="12">Texas</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">dude</governor>
+            <dependent idx="13">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Blobfish</governor>
+            <dependent idx="1">Alpha</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">dude</governor>
+            <dependent idx="2">Blobfish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">dude</governor>
+            <dependent idx="3">Same</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">tried</governor>
+            <dependent idx="5">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="4">dude</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">get</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">get</governor>
+            <dependent idx="9">dildos</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="4">dude</governor>
+            <dependent idx="10">banned</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Texas</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="10">banned</governor>
+            <dependent idx="12">Texas</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">dude</governor>
+            <dependent idx="13">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Blobfish</governor>
+            <dependent idx="1">Alpha</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">dude</governor>
+            <dependent idx="2">Blobfish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">dude</governor>
+            <dependent idx="3">Same</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="6">tried</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="8">get</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="4">dude</governor>
+            <dependent idx="5">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="4">dude</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">get</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">get</governor>
+            <dependent idx="9">dildos</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="4">dude</governor>
+            <dependent idx="10">banned</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Texas</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="10">banned</governor>
+            <dependent idx="12">Texas</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">dude</governor>
+            <dependent idx="13">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="2">Blobfish</governor>
+            <dependent idx="1">Alpha</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="4">dude</governor>
+            <dependent idx="2">Blobfish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">dude</governor>
+            <dependent idx="3">Same</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="6">tried</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="8">get</governor>
+            <dependent idx="4">dude</dependent>
+          </dep>
+          <dep type="ref">
+            <governor idx="4">dude</governor>
+            <dependent idx="5">who</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="4">dude</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">get</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="8">get</governor>
+            <dependent idx="9">dildos</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="4">dude</governor>
+            <dependent idx="10">banned</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">Texas</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="10">banned</governor>
+            <dependent idx="12">Texas</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">dude</governor>
+            <dependent idx="13">?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>This</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>dude</word>
+            <lemma>dude</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>DEFINES</word>
+            <lemma>define</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>cuck</word>
+            <lemma>cuck</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT This) (NN dude)) (VP (VBZ DEFINES) (NP (DT the) (NN work) (NN cuck))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">DEFINES</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">dude</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="2">dude</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">cuck</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuck</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="6">cuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">DEFINES</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">dude</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="2">dude</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">cuck</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuck</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="6">cuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">DEFINES</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">dude</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="2">dude</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">cuck</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuck</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="6">cuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">DEFINES</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">dude</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="2">dude</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">cuck</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuck</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="6">cuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">DEFINES</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">dude</governor>
+            <dependent idx="1">This</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="2">dude</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">cuck</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="6">cuck</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="6">cuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">DEFINES</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

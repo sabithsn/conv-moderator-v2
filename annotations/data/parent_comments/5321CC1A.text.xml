@@ -1,0 +1,50 @@
+Document: ID=5321CC1A.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Poll Shows Majority of US Voters Blame Corporate Profiteering for Inflation
+
+Tokens:
+[Text=Poll CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Poll NamedEntityTag=O]
+[Text=Shows CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=VBZ Lemma=show NamedEntityTag=O]
+[Text=Majority CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Majority NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=Voters CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=voter NamedEntityTag=O]
+[Text=Blame CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=blame NamedEntityTag=O]
+[Text=Corporate CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=corporate NamedEntityTag=O]
+[Text=Profiteering CharacterOffsetBegin=49 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=profiteering NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Inflation CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=inflation NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Poll))
+    (VP (VBZ Shows)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Majority))
+            (PP (IN of)
+              (NP (NNP US) (NNS Voters))))
+          (VP (VBP Blame)
+            (NP (JJ Corporate) (NN Profiteering))
+            (PP (IN for)
+              (NP (NN Inflation)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Shows-2)
+nsubj(Shows-2, Poll-1)
+nsubj(Blame-7, Majority-3)
+case(Voters-6, of-4)
+compound(Voters-6, US-5)
+nmod:of(Majority-3, Voters-6)
+ccomp(Shows-2, Blame-7)
+amod(Profiteering-9, Corporate-8)
+obj(Blame-7, Profiteering-9)
+case(Inflation-11, for-10)
+obl:for(Blame-7, Inflation-11)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9405589918522433

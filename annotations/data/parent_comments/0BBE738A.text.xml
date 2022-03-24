@@ -1,0 +1,123 @@
+Document: ID=0BBE738A.text (3 sentences, 27 tokens)
+
+Sentence #1 (8 tokens):
+At least she was wearing a mask.
+
+Tokens:
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=wearing CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=VBG Lemma=wear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mask CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=mask NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (IN At) (JJS least))
+    (NP (PRP she))
+    (VP (VBD was)
+      (VP (VBG wearing)
+        (NP (DT a) (NN mask))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wearing-5)
+advmod(wearing-5, At-1)
+fixed(At-1, least-2)
+nsubj(wearing-5, she-3)
+aux(wearing-5, was-4)
+det(mask-7, a-6)
+obj(wearing-5, mask-7)
+punct(wearing-5, .-8)
+
+Extracted the following NER entity mentions:
+she	PERSON	-
+
+Sentence #2 (12 tokens):
+Can you imagine what might have happened if she wasn't?
+
+Tokens:
+[Text=Can CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=imagine CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=happened CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=VBN Lemma=happen NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB imagine)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (MD might)
+            (VP (VB have)
+              (VP (VBN happened)
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP she))
+                    (VP (VBD was) (RB n't))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, imagine-3)
+aux(imagine-3, Can-1)
+nsubj(imagine-3, you-2)
+nsubj(happened-7, what-4)
+aux(happened-7, might-5)
+aux(happened-7, have-6)
+ccomp(imagine-3, happened-7)
+mark(was-10, if-8)
+nsubj(was-10, she-9)
+advcl:if(happened-7, was-10)
+advmod(was-10, n't-11)
+punct(imagine-3, ?-12)
+
+Extracted the following NER entity mentions:
+she	PERSON	-
+
+Sentence #3 (7 tokens):
+Someone might have gotten hurt /s
+
+Tokens:
+[Text=Someone CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=gotten CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=hurt CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=hurt NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=s NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Someone))
+    (VP (MD might)
+      (VP (VB have)
+        (VP (VBN gotten)
+          (NP (NN hurt) (HYPH /) (NN s)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, gotten-4)
+nsubj(gotten-4, Someone-1)
+aux(gotten-4, might-2)
+aux(gotten-4, have-3)
+compound(s-7, hurt-5)
+punct(s-7, /-6)
+obj(gotten-4, s-7)
+
+Extracted the following NER entity mentions:

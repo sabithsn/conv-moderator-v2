@@ -1,0 +1,74 @@
+Document: ID=D317245F.text (1 sentences, 18 tokens)
+
+Sentence #1 (18 tokens):
+San Jose, CA, Becomes First U.S. City To Approve Forcing Gun Owners To Carry Liability Insurance
+
+Tokens:
+[Text=San CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=San NamedEntityTag=CITY]
+[Text=Jose CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Jose NamedEntityTag=CITY]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=CA CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=CA NamedEntityTag=STATE_OR_PROVINCE]
+[Text=, CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Becomes CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=VBZ Lemma=become NamedEntityTag=O]
+[Text=First CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=First NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=U.S. CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=U.S. NamedEntityTag=COUNTRY]
+[Text=City CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=City NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Approve CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=approve NamedEntityTag=O]
+[Text=Forcing CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=force NamedEntityTag=O]
+[Text=Gun CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Gun NamedEntityTag=O]
+[Text=Owners CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Owners NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Carry CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=carry NamedEntityTag=O]
+[Text=Liability CharacterOffsetBegin=77 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=liability NamedEntityTag=O]
+[Text=Insurance CharacterOffsetBegin=87 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=insurance NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNP San) (NNP Jose))
+      (, ,)
+      (NP (NNP CA))
+      (, ,))
+    (VP (VBZ Becomes)
+      (S
+        (NP (NNP First) (NNP U.S.) (NNP City))
+        (VP (TO To)
+          (VP (VB Approve)
+            (S
+              (VP (VBG Forcing)
+                (NP (NNP Gun) (NNP Owners))
+                (S
+                  (VP (TO To)
+                    (VP (VB Carry)
+                      (NP (NN Liability) (NN Insurance)))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Becomes-6)
+compound(Jose-2, San-1)
+nsubj(Becomes-6, Jose-2)
+punct(Jose-2, ,-3)
+appos(Jose-2, CA-4)
+punct(Jose-2, ,-5)
+compound(City-9, First-7)
+compound(City-9, U.S.-8)
+obj(Becomes-6, City-9)
+nsubj:xsubj(Approve-11, City-9)
+mark(Approve-11, To-10)
+xcomp(Becomes-6, Approve-11)
+xcomp(Approve-11, Forcing-12)
+compound(Owners-14, Gun-13)
+obj(Forcing-12, Owners-14)
+nsubj:xsubj(Carry-16, Owners-14)
+mark(Carry-16, To-15)
+xcomp(Forcing-12, Carry-16)
+compound(Insurance-18, Liability-17)
+obj(Carry-16, Insurance-18)
+
+Extracted the following NER entity mentions:
+San Jose	CITY	LOCATION:0.5312078837564768
+CA	STATE_OR_PROVINCE	-
+First	ORDINAL	ORDINAL:-1.0
+U.S.	COUNTRY	-

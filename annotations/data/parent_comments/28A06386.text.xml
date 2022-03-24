@@ -1,0 +1,52 @@
+Document: ID=28A06386.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+I mean what you are doing right now is whining...
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=mean NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=RB Lemma=right NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=now CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=is CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=whining CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=VBG Lemma=whine NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (SBAR
+        (S
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP you))
+              (VP (VBP are)
+                (VP (VBG doing)
+                  (ADVP (RB right) (RB now))))))
+          (VP (VBZ is)
+            (VP (VBG whining))))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mean-2)
+nsubj(mean-2, I-1)
+obj(doing-6, what-3)
+nsubj(doing-6, you-4)
+aux(doing-6, are-5)
+csubj(whining-10, doing-6)
+advmod(now-8, right-7)
+advmod(doing-6, now-8)
+aux(whining-10, is-9)
+ccomp(mean-2, whining-10)
+punct(mean-2, ...-11)
+
+Extracted the following NER entity mentions:
+right now	DATE	DATE:-1.0

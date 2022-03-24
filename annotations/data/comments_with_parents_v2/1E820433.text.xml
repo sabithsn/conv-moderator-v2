@@ -1,0 +1,40 @@
+Document: ID=1E820433.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+In Texas, you’d be wrong.
+
+Tokens:
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’d CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=MD Lemma=’d NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Texas)))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD ’d)
+      (VP (VB be)
+        (ADJP (JJ wrong))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wrong-7)
+case(Texas-2, In-1)
+obl:in(wrong-7, Texas-2)
+punct(wrong-7, ,-3)
+nsubj(wrong-7, you-4)
+aux(wrong-7, ’d-5)
+cop(wrong-7, be-6)
+punct(wrong-7, .-8)
+
+Extracted the following NER entity mentions:
+Texas	STATE_OR_PROVINCE	LOCATION:0.9967781473949098

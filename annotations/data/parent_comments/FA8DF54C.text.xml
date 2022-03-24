@@ -1,0 +1,64 @@
+Document: ID=FA8DF54C.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+I now know eleven people in my circle who are injured by the vaccines...
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=know CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=eleven CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=eleven NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.0]
+[Text=people CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=circle CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=circle NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=injured CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=injure NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vaccines CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=vaccine NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB now))
+    (VP (VBP know)
+      (NP
+        (NP (CD eleven) (NNS people))
+        (PP (IN in)
+          (NP
+            (NP (PRP$ my) (NN circle))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP (VBN injured)
+                    (PP (IN by)
+                      (NP (DT the) (NNS vaccines)))))))))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-3)
+nsubj(know-3, I-1)
+advmod(know-3, now-2)
+nummod(people-5, eleven-4)
+obj(know-3, people-5)
+case(circle-8, in-6)
+nmod:poss(circle-8, my-7)
+nmod:in(people-5, circle-8)
+nsubj:pass(injured-11, circle-8)
+ref(circle-8, who-9)
+aux:pass(injured-11, are-10)
+acl:relcl(circle-8, injured-11)
+case(vaccines-14, by-12)
+det(vaccines-14, the-13)
+obl:agent(injured-11, vaccines-14)
+punct(know-3, ...-15)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0
+eleven	NUMBER	NUMBER:-1.0

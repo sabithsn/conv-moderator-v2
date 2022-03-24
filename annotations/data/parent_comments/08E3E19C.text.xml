@@ -1,0 +1,39 @@
+Document: ID=08E3E19C.text (1 sentences, 7 tokens)
+
+Sentence #1 (7 tokens):
+A wise man once said……
+
+Tokens:
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wise CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=wise NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=said CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (DT A) (JJ wise) (NN man))
+      (SBAR
+        (S
+          (VP
+            (ADVP (RB once))
+            (VBD said))
+          (: …))))
+    (: …)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, man-3)
+det(man-3, A-1)
+amod(man-3, wise-2)
+advmod(said-5, once-4)
+acl:relcl(man-3, said-5)
+punct(said-5, …-6)
+punct(man-3, …-7)
+
+Extracted the following NER entity mentions:
+once	DATE	DATE:-1.0

@@ -1,0 +1,101 @@
+Document: ID=49D2C731.text (2 sentences, 24 tokens)
+
+Sentence #1 (18 tokens):
+It is important to note that Jan 6 was not the planned takeover the media is portraying.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Jan CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Jan NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6</TIMEX3>]
+[Text=was CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=planned CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=planned NamedEntityTag=O]
+[Text=takeover CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=takeover NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=media CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=media NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=portraying CharacterOffsetBegin=77 CharacterOffsetEnd=87 PartOfSpeech=VBG Lemma=portray NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ important)
+        (S
+          (VP (TO to)
+            (VP (VB note)
+              (SBAR (IN that)
+                (S
+                  (NP (NNP Jan) (CD 6))
+                  (VP (VBD was) (RB not)
+                    (NP
+                      (NP (DT the) (JJ planned) (NN takeover))
+                      (SBAR
+                        (S
+                          (NP (DT the) (NN media))
+                          (VP (VBZ is)
+                            (VP (VBG portraying))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, important-3)
+nsubj(important-3, It-1)
+nsubj:xsubj(note-5, It-1)
+cop(important-3, is-2)
+mark(note-5, to-4)
+xcomp(important-3, note-5)
+mark(takeover-13, that-6)
+nsubj(takeover-13, Jan-7)
+nummod(Jan-7, 6-8)
+cop(takeover-13, was-9)
+advmod(takeover-13, not-10)
+det(takeover-13, the-11)
+amod(takeover-13, planned-12)
+ccomp(note-5, takeover-13)
+det(media-15, the-14)
+nsubj(portraying-17, media-15)
+aux(portraying-17, is-16)
+acl:relcl(takeover-13, portraying-17)
+punct(important-3, .-18)
+
+Extracted the following NER entity mentions:
+Jan 6	DATE	DATE:-1.0
+
+Sentence #2 (6 tokens):
+Their intent wasn’t revolution.
+
+Tokens:
+[Text=Their CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=intent CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=intent NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=revolution CharacterOffsetBegin=109 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=revolution NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Their) (NN intent))
+    (VP (VBD was) (RB n’t)
+      (NP (NN revolution)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, revolution-5)
+nmod:poss(intent-2, Their-1)
+nsubj(revolution-5, intent-2)
+cop(revolution-5, was-3)
+advmod(revolution-5, n’t-4)
+punct(revolution-5, .-6)
+
+Extracted the following NER entity mentions:

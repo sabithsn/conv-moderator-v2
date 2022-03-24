@@ -1,0 +1,51 @@
+Document: ID=F626C09E.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+My step mother is being asked for vaccine card for her job.
+
+Tokens:
+[Text=My CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=step CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=step NamedEntityTag=O]
+[Text=mother CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=mother NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=VBN Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text=card CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=card NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ My) (NN step) (NN mother))
+    (VP (VBZ is)
+      (VP (VBG being)
+        (VP (VBN asked)
+          (PP (IN for)
+            (NP (NN vaccine) (NN card)))
+          (PP (IN for)
+            (NP (PRP$ her) (NN job))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, asked-6)
+nmod:poss(mother-3, My-1)
+compound(mother-3, step-2)
+nsubj:pass(asked-6, mother-3)
+aux(asked-6, is-4)
+aux:pass(asked-6, being-5)
+case(card-9, for-7)
+compound(card-9, vaccine-8)
+obl:for(asked-6, card-9)
+case(job-12, for-10)
+nmod:poss(job-12, her-11)
+obl:for(asked-6, job-12)
+punct(asked-6, .-13)
+
+Extracted the following NER entity mentions:
+her	PERSON	-

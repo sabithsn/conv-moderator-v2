@@ -1,0 +1,112 @@
+Document: ID=254D8DBF.text (3 sentences, 22 tokens)
+
+Sentence #1 (8 tokens):
+It's not 1/4th full.
+
+Tokens:
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=/ CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=SYM Lemma=/ NamedEntityTag=O]
+[Text=4th CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=4th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=4.0]
+[Text=full CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (ADJP
+        (NP (CD 1) (SYM /))
+        (ADJP (JJ 4th) (JJ full))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, full-7)
+nsubj(full-7, It-1)
+cop(full-7, 's-2)
+advmod(full-7, not-3)
+dep(full-7, 1-4)
+dep(1-4, /-5)
+advmod(full-7, 4th-6)
+punct(full-7, .-8)
+
+Extracted the following NER entity mentions:
+1	NUMBER	NUMBER:-1.0
+4th	ORDINAL	ORDINAL:-1.0
+
+Sentence #2 (6 tokens):
+It's 1/4" full.
+
+Tokens:
+[Text=It CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=1/4 CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CD Lemma=1/4 NamedEntityTag=NUMBER]
+[Text=" CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP
+        (NML (CD 1/4))
+        (`` ") (JJ full)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, full-5)
+nsubj(full-5, It-1)
+cop(full-5, 's-2)
+dep(full-5, 1/4-3)
+punct(full-5, "-4)
+punct(full-5, .-6)
+
+Extracted the following NER entity mentions:
+1/4	NUMBER	NUMBER:-1.0
+
+Sentence #3 (8 tokens):
+1/4" is a quarter of a foot
+
+Tokens:
+[Text=1/4 CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CD Lemma=1/4 NamedEntityTag=NUMBER]
+[Text=" CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P3M Timex=<TIMEX3 tid="t1" type="DURATION" value="P3M">a quarter</TIMEX3>]
+[Text=quarter CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=quarter NamedEntityTag=DURATION NormalizedNamedEntityTag=P3M Timex=<TIMEX3 tid="t1" type="DURATION" value="P3M">a quarter</TIMEX3>]
+[Text=of CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=foot CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=foot NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (CD 1/4))
+    (S
+      (NP ('' "))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN quarter))
+          (PP (IN of)
+            (NP (DT a) (NN foot))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 1/4-1)
+nsubj(quarter-5, "-2)
+cop(quarter-5, is-3)
+det(quarter-5, a-4)
+dep(1/4-1, quarter-5)
+case(foot-8, of-6)
+det(foot-8, a-7)
+nmod:of(quarter-5, foot-8)
+
+Extracted the following NER entity mentions:
+1/4	NUMBER	NUMBER:-1.0
+a quarter	DURATION	DURATION:-1.0

@@ -1,0 +1,51 @@
+Document: ID=E8D6C21D.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+CMV: Circumcision at birth is genital mutilation and causes desensitization
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Circumcision CharacterOffsetBegin=5 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=circumcision NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=birth CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=birth NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=genital CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=genital NamedEntityTag=O]
+[Text=mutilation CharacterOffsetBegin=38 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=mutilation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=causes CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=cause NamedEntityTag=O]
+[Text=desensitization CharacterOffsetBegin=60 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=desensitization NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP
+        (NP (NN Circumcision))
+        (PP (IN at)
+          (NP (NN birth))))
+      (VP (VBZ is)
+        (NP (JJ genital) (NN mutilation)))
+      (CC and)
+      (VP (VBZ causes)
+        (NP (NN desensitization))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(mutilation-8, Circumcision-3)
+nsubj(causes-10, Circumcision-3)
+case(birth-5, at-4)
+nmod:at(Circumcision-3, birth-5)
+cop(mutilation-8, is-6)
+amod(mutilation-8, genital-7)
+appos(CMV-1, mutilation-8)
+cc(causes-10, and-9)
+appos(CMV-1, causes-10)
+conj:and(mutilation-8, causes-10)
+obj(causes-10, desensitization-11)
+
+Extracted the following NER entity mentions:

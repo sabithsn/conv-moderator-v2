@@ -1,0 +1,51 @@
+Document: ID=5B6F3FB9.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Greene Bought Oil, Defense Stocks While Complaining About War Profiteers
+
+Tokens:
+[Text=Greene CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=ORGANIZATION]
+[Text=Bought CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=buy NamedEntityTag=ORGANIZATION]
+[Text=Oil CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Oil NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Defense CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Defense NamedEntityTag=O]
+[Text=Stocks CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=stock NamedEntityTag=O]
+[Text=While CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=Complaining CharacterOffsetBegin=40 CharacterOffsetEnd=51 PartOfSpeech=VBG Lemma=complain NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=War CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=War NamedEntityTag=CAUSE_OF_DEATH]
+[Text=Profiteers CharacterOffsetBegin=62 CharacterOffsetEnd=72 PartOfSpeech=NNPS Lemma=Profiteers NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PRN
+      (S
+        (NP (NNP Greene))
+        (VP (VBD Bought)
+          (NP
+            (NML (NNP Oil) (, ,) (NNP Defense))
+            (NNS Stocks)))))
+    (SBAR (IN While)
+      (S
+        (VP (VBG Complaining)
+          (NP (RB About) (NNP War)))))
+    (NP (NNPS Profiteers))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Complaining-8)
+nsubj(Bought-2, Greene-1)
+dep(Complaining-8, Bought-2)
+compound(Defense-5, Oil-3)
+punct(Defense-5, ,-4)
+compound(Stocks-6, Defense-5)
+obj(Bought-2, Stocks-6)
+mark(Complaining-8, While-7)
+advmod(War-10, About-9)
+obj(Complaining-8, War-10)
+dep(Complaining-8, Profiteers-11)
+
+Extracted the following NER entity mentions:
+Greene Bought Oil	ORGANIZATION	ORGANIZATION:0.9559895393471558
+War	CAUSE_OF_DEATH	-

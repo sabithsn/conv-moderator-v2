@@ -1,0 +1,61 @@
+Document: ID=9B9EA18C.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+The Jolt: Greene made defense stock purchases days before Russia invaded Ukraine
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Jolt CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=jolt NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Greene CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=made CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=defense CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=defense NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=purchases CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=purchase NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=before CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=invaded CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=VBD Lemma=invade NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (NML
+          (S
+            (VP (VB Jolt) (: :)
+              (S
+                (NP (NNP Greene))
+                (VP (VBD made)
+                  (NP
+                    (NML (NN defense) (NN stock))
+                    (NNS purchases)))))))
+        (NNS days))
+      (PP (IN before)
+        (NP (NNP Russia))))
+    (VP (VBD invaded)
+      (NP (NNP Ukraine)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, invaded-12)
+det(days-9, The-1)
+compound(days-9, Jolt-2)
+punct(Jolt-2, :-3)
+nsubj(made-5, Greene-4)
+ccomp(Jolt-2, made-5)
+compound(stock-7, defense-6)
+compound(purchases-8, stock-7)
+obj(made-5, purchases-8)
+nsubj(invaded-12, days-9)
+case(Russia-11, before-10)
+nmod:before(days-9, Russia-11)
+obj(invaded-12, Ukraine-13)
+
+Extracted the following NER entity mentions:
+Greene	PERSON	PERSON:0.9846834009393957
+days	DURATION	DURATION:-1.0
+Russia	COUNTRY	LOCATION:0.9963961185309193
+Ukraine	COUNTRY	LOCATION:0.9952765807166013

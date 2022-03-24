@@ -1,0 +1,54 @@
+Document: ID=6EAB0267.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+I think I know what your search history looks like... ew.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=search CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=search NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=looks CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=ew CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=ew NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (S
+        (NP (PRP I))
+        (VP (VB know)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP$ your) (NN search) (NN history))
+              (VP (VBZ looks)
+                (PP (IN like) (: ...)
+                  (NP (NN ew)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(know-4, I-3)
+ccomp(think-2, know-4)
+obj(looks-9, what-5)
+nmod:poss(history-8, your-6)
+compound(history-8, search-7)
+nsubj(looks-9, history-8)
+ccomp(know-4, looks-9)
+case(ew-12, like-10)
+punct(ew-12, ...-11)
+obl:like(looks-9, ew-12)
+punct(think-2, .-13)
+
+Extracted the following NER entity mentions:

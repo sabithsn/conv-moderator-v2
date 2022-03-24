@@ -1,0 +1,60 @@
+Document: ID=B504513B.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+I do not understand people who purposefully choose not to be organ donors.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=9 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=purposefully CharacterOffsetBegin=31 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=purposefully NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=choose NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=donors CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=donor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB understand)
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (ADVP (RB purposefully))
+              (VP (VBP choose)
+                (S (RB not)
+                  (VP (TO to)
+                    (VP (VB be)
+                      (NP (NN organ) (NNS donors)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, understand-4)
+nsubj(understand-4, I-1)
+aux(understand-4, do-2)
+advmod(understand-4, not-3)
+obj(understand-4, people-5)
+nsubj(choose-8, people-5)
+nsubj:xsubj(donors-13, people-5)
+ref(people-5, who-6)
+advmod(choose-8, purposefully-7)
+acl:relcl(people-5, choose-8)
+advmod(donors-13, not-9)
+mark(donors-13, to-10)
+cop(donors-13, be-11)
+compound(donors-13, organ-12)
+xcomp(choose-8, donors-13)
+punct(understand-4, .-14)
+
+Extracted the following NER entity mentions:

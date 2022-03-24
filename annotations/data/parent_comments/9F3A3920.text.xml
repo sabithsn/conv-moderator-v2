@@ -1,0 +1,55 @@
+Document: ID=9F3A3920.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+What s that one quote which is u absolutely Swear by?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=s CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=quote CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=quote NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=u CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=u NamedEntityTag=O]
+[Text=absolutely CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=absolutely NamedEntityTag=O]
+[Text=Swear CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=swear NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ s)
+      (NP
+        (NP (DT that) (CD one) (NN quote))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (S
+                (NP (PRP u))
+                (ADVP (RB absolutely))
+                (VP (VB Swear)
+                  (PP (IN by)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, What-1)
+cop(What-1, s-2)
+det(quote-5, that-3)
+nummod(quote-5, one-4)
+nsubj(What-1, quote-5)
+nsubj(is-7, quote-5)
+ref(quote-5, which-6)
+acl:relcl(quote-5, is-7)
+nsubj(Swear-10, u-8)
+advmod(Swear-10, absolutely-9)
+ccomp(is-7, Swear-10)
+obl(Swear-10, by-11)
+punct(What-1, ?-12)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0

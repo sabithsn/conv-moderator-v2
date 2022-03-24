@@ -1,0 +1,57 @@
+Document: ID=6418CD28.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Ok good go the fuck back to Russia then you stupid pussy
+
+Tokens:
+[Text=Ok CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=ok NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=UH Lemma=good NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=then CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=stupid CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=stupid NamedEntityTag=O]
+[Text=pussy CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=pussy NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Ok))
+    (INTJ (UH good))
+    (VP (VB go)
+      (NP (DT the)
+        (NML
+          (S
+            (VP (VB fuck)
+              (ADVP (RB back))
+              (PP (IN to)
+                (NP
+                  (NP (NNP Russia))
+                  (RRC
+                    (ADVP (RB then))
+                    (ADJP
+                      (NP (PRP you))
+                      (JJ stupid))))))))
+        (NN pussy)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-3)
+discourse(go-3, Ok-1)
+discourse(go-3, good-2)
+det(pussy-12, the-4)
+compound(pussy-12, fuck-5)
+advmod(fuck-5, back-6)
+case(Russia-8, to-7)
+obl:to(fuck-5, Russia-8)
+advmod(stupid-11, then-9)
+obl:npmod(stupid-11, you-10)
+acl:relcl(Russia-8, stupid-11)
+obj(go-3, pussy-12)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9991530632694786

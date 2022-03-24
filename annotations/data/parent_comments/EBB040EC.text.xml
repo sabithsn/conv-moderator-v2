@@ -1,0 +1,62 @@
+Document: ID=EBB040EC.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Does "I just wanted to rub it in" count as an agenda?
+
+Tokens:
+[Text=Does CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=rub CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=rub NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=count CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=count NamedEntityTag=TITLE]
+[Text=as CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=agenda CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=agenda NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBZ Does)
+      (S (`` ")
+        (NP (PRP I))
+        (ADVP (RB just))
+        (VP (VBD wanted)
+          (S
+            (VP (TO to)
+              (VP (VB rub)
+                (NP (PRP it))
+                (PP (IN in) (`` ")
+                  (NP
+                    (NP (NN count))
+                    (PP (IN as)
+                      (NP (DT an) (NN agenda)))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Does-1)
+punct(wanted-5, "-2)
+nsubj(wanted-5, I-3)
+nsubj:xsubj(rub-7, I-3)
+advmod(wanted-5, just-4)
+ccomp(Does-1, wanted-5)
+mark(rub-7, to-6)
+xcomp(wanted-5, rub-7)
+obj(rub-7, it-8)
+case(count-11, in-9)
+punct(count-11, "-10)
+obl:in(rub-7, count-11)
+case(agenda-14, as-12)
+det(agenda-14, an-13)
+nmod:as(count-11, agenda-14)
+punct(Does-1, ?-15)
+
+Extracted the following NER entity mentions:
+count	TITLE	-

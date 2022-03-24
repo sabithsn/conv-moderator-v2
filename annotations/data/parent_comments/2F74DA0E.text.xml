@@ -1,0 +1,113 @@
+Document: ID=2F74DA0E.text (2 sentences, 27 tokens)
+
+Sentence #1 (9 tokens):
+I just lost my virginity to a prostitute.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=lost CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=lose NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=virginity CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=virginity NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prostitute CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=prostitute NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBD lost)
+      (NP (PRP$ my) (NN virginity))
+      (PP (IN to)
+        (NP (DT a) (NN prostitute))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lost-3)
+nsubj(lost-3, I-1)
+advmod(lost-3, just-2)
+nmod:poss(virginity-5, my-4)
+obj(lost-3, virginity-5)
+case(prostitute-8, to-6)
+det(prostitute-8, a-7)
+obl:to(lost-3, prostitute-8)
+punct(lost-3, .-9)
+
+Extracted the following NER entity mentions:
+prostitute	TITLE	-
+
+Sentence #2 (18 tokens):
+It was the sexual equivalent of eating a slice of white bread that went sour once masticated.
+
+Tokens:
+[Text=It CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sexual CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=sexual NamedEntityTag=O]
+[Text=equivalent CharacterOffsetBegin=60 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=equivalent NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=eating CharacterOffsetBegin=74 CharacterOffsetEnd=80 PartOfSpeech=VBG Lemma=eat NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=slice CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=slice NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=bread CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=bread NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=sour CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=sour NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=masticated CharacterOffsetBegin=124 CharacterOffsetEnd=134 PartOfSpeech=VBN Lemma=masticate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ sexual) (NN equivalent))
+        (PP (IN of)
+          (S
+            (VP (VBG eating)
+              (NP
+                (NP (DT a) (NN slice))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ white) (NN bread))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBD went)
+                          (ADJP (JJ sour))
+                          (ADVP (RB once))
+                          (VP (VBN masticated)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, equivalent-5)
+nsubj(equivalent-5, It-1)
+cop(equivalent-5, was-2)
+det(equivalent-5, the-3)
+amod(equivalent-5, sexual-4)
+mark(eating-7, of-6)
+acl:of(equivalent-5, eating-7)
+det(slice-9, a-8)
+obj(eating-7, slice-9)
+case(bread-12, of-10)
+amod(bread-12, white-11)
+nmod:of(slice-9, bread-12)
+nsubj(went-14, bread-12)
+ref(bread-12, that-13)
+acl:relcl(bread-12, went-14)
+xcomp(went-14, sour-15)
+advmod(went-14, once-16)
+dep(went-14, masticated-17)
+punct(equivalent-5, .-18)
+
+Extracted the following NER entity mentions:
+once	DATE	DATE:-1.0

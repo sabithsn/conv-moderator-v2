@@ -1,0 +1,65 @@
+Document: ID=99829B6B.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+most of the conspiracy theories on this sub have been debunked and are straight up ignorant
+
+Tokens:
+[Text=most CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=12 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=theories CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NNS Lemma=theory NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sub CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=sub NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=debunked CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=VBN Lemma=debunk NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=straight CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=straight NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=ignorant CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=ignorant NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJS most))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN conspiracy) (NNS theories))
+          (PP (IN on)
+            (NP (DT this) (NN sub))))))
+    (VP
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN debunked))))
+      (CC and)
+      (VP (VBP are)
+        (ADJP
+          (ADVP (RB straight) (RB up))
+          (JJ ignorant))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, debunked-11)
+nsubj:pass(debunked-11, most-1)
+nsubj(ignorant-16, most-1)
+case(theories-5, of-2)
+det(theories-5, the-3)
+compound(theories-5, conspiracy-4)
+nmod:of(most-1, theories-5)
+case(sub-8, on-6)
+det(sub-8, this-7)
+nmod:on(theories-5, sub-8)
+aux(debunked-11, have-9)
+aux:pass(debunked-11, been-10)
+cc(ignorant-16, and-12)
+cop(ignorant-16, are-13)
+advmod(up-15, straight-14)
+advmod(ignorant-16, up-15)
+conj:and(debunked-11, ignorant-16)
+
+Extracted the following NER entity mentions:
+conspiracy	CRIMINAL_CHARGE	-

@@ -1,0 +1,66 @@
+Document: ID=F6009719.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Idaho passes Russian-style gay propaganda law that would jail librarians for “objectionable” books
+
+Tokens:
+[Text=Idaho CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Idaho NamedEntityTag=STATE_OR_PROVINCE]
+[Text=passes CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=pass NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=russian NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=HYPH Lemma=- NamedEntityTag=MISC]
+[Text=style CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=style NamedEntityTag=MISC]
+[Text=gay CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=propaganda CharacterOffsetBegin=31 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=propaganda NamedEntityTag=O]
+[Text=law CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=law NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=jail CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=jail NamedEntityTag=O]
+[Text=librarians CharacterOffsetBegin=62 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=librarian NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=objectionable CharacterOffsetBegin=78 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=objectionable NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+[Text=books CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=book NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Idaho))
+    (VP (VBZ passes)
+      (NP
+        (NP
+          (NML (JJ Russian) (HYPH -) (NN style))
+          (JJ gay) (NN propaganda) (NN law))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD would)
+              (VP
+                (NP (NN jail) (NNS librarians))
+                (PP (IN for)
+                  (NP (`` “) (JJ objectionable) ('' ”) (NNS books)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, passes-2)
+nsubj(passes-2, Idaho-1)
+amod(style-5, Russian-3)
+punct(style-5, --4)
+compound(law-8, style-5)
+amod(law-8, gay-6)
+compound(law-8, propaganda-7)
+obj(passes-2, law-8)
+nsubj(librarians-12, law-8)
+ref(law-8, that-9)
+aux(librarians-12, would-10)
+compound(librarians-12, jail-11)
+acl:relcl(law-8, librarians-12)
+case(books-17, for-13)
+punct(books-17, “-14)
+amod(books-17, objectionable-15)
+punct(books-17, ”-16)
+obl:for(librarians-12, books-17)
+
+Extracted the following NER entity mentions:
+Idaho	STATE_OR_PROVINCE	LOCATION:0.9109007725731186
+Russian-style	MISC	MISC:0.999477219795826

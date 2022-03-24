@@ -1,0 +1,61 @@
+Document: ID=DD3F3726.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Trump Lights Up Rally and Takes Biden to the Woodshed for His Weakness
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=MISC]
+[Text=Lights CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=light NamedEntityTag=MISC]
+[Text=Up CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=up NamedEntityTag=MISC]
+[Text=Rally CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Rally NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Takes CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=VBZ Lemma=take NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Woodshed CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Woodshed NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=His CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Weakness CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=weakness NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Trump))
+      (VP
+        (VP
+          (NP (NNS Lights))
+          (PP (IN Up)
+            (NP (NNP Rally))))
+        (CC and)
+        (VP (VBZ Takes))))
+    (FRAG
+      (NP (NNP Biden))
+      (PP (IN to)
+        (NP (DT the) (NNP Woodshed)))
+      (PP (IN for)
+        (NP (PRP$ His) (NN Weakness))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Biden-7)
+nsubj(Lights-2, Trump-1)
+nsubj(Takes-6, Trump-1)
+dep(Biden-7, Lights-2)
+case(Rally-4, Up-3)
+obl:up(Lights-2, Rally-4)
+cc(Takes-6, and-5)
+conj:and(Lights-2, Takes-6)
+dep(Biden-7, Takes-6)
+case(Woodshed-10, to-8)
+det(Woodshed-10, the-9)
+obl:to(Biden-7, Woodshed-10)
+case(Weakness-13, for-11)
+nmod:poss(Weakness-13, His-12)
+obl:for(Biden-7, Weakness-13)
+
+Extracted the following NER entity mentions:
+Trump Lights Up Rally	MISC	MISC:0.6366119785695693
+Biden	PERSON	PERSON:0.9912992971375041
+His	PERSON	-

@@ -1,0 +1,47 @@
+Document: ID=84742153.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+He doesn't want Ukrainians to die unlike you.
+
+Tokens:
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=Ukrainians CharacterOffsetBegin=16 CharacterOffsetEnd=26 PartOfSpeech=NNPS Lemma=Ukrainians NamedEntityTag=MISC]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=die CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=die NamedEntityTag=O]
+[Text=unlike CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=unlike NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ does) (RB n't)
+      (VP (VB want)
+        (NP (NNPS Ukrainians))
+        (S
+          (VP (TO to)
+            (VP (VB die)
+              (PP (IN unlike)
+                (NP (PRP you))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-4)
+nsubj(want-4, He-1)
+aux(want-4, does-2)
+advmod(want-4, n't-3)
+obj(want-4, Ukrainians-5)
+mark(die-7, to-6)
+advcl:to(want-4, die-7)
+case(you-9, unlike-8)
+obl:unlike(die-7, you-9)
+punct(want-4, .-10)
+
+Extracted the following NER entity mentions:
+Ukrainians	MISC	MISC:0.9997899929991767
+He	PERSON	-

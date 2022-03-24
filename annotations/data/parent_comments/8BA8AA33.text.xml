@@ -1,0 +1,101 @@
+Document: ID=8BA8AA33.text (1 sentences, 27 tokens)
+
+Sentence #1 (27 tokens):
+Trump slams former AG Bill Barr, calls Jan 6 committee a 'witch hunt,' claims Antifa, BLM 'got away with murder'
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=1 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=slams CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=slam NamedEntityTag=O]
+[Text=former CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=AG CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=AG NamedEntityTag=ORGANIZATION]
+[Text=Bill CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Bill NamedEntityTag=PERSON]
+[Text=Barr CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Barr NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=calls CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=call NamedEntityTag=O]
+[Text=Jan CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Jan NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6</TIMEX3>]
+[Text=6 CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=6 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-06 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-01-06">Jan 6</TIMEX3>]
+[Text=committee CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=committee NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=witch CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=witch NamedEntityTag=O]
+[Text=hunt CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=hunt NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=claims CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=VBZ Lemma=claim NamedEntityTag=O]
+[Text=Antifa CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Antifa NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=BLM CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=BLM NamedEntityTag=ORGANIZATION]
+[Text=' CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=murder CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=murder NamedEntityTag=CRIMINAL_CHARGE]
+[Text=' CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump))
+    (VP (VBZ slams)
+      (SBAR
+        (S
+          (NP
+            (NML (JJ former) (NNP AG))
+            (NNP Bill) (NNP Barr))
+          (, ,)
+          (VP (VBZ calls)
+            (NP-TMP (NNP Jan) (CD 6))
+            (SBAR
+              (S
+                (NP
+                  (NP (NN committee))
+                  (NP (DT a) (`` ') (NN witch) (NN hunt) (, ,) ('' ')))
+                (VP (VBZ claims)
+                  (NP
+                    (NP (NNP Antifa) (, ,) (NNP BLM) ('' '))
+                    (SBAR
+                      (S
+                        (VP (VBD got)
+                          (ADVP (RB away))
+                          (PP (IN with)
+                            (NP (NN murder))))))))))))))
+    ('' ')))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, slams-2)
+nsubj(slams-2, Trump-1)
+amod(AG-4, former-3)
+compound(Barr-6, AG-4)
+compound(Barr-6, Bill-5)
+nsubj(calls-8, Barr-6)
+punct(calls-8, ,-7)
+ccomp(slams-2, calls-8)
+obl:tmod(calls-8, Jan-9)
+nummod(Jan-9, 6-10)
+nsubj(claims-18, committee-11)
+det(hunt-15, a-12)
+punct(hunt-15, '-13)
+compound(hunt-15, witch-14)
+dep(committee-11, hunt-15)
+punct(hunt-15, ,-16)
+punct(hunt-15, '-17)
+ccomp(calls-8, claims-18)
+compound(BLM-21, Antifa-19)
+punct(BLM-21, ,-20)
+obj(claims-18, BLM-21)
+punct(BLM-21, '-22)
+acl:relcl(BLM-21, got-23)
+advmod(got-23, away-24)
+case(murder-26, with-25)
+obl:with(got-23, murder-26)
+punct(slams-2, '-27)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.793875899244987
+AG	ORGANIZATION	ORGANIZATION:0.8612048810569326
+Bill Barr	PERSON	PERSON:0.9214350484250962
+Jan 6	DATE	DATE:-1.0
+Antifa	PERSON	PERSON:0.6766308765667411
+BLM	ORGANIZATION	ORGANIZATION:0.9280622342959733
+murder	CRIMINAL_CHARGE	-

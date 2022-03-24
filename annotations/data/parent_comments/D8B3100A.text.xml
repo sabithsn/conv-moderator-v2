@@ -1,0 +1,76 @@
+Document: ID=D8B3100A.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+Weren’t the Democrats the more Conservative party, and Republicans the more liberal party at those times?
+
+Tokens:
+[Text=Were CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Democrats CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NNPS Lemma=Democrats NamedEntityTag=IDEOLOGY]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=Conservative CharacterOffsetBegin=31 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=party CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=55 CharacterOffsetEnd=66 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=the CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=liberal CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=liberal NamedEntityTag=IDEOLOGY]
+[Text=party CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBD Were) (RB n’t)
+    (NP (DT the) (NNPS Democrats))
+    (ADJP
+      (ADJP
+        (ADJP (DT the) (RBR more) (JJ Conservative))
+        (SBAR
+          (S
+            (NP
+              (NP (NN party))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (NNPS Republicans))
+                (NP (DT the)
+                  (ADJP (RBR more) (JJ liberal))
+                  (NN party)))))))
+      (PP (IN at)
+        (NP (DT those) (NNS times))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Conservative-7)
+cop(Conservative-7, Were-1)
+advmod(Conservative-7, n’t-2)
+det(Democrats-4, the-3)
+nsubj(Conservative-7, Democrats-4)
+det(Conservative-7, the-5)
+advmod(Conservative-7, more-6)
+ccomp(Conservative-7, party-8)
+punct(party-8, ,-9)
+cc(Republicans-11, and-10)
+ccomp(Conservative-7, Republicans-11)
+conj:and(party-8, Republicans-11)
+det(party-15, the-12)
+advmod(liberal-14, more-13)
+amod(party-15, liberal-14)
+dep(Republicans-11, party-15)
+case(times-18, at-16)
+det(times-18, those-17)
+obl:at(Conservative-7, times-18)
+punct(Conservative-7, ?-19)
+
+Extracted the following NER entity mentions:
+Democrats	IDEOLOGY	MISC:0.9999742867021181
+Conservative	IDEOLOGY	-
+Republicans	MISC	MISC:0.9999739104591066
+liberal	IDEOLOGY	-

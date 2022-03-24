@@ -1,0 +1,78 @@
+Document: ID=559C2681.text (2 sentences, 17 tokens)
+
+Sentence #1 (12 tokens):
+Why nominate a female African-American to the Supreme Court?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=nominate CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=nominate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=female CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=female NamedEntityTag=O]
+[Text=African CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=african NamedEntityTag=NATIONALITY]
+[Text=- CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=HYPH Lemma=- NamedEntityTag=NATIONALITY]
+[Text=American CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Supreme CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Supreme NamedEntityTag=ORGANIZATION]
+[Text=Court CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+[Text=? CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBP nominate)
+        (NP (DT a) (JJ female) (JJ African) (HYPH -) (JJ American))
+        (PP (IN to)
+          (NP (DT the) (NNP Supreme) (NNP Court)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, nominate-2)
+advmod(nominate-2, Why-1)
+det(American-7, a-3)
+amod(American-7, female-4)
+amod(American-7, African-5)
+punct(American-7, --6)
+obj(nominate-2, American-7)
+case(Court-11, to-8)
+det(Court-11, the-9)
+compound(Court-11, Supreme-10)
+obl:to(nominate-2, Court-11)
+punct(nominate-2, ?-12)
+
+Extracted the following NER entity mentions:
+African-American	NATIONALITY	MISC:0.9863279470572053
+Supreme Court	ORGANIZATION	ORGANIZATION:0.979955918832329
+
+Sentence #2 (5 tokens):
+Because it’s 2022.
+
+Tokens:
+[Text=Because CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=2022 CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=CD Lemma=2022 NamedEntityTag=DATE NormalizedNamedEntityTag=2022 Timex=<TIMEX3 tid="t1" type="DATE" value="2022">2022</TIMEX3>]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR (IN Because)
+    (S
+      (NP (PRP it))
+      (VP (VBZ ’s)
+        (NP (CD 2022))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 2022-4)
+mark(2022-4, Because-1)
+nsubj(2022-4, it-2)
+cop(2022-4, ’s-3)
+punct(2022-4, .-5)
+
+Extracted the following NER entity mentions:
+2022	DATE	DATE:0.8284580036266851

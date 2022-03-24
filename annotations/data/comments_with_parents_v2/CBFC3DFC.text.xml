@@ -1,0 +1,119 @@
+Document: ID=CBFC3DFC.text (3 sentences, 26 tokens)
+
+Sentence #1 (7 tokens):
+Aren’t there like 50k truckers?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=50k CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=CD Lemma=50k NamedEntityTag=NUMBER NormalizedNamedEntityTag=50.0]
+[Text=truckers CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=trucker NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Are) (RB n’t)
+      (ADVP (RB there))
+      (PP (IN like)
+        (NP (CD 50k) (NNS truckers))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, truckers-6)
+cop(truckers-6, Are-1)
+advmod(truckers-6, n’t-2)
+advmod(truckers-6, there-3)
+case(truckers-6, like-4)
+nummod(truckers-6, 50k-5)
+punct(truckers-6, ?-7)
+
+Extracted the following NER entity mentions:
+50k	NUMBER	NUMBER:-1.0
+
+Sentence #2 (10 tokens):
+I think it’s the biggest convoy in history!
+
+Tokens:
+[Text=I CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=biggest CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=JJS Lemma=biggest NamedEntityTag=O]
+[Text=convoy CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=convoy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ ’s)
+            (NP
+              (NP (DT the) (JJS biggest) (NN convoy))
+              (PP (IN in)
+                (NP (NN history))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(convoy-7, it-3)
+cop(convoy-7, ’s-4)
+det(convoy-7, the-5)
+amod(convoy-7, biggest-6)
+ccomp(think-2, convoy-7)
+case(history-9, in-8)
+nmod:in(convoy-7, history-9)
+punct(think-2, !-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+So sad people still don’t know about it
+
+Tokens:
+[Text=So CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=sad CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=sad NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP (JJ sad) (NNS people))
+    (ADVP (RB still))
+    (VP (VBP do) (RB n’t)
+      (VP (VB know)
+        (PP (IN about)
+          (NP (PRP it)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-7)
+advmod(know-7, So-1)
+amod(people-3, sad-2)
+nsubj(know-7, people-3)
+advmod(know-7, still-4)
+aux(know-7, do-5)
+advmod(know-7, n’t-6)
+case(it-9, about-8)
+obl:about(know-7, it-9)
+
+Extracted the following NER entity mentions:

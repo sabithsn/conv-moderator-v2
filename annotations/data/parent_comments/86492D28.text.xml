@@ -1,0 +1,156 @@
+Document: ID=86492D28.text (3 sentences, 34 tokens)
+
+Sentence #1 (16 tokens):
+I saw one woman say that "this is why we need feminism" nonsense.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=woman CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=need NamedEntityTag=O]
+[Text=feminism CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=feminism NamedEntityTag=IDEOLOGY]
+[Text=" CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=nonsense CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=nonsense NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD saw)
+      (S
+        (NP (CD one) (NN woman))
+        (VP (VB say)
+          (SBAR (IN that) (`` ")
+            (S
+              (NP (DT this))
+              (VP (VBZ is)
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP need)
+                      (NP (NN feminism))
+                      (S ('' ")
+                        (NP (NN nonsense))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, saw-2)
+nsubj(saw-2, I-1)
+nummod(woman-4, one-3)
+nsubj(say-5, woman-4)
+ccomp(saw-2, say-5)
+mark(is-9, that-6)
+punct(is-9, "-7)
+nsubj(is-9, this-8)
+ccomp(say-5, is-9)
+advmod(need-12, why-10)
+nsubj(need-12, we-11)
+advcl(is-9, need-12)
+obj(need-12, feminism-13)
+punct(nonsense-15, "-14)
+xcomp(need-12, nonsense-15)
+punct(saw-2, .-16)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+feminism	IDEOLOGY	-
+
+Sentence #2 (11 tokens):
+I messaged her, thinking that for once see reason.
+
+Tokens:
+[Text=I CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=messaged CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=VBD Lemma=message NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=thinking CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=VBG Lemma=think NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=see CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD messaged)
+      (NP (PRP her))
+      (, ,)
+      (S
+        (VP (VBG thinking)
+          (SBAR (IN that)
+            (FRAG
+              (PP (IN for)
+                (ADVP (RB once)))
+              (S
+                (VP (VB see)
+                  (NP (NN reason)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, messaged-2)
+nsubj(messaged-2, I-1)
+obj(messaged-2, her-3)
+punct(messaged-2, ,-4)
+advcl(messaged-2, thinking-5)
+mark(see-9, that-6)
+case(once-8, for-7)
+dep(see-9, once-8)
+dep(thinking-5, see-9)
+obj(see-9, reason-10)
+punct(messaged-2, .-11)
+
+Extracted the following NER entity mentions:
+once	DATE	DATE:-1.0
+her	PERSON	-
+
+Sentence #3 (7 tokens):
+I was told to kill myself.
+
+Tokens:
+[Text=I CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=VBN Lemma=tell NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=kill CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=VB Lemma=kill NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=136 CharacterOffsetEnd=142 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN told)
+        (S
+          (VP (TO to)
+            (VP (VB kill)
+              (NP (PRP myself)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-3)
+nsubj:pass(told-3, I-1)
+nsubj:xsubj(kill-5, I-1)
+aux:pass(told-3, was-2)
+mark(kill-5, to-4)
+xcomp(told-3, kill-5)
+obj(kill-5, myself-6)
+punct(told-3, .-7)
+
+Extracted the following NER entity mentions:

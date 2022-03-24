@@ -1,0 +1,61 @@
+Document: ID=189F9F8E.text (2 sentences, 10 tokens)
+
+Sentence #1 (5 tokens):
+Religion is fake anyways.
+
+Tokens:
+[Text=Religion CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Religion NamedEntityTag=MISC]
+[Text=is CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=fake CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=fake NamedEntityTag=O]
+[Text=anyways CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=anyways NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Religion))
+    (VP (VBZ is)
+      (ADJP (JJ fake))
+      (ADVP (RB anyways)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fake-3)
+nsubj(fake-3, Religion-1)
+cop(fake-3, is-2)
+advmod(fake-3, anyways-4)
+punct(fake-3, .-5)
+
+Extracted the following NER entity mentions:
+Religion	MISC	MISC:0.7159925668329303
+
+Sentence #2 (5 tokens):
+None of them care.
+
+Tokens:
+[Text=None CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=care NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN None))
+      (PP (IN of)
+        (NP (PRP them))))
+    (VP (VBP care))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, care-4)
+nsubj(care-4, None-1)
+case(them-3, of-2)
+nmod:of(None-1, them-3)
+punct(care-4, .-5)
+
+Extracted the following NER entity mentions:

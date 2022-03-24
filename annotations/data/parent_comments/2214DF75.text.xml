@@ -1,0 +1,236 @@
+Document: ID=2214DF75.text (6 sentences, 45 tokens)
+
+Sentence #1 (11 tokens):
+You know what didn't happen while Trump was president.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=happen CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=happen NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP know)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBD did) (RB n't)
+            (VP (VB happen)
+              (SBAR (IN while)
+                (S
+                  (NP (NNP Trump))
+                  (VP (VBD was)
+                    (NP (NN president))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, You-1)
+nsubj(happen-6, what-3)
+aux(happen-6, did-4)
+advmod(happen-6, n't-5)
+ccomp(know-2, happen-6)
+mark(president-10, while-7)
+nsubj(president-10, Trump-8)
+cop(president-10, was-9)
+advcl:while(happen-6, president-10)
+punct(know-2, .-11)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9712687909866058
+president	TITLE	-
+
+Sentence #2 (2 tokens):
+War.
+
+Tokens:
+[Text=War CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=War NamedEntityTag=CAUSE_OF_DEATH]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP War) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, War-1)
+punct(War-1, .-2)
+
+Extracted the following NER entity mentions:
+War	CAUSE_OF_DEATH	-
+
+Sentence #3 (12 tokens):
+You know what did when Obama and Biden have been president.
+
+Tokens:
+[Text=You CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Obama CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=have CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=president CharacterOffsetBegin=109 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=president NamedEntityTag=TITLE]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP know)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBD did)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (NNP Obama)
+                  (CC and)
+                  (NNP Biden))
+                (VP (VBP have)
+                  (VP (VBN been)
+                    (NP (NN president))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-2)
+nsubj(know-2, You-1)
+nsubj(did-4, what-3)
+ccomp(know-2, did-4)
+advmod(president-11, when-5)
+nsubj(president-11, Obama-6)
+cc(Biden-8, and-7)
+conj:and(Obama-6, Biden-8)
+nsubj(president-11, Biden-8)
+aux(president-11, have-9)
+cop(president-11, been-10)
+advcl(did-4, president-11)
+punct(know-2, .-12)
+
+Extracted the following NER entity mentions:
+Obama	PERSON	PERSON:0.9975378845074298
+Biden	PERSON	PERSON:0.9988617062098063
+president	TITLE	-
+
+Sentence #4 (2 tokens):
+War.
+
+Tokens:
+[Text=War CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=War NamedEntityTag=CAUSE_OF_DEATH]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP War) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, War-1)
+punct(War-1, .-2)
+
+Extracted the following NER entity mentions:
+War	CAUSE_OF_DEATH	-
+
+Sentence #5 (3 tokens):
+So....
+
+Tokens:
+[Text=So CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (VP (: ...))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ...-2)
+advmod(...-2, So-1)
+punct(...-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (15 tokens):
+I'd say Putin was afraid of Trump and not so much of Biden.
+
+Tokens:
+[Text=I CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=afraid CharacterOffsetBegin=150 CharacterOffsetEnd=156 PartOfSpeech=JJ Lemma=afraid NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=185 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB say)
+        (SBAR
+          (S
+            (NP (NNP Putin))
+            (VP (VBD was)
+              (ADJP
+                (ADJP (JJ afraid)
+                  (PP (IN of)
+                    (NP (NNP Trump))))
+                (CC and)
+                (ADJP (RB not) (RB so) (JJ much)))
+              (PP (IN of)
+                (NP (NNP Biden))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, say-3)
+nsubj(say-3, I-1)
+aux(say-3, 'd-2)
+nsubj(afraid-6, Putin-4)
+nsubj(much-12, Putin-4)
+cop(afraid-6, was-5)
+ccomp(say-3, afraid-6)
+case(Trump-8, of-7)
+obl:of(afraid-6, Trump-8)
+cc(much-12, and-9)
+advmod(much-12, not-10)
+advmod(much-12, so-11)
+ccomp(say-3, much-12)
+conj:and(afraid-6, much-12)
+case(Biden-14, of-13)
+obl:of(afraid-6, Biden-14)
+punct(say-3, .-15)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9951133407290847
+Trump	PERSON	PERSON:0.8979049826664397
+Biden	PERSON	PERSON:0.95619364802582

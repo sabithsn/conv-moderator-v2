@@ -1,0 +1,44 @@
+Document: ID=87B656BF.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Ex-Wife pregnant with new boyfriends baby after aborting ours.
+
+Tokens:
+[Text=Ex-Wife CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=ex-wife NamedEntityTag=O]
+[Text=pregnant CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=pregnant NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=boyfriends CharacterOffsetBegin=26 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=boyfriend NamedEntityTag=O]
+[Text=baby CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=aborting CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=aborting NamedEntityTag=O]
+[Text=ours CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=ours NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN Ex-Wife))
+    (NP
+      (ADJP (JJ pregnant)
+        (PP (IN with)
+          (NP (JJ new) (NNS boyfriends))))
+      (NN baby))
+    (PP (IN after)
+      (NP (NN aborting) (NNS ours)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ex-Wife-1)
+amod(baby-6, pregnant-2)
+case(boyfriends-5, with-3)
+amod(boyfriends-5, new-4)
+obl:with(pregnant-2, boyfriends-5)
+dep(Ex-Wife-1, baby-6)
+case(ours-9, after-7)
+compound(ours-9, aborting-8)
+obl:after(Ex-Wife-1, ours-9)
+punct(Ex-Wife-1, .-10)
+
+Extracted the following NER entity mentions:

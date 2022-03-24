@@ -1,0 +1,61 @@
+Document: ID=BEB14711.text (2 sentences, 11 tokens)
+
+Sentence #1 (5 tokens):
+Can’t ban honking.
+
+Tokens:
+[Text=Ca CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=ban CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VB Lemma=ban NamedEntityTag=O]
+[Text=honking CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=honking NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Ca) (RB n’t)
+      (VP (VB ban)
+        (NP (JJ honking))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ban-3)
+aux(ban-3, Ca-1)
+advmod(ban-3, n’t-2)
+obj(ban-3, honking-4)
+punct(ban-3, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+That unironically can cause more accidents
+
+Tokens:
+[Text=That CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=unironically CharacterOffsetBegin=24 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=unironically NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=cause CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=cause NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=accidents CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=accident NamedEntityTag=CAUSE_OF_DEATH]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (ADVP (RB unironically))
+    (VP (MD can)
+      (VP (VB cause)
+        (NP (JJR more) (NNS accidents))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cause-4)
+nsubj(cause-4, That-1)
+advmod(cause-4, unironically-2)
+aux(cause-4, can-3)
+amod(accidents-6, more-5)
+obj(cause-4, accidents-6)
+
+Extracted the following NER entity mentions:
+accidents	CAUSE_OF_DEATH	-

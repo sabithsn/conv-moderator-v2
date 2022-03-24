@@ -1,0 +1,67 @@
+Document: ID=E7DA7E06.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Entire Medical Establishment Threatened By Comedian Who Gets High And Talks About MMA And Aliens
+
+Tokens:
+[Text=Entire CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=entire NamedEntityTag=O]
+[Text=Medical CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=medical NamedEntityTag=O]
+[Text=Establishment CharacterOffsetBegin=15 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=establishment NamedEntityTag=O]
+[Text=Threatened CharacterOffsetBegin=29 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=threatened NamedEntityTag=O]
+[Text=By CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Comedian CharacterOffsetBegin=43 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Comedian NamedEntityTag=TITLE]
+[Text=Who CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Gets CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBZ Lemma=get NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Talks CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NNPS Lemma=Talks NamedEntityTag=O]
+[Text=About CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=MMA CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=MMA NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Aliens CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Aliens NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (JJ Entire) (JJ Medical) (NN Establishment))
+    (ADJP (JJ Threatened)
+      (PP (IN By)
+        (NP
+          (NP (NNP Comedian))
+          (SBAR
+            (WHNP (WP Who))
+            (S
+              (VP
+                (VP (VBZ Gets)
+                  (ADJP (JJ High)))
+                (CC And)
+                (VP
+                  (NP (NNPS Talks))
+                  (PP (IN About)
+                    (NP (NNP MMA)
+                      (CC And)
+                      (NNP Aliens))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Establishment-3)
+amod(Establishment-3, Entire-1)
+amod(Establishment-3, Medical-2)
+dep(Establishment-3, Threatened-4)
+case(Comedian-6, By-5)
+obl:by(Threatened-4, Comedian-6)
+nsubj(Gets-8, Comedian-6)
+ref(Comedian-6, Who-7)
+acl:relcl(Comedian-6, Gets-8)
+xcomp(Gets-8, High-9)
+cc(Talks-11, And-10)
+acl:relcl(Comedian-6, Talks-11)
+conj:and(Gets-8, Talks-11)
+case(MMA-13, About-12)
+obl:about(Talks-11, MMA-13)
+cc(Aliens-15, And-14)
+obl:about(Talks-11, Aliens-15)
+conj:and(MMA-13, Aliens-15)
+
+Extracted the following NER entity mentions:
+Comedian	TITLE	-

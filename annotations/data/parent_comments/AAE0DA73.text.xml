@@ -1,0 +1,57 @@
+Document: ID=AAE0DA73.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Trudeau Orders All Geese Rounded Up And Shot For Honking In Solidarity With Truckers
+
+Tokens:
+[Text=Trudeau CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Trudeau NamedEntityTag=PERSON]
+[Text=Orders CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=order NamedEntityTag=O]
+[Text=All CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=Geese CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Geese NamedEntityTag=O]
+[Text=Rounded CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Rounded NamedEntityTag=O]
+[Text=Up CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Shot CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Shot NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Honking CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Honking NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=In NamedEntityTag=O]
+[Text=Solidarity CharacterOffsetBegin=60 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Solidarity NamedEntityTag=O]
+[Text=With CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Truckers CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=trucker NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NNP Trudeau) (NNS Orders))
+    (NP
+      (NP (DT All) (NNP Geese) (NNP Rounded))
+      (PP
+        (PP (IN Up)
+          (CC And)
+          (NP (NNP Shot)))
+        (PP (IN For)
+          (NP
+            (NP (NNP Honking) (NNP In) (NNP Solidarity))
+            (PP (IN With)
+              (NP (NNS Truckers)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Orders-2)
+compound(Orders-2, Trudeau-1)
+det(Rounded-5, All-3)
+compound(Rounded-5, Geese-4)
+dep(Orders-2, Rounded-5)
+nmod(Rounded-5, Up-6)
+cc(Shot-8, And-7)
+nmod(Rounded-5, Shot-8)
+conj:and(Up-6, Shot-8)
+case(Solidarity-12, For-9)
+compound(Solidarity-12, Honking-10)
+compound(Solidarity-12, In-11)
+obl:for(Up-6, Solidarity-12)
+case(Truckers-14, With-13)
+nmod:with(Solidarity-12, Truckers-14)
+
+Extracted the following NER entity mentions:
+Trudeau	PERSON	PERSON:0.6253673937386868

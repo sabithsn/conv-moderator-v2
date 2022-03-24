@@ -1,0 +1,122 @@
+Document: ID=E989D96B.text (2 sentences, 28 tokens)
+
+Sentence #1 (7 tokens):
+Nobody complained when it was Yemen.
+
+Tokens:
+[Text=Nobody CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=nobody NamedEntityTag=O]
+[Text=complained CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=complain NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Yemen CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Yemen NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Nobody))
+    (VP (VBD complained)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (NP (NNP Yemen))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, complained-2)
+nsubj(complained-2, Nobody-1)
+advmod(Yemen-6, when-3)
+nsubj(Yemen-6, it-4)
+cop(Yemen-6, was-5)
+advcl(complained-2, Yemen-6)
+punct(complained-2, .-7)
+
+Extracted the following NER entity mentions:
+Yemen	COUNTRY	LOCATION:0.9929034689777627
+
+Sentence #2 (21 tokens):
+Or when the US was drone striking Syria, or invading Iraq for *checks notes* literally no reason.
+
+Tokens:
+[Text=Or CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=US CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=US NamedEntityTag=COUNTRY]
+[Text=was CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=drone CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=drone NamedEntityTag=O]
+[Text=striking CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=striking NamedEntityTag=O]
+[Text=Syria CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Syria NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=invading CharacterOffsetBegin=81 CharacterOffsetEnd=89 PartOfSpeech=VBG Lemma=invade NamedEntityTag=O]
+[Text=Iraq CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Iraq NamedEntityTag=COUNTRY]
+[Text=for CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=checks CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNS Lemma=check NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=VBZ Lemma=note NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=114 CharacterOffsetEnd=123 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC Or)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NNP US))
+          (VP (VBD was)
+            (S
+              (VP (VB drone)
+                (UCP
+                  (NP (JJ striking) (NNP Syria))
+                  (, ,)
+                  (CC or)
+                  (VP (VBG invading)
+                    (PP
+                      (NP (NNP Iraq))
+                      (IN for)))))))))
+      (NFP *)
+      (NP (NNS checks))
+      (VP (VBZ notes)))
+    (NFP *)
+    (FRAG
+      (ADVP (RB literally))
+      (NP (DT no) (NN reason)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, notes-16)
+cc(notes-16, Or-1)
+advmod(was-5, when-2)
+det(US-4, the-3)
+nsubj(was-5, US-4)
+advcl(notes-16, was-5)
+ccomp(was-5, drone-6)
+amod(Syria-8, striking-7)
+obj(drone-6, Syria-8)
+punct(Syria-8, ,-9)
+cc(Syria-8, or-10)
+acl(Syria-8, invading-11)
+obl:for(invading-11, Iraq-12)
+case(Iraq-12, for-13)
+punct(notes-16, *-14)
+nsubj(notes-16, checks-15)
+punct(notes-16, *-17)
+dep(reason-20, literally-18)
+det(reason-20, no-19)
+parataxis(notes-16, reason-20)
+punct(notes-16, .-21)
+
+Extracted the following NER entity mentions:
+US	COUNTRY	LOCATION:0.9919230634560577
+Syria	COUNTRY	LOCATION:0.9983566075041821
+Iraq	COUNTRY	LOCATION:0.9990161365564055

@@ -1,0 +1,632 @@
+Document: ID=CDF7820E.text (9 sentences, 162 tokens)
+
+Sentence #1 (8 tokens):
+I actually disgree with some of this.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=disgree CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=disgree NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB actually))
+    (VP (VBP disgree)
+      (PP (IN with)
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP (DT this))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, disgree-3)
+nsubj(disgree-3, I-1)
+advmod(disgree-3, actually-2)
+case(some-5, with-4)
+obl:with(disgree-3, some-5)
+case(this-7, of-6)
+nmod:of(some-5, this-7)
+punct(disgree-3, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (22 tokens):
+Men can not do things as good as women can and women can not do things that men do as well.
+
+Tokens:
+[Text=Men CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNS Men))
+      (VP (MD can) (RB not)
+        (VP (VB do)
+          (NP (NNS things))
+          (PP (IN as)
+            (ADJP (JJ good)))
+          (SBAR (IN as)
+            (S
+              (NP (NNS women))
+              (VP (MD can)))))))
+    (CC and)
+    (S
+      (NP (NNS women))
+      (VP (MD can) (RB not)
+        (VP (VB do)
+          (NP
+            (NP (NNS things))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (NP (NNS men))
+                (VP (VBP do)
+                  (ADVP (RB as) (RB well)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-4)
+nsubj(do-4, Men-1)
+aux(do-4, can-2)
+advmod(do-4, not-3)
+obj(do-4, things-5)
+case(good-7, as-6)
+advcl:as(do-4, good-7)
+mark(can-10, as-8)
+nsubj(can-10, women-9)
+advcl:as(do-4, can-10)
+cc(do-15, and-11)
+nsubj(do-15, women-12)
+aux(do-15, can-13)
+advmod(do-15, not-14)
+conj:and(do-4, do-15)
+obj(do-15, things-16)
+obj(do-19, things-16)
+ref(things-16, that-17)
+nsubj(do-19, men-18)
+acl:relcl(things-16, do-19)
+advmod(do-19, as-20)
+fixed(as-20, well-21)
+punct(do-4, .-22)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (26 tokens):
+A woman will probably be a lot better at teaching, nursing, or care giving jobs do to their higher emotional pattern of behavior.
+
+Tokens:
+[Text=A CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=144 CharacterOffsetEnd=152 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=162 CharacterOffsetEnd=168 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=teaching CharacterOffsetBegin=172 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=teaching NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=nursing CharacterOffsetBegin=182 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=nursing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=191 CharacterOffsetEnd=193 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=giving CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=VBG Lemma=give NamedEntityTag=O]
+[Text=jobs CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=NNS Lemma=job NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=214 CharacterOffsetEnd=216 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=217 CharacterOffsetEnd=222 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=higher CharacterOffsetBegin=223 CharacterOffsetEnd=229 PartOfSpeech=JJR Lemma=higher NamedEntityTag=O]
+[Text=emotional CharacterOffsetBegin=230 CharacterOffsetEnd=239 PartOfSpeech=JJ Lemma=emotional NamedEntityTag=O]
+[Text=pattern CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=pattern NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=behavior CharacterOffsetBegin=251 CharacterOffsetEnd=259 PartOfSpeech=NN Lemma=behavior NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A) (NN woman))
+    (VP (MD will)
+      (ADVP (RB probably))
+      (VP
+        (VP (VB be)
+          (ADJP
+            (ADJP
+              (NP (DT a) (NN lot))
+              (JJR better))
+            (PP (IN at)
+              (NP
+                (NP (NN teaching))
+                (, ,)
+                (NP (NN nursing))
+                (, ,)))))
+        (CC or)
+        (VP (VB care)
+          (S
+            (VP (VBG giving)
+              (SBAR
+                (S
+                  (NP (NNS jobs))
+                  (VP (VBP do)
+                    (PP (IN to)
+                      (NP
+                        (NP (PRP$ their)
+                          (ADJP (JJR higher) (JJ emotional))
+                          (NN pattern))
+                        (PP (IN of)
+                          (NP (NN behavior)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, better-8)
+det(woman-2, A-1)
+nsubj(better-8, woman-2)
+nsubj(care-15, woman-2)
+aux(better-8, will-3)
+advmod(better-8, probably-4)
+cop(better-8, be-5)
+det(lot-7, a-6)
+obl:npmod(better-8, lot-7)
+case(teaching-10, at-9)
+obl:at(better-8, teaching-10)
+punct(teaching-10, ,-11)
+appos(teaching-10, nursing-12)
+punct(teaching-10, ,-13)
+cc(care-15, or-14)
+conj:or(better-8, care-15)
+xcomp(care-15, giving-16)
+nsubj(do-18, jobs-17)
+ccomp(giving-16, do-18)
+case(pattern-23, to-19)
+nmod:poss(pattern-23, their-20)
+advmod(emotional-22, higher-21)
+amod(pattern-23, emotional-22)
+obl:to(do-18, pattern-23)
+case(behavior-25, of-24)
+nmod:of(pattern-23, behavior-25)
+punct(better-8, .-26)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (9 tokens):
+Men have a more rational analytical wired mind.
+
+Tokens:
+[Text=Men CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=rational CharacterOffsetBegin=277 CharacterOffsetEnd=285 PartOfSpeech=JJ Lemma=rational NamedEntityTag=O]
+[Text=analytical CharacterOffsetBegin=286 CharacterOffsetEnd=296 PartOfSpeech=JJ Lemma=analytical NamedEntityTag=O]
+[Text=wired CharacterOffsetBegin=297 CharacterOffsetEnd=302 PartOfSpeech=JJ Lemma=wired NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Men))
+    (VP (VBP have)
+      (NP (DT a)
+        (ADJP (RBR more) (JJ rational))
+        (JJ analytical) (JJ wired) (NN mind)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, Men-1)
+det(mind-8, a-3)
+advmod(rational-5, more-4)
+amod(mind-8, rational-5)
+amod(mind-8, analytical-6)
+amod(mind-8, wired-7)
+obj(have-2, mind-8)
+punct(have-2, .-9)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (16 tokens):
+So they can work in high intensity situationsnand environments while having a clear calm mind.
+
+Tokens:
+[Text=So CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=321 CharacterOffsetEnd=325 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=intensity CharacterOffsetBegin=334 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=intensity NamedEntityTag=O]
+[Text=situationsnand CharacterOffsetBegin=344 CharacterOffsetEnd=358 PartOfSpeech=NN Lemma=situationsnand NamedEntityTag=O]
+[Text=environments CharacterOffsetBegin=359 CharacterOffsetEnd=371 PartOfSpeech=NNS Lemma=environment NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=372 CharacterOffsetEnd=377 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=378 CharacterOffsetEnd=384 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=385 CharacterOffsetEnd=386 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=387 CharacterOffsetEnd=392 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=calm CharacterOffsetBegin=393 CharacterOffsetEnd=397 PartOfSpeech=JJ Lemma=calm NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=398 CharacterOffsetEnd=402 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP (PRP they))
+    (VP (MD can)
+      (VP (VB work)
+        (PP (IN in)
+          (NP
+            (NML (JJ high) (NN intensity))
+            (NN situationsnand) (NNS environments)))
+        (PP (IN while)
+          (S
+            (VP (VBG having)
+              (NP (DT a)
+                (ADJP (JJ clear) (JJ calm))
+                (NN mind)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, work-4)
+advmod(work-4, So-1)
+nsubj(work-4, they-2)
+aux(work-4, can-3)
+case(environments-9, in-5)
+amod(intensity-7, high-6)
+compound(environments-9, intensity-7)
+compound(environments-9, situationsnand-8)
+obl:in(work-4, environments-9)
+mark(having-11, while-10)
+advcl:while(work-4, having-11)
+det(mind-15, a-12)
+advmod(calm-14, clear-13)
+amod(mind-15, calm-14)
+obj(having-11, mind-15)
+punct(work-4, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (27 tokens):
+Can men be teachers and women be engineers or soldiers, of course, but typically that is not what naturally the two genders go for.
+
+Tokens:
+[Text=Can CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=409 CharacterOffsetEnd=412 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=teachers CharacterOffsetBegin=416 CharacterOffsetEnd=424 PartOfSpeech=NNS Lemma=teacher NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=429 CharacterOffsetEnd=434 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=435 CharacterOffsetEnd=437 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=engineers CharacterOffsetBegin=438 CharacterOffsetEnd=447 PartOfSpeech=NNS Lemma=engineer NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=soldiers CharacterOffsetBegin=451 CharacterOffsetEnd=459 PartOfSpeech=NNS Lemma=soldier NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=459 CharacterOffsetEnd=460 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=461 CharacterOffsetEnd=463 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=464 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=472 CharacterOffsetEnd=475 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=typically CharacterOffsetBegin=476 CharacterOffsetEnd=485 PartOfSpeech=RB Lemma=typically NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=486 CharacterOffsetEnd=490 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=494 CharacterOffsetEnd=497 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=498 CharacterOffsetEnd=502 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=naturally CharacterOffsetBegin=503 CharacterOffsetEnd=512 PartOfSpeech=RB Lemma=naturally NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=513 CharacterOffsetEnd=516 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=517 CharacterOffsetEnd=520 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=genders CharacterOffsetBegin=521 CharacterOffsetEnd=528 PartOfSpeech=NNS Lemma=gender NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=529 CharacterOffsetEnd=531 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=532 CharacterOffsetEnd=535 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=535 CharacterOffsetEnd=536 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SQ (MD Can)
+      (NP (NNS men))
+      (VP
+        (VP (VB be)
+          (NP (NNS teachers)
+            (CC and)
+            (NNS women)))
+        (VP (VB be)
+          (NP
+            (NP (NNS engineers)
+              (CC or)
+              (NNS soldiers))
+            (, ,)
+            (PP (IN of)
+              (NP (NN course)))))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB typically))
+      (NP (DT that))
+      (VP (VBZ is) (RB not)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (ADVP (RB naturally))
+            (NP (DT the) (CD two) (NNS genders))
+            (VP (VBP go)
+              (PP (IN for)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, teachers-4)
+aux(teachers-4, Can-1)
+nsubj(teachers-4, men-2)
+cop(teachers-4, be-3)
+cc(women-6, and-5)
+conj:and(teachers-4, women-6)
+cop(engineers-8, be-7)
+dep(teachers-4, engineers-8)
+cc(soldiers-10, or-9)
+dep(teachers-4, soldiers-10)
+conj:or(engineers-8, soldiers-10)
+punct(engineers-8, ,-11)
+case(course-13, of-12)
+nmod:of(engineers-8, course-13)
+punct(teachers-4, ,-14)
+cc(is-18, but-15)
+advmod(is-18, typically-16)
+nsubj(is-18, that-17)
+conj:but(teachers-4, is-18)
+advmod(is-18, not-19)
+obl:for(go-25, what-20)
+advmod(go-25, naturally-21)
+det(genders-24, the-22)
+nummod(genders-24, two-23)
+nsubj(go-25, genders-24)
+ccomp(is-18, go-25)
+case(what-20, for-26)
+punct(teachers-4, .-27)
+
+Extracted the following NER entity mentions:
+two	NUMBER	NUMBER:-1.0
+
+Sentence #7 (22 tokens):
+And I find that relieving that men and women can really on each other to make our society function as one.
+
+Tokens:
+[Text=And CharacterOffsetBegin=537 CharacterOffsetEnd=540 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=541 CharacterOffsetEnd=542 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=VBP Lemma=find NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=548 CharacterOffsetEnd=552 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=relieving CharacterOffsetBegin=553 CharacterOffsetEnd=562 PartOfSpeech=VBG Lemma=relieve NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=563 CharacterOffsetEnd=567 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=568 CharacterOffsetEnd=571 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=572 CharacterOffsetEnd=575 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=women CharacterOffsetBegin=576 CharacterOffsetEnd=581 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=582 CharacterOffsetEnd=585 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=586 CharacterOffsetEnd=592 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=593 CharacterOffsetEnd=595 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=596 CharacterOffsetEnd=600 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=601 CharacterOffsetEnd=606 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=607 CharacterOffsetEnd=609 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=610 CharacterOffsetEnd=614 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=615 CharacterOffsetEnd=618 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=619 CharacterOffsetEnd=626 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=function CharacterOffsetBegin=627 CharacterOffsetEnd=635 PartOfSpeech=NN Lemma=function NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=636 CharacterOffsetEnd=638 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=639 CharacterOffsetEnd=642 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=642 CharacterOffsetEnd=643 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP find)
+      (SBAR (IN that)
+        (S
+          (S
+            (VP (VBG relieving)
+              (SBAR (IN that)
+                (S
+                  (NP (NNS men)
+                    (CC and)
+                    (NNS women))
+                  (VP (MD can)
+                    (ADVP (RB really))
+                    (VP
+                      (PP (IN on)
+                        (NP (DT each) (JJ other)))))))))
+          (VP (TO to)
+            (VP (VB make)
+              (NP (PRP$ our) (NN society) (NN function))
+              (PP (IN as)
+                (NP (CD one))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, find-3)
+cc(find-3, And-1)
+nsubj(find-3, I-2)
+mark(make-16, that-4)
+csubj(make-16, relieving-5)
+mark(other-14, that-6)
+nsubj(other-14, men-7)
+cc(women-9, and-8)
+conj:and(men-7, women-9)
+nsubj(other-14, women-9)
+aux(other-14, can-10)
+advmod(other-14, really-11)
+case(other-14, on-12)
+det(other-14, each-13)
+ccomp(relieving-5, other-14)
+mark(make-16, to-15)
+ccomp(find-3, make-16)
+nmod:poss(function-19, our-17)
+compound(function-19, society-18)
+obj(make-16, function-19)
+case(one-21, as-20)
+obl:as(make-16, one-21)
+punct(find-3, .-22)
+
+Extracted the following NER entity mentions:
+one	NUMBER	NUMBER:-1.0
+
+Sentence #8 (17 tokens):
+I think men are amazing simply because they can do a lot I can't do.
+
+Tokens:
+[Text=I CharacterOffsetBegin=646 CharacterOffsetEnd=647 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=648 CharacterOffsetEnd=653 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=654 CharacterOffsetEnd=657 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=658 CharacterOffsetEnd=661 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=amazing CharacterOffsetBegin=662 CharacterOffsetEnd=669 PartOfSpeech=JJ Lemma=amazing NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=670 CharacterOffsetEnd=676 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=677 CharacterOffsetEnd=684 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=685 CharacterOffsetEnd=689 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=690 CharacterOffsetEnd=693 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=694 CharacterOffsetEnd=696 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=697 CharacterOffsetEnd=698 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=703 CharacterOffsetEnd=704 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=705 CharacterOffsetEnd=707 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=707 CharacterOffsetEnd=710 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=711 CharacterOffsetEnd=713 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=713 CharacterOffsetEnd=714 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (NNS men))
+          (VP (VBP are)
+            (ADJP (JJ amazing))
+            (ADVP (RB simply))
+            (SBAR (IN because)
+              (S
+                (NP (PRP they))
+                (VP (MD can)
+                  (VP (VB do)
+                    (NP
+                      (NP (DT a) (NN lot))
+                      (SBAR
+                        (S
+                          (NP (PRP I))
+                          (VP (MD ca) (RB n't)
+                            (VP (VB do))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(amazing-5, men-3)
+cop(amazing-5, are-4)
+ccomp(think-2, amazing-5)
+advmod(amazing-5, simply-6)
+mark(do-10, because-7)
+nsubj(do-10, they-8)
+aux(do-10, can-9)
+advcl:because(amazing-5, do-10)
+det(lot-12, a-11)
+obj(do-10, lot-12)
+nsubj(do-16, I-13)
+aux(do-16, ca-14)
+advmod(do-16, n't-15)
+acl:relcl(lot-12, do-16)
+punct(think-2, .-17)
+
+Extracted the following NER entity mentions:
+
+Sentence #9 (15 tokens):
+That doesn't make me inferior in value just different in capability or purpose☺
+
+Tokens:
+[Text=That CharacterOffsetBegin=715 CharacterOffsetEnd=719 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=720 CharacterOffsetEnd=724 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=724 CharacterOffsetEnd=727 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=728 CharacterOffsetEnd=732 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=733 CharacterOffsetEnd=735 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=inferior CharacterOffsetBegin=736 CharacterOffsetEnd=744 PartOfSpeech=JJ Lemma=inferior NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=745 CharacterOffsetEnd=747 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=value CharacterOffsetBegin=748 CharacterOffsetEnd=753 PartOfSpeech=NN Lemma=value NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=754 CharacterOffsetEnd=758 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=759 CharacterOffsetEnd=768 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=769 CharacterOffsetEnd=771 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=capability CharacterOffsetBegin=772 CharacterOffsetEnd=782 PartOfSpeech=NN Lemma=capability NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=783 CharacterOffsetEnd=785 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=purpose CharacterOffsetBegin=786 CharacterOffsetEnd=793 PartOfSpeech=NN Lemma=purpose NamedEntityTag=O]
+[Text=☺ CharacterOffsetBegin=793 CharacterOffsetEnd=794 PartOfSpeech=NFP Lemma=☺ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ does) (RB n't)
+      (VP (VB make)
+        (S
+          (NP (PRP me))
+          (ADJP (JJ inferior)
+            (PP (IN in)
+              (NP
+                (NP
+                  (NP (NN value))
+                  (ADJP (RB just) (JJ different)))
+                (PP (IN in)
+                  (NP (NN capability)
+                    (CC or)
+                    (NN purpose)))))))))
+    (NFP ☺)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, make-4)
+nsubj(make-4, That-1)
+aux(make-4, does-2)
+advmod(make-4, n't-3)
+nsubj(inferior-6, me-5)
+xcomp(make-4, inferior-6)
+case(value-8, in-7)
+obl:in(inferior-6, value-8)
+advmod(different-10, just-9)
+amod(value-8, different-10)
+case(capability-12, in-11)
+nmod:in(value-8, capability-12)
+cc(purpose-14, or-13)
+nmod:in(value-8, purpose-14)
+conj:or(capability-12, purpose-14)
+punct(make-4, ☺-15)
+
+Extracted the following NER entity mentions:

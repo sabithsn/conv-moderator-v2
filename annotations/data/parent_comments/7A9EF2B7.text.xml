@@ -1,0 +1,111 @@
+Document: ID=7A9EF2B7.text (2 sentences, 24 tokens)
+
+Sentence #1 (13 tokens):
+You are someone who has no idea about gay and trans issues.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=gay NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=trans CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=trans NamedEntityTag=O]
+[Text=issues CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=issue NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (NP
+        (NP (NN someone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (NP
+                (NP (DT no) (NN idea))
+                (PP (IN about)
+                  (NP
+                    (NML (NN gay)
+                      (CC and)
+                      (NN trans))
+                    (NNS issues)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, someone-3)
+nsubj(someone-3, You-1)
+cop(someone-3, are-2)
+nsubj(has-5, someone-3)
+ref(someone-3, who-4)
+acl:relcl(someone-3, has-5)
+det(idea-7, no-6)
+obj(has-5, idea-7)
+case(issues-12, about-8)
+compound(issues-12, gay-9)
+cc(trans-11, and-10)
+conj:and(gay-9, trans-11)
+compound(issues-12, trans-11)
+nmod:about(idea-7, issues-12)
+punct(someone-3, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+You just want to get rid of gay and trans people
+
+Tokens:
+[Text=You CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=rid CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=rid NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=trans CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=trans NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB just))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (VP (VBN rid)
+              (PP (IN of)
+                (NP
+                  (ADJP (JJ gay)
+                    (CC and)
+                    (JJ trans))
+                  (NNS people))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-3)
+nsubj(want-3, You-1)
+nsubj:pass:xsubj(rid-6, You-1)
+advmod(want-3, just-2)
+mark(rid-6, to-4)
+aux:pass(rid-6, get-5)
+xcomp(want-3, rid-6)
+case(people-11, of-7)
+amod(people-11, gay-8)
+cc(trans-10, and-9)
+conj:and(gay-8, trans-10)
+amod(people-11, trans-10)
+obl:of(rid-6, people-11)
+
+Extracted the following NER entity mentions:

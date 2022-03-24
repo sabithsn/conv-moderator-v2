@@ -1,0 +1,71 @@
+Document: ID=93FCA4D0.text (2 sentences, 14 tokens)
+
+Sentence #1 (5 tokens):
+That party was amazing.
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=amazing CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=amazing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT That) (NN party))
+    (VP (VBD was)
+      (ADJP (JJ amazing)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, amazing-4)
+det(party-2, That-1)
+nsubj(amazing-4, party-2)
+cop(amazing-4, was-3)
+punct(amazing-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+So cool hearing the stories of people there.
+
+Tokens:
+[Text=So CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=cool CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=cool NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VBG Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stories CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=story NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (ADVP (RB So))
+    (ADJP (JJ cool))
+    (S
+      (VP (VBG hearing)
+        (NP
+          (NP (DT the) (NNS stories))
+          (PP (IN of)
+            (NP (NNS people))))
+        (ADVP (RB there))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, cool-2)
+dep(cool-2, So-1)
+dep(cool-2, hearing-3)
+det(stories-5, the-4)
+obj(hearing-3, stories-5)
+case(people-7, of-6)
+nmod:of(stories-5, people-7)
+advmod(hearing-3, there-8)
+punct(cool-2, .-9)
+
+Extracted the following NER entity mentions:

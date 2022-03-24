@@ -1,0 +1,88 @@
+Document: ID=403B6161.text (1 sentences, 23 tokens)
+
+Sentence #1 (23 tokens):
+You’ve got to assume, if it’s less than 3 you would know the amount of times without a doubt.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=assume CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=assume NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VBZ Lemma=’s NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=JJR Lemma=less NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=<3.0]
+[Text=you CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amount CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=amount NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=doubt CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=doubt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP ’ve)
+      (VP (VBN got)
+        (S
+          (VP (TO to)
+            (VP (VB assume))))
+        (, ,)
+        (SBAR (IN if)
+          (S
+            (NP (PRP it))
+            (VP (VBZ ’s)
+              (NP
+                (NP
+                  (QP (JJR less) (IN than) (CD 3)))
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (MD would)
+                      (VP (VB know)
+                        (NP
+                          (NP (DT the) (NN amount))
+                          (PP (IN of)
+                            (NP (NNS times))))
+                        (PP (IN without)
+                          (NP (DT a) (NN doubt)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-2)
+nsubj(’ve-2, You-1)
+dep(’ve-2, got-3)
+mark(assume-5, to-4)
+xcomp(got-3, assume-5)
+punct(got-3, ,-6)
+mark(3-12, if-7)
+nsubj(3-12, it-8)
+cop(3-12, ’s-9)
+advmod(3-12, less-10)
+fixed(less-10, than-11)
+advcl:if(got-3, 3-12)
+nsubj(know-15, you-13)
+aux(know-15, would-14)
+acl:relcl(3-12, know-15)
+det(amount-17, the-16)
+obj(know-15, amount-17)
+case(times-19, of-18)
+nmod:of(amount-17, times-19)
+case(doubt-22, without-20)
+det(doubt-22, a-21)
+obl:without(know-15, doubt-22)
+punct(’ve-2, .-23)
+
+Extracted the following NER entity mentions:
+3	NUMBER	NUMBER:-1.0

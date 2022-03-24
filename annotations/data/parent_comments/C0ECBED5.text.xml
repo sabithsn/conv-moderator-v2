@@ -1,0 +1,70 @@
+Document: ID=C0ECBED5.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+People who drive well over speed limit have no right to say other people are too slow
+
+Tokens:
+[Text=People CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=drive CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=drive NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=speed CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=speed NamedEntityTag=O]
+[Text=limit CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=limit NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP drive)
+            (ADVP (RB well))
+            (PP (IN over)
+              (NP (NN speed) (NN limit)))))))
+    (VP (VBP have)
+      (INTJ (UH no))
+      (NP (JJ right)
+        (S
+          (VP (TO to)
+            (VP (VB say)
+              (SBAR
+                (S
+                  (NP (JJ other) (NNS people))
+                  (VP (VBP are)
+                    (ADJP (RB too) (JJ slow))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-8)
+nsubj(drive-3, People-1)
+nsubj(have-8, People-1)
+ref(People-1, who-2)
+acl:relcl(People-1, drive-3)
+advmod(drive-3, well-4)
+case(limit-7, over-5)
+compound(limit-7, speed-6)
+obl:over(drive-3, limit-7)
+discourse(have-8, no-9)
+obj(have-8, right-10)
+mark(say-12, to-11)
+dep(right-10, say-12)
+amod(people-14, other-13)
+nsubj(slow-17, people-14)
+cop(slow-17, are-15)
+advmod(slow-17, too-16)
+ccomp(say-12, slow-17)
+
+Extracted the following NER entity mentions:

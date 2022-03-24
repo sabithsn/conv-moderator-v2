@@ -1,0 +1,88 @@
+Document: ID=E1BF8372.text (2 sentences, 18 tokens)
+
+Sentence #1 (14 tokens):
+Did he or did he not give her everything she could possibly want?
+
+Tokens:
+[Text=Did CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=30 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=possibly CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=possibly NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (SQ (VBD Did)
+      (NP (PRP he)))
+    (CC or)
+    (SQ (VBD did)
+      (NP (PRP he))
+      (ADVP (RB not))
+      (VP (VB give)
+        (NP
+          (NP (PRP$ her) (NN everything))
+          (SBAR
+            (S
+              (NP (PRP she))
+              (VP (MD could)
+                (ADVP (RB possibly))
+                (VP (VB want))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Did-1)
+nsubj(Did-1, he-2)
+cc(give-7, or-3)
+aux(give-7, did-4)
+nsubj(give-7, he-5)
+advmod(give-7, not-6)
+conj:or(Did-1, give-7)
+nmod:poss(everything-9, her-8)
+obj(give-7, everything-9)
+nsubj(want-13, she-10)
+aux(want-13, could-11)
+advmod(want-13, possibly-12)
+acl:relcl(everything-9, want-13)
+punct(Did-1, ?-14)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+he	PERSON	-
+her	PERSON	-
+she	PERSON	-
+
+Sentence #2 (4 tokens):
+Those kids SEE THAT
+
+Tokens:
+[Text=Those CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=kids CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=kid NamedEntityTag=O]
+[Text=SEE CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=THAT CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT Those) (NNS kids))
+    (VP (VB SEE)
+      (NP (DT THAT)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, SEE-3)
+det(kids-2, Those-1)
+nsubj(SEE-3, kids-2)
+obj(SEE-3, THAT-4)
+
+Extracted the following NER entity mentions:

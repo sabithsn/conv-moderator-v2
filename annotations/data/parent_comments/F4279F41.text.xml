@@ -1,0 +1,81 @@
+Document: ID=F4279F41.text (3 sentences, 14 tokens)
+
+Sentence #1 (6 tokens):
+😂 I’ve been waitin.
+
+Tokens:
+[Text=😂 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NFP Lemma=😂 NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=’ve CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=’ve NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=waitin CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=waitin NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP 😂)
+    (NP (PRP I))
+    (VP (VBP ’ve)
+      (VP (VBN been)
+        (NP (NN waitin))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ’ve-3)
+punct(’ve-3, 😂-1)
+nsubj(’ve-3, I-2)
+cop(waitin-5, been-4)
+dep(’ve-3, waitin-5)
+punct(’ve-3, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (7 tokens):
+I was happy for the tuna too
+
+Tokens:
+[Text=I CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tuna CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=tuna NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (JJ happy)
+        (PP (IN for)
+          (NP (DT the) (NN tuna))))
+      (ADVP (RB too)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happy-3)
+nsubj(happy-3, I-1)
+cop(happy-3, was-2)
+case(tuna-6, for-4)
+det(tuna-6, the-5)
+obl:for(happy-3, tuna-6)
+advmod(happy-3, too-7)
+
+Extracted the following NER entity mentions:

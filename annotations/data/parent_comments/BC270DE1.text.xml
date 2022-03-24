@@ -1,0 +1,86 @@
+Document: ID=BC270DE1.text (2 sentences, 19 tokens)
+
+Sentence #1 (12 tokens):
+hey liberals: nobody is coming to take away your crt.
+
+Tokens:
+[Text=hey CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=hey NamedEntityTag=O]
+[Text=liberals CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=liberal NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=nobody CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=nobody NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=crt CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=crt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (UCP
+    (FRAG
+      (INTJ (UH hey))
+      (NP (NNS liberals)))
+    (: :)
+    (S
+      (NP (NN nobody))
+      (VP (VBZ is)
+        (VP (VBG coming)
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (PRT (RB away))
+                (NP (PRP$ your) (NN crt))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, liberals-2)
+discourse(liberals-2, hey-1)
+punct(liberals-2, :-3)
+nsubj(coming-6, nobody-4)
+nsubj:xsubj(take-8, nobody-4)
+aux(coming-6, is-5)
+dep(liberals-2, coming-6)
+mark(take-8, to-7)
+xcomp(coming-6, take-8)
+compound:prt(take-8, away-9)
+nmod:poss(crt-11, your-10)
+obj(take-8, crt-11)
+punct(liberals-2, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+we just want common sense racism control
+
+Tokens:
+[Text=we CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=common CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=sense CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=sense NamedEntityTag=O]
+[Text=racism CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=racism NamedEntityTag=O]
+[Text=control CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=control NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP we))
+    (ADVP (RB just))
+    (VP (VBP want)
+      (NP (JJ common) (NN sense) (NN racism) (NN control)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-3)
+nsubj(want-3, we-1)
+advmod(want-3, just-2)
+amod(control-7, common-4)
+compound(control-7, sense-5)
+compound(control-7, racism-6)
+obj(want-3, control-7)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,49 @@
+Document: ID=10CFFBD0.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+UPDATE: Bail denied for convoy protest leader Tamara Lich
+
+Tokens:
+[Text=UPDATE CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=update NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Bail CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=bail NamedEntityTag=O]
+[Text=denied CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBN Lemma=deny NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=convoy CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=convoy NamedEntityTag=O]
+[Text=protest CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=protest NamedEntityTag=O]
+[Text=leader CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=leader NamedEntityTag=TITLE]
+[Text=Tamara CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Tamara NamedEntityTag=PERSON]
+[Text=Lich CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Lich NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN UPDATE))
+    (: :)
+    (NP
+      (NML
+        (NML
+          (S
+            (VP (VB Bail)
+              (VP (VBN denied)
+                (PP (IN for)
+                  (NP (NN convoy) (NN protest)))))))
+        (NN leader))
+      (NNP Tamara) (NNP Lich))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, UPDATE-1)
+punct(UPDATE-1, :-2)
+compound(leader-8, Bail-3)
+dep(Bail-3, denied-4)
+case(protest-7, for-5)
+compound(protest-7, convoy-6)
+obl:for(denied-4, protest-7)
+compound(Lich-10, leader-8)
+compound(Lich-10, Tamara-9)
+dep(UPDATE-1, Lich-10)
+
+Extracted the following NER entity mentions:
+leader	TITLE	-
+Tamara Lich	PERSON	PERSON:0.9993919581664134

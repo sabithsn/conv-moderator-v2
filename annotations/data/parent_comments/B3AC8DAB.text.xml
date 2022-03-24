@@ -1,0 +1,43 @@
+Document: ID=B3AC8DAB.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+wrong, McDonalds makes room for bigger citizens!
+
+Tokens:
+[Text=wrong CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=wrong NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=McDonalds CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=McDonalds NamedEntityTag=ORGANIZATION]
+[Text=makes CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=bigger CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=JJR Lemma=bigger NamedEntityTag=O]
+[Text=citizens CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=citizen NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB wrong))
+    (, ,)
+    (NP (NNP McDonalds))
+    (VP (VBZ makes)
+      (NP
+        (NP (NN room))
+        (PP (IN for)
+          (NP (JJR bigger) (NNS citizens)))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-4)
+advmod(makes-4, wrong-1)
+punct(makes-4, ,-2)
+nsubj(makes-4, McDonalds-3)
+obj(makes-4, room-5)
+case(citizens-8, for-6)
+amod(citizens-8, bigger-7)
+nmod:for(room-5, citizens-8)
+punct(makes-4, !-9)
+
+Extracted the following NER entity mentions:
+McDonalds	ORGANIZATION	ORGANIZATION:0.9840545753741071

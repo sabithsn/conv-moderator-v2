@@ -1,0 +1,48 @@
+Document: ID=00A3E3E8.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+I refuse to date someone who has slept around.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=refuse CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=refuse NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=slept CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=sleep NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=around NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP refuse)
+      (PP (IN to)
+        (NP
+          (NP (NN date) (NN someone))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ has)
+                (VP (VBN slept)
+                  (ADVP (RB around)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, refuse-2)
+nsubj(refuse-2, I-1)
+case(someone-5, to-3)
+compound(someone-5, date-4)
+obl:to(refuse-2, someone-5)
+nsubj(slept-8, someone-5)
+ref(someone-5, who-6)
+aux(slept-8, has-7)
+acl:relcl(someone-5, slept-8)
+advmod(slept-8, around-9)
+punct(refuse-2, .-10)
+
+Extracted the following NER entity mentions:

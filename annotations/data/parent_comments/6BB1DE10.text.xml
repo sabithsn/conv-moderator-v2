@@ -1,0 +1,283 @@
+Document: ID=6BB1DE10.text (5 sentences, 66 tokens)
+
+Sentence #1 (14 tokens):
+Bolton said Putin was planning and hoping for a second term with Trump.
+
+Tokens:
+[Text=Bolton CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Bolton NamedEntityTag=PERSON]
+[Text=said CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=Putin CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=planning CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=plan NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=hoping CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=VBG Lemma=hope NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=second CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=second NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=term CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=term NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Bolton))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (NNP Putin))
+          (VP (VBD was)
+            (VP (VBG planning)
+              (CC and)
+              (VBG hoping)
+              (PP (IN for)
+                (NP
+                  (NP (DT a) (JJ second) (NN term))
+                  (PP (IN with)
+                    (NP (NNP Trump))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, said-2)
+nsubj(said-2, Bolton-1)
+nsubj(planning-5, Putin-3)
+nsubj(hoping-7, Putin-3)
+aux(planning-5, was-4)
+ccomp(said-2, planning-5)
+cc(hoping-7, and-6)
+ccomp(said-2, hoping-7)
+conj:and(planning-5, hoping-7)
+case(term-11, for-8)
+det(term-11, a-9)
+amod(term-11, second-10)
+obl:for(planning-5, term-11)
+case(Trump-13, with-12)
+nmod:with(term-11, Trump-13)
+punct(said-2, .-14)
+
+Extracted the following NER entity mentions:
+Bolton	PERSON	PERSON:0.9951137394470428
+Putin	PERSON	PERSON:0.9974210203238285
+a second	DURATION	DURATION:-1.0
+Trump	PERSON	PERSON:0.894874283649582
+
+Sentence #2 (13 tokens):
+It makes the whole Russian disinformation thing make a lot more sense.
+
+Tokens:
+[Text=It CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=91 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=disinformation CharacterOffsetBegin=99 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=disinformation NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=VBP Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=sense CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=sense NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ makes)
+      (SBAR
+        (S
+          (NP (DT the) (JJ whole) (JJ Russian) (NN disinformation) (NN thing))
+          (VP (VBP make)
+            (NP
+              (ADVP
+                (NP (DT a) (NN lot))
+                (RBR more))
+              (NN sense))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, makes-2)
+nsubj(makes-2, It-1)
+det(thing-7, the-3)
+amod(thing-7, whole-4)
+amod(thing-7, Russian-5)
+compound(thing-7, disinformation-6)
+nsubj(make-8, thing-7)
+ccomp(makes-2, make-8)
+det(lot-10, a-9)
+obl:npmod(more-11, lot-10)
+advmod(sense-12, more-11)
+obj(make-8, sense-12)
+punct(makes-2, .-13)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999992929149015
+
+Sentence #3 (25 tokens):
+They were waiting for the NATO withdrawal   You would have to be an idiot to think Trump would have navigated this better than Biden.
+
+Tokens:
+[Text=They CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=waiting CharacterOffsetBegin=153 CharacterOffsetEnd=160 PartOfSpeech=VBG Lemma=wait NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=NATO CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=NATO NamedEntityTag=ORGANIZATION]
+[Text=withdrawal CharacterOffsetBegin=174 CharacterOffsetEnd=184 PartOfSpeech=NNP Lemma=withdrawal NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=idiot CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=idiot NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=226 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=would CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=navigated CharacterOffsetBegin=243 CharacterOffsetEnd=252 PartOfSpeech=VBN Lemma=navigate NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=253 CharacterOffsetEnd=257 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=Biden CharacterOffsetBegin=270 CharacterOffsetEnd=275 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=275 CharacterOffsetEnd=276 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD were)
+        (VP (VBG waiting)
+          (PP (IN for)
+            (NP (DT the) (NNP NATO) (NNP withdrawal))))))
+    (NP (PRP You))
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP (DT an) (NN idiot)
+                (S
+                  (VP (TO to)
+                    (VP (VB think)
+                      (SBAR
+                        (S
+                          (NP (NNP Trump))
+                          (VP (MD would)
+                            (VP (VB have)
+                              (VP (VBN navigated)
+                                (S
+                                  (ADJP (DT this) (JJR better)))
+                                (PP (IN than)
+                                  (NP (NNP Biden)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-10)
+nsubj(waiting-3, They-1)
+aux(waiting-3, were-2)
+dep(have-10, waiting-3)
+case(withdrawal-7, for-4)
+det(withdrawal-7, the-5)
+compound(withdrawal-7, NATO-6)
+obl:for(waiting-3, withdrawal-7)
+nsubj(have-10, You-8)
+nsubj:xsubj(idiot-14, You-8)
+aux(have-10, would-9)
+mark(idiot-14, to-11)
+cop(idiot-14, be-12)
+det(idiot-14, an-13)
+xcomp(have-10, idiot-14)
+mark(think-16, to-15)
+acl:to(idiot-14, think-16)
+nsubj(navigated-20, Trump-17)
+aux(navigated-20, would-18)
+aux(navigated-20, have-19)
+ccomp(think-16, navigated-20)
+det(better-22, this-21)
+xcomp(navigated-20, better-22)
+case(Biden-24, than-23)
+obl:than(navigated-20, Biden-24)
+punct(have-10, .-25)
+
+Extracted the following NER entity mentions:
+NATO	ORGANIZATION	ORGANIZATION:0.9950730230017886
+Trump	PERSON	PERSON:0.897679626430415
+Biden	PERSON	PERSON:0.9946784596860718
+
+Sentence #4 (10 tokens):
+We would probably be in nuclear war right now.
+
+Tokens:
+[Text=We CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=280 CharacterOffsetEnd=285 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=286 CharacterOffsetEnd=294 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=295 CharacterOffsetEnd=297 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=nuclear CharacterOffsetBegin=301 CharacterOffsetEnd=308 PartOfSpeech=JJ Lemma=nuclear NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=right CharacterOffsetBegin=313 CharacterOffsetEnd=318 PartOfSpeech=RB Lemma=right NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=now CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=. CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD would)
+      (ADVP (RB probably))
+      (VP (VB be)
+        (PP (IN in)
+          (NP (JJ nuclear) (NN war)))
+        (ADVP (RB right) (RB now))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, war-7)
+nsubj(war-7, We-1)
+aux(war-7, would-2)
+advmod(war-7, probably-3)
+cop(war-7, be-4)
+case(war-7, in-5)
+amod(war-7, nuclear-6)
+advmod(now-9, right-8)
+advmod(war-7, now-9)
+punct(war-7, .-10)
+
+Extracted the following NER entity mentions:
+war	CAUSE_OF_DEATH	-
+right now	DATE	DATE:-1.0
+
+Sentence #5 (4 tokens):
+Fuck off Tucker.
+
+Tokens:
+[Text=Fuck CharacterOffsetBegin=325 CharacterOffsetEnd=329 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=330 CharacterOffsetEnd=333 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=Tucker CharacterOffsetBegin=334 CharacterOffsetEnd=340 PartOfSpeech=NNP Lemma=Tucker NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Fuck)
+      (PRT (RP off))
+      (NP (NNP Tucker)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Fuck-1)
+compound:prt(Fuck-1, off-2)
+obj(Fuck-1, Tucker-3)
+punct(Fuck-1, .-4)
+
+Extracted the following NER entity mentions:
+Tucker	PERSON	PERSON:0.8630654338025308

@@ -1,0 +1,67 @@
+Document: ID=2B947894.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+Judge Temporarily Halts Texas From Probing Gender-Affirming Care For Minors As ‘Child Abuse’
+
+Tokens:
+[Text=Judge CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Judge NamedEntityTag=TITLE]
+[Text=Temporarily CharacterOffsetBegin=6 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Temporarily NamedEntityTag=O]
+[Text=Halts CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=halt NamedEntityTag=O]
+[Text=Texas CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Texas NamedEntityTag=STATE_OR_PROVINCE]
+[Text=From CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Probing CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=VBG Lemma=probe NamedEntityTag=O]
+[Text=Gender CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=gender NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=Affirming CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=VBG Lemma=affirm NamedEntityTag=O]
+[Text=Care CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Care NamedEntityTag=O]
+[Text=For CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Minors CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNPS Lemma=Minors NamedEntityTag=O]
+[Text=As CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Child CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=child NamedEntityTag=CRIMINAL_CHARGE]
+[Text=Abuse CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=abuse NamedEntityTag=CRIMINAL_CHARGE]
+[Text=’ CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (NNP Judge) (NNP Temporarily))
+      (VP (VBZ Halts)
+        (NP (NNP Texas))
+        (PP (IN From)
+          (S
+            (VP (VBG Probing)
+              (NP (NN Gender) (HYPH -) (VBG Affirming)))))))
+    (S
+      (S
+        (NP (NNP Care))
+        (PP (IN For)
+          (NP (NNPS Minors))))
+      (PP (IN As)
+        (NP (`` ‘) (NN Child) (NN Abuse) ('' ’))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Halts-3)
+compound(Temporarily-2, Judge-1)
+nsubj(Halts-3, Temporarily-2)
+obj(Halts-3, Texas-4)
+mark(Probing-6, From-5)
+advcl:from(Halts-3, Probing-6)
+obj(Probing-6, Gender-7)
+punct(Gender-7, --8)
+amod(Gender-7, Affirming-9)
+parataxis(Halts-3, Care-10)
+case(Minors-12, For-11)
+dep(Care-10, Minors-12)
+case(Abuse-16, As-13)
+punct(Abuse-16, ‘-14)
+compound(Abuse-16, Child-15)
+obl:as(Care-10, Abuse-16)
+punct(Abuse-16, ’-17)
+
+Extracted the following NER entity mentions:
+Judge	TITLE	-
+Texas	STATE_OR_PROVINCE	-
+Child Abuse	CRIMINAL_CHARGE	-

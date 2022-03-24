@@ -1,0 +1,90 @@
+Document: ID=81BF0E01.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+ELI5 How do animals/birds know to mate with their own species, among hundreds of species that look alike?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=animals CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=animal NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=/ NamedEntityTag=O]
+[Text=birds CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=bird NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=mate CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=mate NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=species CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=species NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=hundreds CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NNS Lemma=hundred NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=species CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=species NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=VBP Lemma=look NamedEntityTag=O]
+[Text=alike CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=alike NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (NP (NN ELI5))
+    (WHADVP (WRB How))
+    (SQ (VBP do)
+      (NP
+        (NP (NNS animals))
+        (, /)
+        (NP
+          (NP (NNS birds))
+          (SBAR
+            (S
+              (VP (VBP know)
+                (PP (IN to)
+                  (NP (NN mate)))
+                (PP (IN with)
+                  (NP (PRP$ their) (JJ own) (NNS species)))
+                (, ,)
+                (PP (IN among)
+                  (NP
+                    (NP (NNS hundreds))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS species))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBP look)
+                              (ADVP (RB alike)))))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-3)
+dep(do-3, ELI5-1)
+advmod(do-3, How-2)
+dep(do-3, animals-4)
+punct(animals-4, /-5)
+appos(animals-4, birds-6)
+nsubj(look-20, birds-6)
+acl:relcl(birds-6, know-7)
+case(mate-9, to-8)
+obl:to(know-7, mate-9)
+case(species-13, with-10)
+nmod:poss(species-13, their-11)
+amod(species-13, own-12)
+obl:with(know-7, species-13)
+punct(know-7, ,-14)
+case(hundreds-16, among-15)
+det:qmod(species-18, hundreds-16)
+fixed(hundreds-16, of-17)
+obl(know-7, species-18)
+nsubj(look-20, species-18)
+ref(birds-6, that-19)
+ref(species-18, that-19)
+acl:relcl(species-18, look-20)
+advmod(look-20, alike-21)
+punct(do-3, ?-22)
+
+Extracted the following NER entity mentions:

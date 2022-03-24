@@ -1,0 +1,61 @@
+Document: ID=3595858D.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Israel disproportionately targets children in order to prevent a new generation of freedom fighters.
+
+Tokens:
+[Text=Israel CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Israel NamedEntityTag=COUNTRY]
+[Text=disproportionately CharacterOffsetBegin=7 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=disproportionately NamedEntityTag=O]
+[Text=targets CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=target NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=prevent CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=VB Lemma=prevent NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=generation CharacterOffsetBegin=69 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=freedom CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=freedom NamedEntityTag=O]
+[Text=fighters CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=fighter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Israel))
+    (ADVP (RB disproportionately))
+    (VP (VBZ targets)
+      (NP
+        (NP (NNS children))
+        (PP (IN in)
+          (NP (NN order)
+            (S
+              (VP (TO to)
+                (VP (VB prevent)
+                  (NP
+                    (NP (DT a) (JJ new) (NN generation))
+                    (PP (IN of)
+                      (NP (NN freedom) (NNS fighters)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, targets-3)
+nsubj(targets-3, Israel-1)
+advmod(targets-3, disproportionately-2)
+obj(targets-3, children-4)
+case(order-6, in-5)
+nmod:in(children-4, order-6)
+mark(prevent-8, to-7)
+acl:to(order-6, prevent-8)
+det(generation-11, a-9)
+amod(generation-11, new-10)
+obj(prevent-8, generation-11)
+case(fighters-14, of-12)
+compound(fighters-14, freedom-13)
+nmod:of(generation-11, fighters-14)
+punct(targets-3, .-15)
+
+Extracted the following NER entity mentions:
+Israel	COUNTRY	LOCATION:0.9863218612365057

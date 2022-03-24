@@ -1,0 +1,68 @@
+Document: ID=FA81BBDE.text (2 sentences, 13 tokens)
+
+Sentence #1 (5 tokens):
+Are you ok man?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ok CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=ok NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (ADJP (JJ ok) (NN man))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, man-4)
+cop(man-4, Are-1)
+nsubj(man-4, you-2)
+dep(man-4, ok-3)
+punct(man-4, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+I think you need to get some help
+
+Tokens:
+[Text=I CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=need CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=need NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (S
+        (NP (PRP you))
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (NP (DT some) (NN help))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(need-4, you-3)
+nsubj:xsubj(get-6, you-3)
+ccomp(think-2, need-4)
+mark(get-6, to-5)
+xcomp(need-4, get-6)
+det(help-8, some-7)
+obj(get-6, help-8)
+
+Extracted the following NER entity mentions:

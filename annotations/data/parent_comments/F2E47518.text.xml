@@ -1,0 +1,50 @@
+Document: ID=F2E47518.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Proud Boys leader arrested and charged with conspiracy in Capitol insurrection
+
+Tokens:
+[Text=Proud CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=proud NamedEntityTag=O]
+[Text=Boys CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNS Lemma=boy NamedEntityTag=O]
+[Text=leader CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=leader NamedEntityTag=TITLE]
+[Text=arrested CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=VBN Lemma=arrest NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=charged CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=charge NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=44 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=in CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Capitol CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Capitol NamedEntityTag=LOCATION]
+[Text=insurrection CharacterOffsetBegin=66 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=insurrection NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (JJ Proud) (NNS Boys) (NN leader))
+    (VP (VBN arrested)
+      (CC and)
+      (VBN charged)
+      (PP (IN with)
+        (NP
+          (NP (NN conspiracy))
+          (PP (IN in)
+            (NP (NNP Capitol) (NN insurrection))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, leader-3)
+amod(leader-3, Proud-1)
+compound(leader-3, Boys-2)
+acl(leader-3, arrested-4)
+cc(charged-6, and-5)
+acl(leader-3, charged-6)
+conj:and(arrested-4, charged-6)
+case(conspiracy-8, with-7)
+obl:with(arrested-4, conspiracy-8)
+case(insurrection-11, in-9)
+compound(insurrection-11, Capitol-10)
+nmod:in(conspiracy-8, insurrection-11)
+
+Extracted the following NER entity mentions:
+leader	TITLE	-
+conspiracy	CRIMINAL_CHARGE	-
+Capitol	LOCATION	LOCATION:0.7928561533283921

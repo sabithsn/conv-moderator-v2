@@ -1,0 +1,54 @@
+Document: ID=288F6FA2.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+AITA for teaching one of my sons and not the other?
+
+Tokens:
+[Text=AITA CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=AITA NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=teaching CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=teach NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=sons CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NNS Lemma=son NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP AITA))
+    (PP (IN for)
+      (S
+        (VP (VBG teaching)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (PRP$ my) (NNS sons))
+                (CC and)
+                (NP (RB not) (DT the) (JJ other))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, AITA-1)
+mark(teaching-3, for-2)
+dep(AITA-1, teaching-3)
+obj(teaching-3, one-4)
+case(sons-7, of-5)
+nmod:poss(sons-7, my-6)
+nmod:of(one-4, sons-7)
+cc(other-11, and-8)
+advmod(other-11, not-9)
+det(other-11, the-10)
+nmod:of(one-4, other-11)
+conj:and(sons-7, other-11)
+punct(AITA-1, ?-12)
+
+Extracted the following NER entity mentions:
+AITA	ORGANIZATION	ORGANIZATION:0.7017689261086445
+one	NUMBER	NUMBER:-1.0

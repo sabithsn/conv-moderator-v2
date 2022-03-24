@@ -1,0 +1,59 @@
+Document: ID=51CD1B36.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Republican Kicked Off Twitter for Saying ‘Women’s Sports Are for Women’
+
+Tokens:
+[Text=Republican CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=Kicked CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=VBN Lemma=kick NamedEntityTag=MISC]
+[Text=Off CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=off NamedEntityTag=MISC]
+[Text=Twitter CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Twitter NamedEntityTag=MISC]
+[Text=for CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Saying CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Women CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Women NamedEntityTag=O]
+[Text=’s CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=POS Lemma=’s NamedEntityTag=O]
+[Text=Sports CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNPS Lemma=Sports NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Women CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=woman NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=POS Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Republican))
+      (VP (VBN Kicked)
+        (PP (IN Off)
+          (NP (NNP Twitter)))
+        (PP (IN for)
+          (S
+            (VP (VBG Saying) (`` ‘)
+              (NP
+                (NP (NNP Women) (POS ’s))
+                (NNPS Sports)))))))
+    (VP (VBP Are)
+      (PP (IN for)
+        (NP (NNS Women) (POS ’))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Women-13)
+nsubj(Women-13, Republican-1)
+acl(Republican-1, Kicked-2)
+case(Twitter-4, Off-3)
+obl:off(Kicked-2, Twitter-4)
+mark(Saying-6, for-5)
+advcl:for(Kicked-2, Saying-6)
+punct(Saying-6, ‘-7)
+nmod:poss(Sports-10, Women-8)
+case(Women-8, ’s-9)
+obj(Saying-6, Sports-10)
+cop(Women-13, Are-11)
+case(Women-13, for-12)
+case(Women-13, ’-14)
+
+Extracted the following NER entity mentions:
+Republican	IDEOLOGY	MISC:0.6427537936439055
+Kicked Off Twitter	MISC	MISC:0.6427537936439055

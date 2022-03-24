@@ -1,0 +1,55 @@
+Document: ID=CF4370DE.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+26 on ACT in 1986 with a 3.6 GPA in college.
+
+Tokens:
+[Text=26 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=26 NamedEntityTag=NUMBER NormalizedNamedEntityTag=26.0]
+[Text=on CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=ACT CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=act NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1986 CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=1986 NamedEntityTag=DATE NormalizedNamedEntityTag=1986 Timex=<TIMEX3 tid="t1" type="DATE" value="1986">1986</TIMEX3>]
+[Text=with CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=3.6 CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=3.6 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.6]
+[Text=GPA CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=GPA NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=college CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=college NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (CD 26))
+    (PP (IN on)
+      (NP
+        (NP (NN ACT))
+        (PP (IN in)
+          (NP (CD 1986)))))
+    (PP (IN with)
+      (NP
+        (NP (DT a) (CD 3.6) (NNP GPA))
+        (PP (IN in)
+          (NP (NN college)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 26-1)
+case(ACT-3, on-2)
+obl:on(26-1, ACT-3)
+case(1986-5, in-4)
+nmod:in(ACT-3, 1986-5)
+case(GPA-9, with-6)
+det(GPA-9, a-7)
+nummod(GPA-9, 3.6-8)
+obl:with(26-1, GPA-9)
+case(college-11, in-10)
+nmod:in(GPA-9, college-11)
+punct(26-1, .-12)
+
+Extracted the following NER entity mentions:
+26	NUMBER	NUMBER:-1.0
+1986	DATE	DATE:0.9997054791811625
+3.6	NUMBER	NUMBER:-1.0
+GPA	ORGANIZATION	ORGANIZATION:0.7241691916979595

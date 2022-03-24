@@ -1,0 +1,41 @@
+Document: ID=FBFC09E5.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+Why do Republicans hate free speech so much?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=Republicans CharacterOffsetBegin=7 CharacterOffsetEnd=18 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=hate CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=hate NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (NNPS Republicans))
+      (VP (VB hate)
+        (NP (JJ free) (NN speech))
+        (ADVP (RB so) (RB much))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, hate-4)
+advmod(hate-4, Why-1)
+aux(hate-4, do-2)
+nsubj(hate-4, Republicans-3)
+amod(speech-6, free-5)
+obj(hate-4, speech-6)
+advmod(much-8, so-7)
+advmod(hate-4, much-8)
+punct(hate-4, ?-9)
+
+Extracted the following NER entity mentions:
+Republicans	MISC	MISC:0.9999948849766518

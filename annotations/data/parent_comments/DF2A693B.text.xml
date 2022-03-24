@@ -1,0 +1,104 @@
+Document: ID=DF2A693B.text (2 sentences, 26 tokens)
+
+Sentence #1 (19 tokens):
+Define "most"...can't remember the last movie I watched with a gay sex scene.
+
+Tokens:
+[Text=Define CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=define NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=, Lemma=... NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=movie CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=movie NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=watched CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=VBD Lemma=watch NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=scene CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=scene NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Define)
+      (SBAR
+        (S
+          (NP (`` ")
+            (NP (JJS most))
+            ('' ") (, ...))
+          (VP (MD ca) (RB n't)
+            (VP (VB remember)
+              (NP
+                (NP (DT the) (JJ last) (NN movie))
+                (SBAR
+                  (S
+                    (NP (PRP I))
+                    (VP (VBD watched)
+                      (PP (IN with)
+                        (NP (DT a) (JJ gay) (NN sex) (NN scene))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Define-1)
+punct(most-3, "-2)
+nsubj(remember-8, most-3)
+punct(most-3, "-4)
+punct(most-3, ...-5)
+aux(remember-8, ca-6)
+advmod(remember-8, n't-7)
+ccomp(Define-1, remember-8)
+det(movie-11, the-9)
+amod(movie-11, last-10)
+obj(remember-8, movie-11)
+nsubj(watched-13, I-12)
+acl:relcl(movie-11, watched-13)
+case(scene-18, with-14)
+det(scene-18, a-15)
+amod(scene-18, gay-16)
+compound(scene-18, sex-17)
+obl:with(watched-13, scene-18)
+punct(Define-1, .-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+You finding these on porn hub?
+
+Tokens:
+[Text=You CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=finding CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=VBG Lemma=find NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=porn CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=porn NamedEntityTag=O]
+[Text=hub CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=hub NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (NP (PRP You))
+    (VP (VBG finding)
+      (NP (DT these))
+      (PP (IN on)
+        (NP (NN porn) (NN hub))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, finding-2)
+nsubj(finding-2, You-1)
+obj(finding-2, these-3)
+case(hub-6, on-4)
+compound(hub-6, porn-5)
+obl:on(finding-2, hub-6)
+punct(finding-2, ?-7)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,77 @@
+Document: ID=BEAEE281.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+97% of scientists agree climate change isn't a thing  What the fuck are you talking about?
+
+Tokens:
+[Text=97 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=97 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%97.0]
+[Text=% CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%97.0]
+[Text=of CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=scientists CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=scientist NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=VBP Lemma=agree NamedEntityTag=O]
+[Text=climate CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=climate NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fuck CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=fuck NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (S
+      (NP
+        (NP (CD 97) (NN %))
+        (PP (IN of)
+          (NP (NNS scientists))))
+      (VP (VBP agree)
+        (SBAR
+          (S
+            (NP (NN climate) (NN change))
+            (VP (VBZ is) (RB n't)
+              (NP
+                (NP (DT a) (NN thing))
+                (SBAR
+                  (WHNP (WP What))
+                  (S
+                    (NP (DT the))
+                    (VP (VB fuck))))))))))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG talking)
+        (PP (IN about))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, talking-17)
+nummod(%-2, 97-1)
+nsubj(agree-5, %-2)
+case(scientists-4, of-3)
+nmod:of(%-2, scientists-4)
+dep(talking-17, agree-5)
+compound(change-7, climate-6)
+nsubj(thing-11, change-7)
+cop(thing-11, is-8)
+advmod(thing-11, n't-9)
+det(thing-11, a-10)
+ccomp(agree-5, thing-11)
+obj(fuck-14, thing-11)
+ref(thing-11, What-12)
+nsubj(fuck-14, the-13)
+acl:relcl(thing-11, fuck-14)
+aux(talking-17, are-15)
+nsubj(talking-17, you-16)
+obl(talking-17, about-18)
+punct(talking-17, ?-19)
+
+Extracted the following NER entity mentions:
+97%	PERCENT	PERCENT:0.9919384292240989

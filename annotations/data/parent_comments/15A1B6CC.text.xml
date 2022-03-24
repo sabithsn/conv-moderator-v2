@@ -1,0 +1,52 @@
+Document: ID=15A1B6CC.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+Train Robberies Cause Union Pacific, Shipping Companies to Consider Avoiding LA
+
+Tokens:
+[Text=Train CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=train NamedEntityTag=ORGANIZATION]
+[Text=Robberies CharacterOffsetBegin=6 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=robbery NamedEntityTag=ORGANIZATION]
+[Text=Cause CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=cause NamedEntityTag=ORGANIZATION]
+[Text=Union CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Union NamedEntityTag=ORGANIZATION]
+[Text=Pacific CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Pacific NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Shipping CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Shipping NamedEntityTag=O]
+[Text=Companies CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NNPS Lemma=Companies NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Consider CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=consider NamedEntityTag=O]
+[Text=Avoiding CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=avoid NamedEntityTag=O]
+[Text=LA CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=LA NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NN Train) (NNS Robberies))
+    (VP (VBP Cause)
+      (NP
+        (NP (NNP Union) (NNP Pacific))
+        (, ,)
+        (NP (NNP Shipping) (NNPS Companies)))
+      (S
+        (VP (TO to)
+          (VP (VB Consider)
+            (S
+              (VP (VBG Avoiding)
+                (NP (NNP LA))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Cause-3)
+compound(Robberies-2, Train-1)
+nsubj(Cause-3, Robberies-2)
+compound(Pacific-5, Union-4)
+obj(Cause-3, Pacific-5)
+punct(Pacific-5, ,-6)
+compound(Companies-8, Shipping-7)
+appos(Pacific-5, Companies-8)
+mark(Consider-10, to-9)
+advcl:to(Cause-3, Consider-10)
+xcomp(Consider-10, Avoiding-11)
+obj(Avoiding-11, LA-12)
+
+Extracted the following NER entity mentions:
+Train Robberies Cause Union Pacific	ORGANIZATION	ORGANIZATION:0.9735545548524773

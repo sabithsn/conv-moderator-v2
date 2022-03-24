@@ -1,0 +1,316 @@
+Document: ID=B5B041F0.text (5 sentences, 78 tokens)
+
+Sentence #1 (10 tokens):
+Greene actually voted YEA while Gosar didn't vote.
+
+Tokens:
+[Text=Greene CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=actually CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=voted CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=vote NamedEntityTag=O]
+[Text=YEA CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=YEA NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=Gosar CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Gosar NamedEntityTag=PERSON]
+[Text=did CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=vote NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Greene))
+    (ADVP (RB actually))
+    (VP (VBD voted)
+      (NP (NNP YEA))
+      (SBAR (IN while)
+        (S
+          (NP (NNP Gosar))
+          (VP (VBD did) (RB n't)
+            (VP (VB vote))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, voted-3)
+nsubj(voted-3, Greene-1)
+advmod(voted-3, actually-2)
+obj(voted-3, YEA-4)
+mark(vote-9, while-5)
+nsubj(vote-9, Gosar-6)
+aux(vote-9, did-7)
+advmod(vote-9, n't-8)
+advcl:while(voted-3, vote-9)
+punct(voted-3, .-10)
+
+Extracted the following NER entity mentions:
+Greene	PERSON	PERSON:0.9733798164396222
+Gosar	PERSON	PERSON:0.9505997367222384
+
+Sentence #2 (6 tokens):
+8 Republicans didn't vote.
+
+Tokens:
+[Text=8 CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=CD Lemma=8 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=Republicans CharacterOffsetBegin=54 CharacterOffsetEnd=65 PartOfSpeech=NNPS Lemma=Republicans NamedEntityTag=MISC]
+[Text=did CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=vote NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 8) (NNPS Republicans))
+    (VP (VBD did) (RB n't)
+      (VP (VB vote)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, vote-5)
+nummod(Republicans-2, 8-1)
+nsubj(vote-5, Republicans-2)
+aux(vote-5, did-3)
+advmod(vote-5, n't-4)
+punct(vote-5, .-6)
+
+Extracted the following NER entity mentions:
+8	NUMBER	NUMBER:-1.0
+Republicans	MISC	MISC:0.9998941871287715
+
+Sentence #3 (9 tokens):
+1 Democrat didn't vote (Pocan).
+
+Tokens:
+[Text=1 CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=Democrat CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Democrat NamedEntityTag=MISC]
+[Text=did CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=VB Lemma=vote NamedEntityTag=O]
+[Text=( CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=-LRB- Lemma=( NamedEntityTag=O]
+[Text=Pocan CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=Pocan NamedEntityTag=O]
+[Text=) CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=-RRB- Lemma=) NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (CD 1) (NNP Democrat))
+    (VP (VBD did) (RB n't)
+      (VP (VB vote) (-LRB- -LRB-)
+        (NP (NNP Pocan))
+        (-RRB- -RRB-)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, vote-5)
+nummod(Democrat-2, 1-1)
+nsubj(vote-5, Democrat-2)
+aux(vote-5, did-3)
+advmod(vote-5, n't-4)
+punct(vote-5, (-6)
+obj(vote-5, Pocan-7)
+punct(vote-5, )-8)
+punct(vote-5, .-9)
+
+Extracted the following NER entity mentions:
+1	NUMBER	NUMBER:-1.0
+Democrat	MISC	MISC:0.9831471824352553
+
+Sentence #4 (27 tokens):
+I'm curious why he didn't vote since he's an openly gay representative that got into politics due his personal experience with gay bashing.
+
+Tokens:
+[Text=I CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=curious CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=curious NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=vote CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=VB Lemma=vote NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=openly CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=RB Lemma=openly NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=representative CharacterOffsetBegin=169 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=representative NamedEntityTag=TITLE]
+[Text=that CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=politics CharacterOffsetBegin=198 CharacterOffsetEnd=206 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=IN Lemma=due NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=personal CharacterOffsetBegin=215 CharacterOffsetEnd=223 PartOfSpeech=JJ Lemma=personal NamedEntityTag=O]
+[Text=experience CharacterOffsetBegin=224 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=experience NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=gay CharacterOffsetBegin=240 CharacterOffsetEnd=243 PartOfSpeech=JJ Lemma=gay NamedEntityTag=O]
+[Text=bashing CharacterOffsetBegin=244 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=bashing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ curious))
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP he))
+          (VP (VBD did) (RB n't)
+            (VP (VB vote)
+              (SBAR (IN since)
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ 's)
+                    (NP
+                      (NP (DT an)
+                        (ADJP (RB openly) (JJ gay))
+                        (NN representative))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBD got)
+                            (PP (IN into)
+                              (NP (NNS politics)))
+                            (PP (IN due)
+                              (NP
+                                (NP (PRP$ his) (JJ personal) (NN experience))
+                                (PP (IN with)
+                                  (NP (JJ gay) (NN bashing)))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, curious-3)
+nsubj(curious-3, I-1)
+cop(curious-3, 'm-2)
+advmod(vote-8, why-4)
+nsubj(vote-8, he-5)
+aux(vote-8, did-6)
+advmod(vote-8, n't-7)
+advcl(curious-3, vote-8)
+mark(representative-15, since-9)
+nsubj(representative-15, he-10)
+cop(representative-15, 's-11)
+det(representative-15, an-12)
+advmod(gay-14, openly-13)
+amod(representative-15, gay-14)
+advcl:since(vote-8, representative-15)
+nsubj(got-17, representative-15)
+ref(representative-15, that-16)
+acl:relcl(representative-15, got-17)
+case(politics-19, into-18)
+obl:into(got-17, politics-19)
+case(experience-23, due-20)
+nmod:poss(experience-23, his-21)
+amod(experience-23, personal-22)
+obl:due(got-17, experience-23)
+case(bashing-26, with-24)
+amod(bashing-26, gay-25)
+nmod:with(experience-23, bashing-26)
+punct(curious-3, .-27)
+
+Extracted the following NER entity mentions:
+representative	TITLE	-
+he	PERSON	-
+he	PERSON	-
+his	PERSON	-
+
+Sentence #5 (26 tokens):
+EDIT:  He was probably not present for a legitimate reason and it doesn't appear that the bill had any chance of failing anyway.
+
+Tokens:
+[Text=EDIT CharacterOffsetBegin=254 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=edit NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=268 CharacterOffsetEnd=276 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=present CharacterOffsetBegin=281 CharacterOffsetEnd=288 PartOfSpeech=JJ Lemma=present NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">present</TIMEX3>]
+[Text=for CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=legitimate CharacterOffsetBegin=295 CharacterOffsetEnd=305 PartOfSpeech=JJ Lemma=legitimate NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=306 CharacterOffsetEnd=312 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=317 CharacterOffsetEnd=319 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=324 CharacterOffsetEnd=327 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=328 CharacterOffsetEnd=334 PartOfSpeech=VB Lemma=appear NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bill CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=bill NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=353 CharacterOffsetEnd=356 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=chance CharacterOffsetBegin=357 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=chance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=364 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=failing CharacterOffsetBegin=367 CharacterOffsetEnd=374 PartOfSpeech=VBG Lemma=fail NamedEntityTag=O]
+[Text=anyway CharacterOffsetBegin=375 CharacterOffsetEnd=381 PartOfSpeech=RB Lemma=anyway NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=381 CharacterOffsetEnd=382 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN EDIT))
+    (: :)
+    (S
+      (S
+        (NP (PRP He))
+        (VP (VBD was)
+          (ADVP (RB probably))
+          (ADJP (RB not) (JJ present)
+            (PP (IN for)
+              (NP (DT a) (JJ legitimate) (NN reason))))))
+      (CC and)
+      (S
+        (NP (PRP it))
+        (VP (VBZ does) (RB n't)
+          (VP (VB appear)
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NN bill))
+                (VP (VBD had)
+                  (NP
+                    (NP (DT any) (NN chance))
+                    (PP (IN of)
+                      (S
+                        (VP (VBG failing)
+                          (ADVP (RB anyway)))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, EDIT-1)
+punct(EDIT-1, :-2)
+nsubj(present-7, He-3)
+cop(present-7, was-4)
+advmod(present-7, probably-5)
+advmod(present-7, not-6)
+appos(EDIT-1, present-7)
+case(reason-11, for-8)
+det(reason-11, a-9)
+amod(reason-11, legitimate-10)
+obl:for(present-7, reason-11)
+cc(appear-16, and-12)
+nsubj(appear-16, it-13)
+aux(appear-16, does-14)
+advmod(appear-16, n't-15)
+appos(EDIT-1, appear-16)
+conj:and(present-7, appear-16)
+mark(had-20, that-17)
+det(bill-19, the-18)
+nsubj(had-20, bill-19)
+ccomp(appear-16, had-20)
+det(chance-22, any-21)
+obj(had-20, chance-22)
+mark(failing-24, of-23)
+acl:of(chance-22, failing-24)
+advmod(failing-24, anyway-25)
+punct(EDIT-1, .-26)
+
+Extracted the following NER entity mentions:
+present	DATE	DATE:-1.0
+He	PERSON	-

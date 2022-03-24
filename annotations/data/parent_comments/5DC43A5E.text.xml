@@ -1,0 +1,104 @@
+Document: ID=5DC43A5E.text (2 sentences, 25 tokens)
+
+Sentence #1 (19 tokens):
+Why are you more concerned with vaccinated people dying when their numbers are miniscule compared to the unvaccinated?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=concerned CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=concerned NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=vaccinated CharacterOffsetBegin=32 CharacterOffsetEnd=42 PartOfSpeech=VBN Lemma=vaccinate NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=dying CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBG Lemma=die NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=numbers CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=number NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=miniscule CharacterOffsetBegin=79 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=miniscule NamedEntityTag=O]
+[Text=compared CharacterOffsetBegin=89 CharacterOffsetEnd=97 PartOfSpeech=VBN Lemma=compare NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=unvaccinated CharacterOffsetBegin=105 CharacterOffsetEnd=117 PartOfSpeech=JJ Lemma=unvaccinated NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (ADJP
+        (ADJP (RBR more) (JJ concerned))
+        (PP (IN with)
+          (NP
+            (NP (VBN vaccinated) (NNS people))
+            (VP (VBG dying)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP$ their) (NNS numbers))
+                  (VP (VBP are)
+                    (ADJP (JJ miniscule))
+                    (PP (VBN compared)
+                      (PP (IN to)
+                        (NP (DT the) (JJ unvaccinated))))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, concerned-5)
+advmod(concerned-5, Why-1)
+cop(concerned-5, are-2)
+nsubj(concerned-5, you-3)
+advmod(concerned-5, more-4)
+case(people-8, with-6)
+amod(people-8, vaccinated-7)
+obl:with(concerned-5, people-8)
+acl(people-8, dying-9)
+advmod(miniscule-14, when-10)
+nmod:poss(numbers-12, their-11)
+nsubj(miniscule-14, numbers-12)
+cop(miniscule-14, are-13)
+advcl(dying-9, miniscule-14)
+case(unvaccinated-18, compared-15)
+fixed(compared-15, to-16)
+det(unvaccinated-18, the-17)
+advcl:compared_to(miniscule-14, unvaccinated-18)
+punct(concerned-5, ?-19)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Are you against saving lives?
+
+Tokens:
+[Text=Are CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=saving CharacterOffsetBegin=136 CharacterOffsetEnd=142 PartOfSpeech=VBG Lemma=save NamedEntityTag=O]
+[Text=lives CharacterOffsetBegin=143 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=life NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (PP (IN against))
+    (S
+      (VP (VBG saving)
+        (NP (NNS lives))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Are-1)
+nsubj(Are-1, you-2)
+dep(Are-1, against-3)
+dep(Are-1, saving-4)
+obj(saving-4, lives-5)
+punct(Are-1, ?-6)
+
+Extracted the following NER entity mentions:

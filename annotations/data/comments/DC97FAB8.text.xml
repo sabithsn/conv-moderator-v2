@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>DC97FAB8.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>No</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>shit</word>
+            <lemma>shit</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>lmao</word>
+            <lemma>lmao</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sub</word>
+            <lemma>sub</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>gets</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>dumber</word>
+            <lemma>dumber</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJR</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>dumber</word>
+            <lemma>dumber</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>JJR</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P1D</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="12">
+            <word>day</word>
+            <lemma>day</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS P1D</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT No) (NN shit) (NN lmao)) (NP (DT this) (NN sub))) (VP (VBZ gets) (S (ADJP (JJR dumber) (CC and) (JJR dumber))) (PP (IN by) (NP (DT the) (NN day)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">gets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">lmao</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">lmao</governor>
+            <dependent idx="2">shit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">gets</governor>
+            <dependent idx="3">lmao</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sub</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">lmao</governor>
+            <dependent idx="5">sub</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">gets</governor>
+            <dependent idx="7">dumber</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">dumber</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">dumber</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">day</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">day</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">gets</governor>
+            <dependent idx="12">day</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">gets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">lmao</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">lmao</governor>
+            <dependent idx="2">shit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">gets</governor>
+            <dependent idx="3">lmao</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sub</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">lmao</governor>
+            <dependent idx="5">sub</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">gets</governor>
+            <dependent idx="7">dumber</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">dumber</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">dumber</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">day</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">day</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">gets</governor>
+            <dependent idx="12">day</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">gets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">lmao</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">lmao</governor>
+            <dependent idx="2">shit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">gets</governor>
+            <dependent idx="3">lmao</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sub</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">lmao</governor>
+            <dependent idx="5">sub</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">gets</governor>
+            <dependent idx="7">dumber</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">dumber</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="xcomp" extra="true">
+            <governor idx="6">gets</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">dumber</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">day</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">day</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">gets</governor>
+            <dependent idx="12">day</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">gets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">lmao</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">lmao</governor>
+            <dependent idx="2">shit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">gets</governor>
+            <dependent idx="3">lmao</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sub</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">lmao</governor>
+            <dependent idx="5">sub</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">gets</governor>
+            <dependent idx="7">dumber</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">dumber</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="xcomp" extra="true">
+            <governor idx="6">gets</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">dumber</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">day</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">day</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">gets</governor>
+            <dependent idx="12">day</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">gets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">lmao</governor>
+            <dependent idx="1">No</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">lmao</governor>
+            <dependent idx="2">shit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">gets</governor>
+            <dependent idx="3">lmao</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">sub</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">lmao</governor>
+            <dependent idx="5">sub</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">gets</governor>
+            <dependent idx="7">dumber</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">dumber</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="xcomp" extra="true">
+            <governor idx="6">gets</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">dumber</governor>
+            <dependent idx="9">dumber</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="12">day</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">day</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="6">gets</governor>
+            <dependent idx="12">day</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

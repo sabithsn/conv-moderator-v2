@@ -1,0 +1,104 @@
+Document: ID=14DCC699.text (3 sentences, 20 tokens)
+
+Sentence #1 (11 tokens):
+GOP activist on Michelle Obama: "God help us.
+
+Tokens:
+[Text=GOP CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=GOP NamedEntityTag=TITLE]
+[Text=activist CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=activist NamedEntityTag=TITLE]
+[Text=on CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Michelle CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Michelle NamedEntityTag=PERSON]
+[Text=Obama CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Obama NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=God CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=God NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VBP Lemma=help NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (NNP GOP) (NN activist))
+      (PP (IN on)
+        (NP (NNP Michelle) (NNP Obama))))
+    (: :) (`` ")
+    (S
+      (NP (NNP God))
+      (VP (VBP help)
+        (NP (PRP us))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, activist-2)
+compound(activist-2, GOP-1)
+case(Obama-5, on-3)
+compound(Obama-5, Michelle-4)
+nmod:on(activist-2, Obama-5)
+punct(activist-2, :-6)
+punct(activist-2, "-7)
+nsubj(help-9, God-8)
+dep(activist-2, help-9)
+obj(help-9, us-10)
+punct(activist-2, .-11)
+
+Extracted the following NER entity mentions:
+GOP activist	TITLE	ORGANIZATION:0.9640530614873724
+Michelle Obama	PERSON	PERSON:0.9999573450438939
+
+Sentence #2 (8 tokens):
+She could beat any of our candidates.
+
+Tokens:
+[Text=She CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=beat CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=beat NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=candidates CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=candidate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (MD could)
+      (VP (VB beat)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP (PRP$ our) (NNS candidates))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, beat-3)
+nsubj(beat-3, She-1)
+aux(beat-3, could-2)
+obj(beat-3, any-4)
+case(candidates-7, of-5)
+nmod:poss(candidates-7, our-6)
+nmod:of(any-4, candidates-7)
+punct(beat-3, .-8)
+
+Extracted the following NER entity mentions:
+She	PERSON	-
+
+Sentence #3 (1 tokens):
+"
+
+Tokens:
+[Text=" CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (`` ")))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, "-1)
+
+Extracted the following NER entity mentions:

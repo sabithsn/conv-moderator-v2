@@ -1,0 +1,46 @@
+Document: ID=672B7B7E.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+I saw someone stealing a used underwear at the gym…
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=stealing CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=VBG Lemma=steal NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=underwear CharacterOffsetBegin=30 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=underwear NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gym CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=gym NamedEntityTag=O]
+[Text=… CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=: Lemma=… NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD saw)
+      (NP (NN someone))
+      (S
+        (VP (VBG stealing)
+          (NP (DT a) (VBN used) (NN underwear))
+          (PP (IN at)
+            (NP (DT the) (NN gym))))))
+    (: …)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, saw-2)
+nsubj(saw-2, I-1)
+obj(saw-2, someone-3)
+xcomp(saw-2, stealing-4)
+det(underwear-7, a-5)
+amod(underwear-7, used-6)
+obj(stealing-4, underwear-7)
+case(gym-10, at-8)
+det(gym-10, the-9)
+obl:at(stealing-4, gym-10)
+punct(saw-2, …-11)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,52 @@
+Document: ID=C935E194.text (2 sentences, 8 tokens)
+
+Sentence #1 (5 tokens):
+Is this uplifting news?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=uplifting CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=uplifting NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT this))
+    (NP (JJ uplifting) (NN news))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, news-4)
+cop(news-4, Is-1)
+nsubj(news-4, this-2)
+amod(news-4, uplifting-3)
+punct(news-4, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Oh, Conservative
+
+Tokens:
+[Text=Oh CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=UH Lemma=oh NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Conservative CharacterOffsetBegin=28 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Oh))
+    (, ,)
+    (ADJP (JJ Conservative))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Conservative-3)
+discourse(Conservative-3, Oh-1)
+punct(Conservative-3, ,-2)
+
+Extracted the following NER entity mentions:
+Conservative	IDEOLOGY	-

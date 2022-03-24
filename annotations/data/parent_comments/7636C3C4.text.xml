@@ -1,0 +1,65 @@
+Document: ID=7636C3C4.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+Putin calls Trudeau a ‘dictator,’ demands he faces trial at the Hague
+
+Tokens:
+[Text=Putin CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Putin NamedEntityTag=PERSON]
+[Text=calls CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=call NamedEntityTag=O]
+[Text=Trudeau CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Trudeau NamedEntityTag=PERSON]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=dictator CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=dictator NamedEntityTag=TITLE]
+[Text=, CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=’ CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+[Text=demands CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=demand NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=faces CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=VBZ Lemma=face NamedEntityTag=O]
+[Text=trial CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=trial NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=CITY]
+[Text=Hague CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Hague NamedEntityTag=CITY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Putin))
+    (VP (VBZ calls)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Trudeau))
+            (NP (DT a) (`` ‘) (NN dictator) (, ,) ('' ’)))
+          (VP (VBZ demands)
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBZ faces)
+                  (NP (NN trial))
+                  (PP (IN at)
+                    (NP (DT the) (NNP Hague))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, calls-2)
+nsubj(calls-2, Putin-1)
+nsubj(demands-9, Trudeau-3)
+det(dictator-6, a-4)
+punct(dictator-6, ‘-5)
+dep(Trudeau-3, dictator-6)
+punct(dictator-6, ,-7)
+punct(dictator-6, ’-8)
+ccomp(calls-2, demands-9)
+nsubj(faces-11, he-10)
+ccomp(demands-9, faces-11)
+obj(faces-11, trial-12)
+case(Hague-15, at-13)
+det(Hague-15, the-14)
+obl:at(faces-11, Hague-15)
+
+Extracted the following NER entity mentions:
+Putin	PERSON	PERSON:0.9952145289603597
+Trudeau	PERSON	PERSON:0.9948580552100328
+dictator	TITLE	-
+the Hague	CITY	-
+he	PERSON	-

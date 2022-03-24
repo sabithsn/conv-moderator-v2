@@ -1,0 +1,64 @@
+Document: ID=EF234C08.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+CMV: It's time for the world split up Russia into its 87 subdivisions.
+
+Tokens:
+[Text=CMV CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=cmv NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=split CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=VBD Lemma=split NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=into CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=87 CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=CD Lemma=87 NamedEntityTag=NUMBER NormalizedNamedEntityTag=87.0]
+[Text=subdivisions CharacterOffsetBegin=57 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=subdivision NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NN CMV))
+    (: :)
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (NP (NN time))
+        (SBAR (IN for)
+          (S
+            (NP (DT the) (NN world))
+            (VP (VBD split)
+              (PRT (RP up))
+              (NP (NNP Russia))
+              (PP (IN into)
+                (NP (PRP$ its) (CD 87) (NNS subdivisions))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, CMV-1)
+punct(CMV-1, :-2)
+nsubj(time-5, It-3)
+cop(time-5, 's-4)
+appos(CMV-1, time-5)
+mark(split-9, for-6)
+det(world-8, the-7)
+nsubj(split-9, world-8)
+advcl:for(time-5, split-9)
+compound:prt(split-9, up-10)
+obj(split-9, Russia-11)
+case(subdivisions-15, into-12)
+nmod:poss(subdivisions-15, its-13)
+nummod(subdivisions-15, 87-14)
+obl:into(split-9, subdivisions-15)
+punct(CMV-1, .-16)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9973435520070006
+87	NUMBER	NUMBER:-1.0

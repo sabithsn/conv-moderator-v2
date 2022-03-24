@@ -1,0 +1,67 @@
+Document: ID=33629EB2.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Republican Adam Kinzinger: “I should have voted to impeach Trump over Ukraine.”
+
+Tokens:
+[Text=Republican CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=republican NamedEntityTag=IDEOLOGY]
+[Text=Adam CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Adam NamedEntityTag=PERSON]
+[Text=Kinzinger CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Kinzinger NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=“ CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=`` Lemma=“ NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=voted CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=VBN Lemma=vote NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=impeach CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=impeach NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=over CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=” CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech='' Lemma=” NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (JJ Republican) (NNP Adam) (NNP Kinzinger))
+    (: :) (`` “)
+    (S
+      (NP (PRP I))
+      (VP (MD should)
+        (VP (VB have)
+          (VP (VBN voted)
+            (S
+              (VP (TO to)
+                (VP (VB impeach)
+                  (NP
+                    (NP (NNP Trump))
+                    (PP (IN over)
+                      (NP (NNP Ukraine)))))))))))
+    (. .) ('' ”)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Kinzinger-3)
+amod(Kinzinger-3, Republican-1)
+compound(Kinzinger-3, Adam-2)
+punct(Kinzinger-3, :-4)
+punct(Kinzinger-3, “-5)
+nsubj(voted-9, I-6)
+nsubj:xsubj(impeach-11, I-6)
+aux(voted-9, should-7)
+aux(voted-9, have-8)
+dep(Kinzinger-3, voted-9)
+mark(impeach-11, to-10)
+xcomp(voted-9, impeach-11)
+obj(impeach-11, Trump-12)
+case(Ukraine-14, over-13)
+nmod:over(Trump-12, Ukraine-14)
+punct(Kinzinger-3, .-15)
+punct(Kinzinger-3, ”-16)
+
+Extracted the following NER entity mentions:
+Republican	IDEOLOGY	MISC:0.9996679661606674
+Adam Kinzinger	PERSON	PERSON:0.9971315250158799
+Trump	PERSON	PERSON:0.8666512309879317
+Ukraine	COUNTRY	LOCATION:0.9964007210354384

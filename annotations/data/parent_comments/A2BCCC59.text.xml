@@ -1,0 +1,87 @@
+Document: ID=A2BCCC59.text (2 sentences, 17 tokens)
+
+Sentence #1 (6 tokens):
+When was Ukraine under Trump?
+
+Tokens:
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=under CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP Ukraine))
+        (PP (IN under)
+          (NP (NNP Trump)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-2)
+advmod(was-2, When-1)
+nsubj(was-2, Ukraine-3)
+case(Trump-5, under-4)
+nmod:under(Ukraine-3, Trump-5)
+punct(was-2, ?-6)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9929585250111241
+Trump	PERSON	PERSON:0.9526387239444367
+
+Sentence #2 (11 tokens):
+I thought Zelensky refused his offers to dig up dirt?
+
+Tokens:
+[Text=I CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=32 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=Zelensky CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Zelensky NamedEntityTag=PERSON]
+[Text=refused CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=refuse NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=offers CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=offer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dig CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=dig NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=dirt CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=dirt NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (NNP Zelensky))
+          (VP (VBD refused)
+            (NP (PRP$ his) (NNS offers))
+            (S
+              (VP (TO to)
+                (VP (VB dig)
+                  (PRT (RP up))
+                  (NP (NN dirt)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, thought-2)
+nsubj(thought-2, I-1)
+nsubj(refused-4, Zelensky-3)
+ccomp(thought-2, refused-4)
+nmod:poss(offers-6, his-5)
+obj(refused-4, offers-6)
+mark(dig-8, to-7)
+advcl:to(refused-4, dig-8)
+compound:prt(dig-8, up-9)
+obj(dig-8, dirt-10)
+punct(thought-2, ?-11)
+
+Extracted the following NER entity mentions:
+Zelensky	PERSON	PERSON:0.9973095192209154
+his	PERSON	-

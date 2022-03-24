@@ -1,0 +1,50 @@
+Document: ID=A7EE61CA.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+I wonder if he's got his own set of tapes
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wonder CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=wonder NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=set NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=tapes CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=tape NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP wonder)
+      (SBAR (IN if)
+        (S
+          (NP (PRP he))
+          (VP (VBZ 's)
+            (VP (VBN got)
+              (NP
+                (NP (PRP$ his) (JJ own) (NN set))
+                (PP (IN of)
+                  (NP (NNS tapes)))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wonder-2)
+nsubj(wonder-2, I-1)
+mark(got-6, if-3)
+nsubj:pass(got-6, he-4)
+aux:pass(got-6, 's-5)
+advcl:if(wonder-2, got-6)
+nmod:poss(set-9, his-7)
+amod(set-9, own-8)
+obj(got-6, set-9)
+case(tapes-11, of-10)
+nmod:of(set-9, tapes-11)
+
+Extracted the following NER entity mentions:
+he	PERSON	-
+his	PERSON	-

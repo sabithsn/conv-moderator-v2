@@ -1,0 +1,48 @@
+Document: ID=89F2A960.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Where is the source of when she bought it?
+
+Tokens:
+[Text=Where CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=source CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=source NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=bought CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=buy NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN source))
+        (PP (IN of)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP she))
+              (VP (VBD bought)
+                (NP (PRP it))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+advmod(is-2, Where-1)
+det(source-4, the-3)
+nsubj(is-2, source-4)
+mark(bought-8, of-5)
+advmod(bought-8, when-6)
+nsubj(bought-8, she-7)
+acl:of(source-4, bought-8)
+obj(bought-8, it-9)
+punct(is-2, ?-10)
+
+Extracted the following NER entity mentions:
+she	PERSON	-

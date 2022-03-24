@@ -1,0 +1,95 @@
+Document: ID=B537F773.text (1 sentences, 24 tokens)
+
+Sentence #1 (24 tokens):
+If you hadn't told me or it said that Trump wrote that, I would have guessed it was Trump 100%.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=wrote CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=VBD Lemma=write NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=guessed CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=VBN Lemma=guess NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=O]
+[Text=100 CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=CD Lemma=100 NamedEntityTag=PERCENT NormalizedNamedEntityTag=%100.0]
+[Text=% CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=% NamedEntityTag=PERCENT NormalizedNamedEntityTag=%100.0]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBD had) (RB n't))))
+    (VP (VBD told)
+      (SBAR
+        (S
+          (NP (PRP me)
+            (CC or)
+            (PRP it))
+          (VP (VBD said)
+            (SBAR (IN that)
+              (S
+                (NP (NNP Trump))
+                (VP (VBD wrote)
+                  (SBAR (IN that) (, ,)
+                    (S
+                      (NP (PRP I))
+                      (VP (MD would)
+                        (VP (VB have)
+                          (VP (VBN guessed)
+                            (SBAR
+                              (S
+                                (NP (PRP it))
+                                (VP (VBD was)
+                                  (NP
+                                    (NP (NNP Trump))
+                                    (NP (CD 100) (NN %))))))))))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-5)
+mark(had-3, If-1)
+nsubj(had-3, you-2)
+csubj(told-5, had-3)
+advmod(had-3, n't-4)
+nsubj(said-9, me-6)
+cc(it-8, or-7)
+conj:or(me-6, it-8)
+nsubj(said-9, it-8)
+ccomp(told-5, said-9)
+mark(wrote-12, that-10)
+nsubj(wrote-12, Trump-11)
+ccomp(said-9, wrote-12)
+mark(guessed-18, that-13)
+punct(guessed-18, ,-14)
+nsubj(guessed-18, I-15)
+aux(guessed-18, would-16)
+aux(guessed-18, have-17)
+ccomp(wrote-12, guessed-18)
+nsubj(Trump-21, it-19)
+cop(Trump-21, was-20)
+ccomp(guessed-18, Trump-21)
+nummod(%-23, 100-22)
+dep(Trump-21, %-23)
+punct(told-5, .-24)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.9530282364270579
+100%	PERCENT	PERCENT:0.9897961224681538

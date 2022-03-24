@@ -1,0 +1,108 @@
+Document: ID=BF0B909F.text (2 sentences, 25 tokens)
+
+Sentence #1 (16 tokens):
+Let's face it, here in America, most of the compass is fat.
+
+Tokens:
+[Text=Let CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP Lemma='s NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VB Lemma=face NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=America CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=America NamedEntityTag=COUNTRY]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=compass CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=compass NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=fat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (VP (VB Let)
+        (S
+          (NP (PRP 's))
+          (VP (VB face)
+            (NP (PRP it))))))
+    (, ,)
+    (PP
+      (ADVP (RB here))
+      (IN in)
+      (NP (NNP America)))
+    (, ,)
+    (NP
+      (NP (JJS most))
+      (PP (IN of)
+        (NP (DT the) (NN compass))))
+    (VP (VBZ is)
+      (ADJP (JJ fat)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, fat-15)
+ccomp(fat-15, Let-1)
+nsubj(face-3, 's-2)
+ccomp(Let-1, face-3)
+obj(face-3, it-4)
+punct(fat-15, ,-5)
+advmod(America-8, here-6)
+case(America-8, in-7)
+obl:in(fat-15, America-8)
+punct(fat-15, ,-9)
+nsubj(fat-15, most-10)
+case(compass-13, of-11)
+det(compass-13, the-12)
+nmod:of(most-10, compass-13)
+cop(fat-15, is-14)
+punct(fat-15, .-16)
+
+Extracted the following NER entity mentions:
+America	COUNTRY	LOCATION:0.9985460615927262
+
+Sentence #2 (9 tokens):
+I blame Center for making delicious grilled meat.
+
+Tokens:
+[Text=I CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=blame CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=VBP Lemma=blame NamedEntityTag=O]
+[Text=Center CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Center NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=delicious CharacterOffsetBegin=86 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=delicious NamedEntityTag=O]
+[Text=grilled CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=VBN Lemma=grill NamedEntityTag=O]
+[Text=meat CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=meat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP blame)
+      (NP (NNP Center))
+      (PP (IN for)
+        (S
+          (VP (VBG making)
+            (NP (JJ delicious)
+              (NML (VBN grilled) (NN meat)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, blame-2)
+nsubj(blame-2, I-1)
+obj(blame-2, Center-3)
+mark(making-5, for-4)
+advcl:for(blame-2, making-5)
+amod(meat-8, delicious-6)
+amod(meat-8, grilled-7)
+obj(making-5, meat-8)
+punct(blame-2, .-9)
+
+Extracted the following NER entity mentions:

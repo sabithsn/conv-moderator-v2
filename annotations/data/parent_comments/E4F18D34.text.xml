@@ -1,0 +1,77 @@
+Document: ID=E4F18D34.text (2 sentences, 18 tokens)
+
+Sentence #1 (17 tokens):
+🎶We all live in a Viking submarine, a Viking submarine, a Viking submarine.
+
+Tokens:
+[Text=🎶 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NFP Lemma=🎶 NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Viking CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=viking NamedEntityTag=CITY]
+[Text=submarine CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=submarine NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Viking CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=viking NamedEntityTag=O]
+[Text=submarine CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=submarine NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Viking CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=viking NamedEntityTag=O]
+[Text=submarine CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=submarine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S (NFP 🎶)
+    (NP (PRP We))
+    (NP (DT all))
+    (VP (VBP live)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (JJ Viking) (NN submarine))
+          (, ,)
+          (NP (DT a) (JJ Viking) (NN submarine))
+          (, ,)
+          (NP (DT a) (JJ Viking) (NN submarine)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, live-4)
+punct(live-4, 🎶-1)
+nsubj(live-4, We-2)
+nsubj(live-4, all-3)
+case(submarine-8, in-5)
+det(submarine-8, a-6)
+amod(submarine-8, Viking-7)
+obl:in(live-4, submarine-8)
+punct(submarine-8, ,-9)
+det(submarine-12, a-10)
+amod(submarine-12, Viking-11)
+appos(submarine-8, submarine-12)
+punct(submarine-8, ,-13)
+det(submarine-16, a-14)
+amod(submarine-16, Viking-15)
+appos(submarine-8, submarine-16)
+punct(live-4, .-17)
+
+Extracted the following NER entity mentions:
+Viking	CITY	LOCATION:0.6355514177337862
+
+Sentence #2 (1 tokens):
+🎶
+
+Tokens:
+[Text=🎶 CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=NFP Lemma=🎶 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (NFP 🎶)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 🎶-1)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,84 @@
+Document: ID=EEF1ECF5.text (1 sentences, 21 tokens)
+
+Sentence #1 (21 tokens):
+Ingraham blasts Joe Biden's 'disgustingly Washington' response to question on gas prices: 'it's vindictive'
+
+Tokens:
+[Text=Ingraham CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Ingraham NamedEntityTag=PERSON]
+[Text=blasts CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=blast NamedEntityTag=O]
+[Text=Joe CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Biden CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=`` Lemma=' NamedEntityTag=O]
+[Text=disgustingly CharacterOffsetBegin=29 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=disgustingly NamedEntityTag=O]
+[Text=Washington CharacterOffsetBegin=42 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Washington NamedEntityTag=STATE_OR_PROVINCE]
+[Text=' CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=prices CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=vindictive CharacterOffsetBegin=96 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=vindictive NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP
+      (NP
+        (NP
+          (NP (NNP Ingraham) (NNS blasts))
+          (VP
+            (NP
+              (NP (NNP Joe) (NNP Biden) (POS 's))
+              (`` ')
+              (ADVP (RB disgustingly)
+                (PP
+                  (NP
+                    (NP (NNP Washington) (POS '))
+                    (NN response))
+                  (IN to)))
+              (NN question))
+            (PP (IN on)
+              (NP (NN gas)))))
+        (NNS prices))
+      (: :)
+      (S ('' ')
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (ADJP (JJ vindictive)))
+        ('' ')))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, prices-15)
+compound(blasts-2, Ingraham-1)
+compound(prices-15, blasts-2)
+compound(Biden-4, Joe-3)
+nmod:poss(question-12, Biden-4)
+case(Biden-4, 's-5)
+punct(question-12, '-6)
+advmod(question-12, disgustingly-7)
+nmod:poss(response-10, Washington-8)
+case(Washington-8, '-9)
+obl:to(disgustingly-7, response-10)
+case(response-10, to-11)
+dep(blasts-2, question-12)
+case(gas-14, on-13)
+obl:on(question-12, gas-14)
+punct(prices-15, :-16)
+punct(vindictive-20, '-17)
+nsubj(vindictive-20, it-18)
+cop(vindictive-20, 's-19)
+parataxis(prices-15, vindictive-20)
+punct(vindictive-20, '-21)
+
+Extracted the following NER entity mentions:
+Ingraham	PERSON	PERSON:0.8755546297272758
+Joe Biden	PERSON	PERSON:0.9997872643984516
+Washington	STATE_OR_PROVINCE	LOCATION:0.9144576721564529

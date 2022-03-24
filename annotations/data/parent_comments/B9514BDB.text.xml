@@ -1,0 +1,65 @@
+Document: ID=B9514BDB.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+[eli5] How can Slavs and other non white races/ethnicities be Neo Naxi
+
+Tokens:
+[Text=[ CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=[ NamedEntityTag=O]
+[Text=eli5 CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=eli5 NamedEntityTag=O]
+[Text=] CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=-RRB- Lemma=] NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=Slavs CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNPS Lemma=Slavs NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=non CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=AFX Lemma=non NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=races CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=race NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=, Lemma=/ NamedEntityTag=O]
+[Text=ethnicities CharacterOffsetBegin=47 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=ethnicity NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=Neo CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=neo NamedEntityTag=MISC]
+[Text=Naxi CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Naxi NamedEntityTag=MISC]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (-LRB- [) (NN eli5) (-RRB- ]))
+    (SBAR
+      (WHADVP (WRB How))
+      (SQ (MD can)
+        (NP
+          (NP (NNPS Slavs))
+          (CC and)
+          (NP
+            (NP (JJ other)
+              (ADJP (AFX non) (JJ white))
+              (NNS races))
+            (, /)
+            (NP (NNS ethnicities))))
+        (VP (VB be)
+          (NP (NN Neo) (NNP Naxi)))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, eli5-2)
+punct(eli5-2, [-1)
+punct(eli5-2, ]-3)
+advmod(Naxi-16, How-4)
+aux(Naxi-16, can-5)
+nsubj(Naxi-16, Slavs-6)
+cc(races-11, and-7)
+amod(races-11, other-8)
+dep(white-10, non-9)
+amod(races-11, white-10)
+conj:and(Slavs-6, races-11)
+nsubj(Naxi-16, races-11)
+punct(races-11, /-12)
+appos(races-11, ethnicities-13)
+cop(Naxi-16, be-14)
+compound(Naxi-16, Neo-15)
+dep(eli5-2, Naxi-16)
+
+Extracted the following NER entity mentions:
+Slavs	MISC	MISC:0.9784090966914805
+Neo Naxi	MISC	MISC:0.5148838197442066

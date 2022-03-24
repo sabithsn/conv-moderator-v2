@@ -1,0 +1,78 @@
+Document: ID=38083303.text (2 sentences, 17 tokens)
+
+Sentence #1 (7 tokens):
+Antiwork banning their own for dissent.
+
+Tokens:
+[Text=Antiwork CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=antiwork NamedEntityTag=PERSON]
+[Text=banning CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBG Lemma=ban NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=dissent CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=dissent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (NN Antiwork))
+    (VP (VBG banning)
+      (NP (PRP$ their) (JJ own))
+      (PP (IN for)
+        (NP (NN dissent))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Antiwork-1)
+acl(Antiwork-1, banning-2)
+nmod:poss(own-4, their-3)
+obj(banning-2, own-4)
+case(dissent-6, for-5)
+obl:for(banning-2, dissent-6)
+punct(Antiwork-1, .-7)
+
+Extracted the following NER entity mentions:
+Antiwork	PERSON	PERSON:0.5878456456593839
+
+Sentence #2 (10 tokens):
+Heirarchy ain't so bad after all, huh?
+
+Tokens:
+[Text=Heirarchy CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Heirarchy NamedEntityTag=O]
+[Text=ai CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=huh CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=UH Lemma=huh NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Heirarchy))
+    (VP (VBZ ai) (RB n't)
+      (ADJP (RB so) (JJ bad)
+        (PP (IN after)
+          (NP (DT all))))
+      (, ,)
+      (INTJ (UH huh)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, bad-5)
+nsubj(bad-5, Heirarchy-1)
+cop(bad-5, ai-2)
+advmod(bad-5, n't-3)
+advmod(bad-5, so-4)
+case(all-7, after-6)
+obl:after(bad-5, all-7)
+punct(bad-5, ,-8)
+discourse(bad-5, huh-9)
+punct(bad-5, ?-10)
+
+Extracted the following NER entity mentions:

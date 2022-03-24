@@ -1,0 +1,98 @@
+Document: ID=761454E5.text (2 sentences, 23 tokens)
+
+Sentence #1 (14 tokens):
+Russian propaganda out in full force again today after some relatively quiet days.
+
+Tokens:
+[Text=Russian CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=russian NamedEntityTag=NATIONALITY]
+[Text=propaganda CharacterOffsetBegin=8 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=propaganda NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=force CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=force NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=after CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=relatively CharacterOffsetBegin=60 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=relatively NamedEntityTag=O]
+[Text=quiet CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=quiet NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t2" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (JJ Russian) (NN propaganda))
+    (ADVP (RB out)
+      (PP (IN in)
+        (NP (JJ full) (NN force))
+        (ADVP (RB again))))
+    (NP-TMP (NN today))
+    (PP (IN after)
+      (NP (DT some)
+        (ADJP (RB relatively) (JJ quiet))
+        (NNS days)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, propaganda-2)
+amod(propaganda-2, Russian-1)
+dep(propaganda-2, out-3)
+case(force-6, in-4)
+amod(force-6, full-5)
+obl:in(out-3, force-6)
+advmod(force-6, again-7)
+dep(propaganda-2, today-8)
+case(days-13, after-9)
+det(days-13, some-10)
+advmod(quiet-12, relatively-11)
+amod(days-13, quiet-12)
+obl:after(propaganda-2, days-13)
+punct(propaganda-2, .-14)
+
+Extracted the following NER entity mentions:
+Russian	NATIONALITY	MISC:0.9999979632751483
+today	DATE	DATE:-1.0
+days	DURATION	DURATION:-1.0
+
+Sentence #2 (9 tokens):
+Had to coordinate a strategy change, comrade?
+
+Tokens:
+[Text=Had CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=coordinate CharacterOffsetBegin=90 CharacterOffsetEnd=100 PartOfSpeech=VB Lemma=coordinate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=strategy CharacterOffsetBegin=103 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=strategy NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=112 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=change NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=comrade CharacterOffsetBegin=120 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=comrade NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBD Had)
+      (S
+        (VP (TO to)
+          (VP (VB coordinate)
+            (NP
+              (NP (DT a) (NN strategy) (NN change))
+              (, ,)
+              (NP (NN comrade)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Had-1)
+mark(coordinate-3, to-2)
+xcomp(Had-1, coordinate-3)
+det(change-6, a-4)
+compound(change-6, strategy-5)
+obj(coordinate-3, change-6)
+punct(change-6, ,-7)
+appos(change-6, comrade-8)
+punct(Had-1, ?-9)
+
+Extracted the following NER entity mentions:

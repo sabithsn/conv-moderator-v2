@@ -1,0 +1,118 @@
+Document: ID=C771A5E3.text (3 sentences, 25 tokens)
+
+Sentence #1 (12 tokens):
+Why do they have a hammer and sickle on their clothing ?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hammer CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=hammer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sickle CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=sickle NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=clothing CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=clothing NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (PRP they))
+      (VP (VBP have)
+        (NP
+          (NP (DT a) (NN hammer)
+            (CC and)
+            (NN sickle))
+          (PP (IN on)
+            (NP (PRP$ their) (NN clothing))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-4)
+advmod(have-4, Why-1)
+aux(have-4, do-2)
+nsubj(have-4, they-3)
+det(hammer-6, a-5)
+obj(have-4, hammer-6)
+cc(sickle-8, and-7)
+obj(have-4, sickle-8)
+conj:and(hammer-6, sickle-8)
+case(clothing-11, on-9)
+nmod:poss(clothing-11, their-10)
+nmod:on(hammer-6, clothing-11)
+punct(have-4, ?-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (11 tokens):
+You do know that Russia is not a communist nation?
+
+Tokens:
+[Text=You CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=communist CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=communist NamedEntityTag=IDEOLOGY]
+[Text=nation CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=nation NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do)
+      (VP (VB know)
+        (SBAR (IN that)
+          (S
+            (NP (NNP Russia))
+            (VP (VBZ is) (RB not)
+              (NP (DT a) (JJ communist) (NN nation)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, know-3)
+nsubj(know-3, You-1)
+aux(know-3, do-2)
+mark(nation-10, that-4)
+nsubj(nation-10, Russia-5)
+cop(nation-10, is-6)
+advmod(nation-10, not-7)
+det(nation-10, a-8)
+amod(nation-10, communist-9)
+ccomp(know-3, nation-10)
+punct(know-3, ?-11)
+
+Extracted the following NER entity mentions:
+Russia	COUNTRY	LOCATION:0.9988354258143444
+communist	IDEOLOGY	-
+
+Sentence #3 (2 tokens):
+Right!?
+
+Tokens:
+[Text=Right CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=!? CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=!? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ
+    (ADJP (JJ Right))
+    (. !?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Right-1)
+punct(Right-1, !?-2)
+
+Extracted the following NER entity mentions:

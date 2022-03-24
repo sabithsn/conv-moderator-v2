@@ -1,0 +1,216 @@
+Document: ID=3A61B2A1.text (5 sentences, 49 tokens)
+
+Sentence #1 (23 tokens):
+Out of curiosity, I just checked her Wikipedia page, they have her described as a far-right conspiracy theorist.
+
+Tokens:
+[Text=Out CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=curiosity CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=curiosity NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=checked CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=check NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Wikipedia CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Wikipedia NamedEntityTag=MISC]
+[Text=page CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=page NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=described CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=VBN Lemma=describe NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=HYPH Lemma=- NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=conspiracy CharacterOffsetBegin=92 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=theorist CharacterOffsetBegin=103 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=theorist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (PP (IN Out)
+        (PP (IN of)
+          (NP (NN curiosity))))
+      (, ,)
+      (NP (PRP I))
+      (ADVP (RB just))
+      (VP (VBD checked)
+        (NP (PRP$ her) (NNP Wikipedia) (NN page))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP have)
+      (NP (PRP$ her)
+        (ADJP (VBN described)
+          (PP (IN as)
+            (NP (DT a)
+              (ADJP (RB far) (HYPH -) (JJ right))
+              (NN conspiracy))))
+        (NN theorist)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-13)
+case(curiosity-3, Out-1)
+fixed(Out-1, of-2)
+obl:out_of(checked-7, curiosity-3)
+punct(checked-7, ,-4)
+nsubj(checked-7, I-5)
+advmod(checked-7, just-6)
+ccomp(have-13, checked-7)
+nmod:poss(page-10, her-8)
+compound(page-10, Wikipedia-9)
+obj(checked-7, page-10)
+punct(have-13, ,-11)
+nsubj(have-13, they-12)
+nmod:poss(theorist-22, her-14)
+amod(theorist-22, described-15)
+case(conspiracy-21, as-16)
+det(conspiracy-21, a-17)
+advmod(right-20, far-18)
+punct(right-20, --19)
+amod(conspiracy-21, right-20)
+obl:as(described-15, conspiracy-21)
+obj(have-13, theorist-22)
+punct(have-13, .-23)
+
+Extracted the following NER entity mentions:
+Wikipedia	MISC	MISC:0.43212364734335684
+conspiracy	CRIMINAL_CHARGE	-
+her	PERSON	-
+her	PERSON	-
+
+Sentence #2 (1 tokens):
+.
+
+Tokens:
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT (. .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, .-1)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (2 tokens):
+wtf?
+
+Tokens:
+[Text=wtf CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=wtf NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NN wtf) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wtf-1)
+punct(wtf-1, ?-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (16 tokens):
+Can a leftist please tell me again that Wikipedia is not biased to the left?
+
+Tokens:
+[Text=Can CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=leftist CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=leftist NamedEntityTag=IDEOLOGY]
+[Text=please CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=UH Lemma=please NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=149 CharacterOffsetEnd=154 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Wikipedia CharacterOffsetBegin=160 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=Wikipedia NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=biased CharacterOffsetBegin=177 CharacterOffsetEnd=183 PartOfSpeech=VBN Lemma=bias NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (MD Can)
+    (NP (DT a) (JJ leftist))
+    (INTJ (UH please))
+    (VP (VB tell)
+      (NP (PRP me))
+      (ADVP (RB again))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Wikipedia))
+          (VP (VBZ is) (RB not)
+            (ADJP (VBN biased)
+              (PP (IN to)
+                (NP
+                  (NP (DT the))
+                  (VP (VBN left)))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tell-5)
+aux(tell-5, Can-1)
+det(leftist-3, a-2)
+nsubj(tell-5, leftist-3)
+discourse(tell-5, please-4)
+obj(tell-5, me-6)
+advmod(tell-5, again-7)
+mark(biased-12, that-8)
+nsubj:pass(biased-12, Wikipedia-9)
+aux:pass(biased-12, is-10)
+advmod(biased-12, not-11)
+ccomp(tell-5, biased-12)
+case(the-14, to-13)
+obl:to(biased-12, the-14)
+acl(the-14, left-15)
+punct(tell-5, ?-16)
+
+Extracted the following NER entity mentions:
+leftist	IDEOLOGY	-
+Wikipedia	ORGANIZATION	ORGANIZATION:0.9988561764425297
+
+Sentence #5 (7 tokens):
+They’re clearly far left propaganda.
+
+Tokens:
+[Text=They CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=’re CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=VBP Lemma=’re NamedEntityTag=O]
+[Text=clearly CharacterOffsetBegin=205 CharacterOffsetEnd=212 PartOfSpeech=RB Lemma=clearly NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=RB Lemma=far NamedEntityTag=IDEOLOGY]
+[Text=left CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=left NamedEntityTag=IDEOLOGY]
+[Text=propaganda CharacterOffsetBegin=222 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=propaganda NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP ’re)
+      (NP
+        (ADJP (RB clearly) (RB far) (JJ left))
+        (NN propaganda)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, propaganda-6)
+nsubj(propaganda-6, They-1)
+cop(propaganda-6, ’re-2)
+advmod(left-5, clearly-3)
+advmod(left-5, far-4)
+amod(propaganda-6, left-5)
+punct(propaganda-6, .-7)
+
+Extracted the following NER entity mentions:
+far left	IDEOLOGY	-

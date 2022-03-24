@@ -1,0 +1,104 @@
+Document: ID=F7DADF80.text (2 sentences, 23 tokens)
+
+Sentence #1 (10 tokens):
+Wtf ... he's saying invading Ukraine is genius.
+
+Tokens:
+[Text=Wtf CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Wtf NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NFP Lemma=... NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=invading CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=VBG Lemma=invade NamedEntityTag=O]
+[Text=Ukraine CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Ukraine NamedEntityTag=COUNTRY]
+[Text=is CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=genius CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Wtf))
+    (NFP ...)
+    (S
+      (NP (PRP he))
+      (VP (VBZ 's)
+        (VP (VBG saying)
+          (S
+            (VP (VBG invading)
+              (SBAR
+                (S
+                  (NP (NNP Ukraine))
+                  (VP (VBZ is)
+                    (NP (NN genius))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, saying-5)
+dep(saying-5, Wtf-1)
+punct(saying-5, ...-2)
+nsubj(saying-5, he-3)
+aux(saying-5, 's-4)
+advcl(saying-5, invading-6)
+nsubj(genius-9, Ukraine-7)
+cop(genius-9, is-8)
+ccomp(invading-6, genius-9)
+punct(saying-5, .-10)
+
+Extracted the following NER entity mentions:
+Ukraine	COUNTRY	LOCATION:0.9993320492380289
+he	PERSON	-
+
+Sentence #2 (13 tokens):
+His followers are so brain dead that they will eat this up.
+
+Tokens:
+[Text=His CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=followers CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=follower NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=brain CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=brain NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=VB Lemma=eat NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ His) (NNS followers))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (RB so) (NN brain) (JJ dead))
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (MD will)
+              (VP (VB eat)
+                (NP (DT this))
+                (PRT (RP up))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dead-6)
+nmod:poss(followers-2, His-1)
+nsubj(dead-6, followers-2)
+cop(dead-6, are-3)
+advmod(dead-6, so-4)
+obl:npmod(dead-6, brain-5)
+mark(eat-10, that-7)
+nsubj(eat-10, they-8)
+aux(eat-10, will-9)
+ccomp(dead-6, eat-10)
+obj(eat-10, this-11)
+compound:prt(eat-10, up-12)
+punct(dead-6, .-13)
+
+Extracted the following NER entity mentions:
+His	PERSON	-

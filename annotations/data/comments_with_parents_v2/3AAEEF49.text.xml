@@ -1,0 +1,110 @@
+Document: ID=3AAEEF49.text (3 sentences, 21 tokens)
+
+Sentence #1 (10 tokens):
+You want me to read about Nazis being innocent?
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=Nazis CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNPS Lemma=Nazis NamedEntityTag=CAUSE_OF_DEATH]
+[Text=being CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=innocent CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=innocent NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP want)
+      (S
+        (NP (PRP me))
+        (VP (TO to)
+          (VP (VB read)
+            (S
+              (NP (RB about) (NNPS Nazis))
+              (VP (VBG being)
+                (ADJP (JJ innocent))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, want-2)
+nsubj(want-2, You-1)
+obj(want-2, me-3)
+nsubj:xsubj(read-5, me-3)
+mark(read-5, to-4)
+xcomp(want-2, read-5)
+advmod(Nazis-7, about-6)
+nsubj(innocent-9, Nazis-7)
+cop(innocent-9, being-8)
+dep(read-5, innocent-9)
+punct(want-2, ?-10)
+
+Extracted the following NER entity mentions:
+Nazis	CAUSE_OF_DEATH	MISC:0.9919812622941091
+
+Sentence #2 (5 tokens):
+Have a link maybe?
+
+Tokens:
+[Text=Have CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=link CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=link NamedEntityTag=O]
+[Text=maybe CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Have)
+      (NP (DT a) (NN link))
+      (ADVP (RB maybe)))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Have-1)
+det(link-3, a-2)
+obj(Have-1, link-3)
+advmod(Have-1, maybe-4)
+punct(Have-1, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens):
+This could be tough to find
+
+Tokens:
+[Text=This CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=tough CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=tough NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD could)
+      (VP (VB be)
+        (ADJP (JJ tough)
+          (S
+            (VP (TO to)
+              (VP (VB find)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, tough-4)
+nsubj(tough-4, This-1)
+nsubj:xsubj(find-6, This-1)
+aux(tough-4, could-2)
+cop(tough-4, be-3)
+mark(find-6, to-5)
+xcomp(tough-4, find-6)
+
+Extracted the following NER entity mentions:

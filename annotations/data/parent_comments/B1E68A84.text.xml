@@ -1,0 +1,38 @@
+Document: ID=B1E68A84.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Hey now, dont kink shame.
+
+Tokens:
+[Text=Hey CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=hey NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=nt CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=RB Lemma=nt NamedEntityTag=O]
+[Text=kink CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=kink NamedEntityTag=O]
+[Text=shame CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=shame NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Hey))
+    (ADVP (RB now))
+    (, ,)
+    (VP (VBP do) (RB nt)
+      (NP (NN kink) (NN shame)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-4)
+discourse(do-4, Hey-1)
+advmod(do-4, now-2)
+punct(do-4, ,-3)
+advmod(do-4, nt-5)
+compound(shame-7, kink-6)
+obj(do-4, shame-7)
+punct(do-4, .-8)
+
+Extracted the following NER entity mentions:
+now	DATE	DATE:-1.0

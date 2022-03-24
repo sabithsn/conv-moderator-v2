@@ -1,0 +1,48 @@
+Document: ID=DC97FAB8.text (2 sentences, 8 tokens)
+
+Sentence #1 (5 tokens):
+That vaccine's name?
+
+Tokens:
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=vaccine CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=vaccine NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT That) (NN vaccine) (POS 's))
+    (NN name) (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, name-4)
+det(vaccine-2, That-1)
+nmod:poss(name-4, vaccine-2)
+case(vaccine-2, 's-3)
+punct(name-4, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Albert Einstein.
+
+Tokens:
+[Text=Albert CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Albert NamedEntityTag=PERSON]
+[Text=Einstein CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Einstein NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Albert) (NNP Einstein) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Einstein-2)
+compound(Einstein-2, Albert-1)
+punct(Einstein-2, .-3)
+
+Extracted the following NER entity mentions:
+Albert Einstein	PERSON	PERSON:0.999894656851022

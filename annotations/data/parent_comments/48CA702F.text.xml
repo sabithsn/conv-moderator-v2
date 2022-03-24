@@ -1,0 +1,38 @@
+Document: ID=48CA702F.text (1 sentences, 8 tokens)
+
+Sentence #1 (8 tokens):
+Why is LGB a pro trump thing?
+
+Tokens:
+[Text=Why CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=LGB CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=LGB NamedEntityTag=ORGANIZATION]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pro CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=pro NamedEntityTag=O]
+[Text=trump CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=trump NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (NNP LGB))
+        (NP (DT a) (JJ pro) (NN trump) (NN thing))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-2)
+advmod(is-2, Why-1)
+nsubj(is-2, LGB-3)
+det(thing-7, a-4)
+amod(thing-7, pro-5)
+compound(thing-7, trump-6)
+dep(LGB-3, thing-7)
+punct(is-2, ?-8)
+
+Extracted the following NER entity mentions:
+LGB	ORGANIZATION	ORGANIZATION:0.8678720141503079

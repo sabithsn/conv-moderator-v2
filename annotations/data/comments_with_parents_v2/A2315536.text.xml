@@ -1,0 +1,58 @@
+Document: ID=A2315536.text (2 sentences, 11 tokens)
+
+Sentence #1 (4 tokens):
+Bahahaha child owners.
+
+Tokens:
+[Text=Bahahaha CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Bahahaha NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=owners CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=owner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Bahahaha) (NN child) (NNS owners) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, owners-3)
+compound(owners-3, Bahahaha-1)
+compound(owners-3, child-2)
+punct(owners-3, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (7 tokens):
+I'm stealing that 🤣🤣🤣
+
+Tokens:
+[Text=I CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=stealing CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=VBG Lemma=steal NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=🤣 CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=NFP Lemma=🤣 NamedEntityTag=O]
+[Text=🤣 CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=NFP Lemma=🤣 NamedEntityTag=O]
+[Text=🤣 CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=NFP Lemma=🤣 NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG stealing)
+        (SBAR (IN that)
+          (S
+            (VP (NFP 🤣))))))
+    (NFP 🤣) (NFP 🤣)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, stealing-3)
+nsubj(stealing-3, I-1)
+aux(stealing-3, 'm-2)
+mark(🤣-5, that-4)
+ccomp(stealing-3, 🤣-5)
+punct(stealing-3, 🤣-6)
+punct(stealing-3, 🤣-7)
+
+Extracted the following NER entity mentions:

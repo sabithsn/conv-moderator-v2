@@ -1,0 +1,176 @@
+Document: ID=9F97192C.text (5 sentences, 34 tokens)
+
+Sentence #1 (3 tokens):
+Its ok.
+
+Tokens:
+[Text=Its CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=ok CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=ok NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Its))
+    (ADJP (JJ ok))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ok-2)
+dep(ok-2, Its-1)
+punct(ok-2, .-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (3 tokens):
+Accidents happen.
+
+Tokens:
+[Text=Accidents CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=accident NamedEntityTag=CAUSE_OF_DEATH]
+[Text=happen CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=happen NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNS Accidents))
+    (VP (VBP happen))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, happen-2)
+nsubj(happen-2, Accidents-1)
+punct(happen-2, .-3)
+
+Extracted the following NER entity mentions:
+Accidents	CAUSE_OF_DEATH	-
+
+Sentence #3 (18 tokens):
+Your insurance will cover any damages, and will back you up in case you get sued!
+
+Tokens:
+[Text=Your CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=insurance CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=insurance NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=cover CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=cover NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=damages CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NNS Lemma=damages NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VB Lemma=back NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=sued CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VBN Lemma=sue NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Your) (NN insurance))
+      (VP
+        (VP (MD will)
+          (VP (VB cover)
+            (NP (DT any) (NNS damages))))
+        (, ,)
+        (CC and)
+        (VP (MD will)
+          (VP (VB back)
+            (NP (PRP you))
+            (PRT (RP up))
+            (PP (IN in)
+              (NP (NN case)))))))
+    (NP (PRP you))
+    (VP (VBP get)
+      (VP (VBN sued)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sued-17)
+nmod:poss(insurance-2, Your-1)
+nsubj(cover-4, insurance-2)
+nsubj(back-10, insurance-2)
+aux(cover-4, will-3)
+dep(sued-17, cover-4)
+det(damages-6, any-5)
+obj(cover-4, damages-6)
+punct(cover-4, ,-7)
+cc(back-10, and-8)
+aux(back-10, will-9)
+conj:and(cover-4, back-10)
+dep(sued-17, back-10)
+obj(back-10, you-11)
+compound:prt(back-10, up-12)
+case(case-14, in-13)
+obl:in(back-10, case-14)
+nsubj:pass(sued-17, you-15)
+aux:pass(sued-17, get-16)
+punct(sued-17, !-18)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (2 tokens):
+🤗!
+
+Tokens:
+[Text=🤗 CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=NFP Lemma=🤗 NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (INTJ (NFP 🤗) (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, 🤗-1)
+punct(🤗-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (8 tokens):
+Would love to give you that hug!
+
+Tokens:
+[Text=Would CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=VB Lemma=love NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=hug CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=hug NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (MD Would)
+      (VP (VB love)
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (PRP you))
+              (SBAR (IN that)
+                (FRAG
+                  (NP (NN hug)))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, love-2)
+aux(love-2, Would-1)
+mark(give-4, to-3)
+xcomp(love-2, give-4)
+obj(give-4, you-5)
+mark(hug-7, that-6)
+dep(give-4, hug-7)
+punct(love-2, !-8)
+
+Extracted the following NER entity mentions:

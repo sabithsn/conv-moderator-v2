@@ -1,0 +1,61 @@
+Document: ID=1C29D105.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+I put his cage out there if he wanted to sleep in it.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=put NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=cage CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=cage NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sleep CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=sleep NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD put)
+      (NP (PRP$ his) (NN cage))
+      (ADVP
+        (ADVP (RB out) (RB there))
+        (SBAR (IN if)
+          (S
+            (NP (PRP he))
+            (VP (VBD wanted)
+              (S
+                (VP (TO to)
+                  (VP (VB sleep)
+                    (PP (IN in)
+                      (NP (PRP it)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, put-2)
+nsubj(put-2, I-1)
+nmod:poss(cage-4, his-3)
+obj(put-2, cage-4)
+advmod(there-6, out-5)
+advmod(put-2, there-6)
+mark(wanted-9, if-7)
+nsubj(wanted-9, he-8)
+nsubj:xsubj(sleep-11, he-8)
+advcl:if(there-6, wanted-9)
+mark(sleep-11, to-10)
+xcomp(wanted-9, sleep-11)
+case(it-13, in-12)
+obl:in(sleep-11, it-13)
+punct(put-2, .-14)
+
+Extracted the following NER entity mentions:
+his	PERSON	-
+he	PERSON	-

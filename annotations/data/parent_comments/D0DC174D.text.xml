@@ -1,0 +1,63 @@
+Document: ID=D0DC174D.text (2 sentences, 13 tokens)
+
+Sentence #1 (7 tokens):
+Ah look, hate and strawmen.
+
+Tokens:
+[Text=Ah CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=UH Lemma=ah NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=look NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=hate CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=hate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=strawmen CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=strawman NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Ah))
+    (NP (NN look) (, ,) (NN hate)
+      (CC and)
+      (NNS strawmen))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, look-2)
+discourse(look-2, Ah-1)
+punct(look-2, ,-3)
+conj:and(look-2, hate-4)
+cc(strawmen-6, and-5)
+conj:and(look-2, strawmen-6)
+punct(look-2, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (6 tokens):
+Name a more iconic pair.
+
+Tokens:
+[Text=Name CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=name NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=iconic CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=iconic NamedEntityTag=O]
+[Text=pair CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=pair NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Name)
+      (NP (DT a) (JJR more) (JJ iconic) (NN pair)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Name-1)
+det(pair-5, a-2)
+amod(pair-5, more-3)
+amod(pair-5, iconic-4)
+obj(Name-1, pair-5)
+punct(Name-1, .-6)
+
+Extracted the following NER entity mentions:

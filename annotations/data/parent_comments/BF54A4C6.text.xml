@@ -1,0 +1,56 @@
+Document: ID=BF54A4C6.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+Ye ole Mineral Chuck is not only black but also a woman!
+
+Tokens:
+[Text=Ye CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=Ye NamedEntityTag=O]
+[Text=ole CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=ole NamedEntityTag=O]
+[Text=Mineral CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Mineral NamedEntityTag=O]
+[Text=Chuck CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Chuck NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Ye))
+    (UCP
+      (ADJP (JJ ole)
+        (SBAR
+          (S
+            (NP (NNP Mineral) (NNP Chuck))
+            (VP (VBZ is) (RB not)
+              (ADJP (RB only) (JJ black))))))
+      (CC but)
+      (NP
+        (ADVP (RB also))
+        (DT a) (NN woman)))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Ye-1)
+dep(Ye-1, ole-2)
+compound(Chuck-4, Mineral-3)
+nsubj(black-8, Chuck-4)
+cop(black-8, is-5)
+advmod(black-8, not-6)
+advmod(black-8, only-7)
+ccomp(ole-2, black-8)
+cc(woman-12, but-9)
+advmod(woman-12, also-10)
+det(woman-12, a-11)
+dep(Ye-1, woman-12)
+conj:and(ole-2, woman-12)
+punct(Ye-1, !-13)
+
+Extracted the following NER entity mentions:
+Chuck	PERSON	PERSON:0.645260379355777

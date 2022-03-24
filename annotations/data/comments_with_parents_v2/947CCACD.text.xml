@@ -1,0 +1,64 @@
+Document: ID=947CCACD.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+How about we go back to *not* talking to children about sex?
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=NFP Lemma=* NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=sex CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=sex NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (FRAG
+        (WHNP (WRB How))
+        (PP (IN about)))
+      (NP (PRP we))
+      (VP (VBP go)
+        (ADVP (RB back))
+        (PP (IN to)
+          (X (NFP *))
+          (NP (RB not)))))
+    (NFP *)
+    (S
+      (VP (VBG talking)
+        (PP (IN to)
+          (NP
+            (NP (NNS children))
+            (PP (IN about)
+              (NP (NN sex)))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-4)
+dep(go-4, How-1)
+dep(How-1, about-2)
+nsubj(go-4, we-3)
+advmod(go-4, back-5)
+case(not-8, to-6)
+dep(not-8, *-7)
+obl:to(go-4, not-8)
+punct(go-4, *-9)
+parataxis(go-4, talking-10)
+case(children-12, to-11)
+obl:to(talking-10, children-12)
+case(sex-14, about-13)
+nmod:about(children-12, sex-14)
+punct(go-4, ?-15)
+
+Extracted the following NER entity mentions:

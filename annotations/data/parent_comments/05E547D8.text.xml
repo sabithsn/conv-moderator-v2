@@ -1,0 +1,74 @@
+Document: ID=05E547D8.text (1 sentences, 17 tokens)
+
+Sentence #1 (17 tokens):
+BAaaaaaa you laugh at the guy who buys 200$ when you own no stock at all
+
+Tokens:
+[Text=BAaaaaaa CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=baaaaaaa NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=laugh CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBP Lemma=laugh NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=guy CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=guy NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=buys CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBZ Lemma=buy NamedEntityTag=O]
+[Text=200 CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CD Lemma=200 NamedEntityTag=MONEY NormalizedNamedEntityTag=$200.0]
+[Text=$ CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$200.0]
+[Text=when CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=own NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=stock CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=stock NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (PRN
+      (S
+        (NP
+          (NP (NN BAaaaaaa))
+          (NP (PRP you)))
+        (VP (VBP laugh)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN guy))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ buys)
+                    (NP (CD 200))))))))))
+    (NP ($ $))
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (PRP you))
+        (VP (VBP own)
+          (NP (DT no) (NN stock))
+          (PP (IN at)
+            (NP (DT all))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, $-10)
+nsubj(laugh-3, BAaaaaaa-1)
+dep(BAaaaaaa-1, you-2)
+dep($-10, laugh-3)
+case(guy-6, at-4)
+det(guy-6, the-5)
+obl:at(laugh-3, guy-6)
+nsubj(buys-8, guy-6)
+ref(guy-6, who-7)
+acl:relcl(guy-6, buys-8)
+obj(buys-8, 200-9)
+advmod(own-13, when-11)
+nsubj(own-13, you-12)
+dep($-10, own-13)
+det(stock-15, no-14)
+obj(own-13, stock-15)
+case(all-17, at-16)
+obl:at(own-13, all-17)
+
+Extracted the following NER entity mentions:
+200$	MONEY	MONEY:-1.0

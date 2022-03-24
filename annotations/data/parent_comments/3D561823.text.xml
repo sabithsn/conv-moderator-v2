@@ -1,0 +1,58 @@
+Document: ID=3D561823.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+GofundMe Freezes More Than 4 million Dollars Raised For Canadian Truckers Protesting Vax Mandates
+
+Tokens:
+[Text=GofundMe CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=GofundMe NamedEntityTag=O]
+[Text=Freezes CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=freeze NamedEntityTag=O]
+[Text=More CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=Than CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=than NamedEntityTag=O]
+[Text=4 CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=4 NamedEntityTag=MONEY NormalizedNamedEntityTag=>$4000000.0]
+[Text=million CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=CD Lemma=million NamedEntityTag=MONEY NormalizedNamedEntityTag=>$4000000.0]
+[Text=Dollars CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=dollar NamedEntityTag=ORGANIZATION]
+[Text=Raised CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=raise NamedEntityTag=ORGANIZATION]
+[Text=For CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=for NamedEntityTag=ORGANIZATION]
+[Text=Canadian CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=canadian NamedEntityTag=ORGANIZATION]
+[Text=Truckers CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=trucker NamedEntityTag=ORGANIZATION]
+[Text=Protesting CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=protest NamedEntityTag=ORGANIZATION]
+[Text=Vax CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Vax NamedEntityTag=ORGANIZATION]
+[Text=Mandates CharacterOffsetBegin=89 CharacterOffsetEnd=97 PartOfSpeech=NNPS Lemma=Mandates NamedEntityTag=ORGANIZATION]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP GofundMe))
+    (VP (VBZ Freezes)
+      (ADVP (RBR More) (RB Than))
+      (NP
+        (NP
+          (QP (CD 4) (CD million))
+          (NNS Dollars))
+        (VP (VBN Raised)
+          (PP (IN For)
+            (NP (JJ Canadian) (NNS Truckers)))
+          (S
+            (VP (VBG Protesting)
+              (NP (NNP Vax) (NNPS Mandates)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Freezes-2)
+nsubj(Freezes-2, GofundMe-1)
+advmod(Than-4, More-3)
+advmod(Freezes-2, Than-4)
+compound(million-6, 4-5)
+nummod(Dollars-7, million-6)
+obj(Freezes-2, Dollars-7)
+acl(Dollars-7, Raised-8)
+case(Truckers-11, For-9)
+amod(Truckers-11, Canadian-10)
+obl:for(Raised-8, Truckers-11)
+xcomp(Raised-8, Protesting-12)
+compound(Mandates-14, Vax-13)
+obj(Protesting-12, Mandates-14)
+
+Extracted the following NER entity mentions:
+4 million	MONEY	MONEY:-1.0
+Dollars Raised For Canadian Truckers Protesting Vax Mandates	ORGANIZATION	ORGANIZATION:0.5967326174567856

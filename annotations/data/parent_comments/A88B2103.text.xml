@@ -1,0 +1,72 @@
+Document: ID=A88B2103.text (2 sentences, 13 tokens)
+
+Sentence #1 (5 tokens):
+What post is that?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=post CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=post NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBAR
+    (WHNP (WDT What))
+    (S
+      (NP (NN post))
+      (VP (VBZ is)
+        (SBAR (IN that))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, is-3)
+obj(is-3, What-1)
+nsubj(is-3, post-2)
+dep(is-3, that-4)
+punct(is-3, ?-5)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens):
+I JUST WANT TO TALK TO THEM!
+
+Tokens:
+[Text=I CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=JUST CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=WANT CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=TO CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=TALK CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=TALK NamedEntityTag=O]
+[Text=TO CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=THEM CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB JUST))
+    (VP (VBP WANT)
+      (PP (IN TO)
+        (NP
+          (NP (NNP TALK))
+          (SBAR
+            (S
+              (VP (TO TO)
+                (NP (PRP THEM))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, WANT-3)
+nsubj(WANT-3, I-1)
+advmod(WANT-3, JUST-2)
+case(TALK-5, TO-4)
+obl:to(WANT-3, TALK-5)
+acl(TALK-5, TO-6)
+obj(TO-6, THEM-7)
+punct(WANT-3, !-8)
+
+Extracted the following NER entity mentions:

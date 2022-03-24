@@ -1,0 +1,64 @@
+Document: ID=160D41C3.text (1 sentences, 16 tokens)
+
+Sentence #1 (16 tokens):
+Joe Biden Shrugs Off High Gas Prices: ‘Can’t Do Much Right Now’
+
+Tokens:
+[Text=Joe CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Biden CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Biden NamedEntityTag=PERSON]
+[Text=Shrugs CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=shrug NamedEntityTag=O]
+[Text=Off CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=High NamedEntityTag=O]
+[Text=Gas CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Gas NamedEntityTag=O]
+[Text=Prices CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=price NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=‘ CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=`` Lemma=‘ NamedEntityTag=O]
+[Text=Ca CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=Much CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=Right CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=right NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Right Now</TIMEX3>]
+[Text=Now CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Right Now</TIMEX3>]
+[Text=’ CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech='' Lemma=’ NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Joe) (NNP Biden))
+    (VP
+      (VP (VBZ Shrugs)
+        (PP (IN Off)
+          (NP
+            (NML (NNP High) (NNP Gas))
+            (NNS Prices))))
+      (: :) (`` ‘)
+      (VP (MD Ca) (RB n’t)
+        (VP (VB Do)
+          (S
+            (NP (JJ Much))
+            (ADJP (JJ Right))
+            (ADVP (RB Now))))
+        ('' ’)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Shrugs-3)
+compound(Biden-2, Joe-1)
+nsubj(Shrugs-3, Biden-2)
+case(Prices-7, Off-4)
+compound(Gas-6, High-5)
+compound(Prices-7, Gas-6)
+obl:off(Shrugs-3, Prices-7)
+punct(Shrugs-3, :-8)
+punct(Shrugs-3, ‘-9)
+aux(Do-12, Ca-10)
+advmod(Do-12, n’t-11)
+dep(Shrugs-3, Do-12)
+nsubj(Right-14, Much-13)
+xcomp(Do-12, Right-14)
+advmod(Right-14, Now-15)
+punct(Do-12, ’-16)
+
+Extracted the following NER entity mentions:
+Joe Biden	PERSON	PERSON:0.9965581997013789
+Right Now	DATE	DATE:-1.0

@@ -1,0 +1,61 @@
+Document: ID=782B48EF.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Proud Boys Leader Dragged Out of Bed in His Underwear to Face Conspiracy Charge
+
+Tokens:
+[Text=Proud CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=proud NamedEntityTag=O]
+[Text=Boys CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNPS Lemma=Boys NamedEntityTag=O]
+[Text=Leader CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Leader NamedEntityTag=TITLE]
+[Text=Dragged CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Dragged NamedEntityTag=O]
+[Text=Out CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Bed CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Bed NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=His CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Underwear CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=underwear NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=Face CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=face NamedEntityTag=O]
+[Text=Conspiracy CharacterOffsetBegin=62 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Conspiracy NamedEntityTag=CRIMINAL_CHARGE]
+[Text=Charge CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Charge NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Proud) (NNPS Boys))
+    (VP
+      (FRAG
+        (WHNP
+          (NP (NNP Leader) (NNP Dragged))
+          (WHPP (IN Out)
+            (PP (IN of)
+              (NP
+                (NP (NNP Bed))
+                (PP (IN in)
+                  (NP (PRP$ His) (NN Underwear)))))))
+        (PP (IN to)
+          (S
+            (VP (VB Face)
+              (NP (NNP Conspiracy) (NNP Charge)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Dragged-4)
+amod(Boys-2, Proud-1)
+nsubj(Dragged-4, Boys-2)
+compound(Dragged-4, Leader-3)
+case(Bed-7, Out-5)
+fixed(Out-5, of-6)
+nmod:out_of(Dragged-4, Bed-7)
+case(Underwear-10, in-8)
+nmod:poss(Underwear-10, His-9)
+nmod:in(Bed-7, Underwear-10)
+mark(Face-12, to-11)
+dep(Dragged-4, Face-12)
+compound(Charge-14, Conspiracy-13)
+obj(Face-12, Charge-14)
+
+Extracted the following NER entity mentions:
+Leader	TITLE	-
+Conspiracy	CRIMINAL_CHARGE	-
+His	PERSON	-

@@ -1,0 +1,48 @@
+Document: ID=B6110A7F.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+there are literally laws making it a crime to boycott israel
+
+Tokens:
+[Text=there CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=laws CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=law NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=crime CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=crime NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=boycott CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=boycott NamedEntityTag=O]
+[Text=israel CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=israel NamedEntityTag=COUNTRY]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBP are)
+      (ADVP (RB literally)
+        (NP (NNS laws)))
+      (VP (VBG making)
+        (NP (PRP it))
+        (NP
+          (NP (DT a) (NN crime))
+          (PP (IN to)
+            (NP (NN boycott) (NN israel))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, making-5)
+expl(making-5, there-1)
+aux(making-5, are-2)
+advmod(making-5, literally-3)
+obl:npmod(literally-3, laws-4)
+iobj(making-5, it-6)
+det(crime-8, a-7)
+nsubj(making-5, crime-8)
+case(israel-11, to-9)
+compound(israel-11, boycott-10)
+nmod:to(crime-8, israel-11)
+
+Extracted the following NER entity mentions:
+israel	COUNTRY	LOCATION:0.6478265811039893

@@ -1,0 +1,92 @@
+Document: ID=24DD26B2.text (2 sentences, 20 tokens)
+
+Sentence #1 (11 tokens):
+Say you think your a girl and that is science?
+
+Tokens:
+[Text=Say CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=science CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=science NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Say)
+      (S
+        (NP (PRP you))
+        (VP (VB think)
+          (NP (PRP$ your))
+          (SBAR
+            (S
+              (NP
+                (NP (DT a) (NN girl))
+                (CC and)
+                (NP (DT that)))
+              (VP (VBZ is)
+                (NP (NN science))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Say-1)
+nsubj(think-3, you-2)
+ccomp(Say-1, think-3)
+obj(think-3, your-4)
+det(girl-6, a-5)
+nsubj(science-10, girl-6)
+cc(that-8, and-7)
+conj:and(girl-6, that-8)
+nsubj(science-10, that-8)
+cop(science-10, is-9)
+dep(think-3, science-10)
+punct(Say-1, ?-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (9 tokens):
+Man they've really lowered the bar huh?
+
+Tokens:
+[Text=Man CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=UH Lemma=man NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=lowered CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=VBN Lemma=lower NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bar CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=bar NamedEntityTag=O]
+[Text=huh CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=UH Lemma=huh NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (INTJ (UH Man))
+    (NP (PRP they))
+    (VP (VBP 've)
+      (ADVP (RB really))
+      (VP (VBN lowered)
+        (NP (DT the) (NN bar))
+        (INTJ (UH huh))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, lowered-5)
+discourse(lowered-5, Man-1)
+nsubj(lowered-5, they-2)
+aux(lowered-5, 've-3)
+advmod(lowered-5, really-4)
+det(bar-7, the-6)
+obj(lowered-5, bar-7)
+discourse(lowered-5, huh-8)
+punct(lowered-5, ?-9)
+
+Extracted the following NER entity mentions:

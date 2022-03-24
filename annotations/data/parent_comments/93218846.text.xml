@@ -1,0 +1,49 @@
+Document: ID=93218846.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Likelihood of criminal charges against Trump rising, experts say
+
+Tokens:
+[Text=Likelihood CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=likelihood NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=criminal CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=criminal NamedEntityTag=O]
+[Text=charges CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=charge NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=Trump CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=rising CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=VBG Lemma=rise NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=experts CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=expert NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NN Likelihood))
+        (PP (IN of)
+          (NP
+            (NP (JJ criminal) (NNS charges))
+            (PP (IN against)
+              (NP (NNP Trump))))))
+      (VP (VBG rising)))
+    (, ,)
+    (S
+      (NP (NNS experts))
+      (VP (VBP say)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, rising-7)
+nsubj(rising-7, Likelihood-1)
+case(charges-4, of-2)
+amod(charges-4, criminal-3)
+nmod:of(Likelihood-1, charges-4)
+case(Trump-6, against-5)
+nmod:against(charges-4, Trump-6)
+punct(rising-7, ,-8)
+nsubj(say-10, experts-9)
+parataxis(rising-7, say-10)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.43372917649096887

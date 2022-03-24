@@ -1,0 +1,83 @@
+Document: ID=E5EE2BD9.text (3 sentences, 15 tokens)
+
+Sentence #1 (10 tokens):
+You really "owned" that lib, yeehaw.
+
+Tokens:
+[Text=You CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=`` Lemma=" NamedEntityTag=O]
+[Text=owned CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=VBN Lemma=own NamedEntityTag=O]
+[Text=" CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech='' Lemma=" NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=lib CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=lib NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=yeehaw CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=yeehaw NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (ADVP (RB really))
+      (VP (`` ") (VBN owned) ('' ")
+        (PP (IN that)
+          (NP
+            (NP (NN lib))
+            (, ,)
+            (NP (NN yeehaw))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, owned-4)
+nsubj(owned-4, You-1)
+advmod(owned-4, really-2)
+punct(owned-4, "-3)
+punct(owned-4, "-5)
+case(lib-7, that-6)
+obl:that(owned-4, lib-7)
+punct(lib-7, ,-8)
+appos(lib-7, yeehaw-9)
+punct(owned-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (2 tokens):
+Guns.
+
+Tokens:
+[Text=Guns CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=gun NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNS Guns) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Guns-1)
+punct(Guns-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (3 tokens):
+Pew pew.
+
+Tokens:
+[Text=Pew CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Pew NamedEntityTag=O]
+[Text=pew CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=pew NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP Pew) (NN pew) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, pew-2)
+compound(pew-2, Pew-1)
+punct(pew-2, .-3)
+
+Extracted the following NER entity mentions:

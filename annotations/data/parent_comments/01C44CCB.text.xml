@@ -1,0 +1,95 @@
+Document: ID=01C44CCB.text (1 sentences, 26 tokens)
+
+Sentence #1 (26 tokens):
+I go into conservative reddit despite not being a conservative, because I think nagging people with my opinions actually will change anyone's mind!
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=10 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=reddit CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=reddit NamedEntityTag=O]
+[Text=despite CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=despite NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=conservative CharacterOffsetBegin=50 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=conservative NamedEntityTag=IDEOLOGY]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=nagging CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=VBG Lemma=nag NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=88 CharacterOffsetEnd=94 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=opinions CharacterOffsetBegin=103 CharacterOffsetEnd=111 PartOfSpeech=NNS Lemma=opinion NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=112 CharacterOffsetEnd=120 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=change CharacterOffsetBegin=126 CharacterOffsetEnd=132 PartOfSpeech=VB Lemma=change NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP go)
+      (PP (IN into)
+        (NP (JJ conservative) (NN reddit)))
+      (PP (IN despite)
+        (S (RB not)
+          (VP (VBG being)
+            (NP (DT a) (JJ conservative)))))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (NP (PRP I))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP
+                  (NP (VBG nagging) (NNS people))
+                  (PP (IN with)
+                    (NP (PRP$ my) (NNS opinions))))
+                (ADVP (RB actually))
+                (VP (MD will)
+                  (VP (VB change)
+                    (NP
+                      (NP (NN anyone) (POS 's))
+                      (NN mind))))))))))
+    (. !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, go-2)
+nsubj(go-2, I-1)
+case(reddit-5, into-3)
+amod(reddit-5, conservative-4)
+obl:into(go-2, reddit-5)
+mark(conservative-10, despite-6)
+advmod(conservative-10, not-7)
+cop(conservative-10, being-8)
+det(conservative-10, a-9)
+advcl:despite(go-2, conservative-10)
+punct(go-2, ,-11)
+mark(think-14, because-12)
+nsubj(think-14, I-13)
+advcl:because(go-2, think-14)
+amod(people-16, nagging-15)
+nsubj(change-22, people-16)
+case(opinions-19, with-17)
+nmod:poss(opinions-19, my-18)
+nmod:with(people-16, opinions-19)
+advmod(change-22, actually-20)
+aux(change-22, will-21)
+ccomp(think-14, change-22)
+nmod:poss(mind-25, anyone-23)
+case(anyone-23, 's-24)
+obj(change-22, mind-25)
+punct(go-2, !-26)
+
+Extracted the following NER entity mentions:
+conservative	IDEOLOGY	-
+conservative	IDEOLOGY	-

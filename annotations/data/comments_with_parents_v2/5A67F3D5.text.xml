@@ -1,0 +1,59 @@
+Document: ID=5A67F3D5.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+How about I perform a vasectomy/tubal ligation for you at no cost?
+
+Tokens:
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=perform CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=perform NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=vasectomy CharacterOffsetBegin=22 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=vasectomy NamedEntityTag=O]
+[Text=/ CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=HYPH Lemma=/ NamedEntityTag=O]
+[Text=tubal CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=tubal NamedEntityTag=O]
+[Text=ligation CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=ligation NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=cost CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=cost NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WRB How))
+    (IN about)
+    (S
+      (NP (PRP I))
+      (VP (VBP perform)
+        (NP
+          (NP (DT a)
+            (NML (NN vasectomy) (HYPH /) (NN tubal))
+            (NN ligation))
+          (PP (IN for)
+            (NP (PRP you))))
+        (PP (IN at)
+          (NP (DT no) (NN cost)))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, perform-4)
+dep(perform-4, How-1)
+dep(perform-4, about-2)
+nsubj(perform-4, I-3)
+det(ligation-9, a-5)
+compound(tubal-8, vasectomy-6)
+punct(tubal-8, /-7)
+compound(ligation-9, tubal-8)
+obj(perform-4, ligation-9)
+case(you-11, for-10)
+nmod:for(ligation-9, you-11)
+case(cost-14, at-12)
+det(cost-14, no-13)
+obl:at(perform-4, cost-14)
+punct(perform-4, ?-15)
+
+Extracted the following NER entity mentions:

@@ -1,0 +1,41 @@
+Document: ID=4F5C9F68.text (1 sentences, 9 tokens)
+
+Sentence #1 (9 tokens):
+UK AuthRight finds its own statistics to quote.
+
+Tokens:
+[Text=UK CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=UK NamedEntityTag=COUNTRY]
+[Text=AuthRight CharacterOffsetBegin=3 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=AuthRight NamedEntityTag=O]
+[Text=finds CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=find NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=statistics CharacterOffsetBegin=27 CharacterOffsetEnd=37 PartOfSpeech=NNS Lemma=statistics NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=quote CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=quote NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP UK) (NNP AuthRight))
+    (VP (VBZ finds)
+      (NP (PRP$ its) (JJ own) (NNS statistics))
+      (S
+        (VP (TO to)
+          (VP (VB quote)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, finds-3)
+compound(AuthRight-2, UK-1)
+nsubj(finds-3, AuthRight-2)
+nmod:poss(statistics-6, its-4)
+amod(statistics-6, own-5)
+obj(finds-3, statistics-6)
+mark(quote-8, to-7)
+advcl:to(finds-3, quote-8)
+punct(finds-3, .-9)
+
+Extracted the following NER entity mentions:
+UK	COUNTRY	LOCATION:0.8575928599973598

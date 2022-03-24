@@ -1,0 +1,77 @@
+Document: ID=BF74D7D6.text (1 sentences, 19 tokens)
+
+Sentence #1 (19 tokens):
+A brain dead idiot who's a devout socialist--but has literally 0 idea of how socialism works
+
+Tokens:
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=brain CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=brain NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=idiot CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=idiot NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=devout CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=devout NamedEntityTag=O]
+[Text=socialist CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=socialist NamedEntityTag=IDEOLOGY]
+[Text=-- CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=53 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=0 CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=CD Lemma=0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=idea CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=socialism CharacterOffsetBegin=77 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=socialism NamedEntityTag=IDEOLOGY]
+[Text=works CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP (DT A) (NN brain) (JJ dead) (NN idiot))
+    (SBAR
+      (WHNP (WP who))
+      (S
+        (VP
+          (VP (VBZ 's)
+            (NP (DT a) (JJ devout) (JJ socialist)))
+          (: --)
+          (CC but)
+          (VP (VBZ has)
+            (NP
+              (NP (RB literally) (CD 0) (NN idea))
+              (PP (IN of)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (NN socialism))
+                    (VP (VBZ works))))))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, idiot-4)
+det(idiot-4, A-1)
+compound(idiot-4, brain-2)
+amod(idiot-4, dead-3)
+nsubj(socialist-9, idiot-4)
+nsubj(has-12, idiot-4)
+ref(idiot-4, who-5)
+cop(socialist-9, 's-6)
+det(socialist-9, a-7)
+amod(socialist-9, devout-8)
+acl:relcl(idiot-4, socialist-9)
+punct(socialist-9, ---10)
+cc(has-12, but-11)
+acl:relcl(idiot-4, has-12)
+conj:but(socialist-9, has-12)
+advmod(idea-15, literally-13)
+nummod(idea-15, 0-14)
+obj(has-12, idea-15)
+mark(works-19, of-16)
+advmod(works-19, how-17)
+nsubj(works-19, socialism-18)
+acl:of(idea-15, works-19)
+
+Extracted the following NER entity mentions:
+socialist	IDEOLOGY	-
+0	NUMBER	NUMBER:-1.0
+socialism	IDEOLOGY	-

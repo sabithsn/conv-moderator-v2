@@ -1,0 +1,44 @@
+Document: ID=C33B2520.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Wow, a three-hour-old account.
+
+Tokens:
+[Text=Wow CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=wow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=CD Lemma=three NamedEntityTag=DURATION NormalizedNamedEntityTag=PT3H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT3H">three-hour-old</TIMEX3>]
+[Text=- CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=PT3H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT3H">three-hour-old</TIMEX3>]
+[Text=hour CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT3H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT3H">three-hour-old</TIMEX3>]
+[Text=- CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=HYPH Lemma=- NamedEntityTag=DURATION NormalizedNamedEntityTag=PT3H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT3H">three-hour-old</TIMEX3>]
+[Text=old CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=PT3H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT3H">three-hour-old</TIMEX3>]
+[Text=account CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=account NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (INTJ (UH Wow))
+    (, ,)
+    (NP (DT a)
+      (ADJP
+        (NP (CD three) (HYPH -) (NN hour))
+        (HYPH -) (JJ old))
+      (NN account))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, account-9)
+discourse(account-9, Wow-1)
+punct(account-9, ,-2)
+det(account-9, a-3)
+nummod(hour-6, three-4)
+punct(hour-6, --5)
+dep(old-8, hour-6)
+punct(old-8, --7)
+amod(account-9, old-8)
+punct(account-9, .-10)
+
+Extracted the following NER entity mentions:
+three-hour-old	DURATION	DURATION:-1.0

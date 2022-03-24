@@ -1,0 +1,82 @@
+Document: ID=836DF3D1.text (1 sentences, 22 tokens)
+
+Sentence #1 (22 tokens):
+I challenged John Cena to an arm wrestling match 44 days ago and still haven't heard a thing from him.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=challenged CharacterOffsetBegin=2 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=challenge NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Cena CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Cena NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=arm CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=arm NamedEntityTag=O]
+[Text=wrestling CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=wrestling NamedEntityTag=O]
+[Text=match CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=match NamedEntityTag=O]
+[Text=44 CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=CD Lemma=44 NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-44D Timex=<TIMEX3 alt_value="OFFSET P-44D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">44 days ago</TIMEX3>]
+[Text=days CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-44D Timex=<TIMEX3 alt_value="OFFSET P-44D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">44 days ago</TIMEX3>]
+[Text=ago CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=ago NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-44D Timex=<TIMEX3 alt_value="OFFSET P-44D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">44 days ago</TIMEX3>]
+[Text=and CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD challenged)
+        (NP (NNP John) (NNP Cena))
+        (PP (IN to)
+          (NP (DT an)
+            (NML (NN arm) (NN wrestling))
+            (NN match)))
+        (ADVP
+          (NP (CD 44) (NNS days))
+          (RB ago)))
+      (CC and)
+      (ADVP (RB still))
+      (VP (VBP have) (RB n't)
+        (VP (VBN heard)
+          (NP (DT a) (NN thing))
+          (PP (IN from)
+            (NP (PRP him))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, challenged-2)
+nsubj(challenged-2, I-1)
+nsubj(heard-17, I-1)
+compound(Cena-4, John-3)
+obj(challenged-2, Cena-4)
+case(match-9, to-5)
+det(match-9, an-6)
+compound(wrestling-8, arm-7)
+compound(match-9, wrestling-8)
+obl:to(challenged-2, match-9)
+nummod(days-11, 44-10)
+obl:npmod(ago-12, days-11)
+advmod(challenged-2, ago-12)
+cc(heard-17, and-13)
+advmod(heard-17, still-14)
+aux(heard-17, have-15)
+advmod(heard-17, n't-16)
+conj:and(challenged-2, heard-17)
+det(thing-19, a-18)
+obj(heard-17, thing-19)
+case(him-21, from-20)
+obl:from(heard-17, him-21)
+punct(challenged-2, .-22)
+
+Extracted the following NER entity mentions:
+John Cena	PERSON	PERSON:0.9997706531111821
+44 days ago	DATE	DATE:-1.0
+him	PERSON	-

@@ -1,0 +1,66 @@
+Document: ID=B3AD7C57.text (1 sentences, 15 tokens)
+
+Sentence #1 (15 tokens):
+What do Donald Trump, Alex Jones and Adolf Hitler all have in common?
+
+Tokens:
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=Donald CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=Trump CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Alex CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Alex NamedEntityTag=PERSON]
+[Text=Jones CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Jones NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Adolf CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Adolf NamedEntityTag=PERSON]
+[Text=Hitler CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Hitler NamedEntityTag=PERSON]
+[Text=all CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=common CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP
+        (NP
+          (NP (NNP Donald) (NNP Trump))
+          (, ,)
+          (NP (NNP Alex) (NNP Jones))
+          (CC and)
+          (NP (NNP Adolf) (NNP Hitler)))
+        (SBAR
+          (S
+            (NP (DT all))
+            (VP (VBP have)
+              (PP (IN in)
+                (ADJP (JJ common))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, do-2)
+nsubj(do-2, What-1)
+compound(Trump-4, Donald-3)
+obj(do-2, Trump-4)
+punct(Trump-4, ,-5)
+compound(Jones-7, Alex-6)
+obj(do-2, Jones-7)
+conj:and(Trump-4, Jones-7)
+cc(Hitler-10, and-8)
+compound(Hitler-10, Adolf-9)
+obj(do-2, Hitler-10)
+conj:and(Trump-4, Hitler-10)
+nsubj(have-12, all-11)
+acl:relcl(Trump-4, have-12)
+case(common-14, in-13)
+advcl:in(have-12, common-14)
+punct(do-2, ?-15)
+
+Extracted the following NER entity mentions:
+Donald Trump	PERSON	PERSON:0.9997271832512135
+Alex Jones	PERSON	PERSON:0.9999782483806587
+Adolf Hitler	PERSON	PERSON:0.9947654485606943

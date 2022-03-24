@@ -1,0 +1,51 @@
+Document: ID=DFE47E60.text (1 sentences, 11 tokens)
+
+Sentence #1 (11 tokens):
+Rep. Greene & Rep. Gosar attend white nationalist, pro-Putin event
+
+Tokens:
+[Text=Rep. CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Greene CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Greene NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Rep. CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Gosar CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Gosar NamedEntityTag=PERSON]
+[Text=attend CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=nationalist CharacterOffsetBegin=38 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=nationalist NamedEntityTag=IDEOLOGY]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=pro-Putin CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=pro-putin NamedEntityTag=MISC]
+[Text=event CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=event NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Rep.) (NNP Greene)
+      (CC &)
+      (NNP Rep.) (NNP Gosar))
+    (VP (VB attend)
+      (NP
+        (NML (JJ white) (NN nationalist))
+        (, ,) (JJ pro-Putin) (NN event)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, attend-6)
+compound(Greene-2, Rep.-1)
+nsubj(attend-6, Greene-2)
+cc(Gosar-5, &-3)
+compound(Gosar-5, Rep.-4)
+conj:&(Greene-2, Gosar-5)
+nsubj(attend-6, Gosar-5)
+amod(nationalist-8, white-7)
+compound(event-11, nationalist-8)
+punct(event-11, ,-9)
+amod(event-11, pro-Putin-10)
+obj(attend-6, event-11)
+
+Extracted the following NER entity mentions:
+Rep.	TITLE	-
+Greene	PERSON	PERSON:0.9980557534126387
+Rep.	TITLE	-
+Gosar	PERSON	PERSON:0.9919687712659064
+nationalist	IDEOLOGY	-
+pro-Putin	MISC	MISC:0.5628645633690333

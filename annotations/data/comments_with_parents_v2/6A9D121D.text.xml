@@ -1,0 +1,54 @@
+Document: ID=6A9D121D.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+One is an actual authoritarian dictator  And another is a Twitter user...
+
+Tokens:
+[Text=One CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=is CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=authoritarian CharacterOffsetBegin=17 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=authoritarian NamedEntityTag=O]
+[Text=dictator CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=dictator NamedEntityTag=TITLE]
+[Text=And CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Twitter CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Twitter NamedEntityTag=MISC]
+[Text=user CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=user NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=... NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (CD One))
+      (VP (VBZ is)
+        (NP (DT an) (JJ actual) (JJ authoritarian) (NN dictator))))
+    (CC And)
+    (S
+      (NP (DT another))
+      (VP (VBZ is)
+        (NP (DT a) (NNP Twitter) (NN user))))
+    (. ...)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, dictator-6)
+nsubj(dictator-6, One-1)
+cop(dictator-6, is-2)
+det(dictator-6, an-3)
+amod(dictator-6, actual-4)
+amod(dictator-6, authoritarian-5)
+cc(user-12, And-7)
+nsubj(user-12, another-8)
+cop(user-12, is-9)
+det(user-12, a-10)
+compound(user-12, Twitter-11)
+conj:and(dictator-6, user-12)
+punct(dictator-6, ...-13)
+
+Extracted the following NER entity mentions:
+One	NUMBER	NUMBER:-1.0
+dictator	TITLE	-
+Twitter	MISC	MISC:0.6359116499287055

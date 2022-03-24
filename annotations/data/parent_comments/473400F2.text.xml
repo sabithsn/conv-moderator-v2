@@ -1,0 +1,60 @@
+Document: ID=473400F2.text (1 sentences, 14 tokens)
+
+Sentence #1 (14 tokens):
+Trump jumps into Illinois politics, endorsing Rep. Mary Miller over Rep. Rodney Davis
+
+Tokens:
+[Text=Trump CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Trump NamedEntityTag=PERSON]
+[Text=jumps CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=VBZ Lemma=jump NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=Illinois CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Illinois NamedEntityTag=STATE_OR_PROVINCE]
+[Text=politics CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=endorsing CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=endorse NamedEntityTag=O]
+[Text=Rep. CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Mary CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=PERSON]
+[Text=Miller CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Miller NamedEntityTag=PERSON]
+[Text=over CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Rep. CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Rep. NamedEntityTag=TITLE]
+[Text=Rodney CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Rodney NamedEntityTag=PERSON]
+[Text=Davis CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Davis NamedEntityTag=PERSON]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Trump))
+    (VP (VBZ jumps)
+      (PP (IN into)
+        (NP (NNP Illinois) (NNS politics)))
+      (, ,)
+      (S
+        (VP (VBG endorsing)
+          (NP
+            (NP (NNP Rep.) (NNP Mary) (NNP Miller))
+            (PP (IN over)
+              (NP (NNP Rep.) (NNP Rodney) (NNP Davis)))))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, jumps-2)
+nsubj(jumps-2, Trump-1)
+case(politics-5, into-3)
+compound(politics-5, Illinois-4)
+obl:into(jumps-2, politics-5)
+punct(jumps-2, ,-6)
+xcomp(jumps-2, endorsing-7)
+compound(Miller-10, Rep.-8)
+compound(Miller-10, Mary-9)
+obj(endorsing-7, Miller-10)
+case(Davis-14, over-11)
+compound(Davis-14, Rep.-12)
+compound(Davis-14, Rodney-13)
+nmod:over(Miller-10, Davis-14)
+
+Extracted the following NER entity mentions:
+Trump	PERSON	PERSON:0.82837086504547
+Illinois	STATE_OR_PROVINCE	LOCATION:0.9854460529962723
+Rep.	TITLE	-
+Mary Miller	PERSON	PERSON:0.9999100100202875
+Rep.	TITLE	-
+Rodney Davis	PERSON	PERSON:0.9999883797932363

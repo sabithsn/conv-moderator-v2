@@ -1,0 +1,52 @@
+Document: ID=142471F2.text (1 sentences, 12 tokens)
+
+Sentence #1 (12 tokens):
+If you believe this I have a bridge to sell you.
+
+Tokens:
+[Text=If CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bridge CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=bridge NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sell CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VB Lemma=sell NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP believe)
+          (NP (DT this)))))
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP (DT a) (NN bridge)
+        (S
+          (VP (TO to)
+            (VP (VB sell)
+              (NP (PRP you)))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-6)
+mark(believe-3, If-1)
+nsubj(believe-3, you-2)
+advcl:if(have-6, believe-3)
+obj(believe-3, this-4)
+nsubj(have-6, I-5)
+det(bridge-8, a-7)
+obj(have-6, bridge-8)
+mark(sell-10, to-9)
+acl:to(bridge-8, sell-10)
+obj(sell-10, you-11)
+punct(have-6, .-12)
+
+Extracted the following NER entity mentions:

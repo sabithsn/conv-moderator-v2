@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>23A0695C.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Just</word>
+            <lemma>just</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>curious</word>
+            <lemma>curious</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>how</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>WRB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>breast</word>
+            <lemma>breast</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>fed</word>
+            <lemma>feed</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>baby</word>
+            <lemma>baby</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>night</word>
+            <lemma>night</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>TIME</NER>
+            <NormalizedNER>TNI</NormalizedNER>
+            <Timex tid="t1" type="TIME">TNI</Timex>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADJP (RB Just) (JJ curious)) (SBAR (WHADVP (WRB how)) (S (NP (PRP he) (NN breast)) (VP (VBD fed) (NP (DT the) (NN baby)) (PP (IN at) (NP (NN night)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">curious</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">curious</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fed</governor>
+            <dependent idx="3">how</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">breast</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">fed</governor>
+            <dependent idx="5">breast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">curious</governor>
+            <dependent idx="6">fed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">fed</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">night</governor>
+            <dependent idx="9">at</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">fed</governor>
+            <dependent idx="10">night</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">curious</governor>
+            <dependent idx="11">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">curious</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">curious</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fed</governor>
+            <dependent idx="3">how</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">breast</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">fed</governor>
+            <dependent idx="5">breast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">curious</governor>
+            <dependent idx="6">fed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">fed</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">night</governor>
+            <dependent idx="9">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="6">fed</governor>
+            <dependent idx="10">night</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">curious</governor>
+            <dependent idx="11">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">curious</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">curious</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fed</governor>
+            <dependent idx="3">how</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">breast</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">fed</governor>
+            <dependent idx="5">breast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">curious</governor>
+            <dependent idx="6">fed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">fed</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">night</governor>
+            <dependent idx="9">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="6">fed</governor>
+            <dependent idx="10">night</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">curious</governor>
+            <dependent idx="11">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">curious</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">curious</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fed</governor>
+            <dependent idx="3">how</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">breast</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">fed</governor>
+            <dependent idx="5">breast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">curious</governor>
+            <dependent idx="6">fed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">fed</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">night</governor>
+            <dependent idx="9">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="6">fed</governor>
+            <dependent idx="10">night</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">curious</governor>
+            <dependent idx="11">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">curious</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">curious</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fed</governor>
+            <dependent idx="3">how</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">breast</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">fed</governor>
+            <dependent idx="5">breast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">curious</governor>
+            <dependent idx="6">fed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">fed</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="10">night</governor>
+            <dependent idx="9">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="6">fed</governor>
+            <dependent idx="10">night</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="2">curious</governor>
+            <dependent idx="11">?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>nice</word>
+            <lemma>nice</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>try</word>
+            <lemma>try</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sound</word>
+            <lemma>sound</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>dumb</word>
+            <lemma>dumb</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (JJ nice) (NN try)) (PP (CC but) (NP (PRP you)))) (VP (VBP sound) (ADJP (JJ dumb))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">sound</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">try</governor>
+            <dependent idx="1">nice</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">sound</governor>
+            <dependent idx="2">try</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">you</governor>
+            <dependent idx="3">but</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="2">try</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sound</governor>
+            <dependent idx="6">dumb</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">sound</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">try</governor>
+            <dependent idx="1">nice</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">sound</governor>
+            <dependent idx="2">try</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">you</governor>
+            <dependent idx="3">but</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="2">try</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sound</governor>
+            <dependent idx="6">dumb</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">sound</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">try</governor>
+            <dependent idx="1">nice</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">sound</governor>
+            <dependent idx="2">try</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">you</governor>
+            <dependent idx="3">but</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="2">try</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sound</governor>
+            <dependent idx="6">dumb</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">sound</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">try</governor>
+            <dependent idx="1">nice</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">sound</governor>
+            <dependent idx="2">try</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">you</governor>
+            <dependent idx="3">but</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="2">try</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sound</governor>
+            <dependent idx="6">dumb</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">sound</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">try</governor>
+            <dependent idx="1">nice</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">sound</governor>
+            <dependent idx="2">try</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="4">you</governor>
+            <dependent idx="3">but</dependent>
+          </dep>
+          <dep type="nmod:but">
+            <governor idx="2">try</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sound</governor>
+            <dependent idx="6">dumb</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

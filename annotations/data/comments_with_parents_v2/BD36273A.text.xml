@@ -1,0 +1,110 @@
+Document: ID=BD36273A.text (2 sentences, 28 tokens)
+
+Sentence #1 (11 tokens):
+This is some sick fucking mix of orange and purple.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=sick CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=sick NamedEntityTag=O]
+[Text=fucking CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=fucking NamedEntityTag=O]
+[Text=mix CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=mix NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=orange CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=orange NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=purple CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=purple NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT some) (JJ sick) (JJ fucking) (NN mix))
+        (PP (IN of)
+          (NP (NN orange)
+            (CC and)
+            (NN purple)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, mix-6)
+nsubj(mix-6, This-1)
+cop(mix-6, is-2)
+det(mix-6, some-3)
+amod(mix-6, sick-4)
+amod(mix-6, fucking-5)
+case(orange-8, of-7)
+nmod:of(mix-6, orange-8)
+cc(purple-10, and-9)
+nmod:of(mix-6, purple-10)
+conj:and(orange-8, purple-10)
+punct(mix-6, .-11)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (17 tokens):
+I propose a new color for the most down bad disgusting members of society, brown.
+
+Tokens:
+[Text=I CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=propose CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=VBP Lemma=propose NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=color CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=color NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=disgusting CharacterOffsetBegin=96 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=disgusting NamedEntityTag=O]
+[Text=members CharacterOffsetBegin=107 CharacterOffsetEnd=114 PartOfSpeech=NNS Lemma=member NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=brown CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=brown NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP propose)
+      (NP (DT a) (JJ new) (NN color))
+      (PP (IN for)
+        (NP
+          (NP (DT the)
+            (ADJP
+              (ADVP (RBS most) (RB down))
+              (JJ bad))
+            (JJ disgusting) (NNS members))
+          (PP (IN of)
+            (NP (NN society)))))
+      (, ,)
+      (ADJP (JJ brown)))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, propose-2)
+nsubj(propose-2, I-1)
+det(color-5, a-3)
+amod(color-5, new-4)
+obj(propose-2, color-5)
+case(members-12, for-6)
+det(members-12, the-7)
+advmod(down-9, most-8)
+advmod(bad-10, down-9)
+amod(members-12, bad-10)
+amod(members-12, disgusting-11)
+obl:for(propose-2, members-12)
+case(society-14, of-13)
+nmod:of(members-12, society-14)
+punct(propose-2, ,-15)
+xcomp(propose-2, brown-16)
+punct(propose-2, .-17)
+
+Extracted the following NER entity mentions:

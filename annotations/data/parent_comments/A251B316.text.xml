@@ -1,0 +1,46 @@
+Document: ID=A251B316.text (1 sentences, 10 tokens)
+
+Sentence #1 (10 tokens):
+Kamala Harris struggles through question on inflation during CBS interview
+
+Tokens:
+[Text=Kamala CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Kamala NamedEntityTag=PERSON]
+[Text=Harris CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Harris NamedEntityTag=PERSON]
+[Text=struggles CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=struggle NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=inflation CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=inflation NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=CBS CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=CBS NamedEntityTag=ORGANIZATION]
+[Text=interview CharacterOffsetBegin=65 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=interview NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (NNP Kamala) (NNP Harris))
+    (VP (VBZ struggles)
+      (PP (IN through)
+        (NP
+          (NP (NN question))
+          (PP (IN on)
+            (NP (NN inflation)))))
+      (PP (IN during)
+        (NP (NNP CBS) (NN interview))))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, struggles-3)
+compound(Harris-2, Kamala-1)
+nsubj(struggles-3, Harris-2)
+case(question-5, through-4)
+obl:through(struggles-3, question-5)
+case(inflation-7, on-6)
+nmod:on(question-5, inflation-7)
+case(interview-10, during-8)
+compound(interview-10, CBS-9)
+obl:during(struggles-3, interview-10)
+
+Extracted the following NER entity mentions:
+Kamala Harris	PERSON	PERSON:0.999422908679506
+CBS	ORGANIZATION	ORGANIZATION:0.9939147414312907

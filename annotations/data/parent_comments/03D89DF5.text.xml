@@ -1,0 +1,114 @@
+Document: ID=03D89DF5.text (2 sentences, 29 tokens)
+
+Sentence #1 (13 tokens):
+In Europe only the rich can afford an SUV because socialist taxation.
+
+Tokens:
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=only CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rich CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=rich NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=afford CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=afford NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=SUV CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=suv NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=socialist CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=socialist NamedEntityTag=IDEOLOGY]
+[Text=taxation CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=taxation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Europe)))
+    (NP (RB only) (DT the) (JJ rich))
+    (VP (MD can)
+      (VP (VB afford)
+        (NP (DT an) (NN SUV))
+        (PP (IN because)
+          (NP (JJ socialist) (NN taxation)))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, afford-7)
+case(Europe-2, In-1)
+obl:in(afford-7, Europe-2)
+advmod(rich-5, only-3)
+det(rich-5, the-4)
+nsubj(afford-7, rich-5)
+aux(afford-7, can-6)
+det(SUV-9, an-8)
+obj(afford-7, SUV-9)
+case(taxation-12, because-10)
+amod(taxation-12, socialist-11)
+obl:because(afford-7, taxation-12)
+punct(afford-7, .-13)
+
+Extracted the following NER entity mentions:
+Europe	LOCATION	LOCATION:0.9908016682530465
+socialist	IDEOLOGY	-
+
+Sentence #2 (16 tokens):
+So everyone else says that grapes are sour, because they can't afford them.
+
+Tokens:
+[Text=So CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=grapes CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=grape NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sour CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=sour NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=afford CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=VB Lemma=afford NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP (NN everyone) (RB else))
+    (VP (VBZ says)
+      (SBAR (IN that)
+        (S
+          (NP (NNS grapes))
+          (VP (VBP are)
+            (ADJP (JJ sour))
+            (, ,)
+            (SBAR (IN because)
+              (S
+                (NP (PRP they))
+                (VP (MD ca) (RB n't)
+                  (VP (VB afford)
+                    (NP (PRP them))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, says-4)
+advmod(says-4, So-1)
+nsubj(says-4, everyone-2)
+advmod(everyone-2, else-3)
+mark(sour-8, that-5)
+nsubj(sour-8, grapes-6)
+cop(sour-8, are-7)
+ccomp(says-4, sour-8)
+punct(sour-8, ,-9)
+mark(afford-14, because-10)
+nsubj(afford-14, they-11)
+aux(afford-14, ca-12)
+advmod(afford-14, n't-13)
+advcl:because(sour-8, afford-14)
+obj(afford-14, them-15)
+punct(says-4, .-16)
+
+Extracted the following NER entity mentions:

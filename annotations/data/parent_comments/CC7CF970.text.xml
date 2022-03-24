@@ -1,0 +1,58 @@
+Document: ID=CC7CF970.text (1 sentences, 13 tokens)
+
+Sentence #1 (13 tokens):
+ELI5: What has triggered the possibility of a war involving Russia?
+
+Tokens:
+[Text=ELI5 CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=ELI5 NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=triggered CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=VBN Lemma=trigger NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=possibility CharacterOffsetBegin=29 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=possibility NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=war NamedEntityTag=CAUSE_OF_DEATH]
+[Text=involving CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=VBG Lemma=involve NamedEntityTag=O]
+[Text=Russia CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Russia NamedEntityTag=COUNTRY]
+[Text=? CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP ELI5))
+    (: :)
+    (SBARQ
+      (WHNP (WP What))
+      (SQ
+        (VP (VBZ has)
+          (VP (VBN triggered)
+            (NP
+              (NP (DT the) (NN possibility))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (NN war))
+                  (PP (VBG involving)
+                    (NP (NNP Russia))))))))))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ELI5-1)
+punct(ELI5-1, :-2)
+nsubj(triggered-5, What-3)
+aux(triggered-5, has-4)
+parataxis(ELI5-1, triggered-5)
+det(possibility-7, the-6)
+obj(triggered-5, possibility-7)
+case(war-10, of-8)
+det(war-10, a-9)
+nmod:of(possibility-7, war-10)
+case(Russia-12, involving-11)
+nmod:involving(war-10, Russia-12)
+punct(ELI5-1, ?-13)
+
+Extracted the following NER entity mentions:
+war	CAUSE_OF_DEATH	-
+Russia	COUNTRY	LOCATION:0.995739422912949

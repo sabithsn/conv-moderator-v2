@@ -1,0 +1,326 @@
+Document: ID=6DC40349.text (6 sentences, 76 tokens)
+
+Sentence #1 (10 tokens):
+I'm not sure we know exactly what happened.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=happened CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=VBD Lemma=happen NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP we))
+            (VP (VBP know)
+              (SBAR
+                (WHNP (RB exactly) (WP what))
+                (S
+                  (VP (VBD happened)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, sure-4)
+nsubj(sure-4, I-1)
+cop(sure-4, 'm-2)
+advmod(sure-4, not-3)
+nsubj(know-6, we-5)
+ccomp(sure-4, know-6)
+advmod(what-8, exactly-7)
+nsubj(happened-9, what-8)
+ccomp(know-6, happened-9)
+punct(sure-4, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (12 tokens):
+You are being told you know the details of her history.
+
+Tokens:
+[Text=You CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=details CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=detail NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (VP (VBG being)
+        (VP (VBD told)
+          (S
+            (NP (PRP you))
+            (VP (VB know)
+              (NP
+                (NP (DT the) (NNS details))
+                (PP (IN of)
+                  (NP (PRP$ her) (NN history)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, told-4)
+nsubj:pass(told-4, You-1)
+aux(told-4, are-2)
+aux:pass(told-4, being-3)
+nsubj(know-6, you-5)
+ccomp(told-4, know-6)
+det(details-8, the-7)
+obj(know-6, details-8)
+case(history-11, of-9)
+nmod:poss(history-11, her-10)
+nmod:of(details-8, history-11)
+punct(told-4, .-12)
+
+Extracted the following NER entity mentions:
+her	PERSON	-
+
+Sentence #3 (4 tokens):
+Is that true?
+
+Tokens:
+[Text=Is CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=true CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=true NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT that))
+    (ADJP (JJ true))
+    (. ?)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, true-3)
+cop(true-3, Is-1)
+nsubj(true-3, that-2)
+punct(true-3, ?-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (2 tokens):
+Maybe.
+
+Tokens:
+[Text=Maybe CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Maybe-1)
+punct(Maybe-1, .-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (22 tokens):
+Just saying it's kind of ironic the wef young leader ashton kutcher just happens to have wound up with her.
+
+Tokens:
+[Text=Just CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=RB Lemma=kind NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=RB Lemma=of NamedEntityTag=O]
+[Text=ironic CharacterOffsetBegin=150 CharacterOffsetEnd=156 PartOfSpeech=JJ Lemma=ironic NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wef CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=wef NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=leader CharacterOffsetBegin=171 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=leader NamedEntityTag=TITLE]
+[Text=ashton CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NNP Lemma=ashton NamedEntityTag=O]
+[Text=kutcher CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=kutcher NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=happens CharacterOffsetBegin=198 CharacterOffsetEnd=205 PartOfSpeech=VBZ Lemma=happen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=wound CharacterOffsetBegin=214 CharacterOffsetEnd=219 PartOfSpeech=VBN Lemma=wind NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (SINV
+    (ADVP (RB Just))
+    (VP (VBG saying)
+      (NP (PRP it)))
+    (VP (VBZ 's)
+      (ADVP (RB kind) (RB of))
+      (ADJP (JJ ironic)))
+    (NP
+      (NP (DT the) (NN wef))
+      (SBAR
+        (S
+          (NP
+            (NML (JJ young) (NN leader))
+            (NNP ashton) (NNP kutcher))
+          (ADVP (RB just))
+          (VP (VBZ happens)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (VP (VBN wound)
+                    (PRT (RP up))
+                    (PP (IN with)
+                      (NP (PRP her)))))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, saying-2)
+advmod(saying-2, Just-1)
+obj(saying-2, it-3)
+cop(ironic-7, 's-4)
+advmod(ironic-7, kind-5)
+fixed(kind-5, of-6)
+aux(saying-2, ironic-7)
+det(wef-9, the-8)
+nsubj(saying-2, wef-9)
+amod(leader-11, young-10)
+compound(kutcher-13, leader-11)
+compound(kutcher-13, ashton-12)
+nsubj(happens-15, kutcher-13)
+nsubj:xsubj(wound-18, kutcher-13)
+advmod(happens-15, just-14)
+acl:relcl(wef-9, happens-15)
+mark(wound-18, to-16)
+aux(wound-18, have-17)
+xcomp(happens-15, wound-18)
+compound:prt(wound-18, up-19)
+case(her-21, with-20)
+obl:with(wound-18, her-21)
+punct(saying-2, .-22)
+
+Extracted the following NER entity mentions:
+leader	TITLE	-
+her	PERSON	-
+
+Sentence #6 (26 tokens):
+The wef possibly going to try and install ashton kutcher in politics here in the u.s. later like they did actor zelenski and actor trudeau.
+
+Tokens:
+[Text=The CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wef CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=wef NamedEntityTag=O]
+[Text=possibly CharacterOffsetBegin=242 CharacterOffsetEnd=250 PartOfSpeech=RB Lemma=possibly NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=install CharacterOffsetBegin=268 CharacterOffsetEnd=275 PartOfSpeech=VB Lemma=install NamedEntityTag=O]
+[Text=ashton CharacterOffsetBegin=276 CharacterOffsetEnd=282 PartOfSpeech=NNP Lemma=ashton NamedEntityTag=O]
+[Text=kutcher CharacterOffsetBegin=283 CharacterOffsetEnd=290 PartOfSpeech=NNP Lemma=kutcher NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=politics CharacterOffsetBegin=294 CharacterOffsetEnd=302 PartOfSpeech=NNS Lemma=politics NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=u.s. CharacterOffsetBegin=315 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=u.s. NamedEntityTag=COUNTRY]
+[Text=later CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=326 CharacterOffsetEnd=330 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=actor CharacterOffsetBegin=340 CharacterOffsetEnd=345 PartOfSpeech=NN Lemma=actor NamedEntityTag=TITLE]
+[Text=zelenski CharacterOffsetBegin=346 CharacterOffsetEnd=354 PartOfSpeech=NNP Lemma=zelenski NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=355 CharacterOffsetEnd=358 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=actor CharacterOffsetBegin=359 CharacterOffsetEnd=364 PartOfSpeech=NN Lemma=actor NamedEntityTag=TITLE]
+[Text=trudeau CharacterOffsetBegin=365 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=trudeau NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN wef))
+      (VP
+        (ADVP (RB possibly))
+        (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB try)
+              (CC and)
+              (VB install)
+              (NP
+                (NP (NNP ashton) (NNP kutcher))
+                (PP (IN in)
+                  (NP (NNS politics))))
+              (PP
+                (ADVP (RB here))
+                (IN in)
+                (NP (DT the) (NN u.s.))))))))
+    (ADVP (RB later)
+      (PP (IN like)
+        (NP (PRP they))))
+    (VP (VBD did)
+      (NP
+        (NP (NN actor) (NNP zelenski))
+        (CC and)
+        (NP (NN actor) (NN trudeau))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, did-20)
+det(wef-2, The-1)
+nsubj(did-20, wef-2)
+advmod(going-4, possibly-3)
+acl(wef-2, going-4)
+mark(try-6, to-5)
+xcomp(going-4, try-6)
+cc(install-8, and-7)
+xcomp(going-4, install-8)
+conj:and(try-6, install-8)
+compound(kutcher-10, ashton-9)
+obj(try-6, kutcher-10)
+case(politics-12, in-11)
+nmod:in(kutcher-10, politics-12)
+advmod(u.s.-16, here-13)
+case(u.s.-16, in-14)
+det(u.s.-16, the-15)
+obl:in(try-6, u.s.-16)
+advmod(did-20, later-17)
+case(they-19, like-18)
+obl:like(later-17, they-19)
+compound(zelenski-22, actor-21)
+obj(did-20, zelenski-22)
+cc(trudeau-25, and-23)
+compound(trudeau-25, actor-24)
+obj(did-20, trudeau-25)
+conj:and(zelenski-22, trudeau-25)
+punct(did-20, .-26)
+
+Extracted the following NER entity mentions:
+u.s.	COUNTRY	MISC:0.9907128841681253
+actor	TITLE	-
+zelenski	PERSON	PERSON:0.6977523229313842
+actor	TITLE	-

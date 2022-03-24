@@ -1,0 +1,134 @@
+Document: ID=55DE52D9.text (4 sentences, 26 tokens)
+
+Sentence #1 (2 tokens):
+Right?!
+
+Tokens:
+[Text=Right CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=?! CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=?! NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Right) (. ?!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Right-1)
+punct(Right-1, ?!-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (13 tokens):
+OP, your daughter doesn’t have to look pretty for you.
+
+Tokens:
+[Text=OP CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=daughter CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=daughter NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n’t CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=RB Lemma=n’t NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=look CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=look NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (NN OP))
+      (, ,)
+      (NP (PRP$ your) (NN daughter)))
+    (VP (VBZ does) (RB n’t)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB look)
+              (ADVP (RB pretty)
+                (PP (IN for)
+                  (NP (PRP you)))))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-7)
+nsubj(have-7, OP-1)
+nsubj:xsubj(look-9, OP-1)
+punct(OP-1, ,-2)
+nmod:poss(daughter-4, your-3)
+appos(OP-1, daughter-4)
+aux(have-7, does-5)
+advmod(have-7, n’t-6)
+mark(look-9, to-8)
+xcomp(have-7, look-9)
+advmod(look-9, pretty-10)
+case(you-12, for-11)
+obl:for(pretty-10, you-12)
+punct(have-7, .-13)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (9 tokens):
+She can wear whatever the heck she wants.
+
+Tokens:
+[Text=She CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=wear CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=wear NamedEntityTag=O]
+[Text=whatever CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=WDT Lemma=whatever NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=heck CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=heck NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=wants CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (MD can)
+      (VP (VB wear)
+        (S
+          (WHNP (WDT whatever) (DT the) (NN heck))
+          (S
+            (NP (PRP she))
+            (VP (VBZ wants))))))
+    (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, wear-3)
+nsubj(wear-3, She-1)
+aux(wear-3, can-2)
+det(heck-6, whatever-4)
+det(heck-6, the-5)
+dep(wants-8, heck-6)
+nsubj(wants-8, she-7)
+xcomp(wear-3, wants-8)
+punct(wear-3, .-9)
+
+Extracted the following NER entity mentions:
+She	PERSON	-
+she	PERSON	-
+
+Sentence #4 (2 tokens):
+YTA.
+
+Tokens:
+[Text=YTA CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=NNP Lemma=YTA NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Constituency parse: 
+(ROOT
+  (NP (NNP YTA) (. .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, YTA-1)
+punct(YTA-1, .-2)
+
+Extracted the following NER entity mentions:
