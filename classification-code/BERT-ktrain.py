@@ -31,16 +31,20 @@ def print_evaluation(gold_labels, predicted_labels):
     a = [("accuracy",accuracy), ("precision",precision), ("recall", recall), ("f1-macro", f1)]
     for i in range (4):
         a[i] = (a[i][0], round(a[i][1],2))
-    return a
+    print (a)
+    s = [round(accuracy, 2), round(precision, 2), round(recall, 2), round(f1, 2)]
+    return s
 
 
 # subreddits = ["antifeminists", "AskReddit", "MensRights", "unpopularopinion", "ChangeMyView", "AmITheAsshole", "Conservative", "FemaleDatingStrategy", "PoliticalCompassMemes",
 #  "offmychest", "askscience", "AskHistorians", "explainlikeimfive", "politics", "PoliticalHumor", "conspiracy", "socialism", "Anarcho_Capitalism"
 # ]
 
-# subreddits = [ "AskReddit", "AskHistorians", "askscience", "explainlikeimfive"]
+# subreddits = ["AskHistorians", "askscience", "AskReddit"]
+# subreddits = ["AskReddit"]
+subreddits = ["politics","PoliticalHumor","Conservative"]
 
-subreddits = ["Conservative"]
+# subreddits = ["Conservative"]
 
 # subreddits = ["antifeminists"]
 
@@ -70,20 +74,28 @@ for subname in subreddits:
                         i += 1
                         continue
                     comment = line.split("\t")[1]
+                    # if len (comment.split(" ")) > 30 or len(comment.split(" ")) < 3:
+                    #     continue
                     X.append(comment)
                     Y.append("removed")
+                    i += 1
+                print ("removed ", subname, ": ", i)
 
                 i = 0
 
                 for line in existing_f:
-                    i += 1
-                    if i == 1:
+                    if i == 0:
+                        i += 1
                         continue
-                    if (i == 5000):
+                    if (i == len(X)):
                         break
                     comment = line.split("\t")[1]
+                    # if len (comment.split(" ")) > 30 or len(comment.split(" ")) < 3:
+                    #     continue
                     existing_X.append(comment)
                     existing_Y.append("existing")
+                    i += 1
+
 
 existing_limit = len(X)
 # choose subset of existing and add to data
@@ -119,7 +131,7 @@ X_train, X_val, Y_train, Y_val = train_test_split(X_train, Y_train, test_size=0.
 print (X_train.shape, X_val.shape, X_test.shape)
 cats = ["removed", "existing"]
 
-t = text.Transformer(MODEL_NAME, maxlen=100, class_names=cats)
+t = text.Transformer(MODEL_NAME, maxlen=30, class_names=cats)
 print ("MODEL", MODEL_NAME)
 
 trn = t.preprocess_train(X_train, Y_train)
@@ -136,7 +148,7 @@ test_scores = predictor.predict_proba(X_test)
 
 # get results
 print ("test results", print_evaluation(Y_test, test_preds))
-print ("auc_under_roc:", roc_auc_score(Y_test, test_scores[:, 1]))
+print ("auc_under_roc:", round(roc_auc_score(Y_test, test_scores[:, 1])*100, 2))
 
 # for i in range (10):
 #     print (Y_test[i], test_scores[i])
