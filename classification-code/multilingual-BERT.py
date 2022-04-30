@@ -2,6 +2,8 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.metrics import accuracy_score, f1_score, recall_score, precision_score
+from sklearn.metrics import roc_auc_score
+
 from collections import Counter
 import random
 from sklearn.model_selection import train_test_split
@@ -12,7 +14,7 @@ import os
 
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID";
 os.environ["CUDA_VISIBLE_DEVICES"]="0";
-MODEL_NAME = "bert-base-multilingual-cased"
+MODEL_NAME = "bert-base-multilingual-uncased"
 
 
 
@@ -36,9 +38,9 @@ subreddits = ["antifeminists", "AskReddit", "MensRights", "unpopularopinion", "C
  "offmychest", "askscience", "AskHistorians", "explainlikeimfive", "politics", "PoliticalHumor", "conspiracy", "socialism", "Anarcho_Capitalism"
 ]
 
-ar_subs = ["arabs", "saudi_arabia", "egypt"]
+ar_subs = ["arabs", "saudiarabia", "egypt"]
 ru_subs = ["russia", "russian", "AskARussian"]
-fr_subs = ["french", "france"]
+fr_subs = ["French", "france"]
 
 # subreddits = [ "AskReddit", "AskHistorians", "askscience", "explainlikeimfive"]
 
@@ -51,9 +53,9 @@ def read_other_lang (sublist):
     existing_X = []
     existing_Y = []
     print ("reading files")
-    for subname in subreddits:
-        with open ("../scraping/data/reddit/removed_comments_other_lang/" + subname + ".tsv", "r", encoding = "utf-8") as rem_f:
-            with open ("../scraping/data/reddit/existing_comments_other_lang/" + subname + ".tsv", "r", encoding = "utf-8") as existing_f:
+    for subname in sublist:
+        with open ("../scraping/data/reddit/removed_comments_other_langs/" + subname + ".tsv", "r", encoding = "utf-8") as rem_f:
+            with open ("../scraping/data/reddit/existing_comments_other_langs/" + subname + ".tsv", "r", encoding = "utf-8") as existing_f:
 
                 i = 0
                 for line in rem_f:
@@ -76,7 +78,7 @@ def read_other_lang (sublist):
                     existing_X.append(comment)
                     existing_Y.append("existing")
 
-    existing_limit = len(X)
+    existing_limit = 2*len(X)
     print ("limit:", existing_limit)
     # choose subset of existing and add to data
     inds = [x for x in range (len(existing_X))]
@@ -128,7 +130,7 @@ def get_results (lang, model):
     # print(predictor.classes_)
 
 
-    with open ("predictions/preds-all-subreddits.tsv", "w", encoding = "utf-8") as f:
+    with open ("predictions/preds-" + lang + ".tsv", "w", encoding = "utf-8") as f:
         f.write("text\ttruth\tpred\tscore\n")
         for i in range (X_test.shape[0]):
             f.write (X_test[i] + "\t" + Y_test[i] + "\t" + test_preds[i] + "\t" + str(test_scores[i]) + "\n")
@@ -141,7 +143,7 @@ def get_results (lang, model):
 
 X = []
 Y = []
-existing_limit = 15500
+existing_limit = 2*15500
 existing_X = []
 existing_Y = []
 print ("reading files")
@@ -213,13 +215,23 @@ val = t.preprocess_test(X_val, Y_val)
 
 model = t.get_classifier()
 learner = ktrain.get_learner(model, train_data=trn, val_data=val, batch_size=16)
-learner.fit_onecycle(8e-5, 1)
+learner.fit_onecycle(8e-5, 3)
 print ("getting predictor")
 predictor = ktrain.get_predictor(learner.model, preproc=t)
 
+X_test = X_val
+Y_test = Y_val
+
+test_preds = predictor.predict(X_test)
+test_scores = predictor.predict_proba(X_test)
+
+# get results
+print ("test results", print_evaluation(Y_test, test_preds))
+print ("auc_under_roc:", roc_auc_score(Y_test, test_scores[:, 1]))
+
 langs = ["arabic", "french", "russian"]
 for lang in langs:
-    get_results(lang)
+    get_results(lang, predictor)
 
 
 # test_preds = predictor.predict(X_test)
