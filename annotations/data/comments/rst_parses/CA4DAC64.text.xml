@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>CA4DAC64.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fuck</word>
+            <lemma>fuck</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Joe</word>
+            <lemma>Joe</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>Biden</word>
+            <lemma>Biden</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBP Fuck) (NP (NNP Joe) (NNP Biden))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Biden</governor>
+            <dependent idx="2">Joe</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="3">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Biden</governor>
+            <dependent idx="2">Joe</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="3">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Biden</governor>
+            <dependent idx="2">Joe</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="3">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Biden</governor>
+            <dependent idx="2">Joe</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="3">Biden</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">Biden</governor>
+            <dependent idx="2">Joe</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="1">Fuck</governor>
+            <dependent idx="3">Biden</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>86911D13.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>furries</word>
+            <lemma>furry</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>need</word>
+            <lemma>need</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>stay</word>
+            <lemma>stay</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>away</word>
+            <lemma>away</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>kids</word>
+            <lemma>kid</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>animals</word>
+            <lemma>animal</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS furries)) (VP (VBP need) (S (VP (TO to) (VP (VB stay) (ADVP (RB away)) (PP (IN from) (NP (NNS kids) (CC and) (NNS animals))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">need</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">need</governor>
+            <dependent idx="1">furries</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">stay</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">need</governor>
+            <dependent idx="4">stay</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">stay</governor>
+            <dependent idx="5">away</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">kids</governor>
+            <dependent idx="6">from</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="4">stay</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">animals</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">kids</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">need</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">need</governor>
+            <dependent idx="1">furries</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">stay</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">need</governor>
+            <dependent idx="4">stay</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">stay</governor>
+            <dependent idx="5">away</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">kids</governor>
+            <dependent idx="6">from</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">stay</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">animals</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">kids</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">need</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">need</governor>
+            <dependent idx="1">furries</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">stay</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">need</governor>
+            <dependent idx="4">stay</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">stay</governor>
+            <dependent idx="5">away</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">kids</governor>
+            <dependent idx="6">from</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">stay</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">animals</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="obl:from" extra="true">
+            <governor idx="4">stay</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">kids</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">need</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">need</governor>
+            <dependent idx="1">furries</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="4">stay</governor>
+            <dependent idx="1">furries</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">stay</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">need</governor>
+            <dependent idx="4">stay</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">stay</governor>
+            <dependent idx="5">away</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">kids</governor>
+            <dependent idx="6">from</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">stay</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">animals</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="obl:from" extra="true">
+            <governor idx="4">stay</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">kids</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">need</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">need</governor>
+            <dependent idx="1">furries</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="4">stay</governor>
+            <dependent idx="1">furries</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">stay</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">need</governor>
+            <dependent idx="4">stay</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">stay</governor>
+            <dependent idx="5">away</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">kids</governor>
+            <dependent idx="6">from</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">stay</governor>
+            <dependent idx="7">kids</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">animals</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="obl:from" extra="true">
+            <governor idx="4">stay</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="7">kids</governor>
+            <dependent idx="9">animals</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

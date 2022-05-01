@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>BC0D7FF3.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>He</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>should</word>
+            <lemma>should</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>ejected</word>
+            <lemma>eject</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>airplane</word>
+            <lemma>airplane</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>security</word>
+            <lemma>security</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>threat</word>
+            <lemma>threat</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP He)) (VP (MD should) (VP (VB be) (VP (VBN ejected) (PP (IN from) (NP (NP (DT an) (NN airplane)) (PP (IN as) (NP (DT a) (NN security) (NN threat)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ejected</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ejected</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">airplane</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airplane</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="4">ejected</governor>
+            <dependent idx="7">airplane</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">threat</governor>
+            <dependent idx="8">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">threat</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">threat</governor>
+            <dependent idx="10">security</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="7">airplane</governor>
+            <dependent idx="11">threat</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">ejected</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ejected</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ejected</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">airplane</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airplane</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">ejected</governor>
+            <dependent idx="7">airplane</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">threat</governor>
+            <dependent idx="8">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">threat</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">threat</governor>
+            <dependent idx="10">security</dependent>
+          </dep>
+          <dep type="nmod:as">
+            <governor idx="7">airplane</governor>
+            <dependent idx="11">threat</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">ejected</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ejected</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ejected</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">airplane</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airplane</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">ejected</governor>
+            <dependent idx="7">airplane</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">threat</governor>
+            <dependent idx="8">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">threat</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">threat</governor>
+            <dependent idx="10">security</dependent>
+          </dep>
+          <dep type="nmod:as">
+            <governor idx="7">airplane</governor>
+            <dependent idx="11">threat</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">ejected</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ejected</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ejected</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">airplane</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airplane</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">ejected</governor>
+            <dependent idx="7">airplane</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">threat</governor>
+            <dependent idx="8">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">threat</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">threat</governor>
+            <dependent idx="10">security</dependent>
+          </dep>
+          <dep type="nmod:as">
+            <governor idx="7">airplane</governor>
+            <dependent idx="11">threat</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">ejected</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ejected</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ejected</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">ejected</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">airplane</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airplane</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="obl:from">
+            <governor idx="4">ejected</governor>
+            <dependent idx="7">airplane</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">threat</governor>
+            <dependent idx="8">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">threat</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="11">threat</governor>
+            <dependent idx="10">security</dependent>
+          </dep>
+          <dep type="nmod:as">
+            <governor idx="7">airplane</governor>
+            <dependent idx="11">threat</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">ejected</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

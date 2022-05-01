@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>703584ED.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Israel</word>
+            <lemma>Israel</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>COUNTRY</NER>
+          </token>
+          <token id="2">
+            <word>should</word>
+            <lemma>should</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>nuked</word>
+            <lemma>nuke</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>off</word>
+            <lemma>off</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>fucking</word>
+            <lemma>fucking</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>planet</word>
+            <lemma>planet</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Israel)) (VP (MD should) (VP (VB be) (VP (VBN nuked) (PP (IN off) (NP (DT this) (JJ fucking) (NN planet)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nuked</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="1">Israel</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nuked</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">planet</governor>
+            <dependent idx="5">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">planet</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">planet</governor>
+            <dependent idx="7">fucking</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="4">nuked</governor>
+            <dependent idx="8">planet</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">nuked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nuked</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="1">Israel</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nuked</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">planet</governor>
+            <dependent idx="5">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">planet</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">planet</governor>
+            <dependent idx="7">fucking</dependent>
+          </dep>
+          <dep type="obl:off">
+            <governor idx="4">nuked</governor>
+            <dependent idx="8">planet</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">nuked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nuked</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="1">Israel</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nuked</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">planet</governor>
+            <dependent idx="5">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">planet</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">planet</governor>
+            <dependent idx="7">fucking</dependent>
+          </dep>
+          <dep type="obl:off">
+            <governor idx="4">nuked</governor>
+            <dependent idx="8">planet</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">nuked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nuked</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="1">Israel</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nuked</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">planet</governor>
+            <dependent idx="5">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">planet</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">planet</governor>
+            <dependent idx="7">fucking</dependent>
+          </dep>
+          <dep type="obl:off">
+            <governor idx="4">nuked</governor>
+            <dependent idx="8">planet</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">nuked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nuked</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="1">Israel</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nuked</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="4">nuked</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">planet</governor>
+            <dependent idx="5">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">planet</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">planet</governor>
+            <dependent idx="7">fucking</dependent>
+          </dep>
+          <dep type="obl:off">
+            <governor idx="4">nuked</governor>
+            <dependent idx="8">planet</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">nuked</governor>
+            <dependent idx="9">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

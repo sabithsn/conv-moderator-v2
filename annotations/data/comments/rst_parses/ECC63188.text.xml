@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>ECC63188.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>referring</word>
+            <lemma>refer</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Patriot</word>
+            <lemma>Patriot</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>murdered</word>
+            <lemma>murder</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>impunity</word>
+            <lemma>impunity</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (VBP Are) (NP (PRP you)) (VP (VBG referring) (PP (IN to) (NP (NP (DT the) (NNP Patriot)) (VP (VBN murdered) (PP (IN with) (NP (NN impunity))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">referring</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">referring</governor>
+            <dependent idx="1">Are</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">referring</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="3">referring</governor>
+            <dependent idx="6">Patriot</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="7">murdered</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">impunity</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="7">murdered</governor>
+            <dependent idx="9">impunity</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">referring</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">referring</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">referring</governor>
+            <dependent idx="1">Are</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">referring</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="3">referring</governor>
+            <dependent idx="6">Patriot</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="7">murdered</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">impunity</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="7">murdered</governor>
+            <dependent idx="9">impunity</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">referring</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">referring</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">referring</governor>
+            <dependent idx="1">Are</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">referring</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="3">referring</governor>
+            <dependent idx="6">Patriot</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="7">murdered</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">impunity</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="7">murdered</governor>
+            <dependent idx="9">impunity</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">referring</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">referring</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">referring</governor>
+            <dependent idx="1">Are</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">referring</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="3">referring</governor>
+            <dependent idx="6">Patriot</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="7">murdered</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">impunity</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="7">murdered</governor>
+            <dependent idx="9">impunity</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">referring</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">referring</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">referring</governor>
+            <dependent idx="1">Are</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">referring</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="obl:to">
+            <governor idx="3">referring</governor>
+            <dependent idx="6">Patriot</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="6">Patriot</governor>
+            <dependent idx="7">murdered</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">impunity</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="obl:with">
+            <governor idx="7">murdered</governor>
+            <dependent idx="9">impunity</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">referring</governor>
+            <dependent idx="10">?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

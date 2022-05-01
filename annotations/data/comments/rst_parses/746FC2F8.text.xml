@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>746FC2F8.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>hope</word>
+            <lemma>hope</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>die</word>
+            <lemma>die</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>fire</word>
+            <lemma>fire</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CAUSE_OF_DEATH</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBP hope) (S (NP (PRP you)) (VP (VB die) (PP (IN in) (NP (DT a) (NN fire)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hope</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hope</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">die</governor>
+            <dependent idx="3">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">hope</governor>
+            <dependent idx="4">die</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">fire</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fire</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="4">die</governor>
+            <dependent idx="7">fire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hope</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hope</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">die</governor>
+            <dependent idx="3">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">hope</governor>
+            <dependent idx="4">die</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">fire</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fire</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">die</governor>
+            <dependent idx="7">fire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hope</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hope</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">die</governor>
+            <dependent idx="3">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">hope</governor>
+            <dependent idx="4">die</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">fire</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fire</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">die</governor>
+            <dependent idx="7">fire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hope</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hope</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">die</governor>
+            <dependent idx="3">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">hope</governor>
+            <dependent idx="4">die</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">fire</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fire</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">die</governor>
+            <dependent idx="7">fire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hope</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">hope</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">die</governor>
+            <dependent idx="3">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">hope</governor>
+            <dependent idx="4">die</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">fire</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fire</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">die</governor>
+            <dependent idx="7">fire</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

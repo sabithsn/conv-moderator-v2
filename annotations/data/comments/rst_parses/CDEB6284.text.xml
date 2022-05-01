@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>CDEB6284.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>SS</word>
+            <lemma>SS</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Never</word>
+            <lemma>never</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>seen</word>
+            <lemma>see</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>ruthless</word>
+            <lemma>ruthless</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>acts</word>
+            <lemma>act</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>violence</word>
+            <lemma>violence</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CAUSE_OF_DEATH</NER>
+          </token>
+          <token id="9">
+            <word>committed</word>
+            <lemma>commit</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>protesters</word>
+            <lemma>protester</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>!</word>
+            <lemma>!</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP SS)) (ADVP (RB Never)) (VP (VBN seen) (PP (JJ such) (NP (NP (JJ ruthless) (NNS acts)) (PP (IN of) (NP (NP (NN violence)) (VP (VBN committed) (PP (IN by) (NP (NNS protesters))))))))) (. !))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">seen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">seen</governor>
+            <dependent idx="1">SS</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">seen</governor>
+            <dependent idx="2">Never</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">acts</governor>
+            <dependent idx="4">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">acts</governor>
+            <dependent idx="5">ruthless</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="3">seen</governor>
+            <dependent idx="6">acts</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">violence</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="6">acts</governor>
+            <dependent idx="8">violence</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="8">violence</governor>
+            <dependent idx="9">committed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">protesters</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="9">committed</governor>
+            <dependent idx="11">protesters</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">seen</governor>
+            <dependent idx="12">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">seen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">seen</governor>
+            <dependent idx="1">SS</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">seen</governor>
+            <dependent idx="2">Never</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">acts</governor>
+            <dependent idx="4">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">acts</governor>
+            <dependent idx="5">ruthless</dependent>
+          </dep>
+          <dep type="obl:such">
+            <governor idx="3">seen</governor>
+            <dependent idx="6">acts</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">violence</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">acts</governor>
+            <dependent idx="8">violence</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="8">violence</governor>
+            <dependent idx="9">committed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">protesters</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="9">committed</governor>
+            <dependent idx="11">protesters</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">seen</governor>
+            <dependent idx="12">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">seen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">seen</governor>
+            <dependent idx="1">SS</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">seen</governor>
+            <dependent idx="2">Never</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">acts</governor>
+            <dependent idx="4">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">acts</governor>
+            <dependent idx="5">ruthless</dependent>
+          </dep>
+          <dep type="obl:such">
+            <governor idx="3">seen</governor>
+            <dependent idx="6">acts</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">violence</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">acts</governor>
+            <dependent idx="8">violence</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="8">violence</governor>
+            <dependent idx="9">committed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">protesters</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="9">committed</governor>
+            <dependent idx="11">protesters</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">seen</governor>
+            <dependent idx="12">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">seen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">seen</governor>
+            <dependent idx="1">SS</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">seen</governor>
+            <dependent idx="2">Never</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">acts</governor>
+            <dependent idx="4">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">acts</governor>
+            <dependent idx="5">ruthless</dependent>
+          </dep>
+          <dep type="obl:such">
+            <governor idx="3">seen</governor>
+            <dependent idx="6">acts</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">violence</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">acts</governor>
+            <dependent idx="8">violence</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="8">violence</governor>
+            <dependent idx="9">committed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">protesters</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="9">committed</governor>
+            <dependent idx="11">protesters</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">seen</governor>
+            <dependent idx="12">!</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">seen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">seen</governor>
+            <dependent idx="1">SS</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">seen</governor>
+            <dependent idx="2">Never</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="6">acts</governor>
+            <dependent idx="4">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">acts</governor>
+            <dependent idx="5">ruthless</dependent>
+          </dep>
+          <dep type="obl:such">
+            <governor idx="3">seen</governor>
+            <dependent idx="6">acts</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="8">violence</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">acts</governor>
+            <dependent idx="8">violence</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="8">violence</governor>
+            <dependent idx="9">committed</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">protesters</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="obl:by">
+            <governor idx="9">committed</governor>
+            <dependent idx="11">protesters</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">seen</governor>
+            <dependent idx="12">!</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Obviously</word>
+            <lemma>obviously</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>racist</word>
+            <lemma>racist</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>deserve</word>
+            <lemma>deserve</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>die</word>
+            <lemma>die</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>123</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Obviously)) (, ,) (S (NP (PRP they)) (VP (VBP are) (ADJP (JJ racist)))) (, ,) (CC and) (S (NP (PRP they)) (VP (VBP deserve) (S (VP (TO to) (VP (VB die)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">racist</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">racist</governor>
+            <dependent idx="1">Obviously</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">racist</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">racist</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">deserve</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">deserve</governor>
+            <dependent idx="8">they</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">racist</governor>
+            <dependent idx="9">deserve</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">die</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">deserve</governor>
+            <dependent idx="11">die</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">racist</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">racist</governor>
+            <dependent idx="1">Obviously</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">racist</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">racist</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">deserve</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">deserve</governor>
+            <dependent idx="8">they</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">racist</governor>
+            <dependent idx="9">deserve</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">die</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">deserve</governor>
+            <dependent idx="11">die</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">racist</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">racist</governor>
+            <dependent idx="1">Obviously</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">racist</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">racist</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">deserve</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">deserve</governor>
+            <dependent idx="8">they</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">racist</governor>
+            <dependent idx="9">deserve</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">die</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">deserve</governor>
+            <dependent idx="11">die</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">racist</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">racist</governor>
+            <dependent idx="1">Obviously</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">racist</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">racist</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">deserve</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">deserve</governor>
+            <dependent idx="8">they</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="11">die</governor>
+            <dependent idx="8">they</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">racist</governor>
+            <dependent idx="9">deserve</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">die</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">deserve</governor>
+            <dependent idx="11">die</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">racist</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">racist</governor>
+            <dependent idx="1">Obviously</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">racist</governor>
+            <dependent idx="3">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">racist</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">deserve</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">deserve</governor>
+            <dependent idx="8">they</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="11">die</governor>
+            <dependent idx="8">they</dependent>
+          </dep>
+          <dep type="conj:and">
+            <governor idx="5">racist</governor>
+            <dependent idx="9">deserve</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">die</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">deserve</governor>
+            <dependent idx="11">die</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">racist</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>/</word>
+            <lemma>/</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>SYM</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>s</word>
+            <lemma>s</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (SYM /)) (NP (NN s)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">/</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">/</governor>
+            <dependent idx="2">s</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">/</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">/</governor>
+            <dependent idx="2">s</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">/</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">/</governor>
+            <dependent idx="2">s</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">/</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">/</governor>
+            <dependent idx="2">s</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">/</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">/</governor>
+            <dependent idx="2">s</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

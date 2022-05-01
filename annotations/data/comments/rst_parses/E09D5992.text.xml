@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>E09D5992.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Tom</word>
+            <lemma>Tom</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>looking</word>
+            <lemma>look</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>’s</word>
+            <lemma>’s</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>lined</word>
+            <lemma>line</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>RP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>suck</word>
+            <lemma>suck</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>NWO</word>
+            <lemma>NWO</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>dick</word>
+            <lemma>dick</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Tom)) (VP (VBG looking) (SBAR (IN like) (S (NP (PRP he)) (VP (VBZ ’s)))))) (VP (VBN lined) (PRT (RP up)) (S (VP (TO to) (VP (VB suck) (NP (DT some) (NNP NWO) (NN dick)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">lined</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">lined</governor>
+            <dependent idx="1">Tom</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Tom</governor>
+            <dependent idx="2">looking</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">’s</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">’s</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">looking</governor>
+            <dependent idx="5">’s</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="6">lined</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">suck</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">lined</governor>
+            <dependent idx="9">suck</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">dick</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">dick</governor>
+            <dependent idx="11">NWO</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">suck</governor>
+            <dependent idx="12">dick</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">lined</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">lined</governor>
+            <dependent idx="1">Tom</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Tom</governor>
+            <dependent idx="2">looking</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">’s</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">’s</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">looking</governor>
+            <dependent idx="5">’s</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="6">lined</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">suck</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">lined</governor>
+            <dependent idx="9">suck</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">dick</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">dick</governor>
+            <dependent idx="11">NWO</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">suck</governor>
+            <dependent idx="12">dick</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">lined</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">lined</governor>
+            <dependent idx="1">Tom</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Tom</governor>
+            <dependent idx="2">looking</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">’s</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">’s</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="2">looking</governor>
+            <dependent idx="5">’s</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="6">lined</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">suck</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">lined</governor>
+            <dependent idx="9">suck</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">dick</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">dick</governor>
+            <dependent idx="11">NWO</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">suck</governor>
+            <dependent idx="12">dick</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">lined</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">lined</governor>
+            <dependent idx="1">Tom</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="9">suck</governor>
+            <dependent idx="1">Tom</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Tom</governor>
+            <dependent idx="2">looking</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">’s</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">’s</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="advcl:like">
+            <governor idx="2">looking</governor>
+            <dependent idx="5">’s</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="6">lined</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">suck</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">lined</governor>
+            <dependent idx="9">suck</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">dick</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">dick</governor>
+            <dependent idx="11">NWO</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">suck</governor>
+            <dependent idx="12">dick</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">lined</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">lined</governor>
+            <dependent idx="1">Tom</dependent>
+          </dep>
+          <dep type="nsubj:xsubj" extra="true">
+            <governor idx="9">suck</governor>
+            <dependent idx="1">Tom</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="1">Tom</governor>
+            <dependent idx="2">looking</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">’s</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">’s</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="advcl:like">
+            <governor idx="2">looking</governor>
+            <dependent idx="5">’s</dependent>
+          </dep>
+          <dep type="compound:prt">
+            <governor idx="6">lined</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">suck</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">lined</governor>
+            <dependent idx="9">suck</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">dick</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="12">dick</governor>
+            <dependent idx="11">NWO</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">suck</governor>
+            <dependent idx="12">dick</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

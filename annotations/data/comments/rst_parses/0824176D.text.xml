@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>0824176D.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Women</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>incompetent</word>
+            <lemma>incompetent</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>suicide</word>
+            <lemma>suicide</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CAUSE_OF_DEATH</NER>
+          </token>
+          <token id="6">
+            <word>confirmed</word>
+            <lemma>confirm</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS Women)) (VP (VBP are) (ADJP (JJ incompetent) (PP (IN at) (NP (NP (NN suicide)) (SBAR (S (VP (VBD confirmed)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">incompetent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="1">Women</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">suicide</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="5">suicide</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">suicide</governor>
+            <dependent idx="6">confirmed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">incompetent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="1">Women</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">suicide</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="5">suicide</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">suicide</governor>
+            <dependent idx="6">confirmed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">incompetent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="1">Women</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">suicide</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="5">suicide</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">suicide</governor>
+            <dependent idx="6">confirmed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">incompetent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="1">Women</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">suicide</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="5">suicide</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">suicide</governor>
+            <dependent idx="6">confirmed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">incompetent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="1">Women</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">suicide</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="obl:at">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="5">suicide</dependent>
+          </dep>
+          <dep type="acl:relcl">
+            <governor idx="5">suicide</governor>
+            <dependent idx="6">confirmed</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">incompetent</governor>
+            <dependent idx="7">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

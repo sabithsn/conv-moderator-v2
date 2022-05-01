@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>44EA1792.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>talking</word>
+            <lemma>talk</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>herding</word>
+            <lemma>herding</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>dog</word>
+            <lemma>dog</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>yes</word>
+            <lemma>yes</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBD was) (VP (VBG talking) (PP (IN about) (NP (DT a) (NN herding) (NN dog))) (, ,) (INTJ (UH yes)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talking</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">talking</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">dog</governor>
+            <dependent idx="4">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dog</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dog</governor>
+            <dependent idx="6">herding</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="3">talking</governor>
+            <dependent idx="7">dog</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">talking</governor>
+            <dependent idx="9">yes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talking</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">talking</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">dog</governor>
+            <dependent idx="4">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dog</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dog</governor>
+            <dependent idx="6">herding</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="3">talking</governor>
+            <dependent idx="7">dog</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">talking</governor>
+            <dependent idx="9">yes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talking</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">talking</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">dog</governor>
+            <dependent idx="4">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dog</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dog</governor>
+            <dependent idx="6">herding</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="3">talking</governor>
+            <dependent idx="7">dog</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">talking</governor>
+            <dependent idx="9">yes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talking</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">talking</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">dog</governor>
+            <dependent idx="4">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dog</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dog</governor>
+            <dependent idx="6">herding</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="3">talking</governor>
+            <dependent idx="7">dog</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">talking</governor>
+            <dependent idx="9">yes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talking</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talking</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">talking</governor>
+            <dependent idx="2">was</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">dog</governor>
+            <dependent idx="4">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">dog</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">dog</governor>
+            <dependent idx="6">herding</dependent>
+          </dep>
+          <dep type="obl:about">
+            <governor idx="3">talking</governor>
+            <dependent idx="7">dog</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="3">talking</governor>
+            <dependent idx="9">yes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="3">talking</governor>
+            <dependent idx="10">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>And</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>cow</word>
+            <lemma>cow</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>could</word>
+            <lemma>could</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>just</word>
+            <lemma>just</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>trample</word>
+            <lemma>trample</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>dog</word>
+            <lemma>dog</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>horse</word>
+            <lemma>horse</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>snake</word>
+            <lemma>snake</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (CC And) (NP (DT the) (NN cow)) (VP (MD could) (ADVP (RB just)) (VP (VB trample) (NP (DT the) (NN dog)) (PP (IN like) (NP (NP (DT a) (NN horse)) (PP (IN with) (NP (DT a) (NN snake))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">trample</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">trample</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">trample</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">trample</governor>
+            <dependent idx="4">could</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">trample</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dog</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">trample</governor>
+            <dependent idx="8">dog</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">horse</governor>
+            <dependent idx="9">like</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">horse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="6">trample</governor>
+            <dependent idx="11">horse</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">snake</governor>
+            <dependent idx="12">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">snake</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="11">horse</governor>
+            <dependent idx="14">snake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">trample</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">trample</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">trample</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">trample</governor>
+            <dependent idx="4">could</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">trample</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dog</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">trample</governor>
+            <dependent idx="8">dog</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">horse</governor>
+            <dependent idx="9">like</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">horse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">trample</governor>
+            <dependent idx="11">horse</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">snake</governor>
+            <dependent idx="12">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">snake</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="nmod:with">
+            <governor idx="11">horse</governor>
+            <dependent idx="14">snake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">trample</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">trample</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">trample</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">trample</governor>
+            <dependent idx="4">could</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">trample</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dog</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">trample</governor>
+            <dependent idx="8">dog</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">horse</governor>
+            <dependent idx="9">like</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">horse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">trample</governor>
+            <dependent idx="11">horse</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">snake</governor>
+            <dependent idx="12">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">snake</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="nmod:with">
+            <governor idx="11">horse</governor>
+            <dependent idx="14">snake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">trample</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">trample</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">trample</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">trample</governor>
+            <dependent idx="4">could</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">trample</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dog</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">trample</governor>
+            <dependent idx="8">dog</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">horse</governor>
+            <dependent idx="9">like</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">horse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">trample</governor>
+            <dependent idx="11">horse</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">snake</governor>
+            <dependent idx="12">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">snake</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="nmod:with">
+            <governor idx="11">horse</governor>
+            <dependent idx="14">snake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">trample</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">trample</governor>
+            <dependent idx="1">And</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">trample</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">trample</governor>
+            <dependent idx="4">could</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">trample</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dog</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">trample</governor>
+            <dependent idx="8">dog</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">horse</governor>
+            <dependent idx="9">like</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">horse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="obl:like">
+            <governor idx="6">trample</governor>
+            <dependent idx="11">horse</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="14">snake</governor>
+            <dependent idx="12">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">snake</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="nmod:with">
+            <governor idx="11">horse</governor>
+            <dependent idx="14">snake</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

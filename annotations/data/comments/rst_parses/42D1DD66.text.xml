@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>42D1DD66.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>It</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>’s</word>
+            <lemma>’s</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>too</word>
+            <lemma>too</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>early</word>
+            <lemma>early</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>morning</word>
+            <lemma>morning</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>TIME</NER>
+            <NormalizedNER>TMO</NormalizedNER>
+            <Timex tid="t1" type="TIME">TMO</Timex>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>stupid</word>
+            <lemma>stupid</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>shit</word>
+            <lemma>shit</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP It)) (VP (VBZ ’s) (ADJP (RB too) (JJ early) (PP (IN in) (NP (NP (DT the) (NN morning)) (PP (IN for) (NP (DT this) (JJ stupid) (NN shit))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">early</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">early</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">early</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">early</governor>
+            <dependent idx="3">too</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">morning</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">morning</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="4">early</governor>
+            <dependent idx="7">morning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">shit</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">shit</governor>
+            <dependent idx="9">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">shit</governor>
+            <dependent idx="10">stupid</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="7">morning</governor>
+            <dependent idx="11">shit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">early</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">early</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">early</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">early</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">early</governor>
+            <dependent idx="3">too</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">morning</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">morning</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">early</governor>
+            <dependent idx="7">morning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">shit</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">shit</governor>
+            <dependent idx="9">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">shit</governor>
+            <dependent idx="10">stupid</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="7">morning</governor>
+            <dependent idx="11">shit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">early</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">early</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">early</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">early</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">early</governor>
+            <dependent idx="3">too</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">morning</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">morning</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">early</governor>
+            <dependent idx="7">morning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">shit</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">shit</governor>
+            <dependent idx="9">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">shit</governor>
+            <dependent idx="10">stupid</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="7">morning</governor>
+            <dependent idx="11">shit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">early</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">early</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">early</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">early</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">early</governor>
+            <dependent idx="3">too</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">morning</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">morning</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">early</governor>
+            <dependent idx="7">morning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">shit</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">shit</governor>
+            <dependent idx="9">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">shit</governor>
+            <dependent idx="10">stupid</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="7">morning</governor>
+            <dependent idx="11">shit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">early</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">early</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">early</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">early</governor>
+            <dependent idx="2">’s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">early</governor>
+            <dependent idx="3">too</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">morning</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">morning</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="4">early</governor>
+            <dependent idx="7">morning</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="11">shit</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">shit</governor>
+            <dependent idx="9">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">shit</governor>
+            <dependent idx="10">stupid</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="7">morning</governor>
+            <dependent idx="11">shit</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">early</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>72109C71.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Joe</word>
+            <lemma>Joe</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>“</word>
+            <lemma>“</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>You</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>stupid</word>
+            <lemma>stupid</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>son</word>
+            <lemma>son</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>bitch</word>
+            <lemma>bitch</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>’m</word>
+            <lemma>’m</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>”</word>
+            <lemma>”</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Joe)) (: :) (S (`` “) (NP (PRP You)) (S (ADJP (JJ stupid) (SBAR (S (NP (NP (NN son)) (PP (IN of) (NP (DT a) (NN bitch)))) (, ,) (NP (PRP I)) (VP (VBP ’m) (PP (IN in))))))) ('' ”)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Joe</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Joe</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">stupid</governor>
+            <dependent idx="4">You</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Joe</governor>
+            <dependent idx="5">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="6">son</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">bitch</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">bitch</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="6">son</governor>
+            <dependent idx="9">bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="13">in</governor>
+            <dependent idx="10">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="11">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">in</governor>
+            <dependent idx="12">’m</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">stupid</governor>
+            <dependent idx="13">in</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="14">”</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Joe</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Joe</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">stupid</governor>
+            <dependent idx="4">You</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Joe</governor>
+            <dependent idx="5">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="6">son</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">bitch</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">bitch</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">son</governor>
+            <dependent idx="9">bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="13">in</governor>
+            <dependent idx="10">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="11">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">in</governor>
+            <dependent idx="12">’m</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">stupid</governor>
+            <dependent idx="13">in</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="14">”</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Joe</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Joe</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">stupid</governor>
+            <dependent idx="4">You</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Joe</governor>
+            <dependent idx="5">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="6">son</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">bitch</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">bitch</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">son</governor>
+            <dependent idx="9">bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="13">in</governor>
+            <dependent idx="10">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="11">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">in</governor>
+            <dependent idx="12">’m</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">stupid</governor>
+            <dependent idx="13">in</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="14">”</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Joe</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Joe</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">stupid</governor>
+            <dependent idx="4">You</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Joe</governor>
+            <dependent idx="5">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="6">son</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">bitch</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">bitch</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">son</governor>
+            <dependent idx="9">bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="13">in</governor>
+            <dependent idx="10">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="11">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">in</governor>
+            <dependent idx="12">’m</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">stupid</governor>
+            <dependent idx="13">in</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="14">”</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Joe</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Joe</governor>
+            <dependent idx="2">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="3">“</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">stupid</governor>
+            <dependent idx="4">You</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="1">Joe</governor>
+            <dependent idx="5">stupid</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="6">son</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="9">bitch</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">bitch</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nmod:of">
+            <governor idx="6">son</governor>
+            <dependent idx="9">bitch</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="13">in</governor>
+            <dependent idx="10">,</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">in</governor>
+            <dependent idx="11">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="13">in</governor>
+            <dependent idx="12">’m</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">stupid</governor>
+            <dependent idx="13">in</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">stupid</governor>
+            <dependent idx="14">”</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

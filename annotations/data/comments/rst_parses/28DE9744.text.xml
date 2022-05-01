@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>28DE9744.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Time</word>
+            <lemma>Time</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>guns</word>
+            <lemma>gun</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>banned</word>
+            <lemma>ban</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>fuckface</word>
+            <lemma>fuckface</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Time)) (PP (IN for) (NP (NNS guns) (S (VP (TO to) (VP (VB get) (NP (VBN banned) (NN fuckface))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Time</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">guns</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="nmod">
+            <governor idx="1">Time</governor>
+            <dependent idx="3">guns</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">guns</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">fuckface</governor>
+            <dependent idx="6">banned</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">get</governor>
+            <dependent idx="7">fuckface</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Time</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">guns</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="1">Time</governor>
+            <dependent idx="3">guns</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">guns</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">fuckface</governor>
+            <dependent idx="6">banned</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">get</governor>
+            <dependent idx="7">fuckface</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Time</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">guns</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="1">Time</governor>
+            <dependent idx="3">guns</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="acl">
+            <governor idx="3">guns</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">fuckface</governor>
+            <dependent idx="6">banned</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">get</governor>
+            <dependent idx="7">fuckface</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Time</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">guns</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="1">Time</governor>
+            <dependent idx="3">guns</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="acl:to">
+            <governor idx="3">guns</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">fuckface</governor>
+            <dependent idx="6">banned</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">get</governor>
+            <dependent idx="7">fuckface</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Time</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="3">guns</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="nmod:for">
+            <governor idx="1">Time</governor>
+            <dependent idx="3">guns</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="acl:to">
+            <governor idx="3">guns</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">fuckface</governor>
+            <dependent idx="6">banned</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="5">get</governor>
+            <dependent idx="7">fuckface</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

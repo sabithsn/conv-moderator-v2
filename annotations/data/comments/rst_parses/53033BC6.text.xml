@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>53033BC6.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Maybe</word>
+            <lemma>maybe</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>correct</word>
+            <lemma>correct</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>forgot</word>
+            <lemma>forget</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>comma</word>
+            <lemma>comma</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Maybe)) (NP (PRP it)) (VP (VP (VBD was) (ADJP (JJ correct))) (CC but) (VP (VBD forgot) (NP (DT the) (NN comma)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">correct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">correct</governor>
+            <dependent idx="1">Maybe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">correct</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">correct</governor>
+            <dependent idx="3">was</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">forgot</governor>
+            <dependent idx="5">but</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">correct</governor>
+            <dependent idx="6">forgot</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">comma</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">forgot</governor>
+            <dependent idx="8">comma</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">correct</governor>
+            <dependent idx="9">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">correct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">correct</governor>
+            <dependent idx="1">Maybe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">correct</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">correct</governor>
+            <dependent idx="3">was</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">forgot</governor>
+            <dependent idx="5">but</dependent>
+          </dep>
+          <dep type="conj:but">
+            <governor idx="4">correct</governor>
+            <dependent idx="6">forgot</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">comma</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">forgot</governor>
+            <dependent idx="8">comma</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">correct</governor>
+            <dependent idx="9">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">correct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">correct</governor>
+            <dependent idx="1">Maybe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">correct</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="6">forgot</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">correct</governor>
+            <dependent idx="3">was</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">forgot</governor>
+            <dependent idx="5">but</dependent>
+          </dep>
+          <dep type="conj:but">
+            <governor idx="4">correct</governor>
+            <dependent idx="6">forgot</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">comma</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">forgot</governor>
+            <dependent idx="8">comma</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">correct</governor>
+            <dependent idx="9">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">correct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">correct</governor>
+            <dependent idx="1">Maybe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">correct</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="6">forgot</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">correct</governor>
+            <dependent idx="3">was</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">forgot</governor>
+            <dependent idx="5">but</dependent>
+          </dep>
+          <dep type="conj:but">
+            <governor idx="4">correct</governor>
+            <dependent idx="6">forgot</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">comma</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">forgot</governor>
+            <dependent idx="8">comma</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">correct</governor>
+            <dependent idx="9">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">correct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">correct</governor>
+            <dependent idx="1">Maybe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">correct</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="nsubj" extra="true">
+            <governor idx="6">forgot</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">correct</governor>
+            <dependent idx="3">was</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">forgot</governor>
+            <dependent idx="5">but</dependent>
+          </dep>
+          <dep type="conj:but">
+            <governor idx="4">correct</governor>
+            <dependent idx="6">forgot</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">comma</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="6">forgot</governor>
+            <dependent idx="8">comma</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">correct</governor>
+            <dependent idx="9">?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Fuck</word>
+            <lemma>fuck</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>UH</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>authority</word>
+            <lemma>authority</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>then</word>
+            <lemma>then</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (INTJ (UH Fuck)) (, ,) (NP (PRP$ your) (NN authority)) (ADVP (RB then)) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">authority</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">authority</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="4">authority</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">authority</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="6">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">authority</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">authority</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="4">authority</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">authority</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="6">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">authority</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">authority</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="4">authority</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">authority</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="6">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">authority</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">authority</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="4">authority</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">authority</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="6">?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">authority</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">authority</governor>
+            <dependent idx="1">Fuck</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="4">authority</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">authority</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">authority</governor>
+            <dependent idx="6">?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>5E02E210.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fakes</word>
+            <lemma>fake</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>shills</word>
+            <lemma>shill</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>bots</word>
+            <lemma>bot</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>trolls</word>
+            <lemma>troll</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>take</word>
+            <lemma>take</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>pick</word>
+            <lemma>pick</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNS Fakes)) (, ,) (NP (NNS shills) (, ,) (NNS bots) (, ,) (NNS trolls)) (, ,)) (VP (VB take) (NP (PRP$ your) (NN pick))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">take</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">take</governor>
+            <dependent idx="1">Fakes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">trolls</governor>
+            <dependent idx="3">shills</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">trolls</governor>
+            <dependent idx="5">bots</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="7">trolls</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="11">pick</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">take</governor>
+            <dependent idx="11">pick</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">take</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">take</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">take</governor>
+            <dependent idx="1">Fakes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">trolls</governor>
+            <dependent idx="3">shills</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">trolls</governor>
+            <dependent idx="5">bots</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="7">trolls</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="11">pick</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">take</governor>
+            <dependent idx="11">pick</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">take</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">take</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">take</governor>
+            <dependent idx="1">Fakes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">trolls</governor>
+            <dependent idx="3">shills</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">trolls</governor>
+            <dependent idx="5">bots</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="7">trolls</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="11">pick</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">take</governor>
+            <dependent idx="11">pick</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">take</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">take</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">take</governor>
+            <dependent idx="1">Fakes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">trolls</governor>
+            <dependent idx="3">shills</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">trolls</governor>
+            <dependent idx="5">bots</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="7">trolls</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="11">pick</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">take</governor>
+            <dependent idx="11">pick</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">take</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">take</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">take</governor>
+            <dependent idx="1">Fakes</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="2">,</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="7">trolls</governor>
+            <dependent idx="3">shills</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="4">,</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">trolls</governor>
+            <dependent idx="5">bots</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">trolls</governor>
+            <dependent idx="6">,</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="7">trolls</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="1">Fakes</governor>
+            <dependent idx="8">,</dependent>
+          </dep>
+          <dep type="nmod:poss">
+            <governor idx="11">pick</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="9">take</governor>
+            <dependent idx="11">pick</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="9">take</governor>
+            <dependent idx="12">.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

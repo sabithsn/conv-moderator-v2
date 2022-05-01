@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>D38540AB.text</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>sounds</word>
+            <lemma>sound</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>someone</word>
+            <lemma>someone</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>got</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>bullied</word>
+            <lemma>bully</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>school</word>
+            <lemma>school</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBZ sounds) (SBAR (IN like) (S (NP (NN someone)) (VP (VBD got) (VP (VBN bullied) (PP (IN in) (NP (NN school)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sounds</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">bullied</governor>
+            <dependent idx="2">like</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="3">someone</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="1">sounds</governor>
+            <dependent idx="5">bullied</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">school</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="obl">
+            <governor idx="5">bullied</governor>
+            <dependent idx="7">school</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sounds</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">bullied</governor>
+            <dependent idx="2">like</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="3">someone</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="1">sounds</governor>
+            <dependent idx="5">bullied</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">school</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="5">bullied</governor>
+            <dependent idx="7">school</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sounds</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">bullied</governor>
+            <dependent idx="2">like</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="3">someone</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="1">sounds</governor>
+            <dependent idx="5">bullied</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">school</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="5">bullied</governor>
+            <dependent idx="7">school</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sounds</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">bullied</governor>
+            <dependent idx="2">like</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="3">someone</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advcl:like">
+            <governor idx="1">sounds</governor>
+            <dependent idx="5">bullied</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">school</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="5">bullied</governor>
+            <dependent idx="7">school</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sounds</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">bullied</governor>
+            <dependent idx="2">like</dependent>
+          </dep>
+          <dep type="nsubj:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="3">someone</dependent>
+          </dep>
+          <dep type="aux:pass">
+            <governor idx="5">bullied</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advcl:like">
+            <governor idx="1">sounds</governor>
+            <dependent idx="5">bullied</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="7">school</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="obl:in">
+            <governor idx="5">bullied</governor>
+            <dependent idx="7">school</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>
