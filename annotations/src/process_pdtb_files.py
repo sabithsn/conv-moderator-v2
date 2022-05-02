@@ -37,7 +37,8 @@ def get_senses_and_offsets(filename):
             arg1_offset = relation[22]
             arg2_offset = relation[22]
             arg1_spanlist, arg2_spanlist = get_spanlists(arg1_offset, arg2_offset)
-            senses_and_offsets.append({"relation_type": relation_type,
+            senses_and_offsets.append({"filename": filename,
+                                       "relation_type": relation_type,
                                        "discourse_sense": discourse_sense,
                                        "arg1_spanlist": arg1_spanlist,
                                        "arg2_spanlist": arg2_spanlist
