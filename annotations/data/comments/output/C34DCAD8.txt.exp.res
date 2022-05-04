@@ -1,1 +1,1 @@
-44..48|Temporal
+44..48|Temporal.Synchrony

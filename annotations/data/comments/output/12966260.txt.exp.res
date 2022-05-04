@@ -1,2 +1,2 @@
-0..3|Comparison
-6..9|Comparison
+0..3|Comparison.Contrast
+6..9|Comparison.Contrast

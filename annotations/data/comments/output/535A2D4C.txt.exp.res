@@ -1,2 +1,2 @@
-30..32|Expansion
-100..103|Expansion
+30..32|Expansion.Alternative
+100..103|Expansion.Conjunction

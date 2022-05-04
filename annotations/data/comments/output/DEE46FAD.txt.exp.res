@@ -1,2 +1,2 @@
-77..80|Expansion
-107..114|Contingency
+77..80|Expansion.Conjunction
+107..114|Contingency.Cause

@@ -1,2 +1,2 @@
-0..6|Expansion
-20..24|Temporal
+0..6|Expansion.Restatement
+20..24|Temporal.Asynchronous

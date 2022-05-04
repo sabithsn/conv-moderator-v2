@@ -1,2 +1,2 @@
-0..2|Contingency
-32..34|Contingency
+0..2|Contingency.Condition
+32..34|Contingency.Condition

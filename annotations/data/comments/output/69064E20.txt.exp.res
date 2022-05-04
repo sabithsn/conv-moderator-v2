@@ -1,2 +1,2 @@
-54..57|Expansion
-71..73|Contingency
+54..57|Expansion.Conjunction
+71..73|Contingency.Condition

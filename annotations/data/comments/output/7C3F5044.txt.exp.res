@@ -1,1 +1,1 @@
-100..102|Temporal
+100..102|Temporal.Synchrony

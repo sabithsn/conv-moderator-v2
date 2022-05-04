@@ -1,2 +1,2 @@
-0..2|Contingency
-84..89|Comparison
+0..2|Contingency.Condition
+84..89|Comparison.Concession

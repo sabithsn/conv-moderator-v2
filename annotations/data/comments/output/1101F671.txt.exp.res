@@ -1,2 +1,2 @@
-27..30|Expansion
-31..33|Contingency
+27..30|Expansion.Conjunction
+31..33|Contingency.Condition

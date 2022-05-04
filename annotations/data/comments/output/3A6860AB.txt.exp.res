@@ -1,2 +1,2 @@
-0..4|Temporal
-44..54|Comparison
+0..4|Temporal.Asynchronous
+44..54|Expansion.Restatement

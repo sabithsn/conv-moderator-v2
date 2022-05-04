@@ -1,2 +1,2 @@
-0..7|Contingency
-38..41|Expansion
+0..7|Contingency.Cause
+38..41|Expansion.Conjunction

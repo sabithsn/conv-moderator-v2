@@ -1,2 +1,2 @@
-6..10|Expansion
-32..34|Expansion
+6..10|Expansion.Conjunction
+32..34|Expansion.Alternative

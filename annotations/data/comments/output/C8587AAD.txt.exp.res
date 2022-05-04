@@ -1,2 +1,2 @@
-60..62|Temporal
-88..90|Contingency
+60..62|Temporal.Synchrony
+88..90|Contingency.Condition

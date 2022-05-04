@@ -1,2 +1,2 @@
-54..56|Contingency
-71..74|Comparison
+54..56|Contingency.Condition
+71..74|Comparison.Contrast

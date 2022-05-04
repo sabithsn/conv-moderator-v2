@@ -1,2 +1,2 @@
-35..42|Contingency
-56..59|Comparison
+35..42|Contingency.Cause
+56..59|Comparison.Contrast

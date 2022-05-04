@@ -1,2 +1,2 @@
-44..46|Contingency
-85..92|Contingency
+44..46|Contingency.Condition
+85..92|Contingency.Cause

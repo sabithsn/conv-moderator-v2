@@ -1,2 +1,2 @@
-0..7|Contingency
-8..12|Temporal
+0..7|Contingency.Cause
+8..12|Temporal.Synchrony

@@ -1,2 +1,2 @@
-29..33|Temporal
-55..59|Expansion
+29..33|Temporal.Asynchronous
+55..59|Expansion.Conjunction

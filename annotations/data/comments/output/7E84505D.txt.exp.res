@@ -1,1 +1,1 @@
-43..47|Expansion
+43..47|Expansion.Conjunction

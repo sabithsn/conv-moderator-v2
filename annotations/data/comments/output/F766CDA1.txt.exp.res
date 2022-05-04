@@ -1,2 +1,2 @@
-0..5|Comparison
-123..125|Contingency
+0..5|Comparison.Concession
+123..125|Contingency.Condition

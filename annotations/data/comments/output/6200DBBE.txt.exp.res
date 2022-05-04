@@ -1,2 +1,2 @@
-51..54|Comparison
-55..59|Temporal
+51..54|Comparison.Contrast
+55..59|Temporal.Synchrony

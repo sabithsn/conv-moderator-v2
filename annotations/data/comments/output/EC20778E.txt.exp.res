@@ -1,1 +1,1 @@
-94..98|Temporal
+94..98|Temporal.Synchrony

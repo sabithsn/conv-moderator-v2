@@ -1,2 +1,2 @@
-40..44|Temporal
-46..51|Contingency
+40..44|Temporal.Asynchronous
+46..51|Contingency.Cause

@@ -1,1 +1,1 @@
-24..26|Temporal
+24..26|Temporal.Synchrony

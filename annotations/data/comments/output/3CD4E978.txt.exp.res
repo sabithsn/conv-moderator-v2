@@ -1,1 +1,1 @@
-0..2|Expansion
+0..2|Expansion.Alternative

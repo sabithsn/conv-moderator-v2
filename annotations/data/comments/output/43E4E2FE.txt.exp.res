@@ -1,1 +1,1 @@
-104..108|Temporal
+104..108|Temporal.Synchrony

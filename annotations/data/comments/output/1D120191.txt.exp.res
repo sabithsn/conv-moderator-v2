@@ -1,1 +1,1 @@
-0..5|Comparison
+0..5|Comparison.Contrast

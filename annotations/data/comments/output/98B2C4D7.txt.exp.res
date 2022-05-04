@@ -1,1 +1,1 @@
-31..35|Temporal
+31..35|Temporal.Synchrony

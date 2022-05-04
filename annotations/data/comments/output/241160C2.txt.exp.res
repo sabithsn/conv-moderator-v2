@@ -1,2 +1,2 @@
-9..13|Temporal
-47..50|Expansion
+9..13|Temporal.Synchrony
+47..50|Expansion.Conjunction

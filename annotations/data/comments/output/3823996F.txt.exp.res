@@ -1,1 +1,1 @@
-0..7|Expansion
+0..7|Expansion.Conjunction

@@ -1,2 +1,2 @@
-30..34|Temporal
-128..131|Expansion
+30..34|Temporal.Synchrony
+128..131|Expansion.Conjunction

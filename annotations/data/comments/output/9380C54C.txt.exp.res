@@ -1,2 +1,2 @@
-3..5|Expansion
-21..24|Expansion
+3..5|Expansion.Alternative
+21..24|Expansion.Conjunction

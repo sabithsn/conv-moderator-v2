@@ -1,2 +1,2 @@
-0..6|Temporal
-53..60|Contingency
+0..6|Temporal.Asynchronous
+53..60|Contingency.Cause

@@ -1,2 +1,2 @@
-0..2|Contingency
-46..48|Contingency
+0..2|Contingency.Condition
+46..48|Contingency.Cause

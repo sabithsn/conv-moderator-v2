@@ -1,1 +1,1 @@
-69..72|Expansion
+69..72|Expansion.Conjunction

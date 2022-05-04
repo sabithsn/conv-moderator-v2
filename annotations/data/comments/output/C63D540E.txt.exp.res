@@ -1,2 +1,2 @@
-3..7|Expansion
-104..107|Expansion
+3..7|Expansion.Conjunction
+104..107|Expansion.Conjunction

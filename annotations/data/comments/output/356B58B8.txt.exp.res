@@ -1,1 +1,1 @@
-57..67|Contingency
+57..67|Temporal.Synchrony

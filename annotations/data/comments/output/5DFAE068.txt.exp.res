@@ -1,2 +1,2 @@
-22..26|Temporal
-86..89|Expansion
+22..26|Temporal.Synchrony
+86..89|Expansion.Conjunction

@@ -1,3 +1,3 @@
-5..8|Expansion
-18..20|Contingency
-86..91|Temporal
+5..8|Expansion.Conjunction
+18..20|Contingency.Condition
+86..91|Temporal.Asynchronous

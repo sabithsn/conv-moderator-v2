@@ -1,2 +1,2 @@
-14..16|Contingency
-72..76|Temporal
+14..16|Contingency.Condition
+72..76|Temporal.Asynchronous

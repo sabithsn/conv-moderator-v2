@@ -1,2 +1,2 @@
-76..78|Contingency
-117..121|Expansion
+76..78|Contingency.Condition
+117..121|Expansion.Conjunction

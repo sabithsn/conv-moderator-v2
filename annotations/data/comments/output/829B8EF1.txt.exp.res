@@ -1,2 +1,2 @@
-35..40|Temporal
-122..124|Contingency
+35..40|Temporal.Asynchronous
+122..124|Contingency.Condition

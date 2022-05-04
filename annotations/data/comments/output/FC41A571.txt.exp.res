@@ -1,1 +1,1 @@
-4..10|Comparison
+4..10|Comparison.Contrast

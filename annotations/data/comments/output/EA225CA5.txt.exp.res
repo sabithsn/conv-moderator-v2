@@ -1,2 +1,2 @@
-0..7|Contingency
-70..77|Contingency
+0..7|Contingency.Cause
+70..77|Contingency.Cause

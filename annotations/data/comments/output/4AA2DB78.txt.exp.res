@@ -1,3 +1,3 @@
-19..21|Contingency
-45..49|Expansion
-52..54|Contingency
+19..21|Contingency.Cause
+45..49|Expansion.Conjunction
+52..54|Contingency.Condition

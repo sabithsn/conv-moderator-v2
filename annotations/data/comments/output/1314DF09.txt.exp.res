@@ -1,2 +1,2 @@
-4..7|Comparison
-41..44|Expansion
+4..7|Comparison.Contrast
+41..44|Expansion.Conjunction

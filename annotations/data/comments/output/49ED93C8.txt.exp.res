@@ -1,2 +1,2 @@
-26..28|Temporal
-64..69|Temporal
+26..28|Temporal.Synchrony
+64..69|Temporal.Synchrony

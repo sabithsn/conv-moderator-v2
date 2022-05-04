@@ -1,3 +1,3 @@
-21..25|Expansion
-55..59|Expansion
-87..91|Expansion
+21..25|Expansion.Conjunction
+55..59|Expansion.Conjunction
+87..91|Expansion.Conjunction

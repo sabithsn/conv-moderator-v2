@@ -1,2 +1,2 @@
-31..34|Expansion
-60..62|Contingency
+31..34|Expansion.Conjunction
+60..62|Contingency.Cause

@@ -1,2 +1,2 @@
-64..69|Temporal
-87..89|Expansion
+64..69|Temporal.Asynchronous
+87..89|Expansion.Alternative

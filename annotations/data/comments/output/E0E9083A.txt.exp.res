@@ -1,2 +1,2 @@
-33..37|Temporal
-71..75|Temporal
+33..37|Temporal.Synchrony
+71..75|Temporal.Synchrony

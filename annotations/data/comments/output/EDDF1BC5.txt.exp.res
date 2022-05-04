@@ -1,1 +1,1 @@
-120..123|Expansion
+120..123|Expansion.Conjunction

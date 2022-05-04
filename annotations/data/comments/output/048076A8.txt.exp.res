@@ -1,1 +1,1 @@
-49..53|Temporal
+49..53|Temporal.Synchrony

@@ -1,2 +1,2 @@
-72..77|Temporal
-110..113|Contingency
+72..77|Temporal.Synchrony
+110..113|Contingency.Cause

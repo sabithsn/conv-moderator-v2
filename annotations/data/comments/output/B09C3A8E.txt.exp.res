@@ -1,2 +1,2 @@
-11..17|Comparison
-19..23|Expansion
+11..17|Comparison.Contrast
+19..23|Expansion.Conjunction

@@ -1,3 +1,3 @@
-62..69|Contingency
-86..89|Expansion
-90..94|Expansion
+62..69|Contingency.Cause
+86..89|Expansion.Conjunction
+90..94|Expansion.Conjunction

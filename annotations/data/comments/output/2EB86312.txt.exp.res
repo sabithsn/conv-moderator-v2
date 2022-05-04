@@ -1,2 +1,2 @@
-60..67|Contingency
-93..95|Expansion
+60..67|Contingency.Cause
+93..95|Expansion.Alternative

@@ -1,2 +1,2 @@
-15..19|Temporal
-50..55|Temporal
+15..19|Temporal.Synchrony
+50..55|Temporal.Asynchronous

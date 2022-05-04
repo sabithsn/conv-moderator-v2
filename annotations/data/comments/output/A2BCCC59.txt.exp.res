@@ -1,1 +1,1 @@
-56..61|Temporal
+56..61|Temporal.Synchrony

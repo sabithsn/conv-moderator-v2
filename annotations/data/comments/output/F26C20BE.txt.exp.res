@@ -1,2 +1,2 @@
-12..22|Temporal
-91..95|Temporal
+12..22|Temporal.Synchrony
+91..95|Temporal.Asynchronous

@@ -1,2 +1,2 @@
-27..29|Contingency
-52..59|Expansion
+27..29|Contingency.Condition
+52..59|Expansion.Restatement

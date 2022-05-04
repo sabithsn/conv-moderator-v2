@@ -1,2 +1,2 @@
-15..18|Comparison
-19..21|Contingency
+15..18|Comparison.Contrast
+19..21|Contingency.Condition

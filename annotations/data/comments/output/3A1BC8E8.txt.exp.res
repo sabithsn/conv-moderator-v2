@@ -1,2 +1,2 @@
-54..57|Expansion
-98..104|Temporal
+54..57|Expansion.Conjunction
+98..104|Temporal.Asynchronous

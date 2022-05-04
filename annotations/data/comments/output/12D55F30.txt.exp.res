@@ -1,2 +1,2 @@
-0..2|Contingency
-60..62|Expansion
+0..2|Contingency.Condition
+60..62|Expansion.Alternative

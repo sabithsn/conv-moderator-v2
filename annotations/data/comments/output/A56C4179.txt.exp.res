@@ -1,3 +1,3 @@
-30..32|Contingency
-60..63|Comparison
-87..90|Expansion
+30..32|Contingency.Cause
+60..63|Comparison.Contrast
+87..90|Expansion.Conjunction

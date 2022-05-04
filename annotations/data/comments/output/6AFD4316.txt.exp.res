@@ -1,2 +1,2 @@
-0..3|Expansion
-41..44|Expansion
+0..3|Expansion.Conjunction
+41..44|Expansion.Conjunction

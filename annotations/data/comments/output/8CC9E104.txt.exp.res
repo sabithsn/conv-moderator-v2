@@ -1,1 +1,1 @@
-7..11|Temporal
+7..11|Temporal.Synchrony

@@ -1,1 +1,1 @@
-12..16|Temporal
+12..16|Temporal.Synchrony

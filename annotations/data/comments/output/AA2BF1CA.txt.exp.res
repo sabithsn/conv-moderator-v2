@@ -1,2 +1,2 @@
-42..46|Expansion
-85..88|Comparison
+42..46|Expansion.Conjunction
+85..88|Comparison.Contrast

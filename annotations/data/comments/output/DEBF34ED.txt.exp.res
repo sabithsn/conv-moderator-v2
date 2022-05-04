@@ -1,2 +1,2 @@
-38..43|Temporal
-93..99|Comparison
+38..43|Temporal.Asynchronous
+93..99|Comparison.Contrast

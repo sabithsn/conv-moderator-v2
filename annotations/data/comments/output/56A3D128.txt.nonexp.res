@@ -1,0 +1,28 @@
+Implicit|||||||||||Comparison.Contrast|||||||||||0..99|0|No chat im not going crazy totally not about to start the next plague conspiracy Bad globalist bot .||||||||101..108|1|Its not .|||||||||||||
+EntRel||||||||||||||||||||||110..187|2|It 's the root cause of all kinds of shitty tyrannical governments in the past .||||||||190..218|3|conspiracy Bad Globalist bot .|||||||||||||
+Implicit|||||||||||Expansion.Restatement|||||||||||190..218|3|conspiracy Bad Globalist bot .||||||||220..246|4|I have plenty of community .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||220..246|4|I have plenty of community .|||||||||5|I love where I 'm from .|||||||||||||
+Implicit|||||||||||Contingency.Cause||||||||||||6|But I 'm not proud of being born here - something that happened completely by a random act of God .||||||||370..417|7|Getting a promotion is something to be proud of .|||||||||||||
+EntRel||||||||||||||||||||||370..417|7|Getting a promotion is something to be proud of .||||||||419..433|8|Writing a song .|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||419..433|8|Writing a song .||||||||435..453|9|Building something .|||||||||||||
+Implicit|||||||||||Expansion.Restatement|||||||||||435..453|9|Building something .||||||||455..503|10|Accomplishing anything of note or personal value .|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||455..503|10|Accomplishing anything of note or personal value .||||||||507..575|11|Being proud of something you had absolutely no hand in makes 0 sense .|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||507..575|11|Being proud of something you had absolutely no hand in makes 0 sense .||||||||577..619|12|Are you proud of me for my accomplishments ?|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||577..619|12|Are you proud of me for my accomplishments ?||||||||621..631|13|I doubt it .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||621..631|13|I doubt it .||||||||633..689|14|Are you proud that you have whatever color hair you have ?|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||633..689|14|Are you proud that you have whatever color hair you have ?||||||||691..701|15|Surely not .|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||691..701|15|Surely not .||||||||703..734|16|Are you proud of your eye color ?|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||703..734|16|Are you proud of your eye color ?||||||||737..825|17|Taking pride in something is valuing some kind of effort you put in to achieve something .|||||||||||||
+Implicit|||||||||||Expansion.Restatement|||||||||||737..825|17|Taking pride in something is valuing some kind of effort you put in to achieve something .|||||||||18|I 'm happy to be in my country .|||||||||||||
+Implicit|||||||||||Contingency.Cause||||||||||||18|I 'm happy to be in my country .||||||||858..904|19|I love it and want nothing but the best for it .|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||906..915|20|But proud ?||||||||917..925|21|Nonsense .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||929..1013|22|Being proud for nonsensical reasons is what causes pointless squabbling and violence .||||||||1016..1129|23|conspiracy > I had a few friends die that day You are a shameless liar and we both know you 're a shameless liar .|||||||||||||
+Implicit|||||||||||Comparison.Contrast|||||||||||1016..1129|23|conspiracy > I had a few friends die that day You are a shameless liar and we both know you 're a shameless liar .||||||||1132..1139|24|Stop it .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||1141..1500|25|Lol bro I had a few friends die that day but I 'd LOVE to hear your insane crack pot theories that are absolutely wrong conspiracy Black on white crime = hate crime ... he needs to be hung in front of his family ... Court sketch of Brianna Kupfer 's killer who 's a dark skinned black guy with black hair makes him appear to be a white guy with light brown hair .||||||||1497..1593|26|conspiracy fucking shut up , damn man , get a grip > Sounds like you dont know english well enough .|||||||||||||
+EntRel||||||||||||||||||||||1497..1593|26|conspiracy fucking shut up , damn man , get a grip > Sounds like you dont know english well enough .||||||||1596..1652|27|Considering it 's my native language , that seems unlikely .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||1596..1652|27|Considering it 's my native language , that seems unlikely .||||||||1655..1701|28|> You made the assumption " they " means " Pfizer " .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||1655..1701|28|> You made the assumption " they " means " Pfizer " .||||||||1705..1754|29|Yes , because that 's how pronoun referencing works .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||1705..1754|29|Yes , because that 's how pronoun referencing works .||||||||1756..1822|30|What other noun in your post do you think it could be referring to ?|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||1930..2024|32|Pfizer is under no obligation from any court that I 'm aware of to release any data in 9 months .||||||||2027..2086|33|conspiracy Shut up with your obvious fake ass shill account .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||2027..2086|33|conspiracy Shut up with your obvious fake ass shill account .||||||||2088..2167|34|If your gon na make claims like CDC this " and " WHO that " please provide a source .|||||||||||||
+Implicit|||||||||||Contingency.Cause|||||||||||2088..2167|34|If your gon na make claims like CDC this " and " WHO that " please provide a source .||||||||2169..2210|35|We are supposed to be better that the MSM .|||||||||||||

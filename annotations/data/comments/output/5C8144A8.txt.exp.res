@@ -1,3 +1,3 @@
-15..21|Comparison
-23..26|Expansion
-103..107|Temporal
+15..21|Comparison.Contrast
+23..26|Expansion.Conjunction
+103..107|Temporal.Synchrony

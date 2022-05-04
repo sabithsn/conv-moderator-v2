@@ -1,1 +1,1 @@
-100..103|Expansion
+100..103|Expansion.Conjunction

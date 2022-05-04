@@ -1,3 +1,3 @@
-0..3|Comparison
-28..32|Temporal
-74..79|Temporal
+0..3|Comparison.Contrast
+28..32|Temporal.Synchrony
+74..79|Temporal.Asynchronous

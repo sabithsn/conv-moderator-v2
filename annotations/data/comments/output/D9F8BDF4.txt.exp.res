@@ -1,3 +1,3 @@
-5..8|Expansion
-71..78|Contingency
-111..118|Contingency
+5..8|Expansion.Conjunction
+71..78|Contingency.Cause
+111..118|Contingency.Cause

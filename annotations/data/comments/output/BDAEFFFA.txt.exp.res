@@ -1,2 +1,2 @@
-0..3|Comparison
-62..66|Temporal
+0..3|Comparison.Contrast
+62..66|Temporal.Synchrony

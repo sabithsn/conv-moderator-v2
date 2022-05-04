@@ -1,2 +1,2 @@
-0..2|Expansion
-41..45|Temporal
+0..2|Expansion.Alternative
+41..45|Temporal.Asynchronous

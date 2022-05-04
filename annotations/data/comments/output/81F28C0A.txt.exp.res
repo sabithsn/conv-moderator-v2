@@ -1,2 +1,2 @@
-8..12|Temporal
-131..137|Comparison
+8..12|Temporal.Asynchronous
+131..137|Comparison.Contrast

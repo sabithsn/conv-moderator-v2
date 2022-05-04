@@ -1,1 +1,1 @@
-18..22|Temporal
+18..22|Temporal.Synchrony

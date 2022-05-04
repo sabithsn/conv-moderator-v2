@@ -1,2 +1,2 @@
-23..27|Temporal
-80..85|Temporal
+23..27|Temporal.Asynchronous
+80..85|Temporal.Asynchronous

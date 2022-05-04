@@ -1,1 +1,1 @@
-20..25|Comparison
+20..25|Comparison.Concession

@@ -1,2 +1,2 @@
-0..4|Temporal
-56..60|Temporal
+0..4|Temporal.Synchrony
+56..60|Temporal.Asynchronous

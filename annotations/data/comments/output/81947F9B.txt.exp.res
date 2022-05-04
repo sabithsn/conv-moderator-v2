@@ -1,1 +1,1 @@
-42..50|Temporal
+42..50|Contingency.Cause
