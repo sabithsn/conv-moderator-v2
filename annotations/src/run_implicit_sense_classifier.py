@@ -1,5 +1,8 @@
+import nltk
 import numpy as np
 import os
+
+from nltk.tokenize import sent_tokenize
 
 from transformers import XLNetForSequenceClassification
 
@@ -57,6 +60,16 @@ def run_inference(model, tokenizer, arg1_text, arg2_text):
     output = model(**inputs)
     pred = np.argmax(output['logits'].detach().cpu().numpy(), axis=1)
     return PDTB_LABELS[pred]
+
+
+def get_sentences_and_offsets(text):
+    sentences = sent_tokenize(text)
+    sentences_and_offsets = [(sentence, (text.find(sentence), text.find(sentence) + len(sentence))) for sentence in sentences]
+    return sentences_and_offsets
+
+
+def sentence_pair_is_explicit(sentence1, sentence2):
+
 
 
 def main():
