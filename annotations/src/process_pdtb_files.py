@@ -30,13 +30,23 @@ def get_senses_and_offsets(filename):
     senses_and_offsets = []
     with open(filename,  encoding = "utf-8") as f:
         relations = csv.reader(f, delimiter="|")
+        # print (relations)
         for relation in relations:
+            if len(relation) == 0:
+                continue
             relation_type = relation[0]
             if relation_type != "Explicit" and relation_type != "Implicit":
                 continue
             discourse_sense = relation[11]
             arg1_offset = relation[22]
-            arg2_offset = relation[32]
+            try:
+                arg2_offset = relation[32]
+            except:
+                print ("--------------------------------------------------------------")
+                print ("\t".join(relation))
+                print (filename)
+                print ("--------------------------------------------------------------")
+                exit()
             arg1_spanlist, arg2_spanlist = get_spanlists(arg1_offset, arg2_offset)
             senses_and_offsets.append({"filename": filename,
                                        "relation_type": relation_type,
@@ -140,7 +150,7 @@ def main():
 
     new_tokens = []
     inserts = []
-    with open ("PDTB-discourse-annotation3.tsv", "w", encoding = "utf-8") as h:
+    with open ("EI-PDTB-discourse-annotation.tsv", "w", encoding = "utf-8") as h:
         h.write("subreddit\tparent\tcomment\tpdtb-comment\n")
         for filename in os.listdir(PDTB_DIR):
             if not filename.endswith(".pipe"):
@@ -150,11 +160,12 @@ def main():
             s,comment,p = dictionary[file_id]
             copy_comment = str(comment)
             senses_and_offsets = get_senses_and_offsets(os.path.join(PDTB_DIR, filename))
+            print (senses_and_offsets)
             new_strings = []
             inserts = []
 
             for x in senses_and_offsets:
-                sense = x["discourse_sense"].split(".")[0]
+                sense = x["discourse_sense"]
                 sense_arg1_begin = "<" + sense + ">"
                 sense_arg1_end = "<" + sense + "/> "
 
@@ -214,7 +225,7 @@ def main():
             # break
 
     new_tokens = list(set(new_tokens))
-    with open ("new-tokens3.txt", "w") as k:
+    with open ("new-tokens4.txt", "w") as k:
         for x in new_tokens:
             k.write(x+"\n")
 if __name__ == "__main__":
